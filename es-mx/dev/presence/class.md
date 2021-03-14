@@ -50,7 +50,7 @@ Establece la actividad de tu perfil de acuerdo a los datos proporcionados.
 
 El primer parámetro requiere una interfaz [`PresenceData`](#presencedata-interface) o una clase [`Slideshow`](/dev/presence/slideshow) para obtener toda la información que deseas mostrar en tu perfil.
 
-El segundo parámetro indica si la presence está reproduciendo algo o no. El segundo parámetro indica si la presence está reproduciendo algo o no. Utiliza siempre `true` si proporcionas marcas de tiempo (timestamps) en `PresenceData`.
+El segundo parámetro indica si la presence está reproduciendo algo o no. Utiliza siempre `true` si proporcionas marcas de tiempo (timestamps) en `PresenceData`.
 
 ### `clearActivity()`
 
@@ -128,11 +128,16 @@ let strings: Promise<LangStrings> = getStrings(),
   // El ID es el ID del campo multiLanguage establecido en los ajustes.
   oldLang: string = await presence.getSetting("ID");
 
-//! oldLang: string = await presence.getSetting("ID");
-
-//!
-¡El siguiente código debe estar dentro del evento updateData!
+//! ¡El siguiente código debe estar dentro del evento updateData!
 // El ID es el ID del campo multiLanguage establecido en los ajustes.
+const newLang = await presence.getSetting("ID");
+if (oldLang !== newLang) {
+  oldLang = newLang;
+  strings = getStrings();
+}
+
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`
@@ -332,20 +337,20 @@ Esta interfaz tiene siguientes variables, todas son opcionales.
 
 ```typescript
 const presenceData: PresenceData = {
-  details: "Mi título",
-  state: "Mi descripción",
-  largeImageKey: "logo_servicio",
-  smallImageKey: "icono_servicio_pequño",
-  smallImageText: "Has puesto el cursor sobre mí, ¿ahora que?",
+  details: "My title",
+  state: "My description",
+  largeImageKey: "service_logo",
+  smallImageKey: "small_service_icon",
+  smallImageText: "You hovered me, and what now?",
   startTimestamp: 1564444631188,
-  endTimestamp: 1564444634734
+  endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Botón de prueba1",
+            label: "Test button1",
             url: "https://premid.app/"
         },
         {
-            label: "Botón de prueba2",
+            label: "Test button2",
             url: "https://premid.app/contributors"
         }
     ]
