@@ -171,7 +171,7 @@ const setting = await presence.getSetting("pdexID"); //Remplacer pdexID avec l'i
 console.log(setting); // Cela affichera dans la console la valeur du paramètre
 ```
 
-### `hideSetting(String)`
+### `masquer (chaîne de caractères)`
 
 Masque le paramètre donné.
 
@@ -179,7 +179,7 @@ Masque le paramètre donné.
 presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 ```
 
-### `showSetting(String)`
+### `montreParamètres(chaîne de caractères)`
 
 Affiche le paramètre spécifié (Ne fonctionne que si le paramètre est déjà masqué).
 
