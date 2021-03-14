@@ -6,7 +6,7 @@ date: 2020-04-22T20:13:07.598Z
 tags:
 ---
 
-L'installazione dell'estensione è molto importante in quanto l'applicazione non può fare nulla da sola.
+The installation of the extension is very important as the application can not do anything by itself.
 
 # Installa
 ### Chrome, Edge, ecc.
