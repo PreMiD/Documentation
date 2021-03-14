@@ -1,5 +1,5 @@
 ---
-title: Presence izstrādāšana
+title: Presence Development
 description:
 published: true
 date: 2021-02-07T17:11:34.449Z
@@ -8,34 +8,34 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Visas presences tagad tiek glabātas šeit: https://github.com/PreMiD/Presences 
+> All presences are now stored here: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Versija `2.x` iepazīstina[ presence veikalu](https://premid.app/store). Lietotājiet ir tagad iespēja manuāli pievienot un noņemt savas iecienītākās presences, caur lietotāja interfeisu [mājaslapā](https://premid.app/).
+Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
 
-> Pirms sākat, ir ļoti ieteicams apskatīt mūsu presence vadlīnijas. 
+> Before getting started, it is highly recommended that you look at our presence guidelines. 
 > 
 > {.is-warning}
 
-- [Vadlīnijas](https://docs.premid.app/dev/presence/guidelines)
+- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
-# Struktūra
+# Structure
 
-Visas presences ir kodētas [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## Uzstādīšana
+## Installation
 
-1. Uzstādīt [Git](https://git-scm.com/).
-2. Uzstādīt [Node](https://nodejs.org/en/) (nāk ar [npm](https://www.npmjs.com/)).
+1. Install [Git](https://git-scm.com/).
+2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
-## Projekta klonēšana
+## Cloning the project
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Izvēlies mapi pēc savas izvēles.
-3. Atveriet to kodu redaktorā.
+2. Choose a folder of your choice.
+3. Open it in your code editor.
 
 ## Creating folders and files
 
@@ -399,7 +399,7 @@ The website you are developing on is automatically reloading every time you save
 
 # Files explained
 
-- [Presence klase](/dev/presence/class)
+- [Presence Class](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
