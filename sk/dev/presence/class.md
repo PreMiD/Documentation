@@ -1,6 +1,6 @@
 ---
 title: Trieda Prítomnosti
-description: Hlavná trieda pre každú prítomnosť PreMiD
+description: The main class for every PreMiD presence
 published: true
 date: 2021-02-26T20:42:26.910Z
 tags:
@@ -10,11 +10,11 @@ dateCreated: 2021-02-21T21:13:14.449Z
 
 # Trieda Prítomnosti
 
-## Úvod
+## Introduction
 
-Trieda `Presence` je veľmi užitočná, pretože má základné metódy, ktoré potrebujeme k vytvoreniu prítomnosti.
+The `Presence` class is very useful as it has basic methods that we need for creating a presence.
 
-Pri vytváraní triedy musíte zadať `klientské Id`.
+When you create a class you must specify `clientId` property.
 
 ```typescript
 const presence = new Presence({
@@ -270,7 +270,7 @@ This interface has following variables, all of them are optional.
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Premenná</th>
+      <th style="text-align:left">Variable</th>
       <th style="text-align:left">Popis</th>
       <th style="text-align:left">Typ</th>
     </tr>
@@ -324,7 +324,7 @@ This interface has following variables, all of them are optional.
       <td style="text-align:left">smallImageText</td>
       <td style="text-align:left">Defines the text that will be shown to user when he will hover the small
         icon.</td>
-      <td style="text-align:left"><code>Reťazec</code>
+      <td style="text-align:left"><code>String</code>
       </td>
     </tr>
         <tr>
