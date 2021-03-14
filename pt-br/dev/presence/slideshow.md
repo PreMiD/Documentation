@@ -71,28 +71,28 @@ Deleta todos os slides do `Slideshow`.
 
 ## Introdução
 
-Um `SlideshowSlide` é a representação interna de cada slide em um `Slideshow`.
+A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
 
-## Propriedades
+## Properties
 
 ### `id`
 
-Retorna uma `String` do id do slide.
+Returns a `String` of the id of the slide.
 
 ### `data`
 
-Retorna um objeto [`PresenceData`](/dev/presence/class#presencedata-interface) do `PresenceData` salvo no slide.
+Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
 
 ## Métodos
 
 ### `updateData(PresenceData)`
 
-Define os dados dos slides de acordo com os dados fornecidos.
+Sets the slides data according to provided data.
 
-Você deve fornecer uma interface `PresenceData` para obter todas as informações que por fim você deseja exibir em seu perfil.
+You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
 
 ### `updateInterval(Number)`
 
-Define o intervalo do slide de acordo com os dados fornecidos.
+Sets the interval of the slide according to provided data.
 
-Você deve fornecer um `Número` que é a quantidade de tempo em milissegundos (mínimo: 5000) que este slide irá mostrar.
+You must provide a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
