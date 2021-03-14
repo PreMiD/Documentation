@@ -1,5 +1,5 @@
 ---
-title: فئة عرض الشريحة
+title: Slideshow Class
 description:
 published: true
 date: 2020-12-25T00:47:38.111Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
-# فئة عرض الشريحة
+# Slideshow Class
 
 ## مقدمة
 
