@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: PreMiD telepítési útmutató a Linux rendszer esetében
+description: Getting started with a PreMiD installation on Linux
 published: true
 date: 2020-11-10T18:06:56.520Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
-A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
+The installation of the application is very important as the extension can not do anything by itself.
 
 > Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
 > 
@@ -16,15 +16,15 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 
 ## Table of Contents
 
-- **[Névjegy](#about)**
+- **[About](#about)**
   - [Stats](#stats)
-  - [Követelmények](#requirements)
-  - Példák (Hamarosan)
-  - GYIK (Hamarosan)
+  - [Requirements](#requirements)
+  - Examples (soon)
+  - FAQs (soon)
   - Building (soon)
-  - [Támogatás](#support)
-  - [Készítők](#credits)
-  - [Licensz](#license)
+  - [Support](#support)
+  - [Credits](#credits)
+  - [License](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_RECOMMENDED_)
   - [Installation instructions](#appimageinstall)
@@ -35,7 +35,7 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 
 <a name="about"></a>
 
-## Névjegy
+## About
 
 **PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
 
@@ -58,7 +58,7 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 
 <a name="requirements"></a>
 
-### Követelmények
+### Requirements
 
 Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;</br> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.</br> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
 
@@ -70,7 +70,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="support"></a>
 
-### Támogatás
+### Support
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Csatlakozz Discord szerverünkre!">
@@ -80,7 +80,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="credits"></a>
 
-### Készítők
+### Credits
 
 Thanks to :
 
@@ -92,7 +92,7 @@ Thanks to :
 
 <a name="license"></a>
 
-### Licensz
+### License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
