@@ -313,13 +313,13 @@ const setting = wait presence.getSetting("pdexID"); //Remplacer pdexID par l'id 
 console.log(setting); // Cela affichera dans la console la valeur du paramètre
 ```
 
-#### `masquer (chaîne de caractères)`
+#### `hideSetting(String)`
 Masque le paramètre donné.
 ```typescript
 presence.hideSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
 
-#### `montreParamètres(chaîne de caractères)`
+#### `showSetting(String)`
 Affiche le paramètre spécifié (ne fonctionne que si le paramètre est déjà masqué).
 ```typescript
 presence.showSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
