@@ -1,5 +1,5 @@
 ---
-title: Classe Slideshow
+title: Slideshow Class
 description:
 published: true
 date: 2020-12-25T00:47:38.111Z
@@ -8,91 +8,91 @@ editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
-# Classe Slideshow
+# Slideshow Class
 
 ## Introduzione
 
-La classe `Slideshow` viene utilizzata per impostare più `PresenceData` e "slide" attraverso di loro ogni x millisecondi (minimo: 5000).
+The `Slideshow` class is used to set multiple `PresenceData` and "slide" through them every x milliseconds (minimum: 5000).
 
-Vedi il metodo [`createSlideshow`](/dev/presence/class#createslideshow) nella classe [`Presence`](/dev/presence/class) su come creare una presentazione ``.
+See the [`createSlideshow`](/dev/presence/class#createslideshow) method in the [`Presence`](/dev/presence/class) class on how to create a `Slideshow`.
 
-## Proprietà
+## Properties
 
 ### `currentSlide`
 
-Restituisce un oggetto [`PresenceData`](/dev/presence/class#presencedata-interface) di ciò che la presenza/diapositiva corrente sta visualizzando.
+Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of what the presence/current slide is displaying.
 
 ```typescript
 const currentSlide = slideshow.currentSlide
-console.log(currentSlide.details) // Console registrerà i dettagli del PresenceData
+console.log(currentSlide.details) // Will console log the details of the PresenceData
 ```
 
-## Metodi
+## Methods
 
 ### `addSlide(String, PresenceData, Number)`
 
-Aggiungi una nuova diapositiva alla `Slideshow` in base ai dati forniti.
+Add a new slide to the `Slideshow` according to provided data.
 
-Il primo parametro richiede una `Stringa` che verrà utilizzata come identificatore univoco per la diapositiva.
+First parameter requires a `String` that will be used as a unique identifier for the slide.
 
-Secondo parametro richiede un'interfaccia [`PresenceData`](/dev/presence/class#presencedata-interface) per ottenere tutte le informazioni che si desidera visualizzare nella diapositiva.
+Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
 
-Il terzo parametro richiede un `Numero` che è la quantità di tempo in millisecondi (minimo: 5000) che questa diapositiva mostrerà.
+Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
 
 ### `getSlides()`
 
-Restituisce tutte le diapositive salvate nella `Slideshow` come `Array` di [`SlideshowSlide`](#slideshowslide-class).
+Returns all slides saved in the `Slideshow` as an `Array` of [`SlideshowSlide`](#slideshowslide-class).
 
 ### `updateSlide(String, PresenceData, Number)`
 
-Aggiorna la diapositiva dell'id `` in base ai dati forniti.
+Updates the slide of the given `id` according to provided data.
 
-Il primo parametro richiede una `Stringa` che è l'identificatore univoco della diapositiva che si desidera aggiornare.
+First parameter requires a `String` that is the unique identifier of the slide you want to update.
 
-Secondo parametro richiede un'interfaccia [`PresenceData`](/dev/presence/class#presencedata-interface) per ottenere tutte le informazioni che si desidera visualizzare nella diapositiva.
+Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
 
-Il terzo parametro richiede un `Numero` che è la quantità di tempo in millisecondi (minimo: 5000) che questa diapositiva mostrerà.
+Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
 
 ### `hasSlide(String)`
 
-Restituisce un `Booleano` che indica se la diapositiva è aggiunta alla `diapositive`.
+Returns a `Boolean` stating whether the slide is added to the `Slideshow`.
 
 ### `deleteSlide(String)`
 
-Elimina la diapositiva con l'Id `` dato dalla diapositiva ``.
+Deletes the slide with the given `id` from the `Slideshow`.
 
-Il primo parametro richiede una `Stringa` che è l'identificatore univoco della diapositiva che si desidera aggiornare.
+First parameter requires a `String` that is the unique identifier of the slide you want to delete.
 
 ### `deleteAllSlides()`
 
-Elimina tutte le diapositive dalla `Presentazione`.
+Deletes all slides from the `Slideshow`.
 
-# Classe Slideshow
+# SlideshowSlide Class
 
 ## Introduzione
 
-Una `SlideshowSlide` è la rappresentazione interna di ogni diapositiva in una `Slideshow`.
+A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
 
-## Proprietà
+## Properties
 
 ### `id`
 
-Restituisce una `Stringa` dell'id della diapositiva.
+Returns a `String` of the id of the slide.
 
 ### `data`
 
-Restituisce un oggetto [`PresenceData`](/dev/presence/class#presencedata-interface) del `PresenceData` salvato nella diapositiva.
+Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
 
-## Metodi
+## Methods
 
 ### `updateData(PresenceData)`
 
-Imposta i dati delle diapositive in base ai dati forniti.
+Sets the slides data according to provided data.
 
-Devi fornire un'interfaccia `PresenceData` per ottenere tutte le informazioni che in ultima analisi vuoi visualizzare nel tuo profilo.
+You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
 
 ### `updateInterval(Number)`
 
-Imposta l'intervallo della diapositiva secondo i dati forniti.
+Sets the interval of the slide according to provided data.
 
-Devi fornire un `Numero` che è la quantità di tempo in millisecondi (minimo: 5000) che questa diapositiva mostrerà.
+You must provide a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
