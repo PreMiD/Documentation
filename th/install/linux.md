@@ -73,8 +73,8 @@ It is unknown whether older versions of other distributions support it, so just 
 ### สนับสนุน
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="เข้าร่วม Discord ของเรา!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="เข้าร่วม Discord ของเรา!">
+  <a target="_blank" href="https://discord.premid.app/" title="Join our Discord!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Join our Discord!">
   </a>
 </div>
 
