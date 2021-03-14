@@ -1,7 +1,7 @@
 ---
 title: فئة الpresence
 description: الصف الرئيسي لكل presnece PreMiD
-published: true
+published: صحيح
 date: 2021-02-26T20:42:26.910Z
 tags:
 editor: markdown
