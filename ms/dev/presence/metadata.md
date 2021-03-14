@@ -215,30 +215,30 @@ Tetapkan tetapan saling tindak supaya pengguna boleh mengubah suai Presence ters
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Lihat https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "TAJUK PAPARAN",
+    "icon": "IKON FONTAWESOME", //Contohnya "fas fa-info"
+    "value": true //Nilai Boolean akan buatkan ia menjadi suis buka/tutup dengan nilai ditetapkan di sini sebagai nilai lalainya
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Jika tetapan lain serasi dengan nilai ini (true/false/0/1/dll.) maka tunjukkan butang ini
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "title": "TAJUK PAPARAN",
+    "icon": "IKON FONTAWESOME",
+    "value": "\"%song%\" by %artist%", //Dengan meletakkan rentetan maka ia membuatkan tetapan sebagai input, di mana anda boleh gunakan input tersuai.
+    "placeholder": "use %song% or %artist%" //Apabila input kosong maka ia akan tunjukkan rentetan ini dengan cara terpudar
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TAJUK PAPARAN",
+    "icon": "IKON FONTAWESOME",
+    "value": 0, //Nilai lalai bagi pemilih
+    "values": ["1", "2", "dll."] //Akan buatkan tetapan sebagai pemilih di mana anda boleh pilih yang mana diinginkan
   }
 ]
 ```
