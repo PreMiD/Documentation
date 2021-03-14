@@ -1,6 +1,6 @@
 ---
 title: Veaparandamine
-description: Kõik teie probleemi lahendamiseks
+description: Everything to solve your problem
 published: true
 date: 2021-02-08T21:30:58.603Z
 tags:
@@ -8,11 +8,11 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
 ---
 
-> Veenduge, et teil oleks installitud laiendus ** ja ** rakendus! 
+> Make sure you have the extension **and** the application installed! 
 > 
 > {.is-warning}
 
-Sellel leheküljel kaasatud:
+Included on this page:
 1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
 2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
 3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
