@@ -1,6 +1,6 @@
 ---
-title: Avaleht
-description: Ametlik dokumentatsioon
+title: Home
+description: Official Documentation for v2
 published: true
 date: 2021-02-24T23:22:41.678Z
 tags:
@@ -12,11 +12,11 @@ dateCreated: 2020-06-11T18:03:47.172Z
 > 
 > {.is-warning}
 
-# PreMiD'i kohta
+# About PreMiD
 - :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
 - :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
 
-# Alustuseks
+# Getting Started
 
 PreMiD is quick and easy to install. You should be up and running in no time.
 
