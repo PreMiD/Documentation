@@ -216,10 +216,10 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 
 - Si vous décidez de faire un imprimer formaté (par exemple : `%song% par %artist%`), les variables doivent être encerclé d'un "%" de part et d'autre. Les variables comme `%var`, `var%` ou `%%var%%` ne sont **pas** autorisé dans l'intérêt de respecter la standardisation.
 - Le nom des paramètres ne doit **pas** être en lettres capitales. Par exemple, les nom comme `AFFICHER LE STATUT DE NAVIGATION` ne seront **pas** autorisé; en revanche, les nom tel que `Afficher le Statut de Navigation` ou `Afficher le statut de navigation` sont autorisé.
-- Si vous utilisez l'option multiLanguage, vous devez savoir que:
+- If you are using the `multiLanguage` option it can have the following types:
   - Une valeur de type **booléenne** n'activera que les chaînes de caractères de [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) du dépôt de traduction ou du fichier de la Presence (par exemple: si le nom de la présence est YouTube, l'extension prendra les chaînes de caractères du fichier `youtube.json`.)
-  - Une valeur de type **String** (par exemple `youtube.json`) spécifiera le nom du fichier dont vous voulez obtenir les chaînes de caractères.
-  - Une valeur de type **Array<String>** (par exemple `["youtube", "discord"]`) spécifiera le nom des fichiers dont vous voulez obtenir les chaînes de caractères.
+  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
+  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
 
 ## [**presence.ts**](/dev/presence/class)
 

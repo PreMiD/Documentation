@@ -1,5 +1,5 @@
 ---
-title: Клас на присъствие
+title: Presence Class
 description: The main class for every PreMiD presence
 published: true
 date: 2021-02-26T20:42:26.910Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
-# Клас на присъствие
+# Presence Class
 
 ## Introduction
 
@@ -272,7 +272,7 @@ This interface has following variables, all of them are optional.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">описание</th>
-      <th style="text-align:left">Вид</th>
+      <th style="text-align:left">Type</th>
     </tr>
   </thead>
   <tbody>

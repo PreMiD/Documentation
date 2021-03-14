@@ -9,11 +9,11 @@ editor: markdown
 
 # TypeScript Configuration
 
-## Johdanto
+## Introduction
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.js` in root and presence folders, this file is used for configuring the **TypeScript** compiler. Se on jo konfiguroitu sinulle, joten älä huolehdi siitä.
+When you downloaded and unpacked the workspace, you will see a file called `tsconfig.js` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
 
-Haluamme vain kuvata joitakin asetuksia, jotka sinun pitäisi tietää.
+We just want to describe some settings that you should know.
 
 ## Root Configuration
 
@@ -39,7 +39,7 @@ In the root configuration file you will see something like this.
 | Property                   | Kuvaus                                                                                                                                                              |
 |:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
-| module                     | Voit lukea lisää tästä [täällä](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                         |
+| module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
 | target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
 | removeComments             | Removing comments from compiled files.                                                                                                                              |
 | noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
@@ -47,7 +47,7 @@ In the root configuration file you will see something like this.
 | noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
 | noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
 | inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
-| typeRoots                  | Voit lukea lisää tästä [täällä](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                         |
+| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
 | esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
 
 ## Presence Configuration

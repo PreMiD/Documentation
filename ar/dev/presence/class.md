@@ -24,11 +24,11 @@ const presence = new Presence({
 
 ### الخصائص
 
-هناك ثلاث خصائص متاحة لفئة `Presence`.
+There are three properties available for `Presence` class.
 
 #### `clientId`
 
-هذه الخاصية مطلوبة لجعل presence يعمل ، لأنه يستخدم معرف التطبيق الخاص بك لعرض شعاره. يمكنك الحصول عليه من [ صفحة التطبيقات ](https://discordapp.com/developers/applications).
+This property is required to make your presence work, because it uses your application id to display its logo and assets. يمكنك الحصول عليه من [ صفحة التطبيقات ](https://discordapp.com/developers/applications).
 
 #### `injectOnComplete`
 
@@ -106,7 +106,7 @@ Since v2.2.0 of the extension you can now get the strings of a certain language.
 We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
 
 ```typescript
-// واجهة السلاسل التي تحصل عليها (جيدة لجودة التعليمات البرمجية و الإكمال التلقائي).
+// An interface of the strings you are getting (good for code quality and autocomplete).
 interface LangStrings {
   play: string;
   pause: string;

@@ -111,7 +111,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. يجب أن يحتوي الوصف الخاص بك على قيم أزواج رئيسية تشير إلى اللغة، والوصف في تلك اللغة المحددة. اصنع وصفاً باللغات <i>التي تعرفها</i>، سوف يقوم مترجمونا بإجراء تغييرات على ملف البيانات الوصفية الخاص بك. View the category for presence languages for a list. </td>
+      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. View the category for presence languages for a list. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
@@ -149,20 +149,20 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">قيمة <code>#HEX</code>. نوصي باستخدام لون أساسي من الخدمة
-        التي يدعمها وجودك.</td>
+      <td style="text-align:left">قيمة <code>#HEX</code>. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">مصفوفة مع العلامات، ستساعد المستخدمين على البحث عن وجودك على الموقع.</td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">وتندرج تحت هذا البند سلسلة تستخدم لتمثيل الفئة التي يوجد فيها.</td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
@@ -174,7 +174,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">محدد تعبير عادي يحدد إطارات ifram للحقن.</td>
+      <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>نعم</code></td>
     </tr>
