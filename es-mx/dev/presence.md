@@ -149,13 +149,13 @@ Por favor copia el código anterior y ponlo en tu archivo `metadata.json`. Ahora
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador de la presence. Puedes copiar tu <code>id</code> de usuario de Discord activando el modo desarrollador y pulsando sobre tu perfil con el botón secundario del ratón. <code>name</code> es tu nombre de Discord sin el identificador (#0000).</td>
+      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador de la presence. <code>name</code> es tu nombre de Discord sin el identificador (#0000). Puedes copiar tu <code>id</code> de usuario de Discord activando el modo desarrollador y pulsando sobre tu perfil con el botón secundario del ratón.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Debería contener un Object con las propiedades <code>name</code> e <code>id</code> del desarrollador de la presence. Puedes copiar el <code>id</code> de usuario de Discord activando el modo desarrollador y pulsando sobre el perfil del usuario con el botón secundario del ratón. <code>name</code> es tu nombre de Discord sin el identificador (#0000).</td>
+      <td style="text-align:left">Debería contener un Object con las propiedades <code>name</code> e <code>id</code> del desarrollador de la presence. <code>name</code> es tu nombre de Discord sin el identificador (#0000). Puedes copiar el <code>id</code> de usuario de Discord activando el modo desarrollador y pulsando sobre el perfil del usuario con el botón secundario del ratón.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
@@ -168,7 +168,7 @@ Por favor copia el código anterior y ponlo en tu archivo `metadata.json`. Ahora
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Destinado a ser utilizado para presences que tienen nombres distintos en idiomas diferentes (ej., Pokémon y 포켓몬스터)<br>También puedes usarlo para presences con caracteres especiales y así no tendrás que escribirlos (ej., Pokémon y Pokemon).</td>
+      <td style="text-align:left"><br>Destinado a ser utilizado para presences que tienen nombres distintos en idiomas diferentes (ej., Pokémon y 포켓몬스터)<br>También puedes usarlo para presences con caracteres especiales y así no tendrás que escribirlos (ej., Pokémon y Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
@@ -272,7 +272,7 @@ Hemos creado un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/
 ## Empezando
 
 ```typescript
-Esto se llama varias veces por segundo cuando es posible. const presence = new Presence({
+const presence = new Presence({
     clientId: "000000000000000000" //El ID de cliente creado en https://discordapp.com/developers/applications
   }),
   strings = presence.getStrings({
@@ -297,7 +297,7 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData se está lanzando siempre y debería utilizarse como evento de refresco o `tick`.
+  /*UpdateData se está lanzando siempre y debería utilizarse como evento de refresco o `tick`. Esto se llama varias veces por segundo cuando es posible.
 
     Es recomendado crear una función fuera de este evento para actualizar variables y hacer trabajos que requieren tiempos de espera como hacer llamadas a una API.*/
 
@@ -332,7 +332,7 @@ Desde la v2.2.0 ahora hay Slideshows, esto le permite mostrar múltiples interfa
 
 ## ¡¿No puedes obtener cierta información?!
 
-Muchos sitios web están utilizando [ iframes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) (\[Inline Frames \](https: / /en.wikipedia.org/wiki/HTML_element#Frames)). Estas etiquetas html pueden contener múltiples fuentes, como videos. Pero a veces no son relevantes. Algunos están ocultos o simplemente no se usan activamente. Compruebe si puede extraer la información que necesita sin ellos antes de realizar un trabajo innecesario.
+Muchos sitios web están utilizando [ iframes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inline Frames ](https: / /en.wikipedia.org/wiki/HTML_element#Frames)). Estas etiquetas html pueden contener múltiples fuentes, como videos. Pero a veces no son relevantes. Algunos están ocultos o simplemente no se usan activamente. Compruebe si puede extraer la información que necesita sin ellos antes de realizar un trabajo innecesario.
 
 1. Verifícalos en la consola de tu navegador (asegúrate de estar en la pestaña **Elementos**).
 2. Buscar (<kbd> CTRL </kbd> + <kbd> F </kbd> (Windows) o <kbd> CMD </kbd> + <kbd> F </kbd> (MacOS)).
