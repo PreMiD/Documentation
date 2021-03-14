@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
-# Sistēmas Prasības
+# System Requirements
 
 > This data relate to the application only. 
 > 
