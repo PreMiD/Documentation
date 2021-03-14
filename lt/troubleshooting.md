@@ -1,6 +1,6 @@
 ---
 title: Nesklandumų sprendimas
-description: Viskas kas padės jums sutaisyti jūsų problemą
+description: Everything to solve your problem
 published: true
 date: 2021-02-08T21:30:58.603Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
 ---
 
-> Įsitinkite jog esate įsidiegę papildinį **taipogi** ir aplikaciją! 
+> Make sure you have the extension **and** the application installed! 
 > 
 > {.is-warning}
 
@@ -59,8 +59,7 @@ Tikiuosi žinote kaip perkrauti savo kompiuterį.
 Taipogi kartais įvyksta problemų su PreMiD failais... Įdiegimo pamokos gali būti randamos [čia](/install).
 
 ### Savarankiškas ištrynimas
-Windows:    `C:\Users\Vartotojas\AppData\Roaming\`` ir ištrinkite aplankalą `PreMiD`.
-MacOS:`~/users/Vartotojas/~Library/Application Support/`ir ištrinkite aplankalą `PreMiD``.
+Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee detected PreMiD as virus (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
