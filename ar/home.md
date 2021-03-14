@@ -13,28 +13,28 @@ dateCreated: 2020-06-11T18:03:47.172Z
 > {.is-warning}
 
 # حول PreMiD
-- :mag: [ماهو PreMiD ؟](/about) ولماذا عليك استخدامه.
-- :link: [ما هو RPC](https://discordapp.com/rich-presence) كل شيء عن Rich Presence و وظائفه.
+- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
+- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
 
 # ابدء
 
 PreMid سريع وسهل التثبيت. يجب أن تكون جاهز وتعمل في أسرع وقت.
 
-- تأكد من أنك قرأت [متطلبات النظام](/install/requirements).
-- إتبع [إرشادات التثبيت](/install) السريعة والسهلة.
-- [حل المشاكل](/troubleshooting) دليلك لطرق حل المشاكل والاسئله الشائعه وحلها.
+- Make sure you have read the [system requirements](/install/requirements).
+- Follow the quick and simple [installation guide](/install).
+- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
 
 # المطورون
 
-[التجهز](/dev) لتطوير PreMiD هو خطوتك الأولى قبل برمجة بعض الأشياء.
+[Getting Started](/dev) for PreMiD development is your first step before coding some things.
 
-- :computer: [API](/dev/api): توصل إلى المصادر ونفذ الإجراءات باستخدام الAPI الخاص بPreMiD.
-- :wrench: [تطوير الpresence](/dev/presence): تعلم كيفية استخدام نظام الpresence الخاص بنا.
+- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
+- :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
 
 # ساهم
-- :bug: [أبلغ عن خطأ](https://github.com/PreMiD): ساعدنا على سحق تلك الأخطاء.
-- :bulb: [اقترح ميزة جديدة](https://discord.premid.app/): نحن بحاجة إلى أفكارك!
-- :heart: [تبرع](https://www.patreon.com/Timeraa): قدم تبرع صغير أو كن راعيا لهذا المشروع الرائع!
-- :globe_with_meridians: [اللغات](https://translate.premid.app): ساعد مستخدمين آخرين في استخدام PreMiD بلغتهم الأم.
+- :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
+- :bulb: [Suggest a New Feature](https://discord.premid.app/): We need your ideas!
+- :heart: [Donate](https://www.patreon.com/Timeraa): Make a small donation or become a sponsor of this wonderful project!
+- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
