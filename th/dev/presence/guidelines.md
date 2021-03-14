@@ -1,0 +1,334 @@
+---
+title: แนวทางในการสร้าง Presence
+description: กฏผู้พัฒนาทุกอย่างของ Presence ต้องปฏิบัติตามเพื่อได้รับการเพิ่ม Presence
+published: true
+date: 2021-03-06T15:01:04.274Z
+tags:
+editor: markdown
+dateCreated: 2021-02-26T21:54:41.573Z
+---
+
+<div align="center">
+    <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
+    <h3 style="font-size: 2rem; margin-bottom: 0">แนวทางในการสร้าง Presence</h3>
+    <h4 style="margin-top: 0">ฉบับปรับปรุงครั้งที่ 3</h4>
+    <br />
+</div>
+
+# แนวทาง
+
+เพื่อที่จะเผยแพร่ Presence ไปยัง [ที่เก็บของ Presence ทั้งหมด](https://github.com/PreMiD/Presences/), เราต้องการให้คุณปฏิบัติตามหลักเกณฑ์ที่กำหนด. สำหรับบางคนกฎนี้อาจเข้มงวดและรุนแรงเกินไป อย่างไรก็ตามการดำเนินการตามกฎเหล่านี้จะทำให้เราและผู้ใช้จะไม่พบเจอปัญหาใด ๆ
+
+# การสร้าง
+
+กฏทั่วไปสําหรับการพัฒนา Presence มีดังนี้
+
+- Presence **ต้อง** เกี่ยวข้องกับเว็ปไซต์ที่คุณพัฒนา
+- Presence **ไม่สามารถ** สร้างได้สําหรับเว็ปไซต์ผิดกฏหมาย (เช่น เกี่ยวกับความเครียด, การขายยาเสพติด, การอนาจารเด็ก, หรืออื่นๆ)
+- โครงสร้างไฟล์ต้องบริสุทธิ์เเละมีการจัดการ, อย่าใส่ไฟล์ที่ไม่เกี่ยวข้อง (เช่น vscode เเละโฟลเดอร์ git, รูปภาพเเละไฟล์ต่างๆ)
+- คุณต้องมีโครงสร้างไฟล์ที่เหมาะสม, สําหรับการร่าง **ไม่**อนุญาติ
+- Presence สําหรับเว็บไซต์ (`.onion` TLDs) หรือเว็บไซต์ฟรี Host หรือ Domain ฟรี (เช่น `.tk` [ทุก Domain ฟรี], `.RF`,`GD`,อื่นๆ) ที่**ไม่ได้รับอนุญาติ**, เเต่สามารถใช้ได้ถ้ามีหลักฐานสําหรับการจ่ายเงินสําหรับ Domain
+- The domain of the presence must be at least 2 months old.
+- Presence ที่เล็งการพัฒนาด้วยเบราว์เซอร์ภายในเช่น (Chrome Web Store, `chrome://`, `about:` หรือหน้าอื่นๆนั้น) **ไม่อนุญาติ** เนื่องจากต้องเปิดโหมดทดลองของเบราว์เซอร์นั้นๆ เเละอาจะเกิดความเสียหายของเบราว์เซอร์ได้
+- Presence ที่มีเพียง Domain เดียวจะ**ไม่อนุญาติ**, เนื่องจากอาจจะทําให้หน้าอื่นขัดข้องได้เช่น (หน้าหลัก), เเต่สามารถทําได้เเค่นโยบายเเละหน้าติดต่อ (เนื้อหาที่ไม่ได้ใช้บ่อยๆ) หรือ เนื้อหาที่ไม่เกี่ยวข้อง (เช่น หน้า Wiki)
+- Presences ของวิทยุออนไลน์ อนุญาติเฉพาะถ้าวิทยุผู้ใช้ฟังขั้นตํ้่า 100 คนต่ออาทิตย์เเละฟัง 15 คนพร้อมกัน
+- Presence คุณภาพตํ่า (หรือเนื้อหาน้อย)นั้น **ไม่อนุญาติ** (เช่น เเสดงเเค่รูป/โลโก้ เเต่ข้อความตรง Presence ไม่เปลี่ยน)
+- จากการที่เราปล่อยอัพเดดปุ่ม, เรามีกฎเล็กๆน้อยๆในการใช้พวกมัน:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in `state` or `details`.
+- รวมถึงไฟล์ `dist`โฟลเดอร์, `presence.ts` ไฟล์, `iframe.ts` ไฟล์, เเละ `metadata.json`ไฟล์เป็นที่จําเป็น ดังนั้นผลลัพธ์จะเป็นสิ่งที่แสดงตามโครงสร้างต่างๆ:
+
+```bash
+presence
+├── dist
+│   └── metadata.json
+├── presence.ts
+└── tsconfig.json
+```
+
+หรือถ้าคุณใช้ไฟล์ `iframe.ts`:
+
+```bash
+presence
+├── dist
+│   └── metadata.json
+├── presence.ts
+├── iframe.ts
+└── tsconfig.json
+```
+
+## [**metadata.json**](/dev/presence/metadata)
+
+> เพื่อความสะดวกสําหรับการพัฒนา, เรามีโครงสร้างให้ ซึงคุณสามารถใช้เพื่อตรวจสอบความสมบูรณ์ของไฟล์ `metadata`ได้ นี้เป็นทางเลือกทั้งหมด เเละไม่จําเป็นระหว่างการตรวจสอบ
+
+> ขอแนะนำให้คุณจัดระเบียบไฟล์ `metadata` ในรูปเเบบข้างล่างนี้, และคุณต้องมีชื่อบริการที่ถูกต้องตามหลักไวยากรณ์, คําอธิบาย, เเท๊ก, เเละ การตั่งค่าต่างๆ สิ่งที่ไม่ได้จัดระเบียบการข้อกําหนดจะ**ไม่ผ่านการอนุมัติ**
+
+> Presence สําหรับเว็บไซต์ที่มีเนื้อหาที่ 18+ **ต้องมี **`nsfw เเท๊ก`, เเละ โลโก้หรือภาพย่อต้อง **ไม่เกี่ยวกับเนื้อหาพวกนี้**
+
+เเต่ละ Presence มีตัวบอกไฟล์ เรียกว่า `metadata.json`, metadata ต้องได้มาตรฐานและตัวอย่างของไฟล์นี้สามารถดูได้ด้านล่าง:
+
+```json
+{
+  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "author": {
+    "name": "USER",
+    "id": "ID"
+  },
+  "contributors": [
+    {
+      "name": "USER",
+      "id": "ID"
+    }
+  ],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
+  "description": {
+    "en": "DESCRIPTION"
+  },
+  "url": "URL",
+  "version": "VERSION",
+  "logo": "URL",
+  "thumbnail": "URL",
+  "color": "#HEX000",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
+  "regExp": "REGEXP",
+  "iFrameRegExp": "REGEXP",
+  "iframe": false,
+  "readLogs": false,
+  "settings": [
+    {
+      "id": "multiLanguage",
+      "multiLanguage": true
+    }
+    {
+      "id": "ID",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME FREE ICON",
+      "value": true
+    },
+    {
+      "id": "ID",
+      "if": {
+        "ID": true
+      },
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME FREE ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
+    },
+    {
+      "id": "ID",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME FREE ICON",
+      "value": 0,
+      "values": ["1", "2", "etc."]
+    }
+  ]
+}
+```
+
+> If a field is listed as optional on the [documentation](https://docs.premid.app/en/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (เช่น Presence ไม่ต้องการ iframe ไม่ต้องใส่ `iframe`ลงไป)
+
+> รูปภาพในไฟล์ `metadata` ต้องเป็นลิงค์จาก `i.imgur.com` Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
+
+A list of fields and their rules are listed below:
+
+### **`$schema`**
+
+- The schema _key_ **must** include a dollar sign at the beginning of it, this will signal your text editor that you want to validate your JSON file against a model. _As stated earlier, you do not need to include a schema, but if you include it you must take this into account._
+
+### **`author`**
+
+- The ID _value_ **must** be your Discord snowflake ID. You can get it by enabling [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Please do **not** confuse this with your application ID, which is only for your presence._
+
+### **`*contributors`**
+
+- Do **not** add yourself as a contributor, and do not add someone else as a contributor unless they have helped with the presence.
+
+### **`service`**
+
+- The service name **must** be the name of the presence directory. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
+- You **cannot** use the url as the service name unless the website uses the url as its official name. If the name is not descriptive and can be considered vague, using the url is **required**. (for e.g., `YouTube` is permitted because that is the official name and is descriptive, while `youtube.com` is not. `Top` is a non-descriptive name, so using the url `top.gg` is **required**.)
+- If service has some explicit branding rules of their name, you should follow them.
+
+### **`*altnames`**
+
+- **Only** use this in scenarios where a website goes under multiple official names (e.g. Pokémon and 포켓몬스터). _Shortened_ versions of service names go under `tags`.
+
+### **`description`**
+
+- **All** presences are **required** to have an English description regardless of the website's prefered language.
+- Do **not** try and translate the description yourself unless you know that language, translators will modify your `metadata.json` and change the descriptions if necessary.
+
+### **`url`**
+
+- The url **must** be a string if the website only uses one domain. If the website uses multiple, make this an array and specify each one.
+- Do **not** include protocols in the url (for e.g., `http` or `https`), and do not include query parameters in the url (for e.g., `www.google.com/search?gws_rd=ssl` which should be `www.google.com`)
+
+### **`version`**
+
+- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Anything else like `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` or changing `1.0.0` to `2.0.0` on a bug fix/small change is **not** permitted.
+- The version **must** always start at `1.0.0` unless told otherwise, other versions will **not** be permitted.
+
+### **`logo`**
+
+- โลโก้**ต้อง**เป็นภาพสี่เหลี่ยมจัตุรัสที่มีอัตราส่วน ` 1: 1 `.
+- รูปภาพ**จำเป็น**ต้องมีความละเอียดขั้นต่ำ `512x512` พิกเซล. คุณสามารถเพิ่มขนาดของมันโดยใช้เครื่องมืออย่างเช่น [waifu2x](http://waifu2x.udp.jp/).
+
+### **`รูปขนาดย่อ`**
+
+- The thumbnail **should** preferably be a [wide promotional card](https://i.imgur.com/3QfIc5v.jpg) or a [screenshot](https://i.imgur.com/OAcBmwW.png) if the first is **not** available.
+
+### **`สี`**
+
+- The color **must** be a hexadecimal value between `#000000` and `#FFFFFF`.
+- The color string **must** be prepended with a hash symbol.
+
+### **`tags`**
+
+- **All** presences are required to have at least _one_ tag.
+- Tags must **not** include any spaces, slashes, single/double quotation marks, Unicode characters, and should always be lowercase.
+- Tags **should** preferably include alternate service names to make searching easier (for e.g., if an Amazon presence had included AWS support, it would have its tags like `amazon-web-services` and `aws`)
+- You are **required** to add an `NSFW` tag if the presence is for an NSFW website.
+
+### **`หมวดหมู่`**
+
+- The category **must** be one of the following listed on the [documentation](/dev/presence/metadata#presence-categories).
+- The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
+
+### **`*regExp`** <br /> **`*iFrameRegExp`**
+
+- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](/dev/presence/metadata#testing).
+
+### **`readLogs`**
+
+- Must be `boolean` value (e.g. `true` or `false`).
+- Enables logs for your presence.
+
+### **`คำเตือน`**
+
+- Enables warning icon for prompting user that this presence needs more steps than only adding presence.
+- Example of presence using this metadata variable is `VLC`.
+
+### **`การตั้งค่า`**
+
+- If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
+- The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
+- ถ้าคุณกำลังใช้ `multiLanguage` นี่คือสิ่งที่คุณควรรู้:
+  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
+  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
+  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+
+## [**presence.ts**](/dev/presence/class)
+
+> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
+
+> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+
+Here is a list of rules you must follow when writing your `presence.ts` file:
+
+- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
+- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
+- It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
+- The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
+- You are **not** allowed to access `localStorage`.
+- When accessing cookies for stored data, please prefix the key with `PMD_`.
+- You many only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
+- You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
+
+## [**tsconfig.json**](/dev/presence/tsconfig)
+
+> **ห้าม**เขียนไฟล์ `tsconfig.json` ของคุณเอง, ใช้สิ่งที่ให้ไว้ใน[เอกสาร](/dev/presence/tsconfig)เท่านั้น.
+
+## การปรับเปลี่ยน
+
+> เมื่อมีการเปลี่ยนแปลงใน **presence.ts**, **iframe.ts** หรือ **metadata.json** คุณ**ต้อง**เปลี่ยนเวอร์ชั่นใน **metadata** เป็นเวอร์ชั่นที่สูงขี้นจากเวอร์ชั่นก่อนหน้า.
+
+ในบางสถานการณ์ Presence อาจทำบางอย่างที่ไม่คาดคิดหรืออาจใช้การเปลี่ยนแปลงนี้เพื่อปรับปรุงฟังก์ชันการทำงาน. นี่คือกฎทั้งหมดทีคุณจะ**ต้อง**ปฏิบัติตามระหว่างการปรับเปลี่ยน Presence.
+
+- คุณ**ไม่**ได้รับอนุญาตในการเขียน Presence ใหม่หรือเปลี่ยนแปลงผู้เขียนของมัน. ถ้าผู้เขียนของ Presence ถูกแบน จากเซิฟเวอร์อย่างเป็นทางการ หรือ ไม่ได้ทำการเปลี่ยนแปลงที่จำเป็นภายในหนี่งเดือน, คุณสามารถติดต่อผู้ตรวจทานเพื่อดูว่าคุณสามารถเขียน Presence ใหม่ได้หรือไม่.
+- ถ้าคุณทำการเปลี่ยนแปลงไปยัง Presence และ เปลี่ยนโค้ดทั้งหมดของ Presence อย่างน้อย**หนึ่งในสี่**, คุณจะได้รับอนุญาตในการเพิ่มตัวคุณเองในฐานะผู้ที่มีส่วนช่วย. ติดต่อผู้ตรวจทานสำหรับข้อมูลเพิ่มเติมเกี่ยวกับเรื่องนี้.
+- Anyone may provide hotfixes to fix bugs; however, try **not** to make changes that are **not** required. Valid modifications include general fixes (code and typos), additions (descriptions and tags), missing files, etc. Do **not** change images if they are not outdated and are in specifications.
+
+# Verification
+
+> **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`.
+
+> If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile.
+
+> Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created.
+
+> **Always** have an up-to-date fork before creating your pull request. This will help limit false positives from the checks.
+
+The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
+
+<div>
+  <h2 style="font-size: 2rem; margin-bottom: 0;">ผู้ตรวจทาน Presence</h2>
+  
+  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>  <a href="https://github.com/Timeraa"><img src="https://github.com/Timeraa.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>  <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <br />
+</div>
+
+## `Restrictions`
+
+Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
+
+In this scenerio, the following changes will occur:
+
+- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). The application id for each presence will be recreated under the new owner's name.
+- All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
+- Tickets created under your name regarding presence development will be deleted.
+
+## `การรีวิว`
+
+บางสิ่งที่คุณควรรู้หลังจากที่เปิด pull request:
+
+- It takes 2 reviewers to merge a pull request.
+- ถ้า pull request ไม่มีการเคลื่อนไหวเป็นระยะเวลา 7 วันคำขอจะถูกปิดทันที.
+- All checks **must** be passed in order to merge.
+- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
+- ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
+
+## `Checks`
+
+![Checks](https://i.imgur.com/oqAakOc.png)
+
+ปัจจุบัน, Presence จะต้องผ่านการตรวจสอบ 3 ขั้นตอน. การตรวจสอบเหล่านี้จะช่วยให้ผู้ตรวจทานตัดสินใจว่า Presence นี้เหมาะสมกับการที่จะนำปรับใช้หรือไม่.
+
+- `Codacy` คือบอทที่จะตรวจสอบคุณภาพของโค้ด. หากคุณพบว่ามีข้อผิดพลาดเกิดขี้น, คุณ**จำเป็น**ต้องแก้ไขพวกมัน. (_คำเตือน: บอท Codacy จะถูกเลิกใช้เร็วๆนี้และคุณจะต้องดูข้อผิดพลาดจาก DeepScan เท่านั้น!_)
+- `DeepScan` คือบอทที่จะตรวจสอบคุณภาพของโค้ด. หากคุณพบว่ามีข้อผิดพลาดเกิดขี้น, คุณ**จำเป็น**ต้องแก้ไขพวกมัน.
+- `Schema Validation` จะตรวจหาข้อผิดพลาดในไฟล์ `metadata.json` ของคุณ (อย่างเช่น ช่องข้อมูลบางอย่างหายไป, ประเภทของค่าไม่ถูกต้อง, เป็นต้น). หากคุณพบว่ามีข้อผิดพลาดเกิดขี้น, คุณ**จำเป็น**ต้องแก้ไขพวกมัน. การเพิ่มช่องข้อมูล schema เข้าไปในไฟล์ `metadata.json` ของคุณจะทำให้โปรแกรมแก้ไขข้อความของคุณ (ถ้ารองรับ) แสดงข้อผิดพลาดที่เกิดขั้นในระหว่างการทำงาน.
+
+## `กฎเพิ่มเติม`
+
+- **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
+
+After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
+
+# ข้อเสนอแนะ
+ถ้าคุณมีข้อเสนอแนะเกี่ยวกับแนวทางในการสร้าง Presence ของเรา, คุณควรติดต่อเราที่ [เซิฟดิสคอร์ดของ PreMiD ](https://discord.premid.app) และเราจะไปดูพวกมัน!
+
+# ผู้ที่มีส่วนช่วยเหลือทั้งหมด
+
+`ฉบับปรับปรุงครั้งที่ 3` ของแนวทางได้เขียนและรับการสนับสนุนจากบุคคลต่อไปนี้:
+
+<div>
+<a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+</div>
+
+`ฉบับปรับปรุงครั้งที่ 2` ของแนวทางได้เขียนและรับการสนับสนุนจากบุคคลต่อไปนี้:
+
+<div>
+<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+</div>
+
+`ฉบับปรับปรุงครั้งที่ 1` ได้รับจากการดูแลจากบุคคลต่อไปนี้:
+
+<div>
+<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+</div>
