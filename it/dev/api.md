@@ -1,6 +1,6 @@
 ---
 title: API
-description: Accedi alle fonti ed esegui azioni usando l'API di PreMiD
+description: Access resources and perform actions using the PreMiD API
 published: true
 date: 2021-02-01T12:36:44.713Z
 tags:
@@ -15,7 +15,7 @@ dateCreated: 2020-06-11T18:03:59.010Z
 > {.is-info}
 
 ## API Versioning
-> L'API v2 è stato disabilitato e verrà rimosso al più presto. Si prega di utilizzare v3 per ogni futura richiesta per prevenire problemi. 
+> API v2 has been deprecated and will be removed in the near future. Please use v3 for any future request to prevent issues. 
 > 
 > {.is-danger}
 
