@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Bạn cần phần mềm sửa source code. Chúng tôi khuyên dùng Visual Studio Code. 
+> Bạn cần phần mềm sửa source code. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
