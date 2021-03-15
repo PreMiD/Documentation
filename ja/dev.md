@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> ソースコードエディターが必要です。 Visual Studio Codeをおすすめしています。 
+> ソースコードエディターが必要です。 We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
