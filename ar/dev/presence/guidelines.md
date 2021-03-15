@@ -1,7 +1,7 @@
 ---
 title: Presence قوانين الـ
 description: Rules that all presence developers must follow to have their presence added.
-published: صحيح
+published: true
 date: 2021-03-06T15:01:04.274Z
 tags:
 editor: markdown
