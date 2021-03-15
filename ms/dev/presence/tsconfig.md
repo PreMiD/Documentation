@@ -36,7 +36,7 @@ Dalam fail tatarajah akar anda akan nampak sesuatu seperti ini.
 }
 ```
 
-| Property                   | Keterangan                                                                                                                                                                          |
+| Sifat                      | Keterangan                                                                                                                                                                          |
 |:-------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **compilerOptions**        | Digunakan untuk menatarajah pengkompil, kebanyakan sifat terletak di sini.                                                                                                          |
 | module                     | Anda boleh baca lebih lanjut mengenainya di [sini](https://www.typescriptlang.org/docs/handbook/modules.html) (bahasa Inggeris).                                                    |

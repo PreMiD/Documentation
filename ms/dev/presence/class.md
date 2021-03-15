@@ -358,7 +358,7 @@ const presenceData: PresenceData = {
 };
 ```
 
-## Events
+## Peristiwa
 
 Peristiwa membolehkan anda kesan dan urus beberapa perubahan atau panggilan yang dibuat. Anda boleh melanggan peristiwa menggunakan kaedah `on`.
 

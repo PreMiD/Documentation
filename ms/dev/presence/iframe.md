@@ -23,7 +23,7 @@ Seperti Presence, `iframes` mempunyai kelas mereka sendiri yang direka untuk men
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Kod ditulis di sini...
 });
 ```
 
@@ -40,7 +40,7 @@ Dalam `iFrame`, peristiwa dijalankan dengan cara yang serupa dengan cara peristi
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Kod ditulis di sini...
 });
 ```
 
