@@ -255,7 +255,7 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 
 # Verification
 
-> **Todos os** códigos contribuíram para a loja serão licenciados sob a `Mozilla Public License 2.0`.
+> **Todo o** código que contribua para a loja será licenciado sob a `Mozilla Public License 2.0`.
 
 > If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile.
 
@@ -282,9 +282,9 @@ In this scenerio, the following changes will occur:
 - All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
 - Tickets created under your name regarding presence development will be deleted.
 
-## `Reviewing`
+## `Revisões`
 
-Algumas coisas que você deve saber após abrir uma pull request:
+Algumas coisas que deves saber após abrir um pull request:
 
 - It takes 2 reviewers to merge a pull request.
 - If a pull request is inactive for a period of 7 days, it will be promptly closed.
