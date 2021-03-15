@@ -86,14 +86,14 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left">Deve conter um objeto com o <code>name</code> e <code>id</code> na presence do programador. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
       <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). O <code>id</code> do utilizador pode ser copiado do Discord ativando o modo de
         programador e carregando com o botão direito no perfil do autor.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Sim</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
@@ -332,8 +332,8 @@ Ao fazer a sua presence, deve especificar uma categoria na qual a presence se en
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
-      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Categoria</th>
+      <th style="text-align:left">Nome</th>
       <th style="text-align:left">Descrição</th>
     </tr>
   </thead>
@@ -365,7 +365,7 @@ Ao fazer a sua presence, deve especificar uma categoria na qual a presence se en
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Outro</b></td>
+      <td style="text-align:left"><b>Outra</b></td>
       <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
     </tr>
   </tbody>
