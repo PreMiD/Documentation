@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> ต้องมีโปรแกรมแก้ไขโค้ด เราแนะนำ Visual Studio Code 
+> ต้องมีโปรแกรมแก้ไขโค้ด We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
