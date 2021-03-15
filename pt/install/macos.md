@@ -20,7 +20,7 @@ A instalação da aplicação é muito importante, uma vez que a extensão não 
 5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
 > Isto é porque não temos um Certificado de Assinatura de Código (CSC). [Apoie-nos](https://www.patreon.com/Timeraa) para financiá-lo.{.is-info}
 6. Escolha abrir quando solicitado.
-7. Conceda acesso a conexões através de **Firewall** e controle **Eventos do Sistema** quando solicitado.
+7. Conceda acesso a conexões através de **Firewall** e controlo **Eventos do Sistema** quando solicitado.
 
 A aplicação irá iniciar automaticamente. Procure o símbolo na sua barra de menu.
 
