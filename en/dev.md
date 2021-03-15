@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags: 
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/).
+> A source code editor is required. We recommend Visual Studio Code.
 {.is-info}
 
 # Installing the requirements
