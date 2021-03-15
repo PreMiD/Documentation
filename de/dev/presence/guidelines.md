@@ -235,7 +235,7 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Die Felder `smallImageKey` und `smallImageText` sollen einen zusätzlichen/zweiten Nutzen bringen (wie `playing/paused` für Video-Seiten, `browsing` für reguläre Seiten, und weitere Fälle) und nicht um Discord-Profile oder irgendwas zu bewerben, das nicht im Zusammenhang mit PreMiD steht.
 - Es ist dir **nicht** erlaubt, auf `localStorage` zuzugreifen.
 - Wenn du Cookies für gespeicherte Daten benutzt, beginne den Schlüssel mit `PMD_`
-- You many only make HTTP/HTTPS requests to `premid.app` or the presence website API. Wenn du externe Domains verwendest, musst du erklären, warum das notwendig ist. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. Wenn du externe Domains verwendest, musst du erklären, warum das notwendig ist. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (nutze z.B `delete data.startTimestamp` anstelle von `data.startTimestamp = undefined`)
 - Es ist dir **nicht**t erlaubt Presences zu schreiben, die das Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
 
