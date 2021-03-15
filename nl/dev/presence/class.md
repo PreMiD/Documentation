@@ -87,7 +87,7 @@ Je kunt de documentatie voor de `Slideshow` klasse [hier](/dev/presence/slidesho
 
 Een asynrone methode waarmee u vertaalde strings uit de extensie kunt krijgen.
 
-Je moet `Object` opgeven met sleutels die de sleutel voor teksten zijn, `keyValue` is de waarde van de tekst. Op dit eindpunt kan een lijst van vertaalde tekenreeksen worden gevonden: `https://api.premid.app/v2/langFile/presence/en/`
+Je moet `Object` opgeven met sleutels die de sleutel voor teksten zijn, `keyValue` is de waarde van de tekst. Op dit eindpunt kan een lijst van vertaalde tekenreeksen worden gevonden: `https://api.premid.app/v2/langFile/presence/nl/`
 
 ```typescript
 // Retourneert `Playing` en `Paused` strings

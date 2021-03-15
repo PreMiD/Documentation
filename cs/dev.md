@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Je vyžadován editor zdrojového kódu. Doporučujeme Visual Studio Code. 
+> Je vyžadován editor zdrojového kódu. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 

@@ -105,7 +105,7 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME FREE ICON",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -114,14 +114,14 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
         "ID": true
       },
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME FREE ICON",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME FREE ICON",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }

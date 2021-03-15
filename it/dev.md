@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> È necessario un editor di codice sorgente. Consigliamo Visual Studio Code. 
+> È necessario un editor di codice sorgente. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 

@@ -105,7 +105,7 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "icon": "FONTAWESOME FREE ICON",
       "value": true
     },
     {
@@ -114,14 +114,14 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
         "ID": true
       },
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "icon": "FONTAWESOME FREE ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "icon": "FONTAWESOME FREE ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }

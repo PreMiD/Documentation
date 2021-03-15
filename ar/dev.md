@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> مطلوب محرر كود المصدر. نحن ننصح باستخدام "فيجوال استديو كود". 
+> مطلوب محرر كود المصدر. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 

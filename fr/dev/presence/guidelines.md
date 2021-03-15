@@ -105,7 +105,7 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME FREE ICON",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -114,14 +114,14 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
         "ID": true
       },
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME FREE ICON",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME FREE ICON",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }

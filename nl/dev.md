@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Een broncode editor is vereist. Wij raden Visual Studio Code aan. 
+> Een broncode editor is vereist. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 

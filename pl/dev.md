@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Edytor kodu źródłowego jest wymagany. Zalecamy Visual Studio Code. 
+> Edytor kodu źródłowego jest wymagany. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
