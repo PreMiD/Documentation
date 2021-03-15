@@ -10,14 +10,14 @@ A instalação da aplicação é muito importante, uma vez que a extensão não 
 
 # Instalar
 1. Vai à nossa página de downloads [clicando aqui](https://premid.app/downloads).
-2. Escolha **Firefox**.
-3. Pesquise por `about:addons`.
-4. Clique no icon da engrenagem pequena no canto superior direito.
-5. Escolha **Instalar complemento a partir de ficheiro...**.
-6. Selecione o ficheiro que baixou recentemente.
+2. Escolhe **Firefox**.
+3. Pesquisa por `about:addons`.
+4. Clica no ícone da engrenagem pequena no canto superior direito.
+5. Escolhe **Instalar complemento a partir de ficheiro...**.
+6. Seleciona o ficheiro que descarregaste recentemente.
 7. Aceita a instalação clicando em **Adicionar**.
 
-> Não se esqueça de [adicionar a **aplicação**](/install). 
+> Não te esqueças de [instalar a **aplicação**](/install). 
 > 
 > {.is-warning}
 
