@@ -363,7 +363,7 @@ Les événements vous permettent de détecter et de gérer certains changements 
 
 ```typescript
 presence.on("UpdateData", async () => {
-    // Faire quelque chose quand les données sont mises à jour.
+  // Faire quelque chose quand les données sont mises à jour.
 });
 ```
 
