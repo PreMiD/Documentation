@@ -87,7 +87,7 @@ You can find the documentation for the `Slideshow` class [here](/dev/presence/sl
 
 An asyncronous method that allows you to get translated strings from extension.
 
-You must provide `Object` with keys being the key for string, `keyValue` is the string value. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+You must provide `Object` with keys being the key for string, `keyValue` is the string value. অনুবাদ করা স্ট্রিংগুলোর একটি তালিকা পাওয়া যাবে এই এন্ডপয়েন্টে: `https://api.premid.app/v2/langFile/presence/en/`
 
 ```typescript
 // Returns `Playing` and `Paused` strings
