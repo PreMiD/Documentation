@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Penyunting kod sumber diperlukan. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Penyunting kod sumber diperlukan. Kami mengesyorkan [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
