@@ -201,7 +201,7 @@ An example of that file can be found below.
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
-#### การทดสอบ
+#### สำหรับทดสอบ
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
