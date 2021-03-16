@@ -38,6 +38,6 @@ tags:
 
 ম্যাকওএস এর আগের ভার্সনগুলোর ধাপসমূহ:
 1. ওপেন করো "System Preferences".
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+2. যাও "Security & Privacy" ট্যাবে।
+3. লক এ ক্লিক করো এবং তোমার পাসওয়ার্ড দাও অথবা তোমার ফিঙ্গারপ্রিন্ট স্ক্যান করো যাতে তুমি চেঞ্জ করতে পারো।
+4. সেটিং এ গিয়ে "Allow apps downloaded from" এর "App Store and identified developers" থেকে নাও শুধুমাত্র "App Store" - এ।
