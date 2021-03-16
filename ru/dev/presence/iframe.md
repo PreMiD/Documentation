@@ -23,7 +23,7 @@ tags:
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Код идет здесь...
 });
 ```
 
@@ -40,7 +40,7 @@ iframe.on("UpdateData", async () => {
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Код идет здесь...
 });
 ```
 
