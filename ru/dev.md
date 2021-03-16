@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Требуется редактор исходного кода. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Требуется редактор исходного кода. Мы рекомендуем [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
