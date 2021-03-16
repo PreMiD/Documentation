@@ -400,7 +400,7 @@ The website you are developing on is automatically reloading every time you save
 # Files explained
 
 - [คลาส Presence](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
+- [คลาส Slideshow](/dev/presence/slideshow)
 - [คลาส iFrame](/dev/presence/iframe)
 - [ไฟล์ metadata](/dev/presence/metadata)
 - [การกำหนดค่าไฟล์ Typescript](/dev/presence/tsconfig ""){.links-list}
