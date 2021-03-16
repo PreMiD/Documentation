@@ -70,7 +70,7 @@ presence
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+$schema": "https://schemas.premid.app/metadata/1.3 ",
   "author": {
     "name": "USER",
     "id": "ID"
@@ -87,9 +87,9 @@ presence
     "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "версия": "ВЕРСИЯ",
+  "логотип": "URL",
+  "Эскиз": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
   "category": "CATEGORY",
@@ -99,13 +99,13 @@ presence
   "readLogs": false,
   "settings": [
     {
-      "id": "multiLanguage",
-      "multiLanguage": true
-    }
+      "id": "ID",
+      "Мультиязык": истина
+    },
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "Иконка": "Иконка FONTAWESOME ICON",
       "value": true
     },
     {
@@ -115,15 +115,18 @@ presence
       },
       "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
+      "value": "\"%song%\" от %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": 0,
-      "values": ["1", "2", "etc."]
+      "Иконка": "Иконка FONTAWESOME ICON",
+      "значение": 0,
+      "значения": ["1", "2", "и т.д. ]
+    }
+  ]
+}
     }
   ]
 }
