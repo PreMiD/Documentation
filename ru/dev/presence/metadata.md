@@ -17,53 +17,52 @@ dateCreated: 2020-06-11T18:04:52.965Z
 ```typescript
 {
   "author": {
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "СЕРВИС",
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ"
   },
-  "url": "URL",
+  "url": "ССЫЛКА",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "version": "ВЕРСИЯ",
+  "logo": "ССЫЛКА",
+  "thumbnail": "ССЫЛКА",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "КАТЕГОРИИ",
   "iframe": false,
   "settings": [
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": true
-    },
-    {
-      "id": "ID",
-      "if": {
-        "ID": true
-      },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
-    },
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": 0,
-      "values": ["1", "2", "etc."]
-    }
-  ]
+        { 
+            "id": "ID",
+            "title": "ВИДИМЫЙ ЗАГОЛОВОК",
+            "icon": "ИКОНКА",
+            "value": true
+        },
+        {
+            "id": "ID",
+            "if": {
+                "ID": true
+            },
+            "title": "ВИДИМЫЙ ЗАГОЛОВОК",
+            "icon": "ИКОНКА",
+            "value": "\"%song%\" by %artist%",
+            "placeholder": "use %song% or %artist%"
+        },
+        {
+            "id": "ID",
+            "title": "ВИДИМЫЙ ЗАГОЛОВОК",
+            "icon": "ИКОНКА",
+            "value": 0,
+            "values": ["1", "2", "etc."]
+        }
+    ]
 }
 ```
 
@@ -211,33 +210,33 @@ PreMiD - это полиусиленный сервис, что означает
 ## Настройки присутствия
 Настройте интерактивные настройки, чтобы пользователи могли настраивать присутствие!
 ```typescript
-"settings": [
+"настройки": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Смотрите https://docs.premid. pp/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
     "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "icon": "FONTAWESOME ICON", //Пример "fas fa-info"
+    "value": true //Boolean value сделает переключатель вкл/выкл с значением по умолчанию
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Если другое значение равно этому значению (true/false/0/1/etc. затем показать эту кнопку
     },
     "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "Иконка": "Иконка FONTAWESOME",
+    "значение": "\"%song%\" %artist%", //Ввод в строку сделает настройку ввода-вывода, где можно использовать пользовательские входы.
+    "placeholder": "use %song% or %artist%" //Когда введено поле ввода пусто, оно будет показывать этот серый цвет
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
+    "title": "заглавие",
     "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "value": 0, //Значение по умолчанию селектора
+    "values": ["1", "2", "etc. ] //Выберете какой из них вы хотите
   }
 ]
 ```
