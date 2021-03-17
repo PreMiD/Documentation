@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Se requiere un editor de código fuente. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Se requiere un editor de código fuente. Recomendamos [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
