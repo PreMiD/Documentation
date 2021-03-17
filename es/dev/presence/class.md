@@ -357,7 +357,7 @@ const presenceData: PresenceData = {
 };
 ```
 
-## Events
+## Eventos
 
 Los eventos permiten detectar y manejar algunos cambios o llamadas realizadas. Puede suscribirte a eventos utilizando el método `on`.
 
