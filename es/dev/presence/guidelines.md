@@ -289,26 +289,26 @@ Algunas cosas que deberías saber después de abrir una solicitud de pull reques
 - Se necesitan 2 revisores para hacer un merge a un pull request.
 - Si un pull request está inactivo en un periodo de 7 días, será cerrado inmediatamente.
 - Todas las revisiones **deben** ser superadas para ejecutar el merge.
-- ⚠️**Debes** proporcionar nuevas capturas de pantalla sin alterar (tomadas por ti) mostrando una comparación lado a lado de tu perfil y el sitio web para demostrar que tu presence funciona. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
-- ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
+- ⚠️**Debes** proporcionar nuevas capturas de pantalla sin alterar (tomadas por ti) mostrando una comparación lado a lado de tu perfil y el sitio web para demostrar que tu presence funciona. _Se permite unir varias capturas de pantalla en una única_ Esto se aplica en creaciones y modificaciones.
+- ⚠️También es **requerido** incluir capturas de pantalla de la configuración de la presence si has implementado esta función. Se puede ver un ejemplo [aquí](https://imgur.com/a/OD3sj5R).
 
 ## `Verificaciones`
 
 ![Verificaciones](https://i.imgur.com/oqAakOc.png)
 
-Currently, a presence goes through 3 separate stages of checks. Todas estas comprobaciones ayudan a que los verificadores determinen si su presence es adecuada para su implementación.
+Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas estas comprobaciones ayudan a que los verificadores determinen si su presence es adecuada para su implementación.
 
-- `Codacy` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. (_WARNING: Codacy bot will be deprecated soon and you will need check errors only from DeepScan!_)
-- `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
-- `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
+- `Codacy` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos. (_ADVERTENCIA: El bot Codacy quedará obsoleto pronto y solo se necesitará comprobar los errores de DeepScan!_)
+- `DeepScan` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos.
+- `Schema Validation` escaneará su archivo `metadata.json` en busca de cualquier error (por ejemplo, campos faltantes, tipos de valores no válidos, etc.). Si alguna vez recibes errores de nuevos problemas, **debes** corregirlos. Añadir un campo schema al archivo `metadata.json` permitirá a tu editor de texto (si es compatible) mostrar estos errores durante el desarrollo.
 
-## `Additional Rules`
+## `Reglas Adicionales`
 
-- **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
+- Asegúrate **iempre** de iniciar la presence en la carpeta más apropiada, si su nombre comienza con _cualquier_ letra latina entonces debe estar bajo su coincidencia alfabética (p.e. `D/dアニメストア` o `G/Google`). Cualquier otro carácter Unicode/no latino **debe** estar bajo la carpeta `#` (por ejemplo, `#/巴哈姆特.`) y los números bajo la carpeta `0-9` (por ejemplo, `0-9/4anime`).
 
 Después de cumplir con todas las directrices, revisiones y comprobaciones adecuadas, su presencia será añadida.
 
-# Suggestions
+# Sugerencias
 If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
 
 # Contribuidores
