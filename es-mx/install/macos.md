@@ -17,7 +17,7 @@ La instalación de la aplicación es muy importante, ya que la extensión no pue
 2. Escoge **OS X**.
 3. Extrae el archivo si es necesario.
 4. Abre el instalador.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
+5. Si instalas PreMiD por primera vez puede que aparezca una **alerta de seguridad**. Si lo hace, sigue los pasos para [Habilitar apps de desarrolladores desconocidos](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
 > Esto se debe a que no tenemos un Certificado de Firma de Código (Code Signing Certificate, CSC). [Apoya](https://www.patreon.com/Timeraa) a financiarlo.{.is-info}
 6. Elige abrir cuando se solicite.
 7. Concede acceso a conexiones a través del **Cortafuegos** y controla **Eventos del Sistema** cuando se le solicite.
@@ -30,14 +30,14 @@ La aplicación se iniciará automáticamente. Comprueba el símbolo en la barra 
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## Permitir aplicaciones de desarrolladores desconocidos
+Pasos para macOS Big Sur (11.0+):
+1. Haz clic derecho en nuestro instalador.
+2. Pulsa abrir en el menú desplegable.
+3. Haz clic en abrir en el popup.
 
-Steps for older macOS versions:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+Pasos para versiones anteriores de macOS:
+1. Abre Preferencias del Sistema.
+2. Ve a la pestaña Seguridad & Privacidad.
+3. Pulsa en el candado e introduce tu contraseña o escanea la huella dactilar para que puedas realizar cambios.
+4. Cambia la configuración de 'Permitir aplicaciones descargadas de' a 'App Store y desarrolladores identificados' de 'App Store'.
