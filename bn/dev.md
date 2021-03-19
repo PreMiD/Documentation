@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> একটি কোড এডিটর প্রয়োজন। আমরা পরামর্শ দেই Visual Studio Code - এর। 
+> একটি কোড এডিটর প্রয়োজন। আমরা পরামর্শ দেই [Visual Studio Code](https://code.visualstudio.com/) - এর। 
 > 
 > {.is-info}
 
