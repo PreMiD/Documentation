@@ -196,7 +196,7 @@ const logs = await presence.getLogs();
 console.log(logs); // Журнал последних 100 логов (в массиве).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Примечание:** Требует `readLogs` к быть `true` в `metadata.json` файл.
 
 ### `info(String)`
 

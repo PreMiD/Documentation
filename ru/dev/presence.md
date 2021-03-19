@@ -68,40 +68,34 @@ dateCreated: 2020-06-11T18:04:02.843Z
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "ПОЛЬЗОВАТЕЛЬ",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "СЕРВИС",
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ"
   },
-  "url": "URL",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "url": "ССЫЛКА",
+  "version": "ВЕРСИЯ",
+  "logo": "ССЫЛКА",
+  "thumbnail": "ССЫЛКА",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "КАТЕГОРИЯ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
-  "readLogs": false,
   "settings": [
     {
       "id": "ID",
-      "multiLanguage": true
-    },
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
+      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
       "value": true
     },
     {
@@ -109,20 +103,17 @@ dateCreated: 2020-06-11T18:04:02.843Z
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
+      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
+      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
-    }
-  ]
-}
 ```
 
 Пожалуйста, скопируйте код выше и поместите его в файл `metadata.json`. Теперь нужно изменить значения свойств. Пожалуйста, обратите внимание, что следующие свойства необязательны для использования в метаданных `. son` файл, если вы не планируете его использовать.
