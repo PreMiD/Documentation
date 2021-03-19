@@ -341,27 +341,27 @@ Cuando haces tu Presence, debes especificar de que categoría es. Esta es una li
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
-      <td style="text-align:left"><b>Games</b></td>
+      <td style="text-align:left"><b>Juegos</b></td>
       <td style="text-align:left">Cualquier sitio web que tenga contenido relacionado con juegos como <code>Kahoot</code> o <code>Skribbl.io</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
-      <td style="text-align:left"><b>Music</b></td>
+      <td style="text-align:left"><b>Música</b></td>
       <td style="text-align:left">Estos son sitios web que ofrecen contenido relacionado con la música, ya sea streaming o descarga.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
-        <td style="text-align:left"><b>Socials</b></td>
+        <td style="text-align:left"><b>Sociales</b></td>
       <td style="text-align:left">Sitios web que se utilizan con el propósito de crear y compartir contenido o para participar en otras formas de redes sociales.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Videos & Streams</b></td>
+        <td style="text-align:left"><b>Videos y Streams</b></td>
       <td style="text-align:left">Sitios web que sirven con propósito de proporcionar videos y streams.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Other</b></td>
+      <td style="text-align:left"><b>Otras</b></td>
       <td style="text-align:left">Cualquier cosa que no caiga dentro de una categoría específica enumerada arriba.</td>
     </tr>
   </tbody>
