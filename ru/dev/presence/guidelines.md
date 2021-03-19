@@ -70,7 +70,7 @@ presence
 
 ```json
 {
-$schema": "https://schemas.premid.app/metadata/1.3 ",
+  "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
     "name": "USER",
     "id": "ID"
@@ -87,9 +87,9 @@ $schema": "https://schemas.premid.app/metadata/1.3 ",
     "en": "DESCRIPTION"
   },
   "url": "URL",
-  "версия": "ВЕРСИЯ",
-  "логотип": "URL",
-  "Эскиз": "URL",
+  "version": "VERSION",
+  "logo": "URL",
+  "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
   "category": "CATEGORY",
@@ -99,13 +99,13 @@ $schema": "https://schemas.premid.app/metadata/1.3 ",
   "readLogs": false,
   "settings": [
     {
-      "id": "ID",
-      "Мультиязык": истина
-    },
+      "id": "multiLanguage",
+      "multiLanguage": true
+    }
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "Иконка": "Иконка FONTAWESOME ICON",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -115,18 +115,15 @@ $schema": "https://schemas.premid.app/metadata/1.3 ",
       },
       "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" от %artist%",
+      "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "Иконка": "Иконка FONTAWESOME ICON",
-      "значение": 0,
-      "значения": ["1", "2", "и т.д. ]
-    }
-  ]
-}
+      "icon": "FONTAWESOME ICON",
+      "value": 0,
+      "values": ["1", "2", "etc."]
     }
   ]
 }
@@ -207,10 +204,10 @@ $schema": "https://schemas.premid.app/metadata/1.3 ",
 
 ### **`readLogs`**
 
-- Должно быть `логическое значение` (например, `true` или `false`).
+- Must be `boolean` value (e.g. `true` or `false`).
 - Включает журналы для вашего присутствия.
 
-### **`внимание`**
+### **`warning`**
 
 - Включает предупреждающий значок для запроса пользователю, что этому присутствию требуется больше шагов, чем только добавление присутствия.
 - Пример присутствия, используя эту переменную метаданных, - `VLC`.
