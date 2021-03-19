@@ -210,25 +210,25 @@ PreMiD - это полиусиленный сервис, что означает
 ## Настройки присутствия
 Настройте интерактивные настройки, чтобы пользователи могли настраивать присутствие!
 ```typescript
-"настройки": [
+"settings": [
   {
     "id": "ID",
-    "multiLanguage": true //Смотрите https://docs.premid. pp/dev/presence/metadata#multilanguage
+    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
     "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Пример "fas fa-info"
-    "value": true //Boolean value сделает переключатель вкл/выкл с значением по умолчанию
+    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
+    "value": true //Boolean value will make it an on/off switch with the value as the default value
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //Если другое значение равно этому значению (true/false/0/1/etc. затем показать эту кнопку
+      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
     },
     "title": "DISPLAY TITLE",
-    "Иконка": "Иконка FONTAWESOME",
-    "значение": "\"%song%\" %artist%", //Ввод в строку сделает настройку ввода-вывода, где можно использовать пользовательские входы.
+    "icon": "FONTAWESOME ICON",
+    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
     "placeholder": "use %song% or %artist%" //Когда введено поле ввода пусто, оно будет показывать этот серый цвет
   },
   {
