@@ -105,7 +105,7 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "icon": "FONTAWESOME FREE ICON",
       "value": true
     },
     {
@@ -113,15 +113,15 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -207,12 +207,12 @@ Hieronder vindt u een lijst met velden en hun regels:
 - Moet `boolean` waarde zijn (bijvoorbeeld `true` or `false`).
 - Schakelt logs in voor je presence.
 
-### **`waarschuwing`**
+### **`warning`**
 
 - Zet het waarschuwingspictogram aan om de gebruiker aan te geven dat deze presence meerdere stappen vereist dan alleen de presence toe te voegen.
 - Een voorbeeld van een presence met deze metadatavariabele is `VLC`.
 
-### **`instellingen`**
+### **`settings`**
 
 - Als je besluit om een indelingsstring te maken (bijvoorbeeld `%song% by %artist%`), moet je de variabelen omgeven door een procentteken aan beide zijden. Variabelen zoals `%var`, `var%`, of `%%var%%` en alles ertussenin, zijn **niet** toegestaan omwille van normalisatie.
 - De namen van de instellingen mogen **niet** in alle hoofdletters staan. Namen zoals `LAAT BROWSING STATUS ZIEN` zullen **niet** toegestaan zijn; Namen zoals `Laat Browsing Status Zien` of `Laat browsing status zien` zijn echter toegestaan.

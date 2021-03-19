@@ -358,7 +358,7 @@ const presenceData: presenceData = {
 };
 ```
 
-## Events
+## Evenementen
 
 Events stellen je in staat om wijzigingen of oproepen die zijn gemaakt te detecteren en te verwerken. Je kunt je abonneren op event met behulp van `on` methode.
 
