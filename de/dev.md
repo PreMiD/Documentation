@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Ein Quellcode-Editor ist erforderlich. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Ein Quellcode-Editor ist erforderlich. Wir empfehlen [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
