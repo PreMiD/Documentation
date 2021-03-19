@@ -213,22 +213,22 @@ PreMiD - это полиусиленный сервис, что означает
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Видеть https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "НАЗВАНИЕ ДИСПЛЕЯ",
+    "icon": "FONTAWESOME ЗНАЧОК", //Пример "fas fa-info"
+    "value": true //Логическое значение сделает его переключателем включения / выключения со значением в качестве значения по умолчанию.
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Если другой параметр равен этому значению (true/false/0/1/etc.) Покажите эту кнопку
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
+    "title": "НАЗВАНИЕ ДИСПЛЕЯ",
+    "icon": "FONTAWESOME ЗНАЧОК",
+    "value": "\"%song%\" by %artist%", //Ввод строки сделает настройку входной, где вы можете использовать пользовательский ввод.
     "placeholder": "use %song% or %artist%" //Когда введено поле ввода пусто, оно будет показывать этот серый цвет
   },
   {
