@@ -18,7 +18,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-warning}
 
-- [الإرشادات](https://docs.premid.app/dev/presence/guidelines)
+- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # الهيكل
@@ -156,7 +156,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">يجب أن تحتوي على أوبجكت مع <code>إسم</code> و <code>أيدي</code> مطور الpresence. <code>name</code> is your Discord username without the identifier(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
         والنقر الأيمن على ملفك الشخصي.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>نعم</code></td>
@@ -178,7 +178,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. يجب أن يحتوي الوصف الخاص بك على قيم أزواج رئيسية تشير إلى اللغة، والوصف في تلك اللغة المحددة. اصنع وصفاً باللغات <i>التي تعرفها</i>، سوف يقوم مترجمونا بإجراء تغييرات على ملف البيانات الوصفية الخاص بك.</td>
+      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
@@ -209,7 +209,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">نسخة من حضورك.</td>
+      <td style="text-align:left">نسخة الـ Presence الخاصك بك.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
@@ -227,20 +227,20 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">قيمة <code>#HEX</code>. نوصي باستخدام لون أساسي من الخدمة
-        التي يدعمها وجودك.</td>
+      <td style="text-align:left">قيمة <code>#HEX</code>. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">مصفوفة مع العلامات، ستساعد المستخدمين على البحث عن وجودك على الموقع.</td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">وتندرج تحت هذا البند سلسلة تستخدم لتمثيل الفئة التي يوجد فيها. مشاهدة الأخاديد الصالحة <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">هنا</a>.</td>
+      <td style="text-align:left">A string used to represent the category the presence falls under. مشاهدة الأخاديد الصالحة <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">هنا</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
@@ -252,7 +252,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">محدد تعبير عادي يحدد إطارات ifram للحقن. انظر regExp لمزيد من المعلومات.</td>
+      <td style="text-align:left">A regular expression selector that selects iframes to inject into. انظر regExp لمزيد من المعلومات.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>نعم</code></td>
     </tr>
@@ -272,7 +272,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-لقد صنعنا منشئ ملف `metadata.json` للكسلة [هنا](https://eggsy.xyz/projects/premid/mdcreator).
+We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## البدء
 
