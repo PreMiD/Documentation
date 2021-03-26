@@ -399,7 +399,7 @@ The website you are developing on is automatically reloading every time you save
 
 # Files explained
 
-- [Prensence Klass](/dev/presence/class)
+- [Presence Class](/dev/presence/class)
 - [Bildspelsklass](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
