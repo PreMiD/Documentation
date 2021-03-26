@@ -1,5 +1,5 @@
 ---
-title: Problēmu novēršana
+title: Troubleshooting
 description: Viss, lai atrisinātu jūsu problēmu
 published: true
 date: 2021-02-08T21:30:58.603Z
@@ -101,9 +101,9 @@ Kā mēs norādījām mūsu **Linux repozitorijā**, AppImage nevar palaist, pie
 2. Atveriet šo failu iecienītākajā redaktorā un ielīmējiet norādīto kodu, mainot dažas lietas:
 ```bash
 #!/bin/bash
-# Nepieciešams, lai palaistu kā /bin/bash (ja izmantojat zsh utt. jūs to varat mainīt.)
+# Required to run as /bin/bash (if you use zsh etc. you can change it.)
 
-# Piemērs: /home/PreMiD/PreMiD*.AppImage
+# Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
 
 exit 0
