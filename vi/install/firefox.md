@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể hoạt động một mình.
+The installation of the extension is very important as the application can not do anything by itself.
 
 # Cài đặt
 1. Go to our downloads page by [clicking here](https://premid.app/downloads).
