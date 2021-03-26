@@ -1,5 +1,5 @@
 ---
-title: समस्या निवारण
+title: ट्रबलशूटिंग
 description: Everything to solve your problem
 published: true
 date: 2021-02-08T21:30:58.603Z
