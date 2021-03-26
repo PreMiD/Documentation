@@ -72,12 +72,12 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "UTILISATEUR",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "UTILISATEUR",
       "id": "ID"
     }
   ],
@@ -92,7 +92,7 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATÉGORIE",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -104,8 +104,8 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE GRATUITE FONTAWESOME",
       "value": true
     },
     {
@@ -113,17 +113,20 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE GRATUITE FONTAWESOME",
+      "value": "\"%song%\" par %artist%",
+      "placeholder": "utilisez %song% ou %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE GRATUITE FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
+    }
+  ]
+}
     }
   ]
 }
@@ -193,7 +196,7 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 - Les tags **devraient** de préférence inclure des noms de service alternatifs pour faciliter la recherche (par exemple, si une presence Amazon a inclus le support AWS, il aurait ses balises comme `amazon-web-services` et `aws`)
 - Vous êtes **tenus** d'ajouter un tag `NSFW` si la presence est pour un site Web NSFW.
 
-### **`catégorie`**
+### **`category`**
 
 - La catégorie **doit** être l'une des catégories suivantes listées sur la [documentation](/dev/presence/metadata#presence-categories).
 - La présence doit être dans une catégorie qui correspond au contenu du site web. (par exemple, n'utilisez pas `anime` lorsque le site n'est pas lié aux animes).
@@ -207,7 +210,7 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 - Doit être une valeur `booléenne` (par exemple: `true` ou `false`).
 - Active les logs de votre presence.
 
-### **`attention`**
+### **`warning`**
 
 - Active l'icône warning pour notifier l'utilisateur que cette Presence nécéssite plus d'étapes que le simple ajout de cette présence.
 - Un exemple de Presence utilisant cette variable de métadonnées est `VLC`.
@@ -216,10 +219,10 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 
 - Si vous décidez de faire un imprimer formaté (par exemple : `%song% par %artist%`), les variables doivent être encerclé d'un "%" de part et d'autre. Les variables comme `%var`, `var%` ou `%%var%%` ne sont **pas** autorisé dans l'intérêt de respecter la standardisation.
 - Le nom des paramètres ne doit **pas** être en lettres capitales. Par exemple, les nom comme `AFFICHER LE STATUT DE NAVIGATION` ne seront **pas** autorisé; en revanche, les nom tel que `Afficher le Statut de Navigation` ou `Afficher le statut de navigation` sont autorisé.
-- If you are using the `multiLanguage` option it can have the following types:
+- Si vous utilisez l'option `multiLanguage`, elle peut avoir les types de données suivants :
   - Une valeur de type **booléenne** n'activera que les chaînes de caractères de [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) du dépôt de traduction ou du fichier de la Presence (par exemple: si le nom de la présence est YouTube, l'extension prendra les chaînes de caractères du fichier `youtube.json`.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+  - Une valeur de type **String** (par exemple `youtube`) qui spécifiera le nom du fichier dont vous voulez obtenir les chaînes de caractères.
+  - Une valeur de type **Array<String>** (par exemple `["youtube", "discord"]`) qui spécifiera le nom des fichiers dont vous voulez obtenir les chaînes de caractères.
 
 ## [**presence.ts**](/dev/presence/class)
 
