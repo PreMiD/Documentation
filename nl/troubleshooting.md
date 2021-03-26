@@ -101,9 +101,9 @@ Zoals we hebben aangegeven in onze **Linux-repository**, kan AppImage niet gesta
 2. Open dit bestand in je favoriete editor en plak de gegeven code en verander enkele dingen:
 ```bash
 #!/bin/bash
-# Vereist om uit te voeren als /bin/bash (als je zsh o.i.d. gebruikt kun je dit wijzigen.)
+# Required to run as /bin/bash (if you use zsh etc. you can change it.)
 
-# Voorbeeld: /home/PreMiD/PreMiD*.AppImage
+# Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
 
 exit 0
