@@ -74,7 +74,7 @@ Ten príklad vyzerá naozaj čudne, hm? Nerobte si starosti nie je to také ťa�
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Premenná</th>
+      <th style="text-align:left">Variable</th>
       <th style="text-align:left">Popis</th>
       <th style="text-align:left">Typ</th>
       <th style="text-align:left">Nepovinné</th>
@@ -124,25 +124,25 @@ Ten príklad vyzerá naozaj čudne, hm? Nerobte si starosti nie je to také ťa�
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
       <td style="text-align:left">Reťazec regulárneho výrazu používaný na zhodovanie adries url.</td>
-      <td style="text-align:left"><code>Reťazec</code></td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Áno</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
       <td style="text-align:left">Verzia vašej prítomnosti.</td>
-      <td style="text-align:left"><code>Reťazec</code></td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Odkaz na službu&apos; s logotypom.</td>
-      <td style="text-align:left"><code>Reťazec</code></td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Odkaz na náhľad vašej prítomnosti.</td>
-      <td style="text-align:left"><code>Reťazec</code></td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
@@ -242,7 +242,7 @@ Setup interactive settings so users can customize the presence!
 
 ### `multiLanguage`
 
-#### Úvod
+#### Introduction
 
 The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](/dev/presence/metadata/adding-new-strings).
 
@@ -367,4 +367,3 @@ Ak vytvárate prítomnosť, musíte uviesť kategóriu do ktorej táto prítomno
     </tr>
   </tbody>
 </table>
-
