@@ -67,7 +67,7 @@ Ein Beispiel für diese Datei, kannst du unten finden.
 }
 ```
 
-## Grundlegendes zur metadata.json
+## Grundlegendes zur metadata.json Datei
 
 Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schwer zu verstehen, wofür jede Variable gedacht ist.
 
@@ -76,14 +76,14 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Beschreibung</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Art</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -101,7 +101,9 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Kann die Presence mit einem alternativen Namen suchen.<br>Gemacht für Presences, die verschiedene Namen in verschiedenen Sprachen haben (z.B.:  Pokémon and 포켓몬스터).<br>Sie können es auch für Presences verwenden, die spezielle Zeichen haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
+      <td style="text-align:left">Erlaubt es die Presence mit einem alternativen Namen zu suchen<br>
+Nutzvoll für Presences, die verschiedene Namen in verschiedenen Sprachen haben (z.B.:. Pokémon und 포켓몬스터).<br>
+Dies kann auch genutzt werden für Presences, die spezielle Zeichen  haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -139,26 +141,26 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link zum Miniaturbild Ihrer Anwesenheit.</td>
+      <td style="text-align:left">Link zu deinem Presence-Vorschaubild.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code># HEX</code> Wert. Wir empfehlen, eine Primärfarbe des Dienstes
-        , die Ihre Anwesenheit unterstützt.</td>
+      <td style="text-align:left"><code>#HEX</code> Wert. Wir empfehlen, eine Primärfarbe des Dienstes
+        , die deine Presence unterstützt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array mit Tags, sie helfen Benutzern, Ihre Präsenz auf der Website zu suchen.</td>
+      <td style="text-align:left">Array mit Tags, sie helfen Benutzern, deine Presence auf der Website zu suchen.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Eine Zeichenfolge, die die Kategorie darstellt, unter die die Anwesenheit fällt.</td>
+      <td style="text-align:left">Eine Zeichenfolge, die die Kategorie darstellt, unter die die Presence fällt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -176,7 +178,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Legt fest, ob die Erweiterung die Logs lesen soll.</td>
+      <td style="text-align:left">Legt fest, ob die Erweiterung Logs lesen soll.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -203,7 +205,7 @@ Wenn Sie reguläre Ausdrücke lernen möchten, finden Sie hier einige Websites.
 
 ## Presence-Sprachen
 
-PreMiD ist ein mehrsprachiger Service, was bedeutet, dass es eine Reihe von Sprachen gibt, welche die Nutzer über den ganzen Globus verbinden. Eine vollständige Liste von Sprachen können mithilfe dieses [API-Endpunkts](https://api.premid.app/v2/langFile/list) gefunden werden. Um Ihre Presence noch mehr anzupassen, können Sie Benutzern erlauben, ihre Presence-Sprache auszuwählen, siehe [`multiLanguage`](#multilanguage) für mehr.
+PreMiD ist ein mehrsprachiger Service, was bedeutet, dass es eine Reihe von Sprachen gibt, welche die Nutzer über den ganzen Globus verbinden. Eine vollständige Liste von Sprachen können mithilfe dieses [API-Endpunkts](https://api.premid.app/v2/langFile/list) gefunden werden. Um deine Presence noch mehr anzupassen, kannst Du Benutzern erlauben, ihre Presence-Sprache auszuwählen, siehe [`multiLanguage`](#multilanguage) für mehr.
 
 ## Presence-Einstellungen
 Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eingestellt werden kann.
@@ -255,10 +257,10 @@ Die `multiLanguage` Einstellung kann in die folgenden Werte gesetzt werden:
 
 #### Neue Stings hinzufügen
 
-##### Klont das Projekt
+##### Projekt klonen
 
 1. Öffne ein Terminal und gib `git clone https://github.com/PreMiD/Localization` ein.
-2. Wähle einen Ordner deiner Wahl.
+2. Wähle einen Ordner Deiner Wahl.
 3. Öffne es in deinem Code-Editor.
 
 ##### Erstellt die Datei
@@ -282,12 +284,12 @@ Visualisierung der Datei:
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text, der übersetzt werden muss.",
-    "description": "Erklärt die Nachricht darüber."
+    "message": "Text that needs to be translated.",
+    "description": "This explains what the message above is."
   },
   "<service>.<stringName>": {
-    "message": "Text, der übersetzt werden muss.",
-    "description": "Erklärt die Nachricht darüber."
+    "message": "Text that needs to be translated.",
+    "description": "This explains what the message above is."
   }
 }
 ```
@@ -356,14 +358,13 @@ Wenn du deine Presence erstellst, musst du eine Kategorie definieren, welche der
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Videos & Livestreams</b></td>
+        <td style="text-align:left"><b>Videos & Streams</b></td>
       <td style="text-align:left">Websites, die dem Zweck dienen, Videos und Streams bereitzustellen.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Sonstiges</b></td>
+      <td style="text-align:left"><b>Sonstige</b></td>
       <td style="text-align:left">Alles, was nicht unter eine der oben aufgeführten Kategorien fällt.</td>
     </tr>
   </tbody>
 </table>
-
