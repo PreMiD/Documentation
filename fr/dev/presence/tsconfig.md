@@ -36,7 +36,7 @@ Dans le fichier de configuration racine, vous verrez quelque chose comme ça.
 }
 ```
 
-| Property                   | Description                                                                                                                                                                                          |
+| Propriété                  | Description                                                                                                                                                                                          |
 |:-------------------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **compilerOptions**        | Utilisé pour configurer le compilateur, la plupart des propriétés se trouvent ici.                                                                                                                   |
 | module                     | Vous pouvez en savoir plus à propos de [ici](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                             |
@@ -61,7 +61,7 @@ Dans le fichier de configuration racine, vous verrez quelque chose comme ça.
 }
 ```
 
-| Propriétés          | Description                                                                                                |
+| Propriété           | Description                                                                                                |
 |:------------------- |:---------------------------------------------------------------------------------------------------------- |
 | **extends**         | Utilisé pour étendre le fichier de base `tsconfig` pour diverses tâches.                                   |
 | **compilerOptions** | Voir [**Configuration de la racine**](/dev/presence/tsconfig#root-configuration) pour plus d'informations. |
