@@ -1,7 +1,7 @@
 ---
 title: Normas de las Presence
 description: Reglas que todos los desarrolladores de Presences deben seguir para que su Presence sea añadida.
-published: verdadero
+published: true
 date: 2021-03-06T15:01:04.274Z
 tags:
 editor: markdown
@@ -208,7 +208,7 @@ Una lista de los campos y sus reglas están listadas abajo:
 - Debe ser un valor `boolean` (por ejemplo `true` o `false`).
 - Habilita logs para tu presence.
 
-### **`advertencia`**
+### **`warning`**
 
 - Habilita un icono de advertencia indicando al usuario que la presence requiere de pasos adicionales además de añadirla.
 - Una presence de ejemplo usando esta variable de metadata es `VLC`.
