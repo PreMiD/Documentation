@@ -6,7 +6,7 @@ date: 2020-05-03T20:17:51.982Z
 tags:
 ---
 
-# iFrame Klasse
+# iFrame Class
 > Innrammesystemet med PreMiD er problematisk og kan gi uventet atferd, bruk med forsiktighet. 
 > 
 > {.is-danger}
@@ -27,7 +27,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-## Metoder
+## Methods
 
 ### `send(Object)`
 Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
@@ -35,7 +35,7 @@ Sends data to the presence. Using this method will make the presence throw a `iF
 ### `getUrl()`
 Returnerer URLen til `iframe`.
 
-## Arrangementer
+## Events
 In `iframes`, events work similarly to the way they work in the `presence` class.
 
 ```typescript
