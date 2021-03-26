@@ -101,10 +101,10 @@ Seperti yang kami nyatakan di **repositori Linux** kami, AppImage tidak boleh di
 2. Buka fail ini dalam penyunting teks kegemaran anda dan tampalkan kod diberi dengan mengubah beberapa perkara:
 ```bash
 #!/bin/bash
-# Mesti dijalankan sebagai /bin/bash (jika anda gunakan zsh dll. anda boleh mengubahnya.)
+# Required to run as /bin/bash (if you use zsh etc. you can change it.)
 
-# Contoh: /home/PreMiD/PreMiD*.AppImage
-<direktori ke appimage>/PreMiD*.AppImage
+# Example: /home/PreMiD/PreMiD*.AppImage
+<directory to appimage>/PreMiD*.AppImage
 
 exit 0
 ```
