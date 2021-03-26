@@ -207,7 +207,7 @@ Senarai medan dan peraturan berkaitan disenaraikan di bawah:
 - Mestilah dalam nilai `boolean` (spt. `true` atau `false`).
 - Membolehkan log untuk Presence anda.
 
-### **`amaran`**
+### **`warning`**
 
 - Membolehkan ikon amaran untuk memneritahu pengguna bahawa Presence ini memerlukan langkah tambahan dan tidak cukup sekadar menambah Presence.
 - Contoh Presence yang menggunakan pemboleh ubah metadata ini ialah `VLC`.
