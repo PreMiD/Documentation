@@ -76,7 +76,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Deskripsi</th>
-      <th style="text-align:left">Tipe</th>
+      <th style="text-align:left">Type</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -90,8 +90,8 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). <code>id</code> pengguna dapat disalin dari Discord dengan mengaktifkan developer
-        mode dan klik kanan pada profil anda.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
+        mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -303,7 +303,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### Methods
+### Metode
 
 Gunakan metode berikut untuk mendapat info pengaturan pada file presence:
 #### `getSetting(String)`
@@ -370,4 +370,3 @@ Saat membuat presence, anda harus menentukan kategori dimana presence berada. Be
     </tr>
   </tbody>
 </table>
-
