@@ -90,8 +90,8 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). O <code>id</code> do utilizador pode ser copiado do Discord ativando o modo de
-        programador e carregando com o botão direito no perfil do autor.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). User <code>id</code> can be copied from Discord by enabling developer
+        mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -259,11 +259,11 @@ The `multiLanguage` key can be set to the following:
 
 #### Adding new strings
 
-##### Clonar o projeto
+##### Clonando o projeto
 
 1. Abrir um terminal e digitar `git clone https://github.com/PreMiD/Localization`.
-2. Escolhe uma pasta.
-3. Abre-a no editor de código.
+2. Escolha uma pasta à sua escolha.
+3. Open it in your code editor.
 
 ##### Creating the file
 
@@ -365,9 +365,8 @@ Ao fazer a sua presence, deve especificar uma categoria na qual a presence se en
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Outra</b></td>
+      <td style="text-align:left"><b>Outro</b></td>
       <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
     </tr>
   </tbody>
 </table>
-
