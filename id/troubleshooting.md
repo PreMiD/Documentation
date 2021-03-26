@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting
+title: Pemecahan masalah
 description: Everything to solve your problem
 published: true
 date: 2021-02-08T21:30:58.603Z
@@ -21,7 +21,7 @@ Included on this page:
 
 # General troubleshooting
 ### Muat ulang halaman
-Anda bisa menekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) pada keyboard daripada mencari tombol refresh.
+You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
 
 ### Apakah kamu menggunakan aplikasi Discord?
 PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplikasinya [disini](https://discord.com/download).
