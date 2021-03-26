@@ -1,5 +1,5 @@
 ---
-title: Slideshow Klasse
+title: Diashow Klasse
 description:
 published: true
 date: 2020-12-25T00:47:38.111Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
-# Slideshow Klasse
+# Diashow Klasse
 
 ## Einführung
 
@@ -49,7 +49,7 @@ Aktualisiert die Folie mit der angegebenen `id` entsprechend der angegebenen Dat
 
 Der erste Parameter erfordert einen `String`, der die eindeutige Kennung der zu aktualisierenden Folie ist.
 
-Der zweite Parameter erfordert eine [`PresenceData`-Schnittstelle](/dev/presence/class#presencedata-interface) um alle Informationen abzurufen, die Sie in Ihrer Folie anzeigen möchten.
+Der erste Parameter erfordert eine [`Präsenzdaten` Schnittstelle](/dev/presence/class#presencedata-interface), um alle Informationen abzurufen, die Sie in Ihrem Profil anzeigen möchten.
 
 Der dritte Parameter erfordert eine `Nummer`, die die Zeitspanne in Millisekunden (minimum: 5000) beinhaltet, die diese Folie anzeigt.
 
