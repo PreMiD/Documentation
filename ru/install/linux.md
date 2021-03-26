@@ -41,7 +41,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 <a name="stats"></a>
 
-### Статистика
+### Статистики
 
 <table>
   <tr>
@@ -80,7 +80,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 <a name="credits"></a>
 
-### Кредит
+### Команда
 
 Благодарности :
 
@@ -99,7 +99,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
 
-## Портативная версия (Appimage)
+## Portable AppImage
 
 Пакет AppImage рекомендуется, если Discord работает для вас, а другие пакеты PreMiD (.deb, .rpm и т. д.) не рекомендуются.
 
@@ -175,7 +175,7 @@ pakku -S premid
 ```
 
 ```bash
-# ... ну вы поняли.
+# ... you get the point
 ```
 
 или вручную из [Arch User Repository](https://aur.archlinux.org/packages/premid) , если вы знаете, что вы делаете.
