@@ -76,7 +76,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">описание</th>
-      <th style="text-align:left">Вид</th>
+      <th style="text-align:left">Type</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -259,11 +259,11 @@ The `multiLanguage` key can be set to the following:
 
 #### Adding new strings
 
-##### Клониране на проекта
+##### Cloning the project
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
-2. Избери папка по твой избор.
-3. Отвори го в твоя редактор на код.
+2. Choose a folder of your choice.
+3. Open it in your code editor.
 
 ##### Creating the file
 
@@ -366,9 +366,8 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Други</b></td>
+      <td style="text-align:left"><b>друг</b></td>
       <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
     </tr>
   </tbody>
 </table>
-
