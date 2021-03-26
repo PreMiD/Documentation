@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
-# Класс Состояния
+# Класс присутствия
 
 ## Введение
 
@@ -236,7 +236,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Возвращает 2 `снежинку` метки времени в массиве ``, которые могут быть использованы для `startTimestamp` и `endTimamp`.
+Возвращает 2 `снежинку` метки времени в массиве `` , которые могут быть использованы для `startTimestamp` и `endTimamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
