@@ -61,7 +61,7 @@ Kök yapılandırma (`tsconfig.js`) dosyasında böyle bir şeyle karşılaşaca
 }
 ```
 
-| Özellik             | Açıklama                                                                                                    |
+| Property            | Açıklama                                                                                                    |
 |:------------------- |:----------------------------------------------------------------------------------------------------------- |
 | **extends**         | `tsconfig` temelini "genişletmek" için kullanılır.                                                          |
 | **compilerOptions** | Daha fazla bilgi için [**Kök Yapılandırması**](/dev/presence/tsconfig#root-configuration) kısmına göz atın. |
