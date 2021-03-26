@@ -156,7 +156,8 @@ Skopiuj powyższy kod i umieść go w pliku `metadata.json`. Teraz musisz edytow
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Powinien zawierać obiekt o <code>nazwie</code> i <code>id</code> współautora. <code>name</code> is your Discord username without the identifier(#0000). <code>Id</code> użytkownika można skopiować z Discorda włączając tryb programisty i klikając prawym przyciskiem myszy na swój profil.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
+        mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -222,56 +223,56 @@ Skopiuj powyższy kod i umieść go w pliku `metadata.json`. Teraz musisz edytow
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
       <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
         that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
       <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
       <td style="text-align:left">A string used to represent the category the presence falls under. Zobacz prawidłowe kategorie <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">tutaj</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
       <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Tak</code></td>
+      <td style="text-align:left"><code>Yes</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
       <td style="text-align:left">A regular expression selector that selects iframes to inject into. Zobacz regExp po więcej informacji.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tak</code></td>
+      <td style="text-align:left"><code>Yes</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Określa, czy rozszerzenie powinno odczytywać logi.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tak</code></td>
+      <td style="text-align:left"><code>Yes</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
       <td style="text-align:left">Zestaw ustawień, które użytkownik może zmienić. <br>
       Przeczytaj więcej o ustawieniach Presence <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">tutaj</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Tak</code></td>
+      <td style="text-align:left"><code>Yes</code></td>
     </tr>
   </tbody>
 </table>
 
-Stworzyliśmy dla leniwych kreator plików `metadata.json` [tutaj](https://eggsy.xyz/projects/premid/mdcreator).
+We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## Getting started
 
