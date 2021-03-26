@@ -272,7 +272,7 @@ This interface has following variables, all of them are optional.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Aprašymas</th>
-      <th style="text-align:left">Tipas</th>
+      <th style="text-align:left">Type</th>
     </tr>
   </thead>
   <tbody>
