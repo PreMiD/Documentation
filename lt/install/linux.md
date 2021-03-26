@@ -99,7 +99,7 @@ Thanks to :
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
 
-## Portatyvus Applmage
+## Portable AppImage
 
 Applmage komplektas (package) yra rekomenduojamas jeigu Discord veikia jums, bet kiti PreMiD komplektai (.deb, .rpm, etc) neveikia.
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... jūs suprantate mintį
+# ... you get the point
 ```
 
 arba savarankiškai iš [Arch User Repository](https://aur.archlinux.org/packages/premid) jeigu jūs žinote ką darote.
