@@ -133,11 +133,11 @@ let strings: Promise<LangStrings> = getStrings(),
 const newLang = await presence.getSetting("ID");
 if (oldLang !== newLang) {
   oldLang = newLang;
-  strings = getStrings();
+  strings = await getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play; // resultado: Playing
+const pauseString = (await strings).pause; // resultado: Paused
 ```
 
 ### `getPageletiable(String)`
@@ -164,16 +164,16 @@ console.log(version); // Mostrará 2.1.0
 
 ### `getSetting(String)`
 
-Devuelve el valor del ajuste.
+Obtén el valor del ajuste.
 
 ```typescript
-const setting = await presence.getSetting("pdexID"); // Remplaza pdexID con el id del ajuste
+const setting = await presence.getSetting("pdexID"); //Reemplaza pdexID con el id de tu ajuste
 console.log(setting); // Esto mostrará el valor del ajuste
 ```
 
 ### `hideSetting(String)`
 
-Oculta el ajuste indicado.
+Oculta la configuración dada.
 
 ```typescript
 presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 ### `showSetting(String)`
 
-Muestra el ajuste indicado (solo funciona si el ajuste ha sido ocultado).
+Muestra la configuración dada (Solo funciona si el ajuste estaba ya oculto).
 
 ```typescript
 presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
@@ -236,7 +236,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Devuelve 2 `snowflake` de timestamps en un`Array` que pueden ser usados para `startTimestamp` y `endTimestamp`.
+Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -245,7 +245,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Nota:** El `String` proporcionado en querySelector sirve de ejemplo.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ### `timestampFromFormat(String)`
 
@@ -259,7 +259,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Nota:** El `String` proporcionado en queryString sirve de ejemplo.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ## Interfaz `PresenceData`
 
@@ -302,7 +302,8 @@ Esta interfaz tiene siguientes variables, todas son opcionales.
       <td style="text-align:left">endTimestamp</td>
       <td style="text-align:left">Define la duración completa.
         <br>Utilizado si deseas mostrar cuantas <code>horas:minutos:segundos</code> quedan.
-          <br>Debes convertir la marca de tiempo a <code>timestamp</code> u obtendrás una cuenta atrás errónea.
+          <br>Debes convertir tu tiempo a <code>timestamps</code> u obtendrás una cuenta atrás
+          incorrecta.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
@@ -337,27 +338,27 @@ Esta interfaz tiene siguientes variables, todas son opcionales.
 
 ```typescript
 const presenceData: PresenceData = {
-  details: "My title",
-  state: "My description",
-  largeImageKey: "service_logo",
-  smallImageKey: "small_service_icon",
-  smallImageText: "You hovered me, and what now?",
+  details: "Mi título",
+  state: "Mi descripción",
+  largeImageKey: "logo_servicio",
+  smallImageKey: "icono_servicio_pequeño",
+  smallImageText: "Has puesto el cursor sobre mí, ¿ahora que?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Test button1",
+            label: "Botón de prueba1",
             url: "https://premid.app/"
         },
         {
-            label: "Test button2",
+            label: "Botón de prueba2",
             url: "https://premid.app/contributors"
         }
     ]
 };
 ```
 
-## Events
+## Eventos
 
 Los eventos permiten detectar y manejar algunos cambios o llamadas realizadas. Puede suscribirte a eventos utilizando el método `on`.
 
