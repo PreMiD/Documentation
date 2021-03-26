@@ -26,6 +26,6 @@ Linux systemen moeten ten minste **20MB RAM** hebben om PreMiD uit te voeren. Wi
 PreMiD kost ongeveer **150MB** fysieke opslag. Maar minstens **200MB** opslagruimte bestemd voor PreMiD wordt aanbevolen.
 
 ### Internettoegang
-Een internetverbinding is vereist om PreMiD uit te voeren. PreMiD zal automatisch controleren op nieuwe updates, talen, presence updates, etc. van tijd tot tijd.
+Een internetverbinding is vereist om PreMiD uit te voeren. PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}
