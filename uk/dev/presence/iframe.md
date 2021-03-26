@@ -35,7 +35,7 @@ iframe.on("UpdateData", async () => {
 ### `getUrl()`
 Повертає URL для `iframe`.
 
-## Події
+## Events
 В `iframes`події працюють аналогічно до плану `присутності`.
 
 ```typescript
