@@ -245,7 +245,7 @@ PreMiD เป็นบริการ polygot ซึ่งหมายควา�
 
 ### `multiLanguage`
 
-#### แนะนำ
+#### บทนำ
 
 The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](/dev/presence/metadata/adding-new-strings).
 
@@ -303,7 +303,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### วิธีการ
+### ฟังก์ชัน
 
 ใช้วิธีการเหล่านี้เพื่อเข้าถึงข้อมูลการตั้งค่าในไฟล์ Presence ของคุณ
 #### `getSetting(String)`
@@ -370,4 +370,3 @@ presence.showSetting("pdexID"); //แทนที่ pdexID ด้วย id ข�
     </tr>
   </tbody>
 </table>
-
