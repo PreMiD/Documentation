@@ -1,7 +1,7 @@
 ---
 title: Linux
 description: Å komme igang med PreMiD installasjonen på Firefox
-published: sant
+published: true
 date: 2020-11-10T18:06:56.520Z
 tags:
 editor: markdown
