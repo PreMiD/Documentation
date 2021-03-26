@@ -1,5 +1,5 @@
 ---
-title: 疑難解答
+title: 疑難排解
 description: Everything to solve your problem
 published: true
 date: 2021-02-08T21:30:58.603Z

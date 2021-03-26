@@ -99,7 +99,7 @@ Thanks to :
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
 
-## Prijenosni AppImage
+## Portable AppImage
 
 AppImage paket je preporučen ako Discord radi za tebe, ali drugi PreMiD paketi (.deb, .rpm, itd) ne.
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... skužio si već
+# ... you get the point
 ```
 
 ili ručno iz [Arch User Repository-a](https://aur.archlinux.org/packages/premid) ako znaš šta radiš.

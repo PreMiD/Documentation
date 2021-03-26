@@ -1,5 +1,5 @@
 ---
-title: ক্রোমিয়াম
+title: Chromium
 description: শুরু করা যাক PreMiD ইন্সটলেশন ক্রোমিয়াম-ভিত্তিক ব্রাউজারগুলোতে
 published: true
 date: 2020-04-22T20:13:07.598Z

@@ -89,7 +89,7 @@ Endişelenme. Yenilemek için Discord penceresi açıkken <kbd>CTRL+R</kbd> (Win
 Eğer Discord'u Snapcraft üzerinden indirdiyseniz, RPC özellikleri çalışmayacaktır. Önce bir uçbirimde `sudo snap remove discord` komutunu çalıştırarak Snapcraft sürümünü silmeniz, **[Discord'un Linux Sürümünü](https://discordapp.com/api/download?platform=linux)** (**[veya Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), indirmeniz, sonra da Discord'u indirdiğiniz klasöre gidip (genellikle `$HOME/Downloads`), `sudo dpkg -i discord-*.deb` komutunu çalıştırarak kurmanız gerekir. Eğer AppImage işe yaramazsa, **[bu adresdeki](https://packagecloud.io/premid/linux)** diğer paketlerimize göz atmanız gerekir.
 
 ### Arch Linux Tabanlı Dağıtımlar
-Arch Linux tabanlı dağıtımlarda <code>premid</code> or <code>premid-git</code> adlı AUR (Arch User Reposity) paketi kullanılmalıdır. (<em x-id="3">UYARI: Bu depo premid'i direk kaynak kodundan derler.</em>). Eğer bir AUR yöneticisi (yay vb.) yüklemek istemiyorsanız, <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux depomuzdan</a></strong> indirebileceğiniz AppImage paketimize göz atın.
+Arch Linux tabanlı dağıtımlarda <code>premid</code> veya <code>premid-git</code> adlı AUR (Arch User Reposity) paketi kullanılmalıdır. (<em x-id="3">UYARI: Bu depo PreMiD'i direk kaynak kodundan derler.</em>). Eğer bir AUR yöneticisi (yay vb.) yüklemek istemiyorsanız, <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux depomuzdan</a></strong> indirebileceğiniz AppImage paketimize göz atın.
 <em x-id="3">Uyarı: <strong x-id="1">AUR</strong> deposundaki paket biz (PreMiD kuruluşu) yerine başkaları tarafından sağlanmaktadır.</em>
 
 ### Port ilişkilendirme
@@ -102,10 +102,10 @@ Arch Linux tabanlı dağıtımlarda <code>premid</code> or <code>premid-git</cod
 2. Bu dosyayı istediğiniz düzenleyici ile açıp bazı değişiklikler yaparak aşağıdaki kodu yapıştırın:
 ```bash
 #!/bin/bash
-# /bin/bash olarak çalıştırmak için gereklidir (eğer zsh vb. kullanıyorsanız değiştirebilirsiniz.)
+# Required to run as /bin/bash (if you use zsh etc. you can change it.)
 
-# Örnek: /home/PreMiD/PreMiD*.AppImage
-<appimage klasörü>/PreMiD*.AppImage
+# Example: /home/PreMiD/PreMiD*.AppImage
+<directory to appimage>/PreMiD*.AppImage
 
 exit 0
 ```

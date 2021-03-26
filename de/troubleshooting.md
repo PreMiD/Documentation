@@ -101,10 +101,12 @@ Wie in unserem ** Linux-Repository ** angegeben, kann AppImage beim Anmelden nic
 2. Öffne diese Datei in deinem Lieblingseditor und füge den vorgegebenen Code ein, um einige Sachen abzuändern:
 ```bash
 #!/bin/bash
-# Wird benötigt um unter /bin/bash zu laufen (wenn zsh verwendet wird du kannst es ändern.)
+# Required to run as /bin/bash (if you use zsh etc. you can change it.)
 
-# Beispiel: /home/PreMiD/PreMiD*.AppImage
+# Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
+
+exit 0
 ```
 3. Speichere die Datei und chmod es als ausführbare Datei: `sudo chmod a+x /etc/rc.local`.
 4. Starte deinen PC neu und PreMiD AppImage sollte bei der Anmeldung gestartet werden.

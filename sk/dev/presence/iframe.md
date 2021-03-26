@@ -11,7 +11,7 @@ tags:
 > 
 > {.is-danger}
 
-## Úvod
+## Introduction
 
 V niektorých prípadoch, vaša prítomnosť možno bude potrebovať prístup k prvkom vo vnútri `iframu`.
 
@@ -35,7 +35,7 @@ Odošle údaje do prítomnosti. Použitím tejto metódy, prítomnosť udeje `iF
 ### `getUrl()`
 Vráti URL `iframu`.
 
-## Udalosti
+## Events
 Vo `iframe`, udalostiach pracujú podobným spôsobom ako pracujú v triede `prítomností`.
 
 ```typescript

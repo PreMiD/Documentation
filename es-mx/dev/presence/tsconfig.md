@@ -36,7 +36,7 @@ En el archivo de configuración raíz verás algo como esto.
 }
 ```
 
-| Property                   | Descripción                                                                                                                                                                               |
+| Propiedad                  | Descripción                                                                                                                                                                               |
 |:-------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **compilerOptions**        | Utilizado para configurar el compilador, la mayoría de las propiedades se encuentran aquí.                                                                                                |
 | module                     | Puedes leer más sobre eso [aquí](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                              |

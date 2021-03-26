@@ -83,7 +83,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">يجب أن تحتوي على أوبجكت مع <code>إسم</code> و <code>أيدي</code> مطور الpresence. <code>name</code> is your Discord username without the identifier(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
         والنقر الأيمن على ملفك الشخصي.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>لا</code></td>
@@ -103,9 +103,9 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">كن قادر على البحث عن الpresence باستخدام اسم بديل. <br>
-      من المفترض أن تُستخدم في الpresences التي لها أسماء مختلفة بلغات مختلفة (مثل بوكيمون و 포켓 몬스터). <br>
-      يمكنك أيضًا استخدامه للpresences التي تحتوي على أحرف خاصة حتى لا تضطر إلى كتابتها (مثل Pokémon و Pokemon).</td>
+      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
+      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
+      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>نعم</code></td>
     </tr>
@@ -180,7 +180,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">يحدد ما إذا كان يجب أن يكون الملحق سجلات قراءة.</td>
+      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>نعم</code></td>
     </tr>
@@ -340,12 +340,12 @@ When making your presence, you must specify a category which the presence falls 
   <tbody>
     <tr>
       <td style="text-align:left"><b>anime</b></td>
-      <td style="text-align:left"><b>انمي</b></td>
+      <td style="text-align:left"><b>أنمي</b></td>
       <td style="text-align:left">Anything related to anime, from forums to video streaming platforms.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
-      <td style="text-align:left"><b>العاب</b></td>
+      <td style="text-align:left"><b>ألعاب</b></td>
       <td style="text-align:left">Any website that has game related content, such as <code>Kahoot</code> or <code>Skribbl.io</code></td>
     </tr>
     <tr>
@@ -365,9 +365,8 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>آخرى</b></td>
+      <td style="text-align:left"><b>آخر</b></td>
       <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
     </tr>
   </tbody>
 </table>
-

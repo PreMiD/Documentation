@@ -34,8 +34,8 @@ Toda Presence está programada en [TypeScript](https://www.typescriptlang.org/).
 ## Clonando el proyecto
 
 1. Abre la consola y escribe `git clone https://github.com/PreMiD/Presences`.
-2. Escoge una carpeta a tu gusto.
-3. Ábrela en tu editor de código.
+2. Elija una carpeta de su elección.
+3. Ábrelo en tu editor de código.
 
 ## Creando carpetas y archivos
 
@@ -149,13 +149,13 @@ Por favor copia el código anterior y ponlo en tu archivo `metadata.json`. Ahora
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador de la presence. <code>name</code> es tu nombre de Discord sin el identificador (#0000). Puedes copiar tu <code>id</code> de usuario de Discord activando el modo desarrollador y pulsando sobre tu perfil con el botón secundario del ratón.</td>
+      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador de la presence. <code>name</code> es tu nombre de Discord sin el identificador (#0000). El <code>id</code> de usuario puede copiarse de Discord habilitando el modo desarrollador y haciendo clic derecho en tu perfil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Debería contener un Object con las propiedades <code>name</code> e <code>id</code> del desarrollador de la presence. <code>name</code> es tu nombre de Discord sin el identificador (#0000). Puedes copiar el <code>id</code> de usuario de Discord activando el modo desarrollador y pulsando sobre el perfil del usuario con el botón secundario del ratón.</td>
+      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador de la presence. <code>name</code> es tu nombre de Discord sin el identificador (#0000). El <code>id</code> de usuario puede copiarse de Discord habilitando el modo desarrollador y haciendo clic derecho en tu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
@@ -174,7 +174,7 @@ Por favor copia el código anterior y ponlo en tu archivo `metadata.json`. Ahora
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Una pequeña descripción de la presence, puedes usar la descripción del servicio si no se te ocurre nada. Tu descripción debe contener tuplas de valores, indicando el idioma y la descripción en dicho idioma. Escribe descripciones en los idiomas <i>que tu conozcas</i>, nuestros traductores realizarán cambios en tu archivo metadata.</td>
+      <td style="text-align:left">Una pequeña descripción de la presence, puedes usar la descripción del servicio si no se te ocurre nada. Tu descripción debe tener un par de valores que indiquen el idioma y la descripción en ese idioma específico. Haz descripciones con los idiomas <i>que conoces</i>, nuestros traductores harán cambios en tu archivo de metadata.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -205,7 +205,7 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Versión de la presence.</td>
+      <td style="text-align:left">Versión de su presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -217,25 +217,26 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Enlace a la miniatura de la presence.</td>
+      <td style="text-align:left">Enlace al ícono de tu presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">Valor <code>#HEX</code>. Recomendamos que utilizes el color primario del servicio.</td>
+      <td style="text-align:left">valor <code>#HEX</code>. Recomendamos usar un color primario del servicio
+        que tu presence soporte.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array con etiquetas, estas ayudarán a los usuarios a buscar tu presence en la web.</td>
+      <td style="text-align:left">Array con etiquetas, ayudarán a los usuarios a buscar su presence en el sitio web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Un string que representa la categoría a la que pertenece la presence. Mira las categorías válidas <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">aquí</a>.</td>
+      <td style="text-align:left">Una string utilizada para representar la categoría bajo la que cae la presence. Mira las categorías válidas <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">aquí</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -247,7 +248,7 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Un selector de expresiones regulares que selecciona los iframes en donde inyectar. Mira expresiones regulares para más información.</td>
+      <td style="text-align:left">Un selector de expresiones regulares que selecciona los iframes a inyectar. Mira expresiones regulares para más información.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
@@ -267,7 +268,7 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
   </tbody>
 </table>
 
-Hemos creado un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/projects/premid/mdcreator) para gente perezosa.
+Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/projects/premid/mdcreator) para la gente perezosa.
 
 ## Empezando
 
@@ -396,6 +397,6 @@ El sitio web en el que estás desarrollando se recarga automáticamente cada vez
 
 - [Clase Presence](/dev/presence/class)
 - [Clase SlideshowSlide](/dev/presence/slideshow)
-- [Clase iFrame](/dev/presence/iframe)
+- [Clase de iFrame](/dev/presence/iframe)
 - [Archivo de Metadata](/dev/presence/metadata)
 - [Configuración de TypeScript](/dev/presence/tsconfig ""){.links-list}

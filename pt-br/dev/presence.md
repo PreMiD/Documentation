@@ -18,7 +18,7 @@ A versão `2.x` introduz a [loja de presences](https://premid.app/store). Usuár
 > 
 > {.is-warning}
 
-- [Diretrizes](https://docs.premid.app/dev/presence/guidelines)
+- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # Estrutura

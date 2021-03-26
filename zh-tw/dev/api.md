@@ -4,7 +4,7 @@ description: Access resources and perform actions using the PreMiD API
 published: true
 date: 2021-02-01T12:36:44.713Z
 tags:
-editor: 標記
+editor: markdown
 dateCreated: 2020-06-11T18:03:59.010Z
 ---
 

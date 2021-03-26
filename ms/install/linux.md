@@ -99,7 +99,7 @@ Terima kasih kepada :
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
 
-## AppImage Mudah Alih
+## Portable AppImage
 
 Pakej AppImage adalah disyorkan sekiranya Discord berfungsi untuk anda tetapi pakej PreMiD yang lain (.deb, .rpm, dll) tidak berfungsi.
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... anda faham caranya
+# ... you get the point
 ```
 
 atau secara manualnya dari [Arch User Repository](https://aur.archlinux.org/packages/premid) jika anda tahu apa yang anda lakukan.

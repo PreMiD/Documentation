@@ -76,20 +76,20 @@ An example of that file can be found below.
     <tr>
       <th style="text-align:left">変数</th>
       <th style="text-align:left">概要</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">タイプ</th>
       <th style="text-align:left">省略可能</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">プレゼンスの開発者の<code>名前</code>と、<code>ユーザーid</code>をObjectに含む必要があります。 <code>name</code> is your Discord username without the identifier(#0000). <code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできるものです。</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). <code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできるものです。</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>不可</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). ユーザーの<code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできます。</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). <code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできるものです。</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>可</code></td>
     </tr>
@@ -260,7 +260,7 @@ The `multiLanguage` key can be set to the following:
 
 1. ターミナルを開き `git clone https://github.com/PreMiD/Localization` と入力する
 2. 任意のフォルダーを選択する
-3. ソースコードエディタで開く
+3. Open it in your code editor.
 
 ##### Creating the file
 
@@ -367,4 +367,3 @@ presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
     </tr>
   </tbody>
 </table>
-

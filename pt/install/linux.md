@@ -99,7 +99,7 @@ Thanks to :
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
 
-## AppImage Portable
+## Portable AppImage
 
 O pacote AppImage é recomendado se o Discord funciona para você, mas para outros pacotes PreMiD (.deb, .rpm, etc) não.
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... tu percebes
+# ... you get the point
 ```
 
 ou manualmente do [Repositório de Utilizador Arch](https://aur.archlinux.org/packages/premid) se você sabe o que está fazendo.

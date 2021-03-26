@@ -167,13 +167,13 @@ console.log(version); // Wird 2.1.0 loggen
 Gibt den Wert der Einstellung zurück.
 
 ```typescript
-var setting = await presence.getSetting("pdexID"); // pdexID mit der Id von der Einstellung ersetzen
+const setting = await.presence.getSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
 console.log(setting); // Dies loggt den Wert der Einstellung
 ```
 
 ### `hideSetting(String)`
 
-Versteckt die Einstellung.
+Versteckt die definierte Einstellung.
 
 ```typescript
 presence.hideSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
 
 ### `showSetting(String)`
 
-Zeigt angegebene Anstellung an (Funktioniert nur, wenn die Einstellung schon versteckt war).
+Zeigt definierte Einstellung (Funktioniert nur, wenn die Einstellung bereits versteckt war).
 
 ```typescript
 presence.showSetting("pdexID"); // Ersetze pdexID mit der id der Einstellung
@@ -272,7 +272,7 @@ Diese Schnittstelle hat folgende Variablen, die alle optional sind.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Beschreibung</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Art</th>
     </tr>
   </thead>
   <tbody>
@@ -301,7 +301,7 @@ Diese Schnittstelle hat folgende Variablen, die alle optional sind.
       <td style="text-align:left">endTimestamp</td>
       <td style="text-align:left">Definiert die volle Dauer.
         <br>Wird verwendet, wenn du anzeigen möchtest, wie viel <code>Stunden: Minuten: Sekunden</code> übrig sind.
-          <br>Du musst deine Zeit in einen <code>Zeitstempel</code> konvertieren, sonst erhältst du einen falschen Countdown.
+          <br>Du musst deine Zeit in <code>Zeitstempel</code> umwandeln, sonst erhälst du einen falschen Countdown.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>

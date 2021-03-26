@@ -9,7 +9,7 @@ tags:
 安裝擴充功能非常重要，因為單靠本地程式是無法做任何事的。
 
 # 安裝
-1. [點此](https://premid.app/downloads) 前往我們的下載頁面
+1. [點此](https://premid.app/downloads)前往我們的下載頁面
 2. 選擇 **FireFox**
 3. 搜尋 `about:addons`
 4. 點擊右上角的小齒輪圖標。

@@ -1,7 +1,7 @@
 ---
 title: Linux
 description: Instalacja PreMiD w systemie Linux
-published: tak
+published: true
 date: 2020-11-10T18:06:56.520Z
 tags:
 editor: markdown
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... łapiesz o co chodzi
+# ... you get the point
 ```
 
 lub ręcznie z [Arch User Repository](https://aur.archlinux.org/packages/premid) jeśli wiesz, co robisz.

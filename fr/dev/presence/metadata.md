@@ -90,7 +90,7 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Doit contenir un objet avec le <code>nom</code> et l'<code>id</code> du contributeur. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'<code>id</code> utilisateur peut être copié depuis Discord en activant le mode développeur
+      <td style="text-align:left">Doit contenir un objet avec le <code>nom</code> et l'<code>id</code> du contributeur. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'utilisateur <code>id</code> peut être copié depuis Discord en activant le mode développeur
         et en faisant un clic droit sur votre profil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Oui</code></td>
@@ -215,22 +215,21 @@ Configurer les paramètres interactifs pour que les utilisateurs puissent person
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Voir https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
-  },
+    "title": "TITRE AFFICHÉ",
+    "icon": "ICÔNE FONTAWESOME", //Exemple : "fas fa-info"
+    "value": true //Les valeurs booléennes vont faire apparaître un bouton "on/off" avec cette valeur comme valeur par défaut  },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Si un autre paramètre équivaut à cette valeur (true/false/0/1/etc.) alors affichez ce bouton.
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
+    "title": "TITRE AFFICHÉ",
+    "icon": "ICÔNE FONTAWESOME",
+    "value": "\"%song%\" par %artist%", //Mettre une string va créer un paramètre avec un champ de saisie où vous pourrez mettre une saisie personnalisée.
     "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
   },
   {
@@ -259,10 +258,10 @@ La clé `multiLanguage` peut être définie comme suit :
 
 #### Ajout de nouvelles chaînes
 
-##### Cloner le projet
+##### Dupliquer le projet
 
 1. Ouvrez un terminal et tapez `git clone https://github.com/PreMiD/Localization`.
-2. Choisissez un dossier.
+2. Choisissez un fichier de votre choix.
 3. Ouvrez-le dans votre éditeur de code.
 
 ##### Création du fichier
@@ -286,12 +285,12 @@ Visualisation du fichier :
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Texte qui doit être traduit. ,
-    "description": "Ceci explique ce que le message ci-dessus est."
+    "message": "Text that needs to be translated.",
+    "description": "This explains what the message above is."
   },
   "<service>.<stringName>": {
-    "message": "Texte qui doit être traduit. ,
-    "description": "Ceci explique ce que le message ci-dessus est."
+    "message": "Text that needs to be translated.",
+    "description": "This explains what the message above is."
   }
 }
 ```
@@ -360,14 +359,13 @@ Lorsque vous faites votre présence, vous devez spécifier une catégorie sous l
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Vidéos & Streams</b></td>
+        <td style="text-align:left"><b>Vidéos et Streams</b></td>
       <td style="text-align:left">Sites Web qui servent à fournir des vidéos et des streams.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Autre</b></td>
+      <td style="text-align:left"><b>Autres</b></td>
       <td style="text-align:left">Tout ce qui ne relève pas d'une catégorie spécifique énumérée ci-dessus.</td>
     </tr>
   </tbody>
 </table>
-

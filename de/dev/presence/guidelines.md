@@ -207,12 +207,12 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 - Muss ein `boolean` Wert sein (z.B. `true` oder `false`).
 - Aktiviert Logs für deine Presence.
 
-### **`Warnung`**
+### **`warning`**
 
 - Aktiviert das Warnsymbol für die Aufforderung an den Benutzer, dass diese Präsenz mehr Schritte benötigt als nur das Hinzufügen von der Presence.
 - Beispiel für eine solche Presence, die diese Metadaten-Variable benutzt, ist `VLC`.
 
-### **`Einstellungen`**
+### **`settings`**
 
 - Wenn du dich dafür entscheidest, ein String-Format (zum Beispiel `%song% von %artist%`), müssen die Variablen von einem Prozentzeichen auf beiden Seiten umgeben sein. Variablen wie `%var`,`var%` oder `%%var%%` und alles dazwischen sind **nicht** erlaubt wegen der Standardisierung.
 - Der Name der Einstellungen muss **nicht** ausschließlich in Großbuchstaben sein. Zum Beispiel Namen wie `SHOW BROWSING STATUS` sind **nicht** erlaubt; jedenfalls sind Namen wie `Show Browsing Status` oder `Show browsing status` erlaubt.
@@ -235,9 +235,9 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Die Felder `smallImageKey` und `smallImageText` sollen einen zusätzlichen/zweiten Nutzen bringen (wie `playing/paused` für Video-Seiten, `browsing` für reguläre Seiten, und weitere Fälle) und nicht um Discord-Profile oder irgendwas zu bewerben, das nicht im Zusammenhang mit PreMiD steht.
 - Es ist dir **nicht** erlaubt, auf `localStorage` zuzugreifen.
 - Wenn du Cookies für gespeicherte Daten benutzt, beginne den Schlüssel mit `PMD_`
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. Wenn du externe Domains verwendest, musst du erklären, warum das notwendig ist. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. Wenn du externe Domains verwendest, musst du erklären, warum dies notwendig ist. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (nutze z.B `delete data.startTimestamp` anstelle von `data.startTimestamp = undefined`)
-- Es ist dir **nicht**t erlaubt Presences zu schreiben, die das Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
+- Es ist dir **nicht**t erlaubt Presences zu schreiben, die die Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
 
 ## [**tsconfig.json**](/dev/presence/tsconfig)
 
@@ -292,7 +292,7 @@ Ein paar Dinge, die du nach dem Öffnen einer Pull-Request wissen solltest:
 - ⚠️ Du **musst** neue, unveränderte Screenshots (aufgenommen von dir) angeben, die in einen nebenseitigen Vergleich deines Profils mit der Website zeigen, dass deine Presence funktioniert. _Du darfst, für die bessere Übersichlichkeit, Screenshots zusammenfügen_ - Dies gilt sowohl für die Erstellung als auch für die Änderung.
 - ⚠️ Es ist außerdem **erforderlich** einen Screenshot der Presence-Einstellungen aufzunehmen, sofern diese bereitgestellt werden. [Hier](https://imgur.com/a/OD3sj5R) kannst du einen Beispiel dazu ansehen.
 
-## `Kontrollen`
+## `Überprüfen`
 
 ![Überprüfen](https://i.imgur.com/oqAakOc.png)
 

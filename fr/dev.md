@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Un éditeur de code est requis. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Un éditeur de code est requis. Nous recommandons [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 

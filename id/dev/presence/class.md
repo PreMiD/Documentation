@@ -28,7 +28,7 @@ There are three properties available for `Presence` class.
 
 #### `clientId`
 
-This property is required to make your presence work, because it uses your application id to display its logo and assets. Anda bisa mendapatkan di [halaman aplikasi anda](https://discordapp.com/developers/applications).
+This property is required to make your presence work, because it uses your application id to display its logo and assets. You can get it on your [applications page](https://discordapp.com/developers/applications).
 
 #### `injectOnComplete`
 
@@ -38,7 +38,7 @@ When setting `injectOnComplete` to `true` the first `UpdateData` event for both 
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
-## Methods
+## Metode
 
 ### `getActivity()`
 
@@ -272,7 +272,7 @@ Antarmuka ini memiliki variabel berikut, semuanya adalah opsional.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Deskripsi</th>
-      <th style="text-align:left">Tipe</th>
+      <th style="text-align:left">Type</th>
     </tr>
   </thead>
   <tbody>

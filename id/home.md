@@ -12,11 +12,11 @@ dateCreated: 2020-06-11T18:03:47.172Z
 > 
 > {.is-warning}
 
-# Tentang PreMiD
+# About PreMiD
 - :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
 - :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
 
-# Memulai
+# Getting Started
 
 PreMiD is quick and easy to install. You should be up and running in no time.
 
@@ -24,7 +24,7 @@ PreMiD is quick and easy to install. You should be up and running in no time.
 - Follow the quick and simple [installation guide](/install).
 - [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
 
-# Pengembangan
+# Pengembang
 
 [Getting Started](/dev) for PreMiD development is your first step before coding some things.
 

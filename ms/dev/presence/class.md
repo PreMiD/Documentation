@@ -302,8 +302,8 @@ Antara muka ini mempunyai pemboleh ubah berikut, kesemuanya pilihan.
       <td style="text-align:left">endTimestamp</td>
       <td style="text-align:left">Menentukan jangka masa penuh.
         <br>Digunakan jika anda ingin paparkan berapa jam:minit:saat <code>hours:minutes:seconds</code> yang tinggal.
-          <br>Anda mesti ubah waktu anda ke bentuk cap masa <code>timestamp</code> atau anda akan
-          dapat kiraan masa menurun yang salah.
+          <br>Anda mesti ubah waktu anda ke bentuk cap masa <code>timestamp</code> atau
+          anda akan dapat kiraan masa menurun yang salah.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>

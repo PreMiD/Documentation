@@ -23,7 +23,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
   - الأسئلة الشائعة (قريبا)
   - بناء (قريبا)
   - [الدعم الفني](#support)
-  - [شكر و تقدير لـ](#credits)
+  - [المساهمون](#credits)
   - [الترخيص](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_موصى به_)
@@ -80,7 +80,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 <a name="credits"></a>
 
-### شكر و تقدير لـ
+### المساهمون
 
 شكرا لـ :
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... أنت تحصل على المعنى
+# ... you get the point
 ```
 
 أو يدوياً من [مستودع مستخدمي أرش](https://aur.archlinux.org/packages/premid) إذا كنت تعرف ما تفعله.

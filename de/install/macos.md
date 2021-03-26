@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Bevor Du fortfährst, stelle sicher, dass Dein System alle [Anforderungen erfüllt](/install/requirements). 
+> Bevor Du fortfährst, stelle sicher, dass Dein System alle [Anforderungen](/install/requirements) erfüllt. 
 > 
 > {.is-info}
 
@@ -30,7 +30,7 @@ Die Anwendung startet automatisch. Such danach nach dem Symbol in deiner Menüle
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
+## Apps von unbekannten Entwicklern erlauben
 Schritte für macOS Big Sur (11.0+):
 1. Klicke mit der rechten Maustaste auf unseren Installer.
 2. Klicke im Dropdown-Menü auf Öffnen.
@@ -39,5 +39,5 @@ Schritte für macOS Big Sur (11.0+):
 Schritte für ältere MacOS-Versionen:
 1. Öffne die Systemeinstellungen.
 2. Gehe zum Tab Sicherheit & Privatsphäre.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+3. Klicken Sie auf das Schloss und geben Sie Ihr Passwort ein oder scannen Sie Ihren Fingerabdruck, damit Sie Änderungen vornehmen können.
+4. Ändere die Einstellung "Erlaube heruntergeladene Apps von" von nur "App Store" in "App Store und identifizierte Entwickler".

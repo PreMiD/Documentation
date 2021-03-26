@@ -6,12 +6,12 @@ date: 2020-05-03T20:17:51.982Z
 tags:
 ---
 
-# iFrame Class
+# iFrame-Klasse
 > Das iframe-System mit PreMiD ist problematisch und kann unerwartetes Verhalten aufweisen. Sei vorsichtig. 
 > 
 > {.is-danger}
 
-## Einleitung
+## Einführung
 
 In einigen Szenarien muss deine Presence möglicherweise auf Elemente innerhalb von `iframes` zugreifen.
 
@@ -23,7 +23,7 @@ Wie bei Presences haben `iframes` ihre eigenen Klassen, um Daten automatisch zu 
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Hier gehört der Code rein...
 });
 ```
 
@@ -40,7 +40,7 @@ In `iframes` funktionieren Events ähnlich wie in der Klasse `Presence`.
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Hier gehört der Code rein...
 });
 ```
 

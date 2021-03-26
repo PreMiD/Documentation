@@ -272,7 +272,7 @@ The `PresenceData` interface is recommended to use when you are using the `setAc
     <tr>
       <th style="text-align:left">متغير</th>
       <th style="text-align:left">الوصف</th>
-      <th style="text-align:left">اكتب</th>
+      <th style="text-align:left">النوع</th>
     </tr>
   </thead>
   <tbody>

@@ -18,7 +18,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 > 
 > {.is-warning}
 
-- [Retningslinjer](https://docs.premid.app/dev/presence/guidelines)
+- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # Structure
@@ -401,6 +401,6 @@ Nettstedet du utvikler på, lastes automatisk opp hver gang du lagrer en fil i m
 
 - [Presence Klasse](/dev/presence/class)
 - [Lysbildefremvisningsklasse](/dev/presence/slideshow)
-- [iFrame Klasse](/dev/presence/iframe)
+- [iFrame Class](/dev/presence/iframe)
 - [Metadata fil](/dev/presence/metadata)
-- [TypeScript konfigurasjon](/dev/presence/tsconfig ""){.links-list}
+- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}

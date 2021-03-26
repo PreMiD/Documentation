@@ -18,24 +18,24 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 > 
 > {.is-warning}
 
-- [הנחיות](https://docs.premid.app/dev/presence/guidelines)
+- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # Structure
 
 All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## התקנה
+## Installation
 
-1. התקן [Git](https://git-scm.com/).
+1. Install [Git](https://git-scm.com/).
 2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
-## שכפל את הפרויקט
+## Cloning the project
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. בחר תיקיה לפי בחירתך.
-3. פתח אותו בעורך הקוד שלך.
+2. Choose a folder of your choice.
+3. Open it in your code editor.
 
 ## Creating folders and files
 
@@ -178,7 +178,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. תעשה תיאורים בלי השפות שאתה יודע, המתרגמים שלנו יעשו את השינויים לקובץ שלך.</td>
+      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -227,19 +227,20 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">ערך <code> #HEX </code>. אנחנו ממליצים לך להשתמש בצבע הראשי של השירות של הנוכחות התמיכה.</td>
+      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">מערך עם תגים, הם יעזרו למשתמשים לחפש את התוסף שלך באתר.</td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">מחרוזת המשמשת לייצוג הקטגוריה שבה התוסף נמצא. עיין בקטגוריות החוקיות <a href="https://docs.premid.app/dev/presence/metadata#presence-categories"> כאן </a>.</td>
+      <td style="text-align:left">A string used to represent the category the presence falls under. עיין בקטגוריות החוקיות <a href="https://docs.premid.app/dev/presence/metadata#presence-categories"> כאן </a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -251,7 +252,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">בורר ביטוי רגיל הבוחר iframes לשייך אליו. ראה regExp למידע נוסף.</td>
+      <td style="text-align:left">A regular expression selector that selects iframes to inject into. ראה regExp למידע נוסף.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>

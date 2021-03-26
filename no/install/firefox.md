@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-Installasjonen av denne utvidelsen er veldig viktig fordi applikasjonen ikke kan gjøre noe helt selv.
+Installasjonen av denne extensionen er veldig viktig på fordi applikasjonen ikke kan gjøre noe helt selv.
 
 # Installer
 1. Gå til våre nedlastnings side ved å [Klikke her](https://premid.app/downloads).
@@ -17,7 +17,7 @@ Installasjonen av denne utvidelsen er veldig viktig fordi applikasjonen ikke kan
 6. Velg filen du lastet ned nylig.
 7. Accept the installation by clicking on **Add**.
 
-> Ikke glem å [legge til** applikasjonen**](/install). 
+> Do not forget to [add the **application**](/install). 
 > 
 > {.is-warning}
 

@@ -167,7 +167,7 @@ console.log(version); // Affichera 2.1.0
 Renvoie la valeur du paramètre.
 
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Remplacer pdexID avec l'id du paramètre
+const setting = wait presence.getSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 console.log(setting); // Cela affichera dans la console la valeur du paramètre
 ```
 
@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 ### `showSetting(String)`
 
-Affiche le paramètre spécifié (Ne fonctionne que si le paramètre est déjà masqué).
+Affiche le paramètre spécifié (ne fonctionne que si le paramètre est déjà masqué).
 
 ```typescript
 presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -236,7 +236,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Retourne 2 timestamps sous forme de `snowflake` dans un `Array` qui peuvent être utilisé pour `startTimestamp` et `endTimestamp`.
+Retourne 2 `snowflake` timestamps dans un `Array` qui peut être utilisé pour `startTimestamp` et `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -245,7 +245,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** La `String` donnée dans querySelector est un exemple.
+**Note:** Le `String` donnée dans querySelector est un exemple.
 
 ### `timestampFromFormat(String)`
 
@@ -259,7 +259,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** La `String` donnée dans querySelector est un exemple.
+**Note:** Le `String` donnée dans querySelector est un exemple.
 
 ## Interface `PresenceData`
 
@@ -357,7 +357,7 @@ const presenceData: PresenceData = {
 };
 ```
 
-## Events
+## Événements
 
 Les événements vous permettent de détecter et de gérer certains changements ou appels qui ont été effectués. Vous pouvez vous abonner aux événements en utilisant la méthode `on`.
 

@@ -10,7 +10,7 @@ tags:
 
 Inštalácia aplikácie je veľmi dôležitá pretože rozšírenie nemôže robiť nič samé o sebe.
 
-# Inštalácia
+# Inštalovať
 1. Prejdite na našu stránku na stiahnutie [kliknutím tu](https://premid.app/downloads).
 2. Vyberte **Windows**.
 3. Otvorte inštalátor.

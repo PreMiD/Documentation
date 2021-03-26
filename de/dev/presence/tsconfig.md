@@ -36,7 +36,7 @@ In der Root-Konfigurationsdatei siehst du so etwas.
 }
 ```
 
-| Property                   | Beschreibung                                                                                                                                                            |
+| Eigenschaften              | Beschreibung                                                                                                                                                            |
 |:-------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **compilerOptions**        | Die meisten Eigenschaften, die zur Konfiguration des Compilers verwendet werden, befinden sich hier.                                                                    |
 | module                     | Mehr über diese [hier lesen](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                |
@@ -61,7 +61,7 @@ In der Root-Konfigurationsdatei siehst du so etwas.
 }
 ```
 
-| Eigenschaft         | Beschreibung                                                                                                |
+| Eigenschaften       | Beschreibung                                                                                                |
 |:------------------- |:----------------------------------------------------------------------------------------------------------- |
 | **extends**         | Wird zum Erweitern der Basisdatei `tsconfig` für verschiedene Aufgaben verwendet.                           |
 | **compilerOptions** | Weitere Informationen findest du unter [**Root-Konfiguration**](/dev/presence/tsconfig#root-configuration). |

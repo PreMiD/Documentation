@@ -26,6 +26,6 @@ Os sistemas Linux devem ter **pelo menos 20MB de RAM** para que o PreMiD functio
 O PreMiD ocupa cerca de **150MB** de armazenamento físico. Mesmo assim, recomendamos pelo menos **200MB** de armazenamento dedicado ao PreMiD.
 
 ### Acesso à internet
-Precisas de uma ligação à internet para usar o PreMiD. O PreMiD irá procurar por novas atualizações, idiomas, atualizações de Presences, etc. automaticamente de vez em quando.
+Precisas de uma ligação à internet para usar o PreMiD. PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}

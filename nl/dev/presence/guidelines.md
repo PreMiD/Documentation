@@ -292,7 +292,7 @@ Enkele dingen die je moet weten voordat je een pull request opent:
 - ⚠️ Je **moet** nieuwe, onaangepaste schermafbeeldingen (gemaakt door jou) meesturen die je profiel en de website naast elkaar tonen om te bewijzen dat je presence werkt. _Je mag schermafbeeldingen samennemen voor verhoogd kijkgemak_ Dit geldt zowel voor het aanmaken van je presence als voor latere aanpassingen.
 - ⚠️ Je bent ook **verplicht** om schermafbeeldingen te maken van eventuele presence-instellingen. Een voorbeeld kan je [hier](https://imgur.com/a/OD3sj5R) bekijken.
 
-## `Checks`
+## `Controles`
 
 ![Controles](https://i.imgur.com/oqAakOc.png)
 

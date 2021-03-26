@@ -6,18 +6,18 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Avant d'aller plus loin, assurez-vous que votre système répond à tout les [prérequis](/install/requirements). 
+> Avant d'aller plus loin, assurez-vous que votre système répond à toutes les [exigences](/install/requirements). 
 > 
 > {.is-info}
 
 L'installation de l'application est très importante car l'extension ne peut rien faire par elle-même.
 
-# Installation
+# Installer
 1. Rendez-vous sur notre page de téléchargements en [cliquant ici](https://premid.app/downloads).
 2. Choisissez **OS X**.
 3. Extraire l'archive si nécessaire.
 4. Ouvrir l'installateur.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
+5. Une **alerte de sécurité** pourrait apparaître si vous installez PreMiD pour la première fois. Si c'est le cas, suivez les étapes ici : [Approuver les applications venant de développeurs non identifiés](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
 > Ceci est dû au fait que nous n'avons pas de certificat de signature de code (CSC). [Soutenez-nous](https://www.patreon.com/Timeraa) pour la financer.{.is-info}
 6. Choisissez d'ouvrir lorsque vous y êtes invité.
 7. Accorder l'accès aux connexions via **Pare-feu** et contrôler **Événements du système** lorsque vous y êtes invité.
@@ -30,14 +30,14 @@ L'application démarre automatiquement. Vérifiez si l'icône est présente dans
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## Approuver les applications venant de développeurs non identifiés
+Étapes pour macOS Big Sur (11.0+) :
+1. Faites un clic droit sur l'installeur.
+2. Cliquez sur "Ouvrir" dans le menu déroulant.
+3. Cliquez sur "Ouvrir dans une nouvelle fenêtre".
 
-Steps for older macOS versions:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+Étapes pour les versions plus anciennes de macOS :
+1. Ouvrez les paramètres système.
+2. Allez dans la page "Sécurité & confidentialité".
+3. Cliquez sur le cadenas et entrez votre mot de passe ou scannez votre empreinte digitale pour pouvoir apporter des changements aux paramètres.
+4. Changez le paramètre "Autoriser des applications venant de l'App Store et des développeurs identifiés" à seulement "App Store".

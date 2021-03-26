@@ -101,9 +101,9 @@ Comme précisé dans notre **dépôt Linux**, AppImage ne peut pas être démarr
 2. Ouvrez ce fichier dans votre éditeur favori et collez-y le code suivant en modifiant le dossier dans lequel l'AppImage est située :
 ```bash
 #!/bin/bash
-# Nécessaire pour s'exécuter en tant /bin/bash (si vous utilisez zsh etc. vous pouvez le changer.)
+# Required to run as /bin/bash (if you use zsh etc. you can change it.)
 
-# Exemple: /home/PreMiD/PreMiD*.AppImage
+# Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
 
 exit 0

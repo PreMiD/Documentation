@@ -177,11 +177,11 @@ A list of fields and their rules are listed below:
 - The logo **must** be a square image with a `1:1` aspect ratio.
 - The image is **required** to have a minimum resolution of `512x512` pixels. You can upsize it using a tool like [waifu2x](http://waifu2x.udp.jp/).
 
-### **`รูปขนาดย่อ`**
+### **`thumbnail`**
 
 - The thumbnail **should** preferably be a [wide promotional card](https://i.imgur.com/3QfIc5v.jpg) or a [screenshot](https://i.imgur.com/OAcBmwW.png) if the first is **not** available.
 
-### **`สี`**
+### **`color`**
 
 - The color **must** be a hexadecimal value between `#000000` and `#FFFFFF`.
 - The color string **must** be prepended with a hash symbol.
@@ -193,7 +193,7 @@ A list of fields and their rules are listed below:
 - Tags **should** preferably include alternate service names to make searching easier (for e.g., if an Amazon presence had included AWS support, it would have its tags like `amazon-web-services` and `aws`)
 - You are **required** to add an `NSFW` tag if the presence is for an NSFW website.
 
-### **`หมวดหมู่`**
+### **`category`**
 
 - The category **must** be one of the following listed on the [documentation](/dev/presence/metadata#presence-categories).
 - The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
@@ -207,7 +207,7 @@ A list of fields and their rules are listed below:
 - Must be `boolean` value (e.g. `true` or `false`).
 - Enables logs for your presence.
 
-### **`คำเตือน`**
+### **`warning`**
 
 - Enables warning icon for prompting user that this presence needs more steps than only adding presence.
 - Example of presence using this metadata variable is `VLC`.

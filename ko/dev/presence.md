@@ -18,7 +18,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 > 
 > {.is-warning}
 
-- [지침](https://docs.premid.app/dev/presence/guidelines)
+- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # Structure
@@ -31,7 +31,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
-## Presence 복사하기
+## Cloning the project
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
 2. Choose a folder of your choice.
@@ -140,9 +140,9 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">변수</th>
+      <th style="text-align:left">Variable</th>
       <th style="text-align:left">설명</th>
-      <th style="text-align:left">유형</th>
+      <th style="text-align:left">Type</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -272,7 +272,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-게으른 녀석들을 위해 우리가 `metadata.json`파일 생성기를 만들었어요. [여기를 클릭하세요](https://eggsy.xyz/projects/premid/mdcreator).
+We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## Getting started
 

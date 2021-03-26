@@ -141,8 +141,8 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   <thead>
     <tr>
       <th style="text-align:left">Variable</th>
-      <th style="text-align:left">Opis</th>
-      <th style="text-align:left">Tip</th>
+      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Type</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -399,7 +399,7 @@ The website you are developing on is automatically reloading every time you save
 
 # Files explained
 
-- [Klasa Presence-a](/dev/presence/class)
+- [Presence Class](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)

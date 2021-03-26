@@ -232,7 +232,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**หมายเหตุ:** `String` ที่ให้ไปใน querySelector เป็นแค่คัวอย่างเท่านั้น.
 
 ### `getTimestamps(Number, Number)`
 
@@ -245,7 +245,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**หมายเหตุ:** `String` ที่ให้ไปใน querySelector เป็นแค่คัวอย่างเท่านั้น.
 
 ### `timestampFromFormat(String)`
 
@@ -259,7 +259,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**หมายเหตุ:** `String` ที่ให้ไปใน querySelector เป็นแค่คัวอย่างเท่านั้น.
 
 ## อินเตอร์เฟซ `PresenceData`
 

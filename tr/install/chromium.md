@@ -8,7 +8,7 @@ tags:
 
 Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olması gerekmektedir.
 
-# Yükleme
+# Yükle
 ### Chrome, Edge, vs.
 1. [Buraya](https://premid.app/downloads) tıklayarak "İndir" sayfamıza gidin.
 2. **Chromium**'u seçin.
