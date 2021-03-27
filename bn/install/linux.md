@@ -28,7 +28,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 - **[Snapcraft](#snapcraft)** (ছোট কথায়: _কখনই না_ ™️)
 - **[Portable AppImage](#appimage)** (_পরামর্শিত_)
   - [ইন্সটলেশন নির্দেশাবলী](#appimageinstall)
-  - [Additional notes](#appimagenotes)
+  - [অতিরিক্ত নোট](#appimagenotes)
 - [**রেড হ্যাট এন্টারপ্রাইজ লিনাক্স (RHEL) ভিত্তিক ডিস্ট্রিবিউশনগুলো**](#packagecloud)
 - [**Debian এবং Ubuntu ভিত্তিক ডিস্ট্রিবিউশনগুলো**](#packagecloud)
 - [**Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলো**](#arch)
@@ -37,7 +37,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 ## পরিচিতি
 
-**PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
+**PreMiD** হচ্ছে একটি সহজ, কনফিগারযোগ্য ইউটিলিটি যা Discord - এর RP (Rich Presence) লাইব্রেরি ব্যবহার করে দেখায় তুমি কী করছ ইন্টারনেটে (এবং কিছু প্রোগ্রাম) তোমার Discord প্রোফাইলে **প্লেয়িং স্ট্যাটাস** হিসেবে।
 
 <a name="stats"></a>
 
@@ -45,7 +45,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 <table>
   <tr>
-    <th>Deployment</th>
+    <th>ডেপ্লয়মেন্ট</th>
     <th>মোট ডাউনলোড</th>
     <th>সর্বশেষ রিলিজ</th>
   </tr>
@@ -84,11 +84,11 @@ It is unknown whether older versions of other distributions support it, so just 
 
 ধন্যবাদ জানাই:
 
-- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (and few other guys whom I forgot their names) for providing feedback on nightly releases.
-- @apriluwu for maintaining the Gentoo builds
-- @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
-- The Electron community for various packages
-- Anyone else who has ever contributed to the project in any way.
+- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre - কে (এবং আরো অন্যান্য কয়েকজনকে যাদের নাম আমি ভুলে গেছি) ফিডব্যাক দেওয়ার জন্যে।
+- @apriluwu - কে Gentoo বিল্ডগুলোকে মেইনটেইন করার জন্যে
+- @SlimShadyIAm এবং naka - কে পূর্বে Arch User রিপোজিটরি প্যাকেজগুলোকে মেইনটেইন করার জন্যে
+- Electron কমিউনিটিকে বিভিন্ন ধরণের প্যাকেজ দেওয়ার জন্যে
+- অন্য কেউ যে প্রোজেক্টটিকে যেকোনোভাবে কন্ট্রিবিউট করেছে।
 
 <a name="license"></a>
 
@@ -101,7 +101,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 ## Portable AppImage
 
-The AppImage package is the recommended one if Discord works for you but other PreMiD packages (.deb, .rpm, etc) don't.
+AppImage প্যাকেজটি পরামর্শিত যদি Discord তোমার জন্য কাজ করে কিন্তু অন্যান্য PreMiD প্যাকেজগুলো (.deb, .rpm, etc) না করে।
 
 <a name="appimageinstall"></a>
 
@@ -112,43 +112,43 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 ```
 
 ```bash
-# Just double-click it or run
+ডাবল ক্লিক করো অথবা রান করো
 ./PreMiD*.AppImage
 ```
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### অতিরিক্ত নোট
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
+হয় তুমি যদি PreMiD পরীক্ষা করতে চাও অথবা শুধু তুমি এটাকে ইন্সটল করতে চাও না, এটাই হচ্ছে সেরাটা, এটা সবসময় আপ টু ডেট কিন্তু _কখনো অটো স্টার্ট হয় না সিস্টেমের সাথে!_</br>যদি তুমি ক্লান্ত হয়ে যাও প্রত্যেকবার এটাকে ওপেন করার জন্যে, ব্যবহার করো অন্যান্য প্যাকেজগুলো (তোমার ডিস্ট্রিবিউশন অনুযায়ী)।
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
 <a name="packagecloud"></a>
 
 # PackageCloud
 
-We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
+আমরা deb/rpm প্যাকেজগুলো রিলিজ করেছি আমাদের PackageCloud রিপোজিটরিতে। যাও https://packagecloud.io/PreMiD/Linux - তে এবং ডাউনলোড করো তোমার deb/rpm প্যাকেজ অথবা ব্যবহার করো অটোমেটিক স্ক্রিপ্ট।
 
-For **Ubuntu/Debian**:
+**Ubuntu/Debian** - এর জন্য:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+**Fedora/CentOS/RedHat** - এর জন্য:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+যদি কমান্ড কাজ না করে, ডাউনলোড করো **deb/rpm** ফাইল আমাদের PackageCloud রিপোজিটরি থেকে অথবা সেটিংস ওভাররাইড করো।
 
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
 ## Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলো
 
-Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+[Arch User রিপোজিটরি](https://aur.archlinux.org/packages/premid) ব্যবহার করে;</br> সাপোর্টেড ডিস্ট্রিবিউশনগুলো হলো _নিজেই_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS এবং [সবকটি যেগুলো AUR থেকে ইন্সটল করা সাপোর্ট করে](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active)।
 
 <a name="archinstall"></a>
 
@@ -178,13 +178,13 @@ pacaur -S premid
 # ... আশা করি তুমি বুঝতে পেরেছ
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+অথবা ম্যানুয়ালি [Arch User রিপোজিটরি](https://aur.archlinux.org/packages/premid) থেকে যদি তুমি জানো তুমি কী করছ।
 
 <a name="archnotes"></a>
 
-### Additional notes
+### অতিরিক্ত নোট
 
-If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
+যদি তোমার ডিস্ট্রিবিউশন Pacman ব্যবহার করে, তাহলে তোমাকে প্রথমে একটি হেল্পার ইন্সটল করতে হবে। তোমার কাছে যদি একটিও না থাকে, Yay পরামর্শিত, রান করো:
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -194,4 +194,4 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S premid
 ```
 
-Other AUR/Pacman helpers work as well, although each one's functionality is different so you may face issues while using them.
+অন্যান্য AUR/Pacman হেল্পারগুলোও কাজ করে, যদিও প্রত্যেকটির কার্যকারিতা ভিন্ন তাই তুমি সমস্যার মুখোমুখি হতে পারো সেগুলো ব্যবহার করার সময়।
