@@ -35,7 +35,7 @@ Kesemua Presence dikodkan dalam [TypeScript](https://www.typescriptlang.org/). [
 
 1. Buka terminal dan taip `git clone https://github.com/PreMiD/Presences`.
 2. Pilih folder yang anda suka.
-3. Buka ia dalam penyunting kod anda.
+3. Buka folder tersebut dalam penyunting kod anda.
 
 ## Cipta folder dan fail
 
@@ -68,29 +68,29 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "PENGGUNA",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "PERKHIDMATAN",
+  "altnames": ["PERKHIDMATAN"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "KETERANGAN"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
+  "category": "KATEGORI",
+  "regExp": "UNGKAPAN NALAR",
+  "iFrameRegExp": "UNGKAPAN NALAR",
   "iframe": false,
   "readLogs": false,
   "settings": [
@@ -100,8 +100,8 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": true
     },
     {
@@ -109,17 +109,17 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "dll."]
     }
   ]
 }
@@ -156,7 +156,7 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Harus mengandungi objek dengan nilai nama <code>name</code> dan id <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). Nombor <code>id</code> pengguna boleh disalin dari Discord dengan
+      <td style="text-align:left">Harus mengandungi objek dengan nilai nama <code>name</code> dan nombor id <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). Nombor <code>id</code> pengguna boleh disalin dari Discord dengan
         membolehkan mod pembangun dan mengklik-kanan profil anda.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ya</code></td>
