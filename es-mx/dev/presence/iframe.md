@@ -1,51 +1,51 @@
 ---
-title: Clase de iFrame
+title: iFrame Class
 description:
 published: true
 date: 2020-05-03T20:17:51.982Z
 tags:
 ---
 
-# Clase de iFrame
-> El sistema iframe con PreMiD es problemático y puede tener un comportamiento inesperado, usa con precaución. 
+# iFrame Class
+> The iframe system with PreMiD is problematic and can have unexpected behavior, use with caution. 
 > 
 > {.is-danger}
 
-## Introducción
+## Introduction
 
-En algunos argumentos, tu presencia puede necesitar acceder a elementos dentro de `iframes`.
+In some scenarios, your presence may need to access elements inside of `iframes`.
 
-El código que escribes dentro de tu archivo `iframe.ts` se inyecta en cada iframe de la página.
+The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
 
-Al igual que las presences, `iframes` tienen sus propias clases diseñadas para actualizar automáticamente los datos.
+Like presences, `iframes` have their own classes designed to automatically update data.
 
 ```typescript
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Inserta aquí el código...
+    // Code goes here...
 });
 ```
 
-## Métodos
+## Methods
 
 ### `send(Object)`
-Envía datos a la presencia. Usar este método hará que la presencia arroje un evento de `iFrameData`.
+Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
 
 ### `getUrl()`
-Devuelve la URL del `iframe`.
+Returns the URL of the `iframe`.
 
-## Eventos
-En `iframes`, los eventos funcionan de forma similar a como funcionan en la clase `presence`.
+## Events
+In `iframes`, events work similarly to the way they work in the `presence` class.
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Inserta aquí el código...
+    // Code goes here...
 });
 ```
 
-Aquí hay una lista de todos los eventos:
+Here is a list of all of the events:
 
 #### `UpdateData`
 
-Este evento se activa cada vez que se actualiza el iframe.
+This event is fired every time the iframe is being updated.
