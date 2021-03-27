@@ -8,7 +8,7 @@ tags:
 
 Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olması gerekmektedir.
 
-# Yükle
+# Yükleme
 1. [Buraya](https://premid.app/downloads) tıklayarak "İndir" sayfamıza gidin.
 2. **Firefox**'u seçin.
 3. Tarayıcının link kısmına `about:addons` yazın.
@@ -17,7 +17,7 @@ Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olmas
 6. İndirdiğiniz dosyayı bulun ve seçin.
 7. **Ekle**'ye tıklayarak kurulumu kabul edin.
 
-> [Uygulamayı](/install) da yüklemeyi **unutmayın**. 
+> [**Uygulamayı** eklemeyi](/install) unutmayın. 
 > 
 > {.is-warning}
 
