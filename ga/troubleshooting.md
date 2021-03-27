@@ -101,10 +101,10 @@ Mar a dúirt muid inár **stór Linux**, ní féidir AppImage a sheoladh ag log�
 1. Déan comhad darb ainm <strong x-id="1">rc.local</strong> san <code>/etc</code> eolaire.
 2. Oscail an comhad seo san eagarthóir is fearr leat agus greamaigh an cód tugtha le roinnt rudaí a athrú:
 ```bash
-#!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+#! / bin / bash
+# Iarrtar ort rith mar / bin / bash (má úsáideann tú zsh srl. is féidir leat é a athrú.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
+# Sampla: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
 
 exit 0
