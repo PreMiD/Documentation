@@ -10,9 +10,9 @@ tags:
 > 
 > {.is-info}
 
-A instalação do aplicativo é muito importante, já que a extensão não pode fazer nada por si só.
+A instalação do aplicativo é muito importante, uma vez que a extensão não pode fazer nada por si só.
 
-# Instalar
+# Instalação
 1. Vá para a nossa página de downloads [clicando aqui](https://premid.app/downloads).
 2. Escolha **OS X**.
 3. Extraia o arquivo, se necessário.
