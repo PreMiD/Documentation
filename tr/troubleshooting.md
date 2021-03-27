@@ -102,10 +102,10 @@ Arch Linux tabanlı dağıtımlarda <code>premid</code> veya <code>premid-git</c
 2. Bu dosyayı istediğiniz düzenleyici ile açıp bazı değişiklikler yaparak aşağıdaki kodu yapıştırın:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# /bin/bash olarak çalıştırmak için gereklidir (eğer zsh vb. kullanıyorsanız değiştirebilirsiniz.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
-<directory to appimage>/PreMiD*.AppImage
+# Örnek: /home/PreMiD/PreMiD*.AppImage
+<appimage klasörü>/PreMiD*.AppImage
 
 exit 0
 ```
