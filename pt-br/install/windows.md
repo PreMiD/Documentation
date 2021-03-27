@@ -8,15 +8,15 @@ tags:
 
 > Antes de continuar, certifique-se de que seu sistema atenda a todos os [requisitos](/install/requirements).{.is-info}
 
-A instalação do aplicativo é muito importante, já que a extensão não pode fazer nada por si só.
+A instalação do aplicativo é muito importante, uma vez que a extensão não pode fazer nada por si só.
 
-# Instalar
-1. Vá para a nossa página de downloads [clicando aqui](https://premid.app/downloads).
+# Instalação
+1. Vá para nossa página de downloads [clicando aqui](https://premid.app/downloads).
 2. Escolha **Windows**.
 3. Abra o instalador.
-4. Uma janela do **Windows SmartScreen** aparecerá, se você estiver instalando o PreMiD pela primeira vez. Clique em **Mais Informações** e selecione **Executar Mesmo Assim**. > Isso é porque não temos um Certificado de Assinatura de Código (CSC). [Apoie-nos](https://www.patreon.com/Timeraa) para financiar isto.{.is-info}
+4. Uma janela do **Windows SmartScreen** aparecerá, se você estiver instalando o PreMiD pela primeira vez. Clique em **Mais Informações** e selecione **Executar Mesmo Assim**. > Isso é porque não temos um Certificado de Assinatura de Código (CSC). [Apoie-nos](https://www.patreon.com/Timeraa) para financiá-lo.{.is-info}
 
-O aplicativo irá iniciar automaticamente. Procure o símbolo na bandeja do sistema.
+O aplicativo iniciará automaticamente. Procure o símbolo na bandeja do sistema.
 
 > Não se esqueça de [adicionar a **extensão**](/install).{.is-warning}
 
