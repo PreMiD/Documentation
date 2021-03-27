@@ -70,7 +70,7 @@ Se desconoce si las versiones antiguas de otras distribuciones lo soportan, así
 
 <a name="support"></a>
 
-### Soporte
+### Soporte técnico
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="¡Únete a nuestro Discord!">
@@ -146,7 +146,7 @@ Si el comando no funciona, descargue el archivo **deb/rpm** desde nuestro reposi
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Distribuciones basadas en arquitectura Arch Linux
+## Distribuciones basadas en Arch Linux
 
 Usa la [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Las distribuciones soportadas son _las mismas_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS y [cualquiera que soporte instalación desde AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... Bueno, ¿Entendiste el punto, no?
 ```
 
 O manualmente desde la [Arch User Repository](https://aur.archlinux.org/packages/premid) si tu sabes que estás haciendo.
