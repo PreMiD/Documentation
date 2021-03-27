@@ -74,7 +74,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Variabile</th>
       <th style="text-align:left">Descrizione</th>
       <th style="text-align:left">Tipo</th>
       <th style="text-align:left">Optional</th>
@@ -83,15 +83,15 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
+      <td style="text-align:left">Dovrebbe contenere un Oggetto con il <code>nome</code> e l'<code>id</code> del contributore. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). L'Id <code>dell'utente</code> può essere copiato da Discord abilitando la modalità
+        dello sviluppatore e facendo clic destro sul tuo profilo.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -103,11 +103,9 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left"><br>Destinato ad essere utilizzato per presences che hanno nomi diversi in lingue diverse (ad esempio Pokémon and 포켓몬스터).<br>Puoi anche usarlo per presences che hanno caratteri speciali in modo da non doverli digitare (ad esempio Pokémon e Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Si</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
@@ -127,7 +125,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left"><b>regExp</b></td>
       <td style="text-align:left">A regular expression string used to match urls.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Si</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
@@ -170,25 +168,25 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left"><b>iframe</b></td>
       <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Si</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
       <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Si</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Definisce se l'estensione debba leggere il registro.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Si</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
       <td style="text-align:left">Un array di settaggi che l'utente può cambiare</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Si</code></td>
     </tr>
   </tbody>
 </table>
@@ -263,7 +261,7 @@ The `multiLanguage` key can be set to the following:
 
 1. Apri un terminale e digita `git clone https://github.com/PreMiD/Localization`.
 2. Scegli una cartella a tua scelta.
-3. Open it in your code editor.
+3. Aprilo nel tuo editor di codice.
 
 ##### Creating the file
 
@@ -303,7 +301,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### Methods
+### Metodi
 
 Utilizzare i seguenti metodi per ottenere informazioni sulle impostazioni nei file della presenza:
 #### `getSetting(String)`
@@ -370,3 +368,4 @@ Quando fai la tua presence, è necessario specificare una categoria in cui la pr
     </tr>
   </tbody>
 </table>
+
