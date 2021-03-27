@@ -35,7 +35,7 @@ Envia dados para a presence. Usando este método a presence lançará um evento 
 ### `getUrl()`
 Retorna a URL do `iframe`.
 
-## Events
+## Eventos
 Em `iframes`, os eventos funcionam da mesma forma que na `classe de presence`.
 
 ```typescript
