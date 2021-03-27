@@ -27,7 +27,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ## Установка
 
-1. Загружать [Git](https://git-scm.com/).
+1. Установить [Иди](https://git-scm.com/).
 2. Установить [узел](https://nodejs.org/en/) (поставляется с [npm](https://www.npmjs.com/)).
 3. Установка [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите `npm install -g typescript`).
 
@@ -35,7 +35,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 1. Откройте терминал и введите `git clone https://github.com/PreMiD/Presences`.
 2. Выберите папку по вашему выбору.
-3. Откройте это в вашем редакторе кода.
+3. Откройте его в редакторе кода.
 
 ## Создание папок и файлов
 
@@ -68,40 +68,34 @@ dateCreated: 2020-06-11T18:04:02.843Z
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "ПОЛЬЗОВАТЕЛЬ",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "СЕРВИС",
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ"
   },
-  "url": "URL",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "url": "ССЫЛКА",
+  "version": "ВЕРСИЯ",
+  "logo": "ССЫЛКА",
+  "thumbnail": "ССЫЛКА",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "КАТЕГОРИЯ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
-  "readLogs": false,
   "settings": [
     {
       "id": "ID",
-      "multiLanguage": true
-    },
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
+      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
       "value": true
     },
     {
@@ -109,20 +103,17 @@ dateCreated: 2020-06-11T18:04:02.843Z
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
+      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
+      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
-    }
-  ]
-}
 ```
 
 Пожалуйста, скопируйте код выше и поместите его в файл `metadata.json`. Теперь нужно изменить значения свойств. Пожалуйста, обратите внимание, что следующие свойства необязательны для использования в метаданных `. son` файл, если вы не планируете его использовать.
@@ -143,7 +134,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
       <th style="text-align:left">Переменная</th>
       <th style="text-align:left">Описание</th>
       <th style="text-align:left">Тип</th>
-      <th style="text-align:left">Опционально</th>
+      <th style="text-align:left">Необязательно</th>
     </tr>
   </thead>
   <tbody>
@@ -215,7 +206,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Ссылка на сервис&apos;с логотипом</td>
+      <td style="text-align:left">Ссылка на сервис&apos;с логотипом.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Нет</code></td>
     </tr>
@@ -227,8 +218,8 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> значение. Мы рекомендуем использовать основной цвет сервиса
-        , который поддерживает ваше присутствие.</td>
+      <td style="text-align:left"><code>#HEX</code> значение. Рекомендуем использовать основной цвет услуги.
+        что ваше присутствие поддерживает.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Нет</code></td>
     </tr>
@@ -252,7 +243,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Регулярный селектор выражений, который выбирает iframes для inject into. Подробнее см. в regExp.</td>
+      <td style="text-align:left">Регулярный селектор выражений, который выбирает iframes для инъекции. Подробнее см. в regExp.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Да</code></td>
     </tr>
@@ -398,8 +389,8 @@ presence.on("iFrameData", (данные) => {
 
 # Файлы разъяснены
 
-- [Класс присутствия](/dev/presence/class)
+- [Класс Состояния](/dev/presence/class)
 - [Класс слайд-шоу](/dev/presence/slideshow)
-- [Класс iFrame](/dev/presence/iframe)
+- [класс iFrame](/dev/presence/iframe)
 - [Файл Метаданных](/dev/presence/metadata)
 - [Настройка TypeScript](/dev/presence/tsconfig ""){.links-list}
