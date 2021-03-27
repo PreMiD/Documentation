@@ -23,7 +23,7 @@ De installatie van de applicatie is van groot belang, omdat de extensie op zichz
   - Veelgestelde vragen (binnenkort)
   - Bouwen (binnenkort)
   - [Support](#support)
-  - [Attributies](#credits)
+  - [Met dank aan](#credits)
   - [Licentie](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_AANBEVOLEN_)
@@ -70,7 +70,7 @@ Het is niet bekend of oudere versies van andere distributies het ondersteunen, d
 
 <a name="support"></a>
 
-### Support
+### Ondersteuning
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Word lid van onze Discord!">
@@ -80,7 +80,7 @@ Het is niet bekend of oudere versies van andere distributies het ondersteunen, d
 
 <a name="credits"></a>
 
-### Attributies
+### Met dank aan
 
 Met dank aan:
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... je krijgt het punt
 ```
 
 of handmatig vanuit de [Arch User Repository](https://aur.archlinux.org/packages/premid) als je weet wat je aan het doen bent.
