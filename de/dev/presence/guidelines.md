@@ -292,7 +292,7 @@ Ein paar Dinge, die du nach dem Öffnen einer Pull-Request wissen solltest:
 - ⚠️ Du **musst** neue, unveränderte Screenshots (aufgenommen von dir) angeben, die in einen nebenseitigen Vergleich deines Profils mit der Website zeigen, dass deine Presence funktioniert. _Du darfst, für die bessere Übersichlichkeit, Screenshots zusammenfügen_ - Dies gilt sowohl für die Erstellung als auch für die Änderung.
 - ⚠️ Es ist außerdem **erforderlich** einen Screenshot der Presence-Einstellungen aufzunehmen, sofern diese bereitgestellt werden. [Hier](https://imgur.com/a/OD3sj5R) kannst du einen Beispiel dazu ansehen.
 
-## `Überprüfen`
+## `Kontrollen`
 
 ![Überprüfen](https://i.imgur.com/oqAakOc.png)
 
