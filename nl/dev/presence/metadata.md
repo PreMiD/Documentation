@@ -17,33 +17,33 @@ Een voorbeeld van dat bestand kan hieronder worden gevonden.
 ```typescript
 {
   "author": {
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   }],
   "service": "SERVICE",
   "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "BESCHRIJVING"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "VERSIE",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORIE",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": true
     },
     {
@@ -51,15 +51,15 @@ Een voorbeeld van dat bestand kan hieronder worden gevonden.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -231,14 +231,14 @@ Interactieve instellingen instellen zodat gebruikers de presence kunnen aanpasse
     "title": "TITEL",
     "icon": "FONTAWESOME ICOON",
     "value": "\"%song%\" by %artist%", //Als je een string gebruikt word het een input waar de gebruiker zelf iets kan invullen.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "placeholder": "use %song% or %artist%" //Als de input leeg is zie je deze tekst
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TITEL",
+    "icon": "FONTAWESOME ICOON",
+    "value": 0, //Standaard waarde van de selector
+    "values": ["1", "2", "etc."] //Zal de instelling een selector maken waarmee je kunt selecteren welke waarde je wilt
   }
 ]
 ```
@@ -286,12 +286,12 @@ Visualisatie van het bestand:
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Tekst die moet worden vertaald. ,
+    "description": "Dit verklaart wat het bericht hierboven is."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Tekst die moet worden vertaald. ,
+    "description": "Dit verklaart wat het bericht hierboven is."
   }
 }
 ```
@@ -355,12 +355,12 @@ Bij het maken van je presence moet je een categorie opgeven waaronder de presenc
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
-        <td style="text-align:left"><b>Sociaal</b></td>
+        <td style="text-align:left"><b>Socials</b></td>
       <td style="text-align:left">Websites die worden gebruikt voor het maken en delen van content of voor deelname aan andere vormen van sociaal netwerk.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Video's & streaming</b></td>
+        <td style="text-align:left"><b>Video's & Streams</b></td>
       <td style="text-align:left">Websites die dienen voor het leveren van video's en streams.</td>
     </tr>
     <tr>
@@ -370,3 +370,4 @@ Bij het maken van je presence moet je een categorie opgeven waaronder de presenc
     </tr>
   </tbody>
 </table>
+
