@@ -25,7 +25,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 
 All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## Installation
+## Cài đặt
 
 1. Cài đặt [Git](https://git-scm.com/).
 2. Cài [Node](https://nodejs.org/en/) (có sẵn với [npm](https://www.npmjs.com/)).
@@ -142,7 +142,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Mô tả</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Kiểu</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -399,7 +399,7 @@ The website you are developing on is automatically reloading every time you save
 
 # Files explained
 
-- [Presence Class](/dev/presence/class)
+- [Lớp hiện diện](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
