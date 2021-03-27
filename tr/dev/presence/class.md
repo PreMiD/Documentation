@@ -355,7 +355,7 @@ const presenceData: PresenceData = {
 };
 ```
 
-## Events
+## Olaylar
 
 Eventler belirli zamanlarda bilgi gönderir ve birçok şeyi kontrol edebilmenizi sağlar. Bir event'i dinleyebilmek için `on` metodunu kullanabilirsiniz.
 

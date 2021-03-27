@@ -27,7 +27,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-## ฟังก์ชัน
+## วิธีการ
 
 ### `send(Object)`
 ส่งข้อมูลไปยัง presence. การใช้วิธีนี้จะทำให้ presence ปัจจุบันปรากฏในเหตุการณ์ของ `iFrameData`
@@ -35,7 +35,7 @@ iframe.on("UpdateData", async () => {
 ### `getUrl()`
 คืนค่า URL ของ `iframe`
 
-## Events
+## เหตุการณ์
 ใน `iframes` เหตุการณ์จะทำงานคล้ายกับวิธีที่พวกเขาทำงานในคลาส `presence`
 
 ```typescript

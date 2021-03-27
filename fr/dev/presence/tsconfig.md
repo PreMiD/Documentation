@@ -61,7 +61,7 @@ Dans le fichier de configuration racine, vous verrez quelque chose comme ça.
 }
 ```
 
-| Propriété           | Description                                                                                                |
+| Propriétés          | Description                                                                                                |
 |:------------------- |:---------------------------------------------------------------------------------------------------------- |
 | **extends**         | Utilisé pour étendre le fichier de base `tsconfig` pour diverses tâches.                                   |
 | **compilerOptions** | Voir [**Configuration de la racine**](/dev/presence/tsconfig#root-configuration) pour plus d'informations. |

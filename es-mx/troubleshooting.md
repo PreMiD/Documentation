@@ -101,10 +101,10 @@ Como indicamos en nuestro ** repositorio de Linux **, la AppImage no se puede in
 2. Abre este archivo en tu editor favorito y pega el siguiente código con algunas modificaciones:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# Requerido para ejecutar como /bin/bash (si usas zsh etc. puedes cambiarlo.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
-<directory to appimage>/PreMiD*.AppImage
+# Ejemplo: /home/PreMiD/PreMiD*.AppImage
+<directorio a la appimage>/PreMiD*.AppImage
 
 exit 0
 ```
@@ -113,7 +113,7 @@ exit 0
 
 <a name="macos"></a>
 
-# Solución de problemas para MacOS
+# Solución de problemas de MacOS
 ### Error al crear el directorio
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 

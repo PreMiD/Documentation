@@ -35,7 +35,7 @@ iframe.on("UpdateData", async () => {
 ### `getUrl()`
 `iframe` のURLを返します。
 
-## Events
+## イベント
 `iframe`のイベントは`presence`クラスでの動作と同様に動作します。
 
 ```typescript

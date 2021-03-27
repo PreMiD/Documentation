@@ -16,7 +16,7 @@ tags:
 3. افتح المثبت.
 4. **Windows SmartScreen** will appear, if you install PreMiD for the first time. Click on **More Info** and then select **Run Anyway**. > This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
 
-سيبدأ التطبيق تلقائياً. تحقق من الرمز في علبة النظام.
+التطبيق سيبدأ تلقائياً. تحقق من الرمز في علبة النظام.
 
 > Do not forget to [add the **extension**](/install).{.is-warning}
 

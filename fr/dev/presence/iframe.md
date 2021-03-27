@@ -35,7 +35,7 @@ Envoie des données à la présence. L'utilisation de cette méthode fera que la
 ### `getUrl()`
 Retourne l'URL de l' `iframe`.
 
-## Événements
+## Évènements
 En `iframes`, les événements fonctionnent de la même façon que la classe `présence`.
 
 ```typescript

@@ -26,6 +26,6 @@ Linux systems should have **at least 20MB of RAM** to run PreMiD. Windows and ma
 PreMiD takes about **150MB** of physical storage. However at least **200MB** of storage dedicated to PreMiD is recommended.
 
 ### صلاحية إستعمال الانترنيت
-A internet connection is required to run PreMiD. PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
+A internet connection is required to run PreMiD. PreMiD will automatically check for new updates, languages, Presence updates, etc. من وقت لآخر.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}

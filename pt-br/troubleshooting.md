@@ -1,5 +1,5 @@
 ---
-title: Solução de Problemas
+title: Solução de problemas
 description: Tudo para resolver o seu problema
 published: true
 date: 2021-02-08T21:30:58.603Z
@@ -19,7 +19,7 @@ Incluído nesta página:
 
 <a name="general"></a>
 
-# Solução de todos problemas
+# Solução de problemas
 ### Atualize a página
 Você pode pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) no seu teclado também, em vez de procurar pelo botão de atualização.
 
@@ -101,13 +101,13 @@ Conforme falamos no repositório **Linux**, AppImage não pode ser iniciado no l
 1. Crie um arquivo nomeado <strong x-id="1">rc.local</strong> na pasta <code>/etc</code>.
 2. Abra este arquivo em seu editor favorito e cole o código fornecido com a alteração de algumas coisas:
 ```bash
-#!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+#!/bin /bash
+# Necessário para executar como /bin /bash (se você usar zsh etc. , você pode alterá-lo).
 
-# Example: /home/PreMiD/PreMiD*.AppImage
-<directory to appimage>/PreMiD*.AppImage
+# Exemplo: /home/PreMiD/PreMiD*.AppImage
+<directory to appimage></PreMiD*.AppImage
 
-exit 0
+sair 0
 ```
 3. Salve o arquivo e execute um chmod nele como executável `sudo chmod a+x /etc/rc.local`.
 4. Reinicie o seu PC, e PreMiD AppImage deve ser iniciado no login.

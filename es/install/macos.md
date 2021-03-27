@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Antes de nada, verifica que tu sistema cumpla todos los [requisitos](/install/requirements). 
+> Antes de nada, verifica que el equipo cumple todos los [requisitos](/install/requirements). 
 > 
 > {.is-info}
 

@@ -10,11 +10,11 @@ tags:
 
 Eklenti, uygulaması olmadan bir işe yaramayacağı için uygulamanın da de yüklü olması gerekmektedir.
 
-# Yükle
+# Yükleme
 1. [Buraya](https://premid.app/downloads) tıklayarak "İndir" sayfamıza gidin.
 2. **Windows**'u seçin.
 3. Yükleyiciyi açın.
-4. Eğer PreMiD'i ilk kez kuruyorsanız karşınıza bir **Windows SmartScreen** uyarısı gelecektir. Bunu geçebilmek için **Daha Fazla** butonuna tıklayın ve **Yine de Çalıştır** butonuna basın. Bu uyarının sebebi bir Code Signing Certificate (CSC) sertifikasına sahip olmamamızdan kaynaklanır. Bunu karşılayabilmemiz için [bize destek olun](https://www.patreon.com/Timeraa).{.is-info}
+4. Eğer PreMiD'i ilk kez kuruyorsanız karşınıza bir **Windows SmartScreen** uyarısı gelecektir. Bunu geçebilmek için **Daha Fazla** butonuna tıklayın ve **Yine de Çalıştır** butonuna basın. Bu uyarının sebebi bir Code Signing Certificate (CSC) sertifikasına sahip olmamamızdan kaynaklanır. Masrafları karşılayabilmemiz için [bizi destekleyin](https://www.patreon.com/Timeraa).{.is-info}
 
 Uygulama otomatik olarak başlayacaktır. Uygulamanın çalıştığını anlamak için menü çubuğunuzdaki simgeyi kontrol edin.
 

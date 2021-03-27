@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... tu percebes
 ```
 
 ou manualmente do [Repositório de Utilizador Arch](https://aur.archlinux.org/packages/premid) se você sabe o que está fazendo.

@@ -28,14 +28,14 @@ Alle Presences sind in [TypeScript](https://www.typescriptlang.org/) geschrieben
 ## Installation
 
 1. Installiere [Git](https://git-scm.com/).
-2. Installiere [Node](https://nodejs.org/en/) (kommt mit [npm](https://www.npmjs.com/)).
+2. Installiere [Node](https://nodejs.org/en/) ([npm](https://www.npmjs.com/) integriert).
 3. Installiere [TypeScript](https://www.typescriptlang.org/index.html#download-links) (öffne ein Terminal und `npm install -g typescript`).
 
-## Projekt klonen
+## Klont Projekt
 
 1. Öffne ein Terminal und gib `git clone https://github.com/PreMiD/Presences` ein.
 2. Wähle einen Ordner Deiner Wahl.
-3. Öffne es in deinem Code-Editor.
+3. Öffne es in Deinem Code-Editor.
 
 ## Ordner und Dateien werden erstellt
 
@@ -142,20 +142,20 @@ Bitte kopiere den obigen Code und füge ihn in Deine `metadata.json` ein. Du mus
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Beschreibung</th>
-      <th style="text-align:left">Art</th>
+      <th style="text-align:left">Type</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>Id</code> kann kopiert werden, indem der Entwicklermodus aktiviert ist und einem Rechtsclick auf deinem Profil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>Id</code> kann kopiert werden, indem der Entwicklermodus aktiviert ist und einem Rechtsclick auf deinem Profil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -175,7 +175,7 @@ Dies kann auch genutzt werden für Presences, die spezielle Zeichen  haben, soda
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Kurze Beschreibung der Presence, du kannst die Beschreibung des Dienstes verwenden, wenn dir die Ideen ausgehen. Ihre Beschreibung muss Schlüsselpaarwerte enthalten, die die Sprache und die Beschreibung in dieser bestimmten Sprache angeben. Machen Sie Beschreibungen mit den Sprachen <i>, die Sie kennen</i>, unsere Übersetzer nehmen Änderungen an Ihrer Metadatendatei vor.</td>
+      <td style="text-align:left">Kurze Beschreibung der Presence, du kannst die Beschreibung des Dienstes verwenden, wenn dir die Ideen ausgehen. Deine Beschreibung muss Schlüsselpaarwerte enthalten, die die Sprache angeben und die Beschreibung in dieser bestimmten Sprache. Erstelle Beschreibungen mit den Sprachen <i>die du kennst</i>, unsere Übersetzer werden Änderungen an der Metadatendatei vornehmen.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -212,7 +212,7 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link zum Logo von Dienst&apos;.</td>
+      <td style="text-align:left">Link des Dienstes Logotyp.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -224,20 +224,19 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> Wert. Wir empfehlen, eine Primärfarbe des Dienstes
-        , die deine Presence unterstützt.</td>
+      <td style="text-align:left"><code>#HEX</code> Wert. Wir empfehlen das nutzen einer primären Farbe für den Dienst, der ihre Presence unterstützt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array mit Tags, sie helfen Benutzern, deine Presence auf der Website zu suchen.</td>
+      <td style="text-align:left">Array mit Schlagwörtern, die es Benutzern helfen wird, deine Presence auf der Webseite zu finden.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Eine Zeichenfolge, die die Kategorie darstellt, unter die die Presence fällt. Sehen Sie <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">hier</a> die gültigen Kategorien.</td>
+      <td style="text-align:left">Eine Zeichenkette, die die Kategorie entspricht, in die deine Kategorie fällt. Sehen Sie <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">hier</a> die gültigen Kategorien.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -245,11 +244,11 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
       <td style="text-align:left"><b>iframe</b></td>
       <td style="text-align:left">Legt fest ob <code>iFrames</code> verwendet werden.</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
+      <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Ein Selektor für reguläre Ausdrücke, der iframes auswählt, in die injiziert werden soll. Siehe regExp für weitere Informationen.</td>
+      <td style="text-align:left">Einen regulären Ausdrück-Selector, der iFrames auswählt, in die injiziiert werden soll. Siehe regExp für weitere Informationen.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -269,7 +268,7 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
   </tbody>
 </table>
 
-Wir haben eine `metadata.json`-Datei für die Lazy Peeps [hier](https://eggsy.xyz/projects/premid/mdcreator).
+Wir haben einen `metadata.json` Dateiersteller für die Faulen [hier](https://eggsy.xyz/projects/premid/mdcreator) erstellt.
 
 ## Erste Schritte
 
@@ -397,8 +396,8 @@ Die Website, auf der Du Dich befindest, wird jedes Mal automatisch neu geladen, 
 
 # Dateien erklärt
 
-- [Presence-Klasse](/dev/presence/class)
+- [Presence Klasse](/dev/presence/class)
 - [Diashow Klasse](/dev/presence/slideshow)
-- [iFrame-Klasse](/dev/presence/iframe)
+- [iFrame Klasse](/dev/presence/iframe)
 - [Metadatendatei](/dev/presence/metadata)
-- [TypeScript-Konfiguration](/dev/presence/tsconfig ""){.links-list}
+- [TypeScript Konfiguration](/dev/presence/tsconfig ""){.links-list}

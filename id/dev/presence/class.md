@@ -272,7 +272,7 @@ Antarmuka ini memiliki variabel berikut, semuanya adalah opsional.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Deskripsi</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Tipe</th>
     </tr>
   </thead>
   <tbody>

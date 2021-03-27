@@ -17,53 +17,52 @@ dateCreated: 2020-06-11T18:04:52.965Z
 ```typescript
 {
   "author": {
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "СЕРВИС",
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ"
   },
-  "url": "URL",
+  "url": "ССЫЛКА",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "version": "ВЕРСИЯ",
+  "logo": "ССЫЛКА",
+  "thumbnail": "ССЫЛКА",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "КАТЕГОРИИ",
   "iframe": false,
   "settings": [
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": true
-    },
-    {
-      "id": "ID",
-      "if": {
-        "ID": true
-      },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
-    },
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": 0,
-      "values": ["1", "2", "etc."]
-    }
-  ]
+        { 
+            "id": "ID",
+            "title": "ВИДИМЫЙ ЗАГОЛОВОК",
+            "icon": "ИКОНКА",
+            "value": true
+        },
+        {
+            "id": "ID",
+            "if": {
+                "ID": true
+            },
+            "title": "ВИДИМЫЙ ЗАГОЛОВОК",
+            "icon": "ИКОНКА",
+            "value": "\"%song%\" by %artist%",
+            "placeholder": "use %song% or %artist%"
+        },
+        {
+            "id": "ID",
+            "title": "ВИДИМЫЙ ЗАГОЛОВОК",
+            "icon": "ИКОНКА",
+            "value": 0,
+            "values": ["1", "2", "etc."]
+        }
+    ]
 }
 ```
 
@@ -230,14 +229,14 @@ PreMiD - это полиусиленный сервис, что означает
     "title": "НАЗВАНИЕ ДИСПЛЕЯ",
     "icon": "FONTAWESOME ЗНАЧОК",
     "value": "\"%song%\" by %artist%", //Ввод строки сделает настройку входной, где вы можете использовать пользовательский ввод.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "placeholder": "use %song% or %artist%" //Когда введено поле ввода пусто, оно будет показывать этот серый цвет
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
+    "title": "заглавие",
     "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "value": 0, //Значение по умолчанию селектора
+    "values": ["1", "2", "etc. ] //Выберете какой из них вы хотите
   }
 ]
 ```
@@ -262,7 +261,7 @@ PreMiD - это полиусиленный сервис, что означает
 
 1. Откройте терминал и введите `git clone https://github.com/PreMiD/Localization`.
 2. Выберите папку по вашему выбору.
-3. Откройте это в вашем редакторе кода.
+3. Откройте его в редакторе кода.
 
 ##### Создание файла DjVu
 
@@ -285,14 +284,13 @@ PreMiD - это полиусиленный сервис, что означает
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Текст, который нужно перевести.",
+    "description": "Это объясняет, что сообщение выше."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Текст, который нужно перевести.",
+    "description": "Это объясняет, что сообщение выше."
   }
-}
 ```
 
 После того, как вы полностью сделали файл со строками, вы можете создать Pull Request в [Репозиторий локализации](https://github.com/PreMiD/Localization), в описании, которое вы **должны** включить ссылку на ваш Pull Request of the presence updated using these new strings from [Presence Repository](https://github.com/PreMiD/Presences).
@@ -369,3 +367,4 @@ presence.showSetting("pdexID"); // Заменить pdexID идентифика�
     </tr>
   </tbody>
 </table>
+

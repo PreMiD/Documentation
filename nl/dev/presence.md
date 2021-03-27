@@ -68,27 +68,27 @@ We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](h
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "GEBRUIKER",
       "id": "ID"
     }
   ],
   "service": "SERVICE",
   "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "BESCHRIJVING"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIE",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORIE",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](h
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](h
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -209,7 +209,7 @@ Kopieer de bovenstaande code en plaats deze in het `metadata.json` bestand. Je m
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Je presence-versie.</td>
+      <td style="text-align:left">Versie van je presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nee</code></td>
     </tr>
@@ -404,4 +404,4 @@ De website waar je mee bezig bent wordt automatisch herladen wanneer je een best
 - [Slideshow Klasse](/dev/presence/slideshow)
 - [iFrame Klasse](/dev/presence/iframe)
 - [Metadata bestand](/dev/presence/metadata)
-- [TypeScript configuratie](/dev/presence/tsconfig ""){.links-list}
+- [TypeScript Configuratie](/dev/presence/tsconfig ""){.links-list}

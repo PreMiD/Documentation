@@ -26,6 +26,6 @@ Linux-Systeme sollten **mindestens 20 MB Arbeitsspeicher** besitzen, um PreMiD a
 PreMiD benötigt etwa **150MB** des physischen Speichers. Allerdings wird mindestens **200MB** an Speicher empfohlen, der PreMiD gewidmet ist.
 
 ### Internetzugriff
-Eine Internerverbindung wird benötigt um PreMiD auszuführen. PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
+Eine Internerverbindung wird benötigt um PreMiD auszuführen. PreMiD prüft automatisch nach neuen Updates, Sprachen, Presence-Updates, etc. von Zeit zu Zeit.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}

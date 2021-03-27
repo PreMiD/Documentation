@@ -26,6 +26,6 @@ PreMiD পুরোপুরি ঠিক চলে একটি প্রসে
 PreMiD **150 এমবি** হার্ড ডিস্ক স্টোরেজ নেয়। যাহোক কমপক্ষে PreMiD - এর জন্য **200 এমবি** স্টোরেজ পরামর্শিত।
 
 ### ইন্টারনেট অ্যাক্সেস
-একটি ইন্টারনেট কানেকশন প্রয়োজন PreMiD চালানোর জন্যে। PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
+একটি ইন্টারনেট কানেকশন প্রয়োজন PreMiD চালানোর জন্যে। PreMiD অটোমেটিকভাবে চেক করবে নতুন আপডেট এর জন্য, ভাষা, Presence আপডেট ইত্যাদি মাঝে মাঝে।
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}

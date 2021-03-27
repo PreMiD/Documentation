@@ -35,7 +35,7 @@ Seolann sé sonraí chuig an presence. Trí úsáid a bhaint as an modh seo, cai
 ### `getUrl()`
 Filleann sé URL an `iframe`.
 
-## Events
+## Imeachtaí
 In `iframes`, oibríonn imeachtaí ar an gcaoi chéanna leis an mbealach a oibríonn siad sa `presence` rang.
 
 ```typescript

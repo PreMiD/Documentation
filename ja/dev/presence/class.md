@@ -272,7 +272,7 @@ The `PresenceData` interface is recommended to use when you are using the `setAc
     <tr>
       <th style="text-align:left">変数</th>
       <th style="text-align:left">概要</th>
-      <th style="text-align:left">タイプ</th>
+      <th style="text-align:left">Type</th>
     </tr>
   </thead>
   <tbody>

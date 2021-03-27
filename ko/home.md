@@ -12,11 +12,11 @@ dateCreated: 2020-06-11T18:03:47.172Z
 > 
 > {.is-warning}
 
-# About PreMiD
+# PreMiD에 대하여
 - :mag: [PreMiD가 무엇인가요?](/about) PreMiD의 목적을 알고, 왜 사용해야하는지 알려드릴게요.
 - :link:[RPC가 무엇인가요?](https://discordapp.com/rich-presence) Rich Presence에 대한 모든것과 기능을 알아보세요.
 
-# Getting Started
+# 시작하기
 
 PreMiD 설치는 빠르고 쉽습니다. 집중하시고, 시작합니다!
 
@@ -24,7 +24,7 @@ PreMiD 설치는 빠르고 쉽습니다. 집중하시고, 시작합니다!
 - 빠르고 간단한 [설치 가이드](/install)를 따르세요.
 - [문제 해결 가이드](/troubleshooting) 가 일반적인 문제들에 대한 해결방안을 제안해줍니다.
 
-# 개발자들
+# 개발자
 
 [시작하기](/dev) PreMiD 를 개발하기 전 첫 단계
 

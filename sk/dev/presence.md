@@ -140,7 +140,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Premenná</th>
       <th style="text-align:left">Popis</th>
       <th style="text-align:left">Typ</th>
       <th style="text-align:left">Nepovinné</th>

@@ -27,14 +27,14 @@ Toutes les présences sont codées en [TypeScript](https://www.typescriptlang.or
 
 ## Installation
 
-1. Install [Git](https://git-scm.com/).
-2. Installez [Node](https://nodejs.org/en/) (livré avec [npm](https://www.npmjs.com/)).
+1. Installez [Git](https://git-scm.com/).
+2. Installez [Node](https://nodejs.org/en/) (fourni avec [npm](https://www.npmjs.com/)).
 3. Installez [TypeScript](https://www.typescriptlang.org/index.html#download-links) (ouvrez un terminal et `npm installez -g typescript`).
 
-## Dupliquer le projet
+## Cloner le projet
 
 1. Ouvrez un terminal et tapez `git clone https://github.com/PreMiD/Presences`.
-2. Choisissez un fichier de votre choix.
+2. Choisissez un dossier.
 3. Ouvrez-le dans votre éditeur de code.
 
 ## Création de dossiers et de fichiers
@@ -68,12 +68,12 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "UTILISATEUR",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "UTILISATEUR",
       "id": "ID"
     }
   ],
@@ -88,7 +88,7 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORIE",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHE",
+      "icon": "ICONE FONTAWESOME",
       "value": true
     },
     {
@@ -109,17 +109,17 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHE",
+      "icon": "ICONE FONTAWESOME",
       "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "placeholder": "utiliser %song% ou %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHE",
+      "icon": "ICONE FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "ect."]
     }
   ]
 }
@@ -143,13 +143,13 @@ Veuillez copier le code ci-dessus et le mettre dans votre fichier `metadata.json
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Description</th>
       <th style="text-align:left">Type</th>
-      <th style="text-align:left">Optionnel</th>
+      <th style="text-align:left">Facultatif</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Doit contenir un Objet avec le <code>nom</code> et l'<code>id</code> du développeur de la Presence. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'utilisateur <code>id</code> peut être copié depuis Discord en activant le mode développeur
+      <td style="text-align:left">Doit contenir un Objet avec le <code>nom</code> et l'<code>id</code> du développeur de la Presence. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'<code>id</code> utilisateur peut être copié depuis Discord en activant le mode développeur
         et en faisant un clic droit sur votre profil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Non</code></td>
@@ -178,7 +178,7 @@ Veuillez copier le code ci-dessus et le mettre dans votre fichier `metadata.json
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Petite description de la presence, vous pouvez utiliser la description du service si vous n'avez pas d'idées. Votre description doit avoir des valeurs de paire de clés qui indiquent la langue, et la description dans cette langue spécifique. Faites des descriptions avec les langues <i>que vous connaissez</i>, nos traducteurs apporteront des modifications à votre fichier de métadonnées.</td>
+      <td style="text-align:left">Petite description de la presence, vous pouvez utiliser la description du service si vous n'avez pas d'idées. Votre description doit avoir des valeurs de paire de clés qui indiquent la langue, et la description dans cette langue spécifique. Faites des descriptions avec les langues <i>que vous connaissez</i>, nos traducteurs apporteront des modifications à votre fichier metadata.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
@@ -210,38 +210,38 @@ regExp ou aussi connu sous le nom de Regex, peut être utilisé si un site Web a
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version de votre présence.</td>
+      <td style="text-align:left">Version de votre presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Lien vers le logo du service&apos;.</td>
+      <td style="text-align:left">Lien vers le logo du service.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Lien vers votre miniature de présence.</td>
+      <td style="text-align:left">Lien vers votre miniature de presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">valeur <code>#HEX</code>. Nous vous recommandons d'utiliser une couleur primaire du service
-        que votre présence supporte.</td>
+      <td style="text-align:left">Valeur <code>#HEX</code>. Nous vous recommandons d'utiliser une des couleur primaire du service
+        que votre presence supporte.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Tableau avec des tags, ils aideront les utilisateurs à rechercher votre présence sur le site Web.</td>
+      <td style="text-align:left">Tableau avec des tags, ils aideront les utilisateurs à rechercher votre presence sur le site Web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Une chaîne utilisée pour représenter la catégorie sous laquelle tombe la présence. Voir les catergories valides <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">ici</a>.</td>
+      <td style="text-align:left">Une chaîne utilisée pour représenter la catégorie à laquelle appartient la presence. Voir les catergories valides <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">ici</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
@@ -273,7 +273,7 @@ regExp ou aussi connu sous le nom de Regex, peut être utilisé si un site Web a
   </tbody>
 </table>
 
-Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici](https://eggsy.xyz/projects/premid/mdcreator).
+Nous avons fait un créateur de fichier `metadata.json` pour les personnes paresseuses [ici](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## Pour commencer
 
@@ -402,6 +402,6 @@ Le site Web sur lequel vous développez est automatiquement rechargé chaque foi
 
 - [Classe Presence](/dev/presence/class)
 - [Classe Slideshow](/dev/presence/slideshow)
-- [Classe iFrame](/dev/presence/iframe)
+- [Classe l'iFrame](/dev/presence/iframe)
 - [Fichier de métadonnées](/dev/presence/metadata)
-- [Configuration TypeScript](/dev/presence/tsconfig ""){.links-list}
+- [Configuration de TypeScript](/dev/presence/tsconfig ""){.links-list}

@@ -74,9 +74,9 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">변수</th>
       <th style="text-align:left">설명</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">유형</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -245,7 +245,7 @@ Setup interactive settings so users can customize the presence!
 
 ### `multiLanguage`
 
-#### Introduction
+#### 소개
 
 The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](/dev/presence/metadata/adding-new-strings).
 
@@ -259,11 +259,11 @@ The `multiLanguage` key can be set to the following:
 
 #### Adding new strings
 
-##### Cloning the project
+##### Presence 복사하기
 
 1. 터미널을 열어 `git clone https://github.com/PreMiD/Localization`를 입력하세요.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+2. 원하는 폴더를 선택하세요.
+3. 이것을 당신의 코드 편집기로 실행하세요.
 
 ##### Creating the file
 
@@ -340,7 +340,7 @@ When making your presence, you must specify a category which the presence falls 
   <tbody>
     <tr>
       <td style="text-align:left"><b>anime</b></td>
-      <td style="text-align:left"><b>애니</b></td>
+      <td style="text-align:left"><b>애니메이션</b></td>
       <td style="text-align:left">Anything related to anime, from forums to video streaming platforms.</td>
     </tr>
     <tr>
@@ -370,3 +370,4 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
   </tbody>
 </table>
+

@@ -27,15 +27,15 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 ## Instalace
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+1. Nainstalujte [Git](https://git-scm.com/).
+2. Nainstalujte [Node](https://nodejs.org/en/) (obsahuje [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
 ## Klonování projektu
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
 2. Vyberte složku dle vašeho výběru.
-3. Open it in your code editor.
+3. Otevřete ji ve svém editoru kódu.
 
 ## Creating folders and files
 
@@ -156,7 +156,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). Uživatelské <code>id</code> lze zkopírovat z Discordu povolením módu vývojáře
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). Uživatele <code>id</code> lze zkopírovat z Discordu povolením módu vývojáře
         a kliknutím pravým tlačítkem myši na tvůj profil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ano</code></td>
@@ -403,4 +403,4 @@ The website you are developing on is automatically reloading every time you save
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Třída](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Konfigurace TypeSkriptu](/dev/presence/tsconfig ""){.links-list}

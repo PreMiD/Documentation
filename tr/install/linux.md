@@ -74,7 +74,7 @@ Diğer dağıtımların eski sürümlerinin destekleyip desteklemediği bilinmem
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Discord'umuza katıl!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Discord'umuza katıl!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Discord Sunucumuza Katıl!">
   </a>
 </div>
 
@@ -146,7 +146,7 @@ Eğer komut çalışmazsa **deb/rpm** paketini packagecloud depomuzdan indirebil
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux tabanlı dağıtımlar
+## Arch Linux Tabanlı Dağıtımlar
 
 [Arch User Repository](https://aur.archlinux.org/packages/premid) kullanır;</br> Desteklenen dağıtımlar: _dağıtımın kendisi_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS ve [AUR üzerinden kuruluma destek veren her bir dağıtım](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... olayı anladınız
 ```
 
 veya ne yaptığınızı biliyorsanız, manuel olarak [Arch User Repository](https://aur.archlinux.org/packages/premid) üzerinden.

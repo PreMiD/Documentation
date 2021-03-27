@@ -41,7 +41,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 <a name="stats"></a>
 
-### Статистики
+### Статистика
 
 <table>
   <tr>
@@ -80,7 +80,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 <a name="credits"></a>
 
-### Команда
+### Кредит
 
 Благодарности :
 
@@ -175,7 +175,7 @@ pakku -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... ну вы поняли.
 ```
 
 или вручную из [Arch User Repository](https://aur.archlinux.org/packages/premid) , если вы знаете, что вы делаете.

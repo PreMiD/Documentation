@@ -8,7 +8,7 @@ tags:
 
 A instalação da extensão é muito importante, pois o aplicativo não pode fazer nada por si só.
 
-# Instalar
+# Instalação
 ### Chrome, Edge, etc.
 1. Vá para a nossa página de downloads [clicando aqui](https://premid.app/downloads).
 2. Escolha **Chromium**.

@@ -10,7 +10,7 @@ tags:
 
 The installation of the application is very important as the extension can not do anything by itself.
 
-# Instalovat
+# Instalace
 1. Jděte na naši stránku ke stažení [kliknutím zde](https://premid.app/downloads).
 2. Zvolte **Windows**.
 3. Open the installer.

@@ -142,7 +142,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">شرح</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">نوع و</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -272,7 +272,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
+ما فایل ساز `metadata.json` برای رفقای تنبل [اینجا](https://eggsy.xyz/projects/premid/mdcreator) قرار دادیم.
 
 ## Getting started
 

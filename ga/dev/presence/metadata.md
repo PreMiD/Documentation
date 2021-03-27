@@ -283,12 +283,12 @@ Amharcléiriú an chomhaid:
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Téacs nach mór a aistriú.",
+    "description": "Míníonn sé seo cad é an teachtaireacht thuas."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Téacs nach mór a aistriú.",
+    "description": "Míníonn sé seo cad é an teachtaireacht thuas."
   }
 }
 ```
@@ -367,3 +367,4 @@ Agus tú i láthair, caithfidh tú catagóir a shonrú a mbaineann an láithreac
     </tr>
   </tbody>
 </table>
+

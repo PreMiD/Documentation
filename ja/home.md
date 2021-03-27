@@ -16,7 +16,7 @@ dateCreated: 2020-06-11T18:03:47.172Z
 - :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
 - :link: [RPCって？](https://discordapp.com/rich-presence) Rich Presence機能に関してです。
 
-# PreMiD開発入門
+# 使ってみる
 
 PreMiDのインストールはとってもかんたん！ すぐに使えるようになるはずです。
 
@@ -31,7 +31,7 @@ PreMiDのインストールはとってもかんたん！ すぐに使えるよ�
 - :computer: [API](/dev/api): PreMiDのAPIを使って、リソースにアクセスしたりアクションを実行
 - :wrench: [Presence Development](/dev/presence): PreMiDのプレゼンスシステムの使い方を学ぶ
 
-# コントリビュート
+# 貢献する
 - :bug: [バグを報告する](https://github.com/PreMiD) 不具合を除去する手伝いをする。
 - :bulb: [新しい機能を提案する](https://discord.premid.app/) あなたのアイデアが必要です！
 - :heart: [寄付をする](https://www.patreon.com/Timeraa) この素晴らしいプロジェクトを応援しましょう！

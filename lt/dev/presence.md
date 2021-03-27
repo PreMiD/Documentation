@@ -18,24 +18,24 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 > 
 > {.is-warning}
 
-- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
+- [Gairės](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # Structure
 
 All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## Installation
+## Instaliacija
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+1. Įdiegkite [Git](https://git-scm.com/).
+2. Įdiegkite [Node](https://nodejs.org/en/) (atkeliauja kartu su [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
-## Cloning the project
+## Projekto klonavimas
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+2. Pasirinkite jūsų norimą aplankalą.
+3. Atsidarykite jį su savo kodo redagavimo programa.
 
 ## Creating folders and files
 
@@ -140,9 +140,9 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Kintamasis</th>
       <th style="text-align:left">Aprašymas</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Tipas</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -178,7 +178,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Jūsų aprašymas turi turėti raktine pora reikšmių kurie nurodo kalbą ir aprašymą ta nustatyta kalba. Kurkite aprašymus su kalbomis <i>kurias jūs žinote</i>, mūsų vertėjai padarys pakitimus jūsų metadata failui.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -272,7 +272,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
+Mes sukūremė `metadata.json` failo kūrėją tingiems žmonėms [čia](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## Getting started
 
@@ -399,8 +399,8 @@ The website you are developing on is automatically reloading every time you save
 
 # Files explained
 
-- [Presence Class](/dev/presence/class)
+- [Presence klasė](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
+- [iFrame klasė](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [TypeScript konfiguracija](/dev/presence/tsconfig ""){.links-list}

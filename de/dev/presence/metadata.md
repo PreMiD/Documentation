@@ -83,13 +83,13 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Mitwirkenden enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Mitwirkenden enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Die Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -101,9 +101,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Erlaubt es die Presence mit einem alternativen Namen zu suchen<br>
-Nutzvoll für Presences, die verschiedene Namen in verschiedenen Sprachen haben (z.B.:. Pokémon und 포켓몬스터).<br>
-Dies kann auch genutzt werden für Presences, die spezielle Zeichen  haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
+      <td style="text-align:left">Kann die Presence mit einem alternativen Namen suchen.<br>Gemacht für Presences, die verschiedene Namen in verschiedenen Sprachen haben (z.B.:  Pokémon and 포켓몬스터).<br>Sie können es auch für Presences verwenden, die spezielle Zeichen haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -178,7 +176,7 @@ Dies kann auch genutzt werden für Presences, die spezielle Zeichen  haben, soda
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Legt fest, ob die Erweiterung Logs lesen soll.</td>
+      <td style="text-align:left">Legt fest, ob die Erweiterung die Logs lesen soll.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -257,10 +255,10 @@ Die `multiLanguage` Einstellung kann in die folgenden Werte gesetzt werden:
 
 #### Neue Stings hinzufügen
 
-##### Projekt klonen
+##### Klont das Projekt
 
 1. Öffne ein Terminal und gib `git clone https://github.com/PreMiD/Localization` ein.
-2. Wähle einen Ordner Deiner Wahl.
+2. Wähle einen Ordner deiner Wahl.
 3. Öffne es in deinem Code-Editor.
 
 ##### Erstellt die Datei
@@ -284,12 +282,12 @@ Visualisierung der Datei:
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Text, der übersetzt werden muss.",
+    "description": "Erklärt die Nachricht darüber."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Text, der übersetzt werden muss.",
+    "description": "Erklärt die Nachricht darüber."
   }
 }
 ```
@@ -358,13 +356,14 @@ Wenn du deine Presence erstellst, musst du eine Kategorie definieren, welche der
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Videos & Streams</b></td>
+        <td style="text-align:left"><b>Videos & Livestreams</b></td>
       <td style="text-align:left">Websites, die dem Zweck dienen, Videos und Streams bereitzustellen.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Sonstige</b></td>
+      <td style="text-align:left"><b>Sonstiges</b></td>
       <td style="text-align:left">Alles, was nicht unter eine der oben aufgeführten Kategorien fällt.</td>
     </tr>
   </tbody>
 </table>
+

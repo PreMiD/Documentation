@@ -17,11 +17,11 @@ Un exemple de ce fichier se situe ci-dessous.
 ```typescript
 {
   "author": {
-    "name": "USER",
+    "name": "UTILISATEUR",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "UTILISATEUR",
     "id": "ID"
   }],
   "service": "SERVICE",
@@ -37,13 +37,13 @@ Un exemple de ce fichier se situe ci-dessous.
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATÉGORIE",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE FONTAWESOME",
       "value": true
     },
     {
@@ -51,15 +51,15 @@ Un exemple de ce fichier se situe ci-dessous.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE FONTAWESOME",
+      "value": "\"%song%\" par %artist%",
+      "placeholder": "utilisez %song% ou %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -90,7 +90,7 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Doit contenir un objet avec le <code>nom</code> et l'<code>id</code> du contributeur. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'utilisateur <code>id</code> peut être copié depuis Discord en activant le mode développeur
+      <td style="text-align:left">Doit contenir un objet avec le <code>nom</code> et l'<code>id</code> du contributeur. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'<code>id</code> utilisateur peut être copié depuis Discord en activant le mode développeur
         et en faisant un clic droit sur votre profil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Oui</code></td>
@@ -230,15 +230,15 @@ Configurer les paramètres interactifs pour que les utilisateurs puissent person
     "title": "TITRE AFFICHÉ",
     "icon": "ICÔNE FONTAWESOME",
     "value": "\"%song%\" par %artist%", //Mettre une string va créer un paramètre avec un champ de saisie où vous pourrez mettre une saisie personnalisée.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
-  },
-  {
-    "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
-  }
+    "placeholder": "utilisez %song% par %artist%" //Lorsque l'entrée est vide, elle s'affiche en grisé
+        },
+        {
+            "id": "ID",
+            "title": "TITRE AFFICHÉ",
+            "icon": "ICÔNE GRATUITE FONTAWESOME",
+            "value": 0, //Valeur par défaut du sélecteur
+            "values": ["1", "2", "etc."] //Fera du réglage un sélecteur où vous sélectionnez celui que vous voulez
+        }
 ]
 ```
 
@@ -258,10 +258,10 @@ La clé `multiLanguage` peut être définie comme suit :
 
 #### Ajout de nouvelles chaînes
 
-##### Dupliquer le projet
+##### Cloner le projet
 
 1. Ouvrez un terminal et tapez `git clone https://github.com/PreMiD/Localization`.
-2. Choisissez un fichier de votre choix.
+2. Choisissez un dossier.
 3. Ouvrez-le dans votre éditeur de code.
 
 ##### Création du fichier
@@ -285,12 +285,12 @@ Visualisation du fichier :
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Texte qui doit être traduit. ,
+    "description": "Ceci explique ce que le message ci-dessus est."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Texte qui doit être traduit. ,
+    "description": "Ceci explique ce que le message ci-dessus est."
   }
 }
 ```
@@ -359,13 +359,14 @@ Lorsque vous faites votre présence, vous devez spécifier une catégorie sous l
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Vidéos et Streams</b></td>
+        <td style="text-align:left"><b>Vidéos & Streams</b></td>
       <td style="text-align:left">Sites Web qui servent à fournir des vidéos et des streams.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Autres</b></td>
+      <td style="text-align:left"><b>Autre</b></td>
       <td style="text-align:left">Tout ce qui ne relève pas d'une catégorie spécifique énumérée ci-dessus.</td>
     </tr>
   </tbody>
 </table>
+

@@ -25,17 +25,17 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 
 All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## Installation
+## Инсталация
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+1. Изтегли [Git](https://git-scm.com/).
+2. Изтегли [Node](https://nodejs.org/en/) (идва със [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
-## Cloning the project
+## Клониране на проекта
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+2. Избери папка по твой избор.
+3. Отвори го в твоя редактор на код.
 
 ## Creating folders and files
 
@@ -142,7 +142,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">описание</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Вид</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -399,7 +399,7 @@ The website you are developing on is automatically reloading every time you save
 
 # Files explained
 
-- [Presence Class](/dev/presence/class)
+- [Клас на присъствие](/dev/presence/class)
 - [Клас на слайшоу](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)

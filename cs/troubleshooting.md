@@ -1,5 +1,5 @@
 ---
-title: Řešit Problémy
+title: Řešení problémů
 description: Vše k vyřešení vašeho problému
 published: true
 date: 2021-02-08T21:30:58.603Z
