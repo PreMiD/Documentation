@@ -41,7 +41,7 @@ L'installation de l'application est très importante car l'extension ne peut rie
 
 <a name="stats"></a>
 
-### Statistiques
+### Stats
 
 <table>
   <tr>
@@ -74,7 +74,7 @@ On ne sait pas si les anciennes versions d'autres distributions supporte l'appli
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Rejoignez notre Discord">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Rejoignez notre Discord">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Rejoignez notre Discord!">
   </a>
 </div>
 
@@ -118,7 +118,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 <a name="appimagenotes"></a>
 
-### Notes complémentaires
+### Notes additionnelles
 
 Si vous voulez essayer PreMiD ou simplement ne voulez pas l'installer, c'est la meilleur méthode, c'est toujours à jour mais <br>_CELA NE DÉMARRE PAS AUTOMATIQUEMENT AVEC LE SYSTÈME!</br>. Si vous en avez assez d'avoir à l'ouvrir à chaque fois, utilisez les autres paquets (selon votre distribution).
 
@@ -175,14 +175,14 @@ pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... vous m'avez compris
 ```
 
 ou manuellement à partir de l'[Arch User Repository](https://aur.archlinux.org/packages/premid) si vous savez ce que vous faites.
 
 <a name="archnotes"></a>
 
-### Notes complémentaires
+### Notes additionnelles
 
 Si votre distribution utilise pacman, alors vous devez d'abord installer l'un des assistants. Si vous n'en avez pas, Yay est recommandé, exécutez :
 
