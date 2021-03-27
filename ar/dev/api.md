@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:59.010Z
 ---
 
-# واجهة برمجة التطبيقات (API)
+# API
 
 > عنوان URL الأساسي: https://api.premid.app 
 > 
