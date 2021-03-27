@@ -11,12 +11,12 @@ tags:
 نصب برنامه خیلی مهم است زیرا افزونه نمی تواند به تنهایی کاری انجام دهد.
 
 # نصب
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. [اینجا کلیک کنید](https://premid.app/downloads) که به صفحه دانلود ما بروید.
 2. **Windows** را انتخاب کنید.
-3. Open the installer.
-4. ****Windows Smart Screen باز خواهد شد, اگر این اولین بار است که دارید PreMiD را نصب می‌کنید. کلیک کنید روی **اطلاعات بیشتر** و بعد **به هر حال اجرا کنید** را انتخاب کنید. > این به بخاطر این است که ما Code Signing Certificate (CSC) را نداریم. [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
+3. نصب کننده را باز کنید.
+4. ****Windows Smart Screen باز خواهد شد, اگر این اولین بار است که دارید PreMiD را نصب می‌کنید. کلیک کنید روی **اطلاعات بیشتر** و بعد **به هر حال اجرا کنید** را انتخاب کنید. > این به بخاطر این است که ما Code Signing Certificate (CSC) را نداریم. [از ما حمایت کنید](https://www.patreon.com/Timeraa) تا بتوانیم خرج های این گواهی را بگیریم.{.is-info}
 
-The application will start automatically. نماد را در تری سیستم خود چک کنید.
+برنامه به طور خودکار شروع می شود. نماد را در تری سیستم خود چک کنید.
 
 > [اضافه کردن **افزونه**](/install) را فراموش نکنید.{.is-warning}
 
