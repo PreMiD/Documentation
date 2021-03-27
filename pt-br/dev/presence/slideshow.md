@@ -1,5 +1,5 @@
 ---
-title: Classe de Slideshow
+title: Classe Slideshow
 description:
 published: true
 date: 2020-12-25T00:47:38.111Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
-# Classe de Slideshow
+# Classe Slideshow
 
 ## Introdução
 
@@ -16,7 +16,7 @@ A classe `Slideshow` é usada para definir vários `PresenceData` e "deslizar" p
 
 Veja o método [`createSlideshow`](/dev/presence/class#createslideshow) na classe [`Presence`](/dev/presence/class) sobre como criar um `Slideshow`.
 
-## Properties
+## Propriedades
 
 ### `currentSlide`
 
