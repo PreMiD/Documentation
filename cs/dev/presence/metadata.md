@@ -263,7 +263,7 @@ The `multiLanguage` key can be set to the following:
 
 1. Otevřete terminál a napište `git clone https://github.com/PreMiD/Localization`.
 2. Vyberte složku dle vašeho výběru.
-3. Open it in your code editor.
+3. Otevřete ji ve svém editoru kódu.
 
 ##### Creating the file
 
@@ -370,3 +370,4 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
   </tbody>
 </table>
+
