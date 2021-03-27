@@ -18,7 +18,7 @@ A versão `2.x` introduz a [loja de presences](https://premid.app/store). Os uti
 > 
 > {.is-warning}
 
-- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
+- [Diretrizes](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # Estrutura
@@ -27,15 +27,15 @@ Toda as presence estão programadas em [TypeScript](https://www.typescriptlang.o
 
 ## Instalação
 
-1. Install [Git](https://git-scm.com/).
-2. Instale [Node](https://nodejs.org/en/) (vem com [npm](https://www.npmjs.com/)).
+1. Instala o [Git](https://git-scm.com/).
+2. Instala o [Node](https://nodejs.org/en/) (vem com [npm](https://www.npmjs.com/)).
 3. Instala o [TypeScript](https://www.typescriptlang.org/index.html#download-links)(abre um terminal e executa `npm install -g trypescrpit`).
 
-## Clonando o projeto
+## Clonar o projeto
 
 1. Abre um terminal e escreve `git clone https://github.com/PreMiD/Presences`.
-2. Escolha uma pasta à sua escolha.
-3. Open it in your code editor.
+2. Escolhe uma pasta.
+3. Abre-a no editor de código.
 
 ## Criar pastas e ficheiros
 
@@ -149,15 +149,15 @@ Copia o código acima e coloca-o no teu ficheiro `metadata.json`. Agora precisas
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Deve conter um objeto com o <code>name</code> e <code>id</code> na presence do programador. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Deve conter um objeto com o <code>name</code> e <code>id</code> na presence do programador. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). O <code>id</code> do utilizador pode ser copiado do Discord ativando o modo de
+        programador e carregando com o botão direito no perfil do autor.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Deve conter um objeto com o <code>name</code> e <code>id</code> na presence do programador. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Deve conter um objeto com <code>name</code> e <code>id</code> do programador da presence. <code>name</code> é teu nome de utilizador no Discord sem o identificador(#0000). O <code>id</code> teu de utilizador pode ser copiado do Discord ativando o modo de
+        programador e carregando com o botão direito no teu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -209,38 +209,38 @@ Copia o código acima e coloca-o no teu ficheiro `metadata.json`. Agora precisas
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">A versão da tua presence.</td>
+      <td style="text-align:left">Versão da tua presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link para o logotipo do teu serviço.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Link para a miniatura da tua presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Valor <code>#HEX</code>. Recomendamos que uses a cor principal do serviço
+        que a tua presence suporta.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Arrays com etiquetas que irão ajudar os utilizadores a encontrar a tua presence no site.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under. Vê as categorias válidas <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">aqui</a>.</td>
+      <td style="text-align:left">Uma string usada para representar a categoria a que a tua presence corresponde. Vê as categorias válidas <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">aqui</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
@@ -272,7 +272,7 @@ Copia o código acima e coloca-o no teu ficheiro `metadata.json`. Agora precisas
   </tbody>
 </table>
 
-Fizemos um criador de ficheiros `metadata.json` para o pessoal mais preguiçoso, que podes encontrar [aqui](https://eggsy.xyz/projects/premid/mdcreator).
+Fizemos um criador de ficheiros `metadata.json` para o pessoal preguiçoso [aqui](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## Primeiros passos
 
