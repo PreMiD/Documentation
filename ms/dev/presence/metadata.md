@@ -17,33 +17,33 @@ Contoh fail tersebut boleh dilihat di bawah.
 ```typescript
 {
   "author": {
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "PERKHIDMATAN",
+  "altnames": ["PERKHIDMATAN"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "KETERANGAN"
   },
   "url": "URL",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "regExp": "UNGKAPAN NALAR",
+  "iFrameRegExp": "UNGKAPAN NALAR",
+  "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGORI",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": true
     },
     {
@@ -51,17 +51,17 @@ Contoh fail tersebut boleh dilihat di bawah.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "dll."]
     }
   ]
 }
@@ -83,7 +83,7 @@ Contoh tersebut nampak agak pelik, kan? Jangan risau, ia tidaklah susah untuk fa
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Harus mengandungi objek dengan nilai nama <code>name</code> dan id <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). Nombor <code>id</code> pengguna boleh disalin dari Discord dengan
+      <td style="text-align:left">Harus mengandungi objek Object dengan nilai nama <code>name</code> dan ID <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). Nombor <code>id</code> pengguna boleh disalin dari Discord dengan
         membolehkan mod pembangun dan mengklik-kanan profil anda.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
@@ -231,14 +231,14 @@ Tetapkan tetapan saling tindak supaya pengguna boleh mengubah suai Presence ters
     "title": "TAJUK PAPARAN",
     "icon": "IKON FONTAWESOME",
     "value": "\"%song%\" by %artist%", //Dengan meletakkan rentetan maka ia membuatkan tetapan sebagai input, di mana anda boleh gunakan input tersuai.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "placeholder": "use %song% or %artist%" //Apabila input kosong maka ia akan tunjukkan rentetan ini dengan cara terpudar
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TAJUK PAPARAN",
+    "icon": "IKON FONTAWESOME",
+    "value": 0, //Nilai lalai bagi pemilih
+    "values": ["1", "2", "dll."] //Akan buatkan tetapan sebagai pemilih di mana anda boleh pilih yang mana diinginkan
   }
 ]
 ```
@@ -263,7 +263,7 @@ Kekunci `multiLanguage` boleh ditetapkan seperti berikut:
 
 1. Buka terminal dan taip `git clone https://github.com/PreMiD/Localization`.
 2. Pilih folder yang anda suka.
-3. Buka ia dalam penyunting kod anda.
+3. Buka folder tersebut dalam penyunting kod anda.
 
 ##### Cipta fail
 
@@ -286,12 +286,12 @@ Penggambaran fail:
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Tulisan yang perlu diterjemahkan.",
+    "description": "Ini menjelaskan apa latar bagi mesej di atas."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Tulisan yang perlu diterjemahkan.",
+    "description": "Ini menjelaskan apa latar bagi mesej di atas."
   }
 }
 ```
@@ -370,3 +370,4 @@ Apabila mencipta Presence anda, anda mesti tetapkan kategori yang mana Presence 
     </tr>
   </tbody>
 </table>
+
