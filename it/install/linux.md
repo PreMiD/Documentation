@@ -175,7 +175,7 @@ pakku -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... ci siamo capiti, spero.
 ```
 
 o manualmente dal [Arch User Repository](https://aur.archlinux.org/packages/premid) se sai cosa stai facendo.
