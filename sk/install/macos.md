@@ -12,7 +12,7 @@ tags:
 
 Inštalácia aplikácie je veľmi dôležitá pretože rozšírenie nemôže robiť nič samé o sebe.
 
-# Inštalovať
+# Inštalácia
 1. Prejdite na našu stránku na stiahnutie [kliknutím tu](https://premid.app/downloads).
 2. Vyberte **OS X**.
 3. Ak je potrebné rozbaľte archív.
