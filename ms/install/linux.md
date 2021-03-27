@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... anda faham caranya
 ```
 
 atau secara manualnya dari [Arch User Repository](https://aur.archlinux.org/packages/premid) jika anda tahu apa yang anda lakukan.
