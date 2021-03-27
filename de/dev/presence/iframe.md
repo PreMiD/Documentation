@@ -6,12 +6,12 @@ date: 2020-05-03T20:17:51.982Z
 tags:
 ---
 
-# iFrame-Klasse
+# iFrame Class
 > Das iframe-System mit PreMiD ist problematisch und kann unerwartetes Verhalten aufweisen. Sei vorsichtig. 
 > 
 > {.is-danger}
 
-## Einführung
+## Einleitung
 
 In einigen Szenarien muss deine Presence möglicherweise auf Elemente innerhalb von `iframes` zugreifen.
 
