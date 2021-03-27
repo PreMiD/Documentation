@@ -61,7 +61,7 @@ In der Root-Konfigurationsdatei siehst du so etwas.
 }
 ```
 
-| Eigenschaften       | Beschreibung                                                                                                |
+| Eigenschaft         | Beschreibung                                                                                                |
 |:------------------- |:----------------------------------------------------------------------------------------------------------- |
 | **extends**         | Wird zum Erweitern der Basisdatei `tsconfig` für verschiedene Aufgaben verwendet.                           |
 | **compilerOptions** | Weitere Informationen findest du unter [**Root-Konfiguration**](/dev/presence/tsconfig#root-configuration). |
