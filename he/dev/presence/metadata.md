@@ -259,11 +259,11 @@ The `multiLanguage` key can be set to the following:
 
 #### Adding new strings
 
-##### Cloning the project
+##### שכפל את הפרויקט
 
 1. פתח מהסוף והקלד ` git clone https://github.com/PreMiD/Localization `.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+2. בחר תיקיה לפי בחירתך.
+3. פתח אותו בעורך הקוד שלך.
 
 ##### Creating the file
 
@@ -303,7 +303,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### Methods
+### שיטות
 
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
@@ -370,3 +370,4 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
   </tbody>
 </table>
+
