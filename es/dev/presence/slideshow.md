@@ -1,5 +1,5 @@
 ---
-title: Clase SlideshowSlide
+title: Clase Slideshow
 description:
 published: true
 date: 2020-12-25T00:47:38.111Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
-# Clase SlideshowSlide
+# Clase Slideshow
 
 ## Introducción
 
@@ -51,7 +51,7 @@ El primer parámetro requiere un `String` que es el identificador único de la d
 
 El segundo parámetro requiere una interfaz [`PresenceData`](/dev/presence/class#presencedata-interface) para obtener toda la información que se desea mostrar en la diapositiva.
 
-El tercer parámetro requiere un `Number` que es la cantidad de tiempo en milisegundos que mostrará esta diapositiva (mínimo: 5000).
+El tercer parámetro requiere un `Number` que es la cantidad de tiempo en milisegundos que se mostrará esta diapositiva (mínimo: 5000).
 
 ### `hasSlide(String)`
 
