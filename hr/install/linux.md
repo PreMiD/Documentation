@@ -175,7 +175,7 @@ pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... skužio si već
 ```
 
 ili ručno iz [Arch User Repository-a](https://aur.archlinux.org/packages/premid) ako znaš šta radiš.
