@@ -61,7 +61,7 @@ A veces hay algún problema con los archivos... Tutoriales para la instalación 
 ### Eliminación manual
 Windows: Escribe `%appdata%` y elimina la carpeta `PreMiD`. MacOS: `~/users/USUSARIO/~Library/Application Support/` y elimina el directorio `PreMiD`.
 
-### McAfee detectó PreMiD como virus (Windows)
+### McAfee detectó a PreMiD como un virus (Windows)
 Esto es un falso positivo de McAfee y les hemos informado del problema por ahora puedes excluir PreMiD del escaneo haciendo los siguientes pasos:
 
 > Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
@@ -113,7 +113,7 @@ exit 0
 
 <a name="macos"></a>
 
-# Solución de problemas de MacOS
+# Solución de problemas para MacOS
 ### Error al crear el directorio
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
