@@ -20,7 +20,7 @@ Auf dieser Seite enthalten:
 <a name="general"></a>
 
 # Allgemeine Fehlerbehebung
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> Du kannst [dieses](https://qkeleq10.github.io/PreMiD-Troubleshooting/) Tool verwenden, um Probleme leichter zu finden. 
 > 
 > {.is-info}
 ### Die Seite neu laden
