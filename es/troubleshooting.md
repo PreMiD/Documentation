@@ -20,7 +20,7 @@ Incluido en esta página:
 <a name="general"></a>
 
 # Solución general de problemas
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> Puedes usar [esta](https://qkeleq10.github.io/PreMiD-Troubleshooting/) herramienta para identificar más fácilmente tu problema. 
 > 
 > {.is-info}
 ### Recarga la página
@@ -67,7 +67,7 @@ Windows: Escribe `%appdata%` y elimina la carpeta `PreMiD`. MacOS: `~/users/USUS
 ### McAfee detectó preMiD como virus (Windows)
 Esto es un falso positivo de McAfee y les hemos informado del problema por ahora puedes excluir PreMiD del escaneo haciendo los siguientes pasos:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
 > 
 > {.is-warning}
 

@@ -37,14 +37,14 @@ Peraturan am pembangunan Presence adalah seperti berikut:
   - Lencongan ke laman utama tidak dibenarkan.
   - Promosi laman sesawang menggunakannya tidak dibenarkan.
   - Ia tidak boleh menunjukkan data tambahan apabila anda tidak boleh tunjukkannya di `state` atau `details`.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Presence untuk perkhidmatan seperti Bot Discord/Senarai Pelayan mesti mengikut keperluan tambahan berikut:
+  - Domain mestilah berusia sekurang-kurangnya **6 bulan**.
+  - Pelawat unik setiap hari:
+    - Untuk domain berusia 6 bulan: **20,000 pelawat unik sehari**.
+    - Untuk domain berusia 12+ bulan: **45,000 pelawat unik sehari**.
+  - Laman sesawang tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan lain-lain.
+  - Laman sesawang tersebut sendirinya mestilah mempunyai kualiti, reka bentuk, dll yang sangat bagus.
+- Penyertaan folder `dist`, fail `presence.ts`, fail `iframe.ts`, dan fail `metadata.json` adalah diwajibkan supaya hasilnya nanti serupa seperti apa yang diwakilkan dalam skema berikut:
 
 ```bash
 presence
