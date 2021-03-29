@@ -1,6 +1,6 @@
 ---
 title: Ag tosú
-description: A little advise for those who got into coding recently
+description: A little advice for those who got into coding recently
 published: true
 date: 2020-04-09T14:21:58.246Z
 tags:
