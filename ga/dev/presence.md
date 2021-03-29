@@ -8,28 +8,28 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Stóráiltear gach uachtarán anseo anois: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+Leagan `2.x` tugtar isteach an [siopa láithreachta](https://premid.app/store). Anois tá sé de chumas ag úsáideoirí na láithreacha is fearr leo a chur leis agus a bhaint de láimh trí chomhéadan úsáideora an [láithreáin ghréasái](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> Sula dtosaíonn tú, moltar go mór duit breathnú ar ár dtreoirlínte láithreachta. 
 > 
 > {.is-warning}
 
 - [Treoirlínte](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
-# Structure
+# Struchtúr
 
-All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+Tá gach láithreacht códaithe i [TypeScript](https://www.typescriptlang.org/). Tá roinnt sainmhínithe breise de chineál spíosrach ag [TypeScript](https://www.typescriptlang.org/) thar JavaScript, agus mar sin tá sé níos éasca fabhtanna a shocrú agus a aithint.
 
 ## Suiteáil
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
+1. Suiteáil [Git](https://git-scm.com/).
+2. Suiteáil [Node](https://nodejs.org/en/) (tagann sé le [npm](https://www.npmjs.com/)).
+3. Suiteáil [TypeScript](https://www.typescriptlang.org/index.html#download-links) (oscail críochfort agus `npm install -g typecript`).
 
 ## Ag clónáil an tionscadail
 
@@ -37,17 +37,17 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 2. Roghnaigh fillteán de do rogha féin.
 3. Oscail é i d’eagarthóir cód.
 
-## Creating folders and files
+## Fillteáin agus comhaid a chruthú
 
-1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
-2. Create a folder with the **name** (not an URL) of the service you want to support.
-3. Create a `presence.ts` and a `tsconfig.json` file inside.
-4. Create a folder named `dist` inside.
-5. Create a `metadata.json` file inside the `dist` folder.
+1. Téigh san fhillteán `láithreáin ghréasáin` agus ansin téigh isteach san fhillteán leis an gcéad litir den **ainm** (ní URL) den tseirbhís is mian leat tacaíocht.
+2. Cruthaigh fillteán leis an **ainm** (ní URL) den tseirbhís ar mhaith leat tacú leis.
+3. Cruthaigh `presence.ts` agus comhad `tsconfig.json` taobh istigh.
+4. Cruthaigh fillteán darb ainm `dist` taobh istigh.
+5. Cruthaigh comhad `metadata.json` taobh istigh den fhillteán `dist`.
 
-## Filling in the tsconfig.json file
+## Líon isteach an comhad tsconfig.json
 
-Please put the following code inside of the `tsconfig.json` file.
+Uir an cód seo a leanas taobh istigh den chomhad `tsconfig.json`.
 
 ```typescript
 {
@@ -58,11 +58,11 @@ Please put the following code inside of the `tsconfig.json` file.
 }
 ```
 
-To learn more about TypeScript configuration click [here](/dev/presence/tsconfig).
+Chun níos mó a fhoghlaim faoi chumraíocht TypeScript cliceáil [anseo](/dev/presence/tsconfig).
 
-## Filling in the metadata.json file
+## Líon isteach an comhad metadata.json
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator). It's still suggested to read this through so you know how it works.
+Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [anseo](https://eggsy.xyz/projects/premid/mdcreator). Moltar fós é seo a léamh ionas go mbeidh a fhios agat conas a oibríonn sé.
 
 ```json
 {
@@ -125,7 +125,7 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 }
 ```
 
-Please copy the code above and put it in your `metadata.json` file. You now need to edit values of the properties. Please note that the following properties are optional to have in your `metadata.json` file, if you do not plan on using them you need to remove them.
+Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. Ní mór duit anois luachanna na n-airíonna a chur in eagar. Tabhair faoi deara le do thoil go bhfuil na hairíonna seo a leanas roghnach le bheith i do chomhad `metadata.json`, mura bhfuil sé beartaithe agat iad a úsáid is gá duit iad a bhaint.
 
 - `contributors`
 - `altnames`
@@ -135,7 +135,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 - `readLogs`
 - `settings`
 
-**Clarifying some value presets:**
+**Soiléiriú a dhéanamh ar roinnt réamhshocruithe luacha:**
 
 <table>
   <thead>
@@ -161,8 +161,8 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.<br>
-      (Must be the same name as the folder where everything is in)</td>
+      <td style="text-align:left">Teideal na seirbhíse a dtacaíonn an láithreacht seo léi.<br>
+       (Caithfidh an t-ainm céanna a bheith air agus atá san fhillteán ina bhfuil gach rud)</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
@@ -176,7 +176,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Caithfidh príomhluachanna beirte a bheith ag do thuairisc a léiríonn an teanga, agus an tuairisc sa teanga shonrach sin. Déan tuairiscí leis na teangacha <i>atá ar eolas agat</i>, déanfaidh ár n-aistritheoirí athruithe ar do chomhad metadata.</td>
+      <td style="text-align:left">Cur síos beag ar an láithreacht, is féidir leat tuairisc ar an tseirbhís a úsáid mura bhfuil smaointe agat. Caithfidh príomhluachanna beirte a bheith ag do thuairisc a léiríonn an teanga, agus an tuairisc sa teanga shonrach sin. Déan tuairiscí leis na teangacha <i>atá ar eolas agat</i>, déanfaidh ár n-aistritheoirí athruithe ar do chomhad metadata.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
@@ -269,7 +269,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
+Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [anseo](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## Getting started
 
