@@ -20,6 +20,9 @@ dateCreated: 2020-06-11T18:03:54.865Z
 <a name="general"></a>
 
 # সাধারণ সমস্যা সমাধান
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
+> {.is-info}
 ### ওয়েবপেজটি রিলোড করো
 তুমি তোমার কীবোর্ডের <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাকওস) চাপ দিতে পারো রিফ্রেশ বাটন খোঁজার বদলে।
 
