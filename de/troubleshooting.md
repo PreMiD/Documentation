@@ -20,6 +20,9 @@ Auf dieser Seite enthalten:
 <a name="general"></a>
 
 # Allgemeine Fehlerbehebung
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
+> {.is-info}
 ### Die Seite neu laden
 Statt nach dem Aktualisieren-Knopf zu suchen, kannst du <kbd>STRG+R</kbd>/<kbd>F5</kbd>(für Windows) oder <kbd>CMD+R</kbd>(für MacOS) auf deiner Tastatur eingeben.
 
@@ -64,7 +67,7 @@ Windows: Öffne den Pfad `C:\Users\USER\AppData\Roaming` und lösche den Ordner 
 ### McAfee erkennt PreMiD als Virus (Windows)
 Das ist ein falsch-positiver von McAfee und wir haben das Problem ihnen gemeldet, fürs Erste kannst du PreMiD vom Scan ausschliessen indem du folgende Schritte ausführst:
 
-> Wenn du dich nicht wohl fühlst mit diesen Schritten, fühl dich frei ein Ticket im [#support](https://discord.premid.app/) zu erstellen und einer der Support-Agenten wird dir helfen können! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 
