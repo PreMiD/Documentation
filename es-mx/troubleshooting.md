@@ -20,7 +20,7 @@ Incluido en esta página:
 <a name="general"></a>
 
 # Solución general de problemas
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
 > 
 > {.is-info}
 ### Recarga la página
