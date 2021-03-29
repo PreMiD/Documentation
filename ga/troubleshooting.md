@@ -20,6 +20,9 @@ San áireamh ar an leathanach seo:
 <a name="general"></a>
 
 # Fabhtcheartú ginearálta
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
+> {.is-info}
 ### Athlódáil an leathanach
 Is féidir leat <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nó <kbd>CMD+R</kbd> (MacOS) a bhrú ar do mhéarchlár freisin in ionad an cnaipe athnuachana a chuardach.
 
@@ -65,7 +68,7 @@ MacOS:`~/users/USER/~Library/Application Support/`agus scrios an fillteán`PreMi
 ### Bhraith McAfee PreMiD mar víreas (Windows)
 Is dearfach bréagach é seo ó McAfee agus chuireamar an cheist in iúl dóibh, go dtí seo is féidir leat PreMiD a eisiamh ón scanadh trí na céimeanna seo a leanas a dhéanamh:
 
-> Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 
