@@ -37,14 +37,14 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
   - No están permitidas redirecciones a páginas de inicio.
   - No está permitido promover sitios web por medio de ello.
   - No puede mostrar información adicional cuando esta no puede ser mostrada en las propiedades `state` o `details`.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Presences para servicios como listas de bots/servidores de Discord deben seguir estos requisitos adicionales:
+  - El dominio debe tener al menos **6 meses** de antigüedad.
+  - Visitas únicas por día:
+    - Para dominios de 6 meses de antigüedad: **20.000 visitas únicas por día**.
+    - Para dominios de 12 meses o más de antigüedad: **45.000 visitas únicas por día**.
+  - El sitio web no puede estar en un dominio barato como `.xyz` o `.club`.
+  - El sitio web debe tener una muy buena calidad, diseño, etc.
+- Incluyendo la carpeta `dist` y los archivos `presence.ts`, `iframe.ts` y `metadata.json` son obligatorios para que el resultado sea lo que se representa en el siguiente esquema:
 
 ```bash
 presence
