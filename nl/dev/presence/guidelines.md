@@ -37,6 +37,13 @@ De algemene regels voor de ontwikkeling van een presence zijn:
   - Omleidingen naar de hoofdpagina zijn verboden.
   - Websites promoten via knoppen is verboden.
   - Ze kunnen geen aanvullende info die niet meer past in `state` of `details` weergeven.
+- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+  - Het domein moet minimaal **6 maanden** oud zijn.
+  - Unieke bezoekers per dag:
+    - For 6 month old domains: **20.000 unique visitors/day**.
+    - For 12+ month old domains: **45.000 unique visitors/day**.
+  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - De website zelf moet een zeer goede kwaliteit hebben, ontwerp, etc.
 - De map `dist` en de bestanden `presence.ts`, `iframe.ts` en `metadata.json` moeten worden meegeleverd, dus het resultaat zou als volgt moeten zijn:
 
 ```bash

@@ -37,6 +37,13 @@ The general rules of presence development are as follows:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
   - They can't show addinational data when you can't show them in `state` or `details`.
+- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+  - The domain should be at least **6 months** old.
+  - Unique visitors per day:
+    - For 6 month old domains: **20.000 unique visitors/day**.
+    - For 12+ month old domains: **45.000 unique visitors/day**.
+  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - The website itself must have a very good quality, design, etc.
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash

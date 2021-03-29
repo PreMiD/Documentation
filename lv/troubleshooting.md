@@ -20,6 +20,9 @@ Iekļauts šajā lapā:
 <a name="general"></a>
 
 # Vispārīgu problēmu novēršana
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
+> {.is-info}
 ### Pārlādējiet lapu
 Jūs varat nospiest <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) vai <kbd>CMD+R</kbd> (MacOS) uz tastatūras, nevis meklēt atsvaidzināšanas pogu.
 
@@ -64,7 +67,7 @@ Windows: Uzraksti `%appdata%` failu pārlūkā un izdzēsiet `PreMiD` mapi. MacO
 ### McAfee atklāja PreMiD kā vīrusu (Windows)
 Šis ir nepatiess pozitīvs no Mcafee, un mēs esam viņiem ziņojuši par šo problēmu, pagaidām jūs varat izslēgt PreMiD no skenēšanas, veicot šādas darbības:
 
-> Ja nejūtaties pārliecināts veicot šīs darbības, droši izveidojiet biļeti [#support](https://discord.premid.app/) un viens no mūsu Atbalsta Aģentiem varēs tev palīdzēt! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 

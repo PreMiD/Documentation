@@ -20,6 +20,9 @@ Included on this page:
 <a name="general"></a>
 
 # General troubleshooting
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
+> {.is-info}
 ### Muat ulang halaman
 You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
 
@@ -64,7 +67,7 @@ Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. 
 ### McAfee mendeteksi PreMiD sebagai virus (Windows)
 Ini adalah false positive dari McAfee dan kami telah melaporkan masalah pada mereka, untuk saat ini kamu bisa mengecualikan PreMiD dari scan dengan melakukan langkah berikut:
 
-> Jika kamu tidak ingin melakukan langkah berikut, silahkan membuat tiket pada [#support](https://discord.premid.app/) dan salah satu Agen Support akan membantumu! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 

@@ -37,7 +37,14 @@ Servis geliştirmenin genel kuralları aşağıdaki gibidir:
   - Ana sayfaya yönlendirmeler yasak.
   - Bu özelliği kullanarak site reklamları yapmak yasak.
   - `state` veya `details` bölümlerinde bir şey göstermezken bunları ayarlamak mümkün değildir.
-- ` dist ` klasörü, ` presence.ts ` dosyası, ` iframe.ts ` dosyası ve ` metadata.json ` dosyası zorunludur sonuç aşağıdaki şemada temsil edilenler olacaktır:
+- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+  - The domain should be at least **6 months** old.
+  - Unique visitors per day:
+    - For 6 month old domains: **20.000 unique visitors/day**.
+    - For 12+ month old domains: **45.000 unique visitors/day**.
+  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - The website itself must have a very good quality, design, etc.
+- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
 presence

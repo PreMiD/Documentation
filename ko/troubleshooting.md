@@ -20,6 +20,9 @@ Included on this page:
 <a name="general"></a>
 
 # General troubleshooting
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
+> {.is-info}
 ### 페이지 새로고침
 새로고침 버튼을 누르는 대신 <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) 나 <kbd>CMD+R</kbd> (macOS) 를 눌러보십시오.
 
@@ -64,7 +67,7 @@ Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. 
 ### McAfee 백신이 PreMiD를 바이러스로 오탐하는 경우 (윈도우)
 이 문제는 McAfee 의 오탐이며, 우리는 해당 이슈를 이미 제출하였습니다. 당장은 밑의 방법을 통하여 PreMiD 를 McAfee 의 탐지에서 제외할 수 있어요.
 
-> 만약 여러분이 해당 단계를 거치기 어려운 상황이라면, 언제든지 [#support](https://discord.premid.app/) 채널에서 티켓을 만드실수 있어요. 저희의 유능한 도우미들이 여러분을 도울수있을거에요. 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 
