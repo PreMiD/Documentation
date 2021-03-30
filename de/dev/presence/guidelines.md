@@ -37,13 +37,13 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
   - Weiterleitungen zur Hauptseite sind verboten.
   - Werben von Webseiten durch diese ist verboten.
   - Sie können keine zusätzlichen Daten anzeigen, wenn Sie sie nicht im `-Status` oder `Details` anzeigen können.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+- Presences für Dienste wie Discord Bot/Server Listen müssen diese Extra-Anforderungen erfüllen:
+  - Die Domain sollte mindestens **6 Monate**  alt sein.
+  - Eindeutige Besucher pro Tag:
+    - Für 6 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
+    - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
+  - Die Website selbst muss eine sehr gute Qualität, Design, etc. haben.
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
@@ -131,6 +131,9 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
       "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
+    }
+  ]
+}
     }
   ]
 }
@@ -224,15 +227,15 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 - Wenn du dich dafür entscheidest, ein String-Format (zum Beispiel `%song% von %artist%`), müssen die Variablen von einem Prozentzeichen auf beiden Seiten umgeben sein. Variablen wie `%var`,`var%` oder `%%var%%` und alles dazwischen sind **nicht** erlaubt wegen der Standardisierung.
 - Der Name der Einstellungen muss **nicht** ausschließlich in Großbuchstaben sein. Zum Beispiel Namen wie `SHOW BROWSING STATUS` sind **nicht** erlaubt; jedenfalls sind Namen wie `Show Browsing Status` oder `Show browsing status` erlaubt.
 - Wenn du die Mehrsprachen-Option verwendest, solltest du wissen:
-  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+  - **Boolean** Typ, der nur Strings von [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) aus dem Lokalisierungs-Repo oder aus der Presence-datei zulässt (z.B. Wenn der Name der Presence YouTube ist, wird die Erweiterung auch Strings von `youtube.json` erhalten.)
+  - **Array** Typ (z. `["youtube", "discord"]`), der den Namen der Dateien angibt, von denen Du Strings erhalten möchtest.
+  - **Array<String>** Typ (z. `["youtube", "discord"]`), der den Namen der Dateien angibt, von denen Du Strings erhalten möchtest.
 
 ## [**presence.ts**](/dev/presence/class)
 
 > Der Code, den du schreibst **muss** _gut geschrieben_ und _lesbar_ sein und alle Strings müssen grammatikalisch korrekt sein (Grammatikfehler auf der Website können ignoriert werden).
 
-> Jede Presence folgt einem strengen Linting-Regelsatz, der während des Überprüfungsprozesses überprüft wird. Nachfolgend findest du eine Reihe von Empfehlungen. - [TypeScript Plugin Empfehlungen für strenge Prüfung](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules) - [ESlint Empfehlungen](https://eslint.org/docs/rules) [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+> Jede Presence folgt einem strengen Linting-Regelsatz, der während des Überprüfungsprozesses überprüft wird. Nachfolgend findest du eine Reihe von Empfehlungen. - [TypeScript Plugin Empfehlungen für strenge Prüfung](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules) - [ESlint Empfehlungen](https://eslint.org/docs/rules) [ESlint Empfehlungen](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
 
 Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts`-Datei schreibst:
 
@@ -242,8 +245,8 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Die Felder `smallImageKey` und `smallImageText` sollen einen zusätzlichen/zweiten Nutzen bringen (wie `playing/paused` für Video-Seiten, `browsing` für reguläre Seiten, und weitere Fälle) und nicht um Discord-Profile oder irgendwas zu bewerben, das nicht im Zusammenhang mit PreMiD steht.
 - Es ist dir **nicht** erlaubt, auf `localStorage` zuzugreifen.
 - Wenn du Cookies für gespeicherte Daten benutzt, beginne den Schlüssel mit `PMD_`
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. Wenn du externe Domains verwendest, musst du erklären, warum dies notwendig ist. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (nutze z.B `delete data.startTimestamp` anstelle von `data.startTimestamp = undefined`)
+- Du kannst nur HTTP/HTTPS-Anfragen zu `premid.app` oder die Presence Website API machen. Wenn du externe Domains verwendest, musst du erklären, warum dies notwendig ist. Nur erlaubte API zum Abfragen ist [`API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) abrufen.
+- Setze **keine** Felder in dem presence data object auf undefined, nachdem es deklariert wurde. Nutze stattdessen das `delete` Schlüsselwort. (nutze z.B `delete data.startTimestamp` anstelle von `data.startTimestamp = undefined`)
 - Es ist dir **nicht**t erlaubt Presences zu schreiben, die die Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
 
 ## [**tsconfig.json**](/dev/presence/tsconfig)
