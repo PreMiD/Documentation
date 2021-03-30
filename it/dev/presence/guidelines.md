@@ -40,8 +40,8 @@ The general rules of presence development are as follows:
 - Le presence per servizi come Discord Bot/Server Lists devono seguire questi ulteriori requisiti:
   - Il dominio dovrebbe avere almeno **6 mesi** di età.
   - Visitatori unici al giorno:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+    - Per i domini di 6 mesi: **20,000 visitatori unici al giorno**.
+    - Per i domini di 12+ mesi: **45,000 visitatori unici al giorno**.
   - Il sito web non può essere su un dominio economico come `.xyz`, `.club` e così via.
   - Il sito web stesso deve avere una buona qualità, design, ecc.
 - Includere la cartella `dist`, il file `presence.ts`, il file `iframe.ts`, ed il file `metadata.json` è obbligatorio affinché il risultato sia quello rappresentato nel seguente schema:
