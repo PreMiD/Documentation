@@ -20,7 +20,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 <a name="general"></a>
 
 # Общее решение неполадок
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> Вы можете использовать [это](https://qkeleq10.github.io/PreMiD-Troubleshooting/) инструмент, чтобы упростить определение вашей проблемы. 
 > 
 > {.is-info}
 ### Перезагрузите страницу
