@@ -37,14 +37,14 @@ The general rules of presence development are as follows:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
   - They can't show addinational data when you can't show them in `state` or `details`.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+- সার্ভিসের জন্য Presences যেমন Discord বট/সার্ভার লিস্টকে অবশ্যই এই অতিরিক্ত রিকোয়ারমেন্টগুলো পূরণ করতে হবে:
   - ডোমেইনটি কমপক্ষে **ছয় মাসের** পুরনো হতে হবে।
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - ভিজিটর প্রতিদিন:
+    - ছয় মাসের পুরাতন ডোমেইনগুলোর জন্য: **20,000 ভিজিটর প্রতিদিন**।
+    - বারো মাস অথবা তার বেশি পুরাতন ডোমেইনগুলোর জন্য: **45,000 ভিজিটর প্রতিদিন**।
   - ওয়েবসাইটটি কোনো সস্তা ডোমেইনে হতে পারবে না যেমন `.xyz`, `.club` ইত্যাদি।
   - ওয়েবসাইটটির বেশ ভালো কোয়ালিটি, ডিজাইন ইত্যাদি থাকতে হবে।
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- `dist` ফোল্ডারসহ, `presence.ts` ফাইল, `iframe.ts` ফাইল, এবং `metadata.json` ফাইল বাধ্যতামূলক যাতে ফলাফলটি নিচের উদাহরণস্বরূপ হয়:
 
 ```bash
 presence
