@@ -37,14 +37,14 @@ dateCreated: 2021-02-26T21:54:41.573Z
   - Перенаправление на главную страницу запрещено.
   - Рекламные сайты запрещены законом.
   - Они не могут показывать дополнительные данные, когда вы не можете показать их в `состоянии` или `подробности`.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Наличие присутствия для Discord ботов/Список серверов доступна если проект соответствует этими требованиями:
+  - Домен должен быть оформлен более **6 месяцев**назад.
+  - Уникальных посетителей в день:
+    - Для доменов 6-месячной давности: **20,000 уникальных посетителей в день**.
+    - Для доменов 12-месячной давности: **45,000 уникальных посетителей в день**.
+  - Сайт не должен иметь дешёвый домен, например `.xyz`, `.club` и так далее.
+  - Сайт должен быть сделан качественно, хорошо оформлен и т.д.
+- Включать папку `dist`, файлы: `presence.ts`, `iframe.ts` и `metadata.json` они являются обязательным, поэтому результат должен быть то, что представлено в следующей схеме:
 
 ```bash
 presence
