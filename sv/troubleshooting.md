@@ -24,7 +24,7 @@ Included on this page:
 > 
 > {.is-info}
 ### Uppdatera sidan
-Du kan trycka <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) eller <kbd>CMD+R</kbd> (MacOS) på ditt tangentbord med istället för att leta efter uppdateringsknappen.
+Du kan trycka på <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) eller <kbd>CMD+R</kbd> (MacOS) på ditt tangentbord istället för att leta efter uppdateringsknappen.
 
 ### Använder du Discord-appen?
 PreMiD fungerar **inte** på webbläsarversionen av Discord, du måste ladda ned appen [här](https://discord.com/download).
