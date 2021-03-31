@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> ソースコードエディターが必要です。 We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> ソースコードエディターが必要です。 [Visual Studio Code](https://code.visualstudio.com/)をおすすめしています。 
 > 
 > {.is-info}
 
@@ -18,7 +18,7 @@ tags:
 # プロジェクトをクローンする
 1. ターミナルを開き、`git clone URL`と入力する。 **URL の部分を寄与したいリポジトリーのリンク** 例 `git clone https://github.com/PreMiD/PreMiD` **に置き換える**
 2. 任意のフォルダーを選択する
-3. Open it in your code editor.
+3. ソースコードエディタで開く
 
 # 依存関係のインストール
 > はじめに、[npm](https://www.npmjs.com/) (Node Package Manager) がインストールされていることを確認してください。  [Node](https://nodejs.org/en/)がインストールされている場合、npmは自動でインストールされます。 
