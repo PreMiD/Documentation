@@ -399,7 +399,7 @@ Website yang anda sedang anda kembangkan akan otomatis reload setiap anda menyim
 
 # File dijelaskan
 
-- [Presence Class](/dev/presence/class)
+- [Kelas Presence](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [File Metadata](/dev/presence/metadata)
