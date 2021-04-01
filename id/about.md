@@ -1,6 +1,6 @@
 ---
-title: About PreMiD
-description: The core features of PreMiD
+title: Tentang PreMiD
+description: Fitur-fitur utama dari PreMiD
 published: true
 date: 2020-09-01T22:07:41.029Z
 tags:
