@@ -1,12 +1,12 @@
 ---
-title: Getting Started
-description: A little advice for those who got into coding recently
+title: Comenzando
+description: Un pequeño consejo para aquellos que han entrado recientemente en la codificación
 published: true
 date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Se requiere un editor de código fuente. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
