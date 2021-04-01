@@ -35,7 +35,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 1. ターミナルを開き `git clone https://github.com/PreMiD/Presences` と入力する
 2. 任意のフォルダーを選択する
-3. Open it in your code editor.
+3. ソースコードエディタで開く
 
 ## フォルダーとファイルを作成する
 
