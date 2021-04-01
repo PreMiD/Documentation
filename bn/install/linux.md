@@ -60,13 +60,13 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 ### রিকোয়ারমেন্টগুলো
 
-Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;</br> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.</br> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
+মূলত যেসব ডিস্ট্রিবিউশন Discord - এর [অফিসিয়াল](https://discordapp.com/download) **অ্যাপ্লিকেশান** (ওয়েব বা স্ন্যাপ ভার্সন না) চালাতে পারে সেগুলো PreMiD - ও চালাতে পারে;</br> যেমন তুমি খেয়াল করেছ বিগত বছরগুলোতে, কিছু লিনাক্স ডিস্ট্রিবিউশনগুলো সাপোর্ট বন্ধ করতে শুরু করেছে 32-bit (ia32/i686/i386/x86) আর্কিটেকচারগুলোর জন্য, তেমনি ফলাফলস্বরূপ, আমরাও তাই করেছি। তুমি চালাতে পারবে, তবে, চেষ্টা করবে নিজ থেকে অ্যাপ্লিকেশানটা তৈরি করতে যদি তোমার গুরুতরভাবে এটি ব্যবহার করতে হয় 32-bit ডিস্ট্রিবিউশনে।</br> যেহেতু আমরা বর্তমানে Electron ব্যবহার করি ইঞ্জিন হিসেবে (Discord - ও করে!), এর রিকোয়ারমেন্টগুলোও এই অ্যাপ্লিকেশানের সাথে সংযুক্ত হয়:
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
 - Debian ≥ 8
 
-It is unknown whether older versions of other distributions support it, so just keep your distribution updated and use **LTS (Long-Term Support)** releases if your distribution offers them, as they're more stable (avoid alpha releases).
+অন্যান্য ডিস্ট্রিবিউশনগুলোর পুরাতন ভার্সনগুলো এটি সাপোর্ট করে কিনা এটা এখনও অজানা, তাই নিজের ডিস্ট্রিবিউশন আপডেটেড রাখো এবং **LTS (Long-Term Support)** রিলিজগুলো ব্যবহার করো যদি তোমার ডিস্ট্রিবিউশন সেগুলো দেয়, কেননা সেগুলো আরো স্থিতিশীল (আলফা রিলিজগুলো এড়াও)।
 
 <a name="support"></a>
 
