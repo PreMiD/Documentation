@@ -1,5 +1,5 @@
 ---
-title: Presence Class
+title: Kelas Presence
 description: The main class for every PreMiD presence
 published: true
 date: 2021-02-26T20:42:26.910Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
-# Presence Class
+# Kelas Presence
 
 ## Introduction
 
@@ -18,11 +18,11 @@ When you create a class you must specify `clientId` property.
 
 ```typescript
 const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+  clientId: "514271496134389561" // Contoh clientId
 });
 ```
 
-### Properties
+### Properti
 
 There are three properties available for `Presence` class.
 
@@ -32,7 +32,7 @@ This property is required to make your presence work, because it uses your appli
 
 #### `injectOnComplete`
 
-When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
+Ketika pengaturan `injectOnComplete` adalah `true` maka event `UpdateData` pertama untuk file `presence.ts` dan `iframe.ts` hanya akan dinyalakan ketika halaman sudah sepenuhnya termuat.
 
 #### `appMode`
 
