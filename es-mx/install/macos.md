@@ -19,25 +19,25 @@ La instalación de la aplicación es muy importante, ya que la extensión no pue
 4. Abre el instalador.
 5. Si instalas PreMiD por primera vez aparecerá una **alerta de seguridad**. Ve a tus **Preferencias** > **Seguridad** > **General** > **Abrir de todos modos**.
 > Esto se debe a que no tenemos un Certificado de Firma de Código (Code Signing Certificate, CSC). [Apoyanos](https://www.patreon.com/Timeraa) para poder financiarlo.{.is-info}
-6. Choose open when prompted.
-7. Grant access to connections through **Firewall** and control **System Events** when prompted.
+6. Elige abrir cuando se solicite.
+7. Concede acceso a conexiones a través del **Cortafuegos** y controla los **Eventos del Sistema** cuando se le solicite.
 
-The application will start automatically. Check for the symbol in your menu bar.
+La aplicación se iniciará automáticamente. Comprueba el símbolo en la barra de tareas.
 
-> Do not forget to [add the **extension**](/install). 
+> No olvides [añadir la **extensión**](/install). 
 > 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## Permitir aplicaciones de desarrolladores desconocidos
+Pasos para macOS Big Sur (11.0+):
+1. Haz clic derecho en nuestro instalador.
+2. Pulsa abrir en el menú desplegable.
+3. Haz clic en abrir en el popup.
 
-Steps for older macOS versions:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+Pasos para las versiones anteriores de macOS:
+1. Abre Preferencias del Sistema.
+2. Ve a la pestaña de Seguridad & Privacidad.
+3. Pulsa en el candado y introduce tu contraseña o escanea la huella dactilar para que puedas realizar cambios.
+4. Cambia la configuración de 'Permitir aplicaciones descargadas de' a 'App Store y desarrolladores identificados' de 'App Store'.

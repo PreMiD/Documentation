@@ -1,6 +1,6 @@
 ---
-title: About PreMiD
-description: The core features of PreMiD
+title: Acerca de PreMiD
+description: Las características principales de PreMiD
 published: true
 date: 2020-09-01T22:07:41.029Z
 tags:
