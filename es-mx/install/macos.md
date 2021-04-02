@@ -1,6 +1,6 @@
 ---
 title: macOS
-description: Getting started with a PreMiD installation on macOS
+description: Empezando con la instalación de PreMiD en macOS
 published: true
 date: 2020-02-12T22:08:37.439Z
 tags:
@@ -10,15 +10,15 @@ tags:
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+La instalación de la aplicación es muy importante, ya que la extensión no puede hacer nada por sí sola.
 
 # Instalar
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
-2. Choose **OS X**.
-3. Extract the archive if necessary.
-4. Open the installer.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
-> This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
+1. Ve a nuestra página de descargas [pulsando aquí](https://premid.app/downloads).
+2. Escoge **OS X**.
+3. Extrae el archivo si es necesario.
+4. Abre el instalador.
+5. Si instalas PreMiD por primera vez aparecerá una **alerta de seguridad**. Ve a tus **Preferencias** > **Seguridad** > **General** > **Abrir de todos modos**.
+> Esto se debe a que no tenemos un Certificado de Firma de Código (Code Signing Certificate, CSC). [Apoyanos](https://www.patreon.com/Timeraa) para poder financiarlo.{.is-info}
 6. Choose open when prompted.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
