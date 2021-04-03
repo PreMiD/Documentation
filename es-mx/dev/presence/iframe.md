@@ -20,10 +20,8 @@ The code that you write inside of your `iframe.ts` file gets injected into every
 Like presences, `iframes` have their own classes designed to automatically update data.
 
 ```typescript
-let iframe = new iFrame();
-
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    //El código va aquí...
 });
 ```
 
