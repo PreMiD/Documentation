@@ -234,23 +234,23 @@ Una lista de los campos y sus reglas están listadas abajo:
 
 > Cada presence sigue un estricto conjunto de reglas de linting que serán comprobadas durante el proceso de revisión. Un par de recomendaciones pueden ser vistas a continuación. - [Recomendaciones de plugins de TypeScript para verificaciones "Strict Type Checking"](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules) - [recomendaciones de ESlint](https://eslint.org/docs/rules) [Recomendaciones de ESlint](https://eslint.org/docs/rules). [Recomendaciones de ESlint](https://eslint.org/docs/rules). [Prettier (formateo de código)](https://prettier.io/).
 
-Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `presence.ts`:
+Aquí hay una lista de reglas que debes seguir al escribir tu archivo `presence.ts`:
 
-- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
-- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
-- It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
-- The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
-- You are **not** allowed to access `localStorage`.
-- When accessing cookies for stored data, please prefix the key with `PMD_`.
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
-- You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
+- **Siempre** declare una nueva instancia de la clase `Presence` antes de cualquier otra variable para evitar problemas raros que puedan ocurrir; no es un requisito por diseño, podría ser ser eliminado en el futuro.
+- **Nunca** utilices funciones personalizadas cuando [variantes nativas estén disponibles](https://docs.premid.app/dev/presence#files-explained); esto asegura que las correcciones en el nivel de extensión también se aplican a tus presences. Eres libre de usar lo que sea que necesites, si no lo encuentras listado en la documentación.
+- Está **prohibido** codificar las presences de un sitio sin agregar soporte a su idioma principal(ejemplo., una presence de YouTube codificada con soporte solo para portugués y japonés, pero no inglés en sí.)
+- Los campos `smallImageKey` y `smallImageText` están destinados a proporcionar contexto adicional/secundario (como `reproduciendo/pausado` para sitios de streaming, `navegando` para sitios normales, y otros casos) no para promover perfiles de Discord ni nada que no esté relacionado con PreMiD.
+- **No** estás autorizado para acceder a `localStorage`.
+- Al acceder a las cookies de los datos almacenados, por favor prefije la clave con `PMD_`.
+- Solo podrás hacer peticiones HTTP/HTTPS a `premid.app` o el sitio para API de su presence. Si está utilizando dominios externos, tendrá que explicar por qué son necesarios. Únicamente la API permitida para realizar solicitudes es [`Obtener API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+- **No** establezcas campos de la instancia presenceData como undefined una vez declarado, utiliza en su lugar la palabra clave `delete`. (por ejemplo, usa `delete data.startTimestamp` en vez de `data.startTimestamp = undefined`)
+- **No** tienes permitido escribir presences que puedan cambiar la funcionalidad de un sitio web. Esto incluye la adición, eliminación o modificación de los elementos DOM.
 
 ## [**tsconfig.json**](/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](/dev/presence/tsconfig).
+> **No** escribas tu propio `tsconfig.json`, usa el proporcionado en la [documentación](https://docs.premid.app/en/dev/presence/tsconfig).
 
-## Modification
+## Modificación
 
 > You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
 
