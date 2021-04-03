@@ -285,7 +285,7 @@ Repetitive offenses such as breaking guidelines, spamming pull requests, threats
 
 In this scenerio, the following changes will occur:
 
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). The application id for each presence will be recreated under the new owner's name.
+- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). La Id de la aplicación para cada presence se volverá a crear con el nombre del nuevo dueño.
 - All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
 - Tickets created under your name regarding presence development will be deleted.
 
