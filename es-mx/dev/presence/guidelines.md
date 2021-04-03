@@ -301,7 +301,7 @@ Algunas cosas que deberías saber después de abrir una solicitud de pull reques
 
 ## `Verificaciones`
 
-![Checks](https://i.imgur.com/oqAakOc.png)
+![Verificaciones](https://i.imgur.com/oqAakOc.png)
 
 Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas estas comprobaciones ayudan a que los verificadores determinen si su presence es adecuada para su implementación.
 
@@ -311,28 +311,28 @@ Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas e
 
 ## `Reglas Adicionales`
 
-- **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
+- **Siempre** asegúrese de iniciar su presence en la carpeta más apropiada, si su nombre comienza con _cualquier_ letra latina entonces debe estar bajo su coincidencia alfabética (por ejemplo. `D/dアニメストア` o `G/Google`). Cualquier otro carácter Unicode/no latino **debe** estar bajo la carpeta `#` (por ejemplo, `#/巴哈姆特.`) y números bajo la carpeta `0-9` (por ejemplo, `0-9/4anime`).
 
-After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
+Después de cumplir con todas las directrices, revisiones y comprobaciones adecuadas, su presence será añadida.
 
-# Suggestions
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
+# Sugerencias
+La `revisión 2` de las indicaciones fueron escritas y contribuidas por los siguientes individuos:
 
-# Contributions
+# Contribuidores
 
-`Revision 3` of the guidelines was written and was contributed to by the following individuals:
+La `revisión 1` fue mantenida por los siguientes individuos:
 
 <div>
 <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 2` of the guidelines was written and was contributed to by the following individuals:
+La `revisión 2` de las indicaciones fueron escritas y contribuidas por los siguientes individuos:
 
 <div>
 <a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 1` was maintained by the following individuals:
+`Revision 1` fue mantenido por los siguientes individuos:
 
 <div>
 <a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
