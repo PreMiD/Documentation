@@ -1,5 +1,5 @@
 ---
-title: Presence Guidelines
+title: Normas de la presence
 description: Rules that all presence developers must follow to have their presence added.
 published: true
 date: 2021-03-06T15:01:04.274Z
@@ -10,7 +10,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Presence Guidelines</h3>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Normas de la presence</h3>
     <h4 style="margin-top: 0">Revision 3</h4>
     <br />
 </div>
@@ -79,27 +79,27 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "USUARIO",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICIO",
+  "altnames": ["SERVICIO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRIPCIÓN"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIÓN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORÍA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -111,8 +111,8 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITULO A MOSTRAR",
+      "icon": "ICONO DE FONTAWESOME",
       "value": true
     },
     {
@@ -120,15 +120,15 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TITULO A MOSTRAR",
+      "icon": "ICONO DE FONTAWESOME",
+      "value": "\"%song%\" de %artist%",
+      "placeholder": "usa %song% o %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITULO A MOSTRAR",
+      "icon": "ICONO DE FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
