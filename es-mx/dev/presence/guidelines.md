@@ -1,5 +1,5 @@
 ---
-title: Normas de las Presence
+title: Reglas de las Presence
 description: Reglas que todos los desarrolladores de presences deben seguir para que su presence sea añadida.
 published: true
 date: 2021-03-06T15:01:04.274Z
@@ -10,7 +10,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Normas de las presence</h3>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Reglas de las presence</h3>
     <h4 style="margin-top: 0">Revisión 3</h4>
     <br />
 </div>
@@ -270,46 +270,46 @@ En algunas situaciones, las presences pueden comportarse inesperadamente o podr�
 
 > Ten **siempre** un fork actualizado antes de crear el pull request. Esto facilitará falsos positivos de los chequeos.
 
-The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
+El proceso más importante de desarrollo de una presence es publicarla en la tienda. Esto se hace haciendo un [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) en GitHub en el repositorio `PreMiD/Presences`. Nuestros verificadores confirmaran que tu presence cumple los estándares y será añadida en la tienda.
 
 <div>
-  <h2 style="font-size: 2rem; margin-bottom: 0;">Presence Reviewers</h2>
+  <h2 style="font-size: 2rem; margin-bottom: 0;">Verificadores de Presences</h2>
   
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>  <a href="https://github.com/Timeraa"><img src="https://github.com/Timeraa.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>  <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
-## `Restrictions`
+## `Revisiones`
 
-Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
+No te será permitido crear presences en en caso de ofensas repetitivas como romper las indicaciones, spamming de pull requests, amenazas o comportamiento inapropiado.
 
-In this scenerio, the following changes will occur:
+En este escenario, se producirán los siguientes cambios:
 
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). La Id de la aplicación para cada presence se volverá a crear con el nombre del nuevo dueño.
-- All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
-- Tickets created under your name regarding presence development will be deleted.
+- Las presences bajo su gestión se transferirán al bot de PreMiD u otro usuario (decisión del verificador). La Id de la aplicación para cada presence se volverá a crear con el nombre del nuevo dueño.
+- Todos tus issues y pull request (Creacion y contribucion de presences) creados luego del ban seran cerrados.
+- Tickets creados bajo tu nombre con respecto al desarrollo de presences serán eliminados.
 
-## `Reviewing`
+## `Revisiones`
 
-A few things you should know after opening a pull request:
+Algunas cosas que deberías saber después de abrir una solicitud de pull request:
 
-- It takes 2 reviewers to merge a pull request.
-- If a pull request is inactive for a period of 7 days, it will be promptly closed.
-- All checks **must** be passed in order to merge.
-- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
-- ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
+- Se necesitan 2 revisores para hacer un merge a un pull request.
+- Si un pull request está incativo en un periodo de 7 días, será cerrado inmediatamente.
+- Todas las revisiones **deben** pasar para ejecutar el merge.
+- ⚠️**Debes** proporcionar nuevas capturas de pantalla sin alterar (tomadas por ti) mostrando una comparación lado a lado de tu perfil y el sitio web para demostrar que tu presence funciona. _Se le permite usar capturas de pantalla por placer visual_ Esto se aplica tanto a la creación como a la modificación.
+- ⚠ También es **requerido** incluir capturas de pantalla de la configuración de la presence en la extensión si se proporciona. Se puede ver un ejemplo [aquí](https://imgur.com/a/OD3sj5R).
 
-## `Checks`
+## `Verificaciones`
 
 ![Checks](https://i.imgur.com/oqAakOc.png)
 
-Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
+Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas estas comprobaciones ayudan a que los verificadores determinen si su presence es adecuada para su implementación.
 
-- `Codacy` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. (_WARNING: Codacy bot will be deprecated soon and you will need check errors only from DeepScan!_)
-- `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
-- `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
+- `Codacy` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos. (_ADVERTENCIA: El bot Codacy quedará obsoleto pronto y solo necesitará comprobar los errores de DeepScan!_)
+- `DeepScan` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos.
+- `Schema Validation` escaneará su archivo `metadata.json` en busca de cualquier error (por ejemplo, campos faltantes, tipos de valores no válidos, etc.). Si alguna vez recibes errores de nuevos problemas, **debes** corregirlos. Añadir un campo schema al archivo `metadata.json` permitirá a tu editor de texto (si es compatible) mostrar estos errores durante el desarrollo.
 
-## `Additional Rules`
+## `Reglas Adicionales`
 
 - **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
 
