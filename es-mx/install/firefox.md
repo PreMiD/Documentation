@@ -1,12 +1,12 @@
 ---
 title: Firefox
-description: Getting started with a PreMiD installation on Firefox
+description: Empezando con la instalación de PreMiD en Firefox
 published: true
 date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-The installation of the extension is very important as the application can not do anything by itself.
+La instalación de la extensión es muy importante, ya que la aplicación no puede hacer nada por sí sola.
 
 # Instalar
 1. Go to our downloads page by [clicking here](https://premid.app/downloads).

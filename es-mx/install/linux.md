@@ -51,8 +51,8 @@ La instalación de la aplicación es muy importante, ya que la extensión no pue
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Versión más reciente"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Todas las versiones"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Versión más reciente"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Versiones de Github"></a></td>
   </tr>
 </table>
 
@@ -73,8 +73,8 @@ Se desconoce si las versiones antiguas de otras distribuciones lo soportan, así
 ### Soporte técnico
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="Join our Discord!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Join our Discord!">
+  <a target="_blank" href="https://discord.premid.app/" title="¡Únete a nuestro Discord!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="¡Únete a nuestro Discord!">
   </a>
 </div>
 
@@ -94,7 +94,7 @@ Gracias a:
 
 ### Licencia
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
+[![Estado de FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
@@ -141,50 +141,50 @@ Para **Fedora/CentOS/RedHat**:
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+Si el comando no funciona, descargue el archivo **deb/rpm** desde nuestro repositorio packagecloud o sobrescriba la configuración.
 
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Distribuciones basadas en arquitectura Arch Linux
+## Distribuciones basadas en Arch Linux
 
-Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+Usa la [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Las distribuciones soportadas son _las mismas_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS y [cualquiera que soporte instalación desde AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
 ### Instrucciones de instalación
 
 ```bash
-# Using yay (recommended)
+# Usando yay (Recomendado)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# Usando pakku
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# Usando trizen
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# Usando pacaur
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... Bueno, ¿Entendiste el punto?
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+O manualmente desde la [Arch User Repository](https://aur.archlinux.org/packages/premid) si tu sabes que estás haciendo.
 
 <a name="archnotes"></a>
 
 ### Notas adicionales
 
-If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
+Si tu distro usa pacman, entonces tienes que instalar primero uno de los helpers. Si no tienes ninguna, se recomienda Yay, lo ejecutas:
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -194,4 +194,4 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S premid
 ```
 
-Other AUR/Pacman helpers work as well, although each one's functionality is different so you may face issues while using them.
+Otros ayudantes de AUR/Pacman también funcionan, aunque la funcionalidad de cada uno es diferente para que puedes experimentar problemas mientras los usas.
