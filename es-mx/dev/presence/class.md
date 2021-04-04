@@ -133,98 +133,98 @@ let strings: Promise<LangStrings> = getStrings(),
 const newLang = await presence.getSetting("ID");
 if (oldLang !== newLang) {
   oldLang = newLang;
-  strings = getStrings();
+  strings = await getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play; // resultado: Playing
+const pauseString = (await strings).pause; // resultado: Paused
 ```
 
 ### `getPageletiable(String)`
 
-Returns a variable from the website if it exists.
+Devuelve una variable desde el sitio web si existe.
 
 ```typescript
 const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // Esto mostará en la consola el "Contenido de la variable"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Devuelve la versión de la extensión que está usando el usuario.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // Mostrará 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // Mostrará 2.1.0
 ```
 
 ### `getSetting(String)`
 
-Obtén el valor del ajuste.
+Devuelve el valor del ajuste.
 
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Reemplaza pdexID con el id de tu ajuste
+const setting = await presence.getSetting("pdexID"); // Remplaza pdexID con el id del ajuste
 console.log(setting); // Esto mostrará el valor del ajuste
 ```
 
 ### `hideSetting(String)`
 
-Oculta la configuración dada.
+Oculta el ajuste indicado.
 
 ```typescript
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
 ```
 
 ### `showSetting(String)`
 
-Muestra la configuración dada (Solo funciona si el ajuste ya estaba oculto).
+Muestra el ajuste indicado (solo funciona si el ajuste ha sido ocultado).
 
 ```typescript
-presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
 ```
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Devuelve los logs de la consola del sitio web.
 
 ```typescript
 const logs = await presence.getLogs();
-console.log(logs); // This will log the latest 100 logs (in an array).
+console.log(logs); // Obtienes los últimos 100 logs (en un array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Nota:** Requiere establecer la propiedad `readLogs` a `true` en el archivo `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `info`.
 
 ```typescript
-presence.info("Test") // This will log "test" in the correct styling.
+presence.info("Test") // Esto logeará "test" con un estilo predeterminado.
 ```
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `satisfactorio`.
 
 ```typescript
-presence.success("Test") // This will log "test" in the correct styling.
+presence.success("Test") // Esto logeará "test" con un estilo predeterminado.
 ```
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `error`.
 
 ```typescript
-presence.error("Test") // This will log "test" in the correct styling.
+presence.error("Test") // Esto logeará "test" con un estilo predeterminado.
 ```
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
 ```typescript
 const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
@@ -232,11 +232,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Devuelve 2 `snowflake` de timestamps en un`Array` que pueden ser usados para `startTimestamp` y `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -245,11 +245,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Nota:** El `String` proporcionado en querySelector sirve de ejemplo.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Convierte una cadena con formato `HH:MM:SS` o `MM:SS` o `SS` en un entero (no devuelve un timestamp).
 
 ```typescript
 const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -259,13 +259,13 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Nota:** El `String` proporcionado en queryString sirve de ejemplo.
 
-## `PresenceData` Interface
+## Interfaz `PresenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+Se recomienda utilizar la interfaz `PresenceData` cuando se está utilizando el método `setActivity()`.
 
-This interface has following variables, all of them are optional.
+Esta interfaz tiene siguientes variables, todas son opcionales.
 
 <table>
   <thead>
@@ -278,58 +278,57 @@ This interface has following variables, all of them are optional.
   <tbody>
     <tr>
       <td style="text-align:left">details</td>
-      <td style="text-align:left">The first line in your presence, usually used as header.</td>
+      <td style="text-align:left">La primera línea en la presence, generalmente usada como encabezado.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">state</td>
-      <td style="text-align:left">Second line in your presence.</td>
+      <td style="text-align:left">Segunda línea en la presence.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">startTimestamp</td>
-      <td style="text-align:left">Defines the current time.<br>
-        Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+      <td style="text-align:left">Define la hora actual.<br>
+        Utilizado si quieres mostrar cuántas <code>horas:minutos:segundos</code> quedan.
+          <br>Debes convertir tu tiempo a <code>timestamps</code> u obtendrás una cuenta atrás
+          incorrecta.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">endTimestamp</td>
-      <td style="text-align:left">Defines the full duration.
-        <br>Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+      <td style="text-align:left">Define la duración completa.
+        <br>Utilizado si deseas mostrar cuantas <code>horas:minutos:segundos</code> quedan.
+          <br>Debes convertir la marca de tiempo a <code>timestamp</code> u obtendrás una cuenta atrás errónea.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">largeImageKey</td>
-      <td style="text-align:left">Defines the logo for the presence.</td>
+      <td style="text-align:left">Define el logotipo de la presence.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">smallImageKey</td>
-      <td style="text-align:left">Defines the small icon next to presence&apos;s logo.</td>
+      <td style="text-align:left">Define el icono pequeño junto al logo de la presence.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when he will hover the small
-        icon.</td>
+      <td style="text-align:left">Define el texto que se mostrará al usuario al pasar el cursor sobre el icono 
+        pequeño.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
+      <td style="text-align:left">Array de botones, máximo 2, label es el texto del botón y url el enlace.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
@@ -338,42 +337,42 @@ This interface has following variables, all of them are optional.
 
 ```typescript
 const presenceData: PresenceData = {
-  details: "My title",
-  state: "My description",
-  largeImageKey: "service_logo",
-  smallImageKey: "small_service_icon",
-  smallImageText: "You hovered me, and what now?",
+  details: "Mi título",
+  state: "Mi descripción",
+  largeImageKey: "logo_servicio",
+  smallImageKey: "icono_servicio_pequño",
+  smallImageText: "Has puesto el cursor sobre mí, ¿ahora que?",
   startTimestamp: 1564444631188,
-  endTimestamp: 1564444634734,
+  endTimestamp: 1564444634734
   buttons: [
     {
-            label: "Test button1",
+            label: "Botón de prueba1",
             url: "https://premid.app/"
         },
         {
-            label: "Test button2",
+            label: "Botón de prueba2",
             url: "https://premid.app/contributors"
         }
     ]
 };
 ```
 
-## Events
+## Eventos
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Los eventos permiten detectar y manejar algunos cambios o llamadas realizadas. Puede suscribirte a eventos utilizando el método `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
-  // Do something when data gets updated.
+  // Haz algo cuando se actualicen los datos.
 });
 ```
 
-There are few events available:
+Hay algunos eventos disponibles:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Este evento es lanzado cada vez que la presence es actualizada.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Lanzado cuando se obtienen datos del script iFrame.
