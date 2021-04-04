@@ -50,63 +50,63 @@ Establece la actividad de tu perfil de acuerdo a los datos proporcionados.
 
 El primer parámetro requiere una interfaz [`PresenceData`](#presencedata-interface) o una clase [`Slideshow`](/dev/presence/slideshow) para obtener toda la información que deseas mostrar en tu perfil.
 
-El segundo parámetro indica si la presence está reproduciendo algo o no. Always use `true` if you provide timestamps in `PresenceData`.
+El segundo parámetro indica si la presence está reproduciendo algo o no. El segundo parámetro indica si la presence está reproduciendo algo o no. Utiliza siempre `true` si proporcionas marcas de tiempo (timestamps) en `PresenceData`.
 
 ### `clearActivity()`
 
-Clears your current activity and the tray title.
+Elimina la actividad actual y el titulo de la bandeja de trabajo.
 
 ### `setTrayTitle(String)`
 
-> This method works only on Mac OS. 
+> Este método funciona sólo en Mac OS. 
 > 
 > {.is-warning}
 
-Sets the tray title on the Menubar.
+Establece el título de la bandeja en la barra de menús.
 
 ### `createSlideshow()`
 
-Creates a new `Slideshow` class.
+Crea una nueva instancia de la clase `Slideshow`.
 
 ```typescript
 const slideshow = presence.createSlideshow();
 ```
 
-It is suggested to do this right after creating the `Presence` class:
+Se sugiere hacer esto al instanciar la clase `Presence`:
 
 ```typescript
 const presence = new Presence({
-    clientId: "514271496134389561" // Example clientId
+    clientId: "514271496134389561" // clientId de ejemplo
   }),
   slideshow = presence.createSlideshow();
 ```
 
-You can find the documentation for the `Slideshow` class [here](/dev/presence/slideshow).
+Puedes encontrar la documentación para la clase `Slideshow` [aquí](/dev/presence/slideshow).
 
 ### `getStrings(Object)`
 
-An asyncronous method that allows you to get translated strings from extension.
+Un método asíncrono que te permite obtener strings traducidas de la extensión.
 
-You must provide `Object` with keys being the key for string, `keyValue` is the string value. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+Debes proporcionar un `Object` donde las claves son la clave del string, `valorClave` es el valor del string. Puedes encontrar una lista de strings traducidas aquí: `https://api.premid.app/v2/langFile/presence/en/`
 
 ```typescript
-// Returns `Playing` and `Paused` strings
-// from extension.
+// Devuelve las strings `Playing` y `Paused`
+// desde la extensión.
 const strings = await presence.getStrings({
-  play: "general.playing",
-  pause: "general.paused"
-});
+  reproduciendo: "general.playing",
+  pausado: "general.paused"
+}, "en");
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.reproduciendo; // resultato: Playing
+const pauseString = strings.pausado; // resultado: Paused
 ```
 
-Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
+Desde la versión 2.2.0 de la extensión ahora puedes obtener strings dado un idioma. Esto funciona bien en conjunto de la configuración `multiLanguage` recientemente añadida.
 
-We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
+Sugerimos que utilices el siguiente código para que se actualice automáticamente PresenceData si el usuario cambia el idioma;
 
 ```typescript
-// An interface of the strings you are getting (good for code quality and autocomplete).
+// Una interfaz de strings que estás obteniendo obtienes (buena para calidad del código y autocompletado).
 interface LangStrings {
   play: string;
   pause: string;
@@ -115,21 +115,21 @@ interface LangStrings {
 async function getStrings(): Promise<LangStrings> {
   return presence.getStrings(
     {
-      // The strings you are getting, make sure this fits with your LangStrings interface.
+      // Las strings que estás obteniendo, asegurate de que concuerdan con la interfaz LangStrings.
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // El ID es el ID del campo multiLanguage establecido en los ajustes.
     await presence.getSetting("ID")
   );
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // El ID es el ID del campo multiLanguage establecido en los ajustes.
   oldLang: string = await presence.getSetting("ID");
 
-//! The following code must be inside the updateData event!
-// The ID is the ID of the multiLanguage setting.
+//! ¡El siguiente código debe estar dentro del evento updateData!
+// El ID es el ID del campo multiLanguage establecido en los ajustes.
 const newLang = await presence.getSetting("ID");
 if (oldLang !== newLang) {
   oldLang = newLang;
