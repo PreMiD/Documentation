@@ -1,6 +1,6 @@
 ---
 title: API
-description: Access resources and perform actions using the PreMiD API
+description: Accede a recursos y realiza acciones mediante la API de PreMiD
 published: true
 date: 2021-02-01T12:36:44.713Z
 tags:
@@ -10,12 +10,12 @@ dateCreated: 2020-06-11T18:03:59.010Z
 
 # API
 
-> Base URL: https://api.premid.app 
+> URL base: https://api.premid.app 
 > 
 > {.is-info}
 
-## API Versioning
-> API v2 has been deprecated and will be removed in the near future. Please use v3 for any future request to prevent issues. 
+## Administración de versiones de la API
+> La v2 de la API está descontinuada y va a ser eliminada en un futuro cercano. Por favor, usa la v3 para cualquier solicitud futura para prevenir problemas. Please use v3 for any future request to prevent issues. 
 > 
 > {.is-danger}
 
