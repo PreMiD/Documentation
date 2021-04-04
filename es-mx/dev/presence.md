@@ -1,5 +1,5 @@
 ---
-title: Presence Development
+title: Desarrollo de presences
 description:
 published: true
 date: 2021-02-07T17:11:34.449Z
@@ -8,36 +8,36 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Todas las presences ahora se almacenan aquí: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+La versión `2.x` introduce la [tienda de presences](https://premid.app/store). Los usuarios ahora tienen la capacidad de añadir y eliminar manualmente sus presences favoritas a través de la interfaz de usuario del [sitio web](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> Antes de empezar es muy recomendable que mires nuestras reglas para presences. 
 > 
 > {.is-warning}
 
-- [Directrices](https://docs.premid.app/dev/presence/guidelines)
+- [Reglas](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
-# Structure
+# Estructura
 
-All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+Toda presence está programada en [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) tiene algunos tipos definiciones más que JavaScript, así que corregir e identificar errores es mucho más fácil.
 
 ## Instalación
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
+1. Instala [Git](https://git-scm.com/).
+2. Instala [Node](https://nodejs.org/en/) (viene con [npm](https://www.npmjs.com/)).
+3. Instala [TypeScript](https://www.typescriptlang.org/index.html#download-links) (abre la consola y escribe `npm install -g typescript`).
 
-## Cloning the project
+## Clonando el proyecto
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+1. Abre la consola y escribe `git clone https://github.com/PreMiD/Presences`.
+2. Escoge una carpeta a tu gusto.
+3. Ábrela en tu editor de código.
 
-## Creating folders and files
+## Creando carpetas y archivos
 
 1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
 2. Create a folder with the **name** (not an URL) of the service you want to support.
@@ -252,7 +252,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into. See regExp for more info.</td>
+      <td style="text-align:left">Un selector de expresiones regulares que selecciona los iframes a inyectar. See regExp for more info.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
@@ -399,7 +399,7 @@ The website you are developing on is automatically reloading every time you save
 
 # Files explained
 
-- [Presence Class](/dev/presence/class)
+- [Clase de Presence](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
 - [Clase de iFrame](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
