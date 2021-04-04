@@ -16,7 +16,7 @@ dateCreated: 2020-06-11T18:03:47.172Z
 - :mag: [¿Qué es PreMiD?](/about) Intenciones detrás de PreMiD y porqué deberías usarlo.
 - :link: [¿Qué es RPC?](https://discordapp.com/rich-presence) Todo acerca de la Rich Presence y sus funciones.
 
-# Comenzando
+# Empezando
 
 PreMiD es fácil y rápido de instalar. Terminarás en un abrir y cerrar de ojos.
 
