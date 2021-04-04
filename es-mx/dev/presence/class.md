@@ -1,6 +1,6 @@
 ---
-title: Presence Class
-description: The main class for every PreMiD presence
+title: Clase de Presence
+description: La clase principal para cada presence de PreMiD
 published: true
 date: 2021-02-26T20:42:26.910Z
 tags:
@@ -8,49 +8,49 @@ editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
-# Presence Class
+# Clase de Presence
 
-## Introduction
+## Introducción
 
-The `Presence` class is very useful as it has basic methods that we need for creating a presence.
+La clase de `Presence` es útil dado que contiene métodos básicos para construir una presence.
 
-When you create a class you must specify `clientId` property.
+Cuando creas una clase has de especificar apropiadamente el campo `clientId`.
 
 ```typescript
 const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+  clientId: "514271496134389561" // clientId de ejemplo
 });
 ```
 
-### Properties
+### Propiedades
 
-There are three properties available for `Presence` class.
+Hay tres propiedades disponibles para la clase `Presence`.
 
 #### `clientId`
 
-This property is required to make your presence work, because it uses your application id to display its logo and assets. You can get it on your [applications page](https://discordapp.com/developers/applications).
+Esta propiedad es necesaria para que funcione, ya que utiliza el id de aplicación para mostrar su logotipo entre otras imágenes. Puedes obtenerlo en tu [página de aplicaciones](https://discordapp.com/developers/applications).
 
 #### `injectOnComplete`
 
-When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
+Al configurar `injectOnComplete` a `true` el primer evento `UpdateData` se lanzará, en ambos archivos `presence.ts` y `iframe.ts`, una vez haya terminado de cargar completamente la página.
 
 #### `appMode`
 
-When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
+Al establecer `appMode` a `true` si la presence enviara un `PresenceData` vacío, la app mostrará la imagen y nombre de la aplicación en el perfil del usuario.
 
-## Methods
+## Métodos
 
 ### `getActivity()`
 
-Returns a `PresenceData` object of what the presence is displaying.
+Devuelve un objeto `PresenceData` con los datos que se están mostrando en la presence.
 
 ### `setActivity(PresenceData | Slideshow, Boolean)`
 
-Sets your profile activity according to provided data.
+Establece la actividad de tu perfil de acuerdo a los datos proporcionados.
 
-First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
+El primer parámetro requiere una interfaz [`PresenceData`](#presencedata-interface) o una clase [`Slideshow`](/dev/presence/slideshow) para obtener toda la información que deseas mostrar en tu perfil.
 
-Second parameter defines when presence is playing something or not. Always use `true` if you provide timestamps in `PresenceData`.
+El segundo parámetro indica si la presence está reproduciendo algo o no. Always use `true` if you provide timestamps in `PresenceData`.
 
 ### `clearActivity()`
 
@@ -164,16 +164,16 @@ console.log(version); // Will log 2.1.0
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Obtén el valor del ajuste.
 
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Reemplaza pdexID con el id de tu ajuste
+console.log(setting); // Esto mostrará el valor del ajuste
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Oculta la configuración dada.
 
 ```typescript
 presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Muestra la configuración dada (Solo funciona si el ajuste ya estaba oculto).
 
 ```typescript
 presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
@@ -272,7 +272,7 @@ This interface has following variables, all of them are optional.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Descripción</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Tipo</th>
     </tr>
   </thead>
   <tbody>

@@ -357,12 +357,12 @@ Cuando haces tu presence, debes especificar de que categoría es. Esta es una li
     <tr>
       <td style="text-align:left"><b>videos</b></td>
         <td style="text-align:left"><b>Videos y Streams</b></td>
-      <td style="text-align:left">Websites that serve the purpose of providing videos and streams.</td>
+      <td style="text-align:left">Sitios web que sirven con propósito de proporcionar videos y streams.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
-      <td style="text-align:left"><b>Otras</b></td>
-      <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
+      <td style="text-align:left"><b>Otros</b></td>
+      <td style="text-align:left">Cualquier cosa que no caiga dentro de una categoría específica enumerada arriba.</td>
     </tr>
   </tbody>
 </table>
