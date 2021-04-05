@@ -20,7 +20,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 <a name="general"></a>
 
 # সাধারণ সমস্যা সমাধান
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> তুমি [এই](https://qkeleq10.github.io/PreMiD-Troubleshooting/) টুলটি ব্যবহার করতে পারো তোমার সমস্যা আরো সহজে শনাক্ত করার জন্যে। 
 > 
 > {.is-info}
 ### ওয়েবপেজটি রিলোড করো
@@ -36,36 +36,36 @@ Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ
 খুবই গুরুত্বপূর্ণ। Discord RPC কাজ করবে না যদি তুমি Discord এডমিনিস্ট্রেটরে রান করো।
 
 ### তুমি কি সেটিংসের সাথে একটি Presence ব্যবহার করছ?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+অনেক Presences (`Twitch` এবং `SoundCloud` সহ) একটি এক্সটেনশন সমস্যায় প্রভাবিত। এই সমস্যাটির ফলে এক্সটেনশনটি সঠিকভাবে সেটিংস এর ডিফল্ট মান নিতে পারেনা।
 
-To solve this, all you have to do is toggle the topmost setting: ![presencesettings.gif](/presencesettings.gif)
+এটা সমাধান করার জন্যে, যা করতে হবে সেটা হচ্ছে সবার উপরের সেটিংটি টগল করা: ![presencesettings.gif](/presencesettings.gif)
 
 ### তোমার ব্রাউজারটি রিস্টার্ট করো
 <kbd>Alt</kbd>+<kbd>F4</kbd> (উইন্ডোজ) অথবা <kbd>CMD</kbd>+<kbd>Q</kbd> (ম্যাকওএস) এও ভালো কাজ করে। (অবশ্য তোমাকে আবার তোমার ব্রাউজার স্টার্ট করতে হবে।)
 
 ### PreMiD (অ্যাপ্লিকেশান) রিস্টার্ট করো
-![quit.png](/quit.png) You have to restart PreMiD afterwards.
+![quit.png](/quit.png) তোমাকে পরে PreMiD রিস্টার্ট করতে হবে।
 
 ### Discord রিস্টার্ট করো
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+<kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাকওএস) দাও তোমার কীবোর্ডে বা Discord ম্যানুয়ালি রিস্টার্ট করো।
 
-### Check if you have antivirus or firewall running on your computer
+### চেক করো তোমার কম্পিউটারে অ্যান্টিভাইরাস অথবা ফায়ারওয়াল চলছে কিনা
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
-### Disable your addons
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+### তোমার অ্যাডনগুলো বন্ধ করো
+তোমার সব অ্যাডনগুলো বন্ধ করো এবং দেখো এটি কাজ করে কিনা। যদি কাজ করে, তাহলে অ্যাডনগুলো ধাপে ধাপে অন করো এবং আমাদের বলো কোন অ্যাডনটি PreMiD - তে সমস্যা সৃষ্টি করেছে।
 
 ### তোমার কম্পিউটার রিস্টার্ট করো
 আমি আশা করি তুমি জানো কীভাবে একটি কম্পিউটারকে রিস্টার্ট করতে হয়।
 
 ### PreMiD আবার ইন্সটল করো
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+কখনও কখনও ফাইলগুলোতে সমস্যা থাকতে পারে... ইন্সটলেশনের টিউটোরিয়ালগুলো পাওয়া যাবে [এখানে](/install)।
 
 ### Manual removal
 Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
-### McAfee detected PreMiD as virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+### PreMiD - কে McAfee ভাইরাস হিসেবে শনাক্ত করেছে (উইন্ডোজ)
+এটি McAfee থেকে একটি ফল্‌স পজিটিভ এবং আমরা এই সমস্যাটি তাদের কাছে রিপোর্ট করেছি, আপাতত তুমি PreMiD - কে বাদ দিতে পারো স্ক্যান করা হতে এই ধাপগুলো অনুসরণ করে:
 
 > If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
@@ -117,14 +117,14 @@ exit 0
 <a name="macos"></a>
 
 # ম্যাকওস এর সমস্যা সমাধান
-### Error creating directory
+### "Error creating directory"
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
-2. Right-click on blank space and click **Create folder**.
-3. To this folder assign `PreMiD` name (remember about upper-cased letters).
-4. Open installer again.
+তুমি যদি এই ত্রুটিটি পাও, এর মানে হচ্ছে যে তোমার অ্যাকাউন্ট এর এডমিনিস্ট্রেটর পারমিশন নেই। তোমাকে ম্যানুয়ালি একটি ফোল্ডার তৈরি করতে হবে এই ধাপগুলো অনুসরণ করে:
+1. Finder ওপেন করো এবং **Applications** ফোল্ডার ওপেন করো।
+2. ফাঁকা জায়গায় মাউসের ডান পাশের বাটনটি ক্লিক করো এবং ক্লিক করো **Create folder**.
+3. এই ফোল্ডারটির নাম দাও `PreMiD` (খেয়াল রেখো বড় হাতের অক্ষরগুলো সম্পর্কে)।
+4. ইন্সটলারটি আবার ওপেন করো।
 
 # আমার সমস্যা সমাধান হয়নি
 একটি টিকেট খোলো [#support](https://discord.premid.app/) - এ।
