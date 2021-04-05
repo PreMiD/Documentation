@@ -159,7 +159,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`service`**
 
-- Der Service-Name **muss** mit dem Namen des Präsenzverzeichnisses übereinstimmen. Wenn sich zum Beispiel die Presence in `/websites/Y/YouTube/` befindet, muss der Servicename `YouTube` sein.
+- Der Service-Name **muss** mit dem Namen des Presenceverzeichnisses übereinstimmen. Wenn sich zum Beispiel die Presence in `/websites/Y/YouTube/` befindet, muss der Servicename `YouTube` sein.
 - Du **kannst** die URL **nicht** als Servicename verwenden, es sei denn die Webseite benutzt diese als offiziellen Namen. Wenn der Name nicht beschreibend ist und als vage betrachtet werden kann, ist die Nutzung der URL **erforderlich**. (zum Beispiel ist `YouTube` erlaubt, da das beschreibend und der offizielle Name ist, während es `youtube.com` nicht ist. `Top` ist ein nicht-beschreibender Name, wodurch das Nutzen der URL `top.gg` **erforderlich** ist.
 - Wenn der Service einige explizite Branding-Regeln mit ihrem Namen hat, solltest du sie befolgen.
 
@@ -169,7 +169,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`description`**
 
-- **Alle** Präsenzen müssen, **ohne Rücksicht** auf die bevorzugt Sprache der Webseite, eine englische Beschreibung haben^.
+- **Alle** Presences müssen, **ohne Rücksicht** auf die bevorzugt Sprache der Webseite, eine englische Beschreibung haben^.
 - Versuche **nicht** die Seite selbst zu übersetzen, es sei denn du kennst diese Sprache. Übersetzer werden deine `metadata.json` modifizieren und falls nötig Änderungen an der Beschreibungen vornehmen.
 
 ### **`url`**
@@ -200,8 +200,8 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 - Bei **allen** Presences ist mindestens _ein_ Tag erforderlich.
 - Tags dürfen **keine** Leerzeichen, Schrägstriche, einfache/doppelte Anführungszeichen und Unicode-Zeichen enthalten und sollten immer in Kleinbuchstaben geschrieben werden.
-- Tags **sollten** vorzugsweise abwechslungsreiche Servicenamen enthalten um die Suche zu vereinfachen (sollte die Amazon-Präsenz beispielsweise AWS-Unterstützung haben, hätte es Tags wie `amazon-web-services` und `aws`).
-- Es ist **erforderlich** einen `NSFW` Tag hinzuzufügen, wenn die Präsenz für eine NSFW Webseite ist.
+- Tags **sollten** vorzugsweise abwechslungsreiche Servicenamen enthalten um die Suche zu vereinfachen (sollte die Amazon-Presence beispielsweise AWS-Unterstützung haben, hätte es Tags wie `amazon-web-services` und `aws`).
+- Es ist **erforderlich** einen `NSFW` Tag hinzuzufügen, wenn die Presence für eine NSFW Webseite ist.
 
 ### **`category`**
 
@@ -219,7 +219,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`warning`**
 
-- Aktiviert das Warnsymbol für die Aufforderung an den Benutzer, dass diese Präsenz mehr Schritte benötigt als nur das Hinzufügen von der Presence.
+- Aktiviert das Warnsymbol für die Aufforderung an den Benutzer, dass diese Presence mehr Schritte benötigt als nur das Hinzufügen von der Presence.
 - Beispiel für eine solche Presence, die diese Metadaten-Variable benutzt, ist `VLC`.
 
 ### **`settings`**
