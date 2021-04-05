@@ -95,7 +95,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">Der Titel des Dienstes, den diese Präsenz unterstützt.</td>
+      <td style="text-align:left">Der Titel des Dienstes, den diese Presence unterstützt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
