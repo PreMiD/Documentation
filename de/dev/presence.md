@@ -308,8 +308,8 @@ presence.on("UpdateData", async () => {
     smallImageKey:
       "key" /* Der Schlüssel (Dateiname), des kleinen Bildes der Presence. Diese sind hochgeladen und in der Rich-Presence-Sektion deiner Anwendung namens Art Assets*/,
     smallImageText: "Einige schwebende Text", //Der Text, der angezeigt wird, wenn Sie über dem kleinen Bild schweben
-    Details: "Browse Seitenname", //Der obere Abschnitt des Präsenztextes
-    Status: "Lese-Abschnitt A", //Der untere Abschnitt des Präsenztextes
+    Details: "Browse Seitenname", //Der obere Abschnitt des Presencetextes
+    Status: "Lese-Abschnitt A", //Der untere Abschnitt des Presencetextes
     startTimestamp: 1577232000, //Der Unix-Zeitstempel für den Beginn der Zählung ab
     endTimestamp: 1577151472000 //Wenn die Zeitstempel statt verfallener angezeigt werden sollen, dies ist der Unixepoch-Zeitstempel, an dem der Timer endet
   }; /*Optional können Sie hier einen largeImageKey setzen und den Rest als variable Untereigenschaften ändern, zum Beispiel presenceSata. ype = "blahblah"; Typbeispiele: details, state, etc.*/
@@ -328,7 +328,7 @@ presence.setTrayTitle(); //Löscht den Tray-Titel für Mac User
 
 Du kannst dies in Deine `presence.ts` kopieren und die Werte bearbeiten. Die Einstellung aller Werte ist fertig innerhalb des updataData Events.
 
-Als Beispiele schlagen wir vor, den Präsenz-Code wie 1337x oder 9GAG zu betrachten. Für mehr Information, über die `Presence`-Klasse, klicke [hier](/dev/presence/class).
+Als Beispiele schlagen wir vor, den Presence-Code wie 1337x oder 9GAG zu betrachten. Für mehr Information, über die `Presence`-Klasse, klicke [hier](/dev/presence/class).
 
 Seit v2.2.0 gibt es Slideshows, die es dir erlauben mehrere `PresenceData`-Schnittstellen in einem Intervall anzuzeigen, für mehr Information über die `Slideshow`-Klasse, klicke [hier](/dev/presence/slideshow).
 
@@ -361,7 +361,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Ermögliche Deiner Präsenz-Datei, Daten aus der iFrame-Datei zu empfangen.
+4. Ermögliche Deiner Presence-Datei, Daten aus der iFrame-Datei zu empfangen.
 
 ```typescript
 presence.on("iFrameData", (data) => {
@@ -381,7 +381,7 @@ presence.on("iFrameData", (data) => {
 1. Öffne das Erweiterungs-Popup im Browser und halte die <kbd>Umschalt</kbd>-Taste auf deiner Tastatur gedrückt.
 2. **Presence laden** wird im Presence-Bereich erscheinen.
 3. Klicke darauf, während Du die Taste <kbd>Shift</kbd> weiterhin gedrückt hälst.
-4. Wähle den Ordner /dist Deiner Präsenz.
+4. Wähle den Ordner /dist Deiner Presence.
 
 # Einige hilfreiche Dinge
 
