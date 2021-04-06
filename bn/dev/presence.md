@@ -375,7 +375,7 @@ presence.on("iFrameData", (data) => {
 
 ## কম্পাইলিং
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+`presence.ts` ফাইলটিকে `/dist` ফোল্ডারে কম্পাইল করার জন্য একটি কনসোল ওপেন করো তোমার ফোল্ডারে এবং টাইপ করো `tsc -w`
 
 # Presence - টিকে লোড করা
 
@@ -388,7 +388,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## হট রিলোডিং
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+যে ওয়েবসাইট এর উপর ভিত্তি করে Presence - টি তৈরি করছ সেটি অটোমেটিকভাবে রিলোড হচ্ছে প্রত্যেক সময় তুমি একটি ফাইল সেভ করো তোমার ফোল্ডারে।
 
 ## ডিবাগিং
 
