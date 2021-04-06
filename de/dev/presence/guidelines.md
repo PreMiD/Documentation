@@ -286,7 +286,7 @@ Der wichtigste Prozess der Presence-Entwicklung ist Ihre Presence in den Shop zu
 
 Wiederholte Verstöße wie das Brechen von Richtlinien, das Versenden von Spam-Pull-Requests, Bedrohungen oder unangemessenes Verhalten führen dazu, dass du keine Presences mehr erstellen kannst.
 
-In diesem Fall werden folgende Änderungen vorgenommen:
+In this scenario, the following changes will occur:
 
 - Presences unter deinem Management werden an den PreMiD Bot oder an einen anderen Benutzer übergeben (Überprüfungsentscheidung). Die Anwendungs-ID jeder Presence wird unter dem Namen des neuen Eigentümers neu erstellt.
 - Alle deine nach dem Bann erstellten Issues und Pull-Requests (Presence-Erstellungen, Presence-Beiträge, etc.) werden umgehend geschlossen.
