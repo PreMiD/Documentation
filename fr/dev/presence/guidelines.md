@@ -1,5 +1,5 @@
 ---
-title: Règlement de Presence
+title: Règlement des Presences
 description: Règles que tous les développeurs de Presence doivent suivre pour avoir leur Presence ajoutée.
 published: true
 date: 2021-03-06T15:01:04.274Z
@@ -10,7 +10,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Règlement de Presence</h3>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Règlement des Presences</h3>
     <h4 style="margin-top: 0">Révision 3</h4>
     <br />
 </div>
