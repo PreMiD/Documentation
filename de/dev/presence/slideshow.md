@@ -35,7 +35,7 @@ Fügen Sie eine neue Folie auf der `Slideshow` entsprechend den angegebenen Date
 
 Der erste Parameter erfordert einen `String` der als eindeutiger Bezeichner für die Folie verwendet wird.
 
-Der erste Parameter erfordert eine [`Präsenzdaten` Schnittstelle](/dev/presence/class#presencedata-interface), um alle Informationen abzurufen, die Sie in Ihrem Profil anzeigen möchten.
+Der erste Parameter erfordert eine [`Presencedaten` Schnittstelle](/dev/presence/class#presencedata-interface), um alle Informationen abzurufen, die Sie in Ihrem Profil anzeigen möchten.
 
 Der dritte Parameter erfordert eine `Nummer`, die die Zeitspanne in Millisekunden (minimum: 5000) beinhaltet, die diese Folie anzeigt.
 
