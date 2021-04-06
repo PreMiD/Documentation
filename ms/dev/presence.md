@@ -329,19 +329,19 @@ presence.on("UpdateData", async () => {
 
 Anda boleh salin ini ke dalam fail `presence.ts` anda dan sunting nilainya. Penetapan kesemua nilai dilakukan di dalam peristiwa updateData.
 
-Contohnya kami cadangkan anda lihat kod Presence seperti: 1337x atau 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Contohnya kami cadangkan anda lihat kod Presence seperti: 1337x atau 9GAG. Untuk maklumat lanjut mengenai kelas `Presence` sila klik [di sini](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Sejak v2.2.0 adanya Slideshow, ini membolehkan anda menunjukkan beberapa antara muka `PresenceData` pada selang masa sesuatu, untuk maklumat lanjut mengenai kelas `Slideshow` boleh klik [sini](/dev/presence/slideshow).
 
 ## Tidak mampu dapatkan sesetengah data?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Banyak laman sesawang menggunakan [iFrame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Tag HTML ini boleh mengandungi beberapa sumber seperti video. Tetapi bukan semuanya mempunyai kaitan pada setiap masa. Sesetengahnya disembunyikan atau cuma tidak digunakan dengan aktif. Periksa jika anda boleh sarikan maklumat yang anda perlukan tanpanya sebelum anda membuat apa-apa kerja yang tidak diperlukan.
 
 1. Periksanya di konsol pelayar anda (pastikan anda berada di tab **Elements** atau Unsur).
 2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Lakukan `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Jika anda jumpa data anda dalam iFrame anda perlu lakukan berikut:
 
 1. Cipta fail `iframe.ts`.
 2. Tetapkan iFrame menjadi `true` dalam fail metadata anda.
@@ -371,11 +371,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Nota:** Ini perlu diletakkan di luar peristiwa updateData.
 
 ## Kompil
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Buka konsol dalam folder anda dan taip `tsc -w` untuk mengkompil fail `presence.ts` ke dalam folder `/dist`.
 
 # Memuatkan Presence
 
@@ -388,7 +388,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Muat semula panas
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Laman sesawang yang anda bangunkan Presence-nya dimuat semula secara automatiknya setiap kali anda simpan fail di dalam folder anda.
 
 ## Nyahpepijat
 
