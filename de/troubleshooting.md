@@ -67,7 +67,7 @@ Windows: Öffne den Pfad `C:\Users\USER\AppData\Roaming` und lösche den Ordner 
 ### McAfee erkennt PreMiD als Virus (Windows)
 Das ist ein falsch-positiver von McAfee und wir haben das Problem ihnen gemeldet, fürs Erste kannst du PreMiD vom Scan ausschliessen indem du folgende Schritte ausführst:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Wenn du dich nicht sicher fühlst, diese Schritte durchzuführen, kannst du gerne ein Ticket im [#support](https://discord.premid.app/) erstellen und einer unserer Support-Agenten wird dir helfen können! 
 > 
 > {.is-warning}
 
