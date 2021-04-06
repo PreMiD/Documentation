@@ -283,7 +283,7 @@ El proceso más importante de desarrollo de una presence es publicarla en la tie
 
 No te será permitido crear presences en en caso de ofensas repetitivas como romper las indicaciones, spamming de pull requests, amenazas o comportamiento inapropiado.
 
-En este escenario, se producirán los siguientes cambios:
+In this scenario, the following changes will occur:
 
 - Las presences bajo su gestión se transferirán al bot de PreMiD u otro usuario (decisión del verificador). La Id de la aplicación para cada presence se volverá a crear con el nombre del nuevo dueño.
 - Todos tus issues y pull request (Creacion y contribucion de presences) creados luego del ban seran cerrados.

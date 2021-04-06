@@ -272,8 +272,6 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Getting started
 
 ```typescript
@@ -337,13 +335,13 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 
 ## Can't get certain data?!
 
-Mange nettsteder bruker [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Disse html kodene kan inneholde flere kilder, som videoer. Men de er ikke relevante hver gang. Noen er skjult eller kun aktivt brukt. Sjekk om du kan hente informasjonen du trenger, uten dem før du gjør unødvendig arbeid.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Se etter dem i nettleserkonsollen (vær sikker på at du er på **elementene** fanen).
 2. Søk (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) eller <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Kjør `document.querySelectorAll("iframe")`.
 
-Hvis du finner at dataene dine befinner seg i en iFrame må du gjøre følgende:
+If you find that your data is in a iFrame you need to do the following:
 
 1. Lag en `iframe.ts` fil.
 2. Angi iFrame til `sann` i metadatafilen din.
@@ -373,11 +371,11 @@ presence.på("iFrameData", (data) => {
 });
 ```
 
-**Merk:** Dette må plasseres utenfor oppdaterings-Data hendelsen.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Kompilerer
 
-Åpne en konsoll i mappen din og skriv `tsc -w` for å kompilere `presence.ts` i `/dist` mappen.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Laster inn presencen
 
@@ -390,7 +388,7 @@ presence.på("iFrameData", (data) => {
 
 ## Hurtig-omlasting
 
-Nettstedet du utvikler på, lastes automatisk opp hver gang du lagrer en fil i mappen din.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Feilsøking
 

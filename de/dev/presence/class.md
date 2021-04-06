@@ -50,7 +50,7 @@ Legt Ihre Profilaktivität gemäß den bereitgestellten Daten fest.
 
 Der erste Parameter benötig eine [`PresenceData`](#presencedata-interface) Schnittstelle oder eine [`Slideshow`](/dev/presence/slideshow) Klasse um alle Informationen zu erhalten, die Sie in Ihrem Profil anzeigen möchten.
 
-Der zweite Parameter definiert, wann Präsenz etwas spielt oder nicht. Verwende immer `true`, wenn Sie einen Zeitstempel in `PresenceData` verwenden.
+Der zweite Parameter definiert, wann Presence etwas spielt oder nicht. Verwende immer `true`, wenn Sie einen Zeitstempel in `PresenceData` verwenden.
 
 ### `clearActivity()`
 

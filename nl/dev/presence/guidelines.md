@@ -283,7 +283,7 @@ Het belangrijkste proces van de ontwikkeling van je presence is de publicatie na
 
 Herhalende overtredingen zoals het breken van richtlijnen, het spammen van pull requests, dreigementen of ongepast gedrag kan leiden tot verbanning van het maken van presences.
 
-In dit scenario zullen de volgende wijzigingen plaatsvinden:
+In this scenario, the following changes will occur:
 
 - Presences onder je beheer zullen worden overgedragen naar de PreMiD-bot of een andere gebruiker (besluit van controleur). De applicatie-id voor elke presence wordt opnieuw gemaakt onder de naam van de nieuwe eigenaar.
 - Al je issues en pull-aanvragen (presence-toevoegingen en -wijzigingen, enz.) die zijn gecreëerd na het verbod zullen worden gesloten.

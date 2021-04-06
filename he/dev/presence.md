@@ -271,8 +271,6 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-יצרנו `metadata.json` יוצר קבצים לאנשים העצלנים [here](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Getting started
 
 ```typescript
@@ -330,7 +328,7 @@ presence.on("UpdateData", async () => {
 
 You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-לדוגמאות אנו מציעים להסתכל על קוד התוסף כמו: 1337x או 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 

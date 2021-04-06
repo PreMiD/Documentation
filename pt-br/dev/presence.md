@@ -269,12 +269,10 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
   </tbody>
 </table>
 
-Nós fizemos um `metadata.json` criador de arquivos para os preguiçosos [aqui](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Primeiros passos
 
 ```typescript
-var presence = new Presence({
+const presence = new Presence({
     clientId: "000000000000000000", //O client ID do Aplicativo criado no https://discordapp.com/developers/applications
     mediaKeys: false //Ativar o uso e detecção de pressionamentos de teclas de mídia
 }),
@@ -307,7 +305,7 @@ presence.on("UpdateData", async () => {
 
     É recomendável configurar outra função fora desta função de evento que irá alterar os valores das variáveis e fazer o levantamento pesado se você chamar dados de uma API.*/
 
-    var presenceData: presenceData = {
+    const presenceData: presenceData = {
         largeImageKey: "key", /*A key (nome do arquivo) da Imagem Grande sobre a presence. Estes são enviados e nomeados na seção Rich Presence do seu aplicativo, chamado Arte de Arquitetura*/
         smallImageKey: "chave", /*A chave (nome do arquivo) da imagem grande na presence. Estes são enviados e nomeados na seção Rich Presence de sua aplicação, chamada Art Assets*/,
     smallImageText: "Some hover text", //O texto que é exibido ao cobrir sobre a pequena imagem
@@ -328,21 +326,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Você pode copiar isso no arquivo `presence.ts` e editar os valores. Configurar todos os valores é feito dentro do evento updateData.
+You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-Por exemplo, sugerimos que analisemos o código de presences como: 1337x ou 9GAG. Para mais informações sobre a classe `Presence` clique [aqui](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
-Desde a v2.2.0 existem agora Slideshows, isto permite que você mostre múltiplas interfaces `PresenceData` em um intervalo, para mais informações sobre a classe `Slideshow` clique [aqui](/dev/presence/slideshow).
+Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## Não consegue obter dados certos?!
 
-Muitos sites estão usando [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Essas tags html podem conter várias fontes como vídeos. Entretanto, elas não são sempre relevantes. Alguns são ocultos ou simplesmente não são ativamente utilizados. Verifique se você pode extrair, as informações que você precisa, sem elas antes de fazer trabalho desnecessário.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Cheque por elas no console do navegador (certifique-se de que você está na guia **Elementos**).
 2. Pesquisa (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Execute `document.querySelectorAll("iframe")`.
 
-Se perceber que seus dados estão em um iFrame, você precisa fazer o seguinte:
+If you find that your data is in a iFrame you need to do the following:
 
 1. Crie um arquivo `iframe.ts`.
 2. Defina o iFrame como `true` no seu arquivo de metadados.
@@ -372,11 +370,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Nota:** Isso precisa ser colocado fora do evento updateData.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Compilando
 
-Abra um console na sua pasta e digite `tsc -w` para compilar o `presence.ts` na pasta `/dist`.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Carregando a presence
 
@@ -389,7 +387,7 @@ Abra um console na sua pasta e digite `tsc -w` para compilar o `presence.ts` na 
 
 ## Hot-reloading
 
-O site que você está desenvolvendo está recarregando automaticamente toda vez que você salvar um arquivo na sua pasta.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Depuração
 

@@ -283,7 +283,7 @@ Proses paling penting dalam pembangunan Presence adalah untuk memasukkan Presenc
 
 Kesalahan berulang seperti pelanggaran garis panduan, penspaman permintaan tarikan, ancaman, atau perlakuan tidak sesuai akan mengharamkan anda daripada mencipta Presence.
 
-Dalam senario ini, perubahan berikut akan berlaku:
+In this scenario, the following changes will occur:
 
 - Presence di bawah pengurusan anda akan dipindahkan ke bot PreMiD atau pengguna lain (ikut keputusan pengulas). ID aplikasi untuk setiap Presence akan dicipta semula di bawah nama pemilik baharu.
 - Kesemua isu dan permintaan tarikan anda (penciptaan Presence, penyumbangan Presence, dll) yang dicipta setelah pengharaman akan ditutup dengan segera.

@@ -265,14 +265,12 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     <tr>
       <td style="text-align:left"><b>settings</b></td>
       <td style="text-align:left">مجموعة من الإعدادات التي يمكن للمستخدم تغييرها.<br>
-      اقرأ المزيد حول إعدادات الحضور <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">هنا</a>.</td>
+      اقرأ المزيد حول إعدادات Presence <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">هنا</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>نعم</code></td>
     </tr>
   </tbody>
 </table>
-
-لقد صنعنا منشئ ملف `metadata.json` للكسلة [هنا](https://eggsy.xyz/projects/premid/mdcreator).
 
 ## البدء
 
@@ -331,7 +329,7 @@ presence.on("UpdateData", async () => {
 
 You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-ومن الأمثلة على ذلك، نقترح النظر في مدونة أشكال الوجود مثل: 1337x أو 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 

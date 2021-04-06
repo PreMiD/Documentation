@@ -269,8 +269,6 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
   </tbody>
 </table>
 
-Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [anseo](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Getting started
 
 ```typescript

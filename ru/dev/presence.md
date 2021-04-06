@@ -263,8 +263,6 @@ dateCreated: 2020-06-11T18:04:02.843Z
   </tbody>
 </table>
 
-Мы сделали `metadata.json` создатель файлов для ленивых [Вот](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Начало работы
 
 ```typescript
@@ -319,21 +317,21 @@ setInterval(myOutsideHeavyLiftingFunction, США);
 });
 ```
 
-Вы можете скопировать это в `присутствие.` файл и изменить значения. Установка всех значений производится внутри события updataData.
+You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-Для примеров, мы предлагаем ознакомиться с кодом присутствия: 1337x или 9GAG. Для получения дополнительной информации о классе `Presence` нажмите [здесь](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
-Начиная с версии 2.2. есть слайд-шоу, это позволяет показать несколько интерфейсов `PresenceData` на интервале, для получения дополнительной информации нажмите на `Слайд-шоу` класс [здесь](/dev/presence/slideshow).
+Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## Не удается получить определенные данные?!
 
-Многие веб-сайты используют [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Эти html-теги могут содержать несколько источников, таких как видео. Но они не актуальны каждый раз. Некоторые скрыты или просто неактивно используемые. Проверьте, можно ли извлечь нужную информацию без необходимости выполнения ненужной работы.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Проверить их в консоли браузера (убедитесь, что вы находитесь на вкладке **Элементы**).
 2. Поиск (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) или <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Выполнить `document.querySelectorAll("iframe")`.
 
-Если вы обнаружили, что ваши данные находятся в iFrame вам необходимо сделать следующее:
+If you find that your data is in a iFrame you need to do the following:
 
 1. Создайте файл `iframe.ts`.
 2. Установите iFrame в `true` в вашем файле метаданных.
@@ -363,11 +361,11 @@ presence.on("iFrameData", (данные) => {
 });
 ```
 
-**Примечание:** Это должно быть расположено вне события updateData.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Компиляция
 
-Откройте консоль в вашей папке и введите `tsc -w` для компиляции `присутствия.ts` в папку `/dist`.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Загрузка присутствия
 
@@ -380,7 +378,7 @@ presence.on("iFrameData", (данные) => {
 
 ## Горячая загрузка
 
-Веб-сайт, на котором вы находитесь, автоматически перезагружается каждый раз, когда вы сохраняете файл в вашей папке.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Отладка
 

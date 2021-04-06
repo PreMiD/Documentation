@@ -272,8 +272,6 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-게으른 녀석들을 위해 우리가 `metadata.json`파일 생성기를 만들었어요. [여기를 클릭하세요](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Getting started
 
 ```typescript

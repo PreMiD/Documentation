@@ -272,8 +272,6 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
   </tbody>
 </table>
 
-অলস মানুষদের জন্য আমরা তৈরি করেছি `metadata.json` ফাইল তৈরিকারক [এখানে](https://eggsy.xyz/projects/premid/mdcreator)।
-
 ## শুরু করা যাক
 
 ```typescript
@@ -377,7 +375,7 @@ presence.on("iFrameData", (data) => {
 
 ## কম্পাইলিং
 
-`presence.ts` ফাইলটিকে `/dist` ফোল্ডারে কম্পাইল করার জন্য একটি কনসোল ওপেন করো তোমার ফোল্ডারে এবং টাইপ করো `tsc -w`
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Presence - টিকে লোড করা
 
@@ -390,7 +388,7 @@ presence.on("iFrameData", (data) => {
 
 ## হট রিলোডিং
 
-যে ওয়েবসাইট এর উপর ভিত্তি করে Presence - টি তৈরি করছ সেটি অটোমেটিকভাবে রিলোড হচ্ছে প্রত্যেক সময় তুমি একটি ফাইল সেভ করো তোমার ফোল্ডারে।
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## ডিবাগিং
 

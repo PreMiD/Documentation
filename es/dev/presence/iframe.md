@@ -13,7 +13,7 @@ tags:
 
 ## Introducción
 
-En algunos argumentos, tu presencia puede necesitar acceder a elementos dentro de `iframes`.
+En algunos argumentos, tu presence puede necesitar acceder a elementos dentro de `iframes`.
 
 El código que escribes dentro de tu archivo `iframe.ts` se inyecta en cada iframe de la página.
 
@@ -30,7 +30,7 @@ iframe.on("UpdateData", async () => {
 ## Métodos
 
 ### `send(Object)`
-Envía datos a la presencia. Usar este método hará que la presencia arroje un evento de `iFrameData`.
+Envía datos a la presence. Usar este método hará que la presence arroje un evento de `iFrameData`.
 
 ### `getUrl()`
 Devuelve la URL del `iframe`.

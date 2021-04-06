@@ -267,8 +267,6 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
   </tbody>
 </table>
 
-Hemos creado un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/projects/premid/mdcreator) para gente perezosa.
-
 ## Empezando
 
 ```typescript
@@ -324,21 +322,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Puedes copiar esto dentro de tu archivo `presence.ts` y editar los valores. La configuración de los valores se hace dentro del evento updateData.
+You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-Para ejemplos sugerimos mirar el código de presences como: 1337x o 9GAG. Para más información sobre la clase `Presence` haz clic [aquí](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
-Desde la v2.2.0 ahora hay Slideshows, esto le permite mostrar múltiples interfaces de `PresenceData` en un intervalo, para más información sobre la clase `Slideshow` haz clic [aquí](/dev/presence/slideshow).
+Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## ¿¡No puedes obtener cierta información!?
 
-Muchos sitios web están utilizando [ iframes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) (\[Inline Frames \](https: / /en.wikipedia.org/wiki/HTML_element#Frames)). Estas etiquetas html pueden contener múltiples fuentes, como videos. Pero a veces no son relevantes. Algunos están ocultos o simplemente no se usan activamente. Compruebe si puede extraer la información que necesita sin ellos antes de realizar un trabajo innecesario.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Verifícalos en la consola de tu navegador (asegúrate de estar en la pestaña **Elementos**).
 2. Buscar (<kbd> CTRL </kbd> + <kbd> F </kbd> (Windows) o <kbd> CMD </kbd> + <kbd> F </kbd> (MacOS)).
 3. Ejecuta `document.querySelectorAll("iframe")`.
 
-Si encuentras que los datos están en un iFrame, debes hacer lo siguiente:
+If you find that your data is in a iFrame you need to do the following:
 
 1. Crea un archivo `iframe.ts`.
 2. Establece iFrame a `true` en tu archivo de metadata.
@@ -368,11 +366,11 @@ presence.on("iFrameData", data => {
 });
 ```
 
-**Nota:** Esto debe colocarse fuera del evento updateData.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Compilando
 
-Abre una consola en tu carpeta y escribe `tsc -w` para compilar `presence.ts` en la carpeta `/dist`.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Cargando la presence
 
@@ -385,7 +383,7 @@ Abre una consola en tu carpeta y escribe `tsc -w` para compilar `presence.ts` en
 
 ## Recarga rápida
 
-El sitio web en el que estás desarrollando se recarga automáticamente cada vez que guarda un archivo en su carpeta.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Depurando
 

@@ -15,4 +15,4 @@ PreMiD ist eine einfache, konfigurierbare Software, die dir erlaubt in deinem Di
 
 # Grundfunktionen
 - Zeigt deinen aktuellen Webdienst im Discord Status.
-- Gibt dir volle Kontrolle über Präsenzen.
+- Gibt dir volle Kontrolle über Presences.
