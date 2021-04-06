@@ -273,8 +273,6 @@ regExp ou aussi connu sous le nom de Regex, peut être utilisé si un site Web a
   </tbody>
 </table>
 
-Nous avons fait un créateur de fichier `metadata.json` pour les personnes paresseuses [ici](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Pour commencer
 
 ```typescript
@@ -330,21 +328,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Vous pouvez copier ceci dans votre fichier `presence.ts` et modifier les valeurs. Réglage de toutes les valeurs se fait à l'intérieur de l'événement updataData.
+You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-Pour des exemples nous suggérons de regarder le code des présences comme : 1337x ou 9GAG. Pour plus d'informations sur la classe `Presence` cliquez [ici](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
-Depuis la v2.2. il y a maintenant Slideshows, cela vous permet d'afficher plusieurs interfaces `PresenceData` sur un intervalle, pour plus d'informations cliquez sur la classe `Slideshow` [ici](/dev/presence/slideshow).
+Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## Impossible d'obtenir certaines données?!
 
-Beaucoup de sites web utilisent des [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Ces balises html peuvent contenir plusieurs sources telles que des vidéos. Mais ils ne sont pas pertinents à chaque fois. Certains sont cachés ou tout simplement pas utilisés activement. Vérifiez si vous pouvez extraire, l'information dont vous avez besoin, sans eux avant de faire un travail inutile.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Vérifiez les dans la console de vos navigateurs (assurez-vous que vous êtes sur l'onglet **Éléments**).
 2. Recherchez (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Exécutez `document.querySelectorAll("iframe")`.
 
-Si vous trouvez que vos données sont dans un iFrame vous devez faire ce qui suit :
+If you find that your data is in a iFrame you need to do the following:
 
 1. Créer un fichier `iframe.ts`.
 2. Définissez iFrame à `true` dans votre fichier de métadonnées.
@@ -374,11 +372,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Remarque :** Ceci doit être placé en dehors de l'événement updateData.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Compilation
 
-Ouvrez une console dans votre dossier et tapez `tsc -w` pour compiler le `presence.ts` dans le dossier `/dist`.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Chargement de la présence
 
@@ -391,7 +389,7 @@ Ouvrez une console dans votre dossier et tapez `tsc -w` pour compiler le `presen
 
 ## Rechargement rapide
 
-Le site Web sur lequel vous développez est automatiquement rechargé chaque fois que vous enregistrez un fichier dans votre dossier.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Débogage
 
