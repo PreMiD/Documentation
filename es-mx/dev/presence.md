@@ -322,21 +322,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Puedes copiar esto dentro de tu archivo `presence.ts` y editar los valores. Setting all the values is done inside of the updataData event.
+Puedes copiar esto dentro de tu archivo `presence.ts` y editar los valores. La configuración de todos los valores se hace dentro del evento updateData.
 
 For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Desde la v2.2.0 ahora hay Slideshows, esto le permite mostrar múltiples interfaces de la `PresenceData` en un intervalo, para más información sobre la clase `Slideshow` haz clic [aquí](/dev/presence/slideshow).
 
 ## ¿¡No puedes obtener cierta información!?
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Muchos sitios web están utilizando [ iframes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Estas etiquetas html pueden contener múltiples fuentes, como videos. Pero no son revelantes siempre. Algunos están ocultos o simplemente no se usan activamente. Compruebe si puede extraer la información que necesita sin ellos antes de realizar un trabajo innecesario.
 
 1. Verifícalos en la consola de tu navegador (asegúrate de estar en la pestaña **Elementos**).
 2. Buscar (<kbd> CTRL </kbd> + <kbd> F </kbd> (Windows) o <kbd> CMD </kbd> + <kbd> F </kbd> (MacOS)).
 3. Ejecuta `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Si encuentras que los datos están en un iFrame, debes hacer lo siguiente:
 
 1. Crea un archivo `iframe.ts`.
 2. Establece iFrame a `true` en tu archivo de metadata.
