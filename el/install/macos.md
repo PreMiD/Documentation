@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Πριν προχωρήσετε περαιτέρω, βεβαιωθείτε ότι το σύστημά σας πληροί όλες τις [απαιτήσεις](/install/requirements). 
 > 
 > {.is-info}
 
