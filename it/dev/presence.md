@@ -335,7 +335,7 @@ Dalla v2.2.0 sono arrivati gli Slideshows, questo ti permette di mostrare più i
 
 ## Impossibile ottenere alcuni dati?!
 
-Molti siti web utilizzano [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Questi tag html possono contenere sorgenti multiple come ad esempio video. Ma non sono pertinenti ogni volta. Alcune sono nascoste o semplicemente non utilizzate frequentemente. Prima di lavorare inutilmente, verifica se è possibile estrarre le informazioni di cui hai bisogno senza di essi.
+Molti siti web utilizzano [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Questi tag html possono contenere sorgenti multiple come ad esempio video. Ma non sono pertinenti ogni volta. Alcune sono nascoste o semplicemente non utilizzate frequentemente. Check if you can extract the information you need without them before you do unnecessary work.
 
 1. Controllali nella tua browser console (assicurati di essere nella scheda **Elementi**).
 2. Cerca (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) o <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
