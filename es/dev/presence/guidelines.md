@@ -198,12 +198,12 @@ Una lista de los campos y sus reglas están listadas abajo:
 
 - **Todas** las presences requieren por lo menos _una_ etiqueta.
 - Las etiquetas **no** deben tener espacios, slashes, comillas simples o dobles, caracteres Unicode y siempre deberían ser en minúscula.
-- Las etiquetas **deberían** incluir preferiblemente nombres de servicio alternativos para hacer su búsqueda mas fácil ( por ejemplo, si una presencia Amazon hubiese incluido soporte para AWS, debería tener sus etiquetas como `amazon-web-services` y `aws`)
+- Las etiquetas **deberían** incluir preferiblemente nombres de servicio alternativos para hacer su búsqueda mas fácil ( por ejemplo, si una presence Amazon hubiese incluido soporte para AWS, debería tener sus etiquetas como `amazon-web-services` y `aws`)
 - Estás **obligado** a añadir una etiqueta `NSFW` si la presence es para un sitio web con contenido para adultos.
 
 ### **`category`**
 
-- La categoría **debe** ser una de las siguientes listadas en la [documentación](https://docs.premid.app/es/dev/presence/metadata#categorias-de-una-presencia).
+- La categoría **debe** ser una de las siguientes listadas en la [documentación](https://docs.premid.app/es/dev/presence/metadata#categorias-de-una-presence).
 - La presence debe utilizar una categoría que coincida con el contenido del sitio web. (por ejemplo, no utilices `anime` cuando el sitio web no esté relacionado con anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
@@ -284,7 +284,7 @@ El proceso más importante de desarrollo de una presence es publicarla en la tie
 
 No te será permitido crear presences en en caso de ofensas repetitivas como romper las indicaciones, spamming de pull requests, amenazas o comportamiento inapropiado.
 
-En este escenario, se producirán los siguientes cambios:
+In this scenario, the following changes will occur:
 
 - Las presences bajo tu gestión serán transferidas al bot de PreMiD u otro usuario (según decida el verificador). Se recreará el id de la aplicación de cada presence bajo el nombre del nuevo autor.
 - Se cerrarán todos tus issues y pull request (creación y contribución de presences) creados tras ser baneado.
@@ -314,7 +314,7 @@ Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas e
 
 - Asegúrate **iempre** de iniciar la presence en la carpeta más apropiada, si su nombre comienza con _cualquier_ letra latina entonces debe estar bajo su coincidencia alfabética (p.e. `D/dアニメストア` o `G/Google`). Cualquier otro carácter Unicode/no latino **debe** estar bajo la carpeta `#` (por ejemplo, `#/巴哈姆特.`) y los números bajo la carpeta `0-9` (por ejemplo, `0-9/4anime`).
 
-Después de cumplir con todas las directrices, revisiones y comprobaciones adecuadas, su presencia será añadida.
+Después de cumplir con todas las directrices, revisiones y comprobaciones adecuadas, su presence será añadida.
 
 # Sugerencias
 Si tienes alguna sugerencia sobre nuestras directrices, ¡contáctanos desde [el servidor de Discord de PreMiD](https://discord.premid.app) y las revisaremos!
