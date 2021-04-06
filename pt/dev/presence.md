@@ -272,8 +272,6 @@ Copia o código acima e coloca-o no teu ficheiro `metadata.json`. Agora precisas
   </tbody>
 </table>
 
-Fizemos um criador de ficheiros `metadata.json` para o pessoal preguiçoso [aqui](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Primeiros passos
 
 ```typescript
@@ -373,7 +371,7 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Nota:** Isto precisa ser colocado fora do evento updateData.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Compilar
 
