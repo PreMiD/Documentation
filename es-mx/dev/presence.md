@@ -322,7 +322,7 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Puedes copiar esto dentro de tu archivo `presence.ts` y editar los valores. Setting all the values is done inside of the updataData event.
 
 For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
