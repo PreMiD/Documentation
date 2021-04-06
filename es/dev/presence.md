@@ -331,7 +331,7 @@ Desde la v2.2.0 puedes usar "Slideshows", esto te permite mostrar múltiples int
 
 ## ¡¿No puedes obtener cierta información?!
 
-Muchos sitios web utilizan [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Estas etiquetas html pueden contener múltiples fuentes, como vídeos. Pero a veces no son relevantes. Algunos están ocultos o simplemente no se usan. Check if you can extract the information you need without them before you do unnecessary work.
+Muchos sitios web utilizan [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Estas etiquetas html pueden contener múltiples fuentes, como vídeos. Pero a veces no son relevantes. Algunos están ocultos o simplemente no se usan. Compruebe si puedes extraer la información que necesitas sin ellos antes de trabajar de más.
 
 1. Verifícalos en la consola de tu navegador (asegúrate de estar en la pestaña **Elementos**).
 2. Buscar (<kbd> CTRL </kbd> + <kbd> F </kbd> (Windows) o <kbd> CMD </kbd> + <kbd> F </kbd> (MacOS)).
