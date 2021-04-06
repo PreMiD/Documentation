@@ -41,13 +41,13 @@ Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ
 এটা সমাধান করার জন্যে, যা করতে হবে সেটা হচ্ছে সবার উপরের সেটিংটি টগল করা: ![presencesettings.gif](/presencesettings.gif)
 
 ### তোমার ব্রাউজারটি রিস্টার্ট করো
-<kbd>Alt</kbd>+<kbd>F4</kbd> (উইন্ডোজ) অথবা <kbd>CMD</kbd>+<kbd>Q</kbd> (ম্যাকওএস) এও ভালো কাজ করে। (অবশ্য তোমাকে আবার তোমার ব্রাউজার স্টার্ট করতে হবে।)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (উইন্ডোজ) অথবা <kbd>CMD</kbd>+<kbd>Q</kbd> (ম্যাক ওএস) এও ভালো কাজ করে। (অবশ্য তোমাকে আবার তোমার ব্রাউজার স্টার্ট করতে হবে।)
 
 ### PreMiD (অ্যাপ্লিকেশান) রিস্টার্ট করো
 ![quit.png](/quit.png) তোমাকে পরে PreMiD রিস্টার্ট করতে হবে।
 
 ### Discord রিস্টার্ট করো
-<kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাকওএস) দাও তোমার কীবোর্ডে বা Discord ম্যানুয়ালি রিস্টার্ট করো।
+<kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাক ওএস) দাও তোমার কীবোর্ডে বা Discord ম্যানুয়ালি রিস্টার্ট করো।
 
 ### চেক করো তোমার কম্পিউটারে অ্যান্টিভাইরাস অথবা ফায়ারওয়াল চলছে কিনা
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
@@ -61,8 +61,8 @@ Sometimes antivirus programs and firewalls are blocking applications which are c
 ### PreMiD আবার ইন্সটল করো
 কখনও কখনও ফাইলগুলোতে সমস্যা থাকতে পারে... ইন্সটলেশনের টিউটোরিয়ালগুলো পাওয়া যাবে [এখানে](/install)।
 
-### Manual removal
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+### ম্যানুয়ালি ডিলিট করা
+উইন্ডোজ: ফাইল এক্সপ্লোরারে লেখ `%appdata%` এবং ডিলিট করো `PreMiD` ফোল্ডারটি। ম্যাক ওএস: `~/users/USER/~Library/Application Support/` এবং ডিলিট করো `PreMiD` ফোল্ডারটি।
 
 ### PreMiD - কে McAfee ভাইরাস হিসেবে শনাক্ত করেছে (উইন্ডোজ)
 এটি McAfee থেকে একটি ফল্‌স পজিটিভ এবং আমরা এই সমস্যাটি তাদের কাছে রিপোর্ট করেছি, আপাতত তুমি PreMiD - কে বাদ দিতে পারো স্ক্যান করা হতে এই ধাপগুলো অনুসরণ করে:
@@ -88,14 +88,14 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 <a name="linux"></a>
 
 # লিনাক্স এর সমস্যা সমাধান
-### Ubuntu/Debian based distros
+### Ubuntu/Debian ভিত্তিক ডিস্ট্রিবিউশনগুলো
 If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
-### Arch Linux based distros
+### Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলো
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
 <em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
 
-### Port binding
+### পোর্ট বাইন্ডিং
 You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
 
 ### PreMiD's AppImage doesn't launch at login
