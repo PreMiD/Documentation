@@ -286,7 +286,7 @@ Le processus le plus important dans développement d'une Presence est d'avoir vo
 
 Les infractions répétitives telles que le non-respect des directives, le spam de pull requests, les menaces ou les comportements inappropriés vous feront interdire de créer des presences.
 
-In this scenario, the following changes will occur:
+Dans ce scénario, les changements suivants se produiront :
 
 - Les Presences que vous gérez seront transférée au bot PreMiD ou à un autre utilisateur sur décision du vérificateur. L'ID de l'application pour chaque Presence sera recrée sous le nom du nouveau propriétaire.
 - Toute vos issues et pull requests (création de presence, contribution de presence, etc.) créées après le bannissement seront rapidement fermées.
