@@ -336,7 +336,7 @@ Depuis la v2.2. il y a maintenant des Slideshows, cela vous permet d'afficher pl
 
 ## Impossible d'obtenir certaines données?!
 
-Beaucoup de sites web utilisent des [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Ces balises html peuvent contenir plusieurs choses telles que des vidéos. Mais ils ne sont pas tout le temps très accessibles. Certains sont cachés ou tout simplement pas utilisés activement. Vérifiez si vous pouvez extraire l'information dont vous avez besoin sans les utiliser avant de faire du travail inutile.
+Beaucoup de sites web utilisent des [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Ces balises html peuvent contenir plusieurs choses telles que des vidéos. Mais ils ne sont pas tout le temps très accessibles. Certains sont cachés ou tout simplement pas utilisés activement. Check if you can extract the information you need without them before you do unnecessary work.
 
 1. Vérifiez les dans la console de vos navigateurs (assurez-vous que vous êtes sur l'onglet **Éléments**).
 2. Recherchez (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
