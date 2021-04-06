@@ -367,11 +367,11 @@ presence.on("iFrameData", data => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Nota:** Esto debe colocarse fuera del evento updateData.
 
 ## Compilando
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Abre una consola en tu carpeta y escribe `tsc -w` para compilar `presence.ts` en la carpeta `/dist`.
 
 # Cargando la Presence
 
@@ -384,7 +384,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Recarga en caliente
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+El sitio web en el que estás desarrollando se recarga de forma automática cada vez que se actualiza un archivo de la carpeta.
 
 ## Depurando
 
