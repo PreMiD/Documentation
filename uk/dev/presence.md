@@ -272,8 +272,6 @@ dateCreated: 2020-06-11T18:04:02.843Z
   </tbody>
 </table>
 
-Ми зробили `metadata.json` творець файлу для ледачих привілей [тут](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Початок роботи
 
 ```typescript
@@ -329,21 +327,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Ви можете скопіювати це в `присутності.ts` файл і редагувати значення. Установлення всіх значень зроблено всередині події updataData.
+You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-Для прикладів ми пропонуємо переглянути код присутності на кшталт 1337x або 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## Не можу отримати певні дані?!
 
-Використання багатьох веб-сайтів [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Ці HTML-теги можуть містити декілька джерел, таких як відео. Але вони не мають значення кожного разу. Деякі приховані або просто не використовуються. Перевірте, чи можете ви видобути необхідну інформацію, без них перед непотрібною роботою.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
 2. Пошук (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) або <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Виконати `document.querySelectorAll("iframe")`.
 
-Якщо ви виявили, що ваші дані знаходяться в iFrame вам необхідно виконати такі дії:
+If you find that your data is in a iFrame you need to do the following:
 
 1. Створіть `iframe.ts` файл.
 2. Встановіть iFrame на `true` у файлі метаданих.
@@ -373,11 +371,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Примітка:** Це потрібно розміщувати за межами події по оновленню.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Компіляція
 
-Відкрийте консоль у вашій папці і наберіть `tsc -w` , щоб скомпілювати `presence.` в папку `/dist`.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Завантаження присутності
 
@@ -390,7 +388,7 @@ presence.on("iFrameData", (data) => {
 
 ## Швидке перезавантаження
 
-Веб-сайт, з яким ви розробляєте, автоматично завантажується кожного разу, коли ви збережете файл у папку.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Відлагодження
 
