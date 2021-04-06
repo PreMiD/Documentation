@@ -11,7 +11,7 @@ editor: markdown
 
 ## Introducción
 
-Cuando descarges y desempaquetes el espacio de trabajo, verás un archivo llamado `tsconfig.js` en la carpeta principal y carpetas de presencia, este archivo se utiliza para configurar el compilador de **TypeScript**. Ya está configurado para ti, así que no te preocupes por eso.
+Cuando descarges y desempaquetes el espacio de trabajo, verás un archivo llamado `tsconfig.js` en la carpeta principal y carpetas de presence, este archivo se utiliza para configurar el compilador de **TypeScript**. Ya está configurado para ti, así que no te preocupes por eso.
 
 Solo queremos describir algunos ajustes que deberías conocer.
 
@@ -50,7 +50,7 @@ En el archivo de configuración raíz verás algo como esto.
 | typeRoots                  | Puedes leer más acerca de eso [aquí](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                                          |
 | esModuleInterop            | Emita ayudantes __importStar e __importDefault para la compatibilidad del runtime babel ecosystem y habilita --allowSyntheticDefaultImports para la compatibilidad con el typesystem. |
 
-## Configuración de presencia
+## Configuración de presence
 
 ```javascript
 {
