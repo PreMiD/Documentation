@@ -272,8 +272,6 @@ Kopieer de bovenstaande code en plaats deze in het `metadata.json` bestand. Je m
   </tbody>
 </table>
 
-We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Aan de slag
 
 ```typescript
@@ -330,21 +328,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Je kan dit kopiëren naar je `presence.ts` bestand en de waardes bewerken. Het instellen van alle waardes wordt gedaan binnen het updateData-event.
+You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-Voor voorbeelden raden we aan om naar de code van de presences van bijvoorbeeld 1337x of 9GAG te kijken. Klik [hier](/dev/presence/class) voor meer informatie over de `Presence` klasse.
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
-Sinds v2.2.0 zijn er nu Slideshows, dit stelt je in staat om meerdere `PresenceData` interfaces op een interval weer te geven, voor meer informatie over de `Slideshow` klasse klik [hier](/dev/presence/slideshow).
+Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## Kan bepaalde data niet krijgen?!
 
-Veel websites gebruiken [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Deze html-tags kunnen meerdere bronnen bevatten, zoals video's. Maar ze zijn niet altijd relevant. Sommige zijn verborgen of worden niet vaak gebruikt. Controleer of je de informatie die je nodig hebt, kan verkrijgen zonder dat je onnodig werk doet.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Controleer ze met de console van je browser (zorg dat je op de **Elements**-tab zit).
 2. Zoeken (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) of <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Voer `document.querySelectorAll("iframe")` uit.
 
-Als je vindt dat je gegevens zich in iFrame bevinden, moet je het volgende doen:
+If you find that your data is in a iFrame you need to do the following:
 
 1. Maak een `iframe.ts` bestand aan.
 2. Stel iFrame in op `true` in je metadata bestand.
@@ -374,11 +372,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Opmerking:** Dit moet buiten de updateData event worden geplaatst.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Compileren
 
-Open een console in je map en typ `tsc -w` om de `presence.ts` te compileren in de `/dist` map.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Laden van de presence
 
@@ -391,7 +389,7 @@ Open een console in je map en typ `tsc -w` om de `presence.ts` te compileren in 
 
 ## Hot-herladen
 
-De website waar je mee bezig bent wordt automatisch herladen wanneer je een bestand in je map opslaat.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Foutopsporing
 
