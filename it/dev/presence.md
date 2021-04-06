@@ -272,8 +272,6 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
   </tbody>
 </table>
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator).
-
 ## Primi passi
 
 ```typescript
@@ -329,21 +327,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Puoi copiare questo nel tuo file `presence.ts` e modificare i valori. L'impostazione di tutti i valori viene eseguita all'interno dell'evento updataData.
+You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-Per esempi suggeriamo di esaminare il codice di presenze come: 1337x o 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## Impossibile ottenere alcuni dati?!
 
-Molti siti web usano [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Questi tag html possono contenere sorgenti multiple come video. Ma non sono pertinenti ogni volta. Alcune sono nascoste o semplicemente non utilizzate attivamente. Verifica se è possibile estrarre le informazioni di cui hai bisogno senza di loro, prima di fare lavoro inutile.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract, the information you need, without them before you do unnecessary work.
 
 1. Controllali nella tua browser console (assicurati di essere nella scheda **Elementi**).
 2. Cerca (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) o <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Esegui `document.querySelectorAll("iframe")`.
 
-Se riscontri che i tuoi dati sono in un iFrame devi fare quanto segue:
+If you find that your data is in a iFrame you need to do the following:
 
 1. Crea un file `iframe.ts`.
 2. Imposta iFrame a `true` nel tuo file di metadati.
@@ -373,11 +371,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Nota:** Questo deve essere posizionato al di fuori dell'evento updateData.
+**Note:** This needs to be placed outside of the updateData event.
 
 ## Compilando
 
-Apri una console nella tua cartella e digita `tsc -w` per compilare il `presence.ts` nella cartella `/dist`.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Caricamento della presenza
 
@@ -390,7 +388,7 @@ Apri una console nella tua cartella e digita `tsc -w` per compilare il `presence
 
 ## Hot-reloading
 
-Il sito Web su cui si sta sviluppando si ricarica automaticamente ogni volta che si salva un file nella cartella.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Debugging
 
