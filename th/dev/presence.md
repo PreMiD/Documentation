@@ -272,8 +272,6 @@ dateCreated: 2020-06-11T18:04:02.843Z
   </tbody>
 </table>
 
-เราได้ทำตัวสร้างไฟล์ `metadata.json` ไว้สำหรับคนขี้เกียจแล้ว [กดตรงนี้เลย](https://eggsy.xyz/projects/premid/mdcreator)
-
 ## เริ่มต้นกันเลย
 
 ```typescript
@@ -377,7 +375,7 @@ presence.on("iFrameData", (data) => {
 
 ## Compiling
 
-เปิด console ในโฟลเดอร์ของคุณแล้วพิมพ์ `tsc -w` เพื่อ compile `presence.ts` เข้าไปโฟลเดอร์ `/dist`.
+Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
 # Loading the presence
 
