@@ -211,22 +211,22 @@ Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eing
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Siehe https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
-    "id": "ID",
+    "id": "ID" 
     "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "icon": "FONTAWESOME ICON", //Beispiel: "fas fa-info"
+    "value": true //Boolean Wert wird daraus eine On/Off Switch machen, mit dem Wert als Voreinstellung
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Wenn eine andere Einstellung diesem Wert entspricht (true/false/0/1/etc.), wird der Button angzeigt
     },
     "title": "DISPLAY TITLE",
     "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
+    "value": "\"%song%\" by %artist%", //Wenn ein String eingeben wird, wird die Einstellung zu einer Eingabe, in die eine benutzerdefinierte Eingabe verwenden kann.
     "Platzhalter": "Benutze %song% oder %artist%" //Wenn die Eingabe leer ist, wird dies ausgegraut
   },
   {

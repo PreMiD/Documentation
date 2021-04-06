@@ -42,9 +42,9 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
   - Eindeutige Besucher pro Tag:
     - Für 6 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
     - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - Die Webseite kann keine "günstige" Domains sein, wie z.B. `.xyz`, `.club` und so weiter.
   - Die Website selbst muss eine sehr gute Qualität, Design, etc. haben.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Das Einschließen des `dist` Ordners, `presence.ts`, Datei, `iframe.ts` Datei und der `metadata.json` Datei ist benötigt, damit das Resultat, dem folgenden Schema getreu präsentiert wird:
 
 ```bash
 presence
