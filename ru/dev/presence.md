@@ -317,21 +317,21 @@ setInterval(myOutsideHeavyLiftingFunction, США);
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Вы можете скопировать это в свой `presence.ts` файл и редактирование значений. Установка всех значений выполняется внутри события updataData.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Для примеров, мы предлагаем ознакомиться с кодом присутствия: 1337x или 9GAG. Для получения дополнительной информации о классе `Presence` нажмите [здесь](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Начиная с версии 2.2. есть слайд-шоу, это позволяет показать несколько интерфейсов `PresenceData` на интервале, для получения дополнительной информации нажмите на `Слайд-шоу` класс [здесь](/dev/presence/slideshow).
 
 ## Не удается получить определенные данные?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Многие веб-сайты используют [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Эти html-теги могут содержать несколько источников, таких как видео. Но они не актуальны каждый раз. Некоторые из них скрыты или просто не используются активно. Проверьте, можете ли вы извлечь необходимую информацию без них, прежде чем выполнять ненужную работу.
 
 1. Проверить их в консоли браузера (убедитесь, что вы находитесь на вкладке **Элементы**).
 2. Поиск (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) или <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Выполнить `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Если вы обнаружили, что ваши данные находятся в iFrame вам необходимо сделать следующее:
 
 1. Создайте файл `iframe.ts`.
 2. Установите iFrame в `true` в вашем файле метаданных.
@@ -361,7 +361,7 @@ presence.on("iFrameData", (данные) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Примечание** Это должно быть помещено вне события updateData.
 
 ## Компиляция
 
