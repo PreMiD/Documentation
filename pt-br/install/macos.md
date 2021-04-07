@@ -33,11 +33,11 @@ O aplicativo irá iniciar automaticamente. Cheque pelo símbolo na sua barra de 
 ## Allow apps from unidentified developers
 Passos para macOS Big Sur (11.0+):
 1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+2. Clique em abrir no menu suspenso.
+3. Clique em abrir no popup.
 
 Steps for older macOS versions:
-1. Open System Preferences.
+1. Abra as preferências do sistema.
 2. Go to the Security & Privacy tab.
 3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
 4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
