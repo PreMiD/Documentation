@@ -340,7 +340,7 @@ Muitos sites estão usando [iframes](https://developer.mozilla.org/en-US/docs/We
 2. Pesquisa (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Execute `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Se perceber que seus dados estão em um iFrame, você precisa fazer o seguinte:
 
 1. Crie um arquivo `iframe.ts`.
 2. Defina o iFrame como `true` no seu arquivo de metadados.
