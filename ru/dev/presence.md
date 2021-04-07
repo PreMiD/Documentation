@@ -365,7 +365,7 @@ presence.on("iFrameData", (данные) => {
 
 ## Компиляция
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Откройте консоль в своей папке и введите `tsc -w` to compile the `presence.ts` в `/dist` папка.
 
 # Загрузка присутствия
 
@@ -378,7 +378,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Горячая загрузка
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Веб-сайт, на котором вы находитесь, автоматически перезагружается каждый раз, когда вы сохраняете файл в вашей папке.
 
 ## Отладка
 
