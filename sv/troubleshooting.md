@@ -78,7 +78,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 5. Efter att den har återställts kan du stänga popup-fönstret "Quarantined Items" och sedan trycka på ikonen inställningar igen uppe till höger.
 6. Klicka på "Real-Time Scanning" (tredje från toppen).
 7. Expandera den och klicka på "Lägg till fil".
-8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Öppna mappen "PreMiD" och välj filen "PreMiD.exe" och klicka på öppna. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee bör nu ignorera vår fil, nu är det bara att starta vårt programm och du bör vara klar!
 
