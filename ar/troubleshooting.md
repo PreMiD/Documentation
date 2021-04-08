@@ -78,7 +78,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 5. بعد استعادته يمكنك إغلاق نافذة "العناصر المعزولة"، ثم اضغط على أيقونة الإعدادات مرة أخرى في أعلى اليمين.
 6. انقر فوق "الفحص في الوقت الحقيقي" (الثالثة من الأعلى).
 7. قم بتوسيعها وانقر على "إضافة ملف".
-8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. افتح مجلد "PreMiD" وحدد ملف "PreMiD.exe" وانقر على فتح. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. يجب أن يتجاهل McAfee ملفنا، فقط ابدأ تطبيقنا وينبغي أن تكون جيداً للذهاب.
 

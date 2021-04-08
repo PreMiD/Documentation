@@ -78,7 +78,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 5. Sau khi phục hồi xong bạn có thể đóng cửa sổ "Tệp tin cách ly", sau đó bấm vào nút cài đặt ở trên cùng bên phải một lần nữa.
 6. Chọn "Quét thời gian thực" (Thứ ba từ trên đầu).
 7. Mở rộng nó và bấm "Chọn tệp tin".
-8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Mở thư mục "PreMiD" và chọn tệp tin "PreMiD.exe" và bấm "mở". <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee sẽ bỏ qua tệp tin này, chỉ cần mở ứng dụng của chúng tôi là xong.
 
