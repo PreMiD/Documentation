@@ -78,7 +78,7 @@ Ini adalah false positive dari McAfee dan kami telah melaporkan masalah pada mer
 5. Setelah pemulihan kamu bisa menutup "Item Karantina", lalu tekan ikon pengaturan lagi di atas kanan.
 6. Tekan "Pemindaian" (Ketiga dari atas).
 7. Perluas dan klik "Tambahkan file".
-8. Ketik "%appdata%" di bilah URL pengelola file dan tekan Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Buka folder "PreMiD" dan pilih file "PreMiD.exe" lalu klik buka. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee sekarang seharusnya sudah mengabaikan file kita, luncurkan saja aplikasi kita dan seharusnya baik-baik saja.
 

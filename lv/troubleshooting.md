@@ -78,7 +78,7 @@ Windows: Uzraksti `%appdata%` failu pārlūkā un izdzēsiet `PreMiD` mapi. MacO
 5. Pēc tā atjaunošanas varat aizvērt uznirstošo logu "Quarantined Items", pēc tam augšējā labajā stūrī vēlreiz nospiediet iestatījumu ikonu.
 6. Uzspiediet uz "Real-Time Scanning" (trešais no augšas).
 7. Izvērsiet to un uzspiediet uz "Add file".
-8. Failu pārvaldnieka URL joslā ierakstiet "%appdata%" un nospiediet Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Atveriet "PreMiD" mapi un atlasiet "PreMiD.exe" failu un uzspiediet uz atvērt. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee tagad vajadzētu ignorēt mūsu failu, vienkārši palaidiet mūsu lietotni un jums visam vajadzētu iet labi.
 

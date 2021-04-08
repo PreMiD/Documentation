@@ -78,7 +78,7 @@ Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. 
 5. 복원후에 여러분은 " 격리된 목록 " 팝업을 종료하실수 있답니다, 그런 다음 우측 상단에 있는 설정 아이콘을 눌러주세요.
 6. 위에서 세번째에 있는 " 실시간 스캔 " 을 클릭해주세요.
 7. 확장하고 " 파일 추가 " 버튼을 눌러주세요.
-8. 파일 경로에서, "%appdata%" 를 작성하고 엔터 키를 눌러주세요. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. "PreMiD" 폴더를 열고, "PreMiD.exe" 파일을 더블클릭해서 열어주세요. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee가 이제 저희 파일을 무시하게 될거에요. 저희의 앱을 다시 실행하면, 정상적으로 작동할거에요.
 

@@ -79,7 +79,7 @@ Is dearfach bréagach é seo ó McAfee agus chuireamar an cheist in iúl dóibh,
 5. Tar éis é a athshlánú is féidir leat an aníos "Míreanna Coraintín" a dhúnadh, ansin brúigh deilbhín na socruithe arís ar thaobh na láimhe deise.
 6. Cliceáil "Scanadh Fíor-ama" (An tríú ón mbarr).
 7. Leathnaigh é agus cliceáil "Cuir comhad leis".
-8. Clóscríobh "%appdata%" i mbarra URL an bhainisteora comhaid agus brúigh Iontráil. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Oscail an fillteán "PreMiD" agus roghnaigh an comhad "PreMiD.exe" agus cliceáil oscailte. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. Ba cheart do McAfee neamhaird a dhéanamh dár gcomhad anois, gan ach ár bhfeidhmchlár a lainseáil agus ba cheart go mbeifeá go maith chun dul.
 
