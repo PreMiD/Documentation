@@ -78,7 +78,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 5. After it is restored you can close the "Quarantined Items" popup, then press the settings icon again in the top right.
 6. リアルタイムスキャン(上から3番目)をクリックします。
 7. Expand it and click "Add file".
-8. ファイルマネージャーのURLバーに "%appdata%" と入力し、Enterを押します。 <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. "PreMiD"フォルダーを開き、"PreMiD.exe"を選択して開きます。 <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfeeがファイルを無視するので、あとは起動するだけです。
 
