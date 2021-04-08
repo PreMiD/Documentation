@@ -324,7 +324,7 @@ presence.on("UpdateData", async () => {
 
 Puedes copiar esto dentro de tu archivo `presence.ts` y editar los valores. La configuración de todos los valores se hace dentro del evento updateData.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Para ejemplos sugerimos que mires el código de presences como: 1337x o 9GAG. Para más información sobre la clase ` Presence `, haga clic [ aquí ](/dev/presence/class).
 
 Desde la v2.2.0 ahora hay Slideshows, esto le permite mostrar múltiples interfaces de la `PresenceData` en un intervalo, para más información sobre la clase `Slideshow` haz clic [aquí](/dev/presence/slideshow).
 
@@ -366,11 +366,11 @@ presence.on("iFrameData", data => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+** Nota: ** Esto debe colocarse fuera del evento updateData.
 
 ## Compilando
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Abre una consola en tu carpeta y escribe `tsc -w` para compilar `presence.ts` en la carpeta `/dist`.
 
 # Cargando la presence
 
@@ -383,7 +383,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Recarga rápida
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+El sitio web en el que estás desarrollando se recarga de forma automática cada vez que se actualiza un archivo de la carpeta.
 
 ## Depurando
 
