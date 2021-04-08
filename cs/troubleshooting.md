@@ -78,7 +78,7 @@ Ze strany McAfee je to chybné vyhodnocení a my jsme je o tom informovali. Proz
 5. Po obnovení můžete zavřít vyskakovací okno "Karantované položky" a poté znovu stisknout ikonu nastavení v pravém horním rohu.
 6. Klikněte na "Skenování v reálném čase" (třetí od shora).
 7. Rozbalte a klepněte na tlačítko "Přidat soubor".
-8. Napište "%appdata% do adresního řádku správce souborů a stiskněte Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Otevřete složku "PreMiD", vyberte soubor "PreMiD.exe" a klikněte na tlačítko Otevřít. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee by nyní měl ignorovat náš soubor, stačí spustit naši aplikaci a měli byste být v pořádku.
 
