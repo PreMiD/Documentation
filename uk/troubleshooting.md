@@ -78,7 +78,7 @@ Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. 
 5. Після його відновлення ви зможете закрити спливаюче вікно "Quarantined Items", і знову натиснути піктограму налаштувань у верхньому правому кутку.
 6. Натисніть кнопку "Сканування в реальному часі" (третє зверху).
 7. Розгорніть його та натисніть кнопку "Додати файл".
-8. Введіть "%appdata%" в URL-рядку менеджера файлів і натисніть Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Type "%appdata%" in the address bar of the file manager and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Відкрийте папку "PreMiD" та виберіть файл "PreMiD.exe" і натисніть відкрити. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee повинна ігнорувати наш файл, просто запустіть нашу програму, і вам слід зробити її надійною.
 
