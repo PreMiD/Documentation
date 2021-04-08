@@ -82,7 +82,7 @@ for now you can exclude PreMiD from the scan by doing the following steps:
 5. After it is restored you can close the "Quarantined Items" popup, then press the settings icon again in the top right.
 6. Click "Real-Time Scanning" (Third from the top).
 7. Expand it and click "Add file".
-8. Type "%appdata%" in the URL bar of the file manager and press Enter.
+8. Type "%appdata%" in the address bar of the file manager and press Enter.
 <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;"/>
 9. Open the "PreMiD" folder and select the "PreMiD.exe" file and click open.
 <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;"/>
