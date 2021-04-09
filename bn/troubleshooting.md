@@ -50,7 +50,7 @@ Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ
 <kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাক ওএস) দাও তোমার কীবোর্ডে বা Discord ম্যানুয়ালি রিস্টার্ট করো।
 
 ### চেক করো তোমার কম্পিউটারে অ্যান্টিভাইরাস অথবা ফায়ারওয়াল চলছে কিনা
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+কখনও কখনও অ্যান্টিভাইরাস প্রোগ্রাম এবং ফায়ারওয়াল অ্যাপ্লিকেশানগুলোকে ব্লক করে যেগুলো সার্ভার তৈরি/হোস্ট করে অথবা শুধুমাত্র ইন্টারনেটে কানেক্ট হওয়ার চেষ্টা করে। আমরা একটি লোকাল সার্ভার ব্যবহার করছি আমাদের অ্যাপ্লিকেশান এবং এক্সটেনশন এর মাঝে ডাটা নেওয়া ও দেওয়ার জন্যে, তাই তুমি যদি অ্যাপ্লিকেশান এর ডাটা দেওয়ার ক্ষমতাকে ব্লক করো তাহলে তুমি সম্ভবত PreMiD ব্যবহার করতে পারবে না।
 
 ### তোমার অ্যাডনগুলো বন্ধ করো
 তোমার সব অ্যাডনগুলো বন্ধ করো এবং দেখো এটি কাজ করে কিনা। যদি কাজ করে, তাহলে অ্যাডনগুলো ধাপে ধাপে অন করো এবং আমাদের বলো কোন অ্যাডনটি PreMiD - তে সমস্যা সৃষ্টি করেছে।
@@ -67,29 +67,29 @@ Sometimes antivirus programs and firewalls are blocking applications which are c
 ### PreMiD - কে McAfee ভাইরাস হিসেবে শনাক্ত করেছে (উইন্ডোজ)
 এটি McAfee থেকে একটি ফল্‌স পজিটিভ এবং আমরা এই সমস্যাটি তাদের কাছে রিপোর্ট করেছি, আপাতত তুমি PreMiD - কে বাদ দিতে পারো স্ক্যান করা হতে এই ধাপগুলো অনুসরণ করে:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> তুমি যদি এই ধাপগুলো নেওয়া সম্পর্কে নিশ্চিত না হও, নির্দ্বিধায় একটি টিকেট তৈরি করো [#support](https://discord.premid.app/) - এ এবং আমাদের একজন সাপোর্ট এজেন্ট তোমাকে সাহায্য করতে পারবে! 
 > 
 > {.is-warning}
 
-1. Open the McAfee application and click the settings icon in the top right. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
-2. Click "Quarantined Items" (Second from the top).
-3. Expand it, and click the `>` icon before an item with the name "settings.dat".
-4. Make sure the path includes "AppData\Local\Temp\PreMiD", if so select it and press restore. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
-5. After it is restored you can close the "Quarantined Items" popup, then press the settings icon again in the top right.
-6. Click "Real-Time Scanning" (Third from the top).
-7. Expand it and click "Add file".
+1. McAfee অ্যাপ্লিকেশানটি ওপেন করো এবং উপরের ডানে সেটিংস আইকনে ক্লিক করো। <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
+2. ক্লিক করো "Quarantined Items" (উপর থেকে দ্বিতীয়)।
+3. এটাকে এক্সপ্যান্ড করো, এবং `>` আইকনটিকে ক্লিক করো "settings.dat" নামের একটি আইটেমের সামনে।
+4. নিশ্চিত করো যে প্যাথটিতে যেন "AppData\Local\Temp\PreMiD" থাকে, যদি থাকে তাহলে এটিকে সিলেক্ট করো এবং ক্লিক করো "Restore". <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
+5. রিস্টোর হওয়ার পরে তুমি "Quarantined Items" পপআপ বন্ধ করতে পারো, তারপর আবার উপরের ডানে সেটিংস আইকনে ক্লিক করো।
+6. ক্লিক করো "Real-Time Scanning" (উপর থেকে তৃতীয়)।
+7. এটাকে এক্সপ্যান্ড করো এবং ক্লিক করো "Add file".
 8. ফাইল এক্সপ্লোরারের অ্যাড্রেস বারে টাইপ করো "%appdata%" এবং এন্টার চাপ দাও। <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
-9. Open the "PreMiD" folder and select the "PreMiD.exe" file and click open. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
-10. McAfee should now ignore our file, just launch our application and you should be good to go.
+9. "PreMiD" ফোল্ডারটি ওপেন করো এবং সিলেক্ট করো "PreMiD.exe" ফাইলটি এবং ওপেন ক্লিক করো। <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
+10. McAfee এখন আমাদের ফাইলকে উপেক্ষা করবে, শুধু আমাদের অ্যাপ্লিকেশান রান করো এবং তুমি PreMiD চালাতে পারবে।
 
-### PreMiD status bugged on discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+### PreMiD স্ট্যাটাস Discord - এ ঠিকমতো দেখাচ্ছে না!
+চিন্তা করবে না। <kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাক ওএস) কীবাইন্ড দাও তোমার Discord উইন্ডোতে ফোকাস করা অবস্থায় এটাকে রিলোড করার জন্য।
 
 <a name="linux"></a>
 
 # লিনাক্স এর সমস্যা সমাধান
 ### Ubuntu/Debian ভিত্তিক ডিস্ট্রিবিউশনগুলো
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+তুমি যদি Snapcraft, RPC দিয়ে Discord ডাউনলোড করো তাহলে এটা কাজ করবে না। You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলো
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
