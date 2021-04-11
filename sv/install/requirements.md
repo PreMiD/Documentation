@@ -1,6 +1,6 @@
 ---
-title: Requirements
-description: Prerequisites to install PreMiD
+title: Systemkrav
+description: Systemkrav för att installera PreMiD
 published: true
 date: 2021-01-17T22:43:28.543Z
 tags:
@@ -8,13 +8,13 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
-# System Requirements
+# Systemkrav
 
-> This data relate to the application only. 
+> Dessa krav gäller bara för programmet. 
 > 
 > {.is-info}
 
-PreMiD runs on virtually any system. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
+PreMiD körs på stort sett alla system. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
 
 ### CPU
 PreMiD runs perfectly fine on a single CPU core.
