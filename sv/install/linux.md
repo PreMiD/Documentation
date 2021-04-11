@@ -10,7 +10,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Installationen av programmet är mycket viktigt eftersom tillägget inte kan göra något av sig själv.
 
-> Användare av Aur som använder DoomLerd's package bör vara okej som han säger. Vi rekommenderar inte att använda det, men om du vill så kan du ändå. Thanks to DoomLerd for handling aur repo still. 
+> Användare av Aur som använder DoomLerd's package bör vara okej som han säger. Vi rekommenderar inte att använda det, men om du vill så kan du ändå. Tack till DoomLerd för det fortsatta stödet av vår Aur repo. 
 > 
 > {.is-warning}
 
@@ -120,7 +120,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### Ytterliggare anteckningar
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
+Antingen om du vill prova PreMiD eller bara int evill installera det, är detta de bästa alternativet, det är alltid upddaterat men _STARTAR INTE AUTOMATISKT MED SYSTEMET!_</br>Om du tröttnar på att behöva öppna det helatiden, använd de andra paketen (enligt din distribution).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
 <a name="packagecloud"></a>
