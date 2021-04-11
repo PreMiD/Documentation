@@ -198,7 +198,7 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
-#### Testando
+#### Testes
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
