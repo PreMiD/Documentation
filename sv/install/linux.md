@@ -51,8 +51,8 @@ Installationen av programmet är mycket viktigt eftersom tillägget inte kan gö
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Senaste versionen"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Alla utgåvor"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Senaste versionen"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github utgåvor"></a></td>
   </tr>
 </table>
 
@@ -73,8 +73,8 @@ Det är okänt ifall äldre versioner av andra distributioner stöder det, så h
 ### Support
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="Join our Discord!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Join our Discord!">
+  <a target="_blank" href="https://discord.premid.app/" title="Gå med i vår Discord!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Gå med i vår Discord!">
   </a>
 </div>
 
@@ -127,64 +127,64 @@ Either if you want to try PreMiD or just don't want to install it, this one's th
 
 # PackageCloud
 
-We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
+Vi släppte deb/rpm paket hos våran packagecloud repo. Besök den på https://packagecloud.io/PreMiD/Linux och ladda ner ditt deb/rpm paket eller använd det automatiskt skript som är tillgängligt.
 
-For **Ubuntu/Debian**:
+För **Ubuntu/Debian**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+För **Fedora/CentOS/RedHat**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+Om kommandot inte fungerar, ladda ned **deb/rpm** filen från vår packagecloud repo eller överskrid inställningarna.
 
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
 ## Arch Linux baserade distributioner
 
-Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+Använder [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Distributioner som stöds är _sig själv_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS och [alla andra distributioner som stöder installation från AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
 ### Installationsinstruktioner
 
 ```bash
-# Using yay (recommended)
+# Användning av yay (rekommenderas)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# Användning av pakku
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# Användning av trizen
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# Användning av pacaur
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... du förstår
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+eller manuellt från [Arch User Repository](https://aur.archlinux.org/packages/premid) om du vet vad du gör.
 
 <a name="archnotes"></a>
 
 ### Ytterliggare anteckningar
 
-If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
+Om din distrobution använder pacman, så måste du installera en av hjälparna först. Om du inte har någon, så rekommenderas Yay, kör :
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -194,4 +194,4 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S premid
 ```
 
-Other AUR/Pacman helpers work as well, although each one's functionality is different so you may face issues while using them.
+Andra AUR/Pacman hjälpare fungerar också, men alla fungerar olika så du kan få problem när du använder dem.
