@@ -18,6 +18,6 @@ Installationen av tillägget är viktigt eftersom programmet inte kan göra någ
 
 Programmet startar automatiskt. Kolla efter symbolen i systemfältet.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Glöm inte att [lägga till tillägget ****](/install).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
