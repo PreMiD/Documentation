@@ -24,7 +24,7 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 As regras gerais de desenvolvimento de presences são as seguintes:
 
 - As Presences **devem** estar relacionadas com o website escolhido.
-- As Presencses **não devem** ser feitas para websites ilegais. (p. ex., estressores, marketing de drogas, pornografia infantil, etc.)
+- As Presences **não podem** ser feitas para websites ilegais. (p. ex., estressores, marketing de drogas, pornografia infantil, etc.)
 - A estrutura do arquivo deve ser limpa e estruturada, não inclua arquivos que não estiverem especificados. (p. ex., pastas vscode e git, arquivos de imagem e texto, etc.)
 - Você precisa ter uma estrutura de arquivos adequada, rascunhos **não são** permitidos.
 - Presences para websites com (`.onion` TLDs) ou websites com domínios/hosts grátis (p. ex., `.TK` [todos os domínios grátis Freenom], `.RF`, `GD`, etc) **não** são permitidas, exceções podem ser feitas se uma prova for apresentada mostrando que eles pagaram pelo domínio.
