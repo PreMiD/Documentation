@@ -202,7 +202,7 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
-## Idiomas de presence
+## Idiomas para Presence
 
 PreMiD é um serviço poliglota, o que significa que há uma infinidade de idiomas envolvidos para conectar usuários por todo o mundo. Uma lista completa de idiomas pode ser encontrada neste [endpoint da API](https://api.premid.app/v2/langFile/list). To customize your presence even more you can allow users to select their presence display language see [`multiLanguage`](#multilanguage) for more.
 
