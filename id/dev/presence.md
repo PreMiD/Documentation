@@ -341,7 +341,7 @@ Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/H
 2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Jalankan `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Jika datamu ditemukan pada iFrame, kamu harus melakukan hal berikut:
 
 1. Create a `iframe.ts` file.
 2. Set iFrame to `true` in your metadata file.
@@ -371,7 +371,7 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Catatan:** ini harus diletakkan diluar dari event updateData.
 
 ## Penyusunan
 
@@ -401,4 +401,4 @@ The website you are developing on is automatically reloading every time you save
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [File Metadata](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Konfigurasi TypeScript](/dev/presence/tsconfig ""){.links-list}
