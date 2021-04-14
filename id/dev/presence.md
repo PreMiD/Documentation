@@ -62,33 +62,33 @@ Untuk mempelajari lebih lanjut tentang konfgurasi TypeScript klik [disini](/dev/
 
 ## Mengisi file metadata.json
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator). Dianjurkan untuk membaca secara seksama agar anda mengerti bagaimana caranya.
+Kami telah membuat pembuat file `metadata.json` untuk para pemalas [disini](https://eggsy.xyz/projects/premid/mdcreator). Dianjurkan untuk membaca secara seksama agar anda mengerti bagaimana caranya.
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "PENGGUNA",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "LAYANAN",
+  "altnames": ["LAYANAN"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESKRIPSI"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGORI",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAMPILKAN JUDUL",
+      "icon": "IKON FONTAWESOME",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TUNJUKKAN JUDUL",
+      "icon": "IKON FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TUNJUKKAN JUDUL",
+      "icon": "IKON FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -335,9 +335,9 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 
 ## Tidak bisa mendapat data tertentu?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)) [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Tag html tersebut bisa berisi beberapa sumber seperti video. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
+1. Periksa didalam konsol browser (pastikan anda berada pada tab **Elements**).
 2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Jalankan `document.querySelectorAll("iframe")`.
 
@@ -351,18 +351,18 @@ If you find that your data is in a iFrame you need to do the following:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  Dapatkan semua data yang kamu butuhkan dari iFrame, simpan mereka dalam variable
+  dan kirim mereka menggunakan iframe.send 
   */
   iframe.send({
-    //sending data
+    //mengirim data
     video: video,
     time: video.duration
   });
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Membuat file presencemu menerima data dari file iFrame.
 
 ```typescript
 presence.on("iFrameData", (data) => {
