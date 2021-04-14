@@ -1,5 +1,5 @@
 ---
-title: Presence Development
+title: Pengembangan Presence
 description:
 published: true
 date: 2021-02-07T17:11:34.449Z
@@ -8,11 +8,11 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Semua presence disimpan disini: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+Versi `2.x` memperkenalkan [toko presence](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
 
 > Before getting started, it is highly recommended that you look at our presence guidelines. 
 > 
@@ -28,18 +28,18 @@ Semua presence ditulis dalam [TypeScript](https://www.typescriptlang.org/). [Typ
 ## Instalasi
 
 1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+2. Install [Node](https://nodejs.org/en/) (sudah disertai [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (buka terminal dan `npm install -g typescript`).
 
 ## Cloning the project
 
 1. Buka terminal dan ketik `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+2. Pilih folder pilihanmu.
+3. Buka di editor kodemu.
 
 ## Membuat folder dan file
 
-1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
+1. Pergi ke folder `website` kemudian pergi ke folder dengan huruf pertama dari **nama** (bukan URL) dari layanan yang ingin didukung.
 2. Buat folder dengan **nama** (bukan URL) dari layanan yang diinginkan.
 3. Buatlah file `presence.ts` dan `tsconfig.json`.
 4. Buatlah folder dinamakan `dist` didalamnya.
@@ -381,8 +381,8 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
 2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+3. Klik sambil menahan tombol <kbd>Shift</kbd>.
+4. Pilih folder /dist dari presence anda.
 
 # Beberapa hal berguna
 
@@ -393,7 +393,7 @@ The website you are developing on is automatically reloading every time you save
 ## Debugging
 
 - Anda dapat memberi `console.log("Test");` diantara kode dan melihat apakah konsol browser memberi output tersebut. Jika iya lanjutkan dan ulangi pada function selanjutnya. Jika tidak berarti terdapat eror diatas.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Jika itu tidak membantumu, tanyakan pada pengembang presence di [server Discord](https://discord.premid.app/) kami untuk bantuan.
 
 # File dijelaskan
 
