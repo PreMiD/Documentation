@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-description: Everything to solve your problem
+description: Segalanya untuk menyelesaikan masalah kamu
 published: true
 date: 2021-02-08T21:30:58.603Z
 tags:
@@ -8,23 +8,23 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> Pastikan kamu sudah memasang ekstensi **dan** aplikasinya! 
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+Halaman ini meliputi:
+1. [Troubleshooting Umum](https://docs.premid.app/troubleshooting#general)
+2. [Troubleshooting Linux](https://docs.premid.app/troubleshooting#linux)
+3. [Troubleshooting MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+# Troubleshooting Umum
+> Kamu bisa menggunakan alat [ini](https://qkeleq10.github.io/PreMiD-Troubleshooting/) agar lebih mudah mengidentifikasi permasalahanmu. 
 > 
 > {.is-info}
 ### Muat ulang halaman
-You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
+Kamu juga bisa menekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) pada keyboard selain menekan tombol refresh.
 
 ### Apakah kamu menggunakan aplikasi Discord?
 PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplikasinya [disini](https://discord.com/download).
@@ -33,7 +33,7 @@ PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplika
 **User Settings** > **Game Activity** ![gameactivity_edited.png](/gameactivity_edited.png)
 
 ### Pastikan Discord TIDAK berjalan sebagai administrator
-Sangat penting. Discord RPC tidak akan bekerja jika anda membuka Discord sebagai administrator.
+Sangat penting. Discord RPC tidak akan bekerja jika kamu membuka Discord sebagai administrator.
 
 ### Apakah kamu menggunakan Presence dengan pengaturan?
 Banyak presence (termasuk `Twitch` dan `SoundCloud`) terpengaruh oleh masalah ekstensi. Masalah ini menyebabkan ekstensi tidak mendapat value default dari setting dengan benar.
@@ -41,15 +41,15 @@ Banyak presence (termasuk `Twitch` dan `SoundCloud`) terpengaruh oleh masalah ek
 Untuk mengatasi ini, kamu hanya butuh untuk menyalakan pilihan pengaturan paling atas: ![presencesettings.gif](/presencesettings.gif)
 
 ### Mulai ulang browser
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) bekerja juga. (Sudah jelas anda harus membukanya lagi.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) bekerja juga. (Sudah jelas kamu harus membukanya lagi.)
 
 ### Memulai ulang PreMiD (Aplikasi)
-![quit.png](/quit.png) Anda harus memulai ulang PreMiD setelah itu.
+![quit.png](/quit.png) Kamu harus memulai ulang PreMiD setelah itu.
 
 ### Reload/mulai ulang Discord
 Tekan <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) pada keyboard atau mulai ulang secara manual.
 
-### Periksa jika antivirus atau firewall berjalan di komputer anda
+### Periksa jika antivirus atau firewall berjalan di komputermu
 Kadang program antivirus dan firewall menghalangi program yang sedang membuat/hosting server atau menghubungkan ke internet. Kami menggunakan server lokal untuk menerima dan meneruskan data antara aplikasi dan ekstensi kami, jadi jika anda memblokir aplikasi untuk meneruskan data kemungkinan anda tidak bisa menggunakan PreMiD.
 
 ### Nonaktifkan addon
@@ -62,12 +62,12 @@ Kami harap anda tahu caranya.
 Terkadang ada sesuatu yang salah dengan filenya... Tutorial untuk instalasi bisa dilihat [disini](/install).
 
 ### Penghapusan manual
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Ketik `%appdata%` pada file explorer dan hapus folder `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` dan hapus folder `PreMiD`.
 
 ### McAfee mendeteksi PreMiD sebagai virus (Windows)
 Ini adalah false positive dari McAfee dan kami telah melaporkan masalah pada mereka, untuk saat ini kamu bisa mengecualikan PreMiD dari scan dengan melakukan langkah berikut:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Jika kamu tidak merasa percaya diri mengikuti langkah-langkah ini, silakan buat tiket di [#support](https://discord.premid.app/) dan salah satu Agen Bantuan akan membantumu! 
 > 
 > {.is-warning}
 
@@ -82,12 +82,12 @@ Ini adalah false positive dari McAfee dan kami telah melaporkan masalah pada mer
 9. Buka folder "PreMiD" dan pilih file "PreMiD.exe" lalu klik buka. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee sekarang seharusnya sudah mengabaikan file kita, luncurkan saja aplikasi kita dan seharusnya baik-baik saja.
 
-### PreMiD status bugged on discord!
-Don't worry. Tekan tombol <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) selagi jendela Discord terbuka untuk memuat ulang.
+### Status PreMiD bermasalah di Discord!
+Jangan khawatir. Tekan tombol <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) selagi jendela Discord terbuka untuk memuat ulang.
 
 <a name="linux"></a>
 
-# Linux troubleshooting
+# Troubleshooting Linux
 ### Ubuntu/Debian based distros
 JIka anda mengunduh Discord melewati Snapcraft, RPC tidak bekerja. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
@@ -116,7 +116,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# Troubleshooting MacOS
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
