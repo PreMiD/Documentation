@@ -8,21 +8,21 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> Dokumentasi berikut masih dirubah! Beberapa halaman mungkin tidak selesai atau hilang. 
 > 
 > {.is-warning}
 
 # Tentang PreMiD
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
-- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
+- :mag: [Apa itu PreMiD?](/about) Tujuan PreMiD dan mengapa anda harus menggunakannya.
+- :link: [Apa itu RPC?](https://discordapp.com/rich-presence) Semua tentang Rich Presence dan semua fungsinya.
 
 # Memulai
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+PreMiD mudah dan cepat untuk dipasang. Anda bisa langsung menggunakannya tanpa waktu lama.
 
-- Make sure you have read the [system requirements](/install/requirements).
-- Follow the quick and simple [installation guide](/install).
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- Pastikan anda telah membaca [persyaratan sistem](/install/requirements).
+- Ikuti [panduan instalasi](/install) yang cepat dan simpel.
+- [Troubleshooting](/troubleshooting) memandumu melewati masalah yang sering terjadi.
 
 # Pengembang
 
