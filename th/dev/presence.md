@@ -377,12 +377,12 @@ presence.on("iFrameData", (data) => {
 
 Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
-# Loading the presence
+# นำเข้า Presence
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. เปิดส่วนขยายใน Broswer แล้วกด <kbd>Shift</kbd> ค้างไว้
+2. **นำเข้า Presence** หรือ **Load Presence** จะปรากฏขึ้นมา.
+3. คลิกไปที่มันระหว่างที่คุณยังคงกดปุ่ม <kbd>Shift</kbd> อยู่.
+4. เลือกโฟลเดอร์ /dist ของ Presence ของคุณ.
 
 # Some helpful things
 
