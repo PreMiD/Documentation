@@ -360,7 +360,7 @@ Bij het maken van je presence moet je een categorie opgeven waaronder de presenc
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Video's & Streams</b></td>
+        <td style="text-align:left"><b>Video's & streaming</b></td>
       <td style="text-align:left">Websites die dienen voor het leveren van video's en streams.</td>
     </tr>
     <tr>
