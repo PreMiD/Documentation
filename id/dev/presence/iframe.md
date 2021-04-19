@@ -1,21 +1,21 @@
 ---
-title: iFrame Class
+title: Kelas iFrame
 description:
 published: true
 date: 2020-05-03T20:17:51.982Z
 tags:
 ---
 
-# iFrame Class
-> The iframe system with PreMiD is problematic and can have unexpected behavior, use with caution. 
+# Kelas iFrame
+> Sistem iframe pada PreMiD kadang bermasalah dan dapat berperilaku tidak terduga, gunakan dengan hati-hati. 
 > 
 > {.is-danger}
 
 ## Perkenalan
 
-In some scenarios, your presence may need to access elements inside of `iframes`.
+Dalam beberapa skenario, presence kamu mungkin perlu mengakses elemen di dalam `iframes`.
 
-The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
+Kode yang kamu tulis di dalam file `iframe.ts` kamu, akan disuntikkan ke setiap iframe pada halaman.
 
 Like presences, `iframes` have their own classes designed to automatically update data.
 
