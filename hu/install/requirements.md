@@ -1,6 +1,6 @@
 ---
 title: Követelmények
-description: Prerequisites to install PreMiD
+description: A PreMiD telepítési előfeltételei
 published: true
 date: 2021-01-17T22:43:28.543Z
 tags:
@@ -14,7 +14,7 @@ dateCreated: 2020-06-11T18:04:21.843Z
 > 
 > {.is-info}
 
-PreMiD runs on virtually any system. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
+A PreMiD gyakorlatilag bármilyen rendszeren elfut. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
 
 ### Processzor
 PreMiD runs perfectly fine on a single CPU core.

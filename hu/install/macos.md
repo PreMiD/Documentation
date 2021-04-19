@@ -16,7 +16,7 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 1. Kattints [ide](https://premid.app/downloads) a letöltések oldal eléréséhez.
 2. Choose **OS X**.
 3. Extract the archive if necessary.
-4. Open the installer.
+4. Nyisd meg a telepítőt.
 5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
 > This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
 6. Choose open when prompted.
