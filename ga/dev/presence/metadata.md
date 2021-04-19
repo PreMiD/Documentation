@@ -204,7 +204,7 @@ Más mian leat nathanna rialta a fhoghlaim, seo cúpla suíomh Gréasáin.
 
 ## Teangacha Presence
 
-Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad teangacha i gceist chun úsáideoirí a nascadh ar fud na cruinne. Is féidir liosta iomlán na dteangacha a fháil leis an [gcríochphointe API](https://api.premid.app/v2/langFile/list) seo. Chun do láithreacht a shaincheapadh níos mó fós is féidir leat ligean d’úsáideoirí a dteanga taispeána láithreachta a roghnú féach [`multiLanguage`](#multilanguage) níos mó.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Is féidir liosta iomlán na dteangacha a fháil leis an [gcríochphointe API](https://api.premid.app/v2/langFile/list) seo. To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
 
 ## Socruithe láithreachta
 Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an láithreacht a shaincheapadh!
