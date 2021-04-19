@@ -205,7 +205,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 ## Языки присутствия
 
-PreMiD - это полиусиленный сервис, что означает наличие множества языков, способных подключить пользователей по всему миру. Полный список языков можно найти на [конечной точке API](https://api.premid.app/v2/langFile/list). Чтобы настроить свое присутствие еще больше, вы можете позволить пользователям выбрать язык отображения присутствия см. [`multiLanguage`](#multilanguage) для больше.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Полный список языков можно найти на [конечной точке API](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
 
 ## Настройки присутствия
 Настройте интерактивные настройки, чтобы пользователи могли настраивать присутствие!

@@ -18,7 +18,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 > 
 > {.is-warning}
 
-- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
+- [Irányelvek](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
 # Structure
@@ -142,7 +142,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Leírás</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Típus</th>
       <th style="text-align:left">Választható</th>
     </tr>
   </thead>

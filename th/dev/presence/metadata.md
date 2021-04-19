@@ -207,7 +207,7 @@ An example of that file can be found below.
 
 ## ภาษาของ Presence
 
-PreMiD เป็นบริการ polygot ซึ่งหมายความว่ามีภาษามากมายที่เกี่ยวข้องในการเชื่อมต่อของผู้ใช้ทั่วโลก รายการภาษาทั้งหมดสามารถดูได้ที่ [ปลายทาง API](https://api.premid.app/v2/langFile/list) To customize your presence even more you can allow users to select their presence display language see [`multiLanguage`](#multilanguage) for more.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. รายการภาษาทั้งหมดสามารถดูได้ที่ [ปลายทาง API](https://api.premid.app/v2/langFile/list) To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
 
 ## การตั้งค่า Presence
 สร้างการตั้งค่าแบบโต้ตอบเพื่อให้ผู้ใช้สามารถปรับแต่ง Presence ได้!
