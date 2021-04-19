@@ -207,7 +207,7 @@ Jika anda ingin belajar ungkapan nalar, di sini ada beberapa laman sesawang.
 
 ## Bahasa Presence
 
-PreMiD ialah perkhidmatan pelbagai bahasa, maksudnya terdapat banyak bahasa terlibat untuk berhubung dengan pengguna di seluruh dunia. Senarai penuh bahasa boleh dijumpai di [titik akhir API](https://api.premid.app/v2/langFile/list) ini. Untuk menyesuaikan Presence anda dengan lebih lanjut, anda boleh benarkan pengguna untuk memilih bahasa paparan Presence mereka, lihat [`multiLanguage`](#multilanguage) untuk maklumat lanjut.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Senarai penuh bahasa boleh dijumpai di [titik akhir API](https://api.premid.app/v2/langFile/list) ini. To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
 
 ## Tetapan Presence
 Tetapkan tetapan saling tindak supaya pengguna boleh mengubah suai Presence tersebut!
