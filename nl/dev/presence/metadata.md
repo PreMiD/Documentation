@@ -205,9 +205,9 @@ Als je reguliere expressies wilt leren, zijn hier enkele websites.
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
-## Presence talen
+## Presence-talen
 
-PreMiD is een polygot service, wat betekent dat er een groot aantal talen bij betrokken zijn om gebruikers over de hele wereld te verbinden. Een volledige lijst met talen kan worden gevonden met dit [API endpoint](https://api.premid.app/v2/langFile/list). Om je presence aanpasbaar te maken voor je gebruikers dan kan je instellen dat ze hun taal veranderen die word weergegeven, zie [`multiLanguage`](#multilanguage) voor meer.
+PreMiD is een meertalige service, wat betekent dat er een groot aantal talen beschikbaar is om gebruikers van over de hele wereld te verbinden. Een volledige lijst met talen kan worden gevonden met dit [API-eindpunt](https://api.premid.app/v2/langFile/list). Om je presence aanpasbaar te maken voor je gebruikers dan kan je instellen dat ze hun taal veranderen die word weergegeven, zie [`multiLanguage`](#multilanguage) voor meer.
 
 ## Presence instellingen
 Interactieve instellingen instellen zodat gebruikers de presence kunnen aanpassen!
