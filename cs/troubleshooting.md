@@ -12,24 +12,24 @@ dateCreated: 2020-06-11T18:03:54.865Z
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+Na této stránce nalezneš:
+1. [Obecné Řešení Problémů](https://docs.premid.app/troubleshooting#general)
+2. [Řešení Problémů na Linuxu](https://docs.premid.app/troubleshooting#linux)
+3. [Řešení problémů na macOSP](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
+# Obecné Řešení Problémů
 > You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
 > 
 > {.is-info}
 ### Znovu načíst stránku
-Můžete stisknout <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nebo <kbd>CMD+R</kbd> (MacOS) na vaší klávesnici místo hledání tlačítka obnovit.
+Namísto hledání tlačítka obnovení můžeš stisknout <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nebo <kbd>CMD+R</kbd> (MacOS) na Tvé klávesnici.
 
-### Are you using the Discord app?
-PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
+### Používáš desktopovou verzi aplikace Discord?
+PreMiD **nefunguje** při používání prohlížečové verze Discordu, musíš si stáhnout desktopovou aplikaci [zde](https://discord.com/download).
 
-### Ujistěte se, že jste povolili Discord herní aktivitu v nastavení
+### Ujisti se, že jsi v nastavení Discordu povolil herní aktivitu
 **Uživatelské nastavení** > **Herní aktivita** ![gameactivity_edited.png](/gameactivity_edited.png)
 
 ### Ujistěte se, že Discord neběží jako správce
@@ -87,7 +87,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 <a name="linux"></a>
 
-# Linux troubleshooting
+# Řešení Problémů na Linuxu
 ### Ubuntu/Debian based distros
 Pokud jste si stáhli Discord přes Snapcraft, RPC nebude fungovat. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
@@ -116,7 +116,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# Řešení problémů na macOSP
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
