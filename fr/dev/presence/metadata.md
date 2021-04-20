@@ -207,7 +207,7 @@ Si vous voulez apprendre les expressions régulières, voici quelques sites web.
 
 ## Langues de présence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Une liste complète des langues peut être trouvée avec ce [point de terminaison de l'API](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD est un service polyglotte. Cela signifie qu'il y a un grand nombre de langues disponibles pour toucher des utilisateurs tout autour du globe. Une liste complète des langues peut être trouvée avec ce [point de terminaison de l'API](https://api.premid.app/v2/langFile/list). Pour personnaliser encore plus votre présence, vous pouvez permettre aux utilisateurs à sélectionner la langue d'affichage de leur présence. Voir [`multiLanguage`](#multilanguage) pour plus d'informations.
 
 ## Paramètres de présence
 Configurer les paramètres interactifs pour que les utilisateurs puissent personnaliser la présence!
