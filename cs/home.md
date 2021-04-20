@@ -1,6 +1,6 @@
 ---
-title: Home
-description: Official Documentation for v2
+title: Domů
+description: Oficiální dokumentace pro v2
 published: true
 date: 2021-02-24T23:22:41.678Z
 tags:
@@ -8,27 +8,27 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> Dokumentaci stále upravujeme! Některé stránky mohou být neúplné nebo mohou chybět. 
 > 
 > {.is-warning}
 
-# O PreMiD
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
-- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
+# O PreMiDu
+- :mag: [Co je PreMiD?](/about) Úmysly za PreMiDem a proč bys ho měl používat.
+- :link: [Co je RPC?](https://discordapp.com/rich-presence) Všechno o Rich Presencích a jejich funkcích.
 
 # Začínáme
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+PreMiD je rychlý a snadno nainstalovatelný. S instalací bys měl být hned hotový.
 
-- Make sure you have read the [system requirements](/install/requirements).
-- Follow the quick and simple [installation guide](/install).
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- Ujisti se, že sis přečetl [systémové požadavky](/install/requirements).
+- Postupuj podle rychlého a jednoduchého [instalačního průvodce](/install).
+- [Řešení Problémů](/troubleshooting) Tě provede řešením běžných problémů.
 
 # Vývojáři
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+[Příručka](/dev) pro vývoj PreMiDu je Tvůj první krok před kódováním některých věcí.
 
-- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
+- :computer: [API](/dev/api): Přístup ke zdrojům a provádění akcí pomocí PreMiD API.
 - :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
 
 # Přispět
