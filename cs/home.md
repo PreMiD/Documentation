@@ -35,6 +35,6 @@ PreMiD je rychlý a snadno nainstalovatelný. S instalací bys měl být hned ho
 - :bug: [Nahlaš Chybu](https://github.com/PreMiD): Pomozte nám tyto chyby zničit.
 - :bulb: [Navrhni Novou Funkci](https://discord.premid.app/): Potřebujeme Tvoje nápady!
 - :heart: [Donate](https://www.patreon.com/Timeraa): Udělej malý příspěvek nebo se staň sponzorem tohoto úžasného projektu!
-- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
+- :globe_with_meridians: [Jazyky](https://translate.premid.app): Nech ostatní uživatele používat PreMiD ve svém rodném jazyce.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}

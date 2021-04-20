@@ -1,6 +1,6 @@
 ---
-title: Řešení problémů
-description: Vše k vyřešení vašeho problému
+title: Řešení Problémů
+description: Vše k vyřešení Tvého problému
 published: true
 date: 2021-02-08T21:30:58.603Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
 ---
 
-> Ujistěte se, že máte rozšíření **a** aplikaci nainstalovanou! 
+> Ujisti se, že máš nainstalováno rozšíření **a** aplikaci! 
 > 
 > {.is-warning}
 
