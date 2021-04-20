@@ -30,26 +30,26 @@ Namísto hledání tlačítka obnovení můžeš stisknout <kbd>CTRL+R</kbd>/<kb
 PreMiD **nefunguje** při používání prohlížečové verze Discordu, musíš si stáhnout desktopovou aplikaci [zde](https://discord.com/download).
 
 ### Ujisti se, že jsi v nastavení Discordu povolil herní aktivitu
-**Uživatelské nastavení** > **Herní aktivita** ![gameactivity_edited.png](/gameactivity_edited.png)
+**Uživatelské Nastavení** > **Herní Aktivita** ![gameactivity_edited.png](/gameactivity_edited.png)
 
-### Ujistěte se, že Discord neběží jako správce
-Skutečně důležité. Discord RPC nebude fungovat, pokud spustíte Discord jako správce.
+### Ujisti se, že Discord není spuštěn jako správce
+Skutečně důležité. Discord RPC nebude fungovat, pokud Discord spustíš jako správce.
 
-### Are you using a presence with settings?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+### Používáš presenci s nastavením?
+Mnoho presencí (včetně `Twitch` a `SoundCloud`) je ovlivněno problémy s rozšířením. Tyto problémy způsobují, že rozšíření nezískává korektně výchozí nastavení.
 
 To solve this, all you have to do is toggle the topmost setting: ![presencesettings.gif](/presencesettings.gif)
 
-### Restartujte prohlížeč
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) nebo <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) dělá také dobrou práci. (Musíte samozřejmě spustit prohlížeč znovu.)
+### Restartuj prohlížeč
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) nebo <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) také dělá dobrou práci. (Musíte samozřejmě spustit prohlížeč znovu.)
 
-### Restartovat PreMiD aplikaci
-![quit.png](/quit.png) Poté musíte restartovat PreMiD.
+### Restartuj PreMiD (Aplikaci)
+![quit.png](/quit.png) Poté musíš restartovat PreMiD.
 
-### Znovu načíst/restartovat Discord
-Stiskněte <kbd>CTRL+R</kbd> (Windows) nebo <kbd>CMD+R</kbd> (MacOS) na vaší klávesnici nebo restartujte Discord ručně.
+### Znovu načti/restartuj Discord
+Stiskni <kbd>CTRL+R</kbd> (Windows) nebo <kbd>CMD+R</kbd> (MacOS) na Tvé klávesnici nebo restartuj Discord ručně.
 
-### Zkontrolujte, zda máte spuštěný antivirus nebo firewall
+### Zkontrolujte, zda máš na svém počítači spuštěný antivirus nebo firewall
 Antivirové programy a firewally někdy blokují aplikace, které vytvářejí nebo hostují servery nebo se jen připojují k internetu. K příjmu a přenosu dat mezi naší aplikací a rozšířením používáme místní server, takže pokud budete blokovat schopnost aplikace předávat data, pravděpodobně nebudete moci používat PreMiD.
 
 ### Zakázat doplňky
