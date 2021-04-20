@@ -32,9 +32,9 @@ PreMiD je rychlý a snadno nainstalovatelný. S instalací bys měl být hned ho
 - :wrench: [Vývoj Presencí](/dev/presence): Zjisti, jak používat náš systém Presencí.
 
 # Přispět
-- :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
-- :bulb: [Navrhněte novou funkci](https://discord.premid.app/): Potřebujeme vaše nápady!
-- :heart: [Donate](https://www.patreon.com/Timeraa): Make a small donation or become a sponsor of this wonderful project!
+- :bug: [Nahlaš Chybu](https://github.com/PreMiD): Pomozte nám tyto chyby zničit.
+- :bulb: [Navrhni Novou Funkci](https://discord.premid.app/): Potřebujeme Tvoje nápady!
+- :heart: [Donate](https://www.patreon.com/Timeraa): Udělej malý příspěvek nebo se staň sponzorem tohoto úžasného projektu!
 - :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
