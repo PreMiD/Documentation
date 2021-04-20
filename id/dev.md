@@ -33,7 +33,7 @@ tags:
 > {.is-danger}
 
 # Coding your vision
-Please keep the structure. We do not want to disorganize our project. Chaotic files may not be accepted.
+Please keep the structure. We do not want to disorganize our project. File berantakan akan ditolak.
 
 # Submitting your dream
 Just open a Pull Request on one of our [GitHub repositories](https://github.com/PreMiD/) you want to contribute to. We will take care of your baby, don't worry. If this is your first time making a pull request, take a look at this [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
