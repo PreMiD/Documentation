@@ -29,7 +29,7 @@ PreMiD je rychlý a snadno nainstalovatelný. S instalací bys měl být hned ho
 [Příručka](/dev) pro vývoj PreMiDu je Tvůj první krok před kódováním některých věcí.
 
 - :computer: [API](/dev/api): Přístup ke zdrojům a provádění akcí pomocí PreMiD API.
-- :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
+- :wrench: [Vývoj Presencí](/dev/presence): Zjisti, jak používat náš systém Presencí.
 
 # Přispět
 - :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
