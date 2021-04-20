@@ -23,7 +23,7 @@ The installation of the application is very important as the extension can not d
   - GYIK (hamarosan)
   - Building (soon)
   - [Támogatás](#support)
-  - [Credits](#credits)
+  - [Készítők](#credits)
   - [Licensz](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_RECOMMENDED_)
@@ -80,7 +80,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="credits"></a>
 
-### Credits
+### Készítők
 
 Thanks to :
 
