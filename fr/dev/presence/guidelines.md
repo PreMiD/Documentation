@@ -37,14 +37,14 @@ Les règles générales de développement de presence sont les suivantes:
   - Les redirections vers la page d'accueil sont interdites.
   - La promotion de sites internet est interdite.
   - Ils ne peuvent pas afficher des données additionnelles quand vous ne pouvez pas les afficher dans le `state` ou dans `details`.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Les presences pour des services qui proposent des bots ou des listes de serveurs Discord doivent respecter les règles supplémentaires suivantes :
+  - Le nom de domaine doit avoir été créé il y a au moins **6 mois**.
+  - Nombre de visiteurs uniques par jour :
+    - Pour les noms de domaine vieux de 6 mois : **20 000 visiteurs uniques/jour**.
+    - Pour les noms de domaines vieux de 12 mois ou plus : **45 000 visiteurs uniques/jour**.
+  - Le site Internet ne peut pas avoir un domaine de premier prix comme `.xyz`, `.club` et ce qui s'en rapproche.
+  - Le site Internet doit être de très bonne qualité, au niveau design, etc.
+- En comprenant le dossier `dist`, les fichiers `presence.ts`, `iframe.ts` et le fichier `metadata.json` étant obligatoire, votre arborescence devrait ressembler à ce qui est présenté sur le schéma suivant :
 
 ```bash
 presence
