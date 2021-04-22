@@ -11,7 +11,7 @@ editor: markdown
 
 ## Perkenalan
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
+Ketika kamu telah mendownload dan mengunpack workspace, kamu akan melihat file bernama `tsconfig.js` pada root dan folder presence, file ini digunakan untuk mengatur compiler **TypeScript**. It is already configured for you, so don't worry about that.
 
 We just want to describe some settings that you should know.
 
