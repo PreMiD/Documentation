@@ -1,6 +1,6 @@
 ---
 title: PreMiD névjegye
-description: The core features of PreMiD
+description: A PreMiD alapvető jellemzői
 published: true
 date: 2020-09-01T22:07:41.029Z
 tags:
