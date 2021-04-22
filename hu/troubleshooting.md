@@ -14,8 +14,8 @@ dateCreated: 2020-06-11T18:03:54.865Z
 
 Included on this page:
 1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+2. [Linux hibaelhárítás](https://docs.premid.app/troubleshooting#linux)
+3. [MacOS hibaelhárítás](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
