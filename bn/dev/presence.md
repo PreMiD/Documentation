@@ -276,7 +276,7 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
 
 ```typescript
 const presence = new Presence({
-    clientId: "000000000000000000" //অ্যাপ্লিকেশান এর ক্লায়েন্ট আইডি যেটা তৈরি করা হয়েছে https://discordapp.com/developers/applications - তে
+    clientId: "000000000000000000" //অ্যাপ্লিকেশন এর ক্লায়েন্ট আইডি যেটা তৈরি করা হয়েছে https://discordapp.com/developers/applications - তে
   }),
   strings = presence.getStrings({
     play: "presence.playback.playing",
