@@ -272,7 +272,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-## Getting started
+## Első lépések
 
 ```typescript
 const presence = new Presence({
