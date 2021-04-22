@@ -1,51 +1,51 @@
 ---
-title: iFrame Class
+title: iFrame ক্লাস
 description:
 published: true
 date: 2020-05-03T20:17:51.982Z
 tags:
 ---
 
-# iFrame Class
-> The iframe system with PreMiD is problematic and can have unexpected behavior, use with caution. 
+# iFrame ক্লাস
+> PreMiD এর সাথে iframe সিস্টেমটি সমস্যাযুক্ত এবং অপ্রত্যাশিত ব্যবহার করতে পারে, সতর্কতার সাথে ব্যবহার করো। 
 > 
 > {.is-danger}
 
-## Introduction
+## পরিচিতি
 
-In some scenarios, your presence may need to access elements inside of `iframes`.
+কিছু পরিস্থিতিতে, তোমার Presence - এর প্রয়োজন হতে পারে `iframes` - এর ভিতরের এলিমেন্টগুলো অ্যাক্সেস করার।
 
-The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
+যে কোডটি তুমি লেখো `iframe.ts` ফাইলের ভিতর সেটি পেজের প্রত্যেকটি iframe - এর মধ্যে কাজ করে।
 
-Like presences, `iframes` have their own classes designed to automatically update data.
+Presences এর মতো, `iframes` - এর নিজস্ব ক্লাস রয়েছে অটোমেটিকভাবে ডাটা আপডেট করার জন্য।
 
 ```typescript
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // কোড এখানে হবে...
 });
 ```
 
-## Methods
+## মেথোড
 
 ### `send(Object)`
-Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
+Presence - এ ডাটা পাঠায়। এই মেথোডটি ব্যবহার করলে Presence - টি একটি `iFrameData` ইভেন্ট পাঠাবে।
 
 ### `getUrl()`
-Returns the URL of the `iframe`.
+`iframe` - টির URL রিটার্ন করে।
 
-## Events
-In `iframes`, events work similarly to the way they work in the `presence` class.
+## ইভেন্ট
+`iframes` - এ, ইভেন্টগুলো কাজ করে যেভাবে সেগুলো কাজ করে `presence` ক্লাসে।
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // কোড এখানে হবে...
 });
 ```
 
-Here is a list of all of the events:
+সবগুলো ইভেন্টের একটি তালিকা এখানে:
 
 #### `UpdateData`
 
-This event is fired every time the iframe is being updated.
+এই ইভেন্টটি প্রত্যেকবার কাজ করে যখন iframe - টি আপডেট হচ্ছে।

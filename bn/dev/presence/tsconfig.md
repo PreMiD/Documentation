@@ -1,5 +1,5 @@
 ---
-title: TypeScript Configuration
+title: TypeScript কনফিগারেশন
 description: A little helper for TypeScript
 published: true
 date: 2020-08-05T16:25:22.812Z
@@ -7,7 +7,7 @@ tags:
 editor: markdown
 ---
 
-# TypeScript Configuration
+# TypeScript কনফিগারেশন
 
 ## Introduction
 
