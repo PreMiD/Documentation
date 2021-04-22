@@ -74,7 +74,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Változó</th>
       <th style="text-align:left">Leírás</th>
       <th style="text-align:left">Típus</th>
       <th style="text-align:left">Választható</th>
@@ -201,7 +201,7 @@ If you want to learn regular expressions, here are a few websites.
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
-#### Testing
+#### Tesztelés
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
@@ -245,7 +245,7 @@ Setup interactive settings so users can customize the presence!
 
 ### `multiLanguage`
 
-#### Introduction
+#### Bevezetés
 
 The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](/dev/presence/metadata/adding-new-strings).
 
@@ -303,7 +303,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### Methods
+### Módszerek
 
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
@@ -332,7 +332,7 @@ When making your presence, you must specify a category which the presence falls 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
+      <th style="text-align:left">Kategória</th>
       <th style="text-align:left">Név</th>
       <th style="text-align:left">Leírás</th>
     </tr>

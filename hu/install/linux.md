@@ -17,7 +17,7 @@ The installation of the application is very important as the extension can not d
 ## Table of Contents
 
 - **[Névjegy](#about)**
-  - [Stats](#stats)
+  - [Statisztikák](#stats)
   - [Követelmények](#requirements)
   - Példák (hamarosan)
   - GYIK (hamarosan)
@@ -27,8 +27,8 @@ The installation of the application is very important as the extension can not d
   - [Licensz](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_RECOMMENDED_)
-  - [Installation instructions](#appimageinstall)
-  - [Additional notes](#appimagenotes)
+  - [Telepítési útmutató](#appimageinstall)
+  - [További megjegyzések](#appimagenotes)
 - [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
 - [**Debian and Ubuntu based distributions**](#packagecloud)
 - [**Arch Linux based distributions**](#arch)
@@ -41,7 +41,7 @@ The installation of the application is very important as the extension can not d
 
 <a name="stats"></a>
 
-### Stats
+### Statisztikák
 
 <table>
   <tr>
@@ -94,7 +94,7 @@ Thanks to :
 
 ### Licensz
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
+[![FOSSA státusz](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
@@ -105,7 +105,7 @@ The AppImage package is the recommended one if Discord works for you but other P
 
 <a name="appimageinstall"></a>
 
-### Installation instructions
+### Telepítési útmutató
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
@@ -118,7 +118,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### További megjegyzések
 
 Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
 
@@ -152,7 +152,7 @@ Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Sup
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Telepítési útmutató
 
 ```bash
 # Using yay (recommended)
@@ -182,7 +182,7 @@ or manually from the [Arch User Repository](https://aur.archlinux.org/packages/p
 
 <a name="archnotes"></a>
 
-### Additional notes
+### További megjegyzések
 
 If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
 
