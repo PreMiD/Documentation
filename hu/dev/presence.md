@@ -140,7 +140,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Változó</th>
       <th style="text-align:left">Leírás</th>
       <th style="text-align:left">Típus</th>
       <th style="text-align:left">Választható</th>
