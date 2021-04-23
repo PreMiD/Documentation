@@ -11,7 +11,7 @@ editor: markdown
 
 ## Einführung
 
-Wenn du den Arbeitsbereich heruntergeladen und entpackt habst, wird eine Datei mit dem Namen `tsconfig.json` im Stammverzeichnis und in den Presenceordnern angezeigt. Diese Datei wird zum Konfigurieren des **TypeScript**-Compilers verwendet. Es ist bereits für dich konfiguriert, mache dir also keine Sorgen.
+Wenn du den Workspace heruntergeladen und entpackt hast, wird eine Datei mit dem Namen `tsconfig.json` im Stammverzeichnis und in den Presence-Ordnern angezeigt. Diese Datei wird zum Konfigurieren des **TypeScript**-Compilers verwendet. Es ist bereits für dich konfiguriert, mache dir also keine Sorgen.
 
 Wir wollen nur einige Einstellungen beschreiben, die du kennen solltest.
 
