@@ -32,21 +32,21 @@ Peraturan am pembangunan Presence adalah seperti berikut:
 - Presence yang mensasarkan halaman pelayar dalaman (seperti Kedai Web Chrome, `chrome://`, halaman `about:`, dll) **tidak** dibenarkan kerana mereka perlukan bendera uji kaji untuk dibolehkan di pihak pengguna dan mampu menyebabkan kerosakan pada pelayar mereka.
 - Presence dengan sokongan hanya untuk subdomain tunggal **tidak** akan dibenarkan, kerana ia akan tampak rosak untuk halaman lain (seperti halaman utama), pengecualian boleh dibuat untuk halaman polisi dan perhubungan (kandungan yang tidak kerap digunakan) atau laman di mana kandungan lainnya tidak mempunyai kaitan. (sbg. cth., laman wikia)
 - Presence untuk radio dalam talian hanya dibenarkan sekiranya radio tersebut mempunyai sekurang-kurangnya 100 pendengar mingguan dan 15 pendengar serempak dan mesti mempunyai beberaa ciri selain daripada setakat menunjukkan tajuk lagu/album, dll.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences that use buttons should follow these extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Presence tidak dibenarkan untuk menjalankan kod JS dengan fungsi tersendiri untuk mendapatkan pemboleh ubah. Sekiranya Firefox mempunyai masalah dengan fungsi terbina dalam kelas `Presence`, anda dibenarkan membuat fungsi anda sendiri dan anda perlu memberitahu kami mengenainya di perihalan Permintaan Tarikan (Pull Request) berkaitan.
+- Presence kualiti rendah (atau yang mana dengan konteks kecil) adalah **tidak** dibenarkan (sbg. cth., hanya menunjukkan logo dan tulisan tetapi tidak mengubahnya lagi).
+- Presence yang menggunakan butang mesti mengikut keperluan tambahan berikut:
+  - Lencongan ke laman utama tidak dibenarkan.
+  - Promosi laman sesawang menggunakannya tidak dibenarkan.
+  - Ia tidak boleh menunjukkan data tambahan apabila anda tidak mampu tunjukkannya di medan yang lain.
+  - Melencongkan secara terus ke strim audio/video adalah tidak dibenarkan.
+- Presence untuk perkhidmatan seperti Bot/Senarai Pelayan Discord mesti mengikut keperluan tambahan berikut:
+  - Domain mestilah berusia sekurang-kurangnya **6 bulan**.
+  - Pelawat unik setiap hari:
+    - Untuk domain berusia 6 bulan: **20,000 pelawat unik sehari**.
+    - Untuk domain berusia 12+ bulan: **45,000 pelawat unik sehari**.
+  - Laman sesawang tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan lain-lain.
+  - Laman sesawang tersebut sendirinya mestilah mempunyai kualiti, reka bentuk, dll yang sangat bagus.
+- Penyertaan folder `dist`, fail `presence.ts`, fail `iframe.ts`, dan fail `metadata.json` adalah diwajibkan supaya hasilnya nanti serupa seperti apa yang diwakilkan dalam skema berikut:
 
 ```bash
 presence
