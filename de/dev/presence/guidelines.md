@@ -33,20 +33,20 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
 - Presences mit nur einer einzigen Subdomain sind **nicht zulässig,** da sie für andere Seiten (wie die Homepage) kaputt sein können. Ausnahmen können für die Richtlinien und Kontaktseiten (Inhalte, die nicht häufig verwendet werden) oder für Webseiten, bei denen die anderen Inhalte nicht miteinander in Beziehung stehen, gemacht werden. (für z.B. Wiki-Seiten)
 - Presences für Online-Radios sind nur erlaubt, wenn das Radio mindestens 100 wöchentliche Hörer und 15 gleichzeitige Hörer hat.
 - Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
+- Presences mit niedriger Qualität (oder welche mit kleinem Kontext) sind **nicht** erlaubt (z.B. welche die nur ein Logo anzeigen, aber nie den Text ändern).
 - Presences that use buttons should follow these extra requirements:
   - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
+  - Werben von Webseiten durch diese ist verboten.
   - They can't show addinational data when you can't show them in other fields.
   - Redirecting directly to audio/video stream is prohibited.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Presences für Dienste wie Discord Bot/Server Listen müssen diese Extra-Anforderungen erfüllen:
+  - Die Domain sollte mindestens **6 Monate**  alt sein.
+  - Eindeutige Besucher pro Tag:
+    - Für 6 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
+    - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
+  - Die Webseite kann keine "günstige" Domains sein, wie z.B. `.xyz`, `.club` und so weiter.
+  - Die Website selbst muss eine sehr gute Qualität, Design, etc. haben.
+- Enthalten des `dist`-Ordners, der `presence.ts`-Datei, der `iframe.ts`-Datei und `metadata.json`-Datei ist obligatorisch, daher wäre das Ergebnis das, was im folgenden Schema dargestellt wird:
 
 ```bash
 presence
