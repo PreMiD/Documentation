@@ -32,19 +32,21 @@ dateCreated: 2021-02-26T21:54:41.573Z
 - Presences которые нацелены на внутренние страницы браузера (например, веб-магазин Chrome, ` chrome: // `, ` about: ` и т. д.) ** не разрешены **, поскольку они требуют, чтобы экспериментальный флаг был включен на стороне пользователя и потенциально мог повредить их браузеры.
 - Presences с поддержкой только одного субдомена ** не будет ** разрешено, так как они могут показаться неработающими для других страниц (например, домашняя страница), исключения могут быть сделаны для политики и контактных страниц (контент, который используется не часто) или сайтов, где другой контент не связан. (например, страницы википедии)
 - Presences для онлайн-радио разрешено только в том случае, если у радио есть не менее 100 еженедельных слушателей и 15 одновременно.
-- Presences низкого качества (или с небольшим контекстом) ** не **разрешено (например, только показывая логотип и текст, но никогда не меняя его)
-- Релиз `с кнопками`, нам необходимы некоторые рекомендации для них:
-  - Перенаправление на главную страницу запрещено.
-  - Рекламные сайты запрещены законом.
-  - Они не могут показывать дополнительные данные, когда вы не можете показать их в `состоянии` или `подробности`.
-- Наличие присутствия для Discord ботов/Список серверов доступна если проект соответствует этими требованиями:
-  - Домен должен быть оформлен более **6 месяцев**назад.
-  - Уникальных посетителей в день:
-    - Для доменов 6-месячной давности: **20,000 уникальных посетителей в день**.
-    - Для доменов 12-месячной давности: **45,000 уникальных посетителей в день**.
-  - Сайт не должен иметь дешёвый домен, например `.xyz`, `.club` и так далее.
-  - Сайт должен быть сделан качественно, хорошо оформлен и т.д.
-- Включать папку `dist`, файлы: `presence.ts`, `iframe.ts` и `metadata.json` они являются обязательным, поэтому результат должен быть то, что представлено в следующей схеме:
+- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
+- Presences that use buttons should follow these extra requirements:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
+- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+  - The domain should be at least **6 months** old.
+  - Unique visitors per day:
+    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - The website itself must have a very good quality, design, etc.
+- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
 presence
@@ -65,7 +67,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
 
 > Для удобства наших разработчиков presence, мы предоставили схему, которую вы можете использовать для проверки целостности вашего `metadata` файла. Это совершенно необязательно и не требуется в процессе проверки.
 
@@ -222,7 +224,7 @@ presence
   - **String** (например, `youtube`), в котором будет указано имя файлов, из которых вы хотите получить строки.
   - **Array<String>** тип (например `["youtube", "discord"]`) в котором указывается имя файлов, из которых вы хотите получить строки.
 
-## [**presence.ts**](/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
 
 > Код, который вы пишете **, должен ** быть _хорошо написанным_ и ** должен ** быть _ читабельным_, и все строки должны быть грамматически правильными (грамматические ошибки на сайтах можно игнорировать).
 
@@ -240,7 +242,7 @@ presence
 - Делать **не** установите для полей в объекте данных присутствия значение undefined после его объявления, используйте `delete` ключевое слово вместо этого. (например, используйте `delete data.startTimestamp` вместо `data.startTimestamp = undefined`)
 - Ты **не** разрешено писать присутствия, которые изменяют функциональность данного сайта. Это включает добавление, удаление или модификацию элементов DOM.
 
-## [**tsconfig.json**](/dev/presence/tsconfig)
+## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
 > **нет** пишите свой собственный файл `tsconfig.json`, используйте то, что было предоставлено в [документации](/dev/presence/tsconfig).
 
