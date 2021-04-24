@@ -11,7 +11,7 @@ editor: markdown
 
 ## Úvod
 
-Keď ste si stiahli a rozbalili pracovnú plochu, uvidíte súbor nazývaný sa `tsconfig.js` v koreni a v priečinkoch prítomnosti, tento súbor je určený na konfigurovanie **TypeScript** spracovávateľa. Je už dopredu nakonfigurovaný pre vás, takže nemusíte sa obávať.
+Keď ste si stiahli a rozbalili pracovnú plochu, uvidíte súbor nazývaný sa `tsconfig.json` v koreni a v priečinkoch prítomnosti, tento súbor je určený na konfigurovanie **TypeScript** spracovávateľa. Je už dopredu nakonfigurovaný pre vás, takže nemusíte sa obávať.
 
 Chceme vám len popísať niektoré nastavenia ktoré by ste mali vedieť.
 
