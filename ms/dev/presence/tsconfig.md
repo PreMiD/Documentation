@@ -11,7 +11,7 @@ editor: markdown
 
 ## Pengenalan
 
-Apabila anda memuat turun dan menyahpadat ruang kerja, anda akan nampak fail bernama `tsconfig.js` di akar dan dalam folder Presence, fail ini digunakan untuk menatarajah pengkompil **TypeScript**. Ia telah ditatarajah untuk anda, jadi anda tidak perlu risaukannya.
+Apabila anda memuat turun dan menyahpadat ruang kerja, anda akan nampak fail bernama `tsconfig.json` di akar dan dalam folder Presence, fail ini digunakan untuk menatarajah pengkompil **TypeScript**. Ia telah ditatarajah untuk anda, jadi anda tidak perlu risaukannya.
 
 Kami cuma ingin terangkan beberapa tetapan yang anda patut tahu.
 
