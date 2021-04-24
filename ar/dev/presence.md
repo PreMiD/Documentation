@@ -39,7 +39,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ## إنشاء المجلدات والملفات
 
-1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
+1. إنتقل إلى مجلد `المواقع` ثم إنتقل إلى المجلد الذي يحتوي على الحرف الأول من **الإسم** (ليس رابط) الخدمة التي تريد دعمها.
 2. إنشاء مجلد باسم **** (ليس عنوان URL) للخدمة التي تريد دعمها.
 3. قم بإنشاء ملف `presence.ts` و `tsconfig.json` داخله.
 4. إنشاء مجلد اسمه `dist` في الداخل.
@@ -47,7 +47,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ## ملء ملف tsconfig.json
 
-Please put the following code inside of the `tsconfig.json` file.
+الرجاء وضع الكود التالي داخل ملف `tsconfig.json`.
 
 ```typescript
 {
@@ -58,7 +58,7 @@ Please put the following code inside of the `tsconfig.json` file.
 }
 ```
 
-To learn more about TypeScript configuration click [here](/dev/presence/tsconfig).
+لمعرفة المزيد حول طريقة تعديل TypeScript انقر [هنا](/dev/presence/tsconfig).
 
 ## ملء ملف metadata.json
 
