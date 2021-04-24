@@ -32,11 +32,13 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 - Presence ที่เล็งการพัฒนาด้วยเบราว์เซอร์ภายในเช่น (Chrome Web Store, `chrome://`, `about:` หรือหน้าอื่นๆนั้น) **ไม่อนุญาติ** เนื่องจากต้องเปิดโหมดทดลองของเบราว์เซอร์นั้นๆ เเละอาจะเกิดความเสียหายของเบราว์เซอร์ได้
 - Presence ที่มีเพียง Domain เดียวจะ**ไม่อนุญาติ**, เนื่องจากอาจจะทําให้หน้าอื่นขัดข้องได้เช่น (หน้าหลัก), เเต่สามารถทําได้เเค่นโยบายเเละหน้าติดต่อ (เนื้อหาที่ไม่ได้ใช้บ่อยๆ) หรือ เนื้อหาที่ไม่เกี่ยวข้อง (เช่น หน้า Wiki)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- Presence คุณภาพตํ่า (หรือเนื้อหาน้อย)นั้น **ไม่อนุญาติ** (เช่น เเสดงเเค่รูป/โลโก้ เเต่ข้อความตรง Presence ไม่เปลี่ยน)
-- With the `buttons` release, we require some guidelines for them:
+- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
+- Presences that use buttons should follow these extra requirements:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in `state` or `details`.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
@@ -65,7 +67,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
 
 > เพื่อความสะดวกสําหรับการพัฒนา, เรามีโครงสร้างให้ ซึงคุณสามารถใช้เพื่อตรวจสอบความสมบูรณ์ของไฟล์ `metadata`ได้ นี้เป็นทางเลือกทั้งหมด เเละไม่จําเป็นระหว่างการตรวจสอบ
 
@@ -228,7 +230,7 @@ A list of fields and their rules are listed below:
   - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
   - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
 
-## [**presence.ts**](/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
 
 > The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
 
@@ -246,7 +248,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
 - You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
 
-## [**tsconfig.json**](/dev/presence/tsconfig)
+## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
 > Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](/dev/presence/tsconfig).
 
