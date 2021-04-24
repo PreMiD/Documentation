@@ -13,7 +13,7 @@ editor: markdown
 
 When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
 
-We just want to describe some settings that you should know.
+আমরা শুধু কিছু সেটিংস বর্ণনা করতে চাই যেগুলো তোমার জানা উচিত।
 
 ## Root Configuration
 
