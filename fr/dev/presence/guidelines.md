@@ -32,21 +32,21 @@ Les règles générales de développement de presence sont les suivantes:
 - Les presences qui ciblent les pages internes du navigateur (comme Chrome Web Store, les pages `chrome://`, `about:`, etc) **ne sont pas** autorisés car elles nécessitent un drapeau expérimental à activer du côté de l'utilisateur et peuvent potentiellement causer des dommages à leurs navigateurs.
 - Les presences prenant en charge seulement une page **ne seront pas** autorisées, car elles pourraient sembler cassées pour d'autres pages (comme la page d'accueil), des exceptions peuvent être faites pour les pages de politique de confidentialité et de contact (contenu qui n'est pas souvent utilisé) ou alors sites où l'autre contenu n'est pas lié. (par exemple, les pages wikia)
 - Les Presences pour les radios en ligne ne sont autorisées que si la radio a au moins 100 auditeurs hebdomadaires et 15 concurrents, ainsi que des fonctionnalités autre que du simple affichage des nom des albums/titres, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences that use buttons should follow these extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Les presences ne sont pas autorisées à exécuter du JS avec leurs propres fonctions pour obtenir des variables. Si Firefox a des problèmes avec des fonctions par défaut à l'intérieur de la classe `Presence`, vous pouvez faire votre propre fonction et vous devez nous le préciser dans la description de votre Pull Request.
+- Les presences de faible qualité (ou celles avec peu de contenu) **ne sont pas** autorisées (par exemple : afficher uniquement un logo et du texte et ne plus jamais les changer).
+- Les presences qui utilisent des boutons devraient suivre ces règles supplémentaires :
+  - Les boutons qui redirigent uniquement vers la page d'accueil du site sont interdits.
+  - Promouvoir des sites par l'usage des boutons est interdit.
+  - Ils ne peuvent pas contenir des informations supplémentaires quand vous ne pouvez pas les rentrer dans d'autres champs.
+  - Les boutons qui redirigent directement à des flux audio/vidéo sont interdits.
+- Les presences pour des services qui proposent des bots ou des listes de serveurs Discord doivent respecter les règles supplémentaires suivantes :
+  - Le nom de domaine doit avoir été créé il y a au moins **6 mois**.
+  - Nombre de visiteurs uniques par jour :
+    - Pour les noms de domaine vieux de 6 mois : **20 000 visiteurs uniques/jour**.
+    - Pour les noms de domaines vieux de 12 mois ou plus : **45 000 visiteurs uniques/jour**.
+  - Le site Internet ne peut pas avoir un domaine de premier prix comme `.xyz`, `.club` et ce qui s'en rapproche.
+  - Le site Internet doit être de très bonne qualité, au niveau design, etc.
+- Inclure le dossier `dist` , les fichiers `presence.ts`, `iframe.ts` et `metadata.json` est obligatoire afin que le résultat soit ce qui est représenté dans le schéma suivant :
 
 ```bash
 presence
