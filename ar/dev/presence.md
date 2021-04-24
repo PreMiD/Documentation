@@ -1,5 +1,5 @@
 ---
-title: تطوير الpresence
+title: Presence تطوير الـ
 description:
 published: true
 date: 2021-02-07T17:11:34.449Z
@@ -12,9 +12,9 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-الإصدار `2.x` يقدم [متجر الpresence](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+الإصدار `2.x` يقدم [متجر الpresence](https://premid.app/store). الأن لدى المستخدمين القدرة لاضافة وحذف الpresences المفضلين لهم يدويا من خلال واجهة المستخدم في [الموقع](https://premid.app/).
 
-> قبل البدء، يوصى بشدة أن تنظروا إلى المبادئ التوجيهية للpresence الخاصة بنا. 
+> قبل البدء، يوصى بشدة أن تنظروا إلى المبادئ التوجيهية للـ Presence الخاصة بنا. 
 > 
 > {.is-warning}
 
@@ -23,7 +23,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 # الهيكل
 
-All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+كل الpresences مبرمجة علي [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) لديها بعض التعاريف الإضافية على جافا سكريبت، لذلك فإن إصلاح وتحديد الأخطاء أسهل بكثير.
 
 ## تثبيت
 
@@ -33,9 +33,9 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 ## استنساخ المشروع
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. اختيار مجلد من اختيارك.
-3. افتح علي محرر الكود الخاص بك.
+1. قم بفتح لوحة التحكم و اكتب `git clone https://github.com/PreMiD/Presences`.
+2. قم باختيار مجلد من اختيارك.
+3. افتح على محرر الكود الخاص بك.
 
 ## إنشاء المجلدات والملفات
 
