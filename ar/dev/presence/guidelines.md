@@ -32,11 +32,13 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 - الpresences التي تستهدف صفحات المتصفح الداخلية (مثل متجر ويب كروم، `كروم://`، `عن:` صفحات، وما إلى ذلك) هي **غير مسموحة** لأنها تتطلب أن يتم تمكين العلم التجريبي في نهاية المستخدم ويمكن أن تسبب ضرراً للمتصفحات الخاصة بهم.
 - الpresences المدعومة لنطاق فرعي واحد فقط **لن** يسمح بها، حيث أنها قد تبدو مكسورة لصفحات أخرى (مثل الصفحة الرئيسية)، يمكن وضع استثناءات لصفحات السياسات وجهات الاتصال (المحتوى الذي لا يستخدم في كثير من الأحيان) أو المواقع التي لا يرتبط بها المحتوى الآخر. (على سبيل المثال، صفحات ويكا)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- الpresences رديئة الجودة (أو الpresences ذات السياق الصغير) **غير** مسموح بها (مثلا، التي تعرض الشعار والنص فقط ولكن دون تغييره مرة أخرى.)
-- With the `buttons` release, we require some guidelines for them:
+- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
+- Presences that use buttons should follow these extra requirements:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in `state` or `details`.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
@@ -65,7 +67,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
 
 > من أجل مصلحة مطوري presence الخاص بنا، لقد قدمنا مخططا يمكنك استخدامه للتحقق من سلامة ملف `البيانات الوصفية`. وهذا أمر اختياري تماما، ولا لزوم له أثناء عملية الاستعراض.
 
@@ -228,7 +230,7 @@ A list of fields and their rules are listed below:
   - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
   - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
 
-## [**presence.ts**](/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
 
 > The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
 
@@ -246,7 +248,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
 - You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
 
-## [**tsconfig.json**](/dev/presence/tsconfig)
+## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
 > Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](/dev/presence/tsconfig).
 

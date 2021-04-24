@@ -32,19 +32,21 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
 - Presences interner Browserseiten (wie Chrome Web Store, `chrome://`, `über:` Seiten, usw.) sind **nicht erlaubt**, da ein experimentelles Flag am Ende des Benutzers aktiviert werden muss, welches möglicherweise Schaden an ihren Browsern anrichten könnte.
 - Presences mit nur einer einzigen Subdomain sind **nicht zulässig,** da sie für andere Seiten (wie die Homepage) kaputt sein können. Ausnahmen können für die Richtlinien und Kontaktseiten (Inhalte, die nicht häufig verwendet werden) oder für Webseiten, bei denen die anderen Inhalte nicht miteinander in Beziehung stehen, gemacht werden. (für z.B. Wiki-Seiten)
 - Presences für Online-Radios sind nur erlaubt, wenn das Radio mindestens 100 wöchentliche Hörer und 15 gleichzeitige Hörer hat.
-- Presences mit niedriger Qualität (oder welche mit kleinem Kontext) sind **nicht** erlaubt (z.B. welche die nur ein Logo anzeigen, aber nie den Text ändern.)
-- Durch den Release der `Buttons`, kommen auch Richtlinien für diese:
-  - Weiterleitungen zur Hauptseite sind verboten.
-  - Werben von Webseiten durch diese ist verboten.
-  - Sie können keine zusätzlichen Daten anzeigen, wenn Sie sie nicht im `-Status` oder `Details` anzeigen können.
-- Presences für Dienste wie Discord Bot/Server Listen müssen diese Extra-Anforderungen erfüllen:
-  - Die Domain sollte mindestens **6 Monate**  alt sein.
-  - Eindeutige Besucher pro Tag:
-    - Für 6 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
-    - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
-  - Die Webseite kann keine "günstige" Domains sein, wie z.B. `.xyz`, `.club` und so weiter.
-  - Die Website selbst muss eine sehr gute Qualität, Design, etc. haben.
-- Das Einschließen des `dist` Ordners, `presence.ts`, Datei, `iframe.ts` Datei und der `metadata.json` Datei ist benötigt, damit das Resultat, dem folgenden Schema getreu präsentiert wird:
+- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
+- Presences that use buttons should follow these extra requirements:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
+- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+  - The domain should be at least **6 months** old.
+  - Unique visitors per day:
+    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - The website itself must have a very good quality, design, etc.
+- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
 presence
@@ -65,7 +67,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
 
 > Zur Bequemlichkeit unserer Presence-Entwickler, haben wir ein Schema zur Überprüfung der Integrität Ihrer `Metadata`-Datei zur Verfügung gestellt. Dies ist völlig freiwillig und wird während des Überprüfungsverfahrens nicht benötigt.
 
@@ -231,7 +233,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
   - **Array** Typ (z. `["youtube", "discord"]`), der den Namen der Dateien angibt, von denen Du Strings erhalten möchtest.
   - **Array<String>** Typ (z. `["youtube", "discord"]`), der den Namen der Dateien angibt, von denen Du Strings erhalten möchtest.
 
-## [**presence.ts**](/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
 
 > Der Code, den du schreibst **muss** _gut geschrieben_ und _lesbar_ sein und alle Strings müssen grammatikalisch korrekt sein (Grammatikfehler auf der Website können ignoriert werden).
 
@@ -249,7 +251,7 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Setze **keine** Felder in dem presence data object auf undefined, nachdem es deklariert wurde. Nutze stattdessen das `delete` Schlüsselwort. (nutze z.B `delete data.startTimestamp` anstelle von `data.startTimestamp = undefined`)
 - Es ist dir **nicht**t erlaubt Presences zu schreiben, die die Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
 
-## [**tsconfig.json**](/dev/presence/tsconfig)
+## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
 > Schreibe **nicht** deine eigene `tsconfig.json` Datei, sondern verwende das, was in der [Dokumentation](https://docs.premid.app/en/dev/presence/tsconfig) zur Verfügung gestellt wurde.
 

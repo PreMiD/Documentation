@@ -11,13 +11,13 @@ editor: markdown
 
 ## Tanıtım
 
-Dosyaları indirip açtığınızda, klasörün içinde bir `tsconfig.js` dosyasıyla karşılacaksınız. Bu dosya, **TypeScript** derleyicisi için gerekli ayarları içeren dosyadır. Bu ayarlar daha önceden sizin için ayarlandığı için sizin herhangi bir şey hakkında endişelenmenize gerek yok.
+Dosyaları indirip açtığınızda, klasörün içinde bir `tsconfig.json` dosyasıyla karşılacaksınız. Bu dosya, **TypeScript** derleyicisi için gerekli ayarları içeren dosyadır. Bu ayarlar daha önceden sizin için ayarlandığı için sizin herhangi bir şey hakkında endişelenmenize gerek yok.
 
 Yine de, emin olmak için burada belirtilen anahtarları ve özellikleri açıklayacağız.
 
 ## Kök Yapılandırması
 
-Kök yapılandırma (`tsconfig.js`) dosyasında böyle bir şeyle karşılaşacaksınız.
+Kök yapılandırma (`tsconfig.json`) dosyasında böyle bir şeyle karşılaşacaksınız.
 
 ```javascript
 {

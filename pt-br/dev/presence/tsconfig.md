@@ -11,7 +11,7 @@ editor: markdown
 
 ## Introdução
 
-Quando você baixou e descompactou a workspace, você verá um arquivo chamado `tsconfig.js` no diretório raíz e nas pastas de presence, este arquivo é usado para configurar o compilador **TypeScript**. Já está configurado para você, então não se preocupe com isso.
+Quando você baixou e descompactou a workspace, você verá um arquivo chamado `tsconfig.json` no diretório raíz e nas pastas de presence, este arquivo é usado para configurar o compilador **TypeScript**. Já está configurado para você, então não se preocupe com isso.
 
 Queremos apenas descrever algumas definições que você deveria conhecer.
 

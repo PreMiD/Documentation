@@ -32,11 +32,13 @@ Servis geliştirmenin genel kuralları aşağıdaki gibidir:
 - Tarayıcılara yerleşik sayfalar için yapılan servislere izin verilmemektedir (örneğin, Chrome Web Mağazası, `chrome://`, `about:` sayfaları gibi). Bu sayfalara kod enjekte edebilmek gelişmiş bir ayar aktifleştirmeyi gerektirdiği ve tarayıcılara zarar verebileceğinden dolayı **yasaktır**.
 - Yalnızca tek bir sayfa için desteğe sahip varlıklara izin **verilmeyecektir**, çünkü diğer sayfalar için bozuk görünebilirler (örneğin ana sayfa), politika ve iletişim sayfaları (sık kullanılmayan içerik) veya sitelerin diğer ilgisiz içerikleri. (ör. viki sayfaları)
 - Çevrimiçi radyoların servislerinin eklenebilmesi için en az haftalık 100 ve aktif 15 dinleyicisi olmalıdır.
-- Düşük kaliteli (veya tek bir işlev gerçekleştiren) servislere **izin verilmemektedir**. Örneğin sadece sitenin simgesini ve hiçbir zaman değişmeyen bir yazı göstermek.)
-- `buttons` yayınlanmasıyla, şu yönergelere uyulmasını istiyoruz:
-  - Ana sayfaya yönlendirmeler yasak.
-  - Bu özelliği kullanarak site reklamları yapmak yasak.
-  - `state` veya `details` bölümlerinde bir şey göstermezken bunları ayarlamak mümkün değildir.
+- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
+- Presences that use buttons should follow these extra requirements:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
@@ -65,7 +67,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
 
 > `metadata` dosyasınızın doğruluğunu kontrol ettirip geliştiricilere kolaylık sağlamak amacıyla sizlere bir şema sunuyoruz. Bu tamamen isteğe bağlıdır ve inceleme işlemi sırasında gerekli değildir.
 
@@ -228,7 +230,7 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
   - Hangi dosyadaki çevirileri almak istediğinizi seçebileceğiniz **String** türü, (örn. `youtube`).
   - Hangi dosyalardaki çevirileri almak istediğinizi seçebileceğiniz **Array** türü, (örn. `["youtube", "discord"]`).
 
-## [**presence.ts**](/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
 
 > Kodunuz okunabilir ve anlaşılır **olmalıdır**, yazım hatalarına  dikkat etmeli ve kurallara uyulmalıdır. Sitede bulunan yazım hataları göz ardı edilebilir.
 
@@ -246,7 +248,7 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
 - presenceData object'inin içerisindeki kısımları ayarladıktan sonra undefined olarak **ayarlamayın**, bunun yerine `delete` yöntemini kullanın. (örneğin, `data.startTimestamp = undefined` yerine `delete data.startTimestamp` kullanın)
 - Verilen bir sitenin işlevselliğini değiştirecek servisler yazmanıza izin **verilmez**. Bu DOM elementlerinin eklenmesi, silinmesi, ya da değiştirilmesini de kapsar.
 
-## [**tsconfig.json**](/dev/presence/tsconfig)
+## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
 > `tsconfig.json` dosyasını [doküman](/dev/presence/tsconfig) sayfasında gösterilenin dışında herhangi bir şekilde düzenlemeyin.
 
