@@ -36,17 +36,17 @@ The general rules of presence development are as follows:
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
 - Presences that use buttons should follow these extra requirements:
   - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
+  - Dilarang mempromosikan halaman web.
   - They can't show addinational data when you can't show them in other fields.
   - Redirecting directly to audio/video stream is prohibited.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Presence untuk layanan seperti Daftar Server/Bot Discord harus mengikuti persyaratan tambahan berikut ini:
+  - Domain harus paling sedikit berusia **6 bulan**.
+  - Pengunjung unik per hari:
+    - Untuk domain berusia 6 bulan: **20,000 pengunjung unik/hari**.
+    - Untuk domain berusia 12+ bulan: **45,000 pengunjung unik/hari**.
+  - Situs web tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan seterusnya.
+  - Situs web tersebut harus berkualitas tinggi, desain bagus, dll.
+- Wajib mencantumkan folder `dist`, file `presence.ts`, file `iframe.ts`, dan file `metadata.json` agar hasil sesuai dengan skema berikut:
 
 ```bash
 presence
