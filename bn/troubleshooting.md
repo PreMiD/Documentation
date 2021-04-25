@@ -89,30 +89,30 @@ Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ
 
 # লিনাক্স এর সমস্যা সমাধান
 ### Ubuntu/Debian ভিত্তিক ডিস্ট্রিবিউশনগুলো
-তুমি যদি Snapcraft, RPC দিয়ে Discord ডাউনলোড করো তাহলে এটা কাজ করবে না। You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+তুমি যদি Snapcraft, RPC দিয়ে Discord ডাউনলোড করো তাহলে এটা কাজ করবে না। তোমাকে Snapcraft ভার্সনটি আনইন্সটল করতে হবে টার্মিনালে `sudo snap remove discord` দিয়ে, ডাউনলোড করো **[Discord - এর লিনাক্স বিল্ড](https://discordapp.com/api/download?platform=linux)** (**[অথবা Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), তারপর যাও যে ডিরেক্টরিতে তুমি Discord ডাউনলোড করেছ (সাধারণত `$HOME/Downloads`), তারপর প্যাকেজটি ইন্সটল করো `sudo dpkg -i discord-*.deb` ব্যবহার করে। যদি AppImage কাজ না করে, তাহলে দেখতে পারো আমাদের অন্যান্য প্যাকেজগুলো **[এই লিংক দ্বারা](https://packagecloud.io/premid/linux)**।
 
 ### Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলো
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলোকে AUR (Arch User Repository) প্যাকেজ ব্যবহার করা উচিত যার নাম <code>premid</code> অথবা <code>premid-git</code> (<em x-id="3">সতর্কতা: এই রিপোজিটরি premid তৈরি করে আমাদের সোর্স কোড থেকে</em>)। তুমি যদি একটি AUR ম্যানেজার (yay ইত্যাদি) না চাও, তাহলে তুমি আমাদের AppImage দেখতে পারো যা ডাউনলোড করা যায় আমাদের <strong x-id="1"><a href="https://github.com/premid/linux/releases">লিনাক্স রিপোজিটরি</a></strong> থেকে।
+<em x-id="3">সতর্কতা: <strong x-id="1">AUR</strong> রিপোজিটরির প্যাকেজটি আমাদের দ্বারা মেইনটেইন করা হয় না, বরং অন্যান্য মানুষ দ্বারা।</em>
 
 ### পোর্ট বাইন্ডিং
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+তোমাকে জানা উচিত যে <strong x-id="1">PreMiD</strong> পোর্ট <strong x-id="1">3020</strong> - তে বাইন্ড হয়। এটা জরুরি এক্সটেনশন ও অ্যাপ্লিকেশন এর মাঝখানে যোগাযোগ করার জন্য। যদি <strong x-id="1">PreMiD</strong> তোমাকে একটি ত্রুটি দেখায় এই পোর্ট সম্পর্কে, তোমার চেক করা উচিত কোন কিছু পোর্ট 3020 - তে বাইন্ড হয়ে আছে কিনা তোমার টার্মিনালে <code>sudo lsof -i:3020</code> বা <code>sudo netstat -tnlp | grep :3020</code> রান করে। যদি একটি প্রসেস এটায় বাইন্ড করে তোমার নিশ্চিত করা উচিত পোর্টটিকে মুক্ত করে <code>PreMiD</code> আবার চালানো।
 
-### PreMiD's AppImage doesn't launch at login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
-1. Make a file named <strong x-id="1">rc.local</strong> in the <code>/etc</code> directory.
-2. Open this file in your favourite editor and paste given code with changing some things:
+### PreMiD - এর AppImage চালু হয় না লগইনের সময়
+আমার যেমনটি বলেছি আমাদের **লিনাক্স রিপোজিটরিতে**, AppImage চালু করা যাবে না লগইনের সময়। তুমি এটিকে ম্যানুয়ালি যোগ করতে পারো অটোস্টার্টে এই ধাপগুলো অনুসরণ করে:
+1. <strong x-id="1">rc.local</strong> নামের একটি ফাইল তৈরি করো <code>/etc</code> ডিরেক্টরিতে।
+2. এই ফাইলটি ওপেন করো তোমার প্রিয় এডিটরে এবং নিচের কোডটি পেস্ট করো কিছু জিনিস পরিবর্তন করে:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# প্রয়োজন /bin/bash হিসেবে রান করার জন্য (যদি তুমি zsh ইত্যাদি ব্যবহার করো তুমি এটিকে চেঞ্জ করতে পারো।)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
+# উদাহরণ: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
 
 exit 0
 ```
-3. Save file and chmod it as executable `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+3. ফাইলটিকে সেভ করো এবং এটিকে chmod করো এক্সিকিউটেবল হিসেবে `sudo chmod a+x /etc/rc.local`.
+4. তোমার PC - টিকে রিস্টার্ট করো এবং PreMiD AppImage চালু হবে লগইনের সময়।
 
 <a name="macos"></a>
 
