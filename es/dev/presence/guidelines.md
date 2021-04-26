@@ -34,11 +34,11 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
 - Las Presences para radios en línea sólo están permitidas si la radio tiene al menos 100 oyentes semanales y 15 simultáneos. Además de esto debe tener alguna características extra aparte de mostrar el título del álbum/canción, etc.
 - No se permite a las Presences ejecutar código JS con su propia función para obtener variables. Si Firefox tiene problemas con la función integrada dentro de la clase `Presence`, tienes permitido implementar tu propia función. En cuyo caso tendrás que indicarlo en la descripción del Pull Request.
 - **No** se permiten presences de baja calidad o que tengan poco contexto (p. ej., mostrar solo un logotipo y texto pero nunca volver a cambiarlo).
-- Presences that use buttons should follow these extra requirements:
-  - Redirects to main page are prohibited.
+- Presences que utilizan botones deben seguir estos requisitos adicionales:
+  - No están permitidas redirecciones a páginas de inicio.
   - No está permitido promover sitios web por medio de ello.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+  - No pueden mostrar información adicional cuando esta no puede ser mostrada otros campos.
+  - Está prohibida la redirección directa a streams de audio o vídeo.
 - Presences para servicios como listas de bots/servidores de Discord deben seguir estos requisitos adicionales:
   - El dominio debe tener al menos **6 meses** de antigüedad.
   - Visitas únicas por día:
