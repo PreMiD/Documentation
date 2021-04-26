@@ -333,36 +333,36 @@ For examples we suggest to look at the code of presences like: 1337x or 9GAG. Fo
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## নির্দিষ্ট ডাটা পাচ্ছ না?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+বেশ কিছু ওয়েবসাইট বর্তমানে [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) ব্যবহার করছে। এসব HTML ট্যাগগুলোর মধ্যে একাধিক উৎস থাকতে পারে যেমন ভিডিও। But they're not relevant every time. কিছু গোপন করা থাকে অথবা শুধু সক্রিয়ভাবে ব্যবহার করা হয় না। চেক করো যদি তুমি তথ্যটিকে এক্সট্রাক্ট করতে পারো যা তোমার প্রয়োজন সেগুলো ছাড়া কোনো অপ্রয়োজনীয় কাজ করার আগে।
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. সেগুলো চেক করো তোমার ব্রাউজারের কনসোলে (নিশ্চিত হও যে তুমি **Elements** ট্যাবে রয়েছ)।
+2. সার্চ করো (<kbd>CTRL</kbd>+<kbd>F</kbd> (উইন্ডোজ) অথবা <kbd>CMD</kbd>+<kbd>F</kbd> (ম্যাক ওএস))।
+3. দাও `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+যদি তুমি দেখো যে তোমার প্রয়োজনীয় ডাটা একটি iFrame - এ রয়েছে, তাহলে তোমাকে ধাপগুলো অনুসরণ করতে হবে:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. একটি `iframe.ts` ফাইল তৈরি করো।
+2. তোমার মেটাডাটা ফাইলে iFrame - কে সেট করো `true` - তে।
+3. তোমার iFrame ফাইল পূরণ করো।
 
 ```typescript
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  পাও তোমার প্রয়োজনীয় সমস্ত ডাটা iFrame থেকে এবং সেগুলোকে ভেরিয়েবলে সেভ করো
+  এবং সেগুলোকে পাঠাও iframe.send ব্যবহার করে
   */
   iframe.send({
-    //sending data
+    //ডাটা পাঠানো
     video: video,
     time: video.duration
   });
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. তোমার Presence ফাইলটিকে iFrame ফাইল থেকে ডাটা নেওয়ার সিস্টেম তৈরি করা।
 
 ```typescript
 presence.on("iFrameData", (data) => {
@@ -371,7 +371,7 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**বিঃদ্রঃ** এটাকে updateData ইভেন্ট এর বাইরে স্থাপন করতে হবে।
 
 ## কম্পাইলিং
 
