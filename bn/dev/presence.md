@@ -300,7 +300,7 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData সবসময় কাজ করছে, এবং সুতরাং তোমার রিফ্রেশ চক্র হিসেবে কাজ করবে This is called several times a second where possible.
+  /*UpdateData সবসময় কাজ করছে, এবং সুতরাং তোমার রিফ্রেশ চক্র হিসেবে কাজ করবে। This is called several times a second where possible.
 
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
