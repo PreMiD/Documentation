@@ -32,7 +32,7 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences die gericht zijn op interne browserpagina's (zoals de Chrome Web Store, `chrome://`- en `about:`-pagina's, etc.) zijn **niet** toegestaan, omdat zij een experimentele flag ingeschakeld moeten hebben, en omdat het mogelijk schade kan toebrengen aan browsers.
 - Presences met ondersteuning alleen voor een enkel doel zullen **niet** toegestaan worden, omdat ze mogelijk gebroken lijken voor andere pagina's (zoals de homepagina), uitzonderingen kunnen worden gemaakt voor beleid en contactpagina's (inhoud die niet vaak gebruikt wordt) of sites waar de andere inhoud niet gerelateerd is. (bijvoorbeeld wikia-pagina's)
 - Presences voor online radio's zijn alleen toegestaan als de radio ten minste 100 wekelijkse luisteraars en 15 gelijktijdige luisteraars heeft. Ook moet het enkele functies hebben en niet alleen album en titel.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Presences mogen geen JS-code uitvoeren met een eigen functie om variabelen op te halen. Als Firefox problemen heeft met de ingebouwde functie binnen de class `Presence`, heb je toestemming om je eigen functie te schrijven zolang je het laat weten in de beschrijving van je Pull Request.
 - Lage kwaliteit presences (of degenen met weinig context) zijn **niet** toegestaan (bijv.: alleen een logo en tekst tonen maar later niks meer wijzigen).
 - Presences met knoppen moeten aan deze extra eisen voldoen:
   - Doorverwijzingen naar de hoofdpagina zijn verboden.
@@ -46,7 +46,7 @@ De algemene regels voor de ontwikkeling van een presence zijn:
     - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
   - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
   - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- De map `dist` en de bestanden `presence.ts`, `iframe.ts` en `metadata.json` moeten worden toegevoegd, dus je resultaat zou overeen moeten komen met het volgende schema:
 
 ```bash
 presence
