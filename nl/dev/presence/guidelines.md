@@ -45,7 +45,7 @@ De algemene regels voor de ontwikkeling van een presence zijn:
     - Voor 6 maanden oude domeinen: **20.000 unieke bezoekers/dag**.
     - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
   - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
-  - The website itself must have a very good quality, design, etc.
+  - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
