@@ -33,18 +33,18 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences met ondersteuning alleen voor een enkel doel zullen **niet** toegestaan worden, omdat ze mogelijk gebroken lijken voor andere pagina's (zoals de homepagina), uitzonderingen kunnen worden gemaakt voor beleid en contactpagina's (inhoud die niet vaak gebruikt wordt) of sites waar de andere inhoud niet gerelateerd is. (bijvoorbeeld wikia-pagina's)
 - Presences voor online radio's zijn alleen toegestaan als de radio ten minste 100 wekelijkse luisteraars en 15 gelijktijdige luisteraars heeft. Ook moet het enkele functies hebben en niet alleen album en titel.
 - Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences that use buttons should follow these extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+- Lage kwaliteit presences (of degenen met weinig context) zijn **niet** toegestaan (bijv.: alleen een logo en tekst tonen maar later niks meer wijzigen).
+- Presences met knoppen moeten aan deze extra eisen voldoen:
+  - Doorverwijzingen naar de hoofdpagina zijn verboden.
+  - Websites promoten via knoppen is verboden.
+  - Ze mogen geen aanvullende informatie die niet meer in andere velden past weergeven.
+  - Direct doorverwijzen naar een audio- of videostream is verboden.
+- Presences voor services zoals bot- en serverlijsten voor Discord moeten aan deze extra eisen voldoen:
+  - Het domein moet minimaal **6 maanden** oud zijn.
+  - Unieke bezoekers per dag:
+    - Voor 6 maanden oude domeinen: **20.000 unieke bezoekers/dag**.
+    - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
+  - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
   - The website itself must have a very good quality, design, etc.
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
