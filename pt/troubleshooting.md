@@ -67,7 +67,7 @@ Windows: Escreve `%appdata%` no explorador de ficheiros e apaga a pasta`PreMiD`.
 ### O McAfee detetou o PreMiD como um vírus (Windows)
 Este é um falso positivo da parte do McAfee e já o reportámos. Por agora, podes excluir o PreMiD da verificação seguindo as seguintes etapas:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Se não te sentires confiante em seguir estes passos, abre um ticket no [#support](https://discord.premid.app/) e um dos nossos agentes de suporte irá ajudar-te! 
 > 
 > {.is-warning}
 
