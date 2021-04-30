@@ -302,9 +302,9 @@ presence.on("UpdateData", async () => {
 
   const presenceData: PresenceData = {
     largeImageKey:
-      "key" /*La clave (nombre del archivo) de la imagen grande de la presence. Estos se suben y se nombran en la sección Rich Presence de tu aplicación, llamada Art Assets*/
+      "key" /*La clave (nombre del archivo) de la imagen grande de la presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageKey:
-      "key" /*La clave (nombre del archivo) de la imagen pequeña de la presence. Estos son cargados y nombrados en la sección Rich Presence de tu aplicación llamados Art Assets*/,
+      "key" /*The key (file name) of the Small Image on the presence. Estos son cargados y nombrados en la sección Rich Presence de tu aplicación llamados Art Assets*/,
     smallImageText: "Un texto", //Este texto será mostrado al pasar el cursor sobre la imagen pequeña
     details: "Viendo Nombre Página", //La sección superior del texto de la presence
     state: "Leyendo sección A", //La sección inferior del texto de la presence

@@ -300,9 +300,9 @@ presence.on("UpdateData", async () => {
 
   const presenceData: PresenceData  = {
     largeImageKey: 
-      "anahtar", /* Servisin kullanıcının profilinde gözükeceği büyük resmin Discord'dan oluşturduğunuz uygulamanın içerisindeki resim dosyasının adı. Buraya yazacağınız resimler, oluşturduğunuz uygulamanın "Rich Presence > Art Assets" */, kısmına yüklenmeli ve yüklendiği ismiyle girilmiş olmalıdır.
-     smallImageKey:
-      "anahtar", /* Servisin kullanıcının profilinde gözükeceği küçük resmin Discord'dan oluşturduğunuz uygulamanın içerisindeki resim dosyasının adı. Buraya yazacağınız resimler, oluşturduğunuz uygulamanın "Rich Presence > Art Assets" kısmına yüklenmeli ve yüklendiği ismiyle girilmiş olmalıdır. */
+      "anahtar", /* Servisin kullanıcının profilinde gözükeceği büyük resmin Discord'dan oluşturduğunuz uygulamanın içerisindeki resim dosyasının adı. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageKey:
+      "key" /*The key (file name) of the Small Image on the presence. Buraya yazacağınız resimler, oluşturduğunuz uygulamanın "Rich Presence > Art Assets" kısmına yüklenmeli ve yüklendiği ismiyle girilmiş olmalıdır. */
     smallImageText: "Falan da filan", // Küçük resmin üzerine gelindiğinde gözükecek yazı.
     details: "Bir sayfaya göz atıyor", // Üst kısımda gözükecek yazı.
     state: "Ana Sayfa",  // Alt kısımda gözükecek yazı.

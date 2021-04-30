@@ -307,9 +307,9 @@ presence.on("UpdateData", async () => {
 
   const presenceData: presenceData = {
     largeImageKey: 
-      "key", /*De sleutel (bestandsnaam) van de Grote Afbeelding op de presence. Deze worden geüpload en genoemd in de Rich presence sectie van jouw applicatie, genaamd Art Assets*/
-    smallImageKey: 
-      "key", /*De sleutel (bestandsnaam) van de Kleine Afbeelding op de presence. Deze worden geüpload en genoemd in de Rich presence sectie van jouw applicatie, genaamd Art Assets*/
+      "key", /*De sleutel (bestandsnaam) van de Grote Afbeelding op de presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageKey:
+      "key" /*The key (file name) of the Small Image on the presence. Deze worden geüpload en genoemd in de Rich presence sectie van jouw applicatie, genaamd Art Assets*/
     smallImageText: "Some hover text", //De tekst die wordt weergeven wanneer je eroverheen wijst
     details: "Browsing Page Name", //Het bovenste gedeelte van je presence
     state: "Reading section A", //Het onderste gedeelte van je presence

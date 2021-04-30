@@ -306,9 +306,9 @@ presence.on("UpdateData", async () => {
 
   const presenceData: PresenceData = {
     largeImageKey:
-      "key" /*Kekunci (nama fail) bagi Imej Besar atau Large Image pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence dalam aplikasi anda, dipanggil Art Assets atau Aset Seni*/,
+      "key" /*Kekunci (nama fail) bagi Imej Besar atau Large Image pada Presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageKey:
-      "key" /*Kekunci (nama fail) gambar besar "Large Image" di Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence aplikasi anda yang dipanggil Art Assets atau Aset Seni*/,
+      "key" /*The key (file name) of the Small Image on the presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence aplikasi anda yang dipanggil Art Assets atau Aset Seni*/,
     smallImageText: "Some hover text", //Tulisan yang akan dipaparkan apabila tetikus dilalukan atas imej kecil
     details: "Browsing Page Name", //Bahagian atas tulisan Presence
     state: "Reading section A", //Bahagian bawah tulisan Presence
