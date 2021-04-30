@@ -32,21 +32,21 @@ dateCreated: 2021-02-26T21:54:41.573Z
 - Presences которые нацелены на внутренние страницы браузера (например, веб-магазин Chrome, ` chrome: // `, ` about: ` и т. д.) ** не разрешены **, поскольку они требуют, чтобы экспериментальный флаг был включен на стороне пользователя и потенциально мог повредить их браузеры.
 - Presences с поддержкой только одного субдомена ** не будет ** разрешено, так как они могут показаться неработающими для других страниц (например, домашняя страница), исключения могут быть сделаны для политики и контактных страниц (контент, который используется не часто) или сайтов, где другой контент не связан. (например, страницы википедии)
 - Presences для онлайн-радио разрешено только в том случае, если у радио есть не менее 100 еженедельных слушателей и 15 одновременно.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences that use buttons should follow these extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Запрещено использование присутствия, для запуска JS кода со своей собственной функцией для получения переменных. Если Firefox имеет проблемы со встроенной функцией внутри класса `Presence`, вам разрешено сделать свою собственную функцию, и вы должны сообщить нам об этом в описании Pull Request.
+- Присутствия c низким качеством (или с небольшим контекстом) **не** допускается (например, только показ логотипа и текста, и без дальнейшего его изменения).
+- Присутствия, использующие кнопки, должны соответствовать этим дополнительным требованиям:
+  - Перенаправление на главную страницу запрещено.
+  - Рекламирование сайтов запрещено.
+  - Они не могут показывать дополнительные данные, пока вы не можете показать их на других полях.
+  - Прямое перенаправление на аудио/видео стрим запрещено.
+- Статус для таких сервисов, как Discord бот или списки серверов, должно соответствовать этим дополнительным требованиям:
+  - Домен должен быть оформлен более **6 месяцев**назад.
+  - Уникальных посетителей в день:
+    - Для доменов, зарегистрированных более 6 месяцев назад: **20,000 уникальных посетителей в день**.
+    - Для доменов, зарегистрированных более 12 месяцев назад: **45,000 уникальных посетителей в день**.
+  - Сайт не должен находиться на дешёвой доменной зоне, таких, как `.xyz`, `.club` и т. п.
+  - Сайт должен иметь очень хорошее качество, дизайн и т. п.
+- Присутствие должно обязательно иметь папку `dist`, а также файлы `presence.ts`, `iframe.ts` и `metadata.json`. В конечном итоге директория должна выглядеть вот так:
 
 ```bash
 presence
