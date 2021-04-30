@@ -306,8 +306,9 @@ presence.on("UpdateData", async () => {
     É recomendável configurar outra função fora desta função de evento que irá alterar os valores das variáveis e fazer o levantamento pesado se você chamar dados de uma API.*/
 
     const presenceData: presenceData = {
-        largeImageKey: "key", /*A key (nome do arquivo) da Imagem Grande sobre a presence. Estes são enviados e nomeados na seção Rich Presence do seu aplicativo, chamado Arte de Arquitetura*/
-        smallImageKey: "chave", /*A chave (nome do arquivo) da imagem grande na presence. Estes são enviados e nomeados na seção Rich Presence de sua aplicação, chamada Art Assets*/,
+        largeImageKey: "key", /*A key (nome do arquivo) da Imagem Grande sobre a presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageKey:
+      "key" /*The key (file name) of the Small Image on the presence. Estes são enviados e nomeados na seção Rich Presence de sua aplicação, chamada Art Assets*/,
     smallImageText: "Some hover text", //O texto que é exibido ao cobrir sobre a pequena imagem
     details: "Browsing Page Name", //A seção superior do texto da presence
     state: "Reading section A", //A seção inferior do texto da presence
