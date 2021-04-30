@@ -297,8 +297,9 @@ setInterval(myOutsideHeavyLiftingFunction, США);
 
   Const presenceData: PresenceData = {
     largeImageKey:
-      "key" /*Ключ (имя файла) Большого изображения на наличии. Они загружаются и называются в разделе Rich Presence вашего приложения, который называется Art Assets.*/
-        smallImageKey: "key", /*Ключ (имя файла) большого изображения о наличии. Эти файлы загружены и названы в разделе Rich Presence вашего приложения, под названием Art Assets*/,
+      "key" /*Ключ (имя файла) Большого изображения на наличии. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageKey:
+      "key" /*The key (file name) of the Small Image on the presence. Эти файлы загружены и названы в разделе Rich Presence вашего приложения, под названием Art Assets*/,
     smallImageText: "Некоторого наведении текста", //Текст, который отображается при наведении курсора на маленькое изображение
     подробности: "Имя страницы просмотра", //Верхняя часть текста присутствия
     состояния: "Чтение секции А", //Нижняя часть текста о присутствии
