@@ -247,7 +247,7 @@ Interactieve instellingen instellen zodat gebruikers de presence kunnen aanpasse
 
 #### Introductie
 
-De `multiLanguage` instelling wordt gebruikt om gebruikers in staat te stellen handmatig de taal te selecteren waarin de presence word weergegeven. Hiervoor moet je strings van onze [API](https://api.premid.app/v2/langFile/presence/en) gebruiken, voor informatie over hoe je strings kunt toevoegen klik [hier](/dev/presence/metadata/adding-new-strings).
+De `multiLanguage` instelling wordt gebruikt om gebruikers in staat te stellen handmatig de taal te selecteren waarin de presence word weergegeven. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Set-up
 
@@ -258,6 +258,8 @@ De `multiLanguage` key kan als volgt worden ingesteld:
 `true`: gebruik dit als je alleen strings van de `general.json` bestand en het `<service>.json` bestand gaat gebruiken van de [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: naam van het bestand exclusief de extensie (.json) in [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (exclusief het `general` bestand, omdat het altijd geladen is). Alleen gemeenschappelijke talen van zowel het `general` en het ingevoerde bestand worden weergegeven. `Array<String>`: als u meer dan één bestand in de [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) gebruikt, kunt u alle waarden in een array opgeven (exclusief het `general` bestand, omdat het altijd geladen is). Alleen gemeenschappelijke talen van alle bestanden worden weergegeven.
 
 #### Nieuwe tekenreeksen toevoegen
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Het project klonen
 
@@ -273,15 +275,15 @@ De `multiLanguage` key kan als volgt worden ingesteld:
 
 ##### De tekenreeksen toevoegen
 
-Elke `string` is een `object` waar van de naam begint met de servicenaam en de zogenaamde stringName met een punt ertussen.
+Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-De stringName is een 1 woord identifier van het bericht.
+The stringName is a 1 word identifier of the message.
 
-Het `object` heeft 2 eigenschappen: `message` en `description`. `message` is de tekst die vertaald moet worden. `description` is een beschrijving van het bericht om onze vertalers te helpen begrijpen wat ze vertalen.
+The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
 
-**Opmerking:** Voeg geen dubbele strings toe. (Dit bevat strings van het `general.json` bestand, maar niet de andere bestanden.)
+**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Visualisatie van het bestand:
+Visualization of the the file:
 
 ```typescript
 {
@@ -296,25 +298,25 @@ Visualisatie van het bestand:
 }
 ```
 
-Nadat je het bestand met strings volledig hebt gemaakt, kunt u een pull-aanvraag maken op de [Localization Repository](https://github.com/PreMiD/Localization), in de beschrijving **moet** u een link naar je pull-aanvraag van de bijgewerkte presence uit de [Presence Repository](https://github.com/PreMiD/Presences) toevoegen die met behulp van deze nieuwe strings is gemaakt.
+After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Standaard keys
-De keys die je niet hebt hoeven instellen zijn automatisch ingesteld op het volgende: `title`: "Language" **Opmerking:** Dit wordt vertaald naar hun standaard taal (browsertaal). `icon`: "fas fa-language" ([Voorbeeld](https://fontawesome.com/icons/language)) `value`: **Word ingesteld naar de taal van de browser in als deze beschikbaar is (100% vertaald), anders Engels.** `values`: **Word ingesteld op de beschikbare talen (talen die het 100% vertaald hebben).**
+The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Opmerking:** Deze zijn op geen enkele manier te wijzigen.
+**Note:** These are in no way changeable.
 
 ### Methodes
 
-Gebruik de volgende methoden om informatie van je instellingen in je presence-bestanden te krijgen:
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Retourneert de waarde van de instelling.
+Returns value of setting.
 ```typescript
 const setting = await presence.getSetting("pdexID"); // Vervang pdexID met de id van de instelling
 console.log(setting); // Dit zal de waarde van de instelling loggen
 ```
 
 #### `hideSetting(String)`
-Verbergt de gegeven instelling.
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); ///vervang pdexID met het id van de instelling
 ```
@@ -327,7 +329,7 @@ presence.showSetting("pdexID"); ///vervang pdexID met het id van de instelling
 
 ## Presence categorieën
 
-Bij het maken van je presence moet je een categorie opgeven waaronder de presence valt. Dit is een gecompileerde lijst van de categorieën die je kunt gebruiken.
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>
