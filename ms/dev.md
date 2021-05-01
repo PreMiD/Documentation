@@ -18,7 +18,7 @@ tags:
 # Klon projek
 1. Buka terminal dan taip `git clone URL`. **Gantikan URL dengan pautan repositori yang anda ingin menyumbang** cth. `git clone https://github.com/PreMiD/PreMiD`.
 2. Pilih folder yang anda suka.
-3. Buka ia dalam penyunting kod anda.
+3. Buka folder tersebut dalam penyunting kod anda.
 
 # Memasang kebergantungan
 > Sila pastikan anda telah pasang [npm](https://www.npmjs.com/) (Node Package Manager) terlebih dahulu. Ia akan dipasang sendiri secara automatiknya jika anda telah memasang [Node](https://nodejs.org/en/). 
