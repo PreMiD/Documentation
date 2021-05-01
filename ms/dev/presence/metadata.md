@@ -247,7 +247,7 @@ Tetapkan tetapan saling tindak supaya pengguna boleh mengubah suai Presence ters
 
 #### Pengenalan
 
-Tetapan `multiLanguage` digunakan untuk membolehkan pengguna memilih bahasa yang mereka ingin gunakan bagi Presence tersebut secara manual. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Tetapan `multiLanguage` digunakan untuk membolehkan pengguna memilih bahasa yang mereka ingin gunakan bagi Presence tersebut secara manual. Ini memerlukan anda menggunakan rentetan dari [API](https://api.premid.app/v2/langFile/presence/en) kami, untuk maklumat mengenai cara menambah rentetan sila klik [sini](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Persediaan
 
@@ -259,7 +259,7 @@ Kekunci `multiLanguage` boleh ditetapkan seperti berikut:
 
 #### Menambah rentetan baharu
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Nota:** Penambahan rentetan tersuai untuk Presence hanya dibenarkan sekiranya ia mempunyai lebih daripada 1000 pengguna.
 
 ##### Klon projek
 
