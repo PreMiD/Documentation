@@ -275,15 +275,15 @@ De `multiLanguage` key kan als volgt worden ingesteld:
 
 ##### De tekenreeksen toevoegen
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Elke `string` is een `object` waar van de naam begint met de servicenaam en de zogenaamde stringName met een punt ertussen.
 
-The stringName is a 1 word identifier of the message.
+stringName is een id van het bericht van 1 woord lang.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+Het `object` heeft 2 eigenschappen: `message` en `description`. `message` is de tekst die vertaald moet worden. `description` is een beschrijving van het bericht zodat onze vertalers begrijpen wat ze vertalen.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Let op:** voeg tekenreeksen maar één keer toe. (dit omvat tekenreeksen van `general.json` maar niet de andere bestanden.)
 
-Visualization of the the file:
+Visualisatie van het bestand:
 
 ```typescript
 {
@@ -301,22 +301,22 @@ Visualization of the the file:
 After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Standaard keys
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+De keys die je niet in hoefde te stellen, worden automatisch: `title`: "Language" **Let op:** dit wordt vertaald naar de standaardtaal van de browser. `icon`: "fas fa-language" ([voorbeeld](https://fontawesome.com/icons/language)) `value`: **wordt ingesteld naar de taal van de browser in als deze beschikbaar is (100% vertaald), anders Engels.** `values`: **wordt ingesteld op de beschikbare talen (talen die het 100% vertaald hebben).**
 
-**Note:** These are in no way changeable.
+**Opmerking:** Deze zijn op geen enkele manier te wijzigen.
 
 ### Methodes
 
-Use the following methods to get settings info in your presence files:
+Gebruik de volgende methoden om informatie van je instellingen in je presence-bestanden te krijgen:
 #### `getSetting(String)`
-Returns value of setting.
+Retourneert de waarde van de instelling.
 ```typescript
 const setting = await presence.getSetting("pdexID"); // Vervang pdexID met de id van de instelling
 console.log(setting); // Dit zal de waarde van de instelling loggen
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Verbergt de gegeven instelling.
 ```typescript
 presence.hideSetting("pdexID"); ///vervang pdexID met het id van de instelling
 ```
@@ -329,7 +329,7 @@ presence.showSetting("pdexID"); ///vervang pdexID met het id van de instelling
 
 ## Presence categorieën
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Bij het maken van je presence moet je een categorie opgeven waaronder de presence valt. Dit is een gecompileerde lijst van de categorieën die je kunt gebruiken.
 
 <table>
   <thead>
