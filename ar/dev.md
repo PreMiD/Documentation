@@ -16,18 +16,17 @@ tags:
 3. قم بتثبيت [TypeScript](https://www.typescriptlang.org/index.html#download-links) (افتح محطة طرفية واكتب `npm install -g typescript`).
 
 # استنساخ المشروع
-1. افتح محطة واكتب `git clone URL `. ** استبدل عنوان URL برابط مستودع التخزين الذي تريد المساهمة فيه </ strong> مثلا ` git clone https://github.com/PreMiD/PreMiD `.</p></li>
-2
-اختيار مجلد من اختيارك.
-3 افتح علي محرر الكود الخاص بك.</ol>
+1. افتح محطة واكتب `git clone URL`. ** استبدل عنوان URL برابط مستودع التخزين الذي تريد المساهمة فيه </> مثلا `git clone https://github.com/PreMiD/PreMiD`.
+2. 2 اختيار مجلد من اختيارك.
+3. Open it in your code editor.
 
 # تثبيت الإعتمادات
 > تأكد من تثبيت [ npm ](https://www.npmjs.com/) (Node Package Manager) أولاً. يتم تثبيته تلقائيًا إذا كنت قد قمت بتثبيت [ Node ](https://nodejs.org/en/). 
 > 
 > {.is-warning}
 
-- افتح محطة في مستودعك واكتب ` npm i `.
-- لتحديث التبعيات اكتب ` update npm `.
+- افتح محطة في مستودعك واكتب `npm i`.
+- لتحديث التبعيات اكتب `update npm`.
 
 > كن على دراية بأن تحديث التبعيات يمكن أن يكسر كثيرًا أم لا - يجب إجراء اختبار! 
 > 
