@@ -24,7 +24,7 @@ PreMiD is quick and easy to install. You should be up and running in no time.
 - Follow the quick and simple [installation guide](/install).
 - [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
 
-# Programadores
+# Developers
 
 [Getting Started](/dev) for PreMiD development is your first step before coding some things.
 
