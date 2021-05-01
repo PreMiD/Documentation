@@ -27,7 +27,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 
 ## ইন্সটলেশন
 
-1. ইন্সটল করো [Git](https://git-scm.com/).
+1. Install [Git](https://git-scm.com/).
 2. ইন্সটল করো [Node](https://nodejs.org/en/) (সাথে আসে [npm](https://www.npmjs.com/)).
 3. ইন্সটল করো [TypeScript](https://www.typescriptlang.org/index.html#download-links) (একটি টার্মিনাল ওপেন করো এবং টাইপ করো `npm install -g typescript`).
 
@@ -141,7 +141,7 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
   <thead>
     <tr>
       <th style="text-align:left">ভেরিয়েবল</th>
-      <th style="text-align:left">বিবরণ</th>
+      <th style="text-align:left">ডিসক্রিপশন</th>
       <th style="text-align:left">ধরন</th>
       <th style="text-align:left">অপশনাল</th>
     </tr>
