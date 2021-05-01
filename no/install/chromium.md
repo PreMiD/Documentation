@@ -6,11 +6,11 @@ date: 2020-04-22T20:13:07.598Z
 tags:
 ---
 
-Installasjonen av denne extensionen er veldig viktig på fordi applikasjonen ikke kan gjøre noe helt selv.
+Installasjonen av denne utvidelsen er veldig viktig fordi applikasjonen ikke kan gjøre noe helt selv.
 
 # Installer
 ### Chrome, Edge, osv.
-1. Gå til våre nedlastnings side ved å [Klikke her](https://premid.app/downloads).
+1. Gå til vår nedlastnings side ved å [klikke her](https://premid.app/downloads).
 2. Velg **Chromium**.
 3. Klikk på **Legg til i Chrome**.
 
@@ -18,7 +18,7 @@ Installasjonen av denne extensionen er veldig viktig på fordi applikasjonen ikk
 1. Legg til **[Installer Chrome Extensjoner](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Legg til [vår utvidelse](https://premid.app/downloads).
 
-> Do not forget to [add the **application**](/install). 
+> Ikke glem å [legge til** applikasjonen**](/install). 
 > 
 > {.is-warning}
 
