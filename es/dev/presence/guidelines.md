@@ -17,17 +17,17 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Directrices
 
-Al publicar Presences en [nuestro repositorio de GitHub](https://github.com/PreMiD/Presences), necesitamos que sigas un conjunto de reglas. Para algunos, estás reglas pueden parecer estrictas. Sin embargo, la implementación de estos conjuntos de reglas nos impedirá a nosotros y a los usuarios encontrarse con cualquier problema.
+Al publicar Presences en [nuestro repositorio de GitHub](https://github.com/PreMiD/Presences), necesitamos que sigas un conjunto de reglas. Para algunos, estás reglas pueden parecer estrictas. Sin embargo, estas reglas nos evitarán encontrarnos a nosotros y a los usuarios con algún tipo de problema.
 
 # Creación
 
 Las reglas generales del desarrollo de una Presence son las siguientes:
 
-- Las Presences **deben** estar relacionadas con el sitio web que has elegido.
-- Las Presences **no pueden** ser para sitios ilegales. (Por ejemplo: Stressors, marketing de drogas, pornografía infantil, etc.)
+- Las Presencias **deben** estar relacionadas con el sitio web que has elegido.
+- Las Presencias **no pueden** ser para sitios ilegales. (Por ejemplo: Stressors, marketing de drogas, pornografía infantil, etc.)
 - La estructura de los archivos debe ser limpia y gestionada, no incluyas archivos que no estén especificados. (Por ejemplo: Vscode y capetas git, imágenes y archivos de texto, etc.)
 - Necesitas tener una estructura de archivo adecuada, los borradores **no** están permitidos.
-- Presences para sitios web con TLDs (dominios de nivel superior) `.onion ` o sitios web con dominios/hosts gratuitos (por ejemplo, `.TK ` [todos los dominios Freenom gratuitos], `.RF `, `GD`, etc.) ** no ** están permitidos, se pueden hacer excepciones si se presentan pruebas de que se ha pagado por el dominio.
+- Presences para sitios web con TLDs (dominios de nivel superior) `.onion` o sitios web con dominios/hosts gratuitos (por ejemplo, `.TK` [todos los dominios Freenom gratuitos], `.RF`, `GD`, etc.) ** no ** están permitidos, se pueden hacer excepciones si se presentan pruebas de que se ha pagado por el dominio.
 - El dominio de la presence debe tener al menos una antigüedad de 2 meses.
 - Presences que tienen como destino páginas internas del navegador (como Chrome Web Store, `chrome://`, páginas `about:`, etc.) **no** están permitidas ya que requieren que se habilite una configuración experimental en el lado del usuario y podría causar daños al navegador.
 - Las Presences con soporte para un solo subdominio **no** se permitirán, ya que pueden parecer rotas para otras páginas (como la página de inicio), se pueden hacer excepciones para la política y las paginas de contacto (contenido que no se usa con frecuencia) o sitios donde el otro contenido no este relacionado. (por ejemplo, paginas de wikia)
@@ -155,13 +155,13 @@ Una lista de los campos y sus reglas están listadas abajo:
 
 ### **`service`**
 
-- El nombre del servicio **debe** ser el nombre del directorio de la presence. Por ejemplo, si la presence esta ubicada en `/websites/Y/YouTube/`, el nombre del servicio debe ser `YouTube`.
+- El nombre del servicio **debe** ser el nombre de la ubicación de la presencia. Por ejemplo, si la presence esta ubicada en `/websites/Y/YouTube/`, el nombre del servicio debe ser `YouTube`.
 - **No puedes** usar la url como el nombre del servicio al menos que el sitio web use la url como su nombre oficial. Si el nombre no es descriptivo y puede ser considerado impreciso, usar la url es **requerido**. (Por ejemplo: `YouTube` es permitido porque este es el nombre oficial y es descriptivo, mientras que `youtube.com` no lo es. `Top` es un nombre no descriptivo, así que usar la url `top.gg` es **requerido**.)
 - Si el servicio contiene algunas reglas explicitas en su nombre, usted debe seguirlas.
 
 ### **`*altnames`**
 
-- Usa esto **solo** en el caso de que el sitio web aparezca bajo distintos nombres (e.j. Pokémon ó 포켓몬스터) para buscar mas fácil la presence sin usar caracteres especiales (e.j. Pokémon ó Pokemon). Versiones *acortadas* del servicio aparecerán como `etiquetas`.
+- Usa esto **solo** en el caso de que el sitio web aparezca bajo distintos nombres (e.j. Versiones *acortadas* del servicio aparecerán como `etiquetas`.
 
 ### **`description`**
 
@@ -225,13 +225,13 @@ Una lista de los campos y sus reglas están listadas abajo:
 - Si estás usando la opción `multiLanguage` deberías saber:
   - Un valor de tipo **boolean** habilitará sólo strings de [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) del repositorio de Localization o del archivo de la presence (p.e. cuando el nombre de la presence es YouTube, la extensión obtendrá también valores de `youtube.json`)
   - Un valor de tipo **string** (p.e `youtube`) especifica el nombre del archivo del cual se obtendrán los strings.
-  - Un valor de tipo **Array<String>** (p.e. `["youtube", "discord"`) que especifica los nombres de los archivos de los cuales obtener los strings.
+  - Un valor de tipo **Array<String>** (p.e. `["youtube", "discord"`) especifica los nombres de los archivos de los cuales obtener los strings.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
 > El código que escribas **debe** estar _bien escrito_ y **debe** ser _entendible_ y todas las palabras deben ser gramaticalmente correctas (errores gramaticales de páginas webs pueden ser ignoradas).
 
-> Cada presence sigue un estricto conjunto de reglas de linting que serán comprobadas durante el proceso de revisión. Un par de recomendaciones pueden ser vistas a continuación. - [Recomendaciones de plugins de TypeScript para verificaciones estrictas, "Strict Type Checking"](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [Recomendaciones de ESlint](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+> Cada presence sigue un estricto conjunto de reglas de linting que serán comprobadas durante el proceso de revisión. Un par de recomendaciones pueden ser vistas a continuación. - [Recomendaciones de plugins de TypeScript para verificaciones "Strict Type Checking"](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules) - [recomendaciones de ESlint](https://eslint.org/docs/rules) [Recomendaciones de ESlint](https://eslint.org/docs/rules). [Recomendaciones de ESlint](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
 
 Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `presence.ts`:
 
@@ -265,7 +265,7 @@ En algunas situaciones, las presences pueden comportarse inesperadamente o podr�
 - Si haces modificaciones a una presence que afecte a al menos a **un cuarto** del código base de la misma, tienes permitido añadirte como colaborador. Contacta a un verificador para más información sobre este tema.
 - Cualquiera puede proporcionar revisiones para corregir errores; sin embargo, intenta **no** realizar cambios que **no** sean necesarios. Las modificaciones válidas incluyen correcciones generales (código y tipos), adiciones (descripciones y etiquetas), archivos que faltan, etc. **No** cambies imágenes si no están desactualizadas y están dentro de las especificaciones.
 
-# Verificación
+# Modificación
 
 > **Todo** código contribuido será bajo la licencia `Mozilla Public License 2.0`.
 
@@ -284,7 +284,7 @@ El proceso más importante de desarrollo de una presence es publicarla en la tie
   <br />
 </div>
 
-## `Restricciones`
+## `Revisiones`
 
 No te será permitido crear presences en en caso de ofensas repetitivas como romper las indicaciones, spamming de pull requests, amenazas o comportamiento inapropiado.
 
@@ -320,12 +320,12 @@ Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas e
 
 Después de cumplir con todas las directrices, revisiones y comprobaciones adecuadas, su presence será añadida.
 
-# Sugerencias
-Si tienes alguna sugerencia sobre nuestras directrices, ¡contáctanos desde [el servidor de Discord de PreMiD](https://discord.premid.app) y las revisaremos!
+# Verificación
+La `revisión 2` de las indicaciones fueron escritas y contribuidas por los siguientes individuos:
 
 # Contribuidores
 
-La `revisión 3` de la guía ha sido escrita y contribuida por:
+La `revisión 1` fue mantenida por los siguientes individuos:
 
 <div>
 <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>

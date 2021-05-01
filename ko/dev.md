@@ -12,7 +12,7 @@ tags:
 
 # Installing the requirements
 1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+2. [Node](https://nodejs.org/en/)  ( [npm](https://www.npmjs.com/) 와 함께 ) 설치하기
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
 
 # Cloning the project

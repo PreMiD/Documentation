@@ -10,7 +10,7 @@ dateCreated: 2021-02-21T21:13:14.449Z
 
 # Presence-Klasse
 
-## Einführung
+## Introduction
 
 Die Klasse `Presence` ist sehr nützlich, da sie grundlegende Methoden zum Erstellen einer Presence enthält.
 

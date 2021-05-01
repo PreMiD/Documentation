@@ -11,7 +11,7 @@ tags:
 Installasjonen av denne extensionen er veldig viktig grunnet applikasjonen ikke kan gjøre noe selv uten det.
 
 # Installer
-1. Gå til vår nedlastnings side ved å [klikke her](https://premid.app/downloads).
+1. Gå til våre nedlastnings side ved å [Klikke her](https://premid.app/downloads).
 2. Velg **Windows**.
 3. Åpne installasjonsprogrammet.
 4. **Windows SmartScreen** vil vises dersom du installerer PreMiD for første gang. Klikk på **Mer info** og så velg **Kjør allikevel**. > Dette er fordi vi ikke har et signeringssertifikat (CSC). [Støtt oss](https://www.patreon.com/Timeraa) for å finansiere det.{.is-info}

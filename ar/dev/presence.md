@@ -29,13 +29,13 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 1. قم بتثبيت [ Git ](https://git-scm.com/).
 2. تثبيت [ Node ](https://nodejs.org/en/) (يأتي مع [ npm ](https://www.npmjs.com/)).
-3. قم بتثبيت [ TypeScript ](https://www.typescriptlang.org/index.html#download-links) (افتح محطة و ` npm install -g typescript `).
+3. قم بتثبيت [ TypeScript ](https://www.typescriptlang.org/index.html#download-links) (افتح محطة و `npm install -g typescript`).
 
 ## استنساخ المشروع
 
 1. قم بفتح لوحة التحكم و اكتب `git clone https://github.com/PreMiD/Presences`.
-2. قم باختيار مجلد من اختيارك.
-3. افتح على محرر الكود الخاص بك.
+2. اختيار مجلد من اختيارك.
+3. Open it in your code editor.
 
 ## إنشاء المجلدات والملفات
 
@@ -209,7 +209,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">نسخة من حضورك.</td>
+      <td style="text-align:left">نسخة الـ Presence الخاصك بك.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
@@ -264,8 +264,8 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">مجموعة من الإعدادات التي يمكن للمستخدم تغييرها.<br>
-      اقرأ المزيد حول إعدادات Presence <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">هنا</a>.</td>
+      <td style="text-align:left">An array of settings the user can change.<br>
+      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>نعم</code></td>
     </tr>

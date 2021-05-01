@@ -17,7 +17,7 @@ Plėtinio įdiegimas yra labai svarbus, nes programa pati nieko negali padaryti.
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Do not forget to [add the **application**](/install). 
+> Nepamirškite [ pridėti ** aplikacijos **](/install). 
 > 
 > {.is-warning}
 

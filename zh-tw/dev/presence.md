@@ -143,7 +143,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">說明</th>
       <th style="text-align:left">種類</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">選擇性</th>
     </tr>
   </thead>
   <tbody>

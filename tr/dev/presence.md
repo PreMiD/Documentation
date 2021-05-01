@@ -29,7 +29,7 @@ Tüm servisler [TypeScript](https://www.typescriptlang.org/) ile kodlanır. [Typ
 
 1. [Git](https://git-scm.com/)'i yükleyin.
 2. [Node](https://nodejs.org/en/)'u yükleyin.
-3. [TypeScript](https://www.typescriptlang.org/index.html#download-links)'i yüklemek için konsolunuzu açın ve `npm install -g typescript` yazın.
+3. Konsolunuzu açın ve [TypeScript](https://www.typescriptlang.org/index.html#download-links)'i yüklemek için `npm install -g typescript` yazın.
 
 ## Projeyi klonlama
 
@@ -144,19 +144,19 @@ Yukarıdaki kodu kopyalayın ve `metadata.json` dosyanıza yapıştırın. Bunda
       <th style="text-align:left">Değişken</th>
       <th style="text-align:left">Açıklama</th>
       <th style="text-align:left">Tür</th>
-      <th style="text-align:left">İsteğe bağlı</th>
+      <th style="text-align:left">Opsiyonel</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Servis geliştiricisinin <code>isim</code> ve <code>id</code> bilgileri bulunan bir Obje içermelidir. <code>name</code> Discord kullanıcı adınızın etiketiniz (#0000) olmayan halidir. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
+      <td style="text-align:left">Servis geliştiricisinin <code>isim</code> ve <code>id</code> bilgileri bulunan bir Obje içermelidir. <code>name</code> etiketinizin (#0000) olmadığı Discord kullanıcı adınızdır. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Hayır</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Servis geliştiricisinin <code>name</code> ve <code>id</code> bilgileri bulunan bir Object içermelidir. <code>name</code> Discord kullanıcı adınızın etiketiniz (#0000) olmayan halidir. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
+      <td style="text-align:left">Servis geliştiricisinin <code>name</code> ve <code>id</code> bilgileri bulunan bir Object içermelidir. <code>name</code> etiketinizin (#0000) olmadığı Discord kullanıcı adınızdır. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Evet</code></td>
     </tr>
@@ -168,7 +168,7 @@ Yukarıdaki kodu kopyalayın ve `metadata.json` dosyanıza yapıştırın. Bunda
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Servisi ararken alternatif isimlerle aranabilmesi için kullanabileceğiniz alan. Farklı dillerde farklı şekilde yazılan (örneğin Pokémon ve 포켓몬스터) servisler ve isminde özel karakter içeren servisler için kullanılabilir.</td>
+      <td style="text-align:left">Servisi ararken alternatif isimlerle aranabilmesi için kullanabileceğiniz alan. Farklı dillerde veya farklı şekilde yazılan (örneğin Pokémon ve 포켓몬스터) servisler ve isminde özel karakter içeren servisler için kullanılabilir.</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Evet</code></td>
     </tr>

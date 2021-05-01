@@ -8,7 +8,7 @@ tags:
 
 > Antes que nada, verifica que tu equipo cumple todos los [requisitos](/insatll/requirements).{.is-info}
 
-La instalación de la aplicación es muy importante, ya que la extensión no puede hacer nada por sí misma.
+La instalación de la aplicación es muy importante, ya que la extensión no puede hacer nada por sí sola.
 
 # Instalar
 1. Ve a nuestra página de descargas [pulsando aquí](https://premid.app/downloads).

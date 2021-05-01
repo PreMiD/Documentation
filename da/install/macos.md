@@ -6,14 +6,14 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Før du går videre, skal du sørge for at dit system opfylder alle [kravene](/install/requirements) 
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Installationen af applikationen er meget vigtig, da udvidelsen ikke kan gøre noget af sig selv.
 
 # Installér
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. Gå til vores download-side ved at [klikke her](https://premid.app/downloads).
 2. Choose **OS X**.
 3. Extract the archive if necessary.
 4. Open the installer.
@@ -22,7 +22,7 @@ The installation of the application is very important as the extension can not d
 6. Choose open when prompted.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
-The application will start automatically. Check for the symbol in your menu bar.
+Applikationen vil starte automatisk. Check for the symbol in your menu bar.
 
 > Do not forget to [add the **extension**](/install). 
 > 

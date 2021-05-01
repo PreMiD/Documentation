@@ -6,10 +6,10 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-The installation of the extension is very important as the application can not do anything by itself.
+Изтеглянето на разширението е много важно, като приложението не може да прави нищо само по себе си.
 
 # Инсталирай
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. Отиди на страницата ни с изтегляния като [цъкнеш тук](https://premid.app/downloads).
 2. Choose **Firefox**.
 3. Search for `about:addons`.
 4. Click on the small gear icon in the upper right corner.

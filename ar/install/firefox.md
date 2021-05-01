@@ -9,7 +9,7 @@ tags:
 The installation of the extension is very important as the application can not do anything by itself.
 
 # تحميل
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. إذهب إلى صفحة التحميلات عن طريق [النقر هنا](https://premid.app/downloads).
 2. اختر **فايرفوكس**.
 3. ابحث عن `about:addons`.
 4. Click on the small gear icon in the upper right corner.

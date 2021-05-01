@@ -22,7 +22,7 @@ tags:
 6. اختر الفتح عند الطلب.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
-سيبدأ التطبيق تلقائياً. تحقق من الرمز في شريط القوائم الخاص بك.
+The application will start automatically. تحقق من الرمز في شريط القوائم الخاص بك.
 
 > Do not forget to [add the **extension**](/install). 
 > 

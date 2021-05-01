@@ -272,7 +272,7 @@ Ten interfejs posiada następujące zmienne, wszystkie są opcjonalne.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Opis</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Typ</th>
     </tr>
   </thead>
   <tbody>

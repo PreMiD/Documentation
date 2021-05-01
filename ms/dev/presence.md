@@ -35,7 +35,7 @@ Kesemua Presence dikodkan dalam [TypeScript](https://www.typescriptlang.org/). [
 
 1. Buka terminal dan taip `git clone https://github.com/PreMiD/Presences`.
 2. Pilih folder yang anda suka.
-3. Buka folder tersebut dalam penyunting kod anda.
+3. Buka ia dalam penyunting kod anda.
 
 ## Cipta folder dan fail
 
@@ -149,15 +149,15 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Harus mengandungi objek dengan nilai nama <code>name</code> dan id <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). Nombor <code>id</code> pengguna boleh disalin dari Discord dengan
-        membolehkan mod pembangun dan mengklik-kanan profil anda.</td>
+      <td style="text-align:left">Harus mengandungi objek Object dengan nilai nama <code>name</code> dan ID <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). <code>Id</code> pengguna boleh disalin dari Discord dengan membolehkan
+        mod pembangun dan mengklik-kanan profil anda.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Harus mengandungi objek dengan nilai nama <code>name</code> dan nombor id <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). Nombor <code>id</code> pengguna boleh disalin dari Discord dengan
-        membolehkan mod pembangun dan mengklik-kanan profil anda.</td>
+      <td style="text-align:left">Harus mengandungi objek dengan nilai nama <code>name</code> dan nombor id <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). <code>Id</code> pengguna boleh disalin dari Discord dengan membolehkan
+        mod pembangun dan mengklik-kanan profil anda.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>
@@ -178,7 +178,7 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Keterangan kecil mengenai Presence, anda boleh gunakan keterangan perkhidmatan sekiranya anda tidak tahu apa untuk ditulis. Keterangan anda mesti mempunyai nilai pasangan kekunci yang menyatakan bahasa terlibat, berserta keterangan dalam bahasa tersebut. Cipta keterangan dengan bahasa <i>yang anda tahu</i>, penterjemah kami akan buat perubahan ke fail metadata anda.</td>
+      <td style="text-align:left">Keterangan kecil mengenai Presence, anda boleh gunakan keterangan perkhidmatan sekiranya anda tidak tahu apa untuk ditulis. Keterangan anda mesti mempunyai nilai pasangan kekunci yang menyatakan bahasa terlibat, beserta keterangan dalam bahasa tersebut. Cipta keterangan dengan bahasa <i>yang anda tahu</i>, penterjemah kami akan buat perubahan ke fail metadata anda.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
@@ -227,7 +227,7 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">Nilai perenambelasan <code>#HEX</code>. Kami menggalakkan anda menggunakan warna utama
+      <td style="text-align:left">Nilai <code>#HEX</code>. Kami menggalakkan anda menggunakan warna utama
         dari perkhidmatan yang Presence anda sokong.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tidak</code></td>

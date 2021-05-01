@@ -29,7 +29,7 @@ Namísto hledání tlačítka obnovení můžeš stisknout <kbd>CTRL+R</kbd>/<kb
 ### Používáš desktopovou verzi aplikace Discord?
 PreMiD **nefunguje** při používání prohlížečové verze Discordu, musíš si stáhnout desktopovou aplikaci [zde](https://discord.com/download).
 
-### Ujisti se, že jsi v nastavení Discordu povolil herní aktivitu
+### Ujistěte se, že jste povolili Discord herní aktivitu v nastavení
 **Uživatelské Nastavení** > **Herní Aktivita** ![gameactivity_edited.png](/gameactivity_edited.png)
 
 ### Ujisti se, že Discord není spuštěn jako správce

@@ -17,7 +17,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Garis Panduan
 
-Apabila menerbitkan Presence ke [repositori Presence](https://github.com/PreMiD/Presences/), kami memerlukan anda mengikut beberapa panduan yang ditetapkan. Bagi sesetengah orang, peraturan ketat ini nampak agak kejam. Namun, pelaksanaan set peraturan ini akan bantu kami dan pengguna kami untuk mengelakkan terjadinya isu.
+Apabila menerbitkan Presence ke [repositori Presence](https://github.com/PreMiD/Presences/), kami memerlukan anda mengikut beberapa panduan yang ditetapkan. Bagi sesetengah orang, peraturan ketat ini nampak agak kejam. Namun, pelaksanaan set peraturan ini akan bantu kami dan pengguna untuk mengelakkan terjadinya isu.
 
 # Penciptaan
 
@@ -36,9 +36,9 @@ Peraturan am pembangunan Presence adalah seperti berikut:
 - Presence kualiti rendah (atau yang mana dengan konteks kecil) adalah **tidak** dibenarkan (sbg. cth., hanya menunjukkan logo dan tulisan tetapi tidak mengubahnya lagi).
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - Pelawat unik setiap hari:
+    - Untuk domain berusia 6 bulan: **20,000 pelawat unik sehari**.
+    - Untuk domain berusia 12+ bulan: **45,000 pelawat unik sehari**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
 - Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).

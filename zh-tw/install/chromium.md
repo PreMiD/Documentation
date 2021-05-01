@@ -10,7 +10,7 @@ tags:
 
 # 安裝
 ### Chrome, Edge 等以Chromium為基礎的瀏覽器
-1. [點此](https://premid.app/downloads)前往我們的下載頁面
+1. [點此](https://premid.app/downloads) 前往我們的下載頁面
 2. 選擇 **Chromium**
 3. 點擊 **新增到Chrome**
 

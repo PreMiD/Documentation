@@ -270,9 +270,9 @@ This interface has following variables, all of them are optional.
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">变量</th>
       <th style="text-align:left">描述</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">类型</th>
     </tr>
   </thead>
   <tbody>

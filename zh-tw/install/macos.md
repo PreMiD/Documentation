@@ -6,14 +6,14 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> 在進一步的動作前，請確認您的系統都有達到[需求](/install/requirements)。 
 > 
 > {.is-info}
 
 安裝本地程式非常重要，因為單靠擴充功能是無法做任何事的。
 
 # 安裝
-1. [點此](https://premid.app/downloads)前往我們的下載頁面
+1. [點此](https://premid.app/downloads) 前往我們的下載頁面
 2. Choose **OS X**.
 3. Extract the archive if necessary.
 4. Open the installer.
@@ -22,7 +22,7 @@ tags:
 6. Choose open when prompted.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
-The application will start automatically. Check for the symbol in your menu bar.
+程式將會自動執行 Check for the symbol in your menu bar.
 
 > Do not forget to [add the **extension**](/install). 
 > 

@@ -10,7 +10,7 @@ tags:
 > 
 > {.is-info}
 
-La instalación de la aplicación es muy importante, ya que la extensión no puede hacer nada por sí sola.
+La instalación de la aplicación es muy importante, ya que la extensión no puede hacer nada por sí misma.
 
 # Instalar
 1. Ve a nuestra página de descargas [pulsando aquí](https://premid.app/downloads).
@@ -22,7 +22,7 @@ La instalación de la aplicación es muy importante, ya que la extensión no pue
 6. Elige abrir cuando se solicite.
 7. Concede acceso a conexiones a través del **Cortafuegos** y controla los **Eventos del Sistema** cuando se le solicite.
 
-La aplicación se iniciará automáticamente. Comprueba el símbolo en la barra de tareas.
+The application will start automatically. Comprueba el símbolo en la barra de tareas.
 
 > No olvides [añadir la **extensión**](/install). 
 > 

@@ -27,15 +27,15 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 ## 설치하기
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+1. [Git](https://git-scm.com/) 설치하기
+2. [Node](https://nodejs.org/en/) 설치하기 ([npm](https://www.npmjs.com/)에 포함되어 있음)
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
 ## Presence 복사하기
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
 2. Choose a folder of your choice.
-3. Open it in your code editor.
+3. 이것을 당신의 코드 편집기로 실행하세요.
 
 ## Creating folders and files
 
@@ -143,7 +143,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       <th style="text-align:left">변수</th>
       <th style="text-align:left">설명</th>
       <th style="text-align:left">유형</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">선택사항</th>
     </tr>
   </thead>
   <tbody>

@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Avant d'aller plus loin, assurez-vous que votre système répond à toutes les [exigences](/install/requirements). 
+> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
 > 
 > {.is-info}
 
@@ -19,7 +19,7 @@ dateCreated: 2020-06-11T18:03:51.119Z
 **Choisissez votre système d'exploitation :**
 - [Windows *7 ou supérieur*](/install/windows)
 - [macOS *10.11 ou supérieur*](/install/macos)
-- [*Linux v2.x ou supérieur*](/install/linux)
+- [Linux v2.x ou supérieur](/install/linux)
 {.links-list}
 
 **Choisissez votre navigateur :**

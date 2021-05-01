@@ -17,7 +17,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Guidelines
 
-Ao publicar Presences no [Repositório de Presences](https://github.com/PreMiD/Presences/), és obrigado a seguir um conjunto de diretrizes. To some, these strict rules may seem harsh. However, the implementation of these rulesets will keep us and the users from running into any issues.
+Ao publicar Presences no [Repositório de Presences](https://github.com/PreMiD/Presences/), és obrigado a seguir um conjunto de diretrizes. To some, these strict rules may seem harsh. No entanto, a implementação destas regras impedir-nos-á a nós e aos utilizadores de se decompormos com quaisquer problemas.
 
 # Creation
 
@@ -266,7 +266,7 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 
 # Verification
 
-> **Todo o** código que contribua para a loja será licenciado sob a `Mozilla Public License 2.0`.
+> **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`.
 
 > If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile.
 

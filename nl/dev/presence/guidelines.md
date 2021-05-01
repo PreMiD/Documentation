@@ -37,11 +37,11 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences voor services zoals bot- en serverlijsten voor Discord moeten aan deze extra eisen voldoen:
   - Het domein moet minimaal **6 maanden** oud zijn.
   - Unieke bezoekers per dag:
-    - Voor domeinen van 6 maanden oud: **20.000 unieke bezoekers/dag**.
-    - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
+    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 12+ month old domains: **45,000 unique visitors/day**.
   - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
   - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. Als je presence eigen strings nodig heeft, dan moet je geen `multiLanguage` gebruiken totdat de presence 1000 gebruikers heeft. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. Als je presence eigen strings nodig heeft, dan moet je geen `multiLanguage` gebruiken totdat de presence 1000 gebruikers heeft. Je kunt [hier](https://docs.premid.app/dev/presence/class#getstringsobject) een voorbeeld vinden.
 - De map `dist` en de bestanden `presence.ts`, `iframe.ts` en `metadata.json` moeten worden toegevoegd, dus je resultaat zou overeen moeten komen met het volgende schema:
 
 ```bash
@@ -266,7 +266,7 @@ In sommige situaties kunnen presences onverwacht gedrag vertonen of enkele klein
 
 # Verificatie
 
-> **Alle** bijgedragen code in de bibliotheek wordt gelicenseerd onder de `Mozilla Public License 2.0`.
+> **Alle** code die aan de winkel is bijgedragen zal een licentie krijgen onder de `Mozilla Public License 2.0`.
 
 > Als je contact wilt opnemen met iemand, gebruik dan onze officiële Discord server. Alle verificateurs hebben de rol `Controleur` op hun profiel.
 
@@ -293,7 +293,7 @@ In dit scenario zullen de volgende wijzigingen plaatsvinden:
 - Al je issues en pull-aanvragen (presence-toevoegingen en -wijzigingen, enz.) die zijn gecreëerd na het verbod zullen worden gesloten.
 - Tickets die onder je naam zijn gemaakt met betrekking tot presence-ontwikkeling worden verwijderd.
 
-## `Controle`
+## `Beoordelen`
 
 Enkele dingen die je moet weten voordat je een pull request opent:
 
@@ -313,7 +313,7 @@ Op dit moment wordt de presence in drie afzonderlijke fasen gecontroleerd. Al de
 - `DeepScan` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
 - `Schema Validation` zal je `metadata.json` bestand scannen op fouten (bijvoorbeeld ontbrekende velden, ongeldige waarde types, etc.). Als je ooit nieuwe problemen ziet, ben je ook **verplicht** om die op te lossen. Het toevoegen van een schemaveld aan je `metadata.json` bestand zal je tekstverwerker (indien ondersteund) toestaan om deze fouten te tonen tijdens de ontwikkeling van je presence.
 
-## `Aanvullende regels`
+## `Additional Rules`
 
 - Zorg er **altijd** voor dat je presence in de meest geschikte map begint, als de naam begint met een Latijnse letter dan moet het onder de alfabetische overeenkomst vallen (bijv. `D/dアニメストア` of `G/Google`). Alle andere Unicode/niet-Latijnse tekens **moeten** onder de map `#` staan (bijvoorbeeld `#/巴哈姆特`) en nummers onder de `0-9` map (bijvoorbeeld `0-9/4anime`).
 

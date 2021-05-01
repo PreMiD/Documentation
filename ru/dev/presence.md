@@ -27,7 +27,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ## Установка
 
-1. Установить [Иди](https://git-scm.com/).
+1. Загружать [Git](https://git-scm.com/).
 2. Установить [узел](https://nodejs.org/en/) (поставляется с [npm](https://www.npmjs.com/)).
 3. Установка [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите `npm install -g typescript`).
 
@@ -35,7 +35,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 1. Откройте терминал и введите `git clone https://github.com/PreMiD/Presences`.
 2. Выберите папку по вашему выбору.
-3. Откройте его в редакторе кода.
+3. Open it in your code editor.
 
 ## Создание папок и файлов
 
@@ -206,7 +206,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Ссылка на сервис&apos;с логотипом.</td>
+      <td style="text-align:left">Link to service&apos;s logotype.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Нет</code></td>
     </tr>
@@ -218,8 +218,8 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> значение. Рекомендуем использовать основной цвет услуги.
-        что ваше присутствие поддерживает.</td>
+      <td style="text-align:left"><code>#HEX</code> значение. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Нет</code></td>
     </tr>

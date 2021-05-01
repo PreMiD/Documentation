@@ -111,7 +111,7 @@ Dat voorbeeld lijkt erg vreemd, toch? Maak je geen zorgen, het is niet zo moeili
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Beschrijving van de service <b>NIET</b> de presence. Je beschrijving moet key waarden bevatten die de taal en de beschrijving in die specifieke taal aangeven. Maak beschrijvingen met de talen <i>die u kent</i>, onze vertalers zullen wijzigingen aanbrengen in je metadata bestand. Bekijk de categorie voor de presence talen voor een lijst. </td>
+      <td style="text-align:left">Beschrijving van de service <b>NIET</b> de presence. Je beschrijving moet key waarden bevatten die de taal en de beschrijving in die specifieke taal aangeven. Maak beschrijvingen met de talen <i>die je kent</i>, onze vertalers zullen wijzigingen aanbrengen in je metadata bestand. Bekijk de categorie voor de presence talen voor een lijst. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nee</code></td>
     </tr>
@@ -131,7 +131,7 @@ Dat voorbeeld lijkt erg vreemd, toch? Maak je geen zorgen, het is niet zo moeili
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Je presence-versie.</td>
+      <td style="text-align:left">Versie van je presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nee</code></td>
     </tr>
@@ -149,7 +149,7 @@ Dat voorbeeld lijkt erg vreemd, toch? Maak je geen zorgen, het is niet zo moeili
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> waarde. We raden u aan een primaire kleur van de service
+      <td style="text-align:left"><code>#HEX</code> waarde. We raden je aan een primaire kleur van de service
         te gebruiken die je presence ondersteunt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nee</code></td>
@@ -247,7 +247,7 @@ Interactieve instellingen instellen zodat gebruikers de presence kunnen aanpasse
 
 #### Introductie
 
-De `multiLanguage` instelling wordt gebruikt om gebruikers in staat te stellen handmatig de taal te selecteren waarin de presence word weergegeven. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+De `multiLanguage` instelling wordt gebruikt om gebruikers in staat te stellen handmatig de taal te selecteren waarin de presence word weergegeven. Hiervoor moet je strings van onze [API](https://api.premid.app/v2/langFile/presence/en) gebruiken, voor informatie over hoe je strings kunt toevoegen klik [hier](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Set-up
 
@@ -259,7 +259,7 @@ De `multiLanguage` key kan als volgt worden ingesteld:
 
 #### Nieuwe tekenreeksen toevoegen
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Opmerking:** Het toevoegen van eigen tekenreeksen voor een presence is alleen toegestaan als het meer dan 1000 gebruikers heeft.
 
 ##### Het project klonen
 
@@ -298,7 +298,7 @@ Visualisatie van het bestand:
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Nadat je het tekenreeksenbestand hebt afgerond, kun je een pull request aanmaken op onze [lokalisatie-repository](https://github.com/PreMiD/Localization), met in de beschrijving een link naar de pull request van je presence op de [presence-repository](https://github.com/PreMiD/Presences) (dat is **verplicht**).
 
 #### Standaard keys
 De keys die je niet in hoefde te stellen, worden automatisch: `title`: "Language" **Let op:** dit wordt vertaald naar de standaardtaal van de browser. `icon`: "fas fa-language" ([voorbeeld](https://fontawesome.com/icons/language)) `value`: **wordt ingesteld naar de taal van de browser in als deze beschikbaar is (100% vertaald), anders Engels.** `values`: **wordt ingesteld op de beschikbare talen (talen die het 100% vertaald hebben).**
@@ -362,7 +362,7 @@ Bij het maken van je presence moet je een categorie opgeven waaronder de presenc
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Video's & streaming</b></td>
+        <td style="text-align:left"><b>Video's & Streams</b></td>
       <td style="text-align:left">Websites die dienen voor het leveren van video's en streams.</td>
     </tr>
     <tr>

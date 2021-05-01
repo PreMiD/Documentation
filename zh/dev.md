@@ -12,7 +12,7 @@ tags:
 
 # Installing the requirements
 1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+2. 安装 [节点](https://nodejs.org/en/) (带有 [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
 
 # Cloning the project

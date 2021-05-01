@@ -77,13 +77,13 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <th style="text-align:left">Variabel</th>
       <th style="text-align:left">Beskrivning</th>
       <th style="text-align:left">Typ</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Valfri</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Bör innehålla ett Objekt med <code>-namnet</code> och <code>id</code> för presence-utvecklaren. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
+      <td style="text-align:left">Bör innehålla ett Objekt med <code>-namnet</code> och <code>id</code> för presence-utvecklaren. <code>namn</code> är ditt Discord användarnamn utan identifieraren (#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
@@ -104,14 +104,14 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
       <td style="text-align:left">Möjligheten att söka för presencet med hjälp av ett annat namn.<br>
-      Tänkt att användas för presences som har olika namn på olika språk (t.ex. Poke<unk> mon och <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> ).<br>
-      Du kan också använda den för presences som har specialtecken så att du inte behöver skriva in dessa (t.ex. Poke<unk> mon och Pokemon).</td>
+      Tänkt att användas för presences som har olika namn på olika språk.(t.ex.Pokémon and 포켓몬스터).<br>
+      Du kan också använda den för presences som har specialtecken så att du inte behöver skriva in dessa (t.ex. Pokémon och Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. View the category for presence languages for a list. </td>
+      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Din beskrivning måste innehålla nyckelparvärden som anger språket och beskrivningen i det specifika språket. Gör beskrivningar med språk <i>som du känner till</i>, våra översättare kommer att göra ändringar i din metadatafil. View the category for presence languages for a list. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nej</code></td>
     </tr>
@@ -131,32 +131,32 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Version av din presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nej</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Länk till tjänst&apos;s logotyp.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nej</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Länka till din presence-miniatyrbild.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nej</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code>-värde. Vi rekommenderar att använd färgen på tjänsten
+        som ditt presence stöder som primär färg.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nej</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array med taggar, de kommer att hjälpa användare att söka efter ditt presence på webbplatsen.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nej</code></td>
     </tr>

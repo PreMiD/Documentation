@@ -6,14 +6,14 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> قبل از بیشتر پیش رفتن، مطمئن شوید که سیستم شماحداقل [نیازها](/install/requirements) را دارد. 
 > 
 > {.is-info}
 
 نصب برنامه خیلی مهم است زیرا افزونه نمی تواند به تنهایی کاری انجام دهد.
 
 # نصب
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. از طریق [این لینک](https://premid.app/downloads) به صفحه دانلود بروید.
 2. Choose **OS X**.
 3. Extract the archive if necessary.
 4. Open the installer.
@@ -22,7 +22,7 @@ tags:
 6. Choose open when prompted.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
-The application will start automatically. Check for the symbol in your menu bar.
+برنامه به طور خودکار شروع می شود. Check for the symbol in your menu bar.
 
 > Do not forget to [add the **extension**](/install). 
 > 

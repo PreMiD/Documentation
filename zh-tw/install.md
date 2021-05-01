@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> 在進一步的動作前，請確認您的系統都有達到[需求](/install/requirements)。 
 > 
 > {.is-info}
 

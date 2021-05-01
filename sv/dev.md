@@ -11,8 +11,8 @@ tags:
 > {.is-info}
 
 # Installing the requirements
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+1. Installera [Git](https://git-scm.com/).
+2. Installera [Node](https://nodejs.org/en/) (levereras med [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
 
 # Cloning the project

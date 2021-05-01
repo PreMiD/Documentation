@@ -6,23 +6,23 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Avant d'aller plus loin, assurez-vous que votre système répond à tout les [prérequis](/install/requirements). 
+> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
 > 
 > {.is-info}
 
 L'installation de l'application est très importante car l'extension ne peut rien faire par elle-même.
 
-# Installation
+# Installer
 1. Rendez-vous sur notre page de téléchargements en [cliquant ici](https://premid.app/downloads).
 2. Choisissez **OS X**.
 3. Extraire l'archive si nécessaire.
 4. Ouvrir l'installateur.
-5. Une **alerte de sécurité** pourrait apparaître si vous installez PreMiD pour la première fois. Si c'est le cas, suivez les étapes ici : [Approuver les applications venant de développeurs non identifiés](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
+5. Une **alerte de sécurité** pourrait apparaître si vous installez PreMiD pour la première fois. Allez dans vos **Préférences** > **Sécurité** > **Général** > **Ouvrir quoi qu'il en soit**.
 > Ceci est dû au fait que nous n'avons pas de certificat de signature de code (CSC). [Soutenez-nous](https://www.patreon.com/Timeraa) pour la financer.{.is-info}
 6. Choisissez d'ouvrir lorsque vous y êtes invité.
 7. Accorder l'accès aux connexions via **Pare-feu** et contrôler **Événements du système** lorsque vous y êtes invité.
 
-L'application démarre automatiquement. Vérifiez si l'icône est présente dans votre barre de menus.
+The application will start automatically. Vérifiez si l'icône est présente dans votre barre de menus.
 
 > N'oubliez pas d'ajouter [l'extension ****](/install). 
 > 

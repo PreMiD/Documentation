@@ -6,11 +6,11 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Før du går lenger, har du sikret deg om at systemet ditt oppfyller alle [kravene](/install/requirements). 
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Installasjonen av denne extensionen er veldig viktig grunnet applikasjonen ikke kan gjøre noe selv uten det.
 
 # Installer
 1. Gå til våre nedlastnings side ved å [Klikke her](https://premid.app/downloads).

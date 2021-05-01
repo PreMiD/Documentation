@@ -6,11 +6,11 @@ date: 2020-04-22T20:13:07.598Z
 tags:
 ---
 
-The installation of the extension is very important as the application can not do anything by itself.
+Изтеглянето на разширението е много важно, като приложението не може да прави нищо само по себе си.
 
 # Инсталирай
 ### Chrome, Edge, etc.
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. Отиди на страницата ни с изтегляния като [цъкнеш тук](https://premid.app/downloads).
 2. Choose **Chromium**.
 3. Click on **Add to Chrome**.
 

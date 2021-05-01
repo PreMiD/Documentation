@@ -164,7 +164,7 @@ console.log(version); // Affichera 2.1.0
 
 ### `getSetting(String)`
 
-Renvoie la valeur du paramètre.
+Returns value of setting.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Remplacer pdexID avec l'id du paramètre
@@ -173,7 +173,7 @@ console.log(setting); // Cela affichera dans la console la valeur du paramètre
 
 ### `hideSetting(String)`
 
-Masque le paramètre donné.
+Hides given setting.
 
 ```typescript
 presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -249,7 +249,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `timestampFromFormat(String)`
 
-Convertis un String dans le format ` HH:MM:SS`, `MM:SS` ou `SS` dans un Integer (Ne retourne pas de snowflake timestamp).
+Convertis un String dans le format `HH:MM:SS`, `MM:SS` ou `SS` dans un Integer (Ne retourne pas de snowflake timestamp).
 
 ```typescript
 const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),

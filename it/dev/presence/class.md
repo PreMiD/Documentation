@@ -270,7 +270,7 @@ Questa interfaccia ha le seguenti variabili, sono tutte opzionali.
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Variabile</th>
       <th style="text-align:left">Descrizione</th>
       <th style="text-align:left">Tipo</th>
     </tr>

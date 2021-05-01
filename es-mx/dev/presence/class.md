@@ -164,7 +164,7 @@ console.log(version); // Mostrará 2.1.0
 
 ### `getSetting(String)`
 
-Devuelve el valor del ajuste.
+Returns value of setting.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); // Remplaza pdexID con el id del ajuste
@@ -173,7 +173,7 @@ console.log(setting); // Esto mostrará el valor del ajuste
 
 ### `hideSetting(String)`
 
-Oculta el ajuste indicado.
+Hides given setting.
 
 ```typescript
 presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 ### `showSetting(String)`
 
-Muestra el ajuste indicado (solo funciona si el ajuste ha sido ocultado).
+Shows given setting (Only works if the setting was already hidden).
 
 ```typescript
 presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración

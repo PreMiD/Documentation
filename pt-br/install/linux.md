@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
-A instalação do aplicativo é muito importante, já que a extensão não pode fazer nada por si só.
+A instalação do aplicativo é muito importante, uma vez que a extensão não pode fazer nada por si só.
 
 > Os usuários Aur que usam o pacote DoomLerd devem estar seguros, como ele diz. Não recomendamos o seu uso, mas se você quiser, ainda pode usá-lo. Obrigado ao DoomLerd por lidar com o Aur. 
 > 

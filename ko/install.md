@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> 설치를 진행하기 전에, 시스템이 [요구사항](/install/requirements)을 충족하는지 확인해주세요. 
+> 설치하기 전에, 시스템이 [요구사항](/install/requirements)을 충족하는지 확인해주세요. 
 > 
 > {.is-info}
 
