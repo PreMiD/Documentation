@@ -2,7 +2,7 @@
 title: Servis Kılavuzu
 description: Her geliştiricinin, servisinin eklenebilmesi için takip etmeleri gereken kurallar.
 published: true
-date: 2021-03-06T15:01:04.274Z
+date: 2021-05-01T16:45:59.660Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -34,11 +34,6 @@ Servis geliştirmenin genel kuralları aşağıdaki gibidir:
 - Çevrimiçi radyoların servislerinin eklenebilmesi için en az haftalık 100 ve aktif 15 dinleyicisi olmalıdır.
 - Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences that use buttons should follow these extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
@@ -46,6 +41,7 @@ Servis geliştirmenin genel kuralları aşağıdaki gibidir:
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
+- Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
@@ -67,7 +63,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
 > `metadata` dosyasınızın doğruluğunu kontrol ettirip geliştiricilere kolaylık sağlamak amacıyla sizlere bir şema sunuyoruz. Bu tamamen isteğe bağlıdır ve inceleme işlemi sırasında gerekli değildir.
 
@@ -138,7 +134,7 @@ Her servisin kendine ait açıklayıcı bir `metadata.json` dosyası vardır, bu
 }
 ```
 
-> Eğer bu alanlardan biri [dokümanda](https://docs.premid.app/en/dev/presence/metadata) opsiyonel olarak işaretlenmişse ve değeriniz, varsayılan değer ile aynıysa, `metadata` dosyanızda bu değeri belirtmeyin (örneğin, iframe kullanmayan servislerin `iframe` alanına sahip olmaması gerekir
+> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (örneğin, iframe kullanmayan servislerin `iframe` alanına sahip olmaması gerekir
 
 > `metadata` dosyasında ki tüm görseller `i.imgur.com` da barındırılmak zorundadır. Sitenin kendisinde barındırılan resimlerin kullanımına **izin verilmemektedir**, çünkü bu resimler istemsiz de olsa bazen değişiklik gösterebilir.
 
@@ -204,12 +200,12 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
 
 ### **`category`**
 
-- Seçtiğiniz kategori, [bu doküman yazısında](/dev/presence/metadata#presence-categories) belirtilen kategorilerden birisi **olmalıdır**.
+- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - Servis, servisin sitesinin içeriğine uyan bir kategori kullanmalıdır. (örneğin, servisin sitesi anime ile alakalı değilse `anime` kullanamazsınız).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regex verisi **mutlaka** geçerli olmalıdır. Lütfen buraya yazdığınız değeri, [doküman sayfamızda](https://docs.premid.app/en/dev/presence/metadata#testing) belirtilen araçlarla deneyip çalıştığına emin olun.
+- Regex verisi **mutlaka** geçerli olmalıdır. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -230,7 +226,7 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
   - Hangi dosyadaki çevirileri almak istediğinizi seçebileceğiniz **String** türü, (örn. `youtube`).
   - Hangi dosyalardaki çevirileri almak istediğinizi seçebileceğiniz **Array** türü, (örn. `["youtube", "discord"]`).
 
-## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
 > Kodunuz okunabilir ve anlaşılır **olmalıdır**, yazım hatalarına  dikkat etmeli ve kurallara uyulmalıdır. Sitede bulunan yazım hataları göz ardı edilebilir.
 
@@ -247,10 +243,16 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
 - Sadece `premid.app` ve servisin sitesinin API'sine HTTP/HTTPS isteklerinde bulunabilirsiniz. Eğer farklı bir alan adına istek atıyorsanız, nedenini açıklamanız gerekir. API isteği yapmanın izin verilen tek yolu [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) ile yapılan isteklerdir.
 - presenceData object'inin içerisindeki kısımları ayarladıktan sonra undefined olarak **ayarlamayın**, bunun yerine `delete` yöntemini kullanın. (örneğin, `data.startTimestamp = undefined` yerine `delete data.startTimestamp` kullanın)
 - Verilen bir sitenin işlevselliğini değiştirecek servisler yazmanıza izin **verilmez**. Bu DOM elementlerinin eklenmesi, silinmesi, ya da değiştirilmesini de kapsar.
+- Presences that use buttons should follow extra requirements:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
 
-## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
-> `tsconfig.json` dosyasını [doküman](/dev/presence/tsconfig) sayfasında gösterilenin dışında herhangi bir şekilde düzenlemeyin.
+## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
+
+> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Yapılandırma
 
