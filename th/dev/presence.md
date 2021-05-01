@@ -149,14 +149,14 @@ dateCreated: 2020-06-11T18:04:02.843Z
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). Id <code>ผู้ใช้</code> สามารถคัดลอกได้จากดิสคอร์ดโดยการเปิด
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> คือชื่อผู้ใช้ดิสคอร์ดของคุณที่ไม่มีแท็ก (#0000) Id <code>ผู้ใช้</code> สามารถคัดลอกได้จากดิสคอร์ดโดยการเปิด
         โหมดผู้พัฒนาและคลิกขวาบนโปรไฟล์ของคุณ</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>ไม่</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). Id <code>ผู้ใช้</code> สามารถคัดลอกได้จากดิสคอร์ดโดยการเปิด
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> คือชื่อผู้ใช้ดิสคอร์ดของคุณที่ไม่มีแท็ก (#0000) Id <code>ผู้ใช้</code> สามารถคัดลอกได้จากดิสคอร์ดโดยการเปิด
         โหมดผู้พัฒนาและคลิกขวาบนโปรไฟล์ของคุณ</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>ใช่</code></td>
@@ -215,7 +215,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">ลิ้งไปยังโลโก้ของบริการ</td>
+      <td style="text-align:left">ลิ้งโลโก้ของบริการ</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>ไม่</code></td>
     </tr>
@@ -234,7 +234,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array ที่มีแท็ก, จะช่วยให้ผู้ใช้ค้นหา presence ของคุณบนเว็บไซต์</td>
+      <td style="text-align:left">Array ของแท็กทั้งหมด, จะช่วยให้ผู้ใช้ ค้นหา presence ของคุณ บนเว็บไซต์ได้ง่ายขึ้น</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>ไม่</code></td>
     </tr>
