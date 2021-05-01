@@ -275,15 +275,15 @@ Kekunci `multiLanguage` boleh ditetapkan seperti berikut:
 
 ##### Menambah rentetan
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Setiap rentetan `string` ialah sebuah objek `Object` di mana namanya dimulakan dengan nama perkhidmatan dan diikuti dengan nilai stringName dengan titik di antara mereka.
 
-The stringName is a 1 word identifier of the message.
+Nilai stringName ialah 1 perkataan pengenal pasti bagi sesuatu mesej.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+Objek `Object` mempunyai 2 sifat; mesej `message` dan keterangan `description`. `message` ialah tulisan yang perlu diterjemahkan. `description` ialah keterangan mesej untuk membantu penterjemah kami fahamkan apa yang mereka sedang terjemahkan.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Nota:** Jangan tambah rentetan terduplikasi. (Ini termasuk rentetan yang ada dalam fail `general.json` tetapi tiada di fail lain.)
 
-Visualization of the the file:
+Penggambaran fail:
 
 ```typescript
 {
@@ -298,25 +298,25 @@ Visualization of the the file:
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Setelah anda mencipta sepenuhnya fail dengan rentetan tersebut, anda boleh cipta Permintaan Tarikan di [Repositori Penyetempatan](https://github.com/PreMiD/Localization), dalam keterangan tersebut anda **mesti** sertakan pautan ke Permintaan Tarikan anda bagi Presence yang dikemaskini menggunakan rentetan-rentetan baharu daripada [Repositori Presence](https://github.com/PreMiD/Presences) ini.
 
 #### Kekunci lalai
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Kekunci yang anda tidak perlu tetapkan akan ditetapkan secara automatik seperti berikut: `title`: "Language" **Nota:** Ini diterjemah ke bahasa lalai pengguna (bahasa yang ditetapkan di pelayar). `icon`: "fas fa-language" ([Pralihat](https://fontawesome.com/icons/language)) `value`: **Tetapkan ke bahasa pelayar pengguna jika ia tersedia (100% diterjemah), jika tidak ianya ditetapkan ke bahasa Inggeris.** `values`: **Tetapkan ke bahasa-bahasa yang tersedia (bahasa-bahasa yang telah pun 100% diterjemah).**
 
-**Note:** These are in no way changeable.
+**Nota:** Ini semua tidak akan dapat diubah dalam apa jua cara.
 
 ### Kaedah
 
-Use the following methods to get settings info in your presence files:
+Gunakan kaedah berikut untuk mendapatkan maklumat tetapan dalam fail Presence anda:
 #### `getSetting(String)`
-Returns value of setting.
+Mengembalikan nilai tetapan.
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 console.log(setting); // Ini akan log nilai tetapan
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Sembunyikan tetapan yang diberi.
 ```typescript
 presence.hideSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 ```
