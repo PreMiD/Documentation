@@ -41,7 +41,7 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
     - Para dominios de 12 meses o más de antigüedad: **45.000 visitas únicas por día**.
   - El sitio web no puede estar en un dominio barato como `.xyz`, `.club` y demás.
   - El sitio web debe tener una muy buena calidad, diseño, etc.
-- Las presences deben usar detalles comunes, puedes conseguirlo usando multi lenguajes con las cadenas proporcionadas. Si tus presences requieren cadenas personalizadas no deberías usarlo hasta que la presence tenga mil usuarios. You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Las presences deben usar detalles comunes, puedes conseguirlo usando multi lenguajes con las cadenas proporcionadas. Si tus presences requieren cadenas personalizadas no deberías usarlo hasta que la presence tenga mil usuarios. You can achieve this using `multiLanguage` with the provided strings. Si tu presence requiere cadenas de texto personalizadas, entonces no deberías usar `multiLanguage` hasta que la presence reciba 1000 usuarios. Puedes encontrar un ejemplo [aquí](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Incluyendo la carpeta `dist`, los archivos `presence.ts`, `iframe.ts` y `metadata.json` son obligatorios para que el resultado sea lo que se representa en el siguiente esquema:
 
 ```bash
