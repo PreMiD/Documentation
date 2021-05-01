@@ -41,7 +41,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
-- Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Присутствие должно обязательно иметь папку `dist`, а также файлы `presence.ts`, `iframe.ts` и `metadata.json`. В конечном итоге директория должна выглядеть вот так:
 
 ```bash
@@ -240,7 +240,7 @@ presence
 - Presences that use buttons should follow extra requirements:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
+  - They can't show additional data when you can't show them in other fields.
   - Redirecting directly to audio/video stream is prohibited.
 
 
