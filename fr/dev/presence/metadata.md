@@ -10,7 +10,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-Si vous souhaitez publier une présence dans la boutique et la charger via l'extension, vous devez créer le fichier ` metadata.json ` dans votre dossier ` dist `.
+Si vous souhaitez publier une présence dans la boutique et la charger via l'extension, vous devez créer le fichier `metadata.json` dans votre dossier `dist`.
 
 Un exemple de ce fichier se situe ci-dessous.
 
@@ -77,20 +77,20 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Description</th>
       <th style="text-align:left">Type</th>
-      <th style="text-align:left">Optionnel</th>
+      <th style="text-align:left">Optional</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Doit contenir un Objet avec le <code>nom</code> et l'<code>id</code> du développeur de la Presence. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'utilisateur <code>id</code> peut être copié depuis Discord en activant le mode développeur
+      <td style="text-align:left">Doit contenir un Objet avec le <code>nom</code> et l'<code>id</code> du développeur de la Presence. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'<code>id</code> utilisateur peut être copié depuis Discord en activant le mode développeur
         et en faisant un clic droit sur votre profil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Doit contenir un objet avec le <code>nom</code> et l'<code>id</code> du contributeur. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'<code>id</code> utilisateur peut être copié depuis Discord en activant le mode développeur
+      <td style="text-align:left">Doit contenir un objet avec le <code>nom</code> et l'<code>id</code> du contributeur. <code>name</code> est votre nom d'utilisateur Discord sans l'identifiant(#0000). L'utilisateur <code>id</code> peut être copié depuis Discord en activant le mode développeur
         et en faisant un clic droit sur votre profil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Oui</code></td>
@@ -111,7 +111,7 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description du service <b>PAS</b> de la présence. Votre description doit avoir des valeurs de paire de clés qui indiquent la langue, et la description dans cette langue spécifique. Faites des descriptions avec les langues <i>que vous connaissez</i>, nos traducteurs apporteront des modifications à votre fichier de métadonnées. Voir la catégorie pour les langues de présence pour une liste. </td>
+      <td style="text-align:left">Description du service <b>PAS</b> de la présence. Votre description doit avoir des valeurs de paire de clés qui indiquent la langue, et la description dans cette langue spécifique. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. Voir la catégorie pour les langues de présence pour une liste. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
@@ -131,32 +131,32 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version de votre présence.</td>
+      <td style="text-align:left">Version of your presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Lien vers le logo du service&apos;.</td>
+      <td style="text-align:left">Link to service&apos;s logotype.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Lien vers votre miniature de présence.</td>
+      <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">valeur <code>#HEX</code>. Nous vous recommandons d'utiliser une couleur primaire du service
-        que votre présence supporte.</td>
+      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Tableau avec des tags, ils aideront les utilisateurs à rechercher votre présence sur le site Web.</td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
@@ -199,7 +199,7 @@ Si vous voulez apprendre les expressions régulières, voici quelques sites web.
 
 #### Apprentissage
 
-- [ Vidéo de démarrage rapide](https://youtu.be/sXQxhojSdZM) - [RegexOne](https://regexone.com/) - [Information sur les expressions régulières](https://www.regular-expressions.info/tutorial.html)
+• [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
 #### En Test
 
@@ -250,7 +250,7 @@ Le paramètre `multiLanguage` est utilisé pour permettre aux utilisateurs de s�
 
 #### Configuration
 
-Le paramètre `multiLanguage` est un cas spécial, il ne nécessite ni de `titre` ni d' `icône` ni de `valeur` ou `valeurs` comme d'autres paramètres, mais, il demande encore plus de choses à configurer !
+La clé `multiLanguage` peut être définie comme suit :
 
 La clé `multiLanguage` peut être définie comme suit :
 
