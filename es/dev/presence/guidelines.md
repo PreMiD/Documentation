@@ -36,12 +36,12 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
 - **No** se permiten presences de baja calidad o que tengan poco contexto (p. ej., mostrar solo un logotipo y texto pero nunca volver a cambiarlo).
 - Presences para servicios como listas de Bots/Servidores de Discord deben seguir estos requisitos adicionales:
   - El dominio debe tener al menos **6 meses** de antigüedad.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - Visitas únicas por día:
+    - Para dominios de 6 meses de antigüedad: **20.000 visitas únicas por día**.
+    - Para dominios de 12 meses o más de antigüedad: **45.000 visitas únicas por día**.
   - El sitio web no puede estar en un dominio barato como `.xyz`, `.club` y demás.
   - El sitio web debe tener una muy buena calidad, diseño, etc.
-- Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Incluyendo la carpeta `dist`, los archivos `presence.ts`, `iframe.ts` y `metadata.json` son obligatorios para que el resultado sea lo que se representa en el siguiente esquema:
 
 ```bash
@@ -244,11 +244,11 @@ Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `prese
 - Solo puedes hacer peticiones HTTP/HTTPS a `premid.app` o a la API de la web de la presence. Si estás utilizando dominios externos, tendrás que justificar su uso. La única API permitida para hacer peticiones es [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - **No** establezcas campos de la instancia presenceData como undefined una vez declarado, utiliza en su lugar la palabra clave `delete`. (por ejemplo, usa `delete data.startTimestamp` en vez de `data.startTimestamp = undefined`)
 - **No** tienes permitido escribir presences que puedan cambiar la funcionalidad de un sitio web. Esto incluye la adición, eliminación o modificación de los elementos DOM.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- Presences que utilizan botones deben seguir estos requisitos adicionales:
+  - No están permitidas redirecciones a páginas de inicio.
+  - No está permitido promover sitios web por medio de ello.
+  - They can't show additional data when you can't show them in other fields.
+  - Está prohibida la redirección directa a streams de audio o vídeo.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
