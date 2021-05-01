@@ -9,7 +9,7 @@ editor: markdown
 
 # TypeScript-Konfiguration
 
-## Einführung
+## Anweisung
 
 Wenn du den Workspace heruntergeladen und entpackt hast, wird eine Datei mit dem Namen `tsconfig.json` im Stammverzeichnis und in den Presence-Ordnern angezeigt. Diese Datei wird zum Konfigurieren des **TypeScript**-Compilers verwendet. Es ist bereits für dich konfiguriert, mache dir also keine Sorgen.
 
