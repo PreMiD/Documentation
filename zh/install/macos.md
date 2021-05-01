@@ -6,11 +6,11 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> 在继续操作之前，请确保您的系统符合所有 [的要求](/install/requirements)。 
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+安装应用程序非常重要，因为扩展本身无法做任何事情。
 
 # 安装
 1. [点击这里](https://premid.app/downloads) 来转到我们的下载页面。
@@ -22,7 +22,7 @@ The installation of the application is very important as the extension can not d
 6. Choose open when prompted.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
-The application will start automatically. Check for the symbol in your menu bar.
+应用程序将自动启动。 检查系统托盘中的符号。 Check for the symbol in your menu bar.
 
 > Do not forget to [add the **extension**](/install). 
 > 
