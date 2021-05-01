@@ -41,7 +41,7 @@ Peraturan am pembangunan Presence adalah seperti berikut:
     - Untuk domain berusia 12+ bulan: **45,000 pelawat unik sehari**.
   - Laman sesawang tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan lain-lain.
   - Laman sesawang tersebut sendirinya mestilah mempunyai kualiti, reka bentuk, dll yang sangat bagus.
-- Presence patut gunakan [maklumat umum](https://api.premid.app/v2/langFile/presence/en) (rentetan yang bermula dengan "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presence patut gunakan [maklumat umum](https://api.premid.app/v2/langFile/presence/en) (rentetan yang bermula dengan "general."). Anda boleh melakukannya dengan menggunakan nilai `multiLanguage` bersama-sama rentetan yang diberi. Sekiranya Presence anda memerlukan rentetan tersuai, maka anda tidak patut gunakan `multiLanguage` sehingga Presence tersebut mencapai 1000 pengguna. Anda boleh lihat contoh [di sini](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Penyertaan folder `dist`, fail `presence.ts`, fail `iframe.ts`, dan fail `metadata.json` adalah diwajibkan supaya hasilnya nanti serupa seperti apa yang diwakilkan dalam skema berikut:
 
 ```bash
@@ -134,7 +134,7 @@ Setiap Presence mempunyai fail pemerihal dipanggil `metadata.json`, metadata ter
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (sbg. cth., sebuah Presence tanpa sokongan iframe tidak perlukan medan `iframe`.)
+> Sekiranya sesuatu medan disenaraikan sebagai pilihan dalam [pendokumenan](https://docs.premid.app/dev/presence/metadata) atau jika ada tanda `*` pada kekunci tersebut, dan Presence anda menggunakan nilai lalai untuknya, jangan sertakannya dalam fail `metadata`. (sbg. cth., sebuah Presence tanpa sokongan iframe tidak perlukan medan `iframe`.)
 
 > Semua imej dalam fail `metadata` mestilah dihoskan di `i.imgur.com`. Penggunaan kandungan yang dihoskan di laman sesawang **tidak** dibenarkan kerana laluan dan fail boleh berubah tanpa jangkaan.
 
@@ -200,12 +200,12 @@ Senarai medan dan peraturan berkaitan disenaraikan di bawah:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Kategori **mestilah** di kalangan kategori yang disenaraikan dalam [pendokumenan](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - Presence mestilah menggunakan kategori yang serasi dengan kandungan laman sesawang. (sbg. cth., jangan gunakan `anime` apabila laman sesawang tiada kaitan dengan anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Ungkapan nalar **mestilah** sah. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Ungkapan nalar **mestilah** sah. Sila uji ungkapan anda menggunakan alatan yang disenaraikan dalam [pendokumenan](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -243,16 +243,16 @@ Ini senarai peraturan yang perlu diikuti semasa menulis fail `presence.ts` anda:
 - Anda hanya boleh lakukan permintaan HTTP/HTTPS ke `premid.app` atau API laman sesawang Presence. Jika anda menggunakan domain luaran, anda akan diminta menjelaskan kenapa ia diperlukan. API yang dibenarkan untuk membuat permintaan hanyalah [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - **Jangan** tetapkan medan dalam objek presenceData sebagai tak tertakrif setelah ia diisytiharkan, sebaliknya gunakanlah kata kunci `delete`. (sbg. cth., gunakan `delete data.startTimestamp` dan bukannya `data.startTimestamp = undefined`)
 - Anda **tidak** dibenarkan untuk menulis Presence yang mengubah kefungsian laman sesawang yang berkaitan. Ini termasuk penambahan, pemadaman, atau perubahan unsur DOM.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- Presence yang menggunakan butang mesti mengikut keperluan tambahan:
+  - Lencongan ke laman utama tidak dibenarkan.
+  - Promosi laman sesawang menggunakannya tidak dibenarkan.
+  - Ia tidak boleh menunjukkan data tambahan apabila anda tidak mampu tunjukkannya di medan yang lain.
+  - Melencongkan secara terus ke strim audio/video adalah tidak dibenarkan.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **Jangan** tulis fail `tsconfig.json` anda sendiri, gunakan apa yang telah disediakan dalam [pendokumenan](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Pengubahsuaian
 
