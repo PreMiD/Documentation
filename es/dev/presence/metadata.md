@@ -296,7 +296,7 @@ Visualización del archivo:
 Después de haber creado completamente el archivo, puedes crear un Pull Request en el [repositorio de localización](https://github.com/PreMiD/Localization), en la descripción **debes** incluir un enlace al Pull Request de la presence actualizada usando estas nuevas strings del [repositorio de Presence](https://github.com/PreMiD/Presences).
 
 #### Claves por defecto
-Las claves que no tenías que indicar se establecen automáticamente a lo siguiente: `title`: "Idioma" **Nota:** Esto se traduce a su idioma predeterminado (idioma del navegador). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Las claves que no tenías que indicar se establecen automáticamente a lo siguiente: `title`: "Idioma" **Nota:** Esto se traduce a su idioma predeterminado (idioma del navegador). `icon`: "fas fa-language" ([Vista previa](https://fontawesome.com/icons/language)) `value`: **Establecido al idioma del navegador si está disponible (100% traducido), de lo contrario Inglés.** `values`: **Establecido a los idiomas disponibles (idiomas que lo tienen 100% traducido).**
 
 **Nota:** Estos no pueden cambiarse en absoluto.
 
@@ -317,14 +317,14 @@ presence.hideSetting("pdexID"); //Reemplaza pdexID con el id del ajuste
 ```
 
 #### `showSetting(String)`
-Muestra el ajuste indicado (solo funciona si el ajuste ha sido ocultado).
+Muestra la configuración dada (Solo funciona si el ajuste estaba ya oculto).
 ```typescript
 presence.showSetting("pdexID"); //Reemplaza pdexID con el id del ajuste
 ```
 
 ## Categorías de una presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Cuando haces tu Presence, debes especificar de que categoría es. Esta es una lista de las categorías que puedes usar.
 
 <table>
   <thead>
