@@ -23,7 +23,7 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 
 The general rules of presence development are as follows:
 
-- Presences **must** be related to the website of choice.
+- Presence **harus** berhubungan dengan website yang dipilih.
 - Presences **cannot** be made for illegal websites. (for e.g., stressors, drug marketing, child pornography, etc.)
 - The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
 - You need to have a proper file structure, drafts are **not** allowed.
