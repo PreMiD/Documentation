@@ -15,7 +15,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
     <br />
 </div>
 
-# Guidelines
+# 指南
 
 When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. To some, these strict rules may seem harsh. However, the implementation of these rulesets will keep us and the users from running into any issues.
 
