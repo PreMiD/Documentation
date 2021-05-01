@@ -22,7 +22,7 @@ tags:
 6. Choose open when prompted.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
-The application will start automatically. Check for the symbol in your menu bar.
+이 앱은 자동으로 시작됩니다. Check for the symbol in your menu bar.
 
 > Do not forget to [add the **extension**](/install). 
 > 
