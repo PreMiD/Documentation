@@ -17,7 +17,7 @@ Installationen av tillägget är viktigt eftersom programmet inte kan göra någ
 6. Välj den fil du laddade ner.
 7. Acceptera installationen genom att klicka på **Lägg till**.
 
-> Glöm ej att [installera **programmet**](/install). 
+> Glöm inte att [installera **programmet**](/install). 
 > 
 > {.is-warning}
 
