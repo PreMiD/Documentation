@@ -246,7 +246,7 @@ PreMiD это полиглот-сервис, означающий, что сущ
 
 #### Введение
 
-Параметр `мультиЯзык` используется для того, чтобы позволить пользователям вручную выбрать язык, на котором они хотят присутствовать. Это требует использования строк из нашего [API](https://api.premid.app/v2/langFile/presence/en), для информации о том, как добавлять строки нажмите [здесь](/dev/presence/metadata/adding-new-strings).
+Параметр `мультиЯзык` используется для того, чтобы позволить пользователям вручную выбрать язык, на котором они хотят присутствовать. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Настройки
 
@@ -257,6 +257,8 @@ PreMiD это полиглот-сервис, означающий, что сущ
 `true`: используйте это, если вы собираетесь использовать только строки `общего характера. son` файл и файл `<service>.json` в [Репозиторий локализации](https://github.com/PreMiD/Localization/tree/master/src/Presence). `строка`: имя файла, исключая расширение (. son) внутри [Репозитория локализации](https://github.com/PreMiD/Localization/tree/master/src/Presence) (за исключением `общего файла`, так как он всегда загружается). Будут показаны только общие языки `общего` и введенного файла. `Array<String>`: если вы используете более одного файла внутри [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) вы можете указать все значения в массиве (за исключением `general` файл, так как он всегда загружен). Будут показаны только общие языки всех файлов.
 
 #### Добавление новых строк
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Клонирование проекта
 
@@ -272,15 +274,15 @@ PreMiD это полиглот-сервис, означающий, что сущ
 
 ##### Добавление строк
 
-Каждая `строка` — это объект ``, где от имени начинается с названия службы, а затем так называемое stringName с точкой между ними.
+Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-Имя строки является идентификатором 1 слова сообщения.
+The stringName is a 1 word identifier of the message.
 
-`Объект` имеет 2 свойства; `сообщение` и `описание`. `сообщение` - это текст, который необходимо перевести. `описание` это описание сообщения, чтобы помочь нашим переводчикам понять, что они переводят.
+The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
 
-**Note:** Не добавляйте повторяющиеся строки. (Это включает строки из файла `general.json`, но не из других файлов.)
+**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Визуализация файла:
+Visualization of the the file:
 
 ```typescript
 {
@@ -294,25 +296,25 @@ PreMiD это полиглот-сервис, означающий, что сущ
   }
 ```
 
-После того, как вы полностью сделали файл со строками, вы можете создать Pull Request в [Репозиторий локализации](https://github.com/PreMiD/Localization), в описании, которое вы **должны** включить ссылку на ваш Pull Request of the presence updated using these new strings from [Presence Repository](https://github.com/PreMiD/Presences).
+After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Ключи по умолчанию
-Ключи, которые вы не должны были установить, автоматически устанавливаются на следующее: `заголовок`: "Язык" **Примечание:** Это переведено на язык по умолчанию (язык браузера). `значок`: "fas fa-language" ([Предварительный просмотр](https://fontawesome.com/icons/language)) `значение`: **Установите на их язык браузера, если он доступен (100% переведен), иными словами, английский язык.** `значения`: **Установка на доступные языки (языки, на которых переводятся на 100%).**
+The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Примечание:** Они ни в коей мере не изменяются.
+**Note:** These are in no way changeable.
 
 ### Методы
 
-Используйте следующие методы для получения информации о настройках в файлах присутствия:
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Возвращает значение настройки.
+Returns value of setting.
 ```typescript
 var setting = await presence.getSetting("pdexID"); // Заменить pdexID идентификатором параметра
 console.log(setting); // Сообщается установка в логи
 ```
 
 #### `hideSetting(String)`
-Скрывает указанные настройки.
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); // Заменить pdexID идентификатором настройки
 ```
@@ -325,7 +327,7 @@ presence.showSetting("pdexID"); // Заменить pdexID идентифика�
 
 ## Категории присутствия
 
-При создании вашего присутствия, вы должны указать категорию, в которой находится присутствие. Это список категорий, которые вы можете использовать.
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>
