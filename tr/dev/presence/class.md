@@ -270,7 +270,7 @@ Bu arayüz, aşağıdaki alanları kullanabilir, bunların hepsi opsiyonel yani 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Anahtar</th>
+      <th style="text-align:left">Değişken</th>
       <th style="text-align:left">Açıklama</th>
       <th style="text-align:left">Tür</th>
     </tr>
