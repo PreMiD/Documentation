@@ -246,7 +246,7 @@ Configurer les paramètres interactifs pour que les utilisateurs puissent person
 
 #### Introduction
 
-Le paramètre `multiLanguage` est utilisé pour permettre aux utilisateurs de sélectionner manuellement la langue dans laquelle ils veulent que le presence leur soit montrée. Cela nécessite que vous utilisiez des chaînes de caractères de notre [API](https://api.premid.app/v2/langFile/presence/en), pour plus d'informations sur comment ajouter des chaînes de caractères cliquez [ici](/dev/presence/metadata/adding-new-strings).
+Le paramètre `multiLanguage` est utilisé pour permettre aux utilisateurs de sélectionner manuellement la langue dans laquelle ils veulent que le presence leur soit montrée. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Configuration
 
@@ -257,6 +257,8 @@ La clé `multiLanguage` peut être définie comme suit :
 `true`: utilisez ceci si vous n'allez utiliser que des chaînes de caractères du fichier `general.json` et du fichier `<service>.json` du [Dépôt de localisation](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: nom du fichier excluant l'extension (.json) à l'intérieur du [Dépôt de localisation](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluant le fichier `general` car il est toujours chargé). Seules les langues courantes du fichier `general` et du fichier saisi seront listées. `Array<String>`: si vous utilisez plus d'un fichier à l'intérieur du [Dépôt de localisation](https://github.com/PreMiD/Localization/tree/master/src/Presence) vous pouvez spécifier toutes les valeurs dans une table (excluant le fichier `general`, car il est toujours chargé). Seules les langues courantes de tous les fichiers seront listées.
 
 #### Ajout de nouvelles chaînes
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Cloner le projet
 
@@ -272,15 +274,15 @@ La clé `multiLanguage` peut être définie comme suit :
 
 ##### Ajout de chaînes
 
-Chaque `string` est un `Object` où le nom commence par le nom du service et ensuite par le stringName avec un point entre les deux.
+Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-Le stringName est un identifiant de 1 mot du message.
+The stringName is a 1 word identifier of the message.
 
-L' `Object` a 2 propriétés; `message` et `description`. `message` est le texte qui doit être traduit. `description` est une description du message pour aider nos traducteurs à comprendre ce qu'ils traduisent.
+The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
 
-**Remarque :** N'ajoutez aucune chaîne en double. (Cela inclut les chaînes du fichier `general.json` et non les autres fichiers.)
+**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Visualisation du fichier :
+Visualization of the the file:
 
 ```typescript
 {
@@ -295,38 +297,38 @@ Visualisation du fichier :
 }
 ```
 
-Après avoir entièrement créé le fichier avec les chaînes de caractères, vous pouvez créer une Pull Request sur le [Dépot de localisation](https://github.com/PreMiD/Localization), dans la description vous **devez** inclure un lien vers votre Pull Request de la presence mise à jour en utilisant ces nouvelles chaînes du [Dépôt de Presence](https://github.com/PreMiD/Presences).
+After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Touches par défaut
-Les clés que vous n'avez pas à définir sont automatiquement définies à ce qui suit : `title`: "Langue" **Note :** Ceci est traduit dans leur langue par défaut (langue du navigateur). `icon`: "fas fa-language" ([Aperçu](https://fontawesome.com/icons/language)) `value`: **Régler la langue de leur navigateur si elle est disponible (100% traduite), sinon l'anglais.** `values`: **Définissez les langues disponibles (langues qui ont été traduites à 100%).**
+The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Remarque :** Celles-ci ne sont en aucun cas modifiables.
+**Note:** These are in no way changeable.
 
 ### Méthodes
 
-Utilisez les méthodes suivantes pour obtenir des informations sur les paramètres dans vos fichiers de présence:
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Renvoie la valeur du paramètre.
+Returns value of setting.
 ```typescript
 const setting = wait presence.getSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 console.log(setting); // Cela affichera dans la console la valeur du paramètre
 ```
 
 #### `hideSetting(String)`
-Masque le paramètre donné.
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
 
 #### `showSetting(String)`
-Affiche le paramètre spécifié (ne fonctionne que si le paramètre est déjà masqué).
+Affiche le paramètre spécifié (Ne fonctionne que si le paramètre est déjà masqué).
 ```typescript
 presence.showSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
 
 ## Catégories de présence
 
-Lorsque vous faites votre présence, vous devez spécifier une catégorie sous laquelle la présence tombe en dessous. Ceci est une liste compilée des catégories que vous pouvez utiliser.
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>
