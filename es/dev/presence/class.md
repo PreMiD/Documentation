@@ -136,8 +136,8 @@ if (oldLang !== newLang) {
   strings = await getStrings();
 }
 
-const playString = (await strings).play; // resultado: Playing
-const pauseString = (await strings).pause; // resultado: Paused
+const playString = strings.play; // resultado: Playing
+const pauseString = strings.pause; // resultado: Paused
 ```
 
 ### `getPageletiable(String)`
@@ -340,10 +340,10 @@ const presenceData: PresenceData = {
   details: "Mi título",
   state: "Mi descripción",
   largeImageKey: "logo_servicio",
-  smallImageKey: "icono_servicio_pequeño",
+  smallImageKey: "icono_servicio_pequño",
   smallImageText: "Has puesto el cursor sobre mí, ¿ahora que?",
   startTimestamp: 1564444631188,
-  endTimestamp: 1564444634734,
+  endTimestamp: 1564444634734
   buttons: [
     {
             label: "Botón de prueba1",
