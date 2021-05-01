@@ -1,5 +1,5 @@
 ---
-title: Startseite
+title: Start
 description: Offizielle Dokumentation für v2
 published: true
 date: 2021-02-24T23:22:41.678Z
