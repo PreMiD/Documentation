@@ -74,10 +74,10 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">ভেরিয়েবল</th>
       <th style="text-align:left">ডিসক্রিপশন</th>
       <th style="text-align:left">ধরন</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">অপশনাল</th>
     </tr>
   </thead>
   <tbody>
@@ -107,7 +107,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
       You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
@@ -121,7 +121,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <b>Example:</b><code>vk.com</code><br>
       <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. This may only be used as an array when there are more than one urls.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
@@ -245,7 +245,7 @@ Setup interactive settings so users can customize the presence!
 
 ### `multiLanguage`
 
-#### Introduction
+#### পরিচিতি
 
 The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
@@ -305,7 +305,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### Methods
+### মেথোড
 
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
