@@ -18,7 +18,7 @@ tags:
 # Clonando el proyecto
 1. Abre una terminal y escribe `git clone URL`. **Reemplace la URL con el enlace del repositorio al que desea contribuir** por ejemplo. `git clone https://github.com/PreMiD/PreMiD`.
 2. Escoge una carpeta de su elección.
-3. Ábrelo en tu editor de código.
+3. Open it in your code editor.
 
 # Instalando dependencias
 > Asegúrate de haber instalado [npm](https://www.npmjs.com/) (Node Package Manager) primero. Se instaló automáticamente si tienes [Node](https://nodejs.org/en/) instalado. 
