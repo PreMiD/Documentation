@@ -2,7 +2,7 @@
 title: Règlement des Presences
 description: Règles que tous les développeurs de Presence doivent suivre pour avoir leur Presence ajoutée.
 published: true
-date: 2021-03-06T15:01:04.274Z
+date: 2021-05-01T16:45:59.660Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -34,18 +34,14 @@ Les règles générales de développement de presence sont les suivantes:
 - Les Presences pour les radios en ligne ne sont autorisées que si la radio a au moins 100 auditeurs hebdomadaires et 15 concurrents, ainsi que des fonctionnalités autre que du simple affichage des nom des albums/titres, etc.
 - Les presences ne sont pas autorisées à exécuter du JS avec leurs propres fonctions pour obtenir des variables. Si Firefox a des problèmes avec des fonctions par défaut à l'intérieur de la classe `Presence`, vous pouvez faire votre propre fonction et vous devez nous le préciser dans la description de votre Pull Request.
 - Les presences de faible qualité (ou celles avec peu de contenu) **ne sont pas** autorisées (par exemple : afficher uniquement un logo et du texte et ne plus jamais les changer).
-- Les presences qui utilisent des boutons devraient suivre ces règles supplémentaires :
-  - Les boutons qui redirigent uniquement vers la page d'accueil du site sont interdits.
-  - Promouvoir des sites par l'usage des boutons est interdit.
-  - Ils ne peuvent pas contenir des informations supplémentaires quand vous ne pouvez pas les rentrer dans d'autres champs.
-  - Les boutons qui redirigent directement à des flux audio/vidéo sont interdits.
-- Les presences pour des services qui proposent des bots ou des listes de serveurs Discord doivent respecter les règles supplémentaires suivantes :
-  - Le nom de domaine doit avoir été créé il y a au moins **6 mois**.
-  - Nombre de visiteurs uniques par jour :
-    - Pour les noms de domaine vieux de 6 mois : **20 000 visiteurs uniques/jour**.
-    - Pour les noms de domaines vieux de 12 mois ou plus : **45 000 visiteurs uniques/jour**.
-  - Le site Internet ne peut pas avoir un domaine de premier prix comme `.xyz`, `.club` et ce qui s'en rapproche.
-  - Le site Internet doit être de très bonne qualité, au niveau design, etc.
+- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+  - The domain should be at least **6 months** old.
+  - Unique visitors per day:
+    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - The website itself must have a very good quality, design, etc.
+- Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Inclure le dossier `dist` , les fichiers `presence.ts`, `iframe.ts` et `metadata.json` est obligatoire afin que le résultat soit ce qui est représenté dans le schéma suivant :
 
 ```bash
@@ -67,7 +63,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
 > Pour la commodité de nos développeurs de presence, nous avons fourni un schéma que vous pouvez utiliser pour valider l'intégrité de votre fichier `metadata`. Cette option est entièrement facultative et n'est pas nécessaire pendant le processus de révision.
 
@@ -141,7 +137,7 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
 }
 ```
 
-> Si un champ est listé comme facultatif sur la [documentation](https://docs.premid.app/en/dev/presence/metadata) ou qu'il y a un `"` après la clé, et que votre presence utilise la valeur par défaut pour celui-ci, ne l'incluez pas dans le fichier `metadata`. (par exemple, une presence sans le support iframe n'aurait pas besoin du champ `iframe`.)
+> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (par exemple, une presence sans le support iframe n'aurait pas besoin du champ `iframe`.)
 
 > Toutes les images dans le fichier `metadata` doivent être hébergées sur `i.imgur.com`. Utiliser du contenu hébergé sur le site web lui-même n'est **pas**autorisé car il est possible que les chemins changent.
 
@@ -207,12 +203,12 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 
 ### **`category`**
 
-- La catégorie **doit** être l'une des catégories suivantes listées sur la [documentation](/dev/presence/metadata#presence-categories).
+- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - La présence doit être dans une catégorie qui correspond au contenu du site web. (par exemple, n'utilisez pas `anime` lorsque le site n'est pas lié aux animes).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Les expressions régulières **doivent** être valides. Veuillez tester vos expressions avec les outils listés sur la [documentation](/dev/presence/metadata#testing).
+- Les expressions régulières **doivent** être valides. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -233,7 +229,7 @@ Une liste de champs et leurs règles sont listées ci-dessous:
   - Une valeur de type **String** (par exemple `youtube`) qui spécifiera le nom du fichier dont vous voulez obtenir les chaînes de caractères.
   - Une valeur de type **Array<String>** (par exemple `["youtube", "discord"]`) qui spécifiera le nom des fichiers dont vous voulez obtenir les chaînes de caractères.
 
-## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
 > Le code que vous écrivez **doit** être _bien écrit_ et **doit** être _lisible_ et toutes les chaînes doivent être grammaticalement correctes (les erreurs de grammaire sur les sites Web peuvent être ignorées).
 
@@ -250,10 +246,16 @@ Voici une liste de règles que vous devez suivre lors de l'écriture de votre fi
 - Vous ne pouvez faire des requêtes HTTP/HTTPS qu'à `premid.app` ou à l'API du site web concerné par la Presence. Si vous utilisez des domaines externes, vous devrez expliquer pourquoi cela est nécessaire. La seule API autorisée à faire des requêtes est la [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - **Ne** définissez **pas** de champs dans l'objet presenceData par undefined, utilisez plutôt le mot-clé `delete`. (par ex., utilisez `delete data.startTimestamp` au lieu de `data.startTimestamp = undefined`)
 - Vous n'êtes **pas** autorisé à écrire des Presences qui modifient la fonctionnalité d'un site Web donné. Cela inclut l'ajout, la suppression ou la modification des éléments du DOM.
+- Presences that use buttons should follow extra requirements:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
 
-## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
-> N'écrivez **pas** votre propre fichier `tsconfig.json`, utilisez ce qui a été fourni dans la [documentation](/dev/presence/tsconfig).
+## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
+
+> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Modification
 
