@@ -2,7 +2,7 @@
 title: Diretrizes de presences
 description: Rules that all presence developers must follow to have their presence added.
 published: true
-date: 2021-03-06T15:01:04.274Z
+date: 2021-05-01T16:45:59.660Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -34,11 +34,6 @@ As regras gerais de desenvolvimento de presences são as seguintes:
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
 - Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences that use buttons should follow these extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
@@ -46,6 +41,7 @@ As regras gerais de desenvolvimento de presences são as seguintes:
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
+- Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
@@ -67,7 +63,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
 > Para a conveniência de nossos desenvolvedores de presence, nós providenciamos um esquema que você pode usar para validar a integridade do seu arquivo `metadata`. Isso é inteiramente opcional e não é necessário durante o processo de revisão.
 
@@ -138,7 +134,7 @@ Cada presence tem um arquivo descritor chamado `metadata.json`, os metadados tê
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/en/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (por exemplo, uma presence sem suporte iframe não precisaria de um campo `iframe`.)
+> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (por exemplo, uma presence sem suporte iframe não precisaria de um campo `iframe`.)
 
 > Todas as imagens do arquivo `metadata` devem estar hospedadas em `i.imgur.com`. Usar conteúdo hospedado no site em si **não** é permitido pois eles podem mudar os caminhos e arquivos de má vontade.
 
@@ -204,12 +200,12 @@ Uma lista de campos e de suas regras está listada abaixo:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](/dev/presence/metadata#presence-categories).
+- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](/dev/presence/metadata#testing).
+- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -230,7 +226,7 @@ Uma lista de campos e de suas regras está listada abaixo:
   - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
   - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
 
-## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
 > The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
 
@@ -247,10 +243,16 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
 - You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
+- Presences that use buttons should follow extra requirements:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
 
-## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](/dev/presence/tsconfig).
+## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
+
+> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Modification
 
