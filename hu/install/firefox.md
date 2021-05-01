@@ -17,7 +17,7 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Do not forget to [add the **application**](/install). 
+> Ne felejtsd el telepíteni az **alkalmazást**. 
 > 
 > {.is-warning}
 
