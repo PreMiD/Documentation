@@ -270,7 +270,7 @@ Detta gränssnitt har följande variabler, alla av dem är frivilliga.
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Variabel</th>
       <th style="text-align:left">Beskrivning</th>
       <th style="text-align:left">Typ</th>
     </tr>
