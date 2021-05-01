@@ -34,13 +34,13 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
 - Las Presences para radios en línea sólo están permitidas si la radio tiene al menos 100 oyentes semanales y 15 simultáneos. Además de esto debe tener alguna características extra aparte de mostrar el título del álbum/canción, etc.
 - No se permite a las Presences ejecutar código JS con su propia función para obtener variables. Si Firefox tiene problemas con la función integrada dentro de la clase `Presence`, tienes permitido implementar tu propia función. En cuyo caso tendrás que indicarlo en la descripción del Pull Request.
 - **No** se permiten presences de baja calidad o que tengan poco contexto (p. ej., mostrar solo un logotipo y texto pero nunca volver a cambiarlo).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
+- Presences para servicios como listas de Bots/Servidores de Discord deben seguir estos requisitos adicionales:
+  - El dominio debe tener al menos **6 meses** de antigüedad.
   - Unique visitors per day:
     - For 6 month old domains: **20,000 unique visitors/day**.
     - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
+  - El sitio web no puede estar en un dominio barato como `.xyz`, `.club` y demás.
+  - El sitio web debe tener una muy buena calidad, diseño, etc.
 - Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Incluyendo la carpeta `dist`, los archivos `presence.ts`, `iframe.ts` y `metadata.json` son obligatorios para que el resultado sea lo que se representa en el siguiente esquema:
 
@@ -135,7 +135,7 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (por ejemplo, una presence sin soporte para iframe no debe contener el campo `iframe`.)
+> Si un campo está marcado como opcional en la [documentación](https://docs.premid.app/dev/presence/metadata) o con un `*` al lado de la clave y tu presence usa el valor por defecto para ella, no la incluyas en el archivo `metadata`. (por ejemplo, una presence sin soporte para iframe no debe contener el campo `iframe`.)
 
 > Todas las imágenes en el archivo de `metadata` deben estar alojadas en `i.imgur.com`. Usar contenido alojado en el sitio web **no** está permitido, ya que pueden cambiar su ubicación sin querer.
 
@@ -201,7 +201,7 @@ Una lista de los campos y sus reglas están listadas abajo:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- La categoría **debe** ser una de las siguientes listadas en la [documentación](https://docs.premid.app/en/dev/presence/metadata#presence-categories).
 - La presence debe utilizar una categoría que coincida con el contenido del sitio web. (por ejemplo, no utilices `anime` cuando el sitio web no esté relacionado con anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
