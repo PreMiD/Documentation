@@ -247,7 +247,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 #### แนะนำ
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](/dev/presence/metadata/adding-new-strings).
+The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Setup
 
@@ -258,6 +258,8 @@ The `multiLanguage` key can be set to the following:
 `true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
 
 #### Adding new strings
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### การโคลนโปรเจ็ค
 
@@ -305,29 +307,29 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 ### วิธีการ
 
-ใช้วิธีการเหล่านี้เพื่อเข้าถึงข้อมูลการตั้งค่าในไฟล์ Presence ของคุณ
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-คืนค่าจํานวนของการตั่งค่า
+Returns value of setting.
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting
 ```
 
 #### `hideSetting(String)`
-ซ่อนการตั้งค่าที่กำหนด
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); //แทนที่ pdexID ด้วย id ของการตั้งค่า
 ```
 
 #### `showSetting(String)`
-แสดงการตั้งค่า (จะทำงานก็ต่อเมื่อการตั้งค่าถูกซ่อนไว้อยู่)
+Shows given setting (Only works if the setting was already hidden).
 ```typescript
 presence.showSetting("pdexID"); //แทนที่ pdexID ด้วย id ของการตั้งค่า
 ```
 
 ## หมวดหมู่ของ Presence
 
-เมื่อคุณสร้าง Presence ขึ้น คุณจะต้องระบุหมวดหมู่ที่ Presence จะไปอยู่ นี่คือรายการหมวดหมู่ที่คุณสามารถใช้ได้ทั้งหมด
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>
