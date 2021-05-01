@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> আরো দূরে যাওয়ার আগে, নিশ্চিত করো যে তোমার সিস্টেম সব [রিকোয়ারমেন্টগুলো](/install/requirements) পূরণ করে। 
+> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
 > 
 > {.is-info}
 
