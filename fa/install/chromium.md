@@ -10,7 +10,7 @@ The installation of the extension is very important as the application can not d
 
 # نصب
 ### Chrome, Edge, etc.
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. [اینجا کلیک کنید](https://premid.app/downloads) که به صفحه دانلود ما بروید.
 2. Choose **Chromium**.
 3. Click on **Add to Chrome**.
 
