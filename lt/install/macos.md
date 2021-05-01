@@ -6,11 +6,11 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Prieš einant pirmyn, įsitikinkite, kad jūsų sistema atitinka visus [reikalavimus](/install/requirements). 
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Aplikacijos įdiegimas yra labai svarbus, nes papildinys pats nieko negali padaryti.
 
 # Diegti
 1. Eikite į mūsų atsisiuntimų puslapį [spustelėdami čia](https://premid.app/downloads).
