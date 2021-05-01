@@ -149,8 +149,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Turėtų turėti objektą su <code>name</code> ir <code>id</code> presence koduotojo. <code>name</code> yra tavo Discord slapyvardis be identifikatoriaus(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Turėtų turėti objektą su <code>name</code> ir <code>id</code> presence koduotojo. <code>name</code> yra tavo Discord slapyvardis be identifikatoriaus(#0000). Vartotojo <code>id</code> gali būti nukopijuotas iš Discord būnant įsijungus kūrėjo režimą ir paspaudus dešinį klavišą ant savo profilio.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -166,13 +165,13 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       <td style="text-align:left">The title of the service that this presence supports.<br>
       (Must be the same name as the folder where everything is in)</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ne</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
       <td style="text-align:left"><br>Skirta naudoti statusams kurie turi skirtingus pavadinimus skirtingomis kalbomis (pvž. Pokémon ir 포켓몬스터).<br>Jūs taipogi galite naudoti jį statusams kurie turi specialių raidžių, kad jums nereikėtų jų vesti (pvž. Pokémon ir Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Taip</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
