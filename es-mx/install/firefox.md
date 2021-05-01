@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-La instalación de la extensión es muy importante, ya que la aplicación no puede hacer nada por sí sola.
+La instalación de la extensión es muy importante, ya que la aplicación no puede hacer nada por sí misma.
 
 # Instalar
 1. Ve a nuestra página de descargas [pulsando aquí](https://premid.app/downloads).
@@ -17,7 +17,7 @@ La instalación de la extensión es muy importante, ya que la aplicación no pue
 6. Selecciona el archivo descargado recientemente.
 7. Acepta la instalación pulsando sobre **Añadir**.
 
-> No te olvides de [añadir la **aplicación**](/install). 
+> Do not forget to [add the **application**](/install). 
 > 
 > {.is-warning}
 
