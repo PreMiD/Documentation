@@ -35,7 +35,7 @@ Toda presence está programada en [TypeScript](https://www.typescriptlang.org/).
 
 1. Abre la consola y escribe `git clone https://github.com/PreMiD/Presences`.
 2. Escoge una carpeta a tu gusto.
-3. Ábrela en tu editor de código.
+3. Open it in your code editor.
 
 ## Creando carpetas y archivos
 
@@ -149,13 +149,15 @@ Por favor copia el código anterior y ponlo en tu archivo `metadata.json`. Ahora
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador de la presence. Puedes copiar tu <code>id</code> de usuario de Discord activando el modo desarrollador y pulsando sobre tu perfil con el botón secundario del ratón. <code>name</code> es tu nombre de Discord sin el identificador (#0000).</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). La <code>id</code> de usuario puede copiarse de Discord habilitando el modo
+        desarrollador y haciendo clic derecho en tu perfil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Debería contener un Object con las propiedades <code>name</code> e <code>id</code> del desarrollador de la presence. Puedes copiar el <code>id</code> del usuario de Discord activando el modo desarrollador y pulsando sobre el perfil del usuario con el botón secundario del ratón. <code>name</code> es tu nombre de Discord sin el identificador (#0000).</td>
+      <td style="text-align:left">Debería contener un Object con las propiedades <code>name</code> e <code>id</code> del desarrollador de la presence. <code>name</code> is your Discord username without the identifier(#0000). La <code>id</code> de usuario puede copiarse de Discord habilitando el modo
+        desarrollador y haciendo clic derecho en tu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
@@ -168,13 +170,15 @@ Por favor copia el código anterior y ponlo en tu archivo `metadata.json`. Ahora
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Destinado a ser utilizado para presences que tienen nombres distintos en idiomas diferentes (ej., Pokémon y 포켓몬스터)<br>También puedes usarlo para presences con caracteres especiales y así no tendrás que escribirlos (ejemplo., Pokémon y Pokemon).</td>
+      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
+      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
+      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Una pequeña descripción de la presence, puedes usar la descripción del servicio si no se te ocurre nada. Tu descripción debe contener tuplas de valores, indicando el idioma y la descripción en dicho idioma. Escribe descripciones en los idiomas <i>que tu conozcas</i>, nuestros traductores realizarán cambios en tu archivo metadata.</td>
+      <td style="text-align:left">Una pequeña descripción de la presence, puedes usar la descripción del servicio si no se te ocurre nada. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -205,7 +209,7 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Versión de tu presence.</td>
+      <td style="text-align:left">Version of your presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -217,19 +221,20 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Enlace a la miniatura de la presence.</td>
+      <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">Valor <code>#HEX</code>. Recomendamos que utilizes el color primario del servicio.</td>
+      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array con etiquetas, estas ayudarán a los usuarios a buscar tu presence en la web.</td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -253,7 +258,7 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Define si la extensión debe capturar llamadas a <code>console.log</code>.</td>
+      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
