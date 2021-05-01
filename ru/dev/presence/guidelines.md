@@ -2,7 +2,7 @@
 title: Руководство по присутствию
 description: Правила, которым должны следовать все разработчики presence, чтобы добавить свое presence.
 published: true
-date: 2021-03-06T15:01:04.274Z
+date: 2021-05-01T16:45:59.660Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -34,18 +34,14 @@ dateCreated: 2021-02-26T21:54:41.573Z
 - Presences для онлайн-радио разрешено только в том случае, если у радио есть не менее 100 еженедельных слушателей и 15 одновременно.
 - Запрещено использование присутствия, для запуска JS кода со своей собственной функцией для получения переменных. Если Firefox имеет проблемы со встроенной функцией внутри класса `Presence`, вам разрешено сделать свою собственную функцию, и вы должны сообщить нам об этом в описании Pull Request.
 - Присутствия c низким качеством (или с небольшим контекстом) **не** допускается (например, только показ логотипа и текста, и без дальнейшего его изменения).
-- Присутствия, использующие кнопки, должны соответствовать этим дополнительным требованиям:
-  - Перенаправление на главную страницу запрещено.
-  - Рекламирование сайтов запрещено.
-  - Они не могут показывать дополнительные данные, пока вы не можете показать их на других полях.
-  - Прямое перенаправление на аудио/видео стрим запрещено.
-- Статус для таких сервисов, как Discord бот или списки серверов, должно соответствовать этим дополнительным требованиям:
-  - Домен должен быть оформлен более **6 месяцев**назад.
-  - Уникальных посетителей в день:
-    - Для доменов, зарегистрированных более 6 месяцев назад: **20,000 уникальных посетителей в день**.
-    - Для доменов, зарегистрированных более 12 месяцев назад: **45,000 уникальных посетителей в день**.
-  - Сайт не должен находиться на дешёвой доменной зоне, таких, как `.xyz`, `.club` и т. п.
-  - Сайт должен иметь очень хорошее качество, дизайн и т. п.
+- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+  - The domain should be at least **6 months** old.
+  - Unique visitors per day:
+    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
+  - The website itself must have a very good quality, design, etc.
+- Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Присутствие должно обязательно иметь папку `dist`, а также файлы `presence.ts`, `iframe.ts` и `metadata.json`. В конечном итоге директория должна выглядеть вот так:
 
 ```bash
@@ -67,7 +63,7 @@ presence
 └── tsconfig.json
 ```
 
-## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
+## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
 > Для удобства наших разработчиков presence, мы предоставили схему, которую вы можете использовать для проверки целостности вашего `metadata` файла. Это совершенно необязательно и не требуется в процессе проверки.
 
@@ -132,7 +128,7 @@ presence
 }
 ```
 
-> Если поле указано как дополнительное для [ документации](https://docs.premid.app/en/dev/presence/metadata) и ваше presence использует для него значение по умолчанию, не включайте его в файл `metadata`. (например, presence без поддержки iframe не потребует поле `iframe`.)
+> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (например, presence без поддержки iframe не потребует поле `iframe`.)
 
 > Все картинки в `metadata`файл должен находиться по адресу `i.imgur.com`. Использование контента, размещенного на сайте **не** им разрешено, поскольку они могут неохотно изменять пути и файлы.
 
@@ -198,12 +194,12 @@ presence
 
 ### **`category`**
 
-- Категория **должна** быть одной из следующих, перечисленных в [документации](/dev/presence/metadata#presence-categories).
+- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - Наличие должно использовать категорию, которая соответствует содержанию веб-сайта. (например, не используйте `аниме` не имеет отношения к сайту аниме).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Регулярные выражения **должны** быть действительными. Пожалуйста, протестируйте свои выражения с инструментами, перечисленными в [документации](/dev/presence/metadata#testing).
+- Регулярные выражения **должны** быть действительными. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -224,7 +220,7 @@ presence
   - **String** (например, `youtube`), в котором будет указано имя файлов, из которых вы хотите получить строки.
   - **Array<String>** тип (например `["youtube", "discord"]`) в котором указывается имя файлов, из которых вы хотите получить строки.
 
-## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
+## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
 > Код, который вы пишете **, должен ** быть _хорошо написанным_ и ** должен ** быть _ читабельным_, и все строки должны быть грамматически правильными (грамматические ошибки на сайтах можно игнорировать).
 
@@ -241,10 +237,16 @@ presence
 - Многие из вас делают HTTP/HTTPS запросы только к `premid.app` или API веб-сайта presence. Если вы используете внешние домены, вам нужно будет объяснить, почему это необходимо. Только API для запроса [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Делать **не** установите для полей в объекте данных присутствия значение undefined после его объявления, используйте `delete` ключевое слово вместо этого. (например, используйте `delete data.startTimestamp` вместо `data.startTimestamp = undefined`)
 - Ты **не** разрешено писать присутствия, которые изменяют функциональность данного сайта. Это включает добавление, удаление или модификацию элементов DOM.
+- Presences that use buttons should follow extra requirements:
+  - Redirects to main page are prohibited.
+  - Promoting websites by them is prohibited.
+  - They can't show addinational data when you can't show them in other fields.
+  - Redirecting directly to audio/video stream is prohibited.
 
-## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
-> **нет** пишите свой собственный файл `tsconfig.json`, используйте то, что было предоставлено в [документации](/dev/presence/tsconfig).
+## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
+
+> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Модификация
 
