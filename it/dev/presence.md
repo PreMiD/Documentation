@@ -149,8 +149,8 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). L'id utente <code></code> può essere copiato da Discord abilitando la modalità
-        dello sviluppatore e facendo click destro sul tuo profilo.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). User <code>id</code> can be copied from Discord by enabling developer
+        mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -159,7 +159,7 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
       <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>sì</code></td>
+      <td style="text-align:left"><code>Yes</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
@@ -207,7 +207,7 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Versione della tua presence.</td>
+      <td style="text-align:left">Version of your presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -219,14 +219,14 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link alla miniatura della tua presence.</td>
+      <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> valore. Si consiglia di utilizzare un colore primario del servizio
-        che la tua presence supporta.</td>
+      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>

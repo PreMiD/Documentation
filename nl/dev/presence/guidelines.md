@@ -37,11 +37,11 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences voor services zoals bot- en serverlijsten voor Discord moeten aan deze extra eisen voldoen:
   - Het domein moet minimaal **6 maanden** oud zijn.
   - Unieke bezoekers per dag:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+    - Voor domeinen van 6 maanden oud: **20.000 unieke bezoekers/dag**.
+    - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
   - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
   - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. Als je presence eigen strings nodig heeft, dan moet je geen `multiLanguage` gebruiken totdat de presence 1000 gebruikers heeft. Je kunt [hier](https://docs.premid.app/dev/presence/class#getstringsobject) een voorbeeld vinden.
+- Presences moeten [veelvoorkomende details](https://api.premid.app/v2/langFile/presence/en) gebruiken (strings beginnend met "general."). Je kunt dit bereiken met `multiLanguage` met de meegeleverde strings. Als je presence eigen strings nodig heeft, dan moet je geen `multiLanguage` gebruiken totdat de presence 1000 gebruikers heeft. Je kunt [hier](https://docs.premid.app/dev/presence/class#getstringsobject) een voorbeeld vinden.
 - De map `dist` en de bestanden `presence.ts`, `iframe.ts` en `metadata.json` moeten worden toegevoegd, dus je resultaat zou overeen moeten komen met het volgende schema:
 
 ```bash
@@ -246,7 +246,7 @@ Hier is een lijst met regels die je moet volgen bij het schrijven van je `presen
 - Presences met knoppen moeten aan deze extra eisen voldoen:
   - Doorverwijzingen naar de hoofdpagina zijn verboden.
   - Het promoten van websites via knoppen is verboden.
-  - They can't show additional data when you can't show them in other fields.
+  - Ze mogen geen aanvullende informatie die niet meer in andere velden past weergeven.
   - Direct doorverwijzen naar een audio- of videostream is verboden.
 
 
@@ -313,7 +313,7 @@ Op dit moment wordt de presence in drie afzonderlijke fasen gecontroleerd. Al de
 - `DeepScan` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
 - `Schema Validation` zal je `metadata.json` bestand scannen op fouten (bijvoorbeeld ontbrekende velden, ongeldige waarde types, etc.). Als je ooit nieuwe problemen ziet, ben je ook **verplicht** om die op te lossen. Het toevoegen van een schemaveld aan je `metadata.json` bestand zal je tekstverwerker (indien ondersteund) toestaan om deze fouten te tonen tijdens de ontwikkeling van je presence.
 
-## `Additional Rules`
+## `Aanvullende regels`
 
 - Zorg er **altijd** voor dat je presence in de meest geschikte map begint, als de naam begint met een Latijnse letter dan moet het onder de alfabetische overeenkomst vallen (bijv. `D/dアニメストア` of `G/Google`). Alle andere Unicode/niet-Latijnse tekens **moeten** onder de map `#` staan (bijvoorbeeld `#/巴哈姆特`) en nummers onder de `0-9` map (bijvoorbeeld `0-9/4anime`).
 

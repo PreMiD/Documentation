@@ -22,7 +22,7 @@ De installatie van de applicatie is van groot belang, omdat de extensie op zichz
 6. Kies open wanneer er om gevraagd wordt.
 7. Verleen toegang tot verbindingen via **Firewall** en bedien **Systeem Gebeurtenissen** wanneer gevraagd.
 
-De applicatie start automatisch. Check for the symbol in your menu bar.
+De applicatie start automatisch. Controleer op het symbool in je menubalk.
 
 > Vergeet niet [de **extensie**](/install) toe te voegen. 
 > 

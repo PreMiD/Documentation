@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Bevor Du fortfährst, stelle sicher, dass Dein System alle [Anforderungen](/install/requirements) erfüllt. 
+> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
 > 
 > {.is-info}
 
