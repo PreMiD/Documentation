@@ -10,7 +10,7 @@ A instalação da extensão é muito importante, pois o aplicativo não pode faz
 
 # Instalação
 ### Chrome, Edge, etc.
-1. Vá para a nossa página de downloads [clicando aqui](https://premid.app/downloads).
+1. Go to our downloads page by [clicking here](https://premid.app/downloads).
 2. Escolha **Chromium**.
 3. Clique em **Usar no Chrome**.
 
