@@ -13,7 +13,7 @@ tags:
 The installation of the application is very important as the extension can not do anything by itself.
 
 # התקן
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. עבור לדף ההורדות שלנו על ידי [לחיצה כאן](https://premid.app/downloads).
 2. Choose **OS X**.
 3. Extract the archive if necessary.
 4. Open the installer.
@@ -22,7 +22,7 @@ The installation of the application is very important as the extension can not d
 6. Choose open when prompted.
 7. Grant access to connections through **Firewall** and control **System Events** when prompted.
 
-The application will start automatically. Check for the symbol in your menu bar.
+היישום יופעל אוטומטית. Check for the symbol in your menu bar.
 
 > Do not forget to [add the **extension**](/install). 
 > 
