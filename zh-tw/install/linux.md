@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
-安裝本地程式非常重要，因為單靠擴充功能是無法做任何事的。
+軟體的安裝非常重要，因為擴充功能無法自行做任何的操作
 
 > Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
 > 
