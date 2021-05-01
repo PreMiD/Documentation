@@ -6,10 +6,10 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-The installation of the extension is very important as the application can not do anything by itself.
+نصب افزونه مرورگر به اندازه نصب خود برنامه خیلی خیلی مهمه و برنامه بدون افزونه مرورگر هیچ کاری نمی تونه برای شما انجام بده.
 
 # نصب
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. از طریق [این لینک](https://premid.app/downloads) به صفحه دانلود بروید.
 2. Choose **Firefox**.
 3. Search for `about:addons`.
 4. Click on the small gear icon in the upper right corner.
@@ -17,7 +17,7 @@ The installation of the extension is very important as the application can not d
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Do not forget to [add the **application**](/install). 
+> فراموش نکنید [**برنامه** را هم نصب کنید](/install). 
 > 
 > {.is-warning}
 
