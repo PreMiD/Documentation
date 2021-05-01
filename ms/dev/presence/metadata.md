@@ -322,14 +322,14 @@ presence.hideSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 ```
 
 #### `showSetting(String)`
-Tunjukkan tetapan yang diberi (Hanya berfungsi jika tetapan disembunyikan).
+Tunjukkan tetapan yang diberi (Hanya berfungsi jika tetapan telah disembunyikan sebelumnya).
 ```typescript
 presence.showSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 ```
 
 ## Kategori Presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Apabila mencipta Presence anda, anda mesti tetapkan kategori yang mana Presence tersebut berada. Ini senarai semua kategori yang anda boleh guna.
 
 <table>
   <thead>

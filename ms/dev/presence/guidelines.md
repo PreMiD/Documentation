@@ -34,14 +34,14 @@ Peraturan am pembangunan Presence adalah seperti berikut:
 - Presence untuk radio dalam talian hanya dibenarkan sekiranya radio tersebut mempunyai sekurang-kurangnya 100 pendengar mingguan dan 15 pendengar serempak dan mesti mempunyai beberaa ciri selain daripada setakat menunjukkan tajuk lagu/album, dll.
 - Presence tidak dibenarkan untuk menjalankan kod JS dengan fungsi tersendiri untuk mendapatkan pemboleh ubah. Sekiranya Firefox mempunyai masalah dengan fungsi terbina dalam kelas `Presence`, anda dibenarkan membuat fungsi anda sendiri dan anda perlu memberitahu kami mengenainya di perihalan Permintaan Tarikan (Pull Request) berkaitan.
 - Presence kualiti rendah (atau yang mana dengan konteks kecil) adalah **tidak** dibenarkan (sbg. cth., hanya menunjukkan logo dan tulisan tetapi tidak mengubahnya lagi).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
+- Presence untuk perkhidmatan seperti Bot/Senarai Pelayan Discord mesti mengikut keperluan tambahan berikut:
+  - Domain mestilah berusia sekurang-kurangnya **6 bulan**.
   - Pelawat unik setiap hari:
     - Untuk domain berusia 6 bulan: **20,000 pelawat unik sehari**.
     - Untuk domain berusia 12+ bulan: **45,000 pelawat unik sehari**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+  - Laman sesawang tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan lain-lain.
+  - Laman sesawang tersebut sendirinya mestilah mempunyai kualiti, reka bentuk, dll yang sangat bagus.
+- Presence patut gunakan [maklumat umum](https://api.premid.app/v2/langFile/presence/en) (rentetan yang bermula dengan "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Penyertaan folder `dist`, fail `presence.ts`, fail `iframe.ts`, dan fail `metadata.json` adalah diwajibkan supaya hasilnya nanti serupa seperti apa yang diwakilkan dalam skema berikut:
 
 ```bash
