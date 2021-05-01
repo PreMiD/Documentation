@@ -164,7 +164,7 @@ console.log(version); // Will log 2.1.0
 
 ### `getSetting(String)`
 
-Tuairisceáin luach an tsuímh.
+Returns value of setting.
 
 ```typescript
 const const = await presence.getSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
@@ -173,7 +173,7 @@ console.log(setting); // Déanfaidh sé seo luach an tsuímh a logáil
 
 ### `hideSetting(String)`
 
-Seithí tugtha suíomh.
+Hides given setting.
 
 ```typescript
 presence.hideSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 
 ### `showSetting(String)`
 
-Seónna a thugtar an socrú (Ní oibríonn sé ach má bhí an suíomh i bhfolach cheana féin).
+Shows given setting (Only works if the setting was already hidden).
 
 ```typescript
 presence.showSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID

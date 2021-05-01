@@ -243,7 +243,7 @@ Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eing
 
 #### Einführung
 
-Die `multiLanguage` Einstellung erlaubt es Benutzern die manuelle Auswahl der Sprache, die in der Presence angezeigt werden soll. Dies erfordert, dass Sie die Strings von unserer [API](https://api.premid.app/v2/langFile/presence/en) verwenden. Für Informationen zum hinzufügen von Strings, drücke [hier](/dev/presence/metadata/adding-new-strings).
+Die `multiLanguage` Einstellung erlaubt es Benutzern die manuelle Auswahl der Sprache, die in der Presence angezeigt werden soll. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Einrichtung
 
@@ -254,6 +254,8 @@ Die `multiLanguage` Einstellung kann in die folgenden Werte gesetzt werden:
 `true`: Nutze diesen Wert, wenn du nur Strings aus der `general.json` Datei und der `<service>.json` Datei verwendest aus der [Lokalisierungs-Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: Name der Datei ohne Dateiendung (.json) in der [Lokalisierungs-Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (ausgenommen der `general` Datei, da diese immer geladen wird). Es werden nur gebräuchliche Sprachen sowohl der `general` als auch der eingegebenen Datei angezeigt. `Array<String>`: Wenn du mehr als eine Datei innerhalb der [Lokalisierung-Repository](https://github.com/PreMid/Localization/tree/master/src/Presence) verwendest, kannst du alle Werte in einem Array angeben (ausgenommen der `general` Datei, da diese immer geladen wird). Nur gebräuchliche Sprachen aller Dateien werden aufgelistet.
 
 #### Neue Stings hinzufügen
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Klont das Projekt
 
@@ -269,15 +271,15 @@ Die `multiLanguage` Einstellung kann in die folgenden Werte gesetzt werden:
 
 ##### Hinzufügen der Strings
 
-Jeder `string` ist ein `Object`, bei dem der Name mit dem Namen des Dienstes beginnt und dann der stringName mit einem Punkt zwischen ihnen.
+Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-Der stringName ist ein 1-Wort-Identifikator der Nachricht.
+The stringName is a 1 word identifier of the message.
 
-Das `Object` hat 2 Eigenschaften; `message` und `description`. `message` ist der Text, der übersetzt werden muss. `description` ist die Beschreibung der Nachricht, die unseren Übersetzern hilft zu verstehen, was sie übersetzen.
+The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
 
-**Hinweis:** Füge keine doppelten String hinzu. (Dies beinhaltet Zeichenketten aus der `general.json` Datei, aber nicht die anderen Dateien.)
+**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Visualisierung der Datei:
+Visualization of the the file:
 
 ```typescript
 {
@@ -292,38 +294,38 @@ Visualisierung der Datei:
 }
 ```
 
-Nachdem deine Datei fertig ist, kannst du einen Pull Request in der [Lokalisierungs-Repository](https://github.com/PreMiD/Localization) erstellen, in der Beschreibung **musst** du einen Link zur Pull Request der zu aktualisierenden Presence aus der [Presence-Repository](https://github.com/PreMiD/Presences) beifügen, die die neuen Strings verwenden soll.
+After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Standard-Tasten
-Die Schlüssel, die Sie nicht setzten müssen, werden automatisch auf folgendes gesetzt: `title`: "Language" **Hinweis:** Dies wird in Ihre Standardsprache (Browsersprache) übersetzt. `icon`: "fas fa-language" ([Vorschau](https://fontawesome.com/icons/language)) `value`: **Setzt auf ihre Browsersprache, sofern verfügbar (100% übersetzt), ansonsten Englisch.** `values`: **Setzt die verfügbaren Sprachen (Sprachen, die 100% übersetzt sind).**
+The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Hinweis:** Diese sind in keiner Weise veränderbar.
+**Note:** These are in no way changeable.
 
 ### Methoden
 
-Benutze die folgenden Methoden, um eine Einstellungen-Info in deinen Presence-Dateien zu bekommen.
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Gibt den Wert der Einstellung zurück.
+Returns value of setting.
 ```typescript
 const setting = await.presence.getSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
 console.log(setting); // Dies loggt den Wert der Einstellung
 ```
 
 #### `hideSetting(String)`
-Versteckt die definierte Einstellung.
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetzen
 ```
 
 #### `showSetting(String)`
-Zeigt definierte Einstellung (Funktioniert nur, wenn die Einstellung bereits versteckt war).
+Zeigt angegebene Anstellung an (Funktioniert nur, wenn die Einstellung schon versteckt war).
 ```typescript
 presence.showSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetzen
 ```
 
 ## Presence-Kategorien
 
-Wenn du deine Presence erstellst, musst du eine Kategorie definieren, welche der Presence entspricht. Dies ist eine zusammengestellte Liste der Kategorien, welche du benutzen kannst.
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>

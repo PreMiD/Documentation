@@ -34,14 +34,14 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences voor online radio's zijn alleen toegestaan als de radio ten minste 100 wekelijkse luisteraars en 15 gelijktijdige luisteraars heeft. Ook moet het enkele functies hebben en niet alleen album en titel.
 - Presences mogen geen JS-code uitvoeren met een eigen functie om variabelen op te halen. Als Firefox problemen heeft met de ingebouwde functie binnen de class `Presence`, heb je toestemming om je eigen functie te schrijven zolang je het laat weten in de beschrijving van je Pull Request.
 - Lage kwaliteit presences (of degenen met weinig context) zijn **niet** toegestaan (bijv.: alleen een logo en tekst tonen maar later niks meer wijzigen).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use common details, you can achieve this using multilanguage with the provided strings, if your presences requires custom strings you shouldn't use multilanguage until the presence gets 1k users. Find example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences voor services zoals bot- en serverlijsten voor Discord moeten aan deze extra eisen voldoen:
+  - Het domein moet minimaal **6 maanden** oud zijn.
+  - Unieke bezoekers per dag:
+    - Voor domeinen van 6 maanden oud: **20.000 unieke bezoekers/dag**.
+    - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
+  - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
+  - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
+- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - De map `dist` en de bestanden `presence.ts`, `iframe.ts` en `metadata.json` moeten worden toegevoegd, dus je resultaat zou overeen moeten komen met het volgende schema:
 
 ```bash
@@ -134,7 +134,7 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (bijv. een presence zonder iframe ondersteuning heeft het veld `iframe` niet nodig.)
+> Als een veld als optioneel wordt vermeld in de [documentatie](https://docs.premid.app/dev/presence/metadata) of er een `*` naast staat en je presence er de standaardwaarde voor gebruikt, typ deze dan niet in het `metadata`-bestand. (bijv. een presence zonder iframe ondersteuning heeft het veld `iframe` niet nodig.)
 
 > Alle afbeeldingen in het `metadata` bestand moeten worden gehost op `i.imgur.com`. Het gebruik van inhoud op de website zelf is **niet** toegestaan, omdat het ongewillig de paden en bestanden kan wijzigen.
 
@@ -200,12 +200,12 @@ Hieronder vindt u een lijst met velden en hun regels:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- De categorie **moet** vermeld staan in de [documentatie](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - De presence moet een categorie gebruiken die overeenkomt met de inhoud van de website. (bijvoorbeeld, gebruik niet `anime` wanneer de website niet gerelateerd is aan anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regelmatige expressies **moeten** geldig zijn. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Regelmatige expressies **moeten** geldig zijn. Test je expressions met de tools in de [documentatie](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -244,15 +244,15 @@ Hier is een lijst met regels die je moet volgen bij het schrijven van je `presen
 - Stel velden in het presenceData object **niet** in op undefined nadat ze verklaard zijn, maar gebruik in plaats daarvan `delete`. (bijv. gebruik `delete data.startTimestamp` in plaats van `data.startTimestamp = undefined`)
 - Je bent **niet** toegestaan om presences te schrijven die de functionaliteiten van een bepaalde website wijzigen. Dit omvat het toevoegen, verwijderen en wijzigen van DOM-elementen.
 - Presences met knoppen moeten aan deze extra eisen voldoen:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show addinational data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+  - Doorverwijzingen naar de hoofdpagina zijn verboden.
+  - Het promoten van websites via knoppen is verboden.
+  - They can't show additional data when you can't show them in other fields.
+  - Direct doorverwijzen naar een audio- of videostream is verboden.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> Schrijf **niet** je eigen `tsconfig.json`-bestand, gebruik wat geleverd is in deze [documentatie](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Aanpassingen
 

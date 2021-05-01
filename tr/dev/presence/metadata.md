@@ -242,7 +242,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 #### Tanıtım
 
-Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlayan ayar `multiLanguage` ayarıdır. Bu seçeneği aktifleştirmek, [API](https://api.premid.app/v2/langFile/presence/en) sistemimizdeki çevirileri kullanmanızı sağlar, daha fazla bilgi için [buraya](/dev/presence/metadata/adding-new-strings) tıklayın.
+Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlayan ayar `multiLanguage` ayarıdır. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Kurulum
 
@@ -253,6 +253,8 @@ Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlay
 `true`: eğer sadece `general.json` ve [Localization deposundaki](https://github.com/PreMiD/Localization/tree/master/src/Presence) `<servis>.json` dosyasındakileri kullanacaksanız bunu seçin. `string`: [Localization deposundaki](https://github.com/PreMiD/Localization/tree/master/src/Presence) bir dosya ismi (içerisinde .json uzantısı ve dosyanın adı, zaten her zaman kullanılabilir durumda olduğu için `general` olmamalıdır). Hem `general` hem de girilen dosyanın yalnızca ortak dilleri listelenir. `<String>`: [Localization deposundaki](https://github.com/PreMiD/Localization/tree/master/src/Presence) birden fazla dosyayı kullanıyorsanız hepsini array şeklinde belirtebileceğiniz seçenektir (her durumda yüklü olduğu için `general` dosyasını belirtmenize gerek yoktur. Hem `general` hem de girilen dosyanın yalnızca ortak dilleri listelenir.
 
 #### Yeni çeviriler ekleme
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Projeyi klonlama
 
@@ -268,15 +270,15 @@ Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlay
 
 ##### Çevirileri ekleme
 
-Her `string` bir `Object` türündedir ve aralarında nokta olacak şekilde önce servisin ismi, peşinden de stringName gelecek şekilde belirtilir.
+Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-stringName tek kelime olacak şekilde mesajı anlatan bir anahtardır.
+The stringName is a 1 word identifier of the message.
 
-`Object` toplamda iki özelliğe sahiptir; `message` ve `description`. `message` çevrilmesi gereken yazıdır. `description` çevirmenlerin anlamasında yardımcı olacak mesajınızdır.
+The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
 
-**Not:** Aynı çeviriyi birden fazla kere eklemeyin. (Buna `general.json` dosyasındakiler dahildir, fakat diğer dosyalardakiler dahil değildir.)
+**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Dosyanın örnek bir görüntüsü:
+Visualization of the the file:
 
 ```typescript
 {
@@ -291,38 +293,38 @@ Dosyanın örnek bir görüntüsü:
 }
 ```
 
-Çevirilerinizi tamamen ekledikten sonra [Localization deposuna](https://github.com/PreMiD/Localization) bir Pull Request atabilirsiniz, bunun içerisinde de **mutlaka** bu çevirileri kullandığınız yeni servis güncellemenizin olduğu [Presence deposundaki](https://github.com/PreMiD/Presences) Pull Request'inizin bağlantısı olmalıdır.
+After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Varsayılan anahtarlar
-Ayarlamanız gerekmeyen anahtarlar otomatik olarak aşağıdaki gibi ayarlanır: `title`: "Language" **Not:** Bu başlık, kullanıcının tarayıcısının diline uygun olarak değişecektir. `icon` "fas fa-language" ([Önizleme](https://fontawesome.com/icons/language)) `value`: **Eğer çevirisi %100 ise kullanıcının tarayıcısının dili seçeneğini alır, eğer değilse İngilizce olur.** `values`: **Çevirisi %100 tamamlanmış olan dillere ayarlanır.**
+The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Not:** Bunlar hiçbir şekilde değiştirilemez.
+**Note:** These are in no way changeable.
 
 ### Metodlar
 
-Ayarlara servisinizin içinden ulaşabilmek için aşağıdaki metodları kullanın:
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Bir ayarın versini döner.
+Returns value of setting.
 ```typescript
 const setting = await presence.getSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 console.log(setting); // Ayarın değerinin çıktısını verecektir
 ```
 
 #### `hideSetting(String)`
-Belirtilen ayarı gizler.
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar ile değiştirin
 ```
 
 #### `showSetting(String)`
-Belirtilen ayarı gösterir (sadece önceden gizlenmişse çalışacaktır).
+Shows given setting (Only works if the setting was already hidden).
 ```typescript
 presence.showSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar ile değiştirin
 ```
 
 ## Servis kategorileri
 
-Bir servis oluştururken, servisin bulunacağı geçerli bir kategori belirtmelisiniz. Geçerli kategoriler aşağıda açıklamalarıyla birlikte belirtilmiştir.
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>

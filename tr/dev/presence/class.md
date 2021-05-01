@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 
 ### `showSetting(String)`
 
-Belirtilen ayarı gösterir (sadece önceden gizlenmişse çalışacaktır).
+Shows given setting (Only works if the setting was already hidden).
 
 ```typescript
 presence.showSetting("pdexID"); // PdexID'yi ayarın id'si ile değiştirin

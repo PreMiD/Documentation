@@ -244,7 +244,7 @@ Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an lái
 
 #### Réamhrá
 
-Úsáidtear an `multiLanguage` suíomh chun ligean d’úsáideoirí an teanga ar mian leo a bheith i láthair a roghnú de láimh. Éilíonn sé seo ort teaghráin ónár [API](https://api.premid.app/v2/langFile/presence/en) a úsáid, chun faisnéis a fháil faoi conas teaghráin a chur leis cliceáil [anseo](/dev/presence/metadata/adding-new-strings).
+Úsáidtear an `multiLanguage` suíomh chun ligean d’úsáideoirí an teanga ar mian leo a bheith i láthair a roghnú de láimh. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Socrú
 
@@ -255,6 +255,8 @@ Is `multiLanguage` féidir an eochair a shocrú dóibh seo a leanas:
 `true`: bain úsáid as seo mura bhfuil tú ag úsáid ach teaghráin den `general.json` chomhad agus `<service>.json` de chomhad an [Stór Logánaithe](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: ainm an chomhaid gan an síneadh (.json) a áireamh taobh istigh den [Stór Logánú](https://github.com/PreMiD/Localization/tree/master/src/Presence) (gan an `general` comhad a áireamh, ós rud é go bhfuil sé luchtaithe i gcónaí). Ní dhéanfar ach teangacha comónta an `general` chomhaid ionchuir agus an chomhaid ionchuir a liostáil. `Array<String>`: má tá níos mó ná comhad amháin á úsáid agat taobh istigh den [Stór Logánaithe](https://github.com/PreMiD/Localization/tree/master/src/Presence) is féidir leat na luachanna go léir in eagar a shonrú (gan an `general` comhad a áireamh, ós rud é go bhfuil sé luchtaithe i gcónaí). Ní dhéanfar ach teangacha coitianta de na comhaid go léir a liostáil.
 
 #### Teaghráin nua a chur leis
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Ag clónáil an tionscadail
 
@@ -270,15 +272,15 @@ Is `multiLanguage` féidir an eochair a shocrú dóibh seo a leanas:
 
 ##### Ag cur na dtéad
 
-Tosaíonn gach ceann `string` acu `Object` ón ainm leis an ainm seirbhíse agus ansin an t-ainm teaghrán mar a thugtar air le ponc eatarthu.
+Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-Is aitheantóir 1 fhocal den teachtaireacht an stringName.
+The stringName is a 1 word identifier of the message.
 
-An `Objec`t Tá 2 mhaoin; `message` agus `description`. `message` an téacs nach mór a aistriú. `description` is tuairisc é ar an teachtaireacht chun cabhrú lenár n-aistritheoirí an méid atá á aistriú acu a thuiscint.
+The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
 
-**Nóta:** Ná cuir aon teaghráin dhúblacha leis. (Cuimsíonn sé seo teaghráin as an `general.json` gcomhad ach ní na comhaid eile.)
+**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Amharcléiriú an chomhaid:
+Visualization of the the file:
 
 ```typescript
 {
@@ -293,38 +295,38 @@ Amharcléiriú an chomhaid:
 }
 ```
 
-Tar éis duit an comhad a dhéanamh go hiomlán le teaghráin is féidir leat Iarratas Tarraingthe a chruthú ar an [Stór Logánú](https://github.com/PreMiD/Localization), sa chur síos ní **mór** duit nasc le d’Iarratas Tarraingthe ar an láithreacht a nuashonrú arna nuashonrú ag baint úsáide as na teaghráin nua seo ón [Stór Láithreachta](https://github.com/PreMiD/Presences).
+After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Eochracha réamhshocraithe
-Socraítear na heochracha nár ghá duit a shocrú go huathoibríoch mar a leanas: `title`: "Teanga" **Nóta:** Aistrítear é seo go dtí a dteanga réamhshocraithe (teanga an bhrabhsálaí). `icon`: "fas fa-language" ([Réamhamharc](https://fontawesome.com/icons/language)) `value`: **Socraigh ar theanga a mbrabhsálaí má tá sé ar fáil (100% aistrithe), ar shlí eile Béarla.** `values`: **Socraigh ar na teangacha atá ar fáil (teangacha a bhfuil 100% aistrithe acu).**
+The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Nóta:** Ní féidir iad seo a athrú ar bhealach ar bith.
+**Note:** These are in no way changeable.
 
 ### Modhanna
 
-Úsáid na modhanna seo a leanas chun faisnéis faoi shuíomhanna a fháil i do chomhaid láithreachta:
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Tuairisceáin luach an tsuímh.
+Returns value of setting.
 ```typescript
 const const = await presence.getSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 console.log(setting); // Déanfaidh sé seo luach an tsuímh a logáil
 ```
 
 #### `hideSetting(String)`
-Seithí tugtha suíomh.
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 ```
 
 #### `showSetting(String)`
-Seónna a thugtar an socrú (Ní oibríonn sé ach má bhí an suíomh i bhfolach cheana féin).
+Shows given setting (Only works if the setting was already hidden).
 ```typescript
 presence.showSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 ```
 
 ## Catagóirí Presence
 
-Agus tú i láthair, caithfidh tú catagóir a shonrú a mbaineann an láithreacht léi. Is liosta tiomsaithe é seo de na catagóirí is féidir leat a úsáid.
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>
