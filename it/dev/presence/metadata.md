@@ -83,15 +83,15 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Dovrebbe contenere un Oggetto con il <code>nome</code> e l'<code>id</code> del contributore. User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile. User <code>id</code> can be copied from Discord by enabling developer
+      <td style="text-align:left">Dovrebbe contenere un Oggetto con il <code>nome</code> e l'<code>id</code> del contributore. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). <code>name</code> is your Discord username without the identifier(#0000).</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). User <code>id</code> can be copied from Discord by enabling developer
+        mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -129,7 +129,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Versione della tua presence.</td>
+      <td style="text-align:left">Version of your presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -141,14 +141,14 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link alla miniatura della tua presence.</td>
+      <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> valore. Si consiglia di utilizzare un colore primario del servizio
-        che la tua presence supporta.</td>
+      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
+        that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
