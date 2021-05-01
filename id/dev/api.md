@@ -15,22 +15,22 @@ dateCreated: 2020-06-11T18:03:59.010Z
 > {.is-info}
 
 ## API Versioning
-> API v2 has been deprecated and will be removed in the near future. Please use v3 for any future request to prevent issues. 
+> API v2 sudah usang dan akan dihapus dalam waktu dekat. Harap gunakan v3 untuk permintaan apa pun guna mencegah masalah di masa mendatang. 
 > 
 > {.is-danger}
 
-PreMiD exposes different versions of our API. You can specify version by including it in the request path like `https://api.premid.app/v{version_number}`. Omitting the version number from the route will route requests to the current default version (marked below accordingly).
+PreMiD memberikan beberapa versi API. Kamu dapat menentukan versi dengan mencantumkannya pada request path seperti `https://api.premid.app/v{version_number}`. Menghilangkan nomer versi akan mengarahkannya ke versi default (tertanda dibawah).
 
-## Encryption
+## Enkripsi
 
-All HTTP-layer services and protocols (e.g. http) within the PreMiD API use TLS 1.2.
+Semua layanan dan protokol HTTP-layer (misal http) dalam API PreMiD menggunakan TLS 1.2.
 
 # Dokumentasi
 > Currently under construction! 
 > 
 > {.is-danger}
 
-**Choose the API version:**
-- [v2 *deprecated*](/dev/api/v2)
-- [v3 *active*](/dev/api/v3)
+**Pilih versi API:**
+- [v2 *usang*](/dev/api/v2)
+- [v3 *aktif*](/dev/api/v3)
 {.links-list}

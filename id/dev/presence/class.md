@@ -50,7 +50,7 @@ Tetapkan aktivitas profil Anda sesuai dengan data yang disediakan.
 
 First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
 
-Parameter kedua menentukan kapan presence memainkan sesuatu atau tidak. Always use `true` if you provide timestamps in `PresenceData`.
+Parameter kedua menentukan apakah presence memainkan sesuatu atau tidak. Selalu gunakan `true` jika kamu memberikan timestamp di `PresenceData`.
 
 ### `clearActivity()`
 
@@ -58,7 +58,7 @@ Clears your current activity and the tray title.
 
 ### `setTrayTitle(String)`
 
-> This method works only on Mac OS. 
+> Metode ini hanya bekerja di Mac OS. 
 > 
 > {.is-warning}
 
@@ -261,16 +261,16 @@ presenceData.endTimestamp = timestamps[1];
 
 **Note:** The given `String` in querySelector is an example.
 
-## `PresenceData` Antarmuka
+## `PresenceData` Interface
 
 The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-Antarmuka ini memiliki variabel berikut, semuanya adalah opsional.
+This interface has following variables, all of them are optional.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Variabel</th>
       <th style="text-align:left">Deskripsi</th>
       <th style="text-align:left">Tipe</th>
     </tr>
@@ -290,20 +290,20 @@ Antarmuka ini memiliki variabel berikut, semuanya adalah opsional.
     </tr>
     <tr>
       <td style="text-align:left">startTimestamp</td>
-      <td style="text-align:left">Defines the current time.<br>
-        Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+      <td style="text-align:left">Menentukan waktu saat ini.<br>
+        Digunakan jika kamu ingin menampilkan berapa banyak <code>jam:menit:detik</code> tersisa.
+          <br>Kamu harus mengonversi waktumu menjadi <code>timestamp</code> atau kamu akan mendapatkan hitungan mundur
+          yang salah.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">endTimestamp</td>
-      <td style="text-align:left">Defines the full duration.
+      <td style="text-align:left">Menentukan durasi penuh.
         <br>Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+          <br>Kamu harus mengonversi waktumu menjadi <code>timestamp</code> atau kamu akan mendapatkan hitungan mundur
+          yang salah.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
