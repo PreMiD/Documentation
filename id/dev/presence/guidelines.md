@@ -1,5 +1,5 @@
 ---
-title: Presence Guidelines
+title: Panduan Presence
 description: Rules that all presence developers must follow to have their presence added.
 published: true
 date: 2021-03-06T15:01:04.274Z
@@ -10,12 +10,12 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Presence Guidelines</h3>
-    <h4 style="margin-top: 0">Revision 3</h4>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Panduan Presence</h3>
+    <h4 style="margin-top: 0">Revisi ke-3</h4>
     <br />
 </div>
 
-# Guidelines
+# Panduan
 
 When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. However, the implementation of these rulesets will keep us and the users from running into any issues.
 
