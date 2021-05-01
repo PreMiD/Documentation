@@ -15,16 +15,16 @@ dateCreated: 2021-02-26T21:54:41.573Z
     <br />
 </div>
 
-# Instructions
+# Guidelines
 
-Lors de la publication de Presences sur [notre dépôt GitHub](https://github.com/PreMiD/Presences), nous vous demandons de suivre un ensemble de règles. Pour certains, ces règles strictes peuvent paraître sévères. Cependant, la mise en œuvre de ces règles nous empêchera et empêchera les utilisateurs de faire face à des problèmes.
+Lors de la publication de Presences sur [notre dépôt GitHub](https://github.com/PreMiD/Presences), nous vous demandons de suivre un ensemble de règles. Pour certains, ces règles strictes peuvent paraître sévères. However, the implementation of these rulesets will keep us and the users from running into any issues.
 
 # Création
 
 Les règles générales de développement de presence sont les suivantes:
 
-- Les presences **doivent** être liées au site web que vous avez choisi.
-- Les presences **ne peuvent pas** être faites pour des sites web illégaux. (par exemple, stresseurs, ventes de drogues, pédopornographie, etc.)
+- Les presences **doivent être liées à** au site Web que vous avez choisi.
+- Les presences **ne peuvent pas être faites** pour les sites Web illégaux. (par exemple, stresseurs, ventes de drogues, pédopornographie, etc.)
 - La structure de fichier doit être propre et gérée, n'incluez pas des fichiers n'ayant pas de rapport. (par exemple, les dossiers vscode, git, images, fichiers texte, etc.)
 - Vous devez avoir une structure de fichier appropriée, les brouillons ne sont **pas** autorisés.
 - Les presences pour des sites web avec ( `.onion` TLDs) ou des sites web avec domaines/hébergeurs gratuits (par exemple, `.TK`, [tous les domaines libres de Freenom], `.RF` `GD`, etc) **ne sont pas** autorisés, des exceptions peuvent être faites si une preuve est présentée montrant qu'ils ont payé pour le domaine.
@@ -224,10 +224,10 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 
 - Si vous décidez de faire un imprimer formaté (par exemple : `%song% par %artist%`), les variables doivent être encerclé d'un "%" de part et d'autre. Les variables comme `%var`, `var%` ou `%%var%%` ne sont **pas** autorisé dans l'intérêt de respecter la standardisation.
 - Le nom des paramètres ne doit **pas** être en lettres capitales. Par exemple, les nom comme `AFFICHER LE STATUT DE NAVIGATION` ne seront **pas** autorisé; en revanche, les nom tel que `Afficher le Statut de Navigation` ou `Afficher le statut de navigation` sont autorisé.
-- Si vous utilisez l'option `multiLanguage`, elle peut avoir les types de données suivants :
+- Si vous utilisez l'option multiLanguage, vous devez savoir que:
   - Une valeur de type **booléenne** n'activera que les chaînes de caractères de [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) du dépôt de traduction ou du fichier de la Presence (par exemple: si le nom de la présence est YouTube, l'extension prendra les chaînes de caractères du fichier `youtube.json`.)
-  - Une valeur de type **String** (par exemple `youtube`) qui spécifiera le nom du fichier dont vous voulez obtenir les chaînes de caractères.
-  - Une valeur de type **Array<String>** (par exemple `["youtube", "discord"]`) qui spécifiera le nom des fichiers dont vous voulez obtenir les chaînes de caractères.
+  - Une valeur de type **String** (par exemple `youtube.json`) spécifiera le nom du fichier dont vous voulez obtenir les chaînes de caractères.
+  - Une valeur de type **Array<String>** (par exemple `["youtube", "discord"]`) spécifiera le nom des fichiers dont vous voulez obtenir les chaînes de caractères.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
@@ -296,7 +296,7 @@ Dans ce scénario, les changements suivants se produiront :
 - Toute vos issues et pull requests (création de presence, contribution de presence, etc.) créées après le bannissement seront rapidement fermées.
 - Les tickets créés sous votre nom concernant le développement de la presence seront supprimés.
 
-## `Vérifications`
+## `Reviewing`
 
 Quelques choses que vous devriez savoir après avoir ouvert un pull request :
 
@@ -316,7 +316,7 @@ Actuellement, une Presence passe par trois étapes distinctes de vérification. 
 - `DeepScan` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger.
 - `Schema Validation` va scanner votre fichier `metadata.json` pour trouver toutes erreurs (par exemple, champs manquants, types de valeurs invalides, etc.). Si jamais vous recevez des erreurs, vous êtes aussi **tenus** de les corriger. L'ajout d'un champ de schéma à votre `metadata.json` permettra à votre éditeur de code (si pris en charge) de vous montrer ces erreurs pendant le développement.
 
-## `Règles Supplémentaires`
+## `Additional Rules`
 
 - **Assurez-vous toujours** de démarrer votre presence dans le dossier le plus approprié, si son nom commence par _n'importe quel_ lettre latine, alors il doit être sous sa correspondance alphabétique (par exemple, `D/dアニメストア` ou `G/Google`). Tous les autres caractères Unicode/non-Latin **doivent** être dans le dossier `#` (par exemple, `#/巴哈姆特`) et les numéros dans le dossier `0-9` (par exemple, `0-9/4anime`).
 
