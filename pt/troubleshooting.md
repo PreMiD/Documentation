@@ -23,13 +23,13 @@ Esta página inclui:
 > Podes usar [esta](https://qkeleq10.github.io/PreMiD-Troubleshooting/) ferramenta para identificares o teu problema mais facilmente. 
 > 
 > {.is-info}
-### Atualiza a página
+### Atualizar a página
 Podes pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) no teu teclado em vez de procurar pelo botão de atualizar.
 
 ### Estás a usar a aplicação do Discord?
 O PreMiD **não** funciona na versão do Discord para navegador, precisas de descarregar a aplicação clicando [aqui](https://discord.com/download).
 
-### Certifica-te de que a Atividade de jogo do Discord está ativa nas definições
+### Make sure that you have enabled Discord Game Activity in settings
 **Definições de Utilizador** > **Atividade de jogo** ![gameactivity_edited.png](/gameactivity_edited.png)
 
 ### Certifica-te de que o Discord NÃO foi executado como administrador
