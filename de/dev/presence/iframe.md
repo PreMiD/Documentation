@@ -11,7 +11,7 @@ tags:
 > 
 > {.is-danger}
 
-## Einleitung
+## Anweisung
 
 In einigen Szenarien muss deine Presence möglicherweise auf Elemente innerhalb von `iframes` zugreifen.
 
