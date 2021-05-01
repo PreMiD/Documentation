@@ -244,7 +244,7 @@ Defina configurações interativas para que os usuários possam personalizar a p
 
 #### Introdução
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](/dev/presence/metadata/adding-new-strings).
+The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Setup
 
@@ -255,6 +255,8 @@ The `multiLanguage` key can be set to the following:
 `true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
 
 #### Adding new strings
+
+**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Clonando o projeto
 
@@ -302,29 +304,29 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 ### Métodos
 
-Use os seguintes métodos para obter informações de configurações em seus arquivos de presence:
+Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Retorna valor da configuração.
+Returns value of setting.
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting
 ```
 
 #### `hideSetting(String)`
-Oculta determinada configuração.
+Hides given setting.
 ```typescript
 presence.hideSetting("pdexID"); //Substitua pdexID com o id da configuração
 ```
 
 #### `showSetting(String)`
-Mostra determinada configuração (somente funciona se a configuração já estava escondida).
+Shows given setting (Only works if the setting was already hidden).
 ```typescript
 presence.showSetting("pdexID"); //Substitua pdexID com o id da configuração
 ```
 
 ## Categorias de presence
 
-Ao fazer a sua presence, você deve especificar uma categoria na qual a presence cai. Esta é uma lista compilada das categorias que você pode usar.
+When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
 
 <table>
   <thead>
