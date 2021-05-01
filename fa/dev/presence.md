@@ -27,15 +27,15 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 ## Installation
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+1. [Git](https://git-scm.com/) را نصب کنید.
+2. [Node](https://nodejs.org/en/) (که همراه با [npm](https://www.npmjs.com/) می آید) را نصب کنید.
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
 ## Cloning the project
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
 2. Choose a folder of your choice.
-3. Open it in your code editor.
+3. آن را در ویرایشگر کد خود بازکنید.
 
 ## Creating folders and files
 
