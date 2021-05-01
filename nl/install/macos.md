@@ -12,7 +12,7 @@ tags:
 
 De installatie van de applicatie is van groot belang, omdat de extensie op zichzelf niets kan doen.
 
-# Installeren
+# Installeer
 1. Ga naar onze downloadpagina door [hier](https://premid.app/downloads) te klikken.
 2. Kies **OS X**.
 3. Archiefbestand uitpakken indien nodig.
@@ -22,7 +22,7 @@ De installatie van de applicatie is van groot belang, omdat de extensie op zichz
 6. Kies open wanneer er om gevraagd wordt.
 7. Verleen toegang tot verbindingen via **Firewall** en bedien **Systeem Gebeurtenissen** wanneer gevraagd.
 
-De applicatie start automatisch. Controleer op het symbool in je menubalk.
+De applicatie start automatisch. Check for the symbol in your menu bar.
 
 > Vergeet niet [de **extensie**](/install) toe te voegen. 
 > 
