@@ -319,7 +319,7 @@ presence.hideSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Seónna a thugtar an socrú (Ní oibríonn sé ach má bhí an suíomh i bhfolach cheana féin).
 ```typescript
 presence.showSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 ```
