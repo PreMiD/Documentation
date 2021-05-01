@@ -310,13 +310,13 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">largeImageKey</td>
-      <td style="text-align:left">Defines the logo for the presence.</td>
+      <td style="text-align:left">Menentukan logo untuk presence.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">smallImageKey</td>
-      <td style="text-align:left">Defines the small icon next to presence&apos;s logo.</td>
+      <td style="text-align:left">Menentukan ikon kecil di sebelah logo presence.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
@@ -338,23 +338,13 @@ This interface has following variables, all of them are optional.
 
 ```typescript
 const presenceData: PresenceData = {
-  details: "My title",
-  state: "My description",
+  details: "Judul saya",
+  state: "Deskripsi saya",
   largeImageKey: "service_logo",
   smallImageKey: "small_service_icon",
   smallImageText: "You hovered me, and what now?",
   startTimestamp: 1564444631188,
-  endTimestamp: 1564444634734,
-  buttons: [
-    {
-            label: "Test button1",
-            url: "https://premid.app/"
-        },
-        {
-            label: "Test button2",
-            url: "https://premid.app/contributors"
-        }
-    ]
+  endTimestamp: 1564444634734
 };
 ```
 
@@ -364,7 +354,7 @@ Acara memungkinkan Anda untuk mendeteksi dan menangani beberapa perubahan atau p
 
 ```typescript
 presence.on("UpdateData", async () => {
-  // Do something when data gets updated.
+  // Melakukan sesuatu ketika data diperbarui.
 });
 ```
 
