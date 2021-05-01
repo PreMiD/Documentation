@@ -77,21 +77,21 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">說明</th>
       <th style="text-align:left">種類</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">選擇性</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. User <code>id</code> can be copied from Discord by enabling developer
+        mode and right-clicking on your profile. User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). <code>name</code> is your Discord username without the identifier(#0000).</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -107,7 +107,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
       You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>是</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
@@ -121,7 +121,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <b>Example:</b><code>vk.com</code><br>
       <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. This may only be used as an array when there are more than one urls.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>否</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
