@@ -206,7 +206,7 @@ Una lista de los campos y sus reglas están listadas abajo:
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Las expresiones regulares **deben** ser válidas. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Las expresiones regulares **deben** ser válidas. Por favor prueba tus expresiones con las herramientas listadas en la [documentación](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -253,7 +253,7 @@ Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `prese
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **No** escribas tu propio `tsconfig.json`, usa el proporcionado en la [documentación](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Modificación
 
