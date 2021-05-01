@@ -24,7 +24,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 Servis geliştirmenin genel kuralları aşağıdaki gibidir:
 
 - Yaptığınız servisler, seçtiğiniz site ile alakalı olmak **zorundadır**.
-- Yaptığınız servis **kesinlikle** yasa dışı bir siteye ait olmamalıdır (örneğin, uyuşturucu satıcılığı, çocuk pornografisi vb.)
+- Yaptığınız servis **Kesinlikle**, herhangi bir illegal siteninki olmamalıdır. (örneğin, uyuşturucu satıcılığı, çocuk pornografisi vb.)
 - Dosya yapısı temiz ve yönetilmeli, kullanılmayan dosyalar içermemelidir (örneğin, vscode ve git klasörleri, resim ve metin dosyaları, vb.)
 - Uygun bir dosya yapısına sahip olmanız gerekir, taslaklar kabul **edilemez**.
 - Servisler ( `.onion` ) bulunan internet siteleri ve bedava alan adları (örn, `.TK ` [tüm Freenom alan adları], `.RF` `.GD` gibi...) veya sağlayıcıları için bir servis **geliştiremezsiniz**, alan adı veya sağlayıcı için ödeme sağladıkları bilgiyi iletmeleri durumunda gerekli tolerans gösterilecektir.
@@ -36,9 +36,9 @@ Servis geliştirmenin genel kuralları aşağıdaki gibidir:
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+  - Gün içinde farklı ziyaretçi sayısı:
+    - 6 aylık alan adları için: **günde 20,000 farklı ziyaretçi**.
+    - 12+ aylık alan adları için: **günde 45,000 farklı ziyaretçi**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
 - Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
@@ -293,7 +293,7 @@ Bu durumda, şu değişiklikler olur:
 - Tüm hata bildirimleriniz ve servis paylaşımlarınız (servis oluşturma, başka bir servise katkıda bulunma vs.) kapatılacak ve geçersiz sayılacaktır.
 - Sizin adınıza oluşturulmuş servis geliştiriciliği hakkındaki biletler silinecektir.
 
-## `Kontroller`
+## `İnceleme`
 
 Bir pull request atmadan önce bilmeniz gereken şeyler:
 
