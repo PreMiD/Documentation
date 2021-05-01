@@ -83,13 +83,13 @@ An example of that file can be found below.
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">プレゼンスの開発者の<code>名前</code>と、<code>ユーザーid</code>をObjectに含む必要があります。 <code>name</code> is your Discord username without the identifier(#0000). <code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできるものです。</td>
+      <td style="text-align:left">プレゼンスの開発者の<code>名前</code>と、<code>ユーザーid</code>をObjectに含む必要があります。 <code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできるものです。 <code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできるものです。</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>不可</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). ユーザーの<code>id</code>はDiscord上で開発者モードをオンにし、プロフィールを右クリックするとコピーできます。</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code>はあなたのDiscordタグから識別子(#0000)を取ったもので、 <code>name</code> is your Discord username without the identifier(#0000).</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>可</code></td>
     </tr>
@@ -101,9 +101,9 @@ An example of that file can be found below.
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">追加することで、プレゼンスを複数の名前で検索することができるようになります。<br>
+      複数の言語で複数の名前がある場合（例:"Pokémon"と"포켓몬스터"）や、<br>
+      特殊な記号がある場合（例:"Pokémon"と"Pokemon"）に使用できます。</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>可</code></td>
     </tr>
