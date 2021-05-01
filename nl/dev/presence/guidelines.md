@@ -41,7 +41,7 @@ De algemene regels voor de ontwikkeling van een presence zijn:
     - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
   - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
   - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. Als je presence eigen strings nodig heeft, dan moet je geen `multiLanguage` gebruiken totdat de presence 1000 gebruikers heeft. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - De map `dist` en de bestanden `presence.ts`, `iframe.ts` en `metadata.json` moeten worden toegevoegd, dus je resultaat zou overeen moeten komen met het volgende schema:
 
 ```bash
