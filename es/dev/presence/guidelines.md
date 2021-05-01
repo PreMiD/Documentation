@@ -41,7 +41,7 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
     - Para dominios de 12 meses o más de antigüedad: **45.000 visitas únicas por día**.
   - El sitio web no puede estar en un dominio barato como `.xyz`, `.club` y demás.
   - El sitio web debe tener una muy buena calidad, diseño, etc.
-- Las presences deben usar detalles comunes, puedes conseguirlo usando multi lenguajes con las cadenas proporcionadas. Si tus presences requieren cadenas personalizadas no deberías usarlo hasta que la presence tenga mil usuarios. You can achieve this using `multiLanguage` with the provided strings. Si tu presence requiere cadenas de texto personalizadas, entonces no deberías usar `multiLanguage` hasta que la presence reciba 1000 usuarios. Puedes encontrar un ejemplo [aquí](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Las presences deben usar detalles comunes, puedes conseguirlo usando multi lenguajes con las cadenas proporcionadas. Si tus presences requieren cadenas personalizadas no deberías usarlo hasta que la presence tenga mil usuarios. Puedes lograrlo usando `multiLanguage` con las cadenas de texto proporcionadas. Si tu presence requiere cadenas de texto personalizadas, entonces no deberías usar `multiLanguage` hasta que la presence reciba 1000 usuarios. Puedes encontrar un ejemplo [aquí](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Incluyendo la carpeta `dist`, los archivos `presence.ts`, `iframe.ts` y `metadata.json` son obligatorios para que el resultado sea lo que se representa en el siguiente esquema:
 
 ```bash
@@ -247,7 +247,7 @@ Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `prese
 - Presences que utilizan botones deben seguir estos requisitos adicionales:
   - No están permitidas redirecciones a páginas de inicio.
   - No está permitido promover sitios web por medio de ello.
-  - They can't show additional data when you can't show them in other fields.
+  - No pueden mostrar información adicional cuando esta no puede ser mostrada otros campos.
   - Está prohibida la redirección directa a streams de audio o vídeo.
 
 
