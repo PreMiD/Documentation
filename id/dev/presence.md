@@ -25,11 +25,11 @@ Versi `2.x` memperkenalkan [toko presence](https://premid.app/store). Pengguna s
 
 Semua presence ditulis dalam [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) memiliki tipe definisi tambahan dari JavaScript, jadi identifikasi dan perbaikan bug menjadi lebih mudah.
 
-## Instalasi
+## Installation
 
 1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (sudah disertai [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (buka terminal dan `npm install -g typescript`).
+2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
 
 ## Mengkloning project
 
@@ -306,9 +306,9 @@ presence.on("UpdateData", async () => {
 
   const presenceData: PresenceData = {
     largeImageKey:
-      "key" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+      "key" /*The key (file name) of the Large Image on the presence. Ini di upload dan diberi nama di Rich Presence dari aplikasi anda, yang disebut Art Assets*/,
     smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+      "key" /*Key (nama file) dari Small Image di presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
     details: "Browsing Page Name", //The upper section of the presence text
     state: "Reading section A", //The lower section of the presence text
