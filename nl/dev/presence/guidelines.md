@@ -243,7 +243,7 @@ Hier is een lijst met regels die je moet volgen bij het schrijven van je `presen
 - Je mag alleen HTTP-/HTTPS-verzoeken naar `premid.app` of de website-API van de presence maken. Als je externe domeinen gebruikt, moet je uitleggen waarom dat nodig is. De enige toegestane API om een request te maken is de [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Stel velden in het presenceData object **niet** in op undefined nadat ze verklaard zijn, maar gebruik in plaats daarvan `delete`. (bijv. gebruik `delete data.startTimestamp` in plaats van `data.startTimestamp = undefined`)
 - Je bent **niet** toegestaan om presences te schrijven die de functionaliteiten van een bepaalde website wijzigen. Dit omvat het toevoegen, verwijderen en wijzigen van DOM-elementen.
-- Presences that use buttons should follow extra requirements:
+- Presences met knoppen moeten aan deze extra eisen voldoen:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
   - They can't show addinational data when you can't show them in other fields.
