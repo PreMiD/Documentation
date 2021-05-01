@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-The installation of the extension is very important as the application can not do anything by itself.
+L'installazione dell'estensione è molto importante in quanto l'applicazione non può fare nulla da sola.
 
 # Installa
 1. Vai alla nostra pagina dei download [cliccando qui](https://premid.app/downloads).
