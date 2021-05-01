@@ -358,7 +358,7 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Ada beberapa acara yang tersedia:
+There are few events available:
 
 #### `UpdateData`
 
