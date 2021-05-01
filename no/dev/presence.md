@@ -140,10 +140,10 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Variabel</th>
       <th style="text-align:left">Beskrivelse</th>
       <th style="text-align:left">Type</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Valgfritt</th>
     </tr>
   </thead>
   <tbody>
@@ -166,7 +166,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       <td style="text-align:left">The title of the service that this presence supports.<br>
       (Must be the same name as the folder where everything is in)</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nei</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
@@ -178,7 +178,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Beskrivelsen må ha nøkkelpar-verdier som viser språket og beskrivelsen på det bestemte språket. Gjør beskrivelser med språkene <i>som du vet</i>, da vil oversettere våre gjøre endringer i metadatafilen din.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
@@ -209,32 +209,32 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Versjon av ditt nærvær.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Lenke til tjeneste&apos;s logotype.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Kobling til ditt nærings miniatyrbilde.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> verdi. Vi anbefaler å bruke en primærfarge på tjenesten
+        som ditt nærings støtter dette.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Liste over tagger, som vil hjelpe brukere med å søke etter din tilstedeværelse på nettstedet.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
