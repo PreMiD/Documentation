@@ -11,7 +11,7 @@ tags:
 Installationen av tillägget är viktigt eftersom programmet inte kan göra något av sig själv.
 
 # Installera
-1. Gå till vår nedladdningssida genom att [klicka här](https://premid.app/downloads).
+1. Gå till vår nedladdningssida genom att [trycka här](https://premid.app/downloads).
 2. Välj **Windows**.
 3. Öppna installationsprogrammet.
 4. **Windows SmartScreen** visas om du installerar PreMiD för första gången. Klicka på **Mer information** och välj **Kör ändå**. > Detta beror på att vi inte har ett kodsigneringsintyg (CSC). [Stöd oss](https://www.patreon.com/Timeraa) för att finansiera den.{.is-info}
