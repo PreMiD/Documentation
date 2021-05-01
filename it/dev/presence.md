@@ -35,7 +35,7 @@ Tutte le presence sono scritte in [TypeScript](https://www.typescriptlang.org/).
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
 2. Scegli una cartella a tua scelta.
-3. Open it in your code editor.
+3. Aprilo nel tuo editor di codice.
 
 ## Creazione cartelle e file
 
@@ -140,26 +140,26 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Variabile</th>
       <th style="text-align:left">Descrizione</th>
       <th style="text-align:left">Tipo</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Opzionale</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). L'id utente <code></code> può essere copiato da Discord abilitando la modalità
+        dello sviluppatore e facendo click destro sul tuo profilo.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> è il tuo nome utente Discord senza l'identificatore (#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>sì</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
@@ -170,15 +170,13 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left"><br>Destinato ad essere utilizzato per presences che hanno nomi diversi in lingue diverse (ad esempio Pokémon and 포켓몬스터).<br>Puoi anche usarlo per presences che hanno caratteri speciali in modo da non doverli digitare (ad esempio Pokémon e Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. La tua descrizione deve avere valori di coppia chiave che indicano la lingua, e la descrizione in quella specifica lingua. Crea descrizioni con le lingue <i>che conosci</i>, i nostri traduttori modificheranno il file di metadati.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -209,32 +207,32 @@ Copia il codice qui sopra e inseriscilo nel file `metadata.json`. Adesso è nece
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Versione della tua presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link al servizio&apos;s logotype.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Link alla miniatura della tua presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> valore. Si consiglia di utilizzare un colore primario del servizio
+        che la tua presence supporta.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array con i tag, aiuteranno gli utenti a cercare la tua presenza sul sito.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
