@@ -10,10 +10,10 @@ tags:
 > 
 > {.is-info}
 
-Installationen av tillägget är viktigt eftersom programmet inte kan göra något av sig själv.
+Installationen av programmet är mycket viktigt eftersom tillägget inte kan göra något av sig själv.
 
 # Installera
-1. Gå till vår nedladdningssida genom att [klicka här](https://premid.app/downloads).
+1. Gå till vår nedladdningssida genom att [trycka här](https://premid.app/downloads).
 2. Välj **OS X**.
 3. Extrahera arkivet om det behövs.
 4. Öppna installationsprogrammet.
@@ -22,7 +22,7 @@ Installationen av tillägget är viktigt eftersom programmet inte kan göra någ
 6. Välj öppna när du blir tillfrågad.
 7. Ge åtkomst till anslutningar via **brandvägg** och kontrollera **systemhändelser** när du blir ombedd.
 
-Programmet startar automatiskt. Sök efter symbolen i menyraden.
+Applikationen startar automatiskt. Sök efter symbolen i menyraden.
 
 > Glöm inte att [lägga till tillägget****](/install). 
 > 
