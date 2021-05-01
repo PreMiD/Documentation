@@ -12,7 +12,7 @@ tags:
 
 # Installation des pré-requis
 1. Install [Git](https://git-scm.com/).
-2. Installez [Node](https://nodejs.org/en/) (livré avec [npm](https://www.npmjs.com/)).
+2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
 3. Installez [TypeScript](https://www.typescriptlang.org/index.html#download-links) (ouvrez un terminal et tapez `npm install -g typescript`).
 
 # Dupliquer le projet
