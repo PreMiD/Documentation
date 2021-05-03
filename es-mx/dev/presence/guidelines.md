@@ -37,12 +37,12 @@ Las reglas generales del desarrollo de una presence son las siguientes:
 - Presences para servicios como listas de bots/servidores de Discord deben seguir estos requisitos adicionales:
   - El dominio debe tener al menos **6 meses** de antigüedad.
   - Visitantes únicos por día:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+    - Para dominios de 6 meses de antigüedad: **20.000 visitas únicas por día**.
+    - Para dominios de 12 o más meses de antigüedad: **45.000 visitas únicas por día**.
+  - El sitio web no puede estar en un dominio barato como `.xyz` o `.club`.
+  - El sitio web debe tener una muy buena calidad, diseño, etc.
+- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. Si tu presence requiere cadenas de texto personalizadas, entonces no deberías usar `multiLanguage` hasta que la presence reciba 1000 usuarios. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Incluyendo la carpeta `dist`, los archivos `presence.ts`, `iframe.ts` y `metadata.json` son obligatorios. Obteniendo algo como el siguiente esquema:
 
 ```bash
 presence
@@ -134,7 +134,7 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (por ejemplo, una presence sin soporte para iframe no debe contener el campo `iframe`.)
+> Si un campo está estipulado como opcional en la [documentación](https://docs.premid.app/en/dev/presence/metadata) o está marcado con un `*` al lado de la clave y tu presence usa el valor por defecto para ella, no la incluyas en el archivo `metadata`. (por ejemplo, una presence sin soporte para iframe no debe contener el campo `iframe`.)
 
 > Todas las imágenes en el archivo de `metadata` deben estar alojadas en `i.imgur.com`. Usar contenido alojado en el sitio web **no** está permitido, ya que pueden cambiar su ubicación sin querer.
 
