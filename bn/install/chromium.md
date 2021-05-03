@@ -18,7 +18,7 @@ tags:
 1. অ্যাড করো **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**
 2. অ্যাড করো [আমাদের এক্সটেনশন](https://premid.app/downloads)।
 
-> Do not forget to [add the **application**](/install). 
+> ভুলে যেও না [ইন্সটল করতে ****অ্যাপ্লিকেশনটি](/install)। 
 > 
 > {.is-warning}
 
