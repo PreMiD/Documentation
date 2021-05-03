@@ -32,11 +32,11 @@ Las reglas generales del desarrollo de una presence son las siguientes:
 - Presences que tienen como destino páginas internas del navegador (como Chrome Web Store, `chrome://`, páginas `about:`, etc.) **no** están permitidas ya que requieren que se habilite una configuración experimental en el lado del usuario y podría causar daños al navegador.
 - Las presences con soporte para un solo subdominio **no** se permitirán, ya que pueden parecer rotas para otras páginas (como la página de inicio), se pueden hacer excepciones para la política y las paginas de contacto (contenido que no se usa con frecuencia) o sitios donde el otro contenido no este relacionado. (por ejemplo, páginas de wikia)
 - Las presences para radios en línea sólo están permitidas si la radio tiene al menos 100 oyentes semanales y 15 simultáneos. Además de esto debe tener alguna características extra aparte de mostrar el título del álbum/canción, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- No se permite a las Presences ejecutar código JS con su propia función para obtener variables. Si Firefox tiene problemas con la función integrada dentro de la clase `Presence`, tienes permitido implementar tu propia función. En cuyo caso tendrás que indicarlo en la descripción del Pull Request.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
+- Presences para servicios como listas de bots/servidores de Discord deben seguir estos requisitos adicionales:
+  - El dominio debe tener al menos **6 meses** de antigüedad.
+  - Visitantes únicos por día:
     - For 6 month old domains: **20,000 unique visitors/day**.
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
