@@ -11,9 +11,9 @@ tags:
 > {.is-info}
 
 # রিকোয়ারমেন্টগুলো ইন্সটল করা
-1. Install [Git](https://git-scm.com/).
+1. ইন্সটল করো [Git](https://git-scm.com/).
 2. ইন্সটল করো [Node](https://nodejs.org/en/) (সাথে আসে [npm](https://www.npmjs.com/)).
-3. ইন্সটল করো [TypeScript](https://www.typescriptlang.org/index.html#download-links) (একটি টার্মিনাল ওপেন করো এবং টাইপ করো `npm install -g typescript`)
+3. ইন্সটল করো [TypeScript](https://www.typescriptlang.org/index.html#download-links) (একটি টার্মিনাল ওপেন করো এবং টাইপ করো `npm install -g typescript`).
 
 # প্রোজেক্টটিকে ক্লোন করা
 1. একটি টার্মিনাল ওপেন করো এবং টাইপ করো `git clone URL` **URL - এর বদলে সেই রিপোজিটরির লিংক দাও যেটাতে তুমি কন্ট্রিবিউট করতে চাও** যেমন: `git clone https://github.com/PreMiD/PreMiD`
@@ -25,8 +25,8 @@ tags:
 > 
 > {.is-warning}
 
-- একটি টার্মিনাল ওপেন করো তোমার রিপোজিটরিতে এবং টাইপ করো `npm i`
-- ডিপেন্ডেন্সিগুলো আপডেট করতে টাইপ করো `npm update`
+- একটি টার্মিনাল ওপেন করো তোমার রিপোজিটরিতে এবং টাইপ করো `npm i`.
+- ডিপেন্ডেন্সিগুলো আপডেট করতে টাইপ করো `npm update`.
 
 > সচেতন থাকো যে ডিপেন্ডেন্সিগুলোকে আপডেট করলে এটি ভেঙ্গে যেতে পারে, অথবা নাও হতে পারে - পরীক্ষা করা প্রয়োজন! 
 > 
