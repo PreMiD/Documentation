@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+ভার্সন `2.x` পরিচয় করিয়ে দেয় [Presence স্টোরকে](https://premid.app/store)। ইউজাররা এখন ম্যানুয়ালি অ্যাড ও রিমুভ করতে পারে তাদের প্রিয় Presences [ওয়েবসাইটের](https://premid.app/) ইউজার ইন্টারফেস দ্বারা।
 
 > শুরু করার আগে, এটা পরামর্শিত যে তুমি আমাদের Presence - এর বিধি দেখো। 
 > 
@@ -68,56 +68,56 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
-    "id": "ID"
+    "name": "ইউজার",
+    "id": "আইডি"
   },
   "contributors": [
     {
-      "name": "USER",
-      "id": "ID"
+      "name": "ইউজার",
+      "id": "আইডি"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "সার্ভিস",
+  "altnames": ["সার্ভিস"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ডেসক্রিপশন"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "ভার্সন",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "ক্যাটাগরি",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
     {
-      "id": "ID",
+      "id": "আইডি",
       "multiLanguage": true
     },
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "আইডি",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": true
     },
     {
-      "id": "ID",
+      "id": "আইডি",
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "আইডি",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -141,7 +141,7 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
   <thead>
     <tr>
       <th style="text-align:left">ভেরিয়েবল</th>
-      <th style="text-align:left">ডিসক্রিপশন</th>
+      <th style="text-align:left">বিবরণ</th>
       <th style="text-align:left">ধরন</th>
       <th style="text-align:left">অপশনাল</th>
     </tr>
