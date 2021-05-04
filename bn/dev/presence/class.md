@@ -271,7 +271,7 @@ This interface has following variables, all of them are optional.
   <thead>
     <tr>
       <th style="text-align:left">ভেরিয়েবল</th>
-      <th style="text-align:left">ডিসক্রিপশন</th>
+      <th style="text-align:left">ডেসক্রিপশন</th>
       <th style="text-align:left">ধরন</th>
     </tr>
   </thead>

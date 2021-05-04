@@ -281,7 +281,7 @@ The `Object` has 2 properties; `message` and `description`. `message` is the tex
 
 **Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Visualization of the the file:
+Visualization of the file:
 
 ```typescript
 {
