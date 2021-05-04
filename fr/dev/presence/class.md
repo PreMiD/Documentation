@@ -164,7 +164,7 @@ console.log(version); // Affichera 2.1.0
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Retourne la valeur du paramètre.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Remplacer pdexID avec l'id du paramètre
@@ -173,7 +173,7 @@ console.log(setting); // Cela affichera dans la console la valeur du paramètre
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Masque le paramètre spécifié.
 
 ```typescript
 presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
