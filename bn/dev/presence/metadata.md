@@ -75,7 +75,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   <thead>
     <tr>
       <th style="text-align:left">ভেরিয়েবল</th>
-      <th style="text-align:left">ডিসক্রিপশন</th>
+      <th style="text-align:left">ডেসক্রিপশন</th>
       <th style="text-align:left">ধরন</th>
       <th style="text-align:left">অপশনাল</th>
     </tr>
@@ -283,7 +283,7 @@ The `Object` has 2 properties; `message` and `description`. `message` is the tex
 
 **Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
-Visualization of the the file:
+Visualization of the file:
 
 ```typescript
 {
@@ -336,7 +336,7 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <th style="text-align:left">Category</th>
       <th style="text-align:left">নাম</th>
-      <th style="text-align:left">ডিসক্রিপশন</th>
+      <th style="text-align:left">ডেসক্রিপশন</th>
     </tr>
   </thead>
   <tbody>
