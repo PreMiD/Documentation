@@ -205,7 +205,7 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Versión de su presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -217,20 +217,20 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Enlace a la miniatura de su presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Valor <code>#HEX</code>. Recomendamos usar un color primario del servicio
+        que su presence soporte.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array con etiquetas, ayudarán a los usuarios a buscar su presence en el sitio web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -254,7 +254,7 @@ TLD significa Top Level Domain, por ejemplo: .com .net<br>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Define si la extensión debe leer registros.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
