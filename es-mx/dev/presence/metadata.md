@@ -83,14 +83,14 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). La <code>id</code> de usuario puede copiarse de Discord habilitando el modo
+      <td style="text-align:left">Debería contener un Object con el nombre <code>name</code> e <code>id</code> del desarrollador de la presence. <code>nombre</code> es tu nombre de usuario de Discord sin el identificador (#0000). La <code>id</code> de usuario puede copiarse de Discord habilitando el modo
         desarrollador y haciendo clic derecho en tu perfil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador del contribuidor. <code>name</code> is your Discord username without the identifier(#0000). La <code>id</code> de usuario puede copiarse de Discord habilitando el modo
+      <td style="text-align:left">Debe contener un Object con <code>name</code> e <code>id</code> del desarrollador del contribuidor. <code>nombre</code> es tu nombre de usuario de Discord sin el identificador (#0000). La <code>id</code> de usuario puede copiarse de Discord habilitando el modo
         desarrollador y haciendo clic derecho en tu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sí</code></td>
@@ -103,15 +103,13 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Busca la presence utilizando nombres alternativos.<br> Destinado a ser utilizado por presences que tienen nombres diferentes en distintos idiomas (ejemplo. Pokémon y 포켓몬스터).<br> También puedes utilizarlo con presences que contienen caracteres especiales para no tener que escribirlos (ejemplo.</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Descripción del servicio <b>NO</b> de la presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. Mira la categoría para una lista para los idiomas de una presence. </td>
+      <td style="text-align:left">Descripción del servicio <b>NO</b> de la presence. Tu descripción debe tener un par de valores que indiquen el idioma y la descripción en ese idioma específico. Haz descripciones con los idiomas <i>que conoces</i>, nuestros traductores harán cambios en tu archivo de metadata. Mira la categoría para una lista para los idiomas de una presence. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -129,7 +127,7 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Versión de su presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -141,20 +139,20 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Enlace a la miniatura de su presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> value. Recomendamos usar un color primario del servicio
+        que tu presence soporte.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array con etiquetas, ayudarán a los usuarios a buscar su presence en el sitio web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -178,7 +176,7 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Establece si la extensión debe leer registros.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sí</code></td>
     </tr>
@@ -277,7 +275,7 @@ Each `string` is an `Object` where from the name starts with the service name an
 
 stringName es una sola palabra que identifica el mensaje.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` es una descripción del mensaje que ayuda a entender a nuestros traductores que es lo que están traduciendo.
+El `Objet` tiene 2 propiedades; `message` y `description`. `message` es el texto que debe traducirse. `description` es una descripción del mensaje que ayuda a entender a nuestros traductores que es lo que están traduciendo.
 
 **Nota:** No agregues ninguna string duplicada. (Esto incluye strings fuera del archivo `general.json` pero no de otros archivos.)
 
