@@ -283,7 +283,7 @@ Objek `Object` mempunyai 2 sifat; mesej `message` dan keterangan `description`. 
 
 **Nota:** Jangan tambah rentetan terduplikasi. (Ini termasuk rentetan yang ada dalam fail `general.json` tetapi tiada di fail lain.)
 
-Visualization of the file:
+Penggambaran fail:
 
 ```typescript
 {
