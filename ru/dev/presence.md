@@ -134,7 +134,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
       <th style="text-align:left">Переменная</th>
       <th style="text-align:left">Описание</th>
       <th style="text-align:left">Тип</th>
-      <th style="text-align:left">Необязательно</th>
+      <th style="text-align:left">Опционально</th>
     </tr>
   </thead>
   <tbody>
@@ -206,7 +206,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Ссылка на сервис&apos;с логотипом.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Нет</code></td>
     </tr>
