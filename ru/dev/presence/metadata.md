@@ -246,7 +246,7 @@ PreMiD это полиглот-сервис, означающий, что сущ
 
 #### Введение
 
-Параметр `мультиЯзык` используется для того, чтобы позволить пользователям вручную выбрать язык, на котором они хотят присутствовать. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Параметр `мультиЯзык` используется для того, чтобы позволить пользователям вручную выбрать язык, на котором они хотят присутствовать. Это требует использования строк из нашего [API](https://api.premid.app/v2/langFile/presence/en), для информации о том, как добавлять строки нажмите [здесь](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Настройки
 
@@ -258,7 +258,7 @@ PreMiD это полиглот-сервис, означающий, что сущ
 
 #### Добавление новых строк
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Примечание:** Добавление настраиваемых строк для присутствия разрешено только в том случае, если у него более 1000 пользователей.
 
 ##### Клонирование проекта
 
@@ -274,15 +274,15 @@ PreMiD это полиглот-сервис, означающий, что сущ
 
 ##### Добавление строк
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Каждый `string` является `Object` где от имени начинается с имени службы, а затем так называемого stringName с точкой между ними.
 
-The stringName is a 1 word identifier of the message.
+stringName — это идентификатор сообщения из 1 слова.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+`Object` имеет 2 свойства; `message` и `description`. `message` - это текст, который необходимо перевести. `description` — это описание сообщения, чтобы помочь нашим переводчикам понять, что они переводят.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Примечание:** Не добавляйте дубликаты строк. (сюда входят строки из файла `general.json`, но не из других файлов.)
 
-Visualization of the the file:
+Визуализация файла:
 
 ```typescript
 {
