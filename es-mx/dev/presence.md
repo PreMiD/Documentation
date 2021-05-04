@@ -35,7 +35,7 @@ Toda presence está programada en [TypeScript](https://www.typescriptlang.org/).
 
 1. Abre la consola y escribe `git clone https://github.com/PreMiD/Presences`.
 2. Escoge una carpeta a tu gusto.
-3. Open it in your code editor.
+3. Ábrelo en tu editor de código.
 
 ## Creando carpetas y archivos
 
