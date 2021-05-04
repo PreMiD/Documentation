@@ -27,7 +27,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ## Установка
 
-1. Загружать [Git](https://git-scm.com/).
+1. Установить [Git](https://git-scm.com/).
 2. Установить [узел](https://nodejs.org/en/) (поставляется с [npm](https://www.npmjs.com/)).
 3. Установка [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите `npm install -g typescript`).
 
@@ -35,7 +35,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 1. Откройте терминал и введите `git clone https://github.com/PreMiD/Presences`.
 2. Выберите папку по вашему выбору.
-3. Open it in your code editor.
+3. Откройте его в редакторе кода.
 
 ## Создание папок и файлов
 
