@@ -145,7 +145,7 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. Recomendamos usar un color primario del servicio
+      <td style="text-align:left">valor <code>#HEX</code>. Recomendamos usar un color primario del servicio
         que tu presence soporte.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
@@ -243,7 +243,7 @@ PreMiD es un servicio polígloto, lo que significa que hay varios idiomas dispon
 
 #### Introducción
 
-La configuración `multiLanguage` se utiliza para permitir a los usuarios seleccionar manualmente el idioma en el que quieren mostrar la presence. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+La configuración `multiLanguage` se utiliza para permitir a los usuarios seleccionar manualmente el idioma en el que quieren mostrar la presence. Esto requiere que utilices las strings de nuestra [API](https://api.premid.app/v2/langFile/presence/en), para obtener información sobre cómo añadir strings haz clic [aquí](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Configuración
 
@@ -255,7 +255,7 @@ La opción `multiLanguage` puede establecerse a lo siguiente:
 
 #### Añadir nuevas strings
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Nota:** Agregar strings personalizadas para una presence solo está permitido si tiene más de 1000 usuarios.
 
 ##### Clonando el proyecto
 
@@ -271,7 +271,7 @@ La opción `multiLanguage` puede establecerse a lo siguiente:
 
 ##### Añadiendo las strings
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Cada `string` es un `Objet` donde el nombre comienza con el nombre del servicio y luego el llamado stringName con un punto entre ellos.
 
 stringName es una sola palabra que identifica el mensaje.
 
@@ -297,35 +297,35 @@ Visualización del archivo:
 Después de que hayas hecho el archivo con las strings por completo puedes crear una Pull Request en el [Localization Repository](https://github.com/PreMiD/Localization), en la descripción **debes** incluir una link a la Pull Request de la presence actualizada usando esas nuevas strings de [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Claves por defecto
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Las claves que no tuvo que configurar se establecen automáticamente en lo siguiente: `title`: "Idioma" **Nota: ** Esto está traducido a su idioma predeterminado (idioma del navegador). `icon`: "fas fa-language" ([Vista previa](https://fontawesome.com/icons/language)) `value`: **Establecido al idioma del navegador si está disponible (100% traducido), de lo contrario Inglés.** `values`: **Establecido a los idiomas disponibles (idiomas que lo tienen 100% traducido).**
 
-**Note:** These are in no way changeable.
+**Nota:** Estos no pueden cambiarse en absoluto.
 
 ### Métodos
 
-Use the following methods to get settings info in your presence files:
+Usa los siguientes métodos para obtener los ajustes en tus presences:
 #### `getSetting(String)`
-Returns value of setting.
+Obtén el valor del ajuste.
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Reemplaza pdexID con el id de tu ajuste
 console.log(setting); // Esto mostrará el valor del ajuste
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Oculta la configuración dada.
 ```typescript
 presence.hideSetting("pdexID"); //Reemplaza pdexID con el id del ajuste
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Muestra la configuración dada (solo funciona si la configuración ya estaba oculta).
 ```typescript
 presence.showSetting("pdexID"); //Reemplaza pdexID con el id del ajuste
 ```
 
 ## Categorías de una presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Al hacer su presence, debe especificar una categoría a la que pertenece la presence. Esta es una lista de las categorías que puedes usar.
 
 <table>
   <thead>

@@ -33,7 +33,7 @@ Las reglas generales del desarrollo de una presence son las siguientes:
 - Las presences con soporte para un solo subdominio **no** se permitirán, ya que pueden parecer rotas para otras páginas (como la página de inicio), se pueden hacer excepciones para la política y las paginas de contacto (contenido que no se usa con frecuencia) o sitios donde el otro contenido no este relacionado. (por ejemplo, páginas de wikia)
 - Las presences para radios en línea sólo están permitidas si la radio tiene al menos 100 oyentes semanales y 15 simultáneos. Además de esto debe tener alguna características extra aparte de mostrar el título del álbum/canción, etc.
 - No se permite a las Presences ejecutar código JS con su propia función para obtener variables. Si Firefox tiene problemas con la función integrada dentro de la clase `Presence`, tienes permitido implementar tu propia función. En cuyo caso tendrás que indicarlo en la descripción del Pull Request.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
+- **No** se permiten presences de baja calidad o que tengan poco contexto (p. ejemplo., mostrar solo un logotipo y texto pero nunca volver a cambiarlo).
 - Presences para servicios como listas de bots/servidores de Discord deben seguir estos requisitos adicionales:
   - El dominio debe tener al menos **6 meses** de antigüedad.
   - Visitantes únicos por día:
