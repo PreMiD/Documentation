@@ -111,7 +111,7 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description du service <b>PAS</b> de la présence. Votre description doit avoir des valeurs de paire de clés qui indiquent la langue, et la description dans cette langue spécifique. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. Voir la catégorie pour les langues de présence pour une liste. </td>
+      <td style="text-align:left">Description du service <b>PAS</b> de la présence. Votre description doit avoir des valeurs de paire de clés qui indiquent la langue, et la description dans cette langue spécifique. Faites des descriptions dans les langages <i>que vous connaissez</i>, nos traducteurs apporteront des modifications à votre fichier metadata. Voir la catégorie pour les langues de présence pour une liste. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
@@ -131,32 +131,32 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Version de votre présence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Lien vers le logo du service.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Lien vers votre miniature de présence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Valeur <code>#HEX</code> (hexadécimale). Nous vous recommandons d'utiliser une des couleurs primaires du service
+        pour lequel vous développez votre presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Tableau avec des tags, ils aideront les utilisateurs à rechercher votre présence sur le site Web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
@@ -246,7 +246,7 @@ Configurer les paramètres interactifs pour que les utilisateurs puissent person
 
 #### Introduction
 
-Le paramètre `multiLanguage` est utilisé pour permettre aux utilisateurs de sélectionner manuellement la langue dans laquelle ils veulent que le presence leur soit montrée. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Le paramètre `multiLanguage` est utilisé pour permettre aux utilisateurs de sélectionner manuellement la langue dans laquelle ils veulent que le presence leur soit montrée. Cela nécessite que vous utilisiez des chaînes de caractères de notre [API](https://api.premid.app/v2/langFile/presence/en), pour plus d'informations sur comment ajouter des chaînes de caractères cliquez [ici](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Configuration
 
@@ -258,7 +258,7 @@ La clé `multiLanguage` peut être définie comme suit :
 
 #### Ajout de nouvelles chaînes
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Note :** Ajouter des chaînes de caractère personnalisées pour une presence est autorisé seulement si elle cumule plus de 1000 utilisateurs.
 
 ##### Cloner le projet
 
@@ -274,15 +274,15 @@ La clé `multiLanguage` peut être définie comme suit :
 
 ##### Ajout de chaînes
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Chaque `chaîne de caractère` est un `objet` dont le nom commence par le nom du service puis par le soi-disant stringName avec un point entre les deux.
 
-The stringName is a 1 word identifier of the message.
+Le stringName est un identifiant de 1 mot du message.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+L'`Objet` a deux propriétés ; `message` et `description`. `message` est le texte qui a besoin d'être traduit. `description` est la description du message pour aider nos traducteurs à comprendre ce qu'ils traduisent.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Remarque :** N'ajoutez aucune chaîne de caractères en double. (Cela inclut les chaînes de caractères en dehors du ficher `general.json` mais pas les autres fichiers.)
 
-Visualization of the the file:
+Visualisation du fichier :
 
 ```typescript
 {
@@ -297,16 +297,16 @@ Visualization of the the file:
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Après que vous ayez entièrement créé le fichier avec les chaînes de caractères, vous pouvez créer une Pull Request sur le [Dépôt de Localization](https://github.com/PreMiD/Localization), dans la description vous **devez** inclure un lien vers votre Pull Request de la presence mise à jour en utilisant ces nouvelles chaînes de caractères depuis le [Dépôt de Presence](https://github.com/PreMiD/Presences).
 
 #### Touches par défaut
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Les touches que vous n'avez pas définies seront automatiquement définies comme ceci : `title` : "Langue". **Remarque :** Ça sera traduit dans leur langue par défaut (langue du navigateur internet). `icon` : "fas fa-language" ([Aperçu](https://fontawesome.com/icons/language)) `value` : **Définies sur la langue de leur navigateur internet si c'est disponible (100% traduit), sinon en Anglais.** `values` : **Définies sur les langues disponibles (langues qui sont à 100% traduites).**
 
-**Note:** These are in no way changeable.
+**Note :** Cela ne peut être changé dans aucun cas.
 
 ### Méthodes
 
-Use the following methods to get settings info in your presence files:
+Utilisez les méthodes suivantes pour obtenir des informations sur les paramètres dans votre fichier de presence :
 #### `getSetting(String)`
 Returns value of setting.
 ```typescript
