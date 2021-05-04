@@ -305,16 +305,16 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 ### Методы
 
-Use the following methods to get settings info in your presence files:
+Используйте следующие методы, чтобы получить информацию о настройках в файлах присутствия:
 #### `getSetting(String)`
-Returns value of setting.
+Возвращает значение настройки.
 ```typescript
 var setting = await presence.getSetting("pdexID"); // Заменить pdexID идентификатором параметра
 console.log(setting); // Сообщается установка в логи
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Скрывает данную настройку.
 ```typescript
 presence.hideSetting("pdexID"); // Заменить pdexID идентификатором настройки
 ```
