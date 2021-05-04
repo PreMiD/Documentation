@@ -308,14 +308,14 @@ Les touches que vous n'avez pas définies seront automatiquement définies comme
 
 Utilisez les méthodes suivantes pour obtenir des informations sur les paramètres dans votre fichier de presence :
 #### `getSetting(String)`
-Returns value of setting.
+Retourne la valeur du paramètre.
 ```typescript
 const setting = wait presence.getSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 console.log(setting); // Cela affichera dans la console la valeur du paramètre
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Masque le paramètre spécifié.
 ```typescript
 presence.hideSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
@@ -328,7 +328,7 @@ presence.showSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 
 ## Catégories de présence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Quand vous créez votre présence, vous devez spécifier une catégorie dans laquelle votre présence s'inscrit. Ceci est une liste compilée des catégories que vous pouvez utiliser.
 
 <table>
   <thead>
