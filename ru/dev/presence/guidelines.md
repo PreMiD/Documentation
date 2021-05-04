@@ -35,12 +35,12 @@ dateCreated: 2021-02-26T21:54:41.573Z
 - Запрещено использование присутствия, для запуска JS кода со своей собственной функцией для получения переменных. Если Firefox имеет проблемы со встроенной функцией внутри класса `Presence`, вам разрешено сделать свою собственную функцию, и вы должны сообщить нам об этом в описании Pull Request.
 - Присутствия c низким качеством (или с небольшим контекстом) **не** допускается (например, только показ логотипа и текста, и без дальнейшего его изменения).
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
+  - Домен должен быть не менее **6 месяцы** Старый.
   - Unique visitors per day:
     - For 6 month old domains: **20,000 unique visitors/day**.
     - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
+  - Веб-сайт не может находиться на дешевом домене вроде `.xyz`, `.club` и так далее.
+  - Сам сайт должен иметь очень хорошее качество, дизайн и т. Д.
 - Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Присутствие должно обязательно иметь папку `dist`, а также файлы `presence.ts`, `iframe.ts` и `metadata.json`. В конечном итоге директория должна выглядеть вот так:
 
@@ -128,7 +128,7 @@ presence
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (например, presence без поддержки iframe не потребует поле `iframe`.)
+> Если поле указано как дополнительное для [документации](https://docs.premid.app/dev/presence/metadata) и ваше presence использует для него значение по умолчанию, не включайте его в файл `metadata`. (например, presence без поддержки iframe не потребует поле `iframe`.)
 
 > Все картинки в `metadata`файл должен находиться по адресу `i.imgur.com`. Использование контента, размещенного на сайте **не** им разрешено, поскольку они могут неохотно изменять пути и файлы.
 
@@ -194,12 +194,12 @@ presence
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Категория **должна** быть одной из следующих, перечисленных в [документации](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - Наличие должно использовать категорию, которая соответствует содержанию веб-сайта. (например, не используйте `аниме` не имеет отношения к сайту аниме).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Регулярные выражения **должны** быть действительными. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Регулярные выражения **должны** быть действительными. Пожалуйста, протестируйте свои выражения с инструментами, перечисленными в [документации](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
