@@ -238,7 +238,7 @@ presence
 - Делать **не** установите для полей в объекте данных присутствия значение undefined после его объявления, используйте `delete` ключевое слово вместо этого. (например, используйте `delete data.startTimestamp` вместо `data.startTimestamp = undefined`)
 - Ты **не** разрешено писать присутствия, которые изменяют функциональность данного сайта. Это включает добавление, удаление или модификацию элементов DOM.
 - Наличие кнопок должно соответствовать дополнительным требованиям:
-  - Redirects to main page are prohibited.
+  - Перенаправление на главную страницу запрещено.
   - Promoting websites by them is prohibited.
   - They can't show additional data when you can't show them in other fields.
   - Redirecting directly to audio/video stream is prohibited.
