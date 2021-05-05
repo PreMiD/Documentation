@@ -296,12 +296,12 @@ stringName — это идентификатор сообщения из 1 сл�
   }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+После того, как вы полностью сделали файл со строками, вы можете создать Pull Request в [Репозиторий локализации](https://github.com/PreMiD/Localization), в описании, которое вы **должны** включить ссылку на ваш Pull Request of the presence updated using these new strings from [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Ключи по умолчанию
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Ключи, которые вы не должны были установить, автоматически устанавливаются на следующее: `заголовок`: "Язык" **Примечание:** Это переведено на язык по умолчанию (язык браузера). `значок`: "fas fa-language" ([Предварительный просмотр](https://fontawesome.com/icons/language)) `значение`: **Установите на их язык браузера, если он доступен (100% переведен), иными словами, английский язык.** `значения`: **Установка на доступные языки (языки, на которых переводятся на 100%).**
 
-**Note:** These are in no way changeable.
+**Примечание:** Они ни в коей мере не изменяются.
 
 ### Методы
 
@@ -327,7 +327,7 @@ presence.showSetting("pdexID"); // Заменить pdexID идентифика�
 
 ## Категории присутствия
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+При создании вашего присутствия, вы должны указать категорию, на которую попадает присутствие. Это скомпилированный список категорий, которые вы можете использовать.
 
 <table>
   <thead>
