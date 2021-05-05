@@ -38,10 +38,10 @@ dateCreated: 2021-02-26T21:54:41.573Z
   - Домен должен быть не менее **6 месяцы** Старый.
   - Уникальных посетителей в день:
     - Для доменов 6-месячной давности: **20,000 уникальных посетителей в день**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
+    - Для доменов 12-месячной давности: **45,000 уникальных посетителей в день**.
   - Веб-сайт не может находиться на дешевом домене вроде `.xyz`, `.club` и так далее.
   - Сам сайт должен иметь очень хорошее качество, дизайн и т. Д.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Наличие должно использовать [общие детали](https://api.premid.app/v2/langFile/presence/en) (строки, начинающиеся с "Общие"). Вы можете добиться этого, используя `multiLanguage` со строками. Если ваше присутствие требует пользовательских строк, то вы не должны использовать `multiLanguage` до тех пор, пока присутствие не получит 1000 пользователей. Вы можете найти пример [здесь](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Присутствие должно обязательно иметь папку `dist`, а также файлы `presence.ts`, `iframe.ts` и `metadata.json`. В конечном итоге директория должна выглядеть вот так:
 
 ```bash
@@ -237,7 +237,7 @@ presence
 - Многие из вас делают HTTP/HTTPS запросы только к `premid.app` или API веб-сайта presence. Если вы используете внешние домены, вам нужно будет объяснить, почему это необходимо. Только API для запроса [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Делать **не** установите для полей в объекте данных присутствия значение undefined после его объявления, используйте `delete` ключевое слово вместо этого. (например, используйте `delete data.startTimestamp` вместо `data.startTimestamp = undefined`)
 - Ты **не** разрешено писать присутствия, которые изменяют функциональность данного сайта. Это включает добавление, удаление или модификацию элементов DOM.
-- Presences that use buttons should follow extra requirements:
+- Наличие кнопок должно соответствовать дополнительным требованиям:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
   - They can't show additional data when you can't show them in other fields.
