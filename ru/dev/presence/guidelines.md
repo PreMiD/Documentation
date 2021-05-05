@@ -246,7 +246,7 @@ presence
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **нет** напишите свой собственный `tsconfig.json` файл, используйте то, что было предоставлено [документация](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Модификация
 
