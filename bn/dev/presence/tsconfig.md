@@ -1,6 +1,6 @@
 ---
 title: TypeScript কনফিগারেশন
-description: A little helper for TypeScript
+description: TypeScript - এর জন্য একটি ছোট সহায়ক
 published: true
 date: 2020-08-05T16:25:22.812Z
 tags:
@@ -11,13 +11,13 @@ editor: markdown
 
 ## পরিচিতি
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
+যখন তুমি ওয়ার্কস্পেসটিকে ডাউনলোড এবং আনপ্যাক করেছ, তুমি একটি ফাইল দেখবে রুটে যার নাম `tsconfig.json` এবং Presence ফোল্ডারগুলো, এই ফাইলটি ব্যবহৃত হয় **TypeScript** কম্পাইলারকে কনফিগার করার জন্য। এটি তোমার জন্য ইতিমধ্যেই কনফিগার করা রয়েছে, তাই সেটা নিয়ে চিন্তা করবে না।
 
 আমরা শুধু কিছু সেটিংস বর্ণনা করতে চাই যেগুলো তোমার জানা উচিত।
 
-## Root Configuration
+## রুট কনফিগারেশন
 
-In the root configuration file you will see something like this.
+রুট কনফিগারেশন ফাইলে তুমি এরকম কিছু দেখতে পাবে।
 
 ```javascript
 {
@@ -36,21 +36,21 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property                   | ডেসক্রিপশন                                                                                                                                                          |
-|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
-| module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
-| target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
-| removeComments             | Removing comments from compiled files.                                                                                                                              |
-| noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
-| noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement.                                                                                                            |
-| noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
-| noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
-| inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
-| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
-| esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
+| প্রপার্টি                  | ডেসক্রিপশন                                                                                                                                                           |
+|:-------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **compilerOptions**        | ব্যবহার করা হয় কম্পাইলারকে কনফিগার করার জন্য, বেশিরভাগ প্রপার্টি এখানে থাকে।                                                                                         |
+| module                     | তুমি সেটা সম্বন্ধে আরো পড়তে পারবে [এখানে](https://www.typescriptlang.org/docs/handbook/modules.html)।                                                                |
+| target                     | নির্ধারণ করে যে JavaScript ভার্সনে তুমি কম্পাইল করবে।                                                                                                                |
+| removeComments             | কম্পাইল করা ফাইল থেকে কমেন্ট সরিয়ে ফেলে।                                                                                                                             |
+| noEmitOnError              | আউটপুট দেয় না যদি কোনো ত্রুটি রিপোর্ট করা হয়।                                                                                                                        |
+| noFallthroughCasesInSwitch | ত্রুটি রিপোর্ট করে সুইচ স্টেটমেন্টে fall-through কেসগুলোর জন্য।                                                                                                      |
+| noUnusedLocals             | ত্রুটি রিপোর্ট করে অব্যবহৃত লোকালের উপর।                                                                                                                             |
+| noUnusedParameters         | ত্রুটি রিপোর্ট করে অব্যবহৃত প্যারামিটারের উপর।                                                                                                                       |
+| inlineSourceMap            | সোর্স ম্যাপ যুক্ত করে                                                                                                                                                |
+| typeRoots                  | তুমি সেটা সম্বন্ধে আরো পড়তে পারবে [এখানে](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types)।                                |
+| esModuleInterop            | __importStar এবং __importDefault হেল্পার দেয় রানটাইম Babel ইকোসিস্টেম সামঞ্জস্যতার জন্য এবং অন করে --allowSyntheticDefaultImports টাইপসিস্টেম সামঞ্জস্যতার জন্য। |
 
-## Presence Configuration
+## Presence কনফিগারেশন
 
 ```javascript
 {
@@ -61,8 +61,8 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property            | ডেসক্রিপশন                                                                             |
-|:------------------- |:-------------------------------------------------------------------------------------- |
-| **extends**         | Used for extending the base `tsconfig` file for various tasks.                         |
-| **compilerOptions** | See [**Root Configuration**](/dev/presence/tsconfig#root-configuration) for more info. |
-| outDir              | Defines the output directory for compiled files.                                       |
+| প্রপার্টি           | ডেসক্রিপশন                                                                            |
+|:------------------- |:------------------------------------------------------------------------------------- |
+| **extends**         | ব্যবহার করা হয় মূল `tsconfig` ফাইলটিকে প্রসারিত করা বিভিন্ন কাজের জন্য।               |
+| **compilerOptions** | দেখো [**রুট কনফিগারেশন**](/dev/presence/tsconfig#root-configuration) আরো তথ্যের জন্য। |
+| outDir              | কম্পাইল করা ফাইলগুলোর আউটপুট ডিরেক্টরি নির্ধারণ করে।                                  |
