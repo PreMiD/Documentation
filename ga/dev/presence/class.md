@@ -354,7 +354,7 @@ const presenceData: PresenceData = {
     ];
 ```
 
-## Events
+## Imeachtaí
 
 Ligeann imeachtaí duit roinnt athruithe nó glaonna a rinneadh a bhrath agus a láimhseáil. Is féidir leat liostáil le himeachtaí ag úsáid an `on` mhodha.
 
