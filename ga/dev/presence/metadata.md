@@ -204,7 +204,7 @@ Más mian leat nathanna rialta a fhoghlaim, seo cúpla suíomh Gréasáin.
 
 ## Teangacha Presence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Is féidir liosta iomlán na dteangacha a fháil leis an [gcríochphointe API](https://api.premid.app/v2/langFile/list) seo. To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad teangacha i gceist chun úsáideoirí a nascadh ar fud na cruinne. Is féidir liosta iomlán na dteangacha a fháil leis an [gcríochphointe API](https://api.premid.app/v2/langFile/list) seo. Chun do láithreacht a shaincheapadh níos mó fós is féidir leat ligean d’úsáideoirí a dteanga taispeána láithreachta a roghnú féach [`multiLanguage`](#multilanguage) níos mó. See [`multiLanguage`](#multilanguage) for more.
 
 ## Socruithe láithreachta
 Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an láithreacht a shaincheapadh!
@@ -244,7 +244,7 @@ Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an lái
 
 #### Réamhrá
 
-Úsáidtear an `multiLanguage` suíomh chun ligean d’úsáideoirí an teanga ar mian leo a bheith i láthair a roghnú de láimh. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Úsáidtear an `multiLanguage` suíomh chun ligean d’úsáideoirí an teanga ar mian leo a bheith i láthair a roghnú de láimh. Éilíonn sé seo ort teaghráin ónár [API](https://api.premid.app/v2/langFile/presence/en) a úsáid, chun faisnéis a fháil faoi conas teaghráin a chur leis cliceáil [anseo](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Socrú
 
@@ -256,7 +256,7 @@ Is `multiLanguage` féidir an eochair a shocrú dóibh seo a leanas:
 
 #### Teaghráin nua a chur leis
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+Tosaíonn gach ceann `string` acu `Object` ón ainm leis an ainm seirbhíse agus ansin an t-ainm teaghrán mar a thugtar air le ponc eatarthu.
 
 ##### Ag clónáil an tionscadail
 
@@ -272,15 +272,15 @@ Is `multiLanguage` féidir an eochair a shocrú dóibh seo a leanas:
 
 ##### Ag cur na dtéad
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Tosaíonn gach ceann `string` acu `Object` ón ainm leis an ainm seirbhíse agus ansin an t-ainm teaghrán mar a thugtar air le ponc eatarthu.
 
-The stringName is a 1 word identifier of the message.
+Is aitheantóir 1 fhocal den teachtaireacht an stringName.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+An `Objec`t Tá 2 mhaoin; `message` agus `description`. `message` an téacs nach mór a aistriú. `description` is tuairisc é ar an teachtaireacht chun cabhrú lenár n-aistritheoirí an méid atá á aistriú acu a thuiscint.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Nóta:** Ná cuir aon teaghráin dhúblacha leis. (Cuimsíonn sé seo teaghráin as an `general.json` gcomhad ach ní na comhaid eile.)
 
-Visualization of the file:
+Amharcléiriú an chomhaid:
 
 ```typescript
 {
@@ -295,25 +295,25 @@ Visualization of the file:
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Tar éis duit an comhad a dhéanamh go hiomlán le teaghráin is féidir leat Iarratas Tarraingthe a chruthú ar an [Stór Logánú](https://github.com/PreMiD/Localization), sa chur síos ní **mór** duit nasc le d’Iarratas Tarraingthe ar an láithreacht a nuashonrú arna nuashonrú ag baint úsáide as na teaghráin nua seo ón [Stór Láithreachta](https://github.com/PreMiD/Presences).
 
 #### Eochracha réamhshocraithe
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Socraítear na heochracha nár ghá duit a shocrú go huathoibríoch mar a leanas: `title`: "Teanga" **Nóta:** Aistrítear é seo go dtí a dteanga réamhshocraithe (teanga an bhrabhsálaí). `icon`: "fas fa-language" ([Réamhamharc](https://fontawesome.com/icons/language)) `value`: **Socraigh ar theanga a mbrabhsálaí má tá sé ar fáil (100% aistrithe), ar shlí eile Béarla.** `values`: **Socraigh ar na teangacha atá ar fáil (teangacha a bhfuil 100% aistrithe acu).**
 
-**Note:** These are in no way changeable.
+**Nóta:** Ní féidir iad seo a athrú ar bhealach ar bith.
 
 ### Modhanna
 
-Use the following methods to get settings info in your presence files:
+Úsáid na modhanna seo a leanas chun faisnéis faoi shuíomhanna a fháil i do chomhaid láithreachta:
 #### `getSetting(String)`
-Returns value of setting.
+Tuairisceáin luach an tsuímh.
 ```typescript
 const const = await presence.getSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 console.log(setting); // Déanfaidh sé seo luach an tsuímh a logáil
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Seithí tugtha suíomh.
 ```typescript
 presence.hideSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 ```
@@ -326,7 +326,7 @@ presence.showSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 
 ## Catagóirí Presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Agus tú i láthair, caithfidh tú catagóir a shonrú a mbaineann an láithreacht léi. Is liosta tiomsaithe é seo de na catagóirí is féidir leat a úsáid.
 
 <table>
   <thead>
