@@ -20,7 +20,7 @@ San áireamh ar an leathanach seo:
 <a name="general"></a>
 
 # Fabhtcheartú ginearálta
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat! 
 > 
 > {.is-info}
 ### Athlódáil an leathanach
@@ -68,7 +68,7 @@ MacOS:`~/users/USER/~Library/Application Support/`agus scrios an fillteán`PreMi
 ### Bhraith McAfee PreMiD mar víreas (Windows)
 Is dearfach bréagach é seo ó McAfee agus chuireamar an cheist in iúl dóibh, go dtí seo is féidir leat PreMiD a eisiamh ón scanadh trí na céimeanna seo a leanas a dhéanamh:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat! 
 > 
 > {.is-warning}
 
@@ -79,7 +79,7 @@ Is dearfach bréagach é seo ó McAfee agus chuireamar an cheist in iúl dóibh,
 5. Tar éis é a athshlánú is féidir leat an aníos "Míreanna Coraintín" a dhúnadh, ansin brúigh deilbhín na socruithe arís ar thaobh na láimhe deise.
 6. Cliceáil "Scanadh Fíor-ama" (An tríú ón mbarr).
 7. Leathnaigh é agus cliceáil "Cuir comhad leis".
-8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Clóscríobh "%appdata%" i mbarra URL an bhainisteora comhaid agus brúigh Iontráil. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Oscail an fillteán "PreMiD" agus roghnaigh an comhad "PreMiD.exe" agus cliceáil oscailte. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. Ba cheart do McAfee neamhaird a dhéanamh dár gcomhad anois, gan ach ár bhfeidhmchlár a lainseáil agus ba cheart go mbeifeá go maith chun dul.
 
