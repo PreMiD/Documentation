@@ -208,7 +208,7 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Les expressions régulières **doivent** être valides. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Les expressions régulières **doivent** être valides. Veuillez tester vos expressions avec les outils listés sur la [documentation](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -246,16 +246,16 @@ Voici une liste de règles que vous devez suivre lors de l'écriture de votre fi
 - Vous ne pouvez faire des requêtes HTTP/HTTPS qu'à `premid.app` ou à l'API du site web concerné par la Presence. Si vous utilisez des domaines externes, vous devrez expliquer pourquoi cela est nécessaire. La seule API autorisée à faire des requêtes est la [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - **Ne** définissez **pas** de champs dans l'objet presenceData par undefined, utilisez plutôt le mot-clé `delete`. (par ex., utilisez `delete data.startTimestamp` au lieu de `data.startTimestamp = undefined`)
 - Vous n'êtes **pas** autorisé à écrire des Presences qui modifient la fonctionnalité d'un site Web donné. Cela inclut l'ajout, la suppression ou la modification des éléments du DOM.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- Les presences qui utilisent les boutons devraient suivre ces exigences supplémentaires :
+  - Les redirections vers la page d'accueil sont interdites.
+  - Promouvoir les sites web en les utilisant est interdit.
+  - Ils ne peuvent pas afficher des données additionnelles quand vous ne pouvez pas les afficher dans d'autres champs.
+  - Il est interdit de rediriger directement vers des flux audio/video.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> N'écrivez **pas** votre propre fichier `tsconfig.json`, utilisez ce qui a été fourni dans la [documentation](/dev/presence/tsconfig).
 
 ## Modification
 
@@ -318,7 +318,7 @@ Actuellement, une Presence passe par trois étapes distinctes de vérification. 
 - `DeepScan` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger.
 - `Schema Validation` va scanner votre fichier `metadata.json` pour trouver toutes erreurs (par exemple, champs manquants, types de valeurs invalides, etc.). Si jamais vous recevez des erreurs, vous êtes aussi **tenus** de les corriger. L'ajout d'un champ de schéma à votre `metadata.json` permettra à votre éditeur de code (si pris en charge) de vous montrer ces erreurs pendant le développement.
 
-## `Additional Rules`
+## `Règles Supplémentaires`
 
 - **Assurez-vous toujours** de démarrer votre presence dans le dossier le plus approprié, si son nom commence par _n'importe quel_ lettre latine, alors il doit être sous sa correspondance alphabétique (par exemple, `D/dアニメストア` ou `G/Google`). Tous les autres caractères Unicode/non-Latin **doivent** être dans le dossier `#` (par exemple, `#/巴哈姆特`) et les numéros dans le dossier `0-9` (par exemple, `0-9/4anime`).
 
