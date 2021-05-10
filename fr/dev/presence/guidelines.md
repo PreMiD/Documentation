@@ -137,7 +137,7 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (par exemple, une presence sans le support iframe n'aurait pas besoin du champ `iframe`.)
+> Si un champ est considéré comme facultatif sur la [documentation](https://docs.premid.app/dev/presence/metadata) ou qu'il y a une `*` à côté de ce dernier, et que votre présence utilise la valeur par défaut du champ, ne l'incluez pas dans le fichier `metadata`. (par exemple, une presence sans le support iframe n'aurait pas besoin du champ `iframe`.)
 
 > Toutes les images dans le fichier `metadata` doivent être hébergées sur `i.imgur.com`. Utiliser du contenu hébergé sur le site web lui-même n'est **pas**autorisé car il est possible que les chemins changent.
 
@@ -298,7 +298,7 @@ Dans ce scénario, les changements suivants se produiront :
 - Toute vos issues et pull requests (création de presence, contribution de presence, etc.) créées après le bannissement seront rapidement fermées.
 - Les tickets créés sous votre nom concernant le développement de la presence seront supprimés.
 
-## `Reviewing`
+## `Vérifications`
 
 Quelques choses que vous devriez savoir après avoir ouvert un pull request :
 
