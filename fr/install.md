@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Avant d'aller plus loin, assurez-vous que votre système répond à toutes les [exigences](/install/requirements). 
 > 
 > {.is-info}
 

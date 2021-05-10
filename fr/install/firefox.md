@@ -8,7 +8,7 @@ tags:
 
 L'installation de l'extension est très importante car l'application ne peut rien faire par elle-même.
 
-# Installer
+# Installation
 1. Rendez-vous sur notre page de téléchargements en [cliquant ici](https://premid.app/downloads).
 2. Choisissez **Firefox**.
 3. Recherchez `about:addons` dans la barre d'URL.
@@ -17,7 +17,7 @@ L'installation de l'extension est très importante car l'application ne peut rie
 6. Sélectionnez le fichier que vous avez téléchargé récemment.
 7. Acceptez l'installation en cliquant sur **Ajouter**.
 
-> N'oubliez pas d'installer [l'application ****](/install). 
+> N'oubliez pas [d'installer **l'application**](/install). 
 > 
 > {.is-warning}
 

@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Avant d'aller plus loin, assurez-vous que votre système répond à tous les [prérequis](/install/requirements). 
 > 
 > {.is-info}
 
@@ -22,9 +22,9 @@ L'installation de l'application est très importante car l'extension ne peut rie
 6. Choisissez d'ouvrir lorsque vous y êtes invité.
 7. Accorder l'accès aux connexions via **Pare-feu** et contrôler **Événements du système** lorsque vous y êtes invité.
 
-The application will start automatically. Vérifiez si l'icône est présente dans votre barre de menus.
+L'application démarre automatiquement. Vérifiez si l'icône est présente dans votre barre de menus.
 
-> N'oubliez pas d'ajouter [l'extension ****](/install). 
+> N'oubliez pas d'[ajouter l'**extension**](/install). 
 > 
 > {.is-warning}
 
