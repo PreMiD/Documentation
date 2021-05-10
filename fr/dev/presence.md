@@ -143,7 +143,7 @@ Veuillez copier le code ci-dessus et le mettre dans votre fichier `metadata.json
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Description</th>
       <th style="text-align:left">Type</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Facultatif</th>
     </tr>
   </thead>
   <tbody>
