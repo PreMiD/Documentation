@@ -15,9 +15,9 @@ dateCreated: 2021-02-26T21:54:41.573Z
     <br />
 </div>
 
-# Guidelines
+# Instructions
 
-Lors de la publication de Presences sur [notre dépôt GitHub](https://github.com/PreMiD/Presences), nous vous demandons de suivre un ensemble de règles. Pour certains, ces règles strictes peuvent paraître sévères. However, the implementation of these rulesets will keep us and the users from running into any issues.
+Lors de la publication de Presences sur [notre dépôt GitHub](https://github.com/PreMiD/Presences), nous vous demandons de suivre un ensemble de règles. Pour certains, ces règles strictes peuvent paraître sévères. Cependant, la mise en œuvre de ces règles nous empêchera et empêchera les utilisateurs de faire face à des problèmes.
 
 # Création
 
@@ -34,14 +34,14 @@ Les règles générales de développement de presence sont les suivantes:
 - Les Presences pour les radios en ligne ne sont autorisées que si la radio a au moins 100 auditeurs hebdomadaires et 15 concurrents, ainsi que des fonctionnalités autre que du simple affichage des nom des albums/titres, etc.
 - Les presences ne sont pas autorisées à exécuter du JS avec leurs propres fonctions pour obtenir des variables. Si Firefox a des problèmes avec des fonctions par défaut à l'intérieur de la classe `Presence`, vous pouvez faire votre propre fonction et vous devez nous le préciser dans la description de votre Pull Request.
 - Les presences de faible qualité (ou celles avec peu de contenu) **ne sont pas** autorisées (par exemple : afficher uniquement un logo et du texte et ne plus jamais les changer).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Les presences pour des services qui proposent des bots ou des serveurs Discord doivent respecter les règles suivantes :
+  - Le nom de domaine doit avoir été créé il y a au moins **6 mois**.
+  - Visiteurs uniques par jour :
+    - Pour les noms de domaines vieux de 6 mois : **20 000 visiteurs uniques par jour**.
+    - Pour les noms de domaines vieux de 12 mois ou plus : **45 000 visiteurs uniques par jour**.
+  - Le site Internet ne peut pas avoir un domaine de premier prix comme `.xyz`, `.club` et ce qui s'en rapproche.
+  - Le site Internet doit être de très bonne qualité, au niveau design, etc.
+- Les presences devraient utiliser les [détails communs](https://api.premid.app/v2/langFile/presence/en) (chaînes de caractères commençant avec "general."). Vous pouvez y parvenir en utilisant `multiLanguage` avec les chaînes de caractères fournies. Si votre presence nécessite des chaînes de caractères personnalisées, alors vous ne devriez pas utiliser `multiLanguage`jusqu'à-ce que la presence n'obtienne 1 000 utilisateurs. Vous pouvez trouver un exemple [ici](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Inclure le dossier `dist` , les fichiers `presence.ts`, `iframe.ts` et `metadata.json` est obligatoire afin que le résultat soit ce qui est représenté dans le schéma suivant :
 
 ```bash
@@ -203,7 +203,7 @@ Une liste de champs et leurs règles sont listées ci-dessous:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- La catégorie **doit** être l'une des catégories suivantes listées sur la [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - La présence doit être dans une catégorie qui correspond au contenu du site web. (par exemple, n'utilisez pas `anime` lorsque le site n'est pas lié aux animes).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
