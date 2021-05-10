@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:03:51.119Z
 > 
 > {.is-info}
 
-> **Il faut** installer **à la fois** l'application **** et **l'extension**! 
+> **Il est nécessaire** d'installer **à la fois** l'**application** et l'**extension** ! 
 > 
 > {.is-warning}
 
