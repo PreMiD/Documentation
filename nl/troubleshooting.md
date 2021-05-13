@@ -67,7 +67,7 @@ Windows: Typ `%appdata%` in de bestandsverkenner en verwijder de map `PreMiD`. M
 ### McAfee heeft PreMiD gedetecteerd als virus (Windows)
 Dit is een valse positief van McAfee en we hebben hun hiervan op de hoogte gesteld. Voor nu kunt u PreMiD van de scan uitsluiten door de volgende stappen te doen:
 
-> Als je niet zelfverzekerd bent om deze stappen uit te voeren, voel je vrij om een ticket te maken in [#support](https://discord.premid.app/) en een van onze ondersteuningsmedewerkers zal er zijn om je te helpen! 
+> Als je niet het vertrouwen hebt om deze stappen uit te voeren, voel je dan vrij om een ticket te maken in [#support](https://discord.premid.app/) en een van onze ondersteuningsmedewerkers zal er zijn om je te helpen! 
 > 
 > {.is-warning}
 
