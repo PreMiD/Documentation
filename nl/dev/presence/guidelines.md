@@ -235,7 +235,7 @@ Hieronder vindt u een lijst met velden en hun regels:
 Hier is een lijst met regels die je moet volgen bij het schrijven van je `presence.ts` bestand:
 
 - Verklaar **altijd** een nieuw instance van de `Presence` klasse voor een andere variabele om zeldzame problemen te voorkomen; Dit is geen vereiste volgens het ontwerp, zodat het in de toekomst kan worden geschrapt.
-- Gebruik **nooit** aangepaste functies wanneer [native varianten beschikbaar zijn](https://docs.premid.app/dev/presence#files-explained); dit zorgt ervoor dat fixes op extensie-niveau ook van toepassing zijn op je presences. Je kunt gebruik maken van alles wat je nodig hebt als je het niet in de documenten kunt vinden.
+- Gebruik **nooit** aangepaste functies wanneer [native varianten beschikbaar zijn](https://docs.premid.app/dev/presence#files-explained); dit zorgt ervoor dat fixes op extensie-niveau ook van toepassing zijn op je presences. Je kunt gebruik maken van alles wat je nodig hebt als je het niet in de documentatie kunt vinden.
 - Het is **verboden** om presences voor een website te coderen zonder ondersteuning toe te voegen aan de hoofdtaal (bijvoorbeeld, een YouTube presence gecodeerd met steun voor Portugees en Japans, maar niet voor Engels zelf.)
 - De velden `smallImageKey` en `smallImageText` zijn bedoeld om extra/secundaire context te bieden (zoals `afspelen/gepauzeerd` voor videosites, `bladeren` voor reguliere sites) en niet voor het adverteren van je Discord-profiel of iets wat niet gerelateerd is aan PreMiD.
 - Je hebt **geen** toegang tot `localStorage`.
@@ -266,7 +266,7 @@ In sommige situaties kunnen presences onverwacht gedrag vertonen of enkele klein
 
 # Verificatie
 
-> **Alle** code die aan de winkel is bijgedragen zal een licentie krijgen onder de `Mozilla Public License 2.0`.
+> **Alle** bijgedragen code in de bibliotheek wordt gelicenseerd onder de `Mozilla Public License 2.0`.
 
 > Als je contact wilt opnemen met iemand, gebruik dan onze officiële Discord server. Alle verificateurs hebben de rol `Controleur` op hun profiel.
 
