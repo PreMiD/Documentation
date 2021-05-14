@@ -125,7 +125,7 @@ async function getStrings(): Promise<LangStrings> {
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // El ID es el ID del campo multiLanguage establecido en los ajustes.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! ¡El siguiente código debe estar dentro del evento updateData!
@@ -133,11 +133,11 @@ let strings: Promise<LangStrings> = getStrings(),
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
-  strings = getStrings();
+  strings = await getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play; // resultado: Playing
+const pauseString = (await strings).pause; // resultado: Paused
 ```
 
 ### `getPageletiable(String)`
