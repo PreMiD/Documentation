@@ -350,7 +350,7 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>music</b></td>
       <td style="text-align:left"><b>音楽</b></td>
-      <td style="text-align:left">これは、ストリーミングやダウンロードなど、音楽関連のコンテンツを提供するサイト</td>
+      <td style="text-align:left">ストリーミングやダウンロードなど、音楽関連のコンテンツを提供するサイト</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
