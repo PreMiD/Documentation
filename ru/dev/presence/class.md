@@ -2,7 +2,7 @@
 title: Класс присутствия
 description: Основной класс для каждого присутствия PreMiD
 published: true
-date: 2021-02-26T20:42:26.910Z
+date: 2021-05-14T15:16:20.185Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -120,24 +120,24 @@ async function getStrings(): Promise<LangStrings> {
       pause: "general.paused"
     },
     // The ID is the ID of the multiLanguage setting.
-    await presence.getSetting("ID")
+    await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings: Promise<LangStrings> = getStrings(),
   // The ID is the ID of the multiLanguage setting.
-  oldLang: string = await presence.getSetting("ID");
+  oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! Следующий код должен быть внутри события updateData!
 // ID — это идентификатор многоязычных параметров.
-const newLang = await presence.getSetting("ID");
+const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = strings.play; // result: Играет
-const pauseString = strings.pause; // result: Остановлен
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`

@@ -2,7 +2,7 @@
 title: Presence Klasse
 description: De belangrijkste klasse voor elke PreMiD presence
 published: true
-date: 2021-02-26T20:42:26.910Z
+date: 2021-05-14T15:16:20.185Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -120,24 +120,24 @@ async function getStrings(): Promise<LangStrings> {
       pause: "general.paused"
     },
     // De ID is de ID van de multiLanguage instelling.
-    await presence.getSetting("ID")
+    await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // De ID is de ID van de multiLanguage instelling.
-  oldLang: string = await presence.getSetting("ID");
+  // The ID is the ID of the multiLanguage setting.
+  oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! De volgende code moet binnen het updateData evenement!
 // De ID is de ID van de multiLanguage instelling.
-const newLang = await presence.getSetting("ID");
+const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = (await strings).play, // Geeft: Playing
-  pauseString = (await strings).pause; // Geeft: Paused
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`
