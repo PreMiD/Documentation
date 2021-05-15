@@ -120,12 +120,12 @@ async function getStrings(): Promise<LangStrings> {
       pause: "general.paused"
     },
     // Die ID ist die ID der multiLanguage Einstellung.
-    await presence.getSetting("ID").catch(() => "en");
+    await presence.getSetting("ID")
   );
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // Die ID ist die ID der multiLanguage Einstellung.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! Der folgende Code muss innerhalb des updateData Events sein!
