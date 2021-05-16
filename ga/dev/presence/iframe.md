@@ -23,7 +23,7 @@ Cosúil le presences, `iframes` tá a gcuid ranganna féin deartha chun sonraí 
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Cód anseo.
 });
 ```
 
@@ -40,7 +40,7 @@ In `iframes`, oibríonn imeachtaí ar an gcaoi chéanna leis an mbealach a oibr�
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Cód anseo
 });
 ```
 
