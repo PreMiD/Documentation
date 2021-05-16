@@ -73,7 +73,7 @@ Deletes all slides from the `Slideshow`.
 
 A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
 
-## Properties
+## প্রপার্টি
 
 ### `id`
 
