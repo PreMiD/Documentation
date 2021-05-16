@@ -68,27 +68,27 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "úsáideoir",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "úsáideoir",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "seirbhís",
+  "altnames": ["seirbhís"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "tuairisc"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "leagan",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "tuairisc",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "teideal",
+      "icon": "deilbhín",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "teideal",
+      "icon": "deilbhín",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "teideal",
+      "icon": "deilbhín",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
