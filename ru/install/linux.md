@@ -73,8 +73,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 ### Поддержка
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="Присоединяйтесь к нашему Discord серверу!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Присоединяйтесь к нашему Discord серверу!">
+  <a target="_blank" href="https://discord.premid.app/" title="Присоединиться к нашему Discord серверу!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Присоединиться к нашему Discord серверу!">
   </a>
 </div>
 
