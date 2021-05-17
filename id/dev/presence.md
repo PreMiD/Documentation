@@ -178,7 +178,7 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Sedikit deskripsi dari presence, kamu dapat menggunakan deskripsi dari layanan tersebut jika kehabisan ide. Deskripsi harus memiliki key pair values yang menandakan bahasa, dan deskripsi dengan bahasa tersebut. Buat deskripsi dengan bahasa yang <i>anda mengerti</i>, translator kami yang akan mengubah file metadata anda.</td>
+      <td style="text-align:left">Sedikit deskripsi dari presence, kamu dapat menggunakan deskripsi dari layanan tersebut jika kehabisan ide. Deskripsi harus memiliki key pair values yang menandakan bahasa, dan deskripsi dengan bahasa tersebut. Buat deskripsi dengan bahasa yang <i>kamu pahami</i>, translator kami yang akan mengubah file metadatamu.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
