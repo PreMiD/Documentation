@@ -20,7 +20,7 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 ### `currentSlide`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of what the presence/current slide is displaying.
+একটি [`PresenceData`](/dev/presence/class#presencedata-interface) অবজেক্ট রিটার্ন করে যার মধ্যে থাকে presence/বর্তমান স্লাইডটি কী দেখাচ্ছে।
 
 ```typescript
 const currentSlide = slideshow.currentSlide
