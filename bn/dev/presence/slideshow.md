@@ -12,11 +12,11 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 ## পরিচিতি
 
-The `Slideshow` class is used to set multiple `PresenceData` and "slide" through them every x milliseconds (minimum: 5000).
+`Slideshow` ক্লাসটি ব্যবহৃত হয় একাধিক `PresenceData` এবং "স্লাইড" সেট করতে প্রতি x মিলিসেসেন্ডে (কমপক্ষে: 5000).
 
-See the [`createSlideshow`](/dev/presence/class#createslideshow) method in the [`Presence`](/dev/presence/class) class on how to create a `Slideshow`.
+[`createSlideshow`](/dev/presence/class#createslideshow) মেথডটি দেখো [`Presence`](/dev/presence/class) ক্লাসের কীভাবে একটি `স্লাইডশো` তৈরি করতে হয়।
 
-## Properties
+## প্রপার্টি
 
 ### `currentSlide`
 
@@ -27,7 +27,7 @@ const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // Will console log the details of the PresenceData
 ```
 
-## মেথোড
+## মেথড
 
 ### `addSlide(String, PresenceData, Number)`
 
@@ -83,7 +83,7 @@ Returns a `String` of the id of the slide.
 
 Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
 
-## মেথোড
+## মেথড
 
 ### `updateData(PresenceData)`
 
