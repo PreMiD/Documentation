@@ -24,7 +24,7 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 ```typescript
 const currentSlide = slideshow.currentSlide
-console.log(currentSlide.details) // Will console log the details of the PresenceData
+console.log(currentSlide.details) // কনসোল লগ করবে PresenceData - এর বিস্তারিত
 ```
 
 ## মেথড
@@ -67,7 +67,7 @@ First parameter requires a `String` that is the unique identifier of the slide y
 
 Deletes all slides from the `Slideshow`.
 
-# SlideshowSlide Class
+# SlideshowSlide ক্লাস
 
 ## পরিচিতি
 
@@ -77,7 +77,7 @@ A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`
 
 ### `id`
 
-Returns a `String` of the id of the slide.
+একটি `String` রিটার্ন করে স্লাইডটির আইডি এর।
 
 ### `data`
 
