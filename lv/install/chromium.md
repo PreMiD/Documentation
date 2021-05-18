@@ -6,7 +6,7 @@ date: 2020-04-22T20:13:07.598Z
 tags:
 ---
 
-Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma pati par sevi neko nevar izdarīt.
+Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma bez paplašinājuma neko nevar izdarīt.
 
 # Uzstādīšana
 ### Chrome, Edge, u.c.
