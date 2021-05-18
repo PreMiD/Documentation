@@ -6,7 +6,7 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma pati par sevi neko nevar izdarīt.
+Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma bez paplašinājuma neko nevar izdarīt.
 
 # Uzstādīt
 1. Dodieties uz mūsu lejupielāžu lapu [uzspiežot šeit](https://premid.app/downloads).
