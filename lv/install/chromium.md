@@ -9,14 +9,14 @@ tags:
 Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma pati par sevi neko nevar izdarīt.
 
 # Uzstādīšana
-### Chrome, Edge, etc.
+### Chrome, Edge, u.c.
 1. Dodieties uz mūsu lejupielāžu lapu [uzspiežot šeit](https://premid.app/downloads).
 2. Choose **Chromium**.
-3. Click on **Add to Chrome**.
+3. Uzklikšķiniet uz **Add to Chrome**.
 
 ### Opera
 1. Add **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Add [our extension](https://premid.app/downloads).
+2. Pievienojiet mūsu [paplašinājumu](https://premid.app/downloads).
 
 > Neaizmirstiet [pievienot **lietotni**](/install). 
 > 
