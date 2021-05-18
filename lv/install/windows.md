@@ -8,7 +8,7 @@ tags:
 
 > Before going any further, make sure your system meets all the [requirements](/install/requirements).{.is-info}
 
-Lietotnes uzstādīšana ir ļoti svarīga, jo paplašinājums pats par sevi neko nevar izdarīt.
+Programmas uzstādīšana ir ļoti svarīga, jo paplašinājums bez programmas neko nevar izdarīt.
 
 # Uzstādīt
 1. Dodieties uz mūsu lejupielāžu lapu [uzspiežot šeit](https://premid.app/downloads).
