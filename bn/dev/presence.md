@@ -140,7 +140,7 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">ভেরিয়েবল</th>
+      <th style="text-align:left">ভ্যারিয়েবল</th>
       <th style="text-align:left">বিবরণ</th>
       <th style="text-align:left">ধরন</th>
       <th style="text-align:left">অপশনাল</th>
@@ -291,7 +291,7 @@ function myOutsideHeavyLiftingFunction(){
 
     // এলিমেন্ট নেয় //
     // API কল করে //
-    // ভেরিয়েবল সেট করে //
+    // ভ্যারিয়েবল সেট করে //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
@@ -302,11 +302,12 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData সবসময় কাজ করছে, এবং সুতরাং তোমার রিফ্রেশ চক্র হিসেবে কাজ করবে। This is called several times a second where possible.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    এটি পরামর্শিত যে অন্য একটি ফাংশন সেট করতে হবে এই ইভেন্ট ফাংশন এর বাইরে যা 
+ভ্যারিয়েবলের মানগুলো পরিবর্তন করবে এবং কঠিন কাজগুলো করবে যদি তুমি একটি API থেকে ডাটা কল করো।*/
 
   const presenceData: PresenceData = {
     largeImageKey:
-      "key" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+      "key" /*Key (ফাইলের নাম) Presence - এর বড় ছবিটির। These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageKey:
       "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
@@ -327,9 +328,9 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+তুমি এটা কপি করতে পারো তোমার `presence.ts` ফাইলে এবং মানগুলো এডিট করতে পারো। Setting all the values is done inside of the updataData event.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+উদাহরণের জন্য আমরা পরামর্শ দেই Presences - এর কোড দেখতে যেমন: 1337x বা 9GAG. আরও তথ্যের জন্য `Presence` ক্লাস সম্বন্ধে, ক্লিক করো [এখানে](/dev/presence/class)।
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
@@ -351,7 +352,7 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  পাও তোমার প্রয়োজনীয় সমস্ত ডাটা iFrame থেকে এবং সেগুলোকে ভেরিয়েবলে সেভ করো
+  পাও তোমার প্রয়োজনীয় সমস্ত ডাটা iFrame থেকে এবং সেগুলোকে ভ্যারিয়েবলে সেভ করো
   এবং সেগুলোকে পাঠাও iframe.send ব্যবহার করে
   */
   iframe.send({
