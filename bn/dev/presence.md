@@ -335,7 +335,7 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 
 ## নির্দিষ্ট ডাটা পাচ্ছ না?!
 
-বেশ কিছু ওয়েবসাইট বর্তমানে [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) ব্যবহার করছে। এসব HTML ট্যাগগুলোর মধ্যে একাধিক উৎস থাকতে পারে যেমন ভিডিও। But they're not relevant every time. কিছু গোপন করা থাকে অথবা শুধু সক্রিয়ভাবে ব্যবহার করা হয় না। চেক করো যদি তুমি তথ্যটিকে এক্সট্রাক্ট করতে পারো যা তোমার প্রয়োজন সেগুলো ছাড়া কোনো অপ্রয়োজনীয় কাজ করার আগে।
+বেশ কিছু ওয়েবসাইট বর্তমানে [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) ব্যবহার করছে। এসব HTML ট্যাগগুলোর মধ্যে একাধিক উৎস থাকতে পারে যেমন ভিডিও। কিন্তু সেগুলো সবসময় একই থাকে না। কিছু গোপন করা থাকে অথবা শুধু সক্রিয়ভাবে ব্যবহার করা হয় না। চেক করো যদি তুমি তথ্যটিকে এক্সট্রাক্ট করতে পারো যা তোমার প্রয়োজন সেগুলো ছাড়া কোনো অপ্রয়োজনীয় কাজ করার আগে।
 
 1. সেগুলো চেক করো তোমার ব্রাউজারের কনসোলে (নিশ্চিত হও যে তুমি **Elements** ট্যাবে রয়েছ)।
 2. সার্চ করো (<kbd>CTRL</kbd>+<kbd>F</kbd> (উইন্ডোজ) অথবা <kbd>CMD</kbd>+<kbd>F</kbd> (ম্যাক ওএস))।
