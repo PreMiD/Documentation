@@ -41,7 +41,7 @@ Las reglas generales del desarrollo de una presence son las siguientes:
     - Para dominios de 12 o más meses de antigüedad: **45.000 visitas únicas por día**.
   - El sitio web no puede estar en un dominio barato como `.xyz` o `.club`.
   - El sitio web debe tener una muy buena calidad, diseño, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. Si tu presence requiere cadenas de texto personalizadas, entonces no deberías usar `multiLanguage` hasta que la presence reciba 1000 usuarios. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Las presences deben utilizar [detalles comunes](https://api.premid.app/v2/langFile/presence/en) (strings que empiezan por "general."). Puedes conseguirlo usando `multilenguaje` con las strings proporcionadas. Si tu presence requiere cadenas de texto personalizadas, entonces no deberías usar `multiLanguage` hasta que la presence reciba 1000 usuarios. Puedes encontrar un ejemplo [aquí](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Incluyendo la carpeta `dist`, los archivos `presence.ts`, `iframe.ts` y `metadata.json` son obligatorios. Obteniendo algo como el siguiente esquema:
 
 ```bash
@@ -200,12 +200,12 @@ Una lista de los campos y sus reglas están listadas abajo:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
-- La presence debe utilizar una categoría que coincida con el contenido del sitio web. (por ejemplo, no utilices `anime` cuando el sitio web no esté relacionado con anime).
+- La categoría **debe ser una de las siguientes que aparecen en la [documentación](https://docs.premid.app/dev/presence/metadata#presence-categories).</li>
+- La presence debe utilizar una categoría que coincida con el contenido del sitio web. (por ejemplo, no utilices `anime` cuando el sitio web no esté relacionado con anime).</ul>
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Las expresiones regulares **deben** ser válidas. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Las expresiones regulares **deben** ser válidas. Por favor prueba tus expresiones con las herramientas listadas en la [documentación](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
@@ -243,16 +243,16 @@ Aquí hay una lista de reglas que debes seguir al escribir tu archivo `presence.
 - Solo podrás hacer peticiones HTTP/HTTPS a `premid.app` o el sitio para API de su presence. Si está utilizando dominios externos, tendrá que explicar por qué son necesarios. Únicamente la API permitida para realizar solicitudes es [`Obtener API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - **No** establezcas campos de la instancia presenceData como undefined una vez declarado, utiliza en su lugar la palabra clave `delete`. (por ejemplo, usa `delete data.startTimestamp` en vez de `data.startTimestamp = undefined`)
 - **No** tienes permitido escribir presences que puedan cambiar la funcionalidad de un sitio web. Esto incluye la adición, eliminación o modificación de los elementos DOM.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- Presences que utilizan botones deben seguir estos requisitos adicionales:
+  - Los redireccionamientos a la página principal están prohibidos.
+  - No está permitido promover sitios web por medio de ello.
+  - No pueden mostrar información adicional cuando esta no puede ser mostrada otros campos.
+  - Está prohibida la redirección directa a streams de audio o vídeo.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **No** escribas tu propio `tsconfig.json`, usa el proporcionado en la [documentación](https://docs.premid.app/en/dev/presence/tsconfig).
 
 ## Modificación
 

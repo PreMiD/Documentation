@@ -125,7 +125,7 @@ async function getStrings(): Promise<LangStrings> {
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // El ID es el ID del campo multiLanguage establecido en la configuración.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! ¡El siguiente código debe estar dentro del evento updateData!
@@ -133,11 +133,11 @@ let strings: Promise<LangStrings> = getStrings(),
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
-  strings = getStrings();
+  strings = await getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play; // resultado: Playing
+const pauseString = (await strings).pause; // resultado: Paused
 ```
 
 ### `getPageletiable(String)`
@@ -164,7 +164,7 @@ console.log(version); // Mostrará 2.1.0
 
 ### `getSetting(String)`
 
-Obtén el valor del ajuste.
+Devuelve el valor del ajuste.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); // Remplaza pdexID con el id del ajuste
@@ -181,7 +181,7 @@ presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Muestra la configuración dada (Sólo funciona si la configuración ya estaba oculta).
 
 ```typescript
 presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
