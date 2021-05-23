@@ -30,11 +30,11 @@ There are three properties available for `Presence` class.
 
 This property is required to make your presence work, because it uses your application id to display its logo and assets. You can get it on your [applications page](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Descontinuado desde a versão 2.2.4*
 
 When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Descontinuado desde a versão 2.2.4*
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
@@ -144,7 +144,7 @@ const playString = (await strings).play, // result: Playing
 
 Retorna a váriavel do site caso exista.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Atenção: esta função pode aumentar a utilização do processador e atrasar o site se for executada demasiadas vezes.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
@@ -267,7 +267,7 @@ presenceData.endTimestamp = timestamps[1];
 
 The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-This interface has following variables, all of them are optional.
+Esta interface tem as seguintes variáveis, todas são opcionais.
 
 <table>
   <thead>
@@ -362,7 +362,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Eventos permitem-te detetar e lidar com quaisquer alterações ou chamadas que tenham sido feitas. Podes subscrever eventos usando o método `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -378,4 +378,4 @@ This event is fired every time the presence is being updated.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Acionado quando são recebidos dados do script do iFrame.
