@@ -1,12 +1,12 @@
 ---
 title: Memulai
-description: A little advice for those who got into coding recently
+description: Sedikit masukan bagi mereka yang baru memulai coding
 published: true
 date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> A source code editor is required. Kami merekomendasikan [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
