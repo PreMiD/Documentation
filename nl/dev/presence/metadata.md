@@ -322,7 +322,7 @@ presence.hideSetting("pdexID"); ///vervang pdexID met het id van de instelling
 ```
 
 #### `showSetting(String)`
-Toont gegeven instelling (werkt alleen als de instelling al verborgen was).
+Shows given setting (Only works if the setting was already hidden).
 ```typescript
 presence.showSetting("pdexID"); ///vervang pdexID met het id van de instelling
 ```
