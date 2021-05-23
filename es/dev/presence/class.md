@@ -361,7 +361,7 @@ const presenceData: PresenceData = {
 
 ## Eventos
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Los eventos te permiten detectar y manejar algunos cambios o llamadas realizadas. Puedes suscribirte a eventos usando el método `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
