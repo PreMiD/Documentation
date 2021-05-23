@@ -26,7 +26,7 @@ tags:
 > {.is-warning}
 
 - Buka terminal di repositorymu dan ketik `npm i`.
-- To update the dependencies type `npm update`.
+- Untuk memperbarui dependencies ketik `npm update`.
 
 > Be aware that updating the dependencies could break a lot, or not - testing is required! 
 > 
@@ -36,7 +36,7 @@ tags:
 Please keep the structure. Kami tidak ingin proyek kami berantakan. File berantakan akan ditolak.
 
 # Menyampaikan impianmu
-Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. We will take care of your baby, don't worry. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
+Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. Akan kami urus, jangan khawatir. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
 
 # Mendapatkan persetujuan
 Tujuan utama kami adalah bekerja bersama pengguna jadi usahakan sebisa mungkin jadilah ramah, hormat dan informatif. Ping Developer kami di [Server Discord](https://discord.gg/WvfVZ8T) kami untuk mendapat review, atau tidak. Depends on the code quality, appearance of assets and regular functionality.
