@@ -147,13 +147,13 @@ Devuelve una variable desde el sitio web si existe.
 **Advertencia: Esta función puede causar un alto uso de CPU y retraso en el sitio cuando se ha ejecutado demasiadas veces.**
 
 ```typescript
-const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+const pageVar = getPageletiable(".pageVar");
+console.log(pageVar); // Esto mostrará en la consola "Contenido de la variable"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Devuelve la versión de la extensión que está usando el usuario.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -175,7 +175,7 @@ console.log(setting); // Esto mostrará el valor del ajuste
 
 ### `hideSetting(String)`
 
-Oculta la configuración dada.
+Oculta el ajuste indicado.
 
 ```typescript
 presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Muestra el ajuste indicado (solo funciona si el ajuste ha sido ocultado).
 
 ```typescript
 presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
@@ -191,18 +191,18 @@ presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Devuelve los logs de la consola del sitio web.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Obtienes los últimos 100 logs (en un array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Nota:** Requiere establecer la propiedad `readLogs` a `true` en el archivo `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `info`.
 
 ```typescript
 presence.info("Test") // Esto logeará "test" con un estilo predeterminado.
@@ -210,7 +210,7 @@ presence.info("Test") // Esto logeará "test" con un estilo predeterminado.
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `satisfactorio`.
 
 ```typescript
 presence.success("Test") // Esto logeará "test" con un estilo predeterminado.
@@ -218,7 +218,7 @@ presence.success("Test") // Esto logeará "test" con un estilo predeterminado.
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `error`.
 
 ```typescript
 presence.error("Test") // Esto logeará "test" con un estilo predeterminado.
@@ -226,7 +226,7 @@ presence.error("Test") // Esto logeará "test" con un estilo predeterminado.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -238,7 +238,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
