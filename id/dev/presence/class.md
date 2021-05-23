@@ -42,7 +42,7 @@ When setting `appMode` to `true` and the presence were to send an empty `Presenc
 
 ### `getActivity()`
 
-Returns a `PresenceData` object of what the presence is displaying.
+Mengembalikan objek `PresenceData` dari apa yang sedang ditampilkan presence.
 
 ### `setActivity(PresenceData | Slideshow, Boolean)`
 
@@ -66,7 +66,7 @@ Setel judul baki pada bilah Menu.
 
 ### `createSlideshow()`
 
-Creates a new `Slideshow` class.
+Membuat kelas `Slideshow` baru.
 
 ```typescript
 const slideshow = presence.createSlideshow();
@@ -76,12 +76,12 @@ It is suggested to do this right after creating the `Presence` class:
 
 ```typescript
 const presence = new Presence({
-    clientId: "514271496134389561" // Example clientId
+    clientId: "514271496134389561" // Contoh clientId
   }),
   slideshow = presence.createSlideshow();
 ```
 
-You can find the documentation for the `Slideshow` class [here](/dev/presence/slideshow).
+Kamu bisa menemukan dokumentasi untuk kelas `Slideshow` [disini](/dev/presence/slideshow).
 
 ### `getStrings(Object)`
 
@@ -97,8 +97,8 @@ const strings = await presence.getStrings({
   pause: "general.paused"
 });
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.play; // hasil: Playing
+const pauseString = strings.pause; // hasil: Paused
 ```
 
 Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
@@ -128,8 +128,8 @@ let strings: Promise<LangStrings> = getStrings(),
   // ID diisi dengan ID dari pengaturan multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
-// The ID is the ID of the multiLanguage setting.
+//! Kode dibawah harus berada didalam event updateData!
+// ID diisi dengan ID dari pengaturan multiLanguage.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
@@ -144,11 +144,11 @@ const pauseString = (await strings).pause; // hasil: Paused
 
 Mengembalikan variabel dari situs web jika ada.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Peringatan: Fungsi ini dapat menyebabkan penggunaan CPU yang tinggi & melambatkan situs jika terlalu sering dijalankan.**
 
 ```typescript
-const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+const pageVar = getPageletiable(".pageVar");
+console.log(pageVar); // Ini akan mencatat "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
