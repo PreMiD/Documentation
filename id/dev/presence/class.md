@@ -2,7 +2,7 @@
 title: Kelas Presence
 description: The main class for every PreMiD presence
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ There are three properties available for `Presence` class.
 
 Properti ini diperlukan agar presencemu bekerja, karena properti ini menggunakan id aplikasimu untuk menampilkan logo dan asetnya. You can get it on your [applications page](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Deprecated since 2.2.4*
 
 Ketika pengaturan `injectOnComplete` adalah `true` maka event `UpdateData` pertama untuk file `presence.ts` dan `iframe.ts` hanya akan dinyalakan ketika halaman sudah sepenuhnya termuat.
 
-#### `appMode`
+#### `appMode` - *Deprecated since 2.2.4*
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
@@ -144,14 +144,16 @@ const pauseString = (await strings).pause; // hasil: Paused
 
 Mengembalikan variabel dari situs web jika ada.
 
+**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
+const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // This will log the "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Mengembalikan versi dari ekstensi yang digunakan pengguna.
+Returns version of the extension the user is using.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -227,7 +229,7 @@ presence.error("Test") // This will log "test" in the correct styling.
 Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -240,7 +242,7 @@ Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimest
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -252,9 +254,9 @@ presenceData.endTimestamp = timestamps[1];
 Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -350,7 +352,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Acara memungkinkan Anda untuk mendeteksi dan menangani beberapa perubahan atau panggilan yang dilakukan. Anda dapat berlangganan acara menggunakan metode `on`.
+Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -362,8 +364,8 @@ There are few events available:
 
 #### `UpdateData`
 
-Event ini akan diluncurkan setiap kali presence diperbarui.
+This event is fired every time the presence is being updated.
 
 #### `iFrameData`
 
-Diluncurkan saat menerima data dari iFrame script.
+Fired when data is received from iFrame script.

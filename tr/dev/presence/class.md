@@ -2,7 +2,7 @@
 title: Presence Sınıfı
 description: Tüm PreMiD servisleri için geçerli ana sınıf
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ const presence = new Presence({
 
 Bu özellik, oynuyor etkinliğinizin çalışmasını sağlamak için gereklidir, çünkü logosunu ve ID'nizi görüntülemek için uygulama kimliğinizi kullanır. Bunlardan bir tane alabilmek için [uygulamalar sayfası](https://discordapp.com/developers/applications)ndan servisiniz için bir uygulama oluşturmalısınız.
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Deprecated since 2.2.4*
 
 `injectOnComplete` ayarını `true` olarak ayarlarken, `presence.ts` ve `iframe.ts` için ilk `UpdateData` olayı, sadece sayfa tamamen yüklendiğinde çalıştırılacaktır.
 
-#### `appMode`
+#### `appMode` - *Deprecated since 2.2.4*
 
 `appMode` ayarını `true` olarak ayarladıktan sonra, boş bir `PresenceData` verisi gönderildiğinde, uygulama hiçbir şey yerine uygulamanızın ismini ve resmini gösterecektir.
 
@@ -144,14 +144,16 @@ const playString = (await strings).play, // result: Playing
 
 Eğer varsa sayfadaki bir değişkenin içeriğini gösterir.
 
+**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // Değişkenin içeriğini gösterecektir
+const pageVar = presence.getPageletiable("pageVar");
+console.log(pageVar); // This will log the "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Kullanıcının kullandığı eklentinin sürümünü verir.
+Returns version of the extension the user is using.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -164,7 +166,7 @@ console.log(version); // 2.1.0 çıktısı verir
 
 ### `getSetting(String)`
 
-Bir ayarın değerini döner.
+Returns value of setting.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
@@ -173,7 +175,7 @@ console.log(setting); // Seçeneğin değerinin çıktısını verecektir
 
 ### `hideSetting(String)`
 
-Belirtilen ayarı gizler.
+Hides given setting.
 
 ```typescript
 presence.hideSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
@@ -189,18 +191,18 @@ presence.showSetting("pdexID"); // PdexID'yi ayarın id'si ile değiştirin
 
 ### `getLogs()`
 
-İnternet sitesinin konsol kayıtlarının çıktısını döndürür.
+Returns the logs of the websites console.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Bu, son 100 kaydın (array içerisinde) çıktısını verir.
 ```
 
-**Not:** Bu ayar, `metadata.json` dosyasında `readLogs` ayarının `true` olmasını gerektirir.
+**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
 
 ### `info(String)`
 
-Girilen mesajı konsola `info` (bilgi) tarzında konsola yazdırır.
+Prints the given message in the console in a format based of the presence in the `info` style.
 
 ```typescript
 presence.info("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
@@ -208,7 +210,7 @@ presence.info("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
 
 ### `success(String)`
 
-Girilen mesajı konsola `success` (başarılı) tarzında konsola yazdırır.
+Prints the given message in the console in a format based of the presence in the `success` style.
 
 ```typescript
 presence.success("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
@@ -216,7 +218,7 @@ presence.success("Test") // Belirtilen tarzda "Test" mesajını konsola yazdır�
 
 ### `error(String)`
 
-Girilen mesajı konsola `error` (hata) tarzında konsola yazdırır.
+Prints the given message in the console in a format based of the presence in the `error` style.
 
 ```typescript
 presence.error("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
@@ -224,48 +226,48 @@ presence.error("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-`startTimestamp` ve `endTimestamp` değerleri olarak kullanabileceğiniz bir `Array` formatında 2 adet `snowflake` zaman verisi döndürür.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Not:** querySelector da verilen `String` bir örnektir.
+**Note:** The given `String` in querySelector is an example.
 
 ### `getTimestamps(Number, Number)`
 
-`startTimestamp` ve `endTimestamp` değerleri olarak kullanabileceğiniz bir `Array` formatında 2 adet `snowflake` zaman verisi döndürür.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Not:** querySelector da verilen `String` bir örnektir.
+**Note:** The given `String` in querySelector is an example.
 
 ### `timestampFromFormat(String)`
 
-Metin şeklindeki zaman verisini (`HH:MM:SS` VEYA `MM:SS` VEYA `SS`) sayı verisinde döndürür (snowflake zaman verisine değil).
+Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Not:** querySelector da verilen `String` bir örnektir.
+**Note:** The given `String` in querySelector is an example.
 
 ## `PresenceData` Arayüzü
 
-`PresenceData` arayüzünün, `setActivity()` metodunu kullandığınız her zaman kullanılması önerilir.
+The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-Bu arayüz, aşağıdaki alanları kullanabilir, bunların hepsi opsiyonel yani zorunlu değildir.
+This interface has following variables, all of them are optional.
 
 <table>
   <thead>
@@ -357,7 +359,7 @@ const presenceData: PresenceData = {
 
 ## Olaylar
 
-Eventler belirli zamanlarda bilgi gönderir ve birçok şeyi kontrol edebilmenizi sağlar. Bir event'i dinleyebilmek için `on` metodunu kullanabilirsiniz.
+Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -365,12 +367,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Kullanabileceğiniz birkaç event vardır:
+There are few events available:
 
 #### `UpdateData`
 
-Bu event, kullanıcı servisin çalışacağı bir siteye girdikten sonra sürekli olarak kendini tekrar edecektir.
+This event is fired every time the presence is being updated.
 
 #### `iFrameData`
 
-iFrame'den bilgi geldiğinde bu event bilgi iletecektir.
+Fired when data is received from iFrame script.

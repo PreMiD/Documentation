@@ -2,7 +2,7 @@
 title: Kelas Presence
 description: Kelas utama untuk setiap Presence di PreMiD
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ Terdapat tiga sifat yang wujud untuk kelas `Presence`.
 
 Sifat ini diperlukan untuk membolehkan Presence anda berfungsi, kerana ia menggunakan id aplikasi anda untuk memaparkan logo dan asetnya. Anda boleh dapatkannya di [halaman aplikasi](https://discordapp.com/developers/applications) anda.
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Deprecated since 2.2.4*
 
 Apabila menetapkan nilai `injectOnComplete` ke `true`, peristiwa `UpdateData` yang pertama untuk kedua-dua fail `presence.ts` dan `iframe.ts` hanya akan dijalankan apabila halaman telah dimuatkan sepenuhnya.
 
-#### `appMode`
+#### `appMode` - *Deprecated since 2.2.4*
 
 Apabila menetapkan nilai `appMode` ke `true` dan Presence menghantar `PresenceData` yang kosong, aplikasi akan hantarkan (imej dan nama) aplikasi di profil pengguna menggantikan kekosongan.
 
@@ -144,14 +144,16 @@ const playString = (await strings).play, // hasilnya: Bermain
 
 Mengembalikan pemboleh ubah dari laman sesawang jika ia wujud.
 
+**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // Ini akan mengelog "Kandungan pemboleh ubah"
+const pageVar = presence.getPageletiable("pageVar");
+console.log(pageVar); // This will log the "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Mengembalikan versi sambungan yang pengguna guna.
+Returns version of the extension the user is using.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -173,7 +175,7 @@ console.log(setting); // Ini akan log nilai tetapan
 
 ### `hideSetting(String)`
 
-Menyembunyikan tetapan yang diberikan.
+Sembunyikan tetapan yang diberi.
 
 ```typescript
 presence.hideSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
@@ -181,7 +183,7 @@ presence.hideSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
 
 ### `showSetting(String)`
 
-Tunjukkan tetapan yang diberi (Hanya berfungsi jika tetapan disembunyikan).
+Shows given setting (Only works if the setting was already hidden).
 
 ```typescript
 presence.showSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
@@ -189,18 +191,18 @@ presence.showSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
 
 ### `getLogs()`
 
-Mengembalikan log bagi konsol laman sesawang.
+Returns the logs of the websites console.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Ini akan mengelog 100 log terbaru (dalam tatasusunan).
 ```
 
-**Nota:** Memerlukan nilai `readLogs` ditetapkan ke `true` dalam fail `metadata.json`.
+**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
 
 ### `info(String)`
 
-Mencetak mesej diberi ke konsol dalam format berasaskan Presence dalam gaya `info`.
+Prints the given message in the console in a format based of the presence in the `info` style.
 
 ```typescript
 presence.info("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
@@ -208,7 +210,7 @@ presence.info("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 
 ### `success(String)`
 
-Mencetak mesej diberi ke konsol dalam format berasaskan Presence dalam gaya `success`.
+Prints the given message in the console in a format based of the presence in the `success` style.
 
 ```typescript
 presence.success("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
@@ -216,7 +218,7 @@ presence.success("Test") // Ini akan mengelog "test" dalam penggayaan yang betul
 
 ### `error(String)`
 
-Mencetak mesej diberi ke konsol dalam format berasaskan Presence dalam gaya `error`.
+Prints the given message in the console in a format based of the presence in the `error` style.
 
 ```typescript
 presence.error("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
@@ -224,48 +226,48 @@ presence.error("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Mengembalikan 2 cap masa emping salji `snowflake` di dalam tatasusunan `Array` yang kemudiannya boleh digunakan untuk nilai cap masa mula `startTimestamp` dan cap masa tamat `endTimestamp`.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Nota:** Rentetan `String` yang diberi di querySelector ini hanyalah contoh.
+**Note:** The given `String` in querySelector is an example.
 
 ### `getTimestamps(Number, Number)`
 
-Mengembalikan 2 cap masa emping salji `snowflake` di dalam tatasusunan `Array` yang kemudiannya boleh digunakan untuk nilai cap masa mula `startTimestamp` dan cap masa tamat `endTimestamp`.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Nota:** Rentetan `String` yang diberi di querySelector ini hanyalah contoh.
+**Note:** The given `String` in querySelector is an example.
 
 ### `timestampFromFormat(String)`
 
-Menukarkan rentetan dengan format JJ:MM:SS `HH:MM:SS` atau MM:SS `MM:SS` atau SS `SS` menjadi nombor bulat (Tidak mengembalikan cap masa emping salji).
+Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Nota:** Rentetan `String` yang diberi di querySelector ini hanyalah contoh.
+**Note:** The given `String` in querySelector is an example.
 
 ## Antara Muka `presenceData`
 
-Antara muka `PresenceData` digalakkan penggunaannya apabila anda menggunakan kaedah `setActivity()`.
+The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-Antara muka ini mempunyai pemboleh ubah berikut, kesemuanya pilihan.
+This interface has following variables, all of them are optional.
 
 <table>
   <thead>
@@ -360,7 +362,7 @@ const presenceData: PresenceData = {
 
 ## Peristiwa
 
-Peristiwa membolehkan anda kesan dan urus beberapa perubahan atau panggilan yang dibuat. Anda boleh melanggan peristiwa menggunakan kaedah `on`.
+Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -368,12 +370,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Terdapat beberapa peristiwa tersedia:
+There are few events available:
 
 #### `UpdateData`
 
-Peristiwa ini dijalankan setiap kali Presence dikemas kini.
+This event is fired every time the presence is being updated.
 
 #### `iFrameData`
 
-Dijalankan apabila data diterima dari skrip iFrame.
+Fired when data is received from iFrame script.
