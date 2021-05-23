@@ -28,7 +28,7 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 - โครงสร้างไฟล์ต้องบริสุทธิ์เเละมีการจัดการ, อย่าใส่ไฟล์ที่ไม่เกี่ยวข้อง (เช่น vscode เเละโฟลเดอร์ git, รูปภาพเเละไฟล์ต่างๆ)
 - คุณต้องมีโครงสร้างไฟล์ที่เหมาะสม, สําหรับการร่าง **ไม่**อนุญาติ
 - Presence สําหรับเว็บไซต์ (`.onion` TLDs) หรือเว็บไซต์ฟรี Host หรือ Domain ฟรี (เช่น `.tk` [ทุก Domain ฟรี], `.RF`,`GD`,อื่นๆ) ที่**ไม่ได้รับอนุญาติ**, เเต่สามารถใช้ได้ถ้ามีหลักฐานสําหรับการจ่ายเงินสําหรับ Domain
-- The domain of the presence must be at least 2 months old.
+- โดเมนของ Presence ต้องมีอายุอย่างน้อย 2 เดือน
 - Presence ที่เล็งการพัฒนาด้วยเบราว์เซอร์ภายในเช่น (Chrome Web Store, `chrome://`, `about:` หรือหน้าอื่นๆนั้น) **ไม่อนุญาติ** เนื่องจากต้องเปิดโหมดทดลองของเบราว์เซอร์นั้นๆ เเละอาจะเกิดความเสียหายของเบราว์เซอร์ได้
 - Presence ที่มีเพียง Domain เดียวจะ**ไม่อนุญาติ**, เนื่องจากอาจจะทําให้หน้าอื่นขัดข้องได้เช่น (หน้าหลัก), เเต่สามารถทําได้เเค่นโยบายเเละหน้าติดต่อ (เนื้อหาที่ไม่ได้ใช้บ่อยๆ) หรือ เนื้อหาที่ไม่เกี่ยวข้อง (เช่น หน้า Wiki)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
