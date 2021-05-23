@@ -15,4 +15,4 @@ PreMiD adalah utilitas simpel yang memungkinkan kamu menampilkan apa yang sedang
 
 # Fitur-fitur utama
 - Menampilkan website yang kamu gunakan sebagai status di Discord.
-- Grants full control over Presences.
+- Memberi kontrol penuh terhadap Presence.
