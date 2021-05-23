@@ -29,8 +29,8 @@ dateCreated: 2020-06-11T18:03:54.865Z
 ### Используете ли вы приложение Discord?
 PreMiD делает**не** Если вы работаете в версии браузера Discord, вы должны загрузить приложение [сюда](https://discord.com/download).
 
-### Убедитесь, что вы включили Игровую активность Discord
-Настройки приложения > Игровая активность ![gameactivity_edited.png](/gameactivity_edited.png)
+### Make sure that you have enabled Activity Status in your Discord app settings
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Убедитесь, что Discord запущен НЕ как администратор
 Очень важно. Discord RPC не будет работать, если вы запускаете Discord от имени администратора.
