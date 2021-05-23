@@ -2,7 +2,7 @@
 title: Presence Class
 description: The main class for every PreMiD presence
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ There are three properties available for `Presence` class.
 
 This property is required to make your presence work, because it uses your application id to display its logo and assets. You can get it on your [applications page](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Deprecated since 2.2.4*
 
 When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
 
-#### `appMode`
+#### `appMode` - *Deprecated since 2.2.4*
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
@@ -144,14 +144,16 @@ const playString = (await strings).play, // result: Playing
 
 Zwraca zmienną ze strony internetowej, jeśli istnieje.
 
+**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
+const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // This will log the "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Zwraca wersję rozszerzenia, którego używa użytkownik.
+Returns version of the extension the user is using.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -227,7 +229,7 @@ presence.error("Test") // This will log "test" in the correct styling.
 Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -240,7 +242,7 @@ Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimest
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -252,9 +254,9 @@ presenceData.endTimestamp = timestamps[1];
 Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -265,7 +267,7 @@ presenceData.endTimestamp = timestamps[1];
 
 The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-Ten interfejs posiada następujące zmienne, wszystkie są opcjonalne.
+This interface has following variables, all of them are optional.
 
 <table>
   <thead>
@@ -360,7 +362,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Zdarzenia umożliwiają wykrycie i obsługę pewnych zmian lub połączeń, które zostały wykonane. Możesz subskrybować wydarzenia za pomocą metody `on`.
+Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -368,12 +370,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Dostępnych jest kilka wydarzeń:
+There are few events available:
 
 #### `UpdateData`
 
-To wydarzenie jest uruchamiane za każdym razem, gdy status jest aktualizowany.
+This event is fired every time the presence is being updated.
 
 #### `iFrameData`
 
-Wystrzelony, gdy dane są odebrane ze skryptu iFrame.
+Fired when data is received from iFrame script.
