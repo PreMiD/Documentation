@@ -29,8 +29,8 @@ You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (Mac
 ### האם אתה משתמש באפליקציית Discord?
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
-### Make sure that you have enabled Discord Game Activity in settings
-**User Settings** > **Game Activity** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Make sure that you have enabled Activity Status in your Discord app settings
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### ודא כי דיסקורד לא פועל כמנהל מערכת
 מאוד חשוב. דיסקורד RPC לא יעבוד אם אתה מפעיל את דיסקורד כמנהל מערכת.
