@@ -30,11 +30,11 @@ Terdapat tiga sifat yang wujud untuk kelas `Presence`.
 
 Sifat ini diperlukan untuk membolehkan Presence anda berfungsi, kerana ia menggunakan id aplikasi anda untuk memaparkan logo dan asetnya. Anda boleh dapatkannya di [halaman aplikasi](https://discordapp.com/developers/applications) anda.
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Diperkecamkan sejak 2.2.4*
 
 Apabila menetapkan nilai `injectOnComplete` ke `true`, peristiwa `UpdateData` yang pertama untuk kedua-dua fail `presence.ts` dan `iframe.ts` hanya akan dijalankan apabila halaman telah dimuatkan sepenuhnya.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Diperkecamkan sejak 2.2.4*
 
 Apabila menetapkan nilai `appMode` ke `true` dan Presence menghantar `PresenceData` yang kosong, aplikasi akan hantarkan (imej dan nama) aplikasi di profil pengguna menggantikan kekosongan.
 
@@ -144,7 +144,7 @@ const playString = (await strings).play, // hasilnya: Bermain
 
 Mengembalikan pemboleh ubah dari laman sesawang jika ia wujud.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Amaran: Fungsi ini boleh menyebabkan penggunaan CPU yang tinggi & tapak lembap bertindak balas apabila ia telah dijalankan dengan terlalu banyak kali.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
