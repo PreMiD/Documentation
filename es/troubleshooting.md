@@ -29,8 +29,8 @@ Puedes presionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) o <kbd>CMD+R</kbd> (M
 ### ¿Estás usando la aplicación de Discord?
 PreMiD **no** funciona en la versión web de Discord, debes descargar la aplicación [aquí](https://discord.com/download).
 
-### Asegúrate de haber habilitado la Actividad de Juegos en las opciones de Discord
-**Ajustes de usuario** > **Actividad de juegos** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Make sure that you have enabled Activity Status in your Discord app settings
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Asegúrate de que Discord NO se esté ejecutando como administrador
 Muy importante. Discord RPC no funcionará si ejecutas Discord como administrador.
