@@ -1,6 +1,6 @@
 ---
-title: Installation
-description: How to install PreMiD
+title: Instalasi
+description: Cara menginstal PreMiD
 published: true
 date: 2020-11-10T17:54:28.896Z
 tags:
@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:03:51.119Z
 > 
 > {.is-info}
 
-> **Diharuskan** untuk menginstal **aplikasi** **dan ****ekstensi**! 
+> **It is necessary** to install **both** the **application** and the **extension**! 
 > 
 > {.is-warning}
 

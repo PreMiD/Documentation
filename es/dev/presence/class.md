@@ -234,7 +234,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ### `getTimestamps(Number, Number)`
 
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Convierte una cadena con formato `HH:MM:SS` o `MM:SS` o `SS` en un entero (no devuelve un timestamp).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,7 +261,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ## Interfaz `PresenceData`
 
