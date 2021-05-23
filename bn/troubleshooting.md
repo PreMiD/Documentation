@@ -29,8 +29,8 @@ dateCreated: 2020-06-11T18:03:54.865Z
 ### তুমি কি Discord অ্যাপটি ব্যবহার করছ?
 Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ করে **না**, তোমাকে অবশ্যই অ্যাপটা ডাউনলোড করতে হবে [এখানে](https://discord.com/download)।
 
-### নিশ্চিত করো যে তুমি সেটিংসে Discord গেম এক্টিভিটি অন রেখেছ
-**User Settings** > **Game Activity** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Make sure that you have enabled Activity Status in your Discord app settings
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### নিশ্চিত হও যে Discord এডমিনিস্ট্রেটরে রান হচ্ছে না
 খুবই গুরুত্বপূর্ণ। Discord RPC কাজ করবে না যদি তুমি Discord এডমিনিস্ট্রেটরে রান করো।
