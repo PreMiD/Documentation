@@ -286,7 +286,7 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">state</td>
-      <td style="text-align:left">Second line in your presence.</td>
+      <td style="text-align:left">Baris kedua di presencemu.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
@@ -360,11 +360,11 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+Ada beberapa event yang tersedia:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Event ini akan diluncurkan setiap kali presence diperbarui.
 
 #### `iFrameData`
 
