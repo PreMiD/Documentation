@@ -214,7 +214,7 @@ Senarai medan dan peraturan berkaitan disenaraikan di bawah:
 
 ### **`warning`**
 
-- Membolehkan ikon amaran untuk memneritahu pengguna bahawa Presence ini memerlukan langkah tambahan dan tidak cukup sekadar menambah Presence.
+- Membolehkan ikon amaran untuk memberitahu pengguna bahawa Presence ini memerlukan langkah tambahan dan tidak cukup sekadar menambah Presence.
 - Contoh Presence yang menggunakan pemboleh ubah metadata ini ialah `VLC`.
 
 ### **`settings`**
