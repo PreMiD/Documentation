@@ -153,7 +153,7 @@ console.log(pageVar); // This will log the "Variable content"
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Tuairisceáin luach an tsuímh.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -166,7 +166,7 @@ console.log(version); // Will log 2.1.0
 
 ### `getSetting(String)`
 
-Tuairisceáin luach an tsuímh.
+Seithí tugtha suíomh.
 
 ```typescript
 const const = await presence.getSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
@@ -175,7 +175,7 @@ console.log(setting); // Déanfaidh sé seo luach an tsuímh a logáil
 
 ### `hideSetting(String)`
 
-Seithí tugtha suíomh.
+Seónna a thugtar an socrú (Ní oibríonn sé ach má bhí an suíomh i bhfolach cheana féin).
 
 ```typescript
 presence.hideSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Filleann sé logaí an chonsóil láithreáin ghréasáin.
 
 ```typescript
 presence.showSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
@@ -191,18 +191,18 @@ presence.showSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+**Nóta:** Éilítear `readLogs` a bheith `true` sa `metadata.json` chomhad.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Déanfaidh sé seo na 100 log is déanaí (in eagar) a logáil.
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+Priontaítear an teachtaireacht a thugtar sa chonsól i bhformáid bunaithe ar an láithreacht sa `info` stíl.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Priontaítear an teachtaireacht a thugtar sa chonsól i bhformáid bunaithe ar an láithreacht sa `success` stíl.
 
 ```typescript
 presence.info("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
@@ -210,7 +210,7 @@ presence.info("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Priontaítear an teachtaireacht a thugtar sa chonsól i bhformáid bunaithe ar an láithreacht sa `error` stíl.
 
 ```typescript
 presence.success("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
@@ -218,7 +218,7 @@ presence.success("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú cea
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Filleann 2 `snowflake` stampa ama ar cheann `Array` is féidir a úsáid le haghaidh `startTimestamp` agus `endTimestamp`.
 
 ```typescript
 presence.error("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
@@ -226,7 +226,7 @@ presence.error("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+**Nóta** Is `String` sampla é an ceann a thugtar i querySelector.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -234,11 +234,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+Filleann 2 `snowflake` stampa ama ar cheann `Array` is féidir a úsáid le haghaidh `startTimestamp` agus `endTimestamp`.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+**Nóta** Is `String` sampla é an ceann a thugtar i querySelector.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+Athraíonn sé sreang le formáid `HH:MM:SS` nó `MM:SS` nó `SS` ina shlánuimhir (Ní fhilleann an stampa ama sciathán sneachta).
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+**Nóta** Is `String` sampla é an ceann a thugtar i querySelector.
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,11 +261,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+Moltar an `PresenceData` comhéadan a úsáid agus an `setActivity()` modh á úsáid agat.
 
 ## Comhéadan `PresenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+Tá na hathróga seo a leanas ag an gcomhéadan seo, tá gach ceann acu roghnach.
 
 This interface has following variables, all of them are optional.
 
@@ -366,11 +366,11 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+Scaoiltear an ócáid ​​seo gach uair a bhíonn an láithreacht á nuashonrú.
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Breoslaithe nuair a fhaightear sonraí ó script iFrame.
 
 #### `iFrameData`
 
