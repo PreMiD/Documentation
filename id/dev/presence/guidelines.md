@@ -1,6 +1,6 @@
 ---
 title: Panduan Presence
-description: Rules that all presence developers must follow to have their presence added.
+description: Peraturan yang harus ditaati oleh pengembang presence agar presencenya ditambahkan.
 published: true
 date: 2021-05-01T16:45:59.660Z
 tags:
