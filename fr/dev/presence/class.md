@@ -2,7 +2,7 @@
 title: Classe Presence
 description: La classe principale pour chaque presence PreMiD
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ Il y a trois propriétés disponibles pour la classe de `Presence`.
 
 Cette propriété est nécessaire pour que votre Presence fonctionne car elle utilise l'identifiant de votre application pour afficher son logo et ses images. Vous pouvez l'obtenir sur votre page d'[applications](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Deprecated since 2.2.4*
 
 Quand le paramètre `injectOnComplete` est défini sur `true`, le premier évènement `UpdateData` pour les fichiers `presence.ts` et `iframe.ts` sera lancé après le chargement complet de la page.
 
-#### `appMode`
+#### `appMode` - *Deprecated since 2.2.4*
 
 Quand le paramètre `appMode` est défini sur `true` et que la presence était censée renvoyer un `PresenceData` vide, l'app affichera l'application (image et nom) sur le profil de l'utilisateur plutôt que rien.
 
@@ -144,14 +144,16 @@ const playString = (await strings).play, // result: Playing
 
 Retourne une variable du site web si elle existe.
 
+**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // Cela permettra d'afficher le "contenu variable"
+const pageVar = presence.getPageletiable("pageVar");
+console.log(pageVar); // This will log the "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Renvoie la version de l'extension que l'utilisateur utilise.
+Returns version of the extension the user is using.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -164,7 +166,7 @@ console.log(version); // Affichera 2.1.0
 
 ### `getSetting(String)`
 
-Renvoie la valeur du paramètre.
+Retourne la valeur du paramètre.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Remplacer pdexID avec l'id du paramètre
@@ -173,7 +175,7 @@ console.log(setting); // Cela affichera dans la console la valeur du paramètre
 
 ### `hideSetting(String)`
 
-Masque le paramètre donné.
+Masque le paramètre spécifié.
 
 ```typescript
 presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -181,7 +183,7 @@ presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 ### `showSetting(String)`
 
-Affiche le paramètre spécifié (Ne fonctionne que si le paramètre est déjà masqué).
+Shows given setting (Only works if the setting was already hidden).
 
 ```typescript
 presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -189,18 +191,18 @@ presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 ### `getLogs()`
 
-Retourne les logs de la console des sites Web.
+Returns the logs of the websites console.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Cela affichera les 100 derniers logs (dans un array).
 ```
 
-**Note:** Nécessite `readLogs` d'être réglé à `true` dans le fichier `metadata.json`.
+**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
 
 ### `info(String)`
 
-Affiche le message donné dans la console dans un format basé sur la presence dans le style `info`.
+Prints the given message in the console in a format based of the presence in the `info` style.
 
 ```typescript
 presence.info("Test") // Cela va afficher "test" dans le bon style.
@@ -208,7 +210,7 @@ presence.info("Test") // Cela va afficher "test" dans le bon style.
 
 ### `success(String)`
 
-Affiche le message donné dans la console dans un format basé sur la presence dans le style `success`.
+Prints the given message in the console in a format based of the presence in the `success` style.
 
 ```typescript
 presence.success("Test") // Cela va afficher "test" dans le bon style.
@@ -216,7 +218,7 @@ presence.success("Test") // Cela va afficher "test" dans le bon style.
 
 ### `error(String)`
 
-Affiche le message donné dans la console dans un format basé sur la presence dans le style `error`.
+Prints the given message in the console in a format based of the presence in the `error` style.
 
 ```typescript
 presence.error("Test") // Cela va afficher "test" dans le bon style.
@@ -224,48 +226,48 @@ presence.error("Test") // Cela va afficher "test" dans le bon style.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Retourne 2 `snowflake` timestamps dans un `Array` qui peut être utilisé pour `startTimestamp` et `endTimestamp`.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** Le `String` donnée dans querySelector est un exemple.
+**Note:** The given `String` in querySelector is an example.
 
 ### `getTimestamps(Number, Number)`
 
-Retourne 2 timestamps sous forme de `snowflake` dans un `Array` qui peuvent être utilisé pour `startTimestamp` et `endTimestamp`.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** La `String` donnée dans querySelector est un exemple.
+**Note:** The given `String` in querySelector is an example.
 
 ### `timestampFromFormat(String)`
 
-Convertis un String dans le format `HH:MM:SS`, `MM:SS` ou `SS` dans un Integer (Ne retourne pas de snowflake timestamp).
+Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** La `String` donnée dans querySelector est un exemple.
+**Note:** The given `String` in querySelector is an example.
 
 ## Interface `PresenceData`
 
-L'utilisation de l'interface `PresenceData` est recommandée lorsque vous utilisez la méthode `setActivity()`.
+The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-Les variables de cette interface sont les suivantes, toutes sont optionnelles.
+This interface has following variables, all of them are optional.
 
 <table>
   <thead>
@@ -359,7 +361,7 @@ const presenceData: PresenceData = {
 
 ## Événements
 
-Les événements vous permettent de détecter et de gérer certains changements ou appels qui ont été effectués. Vous pouvez vous abonner aux événements en utilisant la méthode `on`.
+Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -367,12 +369,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Il y a peu d'événements disponibles:
+There are few events available:
 
 #### `UpdateData`
 
-Cet événement est déclenché chaque fois que la présence est mise à jour.
+This event is fired every time the presence is being updated.
 
 #### `iFrameData`
 
-Déclenché lorsque des données sont reçues à partir du script iFrame.
+Fired when data is received from iFrame script.
