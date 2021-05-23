@@ -196,20 +196,20 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
+      <td style="text-align:left">Sebuah string regular expression yang digunakan untuk mencocokkan url.<br>
+      regExp atau Regex, dapat digunakan jika sebuah website memiliki beberapa subdomain.<br>
+      Kamu dapat menggunakan regExp berikut ini untuk itu:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for axample: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
+      TLD adalah singkatan dari Top Level Domain contohnya: .com .net ( jangan masukkan titik).<br>
+      <code>([a-z0-9]+)</code> berarti apapun dari a sampai z dan dari 0 sampai 9.<br>
+      Kamu dapat mendapatkan permulaan singkat dengan menonton <a href="https://youtu.be/sXQxhojSdZM">video</a> ini.<br>
+      Kamu dapat menguji regExpmu pada <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Versi dari presencemu.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -227,26 +227,25 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> value. Kami sarankan untuk menggunakan warna utama dari layanan        yang didukung oleh presence anda.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array dengan tag, ini akan membantu pengguna untuk mencari presencemu pada website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under. Lihat semua kategori valid <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">disini</a>.</td>
+      <td style="text-align:left">String yang digunakan untuk mewakili kategori yang dimilki presence. Lihat semua kategori valid <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">disini</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
+      <td style="text-align:left">Menentukan apakah <code>iFrames</code> digunakan.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -331,7 +330,7 @@ You can copy this into your `presence.ts` file and edit the values. Setting all 
 
 For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Sejak v2.2.0 sekarang ada Slideshow, ini memungkinkan kamu untuk menampilkan beberapa antarmuka `PresenceData` pada suatu interval, untuk info lebih lanjut klik tentang kelas `Slideshow` [di sini](/dev/presence/slideshow).
 
 ## Tidak bisa mendapat data tertentu?!
 
@@ -343,9 +342,9 @@ Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/H
 
 Jika datamu ditemukan pada iFrame, kamu harus melakukan hal berikut:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Buatlah file `iframe.ts`.
+2. Atur iFrame menjadi `true` pada file metadata.
+3. Mengisi file iFramemu.
 
 ```typescript
 const iframe = new iFrame();
@@ -380,7 +379,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 # Memuat presence
 
 1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
+2. **Muat Presence** akan muncul pada bagian Presences.
 3. Klik sambil menahan tombol <kbd>Shift</kbd>.
 4. Pilih folder /dist dari presence anda.
 
@@ -388,7 +387,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Hot-reloading
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Situs web yang sedang kamu kembangkan akan memuat ulang otomatis setiap kali kamu menyimpan file di folder.
 
 ## Debugging
 
@@ -398,7 +397,7 @@ The website you are developing on is automatically reloading every time you save
 # File dijelaskan
 
 - [Kelas Presence](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
+- [Kelas Slideshow](/dev/presence/slideshow)
 - [Kelas iFrame](/dev/presence/iframe)
 - [File Metadata](/dev/presence/metadata)
 - [Konfigurasi TypeScript](/dev/presence/tsconfig ""){.links-list}
