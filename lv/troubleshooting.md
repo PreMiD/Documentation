@@ -29,7 +29,7 @@ Jūs varat nospiest <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) vai <kbd>CMD+R</kb
 ### Vai jūs izmantojat lietotni Discord?
 PreMiD **nedarbojas** uz Discord pārlūkprogrammas versijas, jums ir jāuzstāda lietotne [šeit](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
+### Pārliecinieties, ka Activity Status ir ieslēgts Discord iestatījumos
 **User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Pārliecinieties, ka Discord NEIET, kā administrators
