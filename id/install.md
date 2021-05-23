@@ -12,19 +12,19 @@ dateCreated: 2020-06-11T18:03:51.119Z
 > 
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**! 
+> **Diharuskan** untuk mengunduh **kedua** **aplikasi** dan juga **ekstensi**! 
 > 
 > {.is-warning}
 
 **Choose your operating system:**
-- [Windows *7 or above*](/install/windows)
-- [macOS *10.11 or above*](/install/macos)
-- [Linux *kernel with v2.x or above*](/install/linux)
+- [Windows *7 atau ke atas*](/install/windows)
+- [macOS *10.11 atau ke atas*](/install/macos)
+- [Kernel Linux dengan * versi 2.x atau ke atas*](/install/linux)
 {.links-list}
 
 **Choose your browser:**
-- [Chromium *v76 or above*](/install/chromium)
-- [Firefox *v69 or above*](/install/firefox)
+- [Chromium *v76 atau ke atas*](/install/chromium)
+- [Firefox *v69 atau ke atas*](/install/firefox)
 {.links-list}
 
 ![](https://a.icons8.com/ajlQdsfa/FZhYWV/svg.svg) {.align-abstopright}
