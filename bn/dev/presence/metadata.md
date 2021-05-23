@@ -305,7 +305,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### মেথোড
+### মেথড
 
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
