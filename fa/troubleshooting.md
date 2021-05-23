@@ -29,8 +29,8 @@ Included on this page:
 ### Are you using the Discord app?
 PreMiD با نسخه های وب دیسکورد کار **نمی کند**، شما باید برنامه‌اش را از [اینجا](https://discord.com/download) دانلود کنید.
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+### مطمعن شوید که Activity Status را در تنظیمات دیسکورد فعال کرده باشید
+**تنظیمات کاربر** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Be sure Discord is running NOT as administrator
 بسیار مهم. RPC دیسکورد اگر شما دیسکورد را روی حالت ادمین بازکنید، کار نمی کند.
