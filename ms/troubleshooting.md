@@ -29,8 +29,8 @@ Anda boleh tekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R</kbd>
 ### Adakah anda menggunakan aplikasi Discord?
 PreMiD **tidak** berfungsi di Discord versi pelayar, anda mesti muat turun aplikasi [di sini](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+### Sila pastikan anda membolehkan Activity Status / Status Aktiviti dalam tetapan apl Discord anda
+**User Settings / Tetapan Pengguna** > **Activity Status / Status Aktiviti** ![activitystatus.png](/activitystatus)
 
 ### Pastikan Discord dijalankan BUKAN sebagai pentadbir
 Sangat penting. Discord RPC tidak akan berfungsi jika anda jalankan Discord sebagai pentadbir.
