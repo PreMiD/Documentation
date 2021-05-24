@@ -153,7 +153,7 @@ console.log(pageVar); // Ini akan mencatat "Variable content"
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Mengembalikan versi dari ekstensi yang digunakan oleh pengguna.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -234,7 +234,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
 
 ### `getTimestamps(Number, Number)`
 
@@ -247,7 +247,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
 
 ### `timestampFromFormat(String)`
 
@@ -261,7 +261,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
 
 ## `PresenceData` Interface
 
