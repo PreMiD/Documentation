@@ -275,18 +275,18 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
 
 ```typescript
 const presence = new Presence({
-    clientId: "000000000000000000" //The client ID of the Application created at https://discordapp.com/developers/applications
+    clientId: "000000000000000000" //Client ID dari aplikasi yang dibuat di https://discordapp.com/developers/applications
   }),
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    //You can use this to get translated strings in their browser language
+    //Kamu dapat menggunakan ini untuk mendapatkan string yang sudah diterjemahkan pada bahasa browser mereka
   });
 
 /*
 
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Ambil dan proses semua datamu disini
 
     // element grabs //
     // api calls //
@@ -294,12 +294,12 @@ function myOutsideHeavyLiftingFunction(){
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Jalankan fungsi terpisah dari event UpdateData setiap 10 detik untuk mendapatkan dan menyiapkan variabel yang diambil oleh UpdateData
 
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
+  /*UpdateData selalu dijalankan, oleh karena itu lebih baik digunakan sebagai refresh cycle , atau 'tick`. Ini dipanggil beberapa kali dalam sedetik jika memungkinkan.
 
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
