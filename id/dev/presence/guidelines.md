@@ -17,16 +17,16 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Panduan
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. Bagaimanapun, penerapan aturan ini bertujuan untuk menjaga kami dan user dari masalah.
+When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. Namun, penerapan aturan ini bertujuan untuk menjaga kami dan user dari masalah.
 
 # Pembuatan
 
-Peraturan umum pembuatan presence sebagai berikut:
+Peraturan umum pembuatan presence adalah sebagai berikut:
 
 - Presence **harus** berhubungan dengan website yang dipilih.
 - Presence **harus tidak** dibuat untuk website ilegal. (for e.g., stressors, drug marketing, child pornography, etc.)
 - Struktur file harus bersih dan teratur, jangan memasukkan file yang tidak ditentukan. ( misal, vscode dan folder git, file gambar dan teks, dll.)
-- Anda harus memilki struktur file yang baik, draf **tidak** diperbolehkan.
+- You need to have a proper file structure, drafts are **not** allowed.
 - Presence untuk website dengan (`.onion` TLD) atau website dengan domain/host gratis (misal, `.TK` [semua domain gratis dari Freenom], `.RF`, `GD`, dll.) **tidak** diizinkan, pengecualian dapat dibuat jika bukti pembayaran domain dapat ditunjukkan.
 - Domain dari presence harus berumur minimal 2 bulan.
 - Presence yang mengarah pada halaman internal browser (seperti Chrome Web Store `chrome://`, `about:` pages, etc) **tidak** diperbolehkan sebab membutuhkan flag experimental diaktifkan oleh pengguna dan bisa menyebabkan kerusakan pada browser.
