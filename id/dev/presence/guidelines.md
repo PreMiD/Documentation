@@ -17,15 +17,15 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Panduan
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. However, the implementation of these rulesets will keep us and the users from running into any issues.
+When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. Bagaimanapun, penerapan aturan ini bertujuan untuk menjaga kami dan user dari masalah.
 
-# Creation
+# Pembuatan
 
-The general rules of presence development are as follows:
+Peraturan umum pembuatan presence sebagai berikut:
 
 - Presence **harus** berhubungan dengan website yang dipilih.
 - Presence **harus tidak** dibuat untuk website ilegal. (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
+- Struktur file harus bersih dan teratur, jangan memasukkan file yang tidak ditentukan. (for e.g., vscode and git folders, image and text files, etc.)
 - You need to have a proper file structure, drafts are **not** allowed.
 - Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
 - The domain of the presence must be at least 2 months old.
