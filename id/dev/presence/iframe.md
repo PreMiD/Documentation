@@ -23,7 +23,7 @@ Like presences, `iframes` have their own classes designed to automatically updat
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Kode di sini...
 });
 ```
 
@@ -36,11 +36,11 @@ Sends data to the presence. Using this method will make the presence throw a `iF
 Returns the URL of the `iframe`.
 
 ## Acara
-In `iframes`, events work similarly to the way they work in the `presence` class.
+Di `iframes`, acara bekerja sama dengan cara kerjanya di kelas `presence`.
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Kode di sini...
 });
 ```
 
