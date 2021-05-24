@@ -331,7 +331,7 @@ This interface has following variables, all of them are optional.
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
+      <td style="text-align:left">Susunan tombol, maksimal 2, label merupakan teks tombol, dan url merupakan tautan.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
@@ -352,7 +352,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Events memungkinkan kamu untuk mendeteksi dan menangani beberapa perubahan atau panggilan yang telah dilakukan. Kamu dapat berlangganan pada event dengan menggunakan metode `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -368,4 +368,4 @@ Event ini akan diluncurkan setiap kali presence diperbarui.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Diluncurkan saat berhasil menerima data dari iFrame script.
