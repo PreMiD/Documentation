@@ -35,7 +35,7 @@ Menambahkan slide baru ke `Slideshow` sesuai data yang diberikan.
 
 Parameter pertama membutuhkan `String` yang akan digunakan sebagai identifier unik untuk slide.
 
-Parameter kedua memerlukan [interface `PresenceData`](/dev/presence/class#presencedata-interface) untuk mendapatkan semua yang ingin anda tampilkan di slide.
+Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
 
 Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
 
@@ -49,9 +49,9 @@ Updates the slide of the given `id` according to provided data.
 
 First parameter requires a `String` that is the unique identifier of the slide you want to update.
 
-Parameter kedua memerlukan [interface `PresenceData`](/dev/presence/class#presencedata-interface) untuk mendapatkan semua yang ingin anda tampilkan di slide.
+Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
 
-Parameter ketiga membutuhkan `Jumlah` yang merupakan jumlah waktu dalam milidetik (minimal: 5000) yang akan ditampilkan oleh slide tersebut.
+Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
 
 ### `hasSlide(String)`
 
@@ -61,7 +61,7 @@ Mengembalikan `Boolean` yang manyatakan apakah slide ditambahkan ke `Slideshow`.
 
 Menghapus slide dengan `id` yang diberikan, dari `Slideshow`.
 
-Parameter pertama membutuhkan `String` yaitu sebagai identifier unik dari slide yang ingin anda hapus.
+First parameter requires a `String` that is the unique identifier of the slide you want to delete.
 
 ### `deleteAllSlides()`
 
@@ -89,7 +89,7 @@ Mengembalikan objek [`PresenceData`](/dev/presence/class#presencedata-interface)
 
 Menetapkan slide data berdasarkan data yang tersedia.
 
-Anda harus menambahkan interface `PresenceData` untuk mendapatkan semua informasi yang sangat ingin anda perlihatkan di profil anda.
+You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
 
 ### `updateInterval(Number)`
 
