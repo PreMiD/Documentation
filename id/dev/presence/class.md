@@ -331,7 +331,7 @@ This interface has following variables, all of them are optional.
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Susunan tombol, maksimal 2, label merupakan teks tombol, dan url merupakan tautan.</td>
+      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
