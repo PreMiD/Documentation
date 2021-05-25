@@ -26,6 +26,6 @@ Sistem Linux harus memiliki **setidaknya 20MB RAM** Untuk menjalankan PreMiD. Si
 Premid membutuhkan sekitar **150MB** penyimpanan fisik. Tapi disarankan setidaknya **200MB** penyimpanan khusus PreMiD.
 
 ### Akses Internet
-Koneksi internet dibutuhkan untuk menjalankan PreMiD. PreMiD will automatically check for new updates, languages, Presence updates, etc. dari waktu ke waktu.
+Koneksi internet dibutuhkan untuk menjalankan PreMiD. PreMiD akan secara otomatis memeriksa pembaruan, bahasa, pembaruan presence, dll yang baru. dari waktu ke waktu.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}
