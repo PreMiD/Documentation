@@ -28,7 +28,7 @@ tags:
 - Buka terminal di repositorymu dan ketik `npm i`.
 - Untuk memperbarui dependencies ketik `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> Harap diingat dependencies memiliki kemungkinan untuk rusak saat diperbarui - uji coba dibutuhkan! 
 > 
 > {.is-danger}
 
