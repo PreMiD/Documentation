@@ -35,8 +35,8 @@ tags:
 # Mengkode pandanganmu
 Harap jaga strukturnya. Kami tidak ingin proyek kami berantakan. File berantakan akan ditolak.
 
-# Submitting your dream
-Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. We will take care of your baby, don't worry. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
+# Mengirimkan impianmu
+Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. Kami akan urus sisanya, jangan khawatir. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
 
 # Mendapatkan persetujuan
-Tujuan utama kami adalah bekerja bersama pengguna jadi usahakan sebisa mungkin jadilah ramah, hormat dan informatif. Ping Developer kami di [Server Discord](https://discord.gg/WvfVZ8T) kami untuk mendapat review, atau tidak. Depends on the code quality, appearance of assets and regular functionality.
+Tujuan utama kami adalah bekerja bersama pengguna jadi usahakan sebisa mungkin jadilah ramah, hormat dan informatif. Ping Developer kami di [Server Discord](https://discord.gg/WvfVZ8T) kami untuk mendapat tinjauan, atau tidak. Bergantung pada kualitas kode, tampilan aset, dan fungsi reguler.
