@@ -36,7 +36,7 @@ Sends data to the presence. Using this method will make the presence throw a `iF
 Returns the URL of the `iframe`.
 
 ## Acara
-Di `iframes`, acara bekerja sama dengan cara kerjanya di kelas `presence`.
+Pada bagian `iframes`, events bekerja sama dengan cara kerjanya di kelas `presence`.
 
 ```typescript
 iframe.on("UpdateData", async () => {
