@@ -334,7 +334,7 @@ Sejak v2.2.0 sekarang ada Slideshow, ini memungkinkan kamu untuk menampilkan beb
 
 ## Tidak bisa mendapat data tertentu?!
 
-Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)) [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Tag html tersebut bisa berisi beberapa sumber seperti video. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)) [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Tag html tersebut bisa berisi beberapa sumber seperti video. But they're not relevant every time. Some are hidden or just not actively used. Periksa jika kamu bisa ekstrak informasi yang dibutuhkan tanpa informasi tersebut sebelum melakukan pekerjaan sia-sia.
 
 1. Periksa didalam konsol browser (pastikan anda berada pada tab **Elements**).
 2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
@@ -374,7 +374,7 @@ presence.on("iFrameData", (data) => {
 
 ## Penyusunan
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Buka konsol pada foldermu dan ketik `tsc -w` untuk menyusun `presence.ts` ke folder `/dist`.
 
 # Memuat presence
 
