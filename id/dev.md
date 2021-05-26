@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> A source code editor is required. Kami merekomendasikan [Visual Studio Code](https://code.visualstudio.com/). 
+> Editor source code dibutuhkan. Kami merekomendasikan [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
@@ -33,7 +33,7 @@ tags:
 > {.is-danger}
 
 # Mengkode pandanganmu
-Please keep the structure. Kami tidak ingin proyek kami berantakan. File berantakan akan ditolak.
+Harap jaga strukturnya. Kami tidak ingin proyek kami berantakan. File berantakan akan ditolak.
 
 # Menyampaikan impianmu
 Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. Akan kami urus, jangan khawatir. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
