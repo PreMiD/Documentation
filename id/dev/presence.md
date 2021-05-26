@@ -25,11 +25,11 @@ Versi `2.x` memperkenalkan [toko presence](https://premid.app/store). Pengguna s
 
 Semua presence ditulis dalam [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) memiliki tipe definisi tambahan dari JavaScript, jadi identifikasi dan perbaikan bug menjadi lebih mudah.
 
-## Instalasi
+## Pemasangan
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
+1. Pasang [Git](https://git-scm.com/).
+2. Pasang [Node](https://nodejs.org/en/) (sudah disertai [npm](https://www.npmjs.com/)).
+3. Pasang [TypeScript](https://www.typescriptlang.org/index.html#download-links) (buka terminal dan `npm install -g typescript`).
 
 ## Mengkloning project
 
@@ -149,8 +149,8 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Harus berisi sebuah Object dengan <code>name</code> dan <code>id</code> dari pengembang presence. <code>name</code> adalah username Discordmu tanpa identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Harus berisi sebuah Object dengan <code>name</code> dan <code>id</code> dari pengembang presence. <code>name</code> adalah username Discordmu tanpa identifier(#0000). <code>id</code> pengguna dapat disalin dari Discord dengan mengaktifkan mode
+        developer dan klik kanan pada profil anda.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
@@ -187,10 +187,10 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
       <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
       <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
       <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
-      You can add multiple URLs by doing the following:<br>
+      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. <b>JANGAN</b> lupa menambahkannya!<br>
+      Kamu dapat menambahkan beberapa URL dengan melakukan hal berikut:<br>
       <code>["URL1", "URL2", "ETC."]</code><br>
-      You could also use regExp also known as Regex for this task, explained further below.</td>
+      Kamu juga dapat menggunakan regExp juga dikenal sebagai Regex untuk hal ini, dijelaskan dibawah ini.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -257,7 +257,7 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Menentukan apakah ekstensi harus membaca log.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -301,11 +301,11 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData selalu dijalankan, oleh karena itu lebih baik digunakan sebagai refresh cycle , atau 'tick`. Ini dipanggil beberapa kali dalam sedetik jika memungkinkan.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Disarankan untuk mengatur fungsi lain diluar fungsi event ini yang akan mengubah value variabel dan mengurus proses berat jika kamu memanggil data dari sebuah API.*/
 
   const presenceData: PresenceData = {
     largeImageKey:
-      "key" /*The key (file name) of the Large Image on the presence. Ini di upload dan diberi nama di Rich Presence dari aplikasi anda, yang disebut Art Assets*/,
+      "key" /*Key (nama file) dari Large Image di presence. Ini di upload dan diberi nama di Rich Presence dari aplikasi anda, yang disebut Art Assets*/,
     smallImageKey:
       "key" /*Key (nama file) dari Small Image di presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
@@ -328,7 +328,7 @@ presence.on("UpdateData", async () => {
 
 You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. Untuk informasi tentang kelas `Presence` klik [disini](/dev/presence/class).
 
 Sejak v2.2.0 sekarang ada Slideshow, ini memungkinkan kamu untuk menampilkan beberapa antarmuka `PresenceData` pada suatu interval, untuk info lebih lanjut klik tentang kelas `Slideshow` [di sini](/dev/presence/slideshow).
 
