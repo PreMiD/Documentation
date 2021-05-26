@@ -11,17 +11,17 @@ tags:
 > {.is-info}
 
 # Menginstal hal-hal yang diperlukan
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
+1. Pasang [Git](https://git-scm.com/).
+2. Pasang [Node](https://nodejs.org/en/) (disertai dengan [npm](https://www.npmjs.com/)).
+3. Pasang [TypeScript](https://www.typescriptlang.org/index.html#download-links) (buka terminal dan ketik `npm install -g typescript`).
 
 # Membuat clone project
-1. Buka terminal dan ketik `git clone URL`. **Replace URL with repository link you want to contribute to** e.g. `git clone https://github.com/PreMiD/PreMiD`.
+1. Buka terminal dan ketik `git clone URL`. **Ganti URL dengan tautan repository yang ingin kamu kontribusikan ** contoh `git clone https://github.com/PreMiD/PreMiD`.
 2. Pilih folder pilihanmu.
 3. Buka di editor kodemu.
 
-# Installing dependencies
-> Pastikan kamu sudah menginstal [npm](https://www.npmjs.com/) (Node Package Manager) terlebih dahulu. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
+# Memasang dependencies
+> Pastikan kamu sudah memasang [npm](https://www.npmjs.com/) (Node Package Manager) terlebih dahulu. Akan otomatis terpasang jika kamu sudah memasang [Node](https://nodejs.org/en/). 
 > 
 > {.is-warning}
 
@@ -35,8 +35,8 @@ tags:
 # Mengkode pandanganmu
 Harap jaga strukturnya. Kami tidak ingin proyek kami berantakan. File berantakan akan ditolak.
 
-# Menyampaikan impianmu
-Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. Akan kami urus, jangan khawatir. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
+# Submitting your dream
+Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. We will take care of your baby, don't worry. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
 
 # Mendapatkan persetujuan
 Tujuan utama kami adalah bekerja bersama pengguna jadi usahakan sebisa mungkin jadilah ramah, hormat dan informatif. Ping Developer kami di [Server Discord](https://discord.gg/WvfVZ8T) kami untuk mendapat review, atau tidak. Depends on the code quality, appearance of assets and regular functionality.
