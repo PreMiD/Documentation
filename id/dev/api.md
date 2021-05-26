@@ -26,7 +26,7 @@ PreMiD memberikan beberapa versi API. Kamu dapat menentukan versi dengan mencant
 Semua layanan dan protokol HTTP-layer (misal http) dalam API PreMiD menggunakan TLS 1.2.
 
 # Dokumentasi
-> Currently under construction! 
+> Sedang dikerjakan! 
 > 
 > {.is-danger}
 
