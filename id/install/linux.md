@@ -10,49 +10,49 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Pemasangan aplikasi sangat penting karena ekstensi tidak dapat bekerja dengan sendirinya.
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> Pengguna AUR (Arch User Repository) yang menggunakan paket milik DoomLerd seharusnya aman seperti yang sudah dia katakan. Kami tidak menyarankan untuk menggunakannya, tetapi kamu masih bisa menggunakannya jika kamu mau. Terima kasih kepada DoomLerd karena masih melanjutkan repo AUR-nya. 
 > 
 > {.is-warning}
 
-## Table of Contents
+## Daftar Isi
 
-- **[About](#about)**
-  - [Stats](#stats)
+- **[Tentang](#about)**
+  - [Status](#stats)
   - [Persyaratan](#requirements)
-  - Examples (soon)
-  - FAQs (soon)
-  - Building (soon)
-  - [Support](#support)
+  - Contoh (segera)
+  - FAQ (segera)
+  - Building (segera)
+  - [Bantuan](#support)
   - [Kredit](#credits)
-  - [License](#license)
+  - [Lisensi](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_DIANJURKAN_)
-  - [Installation instructions](#appimageinstall)
-  - [Additional notes](#appimagenotes)
-- [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
-- [**Debian and Ubuntu based distributions**](#packagecloud)
-- [**Arch Linux based distributions**](#arch)
+  - [Petunjuk instalasi](#appimageinstall)
+  - [Catatan tambahan](#appimagenotes)
+- [**Distribution berbasis Red Hat Enterprise Linux (RHEL)**](#packagecloud)
+- [**Distribution berbasis Debian dan Ubuntu**](#packagecloud)
+- [**Distribution berbasis Arch Linux**](#arch)
 
 <a name="about"></a>
 
-## About
+## Tentang
 
-**PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
+**PreMiD** adalah utilitas simpel yang menggunakan Discord RP (Rich Presence) yang memungkinkan anda menampilkan apa yang sedang anda lakukan di web ( dan beberapa program ) di profil Discord sebagai **playing status**.
 
 <a name="stats"></a>
 
-### Stats
+### Status
 
 <table>
   <tr>
-    <th>Deployment</th>
-    <th>Total downloads</th>
-    <th>Latest release</th>
+    <th>Peluncuran</th>
+    <th>Total Unduhan</th>
+    <th>Rilis terbaru</th>
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
     <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Latest release"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Rilis terbaru"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
   </tr>
 </table>
 
@@ -70,7 +70,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="support"></a>
 
-### Support
+### Bantuan
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Join our Discord!">
@@ -92,7 +92,7 @@ Thanks to :
 
 <a name="license"></a>
 
-### License
+### Lisensi
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
@@ -105,7 +105,7 @@ Paket AppImage sangat disarankan jika Discord bisa bekerja tapi paket PreMiD lai
 
 <a name="appimageinstall"></a>
 
-### Installation instructions
+### Petunjuk instalasi
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
@@ -118,7 +118,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### Catatan tambahan
 
 Antara anda ingin mencoba PreMiD atau tidak ingin menginstalnya, ini salah satu cara terbaik, selalu up to date tapi _TIDAK MULAI BERSAMA SISTEM!_</br>Jika anda lelah dengan harus membukanya setiap waktu, gunakan paket lain (berdasar disttribution anda).
 
@@ -146,13 +146,13 @@ If command doesn't work, download **deb/rpm** file from our packagecloud repo or
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux based distributions
+## Distribution berbasis Arch Linux
 
 Gunakan [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Distribution yang didukung adalah _ini sendiri_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS dan [setiap distribution yang mendukung instal dari AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Petunjuk instalasi
 
 ```bash
 # Menggunakan yay (dianjurkan)
@@ -182,7 +182,7 @@ atau secara manual dari [Arch User Repository](https://aur.archlinux.org/package
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Catatan tambahan
 
 Jika distro anda menggunakan pacman, maka anda harus instal salah satu helper terlebih dahulu. Jika tidak ada, Yay dianjurkan, jalankan:
 
