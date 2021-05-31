@@ -29,8 +29,8 @@ Namísto hledání tlačítka obnovení můžeš stisknout <kbd>CTRL+R</kbd>/<kb
 ### Používáš desktopovou verzi aplikace Discord?
 PreMiD **nefunguje** při používání prohlížečové verze Discordu, musíš si stáhnout desktopovou aplikaci [zde](https://discord.com/download).
 
-### Ujistěte se, že jste povolili Discord herní aktivitu v nastavení
-**Uživatelské Nastavení** > **Herní Aktivita** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Make sure that you have enabled Activity Status in your Discord app settings
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Ujisti se, že Discord není spuštěn jako správce
 Skutečně důležité. Discord RPC nebude fungovat, pokud Discord spustíš jako správce.

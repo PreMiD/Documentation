@@ -1,6 +1,6 @@
 ---
 title: API
-description: Access resources and perform actions using the PreMiD API
+description: Mengakses resource dan bekerja menggunakan PreMiD API
 published: true
 date: 2021-02-01T12:36:44.713Z
 tags:
@@ -26,7 +26,7 @@ PreMiD memberikan beberapa versi API. Kamu dapat menentukan versi dengan mencant
 Semua layanan dan protokol HTTP-layer (misal http) dalam API PreMiD menggunakan TLS 1.2.
 
 # Dokumentasi
-> Currently under construction! 
+> Sedang dikerjakan! 
 > 
 > {.is-danger}
 

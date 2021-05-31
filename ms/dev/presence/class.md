@@ -2,7 +2,7 @@
 title: Kelas Presence
 description: Kelas utama untuk setiap Presence di PreMiD
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ Terdapat tiga sifat yang wujud untuk kelas `Presence`.
 
 Sifat ini diperlukan untuk membolehkan Presence anda berfungsi, kerana ia menggunakan id aplikasi anda untuk memaparkan logo dan asetnya. Anda boleh dapatkannya di [halaman aplikasi](https://discordapp.com/developers/applications) anda.
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Diperkecamkan sejak 2.2.4*
 
 Apabila menetapkan nilai `injectOnComplete` ke `true`, peristiwa `UpdateData` yang pertama untuk kedua-dua fail `presence.ts` dan `iframe.ts` hanya akan dijalankan apabila halaman telah dimuatkan sepenuhnya.
 
-#### `appMode`
+#### `appMode` - *Diperkecamkan sejak 2.2.4*
 
 Apabila menetapkan nilai `appMode` ke `true` dan Presence menghantar `PresenceData` yang kosong, aplikasi akan hantarkan (imej dan nama) aplikasi di profil pengguna menggantikan kekosongan.
 
@@ -144,8 +144,10 @@ const playString = (await strings).play, // hasilnya: Bermain
 
 Mengembalikan pemboleh ubah dari laman sesawang jika ia wujud.
 
+**Amaran: Fungsi ini boleh menyebabkan penggunaan CPU yang tinggi & tapak lembap bertindak balas apabila ia telah dijalankan dengan terlalu banyak kali.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
+const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // Ini akan mengelog "Kandungan pemboleh ubah"
 ```
 
@@ -173,7 +175,7 @@ console.log(setting); // Ini akan log nilai tetapan
 
 ### `hideSetting(String)`
 
-Menyembunyikan tetapan yang diberikan.
+Sembunyikan tetapan yang diberi.
 
 ```typescript
 presence.hideSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
@@ -181,7 +183,7 @@ presence.hideSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
 
 ### `showSetting(String)`
 
-Tunjukkan tetapan yang diberi (Hanya berfungsi jika tetapan disembunyikan).
+Tunjukkan tetapan yang diberi (Hanya berfungsi jika tetapan telah disembunyikan sebelumnya).
 
 ```typescript
 presence.showSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
@@ -227,7 +229,7 @@ presence.error("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 Mengembalikan 2 cap masa emping salji `snowflake` di dalam tatasusunan `Array` yang kemudiannya boleh digunakan untuk nilai cap masa mula `startTimestamp` dan cap masa tamat `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -240,7 +242,7 @@ Mengembalikan 2 cap masa emping salji `snowflake` di dalam tatasusunan `Array` y
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -252,9 +254,9 @@ presenceData.endTimestamp = timestamps[1];
 Menukarkan rentetan dengan format JJ:MM:SS `HH:MM:SS` atau MM:SS `MM:SS` atau SS `SS` menjadi nombor bulat (Tidak mengembalikan cap masa emping salji).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```

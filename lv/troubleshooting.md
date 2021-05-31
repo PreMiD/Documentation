@@ -29,8 +29,8 @@ Jūs varat nospiest <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) vai <kbd>CMD+R</kb
 ### Vai jūs izmantojat lietotni Discord?
 PreMiD **nedarbojas** uz Discord pārlūkprogrammas versijas, jums ir jāuzstāda lietotne [šeit](https://discord.com/download).
 
-### Pārliecinieties, vai iestatījumos esat iespējojis Discord Spēļu Aktivitāti
-**Lietotaja Iestatījumi** > **Spēļu Aktivitāte** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Pārliecinieties, ka Aktivitātes Statuss ir iespējots Discord iestatījumos
+**Lietotāja Iestatījumi** > **Aktivitātes Statuss** ![activitystatus.png](/activitystatus)
 
 ### Pārliecinieties, ka Discord NEIET, kā administrators
 Ļoti svarīgi. Discord RPC nedarbosies, ja Discord palaidīsiet, kā administratoru.

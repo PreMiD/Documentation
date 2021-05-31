@@ -29,8 +29,8 @@ Included on this page:
 ### Ви користуєтесь додатком Discord?
 PreMiD **не** працює з браузерною версією Discord, ви повинні завантажити його [тут](https://discord.com/download).
 
-### Переконайтеся, що ви активували активність в іграх Discord в налаштуваннях
-**Налаштування користувача** > **Ігрова активність** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Make sure that you have enabled Activity Status in your Discord app settings
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Переконайтеся, що Discord працює не як адміністратор
 Дійсно важливе. Discord RPC не працюватиме, якщо ви запустите Discord в якості адміністратора.

@@ -2,7 +2,7 @@
 title: Kelas Presence
 description: The main class for every PreMiD presence
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -14,7 +14,7 @@ dateCreated: 2021-02-21T21:13:14.449Z
 
 The `Presence` class is very useful as it has basic methods that we need for creating a presence.
 
-When you create a class you must specify `clientId` property.
+Saat Anda membuat kelas, Anda harus menentukan properti `clientId`.
 
 ```typescript
 const presence = new Presence({
@@ -30,11 +30,11 @@ There are three properties available for `Presence` class.
 
 Properti ini diperlukan agar presencemu bekerja, karena properti ini menggunakan id aplikasimu untuk menampilkan logo dan asetnya. You can get it on your [applications page](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Sudah tidak digunakan kembali sejak 2.2.4*
 
 Ketika pengaturan `injectOnComplete` adalah `true` maka event `UpdateData` pertama untuk file `presence.ts` dan `iframe.ts` hanya akan dinyalakan ketika halaman sudah sepenuhnya termuat.
 
-#### `appMode`
+#### `appMode` - *Sudah tidak digunakan kembali sejak 2.2.4*
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
@@ -42,7 +42,7 @@ When setting `appMode` to `true` and the presence were to send an empty `Presenc
 
 ### `getActivity()`
 
-Returns a `PresenceData` object of what the presence is displaying.
+Mengembalikan objek `PresenceData` dari apa yang sedang ditampilkan presence.
 
 ### `setActivity(PresenceData | Slideshow, Boolean)`
 
@@ -66,7 +66,7 @@ Setel judul baki pada bilah Menu.
 
 ### `createSlideshow()`
 
-Creates a new `Slideshow` class.
+Membuat kelas `Slideshow` baru.
 
 ```typescript
 const slideshow = presence.createSlideshow();
@@ -76,12 +76,12 @@ It is suggested to do this right after creating the `Presence` class:
 
 ```typescript
 const presence = new Presence({
-    clientId: "514271496134389561" // Example clientId
+    clientId: "514271496134389561" // Contoh clientId
   }),
   slideshow = presence.createSlideshow();
 ```
 
-You can find the documentation for the `Slideshow` class [here](/dev/presence/slideshow).
+Kamu bisa menemukan dokumentasi untuk kelas `Slideshow` [disini](/dev/presence/slideshow).
 
 ### `getStrings(Object)`
 
@@ -97,8 +97,8 @@ const strings = await presence.getStrings({
   pause: "general.paused"
 });
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.play; // hasil: Playing
+const pauseString = strings.pause; // hasil: Paused
 ```
 
 Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
@@ -128,8 +128,8 @@ let strings: Promise<LangStrings> = getStrings(),
   // ID diisi dengan ID dari pengaturan multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
-// The ID is the ID of the multiLanguage setting.
+//! Kode dibawah harus berada didalam event updateData!
+// ID diisi dengan ID dari pengaturan multiLanguage.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
@@ -144,14 +144,16 @@ const pauseString = (await strings).pause; // hasil: Paused
 
 Mengembalikan variabel dari situs web jika ada.
 
+**Peringatan: Fungsi ini dapat menyebabkan penggunaan CPU yang tinggi & melambatkan situs jika terlalu sering dijalankan.**
+
 ```typescript
 const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // Ini akan mencatat "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Mengembalikan versi dari ekstensi yang digunakan pengguna.
+Mengembalikan versi dari ekstensi yang digunakan oleh pengguna.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -227,12 +229,12 @@ presence.error("Test") // This will log "test" in the correct styling.
 Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
 
 ### `getTimestamps(Number, Number)`
 
@@ -240,26 +242,26 @@ Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimest
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
 
 ### `timestampFromFormat(String)`
 
 Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
 
 ## `PresenceData` Interface
 
@@ -284,7 +286,7 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">state</td>
-      <td style="text-align:left">Second line in your presence.</td>
+      <td style="text-align:left">Baris kedua di presencemu.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
@@ -350,7 +352,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Acara memungkinkan Anda untuk mendeteksi dan menangani beberapa perubahan atau panggilan yang dilakukan. Anda dapat berlangganan acara menggunakan metode `on`.
+Events memungkinkan kamu untuk mendeteksi dan menangani beberapa perubahan atau panggilan yang telah dilakukan. Kamu dapat berlangganan pada event dengan menggunakan metode `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -358,7 +360,7 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+Ada beberapa event yang tersedia:
 
 #### `UpdateData`
 
@@ -366,4 +368,4 @@ Event ini akan diluncurkan setiap kali presence diperbarui.
 
 #### `iFrameData`
 
-Diluncurkan saat menerima data dari iFrame script.
+Diluncurkan saat berhasil menerima data dari iFrame script.

@@ -2,7 +2,7 @@
 title: Presence-Klasse
 description: Die Hauptklasse für jede PreMiD-Presence
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ Für die `Presence`-Klasse, gibt es drei verfügbare Eigenschaften.
 
 Diese Eigenschaft wird benötigt, damit deine Presence funktioniert, weil es die Anwendungs-Id benutzt, um Logo und Elemente anzuzeigen. Du bekommst dies auf deiner[Anwendungsseite](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Deprecated since 2.2.4*
 
 Beim setzen von `InjectOnComplete` zu `true`, wird das erste `UpdateData` Event für beide, die `presence.ts` und `iframe.js` Dateien erst gestartet, wenn die Seite fertig geladen ist.
 
-#### `appMode`
+#### `appMode` - *Deprecated since 2.2.4*
 
 Beim setzen von `appMode` zu `true` und die Presence sollte leere `PresenceData` senden, zeigt die App die Anwendung (Bild und Name) auf dem Benutzerprofil, anstatt nichts.
 
@@ -144,14 +144,16 @@ const playString = (await strings).play, // result: Playing
 
 Gibt eine Variable von der Webseite zurück, falls sie vorhanden ist.
 
+**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // Das loggt den "Variableninhalt"
+const pageVar = presence.getPageletiable("pageVar");
+console.log(pageVar); // This will log the "Variable content"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Gibt die Version, der Erweiterung aus, die der Benutzer verwendet.
+Returns version of the extension the user is using.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -164,7 +166,7 @@ console.log(version); // Wird 2.1.0 loggen
 
 ### `getSetting(String)`
 
-Gibt den Wert der Einstellung zurück.
+Returns value of setting.
 
 ```typescript
 var setting = await presence.getSetting("pdexID"); // pdexID mit der Id von der Einstellung ersetzen
@@ -173,7 +175,7 @@ console.log(setting); // Dies loggt den Wert der Einstellung
 
 ### `hideSetting(String)`
 
-Versteckt die Einstellung.
+Hides given setting.
 
 ```typescript
 presence.hideSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
@@ -181,7 +183,7 @@ presence.hideSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
 
 ### `showSetting(String)`
 
-Zeigt angegebene Anstellung an (Funktioniert nur, wenn die Einstellung schon versteckt war).
+Shows given setting (Only works if the setting was already hidden).
 
 ```typescript
 presence.showSetting("pdexID"); // Ersetze pdexID mit der id der Einstellung
@@ -189,18 +191,18 @@ presence.showSetting("pdexID"); // Ersetze pdexID mit der id der Einstellung
 
 ### `getLogs()`
 
-Gibt die Protokolle der Webseiten-Konsole wieder.
+Returns the logs of the websites console.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Dies logt die neusten 100 Logs (in einem Array).
 ```
 
-**Hinweis:** Benötigt `readLogs` auf `true` in der `metadata.json` Datei.
+**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
 
 ### `info(String)`
 
-Gibt die angegebene Meldung in der Konsole in einem Format aus, das auf die Presence im `info` Style basiert.
+Prints the given message in the console in a format based of the presence in the `info` style.
 
 ```typescript
 presence.info("Test") // Dies loggt "test" im korrekten Stil.
@@ -208,7 +210,7 @@ presence.info("Test") // Dies loggt "test" im korrekten Stil.
 
 ### `success(String)`
 
-Gibt die angegebene Meldung in der Konsole in einem Format aus, das auf die Presence im `erfolgreich` Style basiert.
+Prints the given message in the console in a format based of the presence in the `success` style.
 
 ```typescript
 presence.success("Test") // Dies loggt "test" im korrekten Stil.
@@ -216,7 +218,7 @@ presence.success("Test") // Dies loggt "test" im korrekten Stil.
 
 ### `error(String)`
 
-Gibt die angegebene Meldung in der Konsole in einem Format aus, das auf die Presence im `Fehler` Style basiert.
+Prints the given message in the console in a format based of the presence in the `error` style.
 
 ```typescript
 presence.error("Test") // Dies loggt "test" im korrekten Stil.
@@ -224,48 +226,48 @@ presence.error("Test") // Dies loggt "test" im korrekten Stil.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Wirft 2 `snowflake` Zeitstempel in einem `Array` zurück, die dann für `startTimestamp` und `endTimestamp` verwendet werden können.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Hinweis:** Der gegebene `String` in querySelector ist nur ein Beispiel.
+**Note:** The given `String` in querySelector is an example.
 
 ### `getTimestamps(Number, Number)`
 
-Wirft 2 `snowflake` Zeitstempel in einem `Array` zurück, die dann für `startTimestamp` und `endTimestamp` verwendet werden können.
+Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Hinweis:** Der gegebene `String` in querySelector ist nur ein Beispiel.
+**Note:** The given `String` in querySelector is an example.
 
 ### `timestampFromFormat(String)`
 
-Konvertiert eine Zeichenkette in das Format `HH:MM:SS` oder `MM:SS` oder `SS` in einen Integer (Gibt keinen snowflake Zeitstempel zurück).
+Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Hinweis:** Der gegebene `String` in querySelector ist nur ein Beispiel.
+**Note:** The given `String` in querySelector is an example.
 
 ## `PresenceData`-Schnittstelle
 
-Die `PresenceData`-Schnittstelle wird empfohlen, wenn Sie die `SetActivity()` Methode verwenden.
+The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-Diese Schnittstelle hat folgende Variablen, die alle optional sind.
+This interface has following variables, all of them are optional.
 
 <table>
   <thead>
@@ -348,7 +350,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Events ermöglicht dir, einige Änderungen oder Calls zu erkennen und zu bearbeiten. Sie können Ereignisse mit der Methode `auf` abonnieren.
+Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -356,12 +358,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Es sind einige Menüs verfügbar:
+There are few events available:
 
 #### `UpdateData`
 
-Dieses Ereignis wird jedes Mal aktualisiert, wenn die Anwesenheit ebenfalls aktualisiert wird.
+This event is fired every time the presence is being updated.
 
 #### `iFrameData`
 
-Wird ausgelöst, wenn Daten vom iFrame-Skript empfangen werden.
+Fired when data is received from iFrame script.

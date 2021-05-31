@@ -27,10 +27,10 @@ dateCreated: 2020-06-11T18:03:54.865Z
 คุณสามารถกด <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) หรือ <kbd>CMD+R</kbd> (MacOS) บนแป้นพิมพ์ของคุณเพื่อรีโหลดหน้าเว็บ
 
 ### คุณได้ใช้ Discord รึเปล่า?
-PreMiD จะ**ไม่**ทํางานสําหรับ Brower Discord คุณต้องโหลดเเอพ Discord ตรงนี้[](https://discord.com/download)
+PreMiD จะ**ไม่**ทํางานสําหรับ Brower Discord คุณต้องโหลดเเอพ Discord [ตรงนี้](https://discord.com/download)
 
-### ตรวจสอบให้แน่ใจว่าคุณได้เปิดกิจกรรมการเล่นเกมในการตั้งค่า Discord หรือเปล่า
-**ตั้งค่าบัญชีผู้ใช้** > **กิจกรรมการเล่นเกม** ![gameactivity_edited.png](/gameactivity_edited.png)
+### ตรวจสอบให้แน่ใจว่าคุณได้เปิด Activity Status ในการตั้งค่า Discord แล้ว
+**ตั้งค่าบัญชีผู้ใช้** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### ต้องแน่ใจว่า Discord ไม่ได้เปิดแบบ Administrator
 สำคัญมากๆ Discord RPC จะไม่ทำงานถ้าคุณเปิด Discord แบบ Administrator

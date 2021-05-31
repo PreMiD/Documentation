@@ -1,6 +1,6 @@
 ---
 title: Panduan Presence
-description: Rules that all presence developers must follow to have their presence added.
+description: Peraturan yang harus ditaati oleh pengembang presence agar presencenya ditambahkan.
 published: true
 date: 2021-05-01T16:45:59.660Z
 tags:
@@ -17,18 +17,18 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Panduan
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. However, the implementation of these rulesets will keep us and the users from running into any issues.
+When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. Namun, penerapan aturan ini bertujuan untuk menjaga kami dan user dari masalah.
 
-# Creation
+# Pembuatan
 
-The general rules of presence development are as follows:
+Peraturan umum pembuatan presence adalah sebagai berikut:
 
 - Presence **harus** berhubungan dengan website yang dipilih.
 - Presence **harus tidak** dibuat untuk website ilegal. (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
+- Struktur file harus bersih dan teratur, jangan memasukkan file yang tidak ditentukan. ( misal, vscode dan folder git, file gambar dan teks, dll.)
 - You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
+- Presence untuk website dengan (`.onion` TLD) atau website dengan domain/host gratis (misal, `.TK` [semua domain gratis dari Freenom], `.RF`, `GD`, dll.) **tidak** diizinkan, pengecualian dapat dibuat jika bukti pembayaran domain dapat ditunjukkan.
+- Domain dari presence harus berumur minimal 2 bulan.
 - Presence yang mengarah pada halaman internal browser (seperti Chrome Web Store `chrome://`, `about:` pages, etc) **tidak** diperbolehkan sebab membutuhkan flag experimental diaktifkan oleh pengguna dan bisa menyebabkan kerusakan pada browser.
 - Presence dengan dukungan hanya satu halaman **tidak** diperbolehkan, sebab akan terlihat rusak bagi halaman lain ( seperti homepage) pengecualian dapat dibuat untuk halaman kebijakan dan kontak (konten yang jarang digunakan) atau website yang konten lainnya tidak berhubungan. (misal, halaman wikia)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.

@@ -30,7 +30,7 @@ Is féidir leat <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nó <kbd>CMD+R</kbd> (
 Ní oibríonn PreMiD **ní** ar leagan an bhrabhsálaí de Discord, ní mór duit an aip [a íoslódáil anseo](https://discord.com/download).
 
 ### Déan cinnte go bhfuil Gníomhaíocht Cluiche Discord cumasaithe agat i suíomhanna
-**User Settings** > **Game Activity** ![gameactivity_edited.png](/gameactivity_edited.png)
+**User Settings** > **Game Activity** ![activitystatus.png](/activitystatus)
 
 ### Bí cinnte nach bhfuil Discord ag rith NÍL mar riarthóir
 Tá sé an-tábhachtach. Ní oibreoidh Discord RPC má ritheann tú Discord mar riarthóir.

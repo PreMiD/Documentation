@@ -29,8 +29,8 @@ You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (Mac
 ### Are you using the Discord app?
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
-### Győződj meg arról, hogy engedélyezve vannak a Discord Játék tevékenységek a beállításokban
-**Felhasználói beállítások** > **Játék tevékenység** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Make sure that you have enabled Activity Status in your Discord app settings
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Győződj meg arról, hogy a Discord nem rendszergazdai jogokkal fut
 Nagyon fontos. A Discord RCP nem fog futni, ha a Discord rendszergazda jogokkal fut.

@@ -2,7 +2,7 @@
 title: Clase Presence
 description: La clase principal para cada presence de PreMiD
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ Hay tres propiedades disponibles para la clase `Presence`.
 
 Esta propiedad es necesaria para que funcione, ya que utiliza el id de aplicación para mostrar su logotipo entre otras imágenes. Puedes obtenerlo en tu [página de aplicaciones](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Obsoleto desde 2.2.4*
 
 Al configurar `injectOnComplete` a `true` el primer evento `UpdateData` se lanzará, en ambos archivos `presence.ts` y `iframe.ts`, una vez haya terminado de cargar completamente la página.
 
-#### `appMode`
+#### `appMode` - *Obsoleto desde 2.2.4*
 
 Al establecer `appMode` a `true` si la presence enviara un `PresenceData` vacío, la app mostrará la imagen y nombre de la aplicación en el perfil del usuario.
 
@@ -144,9 +144,11 @@ const pauseString = (await strings).pause; // resultado: Paused
 
 Devuelve una variable desde el sitio web si existe.
 
+**Advertencia: Esta función puede causar un alto uso de CPU y retraso en el sitio cuando se ha ejecutado demasiadas veces.**
+
 ```typescript
 const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // Esto mostará en la consola "Contenido de la variable"
+console.log(pageVar); // Esto mostrará en la consola "Contenido de la variable"
 ```
 
 ### `getExtensionVersion(Boolean)`
@@ -164,7 +166,7 @@ console.log(version); // Mostrará 2.1.0
 
 ### `getSetting(String)`
 
-Devuelve el valor del ajuste.
+Obtén el valor del ajuste.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); // Remplaza pdexID con el id del ajuste
@@ -227,7 +229,7 @@ presence.error("Test") // Esto logeará "test" con un estilo predeterminado.
 Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -236,36 +238,36 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Devuelve 2 `snowflake` de timestamps en un`Array` que pueden ser usados para `startTimestamp` y `endTimestamp`.
+Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Nota:** El `String` proporcionado en querySelector sirve de ejemplo.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ### `timestampFromFormat(String)`
 
 Convierte una cadena con formato `HH:MM:SS` o `MM:SS` o `SS` en un entero (no devuelve un timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Nota:** El `String` proporcionado en queryString sirve de ejemplo.
+**Nota:** El `String` dado en querySelector es un ejemplo.
 
 ## Interfaz `PresenceData`
 
 Se recomienda utilizar la interfaz `PresenceData` cuando se está utilizando el método `setActivity()`.
 
-Esta interfaz tiene siguientes variables, todas son opcionales.
+Esta interfaz tiene las siguientes variables, todas ellas son opcionales.
 
 <table>
   <thead>
@@ -359,7 +361,7 @@ const presenceData: PresenceData = {
 
 ## Eventos
 
-Los eventos permiten detectar y manejar algunos cambios o llamadas realizadas. Puede suscribirte a eventos utilizando el método `on`.
+Los eventos te permiten detectar y manejar algunos cambios o llamadas realizadas. Puedes suscribirte a eventos usando el método `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {

@@ -2,7 +2,7 @@
 title: Presence Klasse
 description: The main class for every PreMiD presence
 published: true
-date: 2021-05-14T15:16:20.185Z
+date: 2021-05-23T09:14:06.963Z
 tags:
 editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
@@ -30,11 +30,11 @@ There are three properties available for `Presence` class.
 
 This property is required to make your presence work, because it uses your application id to display its logo and assets. You can get it on your [applications page](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete`
+#### `injectOnComplete` - *Deprecated since 2.2.4*
 
 When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
 
-#### `appMode`
+#### `appMode` - *Deprecated since 2.2.4*
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
@@ -144,8 +144,10 @@ const playString = (await strings).play, // result: Playing
 
 Returns a variable from the website if it exists.
 
+**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+
 ```typescript
-const pageVar = getPageletiable(".pageVar");
+const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // This will log the "Variable content"
 ```
 
@@ -227,7 +229,7 @@ presence.error("Test") // This will log "test" in the correct styling.
 Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
 ```typescript
-const timestamps = getTimestampsfromMedia(document.querySelector(".video"));
+const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -240,7 +242,7 @@ Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimest
 
 ```typescript
 const video = document.querySelector(".video"),
-  timestamps = getTimestamps(video.currentTime, video.duration);
+  timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
@@ -252,9 +254,9 @@ presenceData.endTimestamp = timestamps[1];
 Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
 ```typescript
-const currentTime = timestampFromFormat(document.querySelector(".video-now").textContent),
-  duration = timestampFromFormat(document.querySelector(".video-end").textContent),
-  timestamps = getTimestamps(currentTime, duration);
+const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
+  duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
+  timestamps = presence.getTimestamps(currentTime, duration);
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```

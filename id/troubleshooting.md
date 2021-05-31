@@ -29,8 +29,8 @@ Kamu juga bisa menekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R
 ### Apakah kamu menggunakan aplikasi Discord?
 PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplikasinya [disini](https://discord.com/download).
 
-### Pastikan anda sudah mengaktifkan Discord Game Activity pada pengaturan
-**User Settings** > **Game Activity** ![gameactivity_edited.png](/gameactivity_edited.png)
+### Pastikan kamu sudah mengaktifkan Status Activity pada pengaturan Discordmu
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Pastikan Discord TIDAK berjalan sebagai administrator
 Sangat penting. Discord RPC tidak akan bekerja jika kamu membuka Discord sebagai administrator.
@@ -53,9 +53,9 @@ Tekan <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) pada keyboard at
 Kadang program antivirus dan firewall menghalangi program yang sedang membuat/hosting server atau menghubungkan ke internet. Kami menggunakan server lokal untuk menerima dan meneruskan data antara aplikasi dan ekstensi kami, jadi jika kamu memblokir aplikasi untuk meneruskan data kemungkinan kamu tidak bisa menggunakan PreMiD.
 
 ### Nonaktifkan addon
-Matikan semua addon dan periksa jika bekerja. Jika iya, coba nyalakan addon anda satu per satu dan beritahu kami addon apa yang mengganggu PreMiD.
+Matikan semua addon dan periksa jika bekerja. Jika iya, coba nyalakan addonmu satu per satu dan beritahu kami addon apa yang mengganggu PreMiD.
 
-### Mulai ulang komputer anda
+### Mulai ulang komputermu
 Kami harap kamu tahu caranya.
 
 ### Instal ulang PreMiD
