@@ -29,7 +29,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 ### Используете ли вы приложение Discord?
 PreMiD делает**не** Если вы работаете в версии браузера Discord, вы должны загрузить приложение [сюда](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
+### Убедитесь, что вы включили статус активности в настройках приложения Discord
 **User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
 
 ### Убедитесь, что Discord запущен НЕ как администратор
