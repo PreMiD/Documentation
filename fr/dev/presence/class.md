@@ -125,7 +125,7 @@ async function getStrings(): Promise<LangStrings> {
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // L'ID est celle du paramètre multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! Le code suivant doit être à l'intérieur de l'événement updateData !
@@ -136,8 +136,8 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // résultat : En train de jouer
+  pauseString = (await strings).pause; // résultat : En pause
 ```
 
 ### `getPageletiable(String)`
@@ -147,13 +147,13 @@ Retourne une variable du site web si elle existe.
 **Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
 
 ```typescript
-const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+const pageVar = getPageletiable(".pageVar");
+console.log(pageVar); // Cela permettra d'afficher le "contenu variable"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Renvoie la version de l'extension que l'utilisateur utilise.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -175,7 +175,7 @@ console.log(setting); // Cela affichera dans la console la valeur du paramètre
 
 ### `hideSetting(String)`
 
-Masque le paramètre spécifié.
+Masque le paramètre donné.
 
 ```typescript
 presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Affiche le paramètre donné (Ne marche seulement si le paramètre en question était déjà masqué).
 
 ```typescript
 presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -191,18 +191,18 @@ presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Retourne les logs de la console du site web.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Cela affichera les 100 derniers logs (dans un array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Remarque :** `readLogs` doit avoir la valeur `true` dans le fichier `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Affiche le message donné dans la console dans un format basé sur la presence dans le style `info`.
 
 ```typescript
 presence.info("Test") // Cela va afficher "test" dans le bon style.
@@ -210,7 +210,7 @@ presence.info("Test") // Cela va afficher "test" dans le bon style.
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Affiche le message donné dans la console dans un format basé sur la presence dans le style `success`.
 
 ```typescript
 presence.success("Test") // Cela va afficher "test" dans le bon style.
@@ -218,7 +218,7 @@ presence.success("Test") // Cela va afficher "test" dans le bon style.
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Affiche le message donné dans la console dans un format basé sur la presence dans le style `error`.
 
 ```typescript
 presence.error("Test") // Cela va afficher "test" dans le bon style.
