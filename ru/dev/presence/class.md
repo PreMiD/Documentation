@@ -144,7 +144,7 @@ const playString = (await strings).play, // результат: Играет
 
 Возвращает переменную с сайта, если она существует.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Предупреждение: Эта функция может привести к высокой загрузке процессора и лагам сайта, если она была вызвана слишком много раз.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
@@ -198,11 +198,11 @@ const logs = await presence.getLogs();
 console.log(logs); // Журнал последних 100 логов (в массиве).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Примечание:** Требует `readLogs` к быть `true` в `metadata.json` файл.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Выводит данное сообщение в консоли в формате, основанном на присутствии в стиле `info`.
 
 ```typescript
 presence.info("Test") // Это протоколирует "test" в правильном стиле.
@@ -218,7 +218,7 @@ presence.success("Test") // Это протоколирует "test" в прав
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Выводит данное сообщение в консоли в формате, основанном на присутствии в стиле `ошибки`.
 
 ```typescript
 presence.error("Test") // Это протоколирует "test" в правильном стиле.
@@ -234,11 +234,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Заметка:** Данный `String` в querySelector является примером.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Возвращает 2 `snowflake` отметки времени в `Array` это может быть использовано для `startTimestamp` и `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Заметка:** Данный `String` в querySelector является примером.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Преобразует строку в формат `HH:MM:SS` или `MM:SS` или `SS` в целое (не возвращает snowflake timestamp).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,11 +261,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Заметка:** Данный `String` в querySelector является примером.
 
 ## `PresenceData` Интерфейс
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+При использовании метода `setActivity()` рекомендуется использовать интерфейса `presenceData`.
 
 Этот интерфейс имеет следующие переменные, все они являются необязательными.
 
