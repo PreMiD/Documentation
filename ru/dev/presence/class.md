@@ -30,11 +30,11 @@ const presence = new Presence({
 
 Это свойство необходимо для того, чтобы ваше присутствие работало, поскольку оно использует идентификатор вашего приложения для отображения своего логотипа и ресурсов. Вы можете получить это на свой [страница приложений](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` — *устарел с 2.2.4*
 
 При установке на `injectOnComplete` в `true` первое событие `UpdateData` для обоих `присутствия. ,` и `iframe.ts` файлы будут запущены только при полной загрузке страницы.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` — *устарел с 2.2.4*
 
 При установке `appMode` на `true` и наличии для отправки пустой `PresenceData`, приложение будет показывать приложение (изображение и имя) в профиле пользователя, а не ничего.
 
@@ -148,7 +148,7 @@ const playString = (await strings).play, // результат: Играет
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // Это зарегистрирует "Переменное содержимое"
 ```
 
 ### `getExtensionVersion(Boolean)`
