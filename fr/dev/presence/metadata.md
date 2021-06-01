@@ -321,7 +321,7 @@ presence.hideSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Montre les paramètres donnés (ne marche seulement si le paramètre était déjà caché).
 ```typescript
 presence.showSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
