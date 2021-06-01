@@ -153,7 +153,7 @@ console.log(pageVar); // Это зарегистрирует "Переменно
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Возвращает версию расширения, которое использует пользователь.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): строка | number;
@@ -175,7 +175,7 @@ console.log(setting); // Сообщается установка в логи
 
 ### `hideSetting(String)`
 
-Скрывает данную настройку.
+Скрывает указанные настройки.
 
 ```typescript
 presence.hideSetting("pdexID"); // Заменить pdexID идентификатором настройки
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // Заменить pdexID идентифика�
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Показывают данные настройки (работает только если настройка была скрыта).
 
 ```typescript
 presence.showSetting("pdexID"); // Заменить pdexID идентификатором настройки
@@ -191,7 +191,7 @@ presence.showSetting("pdexID"); // Заменить pdexID идентифика�
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Возвращает журналы консоли веб-сайтов.
 
 ```typescript
 const logs = await presence.getLogs();
@@ -267,7 +267,7 @@ presenceData.endTimestamp = timestamps[1];
 
 The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-This interface has following variables, all of them are optional.
+Этот интерфейс имеет следующие переменные, все они являются необязательными.
 
 <table>
   <thead>
@@ -360,7 +360,7 @@ const presenceData: PresenceData = {
 
 ## События
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+События позволяют обнаруживать и обрабатывать некоторые внесённые изменения или вызовы. Вы можете подписаться на события с помощью метода `on`.
 
 ```typescript
 presence.on("Данные обновить", асинхронный () => {
@@ -368,12 +368,12 @@ presence.on("Данные обновить", асинхронный () => {
 });
 ```
 
-There are few events available:
+Доступно несколько событий:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Это событие запускается каждый раз, когда присутствие обновляется.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Срабатывает при получении данных из iFrame script.

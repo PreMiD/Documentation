@@ -320,7 +320,7 @@ presence.hideSetting("pdexID"); // Заменить pdexID идентифика�
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Показывают данные настройки (работает только если настройка была скрыта).
 ```typescript
 presence.showSetting("pdexID"); // Заменить pdexID идентификатором настройки
 ```
