@@ -12,13 +12,13 @@ tags:
 
 # Vorrausetzungen installieren
 1. Installiere [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+2. Installiere [Node](https://nodejs.org/en/) (kommt mit [npm](https://www.npmjs.com/)).
 3. Installieren [TypeScript](https://www.typescriptlang.org/index.html#download-links) (Öffnen Sie ein Terminal und geben Sie `npm install -g typescript`).
 
 # Projekt klonen
 1. Öffnen ein Terminal und gib `git clone URL` ein. **Ersetze die URL mit dem Repository-Link auf dem Du beitragen möchtest** Beispiel: `git clone https://github.com/PreMiD/PreMiD`.
 2. Wähle einen Ordner Deiner Wahl.
-3. Open it in your code editor.
+3. Öffne es in deinem Code-Editor.
 
 # Notwendige Dateien installieren
 > Stelle zuerst sicher, dass Du [npm](https://www.npmjs.com/) (Node Package Manager) installiert hast. Er wurde automatisch installiert, wenn Du [Node](https://nodejs.org/en/) installiert hast. 
