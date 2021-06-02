@@ -28,14 +28,14 @@ Alle Presences sind in [TypeScript](https://www.typescriptlang.org/) geschrieben
 ## Installation
 
 1. Installiere [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+2. Installiere [Node](https://nodejs.org/en/) ([npm](https://www.npmjs.com/) integriert).
 3. Installiere [TypeScript](https://www.typescriptlang.org/index.html#download-links) (öffne ein Terminal und `npm install -g typescript`).
 
-## Klont Projekt
+## Projekt klonen
 
 1. Öffne ein Terminal und gib `git clone https://github.com/PreMiD/Presences` ein.
 2. Wähle einen Ordner Deiner Wahl.
-3. Open it in your code editor.
+3. Öffne es in Deinem Code-Editor.
 
 ## Ordner und Dateien werden erstellt
 
