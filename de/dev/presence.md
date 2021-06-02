@@ -149,15 +149,13 @@ Bitte kopiere den obigen Code und füge ihn in Deine `metadata.json` ein. Du mus
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> kann aus Discord kopiert werden, indem du den Entwicklermodus aktivierst und mit der rechten Maustaste auf dein Profil klickst.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> kann aus Discord kopiert werden, indem du den Entwicklermodus aktivierst und mit der rechten Maustaste auf dein Profil klickst.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -177,7 +175,7 @@ Bitte kopiere den obigen Code und füge ihn in Deine `metadata.json` ein. Du mus
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Kurze Beschreibung der Presence, du kannst die Beschreibung des Dienstes verwenden, wenn dir die Ideen ausgehen. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Kurze Beschreibung der Presence, du kannst die Beschreibung des Dienstes verwenden, wenn dir die Ideen ausgehen. Deine Beschreibung muss Schlüsselpaarwerte enthalten, die die Sprache angeben und die Beschreibung in dieser bestimmten Sprache. Erstelle Beschreibungen mit den Sprachen <i>die du kennst</i>, unsere Übersetzer werden Änderungen an der Metadatendatei vornehmen.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -257,7 +255,7 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Legt fest, ob die Erweiterung Logs lesen soll.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
