@@ -30,7 +30,7 @@ Included on this page:
 PreMiD **не** працює з браузерною версією Discord, ви повинні завантажити його [тут](https://discord.com/download).
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Переконайтеся, що Discord працює не як адміністратор
 Дійсно важливе. Discord RPC не працюватиме, якщо ви запустите Discord в якості адміністратора.

@@ -30,7 +30,7 @@ Kamu juga bisa menekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R
 PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplikasinya [disini](https://discord.com/download).
 
 ### Pastikan kamu sudah mengaktifkan Status Activity pada pengaturan Discordmu
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Pastikan Discord TIDAK berjalan sebagai administrator
 Sangat penting. Discord RPC tidak akan bekerja jika kamu membuka Discord sebagai administrator.
