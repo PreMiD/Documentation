@@ -30,7 +30,7 @@ Namísto hledání tlačítka obnovení můžeš stisknout <kbd>CTRL+R</kbd>/<kb
 PreMiD **nefunguje** při používání prohlížečové verze Discordu, musíš si stáhnout desktopovou aplikaci [zde](https://discord.com/download).
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Ujisti se, že Discord není spuštěn jako správce
 Skutečně důležité. Discord RPC nebude fungovat, pokud Discord spustíš jako správce.
