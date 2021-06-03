@@ -30,7 +30,7 @@ Du kan trycka på <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) eller <kbd>CMD+R</kb
 PreMiD fungerar **inte** på webbläsarversionen av Discord, du måste ladda ned appen [här](https://discord.com/download).
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Se till att Discord INTE körs som administrator
 Väldigt viktigt. Discord RPC kommer inte att fungera om Discord körs som administratör.
