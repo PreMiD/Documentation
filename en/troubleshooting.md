@@ -28,7 +28,7 @@ PreMiD does **not** work on the browser version of Discord, you must download th
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
 **User Settings** > **Activity Status**
-![activitystatus.png](/activitystatus)
+![activitystatus.png](/activitystatus.png)
 
 ### Be sure Discord is running NOT as administrator
 Really important. Discord RPC will not work if you run Discord as an administrator.
