@@ -30,7 +30,7 @@ Included on this page:
 PreMiDはブラウザ版のDiscordでは動作**しません。** [アプリ版のDiscord](https://discordapp.com/download)を使用してください。
 
 ### DiscordのActivity Statusを有効にする
-**ユーザー設定** > **Activity Status** ![activitystatus.png](/activitystatus)
+**ユーザー設定** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Discordが管理者権限で起動していないかを確認する
 これは重要です。 Discord リッチプレゼンスは管理者権限で起動していると動きません。
