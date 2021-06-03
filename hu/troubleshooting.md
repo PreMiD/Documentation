@@ -30,7 +30,7 @@ You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (Mac
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Győződj meg arról, hogy a Discord nem rendszergazdai jogokkal fut
 Nagyon fontos. A Discord RCP nem fog futni, ha a Discord rendszergazda jogokkal fut.
