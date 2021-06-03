@@ -30,7 +30,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ করে **না**, তোমাকে অবশ্যই অ্যাপটা ডাউনলোড করতে হবে [এখানে](https://discord.com/download)।
 
 ### নিশ্চিত করো যে তুমি সেটিংসে Discord অ্যাক্টিভিটি স্ট্যাটাস অন রেখেছ
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### নিশ্চিত হও যে Discord এডমিনিস্ট্রেটরে রান হচ্ছে না
 খুবই গুরুত্বপূর্ণ। Discord RPC কাজ করবে না যদি তুমি Discord এডমিনিস্ট্রেটরে রান করো।
