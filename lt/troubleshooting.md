@@ -30,7 +30,7 @@ Jūs galite paspausti <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) arba <kbd>CMD+R<
 PreMiD **neveikia** naršyklinėje Discord versijoje, jūs turite atsisiųsti programėlę [čia](https://discord.com/download).
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Įsitikinkite jog Discord nėra įjungtas naudojantis administratoriaus teisėmis
 Įtin svarbu. Discord RPC neveiks jeigu jūs esate įsijungę Discord naudojantis administratoriaus teisėmis.
