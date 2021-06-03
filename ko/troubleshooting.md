@@ -30,7 +30,7 @@ Included on this page:
 PreMiD는 디스코드 브라우저 버전에선 작동하지 **않습니다**, [이 곳](https://discord.com/download)에서 앱을 설치 할 수 있습니다.
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### 디스코드를 관리자 권한으로 실행하지 !마세요!
 정말 중요합니다. 디스코드를 관리자 권한으로 실행할 시, 디스코드 RPC가 작동하지 않습니다.
