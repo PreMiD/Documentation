@@ -30,7 +30,7 @@ Jūs varat nospiest <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) vai <kbd>CMD+R</kb
 PreMiD **nedarbojas** uz Discord pārlūkprogrammas versijas, jums ir jāuzstāda lietotne [šeit](https://discord.com/download).
 
 ### Pārliecinieties, ka Aktivitātes Statuss ir iespējots Discord iestatījumos
-**Lietotāja Iestatījumi** > **Aktivitātes Statuss** ![activitystatus.png](/activitystatus)
+**Lietotāja Iestatījumi** > **Aktivitātes Statuss** ![activitystatus.png](/activitystatus.png)
 
 ### Pārliecinieties, ka Discord NEIET, kā administrators
 Ļoti svarīgi. Discord RPC nedarbosies, ja Discord palaidīsiet, kā administratoru.
