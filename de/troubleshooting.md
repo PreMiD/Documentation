@@ -30,7 +30,7 @@ Statt nach dem Aktualisieren-Knopf zu suchen, kannst du <kbd>STRG+R</kbd>/<kbd>F
 PreMiD funktioniert **nicht** mit der Browserversion von Discord, du musst dir die App [hier](https://discord.com/download) runterladen.
 
 ### Stelle sicher, dass du die Discord Spielaktivität in den Einstellungen aktiviert hast
-**Benutzereinstellungen** > **Spielaktivität** ![activitystatus.png](/activitystatus)
+**Benutzereinstellungen** > **Spielaktivität** ![activitystatus.png](/activitystatus.png)
 
 ### Stelle sicher, dass Discord NICHT als Administrator läuft
 Sehr wichtig. Discord RPC wird nicht funktionieren, wenn du Discord als Administrator ausführst.
