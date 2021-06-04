@@ -277,7 +277,7 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
 
 <div>
-  <h2 style="font-size: 2rem; margin-bottom: 0;">Presence Reviewers</h2>
+  <h2 style="font-size: 2rem; margin-bottom: 0;">Peninjau Presence</h2>
   
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
@@ -286,31 +286,31 @@ The most important process of presence development is getting your presence on t
   <br />
 </div>
 
-## `Restrictions`
+## `Larangan`
 
-Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
+Pelanggaran berulang seperti melanggar aturan, spam pull request, pengancaman, atau perilaku tidak pantas akan membuatmu dilarang membuat presence.
 
-In this scenario, the following changes will occur:
+Pada kejadian seperti ini, perubahan berikut akan terjadi:
 
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). The application id for each presence will be recreated under the new owner's name.
-- All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
-- Tickets created under your name regarding presence development will be deleted.
+- Presence di bawah manajemen Anda akan ditransfer ke bot PreMiD atau pengguna lain (keputusan peninjau). Id aplikasi untuk setiap presence akan dibuat ulang dengan nama pemilik baru.
+- Semua issue dan pull request (pembuatan presence, kontribusi presence, dll) yang dibuat setelah pelanggaran akan segera ditutup.
+- Tiket yang dibuat dibawah nama anda mengenai pengembangan presence akan dihapus.
 
-## `Reviewing`
+## `Peninjauan`
 
 Beberapa hal yang harus anda ketahui setelah membuka pull request:
 
-- It takes 2 reviewers to merge a pull request.
-- If a pull request is inactive for a period of 7 days, it will be promptly closed.
-- All checks **must** be passed in order to merge.
-- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
-- ⚠️ Kamu juga **harus** memasukkan tangkapan layar pengaturan presence di dalam extension jika disediakan. An example can be seen [here](https://imgur.com/a/OD3sj5R).
+- Dibutuhkan 2 peninjau untuk merge sebuah pull request.
+- Jika pull request tidak aktif selama 7 hari, maka akan segera ditutup.
+- Semua pemeriksaan **harus** berhasil untuk merge.
+- ⚠️ Anda **harus** memberi screenshot baru, tidak dimodifikasi diambil ( diambil oleh anda) menunjukkan perbandingan side-by-side dari profilmu dan websitenya untuk membuktikan presencemu bekerja. _Anda diperbolehkan memberikan screenshot untuk kemudahan melihat_ Ini berlaku baik dalam pembuatan dan perubahan.
+- ⚠️ Kamu juga **harus** memasukkan tangkapan layar pengaturan presence di dalam extension jika disediakan. Sebuah contoh dapat dilihat [di sini](https://imgur.com/a/OD3sj5R).
 
-## `Checks`
+## `Pemeriksaan`
 
 ![Checks](https://i.imgur.com/oqAakOc.png)
 
-Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
+Saat ini, sebuah presence melewati 3 tahapan pemeriksaan. All of these checks help the reviewers determine whether your presence is suitable for deployment.
 
 - `Codacy` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
 - `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
