@@ -30,11 +30,11 @@ Er zijn drie eigenschappen beschikbaar voor de `Presence` klasse.
 
 Deze eigenschap is vereist om je presence te laten werken, omdat je client-id gebruikt word om het logo en de assets te weergeven. Je kunt het op je [applicatiepagina](https://discordapp.com/developers/applications) krijgen.
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *verouderd sinds 2.2.4*
 
 Wanneer je `injectOnComplete` op `true` zet dan wordt de eerste `UpdateData` evenement voor de `presence.ts` en `iframe.ts` bestanden pas afgevuurd als de pagina volledig geladen is.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *verouderd sinds 2.2.4*
 
 Wanneer je `appMode` op `true` zet en de presence zou een lege `PresenceData` versturen, dan toont de app de applicatie (afbeelding en naam) op het profiel van de gebruiker in plaats van niets.
 
@@ -144,7 +144,7 @@ const playString = (await strings).play, // Geeft: Playing
 
 Retourneert een variabele van de website als deze bestaat.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Waarschuwing: Deze functie kan hoog CPU-verbruik & website-haperingen veroorzaken wanneer deze te vaak is uitgevoerd.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
