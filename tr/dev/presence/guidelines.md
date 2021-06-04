@@ -2,7 +2,7 @@
 title: Servis Kılavuzu
 description: Her geliştiricinin, servisinin eklenebilmesi için takip etmeleri gereken kurallar.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-03T21:35:44.819Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -282,6 +282,7 @@ Servis geliştirmenin en önemli aşamalarından biri servisinizi mağazaya ekle
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/SlowLife1661"><img src="https://github.com/SlowLife1661.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -311,7 +312,7 @@ Bir pull request atmadan önce bilmeniz gereken şeyler:
 
 Şu anda, bir servis, 2 adet otomatik doğrulama aşamasından geçmektedir. Bu doğrulamalar, inceleme ekibimizin kodunuzun çalışmaya hazır olup olmadığını anlamasını kolaylaştırır.
 
-- `Codacy` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**. (_UYARI: Codacy yakın zamanda kaldırılacak ve sadece DeepScan hatalarını çözümlemeniz gerekecektir!_)
+- `Codacy` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
 - `DeepScan` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**.
 - `Schmea Validation` ise `metadata.json` dosyanızı tarayıp, hatalı veya eksik veriler olup olmadığını kontrol etmek için vardır. Eğer burada da bir hata ile karşılaşırsanız, o hatayı da **düzeltmelisiniz**. `metadata.json` dosyanıza bir şema değeri eklemek, kodlama sırasında (eğer destekliyorsa) editörünüzün size hatalarını belirtmesini sağlar.
 

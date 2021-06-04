@@ -196,14 +196,14 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Rentetan ungkapan nalar digunakan untuk memadankan URL yang banyak.<br>
-      Ungkapan nalar (regExp) atau juga dikenali sebagai Regex, boleh digunakan jika sesuatu laman sesawang mempunyai banyak subdomain.<br>
-      Anda boleh gunakan regExp berikut untuk perkara tersebut:<br>
+      <td style="text-align:left">A regular expression string used to match urls.<br>
+      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
+      You could use the following regExp for that:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD singkatan Top Level Domain iaitu Domain Paras Tertinggi seperti: .com .net (tetapi jangan masukkan titik).<br>
-      <code>([a-z0-9]+)</code> maksudnya apa sahaja dari a ke z dan dari 0 ke 9.<br>
-      Anda boleh mulakan dengan menonton <a href="https://youtu.be/sXQxhojSdZM">video</a> ini.<br>
-      Anda boleh mencuba regExp anda di <a href="https://regex101.com/">Regex101</a>.</td>
+      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
+      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
+      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
+      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>

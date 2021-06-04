@@ -194,14 +194,14 @@ Por favor copie o código acima e coloque-o em seu arquivo de `metadata.json`. A
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Uma string de expressão regular usada para combinar com as urls.<br>
-      regExp ou também conhecida como Regex, pode ser usada se um website tiver múltiplos subdomínios.<br>
-Você pode usar a seguinte regExp para isso:<br>
-<code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .net<br>
-<code>([a-z0-9]+)</code> significa qualquer coisa de A a Z e de 0 a 9.<br>
-        Você pode entender rapidamente assistindo este <a href="https://youtu.be/sXQxhojSdZM">vídeo</a><br>
-        Você pode testar seu regExp no <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">A regular expression string used to match urls.<br>
+      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
+      You could use the following regExp for that:<br>
+      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
+      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
+      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
+      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
+      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>

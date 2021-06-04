@@ -193,14 +193,14 @@ Du kannst auch Regulare Ausdrücke, auch bekannt als RegEx, für diese Aufgabe v
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Ein regulärer Ausdrucks-String zum übereinstimmen der URLs.<br>
-regExp, auch bekannt als RegEx, kann genutzt werden, um zu überprüfen, ob eine Webseite mehere Subdomains hat.<br>
-Du kannst das folgende regExp dafür verwenden:<br>
-<code>"([a-z0-9]+)[.]domain[.]TLD"</code><br>
-TLD steht für Top Level Domain, ein Beispiel: .com .net (aber nicht den Punkt mit eingeben).<br>
-<code>([a-z0-9]+)</code> bedeutet alles von a bis z und 0 bis 9.<br>
-Du kannst ein kleines Starter <a href="https://youtu.be/sXQxhojSdZM">Video</a> angucken.<br>
-Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.</td>
+      <td style="text-align:left">A regular expression string used to match urls.<br>
+      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
+      You could use the following regExp for that:<br>
+      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
+      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
+      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
+      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
+      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
