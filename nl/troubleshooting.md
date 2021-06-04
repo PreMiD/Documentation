@@ -29,7 +29,7 @@ Je kunt ook op <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) of <kbd>CMD+R</kbd> (Ma
 ### Gebruik je de Discord-app?
 PreMiD werkt **niet** met de browserversie van Discord, je moet de app [hier](https://discord.com/download) downloaden.
 
-### Make sure that you have enabled Activity Status in your Discord app settings
+### Zorg ervoor dat Activiteit Status is ingeschakeld in de Discord app instellingen
 **User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### Zorg ervoor dat Discord NIET als administrator wordt uitgevoerd
