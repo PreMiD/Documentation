@@ -2,7 +2,7 @@
 title: Règlement des Presences
 description: Règles que tous les développeurs de Presence doivent suivre pour avoir leur Presence ajoutée.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-03T21:35:44.819Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -285,6 +285,7 @@ Le processus le plus important dans développement d'une Presence est d'avoir vo
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/SlowLife1661"><img src="https://github.com/SlowLife1661.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -314,7 +315,7 @@ Quelques choses que vous devriez savoir après avoir ouvert un pull request :
 
 Actuellement, une Presence passe par trois étapes distinctes de vérification. Toutes ces vérifications aident les évaluateurs à déterminer si votre presence est apte au déploiement.
 
-- `Codacy` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger. (_AVERTISSEMENT : Le bot Codacy sera bientôt obsolète et vous aurez besoin de vérifier les erreurs uniquement de DeepScan !_)
+- `Codacy` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
 - `DeepScan` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger.
 - `Schema Validation` va scanner votre fichier `metadata.json` pour trouver toutes erreurs (par exemple, champs manquants, types de valeurs invalides, etc.). Si jamais vous recevez des erreurs, vous êtes aussi **tenus** de les corriger. L'ajout d'un champ de schéma à votre `metadata.json` permettra à votre éditeur de code (si pris en charge) de vous montrer ces erreurs pendant le développement.
 
