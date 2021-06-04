@@ -267,7 +267,7 @@ presenceData.endTimestamp = timestamps[1];
 
 L'interface `PresenceData` est recommandée à l'utilisation quand vous utilisez la méthode `setActivity()`.
 
-This interface has following variables, all of them are optional.
+Cette interface contient les variables suivantes, toutes sont facultatives.
 
 <table>
   <thead>
