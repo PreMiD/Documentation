@@ -2,7 +2,7 @@
 title: Presence-Richtlinien
 description: Regeln, die alle Entwickler beachten müssen, damit ihre Presences hinzugefügt werden.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-03T21:35:44.819Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -285,6 +285,7 @@ Der wichtigste Prozess der Presence-Entwicklung ist Ihre Presence in den Shop zu
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/SlowLife1661"><img src="https://github.com/SlowLife1661.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -314,7 +315,7 @@ Ein paar Dinge, die du nach dem Öffnen einer Pull-Request wissen solltest:
 
 Derzeit durchläuft eine Presence drei separate Phasen der Kontrolle. Alle diese Checks helfen den Prüfern zu ermitteln, ob deine Presence für den Einsatz geeignet ist.
 
-- `Codacy` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. (_WARNUNG: Codacy Bot wird in Kürze veraltet sein und du darfst nur mit DeepScan deine Fehler überprüfen!_)
+- `Codacy` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
 - `DeepScan` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben.
 - `Schema Validation` scannt deine `metadata.json` Datei auf Fehler (z.B. fehlende Felder, ungültige Datentypen, etc.). Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese auch zu beheben. Wenn du ein Schema Feld zu deiner `metadata.json` Datei hinzufügst, wird dein Texteditor (falls unterstützt) dir diese Fehler während der Entwicklung anzeigen können.
 
