@@ -2,7 +2,7 @@
 title: Руководство по присутствию
 description: Правила, которым должны следовать все разработчики presence, чтобы добавить свое presence.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-03T21:35:44.819Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -276,6 +276,7 @@ presence
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/SlowLife1661"><img src="https://github.com/SlowLife1661.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -305,7 +306,7 @@ presence
 
 В настоящее время presence проходит 3 отдельных этапа проверки. Все эти элементы управления помогают проверяющим определить, подходит ли ваше присутствие для развертывания.
 
-- `Codacy` это бот, проверяющий качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо** их исправить. (_ПРЕДУПРЕЖДЕНИЕ: Кодировка бота скоро пропадет и вам нужно будет проверить ошибки только из DeepScan!_)
+- `Codacy` это бот, проверяющий качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо** их исправить. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
 - `DeepScan` - это бот, который проверяет качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо ** их исправить.
 - `Проверка схемы` просканирует файл `metadata.json` для любых ошибок (например, отсутствующие поля, недопустимые типы значений и т.д.). Если вы когда-нибудь увидите какие-либо новые проблемы, Вам также **необходимо** исправить их. Добавление поля схемы в файл `metadata.json` позволит вашему текстовому редактору (если поддерживается) показать вам эти ошибки во время разработки.
 
