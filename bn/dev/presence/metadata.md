@@ -10,9 +10,9 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
+তুমি যদি স্টোরে একটি Presence পাবলিশ করতে এবং এক্সটেনশনটি দ্বারা লোড করাতে চাও, তোমাকে `metadata.json` ফাইলটি তৈরি করতে হবে তোমার `dist` ফোল্ডারে।
 
-An example of that file can be found below.
+সেই ফাইলের একটি উদাহরণ পাওয়া যাবে নিচে।
 
 ```typescript
 {
