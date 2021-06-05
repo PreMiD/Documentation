@@ -17,33 +17,33 @@ dateCreated: 2020-06-11T18:04:52.965Z
 ```typescript
 {
   "author": {
-    "name": "USER",
-    "id": "ID"
+    "name": "ইউজার",
+    "id": "আইডি"
   },
   "contributors": [{
-    "name": "USER",
-    "id": "ID"
+    "name": "ইউজার",
+    "id": "আইডি"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "সার্ভিস",
+  "altnames": ["সার্ভিস"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ডেসক্রিপশন"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "ভার্সন",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "ক্যাটাগরি",
   "iframe": false,
   "settings": [
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "আইডি",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": true
     },
     {
@@ -51,15 +51,15 @@ dateCreated: 2020-06-11T18:04:52.965Z
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "আইডি",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -67,9 +67,9 @@ dateCreated: 2020-06-11T18:04:52.965Z
 }
 ```
 
-## Understanding the metadata.json
+## metadata.json - কে বোঝা
 
-That example looks really strange, huh? Don't worry, its not that hard to understand what each variable is for.
+সেই উদাহরণটি দেখতে বেশ অদ্ভুত, তাই না? চিন্তা করবে না, এটা বোঝা এতো কঠিন নয় যে প্রত্যেক ভ্যারিয়েবল কীসের জন্য।
 
 <table>
   <thead>
@@ -83,23 +83,23 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">একটি অবজেক্ট হতে হবে যার মধ্যে Presence ডেভেলপারের <code>name</code> এবং <code>id</code> থাকবে। <code>name</code> হচ্ছে তোমার Discord ইউজারনেম আইডেন্টিফায়ার (#0000) ছাড়া। ইউজার <code>আইডি</code> কপি করা যাবে Discord থেকে ডেভেলপার মোড
+        অন করে এবং তোমার প্রোফাইলের উপর মাউসের ডান পাশের বাটন ক্লিক করে।</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">একটি অবজেক্ট হতে হবে যার মধ্যে কন্ট্রিবিউটরের <code>name</code> এবং <code>id</code> থাকবে। <code>name</code> হচ্ছে তোমার Discord ইউজারনেম আইডেন্টিফায়ার (#0000) ছাড়া। ইউজার <code>আইডি</code> কপি করা যাবে Discord থেকে ডেভেলপার মোড
+        অন করে এবং তোমার প্রোফাইলের উপর মাউসের ডান পাশের বাটন ক্লিক করে।</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
       <td style="text-align:left">The title of the service that this presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
@@ -113,7 +113,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left"><b>description</b></td>
       <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. View the category for presence languages for a list. </td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
@@ -127,68 +127,68 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left"><b>regExp</b></td>
       <td style="text-align:left">A regular expression string used to match urls.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
       <td style="text-align:left">Version of your presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Link to service&apos;s logotype.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
       <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
         that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
       <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
       <td style="text-align:left">A string used to represent the category the presence falls under.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
       <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
       <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Defines whether the extension should be reading logs.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
       <td style="text-align:left">An array of settings the user can change</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
   </tbody>
 </table>
@@ -334,7 +334,7 @@ When making your presence, you must specify a category which the presence falls 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
+      <th style="text-align:left">ক্যাটাগরি</th>
       <th style="text-align:left">নাম</th>
       <th style="text-align:left">ডেসক্রিপশন</th>
     </tr>
