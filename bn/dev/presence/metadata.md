@@ -1,6 +1,6 @@
 ---
 title: Metadata.json
-description: Contains basic data about the Presence
+description: Presence - টি সম্বন্ধে প্রাথমিক ডাটা থাকে
 published: true
 date: 2021-02-07T17:12:06.799Z
 tags:
