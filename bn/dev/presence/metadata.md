@@ -343,12 +343,12 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>anime</b></td>
       <td style="text-align:left"><b>অ্যানিমে</b></td>
-      <td style="text-align:left">Anything related to anime, from forums to video streaming platforms.</td>
+      <td style="text-align:left">যেকোনো কিছু যা অ্যানিমে সম্পর্কিত, ফোরাম থেকে ভিডিও স্ট্রিমিং প্লাটফর্ম।</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
       <td style="text-align:left"><b>গেমস</b></td>
-      <td style="text-align:left">Any website that has game related content, such as <code>Kahoot</code> or <code>Skribbl.io</code></td>
+      <td style="text-align:left">যেকোনো ওয়েবসাইট যার মধ্যে গেম সম্পর্কিত কন্টেন্ট রয়েছে, যেমন <code>Kahoot</code> বা <code>Skribbl.io</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
