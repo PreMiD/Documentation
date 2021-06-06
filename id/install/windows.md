@@ -1,6 +1,6 @@
 ---
 title: Windows
-description: Memulai dengan instalasi PreMiD pada Windows
+description: Memulai dengan pemasangan PreMiD pada Windows
 published: true
 date: 2020-02-12T22:08:41.501Z
 tags:
