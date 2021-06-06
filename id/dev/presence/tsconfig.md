@@ -11,13 +11,13 @@ editor: markdown
 
 ## Perkenalan
 
-Ketika kamu telah mendownload dan mengunpack workspace, kamu akan melihat file bernama `tsconfig.js` pada root dan folder presence, file ini digunakan untuk mengatur compiler **TypeScript**. Itu sudah terkonfigurasi untuk anda, jadi tidak perlu khawatir.
+Ketika kamu telah mendownload dan mengunpack workspace, kamu akan melihat file bernama `tsconfig.js` pada root dan folder presence, file ini digunakan untuk mengatur compiler **TypeScript**. It is already configured for you, so don't worry about that.
 
-Kami hanya ingin menjelaskan beberapa pengaturan yang harus anda ketahui.
+We just want to describe some settings that you should know.
 
 ## Konfigurasi Root
 
-Pada file konfigurasi root anda akan melihat hal seperti ini.
+In the root configuration file you will see something like this.
 
 ```javascript
 {
@@ -47,7 +47,7 @@ Pada file konfigurasi root anda akan melihat hal seperti ini.
 | noUnusedLocals             | Melaporkan eror pada unused locals.                                                                                                                               |
 | noUnusedParameters         | Melaporkan eror pada unused parameter.                                                                                                                            |
 | inlineSourceMap            | Menambahkan sourcemapping                                                                                                                                         |
-| typeRoots                  | Anda bisa membacanya lebih lanjut [disini](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                            |
+| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                   |
 | esModuleInterop            | Emit __importStar dan __importDefault helpers untuk kompatibilitas babel ecosystem dan enable --allowSyntheticDefaultImports untuk kompatibilitas typesystem. |
 
 ## Konfigurasi Presence
