@@ -292,18 +292,18 @@ Pelanggaran berulang seperti melanggar aturan, spam pull request, pengancaman, a
 
 Pada kejadian seperti ini, perubahan berikut akan terjadi:
 
-- Presence di bawah manajemen Anda akan ditransfer ke bot PreMiD atau pengguna lain (keputusan peninjau). Id aplikasi untuk setiap presence akan dibuat ulang dengan nama pemilik baru.
+- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). Id aplikasi untuk setiap presence akan dibuat ulang dengan nama pemilik baru.
 - Semua issue dan pull request (pembuatan presence, kontribusi presence, dll) yang dibuat setelah pelanggaran akan segera ditutup.
-- Tiket yang dibuat dibawah nama anda mengenai pengembangan presence akan dihapus.
+- Tickets created under your name regarding presence development will be deleted.
 
 ## `Peninjauan`
 
 Beberapa hal yang harus anda ketahui setelah membuka pull request:
 
 - Dibutuhkan 2 peninjau untuk merge sebuah pull request.
-- Jika pull request tidak aktif selama 7 hari, maka akan segera ditutup.
+- Jika pull request tidak aktif selama 7 hari, pull request tersebut akan segera ditutup.
 - Semua pemeriksaan **harus** berhasil untuk merge.
-- ⚠️ Anda **harus** memberi screenshot baru, tidak dimodifikasi diambil ( diambil oleh anda) menunjukkan perbandingan side-by-side dari profilmu dan websitenya untuk membuktikan presencemu bekerja. _Anda diperbolehkan memberikan screenshot untuk kemudahan melihat_ Ini berlaku baik dalam pembuatan dan perubahan.
+- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
 - ⚠️ Kamu juga **harus** memasukkan tangkapan layar pengaturan presence di dalam extension jika disediakan. Sebuah contoh dapat dilihat [di sini](https://imgur.com/a/OD3sj5R).
 
 ## `Pemeriksaan`
