@@ -1,6 +1,6 @@
 ---
 title: Firefox
-description: Memulai dengan instalasi PreMiD pada Firefox
+description: Getting started with a PreMiD installation on Firefox
 published: true
 date: 2020-02-12T22:08:32.409Z
 tags:
@@ -15,7 +15,7 @@ Pemasangan ekstensi sangat penting agar aplikasi dapat bekerja.
 4. Klik pada ikon gir kecil pada pojok kanan atas.
 5. Pilih **Install add-on from file**.
 6. Pilih file yang baru saja diunduh.
-7. Setujui instalasi dengan mengklik tombol **Add**.
+7. Accept the installation by clicking on **Add**.
 
 > Jangan lupa [memasang **aplikasi**](/install). 
 > 
