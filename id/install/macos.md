@@ -1,12 +1,12 @@
 ---
 title: macOS
-description: Memulai dengan instalasi PreMiD pada macOS
+description: Getting started with a PreMiD installation on macOS
 published: true
 date: 2020-02-12T22:08:37.439Z
 tags:
 ---
 
-> Sebelum melanjutkan, pastikan sistem anda memenuhi semua [persyaratan](/install/requirements). 
+> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
 > 
 > {.is-info}
 
@@ -17,7 +17,7 @@ Pemasangan aplikasi sangat penting karena ekstensi tidak dapat bekerja dengan se
 2. Pilih **OS X**.
 3. Ekstrak archive jika diperlukan.
 4. Buka installer.
-5. Sebuah **peringatan keamanan** akan muncul, jika anda menginstal PreMiD pertama kali. Jika ya, ikuti langkah-langkah di bawah [Izinkan aplikasi dari pengembang tak dikenal](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
+5. A **security alert** may appear if you're installing PreMiD for the first time. Jika ya, ikuti langkah-langkah di bawah [Izinkan aplikasi dari pengembang tak dikenal](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
 > Ini dikarenakan kami tidak memiliki Code Signing Certificate (CSC). [Dukung kami](https://www.patreon.com/Timeraa) untuk membiayai.{.is-info}
 6. Pilih open ketika diminta.
 7. Beri akses untuk terhubung melewati **Firewall** dan **System Events** ketika diminta.
@@ -36,8 +36,8 @@ Langkah-langkah untuk macOS Big Sur (11.0+):
 2. Klik buka di menu dropdown.
 3. Klik buka pada popup.
 
-Langkah-langkah untuk versi macOS lawas:
+Steps for older macOS versions:
 1. Buka Preferensi Sistem.
 2. Pergi ke tab Privacy & Keamanan.
-3. Klik pada gembok dan masukkan kata sandi Anda atau pindai sidik jari Anda agar Anda dapat membuat perubahan.
+3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
 4. Ubah pengaturan untuk 'Perbolehkan aplikasi yang diunduh dari' menjadi 'App Store dan developer teridentifikasi' menjadi 'App Store' saja.
