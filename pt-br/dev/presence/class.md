@@ -30,11 +30,11 @@ There are three properties available for `Presence` class.
 
 This property is required to make your presence work, because it uses your application id to display its logo and assets. Você pode obter sua Application ID na [página de aplicativos](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Depreciado desde a 2.2.4*
 
 When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Depreciado desde a 2.2.4*
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
