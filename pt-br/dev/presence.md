@@ -1,5 +1,5 @@
 ---
-title: Presence Development
+title: Desenvolvimento de Presences
 description:
 published: true
 date: 2021-02-07T17:11:34.449Z
@@ -8,11 +8,11 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Todas as presences agora são armazenadas aqui: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+A versão `2.x` introduz a [loja de presences](https://premid.app/store). Usuários agora têm a capacidade de adicionar e remover manualmente suas presences favoritas através da interface do [site](https://premid.app/).
 
 > Antes de começar, é altamente recomendado que você olhe as nossas diretrizes de presence. 
 > 
