@@ -248,11 +248,11 @@ The `multiLanguage` setting is used to allow users to manually select the langua
 
 #### Setup
 
-The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
+A configuração `multiLanguage` é um caso especial, não requer uma `title`, nem `icon`, nem `value` ou `values` como outras configurações, mas requer mais algumas coisas para configurar!
 
-The `multiLanguage` key can be set to the following:
+A key `multiLanguage` pode ser ajustada para o seguinte:
 
-`true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true`: use isto se você só vai usar strings do arquivo `general.json` e do arquivo `<service>.json` do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: nome do arquivo excluindo a extensão (.json) dentro do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluindo o arquivo `general`, já que está sempre carregado). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
 
 #### Adding new strings
 

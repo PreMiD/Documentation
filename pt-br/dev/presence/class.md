@@ -119,7 +119,7 @@ async function getStrings(): Promise<LangStrings> {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // O ID é o ID da configuração multiLanguage.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
