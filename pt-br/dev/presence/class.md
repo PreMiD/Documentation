@@ -261,7 +261,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+A interface `presenceData` é recomendada quando você usar o método `setActivity()`.
 
 ## Interface `presenceData`
 
