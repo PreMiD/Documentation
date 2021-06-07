@@ -278,7 +278,7 @@ O stringName é um identificador de 1 palavra da mensagem.
 
 The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` é uma descrição da mensagem para ajudar nossos tradutores a entender o que eles estão traduzindo.
 
-**Note:** Do not add any duplicate strings. (Isso inclui strings do arquivo `general.json` mas não dos outros arquivos.)
+**Nota:** Não adicione nenhuma string duplicada. (Isso inclui strings do arquivo `general.json` mas não dos outros arquivos.)
 
 Visualization of the file:
 
