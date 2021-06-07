@@ -204,7 +204,7 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 ## Idiomas para Presence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Uma lista completa de idiomas pode ser encontrada neste [endpoint da API](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Uma lista completa de idiomas pode ser encontrada neste [endpoint da API](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. Veja[`multiLanguage`](#multilanguage) para mais informações.
 
 ## Configurações de presence
 Defina configurações interativas para que os usuários possam personalizar a presence!
@@ -278,7 +278,7 @@ O stringName é um identificador de 1 palavra da mensagem.
 
 The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` é uma descrição da mensagem para ajudar nossos tradutores a entender o que eles estão traduzindo.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Note:** Do not add any duplicate strings. (Isso inclui strings do arquivo `general.json` mas não dos outros arquivos.)
 
 Visualization of the file:
 
@@ -295,10 +295,10 @@ Visualization of the file:
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Após ter feito o arquivo com as strings, você pode criar um Pull Request no repositório [Localization](https://github.com/PreMiD/Localization), na descrição você **deve** incluir um link para seu Pull Request da presence atualizada utilizando estas novas strings do [repositório de Presences](https://github.com/PreMiD/Presences).
 
 #### Default keys
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+As keys que você não precisa definir são automaticamente definidas para o seguinte: `title`: "Language" **Nota:** Isto é traduzido para seu idioma padrão (idioma do navegador). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
 **Note:** These are in no way changeable.
 
