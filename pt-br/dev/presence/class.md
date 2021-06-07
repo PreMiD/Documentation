@@ -120,16 +120,16 @@ async function getStrings(): Promise<LangStrings> {
       pause: "general.paused"
     },
     // O ID é o ID da configuração multiLanguage.
-    await presence.getSetting("ID").catch(() => "en");
+    await presence.getSetting("ID")
   );
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // O ID é o ID da configuração multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
-// The ID is the ID of the multiLanguage setting.
+//! O seguinte código deve estar dentro do evento updateData!
+// O ID é o ID da configuração multiLanguage.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
@@ -147,86 +147,86 @@ Retorna uma variável a partir do site, se ela existir.
 **Atenção: Essa função pode causar alta utilização de CPU e travamentos no site quando tiver sido executada várias vezes.**
 
 ```typescript
-const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+const pageVar = getPageletiable(".pageVar");
+console.log(pageVar); // Isso irá registrar o "conteúdo da variável"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Retorna a versão da extensão que o usuário está usando.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // Irá registrar 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // Irá registrar 2.1.0
 ```
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Retorna o valor da configuração.
 
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); // Substitua pdexID pelo id da configuração
+console.log(setting); // Isto registrará o valor da configuração
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Oculta determinada configuração.
 
 ```typescript
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // Substitua pdexID pelo id da configuração
 ```
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Mostra determinada configuração (somente funciona se a configuração já estava oculta).
 
 ```typescript
-presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); // Substitua pdexID pelo id da configuração
 ```
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Retorna os logs do console do site.
 
 ```typescript
 const logs = await presence.getLogs();
-console.log(logs); // This will log the latest 100 logs (in an array).
+console.log(logs); // Isto registrará os últimos 100 logs (em uma array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Nota:** Requer `readLogs` ser `true` no arquivo `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Registra a mensagem fornecida no console em um formato baseado na presence no estilo `info`.
 
 ```typescript
-presence.info("Test") // This will log "test" in the correct styling.
+presence.info("Test") // Isto registrará "test" no estilo correto.
 ```
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Registra a mensagem fornecida no console em um formato baseado na presence no estilo `success`.
 
 ```typescript
-presence.success("Test") // This will log "test" in the correct styling.
+presence.success("Test") // Isto registrará "test" no estilo correto.
 ```
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Registra a mensagem fornecida no console em um formato baseado na presence no estilo `error`.
 
 ```typescript
-presence.error("Test") // This will log "test" in the correct styling.
+presence.error("Test") // Isto exibirá "test" no estilo correto.
 ```
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Retorna 2 timestamps no formato `snowflake` em uma `Array` que pode ser usado para `startTimestamp` e `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -238,7 +238,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Retorna 2 timestamps no formato `snowflake` em uma `Array` que pode ser usado para `startTimestamp` e `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),

@@ -252,11 +252,11 @@ A configuração `multiLanguage` é um caso especial, não requer uma `title`, n
 
 A key `multiLanguage` pode ser ajustada para o seguinte:
 
-`true`: use isto se você só vai usar strings do arquivo `general.json` e do arquivo `<service>.json` do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: nome do arquivo excluindo a extensão (.json) dentro do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluindo o arquivo `general`, já que está sempre carregado). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true`: use isto se você só vai usar strings do arquivo `general.json` e do arquivo `<service>.json` do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: nome do arquivo excluindo a extensão (.json) dentro do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluindo o arquivo `general`, já que está sempre carregado). Somente os idiomas comuns de ambos os `general` e do arquivo inserido serão listados. `Array<String>`: se você estiver usando mais de um arquivo dentro do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence) você pode especificar todos os valores em um array (excluindo o arquivo `general`, já que ele está sempre carregado). Apenas idiomas comuns de todos os arquivos serão listados.
 
-#### Adding new strings
+#### Adicionando novas strings
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Nota:** Adicionar strings customizadas para uma presence só é permitida se ela tiver mais de 1000 usuários.
 
 ##### Clonando o projeto
 
@@ -264,13 +264,13 @@ A key `multiLanguage` pode ser ajustada para o seguinte:
 2. Escolha uma pasta que preferir.
 3. Abra isso no seu editor de código.
 
-##### Creating the file
+##### Criando o arquivo
 
-1. Go into the `src` folder.
-2. Go into the `Presence` folder.
-3. Make a file named `<service>.json`. (Service is the **name** (not an URL) in lowercase of the service you want to support.)
+1. Vá para a pasta `src`.
+2. Vá para a pasta `Presence`.
+3. Crie um arquivo chamado `<service>.json`. (Service é o **nome** (não uma URL) em letras minúsculas do serviço que você deseja dar suporte.)
 
-##### Adding the strings
+##### Adicionando as strings
 
 Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
@@ -319,7 +319,7 @@ presence.hideSetting("pdexID"); //Substitua pdexID com o id da configuração
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Mostra determinada configuração (somente funciona se a configuração já estava oculta).
 ```typescript
 presence.showSetting("pdexID"); //Substitua pdexID com o id da configuração
 ```
