@@ -124,7 +124,7 @@ sair 0
 Se você receber esse erro, significa que sua conta não tem permissões de administrador e você precisa criar a pasta manualmente seguindo estas etapas:
 1. Abra o Finder e abra a pasta **Aplicativos**.
 2. Clique com o botão direito no espaço em branco e clique em **Criar pasta**.
-3. Para esta pasta de o nome de `PreMiD`(lembre-se das letras maiúsculas).
+3. Para esta pasta, dê o nome de `PreMiD` (lembre-se das letras maiúsculas).
 4. Abra o instalador novamente.
 
 # Isso não resolveu o meu problema
