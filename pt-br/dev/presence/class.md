@@ -144,7 +144,7 @@ const playString = (await strings).play, // result: Playing
 
 Retorna uma variável a partir do site, se ela existir.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Atenção: Essa função pode causar alta utilização de CPU e travamentos no site quando tiver sido executada várias vezes.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
@@ -267,7 +267,7 @@ A interface `presenceData` é recomendada quando você usar o método `setActivi
 
 The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
-This interface has following variables, all of them are optional.
+Essa interface possui as seguintes variáveis, todas elas são opcionais.
 
 <table>
   <thead>
@@ -362,7 +362,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Os events permitem que você detecte e lide com algumas mudanças ou chamadas que foram feitas. You can subscribe to events using the `on` method.
 
 ```typescript
 presence.on("UpdateData", async () => {
