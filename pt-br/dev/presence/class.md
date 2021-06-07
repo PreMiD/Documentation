@@ -87,7 +87,7 @@ Você pode encontrar a documentação da classe `Slideshow` [aqui](/dev/presence
 
 Um método assíncrono que permite que você pegue strings traduzidas da extensão.
 
-Você deve fornecer o `Objeto` com as chaves sendo a chave para string, `keyValue` é o valor da string. Uma lista de strings traduzidas pode ser encontrada utilizada este endpoint: `https://api.premid.app/v2/langFile/presence/pt-br`
+Você deve fornecer o `Objeto` com as chaves sendo a chave para string, `keyValue` é o valor da string. Uma lista de strings traduzidas pode ser encontrada utilizada este endpoint: `https://api.premid.app/v2/langFile/presence/pt_BR`
 
 ```typescript
 // Retorna strings `Jogando` e `Pausado`
@@ -97,8 +97,8 @@ const strings = await presence.getStrings({
   pause: "general.paused"
 });
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.play; // resultado: Reproduzindo
+const pauseString = strings.pause; // resultado: Pausado
 ```
 
 Desde a versão 2.2.0 da extensão você pode obter as strings de uma determinada língua. Isso funciona bem com a opção de configuração também recém-adicionada `multiLanguage`.
@@ -374,8 +374,8 @@ There are few events available:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Este evento é disparado toda vez que a presence é atualizada.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Disparado quando os dados são recebidos do script iFrame.
