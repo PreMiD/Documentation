@@ -246,7 +246,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Presences que usam botões devem seguir os requisitos extras:
   - Redirecionamentos para a página principal são proibidos.
   - Promover websites através delas é proibido.
-  - They can't show additional data when you can't show them in other fields.
+  - Eles não podem mostrar dados adicionais quando você não pode mostrá-los em outros campos.
   - Redirecionamento direto á transmissão de áudio/vídeo é proibido.
 
 
