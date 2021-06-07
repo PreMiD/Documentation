@@ -29,8 +29,8 @@ Você pode pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</k
 ### Você está usando o aplicativo do Discord?
 O PreMiD **não** funciona na versão de navegador do Discord, você precisa baixar o aplicativo [aqui](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
+### Certifique-se de que você ativou o Status de atividade do Discord nas configurações
+**Configurações de Usuário** > **Atividade de jogo** ![activitystatus.png](/activitystatus.png)
 
 ### Certifique-se de que o Discord NÃO está sendo executado como administrador
 Muito importante. O RPC do Discord não funcionará se o Discord estiver sendo executado como administrador.
@@ -83,7 +83,7 @@ Isto é um falso positivo da parte do McAfee e nós comunicámo-los-emos a esse 
 9. Abra a pasta "PreMiD" e selecione o arquivo "PreMiD.exe" e clique em abrir. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee agora deve ignorar nosso arquivo, apenas inicie nosso aplicativo e você deve estar pronto para começar.
 
-### Estado do pré-MiD depurado no Discord!
+### Estado do PreMiD depurado no Discord!
 Não se preocupe! Pressione o atalho de teclado <kbd>CTRL + R</kbd> (Windows) ou <kbd>CMD + R</kbd> (MacOS) enquanto a janela do Discord estiver aberta para recarregá-la.
 
 <a name="linux"></a>
