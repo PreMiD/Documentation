@@ -32,7 +32,7 @@ As regras gerais de desenvolvimento de presences são as seguintes:
 - Presences sobre páginas internas de navegadores (como a Chrome Web Store, `chrome://`, páginas `about:`, etc) **não são** permitidas por requererem uma bandeira experimental a ser ativada no lado do usuário e que poderia potencialmente causar dano aos seus navegadores.
 - Presences com suporte apenas para um único subdomínio **não serão** permitidas, visto que elas podem parecer quebradas em outras páginas (como a página principal), exceções podem ser feitas para as páginas de políticas e de contato (conteúdo que não é usado com frequência) ou sites onde o outro conteúdo não é relacionado. (por exemplo, páginas da Wikia)
 - Presences para rádios on-line só são permitidas se o rádio tiver pelo menos 100 ouvintes semanais e 15 simultâneos e deve ter alguns recursos além de apenas mostrar título do álbum/música, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Presences não podem executar código em JS com sua própria função para obter variáveis. Se o Firefox tiver problemas com a função embutida dentro da classe de `Presence`, você tem permissão de fazer sua própria função e precisa nos informar sobre isso na descrição da Pull Request.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
@@ -41,7 +41,7 @@ As regras gerais de desenvolvimento de presences são as seguintes:
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences devem usar [detalhes comuns](https://api.premid.app/v2/langFile/presence/en) (strings começando com "general."). Você pode conseguir isso usando `multiLanguage` com as strings fornecidas. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
@@ -244,10 +244,10 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
 - You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
 - Presences que usam botões devem seguir os requisitos extras:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
+  - Redirecionamentos para a página principal são proibidos.
+  - Promover websites através delas é proibido.
   - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+  - Redirecionamento direto á transmissão de áudio/vídeo é proibido.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
