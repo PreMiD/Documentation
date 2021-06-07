@@ -83,13 +83,13 @@ Esse exemplo parece realmente estranho, certo? Não se preocupe, não é tão di
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> is your Discord username without the identifier(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> é seu nome de usuário no Discord sem seu identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Deve conter um Object com o <code>nome</code> e <code>id</code> do contribuidor. <code>name</code> is your Discord username without the identifier(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Deve conter um Object com o <code>nome</code> e <code>id</code> do contribuidor. <code>name</code> é seu nome de usuário no Discord sem seu identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -274,9 +274,9 @@ The `multiLanguage` key can be set to the following:
 
 Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-The stringName is a 1 word identifier of the message.
+O stringName é um identificador de 1 palavra da mensagem.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` é uma descrição da mensagem para ajudar nossos tradutores a entender o que eles estão traduzindo.
 
 **Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
 
