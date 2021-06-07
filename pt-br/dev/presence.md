@@ -194,14 +194,14 @@ Por favor copie o código acima e coloque-o em seu arquivo de `metadata.json`. A
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">Uma string de expressão regular usada para combinar com as urls.<br>
+      regExp ou também conhecida como Regex, pode ser utilizado se um website tiver múltiplos subdomínios.<br>
+Você pode usar a seguinte regExp para isso:<br>
+<code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
+TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .net<br>
+<code>([a-z0-9]+)</code> significa qualquer coisa de A a Z e de 0 a 9.<br>
+        Você pode entender rapidamente assistindo este <a href="https://youtu.be/sXQxhojSdZM">vídeo</a><br>
+        Você pode testar seu regExp no <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -306,9 +306,9 @@ presence.on("UpdateData", async () => {
     É recomendável configurar outra função fora desta função de evento que irá alterar os valores das variáveis e fazer o levantamento pesado se você chamar dados de uma API.*/
 
     const presenceData: presenceData = {
-        largeImageKey: "key", /*A key (nome do arquivo) da Imagem Grande sobre a presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+        largeImageKey: "key", /*A key (nome do arquivo) da Imagem Grande sobre a presence. Estes são enviados e nomeados na seção Rich Presence do seu aplicativo, chamado de Art Assets*/,
     smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. Estes são enviados e nomeados na seção Rich Presence de sua aplicação, chamada Art Assets*/,
+      "key", /*A key (nome do arquivo) da imagem pequena na presence. Estes são enviados e nomeados na seção Rich Presence de sua aplicação, chamada Art Assets*/,
     smallImageText: "Some hover text", //O texto que é exibido ao cobrir sobre a pequena imagem
     details: "Browsing Page Name", //A seção superior do texto da presence
     state: "Reading section A", //A seção inferior do texto da presence
@@ -329,13 +329,13 @@ presence.on("UpdateData", async () => {
 
 Você pode copiar isso no arquivo `presence.ts` e editar os valores. Configurar todos os valores é feito dentro do evento updateData.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Para exemplos nós sugerimos checar o código de presences como o 1337x ou 9GAG. Para mais informações sobre a classe `Presence` clique [aqui](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Desde a v2.2.0 existem agora Slideshows, isto permite que você mostre múltiplas interfaces de `PresenceData` com um intervalo, para mais informações sobre a classe `Slideshow` clique [aqui](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Não consegue obter certos dados?!
 
-Muitos sites estão usando [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Muitos sites estão usando [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Essas tags html podem conter várias fontes como vídeos. Entretanto, elas não são sempre relevantes. Alguns são ocultos ou simplesmente não são ativamente utilizados. Verifique se você pode extrair, as informações que você precisa, sem elas antes de fazer trabalho desnecessário.
 
 1. Cheque por elas no console do navegador (certifique-se de que você está na guia **Elementos**).
 2. Pesquisa (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
@@ -371,11 +371,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Nota:** Isso precisa ser colocado fora do evento updateData.
 
 ## Compilando
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Abra um console na sua pasta e digite `tsc -w` para compilar o `presence.ts` para a pasta `dist`.
 
 # Carregando a presence
 
@@ -388,7 +388,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Hot-reloading
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+O site que você está desenvolvendo para vai recarregar automaticamente sempre que você salver um arquivo na sua pasta.
 
 ## Depuração
 

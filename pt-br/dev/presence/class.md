@@ -18,43 +18,43 @@ Ao criar uma classe você deve especificar a propriedade `clientId`.
 
 ```typescript
 const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+  clientId: "514271496134389561" // Exemplo de clientId
 });
 ```
 
-### Properties
+### Propriedades
 
-There are three properties available for `Presence` class.
+Existem 3 propriedades disponíveis para a classe `Presence`.
 
 #### `clientId`
 
-This property is required to make your presence work, because it uses your application id to display its logo and assets. Você pode obter sua Application ID na [página de aplicativos](https://discordapp.com/developers/applications).
+Este propriedade é obrigatória para sua presence funcionar, pois utilizamos a id do seu aplicativo para exibir a logo e os assets. Você pode obter sua Application ID na [página de aplicativos](https://discordapp.com/developers/applications).
 
 #### `injectOnComplete` - *Depreciado desde a 2.2.4*
 
-When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
+Quando a propriedade `injectOnComplete` estiver definida para `true` o primeiro evento `UpdateData` para ambos os arquivos `presence.ts` e `iframe.ts` só será disparado quando a página carregar completamente.
 
 #### `appMode` - *Depreciado desde a 2.2.4*
 
-When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
+Quando a propriedade `appMode`: estiver definida para `true` e a presence enviar um objeto `PresenceData` vazio, o app irá exibir a aplicação (imagem e nome) no perfil do usuário em vez de não exibir nada.
 
 ## Métodos
 
 ### `getActivity()`
 
-Returns a `PresenceData` object of what the presence is displaying.
+Retorna um objeto `PresenceData` do que a presence está exibindo.
 
 ### `setActivity(PresenceData | Slideshow, Boolean)`
 
 Define a atividade do seu perfil de acordo com os dados fornecidos.
 
-First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
+O primeiro parâmetro requer uma interface[`PresenceData`](#presencedata-interface) ou uma classe [`Slideshow`](/dev/presence/slideshow) para obter todas as informações que você deseja exibir em seu perfil.
 
-O segundo parâmetro define quando a presence está reproduzindo algo ou não. Always use `true` if you provide timestamps in `PresenceData`.
+O segundo parâmetro define quando a presence está reproduzindo algo ou não. Sempre utilize `true` se você estiver utilizando timestamps na `PresenceData`.
 
 ### `clearActivity()`
 
-Clears your current activity and the tray title.
+Limpa sua atividade e o título atual.
 
 ### `setTrayTitle(String)`
 
@@ -66,28 +66,28 @@ Define o título da bandeja no Menubar.
 
 ### `createSlideshow()`
 
-Creates a new `Slideshow` class.
+Cria uma nova classe `Slideshow`.
 
 ```typescript
 const slideshow = presence.createSlideshow();
 ```
 
-It is suggested to do this right after creating the `Presence` class:
+É sugerido fazer isso logo após a criação da classe `Presence`:
 
 ```typescript
 const presence = new Presence({
-    clientId: "514271496134389561" // Example clientId
+    clientId: "514271496134389561" // Exemplo de clientId
   }),
   slideshow = presence.createSlideshow();
 ```
 
-You can find the documentation for the `Slideshow` class [here](/dev/presence/slideshow).
+Você pode encontrar a documentação da classe `Slideshow` [aqui](/dev/presence/slideshow).
 
 ### `getStrings(Object)`
 
 Um método assíncrono que permite que você pegue strings traduzidas da extensão.
 
-Você deve fornecer o `Objeto` com as chaves sendo a chave para string, `keyValue` é o valor da string. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+Você deve fornecer o `Objeto` com as chaves sendo a chave para string, `keyValue` é o valor da string. Uma lista de strings traduzidas pode ser encontrada utilizada este endpoint: `https://api.premid.app/v2/langFile/presence/pt-br`
 
 ```typescript
 // Retorna strings `Jogando` e `Pausado`
@@ -101,12 +101,12 @@ const playString = strings.play; // result: Playing
 const pauseString = strings.pause; // result: Paused
 ```
 
-Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
+Desde a versão 2.2.0 da extensão você pode obter as strings de uma determinada língua. Isso funciona bem com a opção de configuração também recém-adicionada `multiLanguage`.
 
-We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
+Sugerimos que você use o seguinte código para que ele atualize automaticamente o PresenceData se o usuário alterar o idioma selecionado;
 
 ```typescript
-// An interface of the strings you are getting (good for code quality and autocomplete).
+// Uma interface das strings que você está recebendo (boa para qualidade de código e autocompletar).
 interface LangStrings {
   play: string;
   pause: string;
@@ -115,7 +115,7 @@ interface LangStrings {
 async function getStrings(): Promise<LangStrings> {
   return presence.getStrings(
     {
-      // The strings you are getting, make sure this fits with your LangStrings interface.
+      // As strings que você está recebendo, certifique-se de que isto se encaixa com sua interface LangStrings.
       play: "general.playing",
       pause: "general.paused"
     },
