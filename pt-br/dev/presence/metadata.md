@@ -306,7 +306,7 @@ As keys que você não precisa definir são automaticamente definidas para o seg
 
 Use os seguintes métodos para obter informações de configurações em seus arquivos de presence:
 #### `getSetting(String)`
-Returns value of setting.
+Retorna valor da configuração.
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting
