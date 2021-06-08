@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
-# Classe Presence
+# Classe de Presences
 
 ## Introdução
 
@@ -136,8 +136,8 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = strings.play; // resultado: Reproduzindo
+const pauseString = strings.pause; // resultado: Pausado
 ```
 
 ### `getPageletiable(String)`
@@ -304,8 +304,7 @@ Essa interface possui as seguintes variáveis, todas elas são opcionais.
       <td style="text-align:left">endTimestamp</td>
       <td style="text-align:left">Define a duração total.
         <br>Usado se você quiser mostrar quantos <code>horas:minutos:segundos</code> faltam.
-          <br>Você deve converter o tempo em <code>horário</code> ou você receberá uma
-          contagem errada.
+          <br>Você deve converter seu tempo em <code>timestamp</code> ou você receberá uma contagem regressiva errada.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
