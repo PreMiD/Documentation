@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
-# Classe de Presences
+# Classe Presence
 
 ## Introdução
 
@@ -28,7 +28,7 @@ Existem 3 propriedades disponíveis para a classe `Presence`.
 
 #### `clientId`
 
-Este propriedade é obrigatória para sua presence funcionar, pois utilizamos a id do seu aplicativo para exibir a logo e os assets. Você pode obter sua Application ID na [página de aplicativos](https://discordapp.com/developers/applications).
+Este propriedade é obrigatória para sua presence funcionar, pois utilizamos a id do seu aplicativo para exibir a logo e os assets. Você pode obter a id do seu aplicativo na [página de aplicativos](https://discordapp.com/developers/applications).
 
 #### `injectOnComplete` - *Depreciado desde a 2.2.4*
 
