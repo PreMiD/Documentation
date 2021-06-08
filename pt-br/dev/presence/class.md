@@ -265,7 +265,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ## Interface `presenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+A interface `PresenceData` é recomendada a usar quando você estiver usando o método `setActivity()`.
 
 Essa interface possui as seguintes variáveis, todas elas são opcionais.
 
@@ -330,7 +330,7 @@ Essa interface possui as seguintes variáveis, todas elas são opcionais.
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
+      <td style="text-align:left">Array de botões, máx. 2, label é o texto do botão, e url é o link.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
@@ -339,37 +339,37 @@ Essa interface possui as seguintes variáveis, todas elas são opcionais.
 
 ```typescript
 const presenceData: PresenceData = {
-  details: "My title",
-  state: "My description",
-  largeImageKey: "service_logo",
-  smallImageKey: "small_service_icon",
-  smallImageText: "You hovered me, and what now?",
+  details: "Meu título",
+  state: "Minha decrição",
+  largeImageKey: "logo_do_serviço",
+  smallImageKey: "ícone_pequeno_do_serviço",
+  smallImageText: "Você passou o mouse em cima de mim, e agora?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Test button1",
+            label: "Botão de teste1",
             url: "https://premid.app/"
         },
         {
-            label: "Test button2",
+            label: "Botão de teste2",
             url: "https://premid.app/contributors"
         }
     ]
 };
 ```
 
-## Events
+## Eventos
 
-Os events permitem que você detecte e lide com algumas mudanças ou chamadas que foram feitas. You can subscribe to events using the `on` method.
+Os events permitem que você detecte e lide com algumas mudanças ou chamadas que foram feitas. Você pode registrar eventos usando o método `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
-  // Do something when data gets updated.
+  // Faz algo quando os dados são atualizados.
 });
 ```
 
-There are few events available:
+Há alguns eventos disponíveis:
 
 #### `UpdateData`
 
