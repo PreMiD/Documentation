@@ -17,33 +17,33 @@ Um exemplo desse arquivo pode ser encontrado abaixo.
 ```typescript
 {
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICO",
+  "altnames": ["SERVICO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRICAO"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "VERSAO",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORIA",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITULO",
+      "icon": "ICONE FONTAWESOME",
       "value": true
     },
     {
@@ -51,15 +51,15 @@ Um exemplo desse arquivo pode ser encontrado abaixo.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TITULO",
+      "icon": "ICONE FONTAWESOME",
+      "value": "\"%musica%\" por %artista%",
+      "placeholder": "use %musica% ou %artista%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITULO",
+      "icon": "ICONE FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -83,13 +83,13 @@ Esse exemplo parece realmente estranho, certo? Não se preocupe, não é tão di
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> é seu nome de usuário no Discord sem seu identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> é seu nome de usuário do Discord sem o identificador (#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Deve conter um Object com o <code>nome</code> e <code>id</code> do contribuidor. <code>name</code> é seu nome de usuário no Discord sem seu identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Deve conter um Object com o <code>nome</code> e <code>id</code> do contribuidor. <code>name</code> é seu nome de usuário do Discord sem o identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -115,9 +115,9 @@ Esse exemplo parece realmente estranho, certo? Não se preocupe, não é tão di
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br>
-      <b>Example:</b><code>vk.com</code><br>
-      <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. Isso só pode ser usado como um array quando houver mais de um url.</b></td>
+      <td style="text-align:left">URL do serviço.<br>
+      <b>Exemplo:</b><code>vk.com</code><br>
+      <b>Esta url deve corresponder à url do site, pois será usada para detectar onde quer que seja ou não o site para injetar o script. Isso só pode ser usado como um array quando houver mais de um url.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
@@ -196,7 +196,7 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 #### Aprendendo
 
-• [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
+• [Vídeo para Iniciantes](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Informações sobre Expressões Regulares](https://www.regular-expressions.info/tutorial.html)
 
 #### Testes
 
@@ -204,7 +204,7 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 ## Idiomas para Presence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Uma lista completa de idiomas pode ser encontrada neste [endpoint da API](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. Veja[`multiLanguage`](#multilanguage) para mais informações.
+PreMiD é um serviço poliglota, o que significa que há uma infinidade de idiomas envolvidos para conectar usuários por todo o mundo. Uma lista completa de idiomas pode ser encontrada neste [endpoint da API](https://api.premid.app/v2/langFile/list). Para customizar ainda mais sua presence, você pode permitir que os usuários selecionem seu idioma de exibição. Veja[`multiLanguage`](#multilanguage) para mais informações.
 
 ## Configurações de presence
 Defina configurações interativas para que os usuários possam personalizar a presence!
@@ -212,30 +212,30 @@ Defina configurações interativas para que os usuários possam personalizar a p
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Veja https://docs.premid.app/pt-br/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "TÍTULO DE EXIBIÇÃO",
+    "icon": "ÍCONE DO FONTAWESOME", //Exemplo "fas fa-info"
+    "value": true //O valor booleano vai fazer isso um interruptor de on/off com o valor como valor padrão
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Se outra configuração for igual a este valor (true/false/0/1/etc.) então exibe esse botão
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "title": "TÍTULO DE EXIBIÇÃO",
+    "icon": "ÍCONE DO FONTAWESOME",
+    "value": "\"%song%\" por %artist%", //Colocando uma string vai fazer a configuração uma entrada, onde você pode usar uma entrada personalizada.
+    "placeholder": "use %song% ou %artist%" //Quando a entrada está vazia, ela ficará cinza
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TÍTULO DE EXIBIÇÃO",
+    "icon": "ÍCONE DO FONTAWESOME",
+    "value": 0, //Valor padrão do seletor
+    "values": ["1", "2", "etc."] //Vai fazer a configuração um seletor onde você seleciona qual você quer
   }
 ]
 ```
@@ -244,9 +244,9 @@ Defina configurações interativas para que os usuários possam personalizar a p
 
 #### Introdução
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+A configuração `multiLanguage` é usada para permitir que os usuários selecionem manualmente o idioma em que querem que a presence seja mostrada. Isto requer que você use strings de nossa [API](https://api.premid.app/v2/langFile/presence/pt_BR), para informações sobre como adicionar strings clique [aqui](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
-#### Setup
+#### Configuração
 
 A configuração `multiLanguage` é um caso especial, não requer uma `title`, nem `icon`, nem `value` ou `values` como outras configurações, mas requer mais algumas coisas para configurar!
 
@@ -272,39 +272,39 @@ A key `multiLanguage` pode ser ajustada para o seguinte:
 
 ##### Adicionando as strings
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Cada `string` é um `Object` onde a partir do nome começa com o nome do serviço e depois a chamada stringName com um ponto entre eles.
 
 O stringName é um identificador de 1 palavra da mensagem.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` é uma descrição da mensagem para ajudar nossos tradutores a entender o que eles estão traduzindo.
+O `Object` tem duas propriedades; `message` e `description`. `message` é o texto que precisa ser traduzido. `description` é uma descrição da mensagem para ajudar nossos tradutores a entender o que eles estão traduzindo.
 
 **Nota:** Não adicione nenhuma string duplicada. (Isso inclui strings do arquivo `general.json` mas não dos outros arquivos.)
 
-Visualization of the file:
+Visualização do arquivo:
 
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Texto que precisa ser traduzido.",
+    "description": "Isso explica o que a mensagem acima é."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Texto que precisa ser traduzido.",
+    "description": "Isso explica o que a mensagem acima é."
   }
 }
 ```
 
 Após ter feito o arquivo com as strings, você pode criar um Pull Request no repositório [Localization](https://github.com/PreMiD/Localization), na descrição você **deve** incluir um link para seu Pull Request da presence atualizada utilizando estas novas strings do [repositório de Presences](https://github.com/PreMiD/Presences).
 
-#### Default keys
-As keys que você não precisa definir são automaticamente definidas para o seguinte: `title`: "Language" **Nota:** Isto é traduzido para seu idioma padrão (idioma do navegador). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+#### Keys padrões
+As keys que você não precisa definir são automaticamente definidas para o seguinte: `title`: "Language" **Nota:** Isto é traduzido para seu idioma padrão (idioma do navegador). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Define o idioma do navegador se estiver disponível (100% traduzido), caso contrário inglês.** `values`: **Define para um idioma disponível (Idiomas que forem 100% traduzidos).**
 
-**Note:** These are in no way changeable.
+**Nota:** Estes não são de forma alguma alteráveis.
 
 ### Métodos
 
-Use the following methods to get settings info in your presence files:
+Use os seguintes métodos para obter informações de configurações em seus arquivos de presence:
 #### `getSetting(String)`
 Returns value of setting.
 ```typescript

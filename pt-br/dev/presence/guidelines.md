@@ -277,7 +277,7 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
 
 <div>
-  <h2 style="font-size: 2rem; margin-bottom: 0;">Presence Reviewers</h2>
+  <h2 style="font-size: 2rem; margin-bottom: 0;">Revisores de Presence</h2>
   
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
@@ -310,7 +310,7 @@ Algumas coisas que você deve saber após abrir uma pull request:
 
 ![Verificações](https://i.imgur.com/oqAakOc.png)
 
-Atualmente, uma presence deve passar por 3 fases separadas de checagem. Todas essas checagens ajudam os reviewers a determinar se sua presença é adequada para uso.
+Atualmente, uma presence deve passar por 3 fases separadas de checagem. Todas essas checagens ajudam os revisores a determinar se sua presença é adequada para uso.
 
 - `Codacy` é um bot que verifica a qualidade do código. Se você receber erros por novos problemas, é **necessário** corrigi-los. (_ATENÇÃO: O bot Codacy será removido em breve e você precisará verificar os erros somente pelo DeepScan!_)
 - `DeepScan` é um bot que verifica a qualidade do código. Se você receber erros por novos problemas, é **necessário** corrigi-los.

@@ -340,7 +340,7 @@ Essa interface possui as seguintes variáveis, todas elas são opcionais.
 ```typescript
 const presenceData: PresenceData = {
   details: "Meu título",
-  state: "Minha decrição",
+  state: "Minha descrição",
   largeImageKey: "logo_do_serviço",
   smallImageKey: "ícone_pequeno_do_serviço",
   smallImageText: "Você passou o mouse em cima de mim, e agora?",
