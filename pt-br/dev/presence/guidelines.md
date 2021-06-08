@@ -42,7 +42,7 @@ As regras gerais de desenvolvimento de presences são as seguintes:
   - O site não pode estar em um domínio barato como `.xyz `, `.club ` e assim por diante.
   - O próprio site deve ter uma boa qualidade, design etc.
 - Presences devem usar [detalhes comuns](https://api.premid.app/v2/langFile/presence/en) (strings começando com "general."). Você pode conseguir isso usando `multiLanguage` com as strings fornecidas. Se sua presença requere strings personalizadas, então você não deve usar `multiLanguage` até que a presença receba 1000 usuários. Você pode encontrar um exemplo [aqui](https://docs.premid.app/dev/presence/class#getstringsobject).
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Incluir a pasta `dist`, os arquivos `presence.ts`, `iframe.ts`, e `metadata.json` são mandatórios, então o resultado seria o que está representado no seguinte esquema:
 
 ```bash
 presence
@@ -77,27 +77,27 @@ Cada presence tem um arquivo descritor chamado `metadata.json`, os metadados tê
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "USUÁRIO",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "USUÁRIO",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVIÇO",
+  "altnames": ["SERVIÇO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRIÇÃO"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSÃO",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORIA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Cada presence tem um arquivo descritor chamado `metadata.json`, os metadados tê
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO DE EXIBIÇÃO",
+      "icon": "ÍCONE DO FONTAWESOME",
       "value": true
     },
     {
@@ -118,15 +118,15 @@ Cada presence tem um arquivo descritor chamado `metadata.json`, os metadados tê
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TÍTULO DE EXIBIÇÃO",
+      "icon": "ÍCONE DO FONTAWESOME",
+      "value": "\"%song%\" por %artist%",
+      "placeholder": "use %song% ou %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO DE EXIBIÇÃO",
+      "icon": "ÍCONE DO FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -134,7 +134,7 @@ Cada presence tem um arquivo descritor chamado `metadata.json`, os metadados tê
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (por exemplo, uma presence sem suporte iframe não precisaria de um campo `iframe`.)
+> Se algum campo for listado como opcional na [documentação](https://docs.premid.app/dev/presence/metadata) ou haver um `*` próximo a chave, e sua presence usa o valor padrão para isso, não inclua no arquivo `metadata`. (por exemplo, uma presence sem suporte iframe não precisaria de um campo `iframe`.)
 
 > Todas as imagens do arquivo `metadata` devem estar hospedadas em `i.imgur.com`. Usar conteúdo hospedado no site em si **não** é permitido pois eles podem mudar os caminhos e arquivos de má vontade.
 
@@ -156,11 +156,11 @@ Uma lista de campos e de suas regras está listada abaixo:
 
 - O nome do serviço **deve** ser o nome do diretório da presence. Por exemplo, se a presence estiver localizada em `/websites/Y/YouTube/`, o nome do serviço deve ser `YouTube`.
 - Você **não** pode usar esse url como o nome de serviço, a não ser que o website use o url como seu nome oficial. Se o nome não for descritivo e não pode ser considerado vago, o uso do url é **obrigatorio**. (p. ex., `YouTube` é permitido porque esse é o nome oficial e é descritivo, enquanto `youtube.com` não é. `Top` é um nome não-descritivo, portanto a url `top.gg` é **necessária**.)
-- If service has some explicit branding rules of their name, you should follow them.
+- Se o serviço tiver algumas regras explícitas de atribuição de marca, você deve segui-las.
 
 ### **`*altnames`**
 
-- **Only** use this in scenarios where a website goes under multiple official names (e.g. Pokémon and 포켓몬스터). _Shortened_ versions of service names go under `tags`.
+- **Apenas** use isso em cenários onde o website haja vários nomes oficiais (e.g. Pokémon and 포켓몬스터). Versões _abreviadas_ dos nomes dos serviços vão sob `tags`.
 
 ### **`description`**
 
