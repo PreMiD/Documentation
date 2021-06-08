@@ -40,7 +40,7 @@ Em `iframes`, os eventos funcionam da mesma forma que na `classe de presence`.
 
 ```typescript
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Seu código vai aqui...
 });
 ```
 
