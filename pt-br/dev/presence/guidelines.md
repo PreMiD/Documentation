@@ -10,14 +10,14 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Diretrizes de presences</h3>
-    <h4 style="margin-top: 0">Revision 3</h4>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Diretrizes das Presences</h3>
+    <h4 style="margin-top: 0">Revisão 3</h4>
     <br />
 </div>
 
 # Diretrizes
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Para alguns, estas regras rigorosas podem parecer severas. However, the implementation of these rulesets will keep us and the users from running into any issues.
+When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Para alguns, estas regras rigorosas podem parecer severas. Porém, a implementação dessas regras impedirá a nós e a nossos usuários de nos depararmos com quaisquer problemas.
 
 # Criação
 
@@ -33,15 +33,15 @@ As regras gerais de desenvolvimento de presences são as seguintes:
 - Presences com suporte apenas para um único subdomínio **não serão** permitidas, visto que elas podem parecer quebradas em outras páginas (como a página principal), exceções podem ser feitas para as páginas de políticas e de contato (conteúdo que não é usado com frequência) ou sites onde o outro conteúdo não é relacionado. (por exemplo, páginas da Wikia)
 - Presences para rádios on-line só são permitidas se o rádio tiver pelo menos 100 ouvintes semanais e 15 simultâneos e deve ter alguns recursos além de apenas mostrar título do álbum/música, etc.
 - Presences não podem executar código em JS com sua própria função para obter variáveis. Se o Firefox tiver problemas com a função embutida dentro da classe de `Presence`, você tem permissão de fazer sua própria função e precisa nos informar sobre isso na descrição da Pull Request.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences devem usar [detalhes comuns](https://api.premid.app/v2/langFile/presence/en) (strings começando com "general."). Você pode conseguir isso usando `multiLanguage` com as strings fornecidas. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences de baixa qualidade (ou com pouco contexto) **não** são permitidos (por exemplo, apenas mostrar uma logo e um texto mas nunca mudá-los de novo).
+- Presences para serviços como Bot de Discord/Lista de Servidores devem seguir estes requisitos extras:
+  - O domínio deve ter pelo menos **6 meses**.
+  - Visitantes únicos por dia:
+    - Para domínios com 6 meses: **20,000 visitantes únicos/dia**.
+    - Para domínios com mais de 12 meses: **45,000 visitantes únicos/dia**.
+  - O site não pode estar em um domínio barato como `.xyz `, `.club ` e assim por diante.
+  - O próprio site deve ter uma boa qualidade, design etc.
+- Presences devem usar [detalhes comuns](https://api.premid.app/v2/langFile/presence/en) (strings começando com "general."). Você pode conseguir isso usando `multiLanguage` com as strings fornecidas. Se sua presença requere strings personalizadas, então você não deve usar `multiLanguage` até que a presença receba 1000 usuários. Você pode encontrar um exemplo [aqui](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
 ```bash
