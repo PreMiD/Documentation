@@ -1,5 +1,5 @@
 ---
-title: Diretrizes de presences
+title: Diretrizes das Presences
 description: Regras que todos os presence developers devem seguir para ter sua presence adicionada.
 published: true
 date: 2021-06-03T21:35:44.819Z
@@ -17,7 +17,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Diretrizes
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Para alguns, estas regras rigorosas podem parecer severas. Porém, a implementação dessas regras impedirá a nós e a nossos usuários de nos depararmos com quaisquer problemas.
+Ao publicar Presences em [nosso Repositório GitHub](https://github.com/PreMiD/Presences), nós exigimos que você siga um conjunto de diretrizes. Para alguns, estas regras rigorosas podem parecer severas. Porém, a implementação dessas regras impedirá a nós e a nossos usuários de nos depararmos com quaisquer problemas.
 
 # Criação
 
@@ -220,7 +220,7 @@ Uma lista de campos e de suas regras está listada abaixo:
 ### **`settings`**
 
 - Se você decidir fazer uma string formatável (por ex., `%song% por %artist%`), você deve ter as variáveis com o sinal de porcentagem em ambos lados. Variáveis como `%var`, `var%`, ou `%%var%%` e qualquer coisa do tipo **não** são permitidas para fins de padronização.
-- The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
+- The name of the settings must **not** be in all capital letters. Por exemplo, nomes como `MOSTRAR STATUS DE NAVEGAÇÃO` **não** serão permitidos; porém, nomes como `Mostrar Status de Navegação` ou `Mostrar status de navegação` são permitidos.
 - If you are using the `multiLanguage` option it can have the following types:
   - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
   - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
@@ -286,13 +286,13 @@ The most important process of presence development is getting your presence on t
   <br />
 </div>
 
-## `Restrictions`
+## `Restrições`
 
-Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
+Ofensas repetitivas, tais como quebra de diretrizes, spam de pull requests, ameaças ou comportamento inapropriado farão com que você seja proibido de criar presences.
 
-In this scenario, the following changes will occur:
+Neste cenário, ocorrerão as seguintes mudanças:
 
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). The application id for each presence will be recreated under the new owner's name.
+- Presences que estão sob seu gerenciamento serão transferidas para o bot do PreMiD ou algum outro usuário (decisão do revisor). O id da aplicação será recriada para cada presence sob o nome do novo dono.
 - All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
 - Tickets created under your name regarding presence development will be deleted.
 
