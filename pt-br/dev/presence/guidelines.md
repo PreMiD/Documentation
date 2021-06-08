@@ -180,7 +180,7 @@ Uma lista de campos e de suas regras está listada abaixo:
 ### **`logo`**
 
 - A logo **deve** ser uma imagem quadrada com uma relação de aspecto `1:1`.
-- É **necessário** que a imagem tenha uma resolução mínima de `512x512` pixels. You can upsize it using a tool like [waifu2x](http://waifu2x.udp.jp/).
+- É **necessário** que a imagem tenha uma resolução mínima de `512x512` pixels. Você pode aumentá-la usando uma ferramenta como [waifu2x](http://waifu2x.udp.jp/).
 
 ### **`thumbnail`**
 
@@ -194,32 +194,32 @@ Uma lista de campos e de suas regras está listada abaixo:
 ### **`tags`**
 
 - **Todas** presences precisam ter pelo menos _uma_ tag.
-- Tags must **not** include any spaces, slashes, single/double quotation marks, Unicode characters, and should always be lowercase.
+- As tags **não** devem incluir espaços, barras, aspas simples/duplas, caracteres Unicode, e devem ser sempre em minúsculas.
 - Tags **devem** preferencialmente incluir nomes de serviços alternativos para facilitar a busca (p. ex., se uma presence da Amazon tiver incluído o suporte pra AWS, teria suas tags como `amazon-web-services` e `aws`)
 - Você é **obrigado** a adicionar uma tag `NSFW` se a presence for para um site NSFW.
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
-- The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
+- A categoria **deve** ser um dos seguintes listados na [documentação](https://docs.premid.app/en/dev/presence/metadata#presence-categories).
+- A presence deve utilizar uma categoria que corresponda ao conteúdo do site. (p. ex., não use `anime` quando o site não estiver relacionado à anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Expressões regulares **precisam** ser validas. Por favor teste suas expressões com ferramentas listadas na [documentação](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
-- Must be `boolean` value (e.g. `true` or `false`).
-- Enables logs for your presence.
+- Deve ser `boolean` (ex. `true` ou `false`).
+- Ative os logs em sua presence.
 
 ### **`warning`**
 
-- Enables warning icon for prompting user that this presence needs more steps than only adding presence.
-- Example of presence using this metadata variable is `VLC`.
+- Habilita um ícone de aviso para avisar ao usuário que essa presence precisa de mais coisas além de apenas adicionar um presence.
+- Exemplo de presence usando essa variável de metadata é `VLC`.
 
 ### **`settings`**
 
-- If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
+- Se você decidir fazer uma string formatável (por ex., `%song% por %artist%`), você deve ter as variáveis com o sinal de porcentagem em ambos lados. Variáveis como `%var`, `var%`, ou `%%var%%` e qualquer coisa do tipo **não** são permitidas para fins de padronização.
 - The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
 - If you are using the `multiLanguage` option it can have the following types:
   - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
@@ -254,7 +254,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 
 > Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
 
-## Modification
+## Modificação
 
 > Você **deve** alterar a versão nos **metadados** para ter um valor mais alto em relação à versão anterior ao fazer alterações em **presence.ts**, **iframe.ts** ou **metadata.json**.
 
