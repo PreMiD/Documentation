@@ -300,19 +300,19 @@ In this scenario, the following changes will occur:
 
 Algumas coisas que você deve saber após abrir uma pull request:
 
-- It takes 2 reviewers to merge a pull request.
-- If a pull request is inactive for a period of 7 days, it will be promptly closed.
-- All checks **must** be passed in order to merge.
-- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
-- ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
+- São necessários 2 revisores para implementar uma pull request.
+- Se uma pull request estiver inativo por um período de 7 dias, ela será fechada.
+- Todas as checagens **devem** ser aprovadas para que execute o merge.
+- ⚠️ Você **deve** fornecer capturas de tela novas e inalteradas (tiradas por você) mostrando uma comparação lado a lado do seu perfil e do site para provar que sua presence funciona. _Você pode juntar as capturas de tela para uma visualização melhor_ Isso se aplica tanto para criação quanto para a modificação.
+- ⚠️ Você também é **obrigado** á incluir as capturas de tela das configurações de presence na extensão, se fornecido. Um exemplo pode ser visto [aqui](https://imgur.com/a/OD3sj5R).
 
 ## `Verificações`
 
 ![Verificações](https://i.imgur.com/oqAakOc.png)
 
-Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
+Atualmente, uma presence deve passar por 3 fases separadas de checagem. Todas essas checagens ajudam os reviewers a determinar se sua presença é adequada para uso.
 
-- `Codacy` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
+- `Codacy` é um bot que verifica a qualidade do código. If you ever receive errors for new issues, you are **required** to fix them. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
 - `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
 - `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
 
@@ -322,7 +322,7 @@ Currently, a presence goes through 3 separate stages of checks. All of these che
 
 Após atender a todas as diretrizes e ter sua Presence revisada pelo menos duas vezes, sua Presence será fundida com a loja.
 
-# Suggestions
+# Sugestões
 If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
 
 # Contributions
