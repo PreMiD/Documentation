@@ -23,7 +23,7 @@ Como as presences, os `iframes` têm suas próprias classes projetadas para atua
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Seu código vai aqui...
 });
 ```
 
