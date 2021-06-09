@@ -87,7 +87,7 @@ Você pode encontrar a documentação da classe `Slideshow` [aqui](/dev/presence
 
 Um método assíncrono que permite que você pegue strings traduzidas da extensão.
 
-Você deve fornecer o `Objeto` com as chaves sendo a chave para string, `keyValue` é o valor da string. Uma lista de strings traduzidas pode ser encontrada utilizada este endpoint: `https://api.premid.app/v2/langFile/presence/pt_BR`
+Você deve fornecer o `Object` com as keys sendo a key para string, `keyValue` é o valor da string. Uma lista de strings traduzidas pode ser encontrada utilizada este endpoint: `https://api.premid.app/v2/langFile/presence/pt_BR`
 
 ```typescript
 // Retorna strings `Jogando` e `Pausado`

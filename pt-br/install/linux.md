@@ -146,7 +146,7 @@ Se o comando não funcionar, baixe o arquivo **deb/rpm** de nosso repositório p
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux baseadas em distribuições Linux
+## Distribuições baseadas em Arch Linux
 
 Usando o [repositório do usuário Arch](https://aur.archlinux.org/packages/premid);</br> Distribuições suportadas são _em si_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS e [todos que suportam a instalação por AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 

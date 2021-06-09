@@ -239,7 +239,7 @@ Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `pr
 - É **proibido** programar presences para sites sem adicionar o suporte para seu idioma primário (por ex., um presence do YouTube programada apenas para Português e Japonês, mas não Inglês em si.)
 - Os campos `smallImageKey` e `smallImageText` providenciam contexto adicional/secundário (como `reproduzindo/pausado` para sites de video, `navegando` para sites normais, e outros casos) não promova Perfis do Discord ou qualquer coisa não relacionada ao PreMID.
 - Você **não** tem permissão para acessar o `localStorage`.
-- When accessing cookies for stored data, please prefix the key with `PMD_`.
+- Ao acessar cookies para dados armazenados, por favor prefixe a key com `PMD_`.
 - Você pode fazer apenas solicitações HTTP/HTTPS para `premid.app` ou para o API do site da presence. Se você estiver usando domínios externos, será necessário explicar por que é necessário. A única API permitida a fazer uma solicitação é a [`Fetch API`](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API).
 - **Não** defina os campos no objeto presenceData como undefined depois de ser declarado, use a palavra chave `delete` ao invés. (p. ex., use `delete data.startTimestamp` ao invés de `data.startTimestamp = undefined`)
 - Você **não** tem permissão de escrever presences que alteram as funcionalidades de um determinado site. Isso inclui a adição, exclusão ou modificação de elementos DOM.
