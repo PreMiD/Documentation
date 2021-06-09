@@ -312,7 +312,7 @@ Enkele dingen die je moet weten voordat je een pull request opent:
 
 Op dit moment wordt de presence in drie afzonderlijke fasen gecontroleerd. Al deze controles helpen de verificateurs te bepalen of je presence geschikt is voor implementatie.
 
-- `Codacy` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
+- `Codacy` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. (_WAARSCHUWING: de Codacy-bot wordt binnenkort verwijderd en DeepScan zal het overnemen!_)
 - `DeepScan` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
 - `Schema Validation` zal je `metadata.json` bestand scannen op fouten (bijvoorbeeld ontbrekende velden, ongeldige waarde types, etc.). Als je ooit nieuwe problemen ziet, ben je ook **verplicht** om die op te lossen. Het toevoegen van een schemaveld aan je `metadata.json` bestand zal je tekstverwerker (indien ondersteund) toestaan om deze fouten te tonen tijdens de ontwikkeling van je presence.
 

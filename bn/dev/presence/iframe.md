@@ -27,10 +27,10 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-## মেথোড
+## মেথড
 
 ### `send(Object)`
-Presence - এ ডাটা পাঠায়। এই মেথোডটি ব্যবহার করলে Presence - টি একটি `iFrameData` ইভেন্ট পাঠাবে।
+Presence - এ ডাটা পাঠায়। এই মেথডটি ব্যবহার করলে Presence - টি একটি `iFrameData` ইভেন্ট পাঠাবে।
 
 ### `getUrl()`
 `iframe` - টির URL রিটার্ন করে।
