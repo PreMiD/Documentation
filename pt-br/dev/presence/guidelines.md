@@ -240,9 +240,9 @@ Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `pr
 - Os campos `smallImageKey` e `smallImageText` providenciam contexto adicional/secundário (como `reproduzindo/pausado` para sites de video, `navegando` para sites normais, e outros casos) não promova Perfis do Discord ou qualquer coisa não relacionada ao PreMID.
 - Você **não** tem permissão para acessar o `localStorage`.
 - When accessing cookies for stored data, please prefix the key with `PMD_`.
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
-- You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
+- Você pode fazer apenas solicitações HTTP/HTTPS para `premid.app` ou para o API do site da presence. Se você estiver usando domínios externos, será necessário explicar por que é necessário. A única API permitida a fazer uma solicitação é a [`Fetch API`](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API).
+- **Não** defina os campos no objeto presenceData como undefined depois de ser declarado, use a palavra chave `delete` ao invés. (p. ex., use `delete data.startTimestamp` ao invés de `data.startTimestamp = undefined`)
+- Você **não** tem permissão de escrever presences que alteram as funcionalidades de um determinado site. Isso inclui a adição, exclusão ou modificação de elementos DOM.
 - Presences que usam botões devem seguir os requisitos extras:
   - Redirecionamentos para a página principal são proibidos.
   - Promover websites através delas é proibido.
@@ -252,7 +252,7 @@ Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `pr
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **Não** escreva seu próprio arquivo `tsconfig.json`, use o que foi fornecido na [documentação](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Modificação
 
@@ -268,13 +268,13 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 
 > **Todos os** códigos contribuíram para a loja serão licenciados sob a `Mozilla Public License 2.0`.
 
-> Se precisar entrar em contato com alguém, use nosso servidor oficial do Discord. All reviewers will have the `Reviewer` role on their profile.
+> Se precisar entrar em contato com alguém, use nosso servidor oficial do Discord. Todos os revisores terão o cargo `Reviewer` em seus perfis.
 
 > Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created.
 
-> **Sempre** tenha um fork atualizado antes de criar seu pull request. This will help limit false positives from the checks.
+> **Sempre** tenha um fork atualizado antes de criar seu pull request. Isso ajudará a limitar os falsos positivos das checagens.
 
-The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
+O processo mais importante de desenvolvimento da presence é conseguir sua presence na loja. Isso é feito criando um [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) pelo GitHub no repositório `PreMiD/Presences`. Nossos revisores confirmarão que sua presence está de acordo com os padrões e a enviaram para a loja.
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Revisores de Presence</h2>
@@ -293,8 +293,8 @@ Ofensas repetitivas, tais como quebra de diretrizes, spam de pull requests, amea
 Neste cenário, ocorrerão as seguintes mudanças:
 
 - Presences que estão sob seu gerenciamento serão transferidas para o bot do PreMiD ou algum outro usuário (decisão do revisor). O id da aplicação será recriada para cada presence sob o nome do novo dono.
-- All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
-- Tickets created under your name regarding presence development will be deleted.
+- Todos os seus issues e pull requests (criação de presence, contribuição de presence, etc.) criados após o banimento serão prontamente fechados.
+- Tickets criados sob seu nome referentes ao desenvolvimento de presences serão excluídos.
 
 ## `Revisando`
 
