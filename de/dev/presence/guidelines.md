@@ -177,13 +177,13 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`version`**
 
-- Stell immer sicher, dass die Versionsnummer den [semantischen Versionsstandards](https://semver.org) folgt, was auf das folgende Schema hinausläuft: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
+- Stelle immer sicher, dass die Versionsnummer den [semantischen Versionsstandards](https://semver.org) entspricht, was auf das folgende Schema hinausläuft: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
 - Die Version **muss** immer bei `1.0.0` anfangen, sofern nicht anders angegeben. Andere Versionen werden **nicht** erlaubt.
 
 ### **`logo`**
 
 - Das Logo **muss** ein quadratisches Bild mit einem `1:1` Seitenverhältnis sein.
-- Das Bild **erfordert** eine Mindestauflösung von `512x512` Pixeln haben. Du kannst Bilder mit Tools wie zum Beispiel [waifu2x](http://waifu2x.udp.jp/) vergrößern.
+- Das Bild **erfordert** eine Mindestauflösung von `512x512` Pixeln. Du kannst Bilder mit Tools wie zum Beispiel [waifu2x](http://waifu2x.udp.jp/) vergrößern.
 
 ### **`thumbnail`**
 
@@ -198,17 +198,17 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 - Bei **allen** Presences ist mindestens _ein_ Tag erforderlich.
 - Tags dürfen **keine** Leerzeichen, Schrägstriche, einfache/doppelte Anführungszeichen und Unicode-Zeichen enthalten und sollten immer in Kleinbuchstaben geschrieben werden.
-- Tags **sollten** vorzugsweise abwechslungsreiche Servicenamen enthalten um die Suche zu vereinfachen (sollte die Amazon-Presence beispielsweise AWS-Unterstützung haben, hätte es Tags wie `amazon-web-services` und `aws`).
+- Tags **sollten** vorzugsweise auch alternative Service-Namen enthalten, um die Suche zu vereinfachen (sollte die Amazon-Presence beispielsweise AWS-Unterstützung haben, hätte es Tags wie `amazon-web-services` und `aws`).
 - Es ist **erforderlich** einen `NSFW` Tag hinzuzufügen, wenn die Presence für eine NSFW Webseite ist.
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Die Kategorie **muss** eine der folgenden Aufgelisteten aus der [Dokumentation](https://docs.premid.app/en/dev/presence/metadata#presence-categories) sein.
 - Die Presence muss eine Kategorie nutzen, die zum Inhalt auf der Website passt. (Benutze zum Beispiel nicht `Anime`, wenn die Website keinen Bezug zu Anime hat).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Reguläre Expressions **müssen** gültig sein. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Reguläre Expressions **müssen** gültig sein. Bitte teste deine Expressions mit den Hilfsmitteln, die in der [Dokumentation](https://docs.premid.app/en/dev/presence/metadata#testing) gelistet sind.
 
 ### **`readLogs`**
 
@@ -246,9 +246,9 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Du kannst nur HTTP/HTTPS-Anfragen zu `premid.app` oder die Presence Website API machen. Wenn du externe Domains verwendest, musst du erklären, warum dies notwendig ist. Nur erlaubte API zum Abfragen ist [`API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) abrufen.
 - Setze **keine** Felder in dem presence data object auf undefined, nachdem es deklariert wurde. Nutze stattdessen das `delete` Schlüsselwort. (nutze z.B `delete data.startTimestamp` anstelle von `data.startTimestamp = undefined`)
 - Es ist dir **nicht**t erlaubt Presences zu schreiben, die die Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
+- Presences, die Schaltflächen verwenden, sollten diesen zusätzlichen Anforderungen folgen:
+  - Weiterleitungen zur Hauptseite sind verboten.
+  - Werben von Webseiten durch diese ist verboten.
   - They can't show additional data when you can't show them in other fields.
   - Redirecting directly to audio/video stream is prohibited.
 
