@@ -308,12 +308,12 @@ Use os seguintes métodos para obter informações de configurações em seus ar
 #### `getSetting(String)`
 Retorna valor da configuração.
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); // Substitua pdexID pelo id da configuração
+console.log(setting); // Isto registrará o valor da configuração
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Oculta determinada configuração.
 ```typescript
 presence.hideSetting("pdexID"); //Substitua pdexID com o id da configuração
 ```
@@ -326,7 +326,7 @@ presence.showSetting("pdexID"); //Substitua pdexID com o id da configuração
 
 ## Categorias de presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Ao fazer a sua presença, você deve especificar uma categoria na qual a presence se enquadra. Esta é uma lista compilada das categorias que você pode usar.
 
 <table>
   <thead>
