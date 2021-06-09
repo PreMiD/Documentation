@@ -167,9 +167,9 @@ Bitte kopiere den obigen Code und füge ihn in Deine `metadata.json` ein. Du mus
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Erlaubt es die Presence mit einem alternativen Namen zu suchen.<br>
+      Soll für Presences, die verschiedene Namen in verschiedenen Sprachen haben, verwendet werden (z.B.: Pokémon und 포켓몬스터).<br>
+      Dies kann auch genutzt werden für Presences, die spezielle Zeichen  haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -212,7 +212,7 @@ Du kannst auch Regulare Ausdrücke, auch bekannt als RegEx, für diese Aufgabe v
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link zum Logo des Dienstes.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -224,8 +224,8 @@ Du kannst auch Regulare Ausdrücke, auch bekannt als RegEx, für diese Aufgabe v
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> Wert. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> Wert. Wir empfehlen eine primäre Farbe des Dienstes zu nutzen
+        , die Ihre Presence unterstützt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
