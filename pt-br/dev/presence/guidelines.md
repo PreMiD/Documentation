@@ -220,7 +220,7 @@ Uma lista de campos e de suas regras está listada abaixo:
 ### **`settings`**
 
 - Se você decidir fazer uma string formatável (por ex., `%song% por %artist%`), você deve ter as variáveis com o sinal de porcentagem em ambos lados. Variáveis como `%var`, `var%`, ou `%%var%%` e qualquer coisa do tipo **não** são permitidas para fins de padronização.
-- The name of the settings must **not** be in all capital letters. Por exemplo, nomes como `MOSTRAR STATUS DE NAVEGAÇÃO` **não** serão permitidos; porém, nomes como `Mostrar Status de Navegação` ou `Mostrar status de navegação` são permitidos.
+- O nome das configurações **não** devem ser todas em letras maiúsculas. Por exemplo, nomes como `MOSTRAR STATUS DE NAVEGAÇÃO` **não** serão permitidos; porém, nomes como `Mostrar Status de Navegação` ou `Mostrar status de navegação` são permitidos.
 - Se você estiver utilizando a opção `multiLanguage`, ela pode ter os seguintes tipos:
   - O tipo **Boolean** que só habilita strings do arquivo [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) do repositório Localization ou do arquivo de presence (ex. quando o nome da presence é YouTube, a extensão vai pegar as strings do `youtube.json` também.)
   - O tipo **String** (ex. `youtube`) que vai especificar o nome dos arquivos que você quer pegar as strings.
