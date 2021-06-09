@@ -270,7 +270,7 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 
 > Se precisar entrar em contato com alguém, use nosso servidor oficial do Discord. Todos os revisores terão o cargo `Reviewer` em seus perfis.
 
-> Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created.
+> Tenha em mente que os revisores trabalham voluntariamente e gerenciam outros repositórios além deste, seu pull request pode não ser revisado por horas ou até mesmo dias depois de criado.
 
 > **Sempre** tenha um fork atualizado antes de criar seu pull request. Isso ajudará a limitar os falsos positivos das checagens.
 
