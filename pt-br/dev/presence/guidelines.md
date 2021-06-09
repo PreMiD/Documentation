@@ -238,7 +238,7 @@ Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `pr
 - **Nunca** use funções customizadas quando [variantes nativas estão disponíveis](https://docs.premid.app/dev/presence#files-explained); isso garante que as correções no nível da extensão também se apliquem às suas presences. Você está livre para usar o que quiser se você não achar ela listada na documentação.
 - É **proibido** programar presences para sites sem adicionar o suporte para seu idioma primário (por ex., um presence do YouTube programada apenas para Português e Japonês, mas não Inglês em si.)
 - Os campos `smallImageKey` e `smallImageText` providenciam contexto adicional/secundário (como `reproduzindo/pausado` para sites de video, `navegando` para sites normais, e outros casos) não promova Perfis do Discord ou qualquer coisa não relacionada ao PreMID.
-- You are **not** allowed to access `localStorage`.
+- Você **não** tem permissão para acessar o `localStorage`.
 - When accessing cookies for stored data, please prefix the key with `PMD_`.
 - You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
