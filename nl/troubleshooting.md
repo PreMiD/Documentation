@@ -30,7 +30,7 @@ Je kunt ook op <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) of <kbd>CMD+R</kbd> (Ma
 PreMiD werkt **niet** met de browserversie van Discord, je moet de app [hier](https://discord.com/download) downloaden.
 
 ### Zorg ervoor dat Activiteit Status is ingeschakeld in de Discord app instellingen
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
+**Gebruikersinstellingen** > **Activiteit Status** ![activitystatus.png](/activitystatus.png)
 
 ### Zorg ervoor dat Discord NIET als administrator wordt uitgevoerd
 Echt belangrijk! Discord RPC zal niet werken als je Discord als administrator gebruikt.
