@@ -167,12 +167,12 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`description`**
 
-- **Alle** Presences müssen, **ohne Rücksicht** auf die bevorzugt Sprache der Webseite, eine englische Beschreibung haben^.
+- **Alle** Presences **müssen**, ohne Rücksicht auf die bevorzugt Sprache der Webseite, eine englische Beschreibung haben.
 - Versuche **nicht** die Seite selbst zu übersetzen, es sei denn du kennst diese Sprache. Übersetzer werden deine `metadata.json` modifizieren und falls nötig Änderungen an der Beschreibungen vornehmen.
 
 ### **`url`**
 
-- Die URL **muss** ein String sein wenn die Website nur eine Domain verwendet. Wenn die Webseite mehrere benutzt, gib diese in einem Array an.
+- Die URL **muss** ein String sein, wenn die Webseite nur eine einzige Domain verwendet. Wenn die Webseite mehrere benutzt, gib diese in einem Array an.
 - Füge **keine** Protokolle in die URL hinzu (wie z.B. `http` oder `https`) und füge keine Query Parameter in die URL ein (z.B. `www.google.com/search?gws_rd=ssl`, welches eigentlich `www.google.com` sein sollte).
 
 ### **`version`**
