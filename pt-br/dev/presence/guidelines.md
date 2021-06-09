@@ -258,11 +258,11 @@ Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `pr
 
 > Você **deve** alterar a versão nos **metadados** para ter um valor mais alto em relação à versão anterior ao fazer alterações em **presence.ts**, **iframe.ts** ou **metadata.json**.
 
-In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
+Em algumas situações, presences podem se comportar de formas inesperadas ou podem usar algumas pequenas alterações para melhorar sua funcionalidade. Aqui está uma lista de regras que você **deve** seguir enquanto modifica as presences.
 
-- You are **not** allowed to rewrite a presence or change its author. If the presence author was banned from the official server or hasn't made the required changes within a month, you may contact a reviewer to see if you can to rewrite the presence.
-- If you make modifications to a presence and change at least a **quarter** of the presence's codebase, you are allowed to add yourself as a contributor. Contact a reviewer for more information about this subject.
-- Anyone may provide hotfixes to fix bugs; however, try **not** to make changes that are **not** required. Valid modifications include general fixes (code and typos), additions (descriptions and tags), missing files, etc. Do **not** change images if they are not outdated and are in specifications.
+- Você **não** tem permissão de reescrever uma presence ou alterar seu autor. Se o autor da presence for banido do servidor oficial ou não fez as alterações necessárias dentro de um mês, você pode entrar em contato com um revisor para pedir permissão de reescrever a presence.
+- Se você fizer modificações a um presence e mudar pelo menos um **quarto** do código base da presence, você terá permissão de adicionar a si mesmo como um contribuidor. Contate um revisor para mais informações sobre este assunto.
+- Qualquer usuário pode fornecer hotfixes para corrigir bugs; no entanto, tente **não** fazer alterações que **não** sejam necessárias. As alterações válidas incluem correções gerais (código e erros de digitação), adições (descrições e tags), arquivos ausentes, etc. **Não** mude as imagens se elas não estiverem desatualizadas e dentro das especificações.
 
 # Verificação
 
