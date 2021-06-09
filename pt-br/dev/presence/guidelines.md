@@ -221,23 +221,23 @@ Uma lista de campos e de suas regras está listada abaixo:
 
 - Se você decidir fazer uma string formatável (por ex., `%song% por %artist%`), você deve ter as variáveis com o sinal de porcentagem em ambos lados. Variáveis como `%var`, `var%`, ou `%%var%%` e qualquer coisa do tipo **não** são permitidas para fins de padronização.
 - The name of the settings must **not** be in all capital letters. Por exemplo, nomes como `MOSTRAR STATUS DE NAVEGAÇÃO` **não** serão permitidos; porém, nomes como `Mostrar Status de Navegação` ou `Mostrar status de navegação` são permitidos.
-- If you are using the `multiLanguage` option it can have the following types:
-  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+- Se você estiver utilizando a opção `multiLanguage`, ela pode ter os seguintes tipos:
+  - O tipo **Boolean** que só habilita strings do arquivo [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) do repositório Localization ou do arquivo de presence (ex. quando o nome da presence é YouTube, a extensão vai pegar as strings do `youtube.json` também.)
+  - O tipo **String** (ex. `youtube`) que vai especificar o nome dos arquivos que você quer pegar as strings.
+  - O tipo **Array** (ex. `["youtube", "discord"]`) que vai especificar o nome dos arquivos que você quer pegar as strings.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
-> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
+> O código que você escreve **deve** ser _bem escrito_ e **deve** ser _legível_ e todas as strings devem ser gramaticalmente corretas (erros gramaticais no websites podem ser ignorados).
 
-> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+> Cada presence segue um rigoroso conjunto de regras linting que será verificado durante o processo de revisão. Um par de recomendações pode ser visto abaixo. [Recomendações de Plugins TypeScript para Checagem Estrita de Tipos](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [Recomendações de ESlint](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
 
-Here is a list of rules you must follow when writing your `presence.ts` file:
+Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `presence.ts`:
 
-- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
-- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
-- It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
-- The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
+- **Sempre** declare uma nova instância da classe `Presence` antes de qualquer outra variável para evitar problemas raros que possam ocorrer; isto não é uma exigência por design, portanto pode ser removido no futuro.
+- **Nunca** use funções customizadas quando [variantes nativas estão disponíveis](https://docs.premid.app/dev/presence#files-explained); isso garante que as correções no nível da extensão também se apliquem às suas presences. Você está livre para usar o que quiser se você não achar ela listada na documentação.
+- É **proibido** programar presences para sites sem adicionar o suporte para seu idioma primário (por ex., um presence do YouTube programada apenas para Português e Japonês, mas não Inglês em si.)
+- Os campos `smallImageKey` e `smallImageText` providenciam contexto adicional/secundário (como `reproduzindo/pausado` para sites de video, `navegando` para sites normais, e outros casos) não promova Perfis do Discord ou qualquer coisa não relacionada ao PreMID.
 - You are **not** allowed to access `localStorage`.
 - When accessing cookies for stored data, please prefix the key with `PMD_`.
 - You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
