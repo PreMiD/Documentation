@@ -1,6 +1,6 @@
 ---
-title: Home
-description: Official Documentation for v2
+title: Avaleht
+description: Ametlik dokumentatsioon versioonile v2
 published: true
 date: 2021-02-24T23:22:41.678Z
 tags:
@@ -8,33 +8,33 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> Dokumentatsiooni muudetakse veel! Mõni leht võib olla puudulik või puudub. 
 > 
 > {.is-warning}
 
-# About PreMiD
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
-- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
+# PreMiD'i kohta
+- :mag: [Mis on PreMiD?](/about) Kavatsused PreMiD taga ja miks peaksite seda kasutama.
+- :link: [Mis on RPC?](https://discordapp.com/rich-presence) Kõik Rich Presence-i ja selle funktsioonide kohta.
 
-# Getting Started
+# Alustuseks
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+PreMiD-i on kiire ja lihtne installida. Te peaksite installimisega kiiresti hakkama saama.
 
-- Make sure you have read the [system requirements](/install/requirements).
-- Follow the quick and simple [installation guide](/install).
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- Veenduge, et olete lugenud [ süsteeminõudeid](/install/requirements).
+- Järgige kiiret ja lihtsat [installimise juhendit](/install).
+- [Tõrkeotsing](/troubleshooting) juhendab teid levinumate probleemide lahendamisel.
 
 # Arendajad
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+PreMiD arenduse [alustamine](/dev) on teie esimene samm enne mõnede asjade kodeerimist.
 
-- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
-- :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
+- :computer: [API](/dev/api): Juurdepääs ressurssidele ja toimingute tegemine PreMiD API abil.
+- :wrench: [Presence-i Arendamine](/dev/presence): Õppige, kuidas meie Presence-i süsteemi kasutada.
 
 # Aita kaasa
-- :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
-- :bulb: [Suggest a New Feature](https://discord.premid.app/): We need your ideas!
-- :heart: [Donate](https://www.patreon.com/Timeraa): Make a small donation or become a sponsor of this wonderful project!
-- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
+- :bug: [Teata veast](https://github.com/PreMiD): Aidake meil need tüütud vead kõrvaldada.
+- :bulb: [Soovitage uut funktsiooni](https://discord.premid.app/): Vajame teie ideid!
+- :heart: [Anneta](https://www.patreon.com/Timeraa): Tehke väike annetus või hakake selle suurepärase projekti sponsoriks!
+- :globe_with_meridians: [Kohalikud](https://translate.premid.app): Lubage teistel kasutajatel kasutada PreMiD-i oma emakeeles.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
