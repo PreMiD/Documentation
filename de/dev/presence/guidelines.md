@@ -222,7 +222,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`settings`**
 
-- Wenn du dich dafür entscheidest, ein String-Format (zum Beispiel `%song% von %artist%`), müssen die Variablen von einem Prozentzeichen auf beiden Seiten umgeben sein. Variablen wie `%var`,`var%` oder `%%var%%` und alles dazwischen sind **nicht** erlaubt wegen der Standardisierung.
+- Wenn du dich dafür entscheidest, ein String-Format (zum Beispiel `%song% von %artist%`) zu nutzen, müssen die Variablen von einem Prozentzeichen auf beiden Seiten umgeben sein. Variablen wie `%var`,`var%` oder `%%var%%` und alles dazwischen sind **nicht** erlaubt wegen der Standardisierung.
 - Der Name der Einstellungen muss **nicht** ausschließlich in Großbuchstaben sein. Zum Beispiel Namen wie `SHOW BROWSING STATUS` sind **nicht** erlaubt; jedenfalls sind Namen wie `Show Browsing Status` oder `Show browsing status` erlaubt.
 - Wenn du die Mehrsprachen-Option verwendest, solltest du wissen:
   - **Boolean** Typ, der nur Strings von [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) aus dem Lokalisierungs-Repo oder aus der Presence-datei zulässt (z.B. Wenn der Name der Presence YouTube ist, wird die Erweiterung auch Strings von `youtube.json` erhalten.)
@@ -248,9 +248,9 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Es ist dir **nicht**t erlaubt Presences zu schreiben, die die Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
 - Presences, die Schaltflächen verwenden, sollten diesen zusätzlichen Anforderungen folgen:
   - Weiterleitungen zur Hauptseite sind verboten.
-  - Werben von Webseiten durch diese ist verboten.
-  - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+  - Das Werben von Webseiten durch diese ist verboten.
+  - Sie können keine zusätzlichen Daten anzeigen, wenn diese nicht in anderen Feldern gezeigt werden können.
+  - Eine direkte Weiterleitung zu Audio-/Videostreams ist verboten.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
