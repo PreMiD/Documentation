@@ -149,7 +149,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`author`**
 
-- Der ID _Wert_ **muss** deiner Discord snowflake ID entsprechen. Du kannst es durch das Aktivieren des [Entwicklermodus](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) erhalten. _Verwechsle diese bitte **nicht** mit deiner Anwendungs-ID, welche nur für deine Presence gilt._
+- Der ID _Wert_ **muss** deiner Discord snowflake ID entsprechen. Du kannst die durch das Aktivieren des [Entwicklermodus](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) erhalten. _Verwechsle diese bitte **nicht** mit deiner Anwendungs-ID, welche nur für deine Presence gilt._
 
 ### **`*contributors`**
 
@@ -157,7 +157,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`service`**
 
-- Der Service-Name **muss** mit dem Namen des Presenceverzeichnisses übereinstimmen. Wenn sich zum Beispiel die Presence in `/websites/Y/YouTube/` befindet, muss der Servicename `YouTube` sein.
+- Der Service-Name **muss** mit dem Namen des Presence-Verzeichnisses übereinstimmen. Wenn sich zum Beispiel die Presence in `/websites/Y/YouTube/` befindet, muss der Servicename `YouTube` sein.
 - Du **kannst** die URL **nicht** als Servicename verwenden, es sei denn die Webseite benutzt diese als offiziellen Namen. Wenn der Name nicht beschreibend ist und als vage betrachtet werden kann, ist die Nutzung der URL **erforderlich**. (zum Beispiel ist `YouTube` erlaubt, da das beschreibend und der offizielle Name ist, während es `youtube.com` nicht ist. `Top` ist ein nicht-beschreibender Name, wodurch das Nutzen der URL `top.gg` **erforderlich** ist.
 - Wenn der Service einige explizite Branding-Regeln mit ihrem Namen hat, solltest du sie befolgen.
 
