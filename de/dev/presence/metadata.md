@@ -83,7 +83,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
@@ -180,7 +180,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Legt fest, ob die Erweiterung Logs lesen soll.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
