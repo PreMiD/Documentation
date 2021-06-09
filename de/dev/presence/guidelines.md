@@ -326,7 +326,7 @@ Derzeit durchläuft eine Presence drei separate Phasen der Kontrolle. Alle diese
 Nach der Erfüllung aller Richtlinien mit den richtigen Prüfungen und Checks, wird deine Presence in den Store aufgenommen.
 
 # Prüfung
-`Revision 2` der Richtlinien wurde geschrieben und von den folgenden Personen beigetragen:
+Wenn du Anregungen zu unseren Richtlinien hast, solltest du uns auf @[PreMiD's Discord-Server](https://discord.premid.app) kontaktieren und wir werden diese überprüfen!
 
 # Mitwirkende
 
