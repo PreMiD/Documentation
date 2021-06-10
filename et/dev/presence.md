@@ -23,26 +23,26 @@ Versioon `2.x` tutvustab [presence-i poodi](https://premid.app/store). Kasutajat
 
 # Struktuur
 
-Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/)-il on JavaScripti kohal mõned eriti vürtsikad definitsioonid, nii et vigade parandamine ja tuvastamine on palju lihtsam.
 
-## Installation
+## Paigaldamine
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
+1. Installige [Git](https://git-scm.com/).
+2. Installige [Node](https://nodejs.org/en/) (kaasneb [npm](https://www.npmjs.com/)).
+3. Installige [TypeScript](https://www.typescriptlang.org/index.html#download-links) (avage terminal ja kirjutage `npm install -g typcript`).
 
-## Cloning the project
+## Projekti kloonimine
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+1. Avage terminal ja kirjutage `git clone https://github.com/PreMiD/Presences`.
+2. Valige teie valikul kaust.
+3. Avage see oma koodiredaktoris.
 
-## Creating folders and files
+## Kaustade ja failide loomine
 
-1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
-2. Create a folder with the **name** (not an URL) of the service you want to support.
-3. Create a `presence.ts` and a `tsconfig.json` file inside.
-4. Create a folder named `dist` inside.
+1. Minge kausta `websites` ja seejärel minge kausta, kus on soovitud teenuse, mida te toetada tahate **nime** (mitte URL) esimene täht.
+2. Looge kaust selle teenuse **nimega**(mitte URL), mida soovite toetada.
+3. Looge sees `presence.ts` ja `tsconfig.json` fail.
+4. Looge sees kaust nimega `dist`.
 5. Create a `metadata.json` file inside the `dist` folder.
 
 ## Filling in the tsconfig.json file
