@@ -149,14 +149,14 @@ Kopeerige ülaltoodud kood ja pange see oma faili `metadata.json`. Nüüd peate 
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discord-i kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discord-ist kopeerida, lubades arendaja
-        režiimi ja paremklõpsamisega oma profiilil.</td>
+      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discordist kopeerida, lubades arendaja
+        režiimis ja paremklõpsake oma profiilil.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discord-i kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discordist kopeerida, lubades arendaja
+      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discordist kopeerida, lubades arendaja
         režiimis ja paremklõpsake oma profiilil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Jah</code></td>
@@ -178,16 +178,16 @@ Kopeerige ülaltoodud kood ja pange see oma faili `metadata.json`. Nüüd peate 
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Väike presence-i kirjeldus. Kui teil pole ideid, võite kasutada teenuse kirjeldust. Teie kirjeldusel peavad olema võtmepaari väärtused, mis tähistavad keelt, ja kirjeldus selles konkreetses keeles. Tehke kirjeldused keeltega, mida <i>tunnete</i>, meie tõlkijad muudavad teie metaandmete faili.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
-      <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
+      <td style="text-align:left">Teenuse URL. <br><b>Näide:</b><code>vk.com</code><br>
+      <b> See URL peab vastama veebisaidi URL-ile, sest see tuvastab, kas see on veebisait, kuhu skripti süstida. </b><br><b><b> Ärge</b> lisage<code> https://</code> või<code> http://</code> URL-i sisse ega kaldkriips lõpus:
       <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
+      <b>Märkus</b>: Mõne URL-i domeeni ees võib olla <code>www.</code> või midagi muud. Do <b>NOT</b> forget to add it!<br>
       You can add multiple URLs by doing the following:<br>
       <code>["URL1", "URL2", "ETC."]</code><br>
       You could also use regExp also known as Regex for this task, explained further below.</td>

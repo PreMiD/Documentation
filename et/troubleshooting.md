@@ -26,14 +26,14 @@ Sellel leheküljel kaasatud:
 ### Värskenda lehekülge
 Värskendusnupu otsimise asemel võite klaviatuuril vajutada ka <kbd>CTRL + R</kbd>/<kbd>F5</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS).
 
-### Kas kasutate Discord-i rakendust?
-PreMiD **ei** tööta Discord-i brauseriversioonis, peate rakenduse alla laadima [siit](https://discord.com/download).
+### Kas kasutate Discordi rakendust?
+PreMiD **ei** tööta Discordi brauseriversioonis, peate rakenduse alla laadima [siit](https://discord.com/download).
 
-### Veenduge, et olete Discord-i rakenduse seadetes lubanud Tegevuse Oleku
+### Veenduge, et olete Discordi rakenduse seadetes lubanud Tegevuse Oleku
 **Kasutaja seaded** > **Tegevuse Olek** ![activitystatus.png](/activitystatus.png)
 
 ### Veenduge, et Discord EI tööta administraatorina
-Väga oluline. Discordi RPC ei tööta, kui käivitate Discord-i administraatorina.
+Väga oluline. Discordi RPC ei tööta, kui käivitate Discordi administraatorina.
 
 ### Kas kasutate presence-i, millel on seadmed?
 Laienduse probleem mõjutab paljusid presence (sealhulgas `Twitch` ja `SoundCloud`). Selle probleemi tõttu ei haara laiendus sätete vaikeväärtusi korralikult.
