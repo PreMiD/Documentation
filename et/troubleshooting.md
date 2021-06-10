@@ -104,27 +104,27 @@ Nagu me oma **Linuxi hoidlas** märkisime, ei saa AppImage-i sisselogimisel käi
 2. Avage see fail oma lemmikredaktoris ja kleepige antud kood, muutes mõningaid asju:
 ```bash
 #! / bin / bash
-# Nõutav käitamiseks failina /bin/bash (kui kasutate zsh jne. you can change it.)
+# Nõutav käitamiseks failina /bin/bash (kui kasutate zsh jne. saate seda muuta.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
+# Näide: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
 
 exit 0
 ```
-3. Save file and chmod it as executable `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+3. Salvestage fail ja chmod see käivitatava failina `sudo chmod a+x /etc/rc.local`.
+4. Taaskäivitage arvuti ja PreMiD AppImage peaks käivituma sisselogimisel.
 
 <a name="macos"></a>
 
 # MacOS-i tõrkeotsing
-### Error creating directory
+### Viga kataloogi loomisel
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
-2. Right-click on blank space and click **Create folder**.
-3. To this folder assign `PreMiD` name (remember about upper-cased letters).
-4. Open installer again.
+Selle tõrke ilmnemisel tähendab see, et teie kontol pole administraatori õigusi ja peate kausta käsitsi looma, toimides järgmiselt:
+1. Avage leidja ja avage kaust **Rakendused**.
+2. Paremklõpsake tühjal kohal ja klõpsake valikut **Loo kaust**.
+3. Sellesse kausta määrake nimi `PreMiD` (pidage meeles suurtähti).
+4. Avage installer uuesti.
 
-# That has not solved my problem
-Please open a ticket in [#support](https://discord.premid.app/).
+# See pole minu probleemi lahendanud
+Avage pilet lehel [#support](https://discord.premid.app/).
