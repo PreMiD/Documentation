@@ -1,5 +1,5 @@
 ---
-title: Presence Development
+title: Presence-i arendamine
 description:
 published: true
 date: 2021-02-07T17:11:34.449Z
@@ -8,22 +8,22 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Kõik presence-id on nüüd salvestatud siin: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+Versioon `2.x` tutvustab [presence-i poodi](https://premid.app/store). Kasutajatel on nüüd võimalus oma lemmik presence käsitsi lisada ja eemaldada [veebsaidi](https://premid.app/) kasutajaliite kaudu.
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> Enne alustamist on tungivalt soovitatav tutvuda meie presence-i juhenditega. 
 > 
 > {.is-warning}
 
-- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
+- [Juhised](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
-# Structure
+# Struktuur
 
-All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
 ## Installation
 
