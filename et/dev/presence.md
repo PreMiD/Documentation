@@ -43,11 +43,11 @@ Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/).
 2. Looge kaust selle teenuse **nimega**(mitte URL), mida soovite toetada.
 3. Looge sees `presence.ts` ja `tsconfig.json` fail.
 4. Looge sees kaust nimega `dist`.
-5. Create a `metadata.json` file inside the `dist` folder.
+5. Looge `metadata.json` fail kausta `dist` sisse.
 
-## Filling in the tsconfig.json file
+## Faili tsconfig.json täitmine
 
-Please put the following code inside of the `tsconfig.json` file.
+Palun sisestage järgmine kood faili `tsconfig.json` sisse.
 
 ```typescript
 {
@@ -58,37 +58,37 @@ Please put the following code inside of the `tsconfig.json` file.
 }
 ```
 
-To learn more about TypeScript configuration click [here](/dev/presence/tsconfig).
+TypeScripti seadistamise kohta lisateabe saamiseks klõpsake [siia](/dev/presence/tsconfig).
 
-## Filling in the metadata.json file
+## Faili metadata.json täitmine
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator). It's still suggested to read this through so you know how it works.
+Laiskade piilumiste jaoks oleme teinud `metadata.json` faililooja [siin](https://eggsy.xyz/projects/premid/mdcreator). Ikka soovitatakse see läbi lugeda, et teaksite, kuidas see töötab.
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "KASUTAJA",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "KASUTAJA",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "TEENUS",
+  "altnames": ["TEENUS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "KIRJELDUS"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIOON",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGOORIA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -125,7 +125,7 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 }
 ```
 
-Please copy the code above and put it in your `metadata.json` file. You now need to edit values of the properties. Please note that the following properties are optional to have in your `metadata.json` file, if you do not plan on using them you need to remove them.
+Kopeerige ülaltoodud kood ja pange see oma faili `metadata.json`. Nüüd peate atribuutide väärtusi muutma. Pange tähele, et järgmised atribuudid on valikulised failis `metadata.json`, kui te ei kavatse neid kasutada, peate need eemaldama.
 
 - `contributors`
 - `altnames`
@@ -135,52 +135,52 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 - `readLogs`
 - `settings`
 
-**Clarifying some value presets:**
+**Mõne väärtuse eelseadistuse täpsustamine:**
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Muutuja</th>
       <th style="text-align:left">Kirjeldus</th>
       <th style="text-align:left">Tüüp</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Valikuline</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discord-i kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discord-ist kopeerida, lubades arendaja
+        režiimi ja paremklõpsamisega oma profiilil.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discord-i kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discordist kopeerida, lubades arendaja
+        režiimis ja paremklõpsake oma profiilil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.<br>
-      (Must be the same name as the folder where everything is in)</td>
+      <td style="text-align:left">Teenuse pealkiri, mida see presence toetab. <br>
+      (Peab olema sama nimi, kui kaust, kus kõik asub)</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Saate presence-i otsida alternatiivse nime abil. <br>
+      Mõeldud kasutamiseks presence-i puhul, millel on erinevates keeltes erinev nimi (nt Pokémon ja 포켓 몬스터). <br>
+      Saate seda kasutada ka presence-ite jaoks, millel on erimärgid, nii et te ei pea neid kirjutama (nt Pokémon ja Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
       <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
@@ -192,7 +192,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       <code>["URL1", "URL2", "ETC."]</code><br>
       You could also use regExp also known as Regex for this task, explained further below.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
@@ -205,69 +205,69 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
       You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
       <td style="text-align:left">Version of your presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Link to service&apos;s logotype.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
       <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
         that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
       <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
       <td style="text-align:left">A string used to represent the category the presence falls under. See the valid catergories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">here</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
       <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
       <td style="text-align:left">A regular expression selector that selects iframes to inject into. See regExp for more info.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Defines whether the extension should be reading logs.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
       <td style="text-align:left">An array of settings the user can change.<br>
       Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
   </tbody>
 </table>
