@@ -93,18 +93,18 @@ Kui olete Discordi alla laadinud Snapcrafti kaudu, ei tööta RPC. Peate Snapcra
 
 ### Arch Linuxi põhised distrod
 Arch Linuxi põhised distrod peaksid kasutama AUR-paketti (Arch User Repository), mille nimi on <code>premid</code> või <code>premid-git</code> (<em x-id="3">HOIATUS: See hoidla ehitab premid-i meie lähtekoodist. </em>). Kui te ei soovi AUR-i haldurit installida (yay jne.), võite vaadata meie AppImage-i, mille saate alla laadida meie <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linuxi hoidlast</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+<em x-id="3">Hoiatus: <strong x-id="1">AUR</strong> hoidlas asuvat paketti ei hoolda me (PreMiD organisatsioonina), vaid teised inimesed.</em>
 
-### Port binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+### Portide sidumine
+Peaksite teadma, et <strong x-id="1">PreMiD</strong> seob end pordiga <strong x-id="1">3020</strong>. See on vajalik laienduse ja rakenduse suhtlemiseks. Kui <strong x-id="1">PreMiD</strong> kuvab selle pordi kohta vea, peaksite <code>sudo lsof -i:3020</code> või <code>sudo netstat -tnlp | grep :3020</code> käivitades kontrollima, kas teie terminalis on midagi seotud pordiga 3020. Kui mõni protsess on sellega seotud, peate kindlasti pordi vabastama ja proovima uuesti käivitada <code>PreMiD-i</code>.
 
-### PreMiD's AppImage doesn't launch at login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
-1. Make a file named <strong x-id="1">rc.local</strong> in the <code>/etc</code> directory.
-2. Open this file in your favourite editor and paste given code with changing some things:
+### PreMiD AppImage ei käivitu sisselogimisel
+Nagu me oma **Linuxi hoidlas** märkisime, ei saa AppImage-i sisselogimisel käivitada. Saate selle automaatse käivitamise alla käsitsi lisada, toimides järgmiselt:
+1. Tehke kataloogis <code>/etc</code> fail nimega <strong x-id="1">rc.local</strong>.
+2. Avage see fail oma lemmikredaktoris ja kleepige antud kood, muutes mõningaid asju:
 ```bash
-#!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+#! / bin / bash
+# Nõutav käitamiseks failina /bin/bash (kui kasutate zsh jne. you can change it.)
 
 # Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
