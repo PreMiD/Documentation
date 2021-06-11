@@ -21,14 +21,14 @@ Ao publicar Presences em [nosso Repositório GitHub](https://github.com/PreMiD/P
 
 # Criação
 
-As regras gerais de desenvolvimento de presences são as seguintes:
+The general rules of presence development are as follows:
 
-- As Presences **devem** estar relacionadas com o website escolhido.
-- As Presences **não podem** ser feitas para websites ilegais. (p. ex., estressores, marketing de drogas, pornografia infantil, etc.)
-- A estrutura do arquivo deve ser limpa e estruturada, não inclua arquivos que não estiverem especificados. (p. ex., pastas vscode e git, arquivos de imagem e texto, etc.)
-- Você precisa ter uma estrutura de arquivos adequada, rascunhos **não são** permitidos.
-- Presences para websites com (`.onion` TLDs) ou websites com domínios/hosts grátis (p. ex., `.TK` [todos os domínios grátis Freenom], `.RF`, `GD`, etc) **não** são permitidas, exceções podem ser feitas se uma prova for apresentada mostrando que eles pagaram pelo domínio.
-- O domínio da presence deve ter pelo menos 2 meses.
+- Presences **must** be related to the website of choice.
+- As Presences **não podem** ser feitas para websites ilegais. (for e.g., stressors, drug marketing, child pornography, etc.)
+- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
+- You need to have a proper file structure, drafts are **not** allowed.
+- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
+- The domain of the presence must be at least 2 months old.
 - Presences sobre páginas internas de navegadores (como a Chrome Web Store, `chrome://`, páginas `about:`, etc) **não são** permitidas por requererem uma bandeira experimental a ser ativada no lado do usuário e que poderia potencialmente causar dano aos seus navegadores.
 - Presences com suporte apenas para um único subdomínio **não serão** permitidas, visto que elas podem parecer quebradas em outras páginas (como a página principal), exceções podem ser feitas para as páginas de políticas e de contato (conteúdo que não é usado com frequência) ou sites onde o outro conteúdo não é relacionado. (por exemplo, páginas da Wikia)
 - Presences para rádios on-line só são permitidas se o rádio tiver pelo menos 100 ouvintes semanais e 15 simultâneos e deve ter alguns recursos além de apenas mostrar título do álbum/música, etc.
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-ou se você estiver usando um arquivo `iframe.ts`:
+or if you're using a `iframe.ts` file:
 
 ```bash
 presence
@@ -65,13 +65,13 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
-> Para a conveniência de nossos desenvolvedores de presence, nós providenciamos um esquema que você pode usar para validar a integridade do seu arquivo `metadata`. Isso é inteiramente opcional e não é necessário durante o processo de revisão.
+> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process.
 
-> É altamente recomendado que você organize seu arquivo `metadata` no formato mostrado abaixo, e você deve ter nomes de serviço, descrições, tags e campos de configuração gramaticalmente corretos. Tudo que não estiver organizado nessas especificações **não será** permitido.
+> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted.
 
-> Presences de websites que tenham conteúdo explícito **devem** ter a tag `nsfw`, e o logo/thumbnail **não** deve conter nenhum desses conteúdos.
+> Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
 
-Cada presence tem um arquivo descritor chamado `metadata.json`, os metadados têm um padrão rígido e um exemplo deste arquivo pode ser visto abaixo:
+Each presence has a descriptor file called `metadata.json`, the metadata has a strict standard and an example of this file can be seem below:
 
 ```json
 {
@@ -136,26 +136,26 @@ Cada presence tem um arquivo descritor chamado `metadata.json`, os metadados tê
 
 > Se algum campo for listado como opcional na [documentação](https://docs.premid.app/dev/presence/metadata) ou haver um `*` próximo a chave, e sua presence usa o valor padrão para isso, não inclua no arquivo `metadata`. (por exemplo, uma presence sem suporte iframe não precisaria de um campo `iframe`.)
 
-> Todas as imagens do arquivo `metadata` devem estar hospedadas em `i.imgur.com`. Usar conteúdo hospedado no site em si **não** é permitido pois eles podem mudar os caminhos e arquivos de má vontade.
+> All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
 
-Uma lista de campos e de suas regras está listada abaixo:
+A list of fields and their rules are listed below:
 
 ### **`$schema`**
 
-- O esquema _chave_ **deve** incluir um sinal de dólar no início do mesmo, isto irá sinalizar ao seu editor de texto que deseja validar seu arquivo JSON contra um modelo. _Como foi dito anteriormente, não é necessário incluir um esquema, mas se o incluir, deve levar isto em conta._
+- The schema _key_ **must** include a dollar sign at the beginning of it, this will signal your text editor that you want to validate your JSON file against a model. _As stated earlier, you do not need to include a schema, but if you include it you must take this into account._
 
 ### **`author`**
 
-- O _valor_ ID **deve** ser o seu Discord snowflake ID. Você pode obtê-lo ativando o [modo desenvolvedor](https://support.discord.com/hc/pt-br/articles/206346498-Onde-posso-encontrar-minhas-IDs-de-Usu%C3%A1rio-Servidor-Mensagem-). _Por favor **não** confunda isto com o ID da seu aplicativo, que é apenas para a sua presence._
+- The ID _value_ **must** be your Discord snowflake ID. You can get it by enabling [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Please do **not** confuse this with your application ID, which is only for your presence._
 
 ### **`*contributors`**
 
-- **Não** se adicione como contribuidor, e não adicione outra pessoa como contribuidora, a menos que ela tenha ajudado com a presence.
+- Do **not** add yourself as a contributor, and do not add someone else as a contributor unless they have helped with the presence.
 
 ### **`service`**
 
-- O nome do serviço **deve** ser o nome do diretório da presence. Por exemplo, se a presence estiver localizada em `/websites/Y/YouTube/`, o nome do serviço deve ser `YouTube`.
-- Você **não** pode usar esse url como o nome de serviço, a não ser que o website use o url como seu nome oficial. Se o nome não for descritivo e não pode ser considerado vago, o uso do url é **obrigatorio**. (p. ex., `YouTube` é permitido porque esse é o nome oficial e é descritivo, enquanto `youtube.com` não é. `Top` é um nome não-descritivo, portanto a url `top.gg` é **necessária**.)
+- O nome do serviço **deve** ser o nome do diretório da presence. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
+- Você **não** pode usar a url como nome do serviço a menos que o site use a url como seu nome oficial. If the name is not descriptive and can be considered vague, using the url is **required**. (for e.g., `YouTube` is permitted because that is the official name and is descriptive, while `youtube.com` is not. `Top` is a non-descriptive name, so using the url `top.gg` is **required**.)
 - Se o serviço tiver algumas regras explícitas de atribuição de marca, você deve segui-las.
 
 ### **`*altnames`**
@@ -188,12 +188,12 @@ Uma lista de campos e de suas regras está listada abaixo:
 
 ### **`color`**
 
-- A cor **deve** ser um valor hexadecimal entre `#000000` e `#FFFFFF`.
-- A string de cor **deve** ser precedida com um símbolo hash.
+- The color **must** be a hexadecimal value between `#000000` and `#FFFFFF`.
+- The color string **must** be prepended with a hash symbol.
 
 ### **`tags`**
 
-- **Todas** presences precisam ter pelo menos _uma_ tag.
+- **All** presences are required to have at least _one_ tag.
 - As tags **não** devem incluir espaços, barras, aspas simples/duplas, caracteres Unicode, e devem ser sempre em minúsculas.
 - Tags **devem** preferencialmente incluir nomes de serviços alternativos para facilitar a busca (p. ex., se uma presence da Amazon tiver incluído o suporte pra AWS, teria suas tags como `amazon-web-services` e `aws`)
 - Você é **obrigado** a adicionar uma tag `NSFW` se a presence for para um site NSFW.

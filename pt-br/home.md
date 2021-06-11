@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> A documentação ainda está sendo editada! Algumas páginas podem estar incompletas or faltando. 
+> The documentation is still being edited! Algumas páginas podem estar incompletas or faltando. 
 > 
 > {.is-warning}
 
