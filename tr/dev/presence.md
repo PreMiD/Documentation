@@ -192,14 +192,14 @@ Yukarıdaki kodu kopyalayın ve `metadata.json` dosyanıza yapıştırın. Bunda
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">Adresleri tanımlamak için kullanılacak olan regex biçimindeki sözcük dizimi.<br>
+      regExp veya Regex, birden çok alt alanadı bulunduran servisler için kullanılabilir.<br>
+      Bu durumda şu regex dizimini kullanabilirsiniz:<br>
+      <code>([a-z0-9]+)[.]alanadı[.]TLD"</code><br>
+      TLD burada Top Level Domain kısaltması olarak kullanılamkta ve şunları ifade etmektedir: .com .net<br>
+      <code>([a-z0-9]+)</code> a'dan z'ye ve 0'dan 9'a olan tüm karakterlerin bu dizime yakalanacağı anlamına gelmektedir.<br>
+      Kullanımını daha iyi anlamak için <a href="https://youtu.be/sXQxhojSdZM">bu videoyu</a> izleyebilirsiniz.<br>
+      Kullanacağınız regExp'i <a href="https://regex101.com/">Regex101</a> sitesinde test edebilirsiniz.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Evet</code></td>
     </tr>
