@@ -28,7 +28,7 @@ tags:
 - Abra um terminal no repositório e digite `npm i`.
 - Para atualizar as dependências, digite `npm update`.
 
-> Esteja ciente que ao atualizar as dependências elas podem causar falhas, ou não - Testar é necessário! 
+> Be aware that updating the dependencies could break a lot, or not - testing is required! 
 > 
 > {.is-danger}
 
