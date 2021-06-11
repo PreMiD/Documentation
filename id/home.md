@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Beranda
 description: Dokumentasi resmi untuk v2
 published: true
 date: 2021-02-24T23:22:41.678Z
@@ -32,7 +32,7 @@ PreMiD mudah dan cepat untuk dipasang. Kamu bisa langsung menggunakannya tanpa w
 - :wrench: [Pengembangan Presence](/dev/presence): Pelajari cara menggunakan sistem Presence kami.
 
 # Kontribusi
-- :bug: [Laporkan bug](https://github.com/PreMiD): Bantu kami membasmi bug mengganggu.
+- :bug: [Laporkan bug](https://github.com/PreMiD): Bantu kami membasmi bug yang mengganggu.
 - :bulb: [Sarankan Fitur Baru](https://discord.premid.app/): Kami butuh idemu!
 - :heart: [Donasi](https://www.patreon.com/Timeraa): Beri sedikit donasi atau menjadi sponsor dari proyek ini!
 - :globe_with_meridians: [Locales](https://translate.premid.app): Bantu pengguna lain menggunakan PreMiD dalam bahasa asli mereka.
