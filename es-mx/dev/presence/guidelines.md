@@ -312,7 +312,7 @@ Algunas cosas que deberías saber después de abrir una solicitud de pull reques
 
 Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas estas comprobaciones ayudan a que los verificadores determinen si su presence es adecuada para su implementación.
 
-- `Codacy` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos. (_WARNING: Codacy bot will be removed soon and DeepScan will take its place!_)
+- `Codacy` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos. (_ADVERTENCIA: El bot Codacy quedará obsoleto pronto y solo necesitará comprobar los errores de DeepScan!_)
 - `DeepScan` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos.
 - `Schema Validation` escaneará su archivo `metadata.json` en busca de cualquier error (por ejemplo, campos faltantes, tipos de valores no válidos, etc.). Si alguna vez recibes errores de nuevos problemas, **debes** corregirlos. Añadir un campo schema al archivo `metadata.json` permitirá a tu editor de texto (si es compatible) mostrar estos errores durante el desarrollo.
 
