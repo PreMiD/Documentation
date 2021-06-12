@@ -1,6 +1,6 @@
 ---
-title: Installation
-description: How to install PreMiD
+title: Instalasi
+description: Cara menginstal PreMiD
 published: true
 date: 2020-11-10T17:54:28.896Z
 tags:

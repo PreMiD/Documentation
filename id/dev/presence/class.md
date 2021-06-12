@@ -1,6 +1,6 @@
 ---
 title: Kelas Presence
-description: The main class for every PreMiD presence
+description: Kelas utama untuk setiap presence PreMiD
 published: true
 date: 2021-05-23T09:14:06.963Z
 tags:
