@@ -1,6 +1,6 @@
 ---
 title: Metadata.json
-description: Contains basic data about the Presence
+description: Berisi data dasar tentang Presence
 published: true
 date: 2021-02-07T17:12:06.799Z
 tags:
@@ -77,7 +77,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <th style="text-align:left">Variabel</th>
       <th style="text-align:left">Deskripsi</th>
       <th style="text-align:left">Tipe</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Opsional</th>
     </tr>
   </thead>
   <tbody>
