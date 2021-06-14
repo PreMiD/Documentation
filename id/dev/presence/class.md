@@ -280,7 +280,7 @@ This interface has following variables, all of them are optional.
   <tbody>
     <tr>
       <td style="text-align:left">details</td>
-      <td style="text-align:left">The first line in your presence, usually used as header.</td>
+      <td style="text-align:left">Baris pertama di presencemu, biasanya digunakan sebagai header.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
@@ -324,8 +324,8 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when he will hover the small
-        icon.</td>
+      <td style="text-align:left">Menentukan teks yang akan ditampilkan ketika pengguna mengarahkan kursor ke ikon
+        kecil.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>

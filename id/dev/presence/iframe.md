@@ -17,7 +17,7 @@ Dalam beberapa skenario, presence kamu mungkin perlu mengakses elemen di dalam `
 
 Kode yang kamu tulis di dalam file `iframe.ts` kamu, akan disuntikkan ke setiap iframe pada halaman.
 
-Like presences, `iframes` have their own classes designed to automatically update data.
+Seperti presence, `iframes` memiliki kelasnya tersendiri yang dirancang untuk memperbarui data secara otomatis.
 
 ```typescript
 let iframe = new iFrame();
@@ -30,7 +30,7 @@ iframe.on("UpdateData", async () => {
 ## Metode
 
 ### `send(Object)`
-Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
+Mengirim data ke presence. Using this method will make the presence throw a `iFrameData` event.
 
 ### `getUrl()`
 Returns the URL of the `iframe`.
