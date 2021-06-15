@@ -120,7 +120,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### Additional notes
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
+PreMiDを試したい場合や、インストールしたくない場合はこれが一番です。 常に最新バージョンに保たれますが、システムを起動した時に自動でスタートしません。 </br>毎回起動するのに疲れた場合は、他のパッケージを使用してください。
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
 <a name="packagecloud"></a>
