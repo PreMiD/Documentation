@@ -210,7 +210,7 @@ presence.info("Test") // Это протоколирует "test" в прави�
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Печатает данное сообщение в консоли в формате основанном на присутствии в стиле `success`.
 
 ```typescript
 presence.success("Test") // Это протоколирует "test" в правильном стиле.
@@ -226,7 +226,7 @@ presence.error("Test") // Это протоколирует "test" в прави
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Возвращает 2`snowflake` отметки времени в`Array`которые могут быть использованы для `startTimestamp` и `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
