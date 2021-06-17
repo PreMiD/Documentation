@@ -30,11 +30,11 @@ Hay tres propiedades disponibles para la clase `Presence`.
 
 Esta propiedad es necesaria para que funcione, ya que utiliza el id de aplicación para mostrar su logotipo entre otras imágenes. Puedes obtenerlo en tu [página de aplicaciones](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Obsoleto desde 2.2.4*
 
 Al configurar `injectOnComplete` a `true` el primer evento `UpdateData` se lanzará, en ambos archivos `presence.ts` y `iframe.ts`, una vez haya terminado de cargar completamente la página.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Obsoleto desde 2.2.4*
 
 Al establecer `appMode` a `true` si la presence enviara un `PresenceData` vacío, la app mostrará la imagen y nombre de la aplicación en el perfil del usuario.
 
@@ -144,7 +144,7 @@ const pauseString = (await strings).pause; // resultado: Paused
 
 Devuelve una variable desde el sitio web si existe.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Advertencia: Esta función puede provocar un uso elevado de la CPU y un retraso en el sitio cuando se ha ejecutado demasiadas veces.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
