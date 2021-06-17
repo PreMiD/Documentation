@@ -2,7 +2,7 @@
 title: Troubleshooting
 description: Everything to solve your problem
 published: true
-date: 2021-02-08T21:30:58.603Z
+date: 2021-06-17T16:18:21.153Z
 tags: 
 editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
@@ -18,8 +18,6 @@ Included on this page:
 
 <a name="general"></a>
 # General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue.
-{.is-info}
 ### Reload the page
 You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
 
