@@ -303,7 +303,7 @@ This interface has following variables, all of them are optional.
     <tr>
       <td style="text-align:left">endTimestamp</td>
       <td style="text-align:left">Menentukan durasi penuh.
-        <br>Used if you want to display how much <code>hours:minutes:seconds</code> left.
+        <br>Digunakan jika kamu ingin menampilkan berapa <code>jam:menit:detik</code> tersisa.
           <br>Kamu harus mengonversi waktumu ke <code>timestamp</code> atau kamu akan mendapatkan hitungan mundur yang salah.
       </td>
       <td style="text-align:left"><code>Number</code>
