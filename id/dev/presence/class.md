@@ -36,7 +36,7 @@ Ketika pengaturan `injectOnComplete` adalah `true` maka event `UpdateData` perta
 
 #### `appMode` - *Sudah tidak digunakan kembali sejak 2.2.4*
 
-When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
+Ketika mengatur `appMode` menjadi `true` dan jika presence mengirim `PresenceData` kosong, maka app akan memunculkan aplikasi (gambar dan nama) pada profil pengguna dari pada tampil kosong.
 
 ## Metode
 
