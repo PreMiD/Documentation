@@ -54,7 +54,7 @@ Parameter kedua menentukan apakah presence memainkan sesuatu atau tidak. Selalu 
 
 ### `clearActivity()`
 
-Clears your current activity and the tray title.
+Menghapus aktivitasmu saat ini dan judul tray.
 
 ### `setTrayTitle(String)`
 
@@ -101,9 +101,9 @@ const playString = strings.play; // hasil: Playing
 const pauseString = strings.pause; // hasil: Paused
 ```
 
-Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
+Sejak ekstensi v2.2.0 kamu sekarang bisa mendapatkan string dari bahasa tertentu. This works well with the also newly added `multiLanguage` setting option.
 
-We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
+Kami menyarankan kamu untuk menggunakan kode berikut agar PresenceData secara otomatis diperbarui jika pengguna merubah bahasa yang dipilih;
 
 ```typescript
 // An interface of the strings you are getting (good for code quality and autocomplete).
@@ -304,8 +304,7 @@ This interface has following variables, all of them are optional.
       <td style="text-align:left">endTimestamp</td>
       <td style="text-align:left">Menentukan durasi penuh.
         <br>Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>Kamu harus mengonversi waktumu menjadi <code>timestamp</code> atau kamu akan mendapatkan hitungan mundur
-          yang salah.
+          <br>Kamu harus mengonversi waktumu ke <code>timestamp</code> atau kamu akan mendapatkan hitungan mundur yang salah.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
