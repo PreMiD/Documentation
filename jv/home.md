@@ -1,6 +1,6 @@
 ---
-title: Home
-description: Official Documentation for v2
+title: Beranda
+description: Dokumentasi resmi kanggo v2
 published: true
 date: 2021-02-24T23:22:41.678Z
 tags:
@@ -8,33 +8,33 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> Dokumentasi iki isih diowahi! Sawetara halaman bisa uga ora lengkap utawa ora ana. 
 > 
 > {.is-warning}
 
-# About PreMiD
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
-- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
+# Tentang PreMiD
+- :mag: [Apa iku PreMiD?](/about) Tujuan PreMiD lan napa sampeyan kudu gawe iki.
+- :link: [Apa iku RPC?](https://discordapp.com/rich-presence) Kabehtentang Rich Presence lan kabeh fungsine.
 
-# Getting Started
+# Mulai
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+PreMiD gampang lan cepet dipasang. Sampeyan bisa nggunakake kanthi cepet tanpa suwe.
 
-- Make sure you have read the [system requirements](/install/requirements).
-- Follow the quick and simple [installation guide](/install).
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- Priksa manawa sampeyan wis maca [syarat sistem](/install/requirements).
+- Tututi [ pandhuan instalasi](/install) sing cepet lan gampang.
+- [Ngatasi masalah](/troubleshooting) nuntun sampeyan liwat masalah sing umum.
 
 # Pengembang
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+[Mulai](/dev) kanggo Pangembangan PreMiD minangka langkah pertama sadurunge nulis kode.
 
-- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
-- :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
+- :computer: [API](/dev/api): Ngakses sumber daya lan bisa digunakake nganggo PreMiD API.
+- :wrench: [Pengembangan Presence](/dev/presence): Pelajari cara nggunaake sistem Presence.
 
 # Kontribusi
-- :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
-- :bulb: [Suggest a New Feature](https://discord.premid.app/): We need your ideas!
-- :heart: [Donate](https://www.patreon.com/Timeraa): Make a small donation or become a sponsor of this wonderful project!
-- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
+- :bug: [Laporne bug](https://github.com/PreMiD): Bantu kita nyingkirake bug sing ngganggu.
+- :bulb: [Saran Fitur Anyar](https://discord.premid.app/): Kami butuh idemu!
+- :heart: [Donasi](https://www.patreon.com/Timeraa): Gawe sumbangan sithik utawa dadi sponsor proyek iki!
+- :globe_with_meridians: [Locales](https://translate.premid.app): Mbantu pangguna liyane nggunakake PreMiD ing basa asline.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
