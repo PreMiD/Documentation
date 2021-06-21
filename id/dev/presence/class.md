@@ -72,7 +72,7 @@ Membuat kelas `Slideshow` baru.
 const slideshow = presence.createSlideshow();
 ```
 
-It is suggested to do this right after creating the `Presence` class:
+Disarankan untuk melakukan ini setelah membuat Kelas `Presence`:
 
 ```typescript
 const presence = new Presence({
@@ -87,7 +87,7 @@ Kamu bisa menemukan dokumentasi untuk kelas `Slideshow` [disini](/dev/presence/s
 
 Metode asinkron yang memungkinkan kamu untuk mendapatkan string terjemahan dari extension.
 
-Anda harus memberikan `Object` dengan kunci sebagai kunci untuk string, `keyValue` adalah nilai string. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+Anda harus memberikan `Object` dengan kunci sebagai kunci untuk string, `keyValue` adalah nilai string. Daftar string terjemahan bisa ditemukan di titik akhir ini: `https://api.premid.app/v2/langFile/presence/id/`
 
 ```typescript
 // Mengembalikan string `Playing` dan` Paused`
@@ -101,7 +101,7 @@ const playString = strings.play; // hasil: Playing
 const pauseString = strings.pause; // hasil: Paused
 ```
 
-Sejak ekstensi v2.2.0 kamu sekarang bisa mendapatkan string dari bahasa tertentu. This works well with the also newly added `multiLanguage` setting option.
+Sejak ekstensi v2.2.0 kamu sekarang bisa mendapatkan string dari bahasa tertentu. Ini sudah bekerja baik dengan opsi pengaturan `multiLanguage` yang baru ditambahkan.
 
 Kami menyarankan kamu untuk menggunakan kode berikut agar PresenceData secara otomatis diperbarui jika pengguna merubah bahasa yang dipilih;
 
@@ -159,9 +159,9 @@ Mengembalikan versi dari ekstensi yang digunakan oleh pengguna.
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // Akan mencatat 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // Akan mencatat 2.1.0
 ```
 
 ### `getSetting(String)`
@@ -178,7 +178,7 @@ console.log(setting); // This will log the value of the setting
 Hides given setting.
 
 ```typescript
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 ```
 
 ### `showSetting(String)`
