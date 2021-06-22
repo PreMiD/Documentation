@@ -1,24 +1,24 @@
 ---
 title: Začínáme
-description: A little advice for those who got into coding recently
+description: Trochu pomoci těm, kteří se kódování dostali teprve nedávno
 published: true
 date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Je vyžadován editor zdrojového kódu. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Je vyžadován editor zdrojového kódu. Doporučujeme [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
 # Instalace požadavků
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
+1. Nainstalujte [Git](https://git-scm.com/).
+2. Nainstalujte [Node](https://nodejs.org/en/) (obsahuje [npm](https://www.npmjs.com/)).
+3. Nainstalujte [TypeScript](https://www.typescriptlang.org/index.html#download-links) (otevřete terminál a napište `npm install -g typescript`).
 
 # Klonování projektu
 1. Otevřete terminál a napište `git clone URL`. **Nahraďte URL odkazem na repozitář, který chcete přispět na** např. `git klonování https://github.com/PreMiD/PreMiD`.
 2. Vyberte složku dle vašeho výběru.
-3. Open it in your code editor.
+3. Otevřete ji ve svém editoru kódu.
 
 # Instalace závislostí
 > Ujistěte se, že jste nejdříve nainstalovali [npm](https://www.npmjs.com/) (Node Správce balíčků). It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
