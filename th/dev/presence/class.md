@@ -226,7 +226,7 @@ presence.error("Test") // This will log "test" in the correct styling.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+**หมายเหตุ:** `String` ที่ให้ไปใน querySelector เป็นแค่คัวอย่างเท่านั้น.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -238,7 +238,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+**หมายเหตุ:** `String` ที่ให้ไปใน querySelector เป็นแค่คัวอย่างเท่านั้น.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -265,7 +265,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ## อินเตอร์เฟซ `PresenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+อินเทอร์เฟซนี้มีตัวแปรดังต่อไปนี้ทั้งหมดเป็นตัวแปรที่สามารถเลือกได้
 
 This interface has following variables, all of them are optional.
 
@@ -369,11 +369,11 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+เหตุการณ์นี้จะเริ่มขึ้นทุกครั้งที่มีการอัปเดต
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+จะเริ่มขึ้นเมื่อได้รับข้อมูลจากสคริปต์ iFrame
 
 #### `iFrameData`
 
