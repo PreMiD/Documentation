@@ -265,7 +265,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ## Interfejs `presenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+Ten interfejs posiada następujące zmienne, wszystkie są opcjonalne.
 
 This interface has following variables, all of them are optional.
 
@@ -370,11 +370,11 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+To wydarzenie jest uruchamiane za każdym razem, gdy status jest aktualizowany.
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Wystrzelony, gdy dane są odebrane ze skryptu iFrame.
 
 #### `iFrameData`
 

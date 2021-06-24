@@ -147,13 +147,13 @@ Eğer varsa sayfadaki bir değişkenin içeriğini gösterir.
 **Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
 
 ```typescript
-const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+const pageVar = getPageletiable(".pageVar");
+console.log(pageVar); // Değişkenin içeriğini gösterecektir
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Bir ayarın değerini döner.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -166,7 +166,7 @@ console.log(version); // 2.1.0 çıktısı verir
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Belirtilen ayarı gizler.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+İnternet sitesinin konsol kayıtlarının çıktısını döndürür.
 
 ```typescript
 presence.showSetting("pdexID"); // PdexID'yi ayarın id'si ile değiştirin
@@ -191,18 +191,18 @@ presence.showSetting("pdexID"); // PdexID'yi ayarın id'si ile değiştirin
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+**Not:** Bu ayar, `metadata.json` dosyasında `readLogs` ayarının `true` olmasını gerektirir.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Bu, son 100 kaydın (array içerisinde) çıktısını verir.
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+Girilen mesajı konsola `info` (bilgi) tarzında konsola yazdırır.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Girilen mesajı konsola `success` (başarılı) tarzında konsola yazdırır.
 
 ```typescript
 presence.info("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
@@ -210,7 +210,7 @@ presence.info("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Girilen mesajı konsola `error` (hata) tarzında konsola yazdırır.
 
 ```typescript
 presence.success("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
@@ -218,7 +218,7 @@ presence.success("Test") // Belirtilen tarzda "Test" mesajını konsola yazdır�
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+`startTimestamp` ve `endTimestamp` değerleri olarak kullanabileceğiniz bir `Array` formatında 2 adet `snowflake` zaman verisi döndürür.
 
 ```typescript
 presence.error("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
@@ -226,7 +226,7 @@ presence.error("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+**Not:** querySelector da verilen `String` bir örnektir.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -238,7 +238,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+**Not:** querySelector da verilen `String` bir örnektir.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,7 +247,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+Metin şeklindeki zaman verisini (`HH:MM:SS` VEYA `MM:SS` VEYA `SS`) sayı verisinde döndürür (snowflake zaman verisine değil).
 
 ### `timestampFromFormat(String)`
 
@@ -261,11 +261,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+`PresenceData` arayüzünün, `setActivity()` metodunu kullandığınız her zaman kullanılması önerilir.
 
 ## `PresenceData` Arayüzü
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+Bu arayüz, aşağıdaki alanları kullanabilir, bunların hepsi opsiyonel yani zorunlu değildir.
 
 This interface has following variables, all of them are optional.
 
@@ -367,11 +367,11 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+Bu event, kullanıcı servisin çalışacağı bir siteye girdikten sonra sürekli olarak kendini tekrar edecektir.
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+iFrame'den bilgi geldiğinde bu event bilgi iletecektir.
 
 #### `iFrameData`
 

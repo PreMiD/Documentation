@@ -175,7 +175,7 @@ console.log(setting); // This will log the value of the setting
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Shows given setting (Only works if the setting was already hidden).
 
 ```typescript
 presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
@@ -261,11 +261,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
 
 ## واجهة `presenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+هذه الواجهة تحتوي على المتغيرات التالية، جميعها اختيارية.
 
 This interface has following variables, all of them are optional.
 
@@ -370,11 +370,11 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+ويبدأ هذا الحدث في كل مرة يجري فيها تحديث الpresence.
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+تشتغل عند تلقي البيانات من النص البرمجي الى iFrame.
 
 #### `iFrameData`
 

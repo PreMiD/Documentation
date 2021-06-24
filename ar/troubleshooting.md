@@ -29,8 +29,8 @@ Included on this page:
 ### هل تستخدم تطبيق ديسكورد؟
 **لا يعمل** PreMiD على إصدار ديسكورد للمتصفح، يجب عليك تحميل التطبيق [هنا](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
+### تأكد من أنك قمت بتفعيل نشاط لعبة في الإعدادات الديسكورد
+**إعدادات المستخدم** > **نشاط العبة** ![activitystatus.png](/activitystatus.png)
 
 ### تأكد من أن ديسكورد لا يعمل كمسؤول
 مهم جدا. لن يعمل ديسكورد RPC إذا قمت بتشغيل ديسكورد كمسؤول.

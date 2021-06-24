@@ -29,8 +29,8 @@ Bạn có thể nhấn <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) hoặc <kbd>CMD
 ### Are you using the Discord app?
 PreMiD sẽ **không** hoạt động trên phiên bản trình duyệt web của Discord, vui lòng tải xuống phiên bản ứng dụng [tại đây](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
+### Hãy chắc chắn là bạn đã cho phép Hoạt động trong game trong Discord trong cài đặt
+**Cái đặt người dùng** > **Hoạt động trong game** ![activitystatus.png](/activitystatus.png)
 
 ### Hãy chắc chắn là Discord đang KHÔNG hoạt động ở chế độ administrator
 Rất quan trọng. Discord RPC sẽ không hoạt động nếu bạn chạy Discord dưới quyền quản trị viên.

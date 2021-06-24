@@ -322,7 +322,7 @@ presence.hideSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetze
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Gibt die Protokolle der Webseiten-Konsole wieder.
 ```typescript
 presence.showSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetzen
 ```
