@@ -2,7 +2,7 @@
 title: Presence-richtlijnen
 description: Regels die alle presence-ontwikkelaars moeten volgen om hun presence te laten toevoegen.
 published: true
-date: 2021-06-03T21:35:44.819Z
+date: 2021-06-27T16:08:07.318Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -278,7 +278,7 @@ Het belangrijkste proces van de ontwikkeling van je presence is de publicatie na
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Presencecontroleurs</h2>
-  
+
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
@@ -308,12 +308,12 @@ Enkele dingen die je moet weten voordat je een pull request opent:
 
 ## `Checks`
 
-![Controles](https://i.imgur.com/oqAakOc.png)
+![Example of checks](https://i.imgur.com/T8agbnB.png)
 
 Op dit moment wordt de presence in drie afzonderlijke fasen gecontroleerd. Al deze controles helpen de verificateurs te bepalen of je presence geschikt is voor implementatie.
 
-- `Codacy` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. (_WAARSCHUWING: de Codacy-bot wordt binnenkort verwijderd en DeepScan zal het overnemen!_)
-- `DeepScan` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
+- `Codacy` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
+- `CodeFactor` is a bot that checks for code quality. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
 - `Schema Validation` zal je `metadata.json` bestand scannen op fouten (bijvoorbeeld ontbrekende velden, ongeldige waarde types, etc.). Als je ooit nieuwe problemen ziet, ben je ook **verplicht** om die op te lossen. Het toevoegen van een schemaveld aan je `metadata.json` bestand zal je tekstverwerker (indien ondersteund) toestaan om deze fouten te tonen tijdens de ontwikkeling van je presence.
 
 ## `Aanvullende regels`
@@ -323,6 +323,7 @@ Op dit moment wordt de presence in drie afzonderlijke fasen gecontroleerd. Al de
 Nadat je aan alle richtlijnen hebt voldaan en je presence tenminste twee keer is gecontroleerd, wordt je presence toegevoegd aan de bibliotheek.
 
 # Suggesties
+
 Als u enkele suggesties hebt over onze richtlijnen, kun je contact met ons opnemen @ [PreMiD discord server](https://discord.premid.app) en wij zullen deze bekijken!
 
 # Bijdrages

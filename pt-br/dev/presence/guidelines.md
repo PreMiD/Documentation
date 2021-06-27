@@ -2,7 +2,7 @@
 title: Diretrizes das Presences
 description: Regras que todos os presence developers devem seguir para ter sua presence adicionada.
 published: true
-date: 2021-06-03T21:35:44.819Z
+date: 2021-06-27T16:08:07.318Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -278,7 +278,7 @@ O processo mais importante de desenvolvimento da presence é conseguir sua prese
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Revisores de Presence</h2>
-  
+
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
@@ -308,12 +308,12 @@ Algumas coisas que você deve saber após abrir uma pull request:
 
 ## `Checagem`
 
-![Verificações](https://i.imgur.com/oqAakOc.png)
+![Example of checks](https://i.imgur.com/T8agbnB.png)
 
 Atualmente, uma presence deve passar por 3 fases separadas de checagem. Todas essas checagens ajudam os revisores a determinar se sua presença é adequada para uso.
 
-- `Codacy` é um bot que verifica a qualidade do código. Se você receber erros por novos problemas, é **necessário** corrigi-los. (_ATENÇÃO: O bot Codacy será removido em breve e você precisará verificar os erros somente pelo DeepScan!_)
-- `DeepScan` é um bot que verifica a qualidade do código. Se você receber erros por novos problemas, é **necessário** corrigi-los.
+- `Codacy` é um bot que verifica a qualidade do código. Se você receber erros por novos problemas, é **necessário** corrigi-los. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
+- `CodeFactor` is a bot that checks for code quality. Se você receber erros por novos problemas, é **necessário** corrigi-los.
 - O `Schema Validation` irá verificar o seu arquivo `metadata.json` para identificar quaisquer erros (por exemplo, campos vazios, tipos de valores inválidos, etc.). Se você ver quaisquer novos problemas, você também **deve** corrigi-los. Adicionando um campo de esquema ao seu arquivo `metadata.json`, permitirá que seu editor de texto (se suportado) mostre esses erros durante o desenvolvimento.
 
 ## `Regras adicionais`
@@ -323,6 +323,7 @@ Atualmente, uma presence deve passar por 3 fases separadas de checagem. Todas es
 Após atender a todas as diretrizes e ter sua Presence revisada pelo menos duas vezes, sua Presence será fundida com a loja.
 
 # Sugestões
+
 Se você tiver algumas sugestões para nossas diretrizes, você pode entrar em contato conosco pelo nosso [servidor no Discord](https://discord.premid.app) e nós iremos checá-las!
 
 # Contribuições
