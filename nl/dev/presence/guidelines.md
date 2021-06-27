@@ -308,12 +308,12 @@ Enkele dingen die je moet weten voordat je een pull request opent:
 
 ## `Checks`
 
-![Example of checks](https://i.imgur.com/T8agbnB.png)
+![Voorbeelden van checks](https://i.imgur.com/T8agbnB.png)
 
 Op dit moment wordt de presence in drie afzonderlijke fasen gecontroleerd. Al deze controles helpen de verificateurs te bepalen of je presence geschikt is voor implementatie.
 
-- `Codacy` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
-- `CodeFactor` is a bot that checks for code quality. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
+- `Codacy` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. *Let op: Codacy geeft je niet altijd waarschuwingen. Kijk in plaats daarvan naar waarschuwingen van CodeFactor.*
+- `CodeFactor` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
 - `Schema Validation` zal je `metadata.json` bestand scannen op fouten (bijvoorbeeld ontbrekende velden, ongeldige waarde types, etc.). Als je ooit nieuwe problemen ziet, ben je ook **verplicht** om die op te lossen. Het toevoegen van een schemaveld aan je `metadata.json` bestand zal je tekstverwerker (indien ondersteund) toestaan om deze fouten te tonen tijdens de ontwikkeling van je presence.
 
 ## `Aanvullende regels`
