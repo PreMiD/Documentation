@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
 
-An example of that file can be found below.
+Contoh file tersebut dapat ditemukan di bawah.
 
 ```typescript
 {
@@ -327,15 +327,15 @@ Shows given setting (Only works if the setting was already hidden).
 presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
 ```
 
-## Presence categories
+## Kategori presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Saat membuat presence, kamu harus menentukan kategori yang mana presence berada. Berikut adalah daftar kategori yang bisa digunakan.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
-      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Kategori</th>
+      <th style="text-align:left">Nama</th>
       <th style="text-align:left">Deskripsi</th>
     </tr>
   </thead>
@@ -343,32 +343,32 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>anime</b></td>
       <td style="text-align:left"><b>Anime</b></td>
-      <td style="text-align:left">Anything related to anime, from forums to video streaming platforms.</td>
+      <td style="text-align:left">Apapun yang berhubungan dengan anime, dari forum hingga platform streaming video.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
-      <td style="text-align:left"><b>Game</b></td>
+      <td style="text-align:left"><b>Permainan</b></td>
       <td style="text-align:left">Any website that has game related content, such as <code>Kahoot</code> or <code>Skribbl.io</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
       <td style="text-align:left"><b>Musik</b></td>
-      <td style="text-align:left">These are websites that offer music related content, whether that be streaming or downloading.</td>
+      <td style="text-align:left">Website ini menawarkan konten yang berhubungan dengan musik, streaming atau download.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Sosial</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or  for participating in other forms of social networking.</td>
+      <td style="text-align:left">Website yang dibuat untuk membuat dan membagikan konten atau berpartisipasi dalam social network dalam bentuk apapun.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
         <td style="text-align:left"><b>Video dan Stream</b></td>
-      <td style="text-align:left">Websites that serve the purpose of providing videos and streams.</td>
+      <td style="text-align:left">Website yang berguna untuk menyediakan video dan stream.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
       <td style="text-align:left"><b>Lainnya</b></td>
-      <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
+      <td style="text-align:left">Apapun yang tidak termasuk kategori diatas.</td>
     </tr>
   </tbody>
 </table>
