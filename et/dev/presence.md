@@ -302,34 +302,34 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () = > {
   /*UpdateData käivitub alati ja seetõttu tuleks seda kasutada värskendustsüklina ehk linnukena. Seda nimetatakse võimaluse korral mitu korda sekundis.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Soovitatav on seada väljaspool seda sündmuse funktsiooni veel üks funktsioon, mis muudab muutujate väärtusi ja teeb tugeva tõste, kui helistate andmeid API-lt.*/
 
-  const presenceData: PresenceData = {
+  const presenceData: presenciteave = {
     largeImageKey:
-      "key" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+      "key"/*Suure pildi võti (faili nimi) presence. Need laaditakse üles ja nimetatakse teie rakenduse jaotises Rich Presence nimega Kunstivarad*/,
     smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+      "key"/*Presence-i juures oleva väikese pildi võti (faili nimi). Need laaditakse üles ja nimetatakse teie rakenduse jaotises Rikas Presence nimega Kunstivarad*/,
+    smallImageText: "Mõned hõljutavad tekstid", //Tekst, mis kuvatakse väikese pildi kohal hõljutades
+    details: "Lehe nime sirvimine", //Presence-i teksti ülemine osa
+    state: "Jao A lugemine", //Presence-i teksti alumine osa
+    startTimestamp: 1577232000, //Unixi ajastu ajatempel, millal loendamist alustada
+    endTimestamp: 1577151472000 //Kui soovite kuvada möödunud aja asemel vasakule jääva aja, siis see on unixi ajastu ajatempel, mille abil taimer lõpeb
+  }; /*Soovi korral saate siin määrata suurPiltVõti ja muuta ülejäänud muutuvate alamomadustena, näiteks presenceSata.type = "blahblah"; tüübinäited: üksikasjad, olek jne*/
 
-  if (presenceData.details == null) {
-    //This will fire if you do not set presence details
-    presence.setTrayTitle(); //Clears the tray title for mac users
-    presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  } else {
-    //This will fire if you set presence details
-    presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+  kui (presenceData.details == null) {
+    //See käivitub, kui te ei määra presence-i üksikasju
+    presence.setTrayTiitle (); //Kustutab salve pealkirja mac-kasutajatele
+    presence.setAktiivsus (); /*Uuendage presence-i ilma andmeteta, kustutades selle ja muutes suureks pildiks Discordi rakenduse ikooni ja teksti Discordi rakenduse nimeks*/
+  } muu {
+    //See käivitub, kui määrate presence-i üksikasjad
+    presence.setActivity (presenceData); //Värskendage presence kõigi presenceData objekti väärtustega
   }
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Saate selle kopeerida oma faili `presence.ts` ja redigeerida väärtusi. Kõigi väärtuste seadistamine toimub updataData sündmuse sees.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Näidete jaoks soovitame vaadata presence-i koodi nagu: 1337x või 9GAG. Klass `Presence` kohta lisateabe saamiseks klõpsake [siia](/dev/presence/class).
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
