@@ -331,7 +331,7 @@ Saate selle kopeerida oma faili `presence.ts` ja redigeerida väärtusi. Kõigi 
 
 Näidete jaoks soovitame vaadata presence-i koodi nagu: 1337x või 9GAG. Klass `Presence` kohta lisateabe saamiseks klõpsake [siia](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Kuna v2.2.0 on nüüd slaidiseansse, võimaldab see teil intervalliga näidata mitut liidest `PresenceData`, lisateabe saamiseks klõpsake `Slideshow` klassi [siin](/dev/presence/slideshow).
 
 ## Can't get certain data?!
 
