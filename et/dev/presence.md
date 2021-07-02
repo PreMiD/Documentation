@@ -187,120 +187,120 @@ Kopeerige ülaltoodud kood ja pange see oma faili `metadata.json`. Nüüd peate 
       <td style="text-align:left">Teenuse URL. <br><b>Näide:</b><code>vk.com</code><br>
       <b> See URL peab vastama veebisaidi URL-ile, sest see tuvastab, kas see on veebisait, kuhu skripti süstida. </b><br><b><b> Ärge</b> lisage<code> https://</code> või<code> http://</code> URL-i sisse ega kaldkriips lõpus:
       <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Märkus</b>: Mõne URL-i domeeni ees võib olla <code>www.</code> või midagi muud. Do <b>NOT</b> forget to add it!<br>
-      You can add multiple URLs by doing the following:<br>
-      <code>["URL1", "URL2", "ETC."]</code><br>
-      You could also use regExp also known as Regex for this task, explained further below.</td>
+      <b>Märkus</b>: Mõne URL-i domeeni ees võib olla <code>www.</code> või midagi muud. <b>ÄRGE</b> unustage seda lisada!<br>
+      Mitu URL-i saate lisada järgmiselt:<br>
+      <code>["URL1", "URL2", "JNE"]</code><br>
+      Selle ülesande jaoks võite kasutada ka regExpi, tuntud ka kui Regex, mida selgitatakse allpool.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">Tavalise avaldise string, mida kasutatakse URL-ide sobitamiseks.<br>
+      RegExp või tuntud ka kui Regex, saab kasutada, kui veebisaidil on mitu alamdomeeni.<br>
+      Selleks võite kasutada järgmist regExp-i:<br>
+      <code>([a-z0-9] +) [.] domeen [.] TLD"</code><br>
+      TLD tähistab tipptaseme domeeni, näiteks: .com .net (kuid ärge sisestage punkti).<br>
+      <code>([a-z0-9]+)</code> tähendab kõike vahemikus a kuni z ja vahemikus 0 kuni 9.<br>
+      Kiire alustaja saate selle <a href="https://youtu.be/sXQxhojSdZM">video</a> vaatamisega.<br>
+      RegExp-i saate testida aadressil <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Teie presence-i versioon.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link teenuse logole.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Link sinu presence-i pisipildile.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Väärtus <code>#HEX</code>. Soovitame kasutada teenuse põhivärvi
+        mida teie presence toetab.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Kirjuta silte, need aitavad kasutajatel otsida teie presence-it veebisaidil.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under. See the valid catergories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">here</a>.</td>
+      <td style="text-align:left">String, mida kasutatakse presence-i kategooria tähistamiseks. Vaadake kehtivaid kategooriaid <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">siit</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
+      <td style="text-align:left">Määrab, kas <code>iFrames</code> kasutatakse.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into. See regExp for more info.</td>
+      <td style="text-align:left">Regulaaravaldise valija, mis valib sisestatavad iframe-id. Lisateavet leiate regExp-ist.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Määrab, kas laiendus peaks logisid lugema.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change.<br>
-      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
+      <td style="text-align:left">Seadete valik, mida kasutaja saab muuta.<br>
+      Lisateavet presence-i kohta leiate <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">siit</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
   </tbody>
 </table>
 
-## Getting started
+## Alustamine
 
 ```typescript
-const presence = new Presence({
-    clientId: "000000000000000000" //The client ID of the Application created at https://discordapp.com/developers/applications
+const kohalolek = uus Presence({
+    clientId: "00000000000000000000" //Rakenduse kliendi ID, mis on loodud aadressil https://discordapp.com/developers/applications
   }),
-  strings = presence.getStrings({
-    play: "presence.playback.playing",
-    pause: "presence.playback.paused"
-    //You can use this to get translated strings in their browser language
+  stringid = presence.getStrings ({
+    esitus: "presence. taasesitus. mängimine",
+    paus: "presence.playback.paused"
+    //Selle abil saate tõlkida stringe nende brauseri keeles
   });
 
-/*
+/ *
 
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Haarake ja töötlege siin kõik oma andmed
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+    // element haarab //
+    // api kõned //
+    // muutujad //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+// Käivitage funktsioon iga 10 sekundi tagant UpdateData sündmusest eraldi, et saada ja määrata muutujad, mille UpdateData korjab
 
 */
 
-presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
+presence.on("UpdateData", async () = > {
+  /*UpdateData käivitub alati ja seetõttu tuleks seda kasutada värskendustsüklina ehk linnukena. Seda nimetatakse võimaluse korral mitu korda sekundis.
 
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
@@ -373,32 +373,32 @@ presence.on("iFrameData", (data) => {
 
 **Note:** This needs to be placed outside of the updateData event.
 
-## Compiling
+## Kompileerimine
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Avage kaustas konsool ja kirjutage `tsc -w`, et kompileerida `presence.ts` kausta `/dist`.
 
-# Loading the presence
+# Presence-i laadimine
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Avage brauseris laienduse hüpikaken ja hoidke klaviatuuri nuppu <kbd>Shift</kbd>.
+2. **Load Presence** kuvatakse jaotises Presences.
+3. Klõpsake seda, kui hoiate endiselt nuppu <kbd>Shift</kbd>.
+4. Valige oma presence-i kaust /dist.
 
-# Some helpful things
+# Mõned kasulikud asjad
 
-## Hot-reloading
+## Kuum laadimine
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Veebisait, millel arendate, laaditakse automaatselt uuesti iga kord, kui fail kausta salvestatakse.
 
-## Debugging
+## Veakõrvaldus
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Võite koodi `console.log("Test");` panna oma koodi vahele ja vaadata, kas teie brauserikonsool annab teile selle väljundi. Kui jah, siis jätkake ja proovige pärast järgmist funktsiooni uuesti. Kui ei, siis on üleval viga.
+- Kui see teid ka ei aita, küsige abi meie [Discord serverist](https://discord.premid.app/) Presence-i arendajalt.
 
-# Files explained
+# Toimikud selgitatud
 
-- [Presence Class](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Presence-i klass](/dev/presence/class)
+- [Slaidiseansi klass](/dev/presence/slideshow)
+- [iFrame'i klass](/dev/presence/iframe)
+- [Metaandmete fail](/dev/presence/metadata)
+- [TypeScripti seadistamine](/dev/presence/tsconfig ""){.links-list}
