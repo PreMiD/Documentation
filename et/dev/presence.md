@@ -333,36 +333,36 @@ Näidete jaoks soovitame vaadata presence-i koodi nagu: 1337x või 9GAG. Klass `
 
 Kuna v2.2.0 on nüüd slaidiseansse, võimaldab see teil intervalliga näidata mitut liidest `PresenceData`, lisateabe saamiseks klõpsake `Slideshow` klassi [siin](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Kas te ei saa kindlaid andmeid?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Paljud veebisaidid kasutavad [iframe'i](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Need Html-märgendid võivad sisaldada mitut allikat, näiteks videoid. Kuid need pole iga kord asjakohased. Mõned on peidetud või neid ei kasutata lihtsalt aktiivselt. Enne tarbetu töö tegemist kontrollige, kas saate vajaliku teabe ilma nendeta välja võtta.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Otsige neid oma brauserikonsoolist (veenduge, et olete vahekaardil **Elements**).
+2. Otsing (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) või <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Käivitage `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Kui leiate, et teie andmed on iFrame-is, peate tegema järgmist:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Looge `iframe.ts` fail.
+2. Määrake oma metaandmete failis iFrame väärtuseks `true`.
+3. Täitke oma iFrame-i fail.
 
 ```typescript
 const iframe = new iFrame();
-iframe.on("UpdateData", async () => {
+iframe.on("UpdateData", async () = > {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  Hankige iFrame'ist kõik vajalikud andmed, salvestage need muutujatesse
+  ja saatke need siis iframe.send abil
   */
-  iframe.send({
-    //sending data
+  iframe.send ({
+    //andmete saatmine
     video: video,
-    time: video.duration
+    aeg: video.duration
   });
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Presence-i faili andmete vastuvõtmine iFrame failist.
 
 ```typescript
 presence.on("iFrameData", (data) => {
@@ -371,7 +371,7 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Märkus:** See tuleb asetada väljaspool sündmust updateData.
 
 ## Kompileerimine
 
