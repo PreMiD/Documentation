@@ -83,15 +83,13 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Die Benutzer <code>id</code> kann man aus Discord rauskopieren, indem du den Entwicklermodus aktivierst und mit der rechten Maustaste auf dein Profil klickst.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Mitwirkenden enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Mitwirkenden enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Die Benutzer <code>id</code> kann man aus Discord rauskopieren, indem du den Entwicklermodus aktivierst und mit der rechten Maustaste auf dein Profil klickst.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -103,15 +101,13 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Erlaubt es die Presence mit einem alternativen Namen zu suchen.<br>
-      Soll für Presences, die verschiedene Namen in verschiedenen Sprachen haben, verwendet werden (z.B.: Pokémon und 포켓몬스터).<br>
-      Dies kann auch genutzt werden für Presences, die spezielle Zeichen  haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
+      <td style="text-align:left">Kann die Presence mit einem alternativen Namen suchen.<br>Gemacht für Presences, die verschiedene Namen in verschiedenen Sprachen haben (z.B.:  Pokémon and 포켓몬스터).<br>Du kannst es auch für Presences verwenden, die spezielle Zeichen haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Beschreibung des Dienstes <b>NICHT</b> der Presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. Siehe die Kategorie für Presence-Sprachen für eine Liste. </td>
+      <td style="text-align:left">Beschreibung des Dienstes <b>NICHT</b> der Presence. Deine Beschreibung muss Schlüsselpaarwerte enthalten, die die Sprache und die Beschreibung in dieser bestimmten Sprache angeben. Erstelle Beschreibungen mit den Sprachen <i>die du kennst</i>. Unsere Übersetzer werden Änderungen an der Metadatendatei vornehmen. Siehe die Kategorie für Presence-Sprachen für eine Liste. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -137,7 +133,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link zum Logo des Dienstes.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -149,14 +145,14 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> Wert. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> Wert. Wir empfehlen eine primäre Farbe des Dienstes zu nutzen,
+        die Deine Presence unterstützt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Ein Array mit Schlagwörtern. Diese unterstützen den Benutzer bei der Suche nach deiner Presence auf der Webseite.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -207,7 +203,7 @@ Wenn Sie reguläre Ausdrücke lernen möchten, finden Sie hier einige Websites.
 
 ## Presence-Sprachen
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Eine vollständige Liste von Sprachen können mithilfe dieses [API-Endpunkts](https://api.premid.app/v2/langFile/list) gefunden werden. Um deine Presence noch mehr anzupassen, kannst Du Benutzern erlauben, die Sprache ihrer Presence auszuwählen. Siehe [`multiLanguage`](#multilanguage) für mehr Informationen.
+PreMiD ist ein mehrsprachiger Service, was bedeutet, dass es eine Reihe von Sprachen gibt, welche die Nutzer über den ganzen Globus verbinden. Eine vollständige Liste von Sprachen können mithilfe dieses [API-Endpunkts](https://api.premid.app/v2/langFile/list) gefunden werden. Um deine Presence noch mehr anzupassen, kannst Du Benutzern erlauben, die Sprache ihrer Presence auszuwählen. Siehe [`multiLanguage`](#multilanguage) für mehr Informationen.
 
 ## Presence-Einstellungen
 Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eingestellt werden kann.
