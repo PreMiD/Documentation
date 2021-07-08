@@ -1,6 +1,6 @@
 ---
-title: Home
-description: Official Documentation for v2
+title: Māja
+description: Oficiālā v2 Dokumentācija
 published: true
 date: 2021-02-24T23:22:41.678Z
 tags:
@@ -8,33 +8,33 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> Šis dokuments vēl tiek rediģēts! Dažas lapas var būt nepabeigtas vai var nebūt. 
 > 
 > {.is-warning}
 
-# About PreMiD
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
-- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
+# Par PreMiD
+- :mag:[Kas ir PreMiD?](/about) Doma aiz PreMiD un kapēc tev tas būtu jāizmanto.
+- :link:[Kas ir RPC?](https://discordapp.com/rich-presence) Viss par Rich Presence un tā funkcijām.
 
-# Getting Started
+# Darba Uzsākšana
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+PreMiD ir ātri un vienkārši uzstādāms. Tu būsi gatavs un strādājošā kārtība īsā laikā.
 
-- Make sure you have read the [system requirements](/install/requirements).
-- Follow the quick and simple [installation guide](/install).
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- Pārliecinies, ka esi izlasījis [sistēmas prasības](/install/requirements).
+- Seko ātrajam un vienkāršajam [uzstādīšanas ceļvedim](/install).
+- [Problēmu novēršana](/troubleshooting) izved tevi cauri risinājumiem bieži sastopamām problēmām.
 
 # Izstrādātāji
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+[Darba uzsākšana](/dev) priekš PreMiD izstrādāšanas ir jūsu pirmais solis pirms kodējat dažas lietas.
 
-- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
-- :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
+- :computer:[API](/dev/api)Piekļūstiet resursiem un veiciet darbības izmantojot PreMiD API.
+- :wrench:[Presence Izstrādāšana](/dev/presence): Iemācieties izmantot mūsu Presence sistēmu.
 
 # Dod savu ieguldījumu
-- :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
-- :bulb: [Suggest a New Feature](https://discord.premid.app/): We need your ideas!
-- :heart: [Donate](https://www.patreon.com/Timeraa): Make a small donation or become a sponsor of this wonderful project!
-- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
+- :bug:[Ziņojiet par Problēmu](https://github.com/PreMiD): Palīdziet mums nospiest tos nepatīkamos kukaiņus.
+- :bulb:[Ieteikt Jaunu Funkciju](https://discord.premid.app/): Mums vajag jūsu idejas!
+- :heart:[Ziedot](https://www.patreon.com/Timeraa): Veic nelielu ziedojumu vai paliec par sponsoru šim brīnišķīgajam projektam!
+- :globe_with_meridians: [Valodas](https://translate.premid.app): Ļauj citiem lietotājiem izmantot PreMiD viņu dzimtajā valodā.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
