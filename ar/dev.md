@@ -1,23 +1,23 @@
 ---
 title: الإبتداء
-description: نصيحة صغيرة لأولئك الذين حصلوا على البرمجة مؤخرا
+description: نصيحة صغيرة لأولئك الذين بدأوا بالبرمجة مؤخرًا
 published: true
 date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> مطلوب محرر كود المصدر. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> مطلوب محرر نص برمجي. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
 # تثبيت المتطلبات
 1. قم بتثبيت [ Git ](https://git-scm.com/).
 2. تثبيت [ Node ](https://nodejs.org/en/) (يأتي مع [ npm ](https://www.npmjs.com/)).
-3. قم بتثبيت [TypeScript](https://www.typescriptlang.org/index.html#download-links) (افتح محطة طرفية واكتب `npm install -g typescript`).
+3. قم بتثبيت [TypeScript](https://www.typescriptlang.org/index.html#download-links) (افتح نافذة الأوامر وأكتب `npm install -g typescript`).
 
 # استنساخ المشروع
 1. افتح محطة واكتب `git clone URL`. ** استبدل عنوان URL برابط مستودع التخزين الذي تريد المساهمة فيه </> مثلا `git clone https://github.com/PreMiD/PreMiD`.
-2. 2 اختيار مجلد من اختيارك.
+2. اختر مجلداً من اختيارك.
 3. Open it in your code editor.
 
 # تثبيت الإعتمادات

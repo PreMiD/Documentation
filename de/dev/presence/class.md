@@ -274,7 +274,7 @@ This interface has following variables, all of them are optional.
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Beschreibung</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Typ</th>
     </tr>
   </thead>
   <tbody>

@@ -345,14 +345,14 @@ If you find that your data is in a iFrame you need to do the following:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  Gereken tüm veriyi aldırın ve aşağıdaki yöntemle
+  ana koda gönderin.
   */
   iframe.send({
-    //sending data
+    // veriyi gönderme
     video: video,
     time: video.duration
-  });
+  }); 
 });
 ```
 

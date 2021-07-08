@@ -352,11 +352,11 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  পাও তোমার প্রয়োজনীয় সমস্ত ডাটা iFrame থেকে এবং সেগুলোকে ভ্যারিয়েবলে সেভ করো
+  এবং সেগুলোকে পাঠাও iframe.send ব্যবহার করে
   */
   iframe.send({
-    //sending data
+    //ডাটা পাঠানো
     video: video,
     time: video.duration
   });
