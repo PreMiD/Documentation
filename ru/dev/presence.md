@@ -339,15 +339,15 @@ setInterval(myOutsideHeavyLiftingFunction, США);
 
 ```typescript
 const iframe = new iFrame();
-iframe.on("UpdateData", async () => {
+iframe. n("Обновить данные", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  Получить все необходимые данные из iFrame сохранить их в переменных
+  и затем послать их с помощью iframe. end
   */
-  iframe.send({
-    //sending data
-    video: video,
-    time: video.duration
+  iframe. end({
+    //отправка данных
+    видео: видео,
+    раз: видео. Продолжительность
   });
 });
 ```
