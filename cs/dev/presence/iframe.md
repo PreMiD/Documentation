@@ -2,14 +2,11 @@
 title: iFrame Třída
 description:
 published: true
-date: 2020-05-03T20:17:51.982Z
+date: 2021-07-01T14:03:55.793Z
 tags:
 ---
 
 # iFrame Třída
-> The iframe system with PreMiD is problematic and can have unexpected behavior, use with caution. 
-> 
-> {.is-danger}
 
 ## Úvod
 
