@@ -348,11 +348,11 @@ Si los datos que necesitas están en un iFrame, debes hacer lo siguiente:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  Obtén todos los datos que requieras de iFrame y guardalos en
+  variables, luego envialos usando iframe.send
   */
   iframe.send({
-    //sending data
+    //enviando los datos
     video: video,
     time: video.duration
   });
