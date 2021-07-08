@@ -2,14 +2,11 @@
 title: คลาส iFrame
 description:
 published: true
-date: 2020-05-03T20:17:51.982Z
+date: 2021-07-01T14:03:55.793Z
 tags:
 ---
 
 # คลาส iFrame
-> ระบบ iframe กับ PreMiD ยังไม่เสถียรและอาจมีการแสดงอาการที่ไม่คาดคิด โปรดใช้ด้วยความระมัดระวัง 
-> 
-> {.is-danger}
 
 ## แนะนำ
 
