@@ -2,14 +2,11 @@
 title: Classe iFrame
 description:
 published: true
-date: 2020-05-03T20:17:51.982Z
+date: 2021-07-01T14:03:55.793Z
 tags:
 ---
 
 # Classe iFrame
-> O sistema iframe com PreMiD é problemático e pode ter um comportamento inesperado, use com cautela. 
-> 
-> {.is-danger}
 
 ## Introdução
 
