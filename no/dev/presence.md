@@ -349,15 +349,15 @@ If you find that your data is in a iFrame you need to do the following:
 
 ```typescript
 const iframe = new iFrame();
-iframe.on("UpdateData", async () => {
+iframe. n("Oppdateringsdata", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  Få alle dataene du trenger for å lagre dem ved variablene
+  og deretter sende dem ved hjelp av iframe.send
   */
   iframe.send({
-    //sending data
+    //sending av data
     video: video,
-    time: video.duration
+    tid: video. varighet
   });
 });
 ```
