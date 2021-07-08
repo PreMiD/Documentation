@@ -2,7 +2,7 @@
 title: Servis Geliştirme
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -345,14 +345,14 @@ If you find that your data is in a iFrame you need to do the following:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Gereken tüm veriyi aldırın ve aşağıdaki yöntemle
-  ana koda gönderin.
+  Get all the data you need out of the iFrame save them in variables
+  and then send them using iframe.send
   */
   iframe.send({
-    // veriyi gönderme
+    //sending data
     video: video,
     time: video.duration
-  }); 
+  });
 });
 ```
 

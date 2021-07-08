@@ -2,7 +2,7 @@
 title: การพัฒนา Presence
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -352,7 +352,7 @@ const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
   Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  and then send them using iframe.send
   */
   iframe.send({
     //sending data

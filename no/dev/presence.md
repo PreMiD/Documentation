@@ -2,7 +2,7 @@
 title: Presence Development
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -349,15 +349,15 @@ If you find that your data is in a iFrame you need to do the following:
 
 ```typescript
 const iframe = new iFrame();
-iframe. n("Oppdateringsdata", async () => {
+iframe.on("UpdateData", async () => {
   /*
-  Få alle dataene du trenger for å lagre dem ved variablene
-  og deretter sende dem ved hjelp av iframe.send
+  Get all the data you need out of the iFrame save them in variables
+  and then send them using iframe.send
   */
   iframe.send({
-    //sending av data
+    //sending data
     video: video,
-    tid: video. varighet
+    time: video.duration
   });
 });
 ```

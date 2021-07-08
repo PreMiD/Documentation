@@ -2,7 +2,7 @@
 title: Vývoj přítomnosti
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -352,7 +352,7 @@ const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
   Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  and then send them using iframe.send
   */
   iframe.send({
     //sending data
@@ -399,6 +399,6 @@ The website you are developing on is automatically reloading every time you save
 
 - [Třída Presence](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Třída](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [Třída iFrame](/dev/presence/iframe)
+- [Soubor metadat](/dev/presence/metadata)
 - [Konfigurace TypeSkriptu](/dev/presence/tsconfig ""){.links-list}

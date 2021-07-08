@@ -2,7 +2,7 @@
 title: Pengembangan Presence
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -349,11 +349,11 @@ Jika datamu ditemukan pada iFrame, kamu harus melakukan hal berikut:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Dapatkan semua data yang kamu butuhkan dari iFrame, simpan mereka dalam variable
-  dan kirim mereka menggunakan iframe.send 
+  Get all the data you need out of the iFrame save them in variables
+  and then send them using iframe.send
   */
   iframe.send({
-    //mengirim data
+    //sending data
     video: video,
     time: video.duration
   });
