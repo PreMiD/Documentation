@@ -2,14 +2,11 @@
 title: Rang iFrame
 description:
 published: true
-date: 2020-05-03T20:17:51.982Z
+date: 2021-07-01T14:03:55.793Z
 tags:
 ---
 
 # Rang iFrame
-> Tá fadhbanna leis an gcóras iframe le PreMiD agus féadann sé iompar gan choinne a bheith aige, agus é a úsáid go cúramach. 
-> 
-> {.is-danger}
 
 ## Réamhrá
 
