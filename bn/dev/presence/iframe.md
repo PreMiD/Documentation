@@ -2,14 +2,11 @@
 title: iFrame ক্লাস
 description:
 published: true
-date: 2020-05-03T20:17:51.982Z
+date: 2021-07-01T14:03:55.793Z
 tags:
 ---
 
 # iFrame ক্লাস
-> PreMiD এর সাথে iframe সিস্টেমটি সমস্যাযুক্ত এবং অপ্রত্যাশিত ব্যবহার করতে পারে, সতর্কতার সাথে ব্যবহার করো। 
-> 
-> {.is-danger}
 
 ## পরিচিতি
 
