@@ -351,11 +351,11 @@ Jika anda jumpa data anda dalam iFrame anda perlu lakukan berikut:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  Dapatkan semua data anda perlukan daripada iFrame dan simpan
+  dalam pemboleh ubah dan hantarkannya menggunakan iframe.send
   */
   iframe.send({
-    //sending data
+    //menghantar data
     video: video,
     time: video.duration
   });
