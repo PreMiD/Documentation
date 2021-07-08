@@ -349,15 +349,15 @@ Kui leiate, et teie andmed on iFrame-is, peate tegema järgmist:
 
 ```typescript
 const iframe = new iFrame();
-iframe.on("UpdateData", async () => {
+iframe.on("UpdateData", async () = > {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  Hankige iFrame'ist kõik vajalikud andmed, salvestage need muutujatesse
+  ja saatke need siis iframe.send abil
   */
-  iframe.send({
-    //sending data
+  iframe.send ({
+    //andmete saatmine
     video: video,
-    time: video.duration
+    aeg: video.duration
   });
 });
 ```
