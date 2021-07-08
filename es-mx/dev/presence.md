@@ -2,7 +2,7 @@
 title: Desarrollo de presences
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -347,11 +347,11 @@ Si encuentras que los datos están en un iFrame, debes hacer lo siguiente:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Obtén todos los datos que requieras de iFrame y guardalos en
-  variables, luego envialos usando iframe.send
+  Get all the data you need out of the iFrame save them in variables
+  and then send them using iframe.send
   */
   iframe.send({
-    //enviando los datos
+    //sending data
     video: video,
     time: video.duration
   });
