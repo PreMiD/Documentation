@@ -2,14 +2,11 @@
 title: iFrame Trieda
 description:
 published: true
-date: 2020-05-03T20:17:51.982Z
+date: 2021-07-01T14:03:55.793Z
 tags:
 ---
 
 # iFrame Trieda
-> iFrame systém s PreMiDom je problematický a môže mať neočakávane správanie, používajte opatrne. 
-> 
-> {.is-danger}
 
 ## Úvod
 
