@@ -10,7 +10,7 @@ dateCreated: 2021-02-21T21:13:14.449Z
 
 # Presence-Klasse
 
-## Introduction
+## Einführung
 
 Die Klasse `Presence` ist sehr nützlich, da sie grundlegende Methoden zum Erstellen einer Presence enthält.
 
@@ -30,11 +30,11 @@ Für die `Presence`-Klasse, gibt es drei verfügbare Eigenschaften.
 
 Diese Eigenschaft wird benötigt, damit deine Presence funktioniert, weil es die Anwendungs-Id benutzt, um Logo und Elemente anzuzeigen. Du bekommst dies auf deiner[Anwendungsseite](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Veraltet seit 2.2.4*
 
 Beim setzen von `InjectOnComplete` zu `true`, wird das erste `UpdateData` Event für beide, die `presence.ts` und `iframe.js` Dateien erst gestartet, wenn die Seite fertig geladen ist.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Veraltet seit 2.2.4*
 
 Beim setzen von `appMode` zu `true` und die Presence sollte leere `PresenceData` senden, zeigt die App die Anwendung (Bild und Name) auf dem Benutzerprofil, anstatt nichts.
 
