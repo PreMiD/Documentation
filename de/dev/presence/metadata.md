@@ -271,7 +271,7 @@ Jeder `string` ist ein `Object`, bei dem der Name mit dem Namen des Dienstes beg
 
 ##### Hinzufügen der Strings
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Jeder `string` ist ein `Object`, bei dem der Name mit dem Namen des Dienstes beginnt und dann der stringName mit einem Punkt dazwischen danach folgt.
 
 Der stringName ist ein 1-Wort-Identifikator der Nachricht.
 
