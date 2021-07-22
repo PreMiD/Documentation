@@ -136,15 +136,15 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // Ergebnis: Playing
+  pauseString = (await strings).pause; // Ergebnis: Paused
 ```
 
 ### `getPageletiable(String)`
 
 Gibt eine Variable von der Webseite zurück, falls sie vorhanden ist.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Warnung: Diese Funktion kann eine hohe CPU-Auslastung verursachen & Wenn es zu oft ausgeführt wird, dann kann dies Sitelagging verursachen.**
 
 ```typescript
 const pageVar = getPageletiable(".pageVar");
@@ -267,14 +267,14 @@ Die `PresenceData`-Schnittstelle wird empfohlen, wenn Sie die `SetActivity()` Me
 
 Diese Schnittstelle hat folgende Variablen, die alle optional sind.
 
-This interface has following variables, all of them are optional.
+Dieses Interface hat folgende Variablen, welche alle optional sind.
 
 <table>
   <thead>
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Beschreibung</th>
-      <th style="text-align:left">Typ</th>
+      <th style="text-align:left">Type</th>
     </tr>
   </thead>
   <tbody>
@@ -350,7 +350,7 @@ const presenceData: PresenceData = {
 
 ## Events
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Events ermöglicht dir, einige Änderungen oder Calls zu erkennen und zu bearbeiten. Du kannst Events mit der Methode `on` abonnieren.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -366,4 +366,4 @@ Wird ausgelöst, wenn Daten vom iFrame-Skript empfangen werden.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Wird ausgelöst, wenn Daten vom iFrame-Skript empfangen werden.

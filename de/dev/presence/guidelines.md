@@ -39,9 +39,9 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
   - Eindeutige Besucher pro Tag:
     - Für 6 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
     - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+  - Die Webseite kann nicht auf einer billigen Domain, wie z.B `.xyz`, `.club` und so weiter betrieben werden.
+  - Die Website selbst muss eine sehr gute Qualität, Design und etc. haben.
+- Presences sollten [allgemeine Details](https://api.premid.app/v2/langFile/presence/en) verwenden (Zeichenketten, die mit "allgemein" beginnen). Dies kannst du mit `multiLanguage` mit den angegebenen Zeichenketten erreichen. Wenn deine Presence benutzerdefinierte Zeichenketten erfordert, solltest du kein `multiLanguage` verwenden, bis die Presence 1000 Benutzer hat. Ein Beispiel findest du [hier](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Enthalten des `dist`-Ordners, der `presence.ts`-Datei, der `iframe.ts`-Datei und `metadata.json`-Datei ist obligatorisch, daher wäre das Ergebnis das, was im folgenden Schema dargestellt wird:
 
 ```bash
@@ -137,7 +137,7 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (z.B. eine Presence ohne iframe-Unterstützung braucht das `Iframe-Feld` nicht.)
+> Falls ein Feld als Optional in der [Dokumentation](https://docs.premid.app/en/dev/presence/metadata) oder mit dem Symbol `*` neben dem Schlüssel markiert sind, und ihre Presence den Standardwert für dieses Feld verwendet, solltest du es nicht in die `metadata`-Datei einfügen. (z.B. eine Presence ohne iframe-Unterstützung braucht das `Iframe-Feld` nicht.)
 
 > Alle Bilder in der `metadata` Datei müssen auf `i.imgur.com` hochgeladen werden. Die Verwendung von auf der Website gehosteten Inhalten ist **nicht** gestattet, da diese die Pfade und Dateien sich unfreiwillig ändern können.
 
@@ -255,7 +255,7 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> Schreibe **nicht** deine eigene `tsconfig.json` Datei, sondern verwende das, was in der [Dokumentation](https://docs.premid.app/en/dev/presence/tsconfig) zur Verfügung gestellt wurde.
 
 ## Änderungen
 
@@ -311,12 +311,12 @@ Ein paar Dinge, die du nach dem Öffnen einer Pull-Request wissen solltest:
 
 ## `Kontrollen`
 
-![Example of checks](https://i.imgur.com/T8agbnB.png)
+![Beispiele für Überprüfungen](https://i.imgur.com/T8agbnB.png)
 
 Derzeit durchläuft eine Presence drei separate Phasen der Kontrolle. Alle diese Checks helfen den Prüfern zu ermitteln, ob deine Presence für den Einsatz geeignet ist.
 
-- `Codacy` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
-- `CodeFactor` is a bot that checks for code quality. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben.
+- `Codacy` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. *Warnung: Codacy gibt dir nicht immer Fehler aus. Schau dir stattdessen bitte CodeFactor-Warnungen an.*
+- `CodeFactor` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben.
 - `Schema Validation` scannt deine `metadata.json` Datei auf Fehler (z.B. fehlende Felder, ungültige Datentypen, etc.). Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese auch zu beheben. Wenn du ein Schema Feld zu deiner `metadata.json` Datei hinzufügst, wird dein Texteditor (falls unterstützt) dir diese Fehler während der Entwicklung anzeigen können.
 
 ## `Zusätzliche Regeln`
