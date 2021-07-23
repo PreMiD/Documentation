@@ -250,7 +250,7 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into. Lihat regExp untuk informasi lebih lanjut.</td>
+      <td style="text-align:left">Penentu regular expression yang memilih iframe yang di inject. Lihat regExp untuk informasi lebih lanjut.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
