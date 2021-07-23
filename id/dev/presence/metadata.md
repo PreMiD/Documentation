@@ -322,7 +322,7 @@ presence.hideSetting("pdexID"); //Replace pdexID with the id of the setting
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Menampilkan pengaturan yang diberikan (Hanya bekerja jika pengaturan telah disembunyikan).
 ```typescript
 presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
 ```

@@ -183,10 +183,10 @@ presence.hideSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Menampilkan pengaturan yang diberikan (Hanya bekerja jika pengaturan telah disembunyikan).
 
 ```typescript
-presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 ```
 
 ### `getLogs()`
@@ -202,7 +202,7 @@ console.log(logs); // This will log the latest 100 logs (in an array).
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Cetak pesan yang diberikan di konsol dengan format berdasarkan presence pada style `success`.
 
 ```typescript
 presence.info("Test") // This will log "test" in the correct styling.
@@ -210,7 +210,7 @@ presence.info("Test") // This will log "test" in the correct styling.
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Cetak pesan yang diberikan oleh konsol dengan format berdasarkan presence dengan style `success`.
 
 ```typescript
 presence.success("Test") // This will log "test" in the correct styling.
