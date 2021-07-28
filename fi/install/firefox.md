@@ -6,10 +6,10 @@ date: 2020-02-12T22:08:32.409Z
 tags:
 ---
 
-Laajennuksen asentaminen on erittäin tärkeää, koska sovellus ei voi tehdä mitään itsenään.
+Laajennuksen asentaminen on erittäin tärkeää, sillä sovellus ei voi tehdä mitään yksinään.
 
 # Asenna
-1. Mene lataus-sivullemme [klikkaamalla tästä](https://premid.app/downloads).
+1. Mene lataussivullemme [klikkaamalla tästä](https://premid.app/downloads).
 2. Choose **Firefox**.
 3. Search for `about:addons`.
 4. Click on the small gear icon in the upper right corner.
@@ -17,7 +17,7 @@ Laajennuksen asentaminen on erittäin tärkeää, koska sovellus ei voi tehdä m
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Älä unohda [lisätä ****sovellusta](/install). 
+> Älä unohda [lisätä **sovellusta**](/install). 
 > 
 > {.is-warning}
 
