@@ -1,6 +1,6 @@
 ---
-title: Home
-description: Official Documentation for v2
+title: Etusivu
+description: Viralliset ohjeet v2
 published: true
 date: 2021-02-24T23:22:41.678Z
 tags:
@@ -8,17 +8,17 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> Näitä ohjeita muokataan yhä! Jotkin sivut saattavat olla keskeneräisiä tai puutteellisia. 
 > 
 > {.is-warning}
 
-# Tietoja PreMiD:istä
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
-- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
+# Tietoja PreMiDistä
+- :mag: [Mikä on PreMiD?](/about) PreMiDin tarkoitusperät sekä syyt miksi sinun kannattaisi käyttää sitä.
+- :link: [Mikä on RPC?](https://discordapp.com/rich-presence) Kaikki Rich Presencestä ja sen toiminnoista.
 
-# Getting Started
+# Aloittaminen
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+PreMiD on nopea ja helppo asentaa. You should be up and running in no time.
 
 - Make sure you have read the [system requirements](/install/requirements).
 - Follow the quick and simple [installation guide](/install).

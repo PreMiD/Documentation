@@ -18,6 +18,6 @@ The installation of the application is very important as the extension can not d
 
 Sovellus käynnistyy automaattisesti. Check for the symbol in your system tray.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Älä unohda [lisätä **laajennusta**](/install).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
