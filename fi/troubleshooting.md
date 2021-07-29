@@ -1,6 +1,6 @@
 ---
-title: Ongelmanratkaisu
-description: Everything to solve your problem
+title: Vianetsintä
+description: Kaikki ongelmien ratkaisusta
 published: true
 date: 2021-02-08T21:30:58.603Z
 tags:
@@ -8,32 +8,32 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> Varmista, että olet asentanut **sekä** laajennuksen **että** sovelluksen! 
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+Mitä tältä sivulta löytyy:
+1. [Yleinen vianmääritys](https://docs.premid.app/troubleshooting#general)
+2. [Linux-vianmääritys](https://docs.premid.app/troubleshooting#linux)
+3. [MacOS-vianmääritys](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+# Yleinen vianmääritys
+> Voit käyttää [tätä](https://qkeleq10.github.io/PreMiD-Troubleshooting/) työkalua tunnistaaksesi vian helpommin. 
 > 
 > {.is-info}
-### Reload the page
-You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
+### Lataa sivu uudelleen
+Voit myös painaa <kbd>CRTL+R</kbd>/<kbd>F5</kbd> (Windows) tai <kbd>CMD+R</kbd> (MacOS) näppäimistöltäsi uudelleenlatausnapin etsimisen sijaan.
 
-### Are you using the Discord app?
-PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
+### Käytätkö Discord-sovellusta?
+PreMiD **ei** toimi Discordin selainversiossa, sinun tulee ladata sovellus [täältä](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
+### Varmista, että olet ottanut 'Toiminta tilana' -asetuksen käyttöön Discord-sovelluksesi asetuksista
+**Käyttäjäasetukset** > **Toiminta tilana** ![activitystatus.png](/activitystatus.png)
 
-### Be sure Discord is running NOT as administrator
-Really important. Discord RPC will not work if you run Discord as an administrator.
+### Varmista, että Discord EI toimi järjestelmänvalvojatilassa
+Todella tärkeää. Discord RPC ei toimi, jos Discord on päällä järjestelmänvalvojatilassa.
 
 ### Are you using a presence with settings?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
@@ -87,7 +87,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 <a name="linux"></a>
 
-# Linux troubleshooting
+# Linux-vianmääritys
 ### Ubuntu/Debian based distros
 If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
@@ -116,7 +116,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# MacOS-vianmääritys
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
