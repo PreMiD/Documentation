@@ -24,7 +24,7 @@ The installation of the application is very important as the extension can not d
 
 The application will start automatically. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install). 
+> Älä unohda [lisätä **laajennusta**](/install). 
 > 
 > {.is-warning}
 
