@@ -18,23 +18,23 @@ dateCreated: 2020-06-11T18:03:47.172Z
 
 # Aloittaminen
 
-PreMiD on nopea ja helppo asentaa. You should be up and running in no time.
+PreMiD on nopea ja helppo asentaa. Sinun pitäisi olla valmis todella äkkiä.
 
-- Make sure you have read the [system requirements](/install/requirements).
-- Follow the quick and simple [installation guide](/install).
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- Varmista, että olet lukenut [järjestelmävaatimukset](/install/requirements).
+- Seuraa nopeita ja yksinkertaisia [asennusohjeita](/install).
+- [Vianetsintä](/troubleshooting) opastaa sinua yleisten ongelmien ratkaisemisessa.
 
 # Kehittäjät
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+[Aloitusopas](/dev) PreMiD-kehittäjille on ensimmäinen askeleesi koodauksessa.
 
-- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
-- :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
+- :computer: [API](/dev/api): Käytä resursseja ja suorita toimintoja PreMiDin ohjelmointirajapinnassa.
+- :wrench: [Presencen kehittäminen](/dev/presence): Opi käyttämään presence-järjestelmäämme.
 
 # Osallistu
-- :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
-- :bulb: [Suggest a New Feature](https://discord.premid.app/): We need your ideas!
-- :heart: [Donate](https://www.patreon.com/Timeraa): Make a small donation or become a sponsor of this wonderful project!
-- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
+- :bug: [Ilmoita vioista](https://github.com/PreMiD): Auta meitä murskaamaan nuo ärsyttävät viat.
+- :bulb: [Ehdota ominaisuuksia](https://discord.premid.app/): Tarvitsemme idoitasi!
+- :heart: [Lahjoita](https://www.patreon.com/Timeraa): Tee pieniä lahjoituksia tai sponsoroi mahtavaa projektiamme!
+- :globe_with_meridians: [Käännökset](https://translate.premid.app): Anna muille mahdollisuus käyttää PreMiDiä heidän omalla kielellään.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
