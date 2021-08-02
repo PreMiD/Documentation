@@ -169,13 +169,13 @@ console.log(version); // Akan mencatat 2.1.0
 Returns value of setting.
 
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Ubah pdexID dengan id dari setting
+console.log(setting); // Ini akan mencatat isi dari setting
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Sembunyikan pengaturan yang telah diberikan.
 
 ```typescript
 presence.hideSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
