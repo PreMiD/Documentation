@@ -311,12 +311,12 @@ Quelques choses que vous devriez savoir après avoir ouvert un pull request :
 
 ## `Vérifications`
 
-![Example of checks](https://i.imgur.com/T8agbnB.png)
+![Exemple de vérifications](https://i.imgur.com/T8agbnB.png)
 
 Actuellement, une Presence passe par trois étapes distinctes de vérification. Toutes ces vérifications aident les évaluateurs à déterminer si votre presence est apte au déploiement.
 
-- `Codacy` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
-- `CodeFactor` is a bot that checks for code quality. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger.
+- `Codacy` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger. *Attention : Codacy ne vous donne pas tout le temps les erreurs. Veuillez regarder les avertissements CodeFactor à la place.*
+- `CodeFactor` est un bot qui analyse la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger.
 - `Schema Validation` va scanner votre fichier `metadata.json` pour trouver toutes erreurs (par exemple, champs manquants, types de valeurs invalides, etc.). Si jamais vous recevez des erreurs, vous êtes aussi **tenus** de les corriger. L'ajout d'un champ de schéma à votre `metadata.json` permettra à votre éditeur de code (si pris en charge) de vous montrer ces erreurs pendant le développement.
 
 ## `Règles Supplémentaires`
