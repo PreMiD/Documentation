@@ -251,7 +251,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `timestampFromFormat(String)`
 
-Mengkonversi string dengan format `HH:MM:SS` atau `MM:SS` atau `SS` menjadi integer (Tidak mengembalikan timestamp snowflake).
+Mengonversi sebuah string dengan format `JJ:MM:DD` atau `MM:DD` atau `DD` menjadi sebuah integer (Tidak mengembalikan timestamp snowflake).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
