@@ -17,7 +17,7 @@ dateCreated: 2020-06-11T18:04:21.843Z
 PreMiD berjalan di hampir semua sistem. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
 
 ### CPU
-PreMiD runs perfectly fine on a single CPU core.
+Premid berjalan lancar pada CPU single core.
 
 ### RAM
 Sistem Linux harus memiliki **setidaknya 20MB RAM** Untuk menjalankan PreMiD. Sistem Windows dan macOS biasanya membutuhkan RAM lebih.
