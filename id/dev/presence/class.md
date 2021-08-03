@@ -48,7 +48,7 @@ Mengembalikan objek `PresenceData` dari apa yang sedang ditampilkan presence.
 
 Tetapkan aktivitas profil Anda sesuai dengan data yang disediakan.
 
-First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
+Parameter pertama membutuhkan interface [`PresenceData`](#presencedata-interface) atau kelas [`Slideshow`](/dev/presence/slideshow) untuk mendapatkan semua informasi yang ingin kamu tampilkan di profilmu.
 
 Parameter kedua menentukan apakah presence memainkan sesuatu atau tidak. Selalu gunakan `true` jika kamu memberikan timestamp di `PresenceData`.
 
@@ -106,7 +106,7 @@ Sejak ekstensi v2.2.0 kamu sekarang bisa mendapatkan string dari bahasa tertentu
 Kami menyarankan kamu untuk menggunakan kode berikut agar PresenceData secara otomatis diperbarui jika pengguna merubah bahasa yang dipilih;
 
 ```typescript
-// An interface of the strings you are getting (good for code quality and autocomplete).
+// Interface string yang kamu dapatkan (bagus untuk kualitas kode dan pelengkapan otomatis).
 interface LangStrings {
   play: string;
   pause: string;
@@ -115,11 +115,11 @@ interface LangStrings {
 async function getStrings(): Promise<LangStrings> {
   return presence.getStrings(
     {
-      // The strings you are getting, make sure this fits with your LangStrings interface.
+      // String yang kamu peroleh, pastikan ini sesuai dengan interface LangStrings kamu.
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // ID diisi dengan ID dari pengaturan multiLanguage.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
@@ -166,7 +166,7 @@ console.log(version); // Akan mencatat 2.1.0
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Mengembalikan value dari pengaturan.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Ubah pdexID dengan id dari setting
@@ -195,7 +195,7 @@ Returns the logs of the websites console.
 
 ```typescript
 const logs = await presence.getLogs();
-console.log(logs); // This will log the latest 100 logs (in an array).
+console.log(logs); // Ini akan mencatat 100 catatan terbaru (dalam array).
 ```
 
 **Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
@@ -205,7 +205,7 @@ console.log(logs); // This will log the latest 100 logs (in an array).
 Cetak pesan yang diberikan di konsol dengan format berdasarkan presence pada style `success`.
 
 ```typescript
-presence.info("Test") // This will log "test" in the correct styling.
+presence.info("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
 ### `success(String)`
@@ -213,20 +213,20 @@ presence.info("Test") // This will log "test" in the correct styling.
 Cetak pesan yang diberikan oleh konsol dengan format berdasarkan presence dengan style `success`.
 
 ```typescript
-presence.success("Test") // This will log "test" in the correct styling.
+presence.success("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Mencetak pesan yang diberikan di konsol dengan format berdasarkan presence di `error` style.
 
 ```typescript
-presence.error("Test") // This will log "test" in the correct styling.
+presence.error("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Mengembalikan 2 `snowflake` timestamp pada `Array` yang bisa digunakan untuk `startTimestamp` dan `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -238,7 +238,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Mengembalikan 2 timestamp `snowflake` pada sebuah `Array` yang dapat digunakan untuk `startTimestamp` dan `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
+**Catatan:** `String` yang diberikan pada querySelector adalah contohnya.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Mengkonversi string dengan format `HH:MM:SS` atau `MM:SS` atau `SS` menjadi integer (Tidak mengembalikan timestamp snowflake).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,13 +261,13 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
+**Catatan:** `String` yang diberikan di querySelector di contoh.
 
 ## `PresenceData` Interface
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+Interface `presenceData` disarankan untuk digunakan saat kamu menggunakan metode `setActivity()`.
 
-This interface has following variables, all of them are optional.
+Interface ini memiliki variabel berikut, semuanya merupakan opsional.
 
 <table>
   <thead>
@@ -330,7 +330,7 @@ This interface has following variables, all of them are optional.
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
+      <td style="text-align:left">Susunan tombol, maksimal 2, label merupakan teks tombol, dan url merupakan tautan.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
