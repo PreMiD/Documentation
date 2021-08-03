@@ -325,7 +325,7 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Kamu bisa menyalinnya ke file `presence.ts` dan mengubah nilainya. Setting all the values is done inside of the updataData event.
+Kamu bisa menyalinnya ke file `presence.ts` dan mengubah nilainya. Pengaturan semua nilai dilakukan pada acara updateData.
 
 Untuk contoh kami sarankan untuk melihat kode dari presence seperti: 1337x atau 9GAG. Untuk informasi tentang kelas `Presence` klik [disini](/dev/presence/class).
 
@@ -333,7 +333,7 @@ Sejak v2.2.0 sekarang ada Slideshow, ini memungkinkan kamu untuk menampilkan beb
 
 ## Tidak bisa mendapat data tertentu?!
 
-Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)) [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Tag html tersebut bisa berisi beberapa sumber seperti video. But they're not relevant every time. Beberapa tersembunyi atau tidak sering dipakai. Periksa jika kamu bisa ekstrak informasi yang dibutuhkan tanpa informasi tersebut sebelum melakukan pekerjaan sia-sia.
+Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)) [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Tag html tersebut bisa berisi beberapa sumber seperti video. Tapi mereka kadang tidak relevan. Beberapa tersembunyi atau tidak sering dipakai. Periksa jika kamu bisa ekstrak informasi yang dibutuhkan tanpa informasi tersebut sebelum melakukan pekerjaan sia-sia.
 
 1. Periksa didalam konsol browser (pastikan anda berada pada tab **Elements**).
 2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
