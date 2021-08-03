@@ -111,7 +111,7 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Deskripsi dari layanan tersebut <b>BUKAN</b> presencenya. Your description must have key pair values which indicate the language, and the description in that specific language. Buat deskripsi dengan bahasa yang <i>anda mengerti</i>, translator kami yang akan mengubah file metadata anda. Lihat kategori untuk bahasa presence untuk daftarnya. </td>
+      <td style="text-align:left">Deskripsi dari layanan tersebut <b>BUKAN</b> presencenya. Deskripsi harus memiliki value yang berpasangan yang menandakan bahasa, dan deskripsi dengan bahasa tertentu. Buat deskripsi dengan bahasa yang <i>anda mengerti</i>, translator kami yang akan mengubah file metadata anda. Lihat kategori untuk bahasa presence untuk daftarnya. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
@@ -306,9 +306,9 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 ### Metode
 
-Use the following methods to get settings info in your presence files:
+Gunakan metode berikut untuk mendapat info pengaturan pada file presence:
 #### `getSetting(String)`
-Returns value of setting.
+Mengembalikan value dari setting.
 ```typescript
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting

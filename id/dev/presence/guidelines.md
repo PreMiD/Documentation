@@ -134,7 +134,7 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.)
+> Jika sebuah kolom terdaftar sebagai opsional pada [dokumentasi](https://docs.premid.app/en/dev/presence/metadata) atau ada `*` disamping key dan presencemu menggunakan value default, jangan mencantumkannya pada file `metadata`. (for e.g., a presence without iframe support would not need the `iframe` field.)
 
 > All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
 
@@ -209,7 +209,7 @@ A list of fields and their rules are listed below:
 
 ### **`readLogs`**
 
-- Must be `boolean` value (e.g. `true` or `false`).
+- Harus berupa `boolean` value (e.g. `true` or `false`).
 - Enables logs for your presence.
 
 ### **`warning`**
@@ -222,8 +222,8 @@ A list of fields and their rules are listed below:
 - If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
 - The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
 - If you are using the `multiLanguage` option it can have the following types:
-  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
+  - Value tipe **Boolean** hanya akan mengaktifkan string [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) dari repositori Localization atau dari file Presence (contoh, saat nama presence adalah YouTube, maka ekstensi akan mendapatkan string dari `youtube.json` juga.)
+  - Value tipe **String** (contoh, `youtube.json`) akan menentukan nama dari file yang ingin kamu dapatkan string-nya.
   - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
@@ -256,7 +256,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 
 ## Modification
 
-> You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
+> Kamu **harus** mengubah versi di **metadata** menjadi lebih tinggi dari versi sebelumnya ketika membuat perubahan pada **presence.ts**,**iframe** atau **metadata**.
 
 In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
 
@@ -314,7 +314,7 @@ Saat ini, sebuah presence melewati 3 tahapan pemeriksaan. All of these checks he
 
 - `Codacy` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
 - `CodeFactor` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya.
-- `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
+- `Schema Validation` akan mengscan file `metadata.json` mencari eror ( misal, missing fields, invalid value types, dll.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
 
 ## `Peraturan tambahan`
 
