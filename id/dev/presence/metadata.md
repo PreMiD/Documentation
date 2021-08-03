@@ -10,7 +10,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
+Jika kamu ingin menerbitkan presence ke toko dan memuatnya lewat ekstensi, kamu harus membuat file `metadata.json` pada folder `dist` milikmu.
 
 Contoh file tersebut dapat ditemukan di bawah.
 
