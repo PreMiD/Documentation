@@ -191,14 +191,14 @@ presence.showSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Mengembalikan catatan dari konsol situs web.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Ini akan mencatat 100 catatan terbaru (dalam array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Catatan:** Membutuhkan `readLogs` menjadi `true` di file `metadata.json`.
 
 ### `info(String)`
 
