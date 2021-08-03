@@ -32,7 +32,7 @@ Mengirim data ke presence. Menggunakan metode ini akan membuat presence melempar
 ### `getUrl()`
 Mengembalikan URL `iframe`.
 
-## Acara
+## Event
 Pada bagian `iframes`, events bekerja sama dengan cara kerjanya di kelas `presence`.
 
 ```typescript
