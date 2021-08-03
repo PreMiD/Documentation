@@ -180,7 +180,7 @@ A list of fields and their rules are listed below:
 ### **`logo`**
 
 - Logo **harus** berupa persegi dengan aspect ratio `1:1`.
-- Gambar **diharuskan** memiliki resolusi minimal `512x512` pixel. You can upsize it using a tool like [waifu2x](http://waifu2x.udp.jp/).
+- Gambar **diharuskan** memiliki resolusi minimal `512x512` pixel. Gambar dapat di upscale menggunakan alat seperti [waifu2x](http://waifu2x.udp.jp/).
 
 ### **`thumbnail`**
 
@@ -200,17 +200,17 @@ A list of fields and their rules are listed below:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
-- The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
+- Kategori **diharuskan** salah satu dari yang tercantum pada [dokumentasi](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Presence harus menggunakan kategori yang sama dengan konten situs web. (untuk contoh, jangan gunakan `anime` ketika situs web tidak terkait dengan anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regular expressions**harus** valid. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Regular expressions**harus** valid. Periksa expression menggunakan alat yang dicantumkan pada [dokumentasi](https://docs.premid.app/en/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
 - Harus berupa `boolean` value (e.g. `true` or `false`).
-- Enables logs for your presence.
+- Mengaktifkan log untuk presencemu.
 
 ### **`warning`**
 
