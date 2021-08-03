@@ -113,7 +113,7 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
       <td style="text-align:left"><b>description</b></td>
       <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Buat deskripsi dengan bahasa yang <i>anda mengerti</i>, translator kami yang akan mengubah file metadata anda. Lihat kategori untuk bahasa presence untuk daftarnya. </td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
@@ -121,13 +121,13 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
       <b>Example:</b><code>vk.com</code><br>
       <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. Ini bisa digunakan sebagai kesatuan ketika ada lebih dari satu url.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
       <td style="text-align:left">Regular expression string yang digunakan untuk mencocokkan url.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Ya</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
@@ -137,20 +137,19 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link ke logotype dari layanan.</td>
+      <td style="text-align:left">Tautan ke logotype dari layanan.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link ke thumbnail presence.</td>
+      <td style="text-align:left">Tautan ke thumbnail presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> value. Kami menganjurkan untuk menggunakan warna utama dari layanan        yang didukung oleh presence kamu.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
