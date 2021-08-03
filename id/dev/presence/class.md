@@ -87,7 +87,7 @@ Kamu bisa menemukan dokumentasi untuk kelas `Slideshow` [disini](/dev/presence/s
 
 Metode asinkron yang memungkinkan kamu untuk mendapatkan string terjemahan dari extension.
 
-Anda harus memberikan `Object` dengan kunci sebagai kunci untuk string, `keyValue` adalah nilai string. Daftar string terjemahan bisa ditemukan di titik akhir ini: `https://api.premid.app/v2/langFile/presence/id/`
+Kamu harus memberikan `Object` dengan kunci sebagai kunci untuk string, `keyValue` adalah nilai string. Daftar string terjemahan bisa ditemukan di titik akhir ini: `https://api.premid.app/v2/langFile/presence/id/`
 
 ```typescript
 // Mengembalikan string `Playing` dan` Paused`

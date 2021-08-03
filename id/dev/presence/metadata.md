@@ -194,9 +194,9 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
 
 ## Regular Expressions
 
-If you want to learn regular expressions, here are a few websites.
+Jika kamu ingin mempelajari regular expression, berikut beberapa website.
 
-#### Learning
+#### Mempelajari
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
@@ -204,12 +204,12 @@ If you want to learn regular expressions, here are a few websites.
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
-## Presence languages
+## Bahasa Presence
 
-PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat untuk menghubungkan pengguna di seluruh dunia. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat untuk menghubungkan pengguna di seluruh dunia. Daftar penuh bahasa dapat dilihat dengan [API endpoint](https://api.premid.app/v2/langFile/list). Untuk lebih menyesuaikan presence kamu, kamu bisa mengizinkan pengguna untuk memilih tampilan bahasa presence mereka. Lihat [`multiLanguage`](#multilanguage) untuk selengkapnya.
 
-## Presence settings
-Setup interactive settings so users can customize the presence!
+## Pengaturan presence
+Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
 ```typescript
 "settings": [
   {
@@ -244,17 +244,17 @@ Setup interactive settings so users can customize the presence!
 
 ### `multiLanguage`
 
-#### Introduction
+#### Pendahuluan
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Pengaturan `multiLanguage` dapat digunakan agar pengguna dapat memilih bahasa yang mereka inginkan untuk presence yang ditampilkan. Ini mengharuskan anda untuk menggunakan string dari [API](https://api.premid.app/v2/langFile/presence/en) kami, untuk informasi bagaimana cara menambahkan string klik [disini](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
-#### Setup
+#### Penyetelan
 
 The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
 
-The `multiLanguage` key can be set to the following:
+Key `multiLanguage` bisa di ubah menjadi:
 
-`true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true`: gunakan ini jika kamu hanya ingin menggunakan string dari file `general.json` dan file `<service>.json` dari [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
 
 #### Adding new strings
 
