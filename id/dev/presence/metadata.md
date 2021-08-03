@@ -10,7 +10,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-Jika Anda ingin menerbitkan presence ke toko dan memuatnya lewat ekstensi, Anda harus membuat file `metadata.json` pada folder `dist` Anda.
+If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
 
 Contoh file tersebut dapat ditemukan di bawah.
 
@@ -103,23 +103,23 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Dapat mencari presence menggunakan nama alternatif.<br>
-      Dimaksudkan untuk presence yang memiliki nama yang berbeda di bahasa lain (misal Pokémon dan 포켓몬스터).<br>
-      Kamu juga dapat menggunakannya untuk presence yang memiliki karakter spesial jadi kamu tidak harus mengetik simbol tersebut (misal Pokémon dan Pokemon).</td>
+      <td style="text-align:left">Dapat mencari presence menggunakan nama lain.<br>
+      Dimaksudkan untuk presence yang memiliki nama yang berbeda di bahasa yang berbeda (e.g. Pokémon and 포켓몬스터).<br>
+      Kamu juga dapat menggunakan ini untuk presence yang memiliki karakter spesial yang kamu tidak bisa ketik (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Buat deskripsi dengan bahasa yang <i>anda mengerti</i>, translator kami yang akan mengubah file metadata anda. Lihat kategori untuk bahasa presence untuk daftarnya. </td>
+      <td style="text-align:left">Deskripsi dari layanan tersebut <b>BUKAN</b> presencenya. Your description must have key pair values which indicate the language, and the description in that specific language. Buat deskripsi dengan bahasa yang <i>anda mengerti</i>, translator kami yang akan mengubah file metadata anda. Lihat kategori untuk bahasa presence untuk daftarnya. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br>
-      <b>Example:</b><code>vk.com</code><br>
-      <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. Ini bisa digunakan sebagai kesatuan ketika ada lebih dari satu url.</b></td>
+      <td style="text-align:left">URL layanan.<br>
+      <b>Contoh:</b><code>vk.com.com</code><br>
+      <b>URL ini harus sama dengan URL dari website karena akan digunakan untuk mendeteksi apakah ini website yang benar untuk inject script. Ini bisa digunakan sebagai kesatuan ketika ada lebih dari satu url.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
@@ -161,25 +161,25 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">String yang digunakan untuk mewakili kategori yang dimilki presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
+      <td style="text-align:left">Menentukan apakah <code>iFrames</code> digunakan</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
+      <td style="text-align:left">Penentu regular expression yang memilih iframe yang di inject.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Menentukan apakah ekstensi harus membaca log.</td>
+      <td style="text-align:left">Menentukan apakah ekstensi harus membaca catatan.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>
