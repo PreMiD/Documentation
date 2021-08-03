@@ -60,21 +60,21 @@ Pemasangan aplikasi sangat penting karena ekstensi tidak dapat bekerja dengan se
 
 ### Persyaratan
 
-Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;</br> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.</br> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
+Secara teknis setiap distribution yang dapat menjalankan [Aplikasi ](https://discordapp.com/download)**Resmi** Discord ( bukan versi web atau versi snap ) bisa menjalankan PreMiD juga;</br> Seperti yang telah kamu perhatikan dalam beberapa tahun terakhir, beberapa Linux distribution mulai tidak mendukung untuk architecture 32-bit (ia32/i686/i386/x86) dan alhasil, kami juga. Kamu bisa mencoba untuk membangun sendiri aplikasi jika kamu sangat butuh menggunakannya pada distribution 32-bit.</br> Karena kami menggunakan Electron sebagai engine (Discord juga!) kebutuhannya juga berlaku pada aplikasi berikut :
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
 - Debian ≥ 8
 
-It is unknown whether older versions of other distributions support it, so just keep your distribution updated and use **LTS (Long-Term Support)** releases if your distribution offers them, as they're more stable (avoid alpha releases).
+Masih belum diketahui apakah versi lama dari distribution lain mendukungnya, jadi tetap update distribution kamu dan gunakan rilisan **LTS(Long-Term Support)** jika tersedia, sebab akan lebih stabil (hindari rilisan alpha).
 
 <a name="support"></a>
 
 ### Bantuan
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="Join our Discord!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Join our Discord!">
+  <a target="_blank" href="https://discord.premid.app/" title="Gabung ke Discord kami!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Gabung ke Discord kami!">
   </a>
 </div>
 
@@ -94,7 +94,7 @@ Terimakasih untuk:
 
 ### Lisensi
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
+[![Status FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
@@ -105,14 +105,14 @@ Paket AppImage sangat disarankan jika Discord bisa bekerja tapi paket PreMiD lai
 
 <a name="appimageinstall"></a>
 
-### Petunjuk instalasi
+### Petunjuk pemasangan
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
 ```
 
 ```bash
-# Just double-click it or run
+# Klik 2 kali atau run
 ./PreMiD*.AppImage
 ```
 
@@ -127,7 +127,7 @@ Antara anda ingin mencoba PreMiD atau tidak ingin menginstalnya, ini salah satu 
 
 # PackageCloud
 
-We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
+Kami merilis paket deb/rpm pada repo packagecloud kami. Harap kunjungi pada https://packagecloud.io/PreMiD/Linux dan unduh paket deb/rpm atau gunakan script otomatis.
 
 Untuk **Ubuntu/Debian**:
 
