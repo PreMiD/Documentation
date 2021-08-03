@@ -27,10 +27,10 @@ iframe.on("UpdateData", async () => {
 ## Metode
 
 ### `send(Object)`
-Mengirim data ke presence. Using this method will make the presence throw a `iFrameData` event.
+Mengirim data ke presence. Menggunakan metode ini akan membuat presence melemparkan acara `iFrameData`.
 
 ### `getUrl()`
-Returns the URL of the `iframe`.
+Mengembalikan URL `iframe`.
 
 ## Acara
 Pada bagian `iframes`, events bekerja sama dengan cara kerjanya di kelas `presence`.
@@ -41,8 +41,8 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-Here is a list of all of the events:
+Berikut adalah daftar semua events:
 
 #### `UpdateData`
 
-This event is fired every time the iframe is being updated.
+Event ini akan diluncurkan setiap kali iframe diperbarui.
