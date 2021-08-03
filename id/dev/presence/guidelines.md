@@ -224,7 +224,7 @@ A list of fields and their rules are listed below:
 - If you are using the `multiLanguage` option it can have the following types:
   - Value tipe **Boolean** hanya akan mengaktifkan string [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) dari repositori Localization atau dari file Presence (contoh, saat nama presence adalah YouTube, maka ekstensi akan mendapatkan string dari `youtube.json` juga.)
   - Value tipe **String** (contoh, `youtube.json`) akan menentukan nama dari file yang ingin kamu dapatkan string-nya.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+  - Value tipe **Array<String>** (contoh, `["youtube", "discord"]`) akan menentukan nama dari file yang ingin kamu dapatkan string-nya.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
