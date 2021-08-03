@@ -300,9 +300,9 @@ Visualisasi dari file:
 Setelah kamu berhasil membuat file dengan string kamu bisa membuat Pull Request ke [Localization Repository](https://github.com/PreMiD/Localization), di deskripsi kamu **harus** mencantumkan tautan ke Pull Request dari presence yang diperbarui menggunakan string baru dari [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Key default
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: ""fas fa-language" ([Pratinjau](https://fontawesome.com/icons/language)) `value`: **Mengatur ke bahasa browser mereka jika tersedia (100% diterjemahkan), atau bahasa Inggris.** `values`: **Mengatur ke bahasa yang tersedia (bahasa yang sudah 100% diterjemahkan).**
 
-**Note:** These are in no way changeable.
+**Catatan:** Ini sama sekali tidak dapat diubah.
 
 ### Metode
 
@@ -310,20 +310,20 @@ Gunakan metode berikut untuk mendapat info pengaturan pada file presence:
 #### `getSetting(String)`
 Mengembalikan value dari setting.
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Ubah pdexID dengan id dari setting
+console.log(setting); // Ini akan mencatat isi dari setting
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Sembunyikan pengaturan yang telah diberikan.
 ```typescript
-presence.hideSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); //Mengganti pdexID dengan id dari pengaturan
 ```
 
 #### `showSetting(String)`
 Menampilkan pengaturan yang diberikan (Hanya bekerja jika pengaturan telah disembunyikan).
 ```typescript
-presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); //Mengganti pdexID dengan id dari pengaturan
 ```
 
 ## Kategori presence
@@ -347,7 +347,7 @@ Saat membuat presence, kamu harus menentukan kategori yang mana presence berada.
     <tr>
       <td style="text-align:left"><b>games</b></td>
       <td style="text-align:left"><b>Permainan</b></td>
-      <td style="text-align:left">Any website that has game related content, such as <code>Kahoot</code> or <code>Skribbl.io</code></td>
+      <td style="text-align:left">Website apapun yang memiliki konten tentang game, seperti <code>Kahoot</code> atau <code>Skribbl.io</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
