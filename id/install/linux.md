@@ -129,30 +129,30 @@ Antara anda ingin mencoba PreMiD atau tidak ingin menginstalnya, ini salah satu 
 
 We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
 
-For **Ubuntu/Debian**:
+Untuk **Ubuntu/Debian**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+Untuk **Fedora/CentOS/RedHat**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+Jika perintah tidak bekerja, unduh file **deb/rpm** dari repo packagecloud kami atau timpa pengaturan.
 
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Distribution berbasis Arch Linux
+## Arch Linux based distributions
 
 Gunakan [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Distribution yang didukung adalah _ini sendiri_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS dan [setiap distribution yang mendukung instal dari AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
-### Petunjuk instalasi
+### Petunjuk Pemasangan
 
 ```bash
 # Menggunakan yay (dianjurkan)
