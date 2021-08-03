@@ -125,7 +125,7 @@ Kami telah membuat pembuat file `metadata.json` untuk para pemalas [disini](http
 }
 ```
 
-Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus mengubah value dari properti tersebut. Harap diingat bahwa properti berikut adalah opsional dalam file `metadata.json` anda, jika anda tidak berniat menggunakannya anda harus menghapusnya.
+Salin kode diatas dan tempel pada file `metadata.json`. Sekarang kamu harus mengubah value dari properti tersebut. Harap diingat bahwa properti berikut adalah opsional dalam file `metadata.json` anda, jika anda tidak berniat menggunakannya anda harus menghapusnya.
 
 - `contributors`
 - `altnames`
@@ -325,7 +325,7 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Kamu bisa menyalinnya ke file `presence.ts` dan mengubah nilainya. Pengaturan semua value dilakukan pada acara updateData.
+Kamu bisa menyalinnya ke file `presence.ts` dan mengubah valuenya. Pengaturan semua value dilakukan pada event updateData.
 
 Untuk contoh kami sarankan untuk melihat kode dari presence seperti: 1337x atau 9GAG. Untuk informasi tentang kelas `Presence` klik [disini](/dev/presence/class).
 
