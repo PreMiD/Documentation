@@ -325,7 +325,7 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Kamu bisa menyalinnya ke file `presence.ts` dan mengubah nilainya. Pengaturan semua nilai dilakukan pada acara updateData.
+Kamu bisa menyalinnya ke file `presence.ts` dan mengubah nilainya. Pengaturan semua value dilakukan pada acara updateData.
 
 Untuk contoh kami sarankan untuk melihat kode dari presence seperti: 1337x atau 9GAG. Untuk informasi tentang kelas `Presence` klik [disini](/dev/presence/class).
 

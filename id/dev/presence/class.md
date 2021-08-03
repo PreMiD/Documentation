@@ -218,7 +218,7 @@ presence.success("Test") // Ini akan mencatat "test" dengan styling yang benar.
 
 ### `error(String)`
 
-Mencetak pesan yang diberikan di konsol dengan format berdasarkan presence di `error` style.
+Mencetak pesan yang diberikan di konsol dengan format berdasarkan presence pada style`error`.
 
 ```typescript
 presence.error("Test") // Ini akan mencatat "test" dengan styling yang benar.
@@ -226,7 +226,7 @@ presence.error("Test") // Ini akan mencatat "test" dengan styling yang benar.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Mengembalikan 2 `snowflake` timestamp pada `Array` yang bisa digunakan untuk `startTimestamp` dan `endTimestamp`.
+Mengembalikan 2 timestamp `snowflake` pada sebuah `Array` yang dapat digunakan untuk `startTimestamp` dan `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -247,7 +247,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Catatan:** `String` yang diberikan pada querySelector adalah contohnya.
+**Catatan:** `String` yang diberikan pada querySelector merupakan sebuah contoh.
 
 ### `timestampFromFormat(String)`
 
@@ -261,7 +261,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Catatan:** `String` yang diberikan di querySelector di contoh.
+**Catatan:** `String` yang diberikan di querySelector merupakan sebuah contoh.
 
 ## `PresenceData` Interface
 
