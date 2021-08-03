@@ -27,7 +27,7 @@ iframe.on("UpdateData", async () => {
 ## Metode
 
 ### `send(Object)`
-Mengirim data ke presence. Menggunakan metode ini akan membuat presence melemparkan acara `iFrameData`.
+Mengirim data ke presence. Menggunakan metode ini akan membuat presence melemparkan event `iFrameData`.
 
 ### `getUrl()`
 Mengembalikan URL `iframe`.
