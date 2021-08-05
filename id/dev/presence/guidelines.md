@@ -41,7 +41,7 @@ Peraturan umum pembuatan presence adalah sebagai berikut:
     - Untuk domain berusia 12+ bulan: **45.000 pengunjung unik/hari**.
   - Situs web tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan seterusnya.
   - Situs web tersebut harus berkualitas tinggi, desain bagus, dll.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). Kamu dapat mencapai ini menggunakan `multiLanguage` dengan string yang tersedia. Bila presencemu membutuhkan string khusus, maka jangan menggunakan `multiLanguage` sampai presence mendapatkan 1000 pengguna. Kamu bisa mendapatkan contoh [di sini](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Wajib mencantumkan folder `dist`, file `presence.ts`, file `iframe.ts`, dan file `metadata.json` agar hasil sesuai dengan skema berikut:
 
 ```bash
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-or if you're using a `iframe.ts` file:
+atau jika kamu menggunakan file `iframe.ts`:
 
 ```bash
 presence
@@ -65,9 +65,9 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
-> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process.
+> Untuk kemudahan para pengembang presence, kami telah menyediakan skema yang bisa digunakan untuk memeriksa keutuhan dari file `metadata`. Ini sepenuhnya opsional dan tidak wajib dalam proses review.
 
-> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted.
+> Sangat dianjurkan untuk mengorganisir file `metadata` pada format dibawah ini, dan kamu harus memiliki nama layanan yang benar secara tata bahasa, deskripsi, tag, dan bidang pengaturan. Apapun yang tidak terorganisir menurut spesifikasi **tidak** diperbolehkan.
 
 > Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
 
