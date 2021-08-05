@@ -300,7 +300,7 @@ Visualisasi dari file:
 Setelah kamu berhasil membuat file dengan string kamu bisa membuat Pull Request ke [Localization Repository](https://github.com/PreMiD/Localization), di deskripsi kamu **harus** mencantumkan tautan ke Pull Request dari presence yang diperbarui menggunakan string baru dari [Presence Repository](https://github.com/PreMiD/Presences).
 
 #### Key default
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: ""fas fa-language" ([Pratinjau](https://fontawesome.com/icons/language)) `value`: **Mengatur ke bahasa browser mereka jika tersedia (100% diterjemahkan), atau bahasa Inggris.** `values`: **Mengatur ke bahasa yang tersedia (bahasa yang sudah 100% diterjemahkan).**
+Key yang tidak perlu kamu atur secara otomatis diatur menjadi: `title`: "Bahasa" **Catatan:** Ini diterjemahkan ke bahasa default mereka (bahasa browser). `icon`: ""fas fa-language" ([Pratinjau](https://fontawesome.com/icons/language)) `value`: **Mengatur ke bahasa browser mereka jika tersedia (100% diterjemahkan), atau bahasa Inggris.** `values`: **Mengatur ke bahasa yang tersedia (bahasa yang sudah 100% diterjemahkan).**
 
 **Catatan:** Ini sama sekali tidak dapat diubah.
 
