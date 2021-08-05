@@ -136,25 +136,25 @@ Setiap presence memiliki file descriptor bernama `metadata.json`, metadata memil
 
 > Jika sebuah kolom terdaftar sebagai opsional pada [dokumentasi](https://docs.premid.app/en/dev/presence/metadata) atau ada `*` disamping key dan presencemu menggunakan value default, jangan mencantumkannya pada file `metadata`. (misal, presence tanpa dukungan iframe tidak memerlukan bidang `iframe`.)
 
-> Semua gambar pada file `metadata` harus dihosting di `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
+> Semua gambar pada file `metadata` harus dihosting di `i.imgur.com`. Menggunakan konten yang dihost pada website **tidak** diperbolehkan sebab mereka dapat mengubah lokasi dan file tanpa peringatan.
 
-A list of fields and their rules are listed below:
+Daftar bidang dan peraturannya tertulis dibawah:
 
 ### **`$schema`**
 
-- The schema _key_ **must** include a dollar sign at the beginning of it, this will signal your text editor that you want to validate your JSON file against a model. _As stated earlier, you do not need to include a schema, but if you include it you must take this into account._
+- Skema _key_ **harus** memuat tanda dollar pada awalan, tanda ini akan menandakan editor teksmu untuk memvalidasi file JSON dengan suatu model. _ seperti yang telah disebutkan sebelumnya, kamu tidak perlu mencantumkan sebuah skema, tapi jika kamu mencantumkannya kamu harus memperhitungkan hal tersebut._
 
 ### **`author`**
 
-- ID _value_ **harus** ID snowflake Discordmu. You can get it by enabling [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _harap **tidak** disamakan dengan ID aplikasimu, yang hanya digunakan untuk Presence._
+- ID _value_ **harus** ID snowflake Discordmu. Bisa didapatkan dengan mengaktifkan [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _harap **tidak** disamakan dengan ID aplikasimu, yang hanya digunakan untuk Presence._
 
 ### **`*contributors`**
 
-- Do **not** add yourself as a contributor, and do not add someone else as a contributor unless they have helped with the presence.
+- **Jangan** menambahkan dirimu sendiri sebagai kontributor dan jangan menambahkan orang lain sebagai kontributor kecuali mereka membantu dengan pembuatan presence.
 
 ### **`service`**
 
-- Nama layanan **harus** sesuai dengan nama dari direktori presence. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
+- Nama layanan **harus** sesuai dengan nama dari direktori presence. Contohnya, jika presence terletak di `/websites/Y/YouTube/`, nama layanan harus `YouTube`.
 - You **cannot** use the url as the service name unless the website uses the url as its official name. If the name is not descriptive and can be considered vague, using the url is **required**. (for e.g., `YouTube` is permitted because that is the official name and is descriptive, while `youtube.com` is not. `Top` adalah nama non-deskriptif, jadi menggunakan url `top.gg` sangat **dibutuhkan**.)
 - Jika sebuah layanan memiliki aturan branding yang eksplisit terhadap nama mereka, kamu harus mengikutinya.
 
@@ -237,9 +237,9 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
 - **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
 - It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
-- The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
-- You are **not** allowed to access `localStorage`.
-- When accessing cookies for stored data, please prefix the key with `PMD_`.
+- Bidang `smallImageKey` dan `smallImageText` dimaksudkan untuk memberi konteks tambahan/konteks kedua (seperti `berputar/dijeda` untuk situs video, `menjelajahi` untuk situs biasa, dan hal lain) bukan untuk mempromosikan profil Discord atau apapun yang tidak berhubungan dengan PreMiD.
+- Kamu **tidak** diperbolehkan mengakses `localStorage`.
+- Saat mengakses cookie untuk data tersimpan, harap memberi prefix pada key dengan `PMD_`.
 - You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
 - You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
