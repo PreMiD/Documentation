@@ -14,7 +14,7 @@ dateCreated: 2020-06-11T18:04:21.843Z
 > 
 > {.is-info}
 
-PreMiD berjalan di hampir semua sistem. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
+PreMiD berjalan di hampir semua sistem. Ini berarti PreMiD dapat berjalan pada **Linux**, **macOS**, **Windows** serta **Linux Modifications**.
 
 ### CPU
 Premid berjalan lancar pada CPU single core.

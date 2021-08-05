@@ -17,30 +17,30 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 # Panduan
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Bagi beberapa, peraturan ini mungkin agak kejam. Namun, penerapan aturan ini bertujuan untuk menjaga kami dan user dari masalah.
+Ketika mempublikasikan Presence ke [Repository Presence](https://github.com/PreMiD/Presences/) kami meminta kamu untuk mengikuti beberapa aturan. Bagi beberapa, peraturan ini mungkin agak kejam. Namun, penerapan aturan ini bertujuan untuk menjaga kami dan user dari masalah.
 
 # Pembuatan
 
 Peraturan umum pembuatan presence adalah sebagai berikut:
 
 - Presence **harus** berhubungan dengan website yang dipilih.
-- Presence **harus tidak** dibuat untuk website ilegal. (for e.g., stressors, drug marketing, child pornography, etc.)
+- Presence **harus tidak** dibuat untuk website ilegal. (misal stresor, penjualan obat, pornografi dibawah umur, dll)
 - Struktur file harus bersih dan teratur, jangan memasukkan file yang tidak ditentukan. ( misal, vscode dan folder git, file gambar dan teks, dll.)
-- You need to have a proper file structure, drafts are **not** allowed.
+- Kamu harus memilki struktur file yang baik, draf **tidak** diperbolehkan.
 - Presence untuk website dengan (`.onion` TLD) atau website dengan domain/host gratis (misal, `.TK` [semua domain gratis dari Freenom], `.RF`, `GD`, dll.) **tidak** diizinkan, pengecualian dapat dibuat jika bukti pembayaran domain dapat ditunjukkan.
 - Domain dari presence harus berumur minimal 2 bulan.
 - Presence yang mengarah pada halaman internal browser (seperti Chrome Web Store `chrome://`, `about:` pages, etc) **tidak** diperbolehkan sebab membutuhkan flag experimental diaktifkan oleh pengguna dan bisa menyebabkan kerusakan pada browser.
 - Presence dengan dukungan hanya satu halaman **tidak** diperbolehkan, sebab akan terlihat rusak bagi halaman lain ( seperti homepage) pengecualian dapat dibuat untuk halaman kebijakan dan kontak (konten yang jarang digunakan) atau website yang konten lainnya tidak berhubungan. (misal, halaman wikia)
-- Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
+- Presence radio online hanya diperbolehkan jika radio memiliki setidaknya 100 pendengar mingguan dan 15 secara bersamaan dan juga harus memiliki beberapa fitur selain hanya menampilkan album/judul lagu, dll.
+- Presence tidak diizinkan menjalankan kode JS dengan fungsinya sendiri untuk mendapatkan variabel. Bila Firefox memiiki masalah dengan fungsi bawaan dalam kelas `Presence`, kamu boleh melakukan fungsimu sendiri dan kamu wajib memberitahu kami di deskripsi Pull Request.
+- Presence kualitas rendah (atau yang memiliki sedikit konteks) **tidak** diperbolehkan (contohnya, hanya menampilkan logo dan teks tapi tidak pernah diganti lagi).
+- Presences untuk layanan seperti Daftar Server/Bot Discord harus mengikuti persyaratan tambahan berikut ini:
+  - Domain harus paling sedikit berusia **6 bulan**.
+  - Pengunjung unik per hari:
+    - Untuk domain berusia 6 bulan: **20.000 pengunjung unik/hari**.
+    - Untuk domain berusia 12+ bulan: **45.000 pengunjung unik/hari**.
+  - Situs web tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan seterusnya.
+  - Situs web tersebut harus berkualitas tinggi, desain bagus, dll.
 - Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Wajib mencantumkan folder `dist`, file `presence.ts`, file `iframe.ts`, dan file `metadata.json` agar hasil sesuai dengan skema berikut:
 
