@@ -88,7 +88,7 @@ Terimakasih untuk:
 - @apriluwu for maintaining the Gentoo builds
 - @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
 - The Electron community for various packages
-- Anyone else who has ever contributed to the project in any way.
+- Siapapun yang pernah berkontribusi untuk proyek ini dengan cara apapun.
 
 <a name="license"></a>
 
