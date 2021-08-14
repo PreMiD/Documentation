@@ -17,8 +17,8 @@ dateCreated: 2021-02-21T21:13:14.449Z
 عند إنشاء صف، يجب تحديد ملكية `معرف العميل`.
 
 ```typescript
-const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+السماح بالـ presence = presence جديد ({
+    معرف العميل: "514271496134389561" // مثال لمعرف العميل
 });
 ```
 
