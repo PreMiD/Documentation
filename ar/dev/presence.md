@@ -373,7 +373,7 @@ presence.on("iFrameData", (data) => {
 
 **Note:** This needs to be placed outside of the updateData event.
 
-## Compiling
+## تجميع
 
 Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
@@ -386,11 +386,11 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 # Some helpful things
 
-## Hot-reloading
+## إعادة التحميل
 
 The website you are developing on is automatically reloading every time you save a file in your folder.
 
-## Debugging
+## تصحيح الأخطاء
 
 - You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. إذا لم يكن فهناك خطأ أعلاه.
 - If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
