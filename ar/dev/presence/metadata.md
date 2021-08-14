@@ -77,7 +77,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <th style="text-align:left">متغير</th>
       <th style="text-align:left">الوصف</th>
       <th style="text-align:left">اكتب</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">اختياري</th>
     </tr>
   </thead>
   <tbody>
@@ -91,7 +91,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>اسم</code> هو اسمك في الديسكورد بدون المعرف(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
         والنقر الأيمن على ملفك الشخصي.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>نعم</code></td>
@@ -198,7 +198,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
 
 If you want to learn regular expressions, here are a few websites.
 
-#### Learning
+#### التعلم
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
@@ -301,7 +301,7 @@ Visualization of the file:
 
 After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
 
-#### Default keys
+#### المفاتيح الافتراضية
 The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
 **Note:** These are in no way changeable.
@@ -335,7 +335,7 @@ When making your presence, you must specify a category which the presence falls 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
+      <th style="text-align:left">الفئة</th>
       <th style="text-align:left">الأسم</th>
       <th style="text-align:left">الوصف</th>
     </tr>
