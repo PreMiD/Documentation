@@ -360,7 +360,7 @@ const presenceData: PresenceData = {
 };
 ```
 
-## Events
+## الأحداث
 
 Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
