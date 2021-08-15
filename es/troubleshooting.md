@@ -43,11 +43,11 @@ Para resolverlo, desactiva y reactiva la configuración superior:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Reinicia tu navegador
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+También puedes usar <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) o <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS). (Obviamente tienes que volver a iniciar el navegador.)
 
 ### Reinicia PreMiD (Aplicación)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Luego debes reiniciar PreMiD.
 
 ### Recarga/Reinicia Discord
 Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
