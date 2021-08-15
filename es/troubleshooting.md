@@ -53,10 +53,10 @@ Luego debes reiniciar PreMiD.
 Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Comprueba si tienes antivirus o firewall ejecutándose en el ordenador
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+A veces los antivirus o cortafuegos pueden bloquear aplicaciones que están creando/alojando servidores o que se conectan a Internet. Utilizamos un servidor local para recibir y pasar los datos entre la aplicación y la extensión, por tanto no podrás utilizar PreMiD si bloqueas la habilidad de pasar los datos entre ellos.
 
 ### Deshabilita tus complementos
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Deshabilita todos tus complementos y verifica si funciona. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Reiniciar tu computadora
 I hope you know how to restart a computer.
