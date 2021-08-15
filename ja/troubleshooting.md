@@ -30,7 +30,7 @@ Included on this page:
 PreMiDはブラウザ版のDiscordでは動作**しません。** [アプリ版のDiscord](https://discordapp.com/download)を使用してください。
 
 ### Discordのアクティビティステータスを有効にする
-**ユーザー設定** > **アクティビティ ステータス**
+**アクティビティ設定** > **アクティビティ ステータス**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Discordが管理者権限で起動していないかを確認する
