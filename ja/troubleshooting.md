@@ -43,14 +43,14 @@ To solve this, all you have to do is toggle the topmost setting:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### ブラウザを再起動する
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) か <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) で 終了できます。 (ブラウザを再度起動する必要があります。)
 
 ### PreMiDのデスクトップアプリを再起動する
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+再度PreMiDを起動する必要があります。
 
 ### Discordを再起動する
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+パソコンの再起動の仕方くらい知っていますよね…？
 
 ### ウイルス対策ソフトやファイアーウォールが起動してないかを確かめる
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
@@ -65,12 +65,12 @@ I hope you know how to restart a computer.
 Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### 手動で削除する
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windowsの場合は、`C:\Users\ユーザー名\AppData\Roaming\ `に行き、`PreMiD`を削除してください。 見つからない場合は、`Win+R`を押して、`%appdata%`と入力してからPreMiDを削除してください。 MacOSの場合は`~/users/USER/~Library/Application Support/`に行き、` PreMiD`` `を削除してください。
 
 ### McAfeeがPreMiDをウイルスとして検出する場合(windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+これはMcAfeeの誤った検出であり、すでに報告済の問題です。 PreMiDをスキャンから除外するには、以下のステップを踏んでください。
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> 実行するのに自信がない場合は、[#support](https://discord.premid.app/)でチケットを作ることも可能です。サポートがお手伝いします。 
 > 
 > {.is-warning}
 
