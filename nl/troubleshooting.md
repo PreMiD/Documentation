@@ -34,23 +34,23 @@ PreMiD werkt **niet** met de browserversie van Discord, je moet de app [hier](ht
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Zorg ervoor dat Discord NIET als administrator wordt uitgevoerd
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Echt belangrijk. Discord RPC zal niet werken als je Discord als administrator gebruikt.
 
 ### Gebruikt u een presence met instellingen?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Veel presences (waaronder `Twitch` en `SoundCloud`) worden beïnvloed door een extensieprobleem. Dit probleem zorgt ervoor dat de extensie de standaardwaarden van instellingen niet goed neemt.
 
-To solve this, all you have to do is toggle the topmost setting:
+Om dit op te lossen hoef je alleen maar de bovenste instelling om te schakelen:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Herstart je browser
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) of <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) werkt ook goed. (Je moet dan natuurlijk wel je browser opnieuw openen.)
 
 ### PreMiD herstarten (Applicatie)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Hierna moet je PreMiD herstarten.
 
 ### Discord herladen/herstarten
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Druk op <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) op je toetsenbord of start Discord handmatig opnieuw op.
 
 ### Controleer of u antivirus of firewall draait op je computer
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
