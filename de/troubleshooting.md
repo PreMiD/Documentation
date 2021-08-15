@@ -34,7 +34,7 @@ PreMiD funktioniert **nicht** mit der Browserversion von Discord, du musst dir d
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Stelle sicher, dass Discord NICHT als Administrator läuft
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Sehr wichtig. Discord RPC wird nicht funktionieren, wenn du Discord als Administrator ausführst.
 
 ### Verwendest du eine Presence mit Einstellungen?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
@@ -50,22 +50,22 @@ To solve this, all you have to do is toggle the topmost setting:
 You have to restart PreMiD afterwards.
 
 ### Discord neu laden/neustarten
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Drücke<kbd>STRG+R</kbd>(für Windows) oder <kbd>CMD+R</kbd>(für MacOS) auf deiner Tastatur oder starte dein Discord manuell neu.
 
 ### Überprüfe, ob Antivirus oder Firewall auf deinem Computer läuft
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Manchmal blockieren Antivirenprogramme und Firewalls Anwendungen, die Server erstellen/hosten oder einfach nur eine Verbindung zum Internet herstellen. Wir verwenden einen lokalen Server, um Daten zwischen unserer App und der Erweiterung zu erhalten und weiterzugeben. Wenn du also die Funktion der App blockierst, Daten zu übergeben, wirst du wahrscheinlich nicht in der Lage sein, PreMiD zu verwenden.
 
 ### Deaktiviere deine Addons
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Deaktiviere alle deine Addons und überprüfe, ob es funktioniert. Wenn ja, versuche Schritt für Schritt deine Addons zu reaktivieren und teilen uns mit, welches Addon PreMiD behindert hat.
 
 ### Computer neustarten
-I hope you know how to restart a computer.
+Wir hoffen, dass du weißt wie du deinen Computer neustartest.
 
 ### PreMiD neu installieren
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Manchmal stimmt etwas nicht mit den Dateien... Anleitungen für die Installation findest du [hier](/install).
 
 ### Manuelles Löschen
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` und lösche den Ordner `PreMiD`.
 
 ### McAfee erkennt PreMiD als Virus (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
@@ -86,13 +86,13 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee sollte nun unsere Datei ignorieren, starte einfach unsere Anwendung und dann sollte es funktionieren.
 
 ### PreMiD Status auf Discord ist fehlerhaft!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Keine Sorge. Drücke die Tastenkombination <kbd>STRG + R</kbd> (Windows) oder <kbd>CMD+R</kbd> (MacOS), während du das Fenster von Discord fokussiert hast, um es neu zu laden.
 
 <a name="linux"></a>
 
 # Fehlerbehebung für Linux
 ### Ubuntu/Debian basierte Distributionen
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+Wenn du Discord über Snapcraft heruntergeladen hast, wird Discords RPC nicht funktionieren. Du musst die Snapcraft Version deinstallieren, indem du `sudo snap remove discord` im Terminal eingibst. Lade als nächstes **[Discords Linux Build](https://discordapp.com/api/download?platform=linux)** herunter (**[oder Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**). Navigiere dann zu dem Verzeichnis, in welchem du Discord heruntergeladen hast (üblicherweise `$HOME/Downloads`) und installiere dann das Paket mit `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux basierte Distributionen
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
