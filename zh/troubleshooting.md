@@ -30,21 +30,24 @@ You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (Mac
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
 ### 请确保您在Discord设置中启用了游戏状态
-**用户设置** > **游戏活动** ![activitystatus.png](/activitystatus.png)
+**用户设置** > **游戏活动**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Be sure Discord is running NOT as administrator
-这超重要。 Discord RPC will not work if you run Discord as an administrator.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Are you using a presence with settings?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-To solve this, all you have to do is toggle the topmost setting: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Restart your browser
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### 重开其 PreMiD (应用)
-![quit.png](/quit.png) 之后您需要重开其 Discord
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### 刷新/重开其 Discord
 Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
@@ -89,7 +92,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 # Linux troubleshooting
 ### Ubuntu/Debian based distros
-如果您是通过 Snapcraft下载Discord的，游戏状态将不会显示。 You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux based distros
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
