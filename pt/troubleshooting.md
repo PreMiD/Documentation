@@ -30,42 +30,45 @@ Podes pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (
 O PreMiD **não** funciona na versão do Discord para navegador, precisas de descarregar a aplicação clicando [aqui](https://discord.com/download).
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
-**Definições de Utilizador** > **Atividade de jogo** ![activitystatus.png](/activitystatus.png)
+**Definições de Utilizador** > **Atividade de jogo**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Certifica-te de que o Discord NÃO foi executado como administrador
-Muito importante. O RPC do Discord não funcionará se o Discord tiver sido executado como administrador.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Estás a usar uma presence com definições?
-Muitas presences (incluindo a `Twitch` e o `SoundCloud`) são afetadas por um problema na extensão. Este problema faz com que a extensão não consiga encontrar os valores padrão das definições corretamente.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-Para resolver isto, tudo o que precisas de fazer é alterar a configuração mais acima: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Reiniciar o seu navegador
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) faz um bom trabalho também. (Tem que iniciar o seu navegador outra vez obviamente.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Reiniciar o PreMiD (Aplicação)
-![quit.png](/quit.png) Terá que reiniciar o PreMiD depois.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Recarregar/reiniciar o Discord
-Pressione <kbd>CTRL+R</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) no seu teclado ou reinicie o Discord manualmente.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Verifique se tem o antivirus ou firewall em execução no seu computador
-Alguns programas de antivirus e firewalls irão bloquear aplicações que estão a criar/hoespdar servidores ou apenas a conectar-se à internet. Estamos a utilizar um servidor local para receber e enviar dados entre a nossa aplicação e a extensão, logo se bloquear a habilidade da aplicação de enviar dados provavelmente não irá conseguir utilizar o PreMiD.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Desative os seus addons
-Desative todos os seus addons e verifique se funciona. Se funcionar, tente ativer os addons um de cada vez e diga-nos qual addon quebrou o PreMiD.
+Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Reinicie o seu computador
-Espero que saiba como reiniciar o seu computador.
+I hope you know how to restart a computer.
 
 ### Reinstale o PreMiD
-Por vezes, há algo de errado com os ficheiros... Tutoriais de instalação podem ser encontrados [here](/install).
+Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Remoção manual
-Windows: Escreve `%appdata%` no explorador de ficheiros e apaga a pasta`PreMiD`. MacOS: `~/users/UTILIZADOR/~Library/Application Support/`e apaga a pasta`PreMiD`.
+Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### O McAfee detetou o PreMiD como um vírus (Windows)
-Este é um falso positivo da parte do McAfee e já o reportámos. Por agora, podes excluir o PreMiD da verificação seguindo as seguintes etapas:
+This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
 > Se não te sentires confiante em seguir estes passos, abre um ticket no [#support](https://discord.premid.app/) e um dos nossos agentes de suporte irá ajudar-te! 
 > 
@@ -89,7 +92,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 # Solução de problemas no Linux
 ### Ubuntu/Debian based distros
-Se você tiver baixado o Discord pelo Snapcraft, o RPC não funcionará. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux based distros
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
