@@ -30,42 +30,45 @@ Jūs varat nospiest <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) vai <kbd>CMD+R</kb
 PreMiD **nedarbojas** uz Discord pārlūkprogrammas versijas, jums ir jāuzstāda lietotne [šeit](https://discord.com/download).
 
 ### Pārliecinieties, ka Aktivitātes Statuss ir iespējots Discord iestatījumos
-**Lietotāja Iestatījumi** > **Aktivitātes Statuss** ![activitystatus.png](/activitystatus.png)
+**Lietotāja Iestatījumi** > **Aktivitātes Statuss**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Pārliecinieties, ka Discord NEIET, kā administrators
-Ļoti svarīgi. Discord RPC nedarbosies, ja Discord palaidīsiet, kā administratoru.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Vai izmantojat presence ar iestatījumiem?
-Daudzas presences (tostarp `Twitch` un `SoundCloud`) tiek ietekmēti dēļ paplašinājuma kļūdas. Šīs kļūdas dēļ paplašinājums pareizi neuztver iestatījumu noklusējuma vērtības.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-Lai to atrisinātu, viss, kas jums ir jāizdara, ir jāpārslēdz visaugstāko iestatījumu: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Restartējiet savu pārlūkprogrammu
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) vai <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) dara arī labu darbu. (Jums, protams, arī jāpalaiž pārlūkprogrammu pa jaunu.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Restartējiet PreMiD (Lietotni)
-![quit.png](/quit.png) Pēc tam jums ir jārestartē PreMiD.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Pārlādējiet/restartējiet Discord
-Nospiediet <kbd>CTRL+R</kbd> (Windows) vai <kbd>CMD+R</kbd> (MacOS) uz tastatūras vai restartējiet Discord manuāli.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Pārbaudiet, vai datorā darbojas antivīruss vai ugunsmūris
-Dažreiz pretvīrusu programmas un ugunsmūri bloķē lietotnes, kuras veido/mitina serverus vai vienkārši izveido savienojumu ar internetu. Mēs izmantojam lokālo serveri, lai saņemtu un pārsūtītu datus starp mūsu lietotni un paplašinājumu, tādēļ, ja jūs bloķēsiet lietotnes spēju pārsūtīt datus, visticamāk, nevarēsiet izmantot PreMiD.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Atspējojiet savus paplašinājumus
-Atspējojiet visus savus paplašinājumus un pārbaudiet, vai tas darbojas. Ja jā, mēģiniet soli pa solim iespējot savus paplašinājumus un pastāstiet mums, kurš paplašinājums traucēja PreMiD.
+Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Restartējiet datoru
-Es ceru, ka jūs zināt, kā restartēt datoru.
+I hope you know how to restart a computer.
 
 ### Pārinstalējat PreMiD
-Dažreiz failos ir kaut kas nepareizs... Uzstādīšanas pamācības var atrast [šeit](/install).
+Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Manuālā noņemšana
-Windows: Uzraksti `%appdata%` failu pārlūkā un izdzēsiet `PreMiD` mapi. MacOS: `~/users/USER/~Library/Application Support/` un izdzēsiet `PreMiD` mapi.
+Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee atklāja PreMiD kā vīrusu (Windows)
-Šis ir nepatiess pozitīvs no Mcafee, un mēs esam viņiem ziņojuši par šo problēmu, pagaidām jūs varat izslēgt PreMiD no skenēšanas, veicot šādas darbības:
+This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
 > Ja nejūtaties pārliecināts veicot šīs darbības, droši izveidojiet biļeti [#support](https://discord.premid.app/) un viens no mūsu Atbalsta Aģentiem varēs tev palīdzēt! 
 > 
@@ -83,23 +86,23 @@ Windows: Uzraksti `%appdata%` failu pārlūkā un izdzēsiet `PreMiD` mapi. MacO
 10. McAfee tagad vajadzētu ignorēt mūsu failu, vienkārši palaidiet mūsu lietotni un jums visam vajadzētu iet labi.
 
 ### PreMiD statuss kļūdains Discord!
-Neuztraucies. Nospiediet taustiņus <kbd>CTRL+R</kbd> (Windows) vai <kbd>CMD+R</kbd> (MacOS) kamēr fokusējat uz jūsu Discord logu, lai to atkārtoti ielādētu.
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
 
 <a name="linux"></a>
 
 # Linux problēmu novēršana
 ### Ubuntu/Debian balstītas distribūcijas
-Ja Discord esat lejupielādējis izmantojot Snapcraft, RPC nedarbosies. Jums ir jāuzstāda Snapcraft versija, izpildot `sudo snap remove discord` terminālā. Lejupielādējiet **[Discord Linux būvējumu](https://discordapp.com/api/download?platform=linux)**(**[vai Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), pēc tam pārejiet uz direktoriju, kurā lejupielādējāt Discord (parasti `$HOME/Downloads`), pēc tam uzstādiet pakotni, izmantojot `sudo dpkg -i discord-*.dev`. Ja AppImage nedarbojas, apsveriet iespēju pārbaudīt citas mūsu paketes, izmantojot **[šo saiti](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux balstītas distribūcijas
-Arch Linux balstītām distribūcijām vajadzētu izmantot AUR (Arch User Repository) Paketi, kuras nosaukums ir <code>premid</code> vai <code>premid-git</code> (<em x-id="3">UZMANĪBU: Šis repozitorijs ir izveidots, izmantojot avota kodu.</em>). Ja nevēlaties instalēt AUR pārvaldnieku (yay utt.), varat apskatīt mūsu AppImage, kuru var lejupielādēt no mūsu <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repozitorija</a></strong>.
-<em x-id="3">Uzmanību: paketi <strong x-id="1">AUR</strong> repozitorijā nevis mēs uzturam (kā PreMiD organizācija), bet gan citi cilvēki.</em>
+Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
+<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
 
 ### Portu saistīšana
-Jums būtu jāzina, ka <strong x-id="1">PreMiD</strong> saista pats sevi ar portu <strong x-id="1">3020</strong>. Tas ir nepieciešams, lai Paplašinājums un Lietotne varētu komunicēt. Ja <strong x-id="1">PreMiD</strong> parāda kļūdu par šo portu, jums jāpārbauda, vai kaut kas ir saistīts ar 3020 portu, palaižot <code>sudo lsof -i:3020</code> vai <code>sudo netstat -tnlp | grep :3020</code> jūsu terminālā. Ja kāds process ir saistīts ar to, noteikti atbrīvojiet portu un mēģiniet palaist <code>PreMiD</code> vēlreiz.
+You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
 
 ### PreMiD AppImage netiek palaists, pieslēdzoties
-Kā mēs norādījām mūsu **Linux repozitorijā**, AppImage nevar palaist, pieslēdzoties. Tu to vari pievienot automātiskai palaišanai, veicot šādas darbības:
+As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
 1. Izveidojiet failu <strong x-id="1">rc.local</strong> <code>/etc</code> direktorijā.
 2. Atveriet šo failu iecienītākajā redaktorā un ielīmējiet norādīto kodu, mainot dažas lietas:
 ```bash
@@ -120,11 +123,11 @@ exit 0
 ### Veidojot direktoriju, radās kļūda
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-Ja jūs saņemiet šo kļūdu, tas nozīmē, ka jūsu kontam nav Administratora atļauju, un jums ir jāizveido mape manuāli, veicot šādas darbības:
+If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
 1. Atveriet meklētāju un atveriet **Applications** mapi.
 2. Ar peles labo pogu uzspiediet uz tukšas vietas un uzspiediet uz **Create folder**.
 3. Šai mapei piešķiriet `PreMiD` nosaukumu (atceries par lielajiem burtiem).
 4. Atver uzstādītāju atkal.
 
 # Tas neatrisināja manu problēmu
-Lūdzu atveriet biļeti [#support](https://discord.premid.app/).
+Please open a ticket in [#support](https://discord.premid.app/).
