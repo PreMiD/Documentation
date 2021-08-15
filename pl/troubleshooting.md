@@ -30,42 +30,45 @@ Możesz również nacisnąć <kbd>CTRL + R</kbd>/<kbd>F5</kbd> (Windows) lub <kb
 PreMiD **nie** działa w wersji przeglądarkowej Discorda, musisz pobrać aplikację [tutaj](https://discord.com/download).
 
 ### Upewnij się, że w ustawieniach włączono Discord Game Activity
-**Ustawienia użytkownika** > **Aktywność w grze** ![activitystatus.png](/activitystatus.png)
+**Ustawienia użytkownika** > **Aktywność w grze**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Upewnij się, że Discord NIE działa jako administrator
-Naprawdę ważne. RPC Discorda nie zadziała, jeśli uruchomisz Discorda jako administrator.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Czy używasz aktywności z ustawieniami?
-Wiele aktywności (w tym `Twitch` i `SoundCloud`) jest dotkniętych przez problem rozszerzenia. Powoduje on, że rozszerzenie nie przechwytuje domyślnych wartości ustawień.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-Aby rozwiązać ten problem, wystarczy przełączyć najwyższe ustawienie: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Uruchom ponownie przeglądarkę
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) lub <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) również dobrze się spisuje. (Oczywiście musisz ponownie uruchomić przeglądarkę.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Uruchom ponownie PreMiD (aplikacja)
-![quit.png](/quit.png) Następnie uruchom ponownie PreMiD.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Odśwież/uruchom ponownie Discorda
-Naciśnij klawisze <kbd>CTRL + R</kbd> (Windows) lub <kbd>CMD + R</kbd> (MacOS) na klawiaturze albo ręcznie uruchom ponownie Discorda.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Sprawdź, czy na komputerze działa antywirus lub zapora
-Czasami programy antywirusowe i zapory blokują aplikacje, które tworzą lub hostują serwery lub po prostu łączą się z Internetem. Używamy serwera lokalnego do odbierania i przekazywania danych pomiędzy naszą aplikacją a rozszerzeniem, więc jeśli będziesz blokować możliwość przekazywania danych przez aplikację, prawdopodobnie nie będziesz w stanie korzystać z PreMiD.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Wyłącz dodatki
-Wyłącz wszystkie dodatki i sprawdź, czy działa. Jeśli tak, spróbuj włączyć swoje dodatki krok po kroku i powiedz nam, który dodatek zepsuł PreMiD.
+Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Uruchom ponownie komputer
-Mam nadzieję, że wiesz jak uruchomić ponownie komputer.
+I hope you know how to restart a computer.
 
 ### Ponowna instalacja PreMiD
-Czasami jest coś nie tak z plikami... Poradniki dotyczące instalacji można znaleźć [tutaj](/install).
+Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Ręczne usuwanie
 Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee wykrył PreMiD jako wirus (Windows)
-Jest to fałszywy alarm ze strony McAfee i zgłosiliśmy im ten problem, na razie możesz wykluczyć PreMiD ze skanowania, wykonując następujące kroki:
+This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
 > If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
@@ -89,7 +92,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 # Linux troubleshooting
 ### Ubuntu/Debian based distros
-Jeśli pobrałeś Discorda przez Snapcraft, RPC nie będzie działać. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux based distros
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
