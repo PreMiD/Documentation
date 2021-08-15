@@ -30,42 +30,45 @@ Värskendusnupu otsimise asemel võite klaviatuuril vajutada ka <kbd>CTRL + R</k
 PreMiD **ei** tööta Discordi brauseriversioonis, peate rakenduse alla laadima [siit](https://discord.com/download).
 
 ### Veenduge, et olete Discordi rakenduse seadetes lubanud Tegevuse Oleku
-**Kasutaja seaded** > **Tegevuse Olek** ![activitystatus.png](/activitystatus.png)
+**Kasutaja seaded** > **Tegevuse Olek**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Veenduge, et Discord EI tööta administraatorina
-Väga oluline. Discordi RPC ei tööta, kui käivitate Discordi administraatorina.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Kas kasutate presence-i, millel on seadmed?
-Laienduse probleem mõjutab paljusid presence (sealhulgas `Twitch` ja `SoundCloud`). Selle probleemi tõttu ei haara laiendus sätete vaikeväärtusi korralikult.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-Selle lahendamiseks peate vaid vahetama ülemise sätte: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Taaskäivitage oma brauser
-Ka <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) või <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) teeb head tööd. (Peate oma brauseri ilmselgelt uuesti käivitama.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Taaskäivitage PreMiD (rakendus)
-![quit.png](/quit.png) Pärast peate PreMiD-i taaskäivitama.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Laadige/taaskäivitage Discord
-Vajutage klaviatuuril <kbd>CTRL + R</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS) või taaskäivitage Discord käsitsi.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Kontrollige, kas teie arvutis töötab viirusetõrje või tulemüür
-Mõnikord blokeerivad viirusetõrjeprogrammid ja tulemüürid rakendusi, mis loovad/mõjutavad servereid või lihtsalt ühendavad internetiga. Andmete vastuvõtmiseks ja edastamiseks meie rakenduse ja laienduse vahel kasutame kohalikku serverit, nii et kui blokeerite rakenduse võime andmeid edastada, ei saa te tõenäoliselt PreMiD-i kasutada.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Keelake oma lisad
-Keelake kõik oma lisad ja vaadake, kas see töötab. Kui jah, proovige oma lisad samm-sammult lubada ja öelge meile, milline lisand PreMiD-i rikkus.
+Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Taaskäivitage arvuti
-Loodan, et teate, kuidas arvutit taaskäivitada.
+I hope you know how to restart a computer.
 
 ### PreMiD-i uuesti installimine
-Mõnikord on failidega midagi valesti... Paigaldamise õpetused leiate [siit](/install).
+Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Käsitsi eemaldamine
-Windows: Kirjutage failikeskkonda `%appdata%` ja kustutage kaust `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` ja kustutage kaust `PreMiD`.
+Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee tuvastas PreMiD-i viirusena (Windows)
-See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate PreMiD-i skannimisest välja jätta, tehes järgmist:
+This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
 > Kui te pole nende sammude tegemisel kindel, tehke pilet lehel [#support](https://discord.premid.app/) ja üks meie tugiagentidest saab teid aidata! 
 > 
@@ -83,23 +86,23 @@ See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate 
 10. McAfee peaks nüüd meie faili ignoreerima, lihtsalt käivitage meie rakendus ja teil peaks olema korras.
 
 ### PreMiD-i olek on katki Discordis!
-Ära muretse. Vajutage klahvikombinatsiooni <kbd>CTRL + R</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS), olles keskendunud Discordi aknale, selle uuesti laadimiseks.
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
 
 <a name="linux"></a>
 
 # Linuxi tõrkeotsing
 ### Ubuntu/Debiani põhised distrod
-Kui olete Discordi alla laadinud Snapcrafti kaudu, ei tööta RPC. Peate Snapcrafti versiooni desinstallima, käivitades terminalis `sudo snap remove discord`, laadima alla **[Discordi Linuxi järk](https://discordapp.com/api/download?platform=linux) ** (**[või Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), seejärel navigeerige kataloogi, kuhu Discordi alla laadisite (tavaliselt `$HOME/Downloads`), seejärel installige pakett `sudo dpkg abil -i discord- *.deb`. Kui AppImage ei tööta, peaksite kaaluma meie teiste pakettide kontrollimist **[selle lingi abil](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linuxi põhised distrod
-Arch Linuxi põhised distrod peaksid kasutama AUR-paketti (Arch User Repository), mille nimi on <code>premid</code> või <code>premid-git</code> (<em x-id="3">HOIATUS: See hoidla ehitab premid-i meie lähtekoodist. </em>). Kui te ei soovi AUR-i haldurit installida (yay jne.), võite vaadata meie AppImage-i, mille saate alla laadida meie <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linuxi hoidlast</a></strong>.
-<em x-id="3">Hoiatus: <strong x-id="1">AUR</strong> hoidlas asuvat paketti ei hoolda me (PreMiD organisatsioonina), vaid teised inimesed.</em>
+Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
+<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
 
 ### Portide sidumine
-Peaksite teadma, et <strong x-id="1">PreMiD</strong> seob end pordiga <strong x-id="1">3020</strong>. See on vajalik laienduse ja rakenduse suhtlemiseks. Kui <strong x-id="1">PreMiD</strong> kuvab selle pordi kohta vea, peaksite <code>sudo lsof -i:3020</code> või <code>sudo netstat -tnlp | grep :3020</code> käivitades kontrollima, kas teie terminalis on midagi seotud pordiga 3020. Kui mõni protsess on sellega seotud, peate kindlasti pordi vabastama ja proovima uuesti käivitada <code>PreMiD-i</code>.
+You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
 
 ### PreMiD AppImage ei käivitu sisselogimisel
-Nagu me oma **Linuxi hoidlas** märkisime, ei saa AppImage-i sisselogimisel käivitada. Saate selle automaatse käivitamise alla käsitsi lisada, toimides järgmiselt:
+As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
 1. Tehke kataloogis <code>/etc</code> fail nimega <strong x-id="1">rc.local</strong>.
 2. Avage see fail oma lemmikredaktoris ja kleepige antud kood, muutes mõningaid asju:
 ```bash
@@ -120,11 +123,11 @@ exit 0
 ### Viga kataloogi loomisel
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-Selle tõrke ilmnemisel tähendab see, et teie kontol pole administraatori õigusi ja peate kausta käsitsi looma, toimides järgmiselt:
+If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
 1. Avage leidja ja avage kaust **Rakendused**.
 2. Paremklõpsake tühjal kohal ja klõpsake valikut **Loo kaust**.
 3. Sellesse kausta määrake nimi `PreMiD` (pidage meeles suurtähti).
 4. Avage installer uuesti.
 
 # See pole minu probleemi lahendanud
-Avage pilet lehel [#support](https://discord.premid.app/).
+Please open a ticket in [#support](https://discord.premid.app/).
