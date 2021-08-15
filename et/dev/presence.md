@@ -1,53 +1,53 @@
 ---
-title: Presence Development
+title: Presence-i arendamine
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Kõik presence-id on nüüd salvestatud siin: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+Versioon `2.x` tutvustab [presence-i poodi](https://premid.app/store). Kasutajatel on nüüd võimalus oma lemmik presence käsitsi lisada ja eemaldada [veebsaidi](https://premid.app/) kasutajaliite kaudu.
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> Enne alustamist on tungivalt soovitatav tutvuda meie presence-i juhenditega. 
 > 
 > {.is-warning}
 
-- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
+- [Juhised](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
-# Structure
+# Struktuur
 
-All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/)-il on JavaScripti kohal mõned eriti vürtsikad definitsioonid, nii et vigade parandamine ja tuvastamine on palju lihtsam.
 
-## Installation
+## Paigaldamine
 
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
+1. Installige [Git](https://git-scm.com/).
+2. Installige [Node](https://nodejs.org/en/) (kaasneb [npm](https://www.npmjs.com/)).
+3. Installige [TypeScript](https://www.typescriptlang.org/index.html#download-links) (avage terminal ja kirjutage `npm install -g typcript`).
 
-## Cloning the project
+## Projekti kloonimine
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+1. Avage terminal ja kirjutage `git clone https://github.com/PreMiD/Presences`.
+2. Valige teie valikul kaust.
+3. Avage see oma koodiredaktoris.
 
-## Creating folders and files
+## Kaustade ja failide loomine
 
-1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
-2. Create a folder with the **name** (not an URL) of the service you want to support.
-3. Create a `presence.ts` and a `tsconfig.json` file inside.
-4. Create a folder named `dist` inside.
-5. Create a `metadata.json` file inside the `dist` folder.
+1. Minge kausta `websites` ja seejärel minge kausta, kus on soovitud teenuse, mida te toetada tahate **nime** (mitte URL) esimene täht.
+2. Looge kaust selle teenuse **nimega**(mitte URL), mida soovite toetada.
+3. Looge sees `presence.ts` ja `tsconfig.json` fail.
+4. Looge sees kaust nimega `dist`.
+5. Looge `metadata.json` fail kausta `dist` sisse.
 
-## Filling in the tsconfig.json file
+## Faili tsconfig.json täitmine
 
-Please put the following code inside of the `tsconfig.json` file.
+Palun sisestage järgmine kood faili `tsconfig.json` sisse.
 
 ```typescript
 {
@@ -58,37 +58,37 @@ Please put the following code inside of the `tsconfig.json` file.
 }
 ```
 
-To learn more about TypeScript configuration click [here](/dev/presence/tsconfig).
+TypeScripti seadistamise kohta lisateabe saamiseks klõpsake [siia](/dev/presence/tsconfig).
 
-## Filling in the metadata.json file
+## Faili metadata.json täitmine
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator). It's still suggested to read this through so you know how it works.
+Laiskade piilumiste jaoks oleme teinud `metadata.json` faililooja [siin](https://eggsy.xyz/projects/premid/mdcreator). Ikka soovitatakse see läbi lugeda, et teaksite, kuidas see töötab.
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "KASUTAJA",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "KASUTAJA",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "TEENUS",
+  "altnames": ["TEENUS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "KIRJELDUS"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIOON",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGOORIA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -125,7 +125,7 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 }
 ```
 
-Please copy the code above and put it in your `metadata.json` file. You now need to edit values of the properties. Please note that the following properties are optional to have in your `metadata.json` file, if you do not plan on using them you need to remove them.
+Kopeerige ülaltoodud kood ja pange see oma faili `metadata.json`. Nüüd peate atribuutide väärtusi muutma. Pange tähele, et järgmised atribuudid on valikulised failis `metadata.json`, kui te ei kavatse neid kasutada, peate need eemaldama.
 
 - `contributors`
 - `altnames`
@@ -135,234 +135,234 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 - `readLogs`
 - `settings`
 
-**Clarifying some value presets:**
+**Mõne väärtuse eelseadistuse täpsustamine:**
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Muutuja</th>
       <th style="text-align:left">Kirjeldus</th>
       <th style="text-align:left">Tüüp</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Valikuline</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discordist kopeerida, lubades arendaja
+        režiimis ja paremklõpsake oma profiilil.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab Discordist kopeerida, lubades arendaja
+        režiimis ja paremklõpsake oma profiilil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.<br>
-      (Must be the same name as the folder where everything is in)</td>
+      <td style="text-align:left">Teenuse pealkiri, mida see presence toetab. <br>
+      (Peab olema sama nimi, kui kaust, kus kõik asub)</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Saate presence-i otsida alternatiivse nime abil. <br>
+      Mõeldud kasutamiseks presence-i puhul, millel on erinevates keeltes erinev nimi (nt Pokémon ja 포켓 몬스터). <br>
+      Saate seda kasutada ka presence-ite jaoks, millel on erimärgid, nii et te ei pea neid kirjutama (nt Pokémon ja Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Väike presence-i kirjeldus. Kui teil pole ideid, võite kasutada teenuse kirjeldust. Teie kirjeldusel peavad olema võtmepaari väärtused, mis tähistavad keelt, ja kirjeldus selles konkreetses keeles. Tehke kirjeldused keeltega, mida <i>tunnete</i>, meie tõlkijad muudavad teie metaandmete faili.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
-      <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
+      <td style="text-align:left">Teenuse URL. <br><b>Näide:</b><code>vk.com</code><br>
+      <b> See URL peab vastama veebisaidi URL-ile, sest see tuvastab, kas see on veebisait, kuhu skripti süstida. </b><br><b><b> Ärge</b> lisage<code> https://</code> või<code> http://</code> URL-i sisse ega kaldkriips lõpus:
       <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
-      You can add multiple URLs by doing the following:<br>
-      <code>["URL1", "URL2", "ETC."]</code><br>
-      You could also use regExp also known as Regex for this task, explained further below.</td>
+      <b>Märkus</b>: Mõne URL-i domeeni ees võib olla <code>www.</code> või midagi muud. <b>ÄRGE</b> unustage seda lisada!<br>
+      Mitu URL-i saate lisada järgmiselt:<br>
+      <code>["URL1", "URL2", "JNE"]</code><br>
+      Selle ülesande jaoks võite kasutada ka regExpi, tuntud ka kui Regex, mida selgitatakse allpool.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for axample: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">Tavalise avaldise string, mida kasutatakse URL-ide sobitamiseks.<br>
+      RegExp või tuntud ka kui Regex, saab kasutada, kui veebisaidil on mitu alamdomeeni.<br>
+      Selleks võite kasutada järgmist regExp-i:<br>
+      <code>([a-z0-9] +) [.] domeen [.] TLD"</code><br>
+      TLD tähistab tipptaseme domeeni, näiteks: .com .net (kuid ärge sisestage punkti).<br>
+      <code>([a-z0-9]+)</code> tähendab kõike vahemikus a kuni z ja vahemikus 0 kuni 9.<br>
+      Kiire alustaja saate selle <a href="https://youtu.be/sXQxhojSdZM">video</a> vaatamisega.<br>
+      RegExp-i saate testida aadressil <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Teie presence-i versioon.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link teenuse logole.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Link sinu presence-i pisipildile.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Väärtus <code>#HEX</code>. Soovitame kasutada teenuse põhivärvi
+        mida teie presence toetab.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Kirjuta silte, need aitavad kasutajatel otsida teie presence-it veebisaidil.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under. See the valid catergories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">here</a>.</td>
+      <td style="text-align:left">String, mida kasutatakse presence-i kategooria tähistamiseks. Vaadake kehtivaid kategooriaid <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">siit</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
+      <td style="text-align:left">Määrab, kas <code>iFrames</code> kasutatakse.</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into. See regExp for more info.</td>
+      <td style="text-align:left">Regulaaravaldise valija, mis valib sisestatavad iframe-id. Lisateavet leiate regExp-ist.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Määrab, kas laiendus peaks logisid lugema.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change.<br>
-      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
+      <td style="text-align:left">Seadete valik, mida kasutaja saab muuta.<br>
+      Lisateavet presence-i kohta leiate <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">siit</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Jah</code></td>
     </tr>
   </tbody>
 </table>
 
-## Getting started
+## Alustamine
 
 ```typescript
-const presence = new Presence({
-    clientId: "000000000000000000" //The client ID of the Application created at https://discordapp.com/developers/applications
+const kohalolek = uus Presence({
+    clientId: "00000000000000000000" //Rakenduse kliendi ID, mis on loodud aadressil https://discordapp.com/developers/applications
   }),
-  strings = presence.getStrings({
-    play: "presence.playback.playing",
-    pause: "presence.playback.paused"
-    //You can use this to get translated strings in their browser language
+  stringid = presence.getStrings ({
+    esitus: "presence. taasesitus. mängimine",
+    paus: "presence.playback.paused"
+    //Selle abil saate tõlkida stringe nende brauseri keeles
   });
 
-/*
+/ *
 
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Haarake ja töötlege siin kõik oma andmed
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+    // element haarab //
+    // api kõned //
+    // muutujad //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+// Käivitage funktsioon iga 10 sekundi tagant UpdateData sündmusest eraldi, et saada ja määrata muutujad, mille UpdateData korjab
 
 */
 
-presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
+presence.on("UpdateData", async () = > {
+  /*UpdateData käivitub alati ja seetõttu tuleks seda kasutada värskendustsüklina ehk linnukena. Seda nimetatakse võimaluse korral mitu korda sekundis.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Soovitatav on seada väljaspool seda sündmuse funktsiooni veel üks funktsioon, mis muudab muutujate väärtusi ja teeb tugeva tõste, kui helistate andmeid API-lt.*/
 
-  const presenceData: PresenceData = {
+  const presenceData: presenciteave = {
     largeImageKey:
-      "key" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+      "key"/*Suure pildi võti (faili nimi) presence. Need laaditakse üles ja nimetatakse teie rakenduse jaotises Rich Presence nimega Kunstivarad*/,
     smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+      "key"/*Presence-i juures oleva väikese pildi võti (faili nimi). Need laaditakse üles ja nimetatakse teie rakenduse jaotises Rikas Presence nimega Kunstivarad*/,
+    smallImageText: "Mõned hõljutavad tekstid", //Tekst, mis kuvatakse väikese pildi kohal hõljutades
+    details: "Lehe nime sirvimine", //Presence-i teksti ülemine osa
+    state: "Jao A lugemine", //Presence-i teksti alumine osa
+    startTimestamp: 1577232000, //Unixi ajastu ajatempel, millal loendamist alustada
+    endTimestamp: 1577151472000 //Kui soovite kuvada möödunud aja asemel vasakule jääva aja, siis see on unixi ajastu ajatempel, mille abil taimer lõpeb
+  }; /*Soovi korral saate siin määrata suurPiltVõti ja muuta ülejäänud muutuvate alamomadustena, näiteks presenceSata.type = "blahblah"; tüübinäited: üksikasjad, olek jne*/
 
-  if (presenceData.details == null) {
-    //This will fire if you do not set presence details
-    presence.setTrayTitle(); //Clears the tray title for mac users
-    presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  } else {
-    //This will fire if you set presence details
-    presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+  kui (presenceData.details == null) {
+    //See käivitub, kui te ei määra presence-i üksikasju
+    presence.setTrayTiitle (); //Kustutab salve pealkirja mac-kasutajatele
+    presence.setAktiivsus (); /*Uuendage presence-i ilma andmeteta, kustutades selle ja muutes suureks pildiks Discordi rakenduse ikooni ja teksti Discordi rakenduse nimeks*/
+  } muu {
+    //See käivitub, kui määrate presence-i üksikasjad
+    presence.setActivity (presenceData); //Värskendage presence kõigi presenceData objekti väärtustega
   }
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Saate selle kopeerida oma faili `presence.ts` ja redigeerida väärtusi. Kõigi väärtuste seadistamine toimub updataData sündmuse sees.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Näidete jaoks soovitame vaadata presence-i koodi nagu: 1337x või 9GAG. Klass `Presence` kohta lisateabe saamiseks klõpsake [siia](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Kuna v2.2.0 on nüüd slaidiseansse, võimaldab see teil intervalliga näidata mitut liidest `PresenceData`, lisateabe saamiseks klõpsake `Slideshow` klassi [siin](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Kas te ei saa kindlaid andmeid?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Paljud veebisaidid kasutavad [iframe'i](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Need Html-märgendid võivad sisaldada mitut allikat, näiteks videoid. Kuid need pole iga kord asjakohased. Mõned on peidetud või neid ei kasutata lihtsalt aktiivselt. Enne tarbetu töö tegemist kontrollige, kas saate vajaliku teabe ilma nendeta välja võtta.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Otsige neid oma brauserikonsoolist (veenduge, et olete vahekaardil **Elements**).
+2. Otsing (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) või <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Käivitage `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Kui leiate, et teie andmed on iFrame-is, peate tegema järgmist:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Looge `iframe.ts` fail.
+2. Määrake oma metaandmete failis iFrame väärtuseks `true`.
+3. Täitke oma iFrame-i fail.
 
 ```typescript
 const iframe = new iFrame();
-iframe.on("UpdateData", async () => {
+iframe.on("UpdateData", async () = > {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  Hankige iFrame'ist kõik vajalikud andmed, salvestage need muutujatesse
+  ja saatke need siis iframe.send abil
   */
-  iframe.send({
-    //sending data
+  iframe.send ({
+    //andmete saatmine
     video: video,
-    time: video.duration
+    aeg: video.duration
   });
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Presence-i faili andmete vastuvõtmine iFrame failist.
 
 ```typescript
 presence.on("iFrameData", (data) => {
@@ -371,34 +371,34 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Märkus:** See tuleb asetada väljaspool sündmust updateData.
 
-## Compiling
+## Kompileerimine
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Avage kaustas konsool ja kirjutage `tsc -w`, et kompileerida `presence.ts` kausta `/dist`.
 
-# Loading the presence
+# Presence-i laadimine
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Avage brauseris laienduse hüpikaken ja hoidke klaviatuuri nuppu <kbd>Shift</kbd>.
+2. **Load Presence** kuvatakse jaotises Presences.
+3. Klõpsake seda, kui hoiate endiselt nuppu <kbd>Shift</kbd>.
+4. Valige oma presence-i kaust /dist.
 
-# Some helpful things
+# Mõned kasulikud asjad
 
-## Hot-reloading
+## Kuum laadimine
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Veebisait, millel arendate, laaditakse automaatselt uuesti iga kord, kui fail kausta salvestatakse.
 
-## Debugging
+## Veakõrvaldus
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Võite koodi `console.log("Test");` panna oma koodi vahele ja vaadata, kas teie brauserikonsool annab teile selle väljundi. Kui jah, siis jätkake ja proovige pärast järgmist funktsiooni uuesti. Kui ei, siis on üleval viga.
+- Kui see teid ka ei aita, küsige abi meie [Discord serverist](https://discord.premid.app/) Presence-i arendajalt.
 
-# Files explained
+# Toimikud selgitatud
 
-- [Presence Class](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Presence-i klass](/dev/presence/class)
+- [Slaidiseansi klass](/dev/presence/slideshow)
+- [iFrame'i klass](/dev/presence/iframe)
+- [Metaandmete fail](/dev/presence/metadata)
+- [TypeScripti seadistamine](/dev/presence/tsconfig ""){.links-list}

@@ -2,7 +2,7 @@
 title: Pengembangan Presence
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -125,7 +125,7 @@ Kami telah membuat pembuat file `metadata.json` untuk para pemalas [disini](http
 }
 ```
 
-Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus mengubah value dari properti tersebut. Harap diingat bahwa properti berikut adalah opsional dalam file `metadata.json` anda, jika anda tidak berniat menggunakannya anda harus menghapusnya.
+Salin kode diatas dan tempel pada file `metadata.json`. Sekarang kamu harus mengubah value dari properti tersebut. Harap diingat bahwa properti berikut adalah opsional dalam file `metadata.json` anda, jika anda tidak berniat menggunakannya anda harus menghapusnya.
 
 - `contributors`
 - `altnames`
@@ -196,7 +196,7 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
       <td style="text-align:left">Sebuah string regular expression yang digunakan untuk mencocokkan url.<br>
-      regExp atau Regex, dapat digunakan jika sebuah website memiliki beberapa subdomain.<br>
+      regExp atau yang dikenal sebagai Regex, dapat digunakan jika sebuah website memiliki beberapa subdomain.<br>
       Kamu dapat menggunakan regExp berikut ini untuk itu:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
       TLD adalah singkatan dari Top Level Domain contohnya: .com .net ( jangan masukkan titik).<br>
@@ -216,19 +216,19 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Link ke logotype dari layanan.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Link ke thumbnail presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
       <td style="text-align:left"><code>#HEX</code> value. Kami sarankan untuk menggunakan warna utama dari layanan        yang didukung oleh presence anda.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
@@ -250,7 +250,7 @@ Salin kode diatas dan tempel pada file `metadata.json`. Sekarang anda harus meng
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into. Lihat regExp untuk informasi lebih lanjut.</td>
+      <td style="text-align:left">Penentu regular expression yang memilih iframe yang di inject. Lihat regExp untuk informasi lebih lanjut.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
@@ -325,15 +325,15 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Kamu bisa menyalinnya ke file `presence.ts` dan mengubah valuenya. Pengaturan semua value dilakukan pada event updateData.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. Untuk informasi tentang kelas `Presence` klik [disini](/dev/presence/class).
+Untuk contoh kami sarankan untuk melihat kode dari presence seperti: 1337x atau 9GAG. Untuk informasi tentang kelas `Presence` klik [disini](/dev/presence/class).
 
 Sejak v2.2.0 sekarang ada Slideshow, ini memungkinkan kamu untuk menampilkan beberapa antarmuka `PresenceData` pada suatu interval, untuk info lebih lanjut klik tentang kelas `Slideshow` [di sini](/dev/presence/slideshow).
 
 ## Tidak bisa mendapat data tertentu?!
 
-Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)) [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Tag html tersebut bisa berisi beberapa sumber seperti video. But they're not relevant every time. Some are hidden or just not actively used. Periksa jika kamu bisa ekstrak informasi yang dibutuhkan tanpa informasi tersebut sebelum melakukan pekerjaan sia-sia.
+Banyak situs web yang menggunakan ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)) [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Tag html tersebut bisa berisi beberapa sumber seperti video. Tapi mereka kadang tidak relevan. Beberapa tersembunyi atau tidak sering dipakai. Periksa jika kamu bisa ekstrak informasi yang dibutuhkan tanpa informasi tersebut sebelum melakukan pekerjaan sia-sia.
 
 1. Periksa didalam konsol browser (pastikan anda berada pada tab **Elements**).
 2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).

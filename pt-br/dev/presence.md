@@ -1,20 +1,20 @@
 ---
-title: Presence Development
+title: Desenvolvimento de Presences
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Todas as presences agora são armazenadas aqui: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+A versão `2.x` introduz a [loja de presences](https://premid.app/store). Usuários agora têm a capacidade de adicionar e remover manualmente suas presences favoritas através da interface do [site](https://premid.app/).
 
-> Antes de começar, é altamente recomendado que você olhe as nossas diretrizes de presence. 
+> Before getting started, it is highly recommended that you look at our presence guidelines. 
 > 
 > {.is-warning}
 
@@ -39,7 +39,7 @@ Todas as Presences são codificadas em [TypeScript](https://www.typescriptlang.o
 
 ## Criando pastas e arquivos
 
-1. Vá na pasta `websites` e então vá para a pasta com a primeira letra do **nome** (não um URL) do serviço que você deseja contribuir.
+1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
 2. Crie uma pasta com o **nome** (não uma URL) do serviço que você deseja suportar.
 3. Crie um arquivo `presence.ts` e um arquivo `tsconfig.json` dentro dela.
 4. Crie uma pasta chamada `dist` dentro.
@@ -62,7 +62,7 @@ Para saber mais sobre a configuração do TypeScript, clique [aqui](/dev/presenc
 
 ## Preenchendo o arquivo metadata.json
 
-Nós fizemos um `metadata.json` criador de arquivos para os preguiçosos [aqui](https://eggsy.xyz/projects/premid/mdcreator). Ainda é sugerido ler isso para que você saiba como funciona.
+We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator). Ainda é sugerido ler isso para que você saiba como funciona.
 
 ```json
 {
@@ -149,53 +149,53 @@ Por favor copie o código acima e coloque-o em seu arquivo de `metadata.json`. A
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> is your Discord username without the identifier(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> é seu nome de usuário no Discord sem seu identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> é seu nome de usuário no Discord sem seu identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> é seu nome de usuário do Discord sem o identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">O título do serviço que essa Presence suporta.<br>
-      (Deve possuir o mesmo nome da pasta na qual está tudo)</td>
+      <td style="text-align:left">The title of the service that this presence supports.<br>
+      (Must be the same name as the folder where everything is in)</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Seja capaz de pesquisar a Presence usando um nome alternativo.<br>
-      Significa ser usado em Presences que têm nomes diferentes em línguas diferentes. (ex. Pokémon e 포켓몬스터).<br>
-      Você também pode usar isso para Presences que possuem caracteres especiais e você não precisa digitá-los (ex. Pokémon e Pokemon).</td>
+      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
+      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
+      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Descrição curta da Presence, você pode usar a descrição do serviço se estiver sem ideias. Sua descrição deve ter valores de key pair que indicam o idioma e a descrição nesse idioma específico. Faça descrições com os idiomas <i>que você conhece</i>, nossos tradutores farão alterações ao seu arquivo de metadados.</td>
+      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Sua descrição deve ter valores de key pair que indicam o idioma e a descrição nesse idioma específico. Faça descrições com os idiomas <i>que você conhece</i>, nossos tradutores farão alterações ao seu arquivo de metadados.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL do serviço.<br><b>Exemplo:</b><code>vk.com</code><br>
-      <b>Esse URL deve corresponder ao URL do website, pois irá detectar se o usuário está ou não no website para injetar o script.</b><br> <b>NÃO</b> adicione <code>https://</code> ou <code>http://</code> no URL ou barra no final:
+      <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
+      <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
       <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Nota:</b>: Alguns URLs têm de possuir <code>www.</code> ou outra coisa na frente do domínio. <b>NÃO</b> esqueça de adicioná-lo!<br>
-      Você pode adicionar múltiplos URLs fazendo o seguinte:<br>
+      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
+      You can add multiple URLs by doing the following:<br>
       <code>["URL1", "URL2", "ETC."]</code><br>
-      Você também pode usar o regExp, também conhecido como Regex para isso, a explicação está abaixo.</td>
+      You could also use regExp also known as Regex for this task, explained further below.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
       <td style="text-align:left">Uma string de expressão regular usada para combinar com as urls.<br>
-      regExp ou também conhecida como Regex, pode ser usada se um website tiver múltiplos subdomínios.<br>
+      regExp ou também conhecida como Regex, pode ser utilizado se um website tiver múltiplos subdomínios.<br>
 Você pode usar a seguinte regExp para isso:<br>
 <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
 TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .net<br>
@@ -209,41 +209,41 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
       <td style="text-align:left"><b>version</b></td>
       <td style="text-align:left">Versão da sua presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Link para o logotipo do serviço.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Link para sua miniatura da presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
       <td style="text-align:left">Valor <code>#HEX</code>. Recomendamos usar uma cor primária do serviço que a sua presence suporta.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
       <td style="text-align:left">Array com tags, eles ajudarão os usuários a pesquisar sua presence no site.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
       <td style="text-align:left">Uma string usada para representar a categoria na qual a presence cai. Veja as categorias válidas <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">aqui</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Define se <code>iFrames</code> são usados.</td>
+      <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -255,7 +255,7 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Define se a extensão deve estar lendo os logs.</td>
+      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -273,69 +273,66 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
 
 ```typescript
 const presence = new Presence({
-    clientId: "000000000000000000", //O client ID do Aplicativo criado no https://discordapp.com/developers/applications
-    mediaKeys: false //Ativar o uso e detecção de pressionamentos de teclas de mídia
-}),
-
-strings = presence.getStrings({
+    clientId: "000000000000000000" //The client ID of the Application created at https://discordapp.com/developers/applications
+  }),
+  strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    //Você pode usar isso para obter strings traduzidas
-});
+    //You can use this to get translated strings in their browser language
+  });
 
 /*
 
 function myOutsideHeavyLiftingFunction(){
-    //Pegue e processe todos os seus dados aqui
-
+    //Grab and process all your data here
 
     // element grabs //
     // api calls //
     // variable sets //
 }
 
-setInterval(10000, myOutsideHeavyLiftingFunction); 
-//Execute a função separada do evento UpdateData a cada 10 segundos para obter e definir as variáveis ​​que o UpdateData seleciona
+setInterval(myOutsideHeavyLiftingFunction, 10000);
+//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
 
 */
 
-
 presence.on("UpdateData", async () => {
-    /*UpdateData está sempre disparando e, portanto, deve ser usado como seu ciclo de atualização ou `tick`. Isso é chamado várias vezes por segundo, sempre que possível.
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Isso é chamado várias vezes por segundo, sempre que possível.
 
-    É recomendável configurar outra função fora desta função de evento que irá alterar os valores das variáveis e fazer o levantamento pesado se você chamar dados de uma API.*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
-    const presenceData: presenceData = {
-        largeImageKey: "key", /*A key (nome do arquivo) da Imagem Grande sobre a presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+  const presenceData: PresenceData = {
+    largeImageKey:
+      "key" /*The key (file name) of the Large Image on the presence. Estes são enviados e nomeados na seção Rich Presence do seu aplicativo, chamado de Art Assets*/,
     smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. Estes são enviados e nomeados na seção Rich Presence de sua aplicação, chamada Art Assets*/,
-    smallImageText: "Some hover text", //O texto que é exibido ao cobrir sobre a pequena imagem
-    details: "Browsing Page Name", //A seção superior do texto da presence
-    state: "Reading section A", //A seção inferior do texto da presence
-    startTimestamp: 1577232000, //O unix epoch timestamp para quando começar a contar a partir
-    endTimestamp: 1577151472000 //Se você quiser mostrar o Time Left em vez de Elapsed, este é o unix epoch timestamp em que o timer termina
-  }; /*Opcionalmente você pode definir aqui uma largeImageKey e alterar o resto como sub-propriedades variáveis, por exemplo presenceData.type = "blahblah"; exemplos de type: details, state, etc..*/
+      "key", /*A key (nome do arquivo) da imagem pequena na presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
   if (presenceData.details == null) {
-    //Isto irá disparar se você não definir details da presence
-    presence.setTrayTitle(); //Limpa o tray title para usuários Mac
-    presence.setActivity(); /*Atualizar a presence sem dados, portanto limpando-a e tornando a imagem grande o ícone do Aplicativo Discord, e o texto o nome do Aplicativo Discord*/
+    //This will fire if you do not set presence details
+    presence.setTrayTitle(); //Clears the tray title for mac users
+    presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
   } else {
-    //Isto irá disparar se você definir details da presence
-    presence.setActivity(presenceData); //Atualizar a presence com todos os valores do presenceData object
+    //This will fire if you set presence details
+    presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
   }
 });
 ```
 
 Você pode copiar isso no arquivo `presence.ts` e editar os valores. Configurar todos os valores é feito dentro do evento updateData.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Para exemplos nós sugerimos checar o código de presences como o 1337x ou 9GAG. Para mais informações sobre a classe `Presence` clique [aqui](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Desde a v2.2.0 existem agora Slideshows, isto permite que você mostre múltiplas interfaces de `PresenceData` com um intervalo, para mais informações sobre a classe `Slideshow` clique [aqui](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Não consegue obter certos dados?!
 
-Muitos sites estão usando [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Muitos sites estão usando [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Essas tags html podem conter várias fontes como vídeos. Entretanto, elas não são sempre relevantes. Alguns são ocultos ou simplesmente não são ativamente utilizados. Verifique se você pode extrair, as informações que você precisa, sem elas antes de fazer trabalho desnecessário.
 
 1. Cheque por elas no console do navegador (certifique-se de que você está na guia **Elementos**).
 2. Pesquisa (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
@@ -351,8 +348,8 @@ Se perceber que seus dados estão em um iFrame, você precisa fazer o seguinte:
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Obtenha todos os dados que você precisa do iframe, salve-os em variáveis
-  e os enviou usando iframe.send
+  Get all the data you need out of the iFrame save them in variables
+  and then send them using iframe.send
   */
   iframe.send({
     //sending data
@@ -371,15 +368,15 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Nota:** Isso precisa ser colocado fora do evento updateData.
 
 ## Compilando
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Abra um console na sua pasta e digite `tsc -w` para compilar o `presence.ts` para a pasta `dist`.
 
 # Carregando a presence
 
-1. Clique no ícone da extensão e segure o botão <kbd>Shift</kbd> em seu teclado.
+1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
 2. O botão **Carregar presence** aparecerá na seção das Presences.
 3. Clique nele enquanto estiver segurando o botão <kbd>Shift</kbd>.
 4. Selecione a pasta /dist da sua presence.
@@ -388,12 +385,12 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Hot-reloading
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+O site que você está desenvolvendo para vai recarregar automaticamente sempre que você salver um arquivo na sua pasta.
 
 ## Depuração
 
 - Você pode colocar `console.log("Test");` entre seu código e ver se o console do seu navegador lhe dá essa saída. Se sim, então continue e tente novamente depois da próxima função. Se não, então há um erro acima.
-- Se isso não te ajudar, peça ajuda a um desenvolvedor de presences no nosso [servidor do Discord](https://discord.premid.app/).
+- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
 
 # Arquivos explicados
 

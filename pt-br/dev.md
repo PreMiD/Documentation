@@ -6,7 +6,7 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> Um editor de código é necessário. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Um editor de código é necessário. Nós recomendamos o [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
@@ -28,7 +28,7 @@ tags:
 - Abra um terminal no repositório e digite `npm i`.
 - Para atualizar as dependências, digite `npm update`.
 
-> Esteja ciente que ao atualizar as dependências elas podem causar falhas, ou não - Testar é necessário! 
+> Be aware that updating the dependencies could break a lot, or not - testing is required! 
 > 
 > {.is-danger}
 

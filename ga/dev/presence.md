@@ -2,7 +2,7 @@
 title: Forbairt Láithreachta
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -198,7 +198,7 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
       regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
       You could use the following regExp for that:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for axample: .com .net (but do not enter the dot).<br>
+      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
       <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
       You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
       You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
@@ -349,7 +349,7 @@ const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
   Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  and then send them using iframe.send
   */
   iframe.send({
     //sending data

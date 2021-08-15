@@ -20,7 +20,7 @@ Iekļauts šajā lapā:
 <a name="general"></a>
 
 # Vispārīgu problēmu novēršana
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> Jūs varat izmantot [šo](https://qkeleq10.github.io/PreMiD-Troubleshooting/) rīku, lai vieglāk identificētu jūsu problēmu. 
 > 
 > {.is-info}
 ### Pārlādējiet lapu
@@ -30,7 +30,7 @@ Jūs varat nospiest <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) vai <kbd>CMD+R</kb
 PreMiD **nedarbojas** uz Discord pārlūkprogrammas versijas, jums ir jāuzstāda lietotne [šeit](https://discord.com/download).
 
 ### Pārliecinieties, ka Aktivitātes Statuss ir iespējots Discord iestatījumos
-**Lietotāja Iestatījumi** > **Aktivitātes Statuss** ![activitystatus.png](/activitystatus)
+**Lietotāja Iestatījumi** > **Aktivitātes Statuss** ![activitystatus.png](/activitystatus.png)
 
 ### Pārliecinieties, ka Discord NEIET, kā administrators
 Ļoti svarīgi. Discord RPC nedarbosies, ja Discord palaidīsiet, kā administratoru.
@@ -67,7 +67,7 @@ Windows: Uzraksti `%appdata%` failu pārlūkā un izdzēsiet `PreMiD` mapi. MacO
 ### McAfee atklāja PreMiD kā vīrusu (Windows)
 Šis ir nepatiess pozitīvs no Mcafee, un mēs esam viņiem ziņojuši par šo problēmu, pagaidām jūs varat izslēgt PreMiD no skenēšanas, veicot šādas darbības:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Ja nejūtaties pārliecināts veicot šīs darbības, droši izveidojiet biļeti [#support](https://discord.premid.app/) un viens no mūsu Atbalsta Aģentiem varēs tev palīdzēt! 
 > 
 > {.is-warning}
 

@@ -12,38 +12,38 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 Se você quer publicar uma presence na loja e carregá-la através da extensão, você deve criar o arquivo `metadata.json` em sua pasta `dist`.
 
-Um exemplo desse arquivo pode ser encontrado abaixo.
+An example of that file can be found below.
 
 ```typescript
 {
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICO",
+  "altnames": ["SERVICO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRICAO"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "VERSAO",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORIA",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITULO",
+      "icon": "ICONE FONTAWESOME",
       "value": true
     },
     {
@@ -51,15 +51,15 @@ Um exemplo desse arquivo pode ser encontrado abaixo.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TITULO",
+      "icon": "ICONE FONTAWESOME",
+      "value": "\"%musica%\" por %artista%",
+      "placeholder": "use %musica% ou %artista%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITULO",
+      "icon": "ICONE FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -83,13 +83,13 @@ Esse exemplo parece realmente estranho, certo? Não se preocupe, não é tão di
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> is your Discord username without the identifier(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Deve conter um Objeto com o <code>nome</code> e o <code>id</code> do desenvolvedor da Presence. <code>name</code> é seu nome de usuário do Discord sem o identificador (#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Não</code></td>
+      <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Deve conter um Object com o <code>nome</code> e <code>id</code> do contribuidor. <code>name</code> is your Discord username without the identifier(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> é seu nome de usuário do Discord sem o identificador(#0000). O <code>id</code> do Usuário pode ser copiado no Discord ao ativar o modo de desenvolvedor e com o botão direito do mouse no seu perfil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -109,15 +109,15 @@ Esse exemplo parece realmente estranho, certo? Não se preocupe, não é tão di
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Descrição do serviço <b>NÃO</b> da presence. Sua descrição deve ter valores de key pair que indicam o idioma e a descrição nesse idioma específico. Faça descrições com os idiomas <i>que você conhece</i>, nossos tradutores farão alterações ao seu arquivo de metadados. Veja a categoria para idiomas de presence para uma lista. </td>
+      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Sua descrição deve ter valores de key pair que indicam o idioma e a descrição nesse idioma específico. Faça descrições com os idiomas <i>que você conhece</i>, nossos tradutores farão alterações ao seu arquivo de metadados. Veja a categoria para idiomas de presence para uma lista. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br>
-      <b>Example:</b><code>vk.com</code><br>
-      <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. Isso só pode ser usado como um array quando houver mais de um url.</b></td>
+      <td style="text-align:left">URL do serviço.<br>
+      <b>Exemplo:</b><code>vk.com</code><br>
+      <b>Esta url deve corresponder à url do site, pois será usada para detectar onde quer que seja ou não o site para injetar o script. Isso só pode ser usado como um array quando houver mais de um url.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
@@ -196,7 +196,7 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 #### Aprendendo
 
-• [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
+• [Vídeo para Iniciantes](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Informações sobre Expressões Regulares](https://www.regular-expressions.info/tutorial.html)
 
 #### Testes
 
@@ -204,38 +204,38 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 ## Idiomas para Presence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Uma lista completa de idiomas pode ser encontrada neste [endpoint da API](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD é um serviço poliglota, o que significa que há uma infinidade de idiomas envolvidos para conectar usuários por todo o mundo. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Para customizar ainda mais sua presence, você pode permitir que os usuários selecionem seu idioma de exibição. Veja[`multiLanguage`](#multilanguage) para mais informações.
 
-## Configurações de presence
-Defina configurações interativas para que os usuários possam personalizar a presence!
+## Presence settings
+Setup interactive settings so users can customize the presence!
 ```typescript
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Veja https://docs.premid.app/pt-br/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "TÍTULO DE EXIBIÇÃO",
+    "icon": "ÍCONE DO FONTAWESOME", //Exemplo "fas fa-info"
+    "value": true //O valor booleano vai fazer isso um interruptor de on/off com o valor como valor padrão
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Se outra configuração for igual a este valor (true/false/0/1/etc.) então exibe esse botão
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "title": "TÍTULO DE EXIBIÇÃO",
+    "icon": "ÍCONE DO FONTAWESOME",
+    "value": "\"%song%\" por %artist%", //Colocando uma string vai fazer a configuração uma entrada, onde você pode usar uma entrada personalizada.
+    "placeholder": "use %song% ou %artist%" //Quando a entrada está vazia, ela ficará cinza
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TÍTULO DE EXIBIÇÃO",
+    "icon": "ÍCONE DO FONTAWESOME",
+    "value": 0, //Valor padrão do seletor
+    "values": ["1", "2", "etc."] //Vai fazer a configuração um seletor onde você seleciona qual você quer
   }
 ]
 ```
@@ -244,19 +244,19 @@ Defina configurações interativas para que os usuários possam personalizar a p
 
 #### Introdução
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+A configuração `multiLanguage` é usada para permitir que os usuários selecionem manualmente o idioma em que querem que a presence seja mostrada. Isto requer que você use strings de nossa [API](https://api.premid.app/v2/langFile/presence/pt_BR), para informações sobre como adicionar strings clique [aqui](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
-#### Setup
+#### Configuração
 
-The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
+A configuração `multiLanguage` é um caso especial, não requer uma `title`, nem `icon`, nem `value` ou `values` como outras configurações, mas requer mais algumas coisas para configurar!
 
-The `multiLanguage` key can be set to the following:
+A key `multiLanguage` pode ser ajustada para o seguinte:
 
-`true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true`: use isto se você só vai usar strings do arquivo `general.json` e do arquivo `<service>.json` do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: nome do arquivo excluindo a extensão (.json) dentro do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluindo o arquivo `general`, já que está sempre carregado). Somente os idiomas comuns de ambos os `general` e do arquivo inserido serão listados. `Array<String>`: se você estiver usando mais de um arquivo dentro do repositório [Localization](https://github.com/PreMiD/Localization/tree/master/src/Presence) você pode especificar todos os valores em um array (excluindo o arquivo `general`, já que ele está sempre carregado). Apenas idiomas comuns de todos os arquivos serão listados.
 
-#### Adding new strings
+#### Adicionando novas strings
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Nota:** Adicionar strings customizadas para uma presence só é permitida se ela tiver mais de 1000 usuários.
 
 ##### Clonando o projeto
 
@@ -264,69 +264,69 @@ The `multiLanguage` key can be set to the following:
 2. Escolha uma pasta que preferir.
 3. Abra isso no seu editor de código.
 
-##### Creating the file
+##### Criando o arquivo
 
-1. Go into the `src` folder.
-2. Go into the `Presence` folder.
-3. Make a file named `<service>.json`. (Service is the **name** (not an URL) in lowercase of the service you want to support.)
+1. Vá para a pasta `src`.
+2. Vá para a pasta `Presence`.
+3. Crie um arquivo chamado `<service>.json`. (Service é o **nome** (não uma URL) em letras minúsculas do serviço que você deseja dar suporte.)
 
-##### Adding the strings
+##### Adicionando as strings
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Cada `string` é um `Object` onde a partir do nome começa com o nome do serviço e depois a chamada stringName com um ponto entre eles.
 
-The stringName is a 1 word identifier of the message.
+O stringName é um identificador de 1 palavra da mensagem.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+O `Object` tem duas propriedades; `message` e `description`. `message` é o texto que precisa ser traduzido. `description` é uma descrição da mensagem para ajudar nossos tradutores a entender o que eles estão traduzindo.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Nota:** Não adicione nenhuma string duplicada. (Isso inclui strings do arquivo `general.json` mas não dos outros arquivos.)
 
-Visualization of the file:
+Visualização do arquivo:
 
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Texto que precisa ser traduzido.",
+    "description": "Isso explica o que a mensagem acima é."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Texto que precisa ser traduzido.",
+    "description": "Isso explica o que a mensagem acima é."
   }
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Após ter feito o arquivo com as strings, você pode criar um Pull Request no repositório [Localization](https://github.com/PreMiD/Localization), na descrição você **deve** incluir um link para seu Pull Request da presence atualizada utilizando estas novas strings do [repositório de Presences](https://github.com/PreMiD/Presences).
 
-#### Default keys
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+#### Keys padrões
+As keys que você não precisa definir são automaticamente definidas para o seguinte: `title`: "Language" **Nota:** Isto é traduzido para seu idioma padrão (idioma do navegador). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Define o idioma do navegador se estiver disponível (100% traduzido), caso contrário inglês.** `values`: **Define para um idioma disponível (Idiomas que forem 100% traduzidos).**
 
-**Note:** These are in no way changeable.
+**Nota:** Estes não são de forma alguma alteráveis.
 
 ### Métodos
 
-Use the following methods to get settings info in your presence files:
+Use os seguintes métodos para obter informações de configurações em seus arquivos de presence:
 #### `getSetting(String)`
-Returns value of setting.
+Retorna valor da configuração.
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); // Substitua pdexID pelo id da configuração
+console.log(setting); // Isto registrará o valor da configuração
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Oculta determinada configuração.
 ```typescript
 presence.hideSetting("pdexID"); //Substitua pdexID com o id da configuração
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Mostra determinada configuração (somente funciona se a configuração já estava oculta).
 ```typescript
 presence.showSetting("pdexID"); //Substitua pdexID com o id da configuração
 ```
 
 ## Categorias de presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Ao fazer a sua presença, você deve especificar uma categoria na qual a presence se enquadra. Esta é uma lista compilada das categorias que você pode usar.
 
 <table>
   <thead>

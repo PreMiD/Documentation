@@ -30,11 +30,11 @@ const presence = new Presence({
 
 Это свойство необходимо для того, чтобы ваше присутствие работало, поскольку оно использует идентификатор вашего приложения для отображения своего логотипа и ресурсов. Вы можете получить это на свой [страница приложений](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` — *устарел с 2.2.4*
 
 При установке на `injectOnComplete` в `true` первое событие `UpdateData` для обоих `присутствия. ,` и `iframe.ts` файлы будут запущены только при полной загрузке страницы.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` — *устарел с 2.2.4*
 
 При установке `appMode` на `true` и наличии для отправки пустой `PresenceData`, приложение будет показывать приложение (изображение и имя) в профиле пользователя, а не ничего.
 
@@ -144,16 +144,16 @@ const playString = (await strings).play, // результат: Играет
 
 Возвращает переменную с сайта, если она существует.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Предупреждение: Эта функция может привести к высокой загрузке процессора и лагам сайта, если она была вызвана слишком много раз.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // Это зарегистрирует "Переменное содержимое"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Возвращает версию расширения, которое использует пользователь.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): строка | number;
@@ -175,7 +175,7 @@ console.log(setting); // Сообщается установка в логи
 
 ### `hideSetting(String)`
 
-Скрывает данную настройку.
+Скрывает указанные настройки.
 
 ```typescript
 presence.hideSetting("pdexID"); // Заменить pdexID идентификатором настройки
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // Заменить pdexID идентифика�
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Показывают данные настройки (работает только если настройка была скрыта).
 
 ```typescript
 presence.showSetting("pdexID"); // Заменить pdexID идентификатором настройки
@@ -191,18 +191,18 @@ presence.showSetting("pdexID"); // Заменить pdexID идентифика�
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Возвращает журналы консоли веб-сайтов.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Журнал последних 100 логов (в массиве).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Примечание:** Требует `readLogs` к быть `true` в `metadata.json` файл.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Выводит данное сообщение в консоли в формате, основанном на присутствии в стиле `info`.
 
 ```typescript
 presence.info("Test") // Это протоколирует "test" в правильном стиле.
@@ -210,7 +210,7 @@ presence.info("Test") // Это протоколирует "test" в прави�
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Печатает данное сообщение в консоли в формате основанном на присутствии в стиле `success`.
 
 ```typescript
 presence.success("Test") // Это протоколирует "test" в правильном стиле.
@@ -218,7 +218,7 @@ presence.success("Test") // Это протоколирует "test" в прав
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Выводит данное сообщение в консоли в формате, основанном на присутствии в стиле `ошибки`.
 
 ```typescript
 presence.error("Test") // Это протоколирует "test" в правильном стиле.
@@ -226,7 +226,7 @@ presence.error("Test") // Это протоколирует "test" в прави
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Возвращает 2 `snowflake` timestamps в `Array`, которые могут быть использованы для `startTimestamp` и `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -234,11 +234,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Заметка:** Данный `String` в querySelector является примером.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Возвращает 2 `snowflake` отметки времени в `Array` это может быть использовано для `startTimestamp` и `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Заметка:** Данный `String` в querySelector является примером.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Преобразует строку в формат `HH:MM:SS` или `MM:SS` или `SS` в целое (не возвращает snowflake timestamp).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,13 +261,13 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Заметка:** Данный `String` в querySelector является примером.
 
 ## `PresenceData` Интерфейс
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+При использовании метода `setActivity()` рекомендуется использовать интерфейса `presenceData`.
 
-This interface has following variables, all of them are optional.
+Этот интерфейс имеет следующие переменные, все они являются необязательными.
 
 <table>
   <thead>
@@ -360,7 +360,7 @@ const presenceData: PresenceData = {
 
 ## События
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+События позволяют обнаруживать и обрабатывать некоторые внесённые изменения или вызовы. Вы можете подписаться на события с помощью метода `on`.
 
 ```typescript
 presence.on("Данные обновить", асинхронный () => {
@@ -368,12 +368,12 @@ presence.on("Данные обновить", асинхронный () => {
 });
 ```
 
-There are few events available:
+Доступно несколько событий:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Это событие запускается каждый раз, когда присутствие обновляется.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Срабатывает при получении данных из iFrame script.

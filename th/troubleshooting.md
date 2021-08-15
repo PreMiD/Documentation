@@ -30,7 +30,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 PreMiD จะ**ไม่**ทํางานสําหรับ Brower Discord คุณต้องโหลดเเอพ Discord [ตรงนี้](https://discord.com/download)
 
 ### ตรวจสอบให้แน่ใจว่าคุณได้เปิด Activity Status ในการตั้งค่า Discord แล้ว
-**ตั้งค่าบัญชีผู้ใช้** > **Activity Status** ![activitystatus.png](/activitystatus)
+**ตั้งค่าบัญชีผู้ใช้** > **Activity Status** ![activitystatus.png](/activitystatus.png)
 
 ### ต้องแน่ใจว่า Discord ไม่ได้เปิดแบบ Administrator
 สำคัญมากๆ Discord RPC จะไม่ทำงานถ้าคุณเปิด Discord แบบ Administrator

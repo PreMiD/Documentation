@@ -2,7 +2,7 @@
 title: Presence-Richtlinien
 description: Regeln, die alle Entwickler beachten müssen, damit ihre Presences hinzugefügt werden.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-27T16:08:07.318Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -32,16 +32,16 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
 - Presences interner Browserseiten (wie Chrome Web Store, `chrome://`, `über:` Seiten, usw.) sind **nicht erlaubt**, da ein experimentelles Flag am Ende des Benutzers aktiviert werden muss, welches möglicherweise Schaden an ihren Browsern anrichten könnte.
 - Presences mit nur einer einzigen Subdomain sind **nicht zulässig,** da sie für andere Seiten (wie die Homepage) kaputt sein können. Ausnahmen können für die Richtlinien und Kontaktseiten (Inhalte, die nicht häufig verwendet werden) oder für Webseiten, bei denen die anderen Inhalte nicht miteinander in Beziehung stehen, gemacht werden. (für z.B. Wiki-Seiten)
 - Presences für Online-Radios sind nur erlaubt, wenn das Radio mindestens 100 wöchentliche Hörer und 15 gleichzeitige Hörer hat.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Presences dürfen den JS-Code nicht mit ihrer eigenen Funktion ausführen, um Variablen zu erhalten. Wenn Firefox Probleme mit der integrierten Funktion in der Klasse `Presence` hat, darfst du deine eigene Funktion verwenden und muss uns dies in der Beschreibung der Pull-Anforderung mitteilen.
 - Presences mit niedriger Qualität (oder welche mit kleinem Kontext) sind **nicht** erlaubt (z.B. welche die nur ein Logo anzeigen, aber nie den Text ändern).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presences für Dienste wie Discord Bot/Server Listen müssen diese Extra-Anforderungen erfüllen:
+  - Die Domain sollte mindestens **6 Monate**  alt sein.
+  - Eindeutige Besucher pro Tag:
+    - Für 6 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
+    - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
+  - Die Webseite kann nicht auf einer billigen Domain, wie z.B `.xyz`, `.club` und so weiter betrieben werden.
+  - Die Website selbst muss eine sehr gute Qualität, Design und etc. haben.
+- Presences sollten [allgemeine Details](https://api.premid.app/v2/langFile/presence/en) verwenden (Zeichenketten, die mit "allgemein" beginnen). Dies kannst du mit `multiLanguage` mit den angegebenen Zeichenketten erreichen. Wenn deine Presence benutzerdefinierte Zeichenketten erfordert, solltest du kein `multiLanguage` verwenden, bis die Presence 1000 Benutzer hat. Ein Beispiel findest du [hier](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Enthalten des `dist`-Ordners, der `presence.ts`-Datei, der `iframe.ts`-Datei und `metadata.json`-Datei ist obligatorisch, daher wäre das Ergebnis das, was im folgenden Schema dargestellt wird:
 
 ```bash
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-oder wenn du eine `iframe.ts`-Datei verwenden:
+oder wenn du eine `iframe.ts`-Datei verwendest:
 
 ```bash
 presence
@@ -137,7 +137,7 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (z.B. eine Presence ohne iframe-Unterstützung braucht das `Iframe-Feld` nicht.)
+> Falls ein Feld als Optional in der [Dokumentation](https://docs.premid.app/en/dev/presence/metadata) oder mit dem Symbol `*` neben dem Schlüssel markiert sind, und ihre Presence den Standardwert für dieses Feld verwendet, solltest du es nicht in die `metadata`-Datei einfügen. (z.B. eine Presence ohne iframe-Unterstützung braucht das `Iframe-Feld` nicht.)
 
 > Alle Bilder in der `metadata` Datei müssen auf `i.imgur.com` hochgeladen werden. Die Verwendung von auf der Website gehosteten Inhalten ist **nicht** gestattet, da diese die Pfade und Dateien sich unfreiwillig ändern können.
 
@@ -149,7 +149,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`author`**
 
-- Der ID _Wert_ **muss** deiner Discord snowflake ID entsprechen. Du kannst es durch das Aktivieren des [Entwicklermodus](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) erhalten. _Verwechsle diese bitte **nicht** mit deiner Anwendungs-ID, welche nur für deine Presence gilt._
+- Der ID _Wert_ **muss** deiner Discord snowflake ID entsprechen. Du kannst die durch das Aktivieren des [Entwicklermodus](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) erhalten. _Verwechsle diese bitte **nicht** mit deiner Anwendungs-ID, welche nur für deine Presence gilt._
 
 ### **`*contributors`**
 
@@ -157,7 +157,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`service`**
 
-- Der Service-Name **muss** mit dem Namen des Presenceverzeichnisses übereinstimmen. Wenn sich zum Beispiel die Presence in `/websites/Y/YouTube/` befindet, muss der Servicename `YouTube` sein.
+- Der Service-Name **muss** mit dem Namen des Presence-Verzeichnisses übereinstimmen. Wenn sich zum Beispiel die Presence in `/websites/Y/YouTube/` befindet, muss der Servicename `YouTube` sein.
 - Du **kannst** die URL **nicht** als Servicename verwenden, es sei denn die Webseite benutzt diese als offiziellen Namen. Wenn der Name nicht beschreibend ist und als vage betrachtet werden kann, ist die Nutzung der URL **erforderlich**. (zum Beispiel ist `YouTube` erlaubt, da das beschreibend und der offizielle Name ist, während es `youtube.com` nicht ist. `Top` ist ein nicht-beschreibender Name, wodurch das Nutzen der URL `top.gg` **erforderlich** ist.
 - Wenn der Service einige explizite Branding-Regeln mit ihrem Namen hat, solltest du sie befolgen.
 
@@ -167,23 +167,23 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`description`**
 
-- **Alle** Presences müssen, **ohne Rücksicht** auf die bevorzugt Sprache der Webseite, eine englische Beschreibung haben^.
+- **Alle** Presences **müssen**, ohne Rücksicht auf die bevorzugt Sprache der Webseite, eine englische Beschreibung haben.
 - Versuche **nicht** die Seite selbst zu übersetzen, es sei denn du kennst diese Sprache. Übersetzer werden deine `metadata.json` modifizieren und falls nötig Änderungen an der Beschreibungen vornehmen.
 
 ### **`url`**
 
-- Die URL **muss** ein String sein wenn die Website nur eine Domain verwendet. Wenn die Webseite mehrere benutzt, gib diese in einem Array an.
+- Die URL **muss** ein String sein, wenn die Webseite nur eine einzige Domain verwendet. Wenn die Webseite mehrere benutzt, gib diese in einem Array an.
 - Füge **keine** Protokolle in die URL hinzu (wie z.B. `http` oder `https`) und füge keine Query Parameter in die URL ein (z.B. `www.google.com/search?gws_rd=ssl`, welches eigentlich `www.google.com` sein sollte).
 
 ### **`version`**
 
-- Stell immer sicher, dass die Versionsnummer den [semantischen Versionsstandards](https://semver.org) folgt, was auf das folgende Schema hinausläuft: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
+- Stelle immer sicher, dass die Versionsnummer den [semantischen Versionsstandards](https://semver.org) entspricht, was auf das folgende Schema hinausläuft: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
 - Die Version **muss** immer bei `1.0.0` anfangen, sofern nicht anders angegeben. Andere Versionen werden **nicht** erlaubt.
 
 ### **`logo`**
 
 - Das Logo **muss** ein quadratisches Bild mit einem `1:1` Seitenverhältnis sein.
-- Das Bild **erfordert** eine Mindestauflösung von `512x512` Pixeln haben. Du kannst Bilder mit Tools wie zum Beispiel [waifu2x](http://waifu2x.udp.jp/) vergrößern.
+- Das Bild **erfordert** eine Mindestauflösung von `512x512` Pixeln. Du kannst Bilder mit Tools wie zum Beispiel [waifu2x](http://waifu2x.udp.jp/) vergrößern.
 
 ### **`thumbnail`**
 
@@ -198,17 +198,17 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 - Bei **allen** Presences ist mindestens _ein_ Tag erforderlich.
 - Tags dürfen **keine** Leerzeichen, Schrägstriche, einfache/doppelte Anführungszeichen und Unicode-Zeichen enthalten und sollten immer in Kleinbuchstaben geschrieben werden.
-- Tags **sollten** vorzugsweise abwechslungsreiche Servicenamen enthalten um die Suche zu vereinfachen (sollte die Amazon-Presence beispielsweise AWS-Unterstützung haben, hätte es Tags wie `amazon-web-services` und `aws`).
+- Tags **sollten** vorzugsweise auch alternative Service-Namen enthalten, um die Suche zu vereinfachen (sollte die Amazon-Presence beispielsweise AWS-Unterstützung haben, hätte es Tags wie `amazon-web-services` und `aws`).
 - Es ist **erforderlich** einen `NSFW` Tag hinzuzufügen, wenn die Presence für eine NSFW Webseite ist.
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Die Kategorie **muss** eine der folgenden Aufgelisteten aus der [Dokumentation](https://docs.premid.app/en/dev/presence/metadata#presence-categories) sein.
 - Die Presence muss eine Kategorie nutzen, die zum Inhalt auf der Website passt. (Benutze zum Beispiel nicht `Anime`, wenn die Website keinen Bezug zu Anime hat).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Reguläre Expressions **müssen** gültig sein. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Reguläre Expressions **müssen** gültig sein. Bitte teste deine Expressions mit den Hilfsmitteln, die in der [Dokumentation](https://docs.premid.app/en/dev/presence/metadata#testing) gelistet sind.
 
 ### **`readLogs`**
 
@@ -222,7 +222,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`settings`**
 
-- Wenn du dich dafür entscheidest, ein String-Format (zum Beispiel `%song% von %artist%`), müssen die Variablen von einem Prozentzeichen auf beiden Seiten umgeben sein. Variablen wie `%var`,`var%` oder `%%var%%` und alles dazwischen sind **nicht** erlaubt wegen der Standardisierung.
+- Wenn du dich dafür entscheidest, ein String-Format (zum Beispiel `%song% von %artist%`) zu nutzen, müssen die Variablen von einem Prozentzeichen auf beiden Seiten umgeben sein. Variablen wie `%var`,`var%` oder `%%var%%` und alles dazwischen sind **nicht** erlaubt wegen der Standardisierung.
 - Der Name der Einstellungen muss **nicht** ausschließlich in Großbuchstaben sein. Zum Beispiel Namen wie `SHOW BROWSING STATUS` sind **nicht** erlaubt; jedenfalls sind Namen wie `Show Browsing Status` oder `Show browsing status` erlaubt.
 - Wenn du die Mehrsprachen-Option verwendest, solltest du wissen:
   - **Boolean** Typ, der nur Strings von [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) aus dem Lokalisierungs-Repo oder aus der Presence-datei zulässt (z.B. Wenn der Name der Presence YouTube ist, wird die Erweiterung auch Strings von `youtube.json` erhalten.)
@@ -243,19 +243,19 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Die Felder `smallImageKey` und `smallImageText` sollen einen zusätzlichen/zweiten Nutzen bringen (wie `playing/paused` für Video-Seiten, `browsing` für reguläre Seiten, und weitere Fälle) und nicht um Discord-Profile oder irgendwas zu bewerben, das nicht im Zusammenhang mit PreMiD steht.
 - Es ist dir **nicht** erlaubt, auf `localStorage` zuzugreifen.
 - Wenn du Cookies für gespeicherte Daten benutzt, beginne den Schlüssel mit `PMD_`
-- Du kannst nur HTTP/HTTPS-Anfragen zu `premid.app` oder die Presence Website API machen. Wenn du externe Domains verwendest, musst du erklären, warum dies notwendig ist. Nur erlaubte API zum Abfragen ist [`API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) abrufen.
+- Du kannst nur HTTP/HTTPS-Anfragen zu `premid.app` oder an die Api der Presence-Webseite stellen. Wenn du externe Domains verwendest, musst du erklären, warum dies notwendig ist. Die einzige erlaubte API zum Abfragen ist [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Setze **keine** Felder in dem presence data object auf undefined, nachdem es deklariert wurde. Nutze stattdessen das `delete` Schlüsselwort. (nutze z.B `delete data.startTimestamp` anstelle von `data.startTimestamp = undefined`)
 - Es ist dir **nicht**t erlaubt Presences zu schreiben, die die Funktionalität einer bestimmten Webseite ändern. Dies schließt die Ergänzung, Löschung oder Modifizierung von DOM-Elementen ein.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- Presences, die Schaltflächen verwenden, sollten diesen zusätzlichen Anforderungen folgen:
+  - Weiterleitungen zur Hauptseite sind verboten.
+  - Das Werben von Webseiten durch diese ist verboten.
+  - Sie können keine zusätzlichen Daten anzeigen, wenn diese nicht in anderen Feldern gezeigt werden können.
+  - Eine direkte Weiterleitung zu Audio-/Videostreams ist verboten.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> Schreibe **nicht** deine eigene `tsconfig.json` Datei, sondern verwende das, was in der [Dokumentation](https://docs.premid.app/en/dev/presence/tsconfig) zur Verfügung gestellt wurde.
 
 ## Änderungen
 
@@ -273,18 +273,19 @@ In einigen Situationen können sich Presences möglicherweise unerwartet verhalt
 
 > Falls du dich mit jemandem kontaktieren musst, tritt unserem offiziellen Discord Server bei. Alle Prüfer haben die Rolle `Reviewer` in ihrem Profil.
 
-> Bitte beachte, dass die Prüfer freiwillig arbeiten und zudem auch andere Repositories verwalten. Ihre Pull-Anfrage wird möglicherweise erst Stunden oder sogar Tage nach der Erstellung überprüft.
+> Bitte beachte, dass die Prüfer freiwillig arbeiten und zudem auch andere Repositories verwalten. Dein Pull-Request wird möglicherweise erst Stunden oder sogar Tage nach der Erstellung überprüft.
 
 > Habe **immer** eine Fork auf dem neuesten Stand, bevor du eine Pull Request erstellst. Dies wird dabei helfen, Falschmeldungen von den Kontrollen auszuschließen.
 
-Der wichtigste Prozess der Presence-Entwicklung ist Ihre Presence in den Shop zu bekommen. Dies geschieht durch das Erstellen einer [Pull-Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) auf GitHub in dem `PreMiD/Presences` Projektarchiv. Unsere Prüfer werden bestätigen, dass deine Presence den Standards entspricht und sie im Shop veröffentlichen.
+Der wichtigste Prozess der Presence-Entwicklung ist es, deine Presence in den Store zu bekommen. Dies geschieht durch das Erstellen einer [Pull-Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) auf GitHub in dem `PreMiD/Presences` Projektarchiv. Unsere Prüfer werden bestätigen, dass deine Presence den Standards entspricht und sie im Shop veröffentlichen.
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Presence-Prüfer</h2>
-  
+
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -310,12 +311,12 @@ Ein paar Dinge, die du nach dem Öffnen einer Pull-Request wissen solltest:
 
 ## `Kontrollen`
 
-![Überprüfen](https://i.imgur.com/oqAakOc.png)
+![Beispiele für Überprüfungen](https://i.imgur.com/T8agbnB.png)
 
 Derzeit durchläuft eine Presence drei separate Phasen der Kontrolle. Alle diese Checks helfen den Prüfern zu ermitteln, ob deine Presence für den Einsatz geeignet ist.
 
-- `Codacy` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. (_WARNUNG: Codacy Bot wird in Kürze veraltet sein und du darfst nur mit DeepScan deine Fehler überprüfen!_)
-- `DeepScan` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben.
+- `Codacy` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. *Warnung: Codacy gibt dir nicht immer Fehler aus. Schau dir stattdessen bitte CodeFactor-Warnungen an.*
+- `CodeFactor` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben.
 - `Schema Validation` scannt deine `metadata.json` Datei auf Fehler (z.B. fehlende Felder, ungültige Datentypen, etc.). Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese auch zu beheben. Wenn du ein Schema Feld zu deiner `metadata.json` Datei hinzufügst, wird dein Texteditor (falls unterstützt) dir diese Fehler während der Entwicklung anzeigen können.
 
 ## `Zusätzliche Regeln`
@@ -325,7 +326,8 @@ Derzeit durchläuft eine Presence drei separate Phasen der Kontrolle. Alle diese
 Nach der Erfüllung aller Richtlinien mit den richtigen Prüfungen und Checks, wird deine Presence in den Store aufgenommen.
 
 # Prüfung
-`Revision 2` der Richtlinien wurde geschrieben und von den folgenden Personen beigetragen:
+
+Wenn du Anregungen zu unseren Richtlinien hast, solltest du uns auf @[PreMiD's Discord-Server](https://discord.premid.app) kontaktieren und wir werden diese überprüfen!
 
 # Mitwirkende
 
@@ -338,13 +340,13 @@ Nach der Erfüllung aller Richtlinien mit den richtigen Prüfungen und Checks, w
 `Revision 2` der Richtlinien wurde geschrieben und von den folgenden Personen beigetragen:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 `Revision 1` wurde von folgenden Personen gewartet:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>

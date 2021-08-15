@@ -2,7 +2,7 @@
 title: แนวทางในการสร้าง Presence
 description: Rules that all presence developers must follow to have their presence added.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-27T16:08:07.318Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -23,12 +23,12 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 
 กฏทั่วไปสําหรับการพัฒนา Presence มีดังนี้
 
-- Presence **ต้อง** เกี่ยวข้องกับเว็ปไซต์ที่คุณพัฒนา
-- Presence **ไม่สามารถ** สร้างได้สําหรับเว็ปไซต์ผิดกฏหมาย (เช่น เกี่ยวกับความเครียด, การขายยาเสพติด, การอนาจารเด็ก, หรืออื่นๆ)
+- Presence **ต้อง**มีความเกี่ยวข้องกับเว็ปไซต์ที่คุณเลือก
+- คุณ**ไม่สามารถ**สร้าง Presences สำหรับเว็บไซต์ที่ผิดกฎหมายได้ (เช่น เกี่ยวกับความเครียด, การขายยาเสพติด, การอนาจารเด็ก, และอื่นๆ)
 - โครงสร้างไฟล์ต้องบริสุทธิ์เเละมีการจัดการ, อย่าใส่ไฟล์ที่ไม่เกี่ยวข้อง (เช่น vscode เเละโฟลเดอร์ git, รูปภาพเเละไฟล์ต่างๆ)
 - คุณต้องมีโครงสร้างไฟล์ที่เหมาะสม, สําหรับการร่าง **ไม่**อนุญาติ
-- Presence สําหรับเว็บไซต์ (`.onion` TLDs) หรือเว็บไซต์ฟรี Host หรือ Domain ฟรี (เช่น `.tk` [ทุก Domain ฟรี], `.RF`,`GD`,อื่นๆ) ที่**ไม่ได้รับอนุญาติ**, เเต่สามารถใช้ได้ถ้ามีหลักฐานสําหรับการจ่ายเงินสําหรับ Domain
-- โดเมนของ Presence ต้องมีอายุอย่างน้อย 2 เดือน
+- คุณ**ไม่สามารถ**สร้าง Presences สำหรับเว็บไซต์ที่ใช้ Domains หรือ Hosts ฟรีได้ (ตัวอย่างเช่น, `.TK` [Domains บน Freenom ทั้งหมด], `.RF`, `GD`, และอื่นๆ) มีข้อยกเว้นได้หากคุณมีหลักฐานว่าคุณจ่ายเงินเพื่อที่จะได้ Domain มา
+- Domain ของ Presence ต้องมีอายุอย่างน้อย 2 เดือน
 - Presence ที่เล็งการพัฒนาด้วยเบราว์เซอร์ภายในเช่น (Chrome Web Store, `chrome://`, `about:` หรือหน้าอื่นๆนั้น) **ไม่อนุญาติ** เนื่องจากต้องเปิดโหมดทดลองของเบราว์เซอร์นั้นๆ เเละอาจะเกิดความเสียหายของเบราว์เซอร์ได้
 - Presence ที่มีเพียง Domain เดียวจะ**ไม่อนุญาติ**, เนื่องจากอาจจะทําให้หน้าอื่นขัดข้องได้เช่น (หน้าหลัก), เเต่สามารถทําได้เเค่นโยบายเเละหน้าติดต่อ (เนื้อหาที่ไม่ได้ใช้บ่อยๆ) หรือ เนื้อหาที่ไม่เกี่ยวข้อง (เช่น หน้า Wiki)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
@@ -278,10 +278,11 @@ The most important process of presence development is getting your presence on t
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Presence Reviewers</h2>
-  
+
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -307,12 +308,12 @@ A few things you should know after opening a pull request:
 
 ## `Checks`
 
-![Checks](https://i.imgur.com/oqAakOc.png)
+![Example of checks](https://i.imgur.com/T8agbnB.png)
 
 ปัจจุบัน, Presence จะต้องผ่านการตรวจสอบ 3 ขั้นตอน. All of these checks help the reviewers determine whether your presence is suitable for deployment.
 
-- `Codacy` คือบอทที่จะตรวจสอบคุณภาพของโค้ด. หากคุณพบว่ามีข้อผิดพลาดเกิดขี้น, คุณ**จำเป็น**ต้องแก้ไขพวกมัน. (_คำเตือน: บอท Codacy จะถูกเลิกใช้เร็วๆนี้และคุณจะต้องดูข้อผิดพลาดจาก DeepScan เท่านั้น!_)
-- `DeepScan` คือบอทที่จะตรวจสอบคุณภาพของโค้ด. หากคุณพบว่ามีข้อผิดพลาดเกิดขี้น, คุณ**จำเป็น**ต้องแก้ไขพวกมัน.
+- `Codacy` คือบอทที่จะตรวจสอบคุณภาพของโค้ด. หากคุณพบว่ามีข้อผิดพลาดเกิดขี้น, คุณ**จำเป็น**ต้องแก้ไขพวกมัน. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
+- `CodeFactor` is a bot that checks for code quality. หากคุณพบว่ามีข้อผิดพลาดเกิดขี้น, คุณ**จำเป็น**ต้องแก้ไขพวกมัน.
 - `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
 
 ## `กฎเพิ่มเติม`
@@ -322,6 +323,7 @@ A few things you should know after opening a pull request:
 After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
 
 # ข้อเสนอแนะ
+
 If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
 
 # ผู้ที่มีส่วนช่วยเหลือทั้งหมด
@@ -335,13 +337,13 @@ If you have some suggestions about our guidelines, you should contact us @ [PreM
 `Revision 2` of the guidelines was written and was contributed to by the following individuals:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 `Revision 1` was maintained by the following individuals:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>

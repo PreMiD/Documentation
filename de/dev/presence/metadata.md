@@ -83,15 +83,13 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Die Benutzer <code>id</code> kann man aus Discord rauskopieren, indem du den Entwicklermodus aktivierst und mit der rechten Maustaste auf dein Profil klickst.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Mitwirkenden enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und der <code>id</code> des Mitwirkenden enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). Die Benutzer <code>id</code> kann aus Discord kopiert werden, indem der Entwicklermodus aktiviert und mit der rechten Maustaste auf Ihr Profil geklickt wird.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -103,15 +101,13 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Kann die Presence mit einem alternativen Namen suchen.<br>Gemacht für Presences, die verschiedene Namen in verschiedenen Sprachen haben (z.B.:  Pokémon and 포켓몬스터).<br>Du kannst es auch für Presences verwenden, die spezielle Zeichen haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Beschreibung des Dienstes <b>NICHT</b> der Presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. Siehe die Kategorie für Presence-Sprachen für eine Liste. </td>
+      <td style="text-align:left">Beschreibung des Dienstes <b>NICHT</b> der Presence. Deine Beschreibung muss Schlüsselpaarwerte enthalten, die die Sprache und die Beschreibung in dieser bestimmten Sprache angeben. Erstelle Beschreibungen mit den Sprachen <i>die du kennst</i>. Unsere Übersetzer werden Änderungen an der Metadatendatei vornehmen. Siehe die Kategorie für Presence-Sprachen für eine Liste. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -137,7 +133,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link zum Logo des Dienstes.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -149,14 +145,14 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> Wert. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> Wert. Wir empfehlen eine primäre Farbe des Dienstes zu nutzen,
+        die Deine Presence unterstützt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Ein Array mit Schlagwörtern. Diese unterstützen den Benutzer bei der Suche nach deiner Presence auf der Webseite.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -180,7 +176,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Legt fest, ob die Erweiterung Logs lesen soll.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -207,7 +203,7 @@ Wenn Sie reguläre Ausdrücke lernen möchten, finden Sie hier einige Websites.
 
 ## Presence-Sprachen
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Eine vollständige Liste von Sprachen können mithilfe dieses [API-Endpunkts](https://api.premid.app/v2/langFile/list) gefunden werden. Um deine Presence noch mehr anzupassen, kannst Du Benutzern erlauben, die Sprache ihrer Presence auszuwählen. Siehe [`multiLanguage`](#multilanguage) für mehr Informationen.
+PreMiD ist ein mehrsprachiger Service, was bedeutet, dass es eine Reihe von Sprachen gibt, welche die Nutzer über den ganzen Globus verbinden. Eine vollständige Liste von Sprachen können mithilfe dieses [API-Endpunkts](https://api.premid.app/v2/langFile/list) gefunden werden. Um deine Presence noch mehr anzupassen, kannst Du Benutzern erlauben, die Sprache ihrer Presence auszuwählen. Siehe [`multiLanguage`](#multilanguage) für mehr Informationen.
 
 ## Presence-Einstellungen
 Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eingestellt werden kann.
@@ -247,7 +243,7 @@ Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eing
 
 #### Einführung
 
-Die `multiLanguage` Einstellung erlaubt es Benutzern die manuelle Auswahl der Sprache, die in der Presence angezeigt werden soll. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Die `multiLanguage` Einstellung erlaubt es Benutzern die manuelle Auswahl der Sprache, die in der Presence angezeigt werden soll. Dies erfordert, dass Sie die Strings von unserer [API](https://api.premid.app/v2/langFile/presence/en) verwenden. Für Informationen zum hinzufügen von Strings, drücke [hier](/dev/presence/metadata/adding-new-strings).
 
 #### Einrichtung
 
@@ -259,7 +255,7 @@ Die `multiLanguage` Einstellung kann in die folgenden Werte gesetzt werden:
 
 #### Neue Stings hinzufügen
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+Jeder `string` ist ein `Object`, bei dem der Name mit dem Namen des Dienstes beginnt und dann der stringName mit einem Punkt zwischen ihnen.
 
 ##### Klont das Projekt
 
@@ -275,15 +271,15 @@ Die `multiLanguage` Einstellung kann in die folgenden Werte gesetzt werden:
 
 ##### Hinzufügen der Strings
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Jeder `string` ist ein `Object`, bei dem der Name mit dem Namen des Dienstes beginnt und dann der stringName mit einem Punkt dazwischen danach folgt.
 
-The stringName is a 1 word identifier of the message.
+Der stringName ist ein 1-Wort-Identifikator der Nachricht.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+Das `Object` hat 2 Eigenschaften; `message` und `description`. `message` ist der Text, der übersetzt werden muss. `description` ist die Beschreibung der Nachricht, die unseren Übersetzern hilft zu verstehen, was sie übersetzen.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Hinweis:** Füge keine doppelten Zeichenketten hinzu. (Dies beinhaltet auch Zeichenketten aus der `general.json` Datei, aber nicht die anderen Dateien.)
 
-Visualization of the file:
+Visualisierung der Datei:
 
 ```typescript
 {
@@ -298,38 +294,38 @@ Visualization of the file:
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Nachdem deine Datei fertig ist, kannst du einen Pull Request in der [Lokalisierungs-Repository](https://github.com/PreMiD/Localization) erstellen, in der Beschreibung **musst** du einen Link zur Pull Request der zu aktualisierenden Presence aus der [Presence-Repository](https://github.com/PreMiD/Presences) beifügen, die die neuen Strings verwenden soll.
 
 #### Standard-Tasten
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Die Schlüssel, die Sie nicht setzten müssen, werden automatisch auf folgendes gesetzt: `title`: "Language" **Hinweis:** Dies wird in Ihre Standardsprache (Browsersprache) übersetzt. `icon`: "fas fa-language" ([Vorschau](https://fontawesome.com/icons/language)) `value`: **Setzt auf ihre Browsersprache, sofern verfügbar (100% übersetzt), ansonsten Englisch.** `values`: **Setzt die verfügbaren Sprachen (Sprachen, die 100% übersetzt sind).**
 
-**Note:** These are in no way changeable.
+**Hinweis:** Diese sind in keiner Weise veränderbar.
 
 ### Methoden
 
-Use the following methods to get settings info in your presence files:
+Benutze die folgenden Methoden, um die Einstellungsinformationen in deinen Presence-Dateien zu erhalten:
 #### `getSetting(String)`
-Returns value of setting.
+Gibt den Wert der Einstellung wieder.
 ```typescript
 const setting = await.presence.getSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
 console.log(setting); // Dies loggt den Wert der Einstellung
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Versteckt die definierte Einstellung.
 ```typescript
 presence.hideSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetzen
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Gibt die Protokolle der Webseiten-Konsole wieder.
 ```typescript
 presence.showSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetzen
 ```
 
 ## Presence-Kategorien
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Wenn du deine Presence erstellst, musst du eine Kategorie angeben, unter der die Presence fällt. Dies ist eine zusammengestelle Liste der Kategorien, die du nutzen kannst.
 
 <table>
   <thead>

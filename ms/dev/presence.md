@@ -2,7 +2,7 @@
 title: Pembangunan Presence
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -196,9 +196,9 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Rentetan ungkapan nalar digunakan untuk memadankan URL yang banyak.<br>
-      Ungkapan nalar (regExp) atau juga dikenali sebagai Regex, boleh digunakan jika sesuatu laman sesawang mempunyai banyak subdomain.<br>
-      Anda boleh gunakan regExp berikut untuk perkara tersebut:<br>
+      <td style="text-align:left">Rentetan ungkapan nalar / regExp digunakan untuk memadankan URL yang banyak.<br>
+      regExp yang juga dikenali sebagai Regex, boleh digunakan jika sesuatu laman sesawang mempunyai banyak subdomain.<br>
+      Anda boleh gunakan regExp untuk perkara tersebut:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
       TLD singkatan Top Level Domain iaitu Domain Paras Tertinggi seperti: .com .net (tetapi jangan masukkan titik).<br>
       <code>([a-z0-9]+)</code> maksudnya apa sahaja dari a ke z dan dari 0 ke 9.<br>

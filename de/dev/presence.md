@@ -2,7 +2,7 @@
 title: Presence-Entwicklung
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -28,14 +28,14 @@ Alle Presences sind in [TypeScript](https://www.typescriptlang.org/) geschrieben
 ## Installation
 
 1. Installiere [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+2. Installiere [Node](https://nodejs.org/en/) ([npm](https://www.npmjs.com/) integriert).
 3. Installiere [TypeScript](https://www.typescriptlang.org/index.html#download-links) (öffne ein Terminal und `npm install -g typescript`).
 
-## Klont Projekt
+## Projekt klonen
 
 1. Öffne ein Terminal und gib `git clone https://github.com/PreMiD/Presences` ein.
 2. Wähle einen Ordner Deiner Wahl.
-3. Open it in your code editor.
+3. Öffne es in Deinem Code-Editor.
 
 ## Ordner und Dateien werden erstellt
 
@@ -142,22 +142,20 @@ Bitte kopiere den obigen Code und füge ihn in Deine `metadata.json` ein. Du mus
     <tr>
       <th style="text-align:left">Variable</th>
       <th style="text-align:left">Beschreibung</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Typ</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> kann aus Discord kopiert werden, indem du den Entwicklermodus aktivierst und mit der rechten Maustaste auf dein Profil klickst.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Sollte ein Objekt mit dem <code>name</code> und <code>id</code> des Presence-Entwickler enthalten. <code>name</code> ist dein Discord-Benutzername ohne den Identifikator (#0000). User <code>id</code> kann aus Discord kopiert werden, indem du den Entwicklermodus aktivierst und mit der rechten Maustaste auf dein Profil klickst.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -169,15 +167,15 @@ Bitte kopiere den obigen Code und füge ihn in Deine `metadata.json` ein. Du mus
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Erlaubt es die Presence mit einem alternativen Namen zu suchen.<br>
+      Soll für Presences, die verschiedene Namen in verschiedenen Sprachen haben, verwendet werden (z.B.: Pokémon und 포켓몬스터).<br>
+      Dies kann auch genutzt werden für Presences, die spezielle Zeichen  haben, sodass diese nicht eingegeben werden müssen (z.B.: Pokémon und Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Kurze Beschreibung der Presence, du kannst die Beschreibung des Dienstes verwenden, wenn dir die Ideen ausgehen. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Kurze Beschreibung der Presence, du kannst die Beschreibung des Dienstes verwenden, wenn dir die Ideen ausgehen. Deine Beschreibung muss Schlüsselpaarwerte enthalten, die die Sprache angeben und die Beschreibung in dieser bestimmten Sprache. Erstelle Beschreibungen mit den Sprachen <i>die du kennst</i>, unsere Übersetzer werden Änderungen an der Metadatendatei vornehmen.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -214,7 +212,7 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link zum Logo des Dienstes.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -226,14 +224,14 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> Wert. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> Wert. Wir empfehlen eine primäre Farbe des Dienstes zu nutzen
+        , die Ihre Presence unterstützt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Ein Array mit Schlagwörtern. Diese unterstützen den Benutzer bei der Suche nach deiner Presence auf der Webseite.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
@@ -257,7 +255,7 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Legt fest, ob die Erweiterung Logs lesen soll.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
@@ -305,9 +303,9 @@ presence.on("UpdateData", async () => {
 
   const presenceData: PresenceData = {
     largeImageKey:
-      "key" /*Der Schlüssel (Dateiname), des großen Bildes der Presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+      "key" /*Der Schlüssel (Dateiname), des großen Bildes der Presence. Diese sind in der Rich-Presence-Sektion deiner Anwendung hochgeladen und unter dem Menüpunkt "Art Assets" zu finden*/,
     smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. Diese sind hochgeladen und in der Rich-Presence-Sektion deiner Anwendung namens Art Assets*/,
+      "key" /* Der Schlüssel (Dateiname), des kleinen Bildes der Presence. Diese sind hochgeladen und in der Rich-Presence-Sektion deiner Anwendung namens Art Assets*/,
     smallImageText: "Einige schwebende Text", //Der Text, der angezeigt wird, wenn Sie über dem kleinen Bild schweben
     Details: "Browse Seitenname", //Der obere Abschnitt des Presencetextes
     Status: "Lese-Abschnitt A", //Der untere Abschnitt des Presencetextes

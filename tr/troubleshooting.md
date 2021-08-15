@@ -29,8 +29,8 @@ Windows'daysanız <kbd>CTRL+R</kbd>/<kbd>F5</kbd>, Mac üzerindeyseniz ise <kbd>
 ### Discord uygulamasını kullandığınıza emin misiniz?
 PreMiD, Discord'un tarayıcı sürümünde **çalışamaz**, bu yüzden [buradan](https://discord.com/download) uygulamayı indirmelisiniz.
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus)
+### Ayarlardaki Oyun Etkinliği'nin açık olduğuna emin olun
+**Kullanıcı Ayarları** > **Oyun Etkinliği** ![gameactivity_edited.png](/activitystatus.png)
 
 ### Discord'un yönetici olarak çalışmadığından emin olun
 Bu işlem çok önemlidir. Eğer Discord'u yönetici olarak çalıştırırsanız Discord RPC çalışmayacaktır.

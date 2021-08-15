@@ -13,7 +13,7 @@ tags:
 The installation of the application is very important as the extension can not do anything by itself.
 
 # Asenna
-1. Mene lataus-sivullemme [klikkaamalla tästä](https://premid.app/downloads).
+1. Mene lataussivullemme [klikkaamalla tästä](https://premid.app/downloads).
 2. Choose **OS X**.
 3. Extract the archive if necessary.
 4. Open the installer.
@@ -24,7 +24,7 @@ The installation of the application is very important as the extension can not d
 
 The application will start automatically. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install). 
+> Älä unohda [lisätä **laajennusta**](/install). 
 > 
 > {.is-warning}
 

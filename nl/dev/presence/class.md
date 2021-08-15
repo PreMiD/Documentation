@@ -30,11 +30,11 @@ Er zijn drie eigenschappen beschikbaar voor de `Presence` klasse.
 
 Deze eigenschap is vereist om je presence te laten werken, omdat je client-id gebruikt word om het logo en de assets te weergeven. Je kunt het op je [applicatiepagina](https://discordapp.com/developers/applications) krijgen.
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *verouderd sinds 2.2.4*
 
 Wanneer je `injectOnComplete` op `true` zet dan wordt de eerste `UpdateData` evenement voor de `presence.ts` en `iframe.ts` bestanden pas afgevuurd als de pagina volledig geladen is.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *verouderd sinds 2.2.4*
 
 Wanneer je `appMode` op `true` zet en de presence zou een lege `PresenceData` versturen, dan toont de app de applicatie (afbeelding en naam) op het profiel van de gebruiker in plaats van niets.
 
@@ -144,16 +144,16 @@ const playString = (await strings).play, // Geeft: Playing
 
 Retourneert een variabele van de website als deze bestaat.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Waarschuwing: Deze functie kan hoog CPU-verbruik & website-haperingen veroorzaken wanneer deze te vaak is uitgevoerd.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // Dit zal de "Variabele content" loggen
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Geeft als resultaat de extensie versie die de gebruiker gebruikt.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // vervang pdexID met het id van de instelling
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Toont gegeven instelling (werkt alleen als de instelling al verborgen was).
 
 ```typescript
 presence.showSetting("pdexID"); // vervang pdexID met het id van de instelling
@@ -191,18 +191,18 @@ presence.showSetting("pdexID"); // vervang pdexID met het id van de instelling
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Geeft de logs van de websites console.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Dit zal de laatste 100 logs loggen (in een array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Opmerking:** Vereist `readLogs` op `true` te zijn in het `metadata.json` bestand.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Toont het gegeven bericht in de console in een formaat gebaseerd op de presence in de `info` stijl.
 
 ```typescript
 presence.info("Test") // Dit zal "test" in de juiste stijl loggen.
@@ -210,7 +210,7 @@ presence.info("Test") // Dit zal "test" in de juiste stijl loggen.
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Toont het gegeven bericht in de console in een formaat gebaseerd op de presence in de `success` stijl.
 
 ```typescript
 presence.success("Test") // Dit zal "test" in de juiste styling loggen.
@@ -218,7 +218,7 @@ presence.success("Test") // Dit zal "test" in de juiste styling loggen.
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Toont het gegeven bericht in de console in een formaat gebaseerd op de presence in de `error` stijl.
 
 ```typescript
 presence.error("Test") // Dit zal "test" in de juiste stijl loggen.
@@ -226,7 +226,7 @@ presence.error("Test") // Dit zal "test" in de juiste stijl loggen.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Retourneert 2 `snowflake` timestamps in een `Array` die gebruikt kan worden voor `startTimestamp` en `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -234,11 +234,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Opmerking:** De gegeven `String` in querySelector is een voorbeeld.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Retourneert 2 `snowflake` timestamps in een `Array` die gebruikt kan worden voor `startTimestamp` en `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Opmerking:** De gegeven `String` in querySelector is een voorbeeld.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Zet een string met formaat `HH:MM:SS` of `MM:SS` of `SS` om in een getal (Geeft geen snowflake timestamp).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,13 +261,13 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Opmerking:** De gegeven `String` in querySelector is een voorbeeld.
 
 ## `PresenceData` Interface
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+De `PresenceData` interface wordt aanbevolen om te gebruiken wanneer u de `setActivity()` methode gebruikt.
 
-This interface has following variables, all of them are optional.
+Deze interface heeft de volgende variabelen, ze zijn allemaal optioneel.
 
 <table>
   <thead>
@@ -362,7 +362,7 @@ const presenceData: presenceData = {
 
 ## Evenementen
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Events stellen je in staat om wijzigingen of oproepen die zijn gemaakt te detecteren en te verwerken. Je kunt je abonneren op event met behulp van `on` methode.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -370,12 +370,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+Er zijn een paar Events beschikbaar:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Dit evenement wordt afgevuurd elke keer dat de presence wordt bijgewerkt.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Wordt afgevuurd wanneer gegevens worden ontvangen uit iFrame script.

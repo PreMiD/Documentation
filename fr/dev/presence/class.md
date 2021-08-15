@@ -30,11 +30,11 @@ Il y a trois propriétés disponibles pour la classe de `Presence`.
 
 Cette propriété est nécessaire pour que votre Presence fonctionne car elle utilise l'identifiant de votre application pour afficher son logo et ses images. Vous pouvez l'obtenir sur votre page d'[applications](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Déconseillée depuis la version 2.2.4*
 
 Quand le paramètre `injectOnComplete` est défini sur `true`, le premier évènement `UpdateData` pour les fichiers `presence.ts` et `iframe.ts` sera lancé après le chargement complet de la page.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Déconseillée depuis la version 2.2.4*
 
 Quand le paramètre `appMode` est défini sur `true` et que la presence était censée renvoyer un `PresenceData` vide, l'app affichera l'application (image et nom) sur le profil de l'utilisateur plutôt que rien.
 
@@ -125,7 +125,7 @@ async function getStrings(): Promise<LangStrings> {
 }
 
 let strings: Promise<LangStrings> = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // L'ID est celle du paramètre multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! Le code suivant doit être à l'intérieur de l'événement updateData !
@@ -136,24 +136,24 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // résultat : En train de jouer
+  pauseString = (await strings).pause; // résultat : En pause
 ```
 
 ### `getPageletiable(String)`
 
 Retourne une variable du site web si elle existe.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Attention : cette fonction peut causer une grosse utilisation du CPU & un ralentissement du site quand elle est exécutée trop de fois.**
 
 ```typescript
-const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+const pageVar = getPageletiable(".pageVar");
+console.log(pageVar); // Cela permettra d'afficher le "contenu variable"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Renvoie la version de l'extension que l'utilisateur utilise.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -175,7 +175,7 @@ console.log(setting); // Cela affichera dans la console la valeur du paramètre
 
 ### `hideSetting(String)`
 
-Masque le paramètre spécifié.
+Masque le paramètre donné.
 
 ```typescript
 presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Affiche le paramètre donné (Ne marche seulement si le paramètre en question était déjà masqué).
 
 ```typescript
 presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
@@ -191,18 +191,18 @@ presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Retourne les logs de la console du site web.
 
 ```typescript
 const logs = await presence.getLogs();
 console.log(logs); // Cela affichera les 100 derniers logs (dans un array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Remarque :** `readLogs` doit avoir la valeur `true` dans le fichier `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Affiche le message donné dans la console dans un format basé sur la presence dans le style `info`.
 
 ```typescript
 presence.info("Test") // Cela va afficher "test" dans le bon style.
@@ -210,7 +210,7 @@ presence.info("Test") // Cela va afficher "test" dans le bon style.
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Affiche le message donné dans la console dans un format basé sur la presence dans le style `success`.
 
 ```typescript
 presence.success("Test") // Cela va afficher "test" dans le bon style.
@@ -218,7 +218,7 @@ presence.success("Test") // Cela va afficher "test" dans le bon style.
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Affiche le message donné dans la console dans un format basé sur la presence dans le style `error`.
 
 ```typescript
 presence.error("Test") // Cela va afficher "test" dans le bon style.
@@ -226,7 +226,7 @@ presence.error("Test") // Cela va afficher "test" dans le bon style.
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Retourne 2 `snowflake` timestamps dans un `Array` qui peut être utilisé pour `startTimestamp` et `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -234,11 +234,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Note:** Le `String` donnée dans querySelector est un exemple.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Retourne 2 timestamps sous forme de `snowflake` dans un `Array` qui peuvent être utilisé pour `startTimestamp` et `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Note :** La `String` dans le querySelector n'est qu'un exemple.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Convertit une string au format `HH:MM:SS` ou `MM:SS` ou `SS` en un entier (Ne retourne pas de snowflake timestamp).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,13 +261,13 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Note :** La `String` dans le querySelector n'est qu'un exemple.
 
 ## Interface `PresenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+L'interface `PresenceData` est recommandée à l'utilisation quand vous utilisez la méthode `setActivity()`.
 
-This interface has following variables, all of them are optional.
+Cette interface contient les variables suivantes, toutes sont facultatives.
 
 <table>
   <thead>
@@ -361,7 +361,7 @@ const presenceData: PresenceData = {
 
 ## Événements
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Les événements vous permettent de détecter et de gérer quelques changements ou appels qui ont été effectués. Vous pouvez aussi suivre les événements en utilisant la méthode `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -369,12 +369,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+Il y a quelques événements disponibles :
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Cet événement est déclenché chaque fois que la présence est mise à jour.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Cet événement est déclenché à chaque fois que des données sont reçues du script iFrame.

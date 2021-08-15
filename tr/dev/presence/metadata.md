@@ -317,7 +317,7 @@ presence.hideSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar il
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+İnternet sitesinin konsol kayıtlarının çıktısını döndürür.
 ```typescript
 presence.showSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar ile değiştirin
 ```

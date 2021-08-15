@@ -2,7 +2,7 @@
 title: Servis Kılavuzu
 description: Her geliştiricinin, servisinin eklenebilmesi için takip etmeleri gereken kurallar.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-27T16:08:07.318Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -278,10 +278,11 @@ Servis geliştirmenin en önemli aşamalarından biri servisinizi mağazaya ekle
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Servis İnceleyicileri</h2>
-  
+
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -307,12 +308,12 @@ Bir pull request atmadan önce bilmeniz gereken şeyler:
 
 ## `Kontroller`
 
-![Kontroller](https://i.imgur.com/oqAakOc.png)
+![Example of checks](https://i.imgur.com/T8agbnB.png)
 
 Şu anda, bir servis, 2 adet otomatik doğrulama aşamasından geçmektedir. Bu doğrulamalar, inceleme ekibimizin kodunuzun çalışmaya hazır olup olmadığını anlamasını kolaylaştırır.
 
-- `Codacy` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**. (_UYARI: Codacy yakın zamanda kaldırılacak ve sadece DeepScan hatalarını çözümlemeniz gerekecektir!_)
-- `DeepScan` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**.
+- `Codacy` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
+- `CodeFactor` is a bot that checks for code quality. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**.
 - `Schmea Validation` ise `metadata.json` dosyanızı tarayıp, hatalı veya eksik veriler olup olmadığını kontrol etmek için vardır. Eğer burada da bir hata ile karşılaşırsanız, o hatayı da **düzeltmelisiniz**. `metadata.json` dosyanıza bir şema değeri eklemek, kodlama sırasında (eğer destekliyorsa) editörünüzün size hatalarını belirtmesini sağlar.
 
 ## `Ek Kurallar`
@@ -322,6 +323,7 @@ Bir pull request atmadan önce bilmeniz gereken şeyler:
 Tüm yönergeleri uygun gözden geçirmeler ve kontrollerle karşıladıktan sonra, servisiniz mağazaya eklenecektir.
 
 # Öneriler
+
 Eğer kılavuzu geliştirebilmemiz için aklınızda bir öneri varsa, bize [PreMiD Discord sunucusundan](https://discord.premid.app) ulaşabilirsiniz.
 
 # Katkılar
@@ -335,13 +337,13 @@ Kılavuzun `Revziyon 3` sürümü aşağıdaki şahıslar tarafından yazılmı�
 Bu kılavuzun `Revizyon 2` sürümü aşağıdaki şahıslar tarafından hazırlanmıştır:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 `Revizyon 1` ise aşağıdaki kişiler tarafından yönetilmiştir:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>

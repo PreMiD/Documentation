@@ -2,7 +2,7 @@
 title: Presence تطوير الـ
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -35,7 +35,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 1. قم بفتح لوحة التحكم و اكتب `git clone https://github.com/PreMiD/Presences`.
 2. اختيار مجلد من اختيارك.
-3. Open it in your code editor.
+3. افتح على محرر الكود الخاص بك.
 
 ## إنشاء المجلدات والملفات
 
@@ -125,7 +125,7 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 }
 ```
 
-Please copy the code above and put it in your `metadata.json` file. You now need to edit values of the properties. Please note that the following properties are optional to have in your `metadata.json` file, if you do not plan on using them you need to remove them.
+Please copy the code above and put it in your `metadata.json` file. تحتاج الآن إلى تعديل قيم الخصائص. Please note that the following properties are optional to have in your `metadata.json` file, if you do not plan on using them you need to remove them.
 
 - `contributors`
 - `altnames`
@@ -149,14 +149,14 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
+      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>اسم</code> هو اسمك في الديسكورد بدون المعرف(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
         والنقر الأيمن على ملفك الشخصي.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">يجب أن تحتوي على أوبجكت مع <code>إسم</code> و <code>أيدي</code> مطور الpresence. <code>name</code> is your Discord username without the identifier(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
+      <td style="text-align:left">يجب أن تحتوي على أوبجكت مع <code>إسم</code> و <code>أيدي</code> مطور الpresence. <code>اسم</code> هو اسمك في الديسكورد بدون المعرف(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
         والنقر الأيمن على ملفك الشخصي.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>نعم</code></td>
@@ -200,7 +200,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
       You could use the following regExp for that:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for axample: .com .net (but do not enter the dot).<br>
+      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
       <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
       You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
       You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
@@ -209,7 +209,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">نسخة الـ Presence الخاصك بك.</td>
+      <td style="text-align:left">نسخة من الـ presence الخاصة بك.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>لا</code></td>
     </tr>
@@ -258,7 +258,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">يحدد ما إذا كان يجب أن يكون الملحق قادراً على قراءة السجلات.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>نعم</code></td>
     </tr>
@@ -300,7 +300,7 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. يتم استدعاء هذا عدة مرات في الثانية حيثما أمكن.
 
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
@@ -327,7 +327,7 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+You can copy this into your `presence.ts` file and edit the values. يتم تعيين جميع القيم داخل حدث updateData.
 
 For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
 
@@ -335,24 +335,24 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 
 ## لا يمكنك الحصول على بيانات معينة؟!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). يمكن أن تحتوي علامات html هذه على مصادر متعددة مثل الفيديو. لكنها ليست لها صلة في كل مرة. بعضها مخفي أو لم يتم استخدامه بفعالية. Check if you can extract the information you need without them before you do unnecessary work.
 
 1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
 2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+3. تنفيذ `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+إذا وجدت أن بياناتك في iFrame تحتاج إلى القيام بما يلي:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. أنشى ملف `iframe.ts`.
+2. عيّن الـ iFrame إلى `true` في ملف بيانات التعريف الخاص بك.
+3. ملء ملف الـ iFrame الخاص بك.
 
 ```typescript
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
   Get all the data you need out of the iFrame save them in variables
-  and then sent them using iframe.send
+  and then send them using iframe.send
   */
   iframe.send({
     //sending data
@@ -362,7 +362,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. جعل ملف الـ Presence يتلقى البيانات من ملف iFrame.
 
 ```typescript
 presence.on("iFrameData", (data) => {
@@ -373,32 +373,32 @@ presence.on("iFrameData", (data) => {
 
 **Note:** This needs to be placed outside of the updateData event.
 
-## Compiling
+## تجميع
 
 Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
 
-# Loading the presence
+# تحميل الـ presence
 
 1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+2. **سوف يظهر تحميل الـ Presences ** في قسم الـ Presences.
+3. انقر عليه بينما لا تزال تضغط زر <kbd>Shift</kbd>.
+4. حدد مجلد /dist للـ presence الخاص بك.
 
-# Some helpful things
+# بعض الأشياء المفيدة
 
-## Hot-reloading
+## إعادة التحميل
 
 The website you are developing on is automatically reloading every time you save a file in your folder.
 
-## Debugging
+## تصحيح الأخطاء
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. إذا لم يكن فهناك خطأ أعلاه.
+- You can put `console.log("Test");` between your code and see if your browser console gives you that output. إذا كان الجواب نعم، حاول مرة أخرى بعد الدالة القادمة. إذا لم يكن فهناك خطأ أعلاه.
 - If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
 
 # الملفات الموضحة
 
 - [فئة الpresence](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
+- [فئة عرض الشريحة](/dev/presence/slideshow)
 - [فئة iFrame](/dev/presence/iframe)
 - [ملف بيانات التعريف](/dev/presence/metadata)
 - [إعدادات TypeScript](/dev/presence/tsconfig ""){.links-list}

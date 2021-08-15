@@ -2,7 +2,7 @@
 title: Руководство по присутствию
 description: Правила, которым должны следовать все разработчики presence, чтобы добавить свое presence.
 published: true
-date: 2021-05-01T16:45:59.660Z
+date: 2021-06-27T16:08:07.318Z
 tags:
 editor: markdown
 dateCreated: 2021-02-26T21:54:41.573Z
@@ -10,7 +10,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Руководство по присутствию</h3>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Руководство по созданию Presence</h3>
     <h4 style="margin-top: 0">Пересмотр 3</h4>
     <br />
 </div>
@@ -40,7 +40,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
     - Для доменов 6-месячной давности: **20,000 уникальных посетителей в день**.
     - Для доменов 12-месячной давности: **45,000 уникальных посетителей в день**.
   - Веб-сайт не может находиться на дешевом домене вроде `.xyz`, `.club` и так далее.
-  - Сам сайт должен иметь очень хорошее качество, дизайн и т. Д.
+  - Сам сайт должен иметь очень хорошее качество, дизайн и т. д.
 - Наличие должно использовать [общие детали](https://api.premid.app/v2/langFile/presence/en) (строки, начинающиеся с "Общие"). Вы можете добиться этого, используя `multiLanguage` со строками. Если ваше присутствие требует пользовательских строк, то вы не должны использовать `multiLanguage` до тех пор, пока присутствие не получит 1000 пользователей. Вы можете найти пример [здесь](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Присутствие должно обязательно иметь папку `dist`, а также файлы `presence.ts`, `iframe.ts` и `metadata.json`. В конечном итоге директория должна выглядеть вот так:
 
@@ -69,7 +69,7 @@ presence
 
 > Настоятельно рекомендуется организовать ваш `metadata` файл в формате, показанном ниже, и вы должны иметь грамматически правильные названия служб, описания, теги и поля настроек. Все, что не соответствует спецификациям, ** не будет ** разрешено.
 
-> Присутствие веб - сайтов с явным содержанием **принудительный** имеют `nsfw` Тег и логотип / миниатюра должны быть **нет** содержать любой из этих материалов.
+> Presence сайтов с откровенным содержанием **обязаны** иметь тег `nsfw` и логотип или иконка **не** должны содержать этот контент.
 
 Каждое presence имеет файл дескриптора с именем ` metadata.json`, метаданные имеют строгий стандарт, и пример этого файла может быть представлен ниже:
 
@@ -272,10 +272,11 @@ presence
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Рецензенты активов</h2>
-  
+
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/StrikerFRFX"><img src="https://github.com/StrikerFRFX.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -301,12 +302,12 @@ presence
 
 ## `Проверки`
 
-![Проверки](https://i.imgur.com/oqAakOc.png)
+![Примеры проверок](https://i.imgur.com/T8agbnB.png)
 
 В настоящее время presence проходит 3 отдельных этапа проверки. Все эти элементы управления помогают проверяющим определить, подходит ли ваше присутствие для развертывания.
 
-- `Codacy` это бот, проверяющий качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо** их исправить. (_ПРЕДУПРЕЖДЕНИЕ: Кодировка бота скоро пропадет и вам нужно будет проверить ошибки только из DeepScan!_)
-- `DeepScan` - это бот, который проверяет качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо ** их исправить.
+- `Codacy` это бот, проверяющий качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо** их исправить. (_Предупреждение: Кодировка бота скоро пропадет, и вам нужно будет проверить ошибки только из CodeFactor._) Взгляните на предупреждения CodeFactor.</em>
+- `CodeFactor` - это бот, который проверяет качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо ** их исправить.
 - `Проверка схемы` просканирует файл `metadata.json` для любых ошибок (например, отсутствующие поля, недопустимые типы значений и т.д.). Если вы когда-нибудь увидите какие-либо новые проблемы, Вам также **необходимо** исправить их. Добавление поля схемы в файл `metadata.json` позволит вашему текстовому редактору (если поддерживается) показать вам эти ошибки во время разработки.
 
 ## `Дополнительные правила`
@@ -316,6 +317,7 @@ presence
 После того, как вы соблюдаете все руководящие принципы с соответствующими проверками, ваше presence будет объединено с магазином.
 
 # Предложения
+
 Если у вас есть предложения по нашим правилам, вы должны связаться с нами @ [discord server PreMiD](https://discord.premid.app) и мы проверим их!
 
 # взносы
@@ -329,13 +331,13 @@ presence
 `Пересмотр 2` руководящих принципов был написан и был представлен следующими лицами:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 `Пересмотр 1` обслуживали следующие лица:
 
 <div>
-<a href="https://github.com/Alanexei"><img src="https://github.com/Alanexei.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>

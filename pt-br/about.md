@@ -1,6 +1,6 @@
 ---
 title: Sobre o PreMiD
-description: Os principais recursos do PreMiD
+description: The core features of PreMiD
 published: true
 date: 2020-09-01T22:07:41.029Z
 tags:
@@ -15,4 +15,4 @@ PreMiD é um utilitário simples e configurável que permite mostrar o que você
 
 # Funções principais
 - Mostra seu web service atual no Discord como seu status.
-- Grants full control over Presences.
+- Concede controle total sobre as Presences.

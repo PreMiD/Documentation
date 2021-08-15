@@ -2,7 +2,7 @@
 title: Développement de la presence
 description:
 published: true
-date: 2021-02-07T17:11:34.449Z
+date: 2021-07-08T19:12:34.449Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
@@ -196,14 +196,14 @@ Veuillez copier le code ci-dessus et le mettre dans votre fichier `metadata.json
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Une chaîne d'expression régulière utilisée pour faire correspondre des urls.<br>
-regExp ou aussi connu sous le nom de Regex, peut être utilisé si un site Web a plusieurs sous-domaines.<br>
-        Vous pouvez utiliser le regExp pour cela :<br>
-        <code>([a-z0-9]+)[.]domain[.]TLD "</code><br>
-        TLD représente le domaine de niveau supérieur par exemple: .com .net (mais ne saisissez pas le point).<br> 
-        <code>([a-z0-9]+)</code> signifie n'importe quoi de a à z et de 0 à 9.<br>
-        Vous pouvez démarrer rapidement en regardant cette <a href="https://youtu.be/sXQxhojSdZM">vidéo</a><br>
-        Vous pouvez tester votre regExp sur <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">Une expression régulière utilisée pour faire correspondre les URLs.<br>
+      regExp aussi connu sous le nom de Regex peut être utilisé si un site web a plusieurs sous-domaines.<br>
+      Vous pouvez utiliser le regExp suivant pour cela :<br>
+      <code>([a-z0-9]+)[.]domaine[.]TLD"</code><br>
+      TLD signifie Top Level Domain (Domaine de Premier Niveau), par exemple : .com .net (ne mettez pas le point).<br>
+      <code>([a-z0-9]+)</code> signifie "tout de a à z et de 0 à 9.<br>
+      Vous pouvez vous renseigner sur les bases en regardant cette <a href="https://youtu.be/sXQxhojSdZM">vidéo</a>.<br>
+      Vous pouvez tester votre regExp sur <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Oui</code></td>
     </tr>

@@ -265,7 +265,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ## `PresenceData` インターフェース
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+このインターフェースには以下の変数があり、これらすべては指定しなくても構いません。
 
 This interface has following variables, all of them are optional.
 
@@ -367,11 +367,11 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-There are few events available:
+このイベントはプレゼンスが更新されるたびに呼び出されます。
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+iFrameスクリプトからデータを受信した時に呼び出されます。
 
 #### `iFrameData`
 

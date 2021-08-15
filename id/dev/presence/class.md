@@ -1,6 +1,6 @@
 ---
 title: Kelas Presence
-description: The main class for every PreMiD presence
+description: Kelas utama untuk setiap presence PreMiD
 published: true
 date: 2021-05-23T09:14:06.963Z
 tags:
@@ -36,7 +36,7 @@ Ketika pengaturan `injectOnComplete` adalah `true` maka event `UpdateData` perta
 
 #### `appMode` - *Sudah tidak digunakan kembali sejak 2.2.4*
 
-When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
+Ketika mengatur `appMode` menjadi `true` dan jika presence mengirim `PresenceData` kosong, maka app akan memunculkan aplikasi (gambar dan nama) pada profil pengguna dari pada tampil kosong.
 
 ## Metode
 
@@ -48,13 +48,13 @@ Mengembalikan objek `PresenceData` dari apa yang sedang ditampilkan presence.
 
 Tetapkan aktivitas profil Anda sesuai dengan data yang disediakan.
 
-First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
+Parameter pertama membutuhkan interface [`PresenceData`](#presencedata-interface) atau kelas [`Slideshow`](/dev/presence/slideshow) untuk mendapatkan semua informasi yang ingin kamu tampilkan di profilmu.
 
 Parameter kedua menentukan apakah presence memainkan sesuatu atau tidak. Selalu gunakan `true` jika kamu memberikan timestamp di `PresenceData`.
 
 ### `clearActivity()`
 
-Clears your current activity and the tray title.
+Menghapus aktivitasmu saat ini dan judul tray.
 
 ### `setTrayTitle(String)`
 
@@ -72,7 +72,7 @@ Membuat kelas `Slideshow` baru.
 const slideshow = presence.createSlideshow();
 ```
 
-It is suggested to do this right after creating the `Presence` class:
+Disarankan untuk melakukan ini setelah membuat Kelas `Presence`:
 
 ```typescript
 const presence = new Presence({
@@ -87,7 +87,7 @@ Kamu bisa menemukan dokumentasi untuk kelas `Slideshow` [disini](/dev/presence/s
 
 Metode asinkron yang memungkinkan kamu untuk mendapatkan string terjemahan dari extension.
 
-Anda harus memberikan `Object` dengan kunci sebagai kunci untuk string, `keyValue` adalah nilai string. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+Kamu harus memberikan `Object` dengan kunci sebagai kunci untuk string, `keyValue` adalah nilai string. Daftar string terjemahan bisa ditemukan di titik akhir ini: `https://api.premid.app/v2/langFile/presence/id/`
 
 ```typescript
 // Mengembalikan string `Playing` dan` Paused`
@@ -101,12 +101,12 @@ const playString = strings.play; // hasil: Playing
 const pauseString = strings.pause; // hasil: Paused
 ```
 
-Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
+Sejak ekstensi v2.2.0 kamu sekarang bisa mendapatkan string dari bahasa tertentu. Ini sudah bekerja baik dengan opsi pengaturan `multiLanguage` yang baru ditambahkan.
 
-We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
+Kami menyarankan kamu untuk menggunakan kode berikut agar PresenceData secara otomatis diperbarui jika pengguna merubah bahasa yang dipilih;
 
 ```typescript
-// An interface of the strings you are getting (good for code quality and autocomplete).
+// Interface string yang kamu dapatkan (bagus untuk kualitas kode dan pelengkapan otomatis).
 interface LangStrings {
   play: string;
   pause: string;
@@ -115,11 +115,11 @@ interface LangStrings {
 async function getStrings(): Promise<LangStrings> {
   return presence.getStrings(
     {
-      // The strings you are getting, make sure this fits with your LangStrings interface.
+      // String yang kamu peroleh, pastikan ini sesuai dengan interface LangStrings kamu.
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // ID diisi dengan ID dari pengaturan multiLanguage.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
@@ -159,74 +159,74 @@ Mengembalikan versi dari ekstensi yang digunakan oleh pengguna.
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // Akan mencatat 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // Akan mencatat 2.1.0
 ```
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Mengembalikan value dari pengaturan.
 
 ```typescript
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Ubah pdexID dengan id dari setting
+console.log(setting); // Ini akan mencatat isi dari setting
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Sembunyikan pengaturan yang telah diberikan.
 
 ```typescript
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 ```
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Menampilkan pengaturan yang diberikan (Hanya bekerja jika pengaturan telah disembunyikan).
 
 ```typescript
-presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 ```
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Mengembalikan catatan dari konsol situs web.
 
 ```typescript
 const logs = await presence.getLogs();
-console.log(logs); // This will log the latest 100 logs (in an array).
+console.log(logs); // Ini akan mencatat 100 catatan terbaru (dalam array).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Catatan:** Membutuhkan `readLogs` menjadi `true` di file `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Cetak pesan yang diberikan di konsol dengan format berdasarkan presence pada style `success`.
 
 ```typescript
-presence.info("Test") // This will log "test" in the correct styling.
+presence.info("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Cetak pesan yang diberikan oleh konsol dengan format berdasarkan presence dengan style `success`.
 
 ```typescript
-presence.success("Test") // This will log "test" in the correct styling.
+presence.success("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Mencetak pesan yang diberikan di konsol dengan format berdasarkan presence pada style`error`.
 
 ```typescript
-presence.error("Test") // This will log "test" in the correct styling.
+presence.error("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Mengembalikan 2 timestamp `snowflake` pada sebuah `Array` yang dapat digunakan untuk `startTimestamp` dan `endTimestamp`.
 
 ```typescript
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -238,7 +238,7 @@ presenceData.endTimestamp = timestamps[1];
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Mengembalikan 2 timestamp `snowflake` pada sebuah `Array` yang dapat digunakan untuk `startTimestamp` dan `endTimestamp`.
 
 ```typescript
 const video = document.querySelector(".video"),
@@ -247,11 +247,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
+**Catatan:** `String` yang diberikan pada querySelector merupakan sebuah contoh.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Mengonversi sebuah string dengan format `JJ:MM:DD` atau `MM:DD` atau `DD` menjadi sebuah integer (Tidak mengembalikan timestamp snowflake).
 
 ```typescript
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -261,13 +261,13 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-** Catatan: ** ` String ` yang diberikan di querySelector merupakan sebuah contoh.
+**Catatan:** `String` yang diberikan di querySelector merupakan sebuah contoh.
 
 ## `PresenceData` Interface
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+Interface `presenceData` disarankan untuk digunakan saat kamu menggunakan metode `setActivity()`.
 
-This interface has following variables, all of them are optional.
+Interface ini memiliki variabel berikut, semuanya merupakan opsional.
 
 <table>
   <thead>
@@ -280,7 +280,7 @@ This interface has following variables, all of them are optional.
   <tbody>
     <tr>
       <td style="text-align:left">details</td>
-      <td style="text-align:left">The first line in your presence, usually used as header.</td>
+      <td style="text-align:left">Baris pertama di presencemu, biasanya digunakan sebagai header.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
@@ -303,9 +303,8 @@ This interface has following variables, all of them are optional.
     <tr>
       <td style="text-align:left">endTimestamp</td>
       <td style="text-align:left">Menentukan durasi penuh.
-        <br>Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>Kamu harus mengonversi waktumu menjadi <code>timestamp</code> atau kamu akan mendapatkan hitungan mundur
-          yang salah.
+        <br>Digunakan jika kamu ingin menampilkan berapa <code>jam:menit:detik</code> tersisa.
+          <br>Kamu harus mengonversi waktumu ke <code>timestamp</code> atau kamu akan mendapatkan hitungan mundur yang salah.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
@@ -324,14 +323,14 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when he will hover the small
-        icon.</td>
+      <td style="text-align:left">Menentukan teks yang akan ditampilkan ketika pengguna mengarahkan kursor ke ikon
+        kecil.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
+      <td style="text-align:left">Susunan tombol, maksimal 2, label merupakan teks tombol, dan url merupakan tautan.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
