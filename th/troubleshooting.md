@@ -26,7 +26,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 ### โหลดหน้านี้ใหม่
 คุณสามารถกด <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) หรือ <kbd>CMD+R</kbd> (MacOS) บนแป้นพิมพ์ของคุณเพื่อรีโหลดหน้าเว็บ
 
-### คุณได้ใช้ Discord รึเปล่า?
+### คุณกำลังใช้แอพ Discord รึเปล่า?
 PreMiD จะ**ไม่**ทํางานสําหรับ Brower Discord คุณต้องโหลดเเอพ Discord [ตรงนี้](https://discord.com/download)
 
 ### ตรวจสอบให้แน่ใจว่าคุณได้เปิด Activity Status ในการตั้งค่า Discord แล้ว
