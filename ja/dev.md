@@ -28,7 +28,7 @@ tags:
 - リポジトリー内でターミナルを開き、 `npm i` と入力する
 - 依存関係のタイプを更新する際は `npm update` と入力する
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> 依存関係を更新すると、多数の機能が壊れる可能性があります。テストを必ず行ってください！ 
 > 
 > {.is-danger}
 
