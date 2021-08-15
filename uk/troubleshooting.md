@@ -30,42 +30,45 @@ Included on this page:
 PreMiD **не** працює з браузерною версією Discord, ви повинні завантажити його [тут](https://discord.com/download).
 
 ### Переконайтеся, що ви активували активність в іграх Discord в налаштуваннях
-**Налаштування користувача** > **Ігрова активність** ![activitystatus.png](/activitystatus.png)
+**Налаштування користувача** > **Ігрова активність**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Переконайтеся, що Discord працює не як адміністратор
-Дійсно важливе. Discord RPC не працюватиме, якщо ви запустите Discord в якості адміністратора.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Are you using a presence with settings?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-To solve this, all you have to do is toggle the topmost setting: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Перезавантажте ваш браузер
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) або <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) також виконує гарну роботу. (Ви повинні знову запустити браузер)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Перезапустіть PreMiD (застосунок)
-![quit.png](/quit.png) Після цього ви повинні перезапустити PreMiD.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Перезавантажте Discord
-Натисніть <kbd>Strg+R</kbd> (Windows) або <kbd>CMD+R</kbd> (MacOS) на своїй клавіатурі або перезавантажте Discord вручну.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Перевірте, чи є антивірус або брандмауер на вашому комп'ютері
-Іноді антивірусні програми та брандмауери блокують додатки, які створюють сервер або просто приєднуються до Інтернету. Ми використовуємо локальний сервер для отримання та передачі даних між нашим додатком і розширенням, так що, якщо ви заблокуєте можливість додатку передавати дані, які, ймовірно, не зможуть використовувати PreMiD.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Вимкніть розширення
-Вимкніть всі ваші розширення та перевірте чи працює. Якщо так, то спробуйте ввімкнути ваші додатки покроково, і скажіть нам, яке розширення зламало PreMiD.
+Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Перезапуск комп'ютера
-Сподіваюсь, ви знаєте, як перезапустити комп'ютер.
+I hope you know how to restart a computer.
 
 ### Перевстановлення PreMiD
-Іноді щось не так з файлами... Підручники для встановлення можна знайти [тут](/install).
+Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Видалення вручну
 Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee виявив PreMiD як вірус (Windows)
-Це помилкова дія від McAfee, і ми повідомили про проблему цих досліджень, тепер ви можете виключати PreMiD з сканування, виконуючи такі дії:
+This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
 > If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
@@ -89,7 +92,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 # Linux troubleshooting
 ### Ubuntu/Debian based distros
-Якщо ви завантажили Discord через Snapcraft, Розширена присутність не спрацює. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux based distros
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
