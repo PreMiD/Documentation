@@ -86,13 +86,13 @@ Thanks to :
 
 - @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (それとちょっとの名前を忘れてしまった人) /フィードバックを提供してくれました。
 - @apriluwu /Gentoo buildを維持してくれてます。
-- @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
+- @SlimShadyIAm, naka /ArchユーザーのResipotoryのパッケージをメンテナンスしてました。
 - Erectron community /パッケージを作るのに協力してくれました。
 - あとプロジェクトに関わってくれた人全員。
 
 <a name="license"></a>
 
-### License
+### ライセンス
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
