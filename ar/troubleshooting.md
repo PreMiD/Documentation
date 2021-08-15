@@ -30,36 +30,39 @@ Included on this page:
 **لا يعمل** PreMiD على إصدار ديسكورد للمتصفح، يجب عليك تحميل التطبيق [هنا](https://discord.com/download).
 
 ### تأكد من أنك قمت بتفعيل نشاط لعبة في الإعدادات الديسكورد
-**إعدادات المستخدم** > **نشاط العبة** ![activitystatus.png](/activitystatus.png)
+**إعدادات المستخدم** > **نشاط العبة**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### تأكد من أن ديسكورد لا يعمل كمسؤول
-مهم جدا. لن يعمل ديسكورد RPC إذا قمت بتشغيل ديسكورد كمسؤول.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### هل تستخدم presence مع الإعدادات؟
-العديد من الpresences (منهم `تويتش` و `ساوند كلاود`) يتأثرون بمشكلة من الملحق. تؤدي هذه المشكلة إلى عدم التقاط الملحق للقيم الافتراضية للإعدادات بشكل صحيح.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-لحل هذه المشكلة ، كل ما عليك فعله هو تبديل الإعدادات الموجودة في الاعلى: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### أعد تشغيل المتصفح
-<kbd>Alt</kbd>+<kbd>F4</kbd> (ويندوز) أو <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) تقوم بعمل جيد أيضا. (يجب عليك أن تشغل المتصفح مرة أخرى بطبيعة الحال.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### أعد تشغيل PreMiD (التطبيق)
-![quit.png](/quit.png) يجب عليك إعادة تشغيل PreMiD بعد ذلك.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### أعد تشغيل Discord
-إضغط على <kbd>CTRL+R</kbd> (ويندوز) أو <kbd>CMD+R</kbd> (MacOS) على لوحة المفاتيح أو أعد تشغيل دسكورد يدويا.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Check if you have antivirus or firewall running on your computer
-في بعض الأحيان تمنع برامج مكافحة الفيروسات وجدران الحماية التطبيقات التي تصنع خوادم أو تستضيفها أو تتصل فقط بالإنترنت. نحن نستخدم خادم محلي لتلقي البيانات ونقلها بين تطبيقنا وملحقنا، لذلك إذا كنت ستمنع قدرة التطبيق على نقل البيانات فلن تتمكن على الأرجح من استخدام PreMiD.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### قم تعطيل الإضافات الخاصة بك
-قم بتعطيل جميع الإضافات الخاصة بك وانظر إذا كان سيعمل. إذا كان الجواب نعم، حاول تشغيل الإضافات الخاصة بك خطوة بعد خطوة وأخبرنا عن أي إضافة كسرت PreMiD.
+Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### إعادة تشغيل جهاز الكمبيوتر
-آمل أنك تعرف كيفية إعادة تشغيل الكمبيوتر.
+I hope you know how to restart a computer.
 
 ### إعادة تثبيت PreMiD
-في بعض الأحيان يكون شيء خاطئ في الملفات... يمكنك العثور على طريقة التثبيت [هنا](/install).
+Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### إزالة يدوياً
 Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
@@ -83,13 +86,13 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. يجب أن يتجاهل McAfee ملفنا، فقط ابدأ تطبيقنا وينبغي أن تكون جيداً للذهاب.
 
 ### PreMiD status bugged on discord!
-لا تقلق. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
 
 <a name="linux"></a>
 
 # Linux troubleshooting
 ### Ubuntu/Debian based distros
-إذا قمت بتنزيل ديسكورد من خلال Snapcraft، لن يعمل RPC. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux based distros
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
@@ -127,4 +130,4 @@ If you get this error, it means that your account doesn't have Administrator per
 4. Open installer again.
 
 # هذا لم يحل مشكلتي
-الرجاء فتح تذكرة في [#support](https://discord.premid.app/).
+Please open a ticket in [#support](https://discord.premid.app/).
