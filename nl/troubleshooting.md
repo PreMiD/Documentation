@@ -53,22 +53,22 @@ Hierna moet je PreMiD herstarten.
 Druk op <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) op je toetsenbord of start Discord handmatig opnieuw op.
 
 ### Controleer of u antivirus of firewall draait op je computer
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Soms blokkeren antivirusprogramma's en firewalls toepassingen die maken/hosting servers maken of alleen verbinding maken met het internet. We gebruiken een lokale server voor het ontvangen en doorgeven van gegevens tussen onze app en extensie, dus als u de mogelijkheid van een app blokkeert om gegevens door te geven zal u waarschijnlijk PreMiD niet kunnen gebruiken.
 
 ### Uw addons uitschakelen
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Schakel al je addons uit en kijk of het werkt. Zo ja, probeer je addons stap voor stap in te schakelen en vertel ons welke addon PreMiD defect maakt.
 
 ### Uw computer wordt opnieuw opstarten
-I hope you know how to restart a computer.
+Ik hoop dat je weet hoe u een computer opnieuw moet starten.
 
 ### PreMiD opnieuw installeren
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Soms is er iets mis met de bestanden... Handleidingen voor de installatie kunnen [hier](/install) gevonden worden.
 
 ### Handmatige verwijdering
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Typ `%appdata%` in de bestandsverkenner en verwijder de map `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` en verwijder de map `PreMiD`.
 
 ### McAfee heeft PreMiD gedetecteerd als virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Dit is een valse positief van McAfee en we hebben hen hiervan op de hoogte gesteld. Voor nu kun je PreMiD van de scan uitsluiten door de volgende stappen te nemen:
 
 > Als je niet het vertrouwen hebt om deze stappen uit te voeren, voel je dan vrij om een ticket te maken in [#support](https://discord.premid.app/) en een van onze ondersteuningsmedewerkers zal er zijn om je te helpen! 
 > 
@@ -86,23 +86,23 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee zou nu ons bestand moeten negeren, lanceer gewoon onze applicatie en het zou nu gewoon moeten werken.
 
 ### PreMiD-status gebugd op discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Geen zorgen. Druk op de <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) toetsen terwijl de gefocust bent op je discord-venster om het te herladen.
 
 <a name="linux"></a>
 
 # Linux-probleemoplossing
 ### Op Ubuntu/Debian gebaseerde distro's
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+Als je Discord hebt gedownload via Snapcraft, zal RPC niet werken. Je moet de Snapcraft-versie verwijderen door `sudo snap remove discord` uit te voeren op een terminal, download **[Discord's Linux-build](https://discordapp.com/api/download?platform=linux)** (**[of Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), navigeer vervolgens naar de map waarin je Discord in geïnstalleerd is (meestal `$HOME/Downloads`), instaleer daarna het pakket met behulp van `sudo dpkg -i discord-*. eb`. Als AppImage niet werkt, kun je onze andere pakketten proberen door **[hierheen](https://packagecloud.io/premid/linux)** te gaan.
 
 ### Op Arch Linux gebaseerde distro's
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Op Arch Linux gebaseerde distro's moeten een AUR-pakket (Arch User Repository) gebruiken dat <code>premid</code> of <code>premid-git</code> heet (<em x-id="3">WAARSCHUWING: Deze bouwt premid vanuit broncode</em>). Als je geen AUR-manager wilt installeren (yay etc.), kun je onze AppImage bekijken die kan worden gedownload op onze <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux-repository</a></strong>.
+<em x-id="3">Waarschuwing: het pakket in de <strong x-id="1">AUR</strong>-repository wordt niet onderhouden door ons (PreMiD-organisatie), maar door anderen.</em>
 
 ### Poort-binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+Je moet weten dat <strong x-id="1">PreMiD</strong> zichzelf bindt aan de poort <strong x-id="1">3020</strong>. Dit is nodig voor de communicatie tussen de extensie en de applicatie. Als <strong x-id="1">PreMiD</strong> een fout laat zien over deze poort, moet je controleren of iets aan de 3020 poort is gebonden door <code>sudo lsof -i:3020</code> of <code>sudo netstat -tnlp, grep :3020</code> uit te voeren in je terminal. Als er een proces aan verbonden is, zorg er dan voor dat je de poort vrijmaakt en probeer daarna opnieuw <code>PreMiD</code> te starten.
 
 ### PreMiDs AppImage start niet bij het inloggen
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
+Zoals we hebben aangegeven in onze **Linux-repository**, kan AppImage niet gestart worden tijdens het inloggen. Je kunt deze zelf toevoegen aan autostart door deze stappen te volgen:
 1. Maak een bestand genaamd <strong x-id="1">rc.local</strong> in de <code>/etc</code> map.
 2. Open dit bestand in je favoriete editor en plak de gegeven code en verander enkele dingen:
 ```bash
@@ -123,11 +123,11 @@ exit 0
 ### Fout bij aanmaken van map
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+Als je deze fout krijgt, betekent dit dat je account geen beheerdersrechten heeft en dat je handmatig de map moet aanmaken:
 1. Open de finder en open de map **Applicaties**.
 2. Rechtsklik op lege ruimte en klik op **Maak map**.
 3. Geef de map de naam `PreMiD` (let op de hoofdletters).
 4. Open het installatieprogramma opnieuw.
 
 # Dat heeft mijn probleem niet opgelost
-Please open a ticket in [#support](https://discord.premid.app/).
+Open een ticket in [#support](https://discord.premid.app/).
