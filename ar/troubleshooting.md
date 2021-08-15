@@ -107,7 +107,7 @@ As we stated in our **Linux repository**, AppImage can't be launched at login. Y
 2. Open this file in your favourite editor and paste given code with changing some things:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# مطلوب للتشغيل كـ /bin/bash (إذا كنت تستخدم zsh إلخ). you can change it.)
 
 # Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
@@ -115,7 +115,7 @@ As we stated in our **Linux repository**, AppImage can't be launched at login. Y
 exit 0
 ```
 3. Save file and chmod it as executable `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+4. أعد تشغيل جهاز الكمبيوتر الخاص بك, صور تطبيق PreMiD يجب ان تشتغل عند تسجيل الدخول.
 
 <a name="macos"></a>
 
