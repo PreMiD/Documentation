@@ -68,7 +68,7 @@ Manchmal stimmt etwas nicht mit den Dateien... Anleitungen für die Installation
 Windows: Tippe `%appdata%` in den Datei-Explorer und lösche den `PreMiD` Ordner. MacOS: `~/users/USER/~Library/Application Support/` und lösche den Ordner `PreMiD`.
 
 ### McAfee erkennt PreMiD als Virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Es handelt sich um ein False-Positives von McAfee und wir haben das Problem ihnen gemeldet. Fürs Erste kannst du PreMiD vom Scan ausschliessen, indem du folgende Schritte ausführst:
 
 > Wenn du dich nicht sicher fühlst, diese Schritte durchzuführen, kannst du gerne ein Ticket im [#support](https://discord.premid.app/) erstellen und einer unserer Support-Agenten wird dir helfen können! 
 > 
@@ -99,7 +99,7 @@ Arch Linux basierte Distributionen sollten AUR (Arch User Repository) Pakete ver
 <em x-id="3">Warnung: Das Paket im <strong x-id="1">AUR</strong> Repository wird nicht von uns (als PreMiD Organisation), sondern von anderen Personen verwaltet.</em>
 
 ### Port-Bindung
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. Wenn <strong x-id="1">PreMiD</strong> dir einen Fehler über diesen Port anzeigt, solltest du überprüfen, ob etwas an den Port 3020 gebunden ist, indem du <code>sudo lsof -i:3020</code> oder <code>sudo netstat -tnlp | grep :3020</code> in deinem Terminal ausführst. Wenn ein Prozess damit verbunden ist, solltest du sicherstellen, dass du den Port freigibst und versuchst <code>PreMiD</code> erneut auszuführen.
 
 ### PreMiD's AppImage startet nicht beim Anmelden
 Wie in unserem ** Linux-Repository ** angegeben, kann AppImage beim Anmelden nicht gestartet werden. Du kannst es manuell zum Autostart hinzufügen, indem du diese Schritte anwendest:
