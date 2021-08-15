@@ -155,7 +155,7 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array dengan tag, ini akan membantu pengguna untuk mencari presence kamu pada website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
@@ -230,14 +230,14 @@ Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
     "title": "DISPLAY TITLE",
     "icon": "FONTAWESOME ICON",
     "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "placeholder": "pakai %song% atau %artist%" //Input kosong akan terlihat abu-abu
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TUNJUKKAN JUDUL",
+    "icon": "IKON FONTAWESOME",
+    "value": 0, //Nilai default selector
+    "values": ["1", "2", "etc."] //Akan membuat pengaturan menjadi selector saat kamu memilih yang mana yang kamu inginkan 
   }
 ]
 ```
@@ -274,7 +274,7 @@ Key `multiLanguage` bisa di ubah menjadi:
 
 ##### Menambahkan string
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Setiap `string` adalah `Object` dimana dari namanya dimulai dengan nama service kemudian yang disebut stringName dengan titik diantaranya.
 
 stringName adalah pengidentifikasi 1 kata dari pesan.
 
@@ -287,12 +287,12 @@ Visualisasi dari file:
 ```typescript
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Teks yang perlu diterjemahkan.",
+    "description": "Ini menjelaskan apa message diatas itu."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Teks yang perlu diterjemahkan.",
+    "description": "Ini menjelaskan apa message diatas itu."
   }
 }
 ```
