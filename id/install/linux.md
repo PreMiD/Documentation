@@ -84,10 +84,10 @@ Masih belum diketahui apakah versi lama dari distribution lain mendukungnya, jad
 
 Terimakasih untuk:
 
-- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (and few other guys whom I forgot their names) for providing feedback on nightly releases.
-- @apriluwu for maintaining the Gentoo builds
+- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (dan beberapa orang yang aku lupa namanya) telah memberikan masukan pada rilisan nightly.
+- @apriluwu untuk mengurus build Gentoo
 - @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
-- The Electron community for various packages
+- Komunitas Elektron untuk berbagai paket lainnya
 - Siapapun yang pernah berkontribusi untuk proyek ini dengan cara apapun.
 
 <a name="license"></a>

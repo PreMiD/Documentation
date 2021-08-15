@@ -30,42 +30,45 @@ Kamu juga bisa menekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R
 PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplikasinya [disini](https://discord.com/download).
 
 ### Pastikan kamu sudah mengaktifkan Status Activity pada pengaturan Discordmu
-**User Settings** > **Activity Status** ![activitystatus.png](/activitystatus.png)
+**User Settings** > **Activity Status**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Pastikan Discord TIDAK berjalan sebagai administrator
-Sangat penting. Discord RPC tidak akan bekerja jika kamu membuka Discord sebagai administrator.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Apakah kamu menggunakan Presence dengan pengaturan?
-Banyak presence (termasuk `Twitch` dan `SoundCloud`) terpengaruh oleh masalah ekstensi. Masalah ini menyebabkan ekstensi tidak mendapat value default dari setting dengan benar.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-Untuk mengatasi ini, kamu hanya butuh untuk menyalakan pilihan pengaturan paling atas: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Mulai ulang browser
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) bekerja juga. (Sudah jelas kamu harus membukanya lagi.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Memulai ulang PreMiD (Aplikasi)
-![quit.png](/quit.png) Kamu harus memulai ulang PreMiD setelah itu.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Reload/mulai ulang Discord
-Tekan <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) pada keyboard atau mulai ulang secara manual.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Periksa jika antivirus atau firewall berjalan di komputermu
-Kadang program antivirus dan firewall menghalangi program yang sedang membuat/hosting server atau menghubungkan ke internet. Kami menggunakan server lokal untuk menerima dan meneruskan data antara aplikasi dan ekstensi kami, jadi jika kamu memblokir aplikasi untuk meneruskan data kemungkinan kamu tidak bisa menggunakan PreMiD.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Nonaktifkan addon
-Matikan semua addon dan periksa jika bekerja. Jika iya, coba nyalakan addonmu satu per satu dan beritahu kami addon apa yang mengganggu PreMiD.
+Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Mulai ulang komputermu
-Kami harap kamu tahu caranya.
+I hope you know how to restart a computer.
 
 ### Instal ulang PreMiD
-Terkadang ada sesuatu yang salah dengan filenya... Tutorial untuk instalasi bisa dilihat [disini](/install).
+Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Penghapusan manual
-Windows: Ketik `%appdata%` pada file explorer dan hapus folder `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` dan hapus folder `PreMiD`.
+Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee mendeteksi PreMiD sebagai virus (Windows)
-Ini adalah false positive dari McAfee dan kami telah melaporkan masalah pada mereka, untuk saat ini kamu bisa mengecualikan PreMiD dari scan dengan melakukan langkah berikut:
+This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
 > Jika kamu tidak merasa percaya diri mengikuti langkah-langkah ini, silakan buat tiket di [#support](https://discord.premid.app/) dan salah satu Agen Bantuan akan membantumu! 
 > 
@@ -83,23 +86,23 @@ Ini adalah false positive dari McAfee dan kami telah melaporkan masalah pada mer
 10. McAfee sekarang seharusnya sudah mengabaikan file kita, luncurkan saja aplikasi kita dan seharusnya baik-baik saja.
 
 ### Status PreMiD bermasalah di Discord!
-Jangan khawatir. Tekan tombol <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) selagi jendela Discord terbuka untuk memuat ulang.
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
 
 <a name="linux"></a>
 
 # Troubleshooting Linux
 ### Distro berbasis Ubuntu/Debian
-JIka kamu mengunduh Discord melewati Snapcraft, RPC tidak akan bekerja. Kamu harus uninstall versi Snapcraft dengan menjalankan `sudo snap remove discord` di terminal, unduh **[Discord Linux build](https://discordapp.com/api/download?platform=linux)** (**[atau Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), kemudian mengarah ke direktori dimana discord terunduh (biasanya `$HOME/Downloads`), kemudian menginstall paket menggunakan `sudo dpkg -i discord-*.deb`. Jika AppImage tidak bekerja, kamu dapat memeriksa paket lain kami pada **[link ini](https://packagecloud.io/premid/linux)**.
+If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
 ### Distro berbasis Arch Linux
-Distro berbasis Arch Linux sebaiknya menggunakan paket AUR (Arch User Repository) yang bernama <code>premid</code> atau <code>premid-git</code> (<em x-id="3"> PERINGATAN: Repository ini membangun premid dari kode sumber kami.</em>). Jika kamu tidak ingin mengistall AUR manager (yay etc.), kamu dapat memeriksa AppImage kami yang dapat diunduh dari <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong> kami.
-<em x-id="3">Peringatan: paket pada repository <strong x-id="1">AUR</strong> tidak dikelola oleh kami (sebagai organisasi PreMiD), tapi oleh orang lain.</em>
+Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
+<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
 
 ### Port binding
-Kamu harus tahu bahwa <strong x-id="1">PreMiD</strong> terikat pada port <strong x-id="1">3020</strong>. Ini dibutuhkan agar Ekstensi dan Aplikasi dapat berkomunikasi. Jika <strong x-id="1">PreMiD</strong> menampilkan error tentang port tersebut, kamu sebaiknya memeriksa jika ada sesuatu yang terikat pada port 3020 dengan menjalankan <code>sudo lsof -i:3020</code> atau <code>sudo netstat -tnlp | grep :3020</code> pada terminalmu. Jika suatu proses terikat pada port tersebut kamu harus memastikan port tersebut kosong dan coba menjalankan <code>PreMiD</code> lagi.
+You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
 
 ### AppImage PreMiD tidak berjalan saat login
-Seperti yang telah kami tetapkan pada **Linux repository**, AppImage tidak bisa dijalankan saat login. Kamu dapat menambahkan autostart dengan melakukan langkah berikut:
+As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
 1. Buat file bernama <strong x-id="1">rc.local</strong> pada direktori <code>/etc</code>.
 2. Buka file tersebut menggunakan editor yang kamu sukai dan tempel kode yang telah diberikan dengan mengubah beberapa hal:
 ```bash
@@ -120,11 +123,11 @@ exit 0
 ### Error membuat direktori
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-Jika kamu mendapatkan error ini, itu berarti akunmu tidak memiliki akses Administrator dan kamu harus membuat folder secara manual dengan mengikuti langkah berikut:
+If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
 1. Buka finder dan buka folder **Applications**.
 2. Klik kanan pada bagian kosong dan klik **Create folder**.
 3. Pada folder tersebut masukkan nama `PreMiD` (perhatikan huruf kapital).
 4. Buka installer lagi.
 
 # Masalahku belum terselesaikan
-Harap membuka tiket pada [#support](https://discord.premid.app/).
+Please open a ticket in [#support](https://discord.premid.app/).

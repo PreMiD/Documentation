@@ -30,21 +30,24 @@ Voit myös painaa <kbd>CRTL+R</kbd>/<kbd>F5</kbd> (Windows) tai <kbd>CMD+R</kbd>
 PreMiD **ei** toimi Discordin selainversiossa, sinun tulee ladata sovellus [täältä](https://discord.com/download).
 
 ### Varmista, että olet ottanut 'Toiminta tilana' -asetuksen käyttöön Discord-sovelluksesi asetuksista
-**Käyttäjäasetukset** > **Toiminta tilana** ![activitystatus.png](/activitystatus.png)
+**Käyttäjäasetukset** > **Toiminta tilana**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Varmista, että Discord EI toimi järjestelmänvalvojatilassa
-Todella tärkeää. Discord RPC ei toimi, jos Discord on päällä järjestelmänvalvojatilassa.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Are you using a presence with settings?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-To solve this, all you have to do is toggle the topmost setting: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Restart your browser
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Restart PreMiD (Application)
-![quit.png](/quit.png) You have to restart PreMiD afterwards.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Reload/restart Discord
 Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.

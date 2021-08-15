@@ -30,24 +30,27 @@ Included on this page:
 PreMiD با نسخه های وب دیسکورد کار **نمی کند**، شما باید برنامه‌اش را از [اینجا](https://discord.com/download) دانلود کنید.
 
 ### مطمعن شوید که Activity Status را در تنظیمات دیسکورد فعال کرده باشید
-**تنظیمات کاربر** > **Activity Status** ![activitystatus.png](/activitystatus.png)
+**تنظیمات کاربر** > **Activity Status**
+<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Be sure Discord is running NOT as administrator
-بسیار مهم. RPC دیسکورد اگر شما دیسکورد را روی حالت ادمین بازکنید، کار نمی کند.
+Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### Are you using a presence with settings?
-خیلی از presence ها(از جمله `Twitch` و `SoundCloud`) تحت تاثیر مشکلات افزونه‌ای قرار می‌گیرند. این مشکل باعث می شود افزونه مقادیر پیشفرض تنظیمات را به نادرستی بردارد.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-برای حل این مشکل، تمام کاری که باید انجام دهید این است که دکمه topmost تنظیمات را تغییر وضعیت دهید: ![presencesettings.gif](/presencesettings.gif)
+To solve this, all you have to do is toggle the topmost setting:
+<img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Restart your browser
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) یا <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) کار را هم خوب انجام می دهند. (مشخصا باید دوباره مرورگر خودتان را دوباره باز کنید.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Restart PreMiD (Application)
-![quit.png](/quit.png) بعد از آن باید PreMiD را دوباره باز کنید.
+<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+You have to restart PreMiD afterwards.
 
 ### Reload/restart Discord
-<kbd>CTRL+R</kbd> (Windows) یا <kbd>CMD+R</kbd> (MacOS) را روی صفحه کلید خود فشار دهید یا به طور دستی دیسکورد خود را مجددا باز نمایید.
+Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Check if you have antivirus or firewall running on your computer
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
