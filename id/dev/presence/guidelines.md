@@ -214,7 +214,7 @@ Daftar bidang dan peraturannya tertulis dibawah:
 
 ### **`warning`**
 
-- Enables warning icon for prompting user that this presence needs more steps than only adding presence.
+- Mengaktifkan ikon peringatan untuk meminta pengguna jika presence ini membutuhkan lebih banyak langkah daripada hanya menambahkan presence.
 - Example of presence using this metadata variable is `VLC`.
 
 ### **`settings`**
