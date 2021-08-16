@@ -13,20 +13,20 @@ dateCreated: 2020-06-11T18:03:54.865Z
 > {.is-warning}
 
 Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
+1. [Általános hibaelhárítás](https://docs.premid.app/troubleshooting#general)
 2. [Linux hibaelhárítás](https://docs.premid.app/troubleshooting#linux)
 3. [MacOS hibaelhárítás](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
+# Általános hibaelhárítás
 > You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
 > 
 > {.is-info}
 ### Frissítsd az oldalt
 You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
 
-### Are you using the Discord app?
+### Használod a Discord alkalmazást?
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
 ### Győződj meg arról, hogy engedélyezve vannak a Discord Játék tevékenységek a beállításokban
@@ -34,7 +34,7 @@ PreMiD does **not** work on the browser version of Discord, you must download th
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Győződj meg arról, hogy a Discord nem rendszergazdai jogokkal fut
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Nagyon fontos. Discord RPC will not work if you run Discord as an administrator.
 
 ### Are you using a presence with settings?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
@@ -47,7 +47,7 @@ To solve this, all you have to do is toggle the topmost setting:
 
 ### Indítsd újra a PreMiD alkalmazást
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Újra kell indítanod a PreMiD-et utána.
 
 ### Indítsd újra a Discord alkalmazást
 Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
@@ -86,7 +86,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee should now ignore our file, just launch our application and you should be good to go.
 
 ### PreMiD status bugged on discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Ne aggódj. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
 
 <a name="linux"></a>
 
