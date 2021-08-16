@@ -6,12 +6,12 @@ date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> A source code editor is required. Mi a [Visual Studio Code](https://code.visualstudio.com/)-ot ajánljuk. 
 > 
 > {.is-info}
 
 # Követelmények telepítése
-1. Install [Git](https://git-scm.com/).
+1. Telepítsd a [Git](https://git-scm.com/)-et.
 2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
 
