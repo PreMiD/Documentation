@@ -265,7 +265,7 @@ The `multiLanguage` key can be set to the following:
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
 2. Choose a folder of your choice.
-3. Open it in your code editor.
+3. Nyisd meg a kód szerkesztődben.
 
 ##### Creating the file
 
