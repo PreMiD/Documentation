@@ -18,7 +18,7 @@ tags:
 # Projekt klónozása
 1. Open a terminal and type `git clone URL`. **Replace URL with repository link you want to contribute to** e.g. `git clone https://github.com/PreMiD/PreMiD`.
 2. Choose a folder of your choice.
-3. Open it in your code editor.
+3. Nyisd meg a kód szerkesztődben.
 
 # Installing dependencies
 > Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
