@@ -16,13 +16,13 @@ dateCreated: 2020-06-11T18:03:51.119Z
 > 
 > {.is-warning}
 
-**Choose your operating system:**
+**Operációs rendszer kiválasztása:**
 - [Windows *7 vagy újabb verzió*](/install/windows)
 - [macOS *10.11 vagy újabb verzió*](/install/macos)
 - [Linux *kernel v2.x vagy újabb verzió*](/install/linux)
 {.links-list}
 
-**Choose your browser:**
+**Böngésző kiválasztása:**
 - [Chromium *v76 vagy újabb verzió*](/install/chromium)
 - [Firefox *v69 vagy újabb verzió*](/install/firefox)
 {.links-list}

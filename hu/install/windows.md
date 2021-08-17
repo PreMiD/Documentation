@@ -18,6 +18,6 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 
 Az alkalmazás automatikus elindul. Check for the symbol in your system tray.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Ne felejtsd el [hozzáadni a **bővítményt**](/install).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
