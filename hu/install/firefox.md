@@ -10,10 +10,10 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 
 # Telepítés
 1. Kattints [ide](https://premid.app/downloads) a letöltések oldal eléréséhez.
-2. Choose **Firefox**.
-3. Search for `about:addons`.
-4. Click on the small gear icon in the upper right corner.
-5. Choose **Install add-on from file**.
+2. Válaszd a **Firefox** menüpontot.
+3. Keress rá a `about:addons` címre.
+4. Kattints a jobb felső sarokban elhelyezkedő kicsi fogaskerék ikonra.
+5. Válaszd a **Kiegészítő telepítése fájlból** opciót.
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
