@@ -1,6 +1,6 @@
 ---
 title: Hibaelhárítás
-description: Everything to solve your problem
+description: Minden ami megoldja a problémát
 published: true
 date: 2021-02-08T21:30:58.603Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> Győződj meg arról, hogy a bővítmény **és** az alkalmazás is egyaránt telepítésre került! 
 > 
 > {.is-warning}
 
@@ -30,7 +30,7 @@ You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (Mac
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
 ### Győződj meg arról, hogy engedélyezve vannak a Discord Játék tevékenységek a beállításokban
-**Felhasználói beállítások** > **Játék tevékenység**
+**Felhasználói beállítások** > **Tevékenységállapot**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Győződj meg arról, hogy a Discord nem rendszergazdai jogokkal fut
@@ -130,4 +130,4 @@ If you get this error, it means that your account doesn't have Administrator per
 4. Open installer again.
 
 # Ez nem oldotta meg a problémát
-Please open a ticket in [#support](https://discord.premid.app/).
+Kérlek nyiss egy hibajegyet a [#support](https://discord.premid.app/)-ban.
