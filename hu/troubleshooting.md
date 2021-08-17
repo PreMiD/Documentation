@@ -27,7 +27,7 @@ Included on this page:
 You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
 
 ### Használod a Discord alkalmazást?
-PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
+A PreMiD **nem** működik a Discord böngészős verzióján, le kell töltened az alkalmazást [itt](https://discord.com/download).
 
 ### Győződj meg arról, hogy engedélyezted a Tevékenységállapot-ot a Discord alkalmazás beállításaiban
 **Felhasználói beállítások** > **Tevékenységállapot**
@@ -36,7 +36,7 @@ PreMiD does **not** work on the browser version of Discord, you must download th
 ### Győződj meg arról, hogy a Discord nem rendszergazdai jogokkal fut
 Nagyon fontos. Discord RPC will not work if you run Discord as an administrator.
 
-### Are you using a presence with settings?
+### Használsz presence-t beállításokkal?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
 To solve this, all you have to do is toggle the topmost setting:
@@ -59,10 +59,10 @@ Sometimes antivirus programs and firewalls are blocking applications which are c
 Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Indítsd újra a számítógépet
-I hope you know how to restart a computer.
+Azt remélem azért tudod, hogy hogyan kell egy számítógépet újraindítani.
 
 ### Telepítsd újra a PreMiD alkalmazást
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Néha valami gond van a fájlokkal... Útmutatót a telepítéshez [itt](/install) találod.
 
 ### Kézi eltávolítás
 Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
@@ -124,7 +124,7 @@ exit 0
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
 If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
+1. Nyisd meg a keresőt, és nyisd meg az **Alkalmazások** mappát.
 2. Right-click on blank space and click **Create folder**.
 3. To this folder assign `PreMiD` name (remember about upper-cased letters).
 4. Nyisd meg a telepítőt újra.
