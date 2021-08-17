@@ -29,7 +29,7 @@ You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (Mac
 ### Használod a Discord alkalmazást?
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
-### Győződj meg arról, hogy engedélyezve vannak a Discord Játék tevékenységek a beállításokban
+### Győződj meg arról, hogy engedélyezted a Tevékenységállapot-ot a Discord alkalmazás beállításaiban
 **Felhasználói beállítások** > **Tevékenységállapot**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
