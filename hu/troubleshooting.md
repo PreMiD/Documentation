@@ -127,7 +127,7 @@ If you get this error, it means that your account doesn't have Administrator per
 1. Open finder and open **Applications** folder.
 2. Right-click on blank space and click **Create folder**.
 3. To this folder assign `PreMiD` name (remember about upper-cased letters).
-4. Open installer again.
+4. Nyisd meg a telepítőt újra.
 
 # Ez nem oldotta meg a problémát
 Kérlek nyiss egy hibajegyet a [#support](https://discord.premid.app/)-ban.
