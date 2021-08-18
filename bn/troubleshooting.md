@@ -37,38 +37,38 @@ Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ
 Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### তুমি কি সেটিংসের সাথে একটি Presence ব্যবহার করছ?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+অনেক Presences (`Twitch` এবং `SoundCloud` সহ) একটি এক্সটেনশন সমস্যায় আছে। এই সমস্যাটির ফলে এক্সটেনশনটি সঠিকভাবে সেটিংস এর ডিফল্ট মান নিতে পারেনা।
 
-To solve this, all you have to do is toggle the topmost setting:
+এটা সমাধান করার জন্যে, যা করতে হবে সেটা হচ্ছে সবার উপরের সেটিংটি টগল করা:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### তোমার ব্রাউজারটি রিস্টার্ট করো
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (উইন্ডোজ) অথবা <kbd>CMD</kbd>+<kbd>Q</kbd> (ম্যাক ওএস) এও ভালো কাজ করে। (অবশ্য তোমাকেই আবার তোমার ব্রাউজার স্টার্ট করতে হবে।)
 
 ### PreMiD (অ্যাপ্লিকেশন) রিস্টার্ট করো
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+তোমাকে পরে PreMiD রিস্টার্ট করতে হবে।
 
 ### Discord রিস্টার্ট করো
 Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### চেক করো তোমার কম্পিউটারে অ্যান্টিভাইরাস অথবা ফায়ারওয়াল চলছে কিনা
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+কখনও কখনও অ্যান্টিভাইরাস প্রোগ্রাম এবং ফায়ারওয়াল অ্যাপ্লিকেশনগুলোকে ব্লক করে যেগুলো সার্ভার তৈরি/হোস্ট করে অথবা শুধুমাত্র ইন্টারনেটে কানেক্ট হওয়ার চেষ্টা করে। আমরা একটি লোকাল সার্ভার ব্যবহার করছি আমাদের অ্যাপ্লিকেশন এবং এক্সটেনশন এর মাঝে ডাটা নেওয়া ও দেওয়ার জন্যে, তাই তুমি যদি অ্যাপ্লিকেশন এর ডাটা দেওয়ার ক্ষমতাকে ব্লক করো তাহলে তুমি সম্ভবত PreMiD ব্যবহার করতে পারবে না।
 
 ### তোমার অ্যাডনগুলো বন্ধ করো
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+তোমার সব অ্যাডনগুলো বন্ধ করো এবং দেখো এটি কাজ করে কিনা। যদি কাজ করে, তাহলে অ্যাডনগুলো ধাপে ধাপে অন করো এবং আমাদের বলো কোন অ্যাডনটি PreMiD - তে সমস্যা সৃষ্টি করেছে।
 
 ### তোমার কম্পিউটার রিস্টার্ট করো
-I hope you know how to restart a computer.
+আমি আশা করি তুমি জানো কীভাবে একটি কম্পিউটারকে রিস্টার্ট করতে হয়।
 
 ### PreMiD আবার ইন্সটল করো
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+কখনও কখনও ফাইলগুলোতে সমস্যা থাকতে পারে... ইন্সটলেশনের টিউটোরিয়ালগুলো পাওয়া যাবে [এখানে](/install)।
 
 ### ম্যানুয়ালি ডিলিট করা
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+উইন্ডোজ: ফাইল এক্সপ্লোরারে লেখ `%appdata%` এবং ডিলিট করো `PreMiD` ফোল্ডারটি। ম্যাক ওএস: `~/users/USER/~Library/Application Support/` এবং ডিলিট করো `PreMiD` ফোল্ডারটি।
 
 ### PreMiD - কে McAfee ভাইরাস হিসেবে শনাক্ত করেছে (উইন্ডোজ)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+এটি McAfee থেকে একটি ফলস্‌ পজিটিভ এবং আমরা এই সমস্যাটি তাদের কাছে রিপোর্ট করেছি, আপাতত তুমি PreMiD - কে বাদ দিতে পারো স্ক্যান করা হতে এই ধাপগুলো অনুসরণ করে:
 
 > তুমি যদি এই ধাপগুলো নেওয়া সম্পর্কে নিশ্চিত না হও, নির্দ্বিধায় একটি টিকেট তৈরি করো [#support](https://discord.premid.app/) - এ এবং আমাদের একজন সাপোর্ট এজেন্ট তোমাকে সাহায্য করতে পারবে! 
 > 
@@ -86,23 +86,23 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee এখন আমাদের ফাইলকে উপেক্ষা করবে, শুধু আমাদের অ্যাপ্লিকেশন রান করো এবং তুমি PreMiD চালাতে পারবে।
 
 ### PreMiD স্ট্যাটাস Discord - এ ঠিকমতো দেখাচ্ছে না!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+চিন্তা করবে না। <kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাক ওএস) কীবাইন্ড দাও তোমার Discord উইন্ডোতে ফোকাস করা অবস্থায় এটাকে রিলোড করার জন্য।
 
 <a name="linux"></a>
 
 # লিনাক্স এর সমস্যা সমাধান
 ### Ubuntu/Debian ভিত্তিক ডিস্ট্রিবিউশনগুলো
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+তুমি যদি Snapcraft দিয়ে Discord ডাউনলোড করো তাহলে RPC কাজ করবে না। তোমাকে Snapcraft ভার্সনটি আনইন্সটল করতে হবে টার্মিনালে `sudo snap remove discord` দিয়ে, ডাউনলোড করো **[Discord - এর লিনাক্স বিল্ড](https://discordapp.com/api/download?platform=linux)** (**[অথবা Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), তারপর যাও যে ডিরেক্টরিতে তুমি Discord ডাউনলোড করেছ (সাধারণত `$HOME/Downloads`), তারপর প্যাকেজটি ইন্সটল করো `sudo dpkg -i discord-*.deb` ব্যবহার করে। যদি AppImage কাজ না করে, তাহলে দেখতে পারো আমাদের অন্যান্য প্যাকেজগুলো **[এই লিংক দ্বারা](https://packagecloud.io/premid/linux)**।
 
 ### Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলো
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলোকে AUR (Arch User Repository) প্যাকেজ ব্যবহার করা উচিত যার নাম <code>premid</code> অথবা <code>premid-git</code> (<em x-id="3">সতর্কতা: এই রিপোজিটরি premid তৈরি করে আমাদের সোর্স কোড থেকে</em>)। তুমি যদি একটি AUR ম্যানেজার (yay ইত্যাদি) না চাও, তাহলে তুমি আমাদের AppImage দেখতে পারো যা ডাউনলোড করা যায় আমাদের <strong x-id="1"><a href="https://github.com/premid/linux/releases">লিনাক্স রিপোজিটরি</a></strong> থেকে।
+<em x-id="3">সতর্কতা: <strong x-id="1">AUR</strong> রিপোজিটরির প্যাকেজটি আমাদের দ্বারা মেইনটেইন করা হয় না, বরং অন্যান্য মানুষ দ্বারা।</em>
 
 ### পোর্ট বাইন্ডিং
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+তোমাকে জানা উচিত যে <strong x-id="1">PreMiD</strong> পোর্ট <strong x-id="1">3020</strong> - তে বাইন্ড হয়। এটা জরুরি এক্সটেনশন ও অ্যাপ্লিকেশন এর মাঝখানে যোগাযোগ করার জন্য। যদি <strong x-id="1">PreMiD</strong> তোমাকে একটি ত্রুটি দেখায় এই পোর্ট সম্পর্কে, তোমার চেক করা উচিত কোন কিছু পোর্ট 3020 - তে বাইন্ড হয়ে আছে কিনা তোমার টার্মিনালে <code>sudo lsof -i:3020</code> বা <code>sudo netstat -tnlp | grep :3020</code> রান করে। যদি একটি প্রসেস এটায় বাইন্ড করে তোমার নিশ্চিত করা উচিত পোর্টটিকে মুক্ত করে <code>PreMiD</code> আবার চালানো।
 
 ### PreMiD - এর AppImage চালু হয় না লগইনের সময়
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
+আমার যেমনটি বলেছি আমাদের **লিনাক্স রিপোজিটরিতে**, AppImage চালু করা যাবে না লগইনের সময়। তুমি এটিকে ম্যানুয়ালি যোগ করতে পারো অটোস্টার্টে এই ধাপগুলো অনুসরণ করে:
 1. <strong x-id="1">rc.local</strong> নামের একটি ফাইল তৈরি করো <code>/etc</code> ডিরেক্টরিতে।
 2. এই ফাইলটি ওপেন করো তোমার প্রিয় এডিটরে এবং নিচের কোডটি পেস্ট করো কিছু জিনিস পরিবর্তন করে:
 ```bash
@@ -123,11 +123,11 @@ exit 0
 ### "Error creating directory"
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+তুমি যদি এই ত্রুটিটি পাও, এর মানে হচ্ছে যে তোমার অ্যাকাউন্ট এর এডমিনিস্ট্রেটর পারমিশন নেই। তোমাকে ম্যানুয়ালি একটি ফোল্ডার তৈরি করতে হবে এই ধাপগুলো অনুসরণ করে:
 1. Finder ওপেন করো এবং **Applications** ফোল্ডার ওপেন করো।
 2. ফাঁকা জায়গায় মাউসের ডান পাশের বাটনটি ক্লিক করো এবং ক্লিক করো **Create folder**.
 3. এই ফোল্ডারটির নাম দাও `PreMiD` (খেয়াল রেখো বড় হাতের অক্ষরগুলো সম্পর্কে)।
 4. ইন্সটলারটি আবার ওপেন করো।
 
 # আমার সমস্যা সমাধান হয়নি
-Please open a ticket in [#support](https://discord.premid.app/).
+একটি টিকেট খোলো [#support](https://discord.premid.app/) - এ।
