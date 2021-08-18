@@ -288,11 +288,11 @@ Visualisasi dari file:
 {
   "<service>.<stringName>": {
     "message": "Teks yang perlu diterjemahkan.",
-    "description": "Ini menjelaskan apa message diatas itu."
+    "description": "Ini menjelaskan apa teks diatas itu."
   },
   "<service>.<stringName>": {
     "message": "Teks yang perlu diterjemahkan.",
-    "description": "Ini menjelaskan apa message diatas itu."
+    "description": "Ini menjelaskan apa teks diatas itu."
   }
 }
 ```
