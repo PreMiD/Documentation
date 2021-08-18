@@ -34,7 +34,7 @@ Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### নিশ্চিত হও যে Discord এডমিনিস্ট্রেটরে রান হচ্ছে না
-Really important. Discord RPC will not work if you run Discord as an administrator.
+খুবই গুরুত্বপূর্ণ। Discord RPC কাজ করবে না যদি তুমি Discord এডমিনিস্ট্রেটরে রান করো।
 
 ### তুমি কি সেটিংসের সাথে একটি Presence ব্যবহার করছ?
 অনেক Presences (`Twitch` এবং `SoundCloud` সহ) একটি এক্সটেনশন সমস্যায় আছে। এই সমস্যাটির ফলে এক্সটেনশনটি সঠিকভাবে সেটিংস এর ডিফল্ট মান নিতে পারেনা।
@@ -50,7 +50,7 @@ Really important. Discord RPC will not work if you run Discord as an administrat
 তোমাকে পরে PreMiD রিস্টার্ট করতে হবে।
 
 ### Discord রিস্টার্ট করো
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+<kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাক ওএস) দাও তোমার কীবোর্ডে বা Discord ম্যানুয়ালি রিস্টার্ট করো।
 
 ### চেক করো তোমার কম্পিউটারে অ্যান্টিভাইরাস অথবা ফায়ারওয়াল চলছে কিনা
 কখনও কখনও অ্যান্টিভাইরাস প্রোগ্রাম এবং ফায়ারওয়াল অ্যাপ্লিকেশনগুলোকে ব্লক করে যেগুলো সার্ভার তৈরি/হোস্ট করে অথবা শুধুমাত্র ইন্টারনেটে কানেক্ট হওয়ার চেষ্টা করে। আমরা একটি লোকাল সার্ভার ব্যবহার করছি আমাদের অ্যাপ্লিকেশন এবং এক্সটেনশন এর মাঝে ডাটা নেওয়া ও দেওয়ার জন্যে, তাই তুমি যদি অ্যাপ্লিকেশন এর ডাটা দেওয়ার ক্ষমতাকে ব্লক করো তাহলে তুমি সম্ভবত PreMiD ব্যবহার করতে পারবে না।
