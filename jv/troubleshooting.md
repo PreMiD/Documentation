@@ -56,16 +56,16 @@ Pencet <kbd>CTRL+R</kbd> (Windows) utawa <kbd>CMD+R</kbd> (MacOS) ing keyboard u
 Kadang program antivirus lan firewall ngganggu program sing nggawe/hosting server utawa nyambung menyang internet. Kita nggunakake server lokal kanggo nampa lan ngliwati data ing antarane app lan ekstensi, dadi yen sampeyan blokir app sing lagi ngirim data, sampeyan ora isa nggunakake PreMiD.
 
 ### Pateni addon
-Pateni kabeh addon lan periksa menawa bekerja. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Pateni kabeh addon lan periksa menawa bekerja. Yen bener, coba aktifake addon siji-siji lan critakake apa addon sing ngganggu PreMiD.
 
 ### Restart komputermu
-I hope you know how to restart a computer.
+Muga-muga sampeyan ngerti kepiye carane restart komputer.
 
 ### Instal ulang PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Kadhangkala ana kesalahan ing file... Tutorial kanggo instalasi isa didheleng [ing kene](/install).
 
 ### Penghapusan manual
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` lan busek folder `PreMiD`.
+Windows: Ketik `%appdata%` ing file explorer lan busek folder `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` lan busek folder `PreMiD`.
 
 ### McAfee ndeteksi PreMiD sebagai virus (Windows)
 Iki minangka false positive palsu saka McAfee lan kita wis nglaporake masalah kasebut, saiki sampeyan bisa ngilangi PreMiD saka pindai kanthi nindakake perkara ing ngisor iki:
