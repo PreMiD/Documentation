@@ -34,29 +34,29 @@ PreMiD **ora** mlaku ing discord versi browser, sampeyan kudu download aplikasin
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Priksa menawa Discord ORA mlaku sebagai administrator
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Penting banget. Discord RPC ora bisa digunakake yen sampeyan mbukak Discord as administrator.
 
 ### Apa sampeyan nggunakake presence karo setelan?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Akeh presence (termasuk `Twitch` lan `SoundCloud`) terpengaruh karo masalah ekstensi. Masalah iki nyebabake ekstensi ora entuk default values setelan kanthi bener.
 
-To solve this, all you have to do is toggle the topmost setting:
+Kanggo ngatasi iki, sampeyan mung kudu ngaktifake pilihan setelan ndhuwur:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Restart browsermu
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (Sampeyan kudu mbukak browser maneh.)
 
 ### Restart PreMiD (Aplikasi)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Sampeyan kudu restart maneh PreMiD sawise iku.
 
 ### Reload/restart Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Pencet <kbd>CTRL+R</kbd> (Windows) utawa <kbd>CMD+R</kbd> (MacOS) ing keyboard utawa restart manual.
 
 ### Priksa manawa antivirus utawa firewall aktif ing komputermu
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Kadang program antivirus lan firewall ngganggu program sing nggawe/hosting server utawa nyambung menyang internet. Kita nggunakake server lokal kanggo nampa lan ngliwati data ing antarane app lan ekstensi, dadi yen sampeyan blokir app sing lagi ngirim data, sampeyan ora isa nggunakake PreMiD.
 
 ### Pateni addon
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Pateni kabeh addon lan periksa menawa bekerja. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Restart komputermu
 I hope you know how to restart a computer.
@@ -65,10 +65,10 @@ I hope you know how to restart a computer.
 Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Penghapusan manual
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` lan busek folder `PreMiD`.
 
 ### McAfee ndeteksi PreMiD sebagai virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Iki minangka false positive palsu saka McAfee lan kita wis nglaporake masalah kasebut, saiki sampeyan bisa ngilangi PreMiD saka pindai kanthi nindakake perkara ing ngisor iki:
 
 > Yen sampeyan ora yakin ngetutake langkah-langkah kasebut, coba gawe tiket ing [ #support ](https://discord.premid.app/) lan salah sawijining Ejen Dhukungan bakal mbantu sampeyan! 
 > 
@@ -86,23 +86,23 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee saiki wis ora nggatekake file kita, start aplikasi lan kudune wis kerja.
 
 ### Status PreMiD bermasalah ing Discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Aja kuwatir. Pijet tombol <kbd>CTRL+R</kbd> (Windows) utawa <kbd>CMD+R</kbd> (MacOS) selagi jendela Discord mbukak kanggo memuat ulang.
 
 <a name="linux"></a>
 
 # Troubleshooting Linux
 ### Distro berbasis Ubuntu/Debian
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+Yen sampeyan download Discord liwat Snapcraft, RPC ora bakal bisa digunakake. Sampeyan kudu uninstall versi Snapcraft dengan menjalankan `sudo snap remove discord` ing terminal, unduh **[Discord Linux build](https://discordapp.com/api/download?platform=linux)** (**[utawa Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), banjur ngarah menyang direktori sing didownload (biasane `$HOME/Downloads`), banjur install paket gawe `sudo dpkg -i discord-*.deb`. Yen AppImage ora bisa digunakake, sampeyan bisa mriksa paket liyane ing **[link iki](https://packagecloud.io/premid/linux)**.
 
 ### Distro berbasis Arch Linux
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Distros berbasis Arch Linux kudu nggunakake paket AUR (Arch User Repository) sing jenenge <code>premid</code> utawa <code>premid-git</code> (<em x-id="3"> AWAS: Repositori iki nggawe kode sumber asli kita. </em>). Yen sampeyan ora pengin nginstal manajer AUR (yay esp.), sampeyan bisa mriksa AppImage sing bisa diunduh saka <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
+<em x-id="3">Pènginget: paket ing repositori <strong x-id="1">AUR</strong> ora dikelola karo kita (minangka organisasi PreMiD), nanging karo wong liya.</em>
 
 ### Port binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+Sampeyan kudu ngerti yen <strong x-id="1">PreMiD</strong> bakal mlebu ing port <strong x-id="1">3020</strong>. Iki dibutuhake supaya Ekstensi lan Aplikasi isa kominikasi. Yen <strong x-id="1">PreMiD</strong> ngasilake kesalahan tentang port kasebut, sampeyan kudu mriksa manawa ana sesuatu sing bakal mlebu ing port 3020 kanthi mbukak <code>sudo lsof -i:3020</code> utawa <code>sudo netstat -tnlp | grep: 3020 </code> ing terminal sampeyan. Yen proses kaiket ing port kasebut, priksa manawa port'e kosong lan coba jalanake <code>PreMiD</code> maneh.
 
 ### AppImage PreMiD ora mlaku nalika login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
+Kaya sing wis ditemtokake ing **Linux repository**, AppImage ora bisa mbukak nalika login. Sampeyan bisa nambah autostart kanthi nindakake langkah-langkah ing ngisor iki:
 1. Gawe file sing jenenge <strong x-id="1">rc.local</strong> ing direktori <code>/etc</code>.
 2. Bukak file nggunakake editor lan tempel kode sing diwenehi ganti sawetara perkara:
 ```bash
@@ -123,11 +123,11 @@ exit 0
 ### Error nggawe direktori
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+Yen sampeyan entuk kesalahan iki, tegese akun sampeyan ora duwe akses Administrator lan sampeyan kudu nggawe folder kanthi manual kanthi ngetutake langkah-langkah kasebut:
 1. Bukak finder lan bukak folder **Applications**.
 2. Klik-tengen ing bagian kosong lan klik **Create folder**.
 3. Ing folder kasebut ketik jeneng `PreMiD` (perhatekno huruf kapital).
 4. Bukak installer maneh.
 
 # Masalahku durung mantun
-Please open a ticket in [#support](https://discord.premid.app/).
+Bukak tiket ing [#support](https://discord.premid.app/).
