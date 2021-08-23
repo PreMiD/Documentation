@@ -50,7 +50,7 @@ To solve this, all you have to do is toggle the topmost setting:
 Kamu harus memulai ulang PreMiD setelah itu.
 
 ### Reload/mulai ulang Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Tekan <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) di keyboard kamu atau mulai ulang Discord dengan cara manual.
 
 ### Periksa jika antivirus atau firewall berjalan di komputermu
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
