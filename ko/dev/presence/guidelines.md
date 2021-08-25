@@ -24,7 +24,7 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 The general rules of presence development are as follows:
 
 - Presences **must** be related to the website of choice.
-- Presences **cannot** be made for illegal websites. (for e.g., stressors, drug marketing, child pornography, etc.)
+- Presence는 불법 웹사이트용으로 만들어져서는 **안됩니다.** (for e.g., stressors, drug marketing, child pornography, etc.)
 - The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
 - You need to have a proper file structure, drafts are **not** allowed.
 - Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
