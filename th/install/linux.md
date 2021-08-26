@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: เริ่มต้นใช้งาน PreMiD การติดตั้งบน PreMiD
+description: เริ่มต้นการติดตั้ง PreMiD บน Linux
 published: true
 date: 2020-11-10T18:06:56.520Z
 tags:
