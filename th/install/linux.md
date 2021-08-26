@@ -31,7 +31,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
   - [หมายเหตุเพิ่มเติม:](#appimagenotes)
 - [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
 - [**Debian and Ubuntu based distributions**](#packagecloud)
-- [**Arch Linux**](#arch)
+- [**ดิสทริบิวชันฐานมาจาก Arch Linux**](#arch)
 
 <a name="about"></a>
 
@@ -146,7 +146,7 @@ If command doesn't work, download **deb/rpm** file from our packagecloud repo or
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux
+## ดิสทริบิวชันฐานมาจาก Arch Linux
 
 Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
