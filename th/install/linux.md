@@ -10,18 +10,18 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 การติดตั้งแอปพลิเคชันนั้นสำคัญมากเพราะส่วนขยายไม่สามารถทำอะไรเองได้
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> สำหรับผู้ใช้ลินุกซ์ Aur การใช้แพ็คเกจจาก DoomLerd น่าจะปลอดภัยที่สุด เราไม่แนะนำให้ใช้ แต่ถ้าต้องการ ยังสามารถใช้มันได้ Thanks to DoomLerd for handling aur repo still. 
 > 
 > {.is-warning}
 
 ## สารบัญ
 
 - **[เกี่ยวกับ](#about)**
-  - [Stats](#stats)
+  - [สถานะ](#stats)
   - [ความต้องการ](#requirements)
   - ตัวอย่าง (เร็วๆนี้)
   - คําถามที่พบบ่อย (เร็วๆนี้)
-  - Building (soon)
+  - การบิลด์ (เร็ว ๆ นี้)
   - [สนับสนุน](#support)
   - [เครดิต](#credits)
   - [ใบอนุญาต](#license)
@@ -29,8 +29,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 - **[AppImage](#appimage)** (_เเนะนํา_)
   - [วิธีการติดตั้ง](#appimageinstall)
   - [หมายเหตุเพิ่มเติม:](#appimagenotes)
-- [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
-- [**Debian and Ubuntu based distributions**](#packagecloud)
+- [**ดิสทริบิวชันฐานมาจาก Red Hat Enterprise Linux (RHEL)**](#packagecloud)
+- [**ดิสทริบิวชันฐานมาจาก Debian และ Ubuntu**](#packagecloud)
 - [**ดิสทริบิวชันฐานมาจาก Arch Linux**](#arch)
 
 <a name="about"></a>
@@ -41,11 +41,11 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 <a name="stats"></a>
 
-### Stats
+### สถานะ
 
 <table>
   <tr>
-    <th>การปรับใช้</th>
+    <th>การใช้งาน</th>
     <th>การดาวน์โหลดทั้งหมด</th>
     <th>การเผยเเพร่ล่าสุด</th>
   </tr>
