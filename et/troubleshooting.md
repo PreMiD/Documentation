@@ -34,7 +34,7 @@ PreMiD **ei** tööta Discordi brauseriversioonis, peate rakenduse alla laadima 
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Veenduge, et Discord EI tööta administraatorina
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Väga oluline. Discordi RPC ei tööta, kui käivitate Discordi administraatorina.
 
 ### Kas kasutate presence-i, millel on seadmed?
 Laienduse probleem mõjutab paljusid presence (sealhulgas `Twitch` ja `SoundCloud`). Selle probleemi tõttu ei haara laiendus sätete vaikeväärtusi korralikult.
@@ -50,22 +50,22 @@ Ka <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) või <kbd>CMD</kbd>+<kbd>Q</kbd> (MacO
 Pärast peate PreMiDi taaskäivitama.
 
 ### Laadige/taaskäivitage Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Vajutage klaviatuuril <kbd>CTRL + R</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS) või taaskäivitage Discord käsitsi.
 
 ### Kontrollige, kas teie arvutis töötab viirusetõrje või tulemüür
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Mõnikord blokeerivad viirusetõrjeprogrammid ja tulemüürid rakendusi, mis loovad/mõjutavad servereid või lihtsalt ühendavad internetiga. Paigaldamise õpetused leiate [siit](/install).
 
 ### Keelake oma lisad
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Keelake kõik oma lisad ja vaadake, kas see töötab. Kui jah, proovige oma lisad samm-sammult lubada ja öelge meile, milline lisand PreMiD-i rikkus.
 
 ### Taaskäivitage arvuti
-I hope you know how to restart a computer.
+Loodan, et teate, kuidas arvutit taaskäivitada.
 
 ### PreMiD-i uuesti installimine
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Mõnikord on failidega midagi valesti... Paigaldamise õpetused leiate [siit](/install).
 
 ### Käsitsi eemaldamine
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Kirjutage failikeskkonda `%appdata%` ja kustutage kaust `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` ja kustutage kaust `PreMiD`.
 
 ### McAfee tuvastas PreMiD-i viirusena (Windows)
 See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate PreMiDi skannimisest välja jätta, tehes järgmist:
@@ -86,13 +86,13 @@ See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate 
 10. McAfee peaks nüüd meie faili ignoreerima, lihtsalt käivitage meie rakendus ja teil peaks olema korras.
 
 ### PreMiD-i olek on katki Discordis!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Ära muretse. Vajutage klahvikombinatsiooni <kbd>CTRL + R</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS), olles keskendunud Discordi aknale, selle uuesti laadimiseks.
 
 <a name="linux"></a>
 
 # Linuxi tõrkeotsing
 ### Ubuntu/Debiani põhised distrod
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. Kui AppImage ei tööta, peaksite kaaluma meie teiste pakettide kontrollimist **[selle lingi abil](https://packagecloud.io/premid/linux)**.
+Kui olete Discordi alla laadinud Snapcrafti kaudu, ei tööta RPC. Peate Snapcrafti versiooni desinstallima, käivitades terminalis `sudo snap remove discord`, laadima alla **[Discordi Linuxi järk](https://discordapp.com/api/download?platform=linux) ** (**[või Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), seejärel navigeerige kataloogi, kuhu Discordi alla laadisite (tavaliselt `$HOME/Downloads`), seejärel installige pakett `sudo dpkg abil -i discord- *.deb`. Kui AppImage ei tööta, peaksite kaaluma meie teiste pakettide kontrollimist **[selle lingi abil](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linuxi põhised distrod
 Arch Linuxi põhised distrod peaksid kasutama AUR-paketti (Arch User Repository), mille nimi on <code>premid</code> või <code>premid-git</code> (<em x-id="3">HOIATUS: See hoidla ehitab premid-i meie lähtekoodist. </em>). Kui te ei soovi AUR-i haldurit installida (yay jne.), võite vaadata meie AppImage-i, mille saate alla laadida meie <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linuxi hoidlast</a></strong>.
