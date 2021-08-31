@@ -258,9 +258,9 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 
 > You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
 
-In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
+In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. นี่คือกฎทั้งหมดทีคุณจะ**ต้อง**ปฏิบัติตามระหว่างการปรับเปลี่ยน Presences.
 
-- You are **not** allowed to rewrite a presence or change its author. If the presence author was banned from the official server or hasn't made the required changes within a month, you may contact a reviewer to see if you can to rewrite the presence.
+- คุณ**ไม่**ได้รับอนุญาตในการเขียน Presence ใหม่หรือเปลี่ยนแปลงผู้เขียนของมัน. If the presence author was banned from the official server or hasn't made the required changes within a month, you may contact a reviewer to see if you can to rewrite the presence.
 - If you make modifications to a presence and change at least a **quarter** of the presence's codebase, you are allowed to add yourself as a contributor. Contact a reviewer for more information about this subject.
 - Anyone may provide hotfixes to fix bugs; however, try **not** to make changes that are **not** required. Valid modifications include general fixes (code and typos), additions (descriptions and tags), missing files, etc. Do **not** change images if they are not outdated and are in specifications.
 
