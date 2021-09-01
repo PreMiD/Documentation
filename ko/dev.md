@@ -1,34 +1,34 @@
 ---
-title: Getting Started
-description: A little advice for those who got into coding recently
+title: 시작하기
+description: 코딩을 최근에 시작한분들께 전하는 작은 조언
 published: true
 date: 2020-04-09T14:21:58.246Z
 tags:
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> 코드 편집기가 필요합니다. 저희는  [Visual Studio Code](https://code.visualstudio.com/)를 사용하는 걸 추천합니다. 
 > 
 > {.is-info}
 
-# Installing the requirements
-1. Install [Git](https://git-scm.com/).
-2. [Node](https://nodejs.org/en/)  ( [npm](https://www.npmjs.com/) 와 함께 ) 설치하기
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
+# 요구사항 설치하기
+1. [Git](https://git-scm.com/) 설치하기
+2. [Node](https://nodejs.org/en/)([npm](https://www.npmjs.com/) 와 함께) 설치하기
+3. [TypeScript](https://www.typescriptlang.org/index.html#download-links) 설치하기 (터미널 실행 후 "`npm install -g typescript`" 입력하기)
 
-# Cloning the project
-1. Open a terminal and type `git clone URL`. **Replace URL with repository link you want to contribute to** e.g. `git clone https://github.com/PreMiD/PreMiD`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+# Presence 복사하기
+1. 터미널 실행 후 "`git clone URL`" 입력하기. **당신이 기여하고자 하는 저장소 URL로 변경하세요** 예시: `git clone https://github.com/PreMiD/PreMiD`.
+2. 원하는 폴더를 선택하세요.
+3. 이것을 당신의 코드 편집기로 실행하세요.
 
-# Installing dependencies
-> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
+# 중요 프로그램 설치하기
+> Node Package Manager(npm)을 먼저 설치하였는지 확인하세요. 만약 당신이 [Node](https://nodejs.org/en/)를 설치하였다면 npm이 자동으로 설치됩니다. 
 > 
 > {.is-warning}
 
-- Open a terminal in your repository and type `npm i`.
-- To update the dependencies type `npm update`.
+- 프로젝트에서 터미널을 여시고 "`npm i`"를 입력하세요.
+- 중요 프로그램을 업데이트하려면 "`npm update`"를 입력하세요.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> 조심하세요! 중요 프로그램을 업데이트하는 행동은 에러가 많이 생길 수 있습니다! 이를 방지하기 위해서는 테스트가 필요합니다. 
 > 
 > {.is-danger}
 
