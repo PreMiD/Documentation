@@ -1,23 +1,23 @@
 ---
-title: TypeScript Configuration
-description: A little helper for TypeScript
+title: TypeScript 구성
+description: TypeScript에 대한 작은 도우미
 published: true
 date: 2020-08-05T16:25:22.812Z
 tags:
 editor: markdown
 ---
 
-# TypeScript Configuration
+# TypeScript 구성
 
-## 소개
+## Introduction
 
 When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
 
 We just want to describe some settings that you should know.
 
-## Root Configuration
+## 루트 파일 구성
 
-In the root configuration file you will see something like this.
+루트 파일 구성에서, 이런 구조를 확인하실 수 있습니다.
 
 ```javascript
 {
