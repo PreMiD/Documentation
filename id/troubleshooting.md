@@ -65,7 +65,7 @@ I hope you know how to restart a computer.
 Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Penghapusan manual
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Ketik `%appdata%` di file explorer dan hapus folder `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee mendeteksi PreMiD sebagai virus (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
