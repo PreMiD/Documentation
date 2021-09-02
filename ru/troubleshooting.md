@@ -53,22 +53,22 @@ PreMiD **не** работает в браузерной версии Discord. �
 Нажмите <kbd>CTRL+R</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS) на клавиатуре или перезапустите Discord вручную.
 
 ### Проверьте, запущен ли на вашем компьютере антивирус или брандмауэр
-Иногда антивирусные программы и брандмауэры блокируют приложения, которые создают или размещают серверы или просто подключаются к интернету. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Иногда антивирусные программы и брандмауэры блокируют приложения, которые создают или размещают серверы или просто подключаются к интернету. Мы используем локальный сервер для получения и передачи данных между нашим приложением и расширением, поэтому, если вы заблокируете возможность приложения передавать данные, то скорее всего вы не сможете использовать PreMiD.
 
 ### Отключите ваши аддоны
-Disable all your addons and see if it works. Если да, попробуйте включить по очереди свои дополнения и сообщите нам, какое дополнение сломало PreMiD.
+Отключите все свои дополнения и посмотрите, работает ли он. Если да, попробуйте включить по очереди свои дополнения и сообщите нам, какое дополнение сломало PreMiD.
 
 ### Перезагрузите компьютер
-I hope you know how to restart a computer.
+Я надеюсь, что вы знаете, как перезагрузить компьютер.
 
 ### Переустановите PreMID
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Иногда с файлами что-то не так... Уроки по установке можно найти [здесь](/install).
 
 ### Ручное удаление
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Запишите `%appdata%` в обозревателе файлов и удалите папку `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` и удалите папку `PreMiD`.
 
 ### McAfee обнаружил PreMiD как вирус (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Это ложное положительное впечатление от компании McAfee и мы сообщили им об этой проблеме. теперь вы можете исключить PreMiD из сканирования, выполнив следующие действия:
 
 > Если вы не чувствуете уверенности в том, что делаете эти шаги, не стесняйтесь сделать тикет в [#support](https://discord.premid.app/) и один из наших агентов поддержки сможет вам помочь! 
 > 
@@ -86,23 +86,23 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee теперь должен проигнорировать наш файл, просто запустите наше приложение и всё должно быть хорошо.
 
 ### Статус PreMiD на дискорде!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Не беспокойся. Нажмите <kbd>CTRL+R</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS) для перезагрузки окна.
 
 <a name="linux"></a>
 
 # Устранение неполадок Linux
 ### На дистрибутивах на основе Ubuntu/Debian
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+Если вы загрузили Discord через Snapcraft, RPC не будет работать. Вы должны удалить версию Snapcraft, запустив `sudo snap удалить discord` на терминале, скачать [сборку Linux Discord](https://discordapp.com/api/download?platform=linux) ([или Discord Canary](https://discordapp.com/api/canary/download?platform=linux)), затем перейдите в каталог, в который вы загрузили Discord (обычно `$HOME/Downloads`), затем установить пакет с помощью `sudo dpkg -i discord-*. deb`. Если AppImage не работает, вы должны рассмотреть возможность проверки других пакетов **[этой ссылки](https://packagecloud.io/premid/linux)**.
 
 ### Дистрибутивы на основе Arch Linux
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Разработчики на основе Arch Linux должны использовать пакет AUR (Arch User Repository), который называется <code>premid</code> или <code>premidgit</code> (<em x-id="3">ПРЕДУПРЕЖДЕНИЕ: Эта сборка из репозитория премьера из нашего исходного кода.</em>). Если вы не хотите устанавливать менеджер AUR (yay etc.), вы можете ознакомиться с нашим AppImage, который можно загрузить из нашего <strong x-id="1"><a href="https://github.com/premid/linux/releases">репозитория Linux</a></strong>.
+<em x-id="3">Предупреждение: пакет в репозитории <strong x-id="1">AUR</strong> не поддерживается нами (как в организации PreMiD), а другими людьми</em>
 
 ### Привязка портов
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+Вы должны знать, что <strong x-id="1">PreMiD</strong> связывает себя с портом <strong x-id="1">3020</strong>. Это необходимо для обмена данными между расширением и приложением. Если <strong x-id="1">PreMiD</strong> показывает вам ошибку об этом порте, проверьте, привязано ли что-то к порту 3020, запустив <code>sudo lsof -i:3020</code> или <code>sudo netstat -tnlp | grep :3020</code> в терминале. Если какой-либо процесс привязан к нему, вы должны убедиться, что освободить порт и попробовать запустить <code>PreMiD</code> снова.
 
 ### AppImage PreMiD не запускается при входе в систему
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
+Как мы отмечали в нашем **репозитории Linux**, AppImage не может быть запущен при входе в систему. Вы можете добавить его в автозапуск вручную, выполнив следующие действия:
 1. Сделать файл с именем <strong x-id="1">rc.local</strong> в каталоге <code>/etc</code>.
 2. Откройте этот файл в вашем любимом редакторе и вставьте данный код с изменением некоторых вещей:
 ```bash
@@ -123,11 +123,11 @@ As we stated in our **Linux repository**, AppImage can't be launched at login. Y
 ### Ошибка создания каталога
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+Если вы получили эту ошибку, это означает, что ваша учетная запись не имеет прав администратора и вам необходимо создать папку вручную, выполнив следующие шаги:
 1. Откройте finder и откройте папку **Applications**.
 2. Щелкните правой кнопкой мыши на пустом месте и нажмите **Создать папку**.
 3. В эту папку назначьте `имя PreMiD` (запомните буквы в верхнем регистре).
 4. Открыть программу установки заново.
 
 # Это не решило мою проблему
-Please open a ticket in [#support](https://discord.premid.app/).
+Пожалуйста, откройте тикет в [#support](https://discord.premid.app/).
