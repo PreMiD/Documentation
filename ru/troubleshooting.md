@@ -34,7 +34,7 @@ PreMiD **не** работает в браузерной версии Discord. �
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Убедитесь, что Discord запущен НЕ от имени администратора
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Очень важно. Discord RPC не будет работать, если вы запустите Discord от имени администратора.
 
 ### Вы используете presence с настройками?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
