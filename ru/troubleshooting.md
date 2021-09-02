@@ -37,26 +37,26 @@ PreMiD **не** работает в браузерной версии Discord. �
 Очень важно. Discord RPC не будет работать, если вы запустите Discord от имени администратора.
 
 ### Вы используете presence с настройками?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Проблему с расширением затрагивают многие presence (включая `Twitch` и `SoundCloud`). Из-за этой проблемы расширение не принимает значения настроек по умолчанию правильно.
 
-To solve this, all you have to do is toggle the topmost setting:
+Чтобы решить эту проблему, вам нужно переключить самую верхнюю настройку:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Перезапустите браузер
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+Также можно использовать <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) или <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS). (вы должны перезапустить браузер)
 
 ### Перезапустить PreMiD (Приложение)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+После вы должны перезапустить PreMiD.
 
 ### Перезагрузить/перезапустить Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Нажмите <kbd>CTRL+R</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS) на клавиатуре или перезапустите Discord вручную.
 
 ### Проверьте, запущен ли на вашем компьютере антивирус или брандмауэр
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Иногда антивирусные программы и брандмауэры блокируют приложения, которые создают или размещают серверы или просто подключаются к интернету. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Отключите ваши аддоны
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Disable all your addons and see if it works. Если да, попробуйте включить по очереди свои дополнения и сообщите нам, какое дополнение сломало PreMiD.
 
 ### Перезагрузите компьютер
 I hope you know how to restart a computer.
