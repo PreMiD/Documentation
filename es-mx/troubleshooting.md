@@ -37,20 +37,20 @@ PreMiD **no** funciona en la versión web de Discord, debes descargar la aplicac
 Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### ¿Estás usando una presence con configuraciones?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Muchas presences (Incluyendo `Twitch` y `SoundCloud`) son afectadas por un problema de la extensión. Este error causa que la extensión no agarre los valores predeterminados de las configuraciones apropiadamente.
 
 To solve this, all you have to do is toggle the topmost setting:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Reinicia tu navegador
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd> + <kbd>F4</kbd> (Windows) o <kbd>CMD</kbd> + <kbd>Q</kbd> (MacOS) también funciona. (Tienes que iniciar el navegador nuevamente, obvio.)
 
 ### Reinicia PreMiD (Aplicación)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Luego tienes que reiniciar PreMiD.
 
 ### Recarga/Reinicia Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Presiona <kbd>Ctrl + R</kbd> (Windows) o <kbd>CMD + R</kbd> (MacOS) en tu teclado o reinicia Discord manualmente.
 
 ### Comprueba si tienes antivirus o firewall ejecutándose en el ordenador
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
