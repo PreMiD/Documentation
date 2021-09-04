@@ -39,7 +39,7 @@ Really important. Discord RPC will not work if you run Discord as an administrat
 ### Utilisez-vous une presence avec des paramètres ?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-To solve this, all you have to do is toggle the topmost setting:
+Pour résoudre ce problème, il vous suffit d'activer/désactiver le paramètre le plus haut :
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Redémarrez votre navigateur
