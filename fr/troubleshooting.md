@@ -55,7 +55,7 @@ Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard o
 ### Vérifiez si vous avez un antivirus ou un pare-feu en cours d'exécution sur votre ordinateur
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
-### Désactiver vos extensions
+### Désactivez vos extensions
 Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Redémarrez votre ordinateur
