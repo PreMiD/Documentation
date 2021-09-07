@@ -34,12 +34,12 @@ PreMiD **no** funciona en la versión web de Discord, debes descargar la aplicac
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Asegúrate de que Discord NO se esté ejecutando como administrador
-Muy importante. Discord RPC will not work if you run Discord as an administrator.
+Muy importante. Discord RPC no funcionará si ejecutas Discord como administrador.
 
 ### ¿Estás usando una presence con configuraciones?
 Muchas presences (Incluyendo `Twitch` y `SoundCloud`) son afectadas por un problema de la extensión. Este error causa que la extensión no agarre los valores predeterminados de las configuraciones apropiadamente.
 
-To solve this, all you have to do is toggle the topmost setting:
+Para resolver esto lo único que debes hacer es desactivar y activar nuevamente la configuración de la parte superior:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Reinicia tu navegador
@@ -53,19 +53,19 @@ Luego tienes que reiniciar PreMiD.
 Presiona <kbd>Ctrl + R</kbd> (Windows) o <kbd>CMD + R</kbd> (MacOS) en tu teclado o reinicia Discord manualmente.
 
 ### Comprueba si tienes antivirus o firewall ejecutándose en el ordenador
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+A veces los antivirus o cortafuegos pueden bloquear aplicaciones que están creando/alojando servidores o que se están conectando a internet. Utilizamos un servidor local para recibir y pasar los datos entre la aplicación y la extensión, por lo tanto no podrás utilizar PreMiD si bloqueas la habilidad de pasar datos entre ellos.
 
 ### Deshabilita tus complementos
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Deshabilita todos tus complementos y verifica si funciona. Si es así , ve habilitando los complementos uno por uno e indícanos cuál es el que causa la incompatibilidad con PreMiD.
 
 ### Reiniciar tu computadora
-I hope you know how to restart a computer.
+Espero que sepa cómo reiniciar una computadora.
 
 ### Reinstalando PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+A veces hay algún problema con los archivos... Los tutoriales para la instalación se pueden encontrar [aquí](/install/).
 
 ### Eliminación manual
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Escribe `%appdata%` y elimina la carpeta `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee detectó a PreMiD como un virus (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
@@ -86,7 +86,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. Ahora McAfee debe ignorar nuestro archivo, sólo tienes que abrir nuestra aplicación.
 
 ### ¡Estado de PreMiD bugeado en discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+No te preocupes. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
 
 <a name="linux"></a>
 
