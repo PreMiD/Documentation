@@ -68,7 +68,7 @@ A veces hay algún problema con los archivos... Los tutoriales para la instalaci
 Windows: Escribe `%appdata%` y elimina la carpeta `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee detectó a PreMiD como un virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Esto es un falso positivo de McAfee y les hemos informado del problema, por ahora puedes excluir a PreMiD del escaneo haciendo lo siguiente:
 
 > Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
 > 
@@ -86,7 +86,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. Ahora McAfee debe ignorar nuestro archivo, sólo tienes que abrir nuestra aplicación.
 
 ### ¡Estado de PreMiD bugeado en discord!
-No te preocupes. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+No te preocupes. Presiona <kbd>CTRL+R</kbd> (en Windows) o <kbd>CMD+R</kbd> (en MacOS) en tu teclado mientras estás en Discord para recargarlo.
 
 <a name="linux"></a>
 
@@ -130,4 +130,4 @@ If you get this error, it means that your account doesn't have Administrator per
 4. Vuelve a abrir el instalador.
 
 # Esto no ha resuelto mi problema
-Please open a ticket in [#support](https://discord.premid.app/).
+Por favor abre un ticket en [#support](https://discord.premid.app/).
