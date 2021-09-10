@@ -28,7 +28,7 @@ Terdapat tiga properti yang tersedia untuk kelas `Presence`.
 
 #### `clientId`
 
-Properti ini diperlukan agar presencemu bekerja, karena properti ini menggunakan id aplikasimu untuk menampilkan logo dan asetnya. You can get it on your [applications page](https://discordapp.com/developers/applications).
+Properti ini diperlukan agar presencemu bekerja, karena properti ini menggunakan id aplikasimu untuk menampilkan logo dan asetnya. Kamu bisa mendapatkannya di [halaman aplikasi kamu](https://discordapp.com/developers/applications).
 
 #### `injectOnComplete` - *Sudah tidak digunakan kembali sejak 2.2.4*
 
