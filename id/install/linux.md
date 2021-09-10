@@ -86,7 +86,7 @@ Terimakasih untuk:
 
 - @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (dan beberapa orang yang aku lupa namanya) telah memberikan masukan pada rilisan nightly.
 - @apriluwu untuk mengurus build Gentoo
-- @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
+- @SlimShadyIAm dan naka yang sebelumnya melakukan perawatan untuk packagess pada Arch User Repository
 - Komunitas Elektron untuk berbagai paket lainnya
 - Siapapun yang pernah berkontribusi untuk proyek ini dengan cara apapun.
 
