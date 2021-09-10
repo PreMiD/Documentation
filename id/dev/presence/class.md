@@ -10,9 +10,9 @@ dateCreated: 2021-02-21T21:13:14.449Z
 
 # Kelas Presence
 
-## Introduction
+## Pendahuluan
 
-The `Presence` class is very useful as it has basic methods that we need for creating a presence.
+Kelas `Presence` sangat berguna karena memiliki metode dasar yang diperlukan untuk membuat presence.
 
 Saat Anda membuat kelas, Anda harus menentukan properti `clientId`.
 
@@ -24,7 +24,7 @@ const presence = new Presence({
 
 ### Properti
 
-There are three properties available for `Presence` class.
+Terdapat tiga properti yang tersedia untuk kelas `Presence`.
 
 #### `clientId`
 
