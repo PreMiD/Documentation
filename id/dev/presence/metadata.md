@@ -214,22 +214,22 @@ Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Lihat https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "TUNJUKKAN JUDUL",
+    "icon": "IKON FONTAWESOME", //Contoh"fas fa-info"
+    "value": true //Nilai Boolean akan membuatnya menjadi tombol nyala/mati dengan nilai ini sebagai nilai default
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Jika pengaturan lain sama dengan nilai ini (true/false/0/1/etc.) maka tunjukkan tombol ini
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
+    "title": "TUNJUKKAN JUDUL",
+    "icon": "IKON FONTAWESOME",
+    "value": "\"%song%\" by %artist%", //Memasukkan string akan membuat pengaturan menjadi pengaturan input, dan memperbolehkan penggunaan input custom.
     "placeholder": "pakai %song% atau %artist%" //Input kosong akan terlihat abu-abu
   },
   {
@@ -250,7 +250,7 @@ Pengaturan `multiLanguage` dapat digunakan agar pengguna dapat memilih bahasa ya
 
 #### Penyetelan
 
-The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
+Pengaturan `multiLanguage` adalah kasus yang spesial, tidak dibutuhkan `title` atau `icon` atau `value` ataupun `values` seperti pengaturan lainnya tapi membutuhkan beberapa konfigurasi!
 
 Key `multiLanguage` bisa di ubah menjadi:
 
