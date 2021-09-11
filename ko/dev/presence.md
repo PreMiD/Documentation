@@ -34,7 +34,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 ## Presence 복사하기
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
+2. 원하는 폴더를 선택하세요.
 3. 이것을 당신의 코드 편집기로 실행하세요.
 
 ## Creating folders and files
@@ -401,4 +401,4 @@ The website you are developing on is automatically reloading every time you save
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [TypeScript 구성](/dev/presence/tsconfig ""){.links-list}
