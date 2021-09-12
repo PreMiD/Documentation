@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 > 
 > {.is-warning}
 
-المدرجة في هذه الصفحة:
+المدرج في هذه الصفحة:
 1. [استكشاف الأخطاء وإصلاحها بشكل عام](https://docs.premid.app/troubleshooting#general)
 2. [استكشاف أخطاء لينكس وإصلاحها](https://docs.premid.app/troubleshooting#linux)
 3. [استكشاف أخطاء MacOS وإصلاحها](https://docs.premid.app/troubleshooting#macos)
