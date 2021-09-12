@@ -27,7 +27,7 @@ const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // Will console log the details of the PresenceData
 ```
 
-## الطرق
+## الأساليب
 
 ### `addSlide(String, PresenceData, Number)`
 
