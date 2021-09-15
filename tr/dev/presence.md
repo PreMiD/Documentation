@@ -382,7 +382,7 @@ Open a console in your folder and type `tsc -w` to compile the `presence.ts` int
 
 ## Anında yenileme
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Servisinizin çalıştığı sayfalar, yerel dosyalarınızda yaptığınız herhangi bir değişiklikte otomatik olarak yenilenecektir.
 
 ## Hata ayıklama
 

@@ -30,11 +30,11 @@ const presence = new Presence({
 
 Bu özellik, oynuyor etkinliğinizin çalışmasını sağlamak için gereklidir, çünkü logosunu ve ID'nizi görüntülemek için uygulama kimliğinizi kullanır. Bunlardan bir tane alabilmek için [uygulamalar sayfası](https://discordapp.com/developers/applications)ndan servisiniz için bir uygulama oluşturmalısınız.
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *2.2.4 sürümünde kullanımdan kaldırıldı*
 
 `injectOnComplete` ayarını `true` olarak ayarlarken, `presence.ts` ve `iframe.ts` için ilk `UpdateData` olayı, sadece sayfa tamamen yüklendiğinde çalıştırılacaktır.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *2.2.4 sürümünde kullanımdan kaldırıldı*
 
 `appMode` ayarını `true` olarak ayarladıktan sonra, boş bir `PresenceData` verisi gönderildiğinde, uygulama hiçbir şey yerine uygulamanızın ismini ve resmini gösterecektir.
 
@@ -175,7 +175,7 @@ console.log(setting); // Seçeneğin değerinin çıktısını verecektir
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Verilen ayarı gizler.
 
 ```typescript
 presence.hideSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
@@ -359,7 +359,7 @@ const presenceData: PresenceData = {
 
 ## Olaylar
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Eventler belirli zamanlarda bilgi gönderir ve birçok şeyi kontrol edebilmenizi sağlar. Bir event'i dinleyebilmek için `on` metodunu kullanabilirsiniz.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -375,4 +375,4 @@ iFrame'den bilgi geldiğinde bu event bilgi iletecektir.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+iFrame'den bilgi geldiğinde bu olay bilgi iletecektir.

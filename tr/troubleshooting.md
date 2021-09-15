@@ -65,7 +65,7 @@ I hope you know how to restart a computer.
 Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### Manuel kaldırma
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Dosya Gezginine `%appdata%` adresini yazın ve `PreMiD` klasörünü silin. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
 ### McAfee PreMiD'i virüs olarak tespit etti (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
@@ -81,12 +81,12 @@ This is a false positive from McAfee and we have reported the issue to them, for
 5. Geri yüklendikten sonra "Karantinaya Alınmış Öğeler" penceresini kapatabilir ve sağ üstteki ayarlar simgesine tekrar basabilirsiniz.
 6. "Gerçek Zamanlı Tarama"ya tıklayın (üstten üçüncü seçenek).
 7. Genişletin ve "Dosya ekle"ye tıklayın.
-8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Dosya Gezgini adres çubuğuna "%appdata%" yazın ve Enter tuşuna basın. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. "PreMiD" klasörünü açın ve "PreMiD.exe" dosyasını seçin ve aç'a tıklayın. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee şimdi dosyamızı göz ardı etmeli, uygulamayı çalıştırın ve kullanmaya başlayın.
 
 ### PreMiD durumu Discord'da yanlış görünüyor!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Endişelenmeyin. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
 
 <a name="linux"></a>
 
@@ -99,10 +99,10 @@ Arch Linux based distros should use AUR (Arch User Repository) package that is n
 <em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
 
 ### Port ilişkilendirme
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. Bu, Uzantı ve Uygulamanın iletişim kurması için gereklidir. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
 
 ### PreMiD AppImage ile kurulduğunda oturum açarken başlamıyor
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
+As we stated in our **Linux repository**, AppImage can't be launched at login. Aşağıdaki adımları uygulayarak otomatik başlatmaya manuel olarak ekleyebilirsiniz:
 1. <code>/etc</code> klasöründe <strong x-id="1">rc.local</strong> adında bir dosya oluşturun.
 2. Bu dosyayı istediğiniz düzenleyici ile açıp bazı değişiklikler yaparak aşağıdaki kodu yapıştırın:
 ```bash
@@ -123,11 +123,11 @@ exit 0
 ### Klasör oluşturmada hata
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+Eğer bu hatayı alıyorsanız, hesabınızın Yönetici izinlerine sahip olmadığını ve şu adımları uygulayarak manuel bir şekilde klasör oluşturmanızın gerektiği anlamına gelir:
 1. Finder'ı açın ve **Uygulamalar** klasörünü bulun.
 2. Boş bir yere sağ tıklayın be **Klasör oluştur**'a tıklayın.
 3. Bu klasöre `PreMiD` adını verin (küçük büyük harfe dikkat edin).
 4. Yükleyiciyi yeniden başlatın.
 
 # Bunların hiçbiri sorununuzu çözmediyse
-Please open a ticket in [#support](https://discord.premid.app/).
+Lütfen [#support](https://discord.premid.app/) kanalından bir destek talebi açın.
