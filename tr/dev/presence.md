@@ -321,21 +321,21 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Bunu `presence.ts` dosyanıza kopyalayıp değerleri düzenleyebilirsiniz. Değerleri ayarlama işlemi updateData eventi içinde gerçekleşir.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Örnekler için 1337x veya 9GAG gibi servislerin kodlarını incelemenizi öneririz. `Presence` sınıfı hakkında daha fazla bilgi almak için [buradaki](/dev/presence/class) sayfayı ziyaret edebilirsiniz.
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## İstediğiniz veriyi alamıyor musunuz?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Bir çok site [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) kullanır. Bu HTML etiketleri videolar gibi bir çok kaynak bulundurabilir. Ancak her zaman aynı sonucu vermez. Bazıları gizlidir veya aktif olarak kullanılmaz. Check if you can extract the information you need without them before you do unnecessary work.
 
 1. Tarayıcınızın konsolundan kontrol edin (**Elements** sekmesinde olduğunuza emin olun).
 2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Konsoldan devam etmek için konsola `document.querySelectorAll("iframe")` yazabilir ve sayfadaki iframe kaynaklarını görebilirsiniz.
 
-If you find that your data is in a iFrame you need to do the following:
+İstediğiniz verilerin bir iFrame'de olduğunu bulursanız aşağıdakileri yapmanız gerekir:
 
 1. Bir `iframe.ts` dosyası oluşturun.
 2. "metadata" dosyasında `iFrame` kısmını `true` olarak ayarlayın.
