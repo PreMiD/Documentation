@@ -32,15 +32,15 @@ Servis geliştirmenin genel kuralları aşağıdaki gibidir:
 - Tarayıcılara yerleşik sayfalar için yapılan servislere izin verilmemektedir (örneğin, Chrome Web Mağazası, `chrome://`, `about:` sayfaları gibi). Bu sayfalara kod enjekte edebilmek gelişmiş bir ayar aktifleştirmeyi gerektirdiği ve tarayıcılara zarar verebileceğinden dolayı **yasaktır**.
 - Yalnızca tek bir sayfa için desteğe sahip varlıklara izin **verilmeyecektir**, çünkü diğer sayfalar için bozuk görünebilirler (örneğin ana sayfa), politika ve iletişim sayfaları (sık kullanılmayan içerik) veya sitelerin diğer ilgisiz içerikleri. (ör. viki sayfaları)
 - Çevrimiçi radyoların servislerinin eklenebilmesi için en az haftalık 100 ve aktif 15 dinleyicisi olmalıdır.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- Servislerin değişkenleri almak için kendi fonksiyonuyla JS kodu çalıştırmasına izin verilmez. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
+- Discord Botları/Sunucu Listeleri için servis yaparken ekstra gereksinimler vardır:
+  - Alan adı en az **6 aylık** olmalıdır.
   - Gün içinde farklı ziyaretçi sayısı:
     - 6 aylık alan adları için: **günde 20,000 farklı ziyaretçi**.
     - 12+ aylık alan adları için: **günde 45,000 farklı ziyaretçi**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
+  - Site `.xyz`, `.club` gibi ucuz alan adlarında olamaz.
+  - Site çok iyi bir kaliteye, tasarıma, vs. sahip olmalıdır.
 - Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
 
@@ -244,10 +244,10 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
 - presenceData object'inin içerisindeki kısımları ayarladıktan sonra undefined olarak **ayarlamayın**, bunun yerine `delete` yöntemini kullanın. (örneğin, `data.startTimestamp = undefined` yerine `delete data.startTimestamp` kullanın)
 - Verilen bir sitenin işlevselliğini değiştirecek servisler yazmanıza izin **verilmez**. Bu DOM elementlerinin eklenmesi, silinmesi, ya da değiştirilmesini de kapsar.
 - Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+  - Ana sayfaya yönlendirmeler yasaktır.
+  - Bu özelliği kullanarak site reklamları yapmak yasaktır.
+  - Diğer bölümlerde ek bilgi göstermezken bunları ayarlamak mümkün değildir.
+  - Direkt olarak ses/görüntü kaynağına yönlendirmek yasaktır.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
@@ -307,12 +307,12 @@ Bir pull request atmadan önce bilmeniz gereken şeyler:
 
 ## `Kontroller`
 
-![Example of checks](https://i.imgur.com/T8agbnB.png)
+![Örnek Kontroller](https://i.imgur.com/T8agbnB.png)
 
 Şu anda, bir servis, 2 adet otomatik doğrulama aşamasından geçmektedir. Bu doğrulamalar, inceleme ekibimizin kodunuzun çalışmaya hazır olup olmadığını anlamasını kolaylaştırır.
 
-- `Codacy` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
-- `CodeFactor` is a bot that checks for code quality. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**.
+- `Codacy` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**. *Warning: Codacy doesn't always give you errors. Lütfen bunun yerine CodeFactor uyarılarına bakın.*
+- `CodeFactor` kod kalitesini kontrol eden bir otomattır. Hata almanız durumunda, aldığınız hatayı düzeltmekle **yükümlüsünüz**.
 - `Schmea Validation` ise `metadata.json` dosyanızı tarayıp, hatalı veya eksik veriler olup olmadığını kontrol etmek için vardır. Eğer burada da bir hata ile karşılaşırsanız, o hatayı da **düzeltmelisiniz**. `metadata.json` dosyanıza bir şema değeri eklemek, kodlama sırasında (eğer destekliyorsa) editörünüzün size hatalarını belirtmesini sağlar.
 
 ## `Ek Kurallar`
