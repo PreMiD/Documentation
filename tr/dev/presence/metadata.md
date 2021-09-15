@@ -202,7 +202,7 @@ Regex hakkında daha fazla bilgi almak istiyorsanız aşağıdaki sitelere göz 
 
 ## Servis Dilleri
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Desteklenen bilgileri [buradaki](https://api.premid.app/v2/langFile/list) bağlantı üzerinde bulabilirsiniz. To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Desteklenen bilgileri [buradaki](https://api.premid.app/v2/langFile/list) bağlantı üzerinde bulabilirsiniz. Servisi daha da özelleştirmek için kullanıcıların servisin dilini seçmelerine izin verebilirsiniz. Daha fazlası için [`multiLanguage`](#multilanguage) ayarına bakın.
 
 ## Servis ayarları
 İnteraktif ayarlar oluşturarak kullanıcıların servisinizi düzenlemesini sağlayın!
@@ -272,13 +272,13 @@ Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlay
 
 Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
 
-The stringName is a 1 word identifier of the message.
+stringName tek kelime olacak şekilde mesajı anlatan bir anahtardır.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+`Object` toplamda iki özelliğe sahiptir; `message` ve `description`. `message` çevrilmesi gereken yazıdır. `description` çevirmenlerin anlamasında yardımcı olacak mesajınızdır.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Not:** Aynı çeviriyi birden fazla kere eklemeyin. (Buna `general.json` dosyasındakiler dahildir, fakat diğer dosyalardakiler dahil değildir.)
 
-Visualization of the file:
+Dosyanın örnek bir görüntüsü:
 
 ```typescript
 {
@@ -298,7 +298,7 @@ After you have fully made the file with strings you can create a Pull Request on
 #### Varsayılan anahtarlar
 The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Note:** These are in no way changeable.
+**Not:** Bunlar hiçbir şekilde değiştirilemez.
 
 ### Metodlar
 
