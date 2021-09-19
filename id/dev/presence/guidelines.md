@@ -317,29 +317,29 @@ Saat ini, sebuah presence melewati 3 tahapan pemeriksaan. Pemeriksaan ini memban
 
 ## `Peraturan tambahan`
 
-- **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
+- **Selalu** pastikan untuk memulai presence dengan folder yang sesuai, jika namanya dimulai dengan huruf latin _apapun_ maka harus harus sesuai urutan abjad ( misal, `D/dアニメストア` atau `G/Google`). Karakter Unicode/non-Latin lainnya **harus** berada dalam folder `#` (contoh, `#/巴哈姆特`) dan nomor berada dalam folder `0-9` (contoh, `0-9/4anime`).
 
 Setelah memenuhi semua peraturan dengan review dan pemeriksaan yang sesuai, presence anda akan di merge dengan toko.
 
-# Suggestions
+# Saran
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
+Jika kamu memiliki beberapa saran tentang pedoman kami, kamu harus menghubungi kami @ [Discord server PreMiD](https://discord.premid.app) dan kita akan memeriksanya!
 
 # Kontribusi
 
-`Revision 3` of the guidelines was written and was contributed to by the following individuals:
+`Revisi 3` pedoman ini ditulis dan dikontribusikan oleh beberapa individu berikut:
 
 <div>
 <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 2` of the guidelines was written and was contributed to by the following individuals:
+`Revisi 2` pedoman ini ditulis dan dikontribusikan oleh beberapa individu berikut:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 1` was maintained by the following individuals:
+`Revisi 1` diurus oleh beberapa individu berikut:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
