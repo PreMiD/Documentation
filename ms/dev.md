@@ -39,4 +39,4 @@ Sila kekalkan struktur. Kami tidak mahu mencelarukan projek kami. Fail yang berc
 Buka sahaja Permintaan Tarikan (Pull Request) di salah sebuah [repositori GitHub](https://github.com/PreMiD/) kami yang anda ingin sumbangkan. Kami akan menjaga permata anda, jangan risau. Jika ini kali pertama anda lakukan permintaan tarikan, sila lihat [tutorial](https://help.github.com/en/articles/creating-a-pull-request) dalam bahasa Inggeris ini dahulu.
 
 # Mendapatkan kelulusan
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Sila tunggu dengan sabar sementara [Pengulas](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) kami menyemak Permintaan Tarikan anda.
