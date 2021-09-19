@@ -86,13 +86,13 @@ Ini adalah pendeteksian palsu dari McAfee dan kami telah melaporkan masalah ini 
 10. McAfee sekarang seharusnya sudah mengabaikan file kita, luncurkan saja aplikasi kita dan seharusnya baik-baik saja.
 
 ### Status PreMiD bermasalah di Discord!
-Jangan khawatir. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Jangan khawatir. Tekan tombol <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) saat berada di Discord kamu untuk memuat ulang.
 
 <a name="linux"></a>
 
 # Troubleshooting Linux
 ### Distro berbasis Ubuntu/Debian
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. Jika AppImage tidak bisa bekerja, kamu bisa memeriksa package lain kami di **[link ini](https://packagecloud.io/premid/linux)**.
+Jika kamu mengunduh Discord melalui Snapcraft, RPC tidak bisa bekerja. Kamu harus menghapus instalan versi Snapcraft dengan menggunakan `sudo snap remove discord` di terminal, download **[Discord Linux build](https://discordapp.com/api/download?platform=linux)** (**[ataupun Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), lalu navigasikan ke direktori tempat kamu mengunduh Discord (biasanya `$HOME/Downloads`), lalu instal paket menggunakan `sudo dpkg -i discord-*.deb`. Jika AppImage tidak bisa bekerja, kamu bisa memeriksa package lain kami di **[link ini](https://packagecloud.io/premid/linux)**.
 
 ### Distro berbasis Arch Linux
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
