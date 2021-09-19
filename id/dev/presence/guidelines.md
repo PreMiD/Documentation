@@ -236,13 +236,13 @@ Berikut daftar rules yang harus diikuti saat menulis sebuah file `presence.ts`:
 
 - **Selalu** menyatakan instance baru dari class `Presence` sebelum variabel lainnya untuk menghindari masalah yang mungkin terjadi; hal ini tidak diharuskan pada desain jadi bisa dihapus kedepannya.
 - **Jangan pernah** menggunakan custom function jika [ native variant tersedia](https://docs.premid.app/dev/presence#files-explained); hal ini memastikan perbaikan pada tingkat ekstensi dapat berpengaruh pada presence kamu juga. Kamu bebas dalam menggunakan apapun yang dibutuhkan jika tidak menemukannya tercantum di docs.
-- It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
+- **dilarang** mengkodekan presence situs tanpa menambahkan dukungan di bahasa utamanya (misalnya, presence YouTube yang dikodekan dengan dukungan hanya untuk bahasa Portugis dan Jepang, tetapi bukan bahasa Inggris itu sendiri.)
 - Bidang `smallImageKey` dan `smallImageText` dimaksudkan untuk memberi konteks tambahan/konteks kedua (seperti `berputar/dijeda` untuk situs video, `menjelajahi` untuk situs biasa, dan hal lain) bukan untuk mempromosikan profil Discord atau apapun yang tidak berhubungan dengan PreMiD.
 - Kamu **tidak** diperbolehkan mengakses `localStorage`.
 - Saat mengakses cookie untuk data tersimpan, harap memberi prefix pada key dengan `PMD_`.
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
-- You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
+- Kamu hanya boleh membuat permintaan HTTP/HTTPS ke `premid.app` atau API dari website presence. Jika kamu menggunakan domain eksternal, kamu wajib untuk memberikan penjelasan kenapa hal itu dibutuhkan. API yang diizinkan untuk membuat request adalah [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+- Do **Jangan** atur fields object di presenceData ke undefined setelah di deklarasikan, gunakan `delete` sebagai kata kuncinya. (untuk contoh, gunakan `delete data.startTimestamp` dari pada `data.startTimestamp = undefined`)
+- Kamu **tidak** diperbolehkan untuk menulis presence yang mengubah fungsi dari website yang dituju. This includes the addition, deletion, or modification of DOM elements.
 - Presences that use buttons should follow extra requirements:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
