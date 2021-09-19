@@ -39,4 +39,4 @@ Please keep the structure. We do not want to disorganize our project. Chaotic fi
 Just open a Pull Request on one of our [GitHub repositories](https://github.com/PreMiD/) you want to contribute to. We will take care of your baby, don't worry. If this is your first time making a pull request, take a look at this [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Getting approved
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Espera que um dos nossos [revisores](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) revejam o teu pull request.
