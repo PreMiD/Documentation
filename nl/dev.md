@@ -39,4 +39,4 @@ Houd de structuur. Wij willen ons project niet anders organiseren. Chaotische be
 Open gewoon een pull-aanvraag op een van onze [GitHub repositories](https://github.com/PreMiD/) waaraan u wilt bijdragen. We zullen voor je baby zorgen, maak je geen zorgen. Als dit de eerste keer is dat je een pull-verzoek doet, neem dan een kijkje op deze [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Goedgekeurd worden
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Wacht alsjeblieft terwijl onze [controleurs](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) je pullrequest controleren.
