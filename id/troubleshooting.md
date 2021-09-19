@@ -95,14 +95,14 @@ Jangan khawatir. Tekan tombol <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> 
 Jika kamu mengunduh Discord melalui Snapcraft, RPC tidak bisa bekerja. Kamu harus menghapus instalan versi Snapcraft dengan menggunakan `sudo snap remove discord` di terminal, download **[Discord Linux build](https://discordapp.com/api/download?platform=linux)** (**[ataupun Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), lalu navigasikan ke direktori tempat kamu mengunduh Discord (biasanya `$HOME/Downloads`), lalu instal paket menggunakan `sudo dpkg -i discord-*.deb`. Jika AppImage tidak bisa bekerja, kamu bisa memeriksa package lain kami di **[link ini](https://packagecloud.io/premid/linux)**.
 
 ### Distro berbasis Arch Linux
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Distro berbasis Arch Linux sebaiknya menggunakan paket AUR (Arch User Repository) yang bernama <code>premid</code> atau <code>premid-git</code> (<em x-id="3"> PERINGATAN: Repository ini membangun premid dari kode sumber kami.</em>). Jika kamu tidak ingin memasang AUR manager (yay dll.), kamu dapat memeriksa AppImage kami yang dapat diunduh dari <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong> kami.
+<em x-id="3">Peringatan: paket pada repository <strong x-id="1">AUR</strong> tidak dikelola oleh kami (sebagai organisasi PreMiD), tapi oleh orang lain.</em>
 
 ### Port binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+Kamu harus tahu bahwa <strong x-id="1">PreMiD</strong> terikat pada port <strong x-id="1">3020</strong>. Ini dibutuhkan agar Ekstensi dan Aplikasi dapat berkomunikasi. Jika <strong x-id="1">PreMiD</strong> menampilkan error tentang port tersebut, kamu sebaiknya memeriksa jika ada sesuatu yang terikat pada port 3020 dengan menjalankan <code>sudo lsof -i:3020</code> atau <code>sudo netstat -tnlp | grep :3020</code> pada terminalmu. Jika suatu proses terikat pada port tersebut kamu harus memastikan port tersebut kosong dan coba menjalankan <code>PreMiD</code> lagi.
 
 ### AppImage PreMiD tidak berjalan saat login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
+Seperti yang telah kami tetapkan pada **Linux repository**, AppImage tidak bisa dijalankan saat login. Kamu dapat menambahkan autostart dengan melakukan langkah berikut:
 1. Buat file bernama <strong x-id="1">rc.local</strong> pada direktori <code>/etc</code>.
 2. Buka file tersebut menggunakan editor yang kamu sukai dan tempel kode yang telah diberikan dengan mengubah beberapa hal:
 ```bash
@@ -123,11 +123,11 @@ exit 0
 ### Error membuat direktori
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+Jika kamu mendapatkan error ini, itu berarti akunmu tidak memiliki akses Administrator dan kamu harus membuat folder secara manual dengan mengikuti langkah berikut:
 1. Buka finder dan buka folder **Applications**.
 2. Klik kanan pada bagian kosong dan klik **Create folder**.
 3. Pada folder tersebut masukkan nama `PreMiD` (perhatikan huruf kapital).
 4. Buka installer lagi.
 
 # Masalahku belum terselesaikan
-Please open a ticket in [#support](https://discord.premid.app/).
+Harap membuka tiket pada [#support](https://discord.premid.app/).
