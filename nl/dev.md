@@ -39,4 +39,4 @@ Houd de structuur. Wij willen ons project niet anders organiseren. Chaotische be
 Open gewoon een pull-aanvraag op een van onze [GitHub repositories](https://github.com/PreMiD/) waaraan u wilt bijdragen. We zullen voor je baby zorgen, maak je geen zorgen. Als dit de eerste keer is dat je een pull-verzoek doet, neem dan een kijkje op deze [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Goedgekeurd worden
-Ons hoofddoel is om met gebruikers te werken, dus probeer zo vriendelijk, respectvol en informatief mogelijk te zijn. Ping gewoon een ontwikkelaar in onze [Discord server](https://discord.gg/WvfVZ8T) om die beoordeling op GitHub te krijgen of niet. Afhankelijk van de code kwaliteit, uiterlijk van assets en reguliere functionaliteit.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.

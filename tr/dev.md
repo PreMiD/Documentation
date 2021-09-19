@@ -39,4 +39,4 @@ Lütfen temeli iyi atın. Projemizde karışıklıklara neden olmak istemiyoruz.
 Katkıda bulunmak istediğiniz [GitHub depomuza](https://github.com/PreMiD/) bir "Pull Request" atın. Geri kalanını biz halledeceğiz, merak etmeyin. Eğer daha önce bir "Pull Request" atmadıysanız [buradaki](https://help.github.com/en/articles/creating-a-pull-request) kılavuzu inceleyebilirsiniz.
 
 # Onaylanma aşaması
-Bizim için en büyük hedef, kullanıcılara karşı arkadaş canlısı, saygılı ve olabildiğince açıklayıcı bir şekilde yaklaşmak. İnceleme işlemini başlatmak için [Discord sunucumuzda](https://discord.gg/WvfVZ8T)n bir inceleme yetkilisini etiketleyin. İnceleme sonucu kodun kalitesine, görünüşüne ve işleyişine göre hesaplanacaktır.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.

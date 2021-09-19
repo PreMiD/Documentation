@@ -39,4 +39,4 @@ tags:
 ما عليك سوى فتح طلب سحب على أحد [ مستودعات GitHub ](https://github.com/PreMiD/) التي ترغب في المساهمة بها. سنهتم بطفلك ، لا تقلق. إذا كانت هذه هي المرة الأولى التي تقوم فيها بإجراء طلب سحب ، فقم بإلقاء نظرة على [ البرنامج التعليمي ](https://help.github.com/en/articles/creating-a-pull-request) هذا.
 
 # الحصول على الموافقة
-هدفنا الرئيسي هو العمل مع المستخدمين ، لذا حاول أن تكون ودودًا ومحترمًا ومفيدًا قدر الإمكان. ما عليك سوى إجراء اختبار ping لمطور في [ خادم Discord ](https://discord.gg/WvfVZ8T) للحصول على هذا الاستعراض على GitHub ، أو لا. تعتمد علي جودة الكود, و مظهر اصولها و وعملها بشكل طبيعي.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
