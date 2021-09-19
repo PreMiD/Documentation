@@ -38,5 +38,4 @@ Just open a Pull Request on one of our [GitHub repositories](https://github.com/
 If this is your first time making a pull request, take a look at this [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Getting approved
-Our main goal is to work with users so try to be as much friendly, respectful and informative as possible.
-Just ping a Developer in our [Discord server](https://discord.gg/WvfVZ8T) to get that review on GitHub, or not. Depends on the code quality, appearance of assets and regular functionality.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
