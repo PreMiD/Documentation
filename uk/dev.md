@@ -39,4 +39,4 @@ tags:
 Просто відкрийте запит на злиття(Pull Request) в одному з наших [репозиторіїв](https://github.com/PreMiD/) , до яких ви хочете зробити внесок. Ми потурбуємося про твою дитину, не хвилюйтеся. Якщо це твій перший запит на злиття, погляньте на цей [підручник](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Отримання затвердження
-Наша головна мета — працювати з користувачами так, щоб намагатися бути доброзичливими, шанобливими і інформативними. Просто напишіть розробнику на нашому [сервері Discord](https://discord.gg/WvfVZ8T), щоб отримати огляд коду на GitHub. Залежить від якості коду, цінності і функціональності.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
