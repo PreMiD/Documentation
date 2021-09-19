@@ -39,4 +39,4 @@ Por favor, mantén la estructura. No queremos desordenar nuestro proyecto. Los a
 Simplemente abre un Pull Request en uno de nuestros [repositorios de GitHub](https://github.com/PreMiD/) en los que deseas contribuir. Nosotros nos encargaremos de tu bebé, no te preocupes. Si esta es la primera vez que haces un Pull Request, echa un vistazo a este [tutorial](https://help.github.com/es/articles/creating-a-pull-request).
 
 # Obteniendo la aprobación
-Nuestro objetivo principal es trabajar con los usuarios para tratar de ser muy amistosos, respetuosos e informativos en la medida de lo posible. Simplemente mencionando a un desarrollador en nuestro [servidor de Discord](https://discord.gg/WvfVZ8T) para obtener aprobación en GitHub, o no. Depende de la calidad del código, la apariencia de los activos y la funcionalidad regular. Depende de la calidad del código, la apariencia de los activos y la funcionalidad regular.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
