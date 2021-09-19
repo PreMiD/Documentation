@@ -39,4 +39,4 @@ Harap jaga strukturnya. Kami tidak ingin proyek kami berantakan. File berantakan
 Buka Pull Request pada salah satu [GitHub repositories](https://github.com/PreMiD/) kami yang ingin kamu kontribusikan. Kami akan urus sisanya, jangan khawatir. Jika ini pertama kali kamu membuat pull request, lihatlah [tutorial](https://help.github.com/en/articles/creating-a-pull-request) ini.
 
 # Mendapatkan persetujuan
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Harap bersabar untuk menunggu [reviewer](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) kami untuk meninjau pull request kamu.
