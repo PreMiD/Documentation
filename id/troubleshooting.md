@@ -37,13 +37,13 @@ PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplika
 Sangat penting. Discord RPC tidak bisa bekerja jika kamu membuka Discord sebagai administrator.
 
 ### Apakah kamu menggunakan Presence dengan pengaturan?
-Banyak presence (termasuk `Twitch` dan `SoundCloud`) terpengaruh oleh masalah ekstensi. This issue causes the extension to not grab the default values of settings properly.
+Banyak presence (termasuk `Twitch` dan `SoundCloud`) terpengaruh oleh masalah ekstensi. Masalah ini menyebabkan ekstensi tidak mendapat value default dari setting dengan benar.
 
-To solve this, all you have to do is toggle the topmost setting:
+Untuk memecahkan ini, kamu hanya butuh untuk menyalakan pilihan pengaturan paling atas:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Mulai ulang browser
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) juga bisa bekerja. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) juga bisa bekerja. (Kamu harus membuka kembali browsermu.)
 
 ### Memulai ulang PreMiD (Aplikasi)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
@@ -53,22 +53,22 @@ Kamu harus memulai ulang PreMiD setelah itu.
 Tekan <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) di keyboard kamu atau mulai ulang Discord dengan cara manual.
 
 ### Periksa jika antivirus atau firewall berjalan di komputermu
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Kadang program antivirus dan firewall juga memblokir akses aplikasi dalam pembuatan server atau hanya terhubung ke internet. Kita menggunakan server lokal untuk menerima dan meneruskan data antara aplikasi dan ekstensi kita, jadi jika kamu akan memblokir ability aplikasi untuk meneruskan data, kamu mungkin tidak akan bisa menggunakan PreMiD.
 
 ### Nonaktifkan addon
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Matikan semua addon dan lihat apakah bekerja. Jika iya, coba untuk menyalakan addon sesuai step satu persatu dan beri tahu kami addon mana yang merusak PreMiD.
 
 ### Mulai ulang komputermu
-I hope you know how to restart a computer.
+Kami harap kamu paham bagimana cara untuk memulai ulang komputer.
 
 ### Instal ulang PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Kadang juga terjadi sesuatu yang salah dengan file nya... Tutorial untuk penginstalan bisa kamu lihat di [sini](/install).
 
 ### Penghapusan manual
-Windows: Ketik `%appdata%` di file explorer dan hapus folder `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Ketik `%appdata%` di file explorer dan hapus folder `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` dan hapus folder `PreMiD`.
 
 ### McAfee mendeteksi PreMiD sebagai virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Ini adalah pendeteksian palsu dari McAfee dan kami telah melaporkan masalah ini kepada mereka, untuk saat ini kamu dapat menghapus PreMiD dari pengecekan dengan melakukan langkah-langkah berikut:
 
 > Jika kamu tidak merasa percaya diri mengikuti langkah-langkah ini, silakan buat tiket di [#support](https://discord.premid.app/) dan salah satu Agen Bantuan akan membantumu! 
 > 
