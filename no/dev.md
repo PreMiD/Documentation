@@ -39,4 +39,4 @@ Vennligst behold strukturen. Vi ønsker ikke å uorganisere prosjektet vårt. Ka
 Bare åpne en Pull forespørsel på en av våre [GitHub kodelagre](https://github.com/PreMiD/) du vil bidra med. Vi vil ta vare på babyen din, ikke bekymre deg. Hvis dette er første gang du foretar en pull forespørsel, ta en titt på denne [veiledningen](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Blir godkjent
-Vårt hovedmål er å samarbeide med brukerne, så prøv å være så vennlig, respektfull og informativt som mulig. Bare ping en utvikler i vår [Discord-server](https://discord.gg/WvfVZ8T) for å få det på GitHub, eller ikke. Avhenger av kodekvaliteten, utseendet på aktiva og vanlig funksjonalitet.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
