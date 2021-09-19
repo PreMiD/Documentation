@@ -39,4 +39,4 @@ tags:
 শুধু একটি পুল রিকোয়েস্ট খোলো আমাদের যেকোনো [গিটহাব রিপোজিটরিতে](https://github.com/PreMiD/) যেটাতে তুমি কন্ট্রিবিউট করতে চাও। আমরা সেটার খেয়াল রাখব, চিন্তা করবে না। এটা যদি হয় তোমার প্রথমবার পুল রিকোয়েস্ট তৈরি করা, দেখে নাও এই [টিউটোরিয়ালটি](https://help.github.com/en/articles/creating-a-pull-request)।
 
 # গ্রহণ করা
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+দয়া করে অপেক্ষা করো আমাদের [রিভিউয়ারদের](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) জন্য তোমার পুল রিকোয়েস্ট রিভিউ করার জন্যে।
