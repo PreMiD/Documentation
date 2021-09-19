@@ -39,4 +39,4 @@ Por favor, mantenha a estrutura. Não queremos desorganizar o nosso projeto. Arq
 Basta abrir um Pull Request em um dos nossos [repositórios GitHub](https://github.com/PreMiD/) nos quais você deseja contribuir. Vamos cuidar do seu bebê, não se preocupe. Se esta é sua primeira vez fazendo um pull request, dê uma olhada neste [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Seja aprovado
-Nosso objetivo principal é trabalhar com os usuários, então tente ser o mais amigável, respeitoso e informativo possível. Apenas ping um desenvolvedor no nosso [servidor do Discord](https://discord.gg/WvfVZ8T) para obter essa revisão no GitHub ou não. Depende da qualidade do código, da aparência dos assets e de funcionalidade regular.
+Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
