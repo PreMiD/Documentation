@@ -242,29 +242,29 @@ Berikut daftar rules yang harus diikuti saat menulis sebuah file `presence.ts`:
 - Saat mengakses cookie untuk data tersimpan, harap memberi prefix pada key dengan `PMD_`.
 - Kamu hanya boleh membuat permintaan HTTP/HTTPS ke `premid.app` atau API dari website presence. Jika kamu menggunakan domain eksternal, kamu wajib untuk memberikan penjelasan kenapa hal itu dibutuhkan. API yang diizinkan untuk membuat request adalah [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 - Do **Jangan** atur fields object di presenceData ke undefined setelah di deklarasikan, gunakan `delete` sebagai kata kuncinya. (untuk contoh, gunakan `delete data.startTimestamp` dari pada `data.startTimestamp = undefined`)
-- Kamu **tidak** diperbolehkan untuk menulis presence yang mengubah fungsi dari website yang dituju. This includes the addition, deletion, or modification of DOM elements.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- Kamu **tidak** diperbolehkan untuk menulis presence yang mengubah fungsi dari website yang dituju. Ini mencakup menambah, menghapus, atau mengubah DOM elements.
+- Presence yang menggunakan tombol harus mengikuti persyaratan tambahan:
+  - Dilarang melakukan redirect kembali ke halaman utama.
+  - Dilarang mempromosikan halaman web.
+  - Mereka tidak dapat menampilkan data tambahan saat kamu tidak dapat menampilkannya di field lain.
+  - Redirect langsung ke sumber audio/video dilarang.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **Jangan** menulis file `tsconfig.json` sendiri, gunakan yang telah disediakan [dokumentasi](https://docs.premid.app/en/dev/presence/tsconfig).
 
-## Modification
+## Modifikasi
 
 > Kamu **harus** mengubah versi di **metadata** menjadi lebih tinggi dari versi sebelumnya ketika membuat perubahan pada **presence.ts**,**iframe** atau **metadata**.
 
-In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
+Pada situasi tertentu, presence mungkin berperilaku aneh atau mungkin membutuhkan sedikit perubahan untuk meningkatkan kegunaannya. Berikut daftar aturan yang **harus** diikuti ketika mengubah presence.
 
-- You are **not** allowed to rewrite a presence or change its author. If the presence author was banned from the official server or hasn't made the required changes within a month, you may contact a reviewer to see if you can to rewrite the presence.
-- If you make modifications to a presence and change at least a **quarter** of the presence's codebase, you are allowed to add yourself as a contributor. Contact a reviewer for more information about this subject.
-- Anyone may provide hotfixes to fix bugs; however, try **not** to make changes that are **not** required. Valid modifications include general fixes (code and typos), additions (descriptions and tags), missing files, etc. Do **not** change images if they are not outdated and are in specifications.
+- Kamu **tidak** diperbolehkan untuk menulis ulang sebuah presence atau mengubah authornya. Jika author presence terkena ban dari server resmi kita atau belum membuat perubahan yang dibutuhkan dalam waktu satu bulan, kamu dapat menghubungi reviewer untuk meminta menulis ulang presence tersebut.
+- Jika kamu membuat perubahan pada presence dan mengubah setidaknya **seperempat** dari codebase presence, kamu mendapatkan izin untuk menambahkan diri sebagai kontributor. Hubungi reviewer untuk informasi lebih lanjut tentang hal ini.
+- Semua orang dapat memberikan perbaikan terbaru untuk memperbaiki bug; namun, coba **tidak** untuk membuat perubahan yang **tidak** diperlukan. Perubahan yang diperbolehkan termasuk perbaikan umum (kode dan typo), penambahan (deskripsi dan tag), file hilang, dll. **Jangan** mengganti gambar jika tidak outdated dan masih dalam spesifikasi.
 
-# Verification
+# Verifikasi
 
 > **Semua** kode yang dikontribusi ke toko akan terlisensi dengan `Mozilla Public License 2.0`.
 
@@ -272,9 +272,9 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 
 > Harap diingat bahwa reviewer bekerja secara sukarela dan mengurus repository lainnya selain ini, pull request anda mungkin tidak ditinjau hingga berjam-jam atau bahkan berhari-hari setelah dibuat.
 
-> **Selalu** miliki fork yang up-to-date sebelum membuat pull request. This will help limit false positives from the checks.
+> **Selalu** miliki fork yang up-to-date sebelum membuat pull request. Hal ini bisa membantu membatasi false positive dari pemeriksaan.
 
-The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
+Proses yang paling penting dalam pengembangan presence adalah memasukan presencemu di store kami. Hal ini bisa dilakukan dengan membuat [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) di GitHub pada repository `PreMiD/Presences`. Reviewer kami akan mengkonfirmasi jika presencemu sesuai standar dan akan segera di pasang di store kami.
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Peninjau Presence</h2>
@@ -291,9 +291,9 @@ Pelanggaran berulang seperti melanggar aturan, spam pull request, pengancaman, a
 
 Pada kejadian seperti ini, perubahan berikut akan terjadi:
 
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). Id aplikasi untuk setiap presence akan dibuat ulang dengan nama pemilik baru.
+- Presence di bawah manajemen kamu akan ditransfer ke bot PreMiD atau pengguna lain (keputusan reviewer). Id aplikasi untuk setiap presence akan dibuat ulang dengan nama pemilik baru.
 - Semua issue dan pull request (pembuatan presence, kontribusi presence, dll) yang dibuat setelah pelanggaran akan segera ditutup.
-- Tickets created under your name regarding presence development will be deleted.
+- Tiket yang dibuat dibawah nama kamu tentang pengembangan presence akan dihapus.
 
 ## `Peninjauan`
 
@@ -302,18 +302,18 @@ Beberapa hal yang harus anda ketahui setelah membuka pull request:
 - Dibutuhkan 2 peninjau untuk merge sebuah pull request.
 - Jika pull request tidak aktif selama 7 hari, pull request tersebut akan segera ditutup.
 - Semua pemeriksaan **harus** berhasil untuk merge.
-- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
+- ⚠️ Kamu **harus** memberikan screenshot baru yang tidak dimodifikasi (diambil oleh kamu) untuk menunjukkan perbandingan profil dan situs web untuk membuktikan bahwa presence kamu bekerja. _Anda diperbolehkan memberikan screenshot untuk kemudahan melihat_ Ini berlaku baik dalam pembuatan dan perubahan.
 - ⚠️ Kamu juga **harus** memasukkan tangkapan layar pengaturan presence di dalam extension jika disediakan. Sebuah contoh dapat dilihat [di sini](https://imgur.com/a/OD3sj5R).
 
 ## `Pemeriksaan`
 
-![Example of checks](https://i.imgur.com/T8agbnB.png)
+![Contoh pengecekan](https://i.imgur.com/T8agbnB.png)
 
-Saat ini, sebuah presence melewati 3 tahapan pemeriksaan. All of these checks help the reviewers determine whether your presence is suitable for deployment.
+Saat ini, sebuah presence melewati 3 tahapan pemeriksaan. Pemeriksaan ini membantu reviewer untuk menentukan apakah presencemu cocok untuk perilisan.
 
-- `Codacy` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
+- `Codacy` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya. *Peringatan: Codacy tidak selalu memberimu eror. Harap lihat peringatan CodeFactor.*
 - `CodeFactor` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya.
-- `Schema Validation` akan mengscan file `metadata.json` mencari eror ( misal, missing fields, invalid value types, dll.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
+- `Schema Validation` akan mengscan file `metadata.json` mencari eror ( misal, missing fields, invalid value types, dll.). Jika kamu menemukan isu baru, dan kamu juga **diharuskan** memperbaikinya. Menambahkan field schema ke file `metadata.json` akan memungkinkan editor teks kamu ( jika didukung) untuk menunjukkan eror pada development.
 
 ## `Peraturan tambahan`
 
