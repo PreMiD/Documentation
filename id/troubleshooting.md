@@ -37,7 +37,7 @@ PreMiD **tidak** bekerja pada discord versi browser, kamu harus mengunduh aplika
 Sangat penting. Discord RPC tidak bisa bekerja jika kamu membuka Discord sebagai administrator.
 
 ### Apakah kamu menggunakan Presence dengan pengaturan?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Banyak presence (termasuk `Twitch` dan `SoundCloud`) terpengaruh oleh masalah ekstensi. This issue causes the extension to not grab the default values of settings properly.
 
 To solve this, all you have to do is toggle the topmost setting:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
