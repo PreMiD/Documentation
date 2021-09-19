@@ -43,7 +43,7 @@ To solve this, all you have to do is toggle the topmost setting:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Restartējiet savu pārlūkprogrammu
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) vai <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) strādā arī labi. (Jums, protams, arī jāpalaiž pārlūkprogrammu pa jaunu.)
 
 ### Restartējiet PreMiD (Lietotni)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
