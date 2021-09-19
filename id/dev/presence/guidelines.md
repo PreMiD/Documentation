@@ -41,7 +41,7 @@ Peraturan umum pembuatan presence adalah sebagai berikut:
     - Untuk domain berusia 12+ bulan: **45.000 pengunjung unik/hari**.
   - Situs web tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan seterusnya.
   - Situs web tersebut harus berkualitas tinggi, desain bagus, dll.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). Kamu dapat mencapai ini menggunakan `multiLanguage` dengan string yang tersedia. Bila presencemu membutuhkan string khusus, maka jangan menggunakan `multiLanguage` sampai presence mendapatkan 1000 pengguna. Kamu bisa mendapatkan contoh [di sini](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Presence harus menggunakan [rincian umum](https://api.premid.app/v2/langFile/presence/en) (string yang berawalan "umum."). Kamu dapat mencapai ini menggunakan `multiLanguage` dengan string yang tersedia. Bila presencemu membutuhkan string khusus, maka jangan menggunakan `multiLanguage` sampai presence mendapatkan 1000 pengguna. Kamu bisa mendapatkan contoh [di sini](https://docs.premid.app/dev/presence/class#getstringsobject).
 - Wajib mencantumkan folder `dist`, file `presence.ts`, file `iframe.ts`, dan file `metadata.json` agar hasil sesuai dengan skema berikut:
 
 ```bash
@@ -215,27 +215,27 @@ Daftar bidang dan peraturannya tertulis dibawah:
 ### **`warning`**
 
 - Mengaktifkan ikon peringatan untuk meminta pengguna jika presence ini membutuhkan lebih banyak langkah daripada hanya menambahkan presence.
-- Example of presence using this metadata variable is `VLC`.
+- Contoh dari presence yang menggunakan variabel metadata ini adalah `VLC`.
 
 ### **`settings`**
 
-- If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
-- The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
-- If you are using the `multiLanguage` option it can have the following types:
+- Jika kamu ingin untuk membuat suatu format string (contoh, `%song% oleh %artist%`), kamu harus menaruh variabelnya diantara sebuah tanda persen di kedua sisi. Variabel seperti `%var`, `var%`, atau `%%var%%` dan apa pun lainnya ** tidak** diizinkan demi standarisasi.
+- Nama dari setting harus **tidak** berhuruf kapital semua. Misalnya, nama seperti `SHOW BROWSING STATUS` akan **tidak** diizinkan; namun, nama seperti `Show Browsing Status` atau `Show browsing status` diperbolehkan.
+- Jika kamu menggunakan opsi `multiLanguage`, ada beberapa hal yang perlu kamu ketahui:
   - Value tipe **Boolean** hanya akan mengaktifkan string [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) dari repositori Localization atau dari file Presence (contoh, saat nama presence adalah YouTube, maka ekstensi akan mendapatkan string dari `youtube.json` juga.)
   - Value tipe **String** (contoh, `youtube.json`) akan menentukan nama dari file yang ingin kamu dapatkan string-nya.
   - Value tipe **Array<String>** (contoh, `["youtube", "discord"]`) akan menentukan nama dari file yang ingin kamu dapatkan string-nya.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
-> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
+> Kode yang kamu tulis **harus**_ ditulis dengan baik_ dan **harus** _dapat dibaca_ dan semua string harus benar secara tata bahasa ( kesalahan penulisan pada website dapat diabaikan).
 
-> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+> Setiap presence mengikuti aturan ketat yang akan diperiksa saat proses review. Beberapa rekomendasi bisa dilihat dibawah. [Rekomendasi Plugin TypeScript untuk Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [Rekomendasi ESlint](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
 
-Here is a list of rules you must follow when writing your `presence.ts` file:
+Berikut daftar rules yang harus diikuti saat menulis sebuah file `presence.ts`:
 
-- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
-- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
+- **Selalu** menyatakan instance baru dari class `Presence` sebelum variabel lainnya untuk menghindari masalah yang mungkin terjadi; hal ini tidak diharuskan pada desain jadi bisa dihapus kedepannya.
+- **Jangan pernah** menggunakan custom function jika [ native variant tersedia](https://docs.premid.app/dev/presence#files-explained); hal ini memastikan perbaikan pada tingkat ekstensi dapat berpengaruh pada presence kamu juga. Kamu bebas dalam menggunakan apapun yang dibutuhkan jika tidak menemukannya tercantum di docs.
 - It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
 - Bidang `smallImageKey` dan `smallImageText` dimaksudkan untuk memberi konteks tambahan/konteks kedua (seperti `berputar/dijeda` untuk situs video, `menjelajahi` untuk situs biasa, dan hal lain) bukan untuk mempromosikan profil Discord atau apapun yang tidak berhubungan dengan PreMiD.
 - Kamu **tidak** diperbolehkan mengakses `localStorage`.
