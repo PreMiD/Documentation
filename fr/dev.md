@@ -39,4 +39,4 @@ Veuillez conserver la structure. Nous ne voulons pas désorganiser notre projet.
 Il vous suffit d'ouvrir une Pull Request sur l'un de nos [dépôts GitHub](https://github.com/PreMiD/) auxquels vous voulez contribuer. Nous prendrons soin de votre bébé, ne vous inquiétez pas. Si c'est la première fois que vous faites une demande de présence, jetez un coup d'oeil à ça [tutoriel](https://help.github.com/en/articles/creating-a-pull-request).
 
 # En cours d'approbation
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Veuillez patiemment attendre que nos [reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) vérifient votre Pull Request.
