@@ -39,4 +39,4 @@ tags:
 Просто откройте Pull Request на одном из наших [репозиториев GitHub,](https://github.com/PreMiD/). Мы позаботимся о вашем ребенке, не волнуйтесь. Если вы впервые сделали запрос на слияние, посмотрите на [учебник](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Получение одобрения
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Будьте, пожалуйста, терпеливы и дождитесь рассмотра [ревьюерами](https://docs.premid.app/ru/dev/presence/guidelines#presence-reviewers) вашего Pull-запроса.
