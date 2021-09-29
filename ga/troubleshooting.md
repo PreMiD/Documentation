@@ -29,46 +29,46 @@ Is féidir leat <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nó <kbd>CMD+R</kbd> (
 ### An bhfuil an aip Discord á úsáid agat?
 Ní oibríonn PreMiD **ní** ar leagan an bhrabhsálaí de Discord, ní mór duit an aip [a íoslódáil anseo](https://discord.com/download).
 
-### Déan cinnte go bhfuil Gníomhaíocht Cluiche Discord cumasaithe agat i suíomhanna
-**User Settings** > **Game Activity**
+### Déan cinnte go bhfuil Stádas Gníomhaíochta cumasaithe agat i socruithe do app Discord
+**User Settings** > **Activity Status**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Bí cinnte nach bhfuil Discord ag rith NÍL mar riarthóir
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Tá sé an-tábhachtach. Ní oibreoidh Discord RPC má ritheann tú Discord mar riarthóir.
 
 ### An bhfuil tú ag úsáid láithreacht le socruithe?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Bíonn tionchar ag saincheist síneadh ar go leor uachtaráin (lena n-áirítear `Twitch` agus `SoundCloud`). Cuireann an tsaincheist seo faoi deara nach bhfaigheann an síneadh luachanna réamhshocraithe socruithe i gceart.
 
-To solve this, all you have to do is toggle the topmost setting:
+Chun é seo a réiteach, níl le déanamh agat ach an suíomh is fearr a scoránaigh:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Atosaigh do bhrabhsálaí
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+Déanann <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) nó <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) jab maith freisin. (Caithfidh tú do bhrabhsálaí a thosú arís ar ndóigh.)
 
 ### Atosaigh PreMiD (Feidhmchlár)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Caithfidh tú PreMiD a atosú ina dhiaidh sin.
 
 ### Discord athlódáil/atosú
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Brúigh <kbd>CTRL+R</kbd> (Windows) nó <kbd>CMD+R</kbd> (MacOS) ar do mhéarchlár nó atosaigh Discord de láimh.
 
 ### Seiceáil an bhfuil frithvíreas nó balla dóiteáin ag rith ar do ríomhaire
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Uaireanta bíonn cláir frithvíreas agus ballaí dóiteáin ag cur bac ar fheidhmchláir atá ag cruthú/ag óstáil freastalaithe nó díreach ag nascadh leis an idirlíon. Táimid ag úsáid freastalaí áitiúil chun sonraí a fháil agus a phasáil idir ár n-aip agus ár síneadh, mar sin má chuirfidh tú bac ar chumas an aip sonraí a rith is dócha nach mbeidh tú in ann PreMiD a úsáid.
 
 ### Díchumasaigh do síntí
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Díchumasaigh do chuid síntí go léir agus féach an bhfuil sé ag obair. Má tá, déan iarracht do chuid síntí a chumasú céim ar chéim agus inis dúinn cén síneadh a bhris PreMiD.
 
 ### Ag atosú do ríomhaire
-I hope you know how to restart a computer.
+Tá súil agam go bhfuil a fhios agat conas ríomhaire a atosú.
 
 ### PreMiD a athshuiteáil
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Uaireanta bíonn rud éigin cearr leis na comhaid... Is féidir ranganna teagaisc don tsuiteáil a fháil [anseo](/install).
 
 ### Baint láimhe
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Scríobh `%appdata%` ar an taiscéalaí comhaid agus scrios an fillteán `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` agus scrios an fillteán</code>PreMiD.
 
 ### Bhraith McAfee PreMiD mar víreas (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Is dearfach bréagach é seo ó McAfee agus chuireamar an cheist in iúl dóibh, go dtí seo is féidir leat PreMiD a eisiamh ón scanadh trí na céimeanna seo a leanas a dhéanamh:
 
 > Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat! 
 > 
@@ -86,23 +86,23 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. Ba cheart do McAfee neamhaird a dhéanamh dár gcomhad anois, gan ach ár bhfeidhmchlár a lainseáil agus ba cheart go mbeifeá go maith chun dul.
 
 ### Stádas PreMiD bugged ar discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Ná bíodh imní ort. Ná bíodh imní ort. Brúigh an eochaircheap <kbd>CTRL+R</kbd> (Windows) nó <kbd>CMD+R</kbd> (MacOS) agus tú dírithe ar d’fhuinneog neamhord chun í a athlódáil.
 
 <a name="linux"></a>
 
 # Fabhtcheartú Linux
 ### Distros bunaithe ar Ubuntu/Debian
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+Má tá Discord íoslódáilte agat trí Snapcraft, ní oibreoidh RPC. Caithfidh tú an leagan Snapcraft a dhíshuiteáil trí fhorghníomhú `sudo snap remove discord` ar theirminéal, íoslódáil **[Linux Discord](https://discordapp.com/api/download?platform=linux)** (**[nó Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**) a íoslódáil, ansin nascleanúint a dhéanamh chuig an eolaire a d’íoslódáil tú Discord dó (de ghnáth $HOME`/Downloads`), ansin an pacáiste a shuiteáil ag úsáid `sudo dpkg -i discord-*.deb`. Mura n-oibríonn AppImage, ba cheart duit smaoineamh ar ár bpacáistí eile a sheiceáil leis **[an nasc seo](https://packagecloud.io/premid/linux)**.
 
 ### Distros bunaithe ar Arch Linux
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Ba cheart go n-úsáidfeadh distros bunaithe ar Arch Linux pacáiste AUR (Stór Úsáideora Arch) atá ainmnithe <code>premid</code> nó <code>premid-git</code> (<em x-id="3">RABHADH: Tógann an stór seo sár ón gcód foinse.</em>). Mura dteastaíonn uait bainisteoir AUR a shuiteáil (yay srl.), Is féidir leat seiceáil ar ár AppImage atá le híoslódáil ónár <strong x-id="1"><a href="https://github.com/premid/linux/releases">stór Linux</a></strong>.
+<em x-id="3">Rabhadh: ní muidne (mar eagraíocht PreMiD) a dhéanann an pacáiste i stór <strong x-id="1">AUR</strong> a chothabháil, ach ag daoine eile.</em>
 
 ### Ceangal calafoirt
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+Ba chóir go mbeadh a fhios agat go gceanglaíonn <strong x-id="1">PreMiD</strong> leis an gcalafort <strong x-id="1">3020</strong>. Tá sé seo riachtanach chun an Síneadh agus an Feidhmchlár a chur in iúl. Má thaispeánann <strong x-id="1">PreMiD</strong> botún duit faoin gcalafort seo, ba cheart duit seiceáil an bhfuil rud éigin ceangailte leis an gcalafort 3020 trí <code> sudo lsof -i: 3020</code> nó <code>sudo netstat -tnlp | grep: 3020</code> i do chríochfort. Má tá próiseas éigin ceangailte leis ba cheart duit a dhéanamh cinnte an calafort a shaoradh agus iarracht a dhéanamh rith <code>PreMiD</code> arís.
 
 ### Ní sheoltar AppImage PreMiD ag logáil isteach
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
+Mar a dúirt muid inár **stór Linux**, ní féidir AppImage a sheoladh ag logáil isteach. Is féidir leat é a chur le autostart de láimh trí na céimeanna seo a dhéanamh:
 1. Déan comhad darb ainm <strong x-id="1">rc.local</strong> san <code>/etc</code> eolaire.
 2. Oscail an comhad seo san eagarthóir is fearr leat agus greamaigh an cód tugtha le roinnt rudaí a athrú:
 ```bash
@@ -123,11 +123,11 @@ exit 0
 ### Earráid agus eolaire á chruthú
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+Má fhaigheann tú an earráid seo, ciallaíonn sé nach bhfuil ceadanna Riarthóra ag do chuntas agus ní mór duit fillteán a chruthú de láimh trí na céimeanna seo a dhéanamh:
 1. Aimsitheoir oscailte agus fillteán **Applications ** oscailte.
 2. Cliceáil ar dheis ar spás bán agus cliceáil **Create folder**.
 3. Sann an t-ainm `PreMiD` don fhillteán seo (cuimhnigh faoi litreacha na gcásanna uachtair).
 4. Suiteálaí oscailte arís.
 
 # Níor réitigh sé sin mo fhadhb
-Please open a ticket in [#support](https://discord.premid.app/).
+Oscail ticéad le do thoil i [#support](https://discord.premid.app/).
