@@ -39,4 +39,4 @@ tags:
 あなたが貢献したいPreMiDの[GitHubリポジトリー](https://github.com/PreMiD/)にてPull Requestを行ってください。 心配しないでください、私たちはあなたが申請したものを管理します。 もしPull Requestを行うのが初めてであれば、こちらの[チュートリアル](https://help.github.com/en/articles/creating-a-pull-request)を参考にして下さい。
 
 # 承認をもらう
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Pull Requestが[レビュー](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers)されるまで、しばらくお待ち下さい。
