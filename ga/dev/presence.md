@@ -182,26 +182,26 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
-      <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
-      <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
-      You can add multiple URLs by doing the following:<br>
-      <code>["URL1", "URL2", "ETC."]</code><br>
-      You could also use regExp also known as Regex for this task, explained further below.</td>
+      <td style="text-align:left">URL na seirbhíse. <br><b> Sampla: </b><code> vk.com </code><br>
+       <b>Caithfidh an URL seo URL an láithreáin ghréasáin a mheaitseáil mar braithfidh sé an é seo an suíomh Gréasáin chun an script a instealladh dó. </b><br>Ná<b>NOT</b> cuir<code>https://</code> nó<code>http://</code> taobh istigh den URL ná slais ag an deireadh:
+       <code>https://premid.app/</code> -><code>premid.app</code><br>
+       <b>Nóta</b>: D’fhéadfadh go mbeadh<code>www.</code> nó rud éigin eile os comhair a bhfearainn ag roinnt URLanna. Ná déan dearmad <b>NOT</b> é a chur leis!<br>
+       Is féidir leat URLanna iolracha a chur leis na rudaí seo a leanas a dhéanamh:<br>
+       <code>["URL1", "URL2", "ETC."] </code><br>
+       D’fhéadfá regExp ar a dtugtar Regex a úsáid don tasc seo freisin, a mhínítear tuilleadh thíos.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">Teaghrán slonn rialta a úsáidtear chun urls a mheaitseáil.<br>
+       is féidir regExp nó ar a dtugtar Regex freisin, a úsáid má tá iliomad fo-fearainn ag láithreán gréasáin.<br>
+       D’fhéadfá an regExp seo a leanas a úsáid chuige sin:<br>
+       <code>([a-z0-9] +) [.] fearann [.] TLD"</code><br>
+       TLD ag seasamh don Fhearann Ardleibhéil mar shampla: .com .net (ach ná cuir isteach an ponc).<br>
+       Ciallaíonn <code> ([a-z0-9] +) </code> aon rud ó a go z agus ó 0 go 9.<br>
+       Is féidir leat tosaithe gasta a fháil ach féachaint ar an bhfíseán <a href="https://youtu.be/sXQxhojSdZM"></a>.<br>
+       Féadfaidh tú do regExp a thástáil ag <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tá</code></td>
     </tr>
@@ -237,7 +237,7 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Teaghrán a úsáidtear chun an chatagóir ina bhfuil an láithreacht a léiriú. See the valid catergories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">here</a>.</td>
+      <td style="text-align:left">Teaghrán a úsáidtear chun an chatagóir ina bhfuil an láithreacht a léiriú. Féach na lónadóireacht bhailí <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">anseo</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
@@ -249,7 +249,7 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Roghnóir slonn rialta a roghnaíonn iframanna le instealladh isteach. See regExp for more info.</td>
+      <td style="text-align:left">Roghnóir slonn rialta a roghnaíonn iframanna le instealladh isteach. Féach regExp le haghaidh tuilleadh faisnéise.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tá</code></td>
     </tr>
@@ -261,15 +261,15 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change.<br>
-      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
+      <td style="text-align:left">Sraith socruithe is féidir leis an úsáideoir a athrú.<br>
+       Léigh tuilleadh faoi shuíomhanna láithreachta <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">anseo</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Tá</code></td>
     </tr>
   </tbody>
 </table>
 
-## Getting started
+## Ag tosú
 
 ```typescript
 const presence = new Presence({
@@ -297,15 +297,15 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Tugtar é seo cúpla uair sa soicind nuair is féidir.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Moltar feidhm eile a chur ar bun lasmuigh den fheidhm imeachta seo a athróidh luachanna athraitheacha agus a dhéanfaidh an t-ardú trom má ghlaonn tú sonraí ó API.*/
 
-  const presenceData: PresenceData = {
-    largeImageKey:
-      "key" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+   const láithreachtData: PresenceData = {
+     largeImageKey:
+       "eochair" / * Eochair (ainm comhaid) na híomhá Móire ar an láthair. Déantar iad seo a uaslódáil agus a ainmniú sa chuid Láithreacht Shaibhir d’iarratas, ar a dtugtar Art Assets*/,
+     smallImageKey:
+       "eochair" /* Eochair (ainm comhaid) na híomhá Beaga ar an láthair. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
     details: "Browsing Page Name", //The upper section of the presence text
     state: "Reading section A", //The lower section of the presence text
