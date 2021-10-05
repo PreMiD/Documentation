@@ -66,30 +66,29 @@ Bu dosyayla fazla uğraşmak istemeyenler için bir `metadata.json` dosyası olu
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "İSİM",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "İSİM",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "SERVİS",
-  "altnames": ["SERVIS"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "İNGİLİZCE AÇIKLAMA",
-    "tr": "TÜRKÇE AÇIKLAMA"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "SÜRÜM",
-  "logo": "LOGO URL",
-  "thumbnail": "ARKAPLAN RESİM URL",
+  "version": "VERSION",
+  "logo": "URL",
+  "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["ETİKET1", "ETİKET2"],
-  "category": "KATEGORİ",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -101,8 +100,8 @@ Bu dosyayla fazla uğraşmak istemeyenler için bir `metadata.json` dosyası olu
     },
     {
       "id": "ID",
-      "title": "GÖRÜNECEK BAŞLIK",
-      "icon": "FONTAWESOME SİMGESİ",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -110,17 +109,17 @@ Bu dosyayla fazla uğraşmak istemeyenler için bir `metadata.json` dosyası olu
       "if": {
         "ID": true
       },
-      "title": "GÖRÜNECEK BAŞLIK",
-      "icon": "FONTAWESOME SİMGESİ",
-      "value": " %sanatci% tarafından  \"%sarki%\"",
-      "placeholder": "%sanatci% veya %sarki% kullanabilirsiniz"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "GÖRÜNECEK BAŞLIK",
-      "icon": "FONTAWESOME SİMGESİ",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "vb."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
