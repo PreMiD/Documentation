@@ -75,36 +75,42 @@ presence
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "ПОЛЬЗОВАТЕЛЬ",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "ПОЛЬЗОВАТЕЛЬ",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "СЕРВИС",
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "ОПИСАНИЕ"
+    "en": "DESCRIPTION"
   },
-  "url": "ССЫЛКА",
-  "version": "ВЕРСИЯ",
-  "logo": "ССЫЛКА",
-  "thumbnail": "ССЫЛКА",
+  "url": "URL",
+  "version": "VERSION",
+  "logo": "URL",
+  "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "КАТЕГОРИЯ",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
+  "readLogs": false,
   "settings": [
     {
+      "id": "multiLanguage",
+      "multiLanguage": true
+    }
+    {
       "id": "ID",
-      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
-      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -112,15 +118,15 @@ presence
       "if": {
         "ID": true
       },
-      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
-      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "ОТОБРАЗИТЬ НАЗВАНИЕ",
-      "icon": "БЕСПЛАТНЫЕ ИКОНКИ FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
