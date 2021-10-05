@@ -66,58 +66,58 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "ইউজার",
-    "id": "আইডি"
+    "name": "USER",
+    "id": "ID"
   },
   "contributors": [
     {
-      "name": "ইউজার",
-      "id": "আইডি"
+      "name": "USER",
+      "id": "ID"
     }
   ],
-  "service": "সার্ভিস",
-  "altnames": ["সার্ভিস"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "ডেসক্রিপশন"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "ভার্সন",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "ক্যাটাগরি",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
     {
-      "id": "আইডি",
+      "id": "ID",
       "multiLanguage": true
     },
     {
-      "id": "আইডি",
-      "title": "শিরোনাম",
-      "icon": "FONTAWESOME আইকন",
+      "id": "ID",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
-      "id": "আইডি",
+      "id": "ID",
       "if": {
         "ID": true
       },
-      "title": "শিরোনাম",
-      "icon": "FONTAWESOME আইকন",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
-      "id": "আইডি",
-      "title": "শিরোনাম",
-      "icon": "FONTAWESOME আইকন",
+      "id": "ID",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
