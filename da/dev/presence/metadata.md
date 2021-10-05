@@ -16,6 +16,7 @@ An example of that file can be found below.
 
 ```typescript
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"

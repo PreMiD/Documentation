@@ -66,7 +66,7 @@ To learn more about TypeScript configuration click [here](/dev/presence/tsconfig
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"

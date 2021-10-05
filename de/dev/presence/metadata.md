@@ -16,6 +16,7 @@ Ein Beispiel für diese Datei, kannst du unten finden.
 
 ```typescript
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"
@@ -24,44 +25,44 @@ Ein Beispiel für diese Datei, kannst du unten finden.
     "name": "USER",
     "id": "ID"
   }],
-  "Service": "SERVICE",
-  "Altnamen": ["SERVICE"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "de": "DESCRIPTION"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "version": "VERSION",
-  "Logo": "URL",
+  "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tag": ["TAG1", "TAG2"],
+  "tags": ["TAG1", "TAG2"],
   "category": "CATEGORY",
-  "iframe": falsch,
+  "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "VORSCHAU TITEL",
+      "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
-      "Wert": true
+      "value": true
     },
     {
       "id": "ID",
       "if": {
         "ID": true
       },
-      "title": "VORSCHAU TITEL",
+      "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
-      "Wert": "\"%song%\" von %artist%",
-      "Platzhalter": "benutze %song% oder %artist%"
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "VORSCHAU TITEL",
+      "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "etc. ]
+      "values": ["1", "2", "etc."]
     }
   ]
 }

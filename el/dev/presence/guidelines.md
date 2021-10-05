@@ -75,42 +75,42 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "ΧΡΗΣΤΗΣ",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "ΧΡΗΣΤΗΣ",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "ΥΠΗΡΕΣΙΑ",
-  "altnames": ["ΥΠΗΡΕΣΙΑ"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "ΠΕΡΙΓΡΑΦΗ"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "ΕΚΔΟΧΗ",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["ΕΤΙΚΕΤΑ1", "ΕΤΙΚΕΤΑ2"],
-  "category": "ΚΑΤΗΓΟΡΙΑ",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
     {
-      "id": "ID",
+      "id": "multiLanguage",
       "multiLanguage": true
-    },
+    }
     {
       "id": "ID",
-      "title": "ΤΙΤΛΟΣ ΟΘΟΝΗΣ",
-      "icon": "ΕΙΚΏΝ FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,20 +118,17 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
       "if": {
         "ID": true
       },
-      "title": "ΤΙΤΛΟΣ ΟΘΟΝΗΣ",
-      "icon": "ΕΙΚΏΝ FONTAWESOME",
-      "value": "\"%song%\" με %artist%",
-      "placeholder": "χρήση %song% η %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "ΤΙΤΛΟΣ ΟΘΟΝΗΣ",
-      "icon": "ΕΙΚΏΝ FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
-    }
-  ]
-}
     }
   ]
 }

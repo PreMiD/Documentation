@@ -75,7 +75,7 @@ Her servisin kendine ait açıklayıcı bir `metadata.json` dosyası vardır, bu
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"

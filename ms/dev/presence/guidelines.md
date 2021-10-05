@@ -75,31 +75,31 @@ Setiap Presence mempunyai fail pemerihal dipanggil `metadata.json`, metadata ter
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "PENGGUNA",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "PERKHIDMATAN",
-  "altnames": ["PERKHIDMATAN"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "KETERANGAN"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSI",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "KATEGORI",
-  "regExp": "UNGKAPAN NALAR",
-  "iFrameRegExp": "UNGKAPAN NALAR",
+  "category": "CATEGORY",
+  "regExp": "REGEXP",
+  "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
@@ -109,8 +109,8 @@ Setiap Presence mempunyai fail pemerihal dipanggil `metadata.json`, metadata ter
     }
     {
       "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ Setiap Presence mempunyai fail pemerihal dipanggil `metadata.json`, metadata ter
       "if": {
         "ID": true
       },
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "dll."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }

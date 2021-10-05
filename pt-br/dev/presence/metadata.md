@@ -16,34 +16,35 @@ An example of that file can be found below.
 
 ```typescript
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USUARIO",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USUARIO",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "SERVICO",
-  "altnames": ["SERVICO"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRICAO"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSAO",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORIA",
+  "category": "CATEGORY",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TITULO",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -51,15 +52,15 @@ An example of that file can be found below.
       "if": {
         "ID": true
       },
-      "title": "TITULO",
-      "icon": "ICONE FONTAWESOME",
-      "value": "\"%musica%\" por %artista%",
-      "placeholder": "use %musica% ou %artista%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TITULO",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }

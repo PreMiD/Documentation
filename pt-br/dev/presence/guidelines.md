@@ -75,29 +75,29 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USUÁRIO",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USUÁRIO",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "SERVIÇO",
-  "altnames": ["SERVIÇO"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIÇÃO"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSÃO",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORIA",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
     }
     {
       "id": "ID",
-      "title": "TÍTULO DE EXIBIÇÃO",
-      "icon": "ÍCONE DO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,15 +118,15 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
       "if": {
         "ID": true
       },
-      "title": "TÍTULO DE EXIBIÇÃO",
-      "icon": "ÍCONE DO FONTAWESOME",
-      "value": "\"%song%\" por %artist%",
-      "placeholder": "use %song% ou %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TÍTULO DE EXIBIÇÃO",
-      "icon": "ÍCONE DO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }

@@ -75,7 +75,7 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"
@@ -110,7 +110,7 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME FREE ICON",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,15 +118,15 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
       "if": {
         "ID": true
       },
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
