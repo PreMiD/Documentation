@@ -66,7 +66,7 @@ Wir haben eine `metadata.json`-Datei für die Lazy Peeps [hier](https://eggsy.xy
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"
