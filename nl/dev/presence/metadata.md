@@ -16,34 +16,35 @@ Een voorbeeld van dat bestand kan hieronder worden gevonden.
 
 ```typescript
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "GEBRUIKER",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "GEBRUIKER",
+    "name": "USER",
     "id": "ID"
   }],
   "service": "SERVICE",
   "altnames": ["SERVICE"],
   "description": {
-    "en": "BESCHRIJVING"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSIE",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORIE",
+  "category": "CATEGORY",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -51,15 +52,15 @@ Een voorbeeld van dat bestand kan hieronder worden gevonden.
       "if": {
         "ID": true
       },
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
