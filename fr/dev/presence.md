@@ -66,14 +66,14 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "UTILISATEUR",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "UTILISATEUR",
+      "name": "USER",
       "id": "ID"
     }
   ],
@@ -88,7 +88,7 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORIE",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
     },
     {
       "id": "ID",
-      "title": "TITRE AFFICHE",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,17 +109,17 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
       "if": {
         "ID": true
       },
-      "title": "TITRE AFFICHE",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
-      "placeholder": "utiliser %song% ou %artist%"
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TITRE AFFICHE",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "ect."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
