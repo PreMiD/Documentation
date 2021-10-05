@@ -66,29 +66,29 @@ Laiskade piilumiste jaoks oleme teinud `metadata.json` faililooja [siin](https:/
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "KASUTAJA",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "KASUTAJA",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "TEENUS",
-  "altnames": ["TEENUS"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "KIRJELDUS"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSIOON",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "KATEGOORIA",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Laiskade piilumiste jaoks oleme teinud `metadata.json` faililooja [siin](https:/
     },
     {
       "id": "ID",
-      "title": "KUVA PEALKIRI",
-      "icon": "FONTAWESOME IKOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ Laiskade piilumiste jaoks oleme teinud `metadata.json` faililooja [siin](https:/
       "if": {
         "ID": true
       },
-      "title": "KUVA PEALKIRI",
-      "icon": "FONTAWESOME IKOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "KUVA PEALKIRI",
-      "icon": "FONTAWESOME IKOON",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
