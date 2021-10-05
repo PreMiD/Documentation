@@ -16,6 +16,7 @@ Is féidir sampla den chomhad sin a fháil thíos.
 
 ```typescript
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"
