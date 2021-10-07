@@ -30,7 +30,7 @@ tags:
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
+## อนุญาตแอพจากนักพัฒนาที่ไม่รู้จัก
 ขั้นตอนสำหรับ macOS Big Sur (11.0+):
 1. คลิกขวาที่ตัวติดตั้ง
 2. คลิกเปิดในเมนูดรอปดาวน์
