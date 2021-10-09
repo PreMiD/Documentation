@@ -39,4 +39,4 @@ Bitte behalte die Struktur. Wir wollen unser Projekt nicht desorganisieren. Chao
 Öffne einfach ein Pull-Request in einem unserer [GitHub-Repositories](https://github.com/PreMiD/) auf dem Du beitragen möchtest. Wir kümmern uns um Dein Baby, keine Sorge. Wenn Du zum ersten mal ein Pull-Request öffnest, dann wirf einen Blick auf dieses [Tutorial](https://help.github.com/en/articles/creating-a-pull-request).
 
 # Genehmigt werden
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Wir bitten um ein wenig Geduld, bis unsere [Prüfer*innen](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) Deinen Pull-Request überprüft haben.
