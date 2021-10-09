@@ -68,29 +68,29 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "PENGGUNA",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "PERKHIDMATAN",
+  "altnames": ["PERKHIDMATAN"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "KETERANGAN"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
+  "category": "KATEGORI",
+  "regExp": "UNGKAPAN NALAR",
+  "iFrameRegExp": "UNGKAPAN NALAR",
   "iframe": false,
   "readLogs": false,
   "settings": [
@@ -100,8 +100,8 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": true
     },
     {
@@ -109,17 +109,17 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "dll."]
     }
   ]
 }
