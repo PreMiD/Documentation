@@ -37,7 +37,7 @@ macOS Big Sur(11.0 이상) 단계:
 3. 팝업에서 열기를 클릭합니다.
 
 이전 macOS 버전을 위한 단계:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+1. 시스템 환경설정을 엽니다.
+2. 보안 & 개인 정보 탭으로 이동합니다.
+3. 자물쇠를 클릭하고 비밀번호를 입력하거나 지문을 스캔하여 변경할 수 있습니다.
+4. '앱 다운로드 허용' 설정을 '앱 스토아 및 확인된 개발자'로 변경합니다.
