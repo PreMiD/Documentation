@@ -1,6 +1,6 @@
 ---
 title: Presence 가이드라인
-description: Rules that all presence developers must follow to have their presence added.
+description: 모든 presence 개발자들이 자신의 presence를 추가하려면 따라야 하는 규칙입니다.
 published: true
 date: 2021-06-27T16:08:07.318Z
 tags:
@@ -11,7 +11,7 @@ dateCreated: 2021-02-26T21:54:41.573Z
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
     <h3 style="font-size: 2rem; margin-bottom: 0">Presence 가이드라인</h3>
-    <h4 style="margin-top: 0">Revision 3</h4>
+    <h4 style="margin-top: 0">개정 3</h4>
     <br />
 </div>
 
@@ -19,16 +19,16 @@ dateCreated: 2021-02-26T21:54:41.573Z
 
 When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. 몇몇들에게는, 이 지침이 이해가 안 되실 수 있습니다. However, the implementation of these rulesets will keep us and the users from running into any issues.
 
-# Creation
+# 창조
 
-The general rules of presence development are as follows:
+Presence 개발자들이 지켜야할 기본적인 규칙은 다음과 같습니다.
 
-- Presences **must** be related to the website of choice.
-- Presence는 불법 웹사이트용으로 만들어져서는 **안됩니다.** (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
+- Presences는 **무조건** 당신이 선택한 웹 사이트와 관련이 있어야만 합니다.
+- Presence는 불법 웹사이트용으로 만들어져서는 **안됩니다.** (예: 스트레스 요인, 마약, 아동 포르노 등)
+- The file structure must be clean and managed, do not include files which are not specified. (예: vscode 및 git 폴더, 사진과 텍스트 파일등)
 - You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
+- (`.onion` TLD)가 있는 웹사이트 또는 무료 도메인/호스트가 있는 웹사이트(예: `.TK` [모든 무료 Freenom 도메인], `.RF`, `GD` 등)은 허용되지 **않습니다**. 도메인 비용을 지불했다는 증거가 제시되면 예외가 발생할 수 있습니다.
+- Presence의 도메인이 생성된 지 적어도 2달이 지나야 합니다.
 - Presence that target internal browser pages (like Chrome Web Store, `chrome://`, `about:` pages, etc) are **not** allowed as they require an experimental flag to be enabled on the user's end and could potentially cause damage to their browsers.
 - Presences with support for only a single subdomain will **not** be permitted, as they may seem broken for other pages (like the homepage), exceptions can be made for the policy and contact pages (content that isn't used often) or sites where the other content is unrelated. (for e.g., wikia pages)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
