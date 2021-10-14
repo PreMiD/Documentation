@@ -1,6 +1,6 @@
 ---
 title: macOS
-description: MacOS에서 PreMiD 설치 시작하기
+description: macOS에서 PreMiD 설치 시작하기
 published: true
 date: 2020-02-12T22:08:37.439Z
 tags:
@@ -18,25 +18,25 @@ tags:
 3. 필요시 압축을 해제하세요.
 4. 인스톨러를 여세요.
 5. 만약 PreMiD 를 처음 설치한다면, **보안 알림**이 나타날것 입니다. 그렇다면 [확인되지 않은 개발자의 앱 허용](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers) 아래의 단계를 따르세요.
-> 저희가 코드 서명 인증서 (CSC) 를 갖고 있지 않기 때문입니다. [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
-6. Choose open when prompted.
-7. Grant access to connections through **Firewall** and control **System Events** when prompted.
+> 저희가 코드 서명 인증서 (CSC) 를 갖고 있지 않기 때문입니다. 자금을 모으기 위해 [저희를 도와주세요](https://www.patreon.com/Timeraa) {.is-info}
+6. 실행되었을 때 열기를 선택합니다.
+7. **방화벽**을 통해 연결에 대한 액세스 권한을 부여하고 메시지가 표시되면 **시스템 이벤트**를 제어합니다.
 
 이 앱은 자동으로 시작됩니다. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install). 
+> [**확장기능**을 추가하는 것을 잊지마세요!](/install) 
 > 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## 확인되지 않은 개발자의 앱 허용
+macOS Big Sur(11.0 이상) 단계:
+1. 설치 프로그램을 마우스 오른쪽 버튼으로 클릭합니다.
+2. 드롭다운 메뉴에서 열기를 클릭합니다.
+3. 팝업에서 열기를 클릭합니다.
 
-Steps for older macOS versions:
+이전 macOS 버전을 위한 단계:
 1. Open System Preferences.
 2. Go to the Security & Privacy tab.
 3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
