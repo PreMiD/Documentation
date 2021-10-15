@@ -75,29 +75,29 @@ Setiap presence memiliki file descriptor bernama `metadata.json`, metadata memil
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "PENGGUNA",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "LAYANAN",
+  "altnames": ["LAYANAN"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESKRIPSI"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGORI",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Setiap presence memiliki file descriptor bernama `metadata.json`, metadata memil
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TUNJUKKAN JUDUL",
+      "icon": "IKON FONTAWESOME",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ Setiap presence memiliki file descriptor bernama `metadata.json`, metadata memil
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TUNJUKKAN JUDUL",
+      "icon": "IKON FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TUNJUKKAN JUDUL",
+      "icon": "IKON FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "dll."]
     }
   ]
 }
