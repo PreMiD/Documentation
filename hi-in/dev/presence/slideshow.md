@@ -1,5 +1,5 @@
 ---
-title: Slideshow Class
+title: स्लाइड शो क्लास
 description:
 published: true
 date: 2020-12-25T00:47:38.111Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
-# Slideshow Class
+# स्लाइड शो क्लास
 
 ## Introduction
 

@@ -59,7 +59,7 @@ Sometimes antivirus programs and firewalls are blocking applications which are c
 Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Restarting your computer
-I hope you know how to restart a computer.
+This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
 ### Reinstalling PreMiD
 Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
