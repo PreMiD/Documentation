@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: शुरू करें
 description: A little advice for those who got into coding recently
 published: true
 date: 2020-04-09T14:21:58.246Z
