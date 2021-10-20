@@ -1,5 +1,5 @@
 ---
-title: Presence Development
+title: Presence का विकास
 description:
 published: true
 date: 2021-07-08T19:12:34.449Z
@@ -25,7 +25,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 
 All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## Installation
+## इंस्टालेशन
 
 1. Install [Git](https://git-scm.com/).
 2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
@@ -398,7 +398,7 @@ The website you are developing on is automatically reloading every time you save
 # Files explained
 
 - [Presence Class](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
+- [स्लाइड शो क्लास](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
 - [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
