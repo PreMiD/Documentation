@@ -1,5 +1,5 @@
 ---
-title: Clase Presence
+title: Clase de Presence
 description: La clase principal para cada presence de PreMiD
 published: true
 date: 2021-05-23T09:14:06.963Z
@@ -8,11 +8,11 @@ editor: markdown
 dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
-# Clase Presence
+# Clase de Presence
 
 ## Introducción
 
-La clase `Presence` es útil dado que contiene métodos básicos para construir una presence.
+La clase de `Presence` es útil dado que contiene métodos básicos para construir una presence.
 
 Cuando creas una clase has de especificar apropiadamente el campo `clientId`.
 
@@ -50,7 +50,7 @@ Establece la actividad de tu perfil de acuerdo a los datos proporcionados.
 
 El primer parámetro requiere una interfaz [`PresenceData`](#presencedata-interface) o una clase [`Slideshow`](/dev/presence/slideshow) para obtener toda la información que deseas mostrar en tu perfil.
 
-El segundo parámetro indica si la presence está reproduciendo algo o no. Utiliza siempre `true` si proporcionas marcas de tiempo (timestamps) en `PresenceData`.
+El segundo parámetro indica si la presence está reproduciendo algo o no. El segundo parámetro indica si la presence está reproduciendo algo o no. Utiliza siempre `true` si proporcionas marcas de tiempo (timestamps) en `PresenceData`.
 
 ### `clearActivity()`
 
@@ -112,16 +112,16 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // El ID es el ID de la configuración multiLanguage.
+    // The ID is the ID of the multiLanguage setting.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // El ID es el ID de la configuración multiLanguage.
+  // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! ¡El siguiente código debe estar dentro del evento updateData!
+//! The following code must be inside the updateData event!
 // The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
@@ -129,19 +129,19 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // resultado: Playing
-  pauseString = (await strings).pause; // resultado: Paused
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`
 
 Devuelve una variable desde el sitio web si existe.
 
-**Advertencia: Esta función puede causar un alto uso de CPU y retraso en el sitio cuando se ha ejecutado demasiadas veces.**
+**Advertencia: Esta función puede provocar un uso elevado de la CPU y un retraso en el sitio cuando se ha ejecutado demasiadas veces.**
 
 ```typescript
 const pageVar = getPageletiable(".pageVar");
-console.log(pageVar); // Esto mostrará en la consola "Contenido de la variable"
+console.log(pageVar); // Esto mostará en la consola el "Contenido de la variable"
 ```
 
 ### `getExtensionVersion(Boolean)`
@@ -159,7 +159,7 @@ console.log(version); // Mostrará 2.1.0
 
 ### `getSetting(String)`
 
-Obtén el valor del ajuste.
+Devuelve el valor del ajuste.
 
 ```typescript
 const setting = await presence.getSetting("pdexID"); // Remplaza pdexID con el id del ajuste
@@ -168,7 +168,7 @@ console.log(setting); // Esto mostrará el valor del ajuste
 
 ### `hideSetting(String)`
 
-Oculta el ajuste indicado.
+Oculta la configuración dada.
 
 ```typescript
 presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
@@ -176,7 +176,7 @@ presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 ### `showSetting(String)`
 
-Muestra el ajuste indicado (solo funciona si el ajuste ha sido ocultado).
+Muestra la configuración dada (solo funciona si la configuración ya estaba oculta).
 
 ```typescript
 presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
@@ -273,7 +273,7 @@ Esta interfaz tiene las siguientes variables, todas ellas son opcionales.
   <tbody>
     <tr>
       <td style="text-align:left">details</td>
-      <td style="text-align:left">La primera línea en la presence, generalmente usada como cabecera.</td>
+      <td style="text-align:left">La primera línea en la presence, generalmente usada como encabezado.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
@@ -354,7 +354,7 @@ const presenceData: PresenceData = {
 
 ## Eventos
 
-Los eventos te permiten detectar y manejar algunos cambios o llamadas realizadas. Puedes suscribirte a eventos usando el método `on`.
+Los eventos te permiten detectar y manejar algunos cambios o llamadas que se realizaron. Puedes suscribirte a eventos usando el método `on`.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -362,12 +362,12 @@ presence.on("UpdateData", async () => {
 });
 ```
 
-Hay algunos eventos disponibles:
+Aquí hay algunos eventos disponibles:
 
 #### `UpdateData`
 
-Este evento es lanzado cada vez que la presence es actualizada.
+Este evento es lanzado cada vez que la presence se actualiza.
 
 #### `iFrameData`
 
-Lanzado cuando se obtienen datos del script iFrame.
+Se activa cuando se reciben datos del script iFrame.
