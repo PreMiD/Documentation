@@ -106,38 +106,31 @@ Seit v2.2.0 der Erweiterung können Sie nun die Zeichenketten einer bestimmten S
 Wir empfehlen Ihnen, den folgenden Code zu verwenden, damit die PresenceData automatisch aktualisiert, wenn der Benutzer die ausgewählte Sprache ändert;
 
 ```typescript
-// Eine Schnittstelle der Zeichenketten, die Sie erhalten (gut für Code-Qualität und Autovervollständigung).
-interface LangStrings {
-  play: string;
-  pause: string;
-}
-
-async function getStrings(): Promise<LangStrings> {
+async function getStrings() {
   return presence.getStrings(
     {
-      // Die Zeichenketten, die du erhältst, stellen sicher, dass diese zu Ihrer LangStrings Schnittstelle passen.
       play: "general.playing",
       pause: "general.paused"
     },
-    // Die ID ist die ID der multiLanguage Einstellung.
-    await presence.getSetting("ID")
+    // The ID is the ID of the multiLanguage setting.
+    await presence.getSetting("ID").catch(() => "en");
   );
 }
 
-let strings: Promise<LangStrings> = getStrings(),
-  // Die ID ist die ID der multiLanguage Einstellung.
+let strings = getStrings(),
+  // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! Der folgende Code muss innerhalb des updateData Events sein!
-// Die ID ist die ID von der multiLanguage Einstellung.
+//! The following code must be inside the updateData event!
+// The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = (await strings).play, // Ergebnis: Playing
-  pauseString = (await strings).pause; // Ergebnis: Paused
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`

@@ -106,38 +106,31 @@ Desde a versão 2.2.0 da extensão você pode obter as strings de uma determinad
 Sugerimos que você use o seguinte código para que ele atualize automaticamente o PresenceData se o usuário alterar o idioma selecionado;
 
 ```typescript
-// Uma interface das strings que você está recebendo (boa para qualidade de código e autocompletar).
-interface LangStrings {
-  play: string;
-  pause: string;
-}
-
-async function getStrings(): Promise<LangStrings> {
+async function getStrings() {
   return presence.getStrings(
     {
-      // As strings que você está recebendo, certifique-se de que isto se encaixa com sua interface LangStrings.
       play: "general.playing",
       pause: "general.paused"
     },
-    // O ID é o ID da configuração multiLanguage.
-    await presence.getSetting("ID")
+    // The ID is the ID of the multiLanguage setting.
+    await presence.getSetting("ID").catch(() => "en");
   );
 }
 
-let strings: Promise<LangStrings> = getStrings(),
-  // O ID é o ID da configuração multiLanguage.
+let strings = getStrings(),
+  // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! O seguinte código deve estar dentro do evento updateData!
-// O ID é o ID da configuração multiLanguage.
+//! The following code must be inside the updateData event!
+// The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = strings.play; // resultado: Reproduzindo
-const pauseString = strings.pause; // resultado: Pausado
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`

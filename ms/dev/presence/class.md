@@ -106,38 +106,31 @@ Sejak v2.2.0 sambungan, anda mampu dapatkan rentetan bagi sesebuah bahasa. Ini b
 Kami cadangkan anda gunakan kod di bawah supaya ia mengemas kini PresenceData secara automatik sekiranya pengguna mengubah bahasa yang dipilih;
 
 ```typescript
-// Sebuah antara muka bagi rentetan yang anda akan terima (contoh bagus untuk kualiti kod dan autolengkap).
-interface LangStrings {
-  play: string;
-  pause: string;
-}
-
-async function getStrings(): Promise<LangStrings> {
+async function getStrings() {
   return presence.getStrings(
     {
-      // Rentetan yang anda dapatkan, pastikan ia sesuai dengan antara muka LangStrings anda.
       play: "general.playing",
       pause: "general.paused"
     },
-    // ID ini ialah ID bagi tetapan multiLanguage.
+    // The ID is the ID of the multiLanguage setting.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
-let strings: Promise<LangStrings> = getStrings(),
-  // ID ini ialah ID bagi tetapan multiLanguage.
+let strings = getStrings(),
+  // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! Kod di bawah mestilah berada dalam peristiwa updateData!
-// ID ini ialah ID bagi tetapan multiLanguage.
+//! The following code must be inside the updateData event!
+// The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = (await strings).play, // hasilnya: Bermain
-  pauseString = (await strings).pause; // hasilnya: Dijedakan
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`

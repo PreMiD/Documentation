@@ -139,16 +139,9 @@ We suggest you use the following code so it automatically updates the PresenceDa
 
 
 ```typescript
-// An interface of the strings you are getting (good for code quality and autocomplete).
-interface LangStrings {
-  play: string;
-  pause: string;
-}
-
-async function getStrings(): Promise<LangStrings> {
+async function getStrings() {
   return presence.getStrings(
     {
-      // The strings you are getting, make sure this fits with your LangStrings interface.
       play: "general.playing",
       pause: "general.paused"
     },
@@ -157,7 +150,7 @@ async function getStrings(): Promise<LangStrings> {
   );
 }
 
-let strings: Promise<LangStrings> = getStrings(),
+let strings = getStrings(),
   // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
