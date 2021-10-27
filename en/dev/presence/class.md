@@ -118,7 +118,7 @@ async function getStrings() {
   );
 }
 
-let strings= getStrings(),
+let strings = getStrings(),
   // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
