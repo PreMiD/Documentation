@@ -106,16 +106,9 @@ const pauseString = strings.pause; // result: Остановлен
 Мы предлагаем вам использовать следующий код, чтобы он автоматически обновлял PresenceData, если пользователь меняет выбранный язык;
 
 ```typescript
-// Интерфейс получаемых строк (хорош для качества кода и автозавершения).
-interface LangStrings {
-  play: string;
-  pause: string;
-}
-
-async function getStrings(): Promise<LangStrings> {
+async function getStrings() {
   return presence.getStrings(
     {
-      // Убедитесь, что строки, которые вы получаете, соответствуют вашему интерфейсу LangStrings.
       play: "general.playing",
       pause: "general.paused"
     },
@@ -124,20 +117,20 @@ async function getStrings(): Promise<LangStrings> {
   );
 }
 
-let strings: Promise<LangStrings> = getStrings(),
-  // ID — идентификатор настройки multiLanguage.
+let strings = getStrings(),
+  // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! Следующий код должен быть внутри события updateData!
-// ID — это идентификатор многоязычных параметров.
+//! The following code must be inside the updateData event!
+// The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = (await strings).play, // результат: Играет
-  pauseString = (await strings).pause; // результат: Приостановлено
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`
