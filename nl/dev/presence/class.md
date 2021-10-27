@@ -112,13 +112,13 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // De ID is de ID van de multiLanguage instelling.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // De ID is de ID van de multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! De volgende code moet binnen het updateData evenement!
