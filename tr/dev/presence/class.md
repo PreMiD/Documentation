@@ -106,30 +106,23 @@ Eklentinin v2.2.0 sürümünden bu yana, artık belirli bir dilin çevirilerini 
 Kullanıcı dili değiştirdiğinde PresenceData verisini otomatik olarak güncelleyebilmesi için aşağıdaki kodu kullanmanızı öneririz;
 
 ```typescript
-// Çevirilerde kullanabileceğiniz (kod kalitesi ve otomatik tamamlama için iyi olacak) bir arayüz.
-interface LangStrings {
-  play: string;
-  pause: string;
-}
-
-async function getStrings(): Promise<LangStrings> {
+async function getStrings() {
   return presence.getStrings(
     {
-      // İstediğiniz çevirilerin verisi, dönen verinin LangStrings arayüzünüze uygun olduğundan emin olun.
       play: "general.playing",
       pause: "general.paused"
     },
-    // Buradaki ID, multiLanguage ayarındaki ID'dir.
+    // The ID is the ID of the multiLanguage setting.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
-let strings: Promise<LangStrings> = getStrings(),
+let strings = getStrings(),
   // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! Aşağıdaki kod updateData olayının (event) içerisinde olmalıdır!
-// Buradaki ID, multiLanguage ayarındaki ID'dir.
+//! The following code must be inside the updateData event!
+// The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
