@@ -121,7 +121,12 @@ let strings = getStrings(),
   // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! await presence.getSetting("ID").catch(() => "en");
+  );
+}
+
+let strings: Promise<LangStrings> = getStrings(),
+  // ID — идентификатор настройки multiLanguage.
 // The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
