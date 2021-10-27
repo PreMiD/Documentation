@@ -106,38 +106,31 @@ Sejak ekstensi v2.2.0 kamu sekarang bisa mendapatkan string dari bahasa tertentu
 Kami menyarankan kamu untuk menggunakan kode berikut agar PresenceData secara otomatis diperbarui jika pengguna merubah bahasa yang dipilih;
 
 ```typescript
-// Interface string yang kamu dapatkan (bagus untuk kualitas kode dan pelengkapan otomatis).
-interface LangStrings {
-  play: string;
-  pause: string;
-}
-
-async function getStrings(): Promise<LangStrings> {
+async function getStrings() {
   return presence.getStrings(
     {
-      // String yang kamu peroleh, pastikan ini sesuai dengan interface LangStrings kamu.
       play: "general.playing",
       pause: "general.paused"
     },
-    // ID diisi dengan ID dari pengaturan multiLanguage.
+    // The ID is the ID of the multiLanguage setting.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
-let strings: Promise<LangStrings> = getStrings(),
-  // ID diisi dengan ID dari pengaturan multiLanguage.
+let strings = getStrings(),
+  // The ID is the ID of the multiLanguage setting.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! Kode dibawah harus berada didalam event updateData!
-// ID diisi dengan ID dari pengaturan multiLanguage.
+//! The following code must be inside the updateData event!
+// The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = (await strings).play; // hasil: Playing
-const pauseString = (await strings).pause; // hasil: Paused
+const playString = (await strings).play, // result: Playing
+  pauseString = (await strings).pause; // result: Paused
 ```
 
 ### `getPageletiable(String)`
