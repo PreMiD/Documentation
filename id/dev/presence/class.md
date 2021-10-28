@@ -112,16 +112,16 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // ID adalah ID dari pengaturan multiLanguage.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // ID adalah ID dari pengaturan multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! Kode berikut harus berada didalam event updateData!
 // The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
@@ -129,8 +129,8 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // hasil: Playing
+  pauseString = (await strings).pause; // hasil: Paused
 ```
 
 ### `getPageletiable(String)`
