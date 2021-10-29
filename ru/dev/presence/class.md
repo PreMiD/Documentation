@@ -112,13 +112,13 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // В ID это ID многоязычной настройки.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // В ID это ID многоязычной настройки.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! await presence.getSetting("ID").catch(() => "en");
@@ -134,8 +134,8 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // результат: Playing
+  pauseString = (await strings).pause; // результат: Paused
 ```
 
 ### `getPageletiable(String)`
