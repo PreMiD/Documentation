@@ -312,8 +312,8 @@ presence.on("UpdateData", async () => {
     smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
     details: "Browsing Page Name", //The upper section of the presence text
     state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    startTimestamp: 3133657200000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 3133700400000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
   }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
   if (presenceData.details == null) {
