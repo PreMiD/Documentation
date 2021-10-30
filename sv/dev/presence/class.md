@@ -56,7 +56,7 @@ Den andra parametern definierar när presencen spelar något eller inte. Always 
 
 Clears your current activity and the tray title.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > This method works only on Mac OS. 
 > 
