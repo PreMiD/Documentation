@@ -56,7 +56,7 @@ Der zweite Parameter definiert, wann Presence etwas spielt oder nicht. Verwende 
 
 Löscht deine akutelle Aktivität und den Tray-Titel.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Diese Methode funktioniert nur unter Mac OS. 
 > 
