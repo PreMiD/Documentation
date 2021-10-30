@@ -56,7 +56,7 @@ Drugi parametr określa, kiedy status jest aktywny lub nie. Always use `true` if
 
 Clears your current activity and the tray title.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > This method works only on Mac OS. 
 > 
