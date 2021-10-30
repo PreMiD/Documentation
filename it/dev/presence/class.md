@@ -56,7 +56,7 @@ Il secondo parametro definisce quando la presence sta riproducendo qualcosa o no
 
 Clears your current activity and the tray title.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > This method works only on Mac OS. 
 > 
