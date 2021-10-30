@@ -121,7 +121,7 @@ let strings = getStrings(),
   // L'ID est à nouveau l'identifiant du paramètre multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! Le code suivant doit être à l'intérieur de l'event updateData !
 // The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
@@ -129,8 +129,8 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // résultat : Lecture
+  pauseString = (await strings).pause; // résultat : En pause
 ```
 
 ### `getPageletiable(String)`
