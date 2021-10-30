@@ -56,7 +56,7 @@ El segundo parámetro indica si la presence está reproduciendo algo o no. Utili
 
 Elimina la actividad actual y el titulo de la bandeja de trabajo.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Este método funciona sólo en Mac OS. 
 > 
