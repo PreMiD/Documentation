@@ -304,22 +304,16 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "key" /*La clave (nombre del archivo) de la imagen grande de la presence. Estos se suben y se nombran en la sección Rich Presence de tu aplicación, llamada Art Assets*/
     smallImageKey:
-      "key" /*La clave (nombre del archivo) de la imagen pequeña de la presence. Estos son cargados y nombrados en la sección Rich Presence de tu aplicación llamados Art Assets*/,
-    smallImageText: "Un texto", //Este texto será mostrado al pasar el cursor sobre la imagen pequeña
-    details: "Viendo Nombre Página", //La sección superior del texto de la presence
-    state: "Leyendo sección A", //La sección inferior del texto de la presence
-    startTimestamp: 1577232000, //Un timestamp unix desde el que empezar a contar
-    endTimestamp: 1577151472000 //Si quieres mostrar el tiempo restante en vez de el activo, esto es el timestamp en el que va a terminar el evento
-  }; /*Opcionalmente puedes establecer aquí el valor a largeImageKey y cambiar los valores de las otras propiedades, por ejemplo presenceData.type = "lorem ipsum"; types examples: details, state, etc.*/
+      "key" /*La clave (nombre del archivo) de la imagen pequeña de la presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-  if (presenceData.details == null) {
-    //Esto es si no has establecido nada en la propiedad details
-    presence.setTrayTitle(); //Elimina el titulo de la barra de tareas a usuarios mac
-    presence.setActivity(); /*Actualiza la presence sin datos, eliminando los datos actuales y mostrando el icono de la aplicación y nombre de la aplicación configurada en Discord*/
-  } else {
-    //Esto es si hay details
-    presence.setActivity(presenceData); //Actualiza la presence con todos los datos del objeto presenceData
-  }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 
