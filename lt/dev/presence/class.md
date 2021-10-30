@@ -56,7 +56,7 @@ Antras parametras apibrėžia kada presence rodo kažką arba ne. Always use `tr
 
 Clears your current activity and the tray title.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > This method works only on Mac OS. 
 > 
