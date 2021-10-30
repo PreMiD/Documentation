@@ -107,18 +107,18 @@ Nous vous suggérons d'utiliser le code suivant afin qu'il mette à jour automat
 
 ```typescript
 async function getStrings() {
-  return presence.getStrings(
+return presence.getStrings(
     {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // L'ID est l'identifiant du paramètre multiLanguage.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // L'ID est à nouveau l'identifiant du paramètre multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
 //! The following code must be inside the updateData event!

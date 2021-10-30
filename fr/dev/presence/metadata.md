@@ -16,13 +16,12 @@ Un exemple de ce fichier se situe ci-dessous.
 
 ```typescript
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "UTILISATEUR",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "UTILISATEUR",
     "id": "ID"
   }],
   "service": "SERVICE",
@@ -38,13 +37,13 @@ Un exemple de ce fichier se situe ci-dessous.
   "thumbnail": "URL",
   "color": "#45A8FC",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATÉGORIE",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE FONTAWESOME",
       "value": true
     },
     {
@@ -52,15 +51,15 @@ Un exemple de ce fichier se situe ci-dessous.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE FONTAWESOME",
+      "value": "\"%song%\" par %artist%",
+      "placeholder": "utilisez %song% ou %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITRE AFFICHÉ",
+      "icon": "ICÔNE FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
