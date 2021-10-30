@@ -56,7 +56,7 @@ Parameter kedua menentukan sama ada Presence sedang memainkan sesuatu atau tidak
 
 Mengosongkan aktiviti semasa dan tajuk talam.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Kaedah ini hanya berfungsi di Mac OS. 
 > 

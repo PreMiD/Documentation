@@ -56,7 +56,7 @@ const presence = new Presence({
 
 Очищает вашу текущую активность и заголовок в трее.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Этот метод работает только на Mac OS. 
 > 

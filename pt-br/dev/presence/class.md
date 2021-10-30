@@ -56,7 +56,7 @@ O segundo parâmetro define quando a presence está reproduzindo algo ou não. S
 
 Limpa sua atividade e o título atual.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Este método funciona apenas no Mac OS. 
 > 

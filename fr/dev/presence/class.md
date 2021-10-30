@@ -56,7 +56,7 @@ Le second paramètre définit quand la présence joue quelque chose ou non. Touj
 
 Enlève l'activité et le titre actuel.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Cette méthode ne fonctionne que sur Mac OS. 
 > 

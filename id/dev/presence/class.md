@@ -56,7 +56,7 @@ Parameter kedua menentukan apakah presence memainkan sesuatu atau tidak. Selalu 
 
 Menghapus aktivitasmu saat ini dan judul tray.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Metode ini hanya bekerja di Mac OS. 
 > 

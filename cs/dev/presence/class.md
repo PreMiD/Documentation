@@ -56,7 +56,7 @@ Druhý parametr definuje, když přítomnost něco hraje nebo ne. Always use `tr
 
 Clears your current activity and the tray title.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Tato metoda funguje pouze na Mac OS. 
 > 

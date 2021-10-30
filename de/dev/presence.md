@@ -305,23 +305,16 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "key" /*Der Schlüssel (Dateiname), des großen Bildes der Presence. Diese sind in der Rich-Presence-Sektion deiner Anwendung hochgeladen und unter dem Menüpunkt "Art Assets" zu finden*/,
     smallImageKey:
-      "key" /* Der Schlüssel (Dateiname), des kleinen Bildes der Presence. Diese sind hochgeladen und in der Rich-Presence-Sektion deiner Anwendung namens Art Assets*/,
-    smallImageText: "Einige schwebende Text", //Der Text, der angezeigt wird, wenn Sie über dem kleinen Bild schweben
-    Details: "Browse Seitenname", //Der obere Abschnitt des Presencetextes
-    Status: "Lese-Abschnitt A", //Der untere Abschnitt des Presencetextes
-    startTimestamp: 1577232000, //Der Unix-Zeitstempel für den Beginn der Zählung ab
-    endTimestamp: 1577151472000 //Wenn die Zeitstempel statt verfallener angezeigt werden sollen, dies ist der Unixepoch-Zeitstempel, an dem der Timer endet
-  }; /*Optional können Sie hier einen largeImageKey setzen und den Rest als variable Untereigenschaften ändern, zum Beispiel presenceSata. ype = "blahblah"; Typbeispiele: details, state, etc.*/
+      "key" /* Der Schlüssel (Dateiname), des kleinen Bildes der Presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-  if (presenceData. etails == null) {
-    //Dies wird gestartet, wenn Sie keine Anwesenheitsdetails
-    angeben. 
-presence.setTrayTitle(); //Löscht den Tray-Titel für Mac User
-    presence.setActivity(); /*Aktualisiere die Presence ohne Daten, lösche es und mache das große Bild zum Discord-Anwendungs-Symbol, und den Text den Discord Anwendungsname*/
-  } else {
-    //Dies wird gestartet, wenn du die Anwesenheitsdetails festlegst
-    presence.setActivity(presenceData); //Aktualisiere die Presence mit allen Werten des presenceData Objekts
-  }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 

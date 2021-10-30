@@ -301,22 +301,16 @@ presence.on("UpdateData", async () => {
     largeImageKey: 
       "anahtar", /* Servisin kullanıcının profilinde gözükeceği büyük resmin Discord'dan oluşturduğunuz uygulamanın içerisindeki resim dosyasının adı. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. Buraya yazacağınız resimler, oluşturduğunuz uygulamanın "Rich Presence > Art Assets" kısmına yüklenmeli ve yüklendiği ismiyle girilmiş olmalıdır. */
-    smallImageText: "Falan da filan", // Küçük resmin üzerine gelindiğinde gözükecek yazı.
-    details: "Bir sayfaya göz atıyor", // Üst kısımda gözükecek yazı.
-    state: "Ana Sayfa",  // Alt kısımda gözükecek yazı.
-    startTimestamp: 1577232000, // Unix Epoch biçiminde yazılmış zaman verisi
-    endTimestamp: 1577151472000 // Eğer "kaldı" biçiminde bir veri göstermek istiyorsanız, bitiş zamanını da aynı biçimde burada belirtmelisiniz.
-  }; /* Eğer isterseniz burada sadece belli bir şey belirtebilir veya hiç belirtmeden daha sonra bunları belirtebilirsiniz. Bunun için de presenceData.state = "Ana Sayfa" yapabilirsiniz. */
+      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-  if (presenceData.details == null) {
-    // Bu kısım presenceData objesinde "details" anahtarı bulunmadığı zaman devreye girecektir.
-    presence.setTrayTitle(); // Mac kullanıcıları için menü yazısını temizler.
-    presence.setActivity(); // Bu şekilde fonksiyona bir veri girmeden girerseniz, büyük resim Discord uygulamasının simgesine dönüşecek ve başka bir bilgi gösterilmeyecektir.
-  } else {
-    // Yukarıdaki durumun dışında herhangi bir şey gerçekleşirse burası devreye girecektir.
-    presence.setActivity(presenceData); // Aktiviteyi belirtilen verilerle ayarlar.
-  }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 

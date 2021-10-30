@@ -309,22 +309,16 @@ presence.on("UpdateData", async () => {
     largeImageKey: 
       "key", /*De sleutel (bestandsnaam) van de Grote Afbeelding op de presence. Deze worden geüpload en genoemd in de Rich presence sectie van jouw applicatie, genaamd Art Assets*/
     smallImageKey: 
-      "key", /*De sleutel (bestandsnaam) van de Kleine Afbeelding op de presence. Deze worden geüpload en genoemd in de Rich presence sectie van jouw applicatie, genaamd Art Assets*/
-    smallImageText: "Some hover text", //De tekst die wordt weergeven wanneer je eroverheen wijst
-    details: "Browsing Page Name", //Het bovenste gedeelte van je presence
-    state: "Reading section A", //Het onderste gedeelte van je presence
-    startTimestamp: 1577232000, //De unix epoch-tijdstempel vanaf wanneer geteld moet worden
-    endTimestamp: 1577151472000 //Als je Tijd Over wilt laten zien in plaats van Voorbij, dit is de unix epoch-tijdstempel wanneer de timer stopt
-  }; /*Optioneel, je kan hier ook een largeImageKey zetten en de rest als variabele sub-eigenschappen veranderen, bijvoorbeeld presenceData.type = "blahblah"; type voorbeelden: details, state, etc.*/
+      "key", /*De sleutel (bestandsnaam) van de Kleine Afbeelding op de presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-  if (presenceData.details == null) {
-    //Dit wordt gestart als je geen presence-details instelt.
-    presence.setTrayTitle(); // Wist de tray-titel voor mac-gebruikers.
-    presence.setActivity(); /*Werk de presence bij zonder data, het wordt dus gewist en de grote afbeelding wordt de Discord Applicatie icoon, en de tekst wordt de Discord Applicatie naam*/
-  } else {
-    //Dit wordt gestart als je wel presence-details hebt ingesteld.
-    presence.setActivity(presenceData); //Werk de presence bij met alle waardes van het presenceData-object.
-  }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 

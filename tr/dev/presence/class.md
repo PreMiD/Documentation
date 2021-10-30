@@ -56,7 +56,7 @@ Verilen verilerle profilinizi ayarlar.
 
 Gözüken verileri ve menü çubuğu yazısını temizler.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Bu yöntem sadece MacOS üzerinde çalışmaktadır. 
 > 
