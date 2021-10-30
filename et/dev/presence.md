@@ -308,22 +308,16 @@ presence.on("UpdateData", async () = > {
     largeImageKey:
       "key"/*Suure pildi võti (faili nimi) presence. Need laaditakse üles ja nimetatakse teie rakenduse jaotises Rich Presence nimega Kunstivarad*/,
     smallImageKey:
-      "key"/*Presence-i juures oleva väikese pildi võti (faili nimi). Need laaditakse üles ja nimetatakse teie rakenduse jaotises Rikas Presence nimega Kunstivarad*/,
-    smallImageText: "Mõned hõljutavad tekstid", //Tekst, mis kuvatakse väikese pildi kohal hõljutades
-    details: "Lehe nime sirvimine", //Presence-i teksti ülemine osa
-    state: "Jao A lugemine", //Presence-i teksti alumine osa
-    startTimestamp: 1577232000, //Unixi ajastu ajatempel, millal loendamist alustada
-    endTimestamp: 1577151472000 //Kui soovite kuvada möödunud aja asemel vasakule jääva aja, siis see on unixi ajastu ajatempel, mille abil taimer lõpeb
-  }; /*Soovi korral saate siin määrata suurPiltVõti ja muuta ülejäänud muutuvate alamomadustena, näiteks presenceSata.type = "blahblah"; tüübinäited: üksikasjad, olek jne*/
+      "key"/*Presence-i juures oleva väikese pildi võti (faili nimi). These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-  kui (presenceData.details == null) {
-    //See käivitub, kui te ei määra presence-i üksikasju
-    presence.setTrayTiitle (); //Kustutab salve pealkirja mac-kasutajatele
-    presence.setAktiivsus (); /*Uuendage presence-i ilma andmeteta, kustutades selle ja muutes suureks pildiks Discordi rakenduse ikooni ja teksti Discordi rakenduse nimeks*/
-  } muu {
-    //See käivitub, kui määrate presence-i üksikasjad
-    presence.setActivity (presenceData); //Värskendage presence kõigi presenceData objekti väärtustega
-  }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 
