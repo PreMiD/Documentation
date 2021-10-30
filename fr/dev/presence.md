@@ -308,22 +308,16 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "key" /*La clé (nom du fichier) de l'image large sur la presence. Celles-ci sont mises en ligne et nommées dans la section Rich Presence de votre application, appelée Art Assets*/,
     smallImageKey:
-      "key" /*La clé (nom de fichier) de la petite image sur la presence. Celles-ci sont téléchargées et nommées dans la section Rich Presence de votre application, appelé Art Assets*/
-        smallImageText: "Quelques texte survolant", //Le texte qui est affiché en survolant la petite image avec la souris
-        details: "Nom de la page de navigation", //La section supérieure du texte de la presence
-        state: "Lire la section A", //La section inférieure du texte de la presence
-        startTimestamp : 1577232000, //L'horodatage unix pour savoir à partir de quand commencer à compter
-        endTimestamp : 1577151472000 //Si vous voulez afficher Time Left au lieu d'Elapsed, il s'agit de l'horodatage unix auquel le minuteur se termine
-    }; /*Optionellement, vous pouvez définir une largeImageKey ici et modifier le reste en tant que variables de sous-propriétés, par exemple presenceSata.type = "blabla"; exemples de type: détails, état, etc.*/
+      "key" /*La clé (nom de fichier) de la petite image sur la presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-    if (presenceData.details == null) {
-        //Cela se déclenchera si vous ne définissez pas les détails de présence
-        presence.setTrayTitle(); //Efface le titre du plateau pour les utilisateurs mac
-        presence.setActivity(); /*Met à jour la présence sans aucune donnée, donc la vider et faire de la grande image l'icône de l'application Discord, et le texte du nom de l'application Discord*/
-    } else {
-        //Cela se déclenchera si vous définissez des détails dans la presence
-        presence.setActivity(presenceData); //Met à jour la presence avec toutes les valeurs de l'objet presenceData
-    }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 
