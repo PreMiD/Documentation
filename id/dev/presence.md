@@ -306,22 +306,16 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "key" /*Key (nama file) dari Large Image di presence. Ini di upload dan diberi nama di Rich Presence dari aplikasi anda, yang disebut Art Assets*/,
     smallImageKey:
-      "key" /*Key (nama file) dari Small Image di presence. Berikut adalah yang di unggah dan dinamai pada bagian Rich Presence dari aplikasi-mu, bernama Art Assets*/
-        smallImageText: "Some hover text", //Teks yang akan terlihat ketika hover pada gambar kecil
-        details: "Browsing Page Name", //Bagian atas dari teks presence
-        state: "Reading section A", //Bagian bawah dari teks presence
-        startTimestamp: 1577232000, //Unix epoch timestamp untuk mulai menghitung
-        endTimestamp: 1577151472000 //Jika anda ingin menampilkan waktu tersisa dari pada waktu berlalu, ini adalah unix epoch timestamp dimana hitung mundur selesai
-    }; /*Secara opsional anda dapat mengatur largeimagekey disini dan merubahnya sebagai subproperti variabel, contohnya presenceSata.type = "serahlo"; contoh type: details, state, etc.*/
+      "key" /*Key (nama file) dari Small Image di presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-    if (presenceData.details == null) {
-        //Ini akan dijalankan jika anda tidak mengatur detail presence
-        presence.setTrayTitle(); //Bersihkan tray title untuk pengguna mac
-        presence.setActivity(); /*Update presence tanpa data, akan membersihkannya dan membuat gambar besar menjadi gambar Aplikasi Discord, dan teks menjadi nama Aplikasi Discord*/
-    } else {
-        //Ini akan dijalankan jika anda mengatur detail dari presence
-        presence.setActivity(presenceData); //Update presence dengan semua value dari presenceData object
-    }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 
