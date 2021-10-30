@@ -57,7 +57,7 @@ Second parameter defines when presence is playing something or not. Always use `
 
 Clears your current activity and the tray title.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > This method works only on Mac OS.
 {.is-warning}
