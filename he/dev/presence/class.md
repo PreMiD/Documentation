@@ -72,7 +72,7 @@ Clears your current activity and the tray title.
 
 
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 
 
