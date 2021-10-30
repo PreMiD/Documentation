@@ -56,7 +56,7 @@ Tweede parameter definieert wanneer presence iets afspeelt of niet. Gebruik alti
 
 Wist je huidige activiteit en de tray titel.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Deze methode werkt alleen op Mac OS. 
 > 
