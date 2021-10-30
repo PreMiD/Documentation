@@ -56,7 +56,7 @@ Sainmhíníonn an dara paraiméadar nuair a bhíonn láithreacht ag imirt rud é
 
 Glanann do ghníomhaíocht reatha agus teideal an tráidire.
 
-### `setTrayTitle(String)`
+### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
 > Ní oibríonn an modh seo ach ar Mac OS. 
 > 
