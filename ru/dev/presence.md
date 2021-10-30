@@ -307,22 +307,16 @@ setInterval(myOutsideHeavyLiftingFunction, США);
   Const presenceData: PresenceData = {
     largeImageKey:
       "key" /*Ключ (имя файла) Большого изображения на наличии. Они загружаются и называются в разделе Rich Presence вашего приложения, который называется Art Assets.*/
-        smallImageKey: "key", /*Ключ (имя файла) большого изображения о наличии. Эти файлы загружены и названы в разделе Rich Presence вашего приложения, под названием Art Assets*/,
-    smallImageText: "Некоторого наведении текста", //Текст, который отображается при наведении курсора на маленькое изображение
-    подробности: "Имя страницы просмотра", //Верхняя часть текста присутствия
-    состояния: "Чтение секции А", //Нижняя часть текста о присутствии
-    startTimestamp: 1577232000, //Отметка времени эпохи unix для начала подсчета времени с
-    на время окончания времени: 1577151472000 //Если вы хотите отобразить время осталось вместо устаревших, это метка времени unix эпохи, в которой таймер заканчивается
-  }; /*При необходимости вы можете установить здесь largeImageKey и изменить остальные в качестве субсвойств переменной, например presenceSata. Type = "blahblah"; тип примеров: подробности, состояние и т.д.*/
+        smallImageKey: "key", /*Ключ (имя файла) большого изображения о наличии. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
+    details: "Browsing Page Name", //The upper section of the presence text
+    state: "Reading section A", //The lower section of the presence text
+    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
+    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
 
-  если (presenceData. etails == null) {
-    //Это вызовет вызов, если вы не указали детали присутствия
-    присутствия. etTrayTitle(); //Очищает заголовок для mac пользователей
-    etActivity(); /*Обновите присутствие без данных, поэтому очистите его и сделайте большое изображение значком приложения Discord, и текст названия приложения Discord*/
-  } else {
-    //Это вызовет выстрел, если вы установите детали присутствия
-    присутствия. etActivity(presenceData); //Обновление присутствия всеми значениями из объекта присутствияData
-  }
+  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
+  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
 });
 ```
 
