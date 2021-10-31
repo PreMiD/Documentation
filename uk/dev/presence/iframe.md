@@ -1,9 +1,11 @@
 ---
 title: iFrame клас
-description:
+description: 
 published: true
-date: 2021-07-01T14:03:55.793Z
-tags:
+date: 2021-09-18T14:44:52.424Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T02:00:46.278Z
 ---
 
 # iFrame клас

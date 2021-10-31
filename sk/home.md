@@ -2,10 +2,10 @@
 title: Domov
 description: Oficiálna dokumentácia pre v2
 published: true
-date: 2021-02-24T23:22:41.678Z
-tags:
+date: 2021-09-18T14:09:44.750Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:47.172Z
+dateCreated: 2021-09-07T01:19:33.324Z
 ---
 
 > The documentation is still being edited! Niektoré stránky môžu byť neúplné alebo chýbajú. 

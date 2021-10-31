@@ -2,8 +2,10 @@
 title: Firefox
 description: Začíname s PreMiD inštaláciou na Firefoxe
 published: true
-date: 2020-02-12T22:08:32.409Z
-tags:
+date: 2021-09-18T14:23:25.013Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:36:09.504Z
 ---
 
 Inštalácia rozšírenia je veľmi dôležitá pretože samotná aplikácia nemôže urobiť nič.

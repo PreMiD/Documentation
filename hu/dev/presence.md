@@ -1,11 +1,11 @@
 ---
 title: Presence fejlesztés
-description:
+description: 
 published: true
-date: 2021-07-08T19:12:34.449Z
-tags:
+date: 2021-10-30T23:14:29.642Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:02.843Z
+dateCreated: 2021-09-07T01:29:31.566Z
 ---
 
 > All presences are now stored here: https://github.com/PreMiD/Presences 

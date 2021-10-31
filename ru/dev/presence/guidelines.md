@@ -2,10 +2,10 @@
 title: Руководство по присутствию
 description: Правила, которым должны следовать все разработчики presence, чтобы добавить свое presence.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-29T12:51:17.171Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T01:57:10.468Z
 ---
 
 <div align="center">

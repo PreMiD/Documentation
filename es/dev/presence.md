@@ -1,11 +1,11 @@
 ---
 title: Desarrollo de Presences
-description:
+description: 
 published: true
-date: 2021-07-08T19:12:34.449Z
-tags:
+date: 2021-10-30T23:13:50.459Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:02.843Z
+dateCreated: 2021-09-07T01:25:58.755Z
 ---
 
 > Todas las presences ahora se almacenan aquí: https://github.com/PreMiD/Presences 

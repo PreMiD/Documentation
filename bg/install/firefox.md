@@ -2,8 +2,10 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2020-02-12T22:08:32.409Z
-tags:
+date: 2021-09-18T14:12:30.489Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:22:56.254Z
 ---
 
 Изтеглянето на разширението е много важно, като приложението не може да прави нищо само по себе си.

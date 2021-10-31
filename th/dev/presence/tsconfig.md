@@ -2,9 +2,10 @@
 title: การกำหนดค่าไฟล์ Typescript
 description: ตัวช่วยเล็กๆ สำหรับ Typescript
 published: true
-date: 2020-08-05T16:25:22.812Z
-tags:
+date: 2021-09-18T14:44:01.141Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T01:59:43.027Z
 ---
 
 # การกำหนดค่าไฟล์ Typescript

@@ -2,8 +2,10 @@
 title: Getting Started
 description: A little advice for those who got into coding recently
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T12:54:19.221Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-19T12:54:16.907Z
 ---
 
 > A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 

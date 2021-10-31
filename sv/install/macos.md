@@ -2,8 +2,10 @@
 title: macOS
 description: Komma igång med en PreMiD-installation på macOS
 published: true
-date: 2020-02-12T22:08:37.439Z
-tags:
+date: 2021-09-18T14:24:22.065Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:37:12.668Z
 ---
 
 > Innan du går vidare, se till att ditt system uppfyller alla [krav](/install/requirements). 

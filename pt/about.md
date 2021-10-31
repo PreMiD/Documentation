@@ -2,9 +2,10 @@
 title: Sobre o PreMiD
 description: The core features of PreMiD
 published: true
-date: 2020-09-01T22:07:41.029Z
-tags:
+date: 2021-09-18T14:08:39.216Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T01:18:23.514Z
 ---
 
 O PreMiD é uma ferramenta simples e configurável que te permite mostrar o que estás a fazer na internet no teu status do Discord. Ele suporta muitas plataformas diferentes e suportará vários utilizadores acompanhando o mesmo conteúdo simultaneamente em uma futura atualização.

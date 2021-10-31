@@ -2,8 +2,10 @@
 title: macOS
 description: macOSにPreMiDをインストールする方法
 published: true
-date: 2020-02-12T22:08:37.439Z
-tags:
+date: 2021-09-18T14:19:23.130Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:31:41.827Z
 ---
 
 > ダウンロードする前に、お使いのPCが[必要条件](/install/requirements)を満たしているか確認してください。 

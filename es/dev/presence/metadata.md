@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Contiene datos básicos sobre la Presence
 published: true
-date: 2021-02-07T17:12:06.799Z
-tags:
+date: 2021-10-09T13:08:40.967Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:52.965Z
+dateCreated: 2021-09-07T01:45:35.744Z
 ---
 
 # Metadata.json

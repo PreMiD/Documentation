@@ -2,10 +2,10 @@
 title: Normas de las Presence
 description: Reglas que todos los desarrolladores de Presences deben seguir para que su Presence sea añadida.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-18T16:37:14.424Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T01:45:28.560Z
 ---
 
 <div align="center">

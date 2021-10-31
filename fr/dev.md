@@ -2,8 +2,10 @@
 title: Commencer
 description: Un petit conseil pour ceux qui ont commencé le codage récemment
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-20T19:42:00.784Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-19T12:54:50.471Z
 ---
 
 > Un éditeur de code est requis. Nous recommandons [Visual Studio Code](https://code.visualstudio.com/). 

@@ -2,10 +2,10 @@
 title: API
 description: Toegang tot bronnen en acties uitvoeren met behulp van de PreMiD API
 published: true
-date: 2021-02-01T12:36:44.713Z
-tags:
+date: 2021-09-18T14:20:43.794Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:59.010Z
+dateCreated: 2021-09-07T01:33:14.110Z
 ---
 
 # API

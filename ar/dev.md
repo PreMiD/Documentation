@@ -2,8 +2,10 @@
 title: الإبتداء
 description: نصيحة صغيرة لأولئك الذين بدأوا بالبرمجة مؤخرًا
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T12:54:04.368Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-19T12:54:01.763Z
 ---
 
 > مطلوب محرر نص برمجي. We recommend [Visual Studio Code](https://code.visualstudio.com/). 

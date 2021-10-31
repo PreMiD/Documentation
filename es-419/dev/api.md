@@ -2,10 +2,10 @@
 title: API
 description: Accede a recursos y realiza acciones mediante la API de PreMiD
 published: true
-date: 2021-02-01T12:36:44.713Z
-tags:
+date: 2021-10-27T17:49:46.095Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:59.010Z
+dateCreated: 2021-10-27T17:49:43.008Z
 ---
 
 # API

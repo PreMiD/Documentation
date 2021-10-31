@@ -2,8 +2,10 @@
 title: Firefox
 description: Aan de slag met de PreMiD installatie in Firefox
 published: true
-date: 2020-02-12T22:08:32.409Z
-tags:
+date: 2021-09-18T14:20:54.153Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:33:25.170Z
 ---
 
 De installatie van de extensie is van groot belang, omdat de applicatie op zichzelf niets kan doen.

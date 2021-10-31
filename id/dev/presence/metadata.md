@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Berisi data dasar tentang Presence
 published: true
-date: 2021-02-07T17:12:06.799Z
-tags:
+date: 2021-10-12T01:46:12.897Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:52.965Z
+dateCreated: 2021-09-07T01:50:41.690Z
 ---
 
 # Metadata.json

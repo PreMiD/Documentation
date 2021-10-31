@@ -2,10 +2,10 @@
 title: إصلاح الاخطاء
 description: كل شيء لحل مشكلتك
 published: true
-date: 2021-02-08T21:30:58.603Z
-tags:
+date: 2021-09-18T14:46:31.148Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-12T19:40:33.640Z
 ---
 
 > تأكد من أن لديك الملحق **و** التطبيق مثبتين! 

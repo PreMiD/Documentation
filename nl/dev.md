@@ -2,8 +2,10 @@
 title: Aan de slag
 description: Een beetje advies voor degenen die onlangs in codering zijn gekomen
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T15:21:45.322Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:17:54.588Z
 ---
 
 > Een broncode editor is vereist. Wij raden [Visual Studio Code](https://code.visualstudio.com/) aan. 

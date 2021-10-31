@@ -2,9 +2,10 @@
 title: TypeScript Konfigürasyonu
 description: TypeScript için ufak bir yardımcı
 published: true
-date: 2020-08-05T16:25:22.812Z
-tags:
+date: 2021-09-18T14:44:30.271Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T02:00:23.132Z
 ---
 
 # TypeScript Konfigürasyonu

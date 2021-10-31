@@ -2,10 +2,10 @@
 title: فئة الpresence
 description: الصف الرئيسي لكل presnece PreMiD
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:13:13.654Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:41:01.569Z
 ---
 
 # فئة الpresence

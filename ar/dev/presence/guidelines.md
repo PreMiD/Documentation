@@ -2,10 +2,10 @@
 title: Presence قوانين الـ
 description: قواعد جميع مطوري الpresence يجب أن يتم اتباعها لإضافة الpresence الخاصة بهم.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-18T16:36:47.142Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T01:41:06.181Z
 ---
 
 <div align="center">

@@ -2,10 +2,10 @@
 title: Tilstedeværelse Klasse
 description: The main class for every PreMiD presence
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:13:32.712Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:43:15.289Z
 ---
 
 # Tilstedeværelse Klasse

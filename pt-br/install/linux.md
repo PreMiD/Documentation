@@ -2,10 +2,10 @@
 title: Linux
 description: Primeiros passos com a instalação do PreMiD no Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
-tags:
+date: 2021-09-18T14:22:11.182Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:14.124Z
+dateCreated: 2021-09-07T01:34:50.486Z
 ---
 
 A instalação do aplicativo é muito importante, uma vez que a extensão não pode fazer nada por si só.

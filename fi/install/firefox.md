@@ -2,8 +2,10 @@
 title: Firefox
 description: PreMiD-asennuksen aloittaminen Firefox-selaimessa
 published: true
-date: 2020-02-12T22:08:32.409Z
-tags:
+date: 2021-09-18T14:16:05.060Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:27:22.923Z
 ---
 
 Laajennuksen asentaminen on erittäin tärkeää, sillä sovellus ei voi tehdä mitään yksinään.

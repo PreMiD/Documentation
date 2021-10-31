@@ -2,8 +2,10 @@
 title: উইন্ডোজ
 description: শুরু করা যাক PreMiD ইন্সটলেশন উইন্ডোজে
 published: true
-date: 2020-02-12T22:08:41.501Z
-tags:
+date: 2021-09-18T14:13:05.996Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:23:36.846Z
 ---
 
 > আরো দূরে যাওয়ার আগে, নিশ্চিত করো যে তোমার সিস্টেম সব [রিকোয়ারমেন্টগুলো](/install/requirements) পূরণ করে।{.is-info}

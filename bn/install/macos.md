@@ -2,8 +2,10 @@
 title: macOS
 description: শুরু করা যাক PreMiD ইন্সটলেশন ম্যাক ওএস - এ
 published: true
-date: 2020-02-12T22:08:37.439Z
-tags:
+date: 2021-09-18T14:13:01.243Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:23:30.448Z
 ---
 
 > আরো দূরে যাওয়ার আগে, নিশ্চিত করো যে তোমার সিস্টেম সব [রিকোয়ারমেন্টগুলো](/install/requirements) পূরণ করে। 

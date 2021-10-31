@@ -2,8 +2,10 @@
 title: Erste Schritte
 description: Ein kleiner Ratschlag für diejenigen, die sich in letzter Zeit mit Codierung beschäftigen
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-10-09T14:58:54.182Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-19T12:54:20.654Z
 ---
 
 > Ein Quellcode-Editor ist erforderlich. Wir empfehlen [Visual Studio Code](https://code.visualstudio.com/). 

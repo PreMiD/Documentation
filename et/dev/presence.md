@@ -1,11 +1,11 @@
 ---
 title: Presence-i arendamine
-description:
+description: 
 published: true
-date: 2021-07-08T19:12:34.449Z
-tags:
+date: 2021-10-30T23:13:56.891Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:02.843Z
+dateCreated: 2021-09-07T01:26:24.515Z
 ---
 
 > Kõik presence-id on nüüd salvestatud siin: https://github.com/PreMiD/Presences 

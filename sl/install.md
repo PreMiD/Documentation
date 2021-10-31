@@ -2,10 +2,10 @@
 title: Namestitev
 description: How to install PreMiD
 published: true
-date: 2020-11-10T17:54:28.896Z
-tags:
+date: 2021-09-18T14:10:04.118Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:51.119Z
+dateCreated: 2021-09-07T01:19:52.580Z
 ---
 
 > Before going any further, make sure your system meets all the [requirements](/install/requirements). 

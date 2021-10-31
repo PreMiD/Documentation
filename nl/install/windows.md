@@ -2,8 +2,10 @@
 title: Windows
 description: Aan de slag met de PreMiD installatie op Windows
 published: true
-date: 2020-02-12T22:08:41.501Z
-tags:
+date: 2021-09-18T14:21:05.994Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:33:38.470Z
 ---
 
 > Voordat je verder gaat, zorg ervoor dat je systeem voldoet aan alle [vereisten](/install/requirements).{.is-info}

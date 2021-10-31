@@ -2,8 +2,10 @@
 title: Chromium
 description: PreMiD-asennuksen aloittaminen Chromium-pohjaisilla selaimilla
 published: true
-date: 2020-04-22T20:13:07.598Z
-tags:
+date: 2021-09-18T14:16:02.664Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:27:19.417Z
 ---
 
 Laajennuksen asentaminen on erittäin tärkeää, koska sovellus ei voi tehdä mitään itsenään.

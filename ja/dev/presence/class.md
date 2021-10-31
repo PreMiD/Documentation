@@ -2,10 +2,10 @@
 title: Presenceクラス
 description: すべてのPreMIDのプレゼンスのメインクラス
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:14:49.788Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:52:05.773Z
 ---
 
 # Presenceクラス

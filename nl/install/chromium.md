@@ -2,8 +2,10 @@
 title: Chromium
 description: Aan de slag met de PreMiD installatie op Chromium-gebaseerde browsers
 published: true
-date: 2020-04-22T20:13:07.598Z
-tags:
+date: 2021-09-18T14:20:51.116Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:33:21.781Z
 ---
 
 De installatie van de extensie is van groot belang, omdat de applicatie op zichzelf niets kan doen.

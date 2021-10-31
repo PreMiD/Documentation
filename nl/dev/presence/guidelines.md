@@ -2,10 +2,10 @@
 title: Presence-richtlijnen
 description: Regels die alle presence-ontwikkelaars moeten volgen om hun presence te laten toevoegen.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-18T16:38:11.666Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T01:54:19.655Z
 ---
 
 <div align="center">

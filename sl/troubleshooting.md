@@ -2,10 +2,10 @@
 title: Odpravljanje napak
 description: Everything to solve your problem
 published: true
-date: 2021-02-08T21:30:58.603Z
-tags:
+date: 2021-09-18T14:10:06.416Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-07T01:19:55.646Z
 ---
 
 > Make sure you have the extension **and** the application installed! 

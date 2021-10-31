@@ -2,10 +2,10 @@
 title: Inicio
 description: Documentación oficial para la v2
 published: true
-date: 2021-02-24T23:22:41.678Z
-tags:
+date: 2021-10-27T17:50:45.870Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:47.172Z
+dateCreated: 2021-10-27T17:50:43.001Z
 ---
 
 > ¡La documentación está siendo editada! Algunas páginas pueden estar incompletas o no disponibles. 

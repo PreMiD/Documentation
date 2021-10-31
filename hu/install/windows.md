@@ -2,8 +2,10 @@
 title: Windows
 description: PreMiD telepítési útmutató Windows rendszeren
 published: true
-date: 2020-02-12T22:08:41.501Z
-tags:
+date: 2021-09-18T14:18:04.611Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:29:51.789Z
 ---
 
 > A folytatás előtt, győződj meg arról, hogy az általad használt rendszer megfelel a [követelményeknek](/install/requirements).{.is-info}

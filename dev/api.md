@@ -2,7 +2,7 @@
 title: API
 description: Access resources and perform actions using the PreMiD API
 published: true
-date: 2021-10-30T23:53:14.951Z
+date: 2021-10-30T23:53:16.875Z
 tags: 
 editor: markdown
 dateCreated: 2021-09-07T01:25:28.441Z

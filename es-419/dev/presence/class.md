@@ -2,10 +2,10 @@
 title: Clase de Presence
 description: La clase principal para cada presence de PreMiD
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:13:47.607Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-10-27T17:50:03.484Z
 ---
 
 # Clase de Presence

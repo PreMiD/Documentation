@@ -2,10 +2,10 @@
 title: Třída Presence
 description: Hlavní třída pro každou presenci PreMiD
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:13:27.993Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:42:43.303Z
 ---
 
 # Třída Presence

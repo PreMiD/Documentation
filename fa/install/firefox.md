@@ -2,8 +2,10 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2020-02-12T22:08:32.409Z
-tags:
+date: 2021-09-18T14:15:44.739Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:26:56.394Z
 ---
 
 نصب افزونه مرورگر به اندازه نصب خود برنامه خیلی خیلی مهمه و برنامه بدون افزونه مرورگر هیچ کاری نمی تونه برای شما انجام بده.

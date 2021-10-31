@@ -2,10 +2,10 @@
 title: Linux
 description: Getting started with a PreMiD installation on Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
-tags:
+date: 2021-09-18T14:15:48.327Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:14.124Z
+dateCreated: 2021-09-07T01:26:59.581Z
 ---
 
 نصب برنامه خیلی مهم است زیرا افزونه نمی تواند به تنهایی کاری انجام دهد.

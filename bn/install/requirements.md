@@ -2,10 +2,10 @@
 title: রিকোয়ারমেন্টগুলো
 description: PreMiD ইন্সটল করার পূর্বশর্তগুলো
 published: true
-date: 2021-01-17T22:43:28.543Z
-tags:
+date: 2021-09-18T14:13:03.802Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:21.843Z
+dateCreated: 2021-09-07T01:23:33.744Z
 ---
 
 # সিস্টেম রিকোয়ারমেন্টগুলো

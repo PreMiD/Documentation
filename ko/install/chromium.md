@@ -2,8 +2,10 @@
 title: Chromium
 description: Chromium 기반 브라우저에 PreMiD 설치를 시작해봐요.
 published: true
-date: 2020-04-22T20:13:07.598Z
-tags:
+date: 2021-09-18T14:19:36.877Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:31:59.995Z
 ---
 
 애플리케이션만을 설치해서는 아무것도 작동하지 않기에, 확장 프로그램 설치가 매우 중요합니다.

@@ -2,9 +2,10 @@
 title: TypeScriptの構成
 description: TypeScriptのヘルパー
 published: true
-date: 2020-08-05T16:25:22.812Z
-tags:
+date: 2021-09-18T14:37:48.313Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T01:52:25.660Z
 ---
 
 # TypeScriptの構成

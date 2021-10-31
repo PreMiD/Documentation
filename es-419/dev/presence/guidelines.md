@@ -2,10 +2,10 @@
 title: Reglas de las Presence
 description: Reglas que todos los desarrolladores de presences deben seguir para que su presence sea añadida.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-27T17:50:12.848Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-10-27T17:50:09.678Z
 ---
 
 <div align="center">

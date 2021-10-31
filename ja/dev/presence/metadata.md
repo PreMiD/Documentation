@@ -2,10 +2,10 @@
 title: Metadata.json
 description: プレゼンスに関する基本情報を含むファイル
 published: true
-date: 2021-02-07T17:12:06.799Z
-tags:
+date: 2021-10-05T18:22:50.660Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:52.965Z
+dateCreated: 2021-09-07T01:52:18.043Z
 ---
 
 # Metadata.json

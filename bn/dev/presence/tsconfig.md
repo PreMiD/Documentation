@@ -2,9 +2,10 @@
 title: TypeScript কনফিগারেশন
 description: TypeScript - এর জন্য একটি ছোট সহায়ক
 published: true
-date: 2020-08-05T16:25:22.812Z
-tags:
+date: 2021-09-18T14:28:58.346Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T01:42:29.441Z
 ---
 
 # TypeScript কনফিগারেশন

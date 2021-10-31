@@ -2,10 +2,10 @@
 title: Ana Sayfa
 description: Sürüm 2 için resmi dokümantasyon
 published: true
-date: 2021-02-24T23:22:41.678Z
-tags:
+date: 2021-09-18T14:10:41.391Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:47.172Z
+dateCreated: 2021-09-07T01:20:40.181Z
 ---
 
 > Dokümantasyon hâlâ güncellenmektedir! Bazı sayfalar tamamlanmamış veya geçersiz olabilir. 

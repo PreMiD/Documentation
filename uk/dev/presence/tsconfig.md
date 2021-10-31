@@ -2,9 +2,10 @@
 title: Налаштування TypeScript
 description: Маленький помічник для TypeScript
 published: true
-date: 2020-08-05T16:25:22.812Z
-tags:
+date: 2021-09-18T14:45:02.148Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T02:00:56.860Z
 ---
 
 # Налаштування TypeScript

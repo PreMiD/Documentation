@@ -2,8 +2,10 @@
 title: Wprowadzenie
 description: Troche porad dla tych co chcą zacząć programować
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T12:55:47.006Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:18:10.179Z
 ---
 
 > Edytor kodu źródłowego jest wymagany. We recommend [Visual Studio Code](https://code.visualstudio.com/). 

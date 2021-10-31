@@ -2,10 +2,10 @@
 title: Nguyên tắc Presence
 description: Rules that all presence developers must follow to have their presence added.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-18T16:38:52.125Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T02:01:16.120Z
 ---
 
 <div align="center">

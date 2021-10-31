@@ -2,10 +2,10 @@
 title: API
 description: PreMid API를 사용하여 코드에 접속하고 기능들을 테스트하세요.
 published: true
-date: 2021-02-01T12:36:44.713Z
-tags:
+date: 2021-09-18T14:19:30.013Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:59.010Z
+dateCreated: 2021-09-07T01:31:52.550Z
 ---
 
 # API

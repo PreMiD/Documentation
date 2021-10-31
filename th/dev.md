@@ -2,8 +2,10 @@
 title: เริ่มต้น
 description: คำแนะนำเล็ก ๆ น้อย ๆ สำหรับผู้ที่ได้รับโค้ดเมื่อเร็ว ๆ นี้
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T12:56:10.818Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:20:20.117Z
 ---
 
 > ต้องมีโปรแกรมแก้ไขโค้ด เราขอแนะนำ [Visual Studio Code](https://code.visualstudio.com/) 

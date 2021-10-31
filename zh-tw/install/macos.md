@@ -2,8 +2,10 @@
 title: macOS
 description: Getting started with a PreMiD installation on macOS
 published: true
-date: 2020-02-12T22:08:37.439Z
-tags:
+date: 2021-09-18T14:26:56.091Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:40:03.663Z
 ---
 
 > 在進一步的動作前，請確認您的系統都有達到[需求](/install/requirements)。 

@@ -2,8 +2,10 @@
 title: Začíname
 description: A little advice for those who got into coding recently
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T12:56:03.252Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:19:30.289Z
 ---
 
 > A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 

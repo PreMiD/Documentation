@@ -2,10 +2,10 @@
 title: API
 description: Доступ к ресурсам и выполнение действий с помощью PreMiD API
 published: true
-date: 2021-02-01T12:36:44.713Z
-tags:
+date: 2021-09-18T14:22:51.214Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:59.010Z
+dateCreated: 2021-09-07T01:35:32.652Z
 ---
 
 # API

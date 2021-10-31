@@ -2,8 +2,10 @@
 title: Windows
 description: Empezando con la instalación de PreMiD en Windows
 published: true
-date: 2020-02-12T22:08:41.501Z
-tags:
+date: 2021-10-27T17:51:19.323Z
+tags: 
+editor: markdown
+dateCreated: 2021-10-27T17:51:17.265Z
 ---
 
 > Antes que nada, verifica que tu equipo cumple todos los [requisitos](/insatll/requirements).{.is-info}

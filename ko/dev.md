@@ -2,8 +2,10 @@
 title: 시작하기
 description: 코딩을 최근에 시작한분들께 전하는 작은 조언
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T12:55:27.459Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-19T12:55:25.263Z
 ---
 
 > 코드 편집기가 필요합니다. 저희는  [Visual Studio Code](https://code.visualstudio.com/)를 사용하는 걸 추천합니다. 

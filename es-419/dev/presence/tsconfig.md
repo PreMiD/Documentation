@@ -2,9 +2,10 @@
 title: Configuración de TypeScript
 description: Un poco de ayuda para TypeScript
 published: true
-date: 2020-08-05T16:25:22.812Z
-tags:
+date: 2021-10-27T17:50:36.952Z
+tags: 
 editor: markdown
+dateCreated: 2021-10-27T17:50:32.344Z
 ---
 
 # Configuración de TypeScript

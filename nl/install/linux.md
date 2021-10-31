@@ -2,10 +2,10 @@
 title: Linux
 description: Aan de slag met de PreMiD installatie op Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
-tags:
+date: 2021-09-18T14:20:57.276Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:14.124Z
+dateCreated: 2021-09-07T01:33:28.054Z
 ---
 
 De installatie van de applicatie is van groot belang, omdat de extensie op zichzelf niets kan doen.

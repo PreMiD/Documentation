@@ -2,8 +2,10 @@
 title: Firefox
 description: FirefoxでPreMiDをインストールする
 published: true
-date: 2020-02-12T22:08:32.409Z
-tags:
+date: 2021-09-18T14:19:18.343Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:31:34.907Z
 ---
 
 アプリのみでは機能しないため、拡張機能のダウンロードは重要です。

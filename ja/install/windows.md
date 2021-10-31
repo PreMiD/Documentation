@@ -2,8 +2,10 @@
 title: Windows
 description: WindowsでPreMiDをインストールする
 published: true
-date: 2020-02-12T22:08:41.501Z
-tags:
+date: 2021-09-18T14:19:27.510Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:31:48.680Z
 ---
 
 > ダウンロードする前に、お使いのPCが[必要条件](/install/requirements)を満たしているか確認してください。{.is-info}

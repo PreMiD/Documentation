@@ -1,11 +1,11 @@
 ---
 title: Presence ডেভেলপমেন্ট
-description:
+description: 
 published: true
-date: 2021-07-08T19:12:34.449Z
-tags:
+date: 2021-10-30T23:13:21.192Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:02.843Z
+dateCreated: 2021-09-07T01:23:15.835Z
 ---
 
 > সব Presences এখন রাখা আছে এখানে: https://github.com/PreMiD/Presences 

@@ -1,9 +1,11 @@
 ---
 title: Kelas iFrame
-description:
+description: 
 published: true
-date: 2021-07-01T14:03:55.793Z
-tags:
+date: 2021-09-18T14:36:09.170Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:50:37.633Z
 ---
 
 # Kelas iFrame

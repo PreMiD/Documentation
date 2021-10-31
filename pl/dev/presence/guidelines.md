@@ -2,10 +2,10 @@
 title: Wytyczne dotyczące presence
 description: Rules that all presence developers must follow to have their presence added.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-18T16:38:14.936Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T01:54:52.600Z
 ---
 
 <div align="center">

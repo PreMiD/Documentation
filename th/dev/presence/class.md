@@ -2,10 +2,10 @@
 title: คลาส Presence
 description: คลาสหลักสำหรับทุก PreMiD Presence
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:15:51.123Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:59:20.885Z
 ---
 
 # คลาส Presence

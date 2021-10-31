@@ -2,10 +2,10 @@
 title: Trang chủ
 description: Tài liệu chính thức cho v2
 published: true
-date: 2021-02-24T23:22:41.678Z
-tags:
+date: 2021-09-18T14:11:06.940Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:47.172Z
+dateCreated: 2021-09-07T01:21:12.508Z
 ---
 
 > Tài liệu này vẫn đang được chỉnh sửa! Một vài trang có thể chưa hoàn tất hoặc thiếu. 

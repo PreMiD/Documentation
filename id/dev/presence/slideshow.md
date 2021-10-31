@@ -1,11 +1,11 @@
 ---
 title: Kelas Slideshow
-description:
+description: 
 published: true
-date: 2020-12-25T00:47:38.111Z
-tags:
+date: 2021-09-19T02:23:15.245Z
+tags: 
 editor: markdown
-dateCreated: 2020-12-25T00:44:42.803Z
+dateCreated: 2021-09-07T01:50:45.880Z
 ---
 
 # Kelas Slideshow

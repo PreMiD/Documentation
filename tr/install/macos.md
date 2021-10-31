@@ -2,8 +2,10 @@
 title: macOS
 description: MacOS'ta PreMiD kurulumuna başlarken
 published: true
-date: 2020-02-12T22:08:37.439Z
-tags:
+date: 2021-09-18T14:25:13.461Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:38:09.869Z
 ---
 
 > İlerlemeden önce sisteminizin tüm gereksinimleri karşıladığından emin olun. 

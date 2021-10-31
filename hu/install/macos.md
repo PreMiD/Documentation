@@ -2,8 +2,10 @@
 title: macOS
 description: PreMiD telepítési útmutató macOS rendszer esetében
 published: true
-date: 2020-02-12T22:08:37.439Z
-tags:
+date: 2021-09-18T14:17:59.658Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:29:45.024Z
 ---
 
 > A folytatás előtt, győződj meg arról, hogy az általad használt rendszer megfelel a [követelményeknek](/install/requirements). 

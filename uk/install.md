@@ -2,10 +2,10 @@
 title: Установлення
 description: Як встановити PreMiD?
 published: true
-date: 2020-11-10T17:54:28.896Z
-tags:
+date: 2021-09-18T14:10:57.062Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:51.119Z
+dateCreated: 2021-09-07T01:20:59.038Z
 ---
 
 > Перед тим, як піти далі, переконайтеся, що ваша система відповідає всім вимогам [](/install/requirements). 

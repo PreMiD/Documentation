@@ -2,10 +2,10 @@
 title: Home
 description: Official Documentation for v2
 published: true
-date: 2021-02-24T23:22:41.678Z
-tags:
+date: 2021-10-20T23:38:11.037Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:47.172Z
+dateCreated: 2021-10-20T23:37:45.400Z
 ---
 
 > The documentation is still being edited! Some pages may be incomplete or missing. 

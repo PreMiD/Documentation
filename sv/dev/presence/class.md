@@ -2,10 +2,10 @@
 title: Presence Class
 description: Huvudklassen för varje PreMiD presence
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:15:46.457Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:58:45.660Z
 ---
 
 # Presence Class

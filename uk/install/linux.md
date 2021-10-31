@@ -2,10 +2,10 @@
 title: Linux
 description: Початок роботи із встановленням PreMiD на Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
-tags:
+date: 2021-09-18T14:25:35.009Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:14.124Z
+dateCreated: 2021-09-07T01:38:33.681Z
 ---
 
 Встановлення програми дуже важливе, оскільки розширення не може робити нічого самостійно.

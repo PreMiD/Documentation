@@ -2,8 +2,10 @@
 title: Firefox
 description: Firefox'da PreMiD kurulumuna başlarken
 published: true
-date: 2020-02-12T22:08:32.409Z
-tags:
+date: 2021-09-18T14:25:06.968Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:38:02.807Z
 ---
 
 Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olması gerekmektedir.

@@ -2,9 +2,10 @@
 title: Configuração do TypeScript
 description: Uma ajudinha para o TypeScript
 published: true
-date: 2020-08-05T16:25:22.812Z
-tags:
+date: 2021-09-18T14:41:06.986Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T01:56:15.420Z
 ---
 
 # Configuração do TypeScript

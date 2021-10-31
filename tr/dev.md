@@ -2,8 +2,10 @@
 title: Başlarken
 description: Kodlamaya yeni başlayanlara ufak bir tavsiye
 published: true
-date: 2020-04-09T14:21:58.246Z
-tags:
+date: 2021-09-19T12:56:13.454Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:20:37.030Z
 ---
 
 > Bu işlemler için bir kod editörü kullanmanız gerekecektir. Biz editör olarak [Visual Studio Code](https://code.visualstudio.com/)'u öneriyoruz. 

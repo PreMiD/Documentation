@@ -2,10 +2,10 @@
 title: Panduan Presence
 description: Peraturan yang harus ditaati oleh pengembang presence agar presencenya ditambahkan.
 published: true
-date: 2021-06-27T16:08:07.318Z
-tags:
+date: 2021-10-18T16:37:41.703Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T01:50:33.901Z
 ---
 
 <div align="center">

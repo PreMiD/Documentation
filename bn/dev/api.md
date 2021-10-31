@@ -2,10 +2,10 @@
 title: API
 description: রিসোর্স অ্যাক্সেস করো এবং কাজ করো PreMiD - এর API ব্যবহার করে
 published: true
-date: 2021-02-01T12:36:44.713Z
-tags:
+date: 2021-09-18T14:12:46.613Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:59.010Z
+dateCreated: 2021-09-07T01:23:12.386Z
 ---
 
 # API

@@ -2,9 +2,10 @@
 title: Over PreMiD
 description: De kernfuncties van PreMiD
 published: true
-date: 2020-09-01T22:07:41.029Z
-tags:
+date: 2021-09-18T14:08:11.066Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T01:17:51.648Z
 ---
 
 PreMiD is een eenvoudig, aanpasbaar hulpmiddel waarmee je kunt laten zien wat je op het internet doet in je Discord-status. Het ondersteunt veel verschillende platformen en ondersteunt meerdere gebruikers om dezelfde inhoud tegelijkertijd te bekijken in een aanstaande update.

@@ -2,10 +2,10 @@
 title: Presence 类
 description: 每个 PreMiD Presence 的主类
 published: true
-date: 2021-05-23T09:14:06.963Z
-tags:
+date: 2021-10-30T23:16:13.238Z
+tags: 
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T02:01:44.306Z
 ---
 
 # Presence 类

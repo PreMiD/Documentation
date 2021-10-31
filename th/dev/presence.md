@@ -1,11 +1,11 @@
 ---
 title: การพัฒนา Presence
-description:
+description: 
 published: true
-date: 2021-07-08T19:12:34.449Z
-tags:
+date: 2021-10-30T23:15:48.961Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:04:02.843Z
+dateCreated: 2021-09-07T01:37:26.492Z
 ---
 
 > ตอนนี้ Presence ทั้งหมดถูกเก็บไว้ที่นี่: https://github.com/PreMiD/Presences 

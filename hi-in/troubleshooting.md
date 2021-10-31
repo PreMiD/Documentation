@@ -2,10 +2,10 @@
 title: समस्या निवारण
 description: Everything to solve your problem
 published: true
-date: 2021-02-08T21:30:58.603Z
-tags:
+date: 2021-10-20T23:38:11.037Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-10-20T23:38:04.556Z
 ---
 
 > Make sure you have the extension **and** the application installed! 

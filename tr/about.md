@@ -2,9 +2,10 @@
 title: PreMiD Hakkında
 description: PreMiD'in temel özellikleri
 published: true
-date: 2020-09-01T22:07:41.029Z
-tags:
+date: 2021-09-18T14:10:35.168Z
+tags: 
 editor: markdown
+dateCreated: 2021-09-07T01:20:33.717Z
 ---
 
 PreMiD, Discord oynuyor kısmınızda izlediğiniz/dinlediğiniz şeyleri gösterip kolaylıkla ayarlayabileceğiniz bir araçtır. Birçok platformu destekler ve ileri tarihlerde arkadaşlarınızla birlikte aynı anda bir şeyler izleyebilmenizi/dinleyebilmenizi sağlayacak bir güncelleme alacaktır.

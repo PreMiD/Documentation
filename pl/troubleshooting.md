@@ -2,10 +2,10 @@
 title: Rozwiązywanie problemów
 description: Everything to solve your problem
 published: true
-date: 2021-02-08T21:30:58.603Z
-tags:
+date: 2021-09-18T14:08:35.860Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-07T01:18:19.153Z
 ---
 
 > Make sure you have the extension **and** the application installed! 

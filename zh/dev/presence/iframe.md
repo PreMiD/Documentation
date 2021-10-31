@@ -1,9 +1,11 @@
 ---
 title: iFrame Class
-description:
+description: 
 published: true
-date: 2021-07-01T14:03:55.793Z
-tags:
+date: 2021-09-18T14:45:51.086Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T02:01:52.875Z
 ---
 
 # iFrame Class

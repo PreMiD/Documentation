@@ -2,8 +2,10 @@
 title: Chromium
 description: Empezando con la instalación de PreMiD en navegadores basados en Chromium
 published: true
-date: 2020-04-22T20:13:07.598Z
-tags:
+date: 2021-10-27T17:50:55.678Z
+tags: 
+editor: markdown
+dateCreated: 2021-10-27T17:50:53.608Z
 ---
 
 La instalación de la extensión es muy importante, ya que la aplicación no puede hacer nada por sí sola.

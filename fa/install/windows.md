@@ -2,8 +2,10 @@
 title: Windows
 description: Getting started with a PreMiD installation on Windows
 published: true
-date: 2020-02-12T22:08:41.501Z
-tags:
+date: 2021-09-18T14:15:55.272Z
+tags: 
+editor: markdown
+dateCreated: 2021-09-07T01:27:09.055Z
 ---
 
 > قبل از رفتن بیشتر، مطمئن شوید که کامپیوترحداقل [نیازها](/install/requirements) را دارد.{.is-info}

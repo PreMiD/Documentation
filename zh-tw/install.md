@@ -2,10 +2,10 @@
 title: Installation
 description: How to install PreMiD
 published: true
-date: 2020-11-10T17:54:28.896Z
-tags:
+date: 2021-09-18T14:11:34.539Z
+tags: 
 editor: markdown
-dateCreated: 2020-06-11T18:03:51.119Z
+dateCreated: 2021-09-07T01:21:47.564Z
 ---
 
 > 在進一步的動作前，請確認您的系統都有達到[需求](/install/requirements)。 
