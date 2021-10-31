@@ -2,10 +2,10 @@
 title: Classe Presence
 description: A classe principal para cada presence do PreMiD
 published: true
-date: 2021-10-30T23:15:19.103Z
-tags: 
+date: 2021-05-23T09:14:06.963Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:55:56.484Z
+dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
 # Classe Presence
