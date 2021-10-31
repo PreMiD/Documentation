@@ -2,10 +2,10 @@
 title: Presence Klasse
 description: De belangrijkste klasse voor elke PreMiD presence
 published: true
-date: 2021-10-30T23:15:08.502Z
-tags: 
+date: 2021-05-23T09:14:06.963Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:54:16.061Z
+dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
 # Presence Klasse
@@ -56,7 +56,7 @@ Tweede parameter definieert wanneer presence iets afspeelt of niet. Gebruik alti
 
 Wist je huidige activiteit en de tray titel.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *verouderd sinds 2.2.3*
 
 > Deze methode werkt alleen op Mac OS. 
 > 
