@@ -2,10 +2,10 @@
 title: Clase Presence
 description: La clase principal para cada presence de PreMiD
 published: true
-date: 2021-10-30T23:13:53.841Z
-tags: 
+date: 2021-05-23T09:14:06.963Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:45:24.829Z
+dateCreated: 2021-02-21T21:13:14.449Z
 ---
 
 # Clase Presence
@@ -56,7 +56,7 @@ El segundo parámetro indica si la presence está reproduciendo algo o no. Utili
 
 Elimina la actividad actual y el titulo de la bandeja de trabajo.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *Obsoleto desde 2.2.3*
 
 > Este método funciona sólo en Mac OS. 
 > 
