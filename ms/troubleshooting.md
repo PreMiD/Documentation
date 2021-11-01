@@ -2,10 +2,10 @@
 title: Selesaikan masalah
 description: Segalanya untuk menyelesaikan masalah anda
 published: true
-date: 2021-02-08T21:30:58.603Z
+date: 2021-09-18T14:08:01.002Z
 tags:
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Sila pastikan anda telah pasangkan kedua-dua sambungan **dan** aplikasi! 
