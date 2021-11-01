@@ -2,10 +2,10 @@
 title: macOS
 description: Rozpoczęcie instalacji PreMiD na macOS
 published: true
-date: 2021-09-18T14:21:24.222Z
-tags: 
+date: 2021-09-18T14:14:48.363Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:33:59.639Z
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
 > Zanim przejdziesz dalej, upewnij się, że Twój system spełnia wszystkie [wymagania](/install/requirements). 
