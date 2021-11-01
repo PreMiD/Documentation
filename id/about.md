@@ -2,9 +2,10 @@
 title: Tentang PreMiD
 description: Fitur-fitur utama dari PreMiD
 published: true
-date: 2020-09-01T22:07:41.029Z
+date: 2021-09-18T14:07:51.099Z
 tags:
 editor: markdown
+dateCreated: 2021-09-07T01:17:19.551Z
 ---
 
 PreMiD adalah utilitas simpel yang memungkinkan kamu menampilkan apa yang sedang kamu lakukan di web pada status now playing Discord. PreMiD mendukung banyak platform dan akan mendukung nonton bersama di update yang akan datang.
