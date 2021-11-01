@@ -1,11 +1,11 @@
 ---
 title: Клас на слайшоу
-description: 
+description:
 published: true
-date: 2021-09-18T14:28:23.179Z
-tags: 
+date: 2020-12-25T00:47:38.111Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:41:52.978Z
+dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
 # Клас на слайшоу
