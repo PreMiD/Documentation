@@ -2,8 +2,10 @@
 title: Firefox
 description: Mulakan pemasangan PreMiD di pelayar Firefox
 published: true
-date: 2020-02-12T22:08:32.409Z
+date: 2021-09-18T14:14:41.886Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 Pemasangan sambungan amat penting kerana aplikasi tidak mampu membuat apa-apa dengan sendirinya.
