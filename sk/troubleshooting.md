@@ -2,10 +2,10 @@
 title: Riešenie problémov
 description: Všetko čo vyrieši váš problém
 published: true
-date: 2021-09-18T14:09:54.376Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:19:39.462Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Uistite sa či máte rozšírenie **a** aplikáciu nainštalovanú! 
