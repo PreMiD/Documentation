@@ -2,10 +2,10 @@
 title: TypeScript 구성
 description: TypeScript에 대한 작은 도우미
 published: true
-date: 2021-09-18T14:38:16.211Z
-tags: 
+date: 2021-09-18T14:31:22.005Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:52:57.657Z
+dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
 # TypeScript 구성
