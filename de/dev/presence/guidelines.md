@@ -2,10 +2,10 @@
 title: Presence-Richtlinien
 description: Regeln, die alle Entwickler beachten müssen, damit ihre Presences hinzugefügt werden.
 published: true
-date: 2021-10-18T16:37:06.867Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:43:54.050Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
 - Presences für Dienste wie Discord Bot/Server Listen müssen diese Extra-Anforderungen erfüllen:
   - Die Domain sollte mindestens **6 Monate**  alt sein.
   - Eindeutige Besucher pro Tag:
-    - Für 6 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
   - Die Webseite kann nicht auf einer billigen Domain, wie z.B `.xyz`, `.club` und so weiter betrieben werden.
   - Die Website selbst muss eine sehr gute Qualität, Design und etc. haben.
@@ -249,7 +249,7 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Presences, die Schaltflächen verwenden, sollten diesen zusätzlichen Anforderungen folgen:
   - Weiterleitungen zur Hauptseite sind verboten.
   - Das Werben von Webseiten durch diese ist verboten.
-  - Sie können keine zusätzlichen Daten anzeigen, wenn diese nicht in anderen Feldern gezeigt werden können.
+  - They can't display information you couldn't fit in other fields.
   - Eine direkte Weiterleitung zu Audio-/Videostreams ist verboten.
 
 
