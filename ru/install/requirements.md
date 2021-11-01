@@ -2,10 +2,10 @@
 title: Требования
 description: Предпосылки для установки PreMiD
 published: true
-date: 2021-09-18T14:23:09.593Z
-tags: 
+date: 2021-01-17T22:43:28.543Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:52.721Z
+dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
 # Системные требования
