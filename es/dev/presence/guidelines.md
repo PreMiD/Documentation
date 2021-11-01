@@ -2,10 +2,10 @@
 title: Normas de las Presence
 description: Reglas que todos los desarrolladores de Presences deben seguir para que su Presence sea añadida.
 published: true
-date: 2021-10-18T16:37:14.424Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:45:28.560Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
 - Presences para servicios como listas de Bots/Servidores de Discord deben seguir estos requisitos adicionales:
   - El dominio debe tener al menos **6 meses** de antigüedad.
   - Visitas únicas por día:
-    - Para dominios de 6 meses de antigüedad: **20.000 visitas únicas por día**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - Para dominios de 12 meses o más de antigüedad: **45.000 visitas únicas por día**.
   - El sitio web no puede estar en un dominio barato como `.xyz`, `.club` y demás.
   - El sitio web debe tener una muy buena calidad, diseño, etc.
@@ -247,7 +247,7 @@ Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `prese
 - Presences que utilizan botones deben seguir estos requisitos adicionales:
   - No están permitidas redirecciones a páginas de inicio.
   - No está permitido promover sitios web por medio de ello.
-  - No pueden mostrar información adicional cuando esta no puede ser mostrada otros campos.
+  - They can't display information you couldn't fit in other fields.
   - Está prohibida la redirección directa a streams de audio o vídeo.
 
 
