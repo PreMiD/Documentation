@@ -2,10 +2,10 @@
 title: Windows
 description: Memulai dengan pemasangan PreMiD pada Windows
 published: true
-date: 2021-09-18T14:18:24.341Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:30:21.707Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements).{.is-info}
