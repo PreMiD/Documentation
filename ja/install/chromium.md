@@ -2,10 +2,10 @@
 title: Chromium
 description: ChromeブラウザでPreMiDをインストールする
 published: true
-date: 2021-09-18T14:19:16.063Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:31:31.849Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 アプリのみでは機能しないため、拡張機能のダウンロードは重要です。
