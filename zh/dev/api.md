@@ -2,10 +2,10 @@
 title: API
 description: Access resources and perform actions using the PreMiD API
 published: true
-date: 2021-09-18T14:26:13.065Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:16.192Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:39:16.192Z
 > {.is-info}
 
 ## API Versioning
-> API v2 has been deprecated and will be removed in the near future. Please use v3 for any future request to prevent issues. 
+> API v2 has been deprecated and most of it's endpoints have been removed. Please use v3 for any future request to prevent issues. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ All HTTP-layer services and protocols (e.g. http) within the PreMiD API use TLS 
 > {.is-danger}
 
 **Choose the API version:**
-- [v2 *deprecated*](/dev/api/v2)
-- [v3 *active*](/dev/api/v3)
+- [v2 *partially deleted | deprecated*](/dev/api/v2)
+- [v3 *current*](/dev/api/v3)
 {.links-list}
