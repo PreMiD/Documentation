@@ -2,10 +2,10 @@
 title: Inštalácia
 description: Ako nainštalovať PreMiD
 published: true
-date: 2021-09-18T14:09:49.544Z
-tags: 
+date: 2020-11-10T17:54:28.896Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:19:36.309Z
+dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
 > Než sa pustíme do toho, uistite sa že spĺňate všetky [požiadavky](/install/requirements). 
