@@ -2,10 +2,10 @@
 title: Linux
 description: শুরু করা যাক PreMiD ইন্সটলেশন লিনাক্সে
 published: true
-date: 2021-09-18T14:12:58.772Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:23:27.177Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 অ্যাপ্লিকেশনটির ইন্সটলেশন খুবই গুরুত্বপূর্ণ কেননা এক্সটেনশনটি নিজ থেকে কিছুই করতে পারেনা।
