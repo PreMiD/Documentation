@@ -2,10 +2,10 @@
 title: Rang Láithreachta
 description: An rang is mó do gach láithreacht PreMiD
 published: true
-date: 2021-05-23T09:14:06.963Z
+date: 2021-10-30T22:47:57.209Z
 tags:
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Rang Láithreachta
@@ -315,7 +315,8 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Sainmhínítear an téacs a thaispeánfar don úsáideoir nuair a osclóidh sé an deilbhín beag.</td>
+      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
+        icon.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
