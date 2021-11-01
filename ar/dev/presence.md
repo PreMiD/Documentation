@@ -1,11 +1,11 @@
 ---
 title: Presence تطوير الـ
-description: 
+description:
 published: true
-date: 2021-10-30T23:13:11.291Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:22:23.273Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > كل الpresences الان تخزن هنا: https://github.com/PreMiD/Presences 
