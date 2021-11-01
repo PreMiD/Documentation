@@ -2,10 +2,10 @@
 title: Chromium
 description: 開始在Chromium基礎的瀏覽器安裝PreMiD
 published: true
-date: 2021-09-18T14:26:46.652Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:52.507Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 安裝擴充功能非常重要，因為單靠本地程式是無法做任何事的。
