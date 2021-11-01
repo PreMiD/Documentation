@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## Pengurusan versi API
-> API v2 has been deprecated and most of it's endpoints have been removed. Sila gunakan v3 untuk sebarang permintaan akan datang untuk mengelakkan isu. 
+> API v2 telah diperkecamkan dan kebanyakan titik akhirnya telah pun dibuang. Sila gunakan v3 untuk sebarang permintaan akan datang untuk mengelakkan isu. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ Semua perkhidmatan dan protokol lapisan-HTTP (spt. http) dalam API PreMiD menggu
 > {.is-danger}
 
 **Pilih versi API:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+- [v2 *dipadam sebahagiannya | terkecam*](/dev/api/v2)
+- [v3 *semasa*](/dev/api/v3)
 {.links-list}
