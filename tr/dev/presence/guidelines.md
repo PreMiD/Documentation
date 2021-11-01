@@ -2,10 +2,10 @@
 title: Servis Kılavuzu
 description: Her geliştiricinin, servisinin eklenebilmesi için takip etmeleri gereken kurallar.
 published: true
-date: 2021-10-18T16:38:44.932Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T02:00:04.145Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ Servis geliştirmenin genel kuralları aşağıdaki gibidir:
 - Discord Botları/Sunucu Listeleri için servis yaparken ekstra gereksinimler vardır:
   - Alan adı en az **6 aylık** olmalıdır.
   - Gün içinde farklı ziyaretçi sayısı:
-    - 6 aylık alan adları için: **günde 20,000 farklı ziyaretçi**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - 12+ aylık alan adları için: **günde 45,000 farklı ziyaretçi**.
   - Site `.xyz`, `.club` gibi ucuz alan adlarında olamaz.
   - Site çok iyi bir kaliteye, tasarıma, vs. sahip olmalıdır.
@@ -246,7 +246,7 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
 - Presences that use buttons should follow extra requirements:
   - Ana sayfaya yönlendirmeler yasaktır.
   - Bu özelliği kullanarak site reklamları yapmak yasaktır.
-  - Diğer bölümlerde ek bilgi göstermezken bunları ayarlamak mümkün değildir.
+  - They can't display information you couldn't fit in other fields.
   - Direkt olarak ses/görüntü kaynağına yönlendirmek yasaktır.
 
 
