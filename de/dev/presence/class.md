@@ -2,10 +2,10 @@
 title: Presence-Klasse
 description: Die Hauptklasse für jede PreMiD-Presence
 published: true
-date: 2021-05-23T09:14:06.963Z
+date: 2021-10-30T22:47:57.209Z
 tags:
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Presence-Klasse
@@ -315,8 +315,8 @@ Dieses Interface hat folgende Variablen, welche alle optional sind.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Definiert den Text, der dem Benutzer angezeigt wird, wenn er mit der Maus über das kleine
-        Symbol fährt.</td>
+      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
+        icon.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
