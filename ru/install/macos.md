@@ -2,10 +2,10 @@
 title: macOS
 description: Начните установку с PreMiD на macOS
 published: true
-date: 2021-09-18T14:23:05.922Z
-tags: 
+date: 2021-09-18T14:14:48.363Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:49.455Z
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
 > Прежде чем продолжить, убедитесь, что ваша система соответствует [требованиям](/install/requirements). 
