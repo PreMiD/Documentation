@@ -2,10 +2,10 @@
 title: Linux
 description: Начнём установку PreMiD на Linux
 published: true
-date: 2021-09-18T14:23:03.390Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:46.334Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 Установка приложения очень важна, так как расширение не может делать ничего самостоятельно.
