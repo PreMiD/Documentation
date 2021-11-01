@@ -2,9 +2,10 @@
 title: Mengenai PreMiD
 description: Sifat-sifat asas PreMiD
 published: true
-date: 2020-09-01T22:07:41.029Z
+date: 2021-09-18T14:07:51.099Z
 tags:
 editor: markdown
+dateCreated: 2021-09-07T01:17:19.551Z
 ---
 
 PreMiD ialah utiliti yang mudah, mampu ditatarajah yang membolehkan anda menunjukkan apa anda buat di sesawang ke dalam status main di Discord anda. Ia menyokong pelbagai platform berlainan dan akan menyokong ramai pengguna menonton kandungan yang sama serentak dalam kemas kini yang akan datang.
