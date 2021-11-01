@@ -317,8 +317,8 @@ Antara muka ini mempunyai pemboleh ubah berikut, kesemuanya pilihan.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
-        icon.</td>
+      <td style="text-align:left">Menentukan tulisan yang akan ditunjukkan kepada pengguna apabila
+        dia melalukan tetikus di atas ikon kecil.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>

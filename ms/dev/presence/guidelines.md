@@ -37,7 +37,7 @@ Peraturan am pembangunan Presence adalah seperti berikut:
 - Presence untuk perkhidmatan seperti Bot/Senarai Pelayan Discord mesti mengikut keperluan tambahan berikut:
   - Domain mestilah berusia sekurang-kurangnya **6 bulan**.
   - Pelawat unik setiap hari:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
+    - Untuk domain berusia 6 hingga 12 bulan: **20,000 pelawat unik sehari**.
     - Untuk domain berusia 12+ bulan: **45,000 pelawat unik sehari**.
   - Laman sesawang tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan lain-lain.
   - Laman sesawang tersebut sendirinya mestilah mempunyai kualiti, reka bentuk, dll yang sangat bagus.
@@ -246,7 +246,7 @@ Ini senarai peraturan yang perlu diikuti semasa menulis fail `presence.ts` anda:
 - Presence yang menggunakan butang mesti mengikut keperluan tambahan:
   - Lencongan ke laman utama tidak dibenarkan.
   - Promosi laman sesawang menggunakannya tidak dibenarkan.
-  - They can't display information you couldn't fit in other fields.
+  - Ia tidak boleh memaparkan maklumat yang tidak muat di medan yang lain.
   - Melencongkan secara terus ke strim audio/video adalah tidak dibenarkan.
 
 
