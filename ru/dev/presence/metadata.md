@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Содержит основные данные о присутствии
 published: true
-date: 2021-10-16T18:22:00.538Z
-tags: 
+date: 2021-02-07T17:12:06.799Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:57:18.200Z
+dateCreated: 2020-06-11T18:04:52.965Z
 ---
 
 # Metadata.json
