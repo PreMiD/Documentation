@@ -2,10 +2,10 @@
 title: Linux
 description: Getting started with a PreMiD installation on Linux
 published: true
-date: 2021-09-18T14:26:25.285Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:31.222Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 安装应用程序非常重要，因为扩展本身无法做任何事情。
