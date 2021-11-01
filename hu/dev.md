@@ -2,10 +2,10 @@
 title: Első lépések
 description: A little advice for those who got into coding recently
 published: true
-date: 2021-09-19T12:55:08.341Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T12:55:05.655Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > A source code editor is required. Mi a [Visual Studio Code](https://code.visualstudio.com/)-ot ajánljuk. 
