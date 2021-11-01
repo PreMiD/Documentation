@@ -2,10 +2,10 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2021-09-18T14:17:31.149Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:29:11.778Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 Instalacija proširenja je jako važno jer program ne može ništa učiniti sam.
