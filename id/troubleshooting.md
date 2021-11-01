@@ -2,10 +2,10 @@
 title: Troubleshooting
 description: Segalanya untuk menyelesaikan masalah kamu
 published: true
-date: 2021-09-19T01:53:00.599Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T01:17:41.835Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Pastikan kamu sudah memasang ekstensi **dan** aplikasinya! 
