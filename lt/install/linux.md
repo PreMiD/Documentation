@@ -2,10 +2,10 @@
 title: Linux
 description: Pradžia su PreMiD diegimu Linux operacinėje sistemoje
 published: true
-date: 2021-09-18T14:20:03.675Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:32:34.331Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 Aplikacijos įdiegimas yra labai svarbus, nes papildinys pats nieko negali padaryti.
