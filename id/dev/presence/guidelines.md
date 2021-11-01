@@ -246,7 +246,7 @@ Berikut daftar rules yang harus diikuti saat menulis sebuah file `presence.ts`:
 - Presence yang menggunakan tombol harus mengikuti persyaratan tambahan:
   - Dilarang melakukan redirect kembali ke halaman utama.
   - Dilarang mempromosikan halaman web.
-  - They can't display information you couldn't fit in other fields.
+  - Mereka tidak dapat menampilkan data tambahan saat kamu tidak dapat menampilkannya di field lain.
   - Redirect langsung ke sumber audio/video dilarang.
 
 
