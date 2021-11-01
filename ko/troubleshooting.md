@@ -2,10 +2,10 @@
 title: 문제 해결
 description: 문제를 해결하기 위한 모든 것
 published: true
-date: 2021-10-30T11:49:51.270Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-10-30T11:49:35.618Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > 익스텐션과 앱 **모두** 설치하셨는지 확인해주세요! 
