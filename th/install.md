@@ -2,10 +2,10 @@
 title: การติดตั้ง
 description: วิธีติดตั้ง PreMiD
 published: true
-date: 2021-09-18T14:10:28.354Z
-tags: 
+date: 2020-11-10T17:54:28.896Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:20:26.820Z
+dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
 > ก่อนดำเนินการใด ๆ เพิ่มเติมตรวจสอบให้แน่ใจว่าระบบของคุณตรงตาม [เงื่อนไข](/install/requirements) ไหม 
