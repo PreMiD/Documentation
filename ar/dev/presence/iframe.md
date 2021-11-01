@@ -1,11 +1,11 @@
 ---
 title: فئة iFrame
-description: 
+description:
 published: true
-date: 2021-09-18T14:27:49.080Z
-tags: 
+date: 2021-09-18T14:31:12.831Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:41:10.486Z
+dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
 # فئة iFrame
