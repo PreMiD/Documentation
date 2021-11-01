@@ -2,10 +2,10 @@
 title: Начало работы
 description: Немного советы для тех, кто недавно попал в кодировку
 published: true
-date: 2021-09-22T20:16:54.573Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:19:14.347Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > Требуется редактор исходного кода. Мы рекомендуем [Visual Studio Code](https://code.visualstudio.com/). 
