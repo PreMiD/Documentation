@@ -2,10 +2,10 @@
 title: Chromium
 description: Kom igång med PreMiD på Chromium-baserade webbläsare
 published: true
-date: 2021-09-18T14:24:13.288Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:02.610Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Installationen av tillägget är synnerligen viktigt då programmet ej kan göra något av sig själv.
