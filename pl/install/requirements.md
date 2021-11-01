@@ -2,10 +2,10 @@
 title: Wymaganie
 description: Wymagania do instalacji PreMiD
 published: true
-date: 2021-09-18T14:21:26.729Z
-tags: 
+date: 2021-01-17T22:43:28.543Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:34:03.177Z
+dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
 # Wymagania systemowe
