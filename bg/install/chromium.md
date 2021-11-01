@@ -2,10 +2,10 @@
 title: Chromium
 description: Getting started with a PreMiD installation on Chromium-based browsers
 published: true
-date: 2021-09-18T14:12:28.280Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:22:53.543Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Изтеглянето на разширението е много важно, като приложението не може да прави нищо само по себе си.
