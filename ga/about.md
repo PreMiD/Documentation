@@ -2,9 +2,10 @@
 title: Maidir le PreMiD
 description: Príomhghnéithe PreMiD
 published: true
-date: 2020-09-01T22:07:41.029Z
+date: 2021-09-18T14:07:51.099Z
 tags:
 editor: markdown
+dateCreated: 2021-09-07T01:17:19.551Z
 ---
 
 Is fóntais shimplí, chumraithe é PreMiD a ligeann duit a bhfuil á dhéanamh agat ar an ngréasán a thaispeáint i do Discord anois ag imirt stádais. Tacaíonn sé le go leor ardáin éagsúla agus tacóidh sé le húsáideoirí iomadúla atá ag faire ar an ábhar céanna ag an am céanna i nuashonrú atá le teacht.
