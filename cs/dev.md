@@ -2,10 +2,10 @@
 title: Začínáme
 description: Trochu pomoci těm, kteří se kódování dostali teprve nedávno
 published: true
-date: 2021-09-19T12:54:15.366Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T12:54:13.157Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > Je vyžadován editor zdrojového kódu. Doporučujeme [Visual Studio Code](https://code.visualstudio.com/). 

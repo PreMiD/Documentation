@@ -2,10 +2,10 @@
 title: Про PreMiD
 description: The core features of PreMiD
 published: true
-date: 2021-09-18T14:10:50.205Z
-tags: 
+date: 2021-09-18T14:07:51.099Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:20:49.933Z
+dateCreated: 2021-09-07T01:17:19.551Z
 ---
 
 PreMiD is a simple, configurable utility that allows you to show what you're doing on the web in your Discord now playing status. Застосунок підтримує багато різних платформ і буде підтримувати декількох користувачів, які одночасно переглядають один і той же вміст в майбутньому оновленні.

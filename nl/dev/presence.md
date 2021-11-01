@@ -1,11 +1,11 @@
 ---
 title: Presenceontwikkeling
-description: 
+description:
 published: true
-date: 2021-10-30T23:15:05.993Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:33:17.897Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > Alle presences worden hier opgeslagen: https://github.com/PreMiD/Presences 

@@ -2,10 +2,10 @@
 title: API
 description: PreMiD'in API'sini kullanarak kaynaklara erişin ve bir şey gerçekleştirin
 published: true
-date: 2021-09-18T14:24:57.838Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:50.945Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:37:50.945Z
 > {.is-info}
 
 ## API Sürümleri
-> API v2 kullanım ömrünü tamamlamış ve yakında kaldırılacaktır. Gelecekte herhangi bir sorunu önlemek için çağrılarda v3 kullanın. 
+> API v2 has been deprecated and most of it's endpoints have been removed. Gelecekte herhangi bir sorunu önlemek için çağrılarda v3 kullanın. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ PreMiD API'de bulunan HTTP ve buna ait tüm protokoller TLS 1.2 şifreleme siste
 > {.is-danger}
 
 **API sürümünü seçin:**
-- [v2 *kullanım ömrü doldu*](/dev/api/v2)
-- [v3 *aktif*](/dev/api/v3)
+- [v2 *partially deleted | deprecated*](/dev/api/v2)
+- [v3 *current*](/dev/api/v3)
 {.links-list}

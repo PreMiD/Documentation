@@ -2,10 +2,10 @@
 title: Chromium
 description: Chromium tabanlı tarayıcılarda PreMiD kurulumuna başlarken
 published: true
-date: 2021-09-18T14:25:04.242Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:59.175Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olması gerekmektedir.

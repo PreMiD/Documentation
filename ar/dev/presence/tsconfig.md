@@ -2,10 +2,10 @@
 title: إعدادات TypeScript
 description: مساعد صغير لـ TypeScript
 published: true
-date: 2021-09-18T14:27:58.301Z
-tags: 
+date: 2021-09-18T14:31:22.005Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:41:24.034Z
+dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
 # إعدادات TypeScript

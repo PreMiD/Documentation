@@ -2,10 +2,10 @@
 title: Memulai
 description: Sedikit masukan bagi mereka yang baru memulai coding
 published: true
-date: 2021-09-19T13:36:29.914Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T12:55:10.001Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > Editor source code dibutuhkan. Kami merekomendasikan [Visual Studio Code](https://code.visualstudio.com/). 

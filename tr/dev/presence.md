@@ -1,11 +1,11 @@
 ---
 title: Servis Geliştirme
-description: 
+description:
 published: true
-date: 2021-10-30T23:15:53.334Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:54.756Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > Tüm servisler artık [https://github.com/PreMiD/Presences](https://github.com/PreMiD/Presences) adresinde saklanmaktadır. 

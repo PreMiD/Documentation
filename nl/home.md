@@ -2,10 +2,10 @@
 title: Home
 description: Officiële documentatie voor v2
 published: true
-date: 2021-09-18T14:08:16.088Z
-tags: 
+date: 2021-02-24T23:22:41.678Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:17:57.912Z
+dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
 > De documentatie wordt nog steeds bewerkt! Sommige pagina's kunnen onvolledig zijn of ontbreken. 

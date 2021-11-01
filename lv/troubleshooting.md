@@ -2,10 +2,10 @@
 title: Problēmu novēršana
 description: Viss, lai atrisinātu jūsu problēmu
 published: true
-date: 2021-09-19T15:36:54.230Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T15:36:49.813Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Pārliecinieties, vai esat uzstādījis paplašinājumu **un** aplikāciju! 

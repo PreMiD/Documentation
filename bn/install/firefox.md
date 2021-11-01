@@ -2,10 +2,10 @@
 title: Firefox
 description: শুরু করা যাক PreMiD ইন্সটলেশন ফায়ারফক্সে
 published: true
-date: 2021-09-18T14:12:56.135Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:23:23.288Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 এক্সটেনশনটির ইন্সটলেশন খুবই গুরুত্বপূর্ণ কেননা অ্যাপ্লিকেশনটি নিজ থেকে কিছুই করতে পারেনা।

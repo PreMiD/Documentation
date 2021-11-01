@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Presence - টি সম্বন্ধে প্রাথমিক ডাটা থাকে
 published: true
-date: 2021-10-05T18:19:19.653Z
-tags: 
+date: 2021-02-07T17:12:06.799Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:42:22.151Z
+dateCreated: 2020-06-11T18:04:52.965Z
 ---
 
 # Metadata.json

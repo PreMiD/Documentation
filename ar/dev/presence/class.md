@@ -2,10 +2,10 @@
 title: فئة الpresence
 description: الصف الرئيسي لكل presnece PreMiD
 published: true
-date: 2021-10-30T23:13:13.654Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:41:01.569Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # فئة الpresence
@@ -317,8 +317,8 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">يحدد النص الذي سيتم عرضه للمستخدم عندما يكون على الرمز
-        الصغير.</td>
+      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
+        icon.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>

@@ -1,11 +1,11 @@
 ---
 title: iFrame Trieda
-description: 
+description:
 published: true
-date: 2021-09-18T14:42:23.280Z
-tags: 
+date: 2021-09-18T14:31:12.831Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:57:47.298Z
+dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
 # iFrame Trieda

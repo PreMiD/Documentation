@@ -2,10 +2,10 @@
 title: API
 description: เข้าถึงทรัพยากรและดำเนินการต่าง ๆ โดยใช้ PreMiD API
 published: true
-date: 2021-09-18T14:24:30.880Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:22.870Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:37:22.870Z
 > {.is-info}
 
 ## เวอร์ชัน API
-> API เวอร์ชั่นที่ 2 ได้ถูกเลิกใช้แล้วและจะถูกลบในอนาคตอันไกล้นี้. โปรดใช้ เวอร์ชั่นที่ 3 ในการส่งคำขอในอนาคตเพื่อป้องกันปัญหาต่างๆ. 
+> API v2 has been deprecated and most of it's endpoints have been removed. โปรดใช้ เวอร์ชั่นที่ 3 ในการส่งคำขอในอนาคตเพื่อป้องกันปัญหาต่างๆ. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ dateCreated: 2021-09-07T01:37:22.870Z
 > {.is-danger}
 
 **เลือกเวอร์ชัน API:**
-- [v2 *เลิกใช้แล้ว*](/dev/api/v2)
-- [v3 *ใช้งานอยู่*](/dev/api/v3)
+- [v2 *partially deleted | deprecated*](/dev/api/v2)
+- [v3 *current*](/dev/api/v3)
 {.links-list}

@@ -2,10 +2,10 @@
 title: macOS
 description: Початок роботи із встановленням PreMiD на macOS
 published: true
-date: 2021-09-18T14:25:38.920Z
-tags: 
+date: 2021-09-18T14:14:48.363Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:38:37.684Z
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
 > Перед тим, як піти далі, переконайтеся, що ваша система відповідає всім вимогам [](/install/requirements). 

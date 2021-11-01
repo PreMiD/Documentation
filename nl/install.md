@@ -2,10 +2,10 @@
 title: Installatie
 description: Hoe installeer je PreMiD
 published: true
-date: 2021-09-18T14:08:18.494Z
-tags: 
+date: 2020-11-10T17:54:28.896Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:01.079Z
+dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
 > Voordat je verder gaat, zorg ervoor dat je systeem voldoet aan alle [vereisten](/install/requirements). 

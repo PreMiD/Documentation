@@ -2,10 +2,10 @@
 title: Firefox
 description: Приступая к установке PreMiD на Firefox
 published: true
-date: 2021-09-18T14:23:00.157Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:42.654Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 Установка расширения очень важна, так как приложение не может делать ничего самостоятельно.

@@ -2,10 +2,10 @@
 title: Presence Class
 description: The main class for every PreMiD presence
 published: true
-date: 2021-10-30T23:13:59.863Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:45:56.359Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Presence Class
@@ -317,7 +317,7 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when he will hover the small
+      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
         icon.</td>
       <td style="text-align:left"><code>String</code>
       </td>

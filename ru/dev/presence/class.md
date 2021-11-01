@@ -2,10 +2,10 @@
 title: Класс присутствия
 description: Основной класс для каждого присутствия PreMiD
 published: true
-date: 2021-10-30T23:15:32.816Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:57:06.465Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Класс Состояния
@@ -320,8 +320,8 @@ presenceData.endTimestamp = timestamps[1];
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Определяет текст, который будет показан пользователю, когда он наведет маленький значок
-.</td>
+      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
+        icon.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>

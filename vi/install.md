@@ -2,10 +2,10 @@
 title: Cài đặt
 description: Cách cài đặt PreMiD
 published: true
-date: 2021-09-18T14:11:09.447Z
-tags: 
+date: 2020-11-10T17:54:28.896Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:21:15.828Z
+dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
 > Trước khi tiến hành, hãy đảm bảo rằng hệ thống của bạn phù hợp vói [yêu cầu hệ thống](/install/requirements). 

@@ -2,10 +2,10 @@
 title: Diretrizes das presences
 description: Regras que todos os programadores de presences devem seguir para que a sua presence seja adicionada.
 published: true
-date: 2021-10-18T16:38:20.888Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:55:29.307Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ The general rules of presence development are as follows:
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
@@ -246,7 +246,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Presences that use buttons should follow extra requirements:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
+  - They can't display information you couldn't fit in other fields.
   - Redirecting directly to audio/video stream is prohibited.
 
 

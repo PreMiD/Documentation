@@ -2,10 +2,10 @@
 title: Linux
 description: 리눅스에 PreMiD 설치를 시작해봐요.
 published: true
-date: 2021-09-18T14:19:43.374Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:32:06.811Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 애플리케이션만을 설치해서는 아무것도 작동하지 않기에, 확장 프로그램 설치가 매우 중요합니다.

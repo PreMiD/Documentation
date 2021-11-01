@@ -2,10 +2,10 @@
 title: Firefox
 description: 파이어폭스에 PreMiD 설치를 시작해봐요.
 published: true
-date: 2021-09-18T14:19:39.924Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:32:03.459Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 애플리케이션만을 설치해서는 아무것도 작동하지 않기에, 확장 프로그램 설치가 매우 중요합니다.

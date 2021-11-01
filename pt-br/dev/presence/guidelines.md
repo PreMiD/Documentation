@@ -2,10 +2,10 @@
 title: Diretrizes das Presences
 description: Regras que todos os presence developers devem seguir para ter sua presence adicionada.
 published: true
-date: 2021-10-18T16:38:17.679Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:56:00.462Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ The general rules of presence development are as follows:
 - Presences para serviços como Bot de Discord/Lista de Servidores devem seguir estes requisitos extras:
   - O domínio deve ter pelo menos **6 meses**.
   - Visitantes únicos por dia:
-    - Para domínios com 6 meses: **20,000 visitantes únicos/dia**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - Para domínios com mais de 12 meses: **45,000 visitantes únicos/dia**.
   - O site não pode estar em um domínio barato como `.xyz `, `.club ` e assim por diante.
   - O próprio site deve ter uma boa qualidade, design etc.
@@ -246,7 +246,7 @@ Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `pr
 - Presences que usam botões devem seguir os requisitos extras:
   - Redirecionamentos para a página principal são proibidos.
   - Promover websites através delas é proibido.
-  - Eles não podem mostrar dados adicionais quando você não pode mostrá-los em outros campos.
+  - They can't display information you couldn't fit in other fields.
   - Redirecionamento direto á transmissão de áudio/vídeo é proibido.
 
 

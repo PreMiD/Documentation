@@ -2,10 +2,10 @@
 title: Firefox
 description: เริ่มต้นใช้งาน PreMiD การติดตั้งบน Firefox
 published: true
-date: 2021-09-18T14:24:42.614Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:34.170Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 การติดตั้งส่วนขยายนั้นสำคัญมากเนื่องจากแอปพลิเคชันไม่สามารถทำงานเองได้ด้วยตัวเอง

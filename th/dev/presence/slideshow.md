@@ -1,11 +1,11 @@
 ---
 title: คลาส Slideshow
-description: 
+description:
 published: true
-date: 2021-09-18T14:43:58.236Z
-tags: 
+date: 2020-12-25T00:47:38.111Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:59:39.184Z
+dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
 # คลาส Slideshow

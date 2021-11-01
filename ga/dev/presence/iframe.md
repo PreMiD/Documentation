@@ -2,8 +2,10 @@
 title: Rang iFrame
 description:
 published: true
-date: 2021-07-01T14:03:55.793Z
+date: 2021-09-18T14:31:12.831Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
 # Rang iFrame

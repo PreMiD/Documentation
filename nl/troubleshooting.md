@@ -2,10 +2,10 @@
 title: Probleemoplossing
 description: Alles om je probleem op te lossen
 published: true
-date: 2021-09-18T14:08:21.185Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:03.962Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Zorg ervoor dat de extensie **en** de applicatie geïnstalleerd zijn! 

@@ -2,10 +2,10 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2021-09-18T14:20:00.746Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:32:31.188Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 Plėtinio įdiegimas yra labai svarbus, nes programa pati nieko negali padaryti.

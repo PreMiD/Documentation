@@ -2,10 +2,10 @@
 title: Garis Panduan Presence
 description: Peraturan yang kesemua pembangun Presence perlu ikut untuk membolehkan Presence mereka ditambah.
 published: true
-date: 2021-06-27T16:08:07.318Z
+date: 2021-10-18T16:26:36.089Z
 tags:
 editor: markdown
-dateCreated: 2021-02-26T21:54:41.573Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ Peraturan am pembangunan Presence adalah seperti berikut:
 - Presence untuk perkhidmatan seperti Bot/Senarai Pelayan Discord mesti mengikut keperluan tambahan berikut:
   - Domain mestilah berusia sekurang-kurangnya **6 bulan**.
   - Pelawat unik setiap hari:
-    - Untuk domain berusia 6 bulan: **20,000 pelawat unik sehari**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - Untuk domain berusia 12+ bulan: **45,000 pelawat unik sehari**.
   - Laman sesawang tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan lain-lain.
   - Laman sesawang tersebut sendirinya mestilah mempunyai kualiti, reka bentuk, dll yang sangat bagus.
@@ -246,7 +246,7 @@ Ini senarai peraturan yang perlu diikuti semasa menulis fail `presence.ts` anda:
 - Presence yang menggunakan butang mesti mengikut keperluan tambahan:
   - Lencongan ke laman utama tidak dibenarkan.
   - Promosi laman sesawang menggunakannya tidak dibenarkan.
-  - Ia tidak boleh menunjukkan data tambahan apabila anda tidak mampu tunjukkannya di medan yang lain.
+  - They can't display information you couldn't fit in other fields.
   - Melencongkan secara terus ke strim audio/video adalah tidak dibenarkan.
 
 

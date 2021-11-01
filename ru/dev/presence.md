@@ -1,11 +1,11 @@
 ---
 title: Разработчик Presence
-description: 
+description:
 published: true
-date: 2021-10-30T23:15:30.579Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:36.073Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > Все присутствия теперь хранятся здесь: https://github.com/PreMiD/Presences 

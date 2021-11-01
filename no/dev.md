@@ -2,8 +2,10 @@
 title: Kom i gang
 description: Et lite råd for de som startet å kode nylig
 published: true
-date: 2020-04-09T14:21:58.246Z
+date: 2021-09-19T12:54:30.445Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > En kildekoderedigering er trengt. We recommend [Visual Studio Code](https://code.visualstudio.com/). 

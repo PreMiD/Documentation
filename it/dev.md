@@ -2,10 +2,10 @@
 title: Primi passi
 description: Un piccolo consiglio per coloro che di recente hanno iniziato a programmare
 published: true
-date: 2021-09-19T12:55:19.900Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T12:55:17.636Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > È necessario un editor di codice sorgente. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
