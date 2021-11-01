@@ -2,10 +2,10 @@
 title: Yükleme
 description: PreMiD nasıl yüklenir
 published: true
-date: 2021-09-18T14:10:44.590Z
-tags: 
+date: 2020-11-10T17:54:28.896Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:20:43.356Z
+dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
 > İlerlemeden önce sisteminizin tüm gereksinimleri karşıladığından emin olun. 
