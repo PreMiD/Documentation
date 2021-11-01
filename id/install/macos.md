@@ -2,10 +2,10 @@
 title: macOS
 description: Memulai dengan instalasi PreMiD pada macOS
 published: true
-date: 2021-09-18T14:18:19.587Z
-tags: 
+date: 2021-09-18T14:14:48.363Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:30:14.916Z
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
 > Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements). 
