@@ -2,10 +2,10 @@
 title: Clase de Presence
 description: La clase principal para cada presence de PreMiD
 published: true
-date: 2021-10-30T23:13:47.607Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-10-27T17:50:03.484Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Clase de Presence
@@ -316,8 +316,8 @@ Esta interfaz tiene las siguientes variables, todas ellas son opcionales.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Define el texto que se mostrará al usuario al pasar el cursor sobre el icono 
-        pequeño.</td>
+      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
+        icon.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
