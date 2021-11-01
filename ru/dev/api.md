@@ -2,10 +2,10 @@
 title: API
 description: Доступ к ресурсам и выполнение действий с помощью PreMiD API
 published: true
-date: 2021-09-18T14:22:51.214Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:32.652Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:35:32.652Z
 > {.is-info}
 
 ## Версия API
-> API v2 устарел и будет удален в ближайшем будущем. Пожалуйста, используйте v3 для любых будущих запросов, чтобы предотвратить проблемы. 
+> API v2 has been deprecated and most of it's endpoints have been removed. Пожалуйста, используйте v3 для любых будущих запросов, чтобы предотвратить проблемы. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ PreMiD раскрывает различные версии нашего API. В
 > {.is-danger}
 
 **Выберите версию API:**
-- [v1 *устарело*](/dev/api/v2)
-- [v3 *текущая*](/dev/api/v3)
+- [v2 *partially deleted | deprecated*](/dev/api/v2)
+- [v3 *current*](/dev/api/v3)
 {.links-list}
