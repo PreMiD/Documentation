@@ -2,10 +2,10 @@
 title: Prérequis
 description: Configuration minimal requise pour utiliser PreMiD
 published: true
-date: 2021-09-18T14:16:32.797Z
-tags: 
+date: 2021-01-17T22:43:28.543Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:27:59.701Z
+dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
 # Configuration requise
