@@ -2,10 +2,10 @@
 title: Solução de Problemas
 description: Tudo para resolver o teu problema
 published: true
-date: 2021-10-25T15:53:00.961Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:35.847Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Verifica se tens a extensão **e** a aplicação instaladas! 
