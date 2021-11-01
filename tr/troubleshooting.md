@@ -2,10 +2,10 @@
 title: Sorun Giderme
 description: Karşılaştığınız hatayı çözebilmek için her şey
 published: true
-date: 2021-09-18T14:10:47.138Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:20:46.696Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Uzantıyı **ve** uygulamanın yüklü olduğundan emin olun! 
