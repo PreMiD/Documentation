@@ -23,7 +23,7 @@ The installation of the application is very important as the extension can not d
   - FAQs (soon)
   - Building (soon)
   - [Support](#support)
-  - [Credits](#credits)
+  - [Zasluge](#credits)
   - [License](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Prijenosni AppImage](#appimage)** (_PREPORUČENO_)
@@ -80,7 +80,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="credits"></a>
 
-### Credits
+### Zasluge
 
 Thanks to :
 
