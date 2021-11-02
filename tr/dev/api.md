@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## API Sürümleri
-> API v2 has been deprecated and most of it's endpoints have been removed. Gelecekte herhangi bir sorunu önlemek için çağrılarda v3 kullanın. 
+> API v2 has been deprecated and most of its endpoints have been removed. Gelecekte herhangi bir sorunu önlemek için çağrılarda v3 kullanın. 
 > 
 > {.is-danger}
 

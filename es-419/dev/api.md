@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## Administración de versiones de la API
-> API v2 has been deprecated and most of it's endpoints have been removed. Porfavor, utilice la v3 para cualquier solicitud futura para evitar problemas. 
+> API v2 has been deprecated and most of its endpoints have been removed. Porfavor, utilice la v3 para cualquier solicitud futura para evitar problemas. 
 > 
 > {.is-danger}
 

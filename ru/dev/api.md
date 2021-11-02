@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## Версия API
-> API v2 has been deprecated and most of it's endpoints have been removed. Пожалуйста, используйте v3 для любых будущих запросов, чтобы предотвратить проблемы. 
+> API v2 has been deprecated and most of its endpoints have been removed. Пожалуйста, используйте v3 для любых будущих запросов, чтобы предотвратить проблемы. 
 > 
 > {.is-danger}
 

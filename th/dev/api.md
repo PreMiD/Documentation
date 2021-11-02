@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## เวอร์ชัน API
-> API v2 has been deprecated and most of it's endpoints have been removed. โปรดใช้ เวอร์ชั่นที่ 3 ในการส่งคำขอในอนาคตเพื่อป้องกันปัญหาต่างๆ. 
+> API v2 has been deprecated and most of its endpoints have been removed. โปรดใช้ เวอร์ชั่นที่ 3 ในการส่งคำขอในอนาคตเพื่อป้องกันปัญหาต่างๆ. 
 > 
 > {.is-danger}
 
