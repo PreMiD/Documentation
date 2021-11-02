@@ -37,7 +37,7 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences voor services zoals bot- en serverlijsten voor Discord moeten aan deze extra eisen voldoen:
   - Het domein moet minimaal **6 maanden** oud zijn.
   - Unieke bezoekers per dag:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
+    - Voor domeinen van 6 tot 12 maanden oud: **20.000 unieke bezoekers/dag**.
     - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
   - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
   - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
@@ -249,7 +249,7 @@ Hier is een lijst met regels die je moet volgen bij het schrijven van je `presen
 - Presences met knoppen moeten aan deze extra eisen voldoen:
   - Doorverwijzingen naar de hoofdpagina zijn verboden.
   - Het promoten van websites via knoppen is verboden.
-  - They can't display information you couldn't fit in other fields.
+  - Ze mogen geen aanvullende informatie die niet meer in andere velden past weergeven.
   - Direct doorverwijzen naar een audio- of videostream is verboden.
 
 
