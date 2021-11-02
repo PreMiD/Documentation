@@ -15,7 +15,7 @@ https://api.premid.app
 {.is-info}
 
 ## API Versioning
-> API v2 has been deprecated and most of it's endpoints have been removed. Please use v3 for any future request to prevent issues.
+> API v2 has been deprecated and most of its endpoints have been removed. Please use v3 for any future request to prevent issues.
 {.is-danger}
 
 PreMiD exposes different versions of our API. You can specify version by including it in the request path like ``https://api.premid.app/v{version_number}``. Omitting the version number from the route will route requests to the current default version (marked below accordingly).
