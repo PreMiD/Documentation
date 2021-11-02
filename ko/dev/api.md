@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## API 버전
-> API v2 has been deprecated and most of it's endpoints have been removed. 모든 요청에 v3를 사용하여 향후 발생할 문제를 방지하세요. 
+> API v2 has been deprecated and most of its endpoints have been removed. 모든 요청에 v3를 사용하여 향후 발생할 문제를 방지하세요. 
 > 
 > {.is-danger}
 
