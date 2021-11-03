@@ -205,7 +205,7 @@ Se você quer aprender expressões regulares, aqui estão alguns sites.
 
 ## Idiomas para Presence
 
-PreMiD é um serviço poliglota, o que significa que há uma infinidade de idiomas envolvidos para conectar usuários por todo o mundo. A full list of languages can be found [here](https://docs.premid.app/dev/presence/language). Para customizar ainda mais sua presence, você pode permitir que os usuários selecionem seu idioma de exibição. Veja[`multiLanguage`](#multilanguage) para mais informações.
+PreMiD é um serviço poliglota, o que significa que há uma infinidade de idiomas envolvidos para conectar usuários por todo o mundo. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Para customizar ainda mais sua presence, você pode permitir que os usuários selecionem seu idioma de exibição. Veja[`multiLanguage`](#multilanguage) para mais informações.
 
 ## Presence settings
 Setup interactive settings so users can customize the presence!
