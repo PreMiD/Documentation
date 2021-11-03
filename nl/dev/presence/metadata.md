@@ -208,7 +208,7 @@ Als je reguliere expressies wilt leren, zijn hier enkele websites.
 
 ## Presence-talen
 
-PreMiD is een meertalige service, wat betekent dat er een groot aantal talen beschikbaar is om gebruikers van over de hele wereld te verbinden. A full list of languages can be found [here](https://docs.premid.app/dev/presence/language). Om je presence nog meer aanpasbaar te maken, kun je gebruikers de weergavetaal van de presence laten wijzigen. Bekijk [`multiLanguage`](#multilanguage) voor meer.
+PreMiD is een meertalige service, wat betekent dat er een groot aantal talen beschikbaar is om gebruikers van over de hele wereld te verbinden. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Om je presence nog meer aanpasbaar te maken, kun je gebruikers de weergavetaal van de presence laten wijzigen. Bekijk [`multiLanguage`](#multilanguage) voor meer.
 
 ## Presence instellingen
 Interactieve instellingen instellen zodat gebruikers de presence kunnen aanpassen!
