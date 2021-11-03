@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## API Versiebeheer
-> API v2 has been deprecated and most of its endpoints have been removed. Gebruik v3 voor toekomstige requests om problemen te voorkomen. 
+> API v2 is verouderd en de meeste endpoints ervan zijn verwijderd. Gebruik v3 voor toekomstige requests om problemen te voorkomen. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ Alle HTTP-laag diensten en protocollen (bijvoorbeeld http) binnen de PreMiD API 
 > {.is-danger}
 
 **Kies de API-versie:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+- [v2 *deels verwijderd | verouderd*](/dev/api/v2)
+- [v3 *huidig*](/dev/api/v3)
 {.links-list}
