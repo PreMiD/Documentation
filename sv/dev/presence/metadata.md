@@ -208,7 +208,7 @@ If you want to learn regular expressions, here are a few websites.
 
 ## Presence languages
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found [here](https://docs.premid.app/dev/presence/language). För att anpassa din presence ännu mer, så kan du tillåta användare att välja deras presence visningsspråk. See [`multiLanguage`](#multilanguage) for more.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). För att anpassa din presence ännu mer, så kan du tillåta användare att välja deras presence visningsspråk. See [`multiLanguage`](#multilanguage) for more.
 
 ## Presence settings
 Setup interactive settings so users can customize the presence!
