@@ -13,7 +13,7 @@ dateCreated: 2021-10-31T15:41:15.757Z
     <tr>
       <th style="text-align:left">Code</th>
       <th style="text-align:left">Weboldal</th>
-      <th style="text-align:left">Bővítmény letöltése</th>
+      <th style="text-align:left">Bővítmény</th>
       <th style="text-align:left">Presence</th>
     </tr>
   </thead>
