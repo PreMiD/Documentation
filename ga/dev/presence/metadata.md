@@ -205,7 +205,7 @@ Más mian leat nathanna rialta a fhoghlaim, seo cúpla suíomh Gréasáin.
 
 ## Teangacha Presence
 
-Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad teangacha i gceist chun úsáideoirí a nascadh ar fud na cruinne. A full list of languages can be found [here](https://docs.premid.app/dev/presence/language). Chun do láithreacht a shaincheapadh níos mó fós is féidir leat ligean d’úsáideoirí a dteanga taispeána láithreachta a roghnú féach [`multiLanguage`](#multilanguage) níos mó. See [`multiLanguage`](#multilanguage) for more.
+Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad teangacha i gceist chun úsáideoirí a nascadh ar fud na cruinne. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Chun do láithreacht a shaincheapadh níos mó fós is féidir leat ligean d’úsáideoirí a dteanga taispeána láithreachta a roghnú féach [`multiLanguage`](#multilanguage) níos mó. See [`multiLanguage`](#multilanguage) for more.
 
 ## Socruithe láithreachta
 Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an láithreacht a shaincheapadh!

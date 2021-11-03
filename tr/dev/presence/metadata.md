@@ -203,7 +203,7 @@ Regex hakkında daha fazla bilgi almak istiyorsanız aşağıdaki sitelere göz 
 
 ## Servis Dilleri
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found [here](https://docs.premid.app/dev/presence/language). Servisi daha da özelleştirmek için kullanıcıların servisin dilini seçmelerine izin verebilirsiniz. Daha fazlası için [`multiLanguage`](#multilanguage) ayarına bakın.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Servisi daha da özelleştirmek için kullanıcıların servisin dilini seçmelerine izin verebilirsiniz. Daha fazlası için [`multiLanguage`](#multilanguage) ayarına bakın.
 
 ## Servis ayarları
 İnteraktif ayarlar oluşturarak kullanıcıların servisinizi düzenlemesini sağlayın!
