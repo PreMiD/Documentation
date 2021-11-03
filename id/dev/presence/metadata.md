@@ -206,7 +206,7 @@ Jika kamu ingin mempelajari regular expression, berikut beberapa website.
 
 ## Bahasa Presence
 
-PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat untuk menghubungkan pengguna di seluruh dunia. Daftar penuh bahasa dapat dilihat dengan [API endpoint](https://api.premid.app/v2/langFile/list). Untuk lebih menyesuaikan presence kamu, kamu bisa mengizinkan pengguna untuk memilih tampilan bahasa presence mereka. Lihat [`multiLanguage`](#multilanguage) untuk selengkapnya.
+PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat untuk menghubungkan pengguna di seluruh dunia. A full list of languages can be found [here](https://docs.premid.app/dev/presence/language). Untuk lebih menyesuaikan presence kamu, kamu bisa mengizinkan pengguna untuk memilih tampilan bahasa presence mereka. Lihat [`multiLanguage`](#multilanguage) untuk selengkapnya.
 
 ## Pengaturan presence
 Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
