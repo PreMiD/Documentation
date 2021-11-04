@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## Версия API
-> API v2 has been deprecated and most of its endpoints have been removed. Пожалуйста, используйте v3 для любых будущих запросов, чтобы предотвратить проблемы. 
+> API v2 устарел, и большинство его конечных точек было удалено. Пожалуйста, используйте v3 для любых будущих запросов, чтобы предотвратить проблемы. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ PreMiD раскрывает различные версии нашего API. В
 > {.is-danger}
 
 **Выберите версию API:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
+- [v2 *частично удален | устарел*](/dev/api/v2)
 - [v3 *current*](/dev/api/v3)
 {.links-list}
