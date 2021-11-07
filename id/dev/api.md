@@ -31,6 +31,6 @@ Semua layanan dan protokol HTTP-layer (misal http) dalam API PreMiD menggunakan 
 > {.is-danger}
 
 **Pilih versi API:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+- [v2 *sebagian dihapus | usang*](/dev/api/v2)
+- [v3 *aktif*](/dev/api/v3)
 {.links-list}
