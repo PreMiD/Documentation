@@ -37,7 +37,7 @@ Peraturan umum pembuatan presence adalah sebagai berikut:
 - Presences untuk layanan seperti Daftar Server/Bot Discord harus mengikuti persyaratan tambahan berikut ini:
   - Domain harus paling sedikit berusia **6 bulan**.
   - Pengunjung unik per hari:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
+    - Untuk domain berusia 6 sampai 12 bulan: **20.000 pengunjung unik/hari**.
     - Untuk domain berusia 12+ bulan: **45.000 pengunjung unik/hari**.
   - Situs web tidak boleh menggunakan domain murah seperti `.xyz`, `.club` dan seterusnya.
   - Situs web tersebut harus berkualitas tinggi, desain bagus, dll.
