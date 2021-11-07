@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > {.is-info}
 
 ## API Versioning
-> API v2 has been deprecated and most of its endpoints have been removed. Harap gunakan v3 untuk permintaan apa pun guna mencegah masalah di masa mendatang. 
+> API v2 sudah usang dan sebagian besar endpointnya telah dihapus. Harap gunakan v3 untuk permintaan apa pun guna mencegah masalah di masa mendatang. 
 > 
 > {.is-danger}
 
