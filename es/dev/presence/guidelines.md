@@ -37,7 +37,7 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
 - Presences para servicios como listas de Bots/Servidores de Discord deben seguir estos requisitos adicionales:
   - El dominio debe tener al menos **6 meses** de antigüedad.
   - Visitas únicas por día:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
+    - Para dominios de 6 a 12 meses de antigüedad: **20.000 visitas únicas por día**.
     - Para dominios de 12 meses o más de antigüedad: **45.000 visitas únicas por día**.
   - El sitio web no puede estar en un dominio barato como `.xyz`, `.club` y demás.
   - El sitio web debe tener una muy buena calidad, diseño, etc.
@@ -247,7 +247,7 @@ Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `prese
 - Presences que utilizan botones deben seguir estos requisitos adicionales:
   - No están permitidas redirecciones a páginas de inicio.
   - No está permitido promover sitios web por medio de ello.
-  - They can't display information you couldn't fit in other fields.
+  - No pueden mostrar información que no hayas podido establecer en otros campos.
   - Está prohibida la redirección directa a streams de audio o vídeo.
 
 
