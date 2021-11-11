@@ -17,7 +17,7 @@ dateCreated: 2021-09-07T01:44:53.883Z
 
 # แนวทาง
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. สำหรับบางคนกฎนี้อาจเข้มงวดและรุนแรงเกินไป อย่างไรก็ตามการดำเนินการตามกฎเหล่านี้จะทำให้เราและผู้ใช้จะไม่พบเจอปัญหาใด ๆ
+เพื่อที่จะเผยแพร่ Presence ไปยัง [ที่เก็บของ Presence ทั้งหมด](https://github.com/PreMiD/Presences/), เราต้องการให้คุณปฏิบัติตามหลักเกณฑ์ที่กำหนด. สำหรับบางคนกฎนี้อาจเข้มงวดและรุนแรงเกินไป อย่างไรก็ตามการดำเนินการตามกฎเหล่านี้จะทำให้เราและผู้ใช้จะไม่พบเจอปัญหาใด ๆ
 
 # การสร้าง
 
