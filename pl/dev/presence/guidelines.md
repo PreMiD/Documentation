@@ -295,7 +295,7 @@ In this scenario, the following changes will occur:
 - All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
 - Tickets created under your name regarding presence development will be deleted.
 
-## `Reviewing`
+## `Przegląd i recenzja`
 
 Kilka rzeczy, które powinieneś wiedzieć po otwarciu pull request:
 
