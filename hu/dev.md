@@ -1,6 +1,6 @@
 ---
 title: Első lépések
-description: A little advice for those who got into coding recently
+description: Egy kis tipp azok számára akik nem rég kezdtek el kódólni
 published: true
 date: 2021-09-19T12:54:30.445Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> A source code editor is required. Mi a [Visual Studio Code](https://code.visualstudio.com/)-ot ajánljuk. 
+> Egy kód szerkesztő szükséges. Mi a [Visual Studio Code](https://code.visualstudio.com/)-ot ajánljuk. 
 > 
 > {.is-info}
 
