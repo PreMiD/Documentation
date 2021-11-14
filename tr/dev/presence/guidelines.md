@@ -323,7 +323,7 @@ Tüm yönergeleri uygun gözden geçirmeler ve kontrollerle karşıladıktan son
 
 # Öneriler
 
-Eğer kılavuzu geliştirebilmemiz için aklınızda bir öneri varsa, bize [PreMiD Discord sunucusundan](https://discord.premid.app) ulaşabilirsiniz.
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Katkılar
 
