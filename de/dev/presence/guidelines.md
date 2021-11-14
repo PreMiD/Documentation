@@ -37,7 +37,7 @@ Die allgemeinen Regeln der Presenceentwicklung lauten wie folgt:
 - Presences für Dienste wie Discord Bot/Server Listen müssen diese Extra-Anforderungen erfüllen:
   - Die Domain sollte mindestens **6 Monate**  alt sein.
   - Eindeutige Besucher pro Tag:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
+    - Für 6-12 Monate alte Domains: **20.000 eindeutige Besucher/Tag**.
     - Für 12+ Monate alte Domains: **45.000 eindeutige Besucher/Tag**.
   - Die Webseite kann nicht auf einer billigen Domain, wie z.B `.xyz`, `.club` und so weiter betrieben werden.
   - Die Website selbst muss eine sehr gute Qualität, Design und etc. haben.
