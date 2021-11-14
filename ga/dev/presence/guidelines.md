@@ -25,24 +25,24 @@ Is iad seo a leanas rialacha ginearálta fhorbairt láithreachta:
 
 - Caithfidh Láithreachtaí a bheith bainteach leis an suíomh Gréasáin is rogha leat.
 - Ní féidir láithreacha a dhéanamh do láithreáin ghréasáin neamhdhleathacha. (mar shampla, strusóirí, margaíocht drugaí, pornagrafaíocht leanaí, srl.)
-- Caithfidh struchtúr na gcomhad a bheith glan agus bainistithe, ná cuir comhaid nach bhfuil sonraithe san áireamh. (for e.g., vscode and git folders, image and text files, etc.)
-- You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
-- Presence that target internal browser pages (like Chrome Web Store, `chrome://`, `about:` pages, etc) are **not** allowed as they require an experimental flag to be enabled on the user's end and could potentially cause damage to their browsers.
-- Presences with support for only a single subdomain will **not** be permitted, as they may seem broken for other pages (like the homepage), exceptions can be made for the policy and contact pages (content that isn't used often) or sites where the other content is unrelated. (for e.g., wikia pages)
-- Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Caithfidh struchtúr na gcomhad a bheith glan agus bainistithe, ná cuir comhaid nach bhfuil sonraithe san áireamh. (le haghaidh e.g. fillteáin vscode agus git, comhaid íomhá agus téacs, srl.)
+- Ní mór duit struchtúr ceart comhad a bheith agat, ní cheadaítear **dréachtaí**.
+- **Ní cheadaítear** láithreacha do shuíomhanna Gréasáin le (`.onion` TLDs) nó láithreáin ghréasáin le fearainn/óstach saor in aisce (mar shampla `.TK` [gach fearann Freenom saor in aisce], `.RF`, `GD`, srl), is féidir eisceachtaí a dhéanamh má chuirtear cruthúnas i láthair a thaispeánann go bhfuil d’íoc siad as an bhfearann.
+- Caithfidh fearann an láithreachta a bheith 2 mhí d'aois ar a laghad.
+- Láithreacht a dhíríonn ar leathanaigh inmheánacha brabhsálaí (cosúil le Chrome Web Store, `chrome://`, `faoi:` leathanaigh, srl) ná ** ní **ceadaítear/láidir de réir mar a éilíonn siad bratach turgnamhach a chumasú ag deireadh an úsáideora agus d’fhéadfadh sé damáiste a dhéanamh dá mbrabhsálaithe.
+- ** Ní cheadófar** láithreacha nach dtacaíonn ach le haon fho-fhearann amháin, mar is cosúil go bhfuil siad briste do leathanaigh eile (cosúil leis an leathanach baile), is féidir eisceachtaí a dhéanamh maidir leis an mbeartas agus an teagmháil leathanaigh (ábhar nach n-úsáidtear go minic) nó suíomhanna nach bhfuil baint ag an ábhar eile leo. (le haghaidh e.g., leathanaigh wikia)
+- Ní cheadaítear láithreacha do raidiónna ar líne ach má tá 100 éisteoir seachtainiúil ar a laghad agus 15 comhthráthach ag an raidió agus ní mór go mbeadh roinnt gnéithe ann seachas teideal albam/amhrán, etc. a thaispeáint.
+- Ní cheadaítear do láithreacha cód JS a reáchtáil lena bhfeidhm féin chun athróga a fháil. Má tá fadhbanna ag Firefox le feidhm ionsuite laistigh de rang `Láithreachta`, tá cead agat d’fheidhm féin a dhéanamh agus ní mór duit é a insint dúinn sa tuairisc Iarratas Tarraingthe.
+- Ní cheadaítear uachtaráin ar cháilíocht íseal (nó cinn nach bhfuil mórán comhthéacs acu) **ní cheadaítear** (mar shampla, gan ach lógó agus téacs a thaispeáint ach gan iad a athrú arís).
+- Caithfidh láithreacha do sheirbhísí cosúil le Discord Bot/Liostaí Freastalaí na riachtanais bhreise seo a leanúint:
+  - Ba chóir go mbeadh an fearann ar a laghad **6 mhí** d'aois.
+  - Cuairteoirí uathúla in aghaidh an lae:
+    - Maidir le fearainn 6 go 12 mhí d'aois: **20,000 cuairteoir/lá uathúil**.
+    - Maidir le fearainn 12+ mí: ** 45,000 cuairteoir/lá uathúil **.
+  - Ní féidir an suíomh Gréasáin a bheith ar fhearann saor mar `.xyz`, `.club` agus mar sin de.
+  - Caithfidh cáilíocht, dearadh, srl an-mhaith a bheith ag an suíomh Gréasáin féin.
+- Ba cheart go n-úsáidfeadh láithreacha [sonraí coitianta](https://api.premid.app/v2/langFile/presence/en) (teaghráin ag tosú le "ginearálta."). Is féidir leat é seo a bhaint amach trí `multiLanguage` a úsáid leis na teaghráin a chuirtear ar fáil. Má tá teaghráin shaincheaptha de dhíth ar do láithreacht, níor cheart duit `multiLanguage` a úsáid go dtí go bhfaighidh 1000 úsáideoir an láithreacht. Is féidir leat sampla [a fháil anseo](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Lena n-áirítear an fillteán `dist`, tá comhad `presence.ts`, comhad `iframe.ts`, agus comhad `metadata.json` éigeantach mar sin bheadh an toradh ar an méid a léirítear sa scéimre seo a leanas:
 
 ```bash
 presence
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-or if you're using a `iframe.ts` file:
+nó má tá tú ag úsáid comhad `iframe.ts`:
 
 ```bash
 presence
@@ -65,39 +65,39 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
-> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process.
+> Ar mhaithe le caoithiúlacht ár bhforbróirí láithreachta, tá scéimre curtha ar fáil againn is féidir leat a úsáid chun sláine do chomhad `meiteashonraí` a bhailíochtú. Tá sé seo roghnach go hiomlán agus ní theastaíonn sé le linn an phróisis athbhreithnithe.
 
-> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted.
+> Moltar go mór duit do chomhad `meiteashonraí` a eagrú san fhormáid a thaispeántar thíos, agus caithfidh ainmneacha seirbhíse, tuairiscí, clibeanna agus réimsí suímh atá ceart ó thaobh gramadaí de a bheith agat. Aon rud nach bhfuil eagraithe de réir sonraíochtaí ** ní cheadófar**.
 
-> Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
+> Ní mór go mbeadh an chlib `nsfw` ag láithreacha suíomhanna Gréasáin a bhfuil ábhar sainráite **acu, agus caithfidh an lógó/mionsamhail** **níl** aon chuid den ábhar seo ann.
 
-Each presence has a descriptor file called `metadata.json`, the metadata has a strict standard and an example of this file can be seem below:
+Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá caighdeán docht ag na meiteashonraí agus is féidir sampla den chomhad seo a fheiceáil thíos:
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "ÚSÁIDEOIR",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "ÚSÁIDEOIR",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SEIRBHÍS",
+  "altnames": ["SEIRBHÍS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "CUR SÍOS"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "LEAGAN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["CLIB1", "CLIB1"],
+  "category": "CHATAGÓIR",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": true
     },
     {
@@ -118,166 +118,395 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
+      "value": "\"%song%\" leis an %artist%",
+      "placeholder": "bain úsáid as %song% nó %artist%" 
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "srl."]
     }
   ]
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.)
-
-> All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
-
-A list of fields and their rules are listed below:
-
-### **`$schema`**
-
-- The schema _key_ **must** include a dollar sign at the beginning of it, this will signal your text editor that you want to validate your JSON file against a model. _As stated earlier, you do not need to include a schema, but if you include it you must take this into account._
-
-### **`author`**
-
-- The ID _value_ **must** be your Discord snowflake ID. You can get it by enabling [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Please do **not** confuse this with your application ID, which is only for your presence._
-
-### **`*contributors`**
-
-- Do **not** add yourself as a contributor, and do not add someone else as a contributor unless they have helped with the presence.
-
-### **`service`**
-
-- The service name **must** be the name of the presence directory. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
-- You **cannot** use the url as the service name unless the website uses the url as its official name. If the name is not descriptive and can be considered vague, using the url is **required**. (for e.g., `YouTube` is permitted because that is the official name and is descriptive, while `youtube.com` is not. `Top` is a non-descriptive name, so using the url `top.gg` is **required**.)
-- If service has some explicit branding rules of their name, you should follow them.
-
-### **`*altnames`**
-
-- **Only** use this in scenarios where a website goes under multiple official names (e.g. Pokémon and 포켓몬스터). _Shortened_ versions of service names go under `tags`.
-
-### **`description`**
-
-- **All** presences are **required** to have an English description regardless of the website's prefered language.
-- Do **not** try and translate the description yourself unless you know that language, translators will modify your `metadata.json` and change the descriptions if necessary.
-
-### **`url`**
-
-- The url **must** be a string if the website only uses one domain. If the website uses multiple, make this an array and specify each one.
-- Do **not** include protocols in the url (for e.g., `http` or `https`), and do not include query parameters in the url (for e.g., `www.google.com/search?gws_rd=ssl` which should be `www.google.com`)
-
-### **`version`**
-
-- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Anything else like `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` or changing `1.0.0` to `2.0.0` on a bug fix/small change is **not** permitted.
-- The version **must** always start at `1.0.0` unless told otherwise, other versions will **not** be permitted.
-
-### **`logo`**
-
-- The logo **must** be a square image with a `1:1` aspect ratio.
-- The image is **required** to have a minimum resolution of `512x512` pixels. You can upsize it using a tool like [waifu2x](http://waifu2x.udp.jp/).
-
-### **`thumbnail`**
-
-- The thumbnail **should** preferably be a [wide promotional card](https://i.imgur.com/3QfIc5v.jpg) or a [screenshot](https://i.imgur.com/OAcBmwW.png) if the first is **not** available.
-
-### **`color`**
-
-- The color **must** be a hexadecimal value between `#000000` and `#FFFFFF`.
-- The color string **must** be prepended with a hash symbol.
-
-### **`tags`**
-
-- **All** presences are required to have at least _one_ tag.
-- Tags must **not** include any spaces, slashes, single/double quotation marks, Unicode characters, and should always be lowercase.
-- Tags **should** preferably include alternate service names to make searching easier (for e.g., if an Amazon presence had included AWS support, it would have its tags like `amazon-web-services` and `aws`)
-- You are **required** to add an `NSFW` tag if the presence is for an NSFW website.
-
-### **`category`**
-
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
-- The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
-
-### **`*regExp`** <br /> **`*iFrameRegExp`**
-
-- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
-
-### **`readLogs`**
-
-- Must be `boolean` value (e.g. `true` or `false`).
-- Enables logs for your presence.
-
-### **`warning`**
-
-- Enables warning icon for prompting user that this presence needs more steps than only adding presence.
-- Example of presence using this metadata variable is `VLC`.
-
-### **`settings`**
-
-- If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
-- The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
-- If you are using the `multiLanguage` option it can have the following types:
-  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
-
-## [**presence.ts**](https://docs.premid.app/dev/presence/class)
-
-> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
-
-> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
-
-Here is a list of rules you must follow when writing your `presence.ts` file:
-
-- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
-- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
-- It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
-- The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
-- You are **not** allowed to access `localStorage`.
-- When accessing cookies for stored data, please prefix the key with `PMD_`.
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
-- You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't display information you couldn't fit in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
-
-
-## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
-
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
-
-## Modification
-
-> You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
-
-In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
-
-- You are **not** allowed to rewrite a presence or change its author. If the presence author was banned from the official server or hasn't made the required changes within a month, you may contact a reviewer to see if you can to rewrite the presence.
-- If you make modifications to a presence and change at least a **quarter** of the presence's codebase, you are allowed to add yourself as a contributor. Contact a reviewer for more information about this subject.
-- Anyone may provide hotfixes to fix bugs; however, try **not** to make changes that are **not** required. Valid modifications include general fixes (code and typos), additions (descriptions and tags), missing files, etc. Do **not** change images if they are not outdated and are in specifications.
-
-# Verification
-
-> **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`.
-
-> If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile.
-
-> Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created.
-
-> **Always** have an up-to-date fork before creating your pull request. This will help limit false positives from the checks.
-
-The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
+> Má tá réimse liostaithe mar réimse roghnach ar andoiciméadacht<a> nó má tá <code>*</code> in aice leis an eochair, agus má úsáideann do láithreacht an luach réamhshocraithe dó, ná cuir san áireamh í sa chomhad <code>meiteashonraí</code>. (mar shampla, ní bheadh an réimse <code>iframe</code> de dhíth ar láithreacht gan tacaíocht iframe.)</p> </blockquote> 
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     Caithfear gach íomhá sa chomhad <code>meiteashonraí</code> a óstáil ar <code>i.imgur.com</code>. <strong x-id="1">Ní cheadaítea</strong> ábhar a óstáiltear ar an suíomh Gréasáin toisc gur féidir leo na cosáin agus na comhaid a athrú go toilteanach.
+>   </p>
+> </blockquote>
+> 
+> <p spaces-before="0">
+>   Tá liosta de na réimsí agus a rialacha liostaithe thíos:
+> </p>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>$schema</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> go mbeadh comhartha dollar ag an scéimre <em x-id = "4">eochair</em> cuirfidh sé seo in iúl d’eagarthóir téacs go bhfuil tú ag iarraidh do chomhad JSON a bhailíochtú i gcoinne samhail. <em x-id = "4"> Mar a dúradh cheana, ní gá duit scéimre a áireamh, ach má chuireann tú san áireamh é caithfidh tú é sin a chur san áireamh. </em>
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>author</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> gurb é an ID <em x-id = "4"> luach </em> ID sciathán sneachta Discord. Is féidir leat é a fháil trí <a href = "https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID- " >modh forbróra</a>. <em x-id = "4">Ná déan<strong x-id = "1"> le do thoil </strong> déan é seo a mheascadh le d’aitheantas iarratais, nach bhfuil ann ach do láithreacht. </em>
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>*contributors</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ná cuir</strong> tú féin mar ranníocóir, agus ná cuir duine eile mar ranníocóir mura chuidigh siad leis an láithreacht.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>service</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> gurb é ainm na seirbhíse ainm an eolaire láithreachta. Mar shampla, má tá an láithreacht suite ag <code>/websites/Y/YouTube/</code>, ní mór ainm na seirbhíse a bheith <code>YouTube</code>.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ní féidir</strong> leat an url a úsáid mar ainm seirbhíse mura n-úsáideann an suíomh Gréasáin an url mar ainm oifigiúil. Mura bhfuil an t-ainm tuairisciúil agus más féidir é a mheas doiléir, <strong x-id="1">tá gá</strong> an url a úsáid. (le haghaidh e.g., ceadaítear <code>YouTube</code> toisc gurb é sin an t-ainm oifigiúil agus go bhfuil sé tuairisciúil, cé nach bhfuil <code>youtube.com</code>. Is ainm neamh-thuairisciúil é <code>Top</code>, mar sin tá <strong x-id = "1">riachtanach</strong> ag baint úsáide as an url <code>top.gg</code>)
+>   </li>
+>   <li>
+>     Má tá roinnt rialacha brandála follasacha ag a n-ainm, ba cheart duit iad a leanúint.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>*altnames</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id = "1">Amháin</strong> úsáid é seo i gcásanna ina dtéann suíomh Gréasáin faoi iliomad ainmneacha oifigiúla (e.g. Pokémon agus 포켓 몬스터). <em x-id = "4">Téann leaganacha giorraithe</em> d’ainmneacha seirbhíse faoi <code>chlibeanna</code>.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>description</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Tá gá</strong> le <strong x-id="1">gach láithreachta</strong> tuairisc Bhéarla a bheith acu beag beann ar an rogha teanga ar an suíomh Gréasáin.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ná déan</strong> iarracht an tuairisc a aistriú leat féin mura bhfuil an teanga sin ar eolas agat, athróidh aistritheoirí do <code>metadata.json</code> agus athróidh siad na tuairiscí más gá.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>url</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> sreangán a bheith san url mura n-úsáideann an suíomh Gréasáin ach fearann amháin. Má úsáideann an láithreán gréasáin iolrach, déan eagar air seo agus sonraigh gach ceann acu.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ná cuir</strong> prótacail san url (mar shampla, <code>http</code> nó<code>https</code>), agus ná cuir paraiméadair fiosrúcháin san url (mar shampla, <code>www.google.com/search?gws_rd=ssl</code> ba chóir a bheith <code> www.google.com</code>)
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>version</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     Déan cinnte i gcónaí go leanann uimhir an leagain <a href="https://semver.org">caighdeáin leaganacha shéimeantach</a>, a aistríonn chuig an scéim seo a leanas: <code>&lt;NEW-FEATURE&gt;&lt;HUGE-BUGFIX&gt;&lt;SMALL-BUGFIX-OR-METADATA-CHANGES&gt;</code>. Rud ar bith eile cosúil le <code>1.0.0.1</code>, <code>1.0</code>, <code>1</code>, <code>1.0.0-BETA</code> nó ag athrú <code>1.0. 0</code> go <code>2.0.0</code> ar shocrú fabht/tá athrú beag <strong x-id="1">ní cheadaítear</strong>.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> tús a chur leis an leagan i gcónaí ag <code>1.0.0</code> mura n-insítear a mhalairt, <strong x-id="1">ní cheadófar</strong> leaganacha eile.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>logo</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> íomhá chearnach a bheith ar an lógó le cóimheas gné <code>1:1</code>.
+>   </li>
+>   <li>
+>     Tá an íomhá <strong x-id = "1">riachtanach</strong> chun taifeach íosta de <code>512x512</code> picteilín a bheith aici. Is féidir leat é a mhéadú trí uirlis mar <a href="http://waifu2x.udp.jp/">waifu2x</a> a úsáid.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>thumbnail</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ba chóir</strong> go mbeadh an mionsamhail b'fhearr a bheith ina <a href="https://i.imgur.com/3QfIc5v.jpg">cárta poiblíochta leathan</a> nó <a href="https://i.imgur.com/OAcBmwW.png">pictiúr</a> <strong x-id="1">mura bhfuil</strong> an chéad cheann ar fáil.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>color</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> an dath a bheith ina luach heicsidheachúlach idir <code>#000000</code> agus <code>#FFFFFF</code>.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> an tsreang datha a chaitheamh le siombail hash.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>tags</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     Ceanglaítear ar <strong x-id="1">gach</strong> láithreachta clib <em x-id="4">amháin</em> ar a laghad a bheith acu.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> do ní clibeanna aon spásanna, slashes, comharthaí athfhriotail singil/dúbailte, carachtair Unicode a áireamh, agus ba chóir go mbeadh siad i gcónaí i litreacha beaga.
+>   </li>
+>   <li>
+>     B’fhearr le clibeanna <strong x-id="1">ba chóir</strong> ainmneacha malartacha seirbhíse a áireamh chun cuardach a dhéanamh níos éasca (mar shampla, dá mbeadh tacaíocht AWS san áireamh i láithreacht Amazon, bheadh a chlibeanna air mar <code>amazon-web-services</code> agus <code>aws</code>)
+>   </li>
+>   <li>
+>     Tá tú <strong x-id="1">cead</strong> chun clib <code>NSFW</code> a chur leis má tá tú i láthair ar shuíomh Gréasáin NSFW.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>category</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> an chatagóir a bheith ar cheann de na rudaí seo a leanas atá liostaithe ar an <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">doiciméadacht</a>.
+>   </li>
+>   <li>
+>     Caithfidh an láithreacht catagóir a úsáid a oireann d’ábhar an láithreáin ghréasáin. (mar shampla, ná bain úsáid as <code>anime</code> nuair nach bhfuil baint ag an suíomh Gréasáin le hanam).
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>*regExp</code></strong> <br /> <strong x-id="1"><code>*iFrameRegExp</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> nathanna rialta a bheith bailí. Déan do chuid nathanna a thástáil leis na huirlisí atá liostaithe ar an <a href="https://docs.premid.app/dev/presence/metadata#testing">doiciméadacht</a>.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>readLogs</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     Ní mór luach <code>boolean</code> a bheith aige (e.g. <code>true</code> nó <code>false</code>).
+>   </li>
+>   <li>
+>     Cumasaíonn sé logaí do do láithreacht.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>warning</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     Cumasaíonn sé deilbhín rabhaidh chun an t-úsáideoir a spreagadh go gcaithfidh an láithreacht seo níos mó céimeanna ná láithreacht a chur leis.
+>   </li>
+>   <li>
+>     Sampla de láithreacht ag baint úsáide as an athróg meiteashonraí seo is ea <code>VLC</code>.
+>   </li>
+> </ul>
+> 
+> <h3 spaces-before="0">
+>   <strong x-id="1"><code>settings</code></strong>
+> </h3>
+> 
+> <ul>
+>   <li>
+>     Má shocraíonn tú sreang formáide a dhéanamh (mar shampla, <code>%song% leis an %artist%</code>), caithfidh na hathróga a bheith timpeallaithe ag comhartha faoin gcéad ar gach taobh. Tá athróga cosúil le <code>%var</code>, <code>var%</code>, nó <code>%%var%%</code> agus aon rud eatarthu <strong x-id = "1">ní cheadaítear</strong> ar mhaithe le caighdeánú.
+>   </li>
+>   <li>
+>     Ní mór ainm na socruithe <strong x-id = "1">ní</strong> a bheith i ngach ceannlitir. Mar shampla, <strong x-id="1">ní cheadófar</strong> ainmneacha mar <code>TAISPEÁIN STÁDAS BRABHSÁLA</code>; áfach, ceadaítear ainmneacha mar <code>Taispeáin Stádas Brabhsála </code>nó<code> Taispeáin stádas brabhsála</code>.
+>   </li>
+>   <li>
+>     Má tá an rogha <code>multiLanguage</code> á úsáid agat féadfaidh na cineálacha seo a leanas a bheith aige: <ul>
+>       <li>
+>         <strong x-id = "1">Boole</strong> cineál nach gcumasóidh ach teaghráin ó <a href = "https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json "><code>general.json</code></a> ón repo Logánú nó ón gcomhad láithreachta (m.sh. nuair is YouTube ainm na láithreachta, gheobhaidh an síneadh teaghráin ó <code>youtube.json</code> freisin.)
+>       </li>
+>       <li>
+>         <strong x-id = "1">Teaghrán</strong> cineál (e.g. <code>youtube</code>) a shonróidh ainm na gcomhad ar mhaith leat teaghráin a fháil uathu.
+>       </li>
+>       <li>
+>         <strong x-id = "1"> Eagar<String></strong> cineál (m.sh. <code>["youtube", "discord"]</code>) a shonróidh ainm na gcomhad a theastaíonn uait a dhéanamh faigh teaghráin ó.
+>       </li>
+>     </ul>
+>   </li>
+> </ul>
+> 
+> <h2 spaces-before="0">
+>   <a href="https://docs.premid.app/dev/presence/class"><strong x-id="1">presence.ts</strong></a>
+> </h2>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     <strong x-id="1">Ní mór</strong> an cód a scríobhann tú a bheith <em x-id = "4"> dea-scríofa </em> agus <strong x-id = "1"> ní mór </strong>a<em x-id = "4">inléite</em> agus caithfidh gach sreang a bheith ceart ó thaobh na gramadaí de (is féidir neamhaird a dhéanamh ar earráidí gramadaí ar láithreáin ghréasáin).
+>   </p>
+> </blockquote>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     Leanann gach láithreacht tacar rialacha dian linting a seiceálfar le linn an phróisis athbhreithnithe. Is féidir cúpla moladh a fheiceáil thíos. <a href="https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules">Moltaí Breiseán TypeScript maidir le Seiceáil Cineál Dian</a>. <a href="https://eslint.org/docs/rules">Moltaí ESlint</a>. <a href="https://prettier.io/">Prettier</a>.
+>   </p>
+> </blockquote>
+> 
+> <p spaces-before="0">
+>   Seo liosta de na rialacha a chaithfidh tú a leanúint agus do chomhad <code>presence.ts</code> á scríobh:
+> </p>
+> 
+> <ul>
+>   <li>
+>     <strong x-id = "1"> I gcónaí </strong> dearbhaigh sampla nua den aicme <code>Presence</code> roimh aon athróg eile chun saincheisteanna neamhchoitianta a d’fhéadfadh tarlú a sheachaint; ní riachtanas de réir dearaidh é seo agus d’fhéadfaí é a bhaint amach anseo.
+>   </li>
+>   <li>
+>     <strong x-id = "1">Ná</strong> bain úsáid as feidhmeanna saincheaptha nuair a bhíonn <a href="https://docs.premid.app/dev/presence#files-explained"> leaganacha dúchasacha ar fáil </a>; déanann sé seo cinnte go mbaineann socruithe ar leibhéal an fhadaithe le do láithreachtaí freisin. Tá cead agat gach rud a theastaíonn uait a úsáid mura bhfaigheann tú iad liostaithe sna docs.
+>   </li>
+>   <li>
+>     Tá sé <strong x-id="1">cosc láidir</strong> uachtaráin a chódú do shuíomh gan tacaíocht a chur lena phríomhtheanga (mar shampla, láithreacht YouTube atá códaithe le tacaíocht do Portueguese agus Seapáinis amháin, ach ní an Béarla féin.)
+>   </li>
+>   <li>
+>     Tá sé i gceist ag na réimsí <code>smallImageKey</code> agus <code>smallImageText</code> comhthéacs breise/tánaisteach a sholáthar (mar shampla <code>seinm/sos</code> do shuíomhanna físe, <code>brabhsáil</code> do shuímh rialta, agus cásanna eile) gan próifílí Discord nó aon rud nach mbaineann le PreMiD a chur chun cinn.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ní cheadaítear</strong> duit rochtain a fháil ar <code>localStorage</code>.
+>   </li>
+>   <li>
+>     Agus fianáin á rochtain agat ar shonraí stóráilte, cuir an eochair le <code>PMD_</code> le do thoil.
+>   </li>
+>   <li>
+>     Ní féidir leat ach iarratais HTTP/HTTPS a dhéanamh ar <code>premid.app</code> nó API an láithreáin ghréasáin láithreachta. Má tá fearainn sheachtracha á n-úsáid agat, iarrfar ort a mhíniú cén fáth go bhfuil gá leis. Is é an t-aon API a cheadaítear iarratas a dhéanamh ná <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"><code>Fetch API</code></a>.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ná</strong> leag réimsí sa réad láithreachtData atá neamhshainithe tar éis a dhearbhú, bain úsáid as an eochairfhocal <code>scriosadh</code> ina ionad. (mar shampla, bain úsáid as <code>scrios data.startTimestamp</code> in ionad <code>data.startTimestamp = undefined</code>)
+>   </li>
+>   <li>
+>     <strong x-id="1">Ní cheadaítear</strong> duit uachtaráin a scríobh a athraíonn feidhmiúlacht láithreán gréasáin ar leith. Áirítear leis seo eilimintí DOM a chur leis, a scriosadh nó a mhodhnú.
+>   </li>
+>   <li>
+>     Ba cheart go leanfadh láithreacha a úsáideann cnaipí riachtanais bhreise: <ul>
+>       <li>
+>         Tá cosc ar atreoruithe chuig an bpríomhleathanach.
+>       </li>
+>       <li>
+>         Tá cosc ar láithreáin ghréasáin a chur chun cinn.
+>       </li>
+>       <li>
+>         Ní féidir leo faisnéis nach raibh tú oiriúnach i réimsí eile a thaispeáint.
+>       </li>
+>       <li>
+>         Tá cosc ar atreorú díreach chuig sruth fuaime/físe.
+>       </li>
+>     </ul>
+>   </li>
+> </ul>
+> 
+> <h2 spaces-before="0">
+>   <a href="https://docs.premid.app/dev/presence/tsconfig"><strong x-id="1">tsconfig.json</strong></a>
+> </h2>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     Ná <strong x-id="1">ní</strong> scríobh do chomhad <code>tsconfig.json</code> féin, bain úsáid as an méid atá curtha ar fáil ar <a href="https://docs.premid.app/dev/presence/tsconfig">doiciméadú</a>.
+>   </p>
+> </blockquote>
+> 
+> <h2 spaces-before="0">
+>   Modhnú
+> </h2>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     <strong x-id="1">Ní mór</strong> duit an leagan sa <strong x-id="1">mheiteashonraí</strong> a athrú chun go mbeidh luach níos airde ón leagan roimhe seo agus athruithe á ndéanamh agat ar an <strong x-id="1"> presence.ts </strong>, <strong x-id="1">iframe.ts</strong> nó <strong x-id="1"> metadata.json</strong>.
+>   </p>
+> </blockquote>
+> 
+> <p spaces-before="0">
+>   I roinnt cásanna, d’fhéadfadh láithreachta iad féin a iompar gan choinne nó d’fhéadfaidís roinnt mionathruithe a úsáid chun a bhfeidhmiúlacht a fheabhsú. Seo liosta de na rialacha <strong x-id="1">ní mór</strong> duit a leanúint agus tú ag athrú uachtaráin.
+> </p>
+> 
+> <ul>
+>   <li>
+>     <strong x-id="1">Ní cheadaítear</strong> duit láithreacht a athscríobh nó a údar a athrú. Má cuireadh cosc ar údar an láithreachta ón bhfreastalaí oifigiúil nó mura ndearna sé na hathruithe riachtanacha laistigh de mhí, féadfaidh tú teagmháil a dhéanamh le hathbhreithneoir le fáil amach an féidir leat an láithreacht a athscríobh.
+>   </li>
+>   <li>
+>     Má dhéanann tú modhnuithe ar láithreacht agus má athraíonn tú <strong x-id = "1">ráithe</strong> ar a laghad de bhunchód an láithreachta, tá cead agat tú féin a chur mar ranníocóir. Téigh i dteagmháil le hathbhreithneoir chun tuilleadh faisnéise a fháil faoin ábhar seo.
+>   </li>
+>   <li>
+>     Féadfaidh duine ar bith hotfixes a sholáthar chun fabhtanna a shocrú; déan iarracht <strong x-id = "1">ní</strong> athruithe a dhéanamh nach bhfuil <strong x-id = "1">ag teastáil</strong>. I measc na modhnuithe bailí tá socruithe ginearálta (cód agus typos), breiseanna (tuairiscí agus clibeanna), comhaid in easnamh, srl. <strong x-id="1">Ná</strong> athraigh íomhánna mura bhfuil siad as dáta agus má tá siad i sonraíochtaí.
+>   </li>
+> </ul>
+> 
+> <h1 spaces-before="0">
+>   Deimhniú
+> </h1>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     <strong x-id="1"> Beidh gach cód </strong> a chuirtear leis an siopa ceadúnaithe faoin <code> Ceadúnas Poiblí Mozilla 2.0 </code>.
+>   </p>
+> </blockquote>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     Más gá duit teagmháil a dhéanamh le duine, bain úsáid as ár bhfreastalaí Discord oifigiúil. Beidh ról <code>Reviewer</code> ag gach athbhreithneoir ar a bpróifíl.
+>   </p>
+> </blockquote>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     Coinnigh i gcuimhne, le do thoil, go n-oibríonn na hathbhreithneoirí go deonach agus go ndéanann siad stórtha eile a bhainistiú sa bhreis ar an gceann seo, b’fhéidir nach ndéanfar athbhreithniú ar d’iarratas tarraingthe go dtí uaireanta nó fiú laethanta tar éis a chruthaithe.
+>   </p>
+> </blockquote>
+> 
+> <blockquote spaces-before="0">
+>   <p spaces-before="0">
+>     <strong x-id="1"> I gcónaí </strong> bíodh forc cothrom le dáta agat sula ndéanann tú d’iarratas tarraingthe a chruthú. Cabhróidh sé seo le rudaí dearfacha bréagacha a theorannú ó na seiceálacha.
+>   </p>
+> </blockquote>
+> 
+> <p spaces-before="0">
+>   Is é an próiseas is tábhachtaí d’fhorbairt láithreachta ná do láithreacht a fháil ar an siopa. Déantar é seo trí iarraidh <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">pull request</a> a dhéanamh ar GitHub ar an stór <code> PreMiD/Presences </code>. Deimhneoidh ár n-athbhreithneoirí go bhfuil do láithreacht de réir na gcaighdeán agus brúfaidh siad ar an siopa é.
+> </p>
 
 <div>
-  <h2 style="font-size: 2rem; margin-bottom: 0;">Presence Reviewers</h2>
+  <h2 style="font-size: 2rem; margin-bottom: 0;">Athbhreithneoirí Láithreachta</h2>
 
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
@@ -285,61 +514,128 @@ The most important process of presence development is getting your presence on t
   <br />
 </div>
 
-## `Restrictions`
-
-Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
-
-In this scenario, the following changes will occur:
-
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). The application id for each presence will be recreated under the new owner's name.
-- All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
-- Tickets created under your name regarding presence development will be deleted.
-
-## `Reviewing`
-
-A few things you should know after opening a pull request:
-
-- It takes 2 reviewers to merge a pull request.
-- If a pull request is inactive for a period of 7 days, it will be promptly closed.
-- All checks **must** be passed in order to merge.
-- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
-- ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
-
-## `Checks`
-
-![Example of checks](https://i.imgur.com/T8agbnB.png)
-
-Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
-
-- `Codacy` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
-- `CodeFactor` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
-- `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
-
-## `Additional Rules`
-
-- **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
-
-After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
-
-# Suggestions
-
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
-
-# Contributions
-
-`Revision 3` of the guidelines was written and was contributed to by the following individuals:
+> 
+> <h2 spaces-before="0">
+>   <code>Srianta</code>
+> </h2>
+> 
+> <p spaces-before="0">
+>   Cuirfidh cionta athchleachtacha amhail treoirlínte a bhriseadh, iarrataí tarraingthe spamála, bagairtí nó iompar míchuí cosc ort uachtaráin a chruthú.
+> </p>
+> 
+> <p spaces-before="0">
+>   Sa chás seo, tarlóidh na hathruithe seo a leanas:
+> </p>
+> 
+> <ul>
+>   <li>
+>     Aistreofar láithreacha faoi do bhainistíocht chuig bot PreMiD nó chuig úsáideoir eile (cinneadh an athbhreithnitheora). Athchruthófar an id iarratais do gach láithreacht faoi ainm an úinéara nua.
+>   </li>
+>   <li>
+>     Dúnfar go pras do chuid saincheisteanna agus iarratais tarraingthe go léir (cruthú láithreachta, ranníocaíocht láithreachta, srl.) A cruthaíodh tar éis an toirmisc.
+>   </li>
+>   <li>
+>     Scriosfar ticéid a cruthaíodh faoi d’ainm maidir le forbairt láithreachta.
+>   </li>
+> </ul>
+> 
+> <h2 spaces-before="0">
+>   <code>Athbhreithniú</code>
+> </h2>
+> 
+> <p spaces-before="0">
+>   Cúpla rud ba chóir a bheith ar eolas agat tar éis duit iarratas tarraingthe a oscailt:
+> </p>
+> 
+> <ul>
+>   <li>
+>     Tógann sé ar 2 athbhreithneoir iarratas tarraingthe a chumasc.
+>   </li>
+>   <li>
+>     Má tá iarratas tarraingthe neamhghníomhach ar feadh tréimhse 7 lá, dúnfar é go pras.
+>   </li>
+>   <li>
+>     <strong x-id="1">Ní mór</strong> gach seic a rith chun cumasc.
+>   </li>
+>   <li>
+>     ⚠️ <strong x-id="1">Ní mór</strong> duit scáileáin scáileáin nua gan athrú a thógáil (tógtha agat) a thaispeánann comparáid taobh le taobh ar do phróifíl agus ar an suíomh Gréasáin chun a chruthú go n-oibríonn do láithreacht. <em x-id = "4"> Tá cead agat scáileáin scáileáin a chur le chéile chun pléisiúr a fheiceáil </em> Baineann sé seo le cruthú agus modhnú araon.
+>   </li>
+>   <li>
+>     ⚠️ Tá tú freisin <strong x-id = "1">ceach</strong> chun scáileáin scáileáin de na socruithe láithreachta a áireamh sa síneadh má sholáthraítear iad. Is féidir sampla a fheiceáil <a href="https://imgur.com/a/OD3sj5R"> anseo </a>.
+>   </li>
+> </ul>
+> 
+> <h2 spaces-before="0">
+>   <code>Seiceálacha</code>
+> </h2>
+> 
+> <p spaces-before="0">
+>   <img src="https://i.imgur.com/T8agbnB.png" alt="Sampla de sheiceálacha" />
+> </p>
+> 
+> <p spaces-before="0">
+>   Faoi láthair, téann láithreacht trí 3 chéim ar leithligh de sheiceálacha. Cuidíonn na seiceálacha seo go léir leis na hathbhreithneoirí a chinneadh an bhfuil do láithreacht oiriúnach le himscaradh.
+> </p>
+> 
+> <ul>
+>   <li>
+>     Is bot é <code>Codacy</code> a dhéanann seiceáil ar cháilíocht an chóid. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú. <em x-id = "3"> Rabhadh: Ní thugann Codacy earráidí duit i gcónaí. Féach rabhaidh CodeFactor ina ionad. </em>
+>   </li>
+>   <li>
+>     Is bot é <code> CodeFactor </code> a dhéanann seiceáil ar cháilíocht an chóid. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú.
+>   </li>
+>   <li>
+>     Déanfaidh <code> Schema Validation </code> do chomhad <code> metadata.json </code> a scanadh le haghaidh aon earráidí (mar shampla, réimsí atá in easnamh, cineálacha luacha neamhbhailí, srl.). Má fheiceann tú aon cheisteanna nua riamh, tá tú <strong x-id = "1"> ceacht </strong> chun iad sin a shocrú. Trí réimse scéimre a chur le do chomhad <code> metadata.json </code> ligfidh d’eagarthóir téacs (má thacaítear leis) na hearráidí seo a thaispeáint duit le linn na forbartha.
+>   </li>
+> </ul>
+> 
+> <h2 spaces-before="0">
+>   <code>Rialacha Breise</code>
+> </h2>
+> 
+> <ul>
+>   <li>
+>     <strong x-id = "1"> I gcónaí </strong> déan cinnte do láithreacht a thosú san fhillteán is oiriúnaí, má thosaíonn a ainm le <em x-id = "4"> aon </em> litir Laidineach ansin caithfidh sé a bheith faoina mheaitseáil aibítreach (mar shampla, <code> D/dア ニ メ ス ト ア </code> nó <code> G/Google </code>). <strong x-id="1">Ní mór</strong> aon charachtair Unicode/neamh-Laidine eile a bheith faoin bhfillteán <code>#</code> (mar shampla, <code> #/巴哈姆特 </code>) agus uimhreacha faoin <code>0-9 fillteán </code> (mar shampla, <code> 0-9/4anime</code>).
+>   </li>
+> </ul>
+> 
+> <p spaces-before="0">
+>   Tar éis duit na treoirlínte go léir a chomhlíonadh leis na hathbhreithnithe agus na seiceálacha cearta, déanfar do láithreacht a chumasc leis an siopa.
+> </p>
+> 
+> <h1 spaces-before="0">
+>   Moltaí
+> </h1>
+> 
+> <p spaces-before="0">
+>   Tá roinnt moltaí agat maidir lenár dtreoirlínte, ba cheart duit teagmháil a dhéanamh linn @ <a href="https://discord.premid.app"> Freastalaí Discord PreMiD </a> agus déanfaimid iad a sheiceáil!
+> </p>
+> 
+> <h1 spaces-before="0">
+>   Ranníocaíochtaí
+> </h1>
+> 
+> <p spaces-before="0">
+>   Scríobhadh <code>Athbhreithniú 3</code> de na treoirlínte agus chuir na daoine seo a leanas leis:
+> </p>
 
 <div>
 <a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 2` of the guidelines was written and was contributed to by the following individuals:
+> 
+> <p spaces-before="0">
+>   Scríobhadh <code>Athbhreithniú 2</code> de na treoirlínte agus chuir na daoine seo a leanas leis:
+> </p>
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 1` was maintained by the following individuals:
+> 
+> <p spaces-before="0">
+>   Choinnigh na daoine seo a leanas <code>Athbhreithniú 1</code>:
+> </p>
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
