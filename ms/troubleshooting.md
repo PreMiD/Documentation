@@ -85,7 +85,7 @@ Ini positif palsu daripada McAfee dan kami telah melaporkan isu ini kepada merek
 9. Buka folder "PreMiD" dan pilih fail "PreMiD.exe" dan klik Open / Buka. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. Sekarang McAfee patut abaikan fail kami, jadi lancarkan aplikasi kami dan anda boleh teruskan dari situ.
 
-### PreMiD status bugged on Discord
+### Status PreMiD rosak di Discord
 Jangan risau. Tekan ikatan kekunci <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) sambil kekalkan tetingkap Discord anda dalam fokus untuk memuatkannya semula.
 
 <a name="linux"></a>
