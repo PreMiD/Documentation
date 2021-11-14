@@ -323,7 +323,7 @@ Dopo aver seguito tutte le linee guida con le opportune revisioni e controlli, l
 
 # Suggestions
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Contributi
 
