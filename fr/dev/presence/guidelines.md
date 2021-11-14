@@ -329,7 +329,7 @@ Après avoir respecté toutes les directives et que votre présence ai été exa
 
 # Suggestions
 
-Si vous avez des suggestions à propos de nos règles, vous devriez nous contacter sur le [serveur discord de PreMiD](https://discord.premid.app) et nous les vérifierons !
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Contributions
 

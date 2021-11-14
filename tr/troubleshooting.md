@@ -86,7 +86,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee şimdi dosyamızı göz ardı etmeli, uygulamayı çalıştırın ve kullanmaya başlayın.
 
 ### PreMiD durumu Discord'da yanlış görünüyor!
-Endişelenmeyin. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Endişelenmeyin. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 

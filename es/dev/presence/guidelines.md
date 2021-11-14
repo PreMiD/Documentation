@@ -324,7 +324,7 @@ Después de cumplir con todas las directrices, revisiones y comprobaciones adecu
 
 # Verificación
 
-La `revisión 2` de las indicaciones fueron escritas y contribuidas por los siguientes individuos:
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Contribuidores
 

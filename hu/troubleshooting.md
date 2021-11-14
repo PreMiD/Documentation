@@ -86,7 +86,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 10. McAfee should now ignore our file, just launch our application and you should be good to go.
 
 ### PreMID státusz bebuggolt a Discordon!
-Ne aggódj. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+Ne aggódj. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 

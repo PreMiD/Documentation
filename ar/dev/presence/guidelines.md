@@ -323,7 +323,7 @@ After meeting all of the guidelines with the proper reviews and checks, your pre
 
 # التحقق
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # المساهمين
 
