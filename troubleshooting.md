@@ -88,7 +88,7 @@ for now you can exclude PreMiD from the scan by doing the following steps:
 <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;"/>
 10. McAfee should now ignore our file, just launch our application and you should be good to go.
 
-### PreMiD status bugged on Discord!
+### PreMiD status bugged on Discord
 Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
