@@ -85,7 +85,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. Відкрийте папку "PreMiD" та виберіть файл "PreMiD.exe" і натисніть відкрити. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee повинна ігнорувати наш файл, просто запустіть нашу програму, і вам слід зробити її надійною.
 
-### PreMiD status bugged on Discord!
+### PreMiD status bugged on Discord
 Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
