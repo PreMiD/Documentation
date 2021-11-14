@@ -323,7 +323,7 @@ Setelah mematuhi kesemua garis panduan dengan ulasan dan semakan yang wajar, Pre
 
 # Cadangan
 
-Jika anda mempunyai cadangan berkaitan garis panduan kami, anda patut hubungi kami @ [pelayan discord PreMiD](https://discord.premid.app) dan kami akan memeriksanya!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Sumbangan
 
