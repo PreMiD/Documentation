@@ -85,7 +85,7 @@ Is dearfach bréagach é seo ó McAfee agus chuireamar an cheist in iúl dóibh,
 9. Oscail an fillteán "PreMiD" agus roghnaigh an comhad "PreMiD.exe" agus cliceáil oscailte. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. Ba cheart do McAfee neamhaird a dhéanamh dár gcomhad anois, gan ach ár bhfeidhmchlár a lainseáil agus ba cheart go mbeifeá go maith chun dul.
 
-### PreMiD status bugged on Discord
+### Stádas PreMiD bugged ar discord!
 Ná bíodh imní ort. Ná bíodh imní ort. Brúigh an eochaircheap <kbd>CTRL+R</kbd> (Windows) nó <kbd>CMD+R</kbd> (MacOS) agus tú dírithe ar d’fhuinneog neamhord chun í a athlódáil.
 
 <a name="linux"></a>
