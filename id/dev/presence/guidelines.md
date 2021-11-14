@@ -323,7 +323,7 @@ Setelah memenuhi semua peraturan dengan review dan pemeriksaan yang sesuai, pres
 
 # Saran
 
-Jika kamu memiliki beberapa saran tentang pedoman kami, kamu harus menghubungi kami @ [Discord server PreMiD](https://discord.premid.app) dan kita akan memeriksanya!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Kontribusi
 
