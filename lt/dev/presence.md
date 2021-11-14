@@ -311,7 +311,7 @@ presence.on("UpdateData", async () => {
     state: "Reading section A", //The lower section of the presence text
     startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
     endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
 
   if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
   else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
