@@ -271,7 +271,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   </tbody>
 </table>
 
-## Getting started
+## 시작하기
 
 ```typescript
 const presence = new Presence({
@@ -392,6 +392,6 @@ The website you are developing on is automatically reloading every time you save
 
 - [Presence Class](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
+- [iFrame 클래스](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
 - [TypeScript 구성](/dev/presence/tsconfig ""){.links-list}
