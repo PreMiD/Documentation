@@ -85,7 +85,7 @@ Discord - এর ব্রাউজার ভার্সনে PreMiD কাজ
 9. "PreMiD" ফোল্ডারটি ওপেন করো এবং সিলেক্ট করো "PreMiD.exe" ফাইলটি এবং ওপেন ক্লিক করো। <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee এখন আমাদের ফাইলকে উপেক্ষা করবে, শুধু আমাদের অ্যাপ্লিকেশন রান করো এবং তুমি PreMiD চালাতে পারবে।
 
-### PreMiD স্ট্যাটাস Discord - এ ঠিকমতো দেখাচ্ছে না!
+### PreMiD status bugged on Discord
 চিন্তা করবে না। <kbd>CTRL+R</kbd> (উইন্ডোজ) অথবা <kbd>CMD+R</kbd> (ম্যাক ওএস) কীবাইন্ড দাও তোমার Discord উইন্ডোতে ফোকাস করা অবস্থায় এটাকে রিলোড করার জন্য।
 
 <a name="linux"></a>
