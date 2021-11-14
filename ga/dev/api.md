@@ -1,6 +1,6 @@
 ---
 title: API
-description: Access resources and perform actions using the PreMiD API
+description: Rochtain a fháil ar acmhainní agus gníomhartha a dhéanamh ag baint úsáide as an API PreMiD
 published: true
 date: 2021-10-30T23:53:16.875Z
 tags:
@@ -14,23 +14,23 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > 
 > {.is-info}
 
-## API Versioning
-> API v2 has been deprecated and most of its endpoints have been removed. Please use v3 for any future request to prevent issues. 
+## Leaganú API
+> Tá API v2 dímheasúil agus baineadh an chuid is mó dá chríochphointí. Úsáid v3 le haghaidh aon iarratais amach anseo chun saincheisteanna a chosc. 
 > 
 > {.is-danger}
 
-PreMiD exposes different versions of our API. You can specify version by including it in the request path like `https://api.premid.app/v{version_number}`. Omitting the version number from the route will route requests to the current default version (marked below accordingly).
+Nochtann PreMiD leaganacha éagsúla dár API. Is féidir leat leagan a shonrú trína chur san áireamh sa chonair iarratais mar ` https://api.premid.app/v{version_number}`. Má fhágtar uimhir an leagain ar lár ón mbealach seolfar iarratais chuig an leagan réamhshocraithe reatha (marcáilte thíos dá réir).
 
-## Encryption
+## Criptiú
 
-All HTTP-layer services and protocols (e.g. http) within the PreMiD API use TLS 1.2.
+Úsáideann gach seirbhís agus prótacal HTTP-ciseal (e.g. http) laistigh den API PreMiD TLS 1.2.
 
 # Doiciméadú
-> Currently under construction! 
+> Á thógáil faoi láthair! 
 > 
 > {.is-danger}
 
-**Choose the API version:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+**Roghnaigh an leagan API:**
+- [v2 * scriosta go páirteach | dímheasa *](/dev/api/v2)
+- [v3 * reatha *](/dev/api/v3)
 {.links-list}
