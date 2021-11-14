@@ -1,5 +1,5 @@
 ---
-title: iFrame Class
+title: iFrame flokkur
 description:
 published: true
 date: 2021-09-18T14:31:12.831Z
@@ -8,9 +8,9 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
-# iFrame Class
+# iFrame flokkur
 
-## Introduction
+## Inngangur
 
 In some scenarios, your presence may need to access elements inside of `iframes`.
 
