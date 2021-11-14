@@ -324,7 +324,7 @@ Después de cumplir con todas las directrices, revisiones y comprobaciones adecu
 
 # Verificación
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
+Si tienes alguna sugerencia para nuestras guías, deberías contactarnos en el [Servidor de PreMiD](https://discord.premid.app) y lo revisaremos!
 
 # Contribuidores
 
