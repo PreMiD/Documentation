@@ -12,87 +12,87 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 ## Réamhrá
 
-The `Slideshow` class is used to set multiple `PresenceData` and "slide" through them every x milliseconds (minimum: 5000).
+Úsáidtear an rang `Slideshow` chun iolraí ` PresenceData ` agus "sleamhnán" a shocrú trí gach x milleasoicind (íosmhéid: 5000).
 
-See the [`createSlideshow`](/dev/presence/class#createslideshow) method in the [`Presence`](/dev/presence/class) class on how to create a `Slideshow`.
+Féach an modh [ ` createSlideshow ` ](/dev/presence/class#createslideshow) sa mhodh [ `Presence` ](/dev/presence/class) aicme ar conas ` Slideshow` a chruthú.
 
 ## Airíonna
 
 ### `currentSlide`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of what the presence/current slide is displaying.
+Filleann sé réad [ `PresenceData`](/dev/presence/class#presencedata-interface) ar a bhfuil an sleamhnán láithreachta/reatha á thaispeáint.
 
 ```typescript
 const currentSlide = slideshow.currentSlide
-console.log(currentSlide.details) // Will console log the details of the PresenceData
+console.log(currentSlide.details) // Déanfaidh consól sonraí an PresenceData a logáil
 ```
 
 ## Modhanna
 
 ### `addSlide(String, PresenceData, Number)`
 
-Add a new slide to the `Slideshow` according to provided data.
+Cuir sleamhnán nua leis an `Slideshow` de réir na sonraí a cuireadh ar fáil.
 
-First parameter requires a `String` that will be used as a unique identifier for the slide.
+Éilíonn an chéad pharaiméadar ` Teaghrán ` a úsáidfear mar aitheantóir uathúil don sleamhnán.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Éilíonn an dara paraiméadar comhéadan [ ` PresenceData ` ](/dev/presence/class#presencedata-interface) chun gach faisnéis a theastaíonn uait a thaispeáint sa sleamhnán a fháil.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Éilíonn an tríú paraiméadar ` Uimhir ` arb é an méid ama i milleasoicindí (íosmhéid: 5000) a thaispeánfaidh an sleamhnán seo.
 
 ### `getSlides()`
 
-Returns all slides saved in the `Slideshow` as an `Array` of [`SlideshowSlide`](#slideshowslide-class).
+Seoltar gach sleamhnán a sábháladh sa ` Slideshow` ar ais mar ` Array ` de [ ` SlideshowSlide ` ](#slideshowslide-class).
 
 ### `updateSlide(String, PresenceData, Number)`
 
-Updates the slide of the given `id` according to provided data.
+Nuashonraíonn sé sleamhnán an ` id ` a thugtar de réir na sonraí a cuireadh ar fáil.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to update.
+Éilíonn an chéad pharaiméadar ` Teaghrán ` arb é aitheantóir uathúil an sleamhnáin is mian leat a nuashonrú.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Éilíonn an dara paraiméadar comhéadan [ ` PresenceData ` ](/dev/presence/class#presencedata-interface) chun gach faisnéis a theastaíonn uait a thaispeáint sa sleamhnán a fháil.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Éilíonn an tríú paraiméadar ` Uimhir ` arb é an méid ama i milleasoicindí (íosmhéid: 5000) a thaispeánfaidh an sleamhnán seo.
 
 ### `hasSlide(String)`
 
-Returns a `Boolean` stating whether the slide is added to the `Slideshow`.
+Seoltar ` Boole ` ar ais ag rá an gcuirtear an sleamhnán leis an ` Slideshow`.
 
 ### `deleteSlide(String)`
 
-Deletes the slide with the given `id` from the `Slideshow`.
+Scriosann an sleamhnán leis an ` id ` tugtha ón ` Slideshow`.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to delete.
+Éilíonn an chéad pharaiméadar ` Teaghrán ` arb é aitheantóir uathúil an sleamhnáin is mian leat a scriosadh.
 
 ### `deleteAllSlides()`
 
-Deletes all slides from the `Slideshow`.
+Scriosann sé gach sleamhnán ón ` Slideshow`.
 
-# SlideshowSlide Class
+# Rang SlideshowSlide
 
 ## Réamhrá
 
-A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
+Is é atá i ` SlideshowSlide ` léiriú inmheánach gach sleamhnáin i Taispeántas `Slideshow`.
 
 ## Airíonna
 
 ### `id`
 
-Returns a `String` of the id of the slide.
+Filleann ` Teaghrán ` de id an sleamhnáin.
 
 ### `data`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
+Filleann sé réad [ ` PresenceData ` ](/dev/presence/class#presencedata-interface) den réad ` PresenceData ` a sábháladh sa sleamhnán.
 
 ## Modhanna
 
 ### `updateData(PresenceData)`
 
-Sets the slides data according to provided data.
+Socraigh na sonraí sleamhnán de réir na sonraí a chuirtear ar fáil.
 
-You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
+Caithfidh tú comhéadan ` PresenceData ` a sholáthar chun gach faisnéis a theastaíonn uait a thaispeáint i do phróifíl sa deireadh.
 
 ### `updateInterval(Number)`
 
-Sets the interval of the slide according to provided data.
+Socraíonn eatramh an sleamhnáin de réir na sonraí a chuirtear ar fáil.
 
-You must provide a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Ní mór duit ` Uimhir ` a sholáthar arb é an méid ama i milleasoicindí (íosmhéid: 5000) a thaispeánfaidh an sleamhnán seo.
