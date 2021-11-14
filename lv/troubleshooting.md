@@ -85,7 +85,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. Atveriet "PreMiD" mapi un atlasiet "PreMiD.exe" failu un uzspiediet uz atvērt. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee tagad vajadzētu ignorēt mūsu failu, vienkārši palaidiet mūsu lietotni un jums visam vajadzētu iet labi.
 
-### PreMiD statuss kļūdains Discord!
+### PreMiD status bugged on Discord
 Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>

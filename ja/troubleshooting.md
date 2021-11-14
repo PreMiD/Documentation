@@ -109,7 +109,7 @@ dateCreated: 2021-09-07T01:17:32.312Z
 > 
 > 10. McAfeeがファイルを無視するので、あとは起動するだけです。
 > 
-> ### PreMiD status bugged on Discord!
+> ### PreMiD status bugged on Discord
 > 
 > Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 

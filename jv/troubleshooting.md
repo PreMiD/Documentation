@@ -85,7 +85,7 @@ Iki minangka false positive palsu saka McAfee lan kita wis nglaporake masalah ka
 9. Bukak folder "PreMiD" lan pilih file "PreMiD.exe" sakwise iku klik buka. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee saiki wis ora nggatekake file kita, start aplikasi lan kudune wis kerja.
 
-### Status PreMiD bermasalah ing Discord!
+### PreMiD status bugged on Discord
 Aja kuwatir. Pijet tombol <kbd>CTRL+R</kbd> (Windows) utawa <kbd>CMD+R</kbd> (MacOS) selagi jendela Discord mbukak kanggo memuat ulang.
 
 <a name="linux"></a>

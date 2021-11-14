@@ -85,7 +85,7 @@ See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate 
 9. Avage kaust "PreMiD", valige fail "PreMiD.exe" ja klõpsake nuppu Ava. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee peaks nüüd meie faili ignoreerima, lihtsalt käivitage meie rakendus ja teil peaks olema korras.
 
-### PreMiD-i olek on katki Discordis!
+### PreMiD status bugged on Discord
 Ära muretse. Vajutage klahvikombinatsiooni <kbd>CTRL + R</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS), olles keskendunud Discordi aknale, selle uuesti laadimiseks.
 
 <a name="linux"></a>

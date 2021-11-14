@@ -85,7 +85,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. "PreMiD" klasörünü açın ve "PreMiD.exe" dosyasını seçin ve aç'a tıklayın. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee şimdi dosyamızı göz ardı etmeli, uygulamayı çalıştırın ve kullanmaya başlayın.
 
-### PreMiD durumu Discord'da yanlış görünüyor!
+### PreMiD status bugged on Discord
 Endişelenmeyin. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>

@@ -85,7 +85,7 @@ Ini adalah pendeteksian palsu dari McAfee dan kami telah melaporkan masalah ini 
 9. Buka folder "PreMiD" dan pilih file "PreMiD.exe" lalu klik buka. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee sekarang seharusnya sudah mengabaikan file kita, luncurkan saja aplikasi kita dan seharusnya baik-baik saja.
 
-### Status PreMiD bermasalah di Discord!
+### PreMiD status bugged on Discord
 Jangan khawatir. Tekan tombol <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) saat berada di Discord kamu untuk memuat ulang.
 
 <a name="linux"></a>

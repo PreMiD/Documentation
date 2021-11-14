@@ -85,7 +85,7 @@ Windows: Напишите в проводнике `%appdata%` и удалите 
 9. Откройте папку "PreMiD" и выберите файл "PreMiD.exe" и нажмите открыть. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee теперь должен проигнорировать наш файл, просто запустите наше приложение и всё должно быть хорошо.
 
-### Статус PreMiD на дискорде!
+### PreMiD status bugged on Discord
 Не беспокойся. Нажмите <kbd>CTRL+R</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS) для перезагрузки окна.
 
 <a name="linux"></a>
