@@ -86,7 +86,7 @@ Dit is een valse positief van McAfee en we hebben hen hiervan op de hoogte geste
 10. McAfee zou nu ons bestand moeten negeren, lanceer gewoon onze applicatie en het zou nu gewoon moeten werken.
 
 ### PreMiD-status gebugd op Discord
-Geen zorgen. Druk op de <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) toetsen terwijl de gefocust bent op je Discord-venster om het te herladen.
+Geen zorgen. Gebruik de toetsen <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) terwijl je gefocust bent op je Discord-venster om het te herladen.
 
 <a name="linux"></a>
 
