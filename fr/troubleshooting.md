@@ -85,7 +85,7 @@ C'est un faux positif de la part de McAfee et nous leur avons signalé le probl�
 9. Ouvrez le dossier "PreMiD", sélectionnez le fichier "PreMiD.exe" et cliquez sur Ouvrir. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee devrait maintenant ignorer notre dossier, lancez simplement l'application et cela devrait marcher.
 
-### Statut PreMiD buggé sur Discord !
+### PreMiD status bugged on Discord
 Ne vous inquiétez pas. Appuyez sur <kbd>CTRL+R</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) tout en restant sur Discord pour recharger l'application.
 
 <a name="linux"></a>
