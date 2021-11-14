@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> 모든 Presence들은 이곳에 저장되어 있습니다. https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
@@ -264,10 +264,9 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change.<br>
-      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
+      <td style="text-align:left">사용자가 변경할 수 있는 설정 Array.<br>Presence 설정에 대하여 <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">여기</a>에서 더 알아보세요.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>네</code></td>
     </tr>
   </tbody>
 </table>
