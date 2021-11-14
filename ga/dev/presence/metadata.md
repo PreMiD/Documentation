@@ -18,33 +18,33 @@ Is féidir sampla den chomhad sin a fháil thíos.
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "ÚSÁIDEOIR",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "ÚSÁIDEOIR",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SEIRBHÍS",
+  "altnames": ["SEIRBHÍS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "CUR SÍOS"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "LEAGAN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["CLIB1", "CLIB2"],
+  "category": "CHATAGÓIR",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ Is féidir sampla den chomhad sin a fháil thíos.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "OCÓN FONTAWESOME",
+      "value": "\"%song%\" leis an %artist%",
+      "placeholder": "bain úsáid as %song% nó %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -205,7 +205,7 @@ Más mian leat nathanna rialta a fhoghlaim, seo cúpla suíomh Gréasáin.
 
 ## Teangacha Presence
 
-Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad teangacha i gceist chun úsáideoirí a nascadh ar fud na cruinne. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Chun do láithreacht a shaincheapadh níos mó fós is féidir leat ligean d’úsáideoirí a dteanga taispeána láithreachta a roghnú féach [`multiLanguage`](#multilanguage) níos mó. See [`multiLanguage`](#multilanguage) for more.
+Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad teangacha i gceist chun úsáideoirí a nascadh ar fud na cruinne. Is féidir liosta iomlán na dteangacha a fháil leis an [gcríochphointe API](https://api.premid.app/v2/langFile/list) seo. Chun do láithreacht a shaincheapadh níos mó fós is féidir leat ligean d’úsáideoirí a dteanga taispeána láithreachta a roghnú féach [`multiLanguage`](#multilanguage) níos mó. Féach [`multiLanguage`](#multilanguage) le haghaidh tuilleadh.
 
 ## Socruithe láithreachta
 Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an láithreacht a shaincheapadh!
@@ -213,30 +213,30 @@ Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an lái
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Féach https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "TEIDEAL TAISPEÁNA",
+    "icon": "ÍOCÓN FONTAWESOME", //Sampla "fas fa-info"
+    "value": true //Déanfaidh luach Boole lasc air/as agus an luach mar an luach réamhshocraithe
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Más ionann socrú eile seo agus Luach (true/false/0/1/srl.) Ansin taispeáin an cnaipe seo
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "title": "TEIDEAL TAISPEÁNA",
+    "icon": "ÍOCÓN FONTAWESOME",
+    "value": "\"%song%\" by %artist%", //Má chuirtear sreang isteach, is ionchur amháin é an socrú, áit ar féidir leat ionchur saincheaptha a úsáid.
+    "placeholder": "bain úsáid as %song% nó %artist%" //Nuair a bheidh an t-ionchur folamh taispeánfaidh sé seo liathghlas
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TEIDEAL TAISPEÁNA",
+    "icon": "ÍOCÓN FONTAWESOME",
+    "value": 0, //Luach réamhshocraithe an roghnóra
+    "values": ["1", "2", "srl."] //Déanfaidh sé roghnóir an socrú nuair a roghnaíonn tú an ceann atá uait
   }
 ]
 ```

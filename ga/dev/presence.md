@@ -273,31 +273,31 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
 
 ```typescript
 const presence = new Presence({
-    clientId: "000000000000000000" //The client ID of the Application created at https://discordapp.com/developers/applications
+    clientId: "000000000000000000" //Aitheantas cliant an Fheidhmchláir a cruthaíodh ag https://discordapp.com/developers/applications
   }),
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    //You can use this to get translated strings in their browser language
+    // Is féidir leat é seo a úsáid chun teaghráin aistrithe a fháil ina dteanga brabhsálaí
   });
 
 /*
 
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Faigh do chuid sonraí go léir agus déan iad a phróiseáil anseo
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+    // eilimintí grabs //
+    // glaonna api //
+    // tacair inathraithe //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Rith an fheidhm ar leithligh ón imeacht UpdateData gach 10 soicind chun na hathróga a bhailíonn UpdateData a fháil agus a shocrú
 
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Tugtar é seo cúpla uair sa soicind nuair is féidir.
+  /*Bíonn UpdateData ag lasadh i gcónaí, agus dá bhrí sin ba chóir é a úsáid mar do thimthriall athnuachana, nó mar `tic`. Tugtar é seo cúpla uair sa soicind nuair is féidir.
 
     Moltar feidhm eile a chur ar bun lasmuigh den fheidhm imeachta seo a athróidh luachanna athraitheacha agus a dhéanfaidh an t-ardú trom má ghlaonn tú sonraí ó API.*/
 
@@ -305,55 +305,55 @@ presence.on("UpdateData", async () => {
      largeImageKey:
        "eochair" / * Eochair (ainm comhaid) na híomhá Móire ar an láthair. Déantar iad seo a uaslódáil agus a ainmniú sa chuid Láithreacht Shaibhir d’iarratas, ar a dtugtar Art Assets*/,
      smallImageKey:
-       "eochair" /* Eochair (ainm comhaid) na híomhá Beaga ar an láthair. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
+       "eochair" /* Eochair (ainm comhaid) na híomhá Beaga ar an láthair. Déantar iad seo a uaslódáil agus a ainmniú sa chuid Láithreacht Saibhir d’iarratas, ar a dtugtar Art Assets*/,
+    smallImageText: "Roinnt téacs hover", //An téacs a thaispeántar agus é ag dul os cionn na híomhá beag
+    details: "Brabhsáil Ainm an Leathanaigh", //An chuid uachtarach den téacs láithreachta
+    state: "Cuid léitheoireachta A", //An chuid íochtarach den téacs láithreachta
+    startTimestamp: 1577232000, //An lasc ama unix epoch le haghaidh cathain a thosóidh tú ag comhaireamh
+    endTimestamp: 1577151472000 //Más mian leat Time Left a thaispeáint in ionad Elapsed, is é seo an stampa ama unix epoch ag a dtagann deireadh leis an lasc ama
+  }; /*De rogha air sin is féidir leat largeImageKey a shocrú anseo agus an chuid eile a athrú mar fho-airíonna athraitheacha, mar shampla presenceData.type = "blahblah"; samplaí de chineál: sonraí, luaigh, srl.*/
 
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+  if (!presenceData.details) presence.setActivity(); /*Déan an láithreacht a nuashonrú gan aon sonraí, agus mar sin é a ghlanadh agus an íomhá mór a dhéanamh mar dheilbhín an Fheidhmchláir Discord, agus an téacs an t-ainm Feidhmchlár Discord*/
+  else presence.setActivity(presenceData); //Déan an láithreacht a nuashonrú leis na luachanna go léir ón réad presenceData
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Is féidir leat é seo a chóipeáil isteach i do chomhad `presence.ts` agus na luachanna a chur in eagar. Déantar na luachanna go léir a shocrú taobh istigh den teagmhas updateData.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Mar shampla, molaimid breathnú ar chód na n-uachtarán mar: 1337x nó 9GAG. Le haghaidh tuilleadh faisnéise faoin rang `Presence` cliceáil [ anseo](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Ó v2.2.0 tá Sleamhnáin ann anois, tugann sé seo deis duit comhéadain iolracha `PresenceData` a thaispeáint ar eatramh, chun tuilleadh faisnéise a fháil cliceáil faoin rang `Sleamhnán` [anseo](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Ní féidir sonraí áirithe a fháil?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Tá a lán suíomhanna Gréasáin ag úsáid [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Is féidir foinsí éagsúla mar fhíseáin a bheith sna clibeanna html seo. Ach níl siad ábhartha gach uair. Tá cuid acu i bhfolach nó díreach ní úsáidtear go gníomhach iad. Seiceáil an féidir leat an fhaisnéis a theastaíonn uait a bhaint astu gan iad sula ndéanann tú obair gan ghá.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Seiceáil dóibh i do chonsól brabhsálaithe (bí cinnte go bhfuil tú ar an táb **Eilimintí**).
+2. Cuardaigh (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) nó <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Rith `document.querySelectorAll ("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Má aimsíonn tú go bhfuil do chuid sonraí i iFrame ní mór duit na rudaí seo a leanas a dhéanamh:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Cruthaigh comhad `iframe.ts`.
+2. Socraigh iFrame go `fíor` i do chomhad meiteashonraí.
+3. Líon isteach do chomhad iFrame.
 
 ```typescript
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
+  Faigh na sonraí go léir a theastaíonn uait ón iFrame, sábháil iad in athróga 
+  agus ansin iad a sheoladh ag úsáid iframe.send
   */
   iframe.send({
-    //sending data
+    //sonraí a sheoladh
     video: video,
     time: video.duration
   });
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Má dhéantar do chomhad láithreachta faigh sonraí ón gcomhad iFrame.
 
 ```typescript
 presence.on("iFrameData", (data) => {
@@ -362,34 +362,34 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+** Nóta:** Is gá é seo a chur lasmuigh den imeacht updateData.
 
-## Compiling
+## Tiomsú
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Oscail consól i d’fhillteán agus clóscríobh `tsc -w` chun an `presence.ts` a thiomsú san fhillteán `/dist`.
 
-# Loading the presence
+# An luchtú a luchtú
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Oscail an aníos aníos sa bhrabhsálaí agus coinnigh an cnaipe <kbd>Shift</kbd> ar do mhéarchlár.
+2. Beidh **Láithreacht Luchtaithe** le feiceáil i roinn na nUachtarán.
+3. Cliceáil air agus an cnaipe <kbd>Shift</kbd> á choinneáil agat fós.
+4. Roghnaigh fillteán /dist do láithreachta.
 
-# Some helpful things
+# Roinnt rudaí cabhracha
 
-## Hot-reloading
+## Athlódáil te
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Tá an suíomh Gréasáin a bhfuil tú ag forbairt air á athlódáil go huathoibríoch gach uair a shábhálann tú comhad i d’fhillteán.
 
-## Debugging
+## Dífhabhtaithe
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
+- Is féidir leat `console.log ("Tástáil");` a chur idir do chód agus féachaint an dtugann consól do bhrabhsálaí an t-aschur sin duit. Má tá, téigh ar aghaidh agus bain triail eile as tar éis an chéad fheidhm eile. Mura bhfuil, tá earráid thuas.
 - Mura gcabhraíonn sé sin leat ach iarr ar fhorbróir láithreachta ar ár [Freastalaí Discord](https://discord.premid.app/) chun cabhair a fháil.
 
-# Files explained
+# Míníodh comhaid
 
 - [Rang Láithreachta](/dev/presence/class)
 - [Rang Taispeántas Sleamhnán](/dev/presence/slideshow)
 - [Rang iFrame](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [Comhad Meiteashonraí](/dev/presence/metadata)
 - [Cumraíocht TypeScript](/dev/presence/tsconfig ""){.links-list}

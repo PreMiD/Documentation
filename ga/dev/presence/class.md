@@ -30,11 +30,11 @@ Tá trí airí ar fáil don `Presence` rang.
 
 Éilítear ar an maoin seo chun do láithreacht a chur ag obair, toisc go n-úsáideann sé d’aitheantas chun a lógó agus a shócmhainní a thaispeáint. Is féidir leat é a fháil ar do [leathanach iarratais](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Dímheasta ó 2.2.4*
 
 Nuair a bheidh tú ag socrú `injectOnComplete` chuig `true` an gcéad `UpdateData` imeacht le haghaidh na gcomhad `presence.ts` agus na `iframe.ts` gcomhad ní scaoilfear iad ach nuair a bheidh an leathanach luchtaithe go hiomlán.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Dímheasta ó 2.2.4*
 
 Nuair a leagan síos `appMode` chun `true` a bhí agus an láithreacht a sheoladh folamh `PresenceData`, beidh an app thaispeáint ar an t-iarratas (íomhá agus ainm) ar an úsáideora phróifíl ionad rud ar bith.
 
@@ -56,7 +56,7 @@ Sainmhíníonn an dara paraiméadar nuair a bhíonn láithreacht ag imirt rud é
 
 Glanann do ghníomhaíocht reatha agus teideal an tráidire.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(Teaghrán)` - * Dímheasta ó 2.2.3*
 
 > Ní oibríonn an modh seo ach ar Mac OS. 
 > 
@@ -97,8 +97,8 @@ const strings = await presence.getStrings({
   pause: "general.paused"
 });
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.play; //toradh: Ag imirt
+const pauseString = strings.pause; //toradh: Sos
 ```
 
 Ó v2.2.0 den síneadh is féidir leat teaghráin teanga áirithe a fháil anois. Oibríonn sé seo go maith leis an `multiLanguage` rogha socruithe nua-bhreise.
@@ -112,36 +112,36 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // Is é an ID ID an tsuímh ilteangacha.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // Is é an ID ID an tsuímh ilteangacha.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! Caithfidh an cód seo a leanas a bheith taobh istigh den imeacht updateData!
 // The ID is the ID of the multiLanguage setting.
-const newLang = await presence.getSetting("ID").catch(() => "en");
+const newLang = await presence.getSetting("ID").catch(() => "ga");
 if (oldLang !== newLang) {
   oldLang = newLang;
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // toradh: Ag imirt
+  pauseString = (await strings).pause; // toradh: Sos
 ```
 
 ### `getPageletiable(String)`
 
 Seoltar athróg ar ais ón suíomh Gréasáin má tá sé ann.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Rabhadh: Is féidir an fheidhm seo a bheith ina chúis le húsáid ard LAP & an láithreán ag dul in olcas nuair a dhéantar é a fhorghníomhú an iomarca uaireanta.**
 
 ```typescript
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // Déanfaidh sé seo an "Ábhar inathraithe" a logáil
 ```
 
 ### `getExtensionVersion(Boolean)`
@@ -152,9 +152,9 @@ Leagan ar ais den síneadh atá á úsáid ag an úsáideoir.
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // An mbeidh logáil 2 1 0
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // An mbeidh logáil 2.1.0
 ```
 
 ### `getSetting(String)`
@@ -260,7 +260,7 @@ Moltar an `PresenceData` comhéadan a úsáid agus an `setActivity()` modh á ú
 
 Tá na hathróga seo a leanas ag an gcomhéadan seo, tá gach ceann acu roghnach.
 
-This interface has following variables, all of them are optional.
+Tá na hathróga seo a leanas ag an gcomhéadan seo, tá gach ceann acu roghnach.
 
 <table>
   <thead>
@@ -315,8 +315,7 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
-        icon.</td>
+      <td style="text-align:left">Sainmhínítear an téacs a thaispeánfar don úsáideoir nuair a osclóidh sé an deilbhín beag.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
@@ -352,7 +351,7 @@ const presenceData: PresenceData = {
 
 ## Imeachtaí
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Ligeann imeachtaí duit roinnt athruithe nó glaonna a rinneadh a bhrath agus a láimhseáil. Is féidir leat liostáil le himeachtaí ag úsáid an `on` mhodha.
 
 ```typescript
 presence.on("UpdateData", async () => {
@@ -368,4 +367,4 @@ Breoslaithe nuair a fhaightear sonraí ó script iFrame.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Breoslaithe nuair a fhaightear sonraí ó script iFrame.
