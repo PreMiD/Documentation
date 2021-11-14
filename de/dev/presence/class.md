@@ -315,8 +315,8 @@ Dieses Interface hat folgende Variablen, welche alle optional sind.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
-        icon.</td>
+      <td style="text-align:left">Definiert den Text, der dem Benutzer angezeigt wird, wenn er mit der Maus über das kleine
+        Symbol fährt.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>

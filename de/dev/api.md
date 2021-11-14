@@ -32,5 +32,5 @@ Alle HTTP-Layer-Dienste und -Protokolle (z. B. http) innerhalb der PreMiD-API ve
 
 **Wähle die API-Version:**
 - [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+- [v3 *aktiv*](/dev/api/v3)
 {.links-list}
