@@ -323,7 +323,7 @@ presence
 
 # Предложения
 
-Если у вас есть предложения по нашим правилам, вы должны связаться с нами @ [discord server PreMiD](https://discord.premid.app) и мы проверим их!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # взносы
 
