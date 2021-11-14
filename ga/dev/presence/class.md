@@ -146,7 +146,7 @@ console.log(pageVar); // This will log the "Variable content"
 
 ### `getExtensionVersion(Boolean)`
 
-Tuairisceáin luach an tsuímh.
+Leagan ar ais den síneadh atá á úsáid ag an úsáideoir.
 
 ```typescript
 getExtensionVersion(onlyNumeric?: boolean): string | number;
@@ -159,7 +159,7 @@ console.log(version); // Will log 2.1.0
 
 ### `getSetting(String)`
 
-Seithí tugtha suíomh.
+Tuairisceáin luach an tsuímh.
 
 ```typescript
 const const = await presence.getSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
