@@ -323,7 +323,7 @@ Após atender a todas as diretrizes e ter sua Presence revisada pelo menos duas 
 
 # Sugestões
 
-Se você tiver algumas sugestões para nossas diretrizes, você pode entrar em contato conosco pelo nosso [servidor no Discord](https://discord.premid.app) e nós iremos checá-las!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Contribuições
 
