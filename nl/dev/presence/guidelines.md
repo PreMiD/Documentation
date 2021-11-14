@@ -326,7 +326,7 @@ Nadat je aan alle richtlijnen hebt voldaan en je presence tenminste twee keer is
 
 # Suggesties
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
+Als u enkele suggesties hebt over onze richtlijnen, kun je contact met ons opnemen @ [PreMiD Discord server](https://discord.premid.app) en wij zullen deze bekijken!
 
 # Bijdrages
 

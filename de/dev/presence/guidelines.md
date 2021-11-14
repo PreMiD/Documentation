@@ -326,7 +326,7 @@ Nach der Erfüllung aller Richtlinien mit den richtigen Prüfungen und Checks, w
 
 # Prüfung
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
+Wenn du Anregungen zu unseren Richtlinien hast, solltest du uns auf @[PreMiD's Discord-Server](https://discord.premid.app) kontaktieren und wir werden diese überprüfen!
 
 # Mitwirkende
 

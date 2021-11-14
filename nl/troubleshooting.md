@@ -85,8 +85,8 @@ Dit is een valse positief van McAfee en we hebben hen hiervan op de hoogte geste
 9. Open de "PreMiD" map en selecteer het "PreMiD.exe" bestand en klik op openen. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee zou nu ons bestand moeten negeren, lanceer gewoon onze applicatie en het zou nu gewoon moeten werken.
 
-### PreMiD-status gebugd op discord!
-Geen zorgen. Druk op de <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) toetsen terwijl de gefocust bent op je discord-venster om het te herladen.
+### PreMiD-status gebugd op Discord!
+Geen zorgen. Druk op de <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) toetsen terwijl de gefocust bent op je Discord-venster om het te herladen.
 
 <a name="linux"></a>
 
