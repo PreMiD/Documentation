@@ -8,23 +8,23 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Sula dtéann tú níos faide, déan cinnte go gcomhlíonann do chóras na [riachtanais](/install/requirements). 
 > 
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**! 
+> **Is gá** an **feidhmchlár** agus an **síneadh** a shuiteáil! 
 > 
 > {.is-warning}
 
-**Choose your operating system:**
-- [Windows *7 or above*](/install/windows)
-- [macOS *10.11 or above*](/install/macos)
-- [Linux *kernel with v2.x or above*](/install/linux)
+**Roghnaigh do chóras oibriúcháin:**
+- [Windows * 7 nó os a chionn *](/install/windows)
+- [macOS * 10.11 nó os a chionn *](/install/macos)
+- [Eithne Linux * le v2.x nó os a chionn *](/install/linux)
 {.links-list}
 
-**Choose your browser:**
-- [Chromium *v76 or above*](/install/chromium)
-- [Firefox *v69 or above*](/install/firefox)
+**Roghnaigh do bhrabhsálaí:**
+- [Cróimiam * v76 nó os a chionn *](/install/chromium)
+- [Firefox * v69 nó os a chionn *](/install/firefox)
 {.links-list}
 
 ![](https://a.icons8.com/ajlQdsfa/FZhYWV/svg.svg) {.align-abstopright}
