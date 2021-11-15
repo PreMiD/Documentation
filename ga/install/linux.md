@@ -148,7 +148,7 @@ If command doesn't work, download **deb/rpm** file from our packagecloud repo or
 
 ## Arch Linux based distributions
 
-Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+Úsáidí [Taisclann Úsáideoirí Arch](https://aur.archlinux.org/packages/premid);</br> Tá dáiltí tacaithe _é féin_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS agus [gach ceann a thacaíonn le suiteáil ó AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
