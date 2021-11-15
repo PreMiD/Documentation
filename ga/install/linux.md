@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: Getting started with a PreMiD installation on Linux
+description: Ag tosú le suiteáil PreMiD ar Linux
 published: true
 date: 2020-11-10T18:06:56.520Z
 tags:
@@ -8,51 +8,51 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
-The installation of the application is very important as the extension can not do anything by itself.
+Tá suiteáil an iarratais an-tábhachtach mar ní féidir leis an síneadh aon rud a dhéanamh leis féin.
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> Ba chóir go mbeadh úsáideoirí Aur a úsáideann pacáiste DoomLerd sábháilte mar a deir sé. Nílimid ag moladh é a úsáid, ach más mian leat gur féidir leat é a úsáid fós. Buíochas le DoomLerd as aur stór a láimhseáil fós. 
 > 
 > {.is-warning}
 
-## Table of Contents
+## Tábla Ábhar
 
 - **[Faoi](#about)**
-  - [Stats](#stats)
+  - [Staitisticí](#stats)
   - [Riachtanais](#requirements)
-  - Examples (soon)
-  - FAQs (soon)
-  - Building (soon)
-  - [Support](#support)
+  - Samplaí (go luath)
+  - Ceisteanna Coitianta (go luath)
+  - Foirgneamh (go luath)
+  - [Tacaíocht](#support)
   - [Creidmheasanna](#credits)
-  - [License](#license)
-- **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
-- **[Portable AppImage](#appimage)** (_RECOMMENDED_)
-  - [Installation instructions](#appimageinstall)
-  - [Additional notes](#appimagenotes)
-- [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
-- [**Debian and Ubuntu based distributions**](#packagecloud)
-- [**Arch Linux based distributions**](#arch)
+  - [Ceadúnas](#license)
+- **[Snapcraft](#snapcraft)** (TL;DR : _riamh_ ™️)
+- **[Portable AppImage](#appimage)** (_MOLTA_)
+  - [Treoracha suiteála](#appimageinstall)
+  - [Nótaí breise](#appimagenotes)
+- [**Red Hat Enterprise Linux (RHEL) dáiltí bunaithe**](#packagecloud)
+- [**Dáiltí bunaithe ar Debian agus Ubuntu**](#packagecloud)
+- [**Dáiltí bunaithe ar Arch Linux**](#arch)
 
 <a name="about"></a>
 
 ## Faoi
 
-**PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
+**PreMiD** Is fóntais simplí, configurable é a úsáideann leabharlann LS Discord (Láithreacht Shaibhir) a ligeann duit a thaispeáint cad atá á dhéanamh agat ar an ngréasán ( agus cúpla clár ) i do phróifíl Discord mar **tás >stádas**.
 
 <a name="stats"></a>
 
-### Stats
+### Staitisticí
 
 <table>
   <tr>
-    <th>Deployment</th>
-    <th>Total downloads</th>
-    <th>Latest release</th>
+    <th>Imscaradh</th>
+    <th>Iomlán na n-íoslódálacha</th>
+    <th>An scaoileadh is déanaí</th>
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Latest release"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Gach eisiúint"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="An scaoileadh is déanaí"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Scaoileadh Github"></a></td>
   </tr>
 </table>
 
@@ -60,17 +60,17 @@ The installation of the application is very important as the extension can not d
 
 ### Riachtanais
 
-Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;</br> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.</br> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
+Go teicniúil gach dáileadh ar féidir leis a reáchtáil Discord's [oifigiúil](https://discordapp.com/download) **iarratas** ( ní an gréasán ná an leagan Snap ) is féidir leo PreMiD a reáchtáil freisin;</br> Mar a d'fhéadfá a thabhairt faoi deara le blianta beaga anuas, thosaigh roinnt dáiltí Linux ag titim tacaíochta don 32-giotán (ia32/i686/i386/x86) ailtireachtaí, agus mar thoradh air sin, rinneamar freisin. Is féidir leat iarracht a dhéanamh, áfach, an aip a thógáil duit féin más gá duit é a úsáid go géar ar dháileadh 32-giotán.</br> Ós rud é go n-úsáidimid Electron faoi láthair mar inneall (déanann Discord freisin!), baineann a riachtanais leis an aip seo freisin:
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
 - Debian ≥ 8
 
-It is unknown whether older versions of other distributions support it, so just keep your distribution updated and use **LTS (Long-Term Support)** releases if your distribution offers them, as they're more stable (avoid alpha releases).
+Ní fios an dtacaíonn leaganacha níos sine de dháiltí eile leis, mar sin coinnigh do dháileadh cothrom le dáta agus bain úsáid as **TF (Tacaíocht Fhadtéarmach) ** scaoileadh má thairgeann do dháileadh iad, mar go bhfuil siad níos cobhsaí (seachain eisiúintí alfa).
 
 <a name="support"></a>
 
-### Support
+### Tacaíocht
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Tar isteach inár Discord!">
@@ -82,109 +82,109 @@ It is unknown whether older versions of other distributions support it, so just 
 
 ### Creidmheasanna
 
-Thanks to :
+Buíochas le:
 
-- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (and few other guys whom I forgot their names) for providing feedback on nightly releases.
-- @apriluwu for maintaining the Gentoo builds
-- @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
-- The Electron community for various packages
-- Anyone else who has ever contributed to the project in any way.
+- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (agus is beag fear eile a ndearna mé dearmad ar a n-ainmneacha) as aiseolas a sholáthar ar eisiúintí oíche.
+- @apriluwu chun na tógann Gentoo a chothabháil
+- @SlimShadyIAm agus naka as pacáistí Stór Úsáideoirí Arch a chothabháil roimhe seo
+- An pobal Electron do phacáistí éagsúla
+- Duine ar bith eile a chuir leis an tionscadal riamh ar bhealach ar bith.
 
 <a name="license"></a>
 
-### License
+### Ceadúnas
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
+[![Stádas FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
 
 ## Portable AppImage
 
-The AppImage package is the recommended one if Discord works for you but other PreMiD packages (.deb, .rpm, etc) don't.
+Is é an pacáiste AppImage an ceann molta má oibríonn Discord duit ach ní dhéanann pacáistí PreMiD eile (.deb, .rpm, srl).
 
 <a name="appimageinstall"></a>
 
-### Installation instructions
+### Treoracha suiteála
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
 ```
 
 ```bash
-# Just double-click it or run
+# Díreach cliceáil faoi dhó air nó rith
 ./PreMiD*.AppImage
 ```
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### Nótaí breise
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
+Más mian leat triail a bhaint as PreMiD nó mura dteastaíonn uait é a shuiteáil, is é seo an ceann is fearr, tá sé cothrom le dáta i gcónaí ach _NÍ DHÉANANN TÚS-UATHOIBRÍOCH LEIS AN GCÓRAS!_</br>Má a bhíonn tú tuirseach de bheith agat é a oscailt gach uair, bain úsáid as na pacáistí eile (de réir do dháileadh).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
 <a name="packagecloud"></a>
 
 # PackageCloud
 
-We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
+D'eisíomar pacáistí deb/rpm ag ár n-athdhéanamh packagecloud. Tabhair cuairt air ag https://packagecloud.io/PreMiD/Linux agus íoslódáil do phacáiste deb/rpm nó bain úsáid as script uathoibríoch.
 
-For **Ubuntu/Debian**:
+Le haghaidh **Ubuntu/Debian**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+Le haghaidh **Fedora/CentOS/RedHat**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+Mura n-oibríonn an t-ordú, íoslódáil **deb/rpm** comhad ónár socruithe athdhéanta nó sáraitheacha.
 
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux based distributions
+## Dáiltí bunaithe ar Arch Linux
 
 Úsáidí [Taisclann Úsáideoirí Arch](https://aur.archlinux.org/packages/premid);</br> Tá dáiltí tacaithe _é féin_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS agus [gach ceann a thacaíonn le suiteáil ó AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Treoracha suiteála
 
 ```bash
-# Using yay (recommended)
+# Ag baint úsáide as yay (molta)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# Ag baint úsáide as pakku
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# Ag baint úsáide as trizen
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# Ag baint úsáide as pacaur
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... gheobhaidh tú an pointe
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+nó de láimh ón [Taisclann Úsáideoirí Arch](https://aur.archlinux.org/packages/premid) má tá a fhios agat cad atá á dhéanamh agat.
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Nótaí breise
 
-If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
+Má úsáideann do distro pacman pacman, ansin caithfidh tú ceann de na cúntóirí a shuiteáil ar dtús. Mura bhfuil aon cheann agat, moltar Yay, rith:
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -194,4 +194,4 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S premid
 ```
 
-Other AUR/Pacman helpers work as well, although each one's functionality is different so you may face issues while using them.
+Oibríonn cúntóirí eile AUR/Pacman chomh maith, cé go bhfuil feidhmiúlacht gach duine difriúil ionas go mbeidh ceisteanna agat agus iad á n-úsáid.
