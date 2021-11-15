@@ -323,7 +323,7 @@ After meeting all of the guidelines with the proper reviews and checks, your pre
 
 # Suggestions
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
+তোমার যদি আমাদের বিধিগুলো নিয়ে কিছু পরামর্শ থাকে, আমাদের সাথে যোগাযোগ করো [PreMiD এর Discord সার্ভারে](https://discord.premid.app) এবং আমরা সেগুলো দেখবো!
 
 # Contributions
 
