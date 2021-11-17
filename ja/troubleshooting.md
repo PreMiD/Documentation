@@ -171,4 +171,4 @@ If you get this error, it means that your account doesn't have Administrator per
 
 # 実行しても問題が解決しませんでしたか？
 
-Please open a ticket in [#support](https://discord.premid.app/).
+PreMiDのDiscordサーバー内の[#support](https://discord.premid.app/)でチケットを開いてください。
