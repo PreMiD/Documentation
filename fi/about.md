@@ -1,6 +1,6 @@
 ---
-title: Tietoja PreMiD:istä
-description: PreMiD:n keskeiset piirteet
+title: Tietoja PreMiDistä
+description: PreMiDin keskeiset piirteet
 published: true
 date: 2021-09-18T14:07:51.099Z
 tags:
