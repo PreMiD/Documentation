@@ -77,12 +77,12 @@ This is a false positive from McAfee and we have reported the issue to them, for
 1. เปิดเเอพ McAfee เเละกดที่ไอคอนการตั้งค่าตรงขวาบน<img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
 2. คลิ๊ก Quarantined Items (อันที่ 2 นับจากบนสุด)
 3. ขยายมัน, เเละกดไอคอน `>` ก่อนไฟล์ที่ชื่อว่า "settings.bat"
-4. เเน่ใจว่าที่อยู่ของ PreMiD อยู่ที่  "AppData\Local\Temp\PreMiD", ถ้าใช้กดเลือกมันเเละกู้คืนกลับมา<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
+4. เเน่ใจว่าที่อยู่ของ PreMiD อยู่ที่  "AppData\Local\Temp\PreMiD", ถ้าใช่ให้เลือกและกดคืนค่า<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
 5. หลังจากนั้นคุณสามารถปิด  "Quarantined Items" เเละกดไอคอนการตั้งค่าอีกครั้งตรงขวาบน
 6. กด "Real-Time Scanning" (อันที่ 3 นับจากบนสุด)
 7. กดขยายมันเเล้วเลือก "เพิ่มไฟล์"
 8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
-9. เปิด PreMiD โฟลเดอร์ เเละเลือกไฟล์ PreMiD.exe  เเละรันมัน<img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
+9. เปิดโฟลเดอร์ PreMiD เเละเลือกไฟล์ PreMiD.exe  เเละกดเปิด<img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee ควรละเว้นไฟล์ของเรา, รัน PreMiD เเละน่าจะปกติเเล้ว!
 
 ### PreMiD status bugged on Discord
