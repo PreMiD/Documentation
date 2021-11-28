@@ -22,7 +22,7 @@ Voir la méthode [`createSlideshow`](/dev/presence/class#createslideshow) dans l
 
 Renvoie un objet [`PresenceData`](/dev/presence/class#presencedata-interface) de ce que la diapositive presence/courante affiche.
 
-```typescript
+```ts
 const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // La console affichera les détails du PresenceData
 ```
