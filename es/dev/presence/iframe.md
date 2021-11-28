@@ -18,7 +18,7 @@ El código que escribes dentro de tu archivo `iframe.ts` se inyecta en cada ifra
 
 Al igual que las presences, `iframes` tienen sus propias clases diseñadas para actualizar automáticamente los datos.
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ Devuelve la URL del `iframe`.
 ## Eventos
 En `iframes`, los eventos funcionan de forma similar a como funcionan en la clase `presence`.
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Inserta aquí el código...
 });
