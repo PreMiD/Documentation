@@ -276,10 +276,10 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
+  //ID klien bagi Aplikasi yang dicipta di https://discordapp.com/developers/applications
   clientId: "000000000000000000"
   }),
-  //You can use this to get translated strings in their browser language
+  //Anda boleh gunakan ini untuk dapatkan rentetan diterjemah dalam bahasa pelayar mereka
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
@@ -287,42 +287,42 @@ const presence = new Presence({
 
 /*
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Ambil dan proses kesemua data anda di sini
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+    // ambil unsur-unsur //
+    // buat panggilan API //
+    // tetapkan pemboleh ubah //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Jalankan fungsi secara berasingan daripada peristiwa UpdateData setiap 10 saat untuk mendapatkan dan menetapkan pemboleh ubah yang diambil oleh UpdateData
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Ini dipanggil beberapa kali sesaat apabila boleh.
+  /*UpdateData sentiasa dijalankan, oleh itu ia patut digunakan sebagai kitaran segar semula anda, atau `tick`. Ini dipanggil beberapa kali sesaat apabila boleh.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Anda digalakkan untuk menetapkan fungsi lain di luar fungsi peristiwa ini yang akan mengubah nilai pemboleh ubah dan membuat kerja yang lebih berat jika anda memanggil data daripada sesuatu API.*/
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    //Kekunci (nama fail) bagi Imej Besar atau Large Image pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence dalam aplikasi anda, dipanggil Aset Seni atau Art Assets
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    //Kekunci (nama fail) bagi gambar kecil "Small Image" pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence aplikasi anda yang dipanggil Aset Seni atau Art Assets
     smallImageKey: "key",
-    //The text which is displayed when hovering over the small image
+    //Tulisan yang akan dipaparkan apabila tetikus dilalukan atas imej kecil
     smallImageText: "Some hover text",
-     //The upper section of the presence text
+     //Bahagian atas tulisan Presence
     details: "Browsing Page Name",
-    //The lower section of the presence text
+    //Bahagian bawah tulisan Presence
     state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    //Cap masa epok unix untuk bila masa akan mula dikira
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Jika anda ingin tunjukkan Baki Masa dan bukan Masa Berlalu, ini cap masa epok unix di mana pemasa akan berhenti
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Anda juga boleh memilih untuk menetapkan nilai largeImageKey di sini dan ubah yang lain menjadi subsifat pemboleh ubah, contohnya presenceData.type = "blahblah"; contoh jenis: details, state, dll.
   };
-  //Update the presence with all the values from the presenceData object
+  //Kemas kini Presence dengan semua nilai daripada objek presenceData
   if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  //Kemas kini Presence dengan tiada data, dengan itu mengosongkannya dan buatkan imej besar guna ikon Aplikasi Discord, dan buatkan tulisan guna nama Aplikasi Discord
   else presence.setActivity(); 
 });
 ```
@@ -350,9 +350,9 @@ Jika anda jumpa data anda dalam iFrame anda perlu lakukan berikut:
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  //Dapatkan semua data anda perlukan daripada iFrame dan simpan dalam pemboleh ubah lalu hantarkannya menggunakan iframe.send
   iframe.send({
-    //sending data
+    //menghantar data
     video: video,
     time: video.duration
   });
