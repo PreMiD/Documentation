@@ -16,7 +16,7 @@ La classe `Presence` est très utile car elle possède des méthodes de base don
 
 Lorsque vous créez une classe, vous devez spécifier la propriété `clientId`.
 
-```typescript
+```ts
 const presence = new Presence({
   clientId: "5141496134389561" // Exemple de clientId
 });
@@ -68,13 +68,13 @@ Définit le titre de la barre de menus.
 
 Crée une nouvelle classe `Slideshow`.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Il est suggéré de faire ceci directement après avoir crée la classe `Presence`:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Exemple de clientId
   }),
@@ -89,7 +89,7 @@ Méthode asynchrone qui vous permet d'obtenir les chaînes traduites depuis l'ex
 
 Vous devez fournir `Object` avec les clés qui sont la clé de la chaîne, `keyValue` est la valeur de la chaîne. Une liste de chaînes de caractères traduites peut être trouvée ici : `https://api.premid.app/v2/langFile/presence/fr/`
 
-```typescript
+```ts
 // Retourne les chaînes `Playing` et `Paused`
 // depuis l'extension.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ Depuis la v2.2.0 de l'extension, vous pouvez maintenant obtenir les chaînes de 
 
 Nous vous suggérons d'utiliser le code suivant afin qu'il mette à jour automatiquement PresenceData si l'utilisateur change la langue sélectionnée ;
 
-```typescript
+```ts
 async function getStrings() {
 return presence.getStrings(
     {
@@ -139,7 +139,7 @@ Retourne une variable du site web si elle existe.
 
 **Attention : cette fonction peut causer une grosse utilisation du CPU & un ralentissement du site quand elle est exécutée trop de fois.**
 
-```typescript
+```ts
 const pageVar = getPageletiable(".pageVar");
 console.log(pageVar); // Cela permettra d'afficher le "contenu variable"
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // Cela permettra d'afficher le "contenu variable"
 
 Renvoie la version de l'extension que l'utilisateur utilise.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // Affichera 2.1.0
 
 Retourne la valeur du paramètre.
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Remplacer pdexID avec l'id du paramètre
 console.log(setting); // Cela affichera dans la console la valeur du paramètre
 ```
@@ -170,7 +170,7 @@ console.log(setting); // Cela affichera dans la console la valeur du paramètre
 
 Masque le paramètre donné.
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 Affiche le paramètre donné (Ne marche seulement si le paramètre en question était déjà masqué).
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // Remplacer pdexID par l'id du paramètre
 
 Retourne les logs de la console du site web.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Cela affichera les 100 derniers logs (dans un array).
 ```
@@ -197,7 +197,7 @@ console.log(logs); // Cela affichera les 100 derniers logs (dans un array).
 
 Affiche le message donné dans la console dans un format basé sur la presence dans le style `info`.
 
-```typescript
+```ts
 presence.info("Test") // Cela va afficher "test" dans le bon style.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Test") // Cela va afficher "test" dans le bon style.
 
 Affiche le message donné dans la console dans un format basé sur la presence dans le style `success`.
 
-```typescript
+```ts
 presence.success("Test") // Cela va afficher "test" dans le bon style.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Test") // Cela va afficher "test" dans le bon style.
 
 Affiche le message donné dans la console dans un format basé sur la presence dans le style `error`.
 
-```typescript
+```ts
 presence.error("Test") // Cela va afficher "test" dans le bon style.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Test") // Cela va afficher "test" dans le bon style.
 
 Retourne 2 `snowflake` timestamps dans un `Array` qui peut être utilisé pour `startTimestamp` et `endTimestamp`.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Retourne 2 timestamps sous forme de `snowflake` dans un `Array` qui peuvent être utilisé pour `startTimestamp` et `endTimestamp`.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Convertit une string au format `HH:MM:SS` ou `MM:SS` ou `SS` en un entier (Ne retourne pas de snowflake timestamp).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -329,7 +329,7 @@ Cette interface contient les variables suivantes, toutes sont facultatives.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "Mon titre",
   state: "Ma description",
@@ -356,7 +356,7 @@ const presenceData: PresenceData = {
 
 Les événements vous permettent de détecter et de gérer quelques changements ou appels qui ont été effectués. Vous pouvez aussi suivre les événements en utilisant la méthode `on`.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Faire quelque chose quand les données sont mises à jour.
 });
