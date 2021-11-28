@@ -14,7 +14,7 @@ Si vous souhaitez publier une présence dans la boutique et la charger via l'ext
 
 Un exemple de ce fichier se situe ci-dessous.
 
-```typescript
+```ts
 {
   "author": {
     "name": "UTILISATEUR",
@@ -211,7 +211,7 @@ PreMiD est un service polyglotte. Cela signifie qu'il y a un grand nombre de lan
 
 ## Paramètres de présence
 Configurer les paramètres interactifs pour que les utilisateurs puissent personnaliser la présence!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -284,7 +284,7 @@ L'`Objet` a deux propriétés ; `message` et `description`. `message` est le tex
 
 Visualisation du fichier :
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Texte qui doit être traduit. ,
@@ -309,20 +309,20 @@ Les touches que vous n'avez pas définies seront automatiquement définies comme
 Utilisez les méthodes suivantes pour obtenir des informations sur les paramètres dans votre fichier de presence :
 #### `getSetting(String)`
 Retourne la valeur du paramètre.
-```typescript
+```ts
 const setting = wait presence.getSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 console.log(setting); // Cela affichera dans la console la valeur du paramètre
 ```
 
 #### `hideSetting(String)`
 Masque le paramètre spécifié.
-```typescript
+```ts
 presence.hideSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
 
 #### `showSetting(String)`
 Montre les paramètres donnés (ne marche seulement si le paramètre était déjà caché).
-```typescript
+```ts
 presence.showSetting("pdexID"); //Remplacer pdexID par l'id du paramètre
 ```
 
