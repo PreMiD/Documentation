@@ -14,7 +14,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 An example of that file can be found below.
 
-```typescript
+```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -213,7 +213,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 ## การตั้งค่า Presence
 สร้างการตั้งค่าแบบโต้ตอบเพื่อให้ผู้ใช้สามารถปรับแต่ง Presence ได้!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -287,7 +287,7 @@ The `Object` has 2 properties; `message` and `description`. `message` is the tex
 
 Visualization of the file:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Text that needs to be translated.",
@@ -312,20 +312,20 @@ The keys you didn't have to set are automatically set to the following: `title`:
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
 Returns value of setting.
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting
 ```
 
 #### `hideSetting(String)`
 Hides given setting.
-```typescript
+```ts
 presence.hideSetting("pdexID"); //แทนที่ pdexID ด้วย id ของการตั้งค่า
 ```
 
 #### `showSetting(String)`
 Shows given setting (Only works if the setting was already hidden).
-```typescript
+```ts
 presence.showSetting("pdexID"); //แทนที่ pdexID ด้วย id ของการตั้งค่า
 ```
 
