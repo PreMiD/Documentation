@@ -16,7 +16,7 @@ Kelas `Presence` sangat berguna karena memiliki metode dasar yang diperlukan unt
 
 Saat Anda membuat kelas, Anda harus menentukan properti `clientId`.
 
-```typescript
+```ts
 const presence = new Presence({
   clientId: "514271496134389561" // Contoh clientId
 });
@@ -68,13 +68,13 @@ Setel judul baki pada bilah Menu.
 
 Membuat kelas `Slideshow` baru.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Disarankan untuk melakukan ini setelah membuat Kelas `Presence`:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Contoh clientId
   }),
@@ -89,7 +89,7 @@ Metode asinkron yang memungkinkan kamu untuk mendapatkan string terjemahan dari 
 
 Kamu harus memberikan `Object` dengan kunci sebagai kunci untuk string, `keyValue` adalah nilai string. Daftar string terjemahan bisa ditemukan di titik akhir ini: `https://api.premid.app/v2/langFile/presence/id/`
 
-```typescript
+```ts
 // Mengembalikan string `Playing` dan` Paused`
 // dari ekstensi.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ Sejak ekstensi v2.2.0 kamu sekarang bisa mendapatkan string dari bahasa tertentu
 
 Kami menyarankan kamu untuk menggunakan kode berikut agar PresenceData secara otomatis diperbarui jika pengguna merubah bahasa yang dipilih;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -139,7 +139,7 @@ Mengembalikan variabel dari situs web jika ada.
 
 **Peringatan: Fungsi ini dapat menyebabkan penggunaan CPU yang tinggi & melambatkan situs jika terlalu sering dijalankan.**
 
-```typescript
+```ts
 const pageVar = getPageletiable(".pageVar");
 console.log(pageVar); // Ini akan mencatat "Variable content"
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // Ini akan mencatat "Variable content"
 
 Mengembalikan versi dari ekstensi yang digunakan oleh pengguna.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // Akan mencatat 2.1.0
 
 Mengembalikan value dari pengaturan.
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Ubah pdexID dengan id dari setting
 console.log(setting); // Ini akan mencatat isi dari setting
 ```
@@ -170,7 +170,7 @@ console.log(setting); // Ini akan mencatat isi dari setting
 
 Sembunyikan pengaturan yang telah diberikan.
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 
 Menampilkan pengaturan yang diberikan (Hanya bekerja jika pengaturan telah disembunyikan).
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // Ubah pdexID dengan id dari pengaturan
 
 Mengembalikan catatan dari konsol situs web.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Ini akan mencatat 100 catatan terbaru (dalam array).
 ```
@@ -197,7 +197,7 @@ console.log(logs); // Ini akan mencatat 100 catatan terbaru (dalam array).
 
 Cetak pesan yang diberikan di konsol dengan format berdasarkan presence pada style `success`.
 
-```typescript
+```ts
 presence.info("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Test") // Ini akan mencatat "test" dengan styling yang benar.
 
 Cetak pesan yang diberikan oleh konsol dengan format berdasarkan presence dengan style `success`.
 
-```typescript
+```ts
 presence.success("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Test") // Ini akan mencatat "test" dengan styling yang benar.
 
 Mencetak pesan yang diberikan di konsol dengan format berdasarkan presence pada style`error`.
 
-```typescript
+```ts
 presence.error("Test") // Ini akan mencatat "test" dengan styling yang benar.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Test") // Ini akan mencatat "test" dengan styling yang benar.
 
 Mengembalikan 2 timestamp `snowflake` pada sebuah `Array` yang dapat digunakan untuk `startTimestamp` dan `endTimestamp`.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Mengembalikan 2 timestamp `snowflake` pada sebuah `Array` yang dapat digunakan untuk `startTimestamp` dan `endTimestamp`.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Mengonversi sebuah string dengan format `JJ:MM:DD` atau `MM:DD` atau `DD` menjadi sebuah integer (Tidak mengembalikan timestamp snowflake).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -330,7 +330,7 @@ Interface ini memiliki variabel berikut, semuanya merupakan opsional.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "Judul saya",
   state: "Deskripsi saya",
@@ -346,7 +346,7 @@ const presenceData: PresenceData = {
 
 Events memungkinkan kamu untuk mendeteksi dan menangani beberapa perubahan atau panggilan yang telah dilakukan. Kamu dapat berlangganan pada event dengan menggunakan metode `on`.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Melakukan sesuatu ketika data diperbarui.
 });
