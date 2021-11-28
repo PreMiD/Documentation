@@ -16,7 +16,7 @@ La clase de `Presence` es útil dado que contiene métodos básicos para constru
 
 Cuando creas una clase has de especificar apropiadamente el campo `clientId`.
 
-```typescript
+```ts
 const presence = new Presence({
   clientId: "514271496134389561" // clientId de ejemplo
 });
@@ -68,13 +68,13 @@ Establece el título de la bandeja en la barra de menús.
 
 Crea una nueva instancia de la clase `Slideshow`.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Se sugiere hacer esto al instanciar la clase `Presence`:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // clientId de ejemplo
   }),
@@ -89,7 +89,7 @@ Un método asíncrono que te permite obtener strings traducidas de la extensión
 
 Debes proporcionar un `Object` donde las claves son la clave del string, `valorClave` es el valor del string. Puedes encontrar una lista de strings traducidas aquí: `https://api.premid.app/v2/langFile/presence/en/`
 
-```typescript
+```ts
 // Devuelve las strings `Playing` y `Paused`
 // desde la extensión.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ Desde la versión 2.2.0 de la extensión ahora puedes obtener strings dado un id
 
 Sugerimos que utilices el siguiente código para que se actualice automáticamente PresenceData si el usuario cambia el idioma;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -139,7 +139,7 @@ Devuelve una variable desde el sitio web si existe.
 
 **Advertencia: Esta función puede provocar un uso elevado de la CPU y un retraso en el sitio cuando se ha ejecutado demasiadas veces.**
 
-```typescript
+```ts
 const pageVar = getPageletiable(".pageVar");
 console.log(pageVar); // Esto mostará en la consola el "Contenido de la variable"
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // Esto mostará en la consola el "Contenido de la variabl
 
 Devuelve la versión de la extensión que está usando el usuario.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // Mostrará 2.1.0
 
 Devuelve el valor del ajuste.
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); // Remplaza pdexID con el id del ajuste
 console.log(setting); // Esto mostrará el valor del ajuste
 ```
@@ -170,7 +170,7 @@ console.log(setting); // Esto mostrará el valor del ajuste
 
 Oculta la configuración dada.
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 Muestra la configuración dada (solo funciona si la configuración ya estaba oculta).
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuración
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // Reemplaza pdexID con el ID de la configuraci�
 
 Devuelve los logs de la consola del sitio web.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Obtienes los últimos 100 logs (en un array).
 ```
@@ -197,7 +197,7 @@ console.log(logs); // Obtienes los últimos 100 logs (en un array).
 
 Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `info`.
 
-```typescript
+```ts
 presence.info("Test") // Esto logeará "test" con un estilo predeterminado.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Test") // Esto logeará "test" con un estilo predeterminado.
 
 Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `satisfactorio`.
 
-```typescript
+```ts
 presence.success("Test") // Esto logeará "test" con un estilo predeterminado.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Test") // Esto logeará "test" con un estilo predeterminado.
 
 Muestra el mensaje proporcionado en la consola en un formato basado en la presence bajo el estilo `error`.
 
-```typescript
+```ts
 presence.error("Test") // Esto logeará "test" con un estilo predeterminado.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Test") // Esto logeará "test" con un estilo predeterminado.
 
 Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Devuelve 2 marcas de tiempo (timestamps) en un `array` que puede ser usado para `startTimestamp` y `endTimestamp`.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Convierte una cadena con formato `HH:MM:SS` o `MM:SS` o `SS` en un entero (no devuelve un timestamp).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -330,7 +330,7 @@ Esta interfaz tiene las siguientes variables, todas ellas son opcionales.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "Mi título",
   state: "Mi descripción",
@@ -356,7 +356,7 @@ const presenceData: PresenceData = {
 
 Los eventos te permiten detectar y manejar algunos cambios o llamadas que se realizaron. Puedes suscribirte a eventos usando el método `on`.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Haz algo cuando se actualicen los datos.
 });
