@@ -18,7 +18,7 @@ dateCreated: 2021-09-07T01:44:57.665Z
 
 Как и присутствия, `iframes` имеют свои собственные классы, предназначенные для автоматического обновления данных.
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ iframe.on("UpdateData", async () => {
 ## Событие
 В `iframes`события работают аналогично тому, как они работают в классе `присутствия`.
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Код идет здесь...
 });
