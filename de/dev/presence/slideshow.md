@@ -22,7 +22,7 @@ Um eine `Slideshow` zu erstellen, schau dir die [`createSlideshow`](/dev/presenc
 
 Gibt ein [`PresenceData`](/dev/presence/class#presencedata-interface) Objekt zurück, mit der aktuell angezeigten Presence der Slideshow.
 
-```typescript
+```ts
 const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // Protokolliert die Details der PresenceData in der Konsole
 ```
