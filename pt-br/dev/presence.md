@@ -49,7 +49,7 @@ Todas as Presences são codificadas em [TypeScript](https://www.typescriptlang.o
 
 Por favor, coloque o seguinte código dentro do arquivo ` tsconfig.json `.
 
-```typescript
+```ts
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
@@ -271,18 +271,18 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
 
 ## Primeiros passos
 
-```typescript
+```ts
 const presence = new Presence({
-    clientId: "000000000000000000" //The client ID of the Application created at https://discordapp.com/developers/applications
+  //The client ID of the Application created at https://discordapp.com/developers/applications
+  clientId: "000000000000000000"
   }),
+  //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    //You can use this to get translated strings in their browser language
   });
 
 /*
-
 function myOutsideHeavyLiftingFunction(){
     //Grab and process all your data here
 
@@ -293,7 +293,6 @@ function myOutsideHeavyLiftingFunction(){
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
 //Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
-
 */
 
 presence.on("UpdateData", async () => {
@@ -302,19 +301,26 @@ presence.on("UpdateData", async () => {
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    largeImageKey:
-      "key" /*The key (file name) of the Large Image on the presence. Estes são enviados e nomeados na seção Rich Presence do seu aplicativo, chamado de Art Assets*/,
-    smallImageKey:
-      "key", /*A key (nome do arquivo) da imagem pequena na presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    largeImageKey: "key",
+    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    smallImageKey: "key",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+  };
+  //Update the presence with all the values from the presenceData object
+  if (presenceData.details) presence.setActivity(presenceData);
+  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  else presence.setActivity(); 
 });
 ```
 
@@ -338,13 +344,10 @@ Se perceber que seus dados estão em um iFrame, você precisa fazer o seguinte:
 2. Defina o iFrame como `true` no seu arquivo de metadados.
 3. Preenchendo o seu arquivo iFrame.
 
-```typescript
+```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
-  */
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
     //sending data
     video: video,
@@ -355,7 +358,7 @@ iframe.on("UpdateData", async () => {
 
 4. Faça com que seu arquivo de presence receba dados do arquivo iFrame.
 
-```typescript
+```ts
 presence.on("iFrameData", (data) => {
   iFrameVideo = data.video;
   currentTime = data.time;
