@@ -14,7 +14,7 @@ Más mian leat láithreacht a fhoilsiú sa siopa agus é a luchtú tríd an sín
 
 Is féidir sampla den chomhad sin a fháil thíos.
 
-```typescript
+```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -209,7 +209,7 @@ Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad tean
 
 ## Socruithe láithreachta
 Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an láithreacht a shaincheapadh!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -283,7 +283,7 @@ An `Objec`t Tá 2 mhaoin; `message` agus `description`. `message` an téacs nach
 
 Amharcléiriú an chomhaid:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Téacs nach mór a aistriú.",
@@ -308,20 +308,20 @@ Socraítear na heochracha nár ghá duit a shocrú go huathoibríoch mar a leana
 Úsáid na modhanna seo a leanas chun faisnéis faoi shuíomhanna a fháil i do chomhaid láithreachta:
 #### `getSetting(String)`
 Tuairisceáin luach an tsuímh.
-```typescript
+```ts
 const const = await presence.getSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 console.log(setting); // Déanfaidh sé seo luach an tsuímh a logáil
 ```
 
 #### `hideSetting(String)`
 Seithí tugtha suíomh.
-```typescript
+```ts
 presence.hideSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 ```
 
 #### `showSetting(String)`
 Seónna a thugtar an socrú (Ní oibríonn sé ach má bhí an suíomh i bhfolach cheana féin).
-```typescript
+```ts
 presence.showSetting("pdexID"); //Cuir id an tsuímh in ionad pdexID
 ```
 
