@@ -16,7 +16,7 @@ Tá an `Presence` rang an-úsáideach mar tá modhanna bunúsacha aige a theasta
 
 Nuair a chruthaíonn tú rang caithfidh tú `clientId` maoin a shonrú.
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Sampla clientId
 });
@@ -68,13 +68,13 @@ Socraigh teideal an tráidire ar an Menubar.
 
 Cruthaíonn sé `Slideshow` rang nua.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Moltar é seo a dhéanamh i gceart tar éis an`Presence` rang a chruthú:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Sampla clientId
   }),
@@ -89,7 +89,7 @@ Modh asincrónach a ligeann duit teaghráin aistrithe a fháil ón síneadh.
 
 Caithfidh tú `Object` eochracha a sholáthar mar eochair do shreang, `keyValue` is é luach na sreinge. Is féidir liosta de na teaghráin aistrithe a fháil ag an bpointe deiridh seo: `https://api.premid.app/v2/langFile/presence/en/`
 
-```typescript
+```ts
 // Tuairisceáin teaghráin `Imeartha` agus `Sos`
 // ón síneadh.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ const pauseString = strings.pause; //toradh: Sos
 
 Molaimid duit an cód seo a leanas a úsáid ionas go ndéanann sé an PresenceData a nuashonrú go huathoibríoch má athraíonn an t-úsáideoir an teanga roghnaithe;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -139,7 +139,7 @@ Seoltar athróg ar ais ón suíomh Gréasáin má tá sé ann.
 
 **Rabhadh: Is féidir an fheidhm seo a bheith ina chúis le húsáid ard LAP & an láithreán ag dul in olcas nuair a dhéantar é a fhorghníomhú an iomarca uaireanta.**
 
-```typescript
+```ts
 const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // Déanfaidh sé seo an "Ábhar inathraithe" a logáil
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // Déanfaidh sé seo an "Ábhar inathraithe" a logáil
 
 Leagan ar ais den síneadh atá á úsáid ag an úsáideoir.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // An mbeidh logáil 2.1.0
 
 Tuairisceáin luach an tsuímh.
 
-```typescript
+```ts
 const const = await presence.getSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 console.log(setting); // Déanfaidh sé seo luach an tsuímh a logáil
 ```
@@ -170,7 +170,7 @@ console.log(setting); // Déanfaidh sé seo luach an tsuímh a logáil
 
 Seónna a thugtar an socrú (Ní oibríonn sé ach má bhí an suíomh i bhfolach cheana féin).
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 
 Filleann sé logaí an chonsóil láithreáin ghréasáin.
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // Cuir id an tsuímh in ionad pdexID
 
 **Nóta:** Éilítear `readLogs` a bheith `true` sa `metadata.json` chomhad.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Déanfaidh sé seo na 100 log is déanaí (in eagar) a logáil.
 ```
@@ -197,7 +197,7 @@ Priontaítear an teachtaireacht a thugtar sa chonsól i bhformáid bunaithe ar a
 
 Priontaítear an teachtaireacht a thugtar sa chonsól i bhformáid bunaithe ar an láithreacht sa `success` stíl.
 
-```typescript
+```ts
 presence.info("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
 
 Priontaítear an teachtaireacht a thugtar sa chonsól i bhformáid bunaithe ar an láithreacht sa `error` stíl.
 
-```typescript
+```ts
 presence.success("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú cea
 
 Filleann 2 `snowflake` stampa ama ar cheann `Array` is féidir a úsáid le haghaidh `startTimestamp` agus `endTimestamp`.
 
-```typescript
+```ts
 presence.error("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Tástáil") // Logálfaidh sé seo "tástáil" sa stíliú ceart
 
 **Nóta** Is `String` sampla é an ceann a thugtar i querySelector.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ Filleann 2 `snowflake` stampa ama ar cheann `Array` is féidir a úsáid le hagh
 
 **Nóta** Is `String` sampla é an ceann a thugtar i querySelector.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ Athraíonn sé sreang le formáid `HH:MM:SS` nó `MM:SS` nó `SS` ina shlánuimh
 
 **Nóta** Is `String` sampla é an ceann a thugtar i querySelector.
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -328,7 +328,7 @@ Tá na hathróga seo a leanas ag an gcomhéadan seo, tá gach ceann acu roghnach
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "Mo theideal",
   state: "Mo thuairisc",
@@ -353,7 +353,7 @@ const presenceData: PresenceData = {
 
 Ligeann imeachtaí duit roinnt athruithe nó glaonna a rinneadh a bhrath agus a láimhseáil. Is féidir leat liostáil le himeachtaí ag úsáid an `on` mhodha.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Déan rud éigin nuair a dhéantar sonraí a nuashonrú.
 });
