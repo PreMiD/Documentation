@@ -18,7 +18,7 @@ De code die je in je `iframe.ts` bestand schrijft, wordt in elk iframe op de pag
 
 Zoals presences hebben `iframes` hun eigen klasse ontworpen om de gegevens automatisch bij te werken.
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ Geeft als resultaat de URL van de `iframe`.
 ## Events
 In `iframes`werkt events net zoals de manier waarop ze werken in de `presence` klas.
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Code gaat hier...
 });
