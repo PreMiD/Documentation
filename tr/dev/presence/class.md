@@ -16,7 +16,7 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 Bir sınıf oluştururken `clientId` alanını mutlaka belirtmelisiniz.
 
-```typescript
+```ts
 const presence = new Presence({
   clientId: "514271496134389561" // Örnek bir clientId alanı
 });
@@ -68,13 +68,13 @@ Menüdeki durum yazısını ayarlar.
 
 Yeni bir `Slideshow` sınıfı oluşturur.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Bunu `Presence` sınıfını oluşturduktan hemen sonra yapmanız önerilir:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Örnek bir clientId
   }),
@@ -89,7 +89,7 @@ Eklentiden belli çevirilere ulaşabileceğiniz asenkron yöntem.
 
 Çeviriyi saklamak istediğiniz anahtarı ve çevirinin bulunduğu objedeki anahtar kodunu da yanına yazmalısınız. Çevrilmiş yazıların listesine bu endpoint üzerinden erişebilirsiniz: `https://api.premid.app/v2/langFile/presence/en/`
 
-```typescript
+```ts
 // `Oynatılıyor` ve `Durduruldu` çevirilerini
 // gösterir.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ Eklentinin v2.2.0 sürümünden bu yana, artık belirli bir dilin çevirilerini 
 
 Kullanıcı dili değiştirdiğinde PresenceData verisini otomatik olarak güncelleyebilmesi için aşağıdaki kodu kullanmanızı öneririz;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -139,7 +139,7 @@ Eğer varsa sayfadaki bir değişkenin içeriğini gösterir.
 
 **Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
 
-```typescript
+```ts
 const pageVar = getPageletiable(".pageVar");
 console.log(pageVar); // Değişkenin içeriğini gösterecektir
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // Değişkenin içeriğini gösterecektir
 
 Bir ayarın değerini döner.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // 2.1.0 çıktısı verir
 
 Belirtilen ayarı gizler.
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 console.log(setting); // Seçeneğin değerinin çıktısını verecektir
 ```
@@ -170,7 +170,7 @@ console.log(setting); // Seçeneğin değerinin çıktısını verecektir
 
 Verilen ayarı gizler.
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 
 İnternet sitesinin konsol kayıtlarının çıktısını döndürür.
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // PdexID'yi ayarın id'si ile değiştirin
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // PdexID'yi ayarın id'si ile değiştirin
 
 **Not:** Bu ayar, `metadata.json` dosyasında `readLogs` ayarının `true` olmasını gerektirir.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Bu, son 100 kaydın (array içerisinde) çıktısını verir.
 ```
@@ -197,7 +197,7 @@ Girilen mesajı konsola `info` (bilgi) tarzında konsola yazdırır.
 
 Girilen mesajı konsola `success` (başarılı) tarzında konsola yazdırır.
 
-```typescript
+```ts
 presence.info("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
 
 Girilen mesajı konsola `error` (hata) tarzında konsola yazdırır.
 
-```typescript
+```ts
 presence.success("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Test") // Belirtilen tarzda "Test" mesajını konsola yazdır�
 
 `startTimestamp` ve `endTimestamp` değerleri olarak kullanabileceğiniz bir `Array` formatında 2 adet `snowflake` zaman verisi döndürür.
 
-```typescript
+```ts
 presence.error("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Test") // Belirtilen tarzda "Test" mesajını konsola yazdırır
 
 **Not:** querySelector da verilen `String` bir örnektir.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ presenceData.endTimestamp = timestamps[1];
 
 **Not:** querySelector da verilen `String` bir örnektir.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ Metin şeklindeki zaman verisini (`HH:MM:SS` VEYA `MM:SS` VEYA `SS`) sayı veris
 
 Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -329,7 +329,7 @@ This interface has following variables, all of them are optional.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "Benim başlığım",
   state: "Benim açıklamam",
@@ -355,7 +355,7 @@ const presenceData: PresenceData = {
 
 Eventler belirli zamanlarda bilgi gönderir ve birçok şeyi kontrol edebilmenizi sağlar. Bir event'i dinleyebilmek için `on` metodunu kullanabilirsiniz.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Veri güncellenince bir şeyler yap.
 });
