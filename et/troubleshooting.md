@@ -2,10 +2,10 @@
 title: Tõrkeparandus
 description: Kõik teie probleemi lahendamiseks
 published: true
-date: 2021-02-08T21:30:58.603Z
+date: 2021-09-18T14:08:01.002Z
 tags:
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Veenduge, et teil oleks installitud laiendus **ja** rakendus! 
@@ -85,7 +85,7 @@ See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate 
 9. Avage kaust "PreMiD", valige fail "PreMiD.exe" ja klõpsake nuppu Ava. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee peaks nüüd meie faili ignoreerima, lihtsalt käivitage meie rakendus ja teil peaks olema korras.
 
-### PreMiD-i olek on katki Discordis!
+### PreMiD status bugged on Discord
 Ära muretse. Vajutage klahvikombinatsiooni <kbd>CTRL + R</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS), olles keskendunud Discordi aknale, selle uuesti laadimiseks.
 
 <a name="linux"></a>

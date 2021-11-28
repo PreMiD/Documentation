@@ -2,10 +2,10 @@
 title: Chromium
 description: Memulai dengan instalasi PreMiD pada browser berbasis Chromium
 published: true
-date: 2021-09-18T14:18:12.116Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:30:02.971Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Pemasangan ekstensi sangat penting agar aplikasi dapat bekerja.

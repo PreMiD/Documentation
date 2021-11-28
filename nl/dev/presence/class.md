@@ -2,10 +2,10 @@
 title: Presence Klasse
 description: De belangrijkste klasse voor elke PreMiD presence
 published: true
-date: 2021-10-30T23:15:08.502Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:54:16.061Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Presence Klasse
@@ -56,7 +56,7 @@ Tweede parameter definieert wanneer presence iets afspeelt of niet. Gebruik alti
 
 Wist je huidige activiteit en de tray titel.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *verouderd sinds 2.2.3*
 
 > Deze methode werkt alleen op Mac OS. 
 > 
@@ -317,7 +317,7 @@ Deze interface heeft de volgende variabelen, ze zijn allemaal optioneel.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Definieert de tekst die wordt getoond aan de gebruiker wanneer hij over de kleine
+      <td style="text-align:left">Definieert de tekst die wordt getoond aan de gebruiker wanneer deze over het kleine
         pictogram beweegt.</td>
       <td style="text-align:left"><code>String</code>
       </td>

@@ -2,10 +2,10 @@
 title: आवश्यकताएँ
 description: Prerequisites to install PreMiD
 published: true
-date: 2021-10-20T23:38:04.095Z
-tags: 
+date: 2021-01-17T22:43:28.543Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:28:54.550Z
+dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
 # सिस्टम की आवश्यकताएँ

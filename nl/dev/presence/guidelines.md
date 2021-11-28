@@ -2,10 +2,10 @@
 title: Presence-richtlijnen
 description: Regels die alle presence-ontwikkelaars moeten volgen om hun presence te laten toevoegen.
 published: true
-date: 2021-10-18T16:38:11.666Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:54:19.655Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences voor services zoals bot- en serverlijsten voor Discord moeten aan deze extra eisen voldoen:
   - Het domein moet minimaal **6 maanden** oud zijn.
   - Unieke bezoekers per dag:
-    - Voor domeinen van 6 maanden oud: **20.000 unieke bezoekers/dag**.
+    - Voor domeinen van 6 tot 12 maanden oud: **20.000 unieke bezoekers/dag**.
     - Voor domeinen van 12 maanden en ouder: **45.000 unieke bezoekers/dag**.
   - De website kan niet op een goedkoop domein eindigen, zoals `.xyz`, `.club`, enzovoorts.
   - De website zelf moet een zeer goede kwaliteit en een goed ontwerp hebben.
@@ -326,7 +326,7 @@ Nadat je aan alle richtlijnen hebt voldaan en je presence tenminste twee keer is
 
 # Suggesties
 
-Als u enkele suggesties hebt over onze richtlijnen, kun je contact met ons opnemen @ [PreMiD discord server](https://discord.premid.app) en wij zullen deze bekijken!
+Als u enkele suggesties hebt over onze richtlijnen, kun je contact met ons opnemen @ [PreMiD Discord server](https://discord.premid.app) en wij zullen deze bekijken!
 
 # Bijdrages
 

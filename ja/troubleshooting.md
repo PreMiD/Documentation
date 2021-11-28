@@ -2,10 +2,10 @@
 title: トラブルシューティング
 description: 抱えている問題を解決する方法
 published: true
-date: 2021-02-08T21:30:58.603Z
+date: 2021-09-18T14:08:01.002Z
 tags:
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > 先に、[拡張機能とアプリ](https://premid.app/downloads)をダウンロードした状態にしてください！ 
@@ -20,7 +20,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 <a name="general"></a>
 
 # General troubleshooting
-> もし心配な場合は、[#support](https://discord. premid. app/)でチケットを作ることも可能です。サポートがお手伝いします。ツール</0>（英語）を使用して解決することもできます。 </p> 
+> もし心配な場合は、[#support](https://discord.premid.app/)でチケットを作ることも可能です。サポートがお手伝いします。ツール</0>（英語）を使用して解決することもできます。 </p> 
 > 
 > {.is-info}</blockquote> 
 > 
@@ -109,9 +109,9 @@ dateCreated: 2020-06-11T18:03:54.865Z
 > 
 > 10. McAfeeがファイルを無視するので、あとは起動するだけです。
 > 
-> ### PreMiD status bugged on discord!
+> ### PreMiD status bugged on Discord
 > 
-> Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+> Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 
@@ -130,7 +130,7 @@ dateCreated: 2020-06-11T18:03:54.865Z
 > 
 > ### Port binding
 > 
-> You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+> PreMiDのポートは<strong x-id="1">3020</strong>番にバインドされています。 This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
 > 
 > ### PreMiD's AppImage doesn't launch at login
 > 
@@ -171,4 +171,4 @@ If you get this error, it means that your account doesn't have Administrator per
 
 # 実行しても問題が解決しませんでしたか？
 
-Please open a ticket in [#support](https://discord.premid.app/).
+PreMiDのDiscordサーバー内の[#support](https://discord.premid.app/)でチケットを開いてください。

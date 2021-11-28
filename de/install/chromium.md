@@ -2,10 +2,10 @@
 title: Chromium
 description: Erste Schritte mit einer PreMD-Installation auf Chromium-basierte Browser
 published: true
-date: 2021-09-18T14:13:56.864Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:24:39.443Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Die Installation der Erweiterung ist sehr wichtig, da die Anwendung allein nicht funktionieren würde.

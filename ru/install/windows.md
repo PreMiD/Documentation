@@ -2,10 +2,10 @@
 title: Окна
 description: Начать установку PreMiD на Windows
 published: true
-date: 2021-09-18T14:23:12.098Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:56.159Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Прежде чем продолжить, убедитесь, что ваша система соответствует [требованиям](/install/requirements).{.is-info}

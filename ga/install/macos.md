@@ -1,43 +1,45 @@
 ---
 title: macOS
-description: Getting started with a PreMiD installation on macOS
+description: Ag tosú le suiteáil PreMiD ar macOS
 published: true
-date: 2020-02-12T22:08:37.439Z
+date: 2021-09-18T14:14:48.363Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Sula dtéann tú níos faide, déan cinnte go gcomhlíonann do chóras na [riachtanais](/install/requirements). 
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Tá suiteáil an iarratais an-tábhachtach mar ní féidir leis an síneadh aon rud a dhéanamh leis féin.
 
 # Suiteáil
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
-2. Choose **OS X**.
-3. Extract the archive if necessary.
-4. Open the installer.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
-> This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
-6. Choose open when prompted.
-7. Grant access to connections through **Firewall** and control **System Events** when prompted.
+1. Téigh go dtí ár leathanach íoslódálacha ag [cliceáil anseo](https://premid.app/downloads).
+2. Roghnaigh **OS X**.
+3. Bain an chartlann más gá.
+4. Oscail an suiteálaí.
+5. **Foláireamh slándála** d'fhéadfadh a bheith le feiceáil má tá preMiD á shuiteáil agat den chéad uair. Má dhéanann sé, lean na céimeanna faoi [Ceadaigh iarratais ó fhorbróirí neamhaitheanta](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
+> Tá sé seo amhlaidh toisc nach bhfuil Deimhniú Sínithe Cód (DSC) againn. [Tacaigh linn](https://www.patreon.com/Timeraa) chun é a mhaoiniú.{.is-info}
+6. Roghnaigh oscailte nuair a spreagtar é.
+7. Rochtain deontais ar naisc trí **Balla dóiteáin** agus rialú **Imeachtaí Córas** nuair a spreagtar é.
 
-The application will start automatically. Check for the symbol in your menu bar.
+Cuirfear tús leis an iarratas go huathoibríoch. Seiceáil an tsiombail i do bharra roghchláir.
 
-> Do not forget to [add the **extension**](/install). 
+> Ná déan dearmad a [cuir an **síneadh**](/suiteáil). 
 > 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## Ceadaigh feidhmchláir ó fhorbróirí neamhaitheanta
+Céimeanna do macOS Big Sur (11.0 +):
+1. Cliceáil ar dheis ar ár suiteálaí.
+2. Cliceáil ar oscailt sa roghchlár anuas.
+3. Cliceáil ar oscailt i aníos.
 
-Steps for older macOS versions:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+Céimeanna do leaganacha macOS níos sine:
+1. Roghanna Córais Oscailte.
+2. Téigh go dtí an cluaisín Slándála & Príobháideacht.
+3. Cliceáil ar an glas agus cuir isteach do phasfhocal nó scan do mhéarlorg ionas gur féidir leat athruithe a dhéanamh.
+4. Athraigh an socrú le haghaidh 'Ceadaigh feidhmchláir a íoslódáladh ó' go 'App Store agus forbróirí aitheanta' ó 'App Store' amháin.

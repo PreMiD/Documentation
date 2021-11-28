@@ -1,11 +1,11 @@
 ---
 title: Développement de la presence
-description: 
+description:
 published: true
-date: 2021-10-30T23:14:11.554Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:27:42.586Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > Toutes les presences sont maintenant stockées ici : https://github.com/PreMiD/Presences 
@@ -308,17 +308,16 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "key" /*La clé (nom du fichier) de l'image large sur la presence. Celles-ci sont mises en ligne et nommées dans la section Rich Presence de votre application, appelée Art Assets*/,
     smallImageKey:
-      "key" /*La clé (nom de fichier) de la petite image sur la presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+      "key" /*La clé (nom de fichier) de la petite image sur la presence. Ces deux images sont directement chargées et nommées dans le Portail Api de Discord de votre application, dans la section Art Assets.*/,
+    smallImageText: "Un petit texte", // Ce texte est affiché lorsque votre curseur survole la petite image
+    details: "En train de naviguer...", // La section du haut du texte de la presence
+    state: "En train de lire la section...", //La section du bas du texte de la presence
+    startTimestamp: 1577232000, //Heure Unix du moment où vous commencez à compter
+    endTimestamp: 1577151472000 // Si vous souhaitez montrer un compte à rebours (... restantes) au lieu d'un chronomètre (... écoulées), ici se trouve l'heure Unix à laquelle votre compte à rebours se termine.
+  }; /*Facultatif : ici, vous pouvez définir un largeImageKey et changer le reste comme une variable, par exemple presenceData.type = "blabla"; exemples de type : details, state, etc.*/
 
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
-});
+  if (!presenceData.details) presence.setActivity(); /*Met à jour la presence sans données, afin de la réinitialiser et d'initialiser la grande image en fonction de ce que vous avez défini sur Discord, et le texte, ce que vous avez aussi mis sur Discord*/
+  else presence.setActivity(presenceData); //Met à jour la Presence avec tout ce qui est défini dans l'objet presenceData});
 ```
 
 Vous pouvez copier ceci dans votre fichier `presence.ts` et modifier les valeurs. Le réglage de toutes les valeurs se fait dans l'événement updateData.

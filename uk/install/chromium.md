@@ -2,10 +2,10 @@
 title: Chromium
 description: Розпочнімо з встановлення PreMiD на браузерах, що побудовані на Chromium
 published: true
-date: 2021-09-18T14:25:28.147Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:38:27.318Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Установлення розширення дуже важливе, оскільки програма не може робити нічого самостійно.

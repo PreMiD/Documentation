@@ -2,10 +2,10 @@
 title: Kelas Presence
 description: Kelas utama untuk setiap presence PreMiD
 published: true
-date: 2021-10-30T23:14:36.082Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:50:28.617Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Kelas Presence
@@ -56,7 +56,7 @@ Parameter kedua menentukan apakah presence memainkan sesuatu atau tidak. Selalu 
 
 Menghapus aktivitasmu saat ini dan judul tray.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *Sudah usang sejak versi 2.2.3*
 
 > Metode ini hanya bekerja di Mac OS. 
 > 

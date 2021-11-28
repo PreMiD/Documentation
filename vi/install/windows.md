@@ -2,10 +2,10 @@
 title: Windows
 description: Getting started with a PreMiD installation on Windows
 published: true
-date: 2021-09-18T14:26:10.222Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:12.933Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Trước khi cài đặt, hãy chắc chắn rằng hệ thống của bạn phù hợp với [yêu cầu hệ thống](/install/requirements).{.is-info}

@@ -2,10 +2,10 @@
 title: Chromium
 description: เริ่มต้นใช้งาน PreMiD บนเบราว์เซอร์ Chrome
 published: true
-date: 2021-09-18T14:24:38.603Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:30.318Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 การติดตั้งส่วนขยายนั้นสำคัญมากเนื่องจากแอปพลิเคชันไม่สามารถทำงานเองได้ด้วยตัวเอง

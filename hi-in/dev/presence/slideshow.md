@@ -1,11 +1,11 @@
 ---
 title: स्लाइड शो क्लास
-description: 
+description:
 published: true
-date: 2021-10-20T23:37:44.482Z
-tags: 
+date: 2020-12-25T00:47:38.111Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:48:47.419Z
+dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
 # स्लाइड शो क्लास

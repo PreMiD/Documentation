@@ -1,11 +1,11 @@
 ---
 title: スライドショーのクラス
-description: 
+description:
 published: true
-date: 2021-09-18T14:37:44.412Z
-tags: 
+date: 2020-12-25T00:47:38.111Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:52:21.729Z
+dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
 # スライドショーのクラス

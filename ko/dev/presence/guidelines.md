@@ -2,10 +2,10 @@
 title: Presence 가이드라인
 description: 모든 presence 개발자들이 자신의 presence를 추가하려면 따라야 하는 규칙입니다.
 published: true
-date: 2021-10-18T16:37:59.111Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:52:43.037Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ Presence 개발자들이 지켜야할 기본적인 규칙은 다음과 같습니
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
@@ -246,7 +246,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Presences that use buttons should follow extra requirements:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
+  - They can't display information you couldn't fit in other fields.
   - Redirecting directly to audio/video stream is prohibited.
 
 
@@ -323,7 +323,7 @@ After meeting all of the guidelines with the proper reviews and checks, your pre
 
 # Suggestions
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # Contributions
 

@@ -2,10 +2,10 @@
 title: Linux
 description: ابدأ بتثبيت PreMiD على لينكس
 published: true
-date: 2021-09-18T14:12:13.542Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:22:32.704Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 تركيب الملحق شيء مهم جدا لأن لا يمكن للإضافة أن تفعل أي شيء بنفسها.

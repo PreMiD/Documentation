@@ -2,10 +2,10 @@
 title: การแก้ปัญหา
 description: ทุกอย่างเพื่อใช้แก้ปัญหาของคุณ
 published: true
-date: 2021-09-18T14:10:31.968Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:20:29.932Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งส่วนขยาย ** และ ** แอปพลิเคชั่นแล้ว! 
@@ -34,59 +34,59 @@ PreMiD จะ**ไม่**ทํางานสําหรับ Brower Discord
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### ต้องแน่ใจว่า Discord ไม่ได้เปิดแบบ Administrator
-Really important. Discord RPC will not work if you run Discord as an administrator.
+สำคัญมากๆ Discord RPC will not work if you run Discord as an administrator.
 
 ### คุณได้ใช้การตั้งค่าของ Presence?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
-To solve this, all you have to do is toggle the topmost setting:
+วิธีเเก้นั้นคือ เปิดปิดการตั้งค่าที่อยู่ด้านบนสุด:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### รีสตาร์ทบราวเซอร์ของคุณ
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) หรือ <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) ได้ผลดีเหมือนกัน (คุณตัองสีสตาร์บราวเซอร์ใหม่อีกครั้ง)
 
 ### รีสตาร์ท PreMiD (แอพพลิเคชั่น)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+คุณต้องรีสตาร์ท PreMiD หลังจากนั้น
 
 ### รีโหลด/รีสตาร์ท ดิสคอร์ด
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+กด <kbd>CTRL+R</kbd> (Windows) หรือ <kbd>CMD+R</kbd> (MacOS) บนแป้นพิมพ์ของคุณ หรือ รีสตาร์ท Discord ด้วยตัวเองก็ได้
 
 ### ตรวจสอบว่าคุณมีโปรแกรมป้องกันไวรัสหรือไฟร์วอลล์ทำงานบนคอมพิวเตอร์ของคุณหรือไม่ ?
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+บางครั้งโปรแกรมป้องกันไวรัสและไฟร์วอลล์ปิดกั้นแอปพลิเคชันซึ่งกำลังสร้างโฮสต์เซิร์ฟเวอร์หรือแค่เชื่อมต่ออินเทอร์เน็ต เราใช้เซิร์ฟเวอร์ Local เพื่อรับและส่งผ่านข้อมูลระหว่างแอปและส่วนขยายของเราดังนั้นหากคุณปิดกั้นความสามารถของแอปในการส่ง ผ่านข้อมูล คุณอาจไม่สามารถใช้ PreMiD ได้
 
 ### ปิดการใช้งาน addons
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+ปิดการใช้งาน addons ทั้งหมดของคุณแล้วดูว่าใช้งานได้หรือไม่ ถ้าได้ลองเปิดใช้งาน addon ของคุณทีละตัวแล้วแจ้งเราว่า addon ตัวไหนทำให้ PreMiD ไม่ทำงาน
 
 ### รีสตาร์ทคอมพิวเตอร์ของคุณ
-I hope you know how to restart a computer.
+เราหวังว่าคุณจะรู้วิธีการรีสตาร์ทคอมพิวเตอร์นะ
 
 ### ติดตั้ง PreMiD อีกครั้ง
 Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
 
 ### ลบข้อมูลด้วยตัวเอง
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: เขียน `%appdata%` ลงในแถบที่อยู่ของ File Explorer จากนั้นลบโฟลเดอร์ `PreMiD` ออกไป MacOS: ไปที่ `~/users/USER/~Library/Application Support/` จากนั้นลบโฟลเดอร์ `PreMiD` ออกไป
 
 ### McAfee ตรวจจับ PreMiD เป็นไวรัส (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> ถ้าคุณไม่มั่นใจในการทําขั้นตอนต่อไปนี้ คุณสามารถส่งข้อความมาให้เราได้ใน [#support](https://discord.premid.app/)เเละทีมงานของเราจะช่วยคุณ! 
 > 
 > {.is-warning}
 
 1. เปิดเเอพ McAfee เเละกดที่ไอคอนการตั้งค่าตรงขวาบน<img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
 2. คลิ๊ก Quarantined Items (อันที่ 2 นับจากบนสุด)
 3. ขยายมัน, เเละกดไอคอน `>` ก่อนไฟล์ที่ชื่อว่า "settings.bat"
-4. เเน่ใจว่าที่อยู่ของ PreMiD อยู่ที่  "AppData\Local\Temp\PreMiD", ถ้าใช้กดเลือกมันเเละกู้คืนกลับมา<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
+4. เเน่ใจว่าที่อยู่ของ PreMiD อยู่ที่  "AppData\Local\Temp\PreMiD", ถ้าใช่ให้เลือกและกดคืนค่า<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
 5. หลังจากนั้นคุณสามารถปิด  "Quarantined Items" เเละกดไอคอนการตั้งค่าอีกครั้งตรงขวาบน
 6. กด "Real-Time Scanning" (อันที่ 3 นับจากบนสุด)
 7. กดขยายมันเเล้วเลือก "เพิ่มไฟล์"
 8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
-9. เปิด PreMiD โฟลเดอร์ เเละเลือกไฟล์ PreMiD.exe  เเละรันมัน<img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
+9. เปิดโฟลเดอร์ PreMiD เเละเลือกไฟล์ PreMiD.exe  เเละกดเปิด<img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee ควรละเว้นไฟล์ของเรา, รัน PreMiD เเละน่าจะปกติเเล้ว!
 
-### สถานะ PreMiD เกิดบัคบน Discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+### PreMiD status bugged on Discord
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 

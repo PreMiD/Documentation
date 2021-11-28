@@ -2,8 +2,10 @@
 title: Windows
 description: Kom i gang med en PreMiD installasjon på Windows
 published: true
-date: 2020-02-12T22:08:41.501Z
+date: 2021-09-18T14:14:53.541Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Før du går videre, må du sørge for at systemet oppfyller alle kravene [](/install/requirements).{.is-info}

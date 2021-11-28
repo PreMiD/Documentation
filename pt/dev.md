@@ -2,10 +2,10 @@
 title: Primeiros passos
 description: Uma pequena ajuda para aqueles que começaram a programar recentemente
 published: true
-date: 2021-09-19T14:11:36.586Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:26.670Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > Um editor de código fonte é necessário. We recommend [Visual Studio Code](https://code.visualstudio.com/). 

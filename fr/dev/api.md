@@ -2,10 +2,10 @@
 title: API
 description: Accéder aux ressources et effectuer des actions à l'aide de l'API PreMiD
 published: true
-date: 2021-09-18T14:16:17.093Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:27:39.399Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -31,6 +31,6 @@ Tous les services et protocoles de couche HTTP (par exemple http) dans l'API Pre
 > {.is-danger}
 
 **Choisissez la version de l'API :**
-- [v2 *déprécié*](/dev/api/v2)
-- [v3 *actif*](/dev/api/v3)
+- [v2 *supprimée partiellement | obsolète*](/dev/api/v2)
+- [v3 *version actuelle*](/dev/api/v3)
 {.links-list}

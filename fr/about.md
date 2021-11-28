@@ -2,9 +2,10 @@
 title: À propos de PreMiD
 description: Les fonctionnalités principales de PreMiD
 published: true
-date: 2020-09-01T22:07:41.029Z
+date: 2021-09-18T14:07:51.099Z
 tags:
 editor: markdown
+dateCreated: 2021-09-07T01:17:19.551Z
 ---
 
 PreMiD est un utilitaire simple et configurable qui vous permet de montrer ce que vous faites sur internet dans votre statut Discord. Il supporte de nombreuses plateformes et permettra à plusieurs utilisateurs de regarder le même contenu simultanément dans une prochaine mise à jour.

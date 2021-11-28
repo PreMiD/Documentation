@@ -2,10 +2,10 @@
 title: Konfigurácia TypeScriptu
 description: Malilinký pomocník pre TypeScript
 published: true
-date: 2021-09-18T14:42:32.522Z
-tags: 
+date: 2021-09-18T14:31:22.005Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:57:58.454Z
+dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
 # Konfigurácia TypeScriptu

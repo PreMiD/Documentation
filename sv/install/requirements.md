@@ -2,10 +2,10 @@
 title: Systemkrav
 description: Systemkrav för att installera PreMiD
 published: true
-date: 2021-09-18T14:24:24.906Z
-tags: 
+date: 2021-01-17T22:43:28.543Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:16.058Z
+dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
 # Systemkrav

@@ -2,10 +2,10 @@
 title: คลาส Presence
 description: คลาสหลักสำหรับทุก PreMiD Presence
 published: true
-date: 2021-10-30T23:15:51.123Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:59:20.885Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # คลาส Presence
@@ -317,7 +317,8 @@ This interface has following variables, all of them are optional.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">กำหนดข้อความที่จะแสดงต่อผู้ใช้เมื่อเขาเอาเมาส์ไปชี้ที่ไอคอนขนาดเล็ก</td>
+      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
+        icon.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>

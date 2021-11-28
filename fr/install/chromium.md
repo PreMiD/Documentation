@@ -2,10 +2,10 @@
 title: Chromium
 description: Installation de l'application PreMiD sur les navigateurs basé sur Chromium
 published: true
-date: 2021-09-18T14:16:21.996Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:27:46.238Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 L'installation de l'extension est très importante car l'application ne peut rien faire par elle-même.

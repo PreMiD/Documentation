@@ -1,11 +1,11 @@
 ---
 title: Classe slideshow
-description: 
+description:
 published: true
-date: 2021-09-18T14:40:36.948Z
-tags: 
+date: 2020-12-25T00:47:38.111Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:55:40.956Z
+dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
 # Classe slideshow

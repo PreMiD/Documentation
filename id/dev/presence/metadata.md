@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Berisi data dasar tentang Presence
 published: true
-date: 2021-10-12T01:46:12.897Z
-tags: 
+date: 2021-02-07T17:12:06.799Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:50:41.690Z
+dateCreated: 2020-06-11T18:04:52.965Z
 ---
 
 # Metadata.json
@@ -206,7 +206,7 @@ Jika kamu ingin mempelajari regular expression, berikut beberapa website.
 
 ## Bahasa Presence
 
-PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat untuk menghubungkan pengguna di seluruh dunia. Daftar penuh bahasa dapat dilihat dengan [API endpoint](https://api.premid.app/v2/langFile/list). Untuk lebih menyesuaikan presence kamu, kamu bisa mengizinkan pengguna untuk memilih tampilan bahasa presence mereka. Lihat [`multiLanguage`](#multilanguage) untuk selengkapnya.
+PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat untuk menghubungkan pengguna di seluruh dunia. Daftar penuh bahasa dapat dilihat dengan [API endpoint](https://api.premid.app/v2/langFile/list) ini. Untuk lebih menyesuaikan presence kamu, kamu bisa mengizinkan pengguna untuk memilih tampilan bahasa presence mereka. Lihat [`multiLanguage`](#multilanguage) untuk selengkapnya.
 
 ## Pengaturan presence
 Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!

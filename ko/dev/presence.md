@@ -1,14 +1,14 @@
 ---
 title: Presence Development
-description: 
+description:
 published: true
-date: 2021-10-30T23:14:52.020Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:31:56.236Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> 모든 Presence들은 이곳에 저장되어 있습니다. https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
@@ -264,15 +264,14 @@ Please copy the code above and put it in your `metadata.json` file. You now need
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change.<br>
-      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
+      <td style="text-align:left">사용자가 변경할 수 있는 설정 Array.<br>Presence 설정에 대하여 <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">여기</a>에서 더 알아보세요.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>네</code></td>
     </tr>
   </tbody>
 </table>
 
-## Getting started
+## 시작하기
 
 ```typescript
 const presence = new Presence({
@@ -314,7 +313,7 @@ presence.on("UpdateData", async () => {
     state: "Reading section A", //The lower section of the presence text
     startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
     endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
 
   if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
   else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
@@ -393,6 +392,6 @@ The website you are developing on is automatically reloading every time you save
 
 - [Presence Class](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
+- [iFrame 클래스](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
 - [TypeScript 구성](/dev/presence/tsconfig ""){.links-list}

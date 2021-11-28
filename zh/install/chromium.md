@@ -2,10 +2,10 @@
 title: Chromium
 description: 在 Chromium 内核的浏览器上安装 PreMiD
 published: true
-date: 2021-09-18T14:26:19.009Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:24.217Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 安装扩展程序非常重要，因为应用程序本身无法做任何事情。

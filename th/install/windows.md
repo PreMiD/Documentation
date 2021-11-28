@@ -2,10 +2,10 @@
 title: Windows/ระบบปฏิบัติการ
 description: เริ่มต้นใช้งาน PreMiD การติดตั้งบน Windows
 published: true
-date: 2021-09-18T14:24:55.075Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:47.522Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > ก่อนดำเนินการใด ๆ เพิ่มเติมตรวจสอบให้แน่ใจว่าระบบของคุณตรงตาม [เงี่อนไข](/install/requirements) {.is-info}

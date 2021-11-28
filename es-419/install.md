@@ -2,10 +2,10 @@
 title: Instalación
 description: Cómo instalar PreMiD
 published: true
-date: 2021-10-27T17:50:51.455Z
-tags: 
+date: 2020-11-10T17:54:28.896Z
+tags:
 editor: markdown
-dateCreated: 2021-10-27T17:50:49.215Z
+dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
 > Antes que nada, verifica que tu sistema cumpla todos los [requisitos](/install/requirements). 

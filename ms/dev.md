@@ -2,8 +2,10 @@
 title: Mulakan
 description: Sedikit pesanan untuk mereka yang mula mencipta kod baru-baru ini
 published: true
-date: 2020-04-09T14:21:58.246Z
+date: 2021-09-19T12:54:30.445Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > Penyunting kod sumber diperlukan. Kami mengesyorkan [Visual Studio Code](https://code.visualstudio.com/). 

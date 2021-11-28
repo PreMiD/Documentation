@@ -2,9 +2,10 @@
 title: Tatarajah TypeScript
 description: Pembantu kecil bagi TypeScript
 published: true
-date: 2020-08-05T16:25:22.812Z
+date: 2021-09-18T14:31:22.005Z
 tags:
 editor: markdown
+dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
 # Tatarajah TypeScript

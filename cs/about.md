@@ -2,9 +2,10 @@
 title: O PreMiDu
 description: Základní funkce PreMiDu
 published: true
-date: 2020-09-01T22:07:41.029Z
+date: 2021-09-18T14:07:51.099Z
 tags:
 editor: markdown
+dateCreated: 2021-09-07T01:17:19.551Z
 ---
 
 PreMiD je jednoduchá nakonfigurovatelná aplikace, která dokáže v statusu na Discordu zobrazit, co zrovna děláš. Podporuje mnoho různých platforem a bude podporovat více uživatelů, kteří sledují stejný obsah současně v nadcházející aktualizaci.

@@ -2,10 +2,10 @@
 title: API
 description: Toegang tot bronnen en acties uitvoeren met behulp van de PreMiD API
 published: true
-date: 2021-09-18T14:20:43.794Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:33:14.110Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:33:14.110Z
 > {.is-info}
 
 ## API Versiebeheer
-> API v2 is verouderd en zal in de nabije toekomst worden verwijderd. Gebruik v3 voor toekomstige requests om problemen te voorkomen. 
+> API v2 is verouderd en de meeste endpoints ervan zijn verwijderd. Gebruik v3 voor toekomstige requests om problemen te voorkomen. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ Alle HTTP-laag diensten en protocollen (bijvoorbeeld http) binnen de PreMiD API 
 > {.is-danger}
 
 **Kies de API-versie:**
-- [v2 *verouderd*](/dev/api/v2)
-- [v3 *actief*](/dev/api/v3)
+- [v2 *deels verwijderd | verouderd*](/dev/api/v2)
+- [v3 *huidig*](/dev/api/v3)
 {.links-list}

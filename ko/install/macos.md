@@ -2,10 +2,10 @@
 title: macOS
 description: macOS에서 PreMiD 설치 시작하기
 published: true
-date: 2021-10-14T07:22:48.446Z
-tags: 
+date: 2021-09-18T14:14:48.363Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:32:10.281Z
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
 > 설치를 진행하기 전에, 시스템이 [요구사항](/install/requirements)을 충족하는지 확인해주세요. 

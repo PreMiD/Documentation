@@ -2,10 +2,10 @@
 title: Kelas Presence
 description: Kelas utama untuk setiap Presence di PreMiD
 published: true
-date: 2021-05-23T09:14:06.963Z
+date: 2021-10-30T22:47:57.209Z
 tags:
 editor: markdown
-dateCreated: 2021-02-21T21:13:14.449Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Kelas Presence

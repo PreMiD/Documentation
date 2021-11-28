@@ -1,24 +1,26 @@
 ---
 title: Chromium
-description: Getting started with a PreMiD installation on Chromium-based browsers
+description: Ag tosú le suiteáil PreMiD ar bhrabhsálaithe atá bunaithe ar Chróimiam
 published: true
-date: 2020-04-22T20:13:07.598Z
+date: 2021-09-18T14:14:39.122Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
-The installation of the extension is very important as the application can not do anything by itself.
+Tá suiteáil an síneadh an-tábhachtach mar ní féidir leis an bhfeidhmchlár aon rud a dhéanamh leis féin.
 
 # Suiteáil
-### Chrome, Edge, etc.
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
-2. Choose **Chromium**.
-3. Click on **Add to Chrome**.
+### Chrome, Edge, srl.
+1. Téigh go dtí ár leathanach íoslódálacha ag [cliceáil anseo](https://premid.app/downloads).
+2. Roghnaigh **Cróimiam**.
+3. Cliceáil ar **Cuir leis Chrome**.
 
 ### Opera
-1. Add **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Add [our extension](https://premid.app/downloads).
+1. Cuir **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
+2. Cuir [réad síneadh](https://premid.app/downloads).
 
-> Do not forget to [add the **application**](/install). 
+> Ná déan dearmad a [cuir an **iarratas**](/suiteáil). 
 > 
 > {.is-warning}
 

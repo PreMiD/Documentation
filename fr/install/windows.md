@@ -2,10 +2,10 @@
 title: Windows
 description: Installation de l'application PreMiD sur Windows
 published: true
-date: 2021-09-18T14:16:36.876Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:28:02.937Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Avant d'aller plus loin, assurez-vous que votre système répond à toutes les [exigences](/install/requirements).{.is-info}

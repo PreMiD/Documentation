@@ -2,10 +2,10 @@
 title: إصلاح الاخطاء
 description: كل شيء لحل مشكلتك
 published: true
-date: 2021-09-18T14:46:31.148Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-12T19:40:33.640Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > تأكد من أن لديك الملحق **و** التطبيق مثبتين! 
@@ -85,7 +85,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. افتح مجلد "PreMiD" وحدد ملف "PreMiD.exe" وانقر على فتح. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. يجب أن يتجاهل McAfee ملفنا، فقط ابدأ تطبيقنا وينبغي أن تكون جيداً للذهاب.
 
-### حالة PreMiD معطلة في ديسكورد!
+### PreMiD status bugged on Discord
 لا تقلق. أضغط علي <kbd>CTRL+R</kbd> (ويندوز) أو <kbd>CMD+R</kbd> (ماك) مع التركيز على نافذة الديسكورد لأعادة تحميلها.
 
 <a name="linux"></a>

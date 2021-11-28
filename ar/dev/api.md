@@ -2,10 +2,10 @@
 title: واجهة برمجة التطبيقات (API)
 description: الوصول الي الموارد و تنفيذ الاجرائات باستخدام "PreMiD API"
 published: true
-date: 2021-09-18T14:12:03.120Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:22:20.149Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:22:20.149Z
 > {.is-info}
 
 ## نسخ و اصدارات ال API
-> تم إهمال API v2 وسيتم إزالته في المستقبل القريب. الرجاء استخدام v3 لأي طلب مقبل لمنع المشكلات. 
+> API v2 has been deprecated and most of its endpoints have been removed. الرجاء استخدام v3 لأي طلب مقبل لمنع المشكلات. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ dateCreated: 2021-09-07T01:22:20.149Z
 > {.is-danger}
 
 **اختر نسخة API:**
-- [v2 *مهمل*](/dev/api/v2)
-- [v3 *مفعل*](/dev/api/v3)
+- [v2 *partially deleted | deprecated*](/dev/api/v2)
+- [v3 *current*](/dev/api/v3)
 {.links-list}

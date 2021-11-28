@@ -2,57 +2,57 @@
 title: Depanare
 description: Everything to solve your problem
 published: true
-date: 2021-09-18T14:09:17.550Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:19:07.645Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> Asigurați-vă că aveți extensia **și** aplicația instalată! 
 > 
 > {.is-warning}
 
 Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+1. [Depanare generală](https://docs.premid.app/troubleshooting#general)
+2. [Depanare Linux](https://docs.premid.app/troubleshooting#linux)
+3. [Depanare MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
+# Depanare generală
 > You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
 > 
 > {.is-info}
-### Reload the page
+### Reîncărcați pagina
 You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
 
-### Are you using the Discord app?
+### Folosiți aplicația Discord?
 PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
 
 ### Make sure that you have enabled Activity Status in your Discord app settings
 **User Settings** > **Activity Status**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
-### Be sure Discord is running NOT as administrator
+### Asigurați-vă că Discord NU rulează ca administrator
 Really important. Discord RPC will not work if you run Discord as an administrator.
 
-### Are you using a presence with settings?
+### Folosești o prezență cu setări?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
 To solve this, all you have to do is toggle the topmost setting:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
-### Restart your browser
+### Reporniți browserul
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
-### Restart PreMiD (Application)
+### Reporniți PreMiD (aplicația)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Trebuie să reporniți PreMiD după aceea.
 
-### Reload/restart Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+### Reîncărcați/reporniți Discord
+Apăsați <kbd>CTRL+R</kbd> (Windows) sau <kbd>CMD+R</kbd> (MacOS) pe tastatură sau reporniți Discord manual.
 
-### Check if you have antivirus or firewall running on your computer
+### Verificați dacă aveți vreun antivirus sau firewall care rulează pe computer
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
 
 ### Disable your addons
@@ -85,12 +85,12 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. Open the "PreMiD" folder and select the "PreMiD.exe" file and click open. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee should now ignore our file, just launch our application and you should be good to go.
 
-### PreMiD status bugged on discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+### PreMiD status bugged on Discord
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 
-# Linux troubleshooting
+# Depanare Linux
 ### Ubuntu/Debian based distros
 If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
@@ -119,7 +119,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# Depanare MacOS
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 

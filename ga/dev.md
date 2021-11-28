@@ -1,42 +1,44 @@
 ---
 title: Ag tosú
-description: A little advice for those who got into coding recently
+description: Tá comhairle bheag ann dóibh siúd a chuaigh i mbun códaithe le déanaí
 published: true
-date: 2020-04-09T14:21:58.246Z
+date: 2021-09-19T12:54:30.445Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Tá gá le heagarthóir cód foinse. Molaimid [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
-# Installing the requirements
+# Na riachtanais a shuiteáil
 1. Suiteáil [Git](https://git-scm.com/).
 2. Suiteáil [Node](https://nodejs.org/en/) (tagann sé le [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
+3. Suiteáil [TypeScript](https://www.typescriptlang.org/index.html#download-links) (oscail críochfort agus cineál `npm install -g typescript`).
 
 # Ag clónáil an tionscadail
-1. Open a terminal and type `git clone URL`. **Replace URL with repository link you want to contribute to** e.g. `git clone https://github.com/PreMiD/PreMiD`.
+1. Oscail críochfort agus cineál `git clone URL`. **Ionadaigh URL le nasc stórais ar mhaith leat cur leis** mar shampla `git clone https://github.com/PreMiD/PreMiD`.
 2. Roghnaigh fillteán de do rogha féin.
 3. Oscail é i d’eagarthóir cód.
 
-# Installing dependencies
-> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
+# Spleáchais a shuiteáil
+> Bí cinnte go bhfuil tú suiteáilte [npm](https://www.npmjs.com/) (Node Package Manager) an chéad. Shuiteáil sé é féin go huathoibríoch má tá [Node](https://nodejs.org/en/) suiteáilte. 
 > 
 > {.is-warning}
 
-- Open a terminal in your repository and type `npm i`.
-- To update the dependencies type `npm update`.
+- Oscail críochfort i do stór agus clóscríobh `npm i`.
+- Chun an cineál spleáchais a nuashonrú `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> Bí ar an eolas go bhféadfadh nuashonrú na spleáchais briseadh go leor, nó nach bhfuil - tá gá le tástáil! 
 > 
 > {.is-danger}
 
-# Coding your vision
-Please keep the structure. We do not want to disorganize our project. Chaotic files may not be accepted.
+# Códú do fhís
+Coinnigh an struchtúr le do thoil. Nílimid ag iarraidh ár dtionscadal a atheagrú. Ní féidir glacadh le comhaid craiceáilte.
 
-# Submitting your dream
-Just open a Pull Request on one of our [GitHub repositories](https://github.com/PreMiD/) you want to contribute to. We will take care of your baby, don't worry. If this is your first time making a pull request, take a look at this [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
+# Do bhrionglóid a chur isteach
+Oscail Pull Request ar cheann dár [Stórtha GitHub](https://github.com/PreMiD/) ba mhaith leat cur le. Tabharfaimid aire do do leanbh, ná bíodh imní ort. Más é seo do chéad uair pull request, Caith súil air seo [teagaisc](https://help.github.com/en/articles/creating-a-pull-request).
 
-# Getting approved
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+# Ag fáil ceadaithe
+Fan go foighneach lenár n-[Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) chun athbhreithniú a dhéanamh ar do Pull Request.

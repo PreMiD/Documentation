@@ -2,10 +2,10 @@
 title: З чого почати
 description: Трохи порад тим, хто нещодавно почав займатися програмуванням
 published: true
-date: 2021-09-19T12:56:16.757Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:20:53.034Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > Потрібний редактор вихідного коду. We recommend [Visual Studio Code](https://code.visualstudio.com/). 

@@ -2,10 +2,10 @@
 title: แนวทางในการสร้าง Presence
 description: Rules that all presence developers must follow to have their presence added.
 published: true
-date: 2021-10-18T16:38:41.920Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:59:24.747Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -17,7 +17,7 @@ dateCreated: 2021-09-07T01:59:24.747Z
 
 # แนวทาง
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. สำหรับบางคนกฎนี้อาจเข้มงวดและรุนแรงเกินไป อย่างไรก็ตามการดำเนินการตามกฎเหล่านี้จะทำให้เราและผู้ใช้จะไม่พบเจอปัญหาใด ๆ
+เพื่อที่จะเผยแพร่ Presence ไปยัง [ที่เก็บของ Presence ทั้งหมด](https://github.com/PreMiD/Presences/), เราต้องการให้คุณปฏิบัติตามหลักเกณฑ์ที่กำหนด. สำหรับบางคนกฎนี้อาจเข้มงวดและรุนแรงเกินไป อย่างไรก็ตามการดำเนินการตามกฎเหล่านี้จะทำให้เราและผู้ใช้จะไม่พบเจอปัญหาใด ๆ
 
 # การสร้าง
 
@@ -37,7 +37,7 @@ When publishing Presences to the [Presences repository](https://github.com/PreMi
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
-    - For 6 month old domains: **20,000 unique visitors/day**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - For 12+ month old domains: **45,000 unique visitors/day**.
   - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
   - The website itself must have a very good quality, design, etc.
@@ -246,7 +246,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Presences that use buttons should follow extra requirements:
   - Redirects to main page are prohibited.
   - Promoting websites by them is prohibited.
-  - They can't show additional data when you can't show them in other fields.
+  - They can't display information you couldn't fit in other fields.
   - Redirecting directly to audio/video stream is prohibited.
 
 
@@ -297,10 +297,10 @@ In this scenario, the following changes will occur:
 
 ## `Reviewing`
 
-A few things you should know after opening a pull request:
+บางสิ่งที่คุณควรรู้หลังจากที่เปิด pull request:
 
 - It takes 2 reviewers to merge a pull request.
-- If a pull request is inactive for a period of 7 days, it will be promptly closed.
+- ถ้า pull request ไม่มีการเคลื่อนไหวเป็นระยะเวลา 7 วัน pull request จะถูกปิดทันที.
 - All checks **must** be passed in order to merge.
 - ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
 - ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
@@ -323,7 +323,7 @@ After meeting all of the guidelines with the proper reviews and checks, your pre
 
 # ข้อเสนอแนะ
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's discord server](https://discord.premid.app) and we will check them!
+If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
 
 # ผู้ที่มีส่วนช่วยเหลือทั้งหมด
 

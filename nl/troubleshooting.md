@@ -2,10 +2,10 @@
 title: Probleemoplossing
 description: Alles om je probleem op te lossen
 published: true
-date: 2021-09-18T14:08:21.185Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:03.962Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Zorg ervoor dat de extensie **en** de applicatie geïnstalleerd zijn! 
@@ -85,8 +85,8 @@ Dit is een valse positief van McAfee en we hebben hen hiervan op de hoogte geste
 9. Open de "PreMiD" map en selecteer het "PreMiD.exe" bestand en klik op openen. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee zou nu ons bestand moeten negeren, lanceer gewoon onze applicatie en het zou nu gewoon moeten werken.
 
-### PreMiD-status gebugd op discord!
-Geen zorgen. Druk op de <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) toetsen terwijl de gefocust bent op je discord-venster om het te herladen.
+### PreMiD-status gebugd op Discord
+Geen zorgen. Gebruik de toetsen <kbd>CTRL+R</kbd> (Windows) of <kbd>CMD+R</kbd> (MacOS) terwijl je gefocust bent op je Discord-venster om het te herladen.
 
 <a name="linux"></a>
 
