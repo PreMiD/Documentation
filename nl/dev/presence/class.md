@@ -16,7 +16,7 @@ De `Presence` klasse is erg handig omdat deze over basismethoden beschikt die we
 
 Wanneer u een klasse aanmaakt, dient u de eigenschap `clientId` te specificeren.
 
-```typescript
+```ts
 const presence = new presence({
   clientId: "514271496134389561" // Voorbeeld clientId
 });
@@ -68,13 +68,13 @@ Stelt de systeemtitel in op de menubalk.
 
 Maakt een nieuwe `Slideshow` klasse aan.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Dit wordt aanbevolen om gelijk te doen wanneer je de `Presence` klasse maakt:
 
-```typescript
+```ts
 const presence = new presence({
     clientId: "514271496134389561" // Voorbeeld clientId
   }),
@@ -89,7 +89,7 @@ Een asynrone methode waarmee u vertaalde strings uit de extensie kunt krijgen.
 
 Je moet `Object` opgeven met sleutels die de sleutel voor teksten zijn, `keyValue` is de waarde van de tekst. Op dit eindpunt kan een lijst van vertaalde tekenreeksen worden gevonden: `https://api.premid.app/v2/langFile/presence/nl/`
 
-```typescript
+```ts
 // Retourneert `Playing` en `Paused` strings
 // uit extensie.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ Sinds v2.2.0 van de extensie kunt u nu de strings van een bepaalde taal krijgen.
 
 We raden je aan om de volgende code te gebruiken, zodat de presenceData automatisch wordt bijgewerkt als als de gebruiker de geselecteerde taal verandert;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -139,7 +139,7 @@ Retourneert een variabele van de website als deze bestaat.
 
 **Waarschuwing: Deze functie kan hoog CPU-verbruik & website-haperingen veroorzaken wanneer deze te vaak is uitgevoerd.**
 
-```typescript
+```ts
 const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // Dit zal de "Variabele content" loggen
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // Dit zal de "Variabele content" loggen
 
 Geeft als resultaat de extensie versie die de gebruiker gebruikt.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // Geeft terug: 2.1.0
 
 Retourneert de waarde van de instelling.
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); // Vervang pdexID met de id van de instelling
 console.log(setting); // Dit zal de waarde van de instelling loggen
 ```
@@ -170,7 +170,7 @@ console.log(setting); // Dit zal de waarde van de instelling loggen
 
 Verbergt de gegeven instelling.
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // vervang pdexID met het id van de instelling
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // vervang pdexID met het id van de instelling
 
 Toont gegeven instelling (werkt alleen als de instelling al verborgen was).
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // vervang pdexID met het id van de instelling
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // vervang pdexID met het id van de instelling
 
 Geeft de logs van de websites console.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Dit zal de laatste 100 logs loggen (in een array).
 ```
@@ -197,7 +197,7 @@ console.log(logs); // Dit zal de laatste 100 logs loggen (in een array).
 
 Toont het gegeven bericht in de console in een formaat gebaseerd op de presence in de `info` stijl.
 
-```typescript
+```ts
 presence.info("Test") // Dit zal "test" in de juiste stijl loggen.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Test") // Dit zal "test" in de juiste stijl loggen.
 
 Toont het gegeven bericht in de console in een formaat gebaseerd op de presence in de `success` stijl.
 
-```typescript
+```ts
 presence.success("Test") // Dit zal "test" in de juiste styling loggen.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Test") // Dit zal "test" in de juiste styling loggen.
 
 Toont het gegeven bericht in de console in een formaat gebaseerd op de presence in de `error` stijl.
 
-```typescript
+```ts
 presence.error("Test") // Dit zal "test" in de juiste stijl loggen.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Test") // Dit zal "test" in de juiste stijl loggen.
 
 Retourneert 2 `snowflake` timestamps in een `Array` die gebruikt kan worden voor `startTimestamp` en `endTimestamp`.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Retourneert 2 `snowflake` timestamps in een `Array` die gebruikt kan worden voor `startTimestamp` en `endTimestamp`.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Zet een string met formaat `HH:MM:SS` of `MM:SS` of `SS` om in een getal (Geeft geen snowflake timestamp).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -331,7 +331,7 @@ Deze interface heeft de volgende variabelen, ze zijn allemaal optioneel.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: presenceData = {
   details: "Mijn titel",
   state: "Mijn beschrijving",
@@ -357,7 +357,7 @@ const presenceData: presenceData = {
 
 Events stellen je in staat om wijzigingen of oproepen die zijn gemaakt te detecteren en te verwerken. Je kunt je abonneren op event met behulp van `on` methode.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Doe iets wanneer data wordt bijgewerkt.
 });
