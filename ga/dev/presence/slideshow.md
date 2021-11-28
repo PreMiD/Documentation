@@ -22,7 +22,7 @@ Féach an modh [ ` createSlideshow ` ](/dev/presence/class#createslideshow) sa m
 
 Filleann sé réad [ `PresenceData`](/dev/presence/class#presencedata-interface) ar a bhfuil an sleamhnán láithreachta/reatha á thaispeáint.
 
-```typescript
+```ts
 const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // Déanfaidh consól sonraí an PresenceData a logáil
 ```

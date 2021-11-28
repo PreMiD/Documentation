@@ -49,7 +49,7 @@ Kesemua Presence dikodkan dalam [TypeScript](https://www.typescriptlang.org/). [
 
 Sila letakkan kod di bawah ke dalam fail `tsconfig.json`.
 
-```typescript
+```ts
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
@@ -274,20 +274,20 @@ Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini 
 
 ## Mulakan
 
-```typescript
+```ts
 const presence = new Presence({
-    clientId: "000000000000000000" //ID klien bagi Aplikasi yang dicipta di https://discordapp.com/developers/applications
+  //ID klien bagi Aplikasi yang dicipta di https://discordapp.com/developers/applications
+  clientId: "000000000000000000"
   }),
+  //Anda boleh gunakan ini untuk dapatkan rentetan diterjemah dalam bahasa pelayar mereka
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    //Anda boleh gunakan ini untuk dapatkan rentetan diterjemah dalam bahasa pelayar mereka
   });
 
 /*
-
 function myOutsideHeavyLiftingFunction(){
-    //Ambil dan proses data anda di sini
+    //Ambil dan proses kesemua data anda di sini
 
     // ambil unsur-unsur //
     // buat panggilan API //
@@ -296,28 +296,34 @@ function myOutsideHeavyLiftingFunction(){
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
 //Jalankan fungsi secara berasingan daripada peristiwa UpdateData setiap 10 saat untuk mendapatkan dan menetapkan pemboleh ubah yang diambil oleh UpdateData
-
 */
 
 presence.on("UpdateData", async () => {
   /*UpdateData sentiasa dijalankan, oleh itu ia patut digunakan sebagai kitaran segar semula anda, atau `tick`. Ini dipanggil beberapa kali sesaat apabila boleh.
 
-    Ia disyorkan untuk menetapkan fungsi lain di luar fungsi peristiwa ini yang akan mengubah nilai pemboleh ubah dan membuat kerja yang lebih berat jika anda memanggil data daripada sesuatu API.*/
+    Anda digalakkan untuk menetapkan fungsi lain di luar fungsi peristiwa ini yang akan mengubah nilai pemboleh ubah dan membuat kerja yang lebih berat jika anda memanggil data daripada sesuatu API.*/
 
   const presenceData: PresenceData = {
-    largeImageKey:
-      "key" /*Kekunci (nama fail) bagi Imej Besar atau Large Image pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence dalam aplikasi anda, dipanggil Art Assets atau Aset Seni*/,
-    smallImageKey:
-      "key" /*Kekunci (nama fail) gambar kecil "Small Image" di Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence aplikasi anda yang dipanggil Art Assets atau Aset Seni*/,
-    smallImageText: "Some hover text", //Tulisan yang akan dipaparkan apabila tetikus dilalukan atas imej kecil
-    details: "Browsing Page Name", //Bahagian atas tulisan Presence
-    state: "Reading section A", //Bahagian bawah tulisan Presence
-    startTimestamp: 1577232000, //Cap masa epok unix untuk bila masa akan mula dikira
-    endTimestamp: 1577151472000 //Jika anda ingin tunjukkan Baki Masa dan bukan Masa Berlalu, ini cap masa epok unix di mana pemasa akan berhenti
-  }; /*Anda juga boleh memilih untuk menetapkan nilai largeImageKey di sini dan ubah yang lain menjadi subsifat pemboleh ubah, contohnya presenceData.type = "blahblah"; contoh jenis: details, state, dll.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Kemas kini Presence dengan tiada data, dengan itu memadamnya dan membuatkan imej besar sebagai ikon Aplikasi Discord, dan tulisan sebagai nama Aplikasi Discord*/
-  else presence.setActivity(presenceData); //Kemas kini Presence dengan semua nilai dari objek presenceData
+    //Kekunci (nama fail) bagi Imej Besar atau Large Image pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence dalam aplikasi anda, dipanggil Aset Seni atau Art Assets
+    largeImageKey: "key",
+    //Kekunci (nama fail) bagi gambar kecil "Small Image" pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence aplikasi anda yang dipanggil Aset Seni atau Art Assets
+    smallImageKey: "key",
+    //Tulisan yang akan dipaparkan apabila tetikus dilalukan atas imej kecil
+    smallImageText: "Some hover text",
+     //Bahagian atas tulisan Presence
+    details: "Browsing Page Name",
+    //Bahagian bawah tulisan Presence
+    state: "Reading section A",
+    //Cap masa epok unix untuk bila masa akan mula dikira
+    startTimestamp: 3133657200000,
+    //Jika anda ingin tunjukkan Baki Masa dan bukan Masa Berlalu, ini cap masa epok unix di mana pemasa akan berhenti
+    endTimestamp: 3133700400000
+    //Anda juga boleh memilih untuk menetapkan nilai largeImageKey di sini dan ubah yang lain menjadi subsifat pemboleh ubah, contohnya presenceData.type = "blahblah"; contoh jenis: details, state, dll.
+  };
+  //Kemas kini Presence dengan semua nilai daripada objek presenceData
+  if (presenceData.details) presence.setActivity(presenceData);
+  //Kemas kini Presence dengan tiada data, dengan itu mengosongkannya dan buatkan imej besar guna ikon Aplikasi Discord, dan buatkan tulisan guna nama Aplikasi Discord
+  else presence.setActivity(); 
 });
 ```
 
@@ -341,13 +347,10 @@ Jika anda jumpa data anda dalam iFrame anda perlu lakukan berikut:
 2. Tetapkan iFrame menjadi `true` dalam fail metadata anda.
 3. Isikan fail iFrame anda.
 
-```typescript
+```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  /*
-  Dapatkan semua data anda perlukan daripada iFrame dan simpan
-  dalam pemboleh ubah dan hantarkannya menggunakan iframe.send
-  */
+  //Dapatkan semua data anda perlukan daripada iFrame dan simpan dalam pemboleh ubah lalu hantarkannya menggunakan iframe.send
   iframe.send({
     //menghantar data
     video: video,
@@ -358,7 +361,7 @@ iframe.on("UpdateData", async () => {
 
 4. Buatkan fail Presence anda terima data dari fail iFrame.
 
-```typescript
+```ts
 presence.on("iFrameData", (data) => {
   iFrameVideo = data.video;
   currentTime = data.time;

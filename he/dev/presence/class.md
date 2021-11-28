@@ -16,7 +16,7 @@ The `Presence` class is very useful as it has basic methods that we need for cre
 
 When you create a class you must specify `clientId` property.
 
-```typescript
+```ts
 const presence = new Presence({
   clientId: "514271496134389561" // Example clientId
 });
@@ -90,7 +90,7 @@ Creates a new `Slideshow` class.
 
 
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
@@ -99,7 +99,7 @@ It is suggested to do this right after creating the `Presence` class:
 
 
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Example clientId
   }),
@@ -119,7 +119,7 @@ You can find the documentation for the `Slideshow` class [here](/dev/presence/sl
 
 
 
-```typescript
+```ts
 // Returns `Playing` and `Paused` strings
 // from extension.
 const strings = await presence.getStrings({
@@ -138,7 +138,7 @@ We suggest you use the following code so it automatically updates the PresenceDa
 
 
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -177,7 +177,7 @@ Returns a variable from the website if it exists.
 
 
 
-```typescript
+```ts
 const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // This will log the "Variable content"
 ```
@@ -191,7 +191,7 @@ Returns version of the extension the user is using.
 
 
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -209,7 +209,7 @@ Returns value of setting.
 
 
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting
 ```
@@ -223,7 +223,7 @@ Hides given setting.
 
 
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
 ```
 
@@ -236,7 +236,7 @@ Shows given setting (Only works if the setting was already hidden).
 
 
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
 ```
 
@@ -249,7 +249,7 @@ Returns the logs of the websites console.
 
 
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // This will log the latest 100 logs (in an array).
 ```
@@ -265,7 +265,7 @@ Prints the given message in the console in a format based of the presence in the
 
 
 
-```typescript
+```ts
 presence.info("Test") // This will log "test" in the correct styling.
 ```
 
@@ -278,7 +278,7 @@ Prints the given message in the console in a format based of the presence in the
 
 
 
-```typescript
+```ts
 presence.success("Test") // This will log "test" in the correct styling.
 ```
 
@@ -291,7 +291,7 @@ Prints the given message in the console in a format based of the presence in the
 
 
 
-```typescript
+```ts
 presence.error("Test") // This will log "test" in the correct styling.
 ```
 
@@ -304,7 +304,7 @@ Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimest
 
 
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -321,7 +321,7 @@ Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimest
 
 
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -339,7 +339,7 @@ Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Doe
 
 
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -427,7 +427,7 @@ This interface has following variables, all of them are optional.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "My title",
   state: "My description",
@@ -458,7 +458,7 @@ Events allow you to detect and handle some changes or calls that were made. You 
 
 
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Do something when data gets updated.
 });

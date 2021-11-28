@@ -22,7 +22,7 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 একটি [`PresenceData`](/dev/presence/class#presencedata-interface) অবজেক্ট রিটার্ন করে যার মধ্যে থাকে presence/বর্তমান স্লাইডটি কী দেখাচ্ছে।
 
-```typescript
+```ts
 const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // কনসোল লগ করবে PresenceData - এর বিস্তারিত
 ```

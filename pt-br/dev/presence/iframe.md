@@ -18,7 +18,7 @@ O código que você escreve dentro do seu arquivo `iframe.ts` é injetado em cad
 
 Como as presences, os `iframes` têm suas próprias classes projetadas para atualizar dados automaticamente.
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ Retorna a URL do `iframe`.
 ## Eventos
 Em `iframes`, os eventos funcionam da mesma forma que na `classe de presence`.
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Seu código vai aqui...
 });

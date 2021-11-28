@@ -14,7 +14,7 @@ Als je een presence naar de bibliotheek wilt publiceren en deze wilt kunnen lade
 
 Een voorbeeld van dat bestand kan hieronder worden gevonden.
 
-```typescript
+```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -212,7 +212,7 @@ PreMiD is een meertalige service, wat betekent dat er een groot aantal talen bes
 
 ## Presence instellingen
 Interactieve instellingen instellen zodat gebruikers de presence kunnen aanpassen!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -286,7 +286,7 @@ Het `object` heeft 2 eigenschappen: `message` en `description`. `message` is de 
 
 Visualisatie van het bestand:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Tekst die moet worden vertaald. ,
@@ -311,20 +311,20 @@ De keys die je niet in hoefde te stellen, worden automatisch: `title`: "Language
 Gebruik de volgende methoden om informatie van je instellingen in je presence-bestanden te krijgen:
 #### `getSetting(String)`
 Retourneert de waarde van de instelling.
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); // Vervang pdexID met de id van de instelling
 console.log(setting); // Dit zal de waarde van de instelling loggen
 ```
 
 #### `hideSetting(String)`
 Verbergt de gegeven instelling.
-```typescript
+```ts
 presence.hideSetting("pdexID"); ///vervang pdexID met het id van de instelling
 ```
 
 #### `showSetting(String)`
 Toont gegeven instelling (werkt alleen als de instelling al verborgen was).
-```typescript
+```ts
 presence.showSetting("pdexID"); ///vervang pdexID met het id van de instelling
 ```
 

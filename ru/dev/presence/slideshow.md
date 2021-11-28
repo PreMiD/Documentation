@@ -22,7 +22,7 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 Возвращает объект [`PresenceData`](/dev/presence/class#presencedata-interface) из того, что сейчас показывают.
 
-```typescript
+```ts
 const currentSlide = слайд-шоу.currentSlide
 console.log(currentSlide.details) // Укажет консоль регистрацию деталей PresenceData
 ```

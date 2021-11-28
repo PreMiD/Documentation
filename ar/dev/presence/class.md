@@ -16,7 +16,7 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 عند إنشاء صف، يجب تحديد ملكية `معرف العميل`.
 
-```typescript
+```ts
 السماح بالـ presence = presence جديد ({
     معرف العميل: "514271496134389561" // مثال لمعرف العميل
 });
@@ -68,13 +68,13 @@ Clears your current activity and the tray title.
 
 Creates a new `Slideshow` class.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 It is suggested to do this right after creating the `Presence` class:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Example clientId
   }),
@@ -89,7 +89,7 @@ You can find the documentation for the `Slideshow` class [here](/dev/presence/sl
 
 يجب عليك توفير `Object` مع المفاتيح التي تكون مفتاح السلسلة،عندما `keyValue` هي قيمة السلسلة. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
 
-```typescript
+```ts
 // Returns `Playing` and `Paused` strings
 // from extension.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ Since v2.2.0 of the extension you can now get the strings of a certain language.
 
 We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -139,7 +139,7 @@ const playString = (await strings).play, // result: Playing
 
 **Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
 
-```typescript
+```ts
 const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // This will log the "Variable content"
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // This will log the "Variable content"
 
 Returns version of the extension the user is using.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // Will log 2.1.0
 
 Returns value of setting.
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting
 ```
@@ -170,7 +170,7 @@ console.log(setting); // This will log the value of the setting
 
 Shows given setting (Only works if the setting was already hidden).
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
 
 Shows given setting (Only works if the setting was already hidden).
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
 
 Returns the logs of the websites console.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // This will log the latest 100 logs (in an array).
 ```
@@ -197,7 +197,7 @@ console.log(logs); // This will log the latest 100 logs (in an array).
 
 Prints the given message in the console in a format based of the presence in the `info` style.
 
-```typescript
+```ts
 presence.info("Test") // This will log "test" in the correct styling.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Test") // This will log "test" in the correct styling.
 
 Prints the given message in the console in a format based of the presence in the `success` style.
 
-```typescript
+```ts
 presence.success("Test") // This will log "test" in the correct styling.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Test") // This will log "test" in the correct styling.
 
 Prints the given message in the console in a format based of the presence in the `error` style.
 
-```typescript
+```ts
 presence.error("Test") // This will log "test" in the correct styling.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Test") // This will log "test" in the correct styling.
 
 Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -331,7 +331,7 @@ This interface has following variables, all of them are optional.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "My title",
   state: "My description",
@@ -357,7 +357,7 @@ const presenceData: PresenceData = {
 
 Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Do something when data gets updated.
 });

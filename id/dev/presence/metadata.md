@@ -14,7 +14,7 @@ Jika kamu ingin menerbitkan presence ke toko dan memuatnya lewat ekstensi, kamu 
 
 Contoh file tersebut dapat ditemukan di bawah.
 
-```typescript
+```ts
 {
   "author": {
     "name": "PENGGUNA",
@@ -210,7 +210,7 @@ PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat 
 
 ## Pengaturan presence
 Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -284,7 +284,7 @@ stringName adalah pengidentifikasi 1 kata dari pesan.
 
 Visualisasi dari file:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Teks yang perlu diterjemahkan.",
@@ -309,20 +309,20 @@ Key yang tidak perlu kamu atur secara otomatis diatur menjadi: `title`: "Bahasa"
 Gunakan metode berikut untuk mendapat info pengaturan pada file presence:
 #### `getSetting(String)`
 Mengembalikan value dari setting.
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Ubah pdexID dengan id dari setting
 console.log(setting); // Ini akan mencatat isi dari setting
 ```
 
 #### `hideSetting(String)`
 Sembunyikan pengaturan yang telah diberikan.
-```typescript
+```ts
 presence.hideSetting("pdexID"); //Mengganti pdexID dengan id dari pengaturan
 ```
 
 #### `showSetting(String)`
 Menampilkan pengaturan yang diberikan (Hanya bekerja jika pengaturan telah disembunyikan).
-```typescript
+```ts
 presence.showSetting("pdexID"); //Mengganti pdexID dengan id dari pengaturan
 ```
 

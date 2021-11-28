@@ -18,7 +18,7 @@ Bazı durumlarda, servisiniz `iframelerin` içerisindeki bilgilere erişme ihtiy
 
 Servisler gibi, `iframe`'lerin de kendilerine ait bir sınıfı vardır ve verileri otomatik olarak güncellenir.
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ Veriyi servis koduna gönderir. Bu metodu kullanmak servis kodunda bir `iFrameDa
 ## Eventler/Eylemler
 `iframe` elementlerinde, eventler aynı `presence` sınıfında olduğu gibi çalışır.
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Kod buraya geliyor...
 });

@@ -49,7 +49,7 @@ Toda as presence estão programadas em [TypeScript](https://www.typescriptlang.o
 
 Coloca o seguinte código dentro do ficheiro `tsconfig.json`:
 
-```typescript
+```ts
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
@@ -274,50 +274,56 @@ Copia o código acima e coloca-o no teu ficheiro `metadata.json`. Agora precisas
 
 ## Primeiros passos
 
-```typescript
+```ts
 const presence = new Presence({
-    clientId: "000000000000000000" //O ID do cliente da aplicação criada em https://discordapp.com/developers/applications
+  //The client ID of the Application created at https://discordapp.com/developers/applications
+  clientId: "000000000000000000"
   }),
+  //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    //Podes usar isto para obter frases traduzidas no idioma do teu navegador
   });
 
 /*
-
 function myOutsideHeavyLiftingFunction(){
-    //Define e processa todos os teus dados aqui
+    //Grab and process all your data here
 
-    // elementos //
-    // pedidos à api //
-    // conjuntos variáveis //
+    // element grabs //
+    // api calls //
+    // variable sets //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Executar a função separada do evento UpdateData a cada 10 segundos para obter e definir as variáveis que o UpdateData capta
-
+//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData está sempre a disparar e, portanto, deve ser usado como ciclo de atualização ou "tick". Isto é ativado várias vezes por segundo sempre que possível.
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Isto é ativado várias vezes por segundo sempre que possível.
 
-    É recomendado configurar outra função fora desta função de evento que irá alterar os valores das variáveis e fazer o trabalho pesado se precisares de dados de uma API. */
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    largeImageKey:
-      "key" /*A chave (nome do ficheiro) da imagem grande na presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    largeImageKey: "key",
+    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    smallImageKey: "key",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+  };
+  //Update the presence with all the values from the presenceData object
+  if (presenceData.details) presence.setActivity(presenceData);
+  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  else presence.setActivity(); 
 });
 ```
 
@@ -341,13 +347,10 @@ If you find that your data is in a iFrame you need to do the following:
 2. Set iFrame to `true` in your metadata file.
 3. Filling in your iFrame file.
 
-```typescript
+```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  /*
-  Get all the data you need out of the iFrame save them in variables
-  and then send them using iframe.send
-  */
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
     //sending data
     video: video,
@@ -358,7 +361,7 @@ iframe.on("UpdateData", async () => {
 
 4. Making your presence file receive data from the iFrame file.
 
-```typescript
+```ts
 presence.on("iFrameData", (data) => {
   iFrameVideo = data.video;
   currentTime = data.time;

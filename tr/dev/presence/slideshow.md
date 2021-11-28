@@ -22,7 +22,7 @@ Bir `Slideshow` nasıl oluşturulacağını öğrenmek için [`Presence`](/dev/p
 
 Geçerli slide'ın sahip olduğu [`PresenceData`](/dev/presence/class#presencedata-interface) object'ini döner.
 
-```typescript
+```ts
 const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // PresenceData verisinin çıktısını verecektir
 ```

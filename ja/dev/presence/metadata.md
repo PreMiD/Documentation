@@ -14,7 +14,7 @@ If you want to publish a presence to the store and load it via the extension, yo
 
 An example of that file can be found below.
 
-```typescript
+```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -209,7 +209,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 ## Presence settings
 Setup interactive settings so users can customize the presence!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -283,7 +283,7 @@ The `Object` has 2 properties; `message` and `description`. `message` is the tex
 
 Visualization of the file:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Text that needs to be translated.",
@@ -308,20 +308,20 @@ The keys you didn't have to set are automatically set to the following: `title`:
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
 Returns value of setting.
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
 console.log(setting); // This will log the value of the setting
 ```
 
 #### `hideSetting(String)`
 Hides given setting.
-```typescript
+```ts
 presence.hideSetting("pdexID"); //Replace pdexID with the id of the setting
 ```
 
 #### `showSetting(String)`
 Shows given setting (Only works if the setting was already hidden).
-```typescript
+```ts
 presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
 ```
 

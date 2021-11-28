@@ -16,7 +16,7 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 Когда Вы создаёте класс, Вам необходимо указать свойство `clientId`.
 
-```typescript
+```ts
 const presence = new Presence({
   clientId: "514271496134389561" // Пример clientId
 });
@@ -68,13 +68,13 @@ const presence = new Presence({
 
 Создает новый класс `слайд-шоу`.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Предлагается сделать это при создании экземпляра класса `Presence`:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Пример clientId
   }),
@@ -89,7 +89,7 @@ const presence = new Presence({
 
 Вы должны указывать ключами `Object` как ключ для строки, `keyValue` - строковое значение. С помощью этой конечной точки можно найти сборку переведенных строк: `https://api.premid.app/v2/langFile/presence/en`
 
-```typescript
+```ts
 // Возвращает `Playing` и `Paused` строки
 // из расширения.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ const pauseString = strings.pause; // result: Остановлен
 
 Мы предлагаем вам использовать следующий код, чтобы он автоматически обновлял PresenceData, если пользователь меняет выбранный язык;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -144,7 +144,7 @@ const playString = (await strings).play, // результат: Playing
 
 **Предупреждение: Эта функция может привести к высокой загрузке процессора и лагам сайта, если она была вызвана слишком много раз.**
 
-```typescript
+```ts
 const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // Это зарегистрирует "Переменное содержимое"
 ```
@@ -153,7 +153,7 @@ console.log(pageVar); // Это зарегистрирует "Переменно
 
 Возвращает версию расширения, которое использует пользователь.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): строка | number;
 
 const numeric = presence.getExtensionVersion();
@@ -166,7 +166,7 @@ console.log(версия); // Журнал 2.1.0
 
 Возвращает значение настройки.
 
-```typescript
+```ts
 var setting = await presence.getSetting("pdexID"); // Заменить pdexID идентификатором параметра
 console.log(setting); // Сообщается установка в логи
 ```
@@ -175,7 +175,7 @@ console.log(setting); // Сообщается установка в логи
 
 Скрывает указанные настройки.
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Заменить pdexID идентификатором настройки
 ```
 
@@ -183,7 +183,7 @@ presence.hideSetting("pdexID"); // Заменить pdexID идентифика�
 
 Показывают данные настройки (работает только если настройка была скрыта).
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Заменить pdexID идентификатором настройки
 ```
 
@@ -191,7 +191,7 @@ presence.showSetting("pdexID"); // Заменить pdexID идентифика�
 
 Возвращает журналы консоли веб-сайтов.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Журнал последних 100 логов (в массиве).
 ```
@@ -202,7 +202,7 @@ console.log(logs); // Журнал последних 100 логов (в мас�
 
 Выводит данное сообщение в консоли в формате, основанном на присутствии в стиле `info`.
 
-```typescript
+```ts
 presence.info("Test") // Это протоколирует "test" в правильном стиле.
 ```
 
@@ -210,7 +210,7 @@ presence.info("Test") // Это протоколирует "test" в прави�
 
 Печатает данное сообщение в консоли в формате основанном на присутствии в стиле `success`.
 
-```typescript
+```ts
 presence.success("Test") // Это протоколирует "test" в правильном стиле.
 ```
 
@@ -218,7 +218,7 @@ presence.success("Test") // Это протоколирует "test" в прав
 
 Выводит данное сообщение в консоли в формате, основанном на присутствии в стиле `ошибки`.
 
-```typescript
+```ts
 presence.error("Test") // Это протоколирует "test" в правильном стиле.
 ```
 
@@ -226,7 +226,7 @@ presence.error("Test") // Это протоколирует "test" в прави
 
 Возвращает 2 `snowflake` timestamps в `Array`, которые могут быть использованы для `startTimestamp` и `endTimestamp`.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -238,7 +238,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Возвращает 2 `snowflake` отметки времени в `Array` это может быть использовано для `startTimestamp` и `endTimestamp`.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -251,7 +251,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Преобразует строку в формат `HH:MM:SS` или `MM:SS` или `SS` в целое (не возвращает snowflake timestamp).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -334,7 +334,7 @@ presenceData.endTimestamp = timestamps[1];
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "Моё название",
   state: "Мое описание",
@@ -360,7 +360,7 @@ const presenceData: PresenceData = {
 
 События позволяют обнаруживать и обрабатывать некоторые внесённые изменения или вызовы. Вы можете подписаться на события с помощью метода `on`.
 
-```typescript
+```ts
 presence.on("Данные обновить", асинхронный () => {
     // Выполняйте что-то, когда данные обновляются.
 });

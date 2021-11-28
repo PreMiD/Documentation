@@ -18,7 +18,7 @@ dateCreated: 2021-09-07T01:44:57.665Z
 
 プレゼンスと同様に、 `iframe` はデータを自動的に更新するように設計された独自のクラスを持っています。
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ iframe.on("UpdateData", async () => {
 ## イベント
 `iframe`のイベントは`presence`クラスでの動作と同様に動作します。
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Code goes here...
 });

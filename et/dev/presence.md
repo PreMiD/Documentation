@@ -49,7 +49,7 @@ Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/).
 
 Palun sisestage järgmine kood faili `tsconfig.json` sisse.
 
-```typescript
+```ts
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
@@ -274,50 +274,56 @@ Kopeerige ülaltoodud kood ja pange see oma faili `metadata.json`. Nüüd peate 
 
 ## Alustamine
 
-```typescript
-const kohalolek = uus Presence({
-    clientId: "00000000000000000000" //Rakenduse kliendi ID, mis on loodud aadressil https://discordapp.com/developers/applications
+```ts
+const presence = new Presence({
+  //The client ID of the Application created at https://discordapp.com/developers/applications
+  clientId: "000000000000000000"
   }),
-  stringid = presence.getStrings ({
-    esitus: "presence. taasesitus. mängimine",
-    paus: "presence.playback.paused"
-    //Selle abil saate tõlkida stringe nende brauseri keeles
+  //You can use this to get translated strings in their browser language
+  strings = presence.getStrings({
+    play: "presence.playback.playing",
+    pause: "presence.playback.paused"
   });
 
-/ *
-
+/*
 function myOutsideHeavyLiftingFunction(){
-    //Haarake ja töötlege siin kõik oma andmed
+    //Grab and process all your data here
 
-    // element haarab //
-    // api kõned //
-    // muutujad //
+    // element grabs //
+    // api calls //
+    // variable sets //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-// Käivitage funktsioon iga 10 sekundi tagant UpdateData sündmusest eraldi, et saada ja määrata muutujad, mille UpdateData korjab
-
+//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
 */
 
-presence.on("UpdateData", async () = > {
-  /*UpdateData käivitub alati ja seetõttu tuleks seda kasutada värskendustsüklina ehk linnukena. Seda nimetatakse võimaluse korral mitu korda sekundis.
+presence.on("UpdateData", async () => {
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Seda nimetatakse võimaluse korral mitu korda sekundis.
 
-    Soovitatav on seada väljaspool seda sündmuse funktsiooni veel üks funktsioon, mis muudab muutujate väärtusi ja teeb tugeva tõste, kui helistate andmeid API-lt.*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
-  const presenceData: presenciteave = {
-    largeImageKey:
-      "key"/*Suure pildi võti (faili nimi) presence. Need laaditakse üles ja nimetatakse teie rakenduse jaotises Rich Presence nimega Kunstivarad*/,
-    smallImageKey:
-      "key"/*Presence-i juures oleva väikese pildi võti (faili nimi). These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+  const presenceData: PresenceData = {
+    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    largeImageKey: "key",
+    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    smallImageKey: "key",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+  };
+  //Update the presence with all the values from the presenceData object
+  if (presenceData.details) presence.setActivity(presenceData);
+  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  else presence.setActivity(); 
 });
 ```
 
@@ -341,24 +347,21 @@ Kui leiate, et teie andmed on iFrame-is, peate tegema järgmist:
 2. Määrake oma metaandmete failis iFrame väärtuseks `true`.
 3. Täitke oma iFrame-i fail.
 
-```typescript
+```ts
 const iframe = new iFrame();
-iframe.on("UpdateData", async () = > {
-  /*
-  Hankige iFrame'ist kõik vajalikud andmed, salvestage need muutujatesse
-  ja saatke need siis iframe.send abil
-  */
-  iframe.send ({
-    //andmete saatmine
+iframe.on("UpdateData", async () => {
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  iframe.send({
+    //sending data
     video: video,
-    aeg: video.duration
+    time: video.duration
   });
 });
 ```
 
 4. Presence-i faili andmete vastuvõtmine iFrame failist.
 
-```typescript
+```ts
 presence.on("iFrameData", (data) => {
   iFrameVideo = data.video;
   currentTime = data.time;

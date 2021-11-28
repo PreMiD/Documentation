@@ -14,7 +14,7 @@ Wenn du eine Presence im Shop veröffentlichen und über die Erweiterung laden m
 
 Ein Beispiel für diese Datei, kannst du unten finden.
 
-```typescript
+```ts
 {
   "author": {
     "name": "USER",
@@ -207,7 +207,7 @@ PreMiD ist ein mehrsprachiger Service, was bedeutet, dass es eine Reihe von Spra
 
 ## Presence-Einstellungen
 Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eingestellt werden kann.
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -281,7 +281,7 @@ Das `Object` hat 2 Eigenschaften; `message` und `description`. `message` ist der
 
 Visualisierung der Datei:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Text, der übersetzt werden muss.",
@@ -306,20 +306,20 @@ Die Schlüssel, die Sie nicht setzten müssen, werden automatisch auf folgendes 
 Benutze die folgenden Methoden, um die Einstellungsinformationen in deinen Presence-Dateien zu erhalten:
 #### `getSetting(String)`
 Gibt den Wert der Einstellung wieder.
-```typescript
+```ts
 const setting = await.presence.getSetting("pdexID"); // Ersetze pdexID mit der ID der Einstellung
 console.log(setting); // Dies loggt den Wert der Einstellung
 ```
 
 #### `hideSetting(String)`
 Versteckt die definierte Einstellung.
-```typescript
+```ts
 presence.hideSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetzen
 ```
 
 #### `showSetting(String)`
 Gibt die Protokolle der Webseiten-Konsole wieder.
-```typescript
+```ts
 presence.showSetting("pdexID"); // pdexID mit der ID von der Einstellung ersetzen
 ```
 

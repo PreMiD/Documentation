@@ -49,7 +49,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 নিচের কোডটি `tsconfig.json` ফাইলে দাও।
 
-```typescript
+```ts
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
@@ -274,51 +274,56 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
 
 ## শুরু করা যাক
 
-```typescript
+```ts
 const presence = new Presence({
-    clientId: "000000000000000000" //অ্যাপ্লিকেশন এর ক্লায়েন্ট আইডি যেটা তৈরি করা হয়েছে https://discordapp.com/developers/applications - তে
+  //The client ID of the Application created at https://discordapp.com/developers/applications
+  clientId: "000000000000000000"
   }),
+  //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    //তুমি এটা ব্যবহার করতে পারো অনুবাদ করা স্ট্রিংগুলো পেতে ইউজারের ব্রাউজারের ভাষা অনুযায়ী
   });
 
 /*
-
 function myOutsideHeavyLiftingFunction(){
-    //নাও এবং তোমার সব ডাটা এখানে প্রসেস করো
+    //Grab and process all your data here
 
-    // এলিমেন্ট নেয় //
-    // API কল করে //
-    // ভ্যারিয়েবল সেট করে //
+    // element grabs //
+    // api calls //
+    // variable sets //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//ফাংশনটিকে UpdateData ইভেন্ট থেকে আলাদা চালাও প্রতি 10 সেকেন্ড অন্তর ভেরিয়েবলগুলো সেট করতে যেগুলো UpdateData নেয়
-
+//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData সবসময় কাজ করছে, এবং সুতরাং তোমার রিফ্রেশ চক্র হিসেবে কাজ করবে। This is called several times a second where possible.
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
 
-    এটি পরামর্শিত যে অন্য একটি ফাংশন সেট করতে হবে এই ইভেন্ট ফাংশন এর বাইরে যা 
-ভ্যারিয়েবলের মানগুলো পরিবর্তন করবে এবং কঠিন কাজগুলো করবে যদি তুমি একটি API থেকে ডাটা কল করো।*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    largeImageKey:
-      "key" /*Key (ফাইলের নাম) Presence - এর বড় ছবিটির। These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    largeImageKey: "key",
+    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    smallImageKey: "key",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+  };
+  //Update the presence with all the values from the presenceData object
+  if (presenceData.details) presence.setActivity(presenceData);
+  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  else presence.setActivity(); 
 });
 ```
 
@@ -342,15 +347,12 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 2. তোমার মেটাডাটা ফাইলে iFrame - কে সেট করো `true` - তে।
 3. তোমার iFrame ফাইল পূরণ করো।
 
-```typescript
+```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  /*
-  পাও তোমার প্রয়োজনীয় সমস্ত ডাটা iFrame থেকে এবং সেগুলোকে ভ্যারিয়েবলে সেভ করো
-  এবং সেগুলোকে পাঠাও iframe.send ব্যবহার করে
-  */
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
-    //ডাটা পাঠানো
+    //sending data
     video: video,
     time: video.duration
   });
@@ -359,7 +361,7 @@ iframe.on("UpdateData", async () => {
 
 4. তোমার Presence ফাইলটিকে iFrame ফাইল থেকে ডাটা নেওয়ার সিস্টেম তৈরি করা।
 
-```typescript
+```ts
 presence.on("iFrameData", (data) => {
   iFrameVideo = data.video;
   currentTime = data.time;

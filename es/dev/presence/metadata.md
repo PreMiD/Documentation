@@ -14,7 +14,7 @@ Si quieres publicar una presence en la tienda y cargarla a través de la extensi
 
 A continuación se muestra un ejemplo de este archivo.
 
-```typescript
+```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -207,7 +207,7 @@ PreMiD es un servicio polígloto, lo que significa que hay una gran cantidad de 
 
 ## Configuraciones de una Presence
 ¡Configura ajustes interactivos para que los usuarios puedan personalizar la Presence!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -281,7 +281,7 @@ El `Object` tienes dos propiedades: `message` y `description`. `message` es el t
 
 Visualización del archivo:
 
-```typescript
+```ts
 {
   "<servicio>.<nombreString>": {
     "message": "Texto que tiene que ser traducido.",
@@ -306,20 +306,20 @@ Las claves que no tenías que indicar se establecen automáticamente a lo siguie
 Usa los siguientes métodos para obtener los ajustes en tus presences:
 #### `getSetting(String)`
 Obtén el valor del ajuste.
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Reemplaza pdexID con el id de tu ajuste
 console.log(setting); // Esto mostrará el valor del ajuste
 ```
 
 #### `hideSetting(String)`
 Oculta la configuración dada.
-```typescript
+```ts
 presence.hideSetting("pdexID"); //Reemplaza pdexID con el id del ajuste
 ```
 
 #### `showSetting(String)`
 Muestra la configuración dada (Solo funciona si el ajuste estaba ya oculto).
-```typescript
+```ts
 presence.showSetting("pdexID"); //Reemplaza pdexID con el id del ajuste
 ```
 

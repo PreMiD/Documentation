@@ -22,7 +22,7 @@ Consulta el método [`crearSlideshow`](/dev/presence/class#createslideshow) en l
 
 Devuelve un objeto [`PresenceData`](/dev/presence/class#presencedata-interface) de lo que se está mostrando actualmente.
 
-```typescript
+```ts
 const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // Mostrará los detallas de PresenceData
 ```

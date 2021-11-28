@@ -16,7 +16,7 @@ Kelas `Presence` sangat berguna kerana ia mempunyai kaedah asas yang diperlukan 
 
 Apabila anda mencipta kelas, anda mesti nyatakan sifat `clientId`.
 
-```typescript
+```ts
 const presence = new Presence({
   clientId: "514271496134389561" // Contoh clientId
 });
@@ -68,13 +68,13 @@ Menetapkan tajuk talam di bar menu.
 
 Mencipta kelas `Slideshow` yang baharu.
 
-```typescript
+```ts
 const slideshow = presence.createSlideshow();
 ```
 
 Ia digalakkan untuk melakukan perkara ini sebaik mencipta kelas `Presence`:
 
-```typescript
+```ts
 const presence = new Presence({
     clientId: "514271496134389561" // Contoh clientId
   }),
@@ -89,7 +89,7 @@ Kaedah tak segerak yang membolehkan anda dapatkan rentetan terjemahan dari sambu
 
 Amda mesti sediakan objek `Object` dengan kekuncinya sebagai kekunci untuk rentetan, `keyValue` ialah nilai rentetan. Senarai rentetan yang diterjemah boleh dijumpai di titik akhir ini: `https://api.premid.app/v2/langFile/presence/en/`
 
-```typescript
+```ts
 // Mengembalikan rentetan `Bermain` dan `Dijedakan`
 // dari sambungan.
 const strings = await presence.getStrings({
@@ -105,7 +105,7 @@ Sejak v2.2.0 sambungan, anda mampu dapatkan rentetan bagi sesebuah bahasa. Ini b
 
 Kami cadangkan anda gunakan kod di bawah supaya ia mengemas kini PresenceData secara automatik sekiranya pengguna mengubah bahasa yang dipilih;
 
-```typescript
+```ts
 async function getStrings() {
   return presence.getStrings(
     {
@@ -139,7 +139,7 @@ Mengembalikan pemboleh ubah dari laman sesawang jika ia wujud.
 
 **Amaran: Fungsi ini boleh menyebabkan penggunaan CPU yang tinggi & tapak lembap bertindak balas apabila ia telah dijalankan dengan terlalu banyak kali.**
 
-```typescript
+```ts
 const pageVar = presence.getPageletiable("pageVar");
 console.log(pageVar); // Ini akan mengelog "Kandungan pemboleh ubah"
 ```
@@ -148,7 +148,7 @@ console.log(pageVar); // Ini akan mengelog "Kandungan pemboleh ubah"
 
 Mengembalikan versi sambungan yang pengguna guna.
 
-```typescript
+```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
@@ -161,7 +161,7 @@ console.log(version); // Akan mengelog 2.1.0
 
 Mengembalikan nilai tetapan.
 
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 console.log(setting); // Ini akan log nilai tetapan
 ```
@@ -170,7 +170,7 @@ console.log(setting); // Ini akan log nilai tetapan
 
 Sembunyikan tetapan yang diberi.
 
-```typescript
+```ts
 presence.hideSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
 ```
 
@@ -178,7 +178,7 @@ presence.hideSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
 
 Tunjukkan tetapan yang diberi (Hanya berfungsi jika tetapan telah disembunyikan sebelumnya).
 
-```typescript
+```ts
 presence.showSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
 ```
 
@@ -186,7 +186,7 @@ presence.showSetting("pdexID"); // Gantikan pdexID dengan ID tetapan
 
 Mengembalikan log bagi konsol laman sesawang.
 
-```typescript
+```ts
 const logs = await presence.getLogs();
 console.log(logs); // Ini akan mengelog 100 log terbaru (dalam tatasusunan).
 ```
@@ -197,7 +197,7 @@ console.log(logs); // Ini akan mengelog 100 log terbaru (dalam tatasusunan).
 
 Mencetak mesej diberi ke konsol dalam format berasaskan Presence dalam gaya `info`.
 
-```typescript
+```ts
 presence.info("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 ```
 
@@ -205,7 +205,7 @@ presence.info("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 
 Mencetak mesej diberi ke konsol dalam format berasaskan Presence dalam gaya `success`.
 
-```typescript
+```ts
 presence.success("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 ```
 
@@ -213,7 +213,7 @@ presence.success("Test") // Ini akan mengelog "test" dalam penggayaan yang betul
 
 Mencetak mesej diberi ke konsol dalam format berasaskan Presence dalam gaya `error`.
 
-```typescript
+```ts
 presence.error("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 ```
 
@@ -221,7 +221,7 @@ presence.error("Test") // Ini akan mengelog "test" dalam penggayaan yang betul.
 
 Mengembalikan 2 cap masa emping salji `snowflake` di dalam tatasusunan `Array` yang kemudiannya boleh digunakan untuk nilai cap masa mula `startTimestamp` dan cap masa tamat `endTimestamp`.
 
-```typescript
+```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
 presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
@@ -233,7 +233,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Mengembalikan 2 cap masa emping salji `snowflake` di dalam tatasusunan `Array` yang kemudiannya boleh digunakan untuk nilai cap masa mula `startTimestamp` dan cap masa tamat `endTimestamp`.
 
-```typescript
+```ts
 const video = document.querySelector(".video"),
   timestamps = presence.getTimestamps(video.currentTime, video.duration);
 presenceData.startTimestamp = timestamps[0];
@@ -246,7 +246,7 @@ presenceData.endTimestamp = timestamps[1];
 
 Menukarkan rentetan dengan format JJ:MM:SS `HH:MM:SS` atau MM:SS `MM:SS` atau SS `SS` menjadi nombor bulat (Tidak mengembalikan cap masa emping salji).
 
-```typescript
+```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
   duration = presence.timestampFromFormat(document.querySelector(".video-end").textContent),
   timestamps = presence.getTimestamps(currentTime, duration);
@@ -331,7 +331,7 @@ Antara muka ini mempunyai pemboleh ubah berikut, kesemuanya pilihan.
   </tbody>
 </table>
 
-```typescript
+```ts
 const presenceData: PresenceData = {
   details: "Tajuk saya",
   state: "Keterangan saya",
@@ -357,7 +357,7 @@ const presenceData: PresenceData = {
 
 Peristiwa membolehkan anda kesan dan urus beberapa perubahan atau panggilan yang dibuat. Anda boleh melanggan peristiwa menggunakan kaedah `on`.
 
-```typescript
+```ts
 presence.on("UpdateData", async () => {
   // Buat sesuatu apabila data dikemas kini.
 });
