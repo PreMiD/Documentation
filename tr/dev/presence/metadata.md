@@ -14,7 +14,7 @@ Servisinizi mağazaya eklemek ve test edebilmek için `dist` klasörünün için
 
 Bu dosyanın bir örneği aşağıda bulunabilir.
 
-```typescript
+```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -207,7 +207,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 ## Servis ayarları
 İnteraktif ayarlar oluşturarak kullanıcıların servisinizi düzenlemesini sağlayın!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -281,7 +281,7 @@ stringName tek kelime olacak şekilde mesajı anlatan bir anahtardır.
 
 Dosyanın örnek bir görüntüsü:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Çevrilmesi gereken yazı.",
@@ -306,20 +306,20 @@ The keys you didn't have to set are automatically set to the following: `title`:
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
 Returns value of setting.
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 console.log(setting); // Ayarın değerinin çıktısını verecektir
 ```
 
 #### `hideSetting(String)`
 Hides given setting.
-```typescript
+```ts
 presence.hideSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar ile değiştirin
 ```
 
 #### `showSetting(String)`
 İnternet sitesinin konsol kayıtlarının çıktısını döndürür.
-```typescript
+```ts
 presence.showSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar ile değiştirin
 ```
 
