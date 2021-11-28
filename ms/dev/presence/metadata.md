@@ -14,7 +14,7 @@ Jika anda ingin menerbitkan Presence ke kedai dan muatkannya melalui sambungan, 
 
 Contoh fail tersebut boleh dilihat di bawah.
 
-```typescript
+```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -212,7 +212,7 @@ PreMiD ialah perkhidmatan pelbagai bahasa, maksudnya terdapat banyak bahasa dise
 
 ## Tetapan Presence
 Tetapkan tetapan saling tindak supaya pengguna boleh mengubah suai Presence tersebut!
-```typescript
+```ts
 "settings": [
   {
     "id": "ID",
@@ -286,7 +286,7 @@ Objek `Object` mempunyai 2 sifat; mesej `message` dan keterangan `description`. 
 
 Penggambaran fail:
 
-```typescript
+```ts
 {
   "<service>.<stringName>": {
     "message": "Tulisan yang perlu diterjemahkan.",
@@ -311,20 +311,20 @@ Kekunci yang anda tidak perlu tetapkan akan ditetapkan secara automatik seperti 
 Gunakan kaedah berikut untuk mendapatkan maklumat tetapan dalam fail Presence anda:
 #### `getSetting(String)`
 Mengembalikan nilai tetapan.
-```typescript
+```ts
 const setting = await presence.getSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 console.log(setting); // Ini akan log nilai tetapan
 ```
 
 #### `hideSetting(String)`
 Sembunyikan tetapan yang diberi.
-```typescript
+```ts
 presence.hideSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 ```
 
 #### `showSetting(String)`
 Tunjukkan tetapan yang diberi (Hanya berfungsi jika tetapan telah disembunyikan sebelumnya).
-```typescript
+```ts
 presence.showSetting("pdexID"); //Gantikan pdexID dengan ID tetapan
 ```
 
