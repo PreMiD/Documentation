@@ -49,7 +49,7 @@ Tá gach láithreacht códaithe i [TypeScript](https://www.typescriptlang.org/).
 
 Uir an cód seo a leanas taobh istigh den chomhad `tsconfig.json`.
 
-```typescript
+```ts
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
@@ -271,50 +271,56 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
 
 ## Ag tosú
 
-```typescript
+```ts
 const presence = new Presence({
-    clientId: "000000000000000000" //Aitheantas cliant an Fheidhmchláir a cruthaíodh ag https://discordapp.com/developers/applications
+  //The client ID of the Application created at https://discordapp.com/developers/applications
+  clientId: "000000000000000000"
   }),
+  //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-    // Is féidir leat é seo a úsáid chun teaghráin aistrithe a fháil ina dteanga brabhsálaí
   });
 
 /*
-
 function myOutsideHeavyLiftingFunction(){
-    //Faigh do chuid sonraí go léir agus déan iad a phróiseáil anseo
+    //Grab and process all your data here
 
-    // eilimintí grabs //
-    // glaonna api //
-    // tacair inathraithe //
+    // element grabs //
+    // api calls //
+    // variable sets //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Rith an fheidhm ar leithligh ón imeacht UpdateData gach 10 soicind chun na hathróga a bhailíonn UpdateData a fháil agus a shocrú
-
+//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
 */
 
 presence.on("UpdateData", async () => {
-  /*Bíonn UpdateData ag lasadh i gcónaí, agus dá bhrí sin ba chóir é a úsáid mar do thimthriall athnuachana, nó mar `tic`. Tugtar é seo cúpla uair sa soicind nuair is féidir.
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Tugtar é seo cúpla uair sa soicind nuair is féidir.
 
-    Moltar feidhm eile a chur ar bun lasmuigh den fheidhm imeachta seo a athróidh luachanna athraitheacha agus a dhéanfaidh an t-ardú trom má ghlaonn tú sonraí ó API.*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
-   const láithreachtData: PresenceData = {
-     largeImageKey:
-       "eochair" / * Eochair (ainm comhaid) na híomhá Móire ar an láthair. Déantar iad seo a uaslódáil agus a ainmniú sa chuid Láithreacht Shaibhir d’iarratas, ar a dtugtar Art Assets*/,
-     smallImageKey:
-       "eochair" /* Eochair (ainm comhaid) na híomhá Beaga ar an láthair. Déantar iad seo a uaslódáil agus a ainmniú sa chuid Láithreacht Saibhir d’iarratas, ar a dtugtar Art Assets*/,
-    smallImageText: "Roinnt téacs hover", //An téacs a thaispeántar agus é ag dul os cionn na híomhá beag
-    details: "Brabhsáil Ainm an Leathanaigh", //An chuid uachtarach den téacs láithreachta
-    state: "Cuid léitheoireachta A", //An chuid íochtarach den téacs láithreachta
-    startTimestamp: 1577232000, //An lasc ama unix epoch le haghaidh cathain a thosóidh tú ag comhaireamh
-    endTimestamp: 1577151472000 //Más mian leat Time Left a thaispeáint in ionad Elapsed, is é seo an stampa ama unix epoch ag a dtagann deireadh leis an lasc ama
-  }; /*De rogha air sin is féidir leat largeImageKey a shocrú anseo agus an chuid eile a athrú mar fho-airíonna athraitheacha, mar shampla presenceData.type = "blahblah"; samplaí de chineál: sonraí, luaigh, srl.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Déan an láithreacht a nuashonrú gan aon sonraí, agus mar sin é a ghlanadh agus an íomhá mór a dhéanamh mar dheilbhín an Fheidhmchláir Discord, agus an téacs an t-ainm Feidhmchlár Discord*/
-  else presence.setActivity(presenceData); //Déan an láithreacht a nuashonrú leis na luachanna go léir ón réad presenceData
+  const presenceData: PresenceData = {
+    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    largeImageKey: "key",
+    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    smallImageKey: "key",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+  };
+  //Update the presence with all the values from the presenceData object
+  if (presenceData.details) presence.setActivity(presenceData);
+  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  else presence.setActivity(); 
 });
 ```
 
@@ -338,15 +344,12 @@ Má aimsíonn tú go bhfuil do chuid sonraí i iFrame ní mór duit na rudaí se
 2. Socraigh iFrame go `fíor` i do chomhad meiteashonraí.
 3. Líon isteach do chomhad iFrame.
 
-```typescript
+```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  /*
-  Faigh na sonraí go léir a theastaíonn uait ón iFrame, sábháil iad in athróga 
-  agus ansin iad a sheoladh ag úsáid iframe.send
-  */
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
-    //sonraí a sheoladh
+    //sending data
     video: video,
     time: video.duration
   });
@@ -355,7 +358,7 @@ iframe.on("UpdateData", async () => {
 
 4. Má dhéantar do chomhad láithreachta faigh sonraí ón gcomhad iFrame.
 
-```typescript
+```ts
 presence.on("iFrameData", (data) => {
   iFrameVideo = data.video;
   currentTime = data.time;
