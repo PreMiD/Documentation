@@ -18,7 +18,7 @@ Kód ktorý vpíšete do vnútra vášho `iframe.ts` súboru sa vloží do každ
 
 Ako prítomnosti, `iframes` má svoju triedu určenú na automatickú aktualizáciu údajov.
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ Vráti URL `iframu`.
 ## Udalosti
 Vo `iframe`, udalostiach pracujú podobným spôsobom ako pracujú v triede `prítomností`.
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Code goes here...
 });
