@@ -18,7 +18,7 @@ Déantar an cód a scríobhann tú taobh istigh de do `iframe.ts` chomhad a inst
 
 Cosúil le presences, `iframes` tá a gcuid ranganna féin deartha chun sonraí a nuashonrú go huathoibríoch.
 
-```typescript
+```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
@@ -37,7 +37,7 @@ Filleann sé URL an `iframe`.
 ## Imeachtaí
 In `iframes`, oibríonn imeachtaí ar an gcaoi chéanna leis an mbealach a oibríonn siad sa `presence` rang.
 
-```typescript
+```ts
 iframe.on("UpdateData", async () => {
     // Cód anseo
 });
