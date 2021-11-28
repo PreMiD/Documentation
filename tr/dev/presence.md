@@ -49,7 +49,7 @@ Tüm servisler [TypeScript](https://www.typescriptlang.org/) ile kodlanır. [Typ
 
 Aşağıda gördüğünüz kodu `tsconfig.json` dosyasının içine yapıştırın.
 
-```typescript
+```ts
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
@@ -267,50 +267,56 @@ Yukarıdaki kodu kopyalayın ve `metadata.json` dosyanıza yapıştırın. Bunda
 
 ## Başlarken
 
-```typescript
+```ts
 const presence = new Presence({
-    clientId: "000000000000000000" // Discord'dan aldığınız uygulama ID'si:  https://discordapp.com/developers/applications
-}),
-  await presence.getStrings({
-    oynatiliyor: "presence.playback.playing",
-    durduruldu: "presence.playback.paused"
-    // Tarayıcının diline göre çevirileri almak için kullanılan fonksiyon
-});
+  //The client ID of the Application created at https://discordapp.com/developers/applications
+  clientId: "000000000000000000"
+  }),
+  //You can use this to get translated strings in their browser language
+  strings = presence.getStrings({
+    play: "presence.playback.playing",
+    pause: "presence.playback.paused"
+  });
 
 /*
+function myOutsideHeavyLiftingFunction(){
+    //Grab and process all your data here
 
-function disaridaOlmasiDahaIyiOlacakFonksiyonum(){
-    // Tüm verilerinizi toplayıp bu gibi fonksiyonlarda işleyebilirsiniz
-
-    // ekstra işlemler //
-    // API işlemleri //
-    // değişken ayarlamaları //
+    // element grabs //
+    // api calls //
+    // variable sets //
 }
 
-setInterval(10000, disaridaOlmasiDahaIyiOlacakFonksiyonum); 
-// Oluşturduğunuz fonksiyonu UpdateData eventinden ayrıyeten her 10 saniyede bir çalıştırarak içindeki işlemleri tekrar ettirin.
-
+setInterval(myOutsideHeavyLiftingFunction, 10000);
+//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
 */
 
 presence.on("UpdateData", async () => {
-    /* UpdateData kullanıcı serviste gezdiği süre boyunca sürekli olarak gönderilecektir, bu yüzden büyük işlemler kullanıcıları etkilememesi için buranın dışında tutulmalıdır. Bu olay, mümkün olduğunca bir saniye içerisinde birkaç kez çağrılacaktır.
+  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Bu olay, mümkün olduğunca bir saniye içerisinde birkaç kez çağrılacaktır.
 
-    Daha ağır ve sürekli tekrarlanmaması gereken işlemleri bu alanın dışında yukarıdaki gibi başka fonksiyon kullanarak yaptırmak önerilir. */
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
-  const presenceData: PresenceData  = {
-    largeImageKey: 
-      "anahtar", /* Servisin kullanıcının profilinde gözükeceği büyük resmin Discord'dan oluşturduğunuz uygulamanın içerisindeki resim dosyasının adı. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageKey:
-      "key" /*The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+  const presenceData: PresenceData = {
+    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    largeImageKey: "key",
+    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    smallImageKey: "key",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+  };
+  //Update the presence with all the values from the presenceData object
+  if (presenceData.details) presence.setActivity(presenceData);
+  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  else presence.setActivity(); 
 });
 ```
 
@@ -334,24 +340,21 @@ Bir çok site [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 2. "metadata" dosyasında `iFrame` kısmını `true` olarak ayarlayın.
 3. iFrame dosyanızı şu şekilde dolurun:
 
-```typescript
+```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  /*
-  Gereken tüm veriyi aldırın ve aşağıdaki yöntemle
-  ana koda gönderin.
-  */
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
-    // veriyi gönderme
+    //sending data
     video: video,
     time: video.duration
-  }); 
+  });
 });
 ```
 
 4. Yukarıdaki gibi gönderilen bir veriyi servis kodunun içinde alabilmek için aşağıdaki yöntemi kullanın.
 
-```typescript
+```ts
 presence.on("iFrameData", (data) => {
   iFrameVideo = data.video;
   currentTime = data.time;
