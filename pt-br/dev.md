@@ -2,10 +2,10 @@
 title: Primeiros Passos
 description: Algumas dicas para aqueles que começaram a programar recentemente
 published: true
-date: 2021-10-09T13:08:43.418Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:42.669Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > Um editor de código é necessário. Nós recomendamos o [Visual Studio Code](https://code.visualstudio.com/). 

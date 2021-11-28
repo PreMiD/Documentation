@@ -1,9 +1,9 @@
 ---
 title: Presence Development
-description: 
+description:
 published: true
 date: 2021-07-08T19:12:34.449Z
-tags: 
+tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---

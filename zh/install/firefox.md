@@ -2,10 +2,10 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2021-09-18T14:26:21.993Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:27.791Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 安装扩展程序非常重要，因为应用程序本身无法做任何事情。

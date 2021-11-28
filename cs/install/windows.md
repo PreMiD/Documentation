@@ -2,10 +2,10 @@
 title: Windows
 description: Getting started with a PreMiD installation on Windows
 published: true
-date: 2021-09-18T14:13:25.713Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:24:03.678Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Before going any further, make sure your system meets all the [requirements](/install/requirements).{.is-info}

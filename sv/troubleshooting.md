@@ -2,10 +2,10 @@
 title: Felsökning
 description: Everything to solve your problem
 published: true
-date: 2021-09-18T14:10:19.233Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:20:13.451Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Make sure you have the extension **and** the application installed! 
@@ -85,8 +85,8 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. Öppna mappen "PreMiD" och välj filen "PreMiD.exe" och klicka på öppna. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee bör nu ignorera vår fil, nu är det bara att starta vårt programm och du bör vara klar!
 
-### PreMiD status bugged on discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+### PreMiD status bugged on Discord
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 

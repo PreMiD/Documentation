@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Bevat basisgegevens over de presence
 published: true
-date: 2021-10-05T18:23:44.020Z
-tags: 
+date: 2021-02-07T17:12:06.799Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:54:27.637Z
+dateCreated: 2020-06-11T18:04:52.965Z
 ---
 
 # Metadata.json

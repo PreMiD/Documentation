@@ -1,23 +1,25 @@
 ---
 title: Windows
-description: Getting started with a PreMiD installation on Windows
+description: Ag tosú le suiteáil PreMiD ar Windows
 published: true
-date: 2020-02-12T22:08:41.501Z
+date: 2021-09-18T14:14:53.541Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements).{.is-info}
+> Sula dtéann tú níos faide, déan cinnte go gcomhlíonann do chóras na [riachtanais](/install/requirements).{.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Tá suiteáil an iarratais an-tábhachtach mar ní féidir leis an síneadh aon rud a dhéanamh leis féin.
 
 # Suiteáil
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
-2. Choose **Windows**.
-3. Open the installer.
-4. **Windows SmartScreen** will appear, if you install PreMiD for the first time. Click on **More Info** and then select **Run Anyway**. > This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
+1. Téigh go dtí ár leathanach íoslódálacha ag [cliceáil anseo](https://premid.app/downloads).
+2. Roghnaigh **Windows**.
+3. Oscail an suiteálaí.
+4. beidh **Windows SmartScreen** le feiceáil, má shuiteálann tú PreMiD den chéad uair. Cliceáil ar **Tuilleadh Eolais** agus ansin roghnaigh **Rith ar aon nós**. > Tá sé seo amhlaidh toisc nach bhfuil Deimhniú Sínithe Cód (DSC) againn. [Tacaigh linn](https://www.patreon.com/Timeraa) chun é a mhaoiniú.{.is-info}
 
-The application will start automatically. Check for the symbol in your system tray.
+Cuirfear tús leis an iarratas go huathoibríoch. Seiceáil an tsiombail i do thráidire córais.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Ná déan dearmad a [cuir an **síneadh**](/suiteáil).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}

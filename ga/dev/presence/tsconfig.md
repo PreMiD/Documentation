@@ -1,23 +1,24 @@
 ---
-title: TypeScript Configuration
-description: A little helper for TypeScript
+title: Cumraíocht TypeScript
+description: Cúntóir beag do TypeScript
 published: true
-date: 2020-08-05T16:25:22.812Z
+date: 2021-09-18T14:31:22.005Z
 tags:
 editor: markdown
+dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
-# TypeScript Configuration
+# Cumraíocht TypeScript
 
 ## Réamhrá
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
+Nuair a rinne tú an spás oibre a íoslódáil agus a dhíphacáil, feicfidh tú comhad darb ainm ` tsconfig.json ` i bhfillteáin fréimhe agus láithreachta, úsáidtear an comhad seo chun an tiomsaitheoir ** TypeScript ** a chumrú. Tá sé cumraithe duit cheana féin, mar sin ná bíodh imní ort faoi sin.
 
-We just want to describe some settings that you should know.
+Níl uainn ach cur síos a dhéanamh ar roinnt socruithe ar chóir duit a bheith ar an eolas fúthu.
 
-## Root Configuration
+## Cumraíocht Fréamh
 
-In the root configuration file you will see something like this.
+Sa chomhad cumraíochta fréimhe feicfidh tú rud mar seo.
 
 ```javascript
 {
@@ -36,21 +37,21 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property                   | Cur síos                                                                                                                                                            |
-|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
-| module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
-| target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
-| removeComments             | Removing comments from compiled files.                                                                                                                              |
-| noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
-| noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement.                                                                                                            |
-| noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
-| noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
-| inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
-| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
-| esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
+| Maoin                      | Cur síos                                                                                                                                                                                    |
+|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **compilerOptions**        | Úsáidtear an chuid is mó de na hairíonna anseo chun an tiomsaitheoir a chumrú.                                                                                                              |
+| module                     | Is féidir leat níos mó a léamh faoi sin [ anseo](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                |
+| target                     | Sainmhínítear an leagan JavaScript atá á chur le chéile agat.                                                                                                                               |
+| removeComments             | Tuairimí a bhaint ó chomhaid tiomsaithe.                                                                                                                                                    |
+| noEmitOnError              | Ná astaíonn aschuir má tuairiscíodh aon earráidí.                                                                                                                                           |
+| noFallthroughCasesInSwitch | Tuairiscigh earráidí i gcásanna cinn sa ráiteas lasc.                                                                                                                                       |
+| noUnusedLocals             | Tuairiscigh earráidí ar mhuintir na háite nár úsáideadh.                                                                                                                                    |
+| noUnusedParameters         | Tuairiscigh earráidí ar pharaiméadair nár úsáideadh.                                                                                                                                        |
+| inlineSourceMap            | Cuireann mapáil foinse leis                                                                                                                                                                 |
+| typeRoots                  | Is féidir leat níos mó a léamh faoi sin [ anseo](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                                |
+| esModuleInterop            | Scaoil cúntóirí __importStar agus __importDefault le haghaidh comhoiriúnacht éiceachóras babel runtime agus cumasaigh --allowSyntheticDefaultImports le haghaidh comhoiriúnacht córais. |
 
-## Presence Configuration
+## Cumraíocht Láithreachta
 
 ```javascript
 {
@@ -61,8 +62,8 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property            | Cur síos                                                                               |
-|:------------------- |:-------------------------------------------------------------------------------------- |
-| **extends**         | Used for extending the base `tsconfig` file for various tasks.                         |
-| **compilerOptions** | See [**Root Configuration**](/dev/presence/tsconfig#root-configuration) for more info. |
-| outDir              | Defines the output directory for compiled files.                                       |
+| Maoin               | Cur síos                                                                                                    |
+|:------------------- |:----------------------------------------------------------------------------------------------------------- |
+| **extends**         | Úsáidtear é chun an comhad ` tsconfig ` bonn a leathnú le haghaidh tascanna éagsúla.                        |
+| **compilerOptions** | Féach [ ** Cumraíocht Fréamh ** ](/dev/presence/tsconfig#root-configuration) chun tuilleadh eolais a fháil. |
+| outDir              | Sainmhínítear an eolaire aschuir do chomhaid tiomsaithe.                                                    |

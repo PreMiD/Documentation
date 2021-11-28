@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Servis hakkında basit bilgileri bulunduran dosya
 published: true
-date: 2021-10-05T18:25:50.342Z
-tags: 
+date: 2021-02-07T17:12:06.799Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T02:00:14.705Z
+dateCreated: 2020-06-11T18:04:52.965Z
 ---
 
 # Metadata.json
@@ -203,7 +203,7 @@ Regex hakkında daha fazla bilgi almak istiyorsanız aşağıdaki sitelere göz 
 
 ## Servis Dilleri
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. Desteklenen bilgileri [buradaki](https://api.premid.app/v2/langFile/list) bağlantı üzerinde bulabilirsiniz. Servisi daha da özelleştirmek için kullanıcıların servisin dilini seçmelerine izin verebilirsiniz. Daha fazlası için [`multiLanguage`](#multilanguage) ayarına bakın.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Servisi daha da özelleştirmek için kullanıcıların servisin dilini seçmelerine izin verebilirsiniz. Daha fazlası için [`multiLanguage`](#multilanguage) ayarına bakın.
 
 ## Servis ayarları
 İnteraktif ayarlar oluşturarak kullanıcıların servisinizi düzenlemesini sağlayın!

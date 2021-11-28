@@ -2,10 +2,10 @@
 title: Firefox
 description: 開始在FireFox上安裝PreMiD
 published: true
-date: 2021-09-18T14:26:50.570Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:56.119Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 安裝擴充功能非常重要，因為單靠本地程式是無法做任何事的。

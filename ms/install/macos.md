@@ -2,8 +2,10 @@
 title: macOS
 description: Mulakan pemasangan PreMiD di macOS
 published: true
-date: 2020-02-12T22:08:37.439Z
+date: 2021-09-18T14:14:48.363Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
 > Sebelum teruskan, sila pastikan sistem anda mencapai kesemua [keperluan](/install/requirements). 

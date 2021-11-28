@@ -2,10 +2,10 @@
 title: Windows
 description: 윈도우에 Premid 를 설치하는것을 시작해봐요.
 published: true
-date: 2021-09-18T14:19:51.100Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:32:17.772Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > 설치를 진행하기 전에, 시스템이 [요구사항](/install/requirements)을 충족하는지 확인해주세요.{.is-info}

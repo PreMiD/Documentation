@@ -2,10 +2,10 @@
 title: Решение проблем
 description: Всё для решения вашей проблемы
 published: true
-date: 2021-09-18T14:09:30.387Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:19:23.763Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Убедитесь, что у вас установлены расширение **и** приложение! 
@@ -85,7 +85,7 @@ Windows: Напишите в проводнике `%appdata%` и удалите 
 9. Откройте папку "PreMiD" и выберите файл "PreMiD.exe" и нажмите открыть. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee теперь должен проигнорировать наш файл, просто запустите наше приложение и всё должно быть хорошо.
 
-### Статус PreMiD на дискорде!
+### Статус PreMiD прослушивается в Discord
 Не беспокойся. Нажмите <kbd>CTRL+R</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS) для перезагрузки окна.
 
 <a name="linux"></a>

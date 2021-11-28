@@ -2,10 +2,10 @@
 title: Chromium
 description: Начните пользоваться PreMID установив его в браузер на основе Chromium
 published: true
-date: 2021-09-18T14:22:56.922Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:35:39.400Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Установка расширения очень важна, так как приложение не может делать ничего самостоятельно.

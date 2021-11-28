@@ -2,10 +2,10 @@
 title: Solución de problemas
 description: Todo para resolver tu problema
 published: true
-date: 2021-02-08T21:30:58.603Z
+date: 2021-09-18T14:08:01.002Z
 tags:
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > ¡Asegúrate de tener la extensión **y** la aplicación instaladas! 
@@ -85,8 +85,8 @@ Esto es un falso positivo de McAfee y les hemos informado del problema, por ahor
 9. Abre la carpeta "PreMiD" y selecciona el archivo "PreMiD.exe" y haz clic en abrir. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. Ahora McAfee debe ignorar nuestro archivo, sólo tienes que abrir nuestra aplicación.
 
-### ¡Estado de PreMiD bugeado en discord!
-No te preocupes. Presiona <kbd>CTRL+R</kbd> (Windows) o <kbd>CMD+R</kbd> (MacOS) en tu teclado mientras en tu ventana de Discord para recargarla.
+### ¡Estado de PreMiD bugeado en Discord!
+No te preocupes. Presiona <kbd>CTRL+R</kbd> (Windows) o <kbd>CMD+R</kbd> (MacOS) en tu teclado mientras estás en la ventana de Discord para recargarla.
 
 <a name="linux"></a>
 

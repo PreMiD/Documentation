@@ -2,10 +2,10 @@
 title: API
 description: Accede a recursos y realiza acciones mediante la API de PreMiD
 published: true
-date: 2021-09-18T14:14:55.690Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:25:55.530Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:25:55.530Z
 > {.is-info}
 
 ## Administración de versiones de la API
-> La v2 de la API está discontinuada y va a ser eliminada en un futuro cercano. Por favor, usa la v3 para cualquier solicitud futura para prevenir problemas. 
+> La v2 de la API está discontinuada y la mayoría de sus rutas han sido eliminadas. Por favor, usa la v3 para cualquier solicitud futura para prevenir problemas. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ Todos los servicios y protocolos de capa HTTP (por ejemplo, http) dentro de la A
 > {.is-danger}
 
 **Elija la versión de la API:**
-- [v2 *discontinuada*](/dev/api/v2)
-- [v3 *activa*](/dev/api/v3)
+- [v2 *parcialmente eliminada | discontinuada*](/dev/api/v2)
+- [v3 *actual*](/dev/api/v3)
 {.links-list}

@@ -2,10 +2,10 @@
 title: Firefox
 description: Memulai dengan pemasangan PreMiD pada Firefox
 published: true
-date: 2021-09-18T14:18:14.787Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:30:07.607Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 Pemasangan ekstensi sangat penting agar aplikasi dapat bekerja.

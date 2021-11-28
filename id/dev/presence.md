@@ -1,11 +1,11 @@
 ---
 title: Pengembangan Presence
-description: 
+description:
 published: true
-date: 2021-10-30T23:14:33.955Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:29:58.846Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > Semua presence disimpan disini: https://github.com/PreMiD/Presences 
@@ -306,16 +306,16 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "key" /*Key (nama file) dari Large Image di presence. Ini di upload dan diberi nama di Rich Presence dari aplikasi anda, yang disebut Art Assets*/,
     smallImageKey:
-      "key" /*Key (nama file) dari Small Image di presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+      "key" /*Key (nama file) dari Small Image di presence. Berikut ini adalah unggahan dan dinamai pada bagian Rich Presence dari aplikasimu, yang bernama Art Assets*/
+    smallImageText: "teks hover", //Text ini akan memperlihatkan ketika mengarahkan ke gambar kecil
+    details: "Menjelajahi page", //Bagian atas dari teks presence
+    state: "Reading section A", //Bagian bawah dari teks presence
+    startTimestamp: 1577232000, //Timestamp pada unix epoch untuk menghitung waktu
+    endTimestamp: 1577151472000 //Jika kamu mau menampilkan waktu tersisa dari pada penghitungan mundur, menggunakan timestamp dari unix epoch ketika waktu selesai
+  }; /*Opsional kamu dapat mengatur largeImageKey dan bisa merubahnya dalam bentuk subproperti, contohnya presenceData.type = "diisi apa aja"; tipe contoh sebagai: detail, state, dan lain-nya.*/
 
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+  if (!presenceData.details) presence.setActivity();/*Mengupdate presence tanpa data akan membersihkan dan membuat gambar besar sesuai dengan icon aplikasi pada Discord Application dan pada nama Discord Application mu.*/
+  else presence.setActivity(presenceData); //Mengupdate presence dengan value yang tersedia dari objek presenceData
 });
 ```
 

@@ -2,10 +2,10 @@
 title: Chromium
 description: Začínáme s instalací PreMiD na prohlížeče založené na Chromium
 published: true
-date: 2021-09-18T14:13:13.740Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:23:46.559Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 Instalace rozšíření je velmi důležitá, protože aplikace nemůže dělat nic sama.

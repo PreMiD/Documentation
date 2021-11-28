@@ -2,10 +2,10 @@
 title: Metadata.json
 description: ประกอบด้วยข้อมูลพื้นฐานเกี่ยวกับ Presence
 published: true
-date: 2021-10-05T18:25:37.919Z
-tags: 
+date: 2021-02-07T17:12:06.799Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:59:32.469Z
+dateCreated: 2020-06-11T18:04:52.965Z
 ---
 
 # Metadata.json
@@ -209,7 +209,7 @@ An example of that file can be found below.
 
 ## ภาษาของ Presence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. รายการภาษาทั้งหมดสามารถดูได้ที่ [ปลายทาง API](https://api.premid.app/v2/langFile/list) To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
 
 ## การตั้งค่า Presence
 สร้างการตั้งค่าแบบโต้ตอบเพื่อให้ผู้ใช้สามารถปรับแต่ง Presence ได้!

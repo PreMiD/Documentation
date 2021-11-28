@@ -2,8 +2,10 @@
 title: Windows
 description: Mulakan pemasangan PreMiD di Windows
 published: true
-date: 2020-02-12T22:08:41.501Z
+date: 2021-09-18T14:14:53.541Z
 tags:
+editor: markdown
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Sebelum teruskan, sila pastikan sistem anda mencapai kesemua [keperluan](/install/requirements).{.is-info}

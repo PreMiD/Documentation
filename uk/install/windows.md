@@ -2,10 +2,10 @@
 title: Windows
 description: Початок роботи з встановленням PreMiD на Windows
 published: true
-date: 2021-09-18T14:25:45.188Z
-tags: 
+date: 2021-09-18T14:14:53.541Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:38:44.470Z
+dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
 > Перед тим, як піти далі, переконайтеся, що ваша система відповідає всім вимогам [](/install/requirements).{.is-info}

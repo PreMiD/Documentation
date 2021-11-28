@@ -2,10 +2,10 @@
 title: Problēmu novēršana
 description: Viss, lai atrisinātu jūsu problēmu
 published: true
-date: 2021-09-19T15:36:54.230Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T15:36:49.813Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Pārliecinieties, vai esat uzstādījis paplašinājumu **un** aplikāciju! 
@@ -85,8 +85,8 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. Atveriet "PreMiD" mapi un atlasiet "PreMiD.exe" failu un uzspiediet uz atvērt. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee tagad vajadzētu ignorēt mūsu failu, vienkārši palaidiet mūsu lietotni un jums visam vajadzētu iet labi.
 
-### PreMiD statuss kļūdains Discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+### PreMiD status bugged on Discord
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 

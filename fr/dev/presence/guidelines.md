@@ -2,10 +2,10 @@
 title: Règlement des Presences
 description: Règles que tous les développeurs de Presence doivent suivre pour avoir leur Presence ajoutée.
 published: true
-date: 2021-10-30T14:22:09.400Z
-tags: 
+date: 2021-10-18T16:26:36.089Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:47:36.817Z
+dateCreated: 2021-09-07T01:44:53.883Z
 ---
 
 <div align="center">
@@ -37,7 +37,7 @@ Les règles générales de développement de presence sont les suivantes:
 - Les presences pour des services qui proposent des bots ou des serveurs Discord doivent respecter les règles suivantes :
   - Le nom de domaine doit avoir été créé il y a au moins **6 mois**.
   - Visiteurs uniques par jour :
-    - Pour les noms de domaines vieux de 6 mois : **20 000 visiteurs uniques par jour**.
+    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
     - Pour les noms de domaines vieux de 12 mois ou plus : **45 000 visiteurs uniques par jour**.
   - Le site Internet ne peut pas avoir un domaine de premier prix comme `.xyz`, `.club` et ce qui s'en rapproche.
   - Le site Internet doit être de très bonne qualité, au niveau design, etc.
@@ -252,7 +252,7 @@ Voici une liste de règles que vous devez suivre lors de l'écriture de votre fi
 - Les presences qui utilisent les boutons devraient suivre ces exigences supplémentaires :
   - Les redirections vers la page d'accueil sont interdites.
   - Promouvoir les sites web en les utilisant est interdit.
-  - Ils ne peuvent pas afficher des données additionnelles quand vous ne pouvez pas les afficher dans d'autres champs.
+  - They can't display information you couldn't fit in other fields.
   - Il est interdit de rediriger directement vers des flux audio/video.
 
 

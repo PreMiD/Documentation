@@ -2,10 +2,10 @@
 title: Linux
 description: Kom igång med en PreMiD-installationen på Linux
 published: true
-date: 2021-09-18T14:24:19.270Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:37:09.312Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 Installationen av tillägget är viktigt eftersom programmet inte kan göra något av sig själv.

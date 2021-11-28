@@ -2,10 +2,10 @@
 title: API
 description: Mengakses resource dan bekerja menggunakan PreMiD API
 published: true
-date: 2021-09-18T14:18:06.818Z
-tags: 
+date: 2021-10-30T23:53:16.875Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:29:55.379Z
+dateCreated: 2021-09-07T01:25:28.441Z
 ---
 
 # API
@@ -15,7 +15,7 @@ dateCreated: 2021-09-07T01:29:55.379Z
 > {.is-info}
 
 ## API Versioning
-> API v2 sudah usang dan akan dihapus dalam waktu dekat. Harap gunakan v3 untuk permintaan apa pun guna mencegah masalah di masa mendatang. 
+> API v2 sudah usang dan sebagian besar endpointnya telah dihapus. Harap gunakan v3 untuk permintaan apa pun guna mencegah masalah di masa mendatang. 
 > 
 > {.is-danger}
 
@@ -31,6 +31,6 @@ Semua layanan dan protokol HTTP-layer (misal http) dalam API PreMiD menggunakan 
 > {.is-danger}
 
 **Pilih versi API:**
-- [v2 *usang*](/dev/api/v2)
+- [v2 *sebagian dihapus | usang*](/dev/api/v2)
 - [v3 *aktif*](/dev/api/v3)
 {.links-list}

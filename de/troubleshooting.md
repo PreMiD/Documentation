@@ -2,10 +2,10 @@
 title: Fehlerbehebung
 description: Alles zur Lösung Ihres Problems
 published: true
-date: 2021-02-08T21:30:58.603Z
+date: 2021-09-18T14:08:01.002Z
 tags:
 editor: markdown
-dateCreated: 2020-06-11T18:03:54.865Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Stelle sicher, dass du die Erweiterung **und** die Anwendung installiert hast! 
@@ -85,7 +85,7 @@ Es handelt sich um ein False-Positives von McAfee, was wir denen bereits gemelde
 9. Öffne den "PreMiD" Ordner und wähle die "PreMiD.exe" Datei aus und öffne sie. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee sollte nun unsere Datei ignorieren, starte einfach unsere Anwendung und dann sollte es funktionieren.
 
-### PreMiD Status auf Discord ist fehlerhaft!
+### PreMiD status bugged on Discord
 Keine Sorge. Drücke die Tastenkombination <kbd>STRG + R</kbd> (Windows) oder <kbd>CMD+R</kbd> (MacOS), während du das Fenster von Discord fokussiert hast, um es neu zu laden.
 
 <a name="linux"></a>

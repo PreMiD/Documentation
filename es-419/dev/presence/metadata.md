@@ -2,10 +2,10 @@
 title: Metadata.json
 description: Contiene datos básicos sobre la presence
 published: true
-date: 2021-10-27T17:50:22.921Z
-tags: 
+date: 2021-02-07T17:12:06.799Z
+tags:
 editor: markdown
-dateCreated: 2021-10-27T17:50:20.057Z
+dateCreated: 2020-06-11T18:04:52.965Z
 ---
 
 # Metadata.json
@@ -204,7 +204,7 @@ Si quieres aprender expresiones regulares, aquí tienes algunos sitios web.
 
 ## Idioma de una presence
 
-PreMiD es un servicio polígloto, lo que significa que hay varios idiomas disponibles para conectar a los usuarios de todo el mundo. La lista de idiomas completa puede encontrarse en esta [entrada de la API](https://api.premid.app/v2/langFile/list). Para personalizar aún más su presence, puede permitir que los usuarios seleccionen el idioma de visualización de su presence. Ve [`multiLanguage`](#multilanguage) para más información.
+PreMiD es un servicio polígloto, lo que significa que hay varios idiomas disponibles para conectar a los usuarios de todo el mundo. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Para personalizar aún más su presence, puede permitir que los usuarios seleccionen el idioma de visualización de su presence. Ve [`multiLanguage`](#multilanguage) para más información.
 
 ## Configuraciones de una presence
 ¡Configura ajustes interactivos para que los usuarios puedan personalizar la presence!

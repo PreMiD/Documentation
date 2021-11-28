@@ -2,10 +2,10 @@
 title: Chromium
 description: Ottieni PreMiD su browser basati su Chromium
 published: true
-date: 2021-09-18T14:18:56.254Z
-tags: 
+date: 2021-09-18T14:14:39.122Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:31:01.832Z
+dateCreated: 2021-09-07T01:25:35.049Z
 ---
 
 The installation of the extension is very important as the application can not do anything by itself.

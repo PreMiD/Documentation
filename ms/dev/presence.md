@@ -314,10 +314,10 @@ presence.on("UpdateData", async () => {
     state: "Reading section A", //Bahagian bawah tulisan Presence
     startTimestamp: 1577232000, //Cap masa epok unix untuk bila masa akan mula dikira
     endTimestamp: 1577151472000 //Jika anda ingin tunjukkan Baki Masa dan bukan Masa Berlalu, ini cap masa epok unix di mana pemasa akan berhenti
-  }; /*Anda juga boleh memilih untuk menetapkan nilai largeImageKey di sini dan ubah yang lain menjadi subsifat pemboleh ubah, contohnya presenceSata.type = "blahblah"; contoh jenis: details, state, dll.*/
+  }; /*Anda juga boleh memilih untuk menetapkan nilai largeImageKey di sini dan ubah yang lain menjadi subsifat pemboleh ubah, contohnya presenceData.type = "blahblah"; contoh jenis: details, state, dll.*/
 
   if (!presenceData.details) presence.setActivity(); /*Kemas kini Presence dengan tiada data, dengan itu memadamnya dan membuatkan imej besar sebagai ikon Aplikasi Discord, dan tulisan sebagai nama Aplikasi Discord*/
-  else presence.setActivity(presenceData); //Kemas kini Presence dengan semua nilai daripada objek presenceData
+  else presence.setActivity(presenceData); //Kemas kini Presence dengan semua nilai dari objek presenceData
 });
 ```
 

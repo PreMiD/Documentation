@@ -2,10 +2,10 @@
 title: Firefox
 description: Початок роботи із встановленням PreMiD в Firefox
 published: true
-date: 2021-09-18T14:25:31.433Z
-tags: 
+date: 2021-09-18T14:14:41.886Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:38:30.569Z
+dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
 Установлення розширення дуже важливе, оскільки програма не може робити нічого самостійно.

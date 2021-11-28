@@ -2,10 +2,10 @@
 title: Strona główna
 description: Oficjalna dokumentacja v2
 published: true
-date: 2021-09-18T14:08:28.442Z
-tags: 
+date: 2021-02-24T23:22:41.678Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:13.079Z
+dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
 > The documentation is still being edited! Niektóre strony mogą być niekompletne lub brakujące. 

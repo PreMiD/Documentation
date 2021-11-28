@@ -2,10 +2,10 @@
 title: Solução de problemas
 description: Tudo para resolver o seu problema
 published: true
-date: 2021-09-18T14:09:05.235Z
-tags: 
+date: 2021-09-18T14:08:01.002Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:18:51.911Z
+dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
 > Certifique-se de ter a extensão **e** o aplicativo instalado! 
@@ -34,7 +34,7 @@ O PreMiD **não** funciona na versão de navegador do Discord, você precisa bai
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Certifique-se de que o Discord NÃO está sendo executado como administrador
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Muito importante. Discord RPC will not work if you run Discord as an administrator.
 
 ### Você está usando uma presence com configurações?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
@@ -85,8 +85,8 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. Abra a pasta "PreMiD" e selecione o arquivo "PreMiD.exe" e clique em abrir. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee agora deve ignorar nosso arquivo, apenas inicie nosso aplicativo e você deve estar pronto para começar.
 
-### Estado do PreMiD depurado no Discord!
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your discord window to reload it.
+### PreMiD status bugged on Discord
+Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 

@@ -2,10 +2,10 @@
 title: Installation
 description: How to install PreMiD
 published: true
-date: 2021-09-18T14:08:06.128Z
-tags: 
+date: 2020-11-10T17:54:28.896Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:17:42.812Z
+dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
 > Prije nego što nastaviš, provjeri zadovoljava li vaš sustav sve [ zahtjeve](/install/requirements). 

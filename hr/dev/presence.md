@@ -1,11 +1,11 @@
 ---
 title: Presence Development
-description: 
+description:
 published: true
-date: 2021-10-30T23:14:25.426Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:29:04.669Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > All presences are now stored here: https://github.com/PreMiD/Presences 
@@ -314,7 +314,7 @@ presence.on("UpdateData", async () => {
     state: "Reading section A", //The lower section of the presence text
     startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
     endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.*/
 
   if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
   else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object

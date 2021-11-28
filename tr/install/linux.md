@@ -2,10 +2,10 @@
 title: Linux
 description: Linux'ta PreMiD kurulumuna başlarken
 published: true
-date: 2021-09-18T14:25:10.291Z
-tags: 
+date: 2020-11-10T18:06:56.520Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:38:06.384Z
+dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
 Eklenti, uygulaması olmadan bir işe yaramayacağı için uygulamanın da de yüklü olması gerekmektedir.

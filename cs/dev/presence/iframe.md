@@ -1,11 +1,11 @@
 ---
 title: iFrame Třída
-description: 
+description:
 published: true
-date: 2021-09-18T14:29:16.772Z
-tags: 
+date: 2021-09-18T14:31:12.831Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:42:50.179Z
+dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
 # iFrame Třída

@@ -2,10 +2,10 @@
 title: Presence-Klasse
 description: Die Hauptklasse für jede PreMiD-Presence
 published: true
-date: 2021-10-30T23:13:37.788Z
-tags: 
+date: 2021-10-30T22:47:57.209Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:43:50.145Z
+dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
 # Presence-Klasse

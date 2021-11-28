@@ -2,10 +2,10 @@
 title: macOS
 description: Getting started with a PreMiD installation on macOS
 published: true
-date: 2021-09-18T14:26:04.284Z
-tags: 
+date: 2021-09-18T14:14:48.363Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:39:06.277Z
+dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
 > Trước khi tiến hành, hãy đảm bảo rằng hệ thống của bạn phù hợp vói [yêu cầu hệ thống](/install/requirements). 

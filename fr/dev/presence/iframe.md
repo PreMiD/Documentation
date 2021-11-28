@@ -1,11 +1,11 @@
 ---
 title: Classe iFrame
-description: 
+description:
 published: true
-date: 2021-09-18T14:33:37.638Z
-tags: 
+date: 2021-09-18T14:31:12.831Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:47:40.950Z
+dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
 # Classe iFrame

@@ -1,11 +1,11 @@
 ---
 title: Desarrollo de Presences
-description: 
+description:
 published: true
-date: 2021-10-30T23:13:50.459Z
-tags: 
+date: 2021-07-08T19:12:34.449Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:25:58.755Z
+dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > Todas las presences ahora se almacenan aquí: https://github.com/PreMiD/Presences 
@@ -305,16 +305,16 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "key" /*La clave (nombre del archivo) de la imagen grande de la presence. Estos se suben y se nombran en la sección Rich Presence de tu aplicación, llamada Art Assets*/
     smallImageKey:
-      "key" /*La clave (nombre del archivo) de la Imagen Pequeña de la presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
-    smallImageText: "Some hover text", //The text which is displayed when hovering over the small image
-    details: "Browsing Page Name", //The upper section of the presence text
-    state: "Reading section A", //The lower section of the presence text
-    startTimestamp: 1577232000, //The unix epoch timestamp for when to start counting from
-    endTimestamp: 1577151472000 //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-  }; /*Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceSata.type = "blahblah"; type examples: details, state, etc.*/
+      "key" /*La clave (nombre del archivo) de la Imagen Pequeña de la presence. Estos son cargados y nombrados en la sección Rich Presence de tu aplicación llamados Art Assets*/,
+    smallImageText: "Un texto", //Este texto será mostrado al pasar el cursor sobre la imagen pequeña
+    details: "Viendo Nombre Página", //La sección superior del texto de la presence
+    state: "Leyendo sección A", //La sección inferior del texto de la presence
+    startTimestamp: 1577232000, //Un timestamp unix desde el que empezar a contar
+    endTimestamp: 1577151472000 //Si quieres mostrar el tiempo restante en vez de el activo, esto es el timestamp en el que va a terminar el evento
+  }; /*Opcionalmente puedes establecer aquí el valor a largeImageKey y cambiar los valores de las otras propiedades, por ejemplo presenceData.type = "blahblah"; ejemplos de "types": details, state, etc.*/
 
-  if (!presenceData.details) presence.setActivity(); /*Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name*/
-  else presence.setActivity(presenceData); //Update the presence with all the values from the presenceData object
+  if (presenceData.details) presence.setActivity(); /* Actualiza la presence sin datos, borrándola y estableciendo como imagen grande el icono de la Aplicación de Discord y el nombre de la aplicación como el texto */
+  else presence.setActivity(presenceData); //Actualiza la presence con todos los datos del objeto presenceData
 });
 ```
 

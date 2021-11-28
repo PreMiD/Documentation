@@ -2,10 +2,10 @@
 title: শুরু করা যাক
 description: একটি ছোট পরামর্শ তাদের জন্য যারা কোডিং এর মধ্যে সম্প্রতি ঢুকেছেন
 published: true
-date: 2021-09-19T15:36:49.695Z
-tags: 
+date: 2021-09-19T12:54:30.445Z
+tags:
 editor: markdown
-dateCreated: 2021-09-19T12:54:09.592Z
+dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
 > একটি কোড এডিটর প্রয়োজন। আমরা পরামর্শ দেই [Visual Studio Code](https://code.visualstudio.com/) - এর। 

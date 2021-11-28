@@ -1,11 +1,11 @@
 ---
 title: iFrameクラス
-description: 
+description:
 published: true
-date: 2021-09-18T14:37:37.554Z
-tags: 
+date: 2021-09-18T14:31:12.831Z
+tags:
 editor: markdown
-dateCreated: 2021-09-07T01:52:14.367Z
+dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
 # iFrameクラス
