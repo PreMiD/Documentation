@@ -22,7 +22,7 @@ Lihat kaedah [`createSlideshow`](/dev/presence/class#createslideshow) dalam kela
 
 Mengembalikan objek [`PresenceData`](/dev/presence/class#presencedata-interface) berkaitan apa yang Presence/slaid semasa paparkan.
 
-```typescript
+```ts
 const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // Akan mengelog maklumat PresenceData
 ```
