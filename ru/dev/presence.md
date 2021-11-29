@@ -306,19 +306,17 @@ presence.on("UpdateData", async () => {
   const presenceData: PresenceData = {
     //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
-    smallImageKey: "key",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
-    startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-    endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //The key (file name) of the Small Image on the presence. Изображения загружены и названы в разделе приложения «Rich Presence», подраздел «Art Assets»*/,
+    smallImageText: "Некоторый всплывающий текст", //Текст, который будет показан при наведении на маленькое изображение
+    details: "Название просматриваемой страницы", //Заголовок презенса
+    state: "Прочитываемый раздел А", //Описание презенса
+    startTimestamp: 1577232000, //Временная метка в формате unix, начиная с которой будет отчитываться время в презенсе
+    endTimestamp: 1577151472000 //Если вы хотите указать сколько времени осталось, вместо того, чтобы указывать сколько времени прошло, то укажите здесь временную метку в формате unix в которое время будет конец отчёта.
+  }; /*Если хотите, вы можете не устанавливать значение для largeImageKey и изменять остальные параметры как подсвойства, например, presenceData.type = "бла-бла-бла"; примеры типов: details, state и т. п.*/
+
+  if (!presenceData.details) presence.setActivity(); /*Обновляет презенс без данных, то есть очищает его и устанавливает больше изображение как иконка приложения и всплывающий текст как название приложения*/
+  else presence.setActivity(presenceData); //Обновляет презенс используя значения из объекта presenceData
+});
   };
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
@@ -350,9 +348,9 @@ presence.on("UpdateData", async () => {
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  //Получите все необходимые данные из iFrame, сохраните их в переменные, а затем отправьте их используя iframe.send
   iframe.send({
-    //sending data
+    //отправка данных
     video: video,
     time: video.duration
   });
