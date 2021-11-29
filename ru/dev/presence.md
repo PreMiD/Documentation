@@ -350,9 +350,9 @@ presence.on("UpdateData", async () => {
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  //Получите все необходимые данные из iFrame, сохраните их в переменные, а затем отправьте их используя iframe.send
   iframe.send({
-    //sending data
+    //отправка данных
     video: video,
     time: video.duration
   });
