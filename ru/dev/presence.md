@@ -304,9 +304,9 @@ presence.on("UpdateData", async () => {
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    //The key (file name) of the Large Image on the presence. Они загружаются и называются в разделе Rich Presence приложения, называемом Art Assets.
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. Изображения загружены и названы в разделе приложения «Rich Presence», подраздел «Art Assets»*/,
+    //Ключ (имя файла) Маленького изображения о наличии. Изображения загружены и названы в разделе приложения «Rich Presence», подраздел «Art Assets»*/,
     smallImageText: "Некоторый всплывающий текст", //Текст, который будет показан при наведении на маленькое изображение
     details: "Название просматриваемой страницы", //Заголовок презенса
     state: "Прочитываемый раздел А", //Описание презенса
