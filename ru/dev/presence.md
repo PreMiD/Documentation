@@ -276,10 +276,10 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
+  //ID клиента Приложения, созданного по адресу https://discordapp.com/developers/applications
   clientId: "000000000000000000"
   }),
-  //You can use this to get translated strings in their browser language
+  //Вы можете использовать это для получения переведенных строк на языке браузера
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
@@ -287,19 +287,19 @@ const presence = new Presence({
 
 /*
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Захватите и обработайте все свои данные здесь
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+    // захваты элементов //
+    // вызовы api //
+    // наборы переменных //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Запускайте функцию отдельно от события UpdateData каждые 10 секунд, чтобы получить и задать переменные, которые собирает UpdateData
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Это вызывается несколько раз в секунду, когда это возможно.
+  /*UpdateData всегда срабатывает, и поэтому должен использоваться в качестве цикла обновления или «тика». Это вызывается несколько раз в секунду, когда это возможно.
 
     Рекомендуется настроить другую функцию вне этой функции событий, которая будет изменять значения переменных и выполнять тяжелую работу, если вы вызываете данные из API.*/
 
@@ -318,9 +318,8 @@ presence.on("UpdateData", async () => {
   else presence.setActivity(presenceData); //Обновляет презенс используя значения из объекта presenceData
 });
   };
-  //Update the presence with all the values from the presenceData object
-  if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  //Обновите сведения о присутствии всеми значениями из объекта presenceData, если (presenceData.details) presence.setActivity(presenceData);
+  //Обновите присутствие без данных, очислив его и сделав большое изображение значком приложения Discord, а текст — именем приложения Discord.
   else presence.setActivity(); 
 });
 ```
