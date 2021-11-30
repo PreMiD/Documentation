@@ -301,10 +301,10 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Это вызывается несколько раз в секунду, когда это возможно.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Рекомендуется настроить другую функцию вне этой функции событий, которая будет изменять значения переменных и выполнять тяжелую работу, если вы вызываете данные из API.*/
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. Они загружаются и называются в разделе Rich Presence приложения, называемом Art Assets.
+    //Ключ (имя файла) Большого изображения о наличии. Они загружаются и называются в разделе Rich Presence приложения, называемом Art Assets.
     largeImageKey: "key",
     //Ключ (имя файла) Маленького изображения о наличии. Изображения загружены и названы в разделе приложения «Rich Presence», подраздел «Art Assets»*/,
     smallImageText: "Некоторый всплывающий текст", //Текст, который будет показан при наведении на маленькое изображение
