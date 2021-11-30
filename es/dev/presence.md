@@ -273,54 +273,55 @@ TLD significa Top Level Domain, por ejemplo: .com .net (sin incluir el punto)<br
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
-  clientId: "000000000000000000"
+    clientId: "000000000000000000" //El ID de cliente creado en https://discordapp.com/developers/applications
   }),
-  //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
+    //Puedes usar esto para obtener strings traducidas
   });
 
 /*
-function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+function myOutsideHeavyLiftingFunction(){
+    //Obtén y procesa aquí los datos
+
+    // leer elementos del DOM //
+    // llamadas api//
+    // establecer variables //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Ejecuta una función fuera de UpdateData cada 10 segundos para obtener y establecer variables que requiere el evento UpdateData
+
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Esto se llama varias veces por segundo cuando es posible.
+  /*UpdateData se está lanzando siempre y debería utilizarse como evento de refresco o `tick`. Esto se llama varias veces por segundo cuando es posible.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Se recomienda configurar otra función fuera de este evento que cambie los valores de las variables y haga el trabajo pesado, como hacer llamadas a una API. */
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    // La clave (nombre de fichero) de la Imagen Grande en la presence. Estos se suben y se nombran en la sección Rich Presence de tu aplicación, llamada Art Assets*/
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
-    smallImageKey: "key",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    // La clave (nombre de fichero) de la Imagen Pequeña en la presence. Estos son cargados y nombrados en la sección Rich Presence de tu aplicación, llamada Art Assets
+    smallImageKey: "clave de la imagen",
+    //El texto que se muestra al pasar el cursor sobre la imagen pequeña
+    smallImageText: "Algún texto",
+     //La sección superior del texto de la presence
+    details: "Navegando Nombre de la Página",
+    //La sección inferior del texto de la presence
+    state: "Leyendo sección A",
+    //El timestamp unix desde el que empezar a contar
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Si quieres mostrar el Tiempo Restante en vez de el transcurrido, este es el timestamp unix en el que finaliza el contador
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Opcionalmente puedes establecer una clave en largeImageKey y cambiar el resto como subpropiedades de la variable, por ejemplo presenceData.type = "bla bla bla"; type también puede ser: details, state, etc.
   };
-  //Update the presence with all the values from the presenceData object
-  if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  //Actualiza la presence con todos los valores del objeto PresenceData
+  if (presenceData.details) setActivity(presenceData);
+  //Actualiza la presence sin datos, limpiando y mostrando en la imagen grande el icono de aplicación de Discord y el texto el nombre de la aplicación de Discord
+  else presencia.setActivity(); 
 });
 ```
 
@@ -346,10 +347,10 @@ Si los datos que necesitas están en un iFrame, debes hacer lo siguiente:
 
 ```ts
 const iframe = new iFrame();
-iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+iframe n("UpdateDatos", async () => {
+  //Obten todos los datos que necesites de iFrame, guárdalos en variables y envíalos luego usando iframe.send
   iframe.send({
-    //sending data
+    //datos a enviar
     video: video,
     time: video.duration
   });
