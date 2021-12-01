@@ -14,9 +14,9 @@ dateCreated: 2020-06-11T18:03:47.172Z
 
 # О PreMiD
 - :mag: [Что такое PreMiD?](/about) Для чего нужен PreMiD и почему вам стоит использовать его.
-- :link: [Что такое RPC?](https://discordapp.com/rich-presence) Все о Rich Presence и его функциях.
+- :link: [Что такое презенс?](https://discordapp.com/rich-presence) Всё об презенс и его функциях.
 
-# Приступая к работе
+# Приступаем к работе
 
 PreMiD устанавливается быстро и легко. Вы должны быть запущены в кратчайшие сроки.
 
