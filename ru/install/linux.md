@@ -84,7 +84,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Благодарности :
 
-- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (и несколько других парней, которых я забыл их имена) для получения обратной связи о ночных выпусках.
+- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (и еще нескольким ребятам, чьи имена я забыл) за предоставление отзывов о ночных релизах.
 - @apriluwu для поддержки сборки Gentoo
 - @SlimShadyIAm и naka за прежнее обслуживание пакетов репозитория пользователей Arch
 - Сообщество Electron для различных пакетов
