@@ -12,8 +12,8 @@ dateCreated: 2021-09-07T01:17:32.312Z
 > 
 > {.is-warning}
 
-Включено на этой странице:
-1. [Общее решение неполадок](https://docs.premid.app/troubleshooting#general)
+Эта страница включает в себя:
+1. [Общее устранение неполадок](https://docs.premid.app/troubleshooting#general)
 2. [Устранение неполадок Linux](https://docs.premid.app/troubleshooting#linux)
 3. [Устранение неполадок MacOS](https://docs.premid.app/troubleshooting#macos)
 
