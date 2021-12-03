@@ -156,7 +156,7 @@ Please copy the code above and put it in your `metadata.json` file. تحتاج �
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">يجب أن تحتوي على أوبجكت مع <code>إسم</code> و <code>أيدي</code> مطور الpresence. <code>اسم</code> هو اسمك في الديسكورد بدون المعرف(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
+      <td style="text-align:left">يجب أن يحتوي الجسم على <code>إسم</code> و <code>أي-دي</code> مطور الـ presence. <code>اسم</code> هو اسمك في الديسكورد بدون المعرف(#0000). يمكن نسخ معرف المستخدم <code></code> من ديسكورد عن طريق تمكين وضع المطور
         والنقر الأيمن على ملفك الشخصي.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>نعم</code></td>
