@@ -1,6 +1,6 @@
 ---
 title: Начало работы
-description: Немного советы для тех, кто недавно попал в кодировку
+description: Небольшие советы для тех, кто недавно увлекся программированием
 published: true
 date: 2021-09-19T12:54:30.445Z
 tags:
@@ -8,13 +8,13 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Требуется редактор исходного кода. Мы рекомендуем [Visual Studio Code](https://code.visualstudio.com/). 
+> Вам понадобиться редактор кода. Мы рекомендуем использовать [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
-# Установка требований
-1. Загружать [Git](https://git-scm.com/).
-2. Установить [узел](https://nodejs.org/en/) (поставляется с [npm](https://www.npmjs.com/)).
+# Установка необходимых программ
+1. Установите [Git](https://git-scm.com/).
+2. Установите [Node](https://nodejs.org/en/) (идёт вместе с [npm](https://www.npmjs.com/)).
 3. Установите [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите `npm install -g typescript`).
 
 # Клонирование проекта
