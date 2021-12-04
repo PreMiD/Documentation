@@ -27,8 +27,8 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ## Установка
 
-1. Установить [Git](https://git-scm.com/).
-2. Установить [узел](https://nodejs.org/en/) (поставляется с [npm](https://www.npmjs.com/)).
+1. Установите [Git](https://git-scm.com/).
+2. Установите [Node](https://nodejs.org/en/) (идёт вместе с [npm](https://www.npmjs.com/)).
 3. Установка [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите `npm install -g typescript`).
 
 ## Клонирование проекта
