@@ -18,7 +18,7 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Установите [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите команду `npm install -g typescript`).
 
 # Клонирование проекта
-1. Откройте терминал и введите команду `git clone URL`. **Замените URL ссылкой на репозиторий, в который вы хотите внести вклад** Например: `git clone https://github.com/PreMiD/PreMiD`.
+1. Откройте терминал и введите команду `git clone URL`. **Замените URL ссылкой на репозиторий, в который вы хотите внести вклад**<br>Например: `git clone https://github.com/PreMiD/PreMiD`.
 2. Выберите папку по вашему выбору.
 3. Откройте это в вашем редакторе кода.
 
