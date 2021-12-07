@@ -23,17 +23,17 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 # Структура
 
-Все присутствие кодируется в [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) имеет некоторые острые определения типов на JavaScript, так что исправление и идентификация ошибок проще.
+Все презенсы написаны на [TypeScript](https://www.typescriptlang.org/). В отличии от JavaScript [TypeScript](https://www.typescriptlang.org/) имеет несколько дополнительных определений типов, поэтому выявлять и исправлять ошибки намного проще.
 
 ## Установка
 
 1. Установите [Git](https://git-scm.com/).
 2. Установите [Node](https://nodejs.org/ru/) (идёт вместе с [npm](https://www.npmjs.com/)).
-3. Установка [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите `npm install -g typescript`).
+3. Установите [TypeScript](https://www.typescriptlang.org/index.html#download-links) (откройте терминал и введите команду `npm install -g typescript`).
 
 ## Клонирование проекта
 
-1. Откройте терминал и введите `git clone https://github.com/PreMiD/Presences`.
+1. Откройте терминал и введите команду `git clone https://github.com/PreMiD/Presences`.
 2. Выберите папку по вашему выбору.
 3. Откройте его в редакторе кода.
 
