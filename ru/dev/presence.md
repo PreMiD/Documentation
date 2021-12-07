@@ -42,8 +42,8 @@ dateCreated: 2020-06-11T18:04:02.843Z
 1. Откройте папку `websites`, а затем ту папку, название которой соответствует первой букве **названия** (не ссылки) сервиса, для которого вы собираетесь сделать презенс.
 2. Создайте папку, назвав его **названием** (не ссылкой) сервиса, для которого вы собираетесь сделать презенс.
 3. Создайте внутри созданной вами папки файлы `presence.ts` и `tsconfig.json`.
-4. Создайте папку с именем `dist` внутри.
-5. Создайте файл `metadata.json` внутри папки `dist`.
+4. Теперь создайте папку, назвав его `dist`.
+5. Внутри папки `dist` создайте файл `metadata.json`.
 
 ## Заполнение файла tsconfig.json
 
@@ -58,11 +58,11 @@ dateCreated: 2020-06-11T18:04:02.843Z
 }
 ```
 
-Чтобы узнать больше о настройке TypeScript, нажмите [здесь](/dev/presence/tsconfig).
+Нажмите [сюда](/dev/presence/tsconfig), чтобы узнать больше о настройке TypeScript.
 
 ## Заполнение файла metadata.json
 
-Мы сделали `metadata.json` создатель файлов для ленивых [Вот](https://eggsy.xyz/projects/premid/mdcreator). Все еще предлагается прочитать это, чтобы вы знали, как это работает.
+Мы сделали [создатель файлов](https://eggsy.xyz/projects/premid/mdcreator) `metadata.json` для ленивых людей. Но вы всё равно рекомендуем прочитать это, чтобы вы знали, как это работает.
 
 ```json
 {
@@ -77,17 +77,17 @@ dateCreated: 2020-06-11T18:04:02.843Z
       "id": "ID"
     }
   ],
-  "service": "УСЛУГА",
-  "altnames": ["УСЛУГА"],
+  "service": "СЕРВИС",
+  "altnames": ["СЕРВИС"],
   "description": {
     "en": "ОПИСАНИЕ"
   },
-  "url": "URL",
+  "url": "ССЫЛКА",
   "version": "ВЕРСИЯ",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "logo": "ССЫЛКА",
+  "thumbnail": "ССЫЛКА",
   "color": "#HEX000",
-  "tags": ["ЯРЛЫК1", "ЯРЛЫК2"],
+  "tags": ["ТЕГ1", "ТЕГ2"],
   "category": "КАТЕГОРИЯ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
@@ -101,7 +101,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     {
       "id": "ID",
       "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "FONTAWESOME ЗНАЧОК",
+      "icon": "ЗНАЧОК FONTAWESOME",
       "value": true
     },
     {
@@ -110,16 +110,16 @@ dateCreated: 2020-06-11T18:04:02.843Z
         "ID": true
       },
       "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "FONTAWESOME ЗНАЧОК",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "icon": "ЗНАЧОК FONTAWESOME",
+      "value": "«%song%» — %artist%",
+      "placeholder": "используйте %song% или %artist%"
     },
     {
       "id": "ID",
       "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "FONTAWESOME ЗНАЧОК",
+      "icon": "ЗНАЧОК FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "так далее."]
+      "values": ["1", "2", "и т. д."]
     }
   ]
 }
