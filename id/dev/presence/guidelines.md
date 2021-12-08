@@ -260,9 +260,9 @@ Berikut daftar rules yang harus diikuti saat menulis sebuah file `presence.ts`:
 
 Pada situasi tertentu, presence mungkin berperilaku aneh atau mungkin membutuhkan sedikit perubahan untuk meningkatkan kegunaannya. Berikut daftar aturan yang **harus** diikuti ketika mengubah presence.
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
+- Jika pemilik dari presensi tersebut tidak bisa dihubungi lebih dari sebulan, kamu dapat menghubungi peninjau untuk melihat apakah kamu bisa memodifikasi presensinya.
 - Jika kamu membuat perubahan pada presence dan mengubah setidaknya **seperempat** dari codebase presence, kamu mendapatkan izin untuk menambahkan diri sebagai kontributor. Hubungi reviewer untuk informasi lebih lanjut tentang hal ini.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Semua orang bisa membuat Pull Request untuk memperbaiki bug. Do **not** change images if they are not outdated and are in specifications.
 
 # Verifikasi
 
