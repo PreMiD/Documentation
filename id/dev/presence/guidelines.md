@@ -308,7 +308,7 @@ Beberapa hal yang harus anda ketahui setelah membuka pull request:
 
 Saat ini, sebuah presence melewati 3 tahapan pemeriksaan. Pemeriksaan ini membantu reviewer untuk menentukan apakah presencemu cocok untuk perilisan.
 
-- `DeepScan` is a bot that checks for code quality. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya. *Warning: DeepScan doesn't always give you errors. Harap lihat peringatan CodeFactor.*
+- `DeepScan` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya. *Peringatan: DeepScan tidak selalu memberimu eror. Harap lihat peringatan CodeFactor.*
 - `CodeFactor` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya.
 - `Schema Validation` akan mengscan file `metadata.json` mencari eror ( misal, missing fields, invalid value types, dll.). Jika kamu menemukan isu baru, dan kamu juga **diharuskan** memperbaikinya. Menambahkan field schema ke file `metadata.json` akan memungkinkan editor teks kamu ( jika didukung) untuk menunjukkan eror pada development.
 
