@@ -260,9 +260,9 @@ Aqui está uma lista de regras que você deve seguir ao escrever seu arquivo `pr
 
 Em algumas situações, presences podem se comportar de formas inesperadas ou podem usar algumas pequenas alterações para melhorar sua funcionalidade. Aqui está uma lista de regras que você **deve** seguir enquanto modifica as presences.
 
-- Você **não** tem permissão de reescrever uma presence ou alterar seu autor. Se o autor da presence for banido do servidor oficial ou não fez as alterações necessárias dentro de um mês, você pode entrar em contato com um revisor para pedir permissão de reescrever a presence.
+- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
 - Se você fizer modificações a um presence e mudar pelo menos um **quarto** do código base da presence, você terá permissão de adicionar a si mesmo como um contribuidor. Contate um revisor para mais informações sobre este assunto.
-- Qualquer usuário pode fornecer hotfixes para corrigir bugs; no entanto, tente **não** fazer alterações que **não** sejam necessárias. As alterações válidas incluem correções gerais (código e erros de digitação), adições (descrições e tags), arquivos ausentes, etc. **Não** mude as imagens se elas não estiverem desatualizadas e dentro das especificações.
+- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
 
 # Verificação
 
@@ -278,10 +278,7 @@ O processo mais importante de desenvolvimento da presence é conseguir sua prese
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Revisores de Presence</h2>
-
-  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -307,11 +304,11 @@ Algumas coisas que você deve saber após abrir uma pull request:
 
 ## `Checagem`
 
-![Example of checks](https://i.imgur.com/T8agbnB.png)
+![Example of checks](https://i.imgur.com/vF7QpBH.png)
 
 Atualmente, uma presence deve passar por 3 fases separadas de checagem. Todas essas checagens ajudam os revisores a determinar se sua presença é adequada para uso.
 
-- `Codacy` é um bot que verifica a qualidade do código. Se você receber erros por novos problemas, é **necessário** corrigi-los. *Warning: Codacy doesn't always give you errors. Please look at CodeFactor warnings instead.*
+- `DeepScan` is a bot that checks for code quality. Se você receber erros por novos problemas, é **necessário** corrigi-los. *Warning: DeepScan doesn't always give you errors. Please look at CodeFactor warnings instead.*
 - `CodeFactor` is a bot that checks for code quality. Se você receber erros por novos problemas, é **necessário** corrigi-los.
 - O `Schema Validation` irá verificar o seu arquivo `metadata.json` para identificar quaisquer erros (por exemplo, campos vazios, tipos de valores inválidos, etc.). Se você ver quaisquer novos problemas, você também **deve** corrigi-los. Adicionando um campo de esquema ao seu arquivo `metadata.json`, permitirá que seu editor de texto (se suportado) mostre esses erros durante o desenvolvimento.
 
@@ -330,7 +327,7 @@ Se você tiver algumas sugestões para nossas diretrizes, você pode entrar em c
 A `Revisão 3` das diretrizes foi escrita e contribuída pelos seguintes indivíduos:
 
 <div>
-<a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 A `Revisão 2` das diretrizes foi escrita e contribuída pelos seguintes indivíduos:
@@ -344,5 +341,5 @@ A `Revisão 1` foi mantida pelos seguintes indivíduos:
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-<a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/i1u5"><img src="https://github.com/i1u5.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
