@@ -260,9 +260,9 @@ Ini senarai peraturan yang perlu diikuti semasa menulis fail `presence.ts` anda:
 
 Dalam sesetengah keadaan, Presence mungkin berkelakuan luar jangkaan atau diubah secara kecil untuk meningkatkan kefungsian mereka. Ini senarai peraturan yang anda **mesti** ikuti ketika mengubahsuai Presence.
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
+- Jika penulis bagi Presence tertentu tidak dapat dihubungi melebihi sebulan, anda boleh hubungi pengulas untuk tentukan sama ada anda boleh mengubah Presence tersebut.
 - Jika anda mengubah suai sesebuah Presence dan mengubah sekurang-kurangnya **satu suku** daripada pangkalan kod Presence tersebut, anda dibenarkan menambah diri sendiri sebagai penyumbang. Hubungi pengulas untuk maklumat lanjut mengenai perkara ini.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Sesiapapun boleh cipta PR untuk membaiki pepijat. **Jangan** tukar imej jika ia tidak ketinggalan zaman dan masih mengikut spesifikasi.
 
 # Pengesahan
 
@@ -308,7 +308,7 @@ Beberapa perkara anda patut tahu sebelum membuka permintaan tarikan:
 
 Ketika ini, sesebuah Presence melalui 3 peringkat semakan yang berlainan. Kesemua semakan ini membantu pengulas untuk menentukan sama ada Presence anda sesuai untuk dikerahkan.
 
-- `DeepScan` is a bot that checks for code quality. Jika anda menerima ralat untuk isu baharu, anda **diwajibkan** membaikinya. *Warning: DeepScan doesn't always give you errors. Sebaliknya, sila lihat amaran yang dikeluarkan oleh CodeFactor.*
+- `DeepScan` ialah bot yang memeriksa kualiti kod. Jika anda menerima ralat untuk isu baharu, anda **diwajibkan** membaikinya. *Amaran: DeepScan tidak akan sentiasa tunjukkan ralat untuk anda. Sebaliknya, sila lihat amaran yang dikeluarkan oleh CodeFactor.*
 - `CodeFactor` ialah bot yang memeriksa kualiti kod. Jika anda menerima ralat untuk isu baharu, anda **diwajibkan** membaikinya.
 - `Schema Validation` akan mengimbas fail `metadata.json` untuk sebarang ralat (sbg. cth., medan yang tercicir, jenis nilai yang tidak sah, dll.). Jika anda nampak sebarang isu baharu, anda juga **diwajibkan** untuk membaikinya. Penambahan medan skema ke fail `metadata.json` anda akan membolehkan penyunting teks anda (jika disokong) untuk menunjukkan ralat-ralat ini kepada anda ketika pembangunan.
 
