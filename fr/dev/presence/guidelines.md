@@ -266,9 +266,9 @@ Voici une liste de règles que vous devez suivre lors de l'écriture de votre fi
 
 Dans certaines situations, les presences peuvent se comporter de manière inattendue ou peuvent utiliser quelques modifications mineures pour améliorer leurs fonctionnalités. Voici une liste compilée que vous **devez** suivre pour modifier des presences.
 
-- Vous n'êtes **pas** autorisé à réécrire une Presence ou à modifier son auteur. Si l'auteur de la présence a été banni du serveur officiel ou n'a pas apporté les modifications requises dans une période d'un mois, vous pouvez contacter un vérificateur pour voir si vous pouvez réécrire la presence.
+- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
 - Si vous apportez des modifications à une presence et modifiez au moins un **quart** de la base de code de la presence, vous êtes autorisé à vous ajouter en tant que contributeur. Contactez un vérificateur pour plus d'informations à ce sujet.
-- N'importe qui peut fournir des correctifs pour corriger les bugs ; cependant, **n'essayez pas** d'apporter des modifications au code n'ayant **pas** besoin d'être corrigé. Les modifications valides incluent les corrections générales (code et typos), les ajouts (descriptions et balises), les fichiers manquants, etc. Ne changez **pas** les images si elles ne sont pas obsolètes et sont dans les spécifications.
+- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
 
 # Verification
 
@@ -284,10 +284,7 @@ Le processus le plus important dans développement d'une Presence est d'avoir vo
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Vérificateurs de Presences</h2>
-
-  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -313,11 +310,11 @@ Quelques choses que vous devriez savoir après avoir ouvert un pull request :
 
 ## `Vérifications`
 
-![Exemple de vérifications](https://i.imgur.com/T8agbnB.png)
+![Exemple de vérifications](https://i.imgur.com/vF7QpBH.png)
 
 Actuellement, une Presence passe par trois étapes distinctes de vérification. Toutes ces vérifications aident les évaluateurs à déterminer si votre presence est apte au déploiement.
 
-- `Codacy` est un bot qui vérifie la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger. *Attention : Codacy ne vous donne pas tout le temps les erreurs. Veuillez regarder les avertissements CodeFactor à la place.*
+- `DeepScan` is a bot that checks for code quality. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger. *Warning: DeepScan doesn't always give you errors. Veuillez regarder les avertissements CodeFactor à la place.*
 - `CodeFactor` est un bot qui analyse la qualité du code. Si jamais vous recevez des erreurs à propos de nouveaux problèmes, vous êtes **tenus** de les corriger.
 - `Schema Validation` va scanner votre fichier `metadata.json` pour trouver toutes erreurs (par exemple, champs manquants, types de valeurs invalides, etc.). Si jamais vous recevez des erreurs, vous êtes aussi **tenus** de les corriger. L'ajout d'un champ de schéma à votre `metadata.json` permettra à votre éditeur de code (si pris en charge) de vous montrer ces erreurs pendant le développement.
 
@@ -336,7 +333,7 @@ Si vous avez des suggestions à propos de nos règles, vous devriez nous contact
 `La 3ème révision` des directives a été écrite et a bénéficié de la contribution des personnes suivantes :
 
 <div>
-<a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 `La 2ème révision` des règles a été écrite et a bénéficié de la contribution des personnes suivantes :
@@ -350,5 +347,5 @@ Si vous avez des suggestions à propos de nos règles, vous devriez nous contact
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-<a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/i1u5"><img src="https://github.com/i1u5.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
