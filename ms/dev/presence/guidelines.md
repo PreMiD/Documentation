@@ -260,9 +260,9 @@ Ini senarai peraturan yang perlu diikuti semasa menulis fail `presence.ts` anda:
 
 Dalam sesetengah keadaan, Presence mungkin berkelakuan luar jangkaan atau diubah secara kecil untuk meningkatkan kefungsian mereka. Ini senarai peraturan yang anda **mesti** ikuti ketika mengubahsuai Presence.
 
-- Anda **tidak** dibenarkan untuk menulis semula sesebuah Presence atau mengubah penulisnya. Sekiranya penulis Presence telah diharamkan daripada pelayan rasmi atau masih belum membuat perubahan di dalam sebulan, anda boleh hubungi pengulas untuk tanya sama ada anda boleh menulis semula Presence tersebut.
+- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
 - Jika anda mengubah suai sesebuah Presence dan mengubah sekurang-kurangnya **satu suku** daripada pangkalan kod Presence tersebut, anda dibenarkan menambah diri sendiri sebagai penyumbang. Hubungi pengulas untuk maklumat lanjut mengenai perkara ini.
-- Sesiapa pun boleh sediakan pembaikian segera untuk membaiki pepijat; namun begitu, cuba untuk **tidak** membuat perubahan yang **tidak** diperlukan. Pengubahsuaian yang sah termasuk pembaikian umum (kod dan tipo), penambahan (keterangan dan tag), fail yang tercicir, dll. **Jangan** tukar imej jika ia tidak ketinggalan zaman dan masih mengikut spesifikasi.
+- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
 
 # Pengesahan
 
@@ -278,10 +278,7 @@ Proses paling penting dalam pembangunan Presence adalah untuk memasukkan Presenc
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Pengulas Presence</h2>
-
-  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -307,11 +304,11 @@ Beberapa perkara anda patut tahu sebelum membuka permintaan tarikan:
 
 ## `Semakan`
 
-![Contoh semakan](https://i.imgur.com/T8agbnB.png)
+![Contoh semakan](https://i.imgur.com/vF7QpBH.png)
 
 Ketika ini, sesebuah Presence melalui 3 peringkat semakan yang berlainan. Kesemua semakan ini membantu pengulas untuk menentukan sama ada Presence anda sesuai untuk dikerahkan.
 
-- `Codacy` ialah bot yang memeriksa kualiti kod. Jika anda menerima ralat untuk isu baharu, anda **diwajibkan** membaikinya. *Amaran: Codacy tidak akan sentiasa tunjukkan ralat untuk anda. Sebaliknya, sila lihat amaran yang dikeluarkan oleh CodeFactor.*
+- `DeepScan` is a bot that checks for code quality. Jika anda menerima ralat untuk isu baharu, anda **diwajibkan** membaikinya. *Warning: DeepScan doesn't always give you errors. Sebaliknya, sila lihat amaran yang dikeluarkan oleh CodeFactor.*
 - `CodeFactor` ialah bot yang memeriksa kualiti kod. Jika anda menerima ralat untuk isu baharu, anda **diwajibkan** membaikinya.
 - `Schema Validation` akan mengimbas fail `metadata.json` untuk sebarang ralat (sbg. cth., medan yang tercicir, jenis nilai yang tidak sah, dll.). Jika anda nampak sebarang isu baharu, anda juga **diwajibkan** untuk membaikinya. Penambahan medan skema ke fail `metadata.json` anda akan membolehkan penyunting teks anda (jika disokong) untuk menunjukkan ralat-ralat ini kepada anda ketika pembangunan.
 
@@ -330,7 +327,7 @@ Jika anda mempunyai cadangan berkaitan garis panduan kami, anda patut hubungi ka
 Semakan `Revision 3` garis panduan ditulis dan disumbangkan oleh individu berikut:
 
 <div>
-<a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 Semakan `Revision 2` garis panduan ditulis dan disumbangkan oleh individu berikut:
@@ -344,5 +341,5 @@ Semakan `Revision 1` telah diselenggara oleh individu berikut:
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-<a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/i1u5"><img src="https://github.com/i1u5.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
