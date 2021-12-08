@@ -463,13 +463,13 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 > 
 > <ul>
 >   <li>
->     <strong x-id="1">Ní cheadaítear</strong> duit láithreacht a athscríobh nó a údar a athrú. Má cuireadh cosc ar údar an láithreachta ón bhfreastalaí oifigiúil nó mura ndearna sé na hathruithe riachtanacha laistigh de mhí, féadfaidh tú teagmháil a dhéanamh le hathbhreithneoir le fáil amach an féidir leat an láithreacht a athscríobh.
+>     If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
 >   </li>
 >   <li>
 >     Má dhéanann tú modhnuithe ar láithreacht agus má athraíonn tú <strong x-id = "1">ráithe</strong> ar a laghad de bhunchód an láithreachta, tá cead agat tú féin a chur mar ranníocóir. Téigh i dteagmháil le hathbhreithneoir chun tuilleadh faisnéise a fháil faoin ábhar seo.
 >   </li>
 >   <li>
->     Féadfaidh duine ar bith hotfixes a sholáthar chun fabhtanna a shocrú; déan iarracht <strong x-id = "1">ní</strong> athruithe a dhéanamh nach bhfuil <strong x-id = "1">ag teastáil</strong>. I measc na modhnuithe bailí tá socruithe ginearálta (cód agus typos), breiseanna (tuairiscí agus clibeanna), comhaid in easnamh, srl. <strong x-id="1">Ná</strong> athraigh íomhánna mura bhfuil siad as dáta agus má tá siad i sonraíochtaí.
+>     Anyone may create PRs to fix bugs. Do <strong x-id="1">not</strong> change images if they are not outdated and are in specifications.
 >   </li>
 > </ul>
 > 
@@ -507,10 +507,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Athbhreithneoirí Láithreachta</h2>
-
-  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -570,7 +567,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 > </h2>
 > 
 > <p spaces-before="0">
->   <img src="https://i.imgur.com/T8agbnB.png" alt="Sampla de sheiceálacha" />
+>   <img src="https://i.imgur.com/vF7QpBH.png" alt="Sampla de sheiceálacha" />
 > </p>
 > 
 > <p spaces-before="0">
@@ -579,7 +576,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 > 
 > <ul>
 >   <li>
->     Is bot é <code>Codacy</code> a dhéanann seiceáil ar cháilíocht an chóid. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú. <em x-id = "3"> Rabhadh: Ní thugann Codacy earráidí duit i gcónaí. Féach rabhaidh CodeFactor ina ionad. </em>
+>     <code>DeepScan</code> is a bot that checks for code quality. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú. <em x-id="3">Warning: DeepScan doesn't always give you errors. Féach rabhaidh CodeFactor ina ionad. </em>
 >   </li>
 >   <li>
 >     Is bot é <code> CodeFactor </code> a dhéanann seiceáil ar cháilíocht an chóid. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú.
@@ -620,7 +617,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 > </p>
 
 <div>
-<a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 > 
@@ -640,5 +637,5 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-<a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/i1u5"><img src="https://github.com/i1u5.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
