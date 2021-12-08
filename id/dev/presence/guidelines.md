@@ -260,9 +260,9 @@ Berikut daftar rules yang harus diikuti saat menulis sebuah file `presence.ts`:
 
 Pada situasi tertentu, presence mungkin berperilaku aneh atau mungkin membutuhkan sedikit perubahan untuk meningkatkan kegunaannya. Berikut daftar aturan yang **harus** diikuti ketika mengubah presence.
 
-- Kamu **tidak** diperbolehkan untuk menulis ulang sebuah presence atau mengubah authornya. Jika author presence terkena ban dari server resmi kita atau belum membuat perubahan yang dibutuhkan dalam waktu satu bulan, kamu dapat menghubungi reviewer untuk meminta menulis ulang presence tersebut.
+- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
 - Jika kamu membuat perubahan pada presence dan mengubah setidaknya **seperempat** dari codebase presence, kamu mendapatkan izin untuk menambahkan diri sebagai kontributor. Hubungi reviewer untuk informasi lebih lanjut tentang hal ini.
-- Semua orang dapat memberikan perbaikan terbaru untuk memperbaiki bug; namun, coba **tidak** untuk membuat perubahan yang **tidak** diperlukan. Perubahan yang diperbolehkan termasuk perbaikan umum (kode dan typo), penambahan (deskripsi dan tag), file hilang, dll. **Jangan** mengganti gambar jika tidak outdated dan masih dalam spesifikasi.
+- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
 
 # Verifikasi
 
@@ -278,10 +278,7 @@ Proses yang paling penting dalam pengembangan presence adalah memasukan presence
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Peninjau Presence</h2>
-
-  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -307,11 +304,11 @@ Beberapa hal yang harus anda ketahui setelah membuka pull request:
 
 ## `Pemeriksaan`
 
-![Contoh pengecekan](https://i.imgur.com/T8agbnB.png)
+![Contoh pengecekan](https://i.imgur.com/vF7QpBH.png)
 
 Saat ini, sebuah presence melewati 3 tahapan pemeriksaan. Pemeriksaan ini membantu reviewer untuk menentukan apakah presencemu cocok untuk perilisan.
 
-- `Codacy` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya. *Peringatan: Codacy tidak selalu memberimu eror. Harap lihat peringatan CodeFactor.*
+- `DeepScan` is a bot that checks for code quality. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya. *Warning: DeepScan doesn't always give you errors. Harap lihat peringatan CodeFactor.*
 - `CodeFactor` adalah bot yang memeriksa kualitas kode. Jika kamu menemui eror pada issue baru, kamu **diharuskan** untuk memperbaikinya.
 - `Schema Validation` akan mengscan file `metadata.json` mencari eror ( misal, missing fields, invalid value types, dll.). Jika kamu menemukan isu baru, dan kamu juga **diharuskan** memperbaikinya. Menambahkan field schema ke file `metadata.json` akan memungkinkan editor teks kamu ( jika didukung) untuk menunjukkan eror pada development.
 
@@ -330,7 +327,7 @@ Jika kamu memiliki beberapa saran tentang pedoman kami, kamu harus menghubungi k
 `Revisi 3` pedoman ini ditulis dan dikontribusikan oleh beberapa individu berikut:
 
 <div>
-<a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 `Revisi 2` pedoman ini ditulis dan dikontribusikan oleh beberapa individu berikut:
@@ -344,5 +341,5 @@ Jika kamu memiliki beberapa saran tentang pedoman kami, kamu harus menghubungi k
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-<a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/i1u5"><img src="https://github.com/i1u5.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
