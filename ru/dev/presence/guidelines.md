@@ -260,9 +260,9 @@ presence
 
 В некоторых ситуациях presence может вести себя неожиданно или использовать незначительные изменения для улучшения своей функциональности. Вот список правил, которым вы **должны** следовать при изменении presences.
 
-- Вы **не** можете переписать свой presence или сменить его автора. Если составитель статуса был забанен на официальном сервере или не внес необходимые изменения в течение месяца, вы можете связаться с рецензентом, чтобы узнать, можете ли вы изменить статус.
+- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
 - Если вы вносите изменения в presence и изменяете не менее **четверти** кодовой базы presence's, вы можете добавить себя в качестве участника. Проконсультируйтесь с рецензентом для получения дополнительной информации по этой теме.
-- Кто угодно может предоставить исправления для исправления ошибок; но, **не** внести следующие изменения **не** нужно. Допустимые изменения включают общие исправления (код и опечатки), дополнения (комментарии и теги), отсутствующие файлы и т. Д. **нет** меняйте изображения, если они не устарели и находятся в спецификациях.
+- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
 
 # Верификация
 
@@ -278,10 +278,7 @@ presence
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Рецензенты активов</h2>
-
-  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-  <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+  <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
@@ -307,11 +304,11 @@ presence
 
 ## `Проверки`
 
-![Примеры проверок](https://i.imgur.com/T8agbnB.png)
+![Примеры проверок](https://i.imgur.com/vF7QpBH.png)
 
 В настоящее время presence проходит 3 отдельных этапа проверки. Все эти элементы управления помогают проверяющим определить, подходит ли ваше присутствие для развертывания.
 
-- `Codacy` это бот, проверяющий качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо** их исправить. (_Предупреждение: Кодировка бота скоро пропадет, и вам нужно будет проверить ошибки только из CodeFactor._) Взгляните на предупреждения CodeFactor.</em>
+- `DeepScan` is a bot that checks for code quality. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо** их исправить. *Warning: DeepScan doesn't always give you errors. Взгляните на предупреждения CodeFactor.*
 - `CodeFactor` - это бот, который проверяет качество кода. Если вы когда-либо получаете ошибки по новым проблемам, Вым **необходимо ** их исправить.
 - `Проверка схемы` просканирует файл `metadata.json` для любых ошибок (например, отсутствующие поля, недопустимые типы значений и т.д.). Если вы когда-нибудь увидите какие-либо новые проблемы, Вам также **необходимо** исправить их. Добавление поля схемы в файл `metadata.json` позволит вашему текстовому редактору (если поддерживается) показать вам эти ошибки во время разработки.
 
@@ -330,7 +327,7 @@ presence
 `Пересмотр 3` руководящих принципов был написан и был представлен следующими лицами:
 
 <div>
-<a href="https://github.com/ririxidev"><img src="https://github.com/ririxidev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
 `Пересмотр 2` руководящих принципов был написан и был представлен следующими лицами:
@@ -344,5 +341,5 @@ presence
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
-<a href="https://github.com/doomlerd"><img src="https://github.com/doomlerd.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
+<a href="https://github.com/i1u5"><img src="https://github.com/i1u5.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
