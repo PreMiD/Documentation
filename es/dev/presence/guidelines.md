@@ -261,9 +261,9 @@ Aquí hay una lista de las reglas que debes seguir al escribir tu archivo `prese
 
 En algunas situaciones, las presences pueden comportarse inesperadamente o podrían realizar cambios menores para mejorar su funcionalidad. Aquí hay una lista de situaciones que **debes** tener en cuenta al modificar presences.
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
+- Si no se ha podido contactar con el autor de la presence por más de un mes, puedes ponerse en contacto con un revisor para ver si puedes modificar la presence.
 - Si haces modificaciones a una presence que afecte a al menos a **un cuarto** del código base de la misma, tienes permitido añadirte como colaborador. Contacta a un verificador para más información sobre este tema.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Cualquiera puede crear PRs (pull requests) para corregir errores. **No** cambies imágenes si no están desactualizadas y cumplen las especificaciones.
 
 # Modificación
 
