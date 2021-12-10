@@ -37,8 +37,8 @@ An example of that file can be found below.
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["TAG1", "TAG2"],
   "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
@@ -153,15 +153,15 @@ An example of that file can be found below.
       <td style="text-align:left"><code>不可</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">タグの配列を指定してください。タグは、ウェブサイト上でプレゼンスを見つけるのに役立ちます。</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>不可</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">プレゼンスが当てはまるカテゴリー名の文字列です。</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>不可</code></td>
     </tr>
     <tr>
@@ -179,7 +179,7 @@ An example of that file can be found below.
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Defines whether the extension should be reading logs.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>可</code></td>
     </tr>
     <tr>
