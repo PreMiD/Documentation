@@ -18,33 +18,33 @@ Is féidir sampla den chomhad sin a fháil thíos.
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "ÚSÁIDEOIR",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "ÚSÁIDEOIR",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "SEIRBHÍS",
-  "altnames": ["SEIRBHÍS"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "CUR SÍOS"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "LEAGAN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["CLIB1", "CLIB2"],
-  "category": "CHATAGÓIR",
+  "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "ÍOCÓN FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ Is féidir sampla den chomhad sin a fháil thíos.
       "if": {
         "ID": true
       },
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "OCÓN FONTAWESOME",
-      "value": "\"%song%\" leis an %artist%",
-      "placeholder": "bain úsáid as %song% nó %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "ÍOCÓN FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -153,15 +153,15 @@ Breathnaíonn an sampla sin an-aisteach, huh? Ná bíodh imní ort, níl sé cho
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Eagraigh le clibeanna, cuideoidh siad le húsáideoirí do láithreacht a chuardach ar an suíomh Gréasáin.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Teaghrán a úsáidtear chun an chatagóir ina bhfuil an láithreacht a léiriú.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
     <tr>
@@ -179,7 +179,7 @@ Breathnaíonn an sampla sin an-aisteach, huh? Ná bíodh imní ort, níl sé cho
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Sainmhínítear ar cheart logaí léitheoireachta a bheith sa síneadh.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Tá</code></td>
     </tr>
     <tr>
