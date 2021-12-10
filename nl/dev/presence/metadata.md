@@ -37,8 +37,8 @@ Een voorbeeld van dat bestand kan hieronder worden gevonden.
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["TAG1", "TAG2"],
   "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
@@ -156,15 +156,15 @@ Dat voorbeeld lijkt erg vreemd, toch? Maak je geen zorgen, het is niet zo moeili
       <td style="text-align:left"><code>Nee</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array met tags, ze helpen gebruikers je presence op de website te vinden.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nee</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Een tekst die wordt gebruikt om de categorie aan te geven waar de presence onder valt.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nee</code></td>
     </tr>
     <tr>
@@ -182,7 +182,7 @@ Dat voorbeeld lijkt erg vreemd, toch? Maak je geen zorgen, het is niet zo moeili
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Definieert of de extensie logs moet lezen.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
     <tr>

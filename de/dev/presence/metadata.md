@@ -16,6 +16,7 @@ Ein Beispiel für diese Datei, kannst du unten finden.
 
 ```ts
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"
@@ -24,44 +25,44 @@ Ein Beispiel für diese Datei, kannst du unten finden.
     "name": "USER",
     "id": "ID"
   }],
-  "Service": "SERVICE",
-  "Altnamen": ["SERVICE"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "de": "DESCRIPTION"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "version": "VERSION",
-  "Logo": "URL",
+  "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tag": ["TAG1", "TAG2"],
   "category": "CATEGORY",
-  "iframe": falsch,
+  "tags": ["TAG1", "TAG2"],
+  "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "VORSCHAU TITEL",
+      "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
-      "Wert": true
+      "value": true
     },
     {
       "id": "ID",
       "if": {
         "ID": true
       },
-      "title": "VORSCHAU TITEL",
+      "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
-      "Wert": "\"%song%\" von %artist%",
-      "Platzhalter": "benutze %song% oder %artist%"
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "VORSCHAU TITEL",
+      "title": "DISPLAY TITLE",
       "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "etc. ]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
@@ -151,15 +152,15 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Ein Array mit Schlagwörtern. Diese unterstützen den Benutzer bei der Suche nach deiner Presence auf der Webseite.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Eine Zeichenfolge, die die Kategorie darstellt, unter die die Presence fällt.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
@@ -177,7 +178,7 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Legt fest, ob die Erweiterung Logs lesen soll.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Ja</code></td>
     </tr>
     <tr>

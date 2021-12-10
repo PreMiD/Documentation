@@ -16,12 +16,13 @@ Un exemple de ce fichier se situe ci-dessous.
 
 ```ts
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "UTILISATEUR",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "UTILISATEUR",
+    "name": "USER",
     "id": "ID"
   }],
   "service": "SERVICE",
@@ -36,14 +37,14 @@ Un exemple de ce fichier se situe ci-dessous.
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
+  "category": "CATEGORY",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATÉGORIE",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TITRE AFFICHÉ",
-      "icon": "ICÔNE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -51,15 +52,15 @@ Un exemple de ce fichier se situe ci-dessous.
       "if": {
         "ID": true
       },
-      "title": "TITRE AFFICHÉ",
-      "icon": "ICÔNE FONTAWESOME",
-      "value": "\"%song%\" par %artist%",
-      "placeholder": "utilisez %song% ou %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TITRE AFFICHÉ",
-      "icon": "ICÔNE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -155,15 +156,15 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Tableau avec des tags, ils aideront les utilisateurs à rechercher votre présence sur le site Web.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Une chaîne utilisée pour représenter la catégorie sous laquelle tombe la présence.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Non</code></td>
     </tr>
     <tr>
@@ -181,7 +182,7 @@ Cet exemple semble vraiment étrange, hein? Ne vous inquiétez pas, ce n'est pas
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Définit si l'extension doit lire les logs.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Oui</code></td>
     </tr>
     <tr>

@@ -16,34 +16,35 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 ```ts
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "ПОЛЬЗОВАТЕЛЬ",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "ПОЛЬЗОВАТЕЛЬ",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "СЕРВИС",
-  "altnames": ["СЕРВИС"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "ОПИСАНИЕ"
+    "en": "DESCRIPTION"
   },
-  "url": "ССЫЛКА",
+  "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "ВЕРСИЯ",
-  "logo": "ССЫЛКА",
-  "thumbnail": "ССЫЛКА",
+  "version": "VERSION",
+  "logo": "URL",
+  "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["ТЕГ1", "ТЕГ2"],
-  "category": "КАТЕГОРИЯ",
+  "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "ЗНАЧОК FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -51,17 +52,17 @@ dateCreated: 2020-06-11T18:04:52.965Z
       "if": {
         "ID": true
       },
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "ЗНАЧОК FONTAWESOME",
-      "value": "«%song%» — %artist%",
-      "placeholder": "используйте %song% или %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "ЗНАЧОК FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "и т. д."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
@@ -154,15 +155,15 @@ dateCreated: 2020-06-11T18:04:52.965Z
       <td style="text-align:left"><code>Нет</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Массив меток, они помогут пользователям найти ваше присутствие на сайте.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Нет</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Строка, используемая для представления категории присутствия.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Нет</code></td>
     </tr>
     <tr>
@@ -180,7 +181,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Определяет, должно ли расширение читать журналы.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>

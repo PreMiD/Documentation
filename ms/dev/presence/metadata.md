@@ -18,33 +18,33 @@ Contoh fail tersebut boleh dilihat di bawah.
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "PERKHIDMATAN",
-  "altnames": ["PERKHIDMATAN"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "KETERANGAN"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "regExp": "UNGKAPAN NALAR",
-  "iFrameRegExp": "UNGKAPAN NALAR",
-  "version": "VERSI",
+  "regExp": "REGEXP",
+  "iFrameRegExp": "REGEXP",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
+  "category": "CATEGORY",
   "tags": ["TAG1", "TAG2"],
-  "category": "KATEGORI",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -52,17 +52,17 @@ Contoh fail tersebut boleh dilihat di bawah.
       "if": {
         "ID": true
       },
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "dll."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
@@ -156,15 +156,15 @@ Contoh tersebut nampak agak pelik, kan? Jangan risau, ia tidaklah susah untuk fa
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Tatasusunan dengan tag, ia akan bantu pengguna mencari Presence anda di laman sesawang.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Rentetan digunakan untuk mewakili kategori yang mana Presence berada.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
@@ -182,7 +182,7 @@ Contoh tersebut nampak agak pelik, kan? Jangan risau, ia tidaklah susah untuk fa
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Menentukan sama ada sambungan patut baca log.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>
     <tr>

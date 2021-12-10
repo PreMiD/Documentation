@@ -37,8 +37,8 @@ An example of that file can be found below.
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["TAG1", "TAG2"],
   "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
@@ -156,15 +156,15 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Liste over tagger, som vil hjelpe brukere med å søke etter din tilstedeværelse på nettstedet.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Nei</code></td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b>category</b></td>
       <td style="text-align:left">A string used to represent the category the presence falls under.</td>
       <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Nei</code></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nei</code></td>
     </tr>
     <tr>
@@ -182,7 +182,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Angir om utvidelsen skal lese logger.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Yes</code></td>
     </tr>
     <tr>
