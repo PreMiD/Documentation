@@ -37,8 +37,8 @@ An example of that file can be found below.
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["TAG1", "TAG2"],
   "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
@@ -153,15 +153,15 @@ Esse exemplo parece realmente estranho, certo? Não se preocupe, não é tão di
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array com tags, eles ajudarão os usuários a pesquisar sua presence no site.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Uma string usada para representar a categoria na qual a presence cai.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
@@ -179,7 +179,7 @@ Esse exemplo parece realmente estranho, certo? Não se preocupe, não é tão di
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Define se a extensão deve estar lendo os logs.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
     <tr>
