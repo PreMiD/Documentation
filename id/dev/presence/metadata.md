@@ -16,34 +16,35 @@ Contoh file tersebut dapat ditemukan di bawah.
 
 ```ts
 {
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "LAYANAN",
-  "altnames": ["LAYANAN"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESKRIPSI"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSI",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
+  "category": "CATEGORY",
   "tags": ["TAG1", "TAG2"],
-  "category": "KATEGORI",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TUNJUKKAN JUDUL",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -51,15 +52,15 @@ Contoh file tersebut dapat ditemukan di bawah.
       "if": {
         "ID": true
       },
-      "title": "TUNJUKKAN JUDUL",
-      "icon": "IKON FONTAWESOME",
-      "value": "\"%song%\" oleh %artist%",
-      "placeholder": "pakai %song% atau %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TUNJUKKAN JUDUL",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -154,15 +155,15 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array dengan tag, ini akan membantu pengguna untuk mencari presence kamu pada website.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
+      <td style="text-align:left"><b>category</b></td>
+      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">String yang digunakan untuk mewakili kategori yang dimilki presence.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><b>tags</b></td>
+      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
     <tr>
@@ -180,7 +181,7 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Menentukan apakah ekstensi harus membaca catatan.</td>
-      <td style="text-align:left"><code>String</code></td>
+      <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Ya</code></td>
     </tr>
     <tr>
