@@ -18,33 +18,33 @@ Contoh file tersebut dapat ditemukan di bawah.
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "LAYANAN",
+  "altnames": ["LAYANAN"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESKRIPSI"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
   "tags": ["TAG1", "TAG2"],
+  "category": "KATEGORI",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "JUDUL TAMPILAN",
+      "icon": "IKON FONTAWESOME",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ Contoh file tersebut dapat ditemukan di bawah.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "JUDUL TAMPILAN",
+      "icon": "IKON FONTAWESOME",
+      "value": "\"%song%\" oleh %artist%",
+      "placeholder": "pakai %song% atau %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "JUDUL TAMPILAN",
+      "icon": "IKON FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -162,7 +162,7 @@ Contoh itu terlihat sangat aneh, ya? Jangan khawatir, memahami fungsi setiap var
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array dengan tag, ini akan membantu pengguna mencari presencemu pada website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Tidak</code></td>
     </tr>
