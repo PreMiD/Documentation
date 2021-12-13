@@ -66,7 +66,7 @@ Kami telah membuat pembuat file `metadata.json` untuk para pemalas [disini](http
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "PENGGUNA",
     "id": "ID"
