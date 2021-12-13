@@ -66,7 +66,7 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "úsáideoir",
     "id": "ID"

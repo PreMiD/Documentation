@@ -66,7 +66,7 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "UTILISATEUR",
     "id": "ID"
