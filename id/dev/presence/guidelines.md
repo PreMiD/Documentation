@@ -262,7 +262,7 @@ Pada situasi tertentu, presence mungkin berperilaku aneh atau mungkin membutuhka
 
 - Jika pemilik dari presensi tersebut tidak bisa dihubungi lebih dari sebulan, kamu dapat menghubungi peninjau untuk melihat apakah kamu bisa memodifikasi presensinya.
 - Jika kamu membuat perubahan pada presence dan mengubah setidaknya **seperempat** dari codebase presence, kamu mendapatkan izin untuk menambahkan diri sebagai kontributor. Hubungi reviewer untuk informasi lebih lanjut tentang hal ini.
-- Semua orang bisa membuat Pull Request untuk memperbaiki bug. Do **not** change images if they are not outdated and are in specifications.
+- Semua orang bisa membuat Pull Request untuk memperbaiki bug. **Dilarang** mengubah gambar jika gambar tersebut belum usang dan masih memenuhi spesifikasi.
 
 # Verifikasi
 
