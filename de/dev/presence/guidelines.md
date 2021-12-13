@@ -75,7 +75,7 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "USER",
     "id": "ID"
