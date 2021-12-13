@@ -75,7 +75,7 @@ Setiap presence memiliki file descriptor bernama `metadata.json`, metadata memil
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
     "name": "PENGGUNA",
     "id": "ID"
