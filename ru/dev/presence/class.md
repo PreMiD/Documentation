@@ -224,7 +224,7 @@ presence.error("Test") // Это протоколирует "test" в прави
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Возвращает 2 `snowflake` timestamps в `Array`, которые могут быть использованы для `startTimestamp` и `endTimestamp`.
+Возвращает 2 временные метки `snowflake` в `Array`, которые могут быть использованы для `startTimestamp` и `endTimestamp`.
 
 ```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
