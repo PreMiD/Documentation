@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: A little advice for those who got into coding recently
+title: Bắt đầu
+description: Một lời khuyên nho nhỏ cho những ai mới học lập trình gần đây
 published: true
 date: 2021-09-19T12:54:30.445Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Bạn cần phần mềm sửa source code. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Bạn cần phần mềm sửa source code. Chúng tôi khuyên dùng [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
@@ -34,11 +34,11 @@ dateCreated: 2021-09-07T01:17:22.577Z
 > 
 > {.is-danger}
 
-# Coding your vision
-Please keep the structure. We do not want to disorganize our project. Chaotic files may not be accepted.
+# Lập trình tầm nhìn của bạn
+Xin hãy giữ nguyên cấu trúc. Chúng tôi không muốn làm mất tổ chức dự án. Những tệp lộn xộn có thể không được chấp nhận.
 
-# Submitting your dream
-Just open a Pull Request on one of our [GitHub repositories](https://github.com/PreMiD/) you want to contribute to. We will take care of your baby, don't worry. If this is your first time making a pull request, take a look at this [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
+# Gửi giấc mơ của bạn
+Chỉ cần mở một Pull Request trên một trong các [kho lưu trữ mã của chúng tôi tại GitHub](https://github.com/PreMiD/) mà bạn muốn đóng góp. Chúng tôi sẽ chăm sóc đứa trẻ của bạn, đừng lo. Nếu đây là lần đầu tiên bạn tạo một pull request, hãy xem [hướng dẫn này](https://help.github.com/en/articles/creating-a-pull-request).
 
-# Getting approved
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+# Để được chấp nhận
+Vui lòng kiên nhẫn chờ [Các đánh giá viên](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) của chúng tôi xem xét yêu cầu của bạn.
