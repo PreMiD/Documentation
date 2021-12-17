@@ -1,6 +1,6 @@
 ---
-title: Presence Class
-description: The main class for every PreMiD presence
+title: Lớp Presence
+description: Lớp chính cho mọi presence của PreMiD
 published: true
 date: 2021-10-30T22:47:57.209Z
 tags:
@@ -8,37 +8,37 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
-# Presence Class
+# Lớp Presence
 
-## Introduction
+## Giới thiệu
 
-The `Presence` class is very useful as it has basic methods that we need for creating a presence.
+Lớp `Presence` rất hữu ích vì nó có các phương thức cơ bản mà chúng ta cần để tạo một presence.
 
-When you create a class you must specify `clientId` property.
+Khi tạo một lớp, bạn phải chỉ định thuộc tính `clientId`.
 
 ```ts
 const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+  clientId: "514271496134389561" // clientID mẫu
 });
 ```
 
-### Properties
+### Thuộc tính
 
-There are three properties available for `Presence` class.
+Có ba thuộc tính có sẵn cho lớp `Presence`.
 
 #### `clientId`
 
-This property is required to make your presence work, because it uses your application id to display its logo and assets. Bạn có thể tải nó trên [ trang ứng dụng ](https://discordapp.com/developers/applications).
+Thuộc tính phải được cung cấp để làm cho Presence của bạn hoạt động, bởi vì nó sử dụng id ứng dụng của bạn để hiển thị biểu tượng và các giá trị. Bạn có thể tải nó trên [ trang ứng dụng ](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Không được sử dụng từ 2.2.4*
 
-When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
+Khi đặt `injectOnComplete` sang `true` sự kiện `UpdateData` đầu tiên cho cả hai tệp `presence.ts` và `iframe.ts` sẽ chỉ được tải lên khi trang đã tải xong.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Không được sử dụng từ 2.2.4*
 
-When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
+Khi đặt `appMode` sang `true` và presence gửi đi một `PresenceData` rỗng, ứng dụng sẽ hiện lên (ảnh và tên) hồ sơ người dùng thay vì không có gì.
 
-## Methods
+## Phương pháp
 
 ### `getActivity()`
 
