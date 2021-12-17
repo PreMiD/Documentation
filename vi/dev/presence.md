@@ -156,29 +156,29 @@ Hãy chép đoạn mã trên và dán nó vào tệp `metadata.json`. Bạn cầ
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Nên có một Object với <code>tên</code> và <code>id</code> của người phát triển presence. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Nên có một Object với <code>tên</code> và <code>id</code> của người phát triển presence. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). <code>id</code> người dùng có thể được chép từ Discord bằng cách bật chế độ
+        người phát triển vào nhấp chuột phải vào hồ sơ của bạn.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.<br>
-      (Must be the same name as the folder where everything is in)</td>
+      <td style="text-align:left">Tên của dịch vụ mà presence hỗ trợ.<br>
+      (Phải cùng tên với thư mục chứa mọi thứ)</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Có thể tìm kiếm presence bằng một tên tương tự.<br>
+      Nhằm để sử dụng cho các presence có tên khác nhau ở các ngôn ngữ khác nhau (vd. Pokémon và 포켓몬스터).<br>
+      Bạn cũng có thể dùng nó cho các presence với ký tự đặc biệt để bạn không phải gõ chúng ra (vd. Pokémon và Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Đoạn mô tả ngắn của presence, bạn có thể sử dụng đoạn mô tả của dịch vụ nếu bạn bí ý tưởng. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
