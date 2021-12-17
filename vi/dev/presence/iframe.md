@@ -47,4 +47,4 @@ iframe.on("UpdateData", async () => {
 
 #### `UpdateData`
 
-This event is fired every time the iframe is being updated.
+Sự kiện này hoạt động mỗi khi iframe được cập nhật.

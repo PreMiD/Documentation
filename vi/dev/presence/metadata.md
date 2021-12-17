@@ -1,6 +1,6 @@
 ---
 title: Metadata.json
-description: Contains basic data about the Presence
+description: Chứa dữ liệu cơ bản về Presence
 published: true
 date: 2021-02-07T17:12:06.799Z
 tags:
@@ -10,41 +10,41 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
+Nếu bạn muốn công bố một presence qua cửa hàng và tải nó qua phần mở rộng, bạn nên tạo một tệp `metadata.json` trong thư mục `dist` của bạn.
 
-An example of that file can be found below.
+Một ví dụ cho tệp đó có thể tìm thấy dưới đây.
 
 ```ts
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "NGƯỜI DÙNG",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "NGƯỜI DÙNG",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "DỊCH VỤ",
+  "altnames": ["DỊCH VỤ"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "MÔ TẢ"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "PHIÊN BẢN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
+  "category": "THỂ LOẠI",
   "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "ẢNH",
       "value": true
     },
     {
@@ -52,25 +52,25 @@ An example of that file can be found below.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TIÊU ĐỀ ĐƯỢC BIỂU DIỄN",
+      "icon": "ẢNH",
+      "value": "\"%song%\" bởi %artist%",
+      "placeholder": "sử dụng %song% hoặc %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "ẢNH",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "v.v."]
     }
   ]
 }
 ```
 
-## Understanding the metadata.json
+## Hiểu về metadata.json
 
-That example looks really strange, huh? Don't worry, its not that hard to understand what each variable is for.
+Ví dụ đó thật kì lạ nhỉ? Đừng lo, nó thực sự không khó để hiểu từng biến có công dụng gì.
 
 <table>
   <thead>
@@ -84,21 +84,21 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Nên có một Object với <code>tên</code> và <code>id</code> của người phát triển presence. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Nên có một Object với <code>tên</code> và <code>id</code> của người phát triển presence. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). <code>id</code> người dùng có thể được chép từ Discord bằng cách bật chế độ
+        người phát triển và nhấp chuột phải vào hồ sơ của bạn.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Nên có một object với <code>tên</code> và <code>id</code> của người đóng góp. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). <code>id</code> người dùng có thể được chép từ Discord bằng cách bật chế độ
+        người phát triển và nhấp chuột phải vào hồ sơ của bạn.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.</td>
+      <td style="text-align:left">Tiêu đề của dịch vụ mà presence hỗ trợ.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
@@ -112,7 +112,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. View the category for presence languages for a list. </td>
+      <td style="text-align:left">Đoạn mô tả của dịch vụ <b>KHÔNG PHẢI</b> của presence. Đoạn mô tả của bạn phải có giá trị đôi mấu chốt biểu thị ngôn ngữ, và đoạn mô tả bằng ngôn ngữ cụ thể đó. Viết đoạn mô tả bằng những ngôn ngữ <i>mà bạn biết</i>, các phiên dịch viên của chúng tôi sẽ chỉnh sửa vào tệp metadata của bạn. View the category for presence languages for a list. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
