@@ -54,56 +54,56 @@ Second parameter defines when presence is playing something or not. Always use `
 
 ### `clearActivity()`
 
-Clears your current activity and the tray title.
+Đặt lại hoạt động hiện tại của bạn và tiêu đề thanh.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *Không được sử dụng từ 2.2.3*
 
-> This method works only on Mac OS. 
+> Phương thức này chỉ hoạt động trên Mac OS. 
 > 
 > {.is-warning}
 
-Sets the tray title on the Menubar.
+Đặt tiêu đề thanh trên Menubar.
 
 ### `createSlideshow()`
 
-Creates a new `Slideshow` class.
+Tạo một lớp `Slideshow` mới.
 
 ```ts
 const slideshow = presence.createSlideshow();
 ```
 
-It is suggested to do this right after creating the `Presence` class:
+Bạn nên làm điều này ngay sau khi tạo lớp `Presence`:
 
 ```ts
 const presence = new Presence({
-    clientId: "514271496134389561" // Example clientId
+    clientId: "514271496134389561" // clientId mẫu
   }),
   slideshow = presence.createSlideshow();
 ```
 
-You can find the documentation for the `Slideshow` class [here](/dev/presence/slideshow).
+Bạn có thể tìm tài liệu cho lớp `Slideshow` [tại đây](/dev/presence/slideshow).
 
 ### `getStrings(Object)`
 
-An asyncronous method that allows you to get translated strings from extension.
+Một phương thức không đồng bộ để giúp bạn lấy các chuỗi đã được phiên dịch từ phần mở rộng.
 
-You must provide `Object` with keys being the key for string, `keyValue` is the string value. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+Bạn phải cung cấp `Object` với từ khoá dành cho chuỗi, `keyValue` là giá trị của chuỗi. Một danh sách các chuỗi đã được phiên dịch có thể được tìm thấy ở điểm đầu cuối này: `https://api.premid.app/v2/langFile/presence/vi_VN/`
 
 ```ts
-// Returns `Playing` and `Paused` strings
-// from extension.
+// Đưa lại chuỗi `Đang phát` và `Đã dừng`
+// từ phần mở rộng.
 const strings = await presence.getStrings({
   play: "general.playing",
   pause: "general.paused"
 });
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.play; // kết quả: Đang phát
+const pauseString = strings.pause; // kết quả: Đã dừng
 ```
 
-Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
+Từ v2.2.0 của phần mở rộng bạn có thể lấy chuỗi của một ngôn ngữ nhất định. Chức năng này hoạt động tốt với cài đặt mới được thêm `multiLanguage`.
 
-We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
+Chúng tôi khuyên bạn nên sử dụng đoạn mã sau để nó tự động cập nhật PresenceData nếu người dùng thay đổi ngôn ngữ được chọn;
 
 ```ts
 async function getStrings() {
@@ -112,16 +112,16 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // ID là ID của cài đặt multiLanguage.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // ID là ID của cài đặt multiLanguage.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! Đoạn mã này phải nằm trong sự kiện updateData!
 // The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
@@ -129,97 +129,97 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // kết quả: Đang phát
+  pauseString = (await strings).pause; // kết quả: Đã dừng
 ```
 
 ### `getPageletiable(String)`
 
-Returns a variable from the website if it exists.
+Đưa trả một biến từ trang web nếu nó xuất hiện.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Cảnh báo: Chức năng này có thể gây ra lượng sử dụng CPU cao & trang web chậm lại khi lệnh đã được thực thi quá nhiều lần.**
 
 ```ts
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // Đoạn mã này sẽ ghi lại "Nội dung có thể làm biến"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Đưa trả phiên bản của phần mở rộng người dùng đang sử dụng.
 
 ```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // Sẽ ghi lại 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // Sẽ ghi lại 2.1.0
 ```
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Đưa ra giá trị của cài đặt.
 
 ```ts
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Thay pdexID bằng id trong cài đặt
+console.log(setting); // Mã này sẽ ghi lại giá trị của cài đặt
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Ẩn cài đặt được đưa ra.
 
 ```ts
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // Thay pdexID bằng id của cài đặt
 ```
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Hiện cài đặt được đưa ra (Chỉ hoạt động khi cài đặt đã được ẩn từ trước).
 
 ```ts
-presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); // Thay pdexID bằng id của cài đặt
 ```
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Đưa trả các ghi chép của bảng điều khiển trang web.
 
 ```ts
 const logs = await presence.getLogs();
-console.log(logs); // This will log the latest 100 logs (in an array).
+console.log(logs); // Đoạn mã này sẽ ghi lại 100 ghi chép gần nhất (trong một mảng).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Ghi chú:** Yêu cầu `readLogs` phải là `true` trong tệp `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+In tin nhắn đã được đưa ra vào trong bảng điều khiển trong định dạng dựa theo kiểu `info` của presence.
 
 ```ts
-presence.info("Test") // This will log "test" in the correct styling.
+presence.info("Test") // Đoạn mã sẽ ghi lại "test" trong định dạng phù hợp.
 ```
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+In tin nhắn đã được đưa ra vào trong bảng điều khiển trong định dạng dựa theo kiểu ` success` của presence.
 
 ```ts
-presence.success("Test") // This will log "test" in the correct styling.
+presence.success("Test") // Đoạn mã sẽ ghi lại "test" trong định dạng phù hợp.
 ```
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+In tin nhắn đã được đưa ra vào trong bảng điều khiển trong định dạng dựa theo kiểu `error` của presence.
 
 ```ts
-presence.error("Test") // This will log "test" in the correct styling.
+presence.error("Test") // Đoạn mã sẽ ghi lại "test" trong định dạng phù hợp.
 ```
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Đưa trả 2 mốc thời gian `snowflake` trong một `Array` có thể sử dụng được cho `startTimestamp` và `endTimestamp`.
 
 ```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -227,11 +227,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Ghi chú:** Đoạn `String` được đưa ra trong querySelector là một ví dụ.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Đưa trả 2 mốc thời gian `snowflake` trong một `Array` có thể sử dụng được cho `startTimestamp` và `endTimestamp`.
 
 ```ts
 const video = document.querySelector(".video"),
@@ -240,11 +240,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Ghi chú:** Đoạn `String` được đưa ra trong querySelector là một ví dụ.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Chuyển đổi một chuỗi có định dạng `HH:MM:SS` hoặc `MM:SS` hoặc `SS` thành một số nguyên (Không đưa trả mốc thời gian snowflake).
 
 ```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -254,18 +254,18 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Ghi chú:** Đoạn `String` được đưa ra trong querySelector là một ví dụ.
 
-## `PresenceData` Interface
+## Giao diện `PresenceData`
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+Giao diện `PresenceData` được khuyên dùng khi bạn đang sử dụng phương thức `setActivity()`.
 
-This interface has following variables, all of them are optional.
+Giao diện này có những biến sau, tất cả đều không bắt buộc.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Biến số</th>
       <th style="text-align:left">Mô tả</th>
       <th style="text-align:left">Kiểu</th>
     </tr>
@@ -273,58 +273,58 @@ This interface has following variables, all of them are optional.
   <tbody>
     <tr>
       <td style="text-align:left">details</td>
-      <td style="text-align:left">The first line in your presence, usually used as header.</td>
+      <td style="text-align:left">Dòng đầu tiên trong presence của bạn, thông thường là tiêu đề.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">state</td>
-      <td style="text-align:left">Second line in your presence.</td>
+      <td style="text-align:left">Dòng thứ hai trong presence của bạn.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">startTimestamp</td>
-      <td style="text-align:left">Defines the current time.<br>
-        Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+      <td style="text-align:left">Xác định thời gian hiện tại<br>
+        Được dùng nếu bạn muốn hiển thị còn bao nhiêu <code>giờ:phút:giây</code>.
+          <br>Bạn phải chuyển đổi thời gian sang <code>timestamp</code> hoặc sẽ có thời gian đếm ngược
+          không chính xác.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">endTimestamp</td>
-      <td style="text-align:left">Defines the full duration.
-        <br>Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+      <td style="text-align:left">Xác định thời lượng đầy đủ.
+        <br>Được dùng nếu bạn muốn hiển thị còn bao nhiêu <code>giờ:phút:giây</code>.
+          <br>Bạn phải chuyển đổi thời gian sang <code>timestamp</code> hoặc sẽ có thời gian đếm ngược
+          không chính xác.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">largeImageKey</td>
-      <td style="text-align:left">Defines the logo for the presence.</td>
+      <td style="text-align:left">Xác định biểu tượng của presence.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">smallImageKey</td>
-      <td style="text-align:left">Defines the small icon next to presence&apos;s logo.</td>
+      <td style="text-align:left">Xác định ảnh nhỏ bên cạnh biểu tượng của presence.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
-        icon.</td>
+      <td style="text-align:left">Xác định nội dung sẽ được hiển thị khi người dùng di chuột lên trên
+        ảnh nhỏ.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
+      <td style="text-align:left">Mảng các nút, tối đa 2, nhãn là nội dung của nút, url là đường liên kết.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
@@ -333,42 +333,42 @@ This interface has following variables, all of them are optional.
 
 ```ts
 const presenceData: PresenceData = {
-  details: "My title",
-  state: "My description",
-  largeImageKey: "service_logo",
-  smallImageKey: "small_service_icon",
-  smallImageText: "You hovered me, and what now?",
+  details: "Tiêu đề của tôi",
+  state: "Đoạn mô tả của tôi",
+  largeImageKey: "biểu_tượng_dịch_vụ",
+  smallImageKey: "ảnh_nhỏ_dịch_vụ",
+  smallImageText: "Bạn vừa di chuột lên tôi",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Test button1",
+            label: "Nút thử 1",
             url: "https://premid.app/"
         },
         {
-            label: "Test button2",
+            label: "Nút thử 2",
             url: "https://premid.app/contributors"
         }
     ]
 };
 ```
 
-## Events
+## Sự kiện
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Các sự kiện cho phép bạn xác định và xử lí một số thay đổi hoặc lời gọi đã được thực thi. Bạn có thể theo dõi các sự kiên bằng cách sử dụng phương thức `on`.
 
 ```ts
 presence.on("UpdateData", async () => {
-  // Do something when data gets updated.
+  // Sẽ thực thi khi dữ liệu được cập nhật.
 });
 ```
 
-There are few events available:
+Có một số sự kiện có sẵn:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+Sự kiện này hoạt động mỗi khi presence được cập nhật.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Hoạt động khi nhận được dữ liệu từ tập lệnh iFrame.
