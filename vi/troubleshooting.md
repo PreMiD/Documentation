@@ -29,12 +29,12 @@ Bạn có thể nhấn <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) hoặc <kbd>CMD
 ### Are you using the Discord app?
 PreMiD sẽ **không** hoạt động trên phiên bản trình duyệt web của Discord, vui lòng tải xuống phiên bản ứng dụng [tại đây](https://discord.com/download).
 
-### Hãy chắc chắn là bạn đã cho phép Hoạt động trong game trong Discord trong cài đặt
-**Cái đặt người dùng** > **Hoạt động trong game**
+### Hãy chắc chắn rằng bạn đã kích hoạt Hoạt động game của Discord trong phần cài đặt
+**Cài đặt người dùng** > **Hoạt động trong game**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
-### Hãy chắc chắn là Discord đang KHÔNG hoạt động ở chế độ administrator
-Really important. Discord RPC will not work if you run Discord as an administrator.
+### Hãy chắc chắn rằng Discord đang KHÔNG hoạt động ở dưới quyền quản trị viên
+Really important. Discord RPC sẽ không hoạt động nếu bạn chạy Discord dưới quyền quản trị viên.
 
 ### Are you using a presence with settings?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
@@ -76,11 +76,11 @@ This is a false positive from McAfee and we have reported the issue to them, for
 
 1. Mở ứng dụng McAfee và bấm nút cài đặt ở trên cùng phía bên phải. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
 2. Chọn "Tệp tin cách ly" (Thứ hai từ trên đầu).
-3. Mở rộng nó, và click vào nút `>` trước tệp tin với tên "settings.dat".
+3. Mở rộng nó, và nhấn vào nút `>` ở phía trước tệp tin với tên "settings.dat".
 4. Hãy chắc chắn đường dẫn là "AppData\Local\Temp\PreMiD", sau đó chọn nó và bấm phục hồi. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
-5. Sau khi phục hồi xong bạn có thể đóng cửa sổ "Tệp tin cách ly", sau đó bấm vào nút cài đặt ở trên cùng bên phải một lần nữa.
+5. Sau khi phục hồi xong bạn có thể đóng cửa sổ "Các tệp tin đã bị cách ly", sau đó bấm vào nút cài đặt ở trên cùng bên phải một lần nữa.
 6. Chọn "Quét thời gian thực" (Thứ ba từ trên đầu).
-7. Mở rộng nó và bấm "Chọn tệp tin".
+7. Mở rộng nó và bấm "Thêm tệp tin".
 8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Mở thư mục "PreMiD" và chọn tệp tin "PreMiD.exe" và bấm "mở". <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee sẽ bỏ qua tệp tin này, chỉ cần mở ứng dụng của chúng tôi là xong.
@@ -129,5 +129,5 @@ If you get this error, it means that your account doesn't have Administrator per
 3. To this folder assign `PreMiD` name (remember about upper-cased letters).
 4. Open installer again.
 
-# Điều đó chưa giải được vấn đề của tôi
+# Điều đó chưa giải quyết được vấn đề của tôi
 Please open a ticket in [#support](https://discord.premid.app/).
