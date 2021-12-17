@@ -163,13 +163,13 @@ Ví dụ đó thật kì lạ nhỉ? Đừng lo, nó thực sự không khó đ�
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Mảng với các nhãn, chúng sẽ giúp người dùng tìm kiếm presence của bạn trên trang web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
+      <td style="text-align:left">Xác định xem <code>iFrame</code> có được sử dụng không</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
@@ -206,40 +206,40 @@ Nếu bạn muốn học thêm về biểu thức chính quy, đây là một s�
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
-## Presence languages
+## Ngôn ngữ của presence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD là một dịch vụ đa ngôn ngữ, nghĩa là có nhiều ngôn ngữ được cung cấp để kết nối với người dùng toàn cầu. Một danh sách đầy đủ các ngôn ngữ có thể được tìm ở [API đầu cuối](https://api.premid.app/v2/langFile/list). Để tuỳ chỉnh presence của bạn nhiều hơn nữa, bạn có thể cho phép người dùng lựa chọn ngôn ngữ hiển thị của presence. Xem [`multiLanguage`](#multilanguage) để tìm hiểu thêm.
 
-## Presence settings
-Setup interactive settings so users can customize the presence!
+## Cài đặt của presence
+Cài đặt các lựa chọn mang tính tương tác để người dùng có thể tuỳ chỉnh presence!
 ```ts
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Xem https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "TIÊU ĐỀ",
+    "icon": "BIỂU TƯỢNG", //Ví dụ "fas fa-info"
+    "value": true //Giá trị nhị phân sẽ biến nó thành một công tắc bật tắt với giá trị là giá trị mặc định
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Nếu một cài đặt khác có giá trị này (true/false/0/1/v.v.) thì hiện nút này
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "title": "TIÊU ĐỀ",
+    "icon": "BIỂU TƯỢNG",
+    "value": "\"%song%\" bởi %artist%", //Đưa vào một chuỗi sẽ biến nó thành một thanh nhập dữ liệu, nơi bạn có thể tuỳ chỉnh dữ liệu đầu ra.
+    "placeholder": "sử dụng %song% hoặc %artist%" //Khi không có thông tin được đưa vào dòng này sẽ được tô xám
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "title": "TIÊU ĐỀ",
+    "icon": "BIỂU TƯỢNG",
+    "value": 0, //Giá trị mặc định của bộ chọn
+    "values": ["1", "2", "etc."] //Sẽ sử dụng giá trị của một bộ chọn khi bạn chọn một lựa chọn
   }
 ]
 ```
@@ -248,15 +248,15 @@ Setup interactive settings so users can customize the presence!
 
 #### Giới thiệu
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Cài đặt `multiLanguage` được dùng để cho phép người dùng chọn ngôn ngữ họ muốn presence hiển thị. Điều này yêu cầu bạn phải sử dụng chuỗi từ [API](https://api.premid.app/v2/langFile/presence/en) của chúng tôi, để biết thêm về cách thêm chuỗi hãy vào [đây](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
-#### Setup
+#### Cài đặt
 
-The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
+Cài đặt `multiLanguage` là một trường hợp đặc biệt, nó không yêu cầu `title` hay `icon` hay `value` hay `values` như các cài đặt khác nhưng lại yêu cầu bạn thiết lập nhiều hơn!
 
-The `multiLanguage` key can be set to the following:
+Từ khoá `multiLanguage` có thể được đặt các giá trị sau:
 
-`true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true`: sử dụng giá trị này nếu bạn sẽ chỉ sử dụng chuỗi của tệp `general.json` và tệp `<service>.json` của [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: tên của tệp trừ phần mở rộng (.json) trong [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization/tree/master/src/Presence) (trừ tệp `general` vì nó luôn được sử dụng). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
 
 #### Adding new strings
 
