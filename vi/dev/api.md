@@ -14,23 +14,23 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > 
 > {.is-info}
 
-## API Versioning
-> API v2 has been deprecated and most of its endpoints have been removed. Please use v3 for any future request to prevent issues. 
+## Phiên bản API
+> API v2 đã không được dùng nữa và hầu hết các điểm cuối của nó đã bị xóa. Hãy sử dụng v3 cho mọi yêu cầu trong tương lai để tránh gặp phải vấn đề. 
 > 
 > {.is-danger}
 
-PreMiD exposes different versions of our API. You can specify version by including it in the request path like `https://api.premid.app/v{version_number}`. Omitting the version number from the route will route requests to the current default version (marked below accordingly).
+PreMiD sử dụng nhiều phiên bản API của chúng tôi. Bạn có thể chỉ rõ phiên bản bằng cách thêm nó vào đường liên kết như `https://api.premid.app/v{version_number}`. Không ghi số phiên bản vào lệnh sẽ chuyển hướng các yêu cầu tới phiên bản mặc định mới nhất (được ghi ở bên dưới).
 
-## Encryption
+## Mã hóa
 
-All HTTP-layer services and protocols (e.g. http) within the PreMiD API use TLS 1.2.
+Tất cả các dịch vụ và phương thức dùng lớp HTTP (vd. http) trong API của PreMiD dùng TLS 1.2.
 
 # Tài liệu
-> Currently under construction! 
+> Đang trong quá trình thi công! 
 > 
 > {.is-danger}
 
-**Choose the API version:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+**Chọn phiên bản API:**
+- [v2 *bị xóa một phần | không được sử dụng*](/dev/api/v2)
+- [v3 *hiện tại*](/dev/api/v3)
 {.links-list}
