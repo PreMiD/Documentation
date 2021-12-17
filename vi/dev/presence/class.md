@@ -42,15 +42,15 @@ Khi đặt `appMode` sang `true` và presence gửi đi một `PresenceData` r�
 
 ### `getActivity()`
 
-Returns a `PresenceData` object of what the presence is displaying.
+Đưa trả object `PresenceData` của presence đang được hiển thị.
 
 ### `setActivity(PresenceData | Slideshow, Boolean)`
 
-Sets your profile activity according to provided data.
+Đặt hoạt động trên hồ sơ của bạn dựa theo dữ liệu đã được đưa.
 
-First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
+Tham số đầu tiên yêu cầu một giao diện [`PresenceData`](#presencedata-interface) hoặc một lớp [`Slideshow`](/dev/presence/slideshow) để lấy tất cả các thông tin bạn muốn hiển thị lên hồ sơ của mình.
 
-Second parameter defines when presence is playing something or not. Always use `true` if you provide timestamps in `PresenceData`.
+Tham số thứ hai quyết định xem presence có đang hoạt động hay không. Luôn sử dụng `true` nếu bạn sử dụng mốc thời gian trong `PresenceData`.
 
 ### `clearActivity()`
 
