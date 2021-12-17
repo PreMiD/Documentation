@@ -8,22 +8,22 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Tất cả presence hiện được chứa ở đây: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+Phiên bản `2.x` đã thêm tính năng [cửa hàng presence](https://premid.app/store). Người dùng đã có thể thêm hoặc gỡ presences yêu thích của họ thông qua [website](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> Trước khi bắt đầu, chúng tôi khuyên bạn nên xem bộ quy tắc về presence của chúng tôi. 
 > 
 > {.is-warning}
 
-- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
+- [Bộ quy tắc](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
-# Structure
+# Cấu trúc
 
-All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+Tất cả presence đều được lập trình bằng [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) có các định nghĩa thú vị hơn so với JavaScript, nên việc tìm và sửa lỗi trở nên dễ dàng hơn nhiều.
 
 ## Cài đặt
 
