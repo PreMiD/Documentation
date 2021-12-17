@@ -29,23 +29,23 @@ Tất cả presence đều được lập trình bằng [TypeScript](https://www
 
 1. Cài đặt [Git](https://git-scm.com/).
 2. Cài [Node](https://nodejs.org/en/) (có sẵn với [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and `npm install -g typescript`).
+3. Cài [TypeScript](https://www.typescriptlang.org/index.html#download-links) (mở terminal và nhập `npm install -g typescript`).
 
 ## Clone project
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
+1. Mở một terminal và gõ lệnh `git clone https://github.com/PreMiD/Presences`.
 2. Chọn thư mục bạn muốn.
 3. Mở nó với editor bạn chọn.
 
-## Creating folders and files
+## Tạo thư mục và tệp
 
-1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
-2. Create a folder with the **name** (not an URL) of the service you want to support.
-3. Create a `presence.ts` and a `tsconfig.json` file inside.
-4. Create a folder named `dist` inside.
-5. Create a `metadata.json` file inside the `dist` folder.
+1. Mở thư mục `websites` và tiếp tục mở thư mục có chữ cái bắt đầu của **tên** (không phải URL) của dịch vụ bạn muốn hỗ trợ.
+2. Tạo một thư mục với **tên** (không phải URL) của dịch vụ bạn muốn hỗ trợ.
+3. Tạo một tệp `presence.ts` và một tệp `tsconfig.json` ở bên trong.
+4. Tạo một thư mục tên`dist` bên trong.
+5. Tạo một tệp `metadata.json` ở bên trong thư mục `dist`.
 
-## Filling in the tsconfig.json file
+## Điền tệp tsconfig.json
 
 Please put the following code inside of the `tsconfig.json` file.
 
