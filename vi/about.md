@@ -16,4 +16,4 @@ PreMiD là một tiện ích đơn giản, có thể cho phép bạn hiển th�
 
 # Tính năng chính
 - Hiển thị dịch vụ web hiện tại lên làm trạng thái trên Discord.
-- Grants full control over Presences.
+- Cho toàn bộ kiểm soát về Presence.

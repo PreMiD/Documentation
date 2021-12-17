@@ -1,6 +1,6 @@
 ---
 title: API
-description: Access resources and perform actions using the PreMiD API
+description: Truy cập dữ liệu và thực hiện các hành động bằng cách sử dụng PreMid API
 published: true
 date: 2021-10-30T23:53:16.875Z
 tags:
