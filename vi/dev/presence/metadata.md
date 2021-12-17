@@ -112,52 +112,52 @@ Ví dụ đó thật kì lạ nhỉ? Đừng lo, nó thực sự không khó đ�
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Đoạn mô tả của dịch vụ <b>KHÔNG PHẢI</b> của presence. Đoạn mô tả của bạn phải có giá trị đôi mấu chốt biểu thị ngôn ngữ, và đoạn mô tả bằng ngôn ngữ cụ thể đó. Viết đoạn mô tả bằng những ngôn ngữ <i>mà bạn biết</i>, các phiên dịch viên của chúng tôi sẽ chỉnh sửa vào tệp metadata của bạn. View the category for presence languages for a list. </td>
+      <td style="text-align:left">Đoạn mô tả của dịch vụ <b>KHÔNG PHẢI</b> của presence. Đoạn mô tả của bạn phải có giá trị đôi mấu chốt biểu thị ngôn ngữ, và đoạn mô tả bằng ngôn ngữ cụ thể đó. Viết đoạn mô tả bằng những ngôn ngữ <i>mà bạn biết</i>, các phiên dịch viên của chúng tôi sẽ chỉnh sửa vào tệp metadata của bạn. Hiển thị danh mục của các ngôn ngữ của presence trong một danh sách. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br>
-      <b>Example:</b><code>vk.com</code><br>
-      <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. This may only be used as an array when there are more than one urls.</b></td>
+      <td style="text-align:left">URL của dịch vụ.<br>
+      <b>Ví dụ:</b><code>vk.com</code><br>
+      <b>url này phải trùng với url của trang web vì nó sẽ được sử dụng để xác định xem đây có phải trang web để nhét tập lệnh vào không. Điều này chỉ nên được sử dụng như một mảng khi có nhiều hơn một url.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.</td>
+      <td style="text-align:left">Một chuỗi biểu thức chính quy được dùng để xác định các url.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Phiên bản presence của bạn.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Liên kết tới logotype của dịch vụ.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Liên kết với hình thu nhỏ presence của bạn.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Giá trị <code>#HEX</code>. Chúng tôi khuyên bạn sử dụng tông màu chủ đạo của dịch vụ
+        mà presence của bạn hỗ trợ.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Một chuỗi được dùng để đại diện danh mục của presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
@@ -175,7 +175,7 @@ Ví dụ đó thật kì lạ nhỉ? Đừng lo, nó thực sự không khó đ�
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
+      <td style="text-align:left">Một bộ chọn biểu thức chính quy để lựa chọn những iframe để nhét vào.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
@@ -187,22 +187,22 @@ Ví dụ đó thật kì lạ nhỉ? Đừng lo, nó thực sự không khó đ�
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change</td>
+      <td style="text-align:left">Một mảng các cài đặt người dùng có thể thay đổi</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
   </tbody>
 </table>
 
-## Regular Expressions
+## Biểu thức chính quy
 
-If you want to learn regular expressions, here are a few websites.
+Nếu bạn muốn học thêm về biểu thức chính quy, đây là một số trang web.
 
-#### Learning
+#### Học tập
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
-#### Testing
+#### Thử nghiệm
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
