@@ -178,75 +178,75 @@ Hãy chép đoạn mã trên và dán nó vào tệp `metadata.json`. Bạn cầ
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Đoạn mô tả ngắn của presence, bạn có thể sử dụng đoạn mô tả của dịch vụ nếu bạn bí ý tưởng. Đoạn mô tả của bạn phải có giá trị đôi mấu chốt biểu thị ngôn ngữ, và đoạn mô tả bằng ngôn ngữ cụ thể đó. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Đoạn mô tả ngắn của presence, bạn có thể sử dụng đoạn mô tả của dịch vụ nếu bạn bí ý tưởng. Đoạn mô tả của bạn phải có giá trị đôi mấu chốt biểu thị ngôn ngữ, và đoạn mô tả bằng ngôn ngữ cụ thể đó. Viết đoạn mô tả bằng những ngôn ngữ <i>mà bạn biết</i>, các phiên dịch viên của chúng tôi sẽ chỉnh sửa vào tệp metadata của bạn.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
-      <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
+      <td style="text-align:left">URL của dịch vụ.<br><b>Ví dụ:</b><code>vk.com</code><br>
+      <b>URL này phải trùng với URL của trang web vì nó sẽ được dùng để nhận biết đây có phải trang web để thực thi tập lệnh hay không.</b><br> <b>KHÔNG</b> được thêm <code>https://</code> hoặc <code>http://</code> vào trong URL hay gạch chéo ở cuối:
       <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
-      You can add multiple URLs by doing the following:<br>
+      <b>Note</b>: Một số URL có thể có <code>www.</code> hoặc cái gì đó khác được thêm ở trước tên miền. <b>KHÔNG</b> được quên thêm nó vào!<br>
+      Bạn có thể thêm nhiều URL bằng cách sau:<br>
       <code>["URL1", "URL2", "ETC."]</code><br>
-      You could also use regExp also known as Regex for this task, explained further below.</td>
+      Bạn cũng có thể sử dụng regExp hay còn được biết đến là Regex cho việc này, được giải thích kĩ hơn ở dưới.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
+      <td style="text-align:left">Một chuỗi biểu thức chính quy được dùng để nhận biết url.<br>
+      regExp hay còn biết đến là Regex, có thể được dùng nếu trang web có nhiều tên miền phụ.<br>
+      Bạn có thể dùng chuỗi regExp sau cho việc đó:<br>
+      <code>([a-z0-9]+)[.]tênmiền[.]TMCCN"</code><br>
+      TMCCN là viết tắt cho Tên Miền Cấp Cao Nhất, ví dụ: .com .net (nhưng không thêm đấu chấm vào).<br>
+      <code>([a-z0-9]+)</code> nghĩa là tất cả mọi thứ từ a-z và từ 0-9.<br>
+      Bạn có thể khởi động nhanh bằng cách xem video <a href="https://youtu.be/sXQxhojSdZM">này</a>.<br>
+      Bạn có thể thử nghiệm regExp của mình tại <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Phiên bản presence của bạn.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Liên kết tới logotype của dịch vụ.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Liên kết với hình thu nhỏ presence của bạn.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Giá trị <code>#HEX</code>. Chúng tôi khuyên bạn sử dụng tông màu chủ đạo của dịch vụ
+        mà presence của bạn hỗ trợ.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Mảng với các nhãn, chúng sẽ giúp người dùng tìm kiếm presence của bạn trên trang web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under. See the valid catergories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">here</a>.</td>
+      <td style="text-align:left">Một chuỗi được dùng để đại diện danh mục của presence. Xem các danh mục hợp lệ tại <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">đây</a>.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
+      <td style="text-align:left">Xác định xem <code>iFrames</code> có được sử dụng không.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
