@@ -252,34 +252,34 @@ Hãy chép đoạn mã trên và dán nó vào tệp `metadata.json`. Bạn cầ
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into. See regExp for more info.</td>
+      <td style="text-align:left">Một bộ chọn biểu thức chính quy để lựa chọn những iframe để nhét vào. Xem regExp để biết thêm thông tin.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Xác định xem phần mở rộng có nên đọc nhật ký hay không.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change.<br>
-      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
+      <td style="text-align:left">Một mảng các cài đặt người dùng có thể thay đổi.<br>
+      Đọc thêm về cài đặt của presence <a href="https://docs.premid.app/dev/presence/metadata#presence-settings"> tại đây</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
   </tbody>
 </table>
 
-## Getting started
+## Bắt đầu
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
+  //Client ID của ứng dụng được tạo ở https://discordapp.com/developers/applications
   clientId: "000000000000000000"
   }),
-  //You can use this to get translated strings in their browser language
+  //Bạn có thể sử dụng cái này để lấy chuỗi đã được dịch ở ngôn ngữ trình duyệt của họ
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
@@ -287,7 +287,7 @@ const presence = new Presence({
 
 /*
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Rút và xử lý tất cả thông tin của bạn ở đây
 
     // element grabs //
     // api calls //
@@ -295,11 +295,11 @@ function myOutsideHeavyLiftingFunction(){
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Chạy chức năng này độc lập với UpdateData mỗi 10 giây để lấy và đặt biến mà UpdateData sẽ dùng
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
+  /*UpdateData luôn hoạt động, vậy nên nên được sử dụng làm chu kỳ làm mới của bạn, hay `tíc`. Nó được gọi vài lần mỗi một giây khi có thể.
 
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
