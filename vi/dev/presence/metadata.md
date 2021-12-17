@@ -181,7 +181,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Xác định xem phần mở rộng có nên đọc nhật ký hay không.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
