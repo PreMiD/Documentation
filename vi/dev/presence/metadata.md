@@ -75,7 +75,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Biến số</th>
       <th style="text-align:left">Mô tả</th>
       <th style="text-align:left">Kiểu</th>
       <th style="text-align:left">Tùy chọn</th>
@@ -323,7 +323,7 @@ presence.hideSetting("pdexID"); //Replace pdexID with the id of the setting
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Hiện cài đặt được đưa ra (Chỉ hoạt động khi cài đặt đã được ẩn từ trước).
 ```ts
 presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
 ```

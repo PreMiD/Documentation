@@ -1,5 +1,5 @@
 ---
-title: iFrame Class
+title: Lớp iFrame
 description:
 published: true
 date: 2021-09-18T14:31:12.831Z
@@ -8,42 +8,42 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
-# iFrame Class
+# Lớp iFrame
 
 ## Giới thiệu
 
-In some scenarios, your presence may need to access elements inside of `iframes`.
+Trong một số trường hợp, presence của bạn sẽ phải truy cập yếu tố ở bên trong `iframe`.
 
-The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
+Đoạn mã bạn viết trong tệp `iframe.ts` được nhét vào mọi iframe trên trang.
 
-Like presences, `iframes` have their own classes designed to automatically update data.
+Như presence, `iframe` có lớp riêng của nó để tự động cập nhật dữ liệu.
 
 ```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Đưa đoạn mã vào đây...
 });
 ```
 
 ## Phương pháp
 
 ### `send(Object)`
-Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
+Gửi dữ liệu đến presence. Sử dụng phương thức này sẽ khiến presence ném vào một sự kiện `iFrameData`.
 
 ### `getUrl()`
-Returns the URL of the `iframe`.
+Đưa trả URL của `iframe`.
 
-## Events
-In `iframes`, events work similarly to the way they work in the `presence` class.
+## Sự kiện
+Trong `iframe`, các sự kiện hoạt động tương tự như trong lớp `presence`.
 
 ```ts
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Đưa đoạn mã vào đây...
 });
 ```
 
-Here is a list of all of the events:
+Đây là danh sách tất cả các sự kiện:
 
 #### `UpdateData`
 
