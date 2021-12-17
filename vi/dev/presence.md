@@ -47,7 +47,7 @@ Tất cả presence đều được lập trình bằng [TypeScript](https://www
 
 ## Điền tệp tsconfig.json
 
-Please put the following code inside of the `tsconfig.json` file.
+Hãy điền đoạn mã sau vào trong tệp `tsconfig.json`.
 
 ```ts
 {
@@ -58,50 +58,50 @@ Please put the following code inside of the `tsconfig.json` file.
 }
 ```
 
-To learn more about TypeScript configuration click [here](/dev/presence/tsconfig).
+Để biết thêm về các cấu hình của TypeScript nhấn vào [đây](/dev/presence/tsconfig).
 
-## Filling in the metadata.json file
+## Điền tệp metadata.json
 
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator). It's still suggested to read this through so you know how it works.
+Chúng tôi đã dựng một trình tạo tệp `metadata.json` cho những người lười nhác [tại đây](https://eggsy.xyz/projects/premid/mdcreator). Chúng tôi vẫn khuyên bạn nên đọc qua để có thể hiểu cách nó hoạt động.
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "NGƯỜI DÙNG",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "NGƯỜI DÙNG",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "DỊCH VỤ",
+  "altnames": ["DỊCH VỤ"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "MÔ TẢ"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "PHIÊN BẢN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["NHÃN1", "NHÃN2"],
+  "category": "DANH MỤC",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
     {
-      "id": "ID",
+      "id": "multiLanguage",
       "multiLanguage": true
-    },
+    }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG",
+      "value": "\"%song%\" bởi %artist%",
+      "placeholder": "sử dụng %song% hoặc %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -125,7 +125,7 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 }
 ```
 
-Please copy the code above and put it in your `metadata.json` file. You now need to edit values of the properties. Please note that the following properties are optional to have in your `metadata.json` file, if you do not plan on using them you need to remove them.
+Hãy chép đoạn mã trên và dán nó vào tệp `metadata.json`. Bạn cần thay đổi giá trị của các tính chất. Hãy ghi chú rằng những tính chất này là không bắt buộc phải có trong tệp `metadata.json`, nếu bạn không có ý định sử dụng bạn có thể xóa chúng.
 
 - `contributors`
 - `altnames`
@@ -135,38 +135,38 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 - `readLogs`
 - `settings`
 
-**Clarifying some value presets:**
+**Làm rõ một số giá trị được đặt trước:**
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Biến số</th>
       <th style="text-align:left">Mô tả</th>
       <th style="text-align:left">Kiểu</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Tùy chọn</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Nên có một Object với <code>tên</code> và <code>id</code> của người phát triển presence. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). <code>id</code> người dùng có thể được chép từ Discord bằng cách bật chế độ
+        người phát triển vào nhấp chuột phải vào hồ sơ của bạn.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
+      <td style="text-align:left">Nên có một Object với <code>tên</code> và <code>id</code> của người phát triển presence. <code>tên</code> là tên người dùng Discord của bạn không chứa số hiệu nhận dạng (#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
       <td style="text-align:left">The title of the service that this presence supports.<br>
       (Must be the same name as the folder where everything is in)</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
@@ -174,13 +174,13 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
       You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
       <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
@@ -192,7 +192,7 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       <code>["URL1", "URL2", "ETC."]</code><br>
       You could also use regExp also known as Regex for this task, explained further below.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
@@ -205,69 +205,69 @@ Please copy the code above and put it in your `metadata.json` file. You now need
       You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
       You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
       <td style="text-align:left">Version of your presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Link to service&apos;s logotype.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Link to your presence thumbnail.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
       <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
         that your presence supports.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
       <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
       <td style="text-align:left">A string used to represent the category the presence falls under. See the valid catergories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">here</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Không</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
       <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
       <td style="text-align:left">A regular expression selector that selects iframes to inject into. See regExp for more info.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
       <td style="text-align:left">Defines whether the extension should be reading logs.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Có</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
       <td style="text-align:left">An array of settings the user can change.<br>
       Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Có</code></td>
     </tr>
   </tbody>
 </table>
