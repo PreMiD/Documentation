@@ -391,12 +391,12 @@ Trang web bạn đang phát triển trên sẽ tự động tải lại mỗi kh
 ## Gỡ lỗi
 
 - Bạn có thể đặt `console.log("Test");` giữa đoạn mã của bạn vào xem bảng điều khiển trong trình duyệt của bạn có in ra đúng thông tin đó không. Nếu đúng thì hãy tiếp tục và thử lại với chức năng tiếp theo. Nếu không tìm thấy thì sẽ có lỗi ở bên trên.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Nếu điều đó không giúp ích thì bạn có thể hỏi một nhà phát triển presence trong [máy chủ Discord](https://discord.premid.app/) để trợ giúp bạn.
 
-# Files explained
+# Giải thích các tệp
 
 - [Lớp hiện diện](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
+- [Lớp Slideshow](/dev/presence/slideshow)
 - [Lớp iFrame](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Tệp Metadata](/dev/presence/metadata)
+- [Cấu hình TypeScript](/dev/presence/tsconfig ""){.links-list}
