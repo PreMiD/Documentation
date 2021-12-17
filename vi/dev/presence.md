@@ -178,7 +178,7 @@ Hãy chép đoạn mã trên và dán nó vào tệp `metadata.json`. Bạn cầ
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Đoạn mô tả ngắn của presence, bạn có thể sử dụng đoạn mô tả của dịch vụ nếu bạn bí ý tưởng. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Đoạn mô tả ngắn của presence, bạn có thể sử dụng đoạn mô tả của dịch vụ nếu bạn bí ý tưởng. Đoạn mô tả của bạn phải có giá trị đôi mấu chốt biểu thị ngôn ngữ, và đoạn mô tả bằng ngôn ngữ cụ thể đó. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Không</code></td>
     </tr>
