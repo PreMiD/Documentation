@@ -299,58 +299,59 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData luôn hoạt động, vậy nên nên được sử dụng làm chu kỳ làm mới của bạn, hay `tíc`. Nó được gọi vài lần mỗi một giây khi có thể.
+  /*UpdateData luôn hoạt động, vậy nên được sử dụng làm chu kỳ làm mới của bạn, hay `tick`. Nó được gọi vài lần mỗi một giây khi có thể.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Bạn nên đặt một chức năng độc lập với sự kiện chức năng này đẻ nó thay đổi giá trị của biến và gánh vác công việc nặng nếu bạn thu thập dữ liệu từ một API.*/
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    //Từ khoá (tên tệp) của Ảnh lớn trên presence. Những thứ này được tải lên và đặt tên trong mục Rich Presence của ứng dụng của bạn, được gọi là Art Assets
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    // Từ khoá (tên) của Ảnh nhỏ trên presence. Những thứ này được tải lên và đặt tên trong mục Rich Presence của ứng dụng của bạn, được gọi là Art Assets
     smallImageKey: "key",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    // Nội dung sẽ được biểu thị khi di chuột qua ảnh nhỏ.
+    smallImageText: "Một văn bản nổi lên gì gì đó",
+     //Phần trên của nội dung presence
+    details: "Tên Trang Web Đang Truy Cập",
+    //Phần dưới của nội dung presence
+    state: "Đang đọc phần A",
+    //Mốc thời gian unix epoch mà sẽ được chọn để bắt đầu đếm
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Nếu bạn muốn sử dụng Thời gian còn lại thay vì Thời gian đã qua, đây là mốc thời gian unix epoch sẽ kết thúc
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Bạn có thể tuỳ ý đặt largeImageKey tại đây vài đổi tất cả các thứ còn lại thành biến tính chất phụ, như presenceData.type = "blabla", các type ví dụ: details, state, v.v.
   };
-  //Update the presence with all the values from the presenceData object
+  //Cập nhật presence bằng tất cả các giá trị trong đối tượng presenceData
   if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  //Cập nhật presence với không dữ liệu, từ đó dọn sạch và để ảnh lớn là biểu tượng Ứng dụng Discord, và nội dung là tên Ứng dụng Discord
   else presence.setActivity(); 
 });
 ```
 
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
+Bạn có thể chép nội dung này vào tệp `presence.ts` và chỉnh sửa giá trị. Việc đặt tất cả giá trị được thực hiện trong sự kiện updataData.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+Ta có thể lấy đoạn mã của các presence như sau làm ví dụ: 1337x hay 9GAG. Để biết thêm thông tin về lớp `Presence` nhấp vào [đây](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Từ bản v2.2.0 đã xuất hiện Trình chiếu, cho phép bạn chiếu nhiều giao diện của `PresenceData` cách một khoảng thời gian, để biết thêm thông tin về lớp </code>Slideshow` <a href="/dev/presence/slideshow">nhấp vào đây</a>.</p>
 
-## Can't get certain data?!
+<h2 spaces-before="0">Không thể lấy một số dữ liệu nhất định?!</h2>
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+<p spaces-before="0">Rất nhiều website đang sử dụng <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">iframes</a> (<a href="https://en.wikipedia.org/wiki/HTML_element#Frames">Inlineframes</a>). Các thẻ html này có thể chứa được nhiều nguồn như các videos. Nhưng không phải lúc nào chúng cũng liên quan. Một số bị ẩn hoặc không được sử dụng thường xuyên. Hãy kiểm tra xem bạn có thể rút ra được thông tin bạn cần trước khi bạn thực hiện các công việc không cần thiết.</p>
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+<ol start="1">
+<li>Kiểm tra chúng ở bảng điều khiển trong trình duyệt của bạn (hãy chắc chắn bạn ở trong tab <strong x-id="1">Elements</strong>).</li>
+<li>Tìm kiếm (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) hoặc <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).</li>
+<li>Thực thi <code>document.querySelectorAll("iframe")`.</li> </ol>
 
-If you find that your data is in a iFrame you need to do the following:
+Nếu bạn thấy dữ liệu bạn cần nằm trong iFrame bạn cần làm như sau:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Tạo một tệp `iframe.ts`.
+2. Đặt iFrame thành `true` trong tệp metadata của bạn.
+3. Điền vào tệp iFrame của bạn.
 
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  //Chọn tất cả dữ liệu bạn cần từ iFrame và lưu chúng thành các biến và gửi chúng bằng iframe.send
   iframe.send({
     //sending data
     video: video,
@@ -359,7 +360,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Thiết lập tệp presence để nhận dữ liệu từ tệp iFrame.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -368,34 +369,34 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Ghi chú:** Mã cần được đặt bên ngoài sự kiện updateData.
 
-## Compiling
+## Biên dịch
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Mở một bảng điều khiển trong tệp của bạn và gõ `tsc -w` để biên dịch tệp `presence.ts` vào thư mục `/dist`.
 
-# Loading the presence
+# Tải presence
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Mở tiện ích ở dạng pop-up trong trình duyệt của bạn và bấm giữ phím <kbd>Shift</kbd> trên bàn phím của bạn.
+2. **Load Presence** sẽ xuất hiện trong mục Presences.
+3. Nhấp vào nó khi bạn vẫn đang giữ phím <kbd>Shift</kbd>.
+4. Chọn thư mục /dist của presence của bạn.
 
-# Some helpful things
+# Một số thứ hữu ích
 
 ## Hot-reloading
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Trang web bạn đang phát triển trên sẽ tự động tải lại mỗi khi bạn lưu tệp trong thư mục.
 
-## Debugging
+## Gỡ lỗi
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
+- Bạn có thể đặt `console.log("Test");` giữa đoạn mã của bạn vào xem bảng điều khiển trong trình duyệt của bạn có in ra đúng thông tin đó không. Nếu đúng thì hãy tiếp tục và thử lại với chức năng tiếp theo. Nếu không tìm thấy thì sẽ có lỗi ở bên trên.
 - If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
 
 # Files explained
 
 - [Lớp hiện diện](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
+- [Lớp iFrame](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
 - [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
