@@ -280,28 +280,28 @@ Mỗi `string` là một `Object` tên bắt đầu bằng tên dịch vụ và 
 
 stringName là phương thức nhận dạng 1 từ của tin nhắn.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+`Object` có 2 thuộc tính; `message` và `description`. `message` là phần văn bản cần được phiên dịch. `description` là phần mô tả văn bản để giúp các phiên dịch viên hiểu về văn bản đó.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Ghi chú:** Không được thêm các chuỗi trùng lặp. (Ngoại trừ những chuỗi từ tệp `general.json` nhưng không phải các tệp khác.)
 
-Visualization of the file:
+Trực quan về tệp:
 
 ```ts
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Nội dung cần được dịch.",
+    "description": "Đoạn giải thích nội dung bên trên."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Nội dung cần được dịch.",
+    "description": "Đoạn giải thích nội dung bên trên."
   }
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Sau khi bạn đã hoàn thành tệp với đầy đủ các chuỗi bạn có thể tạo một Pull Request vào [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization), trong phần mô tả bạn **phải** thêm một liên kết với Pull Request của presence bạn đã cập nhật với những chuỗi mới từ [Kho lưu trữ Presence](https://github.com/PreMiD/Presences).
 
-#### Default keys
+#### Từ khoá mặc định
 The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
 **Note:** These are in no way changeable.
