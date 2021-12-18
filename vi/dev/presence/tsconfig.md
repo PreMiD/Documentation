@@ -1,6 +1,6 @@
 ---
-title: TypeScript Configuration
-description: A little helper for TypeScript
+title: Cấu hình TypeScript
+description: Hỗ trợ nho nhỏ cho TypeScript
 published: true
 date: 2021-09-18T14:31:22.005Z
 tags:
@@ -8,17 +8,17 @@ editor: markdown
 dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
-# TypeScript Configuration
+# Cấu hình TypeScript
 
 ## Giới thiệu
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
+Khi bạn đã tải và giải nén không gian làm việc, bạn sẽ thấy một tệp gọi là `tsconfig.json` ở thư mục gốc và các thư mục presence, tệp này được dùng làm cấu hình cho trình biên dịch **TypeScript**. Nó đã được cấu hình sẵn, nên bạn không cần phải lo.
 
-We just want to describe some settings that you should know.
+Chúng tôi muốn mô tả một số cài đặt bạn nên biết.
 
-## Root Configuration
+## Cấu hình gốc
 
-In the root configuration file you will see something like this.
+Ở tệp cấu hình gốc bạn sẽ thấy một thứ như này.
 
 ```javascript
 {
@@ -37,15 +37,15 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property                   | Mô tả                                                                                                                                                               |
+| Thuộc tính                 | Mô tả                                                                                                                                                               |
 |:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
-| module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
-| target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
-| removeComments             | Removing comments from compiled files.                                                                                                                              |
-| noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
-| noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement.                                                                                                            |
-| noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
+| **compilerOptions**        | Được dùng cho trình biên dịch, đa số các thuộc tính nằm tại đây.                                                                                                    |
+| module                     | Bạn có thể đọc thêm tại [đây](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                           |
+| target                     | Xác định phiên bản JavaScript bạn đang biên dịch.                                                                                                                   |
+| removeComments             | Xoá các dòng nhận xét khỏi tệp đã được biên dịch.                                                                                                                   |
+| noEmitOnError              | Không được in ra thông tin nếu có lỗi.                                                                                                                              |
+| noFallthroughCasesInSwitch | Báo lỗi trong các trường hợp nguỵ biện chuyển đổi câu lệnh.                                                                                                         |
+| noUnusedLocals             | Báo cáo lỗi về các hằng số không được sử dụng.                                                                                                                      |
 | noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
 | inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
 | typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
@@ -62,7 +62,7 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property            | Mô tả                                                                                  |
+| Thuộc tính          | Mô tả                                                                                  |
 |:------------------- |:-------------------------------------------------------------------------------------- |
 | **extends**         | Used for extending the base `tsconfig` file for various tasks.                         |
 | **compilerOptions** | See [**Root Configuration**](/dev/presence/tsconfig#root-configuration) for more info. |
