@@ -178,13 +178,13 @@ pacaur -S premid
 # ... bạn hiểu rồi đấy
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+hoặc theo cách thủ công từ [Kho lưu trữ người dùng Arch](https://aur.archlinux.org/packages/premid) nếu bạn biết mình đang làm gì.
 
 <a name="archnotes"></a>
 
 ### Ghi chú bổ sung
 
-If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
+Nếu distro của bạn sử dụng pacman, thì trước tiên bạn phải cài đặt một trong các trình trợ giúp. Nếu bạn chưa cài, Yay được khuyến nghị, hãy chạy :
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -194,4 +194,4 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S premid
 ```
 
-Other AUR/Pacman helpers work as well, although each one's functionality is different so you may face issues while using them.
+Các trình trợ giúp AUR/Pacman khác cũng hoạt động, mặc dù chức năng chúng khác nhau nên bạn có thể gặp sự cố khi sử dụng chúng.
