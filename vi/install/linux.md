@@ -23,19 +23,19 @@ The installation of the application is very important as the extension can not d
   - FAQs (soon)
   - Building (soon)
   - [Support](#support)
-  - [Tác giả](#credits)
-  - [License](#license)
-- **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
-- **[Portable AppImage](#appimage)** (_RECOMMENDED_)
-  - [Installation instructions](#appimageinstall)
-  - [Additional notes](#appimagenotes)
-- [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
-- [**Debian and Ubuntu based distributions**](#packagecloud)
-- [**Arch Linux based distributions**](#arch)
+  - [Đóng góp](#credits)
+  - [Giấy phép](#license)
+- **[Snapcraft](#snapcraft)** (Tóm gọn : _Không bao giờ_ ™️)
+- **[Portable AppImage](#appimage)** (_KHUYẾN NGHỊ_)
+  - [Hướng dẫn cài đặt](#appimageinstall)
+  - [Ghi chú bổ sung](#appimagenotes)
+- [**Hệ điều hành dựa trên Red Hat Enterprise Linux (RHEL)**](#packagecloud)
+- [**Hệ điều hành dựa trên Debian và Ubuntu**](#packagecloud)
+- [**Hệ điều hành dựa trên Arch Linux**](#arch)
 
 <a name="about"></a>
 
-## Về
+## Giới thiệu
 
 **PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
 
@@ -80,7 +80,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="credits"></a>
 
-### Tác giả
+### Đóng góp
 
 Thanks to :
 
@@ -92,7 +92,7 @@ Thanks to :
 
 <a name="license"></a>
 
-### License
+### Giấy phép
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
@@ -105,7 +105,7 @@ The AppImage package is the recommended one if Discord works for you but other P
 
 <a name="appimageinstall"></a>
 
-### Installation instructions
+### Hướng dẫn cài đặt
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
@@ -118,7 +118,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### Ghi chú bổ sung
 
 Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
 
@@ -146,13 +146,13 @@ If command doesn't work, download **deb/rpm** file from our packagecloud repo or
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux based distributions
+## Hệ điều hành dựa trên Arch Linux
 
 Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Hướng dẫn cài đặt
 
 ```bash
 # Using yay (recommended)
@@ -182,7 +182,7 @@ or manually from the [Arch User Repository](https://aur.archlinux.org/packages/p
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Ghi chú bổ sung
 
 If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
 
