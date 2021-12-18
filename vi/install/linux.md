@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: Getting started with a PreMiD installation on Linux
+description: Tải PreMiD trên Linux
 published: true
 date: 2020-11-10T18:06:56.520Z
 tags:
@@ -14,12 +14,12 @@ The installation of the application is very important as the extension can not d
 > 
 > {.is-warning}
 
-## Table of Contents
+## Mục lục
 
 - **[Về](#about)**
-  - [Stats](#stats)
-  - [Requirements](#requirements)
-  - Examples (soon)
+  - [Thông tin](#stats)
+  - [Yêu cầu hệ thống](#requirements)
+  - Ví dụ (Sắp có)
   - FAQs (soon)
   - Building (soon)
   - [Support](#support)
@@ -41,7 +41,7 @@ The installation of the application is very important as the extension can not d
 
 <a name="stats"></a>
 
-### Stats
+### Thông tin
 
 <table>
   <tr>
@@ -58,7 +58,7 @@ The installation of the application is very important as the extension can not d
 
 <a name="requirements"></a>
 
-### Requirements
+### Yêu cầu hệ thống
 
 Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;</br> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.</br> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
 
