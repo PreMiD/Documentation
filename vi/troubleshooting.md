@@ -55,22 +55,22 @@ Nhấn <kbd>CTRL+R</kbd> (Windows) hoặc <kbd>CMD+R</kbd> (MacOS) trên bàn ph
 ### Kiểm tra xem có phần mềm diệt virus hay tường lửa hoạt động trên máy tính của bạn không
 Đôi lúc phần mềm diệt vi-rút và tường lửa sẽ chặn các ứng dụng nếu chúng tạo/lưu trữ máy chủ hoặc chỉ là kết nối Internet. Chúng tôi đang sử dụng máy chủ cục bộ để nhận và truyền dữ liệu giữa ứng dụng của chúng tôi và tiện ích mở rộng, nếu bạn chặn tính năng truyền dữ liệu thì PreMiD có thể sẽ không hoạt động.
 
-### Hãy tắt các tiện ích mở rộng khác
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+### Tắt các tiện ích mở rộng
+Hãy tắt các tiện ích mở rộng khác và thử lại. Nếu được, hãy mở từng tiện ích một sau đó hãy cho chúng tôi biết tiện ích nào gây xung đột với PreMiD.
 
 ### Khởi động lại máy tính của bạn
-I hope you know how to restart a computer.
+Tôi mong là bạn biết cách khởi động lại máy tính.
 
 ### Cài đặt lại PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Đôi khi các tệp có vấn đề... Hướng dẫn cài đặt có thể được tìm thấy [tại đây](/install).
 
 ### Gỡ cài đặt thủ công
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Hệ điều hành Windows: Điền `%appdata%` vào trình duyệt thư mục và xóa thư mục `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` và xóa thư mục `PreMiD`.
 
 ### McAfee phát hiện PreMiD là vi-rút (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Đây là một kết quả sai từ McAfee và chúng tôi đã báo cáo vấn đề với họ, bây giờ bạn có thể loại trừ PreMiD khỏi quá trình quét bằng cách thực hiện các bước sau:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Nếu bạn không cảm thấy đủ tự tin để thực hiện những bước này, đừng ngần ngại tạo một phiếu hỗ trợ tại [#support](https://discord.premid.app/) và một người trong Đội ngũ Hỗ trợ của chúng tôi sẽ giúp bạn! 
 > 
 > {.is-warning}
 
@@ -81,18 +81,18 @@ This is a false positive from McAfee and we have reported the issue to them, for
 5. Sau khi phục hồi xong bạn có thể đóng cửa sổ "Các tệp tin đã bị cách ly", sau đó bấm vào nút cài đặt ở trên cùng bên phải một lần nữa.
 6. Chọn "Quét thời gian thực" (Thứ ba từ trên đầu).
 7. Mở rộng nó và bấm "Thêm tệp tin".
-8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Gõ "%appdata%" vào thanh địa chỉ của trình duyệt tệp tin sau đó bấm Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Mở thư mục "PreMiD" và chọn tệp tin "PreMiD.exe" và bấm "mở". <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee sẽ bỏ qua tệp tin này, chỉ cần mở ứng dụng của chúng tôi là xong.
 
-### PreMiD status bugged on Discord
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+### Trạng thái của PreMiD bị lỗi trên Discord
+Đừng lo lắng. Nhấn tổ hợp phím <kbd>CTRL+R</kbd> (Windows) hoặc <kbd>CMD+R</kbd> (MacOS) trên cửa sổ Discord để làm mới Discord.
 
 <a name="linux"></a>
 
 # Xử lý sự cố cho hệ điều hành Linux
-### Ubuntu/Debian based distros
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+### Hệ điều hành Ubuntu/Debian và tương tự
+Nếu bạn đã tải Discord qua Snapcraft, RPC sẽ không hoạt động. Bạn sẽ phải gỡ cài đặt phiên bản discord Snapcraft bằng cách thực thi lệnh `sudo snap remove discord` trong một cửa sổ lệnh, rồi tải xuống phiên bản **[Discord cho Linux](https://discordapp.com/api/download?platform=linux)** (**[hoặc Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), sau đó mở thư mục mà bạn vừa tải Discord tới (thường là `$HOME/Downloads`), sau đó cài đặt gói bằng lệnh `sudo dpkg -i discord-*.deb`. Nếu AppImage không hoạt động, bạn nên xem xét kiểm tra các gói khác của chúng tôi bằng **[liên kết này](https://packagecloud.io/premid/linux)**.
 
 ### Arch Linux based distros
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
