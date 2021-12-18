@@ -317,25 +317,25 @@ console.log(setting); // Mã này sẽ ghi lại giá trị của cài đặt
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Ẩn cài đặt được đưa ra.
 ```ts
-presence.hideSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); //Thay pdexID bằng id của cài đặt
 ```
 
 #### `showSetting(String)`
 Hiện cài đặt được đưa ra (Chỉ hoạt động khi cài đặt đã được ẩn từ trước).
 ```ts
-presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); //Thay pdexID bằng id của cài đặt
 ```
 
-## Presence categories
+## Danh mục presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Khi phát triển presence, bạn phải chú thích rõ danh mục presence rơi vào. Đây là danh sách tóm gọn những danh mục bạn có thể sử dụng.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
+      <th style="text-align:left">Danh mục</th>
       <th style="text-align:left">Tên</th>
       <th style="text-align:left">Mô tả</th>
     </tr>
@@ -344,32 +344,32 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>anime</b></td>
       <td style="text-align:left"><b>Anime</b></td>
-      <td style="text-align:left">Anything related to anime, from forums to video streaming platforms.</td>
+      <td style="text-align:left">Những thứ liên quan đến anime, từ forums đến nền tảng phát trực tuyến.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
       <td style="text-align:left"><b>Games</b></td>
-      <td style="text-align:left">Any website that has game related content, such as <code>Kahoot</code> or <code>Skribbl.io</code></td>
+      <td style="text-align:left">Bất cứ trang web nào liên quan tới game, như <code>Kahoot</code> hay <code>Skribbl.io</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
       <td style="text-align:left"><b>Nhạc</b></td>
-      <td style="text-align:left">These are websites that offer music related content, whether that be streaming or downloading.</td>
+      <td style="text-align:left">Đây là những trang web cung cấp nội dung liên quan tới nhạc, phát trực tuyến hoặc tải về.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Xã hội</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or  for participating in other forms of social networking.</td>
+      <td style="text-align:left">Trang web được dùng với mục đích tạo và chia sẻ nội dung hoặc tham gia vào các hình thức khác của mạng xã hội.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
         <td style="text-align:left"><b>Video & Streams</b></td>
-      <td style="text-align:left">Websites that serve the purpose of providing videos and streams.</td>
+      <td style="text-align:left">Trang web có chức năng cung cấp video và phát trực tiếp.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
       <td style="text-align:left"><b>Khác</b></td>
-      <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
+      <td style="text-align:left">Bất cứ thứ gì không nằm trong các danh mục cụ thể trên.</td>
     </tr>
   </tbody>
 </table>
