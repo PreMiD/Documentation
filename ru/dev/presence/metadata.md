@@ -357,7 +357,7 @@ presence.showSetting("pdexID"); // Заменить pdexID идентифика�
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Соц. сети</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
+      <td style="text-align:left">Сайты, которые используются для создания и обмена контентом или для участия в других формах социальных сетей.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
