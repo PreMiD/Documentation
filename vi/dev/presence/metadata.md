@@ -256,29 +256,29 @@ Cài đặt `multiLanguage` là một trường hợp đặc biệt, nó không 
 
 Từ khoá `multiLanguage` có thể được đặt các giá trị sau:
 
-`true`: sử dụng giá trị này nếu bạn sẽ chỉ sử dụng chuỗi của tệp `general.json` và tệp `<service>.json` của [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: tên của tệp trừ phần mở rộng (.json) trong [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization/tree/master/src/Presence) (trừ tệp `general` vì nó luôn được sử dụng). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true`: sử dụng giá trị này nếu bạn sẽ chỉ sử dụng chuỗi của tệp `general.json` và tệp `<service>.json` của [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: tên của tệp trừ phần mở rộng (.json) trong [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization/tree/master/src/Presence) (trừ tệp `general` vì nó luôn được sử dụng). Chỉ những ngôn ngữ thông dụng từ cả hai tệp `general` và tệp vừa đưa vào sẽ được liệt kê. `Array<String>`: nếu bạn đang sử dụng nhiều hơn một tệp trong [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization/tree/master/src/Presence) bạn có thể ghi rõ tất cả giá trị trong một mảng (trừ tệp `general` vì nó luôn được sử dụng). Chỉ những ngôn ngữ thông dụng từ tất cả các tệp sẽ được liệt kê.
 
-#### Adding new strings
+#### Thêm chuỗi mới
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Ghi chú:** Ghi thêm các chuỗi tuỳ chọn cho một presence sẽ chỉ được cho phép nếu nó có trên 1000 người dùng.
 
 ##### Clone project
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
+1. Mở một terminal và gõ lệnh `git clone https://github.com/PreMiD/Localization`.
 2. Chọn thư mục bạn muốn.
 3. Mở nó với editor bạn chọn.
 
-##### Creating the file
+##### Tạo tệp tin
 
-1. Go into the `src` folder.
-2. Go into the `Presence` folder.
-3. Make a file named `<service>.json`. (Service is the **name** (not an URL) in lowercase of the service you want to support.)
+1. Vào trong thư mục `src`.
+2. Vào trong thư mục `Presence`.
+3. Tạo một tệp với tên `<service>.json`. (Service là **tên** (không phải URL) viết thường của dịch vụ bạn muốn hỗ trợ.)
 
-##### Adding the strings
+##### Thêm chuỗi
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Mỗi `string` là một `Object` tên bắt đầu bằng tên dịch vụ và tiếp đến là stringName cách nhau bằng một dấu chấm.
 
-The stringName is a 1 word identifier of the message.
+stringName là phương thức nhận dạng 1 từ của tin nhắn.
 
 The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
 
