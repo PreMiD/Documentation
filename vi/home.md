@@ -22,11 +22,11 @@ Cài đặt PreMiD rất nhanh và dễ dàng. Bạn có thể sử dụng nó n
 
 - Hãy chắc rằng bạn đã đọc [những yêu cầu về hệ thống](/install/requirements).
 - Hãy làm theo [hướng dẫn cài đặt ](/install) nhanh và gọn này.
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- [Xử lý vấn đề](/troubleshooting) hướng dẫn bạn qua những giải pháp cho những vấn đề phổ biến.
 
 # Nhà phát triển
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+[Bắt đầu](/dev) phát triển PreMiD là bước đầu tiên trước khi viết mã.
 
 - :computer: [API](/dev/api): Truy cập tài nguyên và thực hiện hành động bằng PreMiD API.
 - :wrench: [Phát triển Presence](/dev/presence): Học cách sử dụng hệ thống Presence của chúng tôi.

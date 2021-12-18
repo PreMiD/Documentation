@@ -37,21 +37,21 @@ Chúng tôi muốn mô tả một số cài đặt bạn nên biết.
 }
 ```
 
-| Thuộc tính                 | Mô tả                                                                                                                                                               |
-|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **compilerOptions**        | Được dùng cho trình biên dịch, đa số các thuộc tính nằm tại đây.                                                                                                    |
-| module                     | Bạn có thể đọc thêm tại [đây](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                           |
-| target                     | Xác định phiên bản JavaScript bạn đang biên dịch.                                                                                                                   |
-| removeComments             | Xoá các dòng nhận xét khỏi tệp đã được biên dịch.                                                                                                                   |
-| noEmitOnError              | Không được in ra thông tin nếu có lỗi.                                                                                                                              |
-| noFallthroughCasesInSwitch | Báo lỗi trong các trường hợp nguỵ biện chuyển đổi câu lệnh.                                                                                                         |
-| noUnusedLocals             | Báo cáo lỗi về các hằng số không được sử dụng.                                                                                                                      |
-| noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
-| inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
-| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
-| esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
+| Thuộc tính                 | Mô tả                                                                                                                                                                    |
+|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **compilerOptions**        | Được dùng cho trình biên dịch, đa số các thuộc tính nằm tại đây.                                                                                                         |
+| module                     | Bạn có thể đọc thêm tại [đây](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                |
+| target                     | Xác định phiên bản JavaScript bạn đang biên dịch.                                                                                                                        |
+| removeComments             | Xoá các dòng nhận xét khỏi tệp đã được biên dịch.                                                                                                                        |
+| noEmitOnError              | Không được in ra thông tin nếu có lỗi.                                                                                                                                   |
+| noFallthroughCasesInSwitch | Báo lỗi trong các trường hợp nguỵ biện chuyển đổi câu lệnh.                                                                                                              |
+| noUnusedLocals             | Báo cáo lỗi về các hằng số không được sử dụng.                                                                                                                           |
+| noUnusedParameters         | Báo cáo lỗi về các thông số không được sử dụng.                                                                                                                          |
+| inlineSourceMap            | Thêm sourcemapping                                                                                                                                                       |
+| typeRoots                  | Bạn có thể đọc thêm tại [đây](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                                |
+| esModuleInterop            | Thêm các trợ giúp __importStar và __importDefault để thích nghi hệ sinh thái runtime babel và bật --allowSyntheticDefaultImports để thích nghi với hệ thống sắp chữ. |
 
-## Presence Configuration
+## Cấu hình presence
 
 ```javascript
 {
@@ -62,8 +62,8 @@ Chúng tôi muốn mô tả một số cài đặt bạn nên biết.
 }
 ```
 
-| Thuộc tính          | Mô tả                                                                                  |
-|:------------------- |:-------------------------------------------------------------------------------------- |
-| **extends**         | Used for extending the base `tsconfig` file for various tasks.                         |
-| **compilerOptions** | See [**Root Configuration**](/dev/presence/tsconfig#root-configuration) for more info. |
-| outDir              | Defines the output directory for compiled files.                                       |
+| Thuộc tính          | Mô tả                                                                                          |
+|:------------------- |:---------------------------------------------------------------------------------------------- |
+| **extends**         | Được dùng để mở rộng thêm tệp `tsconfig` mặc định cho nhiều công việc.                         |
+| **compilerOptions** | Xem [**Cấu Hình Mặc Định**](/dev/presence/tsconfig#root-configuration) để biết thêm thông tin. |
+| outDir              | Xác định thư mục đầu ra của các tệp đã được biên dịch.                                         |
