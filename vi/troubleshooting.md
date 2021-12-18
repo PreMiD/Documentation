@@ -43,19 +43,19 @@ Nhiều presence (bao gồm `Twitch` và `SoundCloud`) bị ảnh hưởng bởi
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Khởi động lại trình duyệt của bạn
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd> + <kbd>F4</kbd> (Windows) hoặc <kbd>CMD</kbd> + <kbd>Q</kbd> (MacOS) cũng hoạt động tốt. (Rõ ràng là bạn phải khởi động lại trình duyệt của mình.)
 
 ### Khởi động lại PreMiD (Ứng dụng)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Sau đó bạn phải khởi động lại PreMiD.
 
 ### Tải lại/khởi động lại Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Nhấn <kbd>CTRL+R</kbd> (Windows) hoặc <kbd>CMD+R</kbd> (MacOS) trên bàn phím của bạn để khởi động lại Discord một cách thủ công.
 
-### Check if you have antivirus or firewall running on your computer
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+### Kiểm tra xem có phần mềm diệt virus hay tường lửa hoạt động trên máy tính của bạn không
+Đôi lúc phần mềm diệt vi-rút và tường lửa sẽ chặn các ứng dụng nếu chúng tạo/lưu trữ máy chủ hoặc chỉ là kết nối Internet. Chúng tôi đang sử dụng máy chủ cục bộ để nhận và truyền dữ liệu giữa ứng dụng của chúng tôi và tiện ích mở rộng, nếu bạn chặn tính năng truyền dữ liệu thì có thể bạn sẽ không dùng được PreMiD.
 
-### Disable your addons
+### Hãy tắt các tiện ích mở rộng khác
 Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
 ### Khởi động lại máy tính của bạn
