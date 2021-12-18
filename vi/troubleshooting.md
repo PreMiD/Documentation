@@ -1,6 +1,6 @@
 ---
 title: Xử lý sự cố
-description: Everything to solve your problem
+description: Mọi thứ cần thiết để giúp bạn xử lý sự cố
 published: true
 date: 2021-09-18T14:08:01.002Z
 tags:
@@ -8,25 +8,25 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> Hãy chắc chắn rằng bạn đã có cả tiện ích mở rộng **và** ứng dụng được cài đặt! 
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+Được bao gồm trên trang này:
+1. [Xử lý sự cố chung](https://docs.premid.app/troubleshooting#general)
+2. [Xử lý sự cố cho hệ điều hành Linux](https://docs.premid.app/troubleshooting#linux)
+3. [Xử lý sự cố cho hệ điều hành MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+# Xử lý sự cố chung
+> Bạn có thể sử dụng [công cụ này](https://qkeleq10.github.io/PreMiD-Troubleshooting/) để có thể xác định vấn đề dễ dàng hơn. 
 > 
 > {.is-info}
 ### Tải lại trang
 Bạn có thể nhấn <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) hoặc <kbd>CMD+R</kbd> (MacOS) trên bàn phím của bạn thay vì tìm kiếm nút tải lại.
 
-### Are you using the Discord app?
+### Bạn có đang sử dụng ứng dụng Discord không?
 PreMiD sẽ **không** hoạt động trên phiên bản trình duyệt web của Discord, vui lòng tải xuống phiên bản ứng dụng [tại đây](https://discord.com/download).
 
 ### Hãy chắc chắn rằng bạn đã kích hoạt Hoạt động game của Discord trong phần cài đặt
@@ -90,7 +90,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 <a name="linux"></a>
 
-# Linux troubleshooting
+# Xử lý sự cố cho hệ điều hành Linux
 ### Ubuntu/Debian based distros
 If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
@@ -119,7 +119,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# Xử lý sự cố cho hệ điều hành MacOS
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
