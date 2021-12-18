@@ -34,12 +34,12 @@ PreMiD sẽ **không** hoạt động trên phiên bản trình duyệt web củ
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Hãy chắc chắn rằng Discord đang KHÔNG hoạt động ở dưới quyền quản trị viên
-Really important. Discord RPC sẽ không hoạt động nếu bạn chạy Discord dưới quyền quản trị viên.
+Rất quan trọng. Discord RPC sẽ không hoạt động nếu bạn chạy Discord dưới quyền quản trị viên.
 
-### Are you using a presence with settings?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+### Bạn có đang sử dụng presence có nút cài đặt không?
+Nhiều presence (bao gồm `Twitch` và `SoundCloud`) bị ảnh hưởng bởi sự cố phần mở rộng. Sự cố này khiến phần mở rộng không lấy đúng các giá trị mặc định của cài đặt.
 
-To solve this, all you have to do is toggle the topmost setting:
+Để giải quyết vấn đề này, tất cả những gì bạn phải làm là chuyển đổi cài đặt trên cùng:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Khởi động lại trình duyệt của bạn
