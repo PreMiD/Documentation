@@ -1,6 +1,6 @@
 ---
 title: macOS
-description: Getting started with a PreMiD installation on macOS
+description: Cài đặt PreMiD trên macOS
 published: true
 date: 2021-09-18T14:14:48.363Z
 tags:
@@ -16,17 +16,17 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 
 # Cài đặt
 1. Đến trang web của chúng tôi bằng cách nhấn vào [đây](https://premid.app/downloads).
-2. Choose **OS X**.
-3. Extract the archive if necessary.
-4. Open the installer.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
-> This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
-6. Choose open when prompted.
-7. Grant access to connections through **Firewall** and control **System Events** when prompted.
+2. Chọn **OS X**.
+3. Giải nén file lưu trữ nếu cần thiết.
+4. Mở bộ cài đặt.
+5. Một **cảnh báo bảo mật** sẽ xuất hiện nếu bạn tải PreMiD lần đầu. Nếu có, hãy làm theo các bước trong [Cho phép ứng dụng từ nhà phát triển chưa được xác định](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
+> Điều này là do chúng tôi không có Chứng chỉ CSC. [Hỗ trợ chúng tôi](https://www.patreon.com/Timeraa) để tài trợ cho nó.{.is-info}
+6. Chọn mở khi được nhắc.
+7. Cấp quyền truy cập cho các kết nối thông qua **Tường lửa** và kiểm soát **Sự kiện hệ thống** khi được nhắc.
 
 Ứng dụng sẽ được chạy tự động. Kiểm tra biểu tượng trên thanh menu.
 
-> Do not forget to [add the **extension**](/install). 
+> Đừng quên [tải **tiện ích mở rộng**](/install). 
 > 
 > {.is-warning}
 
