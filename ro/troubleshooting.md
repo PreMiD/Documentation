@@ -53,7 +53,7 @@ Trebuie să reporniți PreMiD după aceea.
 Apăsați <kbd>CTRL+R</kbd> (Windows) sau <kbd>CMD+R</kbd> (MacOS) pe tastatură sau reporniți Discord manual.
 
 ### Verificați dacă aveți vreun antivirus sau firewall care rulează pe computer
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you will block app's ability to pass data you probably will not be able to use PreMiD.
+Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
 
 ### Disable your addons
 Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
