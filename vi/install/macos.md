@@ -32,14 +32,14 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## Cho phép ứng dụng từ người phát triển chưa xác định
+Các bước cho macOS Big Sur (11.0+):
+1. Chuột phải vào trình cài đặt của chúng tôi.
+2. Ấn mở ở menu hiện ra.
+3. Ẩn mở ở cửa sổ hiện ra.
 
-Steps for older macOS versions:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+Các bước cho các phiên bản macOS cũ hơn:
+1. Mở Tùy chọn hệ thống.
+2. Vào tab Bảo mật & Riêng tư.
+3. Ấn vào khoá và nhập mật khẩu hoặc quét vân tay của bạn để bạn có thể chỉnh sửa.
+4. Thay đổi cài đặt cho 'Cho phép ứng dựng từ' thành 'App Store và người phát triển đã được xác minh' từ chỉ 'App Store'.
