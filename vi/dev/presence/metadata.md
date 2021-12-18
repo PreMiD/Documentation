@@ -310,10 +310,10 @@ Những từ khoá bạn không đặt sẽ tự động được đặt như sa
 
 Sử dụng phương thức sau để đưa thông tin cài đặt vào trong các tệp presence của bạn:
 #### `getSetting(String)`
-Returns value of setting.
+Đưa ra giá trị của cài đặt.
 ```ts
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Thay pdexID bằng id trong cài đặt
+console.log(setting); // Mã này sẽ ghi lại giá trị của cài đặt
 ```
 
 #### `hideSetting(String)`
