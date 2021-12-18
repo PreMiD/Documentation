@@ -148,7 +148,7 @@ Nếu lệnh không hoạt động, hãy tải xuống tệp **deb/rpm** từ kh
 
 ## Hệ điều hành dựa trên Arch Linux
 
-Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+Sử dụng [Kho lưu trữ Người dùng Arch](https://aur.archlinux.org/packages/premid);</br> Các distro được hỗ trợ bao gồm _bản thân Arch_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS và [mọi distro hỗ trợ cài đặt từ AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
@@ -160,22 +160,22 @@ yay -S premid
 ```
 
 ```bash
-# Using pakku
+# Sử dụng pakku
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+#Sử dụng trizen
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# Sử dụng pacaur
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... bạn hiểu rồi đấy
 ```
 
 or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
