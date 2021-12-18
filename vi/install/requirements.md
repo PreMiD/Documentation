@@ -10,22 +10,22 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Những yêu cầu hệ thống
 
-> This data relate to the application only. 
+> Dữ liệu này chỉ liên quan đến ứng dụng. 
 > 
 > {.is-info}
 
-PreMiD runs on virtually any system. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
+PreMiD chạy trên hầu hết mọi hệ thống. Điều này có nghĩa là nó chạy trên **Linux**, **macOS**, **Windows** cũng như một số phiên bản **Linux được chỉnh sửa**.
 
 ### CPU
-PreMiD runs perfectly fine on a single CPU core.
+PreMiD chạy hoàn toàn tốt trên CPU một lõi.
 
 ### RAM
-Linux systems should have **at least 20MB of RAM** to run PreMiD. Windows and macOS systems usually require a bit more RAM.
+Các hệ thống Linux phải có **ít nhất 20 MB RAM** để chạy PreMiD. Các hệ thống Windows và macOS thường cần nhiều RAM hơn một chút.
 
-### Storage
-PreMiD takes about **150MB** of physical storage. However at least **200MB** of storage dedicated to PreMiD is recommended.
+### Bộ nhớ
+PreMiD chiếm khoảng **150MB** dung lượng lưu trữ vật lý. Tuy nhiên, ít nhất **200MB** dung lượng lưu trữ dành riêng cho PreMiD được khuyến nghị.
 
-### Internet Access
-A internet connection is required to run PreMiD. PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
+### Truy cập Internet
+Cần kết nối internet để chạy PreMiD. PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}
