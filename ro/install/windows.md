@@ -10,7 +10,7 @@ dateCreated: 2021-09-07T01:25:51.707Z
 
 > Before going any further, make sure your system meets all the [requirements](/install/requirements).{.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Instalarea aplicației este foarte importantă deoarece extensia nu poate face nimic de la sine.
 
 # Instalează
 1. Mergi pe pagina de descărcări [apăsând aici](https://premid.app/downloads).

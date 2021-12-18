@@ -359,7 +359,7 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Sotsiaalmeedia</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or  for participating in other forms of social networking.</td>
+      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>

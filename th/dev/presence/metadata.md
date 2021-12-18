@@ -360,7 +360,7 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>โซเชียล</b></td>
-      <td style="text-align:left">เว็บไซต์ที่มีจุดประสงค์ในการสร้างและเผยแพร่เนื้อหาต่างๆ หรือเกี่ยวข้องกับ Social Network</td>
+      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
