@@ -359,7 +359,7 @@ Bij het maken van je presence moet je een categorie opgeven waaronder de presenc
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Socials</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
+      <td style="text-align:left">Websites die worden gebruikt voor het maken en delen van content of voor deelname aan andere vormen van sociaal netwerk.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
