@@ -18,8 +18,8 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 3. Mở bộ cài đặt.
 4. **Windows SmartScreen** sẽ xuất hiện, nếu bạn cài đặt PreMiD lần đầu tiên. Nhấp vào **Thêm thông tin** và sau đó chọn **Vẫn chạy**. > Điều này là do chúng tôi không có Chứng chỉ CSC. [Hỗ trợ chúng tôi](https://www.patreon.com/Timeraa) để tài trợ cho nó.{.is-info}
 
-Ứng dụng sẽ được chạy tự động. Check for the symbol in your system tray.
+Ứng dụng sẽ được chạy tự động. Kiểm tra biểu tượng trong khay hệ thống của bạn.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Đừng quên [thêm**phần mở rộng**](/install).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
