@@ -94,7 +94,7 @@ Hệ điều hành Windows: Điền `%appdata%` vào trình duyệt thư mục v
 ### Hệ điều hành Ubuntu/Debian và tương tự
 Nếu bạn đã tải Discord qua Snapcraft, RPC sẽ không hoạt động. Bạn sẽ phải gỡ cài đặt phiên bản discord Snapcraft bằng cách thực thi lệnh `sudo snap remove discord` trong một cửa sổ lệnh, rồi tải xuống phiên bản **[Discord cho Linux](https://discordapp.com/api/download?platform=linux)** (**[hoặc Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), sau đó mở thư mục mà bạn vừa tải Discord tới (thường là `$HOME/Downloads`), sau đó cài đặt gói bằng lệnh `sudo dpkg -i discord-*.deb`. Nếu AppImage không hoạt động, bạn nên xem xét kiểm tra các gói khác của chúng tôi bằng **[liên kết này](https://packagecloud.io/premid/linux)**.
 
-### Arch Linux based distros
+### Hệ điều hành dựa trên Arch Linux
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
 <em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
 
