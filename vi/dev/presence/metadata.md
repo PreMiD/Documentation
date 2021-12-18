@@ -302,13 +302,13 @@ Trực quan về tệp:
 Sau khi bạn đã hoàn thành tệp với đầy đủ các chuỗi bạn có thể tạo một Pull Request vào [Kho lưu trữ Bản địa hoá](https://github.com/PreMiD/Localization), trong phần mô tả bạn **phải** thêm một liên kết với Pull Request của presence bạn đã cập nhật với những chuỗi mới từ [Kho lưu trữ Presence](https://github.com/PreMiD/Presences).
 
 #### Từ khoá mặc định
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+Những từ khoá bạn không đặt sẽ tự động được đặt như sau: `title`: "Language" **Ghi chú:** Đoạn này sẽ được phiên dịch sang ngôn ngữ mặc định của người dùng (ngôn ngữ của trình duyệt). `icon`: "fas fa-language" ([Xem trước](https://fontawesome.com/icons/language)) `value`: **Đặt sang ngôn ngữ của trình duyệt của người dùng nếu có thể (được phiên dịch 100%), còn lại đặt sang Tiếng Anh.** `values`: **Đặt sang các ngôn ngữ có sẵn (những ngôn ngữ được phiên dịch 100%).**
 
-**Note:** These are in no way changeable.
+**Ghi chú:** Những mã trên không thể thay đổi trong mọi trường hợp.
 
 ### Phương pháp
 
-Use the following methods to get settings info in your presence files:
+Sử dụng phương thức sau để đưa thông tin cài đặt vào trong các tệp presence của bạn:
 #### `getSetting(String)`
 Returns value of setting.
 ```ts
