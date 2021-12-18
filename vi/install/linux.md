@@ -8,9 +8,9 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
-The installation of the application is very important as the extension can not do anything by itself.
+Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể hoạt động một mình.
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> Người dùng Aur sử dụng gói của DoomLerd sẽ được an toàn như anh ấy nói. Chúng tôi không khuyến khích sử dụng nó, nhưng nếu bạn muốn, bạn vẫn có thể sử dụng nó. Cảm ơn DoomLerd vì vẫn đang quản lý kho lưu trữ aur. 
 > 
 > {.is-warning}
 
@@ -20,9 +20,9 @@ The installation of the application is very important as the extension can not d
   - [Thông tin](#stats)
   - [Yêu cầu hệ thống](#requirements)
   - Ví dụ (Sắp có)
-  - FAQs (soon)
-  - Building (soon)
-  - [Support](#support)
+  - Câu hỏi thường gặp (Sắp có)
+  - Xây dựng (Sắp có)
+  - [Hỗ trợ](#support)
   - [Đóng góp](#credits)
   - [Giấy phép](#license)
 - **[Snapcraft](#snapcraft)** (Tóm gọn : _Không bao giờ_ ™️)
@@ -37,7 +37,7 @@ The installation of the application is very important as the extension can not d
 
 ## Giới thiệu
 
-**PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
+**PreMiD** là một công cụ sử dụng thư viện RP (Rich Presence) của Discord để cho phép bạn chia sẻ những thứ bạn đang làm trên web (và một vài chương trình) trên profile Discord của bạn dưới dạng **đang chơi**.
 
 <a name="stats"></a>
 
@@ -45,14 +45,14 @@ The installation of the application is very important as the extension can not d
 
 <table>
   <tr>
-    <th>Deployment</th>
-    <th>Total downloads</th>
-    <th>Latest release</th>
+    <th>Triển khai phần mềm</th>
+    <th>Tổng lượt tải</th>
+    <th>Phiên bản mới nhất</th>
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Latest release"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Tất cả phiên bản"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Phiên bản mới nhất"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Các phiên bản trên GitHub"></a></td>
   </tr>
 </table>
 
@@ -70,7 +70,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="support"></a>
 
-### Support
+### Hỗ trợ
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Tham gia Discord của chúng tôi!">
