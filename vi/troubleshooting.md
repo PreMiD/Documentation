@@ -1,6 +1,6 @@
 ---
-title: Xử lý sự cố
-description: Mọi thứ cần thiết để giúp bạn xử lý sự cố
+title: Gỡ rối
+description: Mọi thứ cần thiết để giúp bạn gỡ rối
 published: true
 date: 2021-09-18T14:08:01.002Z
 tags:
