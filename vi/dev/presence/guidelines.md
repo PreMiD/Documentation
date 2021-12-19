@@ -1,6 +1,6 @@
 ---
-title: Nguyên tắc Presence
-description: Rules that all presence developers must follow to have their presence added.
+title: Bộ quy tắc khi làm Presence
+description: Những luật lệ mà tất cả những nhà phát triển presence phải tuân thủ nếu muốn presence của mình được thêm vào.
 published: true
 date: 2021-10-18T16:26:36.089Z
 tags:
