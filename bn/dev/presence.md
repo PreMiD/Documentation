@@ -68,56 +68,56 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
-    "id": "ID"
+    "name": "ইউজার",
+    "id": "আইডি"
   },
   "contributors": [
     {
-      "name": "USER",
-      "id": "ID"
+      "name": "ইউজার",
+      "id": "আইডি"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "সার্ভিস",
+  "altnames": ["সার্ভিস"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ডেসক্রিপশন"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "ভার্সন",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "ক্যাটাগরি",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
     {
-      "id": "ID",
+      "id": "আইডি",
       "multiLanguage": true
     },
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "আইডি",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": true
     },
     {
-      "id": "ID",
+      "id": "আইডি",
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "placeholder": "ব্যবহার করো %song% বা %artist%"
     },
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "আইডি",
+      "title": "শিরোনাম",
+      "icon": "FONTAWESOME আইকন",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -163,22 +163,23 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.<br>
-      (Must be the same name as the folder where everything is in)</td>
+      <td style="text-align:left">সার্ভিসটির নাম যেটার জন্য এই Presence তৈরি করা হচ্ছে।<br>
+      (একই নাম হতে হবে ফোল্ডার অনুযায়ী যেটার ভিতরে সবকিছু আছে)</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Presence - টিকে যেন সার্চ করতে পারো একটি বিকল্প নাম ব্যবহার করে।<br>
+      ব্যবহার করতে হবে সেসব Presences - এর জন্য যেগুলোর ভিন্ন নাম রয়েছে ভিন্ন ভাষায়
+(যেমন Pokémon এবং 포켓몬스터).<br>
+      তুমি এটাকে ব্যবহার করতে পারো সেসব Presence - এর জন্য যেগুলোর বিশেষ অক্ষর রয়েছে যাতে তোমাকে আর সেগুলো টাইপ না করতে হয় (যেমন Pokémon এবং Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file.</td>
+      <td style="text-align:left">Presence - টির ছোট বর্ণনা, তুমি সার্ভিসটির ডেসক্রিপশন ব্যবহার করতে পারো তোমার মাথায় যদি কিছু না আসে। Your description must have key pair values which indicate the language, and the description in that specific language. বর্ণনা তৈরি করো সেসব ভাষার <i>যেসব ভাষা তুমি জানো</i>, আমাদের অনুবাদকগণ তোমার মেটাডাটা ফাইলে পরিবর্তন করবে।</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
@@ -209,13 +210,13 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">তোমার Presence - টির ভার্সন।</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">সার্ভিসটির লোগো এর লিংক।</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
