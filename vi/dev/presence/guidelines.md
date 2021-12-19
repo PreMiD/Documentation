@@ -67,37 +67,37 @@ presence
 
 > Để thuận tiện cho các nhà phát triển presence, chúng tôi đã cung cấp lược đồ sau để bạn sử dụng để kiểm tra tính toàn vẹn của tệp `metadata` của bạn. Việc này là hoàn toàn không bắt buộc và sẽ không phải yêu cầu trong quá trình đánh giá.
 
-> Chúng tôi khuyến nghị bạn nên sắp xếp tệp `metadata` theo định dạng dưới đây, và bạn cần phải có tên dịch vụ, đoạn mô tả, các nhãn và phần cài đặt đúng ngữ pháp. Anything not organized to specifications will **not** be permitted.
+> Chúng tôi khuyến nghị bạn nên sắp xếp tệp `metadata` theo định dạng dưới đây, và bạn cần phải có tên dịch vụ, đoạn mô tả, các nhãn và phần cài đặt đúng ngữ pháp. Những gì không được sắp xếp như tiêu chuẩn sẽ **không** được chấp thuận.
 
-> Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
+> Presence dành cho các trang web có nội dung mạnh **phải** có nhãn `nsfw`, và biểu tượng/hình nhỏ **không** được phép chứa nội dung này.
 
-Each presence has a descriptor file called `metadata.json`, the metadata has a strict standard and an example of this file can be seem below:
+Mỗi presence đều có một tệp mô tả gọi là `metadata.json`, metadata có tiêu chuẩn khắt khe và một ví dụ cho tệp này có thể được xem ở dưới đây:
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "NGƯỜI DÙNG",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "NGƯỜI DÙNG",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "DỊCH VỤ",
+  "altnames": ["DỊCH VỤ"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "MÔ TẢ"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "PHIÊN BẢN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["NHÃN1", "NHÃN2"],
+  "category": "DANH MỤC",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG",
       "value": true
     },
     {
@@ -118,44 +118,44 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG",
+      "value": "\"%song%\" bởi %artist%",
+      "placeholder": "sử dụng %song% hoặc %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "v.v."]
     }
   ]
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.)
+> Nếu một mục được liệt là không bắt buộc trong [tài liệu](https://docs.premid.app/dev/presence/metadata) hoặc có dấu `*` bên cạnh từ khoá, và presence của bạn sử dụng giá trị mặc định, thì không được thêm vào trong tệp `metadata`. (cho vd., presence không hỗ trợ iframe không cần thêm mục `iframe`.)
 
-> All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
+> Tất cả các hình ảnh trong tệp `metadata` phải được lưu trữ trên `i.imgur.com`. Sử dụng nội dung ở trên trang web là **không** được phép vì chúng có thể thay đổi vị trí và tệp mà không hay biết.
 
-A list of fields and their rules are listed below:
+Danh sách các mục và quy tắc cho nó như sau:
 
 ### **`$schema`**
 
-- The schema _key_ **must** include a dollar sign at the beginning of it, this will signal your text editor that you want to validate your JSON file against a model. _As stated earlier, you do not need to include a schema, but if you include it you must take this into account._
+- _Từ khoá_ schema **phải** có ký hiệu đô la ở trước nó, điều này sẽ ký hiệu cho trình soạn thảo văn bản rằng bạn muốn đối chiếu tệp JSON của bạn với một khuôn mẫu. _Như đã nói ở trước, bạn không cần phải thêm schema, nhưng nếu bạn thêm vào thì bạn phải xét thêm nhưng điều sau._
 
 ### **`author`**
 
-- The ID _value_ **must** be your Discord snowflake ID. You can get it by enabling [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Please do **not** confuse this with your application ID, which is only for your presence._
+- _Giá trị_ của ID **phải** là chuỗi ID Discord của bạn. Bạn có thể lấy chúng bằng cách bật [chế độ người phát triển](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Xin hãy **không** nhầm lẫn nó với ID phần mềm của bạn, chúng chỉ dành cho presence của bạn._
 
 ### **`*contributors`**
 
-- Do **not** add yourself as a contributor, and do not add someone else as a contributor unless they have helped with the presence.
+- **Không** được thêm bản thân mình là người đóng góp, và không được thêm người khác trừ khi họ đã giúp phát triển presence.
 
 ### **`service`**
 
-- The service name **must** be the name of the presence directory. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
-- You **cannot** use the url as the service name unless the website uses the url as its official name. If the name is not descriptive and can be considered vague, using the url is **required**. (for e.g., `YouTube` is permitted because that is the official name and is descriptive, while `youtube.com` is not. `Top` is a non-descriptive name, so using the url `top.gg` is **required**.)
+- Tên của dịch vụ **phải** là tên của thư mục presence. Ví dụ, nếu presence nằm ở `/websites/Y/YouTube/`, tên của dịch vụ phải là `YouTube`.
+- Bạn **không** được sử dụng url làm tên dịch vụ trừ khi trang web sử dụng url làm tên chính thức. Nếu tên không mang tính mô tả hoặc mơ hồ, **bắt buộc** phải dùng url. (cho vd., `YouTube` được cho phép vì đó là tên chính thức và mang tính mô tả, trong khi đó `youtube.com` không được phép. `Top` là tên không mang tính mô tả, vì vậy **bắt buộc** phải sử dụng url `top.gg`.)
 - If service has some explicit branding rules of their name, you should follow them.
 
 ### **`*altnames`**
