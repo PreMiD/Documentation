@@ -14,7 +14,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ভার্সন `2.x` পরিচয় করিয়ে দেয় [Presence স্টোরকে](https://premid.app/store)। ইউজাররা এখন ম্যানুয়ালি অ্যাড ও রিমুভ করতে পারে তাদের প্রিয় Presences [ওয়েবসাইটের](https://premid.app/) ইউজার ইন্টারফেস দ্বারা।
 
-> শুরু করার আগে, এটা পরামর্শিত যে তুমি আমাদের Presence - এর বিধি দেখো। 
+> শুরু করার আগে, এটা পরামর্শিত যে তুমি আমাদের Presence এর বিধি দেখো। 
 > 
 > {.is-warning}
 
@@ -23,7 +23,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 # গঠন
 
-সব Presence কোড করা হয়েছে [TypeScript](https://www.typescriptlang.org/) - এ। [TypeScript](https://www.typescriptlang.org/) - এ কিছু ভালো টাইপ ডেফিনিশন আছে JavaScript এর উপরে, তাই বাগ শনাক্তকরণ এবং ঠিক করা আরো সহজ।
+সব Presence কোড করা হয়েছে [TypeScript](https://www.typescriptlang.org/) এ। [TypeScript](https://www.typescriptlang.org/) এ কিছু ভালো টাইপ ডেফিনিশন আছে JavaScript এর উপরে, তাই বাগ শনাক্তকরণ এবং ঠিক করা আরো সহজ।
 
 ## ইন্সটলেশন
 
@@ -170,16 +170,16 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Presence - টিকে যেন সার্চ করতে পারো একটি বিকল্প নাম ব্যবহার করে।<br>
-      ব্যবহার করতে হবে সেসব Presences - এর জন্য যেগুলোর ভিন্ন নাম রয়েছে ভিন্ন ভাষায়
+      <td style="text-align:left">Presence টিকে যেন সার্চ করতে পারো একটি বিকল্প নাম ব্যবহার করে।<br>
+      ব্যবহার করতে হবে সেসব Presences এর জন্য যেগুলোর ভিন্ন নাম রয়েছে ভিন্ন ভাষায়
 (যেমন Pokémon এবং 포켓몬스터).<br>
-      তুমি এটাকে ব্যবহার করতে পারো সেসব Presence - এর জন্য যেগুলোর বিশেষ অক্ষর রয়েছে যাতে তোমাকে আর সেগুলো টাইপ না করতে হয় (যেমন Pokémon এবং Pokemon).</td>
+      তুমি এটাকে ব্যবহার করতে পারো সেসব Presence এর জন্য যেগুলোর বিশেষ অক্ষর রয়েছে যাতে তোমাকে আর সেগুলো টাইপ না করতে হয় (যেমন Pokémon এবং Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Presence - টির ছোট বর্ণনা, তুমি সার্ভিসটির ডেসক্রিপশন ব্যবহার করতে পারো তোমার মাথায় যদি কিছু না আসে। Your description must have key pair values which indicate the language, and the description in that specific language. বর্ণনা তৈরি করো সেসব ভাষার <i>যেসব ভাষা তুমি জানো</i>, আমাদের অনুবাদকগণ তোমার মেটাডাটা ফাইলে পরিবর্তন করবে।</td>
+      <td style="text-align:left">Presence টির ছোট বর্ণনা, তুমি সার্ভিসটির ডেসক্রিপশন ব্যবহার করতে পারো তোমার মাথায় যদি কিছু না আসে। Your description must have key pair values which indicate the language, and the description in that specific language. বর্ণনা তৈরি করো সেসব ভাষার <i>যেসব ভাষা তুমি জানো</i>, আমাদের অনুবাদকগণ তোমার মেটাডাটা ফাইলে পরিবর্তন করবে।</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
@@ -210,7 +210,7 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">তোমার Presence - টির ভার্সন।</td>
+      <td style="text-align:left">তোমার Presence টির ভার্সন।</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
@@ -222,20 +222,20 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">তোমার Presence থাম্বনেইল এর লিংক।</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> মান। আমরা পরামর্শ করি একটি প্রধান রং ব্যবহার করার সার্ভিসটির,
+        যার জন্য এই Presence টি তৈরি হচ্ছে।</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array যার মধ্যে ট্যাগ থাকবে, সেগুলো সাহায্য করবে তোমার Presence টি খুঁজতে আমাদের ওয়েবসাইটে।</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
@@ -330,7 +330,7 @@ presence.on("UpdateData", async () => {
 
 তুমি এটা কপি করতে পারো তোমার `presence.ts` ফাইলে এবং মানগুলো এডিট করতে পারো। Setting all the values is done inside of the updataData event.
 
-উদাহরণের জন্য আমরা পরামর্শ দেই Presences - এর কোড দেখতে যেমন: 1337x বা 9GAG. আরও তথ্যের জন্য `Presence` ক্লাস সম্বন্ধে, ক্লিক করো [এখানে](/dev/presence/class)।
+উদাহরণের জন্য আমরা পরামর্শ দেই Presences এর কোড দেখতে যেমন: 1337x বা 9GAG. আরও তথ্যের জন্য `Presence` ক্লাস সম্বন্ধে, ক্লিক করো [এখানে](/dev/presence/class)।
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
@@ -342,18 +342,19 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 2. সার্চ করো (<kbd>CTRL</kbd>+<kbd>F</kbd> (উইন্ডোজ) অথবা <kbd>CMD</kbd>+<kbd>F</kbd> (ম্যাক ওএস))।
 3. দাও `document.querySelectorAll("iframe")`.
 
-যদি তুমি দেখো যে তোমার প্রয়োজনীয় ডাটা একটি iFrame - এ রয়েছে, তাহলে তোমাকে ধাপগুলো অনুসরণ করতে হবে:
+যদি তুমি দেখো যে তোমার প্রয়োজনীয় ডাটা একটি iFrame এ রয়েছে, তাহলে তোমাকে ধাপগুলো অনুসরণ করতে হবে:
 
 1. একটি `iframe.ts` ফাইল তৈরি করো।
-2. তোমার মেটাডাটা ফাইলে iFrame - কে সেট করো `true` - তে।
+2. তোমার মেটাডাটা ফাইলে iFrame কে সেট করো `true` তে।
 3. তোমার iFrame ফাইল পূরণ করো।
 
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  // পাও তোমার প্রয়োজনীয় সমস্ত ডাটা iFrame থেকে এবং সেগুলোকে ভ্যারিয়েবলে সেভ করো
+এবং সেগুলোকে পাঠাও iframe.send ব্যবহার করে
   iframe.send({
-    //sending data
+    //ডাটা পাঠানো
     video: video,
     time: video.duration
   });
@@ -375,18 +376,18 @@ presence.on("iFrameData", (data) => {
 
 `presence.ts` ফাইলটিকে `/dist` ফোল্ডারে কম্পাইল করার জন্য একটি কনসোল ওপেন করো তোমার ফোল্ডারে এবং টাইপ করো `tsc -w`
 
-# Presence - টিকে লোড করা
+# Presence টিকে লোড করা
 
 1. এক্সটেনশনটি ওপেন করো ব্রাউজারে এবং <kbd>Shift</kbd> বাটনটি চেপে রাখো তোমার কীবোর্ডের।
 2. **Presence লোড করাও** আসবে Presences সেকশনে।
 3. <kbd>Shift</kbd> বাটনটিতে চেপে রাখা অবস্থাতেই এটিতে ক্লিক করো।
-4. /dist ফোল্ডারটি সিলেক্ট করো তোমার Presence - এর।
+4. /dist ফোল্ডারটি সিলেক্ট করো তোমার Presence এর।
 
 # কিছু সহায়ক জিনিস
 
 ## হট রিলোডিং
 
-যে ওয়েবসাইট এর উপর ভিত্তি করে Presence - টি তৈরি করছ সেটি অটোমেটিকভাবে রিলোড হচ্ছে প্রত্যেক সময় তুমি একটি ফাইল সেভ করো তোমার ফোল্ডারে।
+যে ওয়েবসাইট এর উপর ভিত্তি করে Presence টি তৈরি করছ সেটি অটোমেটিকভাবে রিলোড হচ্ছে প্রত্যেক সময় তুমি একটি ফাইল সেভ করো তোমার ফোল্ডারে।
 
 ## ডিবাগিং
 
