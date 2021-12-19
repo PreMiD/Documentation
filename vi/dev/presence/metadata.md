@@ -262,7 +262,7 @@ Từ khoá `multiLanguage` có thể được đặt các giá trị sau:
 
 **Ghi chú:** Ghi thêm các chuỗi tuỳ chọn cho một presence sẽ chỉ được cho phép nếu nó có trên 1000 người dùng.
 
-##### Clone project
+##### Sao chép dự án
 
 1. Mở một terminal và gõ lệnh `git clone https://github.com/PreMiD/Localization`.
 2. Chọn thư mục bạn muốn.
@@ -344,7 +344,7 @@ Khi phát triển presence, bạn phải chú thích rõ danh mục presence rơ
     <tr>
       <td style="text-align:left"><b>anime</b></td>
       <td style="text-align:left"><b>Anime</b></td>
-      <td style="text-align:left">Những thứ liên quan đến anime, từ forums đến nền tảng phát trực tuyến.</td>
+      <td style="text-align:left">Những thứ liên quan đến anime, từ các diễn đàn đến nền tảng phát trực tuyến.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
