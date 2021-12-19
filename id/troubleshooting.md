@@ -53,7 +53,7 @@ Kamu harus memulai ulang PreMiD setelah itu.
 Tekan <kbd>CTRL+R</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) di keyboard kamu atau mulai ulang Discord dengan cara manual.
 
 ### Periksa jika antivirus atau firewall berjalan di komputermu
-Kadang program antivirus dan firewall juga memblokir akses aplikasi dalam pembuatan server atau hanya terhubung ke internet. Kita menggunakan server lokal untuk menerima dan meneruskan data antara aplikasi dan ekstensi kita, jadi jika kamu akan memblokir ability aplikasi untuk meneruskan data, kamu mungkin tidak akan bisa menggunakan PreMiD.
+Kadang program antivirus dan firewall juga memblokir akses aplikasi dalam pembuatan server atau hanya terhubung ke internet. Kita menggunakan server lokal untuk menerima dan meneruskan data antara aplikasi dan ekstensi kita, jadi jika kamu memblokir kemampuan aplikasi untuk meneruskan data, kamu mungkin tidak akan bisa menggunakan PreMiD.
 
 ### Nonaktifkan addon
 Matikan semua addon dan lihat apakah bekerja. Jika iya, coba untuk menyalakan addon sesuai step satu persatu dan beri tahu kami addon mana yang merusak PreMiD.
