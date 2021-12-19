@@ -13,8 +13,8 @@ dateCreated: 2020-06-11T18:03:47.172Z
 > {.is-warning}
 
 # Về PreMiD
-- :mag:[PreMiD là gì?](/about) Ý định của PreMiD và tại sao bạn nên dùng nó.
-- :link:[RPC là gì?](https://discordapp.com/rich-presence) Tất tần tật về Rich Presence và chức năng của nó.
+- :mag: [PreMiD là gì?](/about) Ý định của PreMiD và tại sao bạn nên dùng nó.
+- :link: [RPC là gì?](https://discordapp.com/rich-presence) Tất tần tật về Rich Presence và chức năng của nó.
 
 # Bắt đầu
 
