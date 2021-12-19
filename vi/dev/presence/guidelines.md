@@ -174,29 +174,29 @@ Danh sách các mục và quy tắc cho nó như sau:
 
 ### **`version`**
 
-- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Anything else like `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` or changing `1.0.0` to `2.0.0` on a bug fix/small change is **not** permitted.
-- The version **must** always start at `1.0.0` unless told otherwise, other versions will **not** be permitted.
+- Luôn thêm số phiên bản tuân theo [tiêu chuẩn ngữ nghĩa của số phiên bản](https://semver.org), có khuân mẫu như sau: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Những thứ khác như `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` hoặc đổi từ `1.0.0` sang `2.0.0` sau một bản sửa lỗi/thay đổi nhỏ là **không** được cho phép.
+- Số hiệu phiên bản **phải** bắt đầu bằng `1.0.0` trừ khi được chỉ dẫn khác, các số phiên bản khác sẽ **không** được chấp nhận.
 
 ### **`logo`**
 
-- The logo **must** be a square image with a `1:1` aspect ratio.
-- The image is **required** to have a minimum resolution of `512x512` pixels. You can upsize it using a tool like [waifu2x](http://waifu2x.udp.jp/).
+- Biểu tượng **phải** là một ảnh vuông với tỉ lệ `1:1`.
+- Ảnh **phải** có độ phân giải tối thiểu là `512x512` điểm ảnh. Bạn có thể phóng to nó bằng công cụ như [waifu2x](http://waifu2x.udp.jp/).
 
 ### **`thumbnail`**
 
-- The thumbnail **should** preferably be a [wide promotional card](https://i.imgur.com/3QfIc5v.jpg) or a [screenshot](https://i.imgur.com/OAcBmwW.png) if the first is **not** available.
+- Hình nhỏ **nên** là một [ảnh thẻ ngang mang tính chất quảng cáo](https://i.imgur.com/3QfIc5v.jpg) hoặc một [ảnh chụp màn hình](https://i.imgur.com/OAcBmwW.png) nếu ảnh trên **không** có sẵn.
 
 ### **`color`**
 
-- The color **must** be a hexadecimal value between `#000000` and `#FFFFFF`.
-- The color string **must** be prepended with a hash symbol.
+- Màu **phải** là giá trị thập lục phân từ `#000000` đến `#FFFFFF`.
+- Chuỗi màu **phải** phải có dấu thăng ở trước.
 
 ### **`tags`**
 
-- **All** presences are required to have at least _one_ tag.
-- Tags must **not** include any spaces, slashes, single/double quotation marks, Unicode characters, and should always be lowercase.
-- Tags **should** preferably include alternate service names to make searching easier (for e.g., if an Amazon presence had included AWS support, it would have its tags like `amazon-web-services` and `aws`)
-- You are **required** to add an `NSFW` tag if the presence is for an NSFW website.
+- **Tất cả** presence phải có tối thiểu _một_ nhãn.
+- Nhãn **không** được phép chứa dấu cách, dấu gạch chéo, dấu ngoặc đơn/kép, ký tự Unicode, và luôn được viết thường.
+- Nhãn **nên** thêm các tên tương tự của dịch vụ để giúp tìm kiếm dễ hơn (cho vd., nếu presence Amazon có thêm hỗ trợ cho AWS, nó phải thêm các nhãn như `amazon-web-service` và `aws`)
+- Bạn **phải** thêm nhãn `NSFW` nếu presence được làm dành cho trang web NSFW.
 
 ### **`category`**
 
