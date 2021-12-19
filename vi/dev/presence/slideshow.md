@@ -12,7 +12,7 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 ## Giới thiệu
 
-The `Slideshow` class is used to set multiple `PresenceData` and "slide" through them every x milliseconds (minimum: 5000).
+Lớp `Slideshow` được dùng để đặt nhiều `PresenceData` và "trình chiếu" chúng mỗi x mili giây (tối thiểu: 5000).
 
 See the [`createSlideshow`](/dev/presence/class#createslideshow) method in the [`Presence`](/dev/presence/class) class on how to create a `Slideshow`.
 
