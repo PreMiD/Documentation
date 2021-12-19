@@ -228,115 +228,115 @@ Danh sách các mục và quy tắc cho nó như sau:
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
-> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
+> Đoạn mã bạn viết **phải** được _chỉn chu_ và **phải** _dễ đọc_ và tất cả các chuỗi đều phải đúng ngữ pháp (lỗi ngữ pháp ở trang web sẽ được bỏ qua).
 
-> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+> Mỗi presence đều phải theo bộ quy định linting khắt khe mà sẽ được kiểm tra trong qua trình đánh giá. Một số khuyên nghị được liệt kê dưới đây. [Khuyến nghị các Phần mở rộng Kiểm tra Khắt khe cho TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [Các khuyến nghị của ESlint](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
 
-Here is a list of rules you must follow when writing your `presence.ts` file:
+Đây là danh sách các quy định bạn phải tuân theo khi viết tệp `presence.ts`:
 
-- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
-- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
-- It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
-- The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
-- You are **not** allowed to access `localStorage`.
-- When accessing cookies for stored data, please prefix the key with `PMD_`.
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
-- You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't display information you couldn't fit in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- **Luôn** khai báo trạng thái mới của lớp `Presence` trước tất cả các biến khác để tránh gặp phải các lỗi hiếm; đây không phải yêu cầu theo mặc định nên có thể được gỡ bỏ trong tương lai.
+- **Không bao giờ** được sử dụng các chức năng đặc biệt khi [đã có các chức năng cho sẵn](https://docs.premid.app/dev/presence#files-explained); điều này nhằm đảm bảo các bản vá lỗi ở cấp phần mở rộng cũng được áp dụng lên presence của bạn. Bạn có thể tuỳ ý sử dụng bất sứ thứ gì bạn cần nếu bạn không thấy nó được liệt kê trong tài liệu.
+- **Nghiêm cấm** viết presence cho trang web mà không hỗ trợ ngôn ngữ chính của nó (cho vd., presence cho YouTube chỉ hỗ trợ cho Tiếng Bồ Đào Nha và Tiếng Nhật, nhưng không hỗ trợ Tiếng Anh.)
+- Các mục `smallImageKey` và `smallImageText` có mục đích nhằm cung cấp thông tin thêm/phụ (như `playing/paused` cho các trang web video, `browsing` cho các trang thông thường, và các trường hợp khác), không được dùng để quảng bá hồ sơ Discord hay bất cứ thứ gì không liên quan tới PreMiD.
+- Bạn **không** được phép truy cập vào `localStorage`.
+- Khi truy cập cookies dành cho thông tin được lưu trữ, hãy sử dụng từ khoá với đầu `PMD_`.
+- Bạn chỉ được phép thực hiện yêu cầu HTTP/HTTPS tới `premid.app` hay API của trang web presence hỗ trợ. Nếu bạn sử dụng tên miền bên ngoài, bạn sẽ phải yêu cầu giải thích vì sao. API duy nhất được cho phép thực hiện yêu cầu là [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+- **Không** được đặt mục ở trong object presenceData thành undefined sau khi nó đã được khai báo, thay vào đó hãy sử dụng từ khoá `delete`. (cho vd., hãy sử dụng `delete data.startTimestamp` thay vì `data.startTimestamp = undefined`)
+- Bạn **không** được phép viết presence có công dụng thay đổi chức năng của trang web cho sẵn. Điều này bao gồm cả việc thêm, xoá hoặc thay đổi các yếu tố DOM.
+- Các presence sử dụng nút phải tuân theo thêm các quy định sau:
+  - Không được phép chuyển hướng về trang chủ.
+  - Không được phép dùng nút để quảng bả trang web.
+  - Nó không được hiển thị thông tin mà bạn không điền được vào các mục khác.
+  - Chuyển hướng trực tiếp vào bài phát âm thanh/video trực tuyến là không được phép.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **Không** được phép tự viết tệp `tsconfig.json` của mình, dùng những gì đã được cung cấp ở [tài liệu](https://docs.premid.app/dev/presence/tsconfig).
 
-## Modification
+## Sửa đổi
 
-> You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
+> Bạn **phải** thay đổi số phiên bản trong **metadata** sang một giá trị cao hơn giá trị trước khi làm những thay đổi trong các tệp **presence.ts**, **iframe.ts** hoặc **metadata.json**.
 
-In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
+Trong một số trường hợp, presence có thể hoạt động một cách không đoán trước hoặc có thể cần một vài thay đổi nhỏ để cải tiến chức năng của nó. Đây là danh sách các quy định bạn **phải** tuân theo khi thay đổi presence.
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
-- If you make modifications to a presence and change at least a **quarter** of the presence's codebase, you are allowed to add yourself as a contributor. Contact a reviewer for more information about this subject.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Nếu tác giả của presence không thể liên lạc được trong vòng hơn một tháng, bạn có thể liên lạc một đánh giá viên xem bạn có thể chỉnh sửa presence được không.
+- Nếu bạn chỉnh sửa presence và thay đổi ít nhất một phần **tư** đoạn mã của presence, bạn có thể thêm bản thân mình là người đóng góp. Hãy liên lạc một đánh giá viên để biết thêm thông tin về đề tài này.
+- Ai cũng có thể tạo một PR để sửa lỗi. **Không** được thay đổi hình ảnh nếu chúng không lỗi thời và nằm trong tiêu chuẩn.
 
-# Verification
+# Xác minh
 
-> **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`.
+> **Tất cả** các mã đóng góp vào cửa hàng sẽ được cấp phép dưới `Mozilla Public License 2.0`.
 
-> If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile.
+> Nếu bạn cần phải liên lạc với ai, hãy sử dụng máy chủ Discord chính thức của chúng tôi. Tất cả các đánh giá viên đều có thẻ vai trò `Reviewer` trên hồ sơ của họ.
 
-> Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created.
+> Hãy ghi nhớ rằng tất cả các đánh giá viên đều làm việc một cách tình nguyện và quản lý nhiều kho lưu trữ hơn cái này, nên pull request của bạn có thể sẽ không được đánh giá sau vài giờ hoặc có thể vài ngày từ khi được tạo ra.
 
-> **Always** have an up-to-date fork before creating your pull request. This will help limit false positives from the checks.
+> **Luôn ** cập nhật fork của bạn trước khi lập một pull request. Điều này sẽ giúp giảm thiểu trường hợp dương tính giả trong quá trình đánh giá.
 
-The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
+Quá trình quan trọng nhất của việc phát triển presence là việc đưa presence của bạn lên cửa hàng. Điều này được thực hiện bằng cách lập một [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) trên GitHub vào kho lưu trữ `PreMiD/Presences`. Các đánh giá viên sẽ kiểm tra xem presence của bạn có đủ tiêu chuẩn không và đưa nó lên cửa hàng.
 
 <div>
-  <h2 style="font-size: 2rem; margin-bottom: 0;">Presence Reviewers</h2>
+  <h2 style="font-size: 2rem; margin-bottom: 0;">Các Presence Đánh giá viên</h2>
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/Slowlife01"><img src="https://github.com/Slowlife01.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a> <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <br />
 </div>
 
-## `Restrictions`
+## `Hạn chế`
 
-Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
+Các hình thức tái phạm liên tiếp như không tuân theo bộ quy tắc, liên tục gửi pull request rác, đe doạ hay các hành động không phù hợp sẽ khiến bạn bị cấm không được tạo presence.
 
-In this scenario, the following changes will occur:
+Trong trường hợp này, sẽ xảy ra những thay đổi sau:
 
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). The application id for each presence will be recreated under the new owner's name.
-- All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
-- Tickets created under your name regarding presence development will be deleted.
+- Những presence dưới quyền quản lý của bạn sẽ được chuyển giao cho bot PreMiD hoặc người dùng khác (quyết định của đánh giá viên). Id ứng dụng cho từng presence sẽ được làm mới dưới tên của chủ mới.
+- Tất cả những báo lỗi và pull request của bạn (tạo presence, đóng góp presence, v.v.) tạo ra sau khi bạn bị cấm sẽ đều bị đóng.
+- Các vé tạo dưới tên bạn liên quan tới việc phát triển presence sẽ đều bị xoá.
 
-## `Reviewing`
+## `Đánh giá`
 
-A few things you should know after opening a pull request:
+Vài điều bạn nên biết trước khi mở một pull request:
 
-- It takes 2 reviewers to merge a pull request.
-- If a pull request is inactive for a period of 7 days, it will be promptly closed.
-- All checks **must** be passed in order to merge.
-- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
-- ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
+- Sẽ cần 2 đánh giá viên để nhập một pull request.
+- Nếu pull request không có động thái gì trong vòng 7 ngày, nó sẽ bị đóng.
+- **Phải** đạt tất cả các bài kiểm tra để nhập.
+- ⚠️ Bạn **phải** cung cấp các ảnh chụp màn hình mới, chưa được chỉnh sửa (chụp bởi bạn) thể hiện sự so sánh song song giữa hồ sơ của bạn và trang web để chứng minh presence hoạt động. _Bạn được phép cắt ghép ảnh chụp bàn hình với nhau để ảnh dễ nhìn hơn_ Điều này áp dụng cho cả việc tạo và chỉnh sửa.
+- ⚠️ Bạn cũng được yêu cầu **phải** cung cấp ảnh chụp màn hình của phần cài đặt presence nếu có. Một ví dụ có thể xem dưới [đây](https://imgur.com/a/OD3sj5R).
 
-## `Checks`
+## `Kiểm tra`
 
-![Example of checks](https://i.imgur.com/vF7QpBH.png)
+![Các ví dụ cho việc kiểm tra](https://i.imgur.com/vF7QpBH.png)
 
-Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
+Hiện giờ, một presence sẽ đi qua 3 công đoạn đánh giá. Tất cả các bài kiểm tra này đều giúp các đánh giá viên quyết định xem presence của bạn nó phù hợp để phát triển không.
 
-- `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. *Warning: DeepScan doesn't always give you errors. Please look at CodeFactor warnings instead.*
-- `CodeFactor` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
-- `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
+- `DeepScan` là một bot kiểm tra chất lượng của đoạn mã. Nếu bạn nhận được lỗi từ các bài báo lỗi, bạn được yêu cầu **phải** vá chúng. *Cảnh báo: DeepScan không luôn luôn đưa ra lỗi. Thay vào đó hãy nhìn vào các cảnh báo của CodeFactor.*
+- `CodeFactor` là một bot kiểm tra chất lượng của đoạn mã. Nếu bạn nhận được lỗi từ các bài báo lỗi, bạn được yêu cầu **phải** vá chúng.
+- `Schema Validation` sẽ quét tệp `metadata.json` của bạn để tìm lỗi (cho vd., thiếu mục, giá trị không hợp lệ, v.v.). Nếu bạn nhận nhận được các lỗi mới, bạn được yêu cầu **phải** vá chúng. Thêm mục schema trong tệp `metadata.json` sẽ giúp trình soạn thảo văn bản của bạn (nếu có hỗ trợ) hiển thị những lỗi này trong quá trình phát triển.
 
-## `Additional Rules`
+## `Luật bổ sung`
 
-- **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
+- **Luôn** chắc chắn bắt đầu presence của bạn trong thư mục hợp lệ, nếu tên của nó bát đầu bằng _bất cứ_ chữ cái Latinh nào thì nó phải nằm trong thư mục có chữ cái trùng với nó (cho vd., `D/dアニメストア` hay `G/Google`). Bất cứ ký tự Unicode/không phải Latinh khác **phải** nằm trong thư mục `#` (cho vd. `#/巴哈姆特`) và các chữ số nằm trong thư mục `0-9` (cho vd., `0-9/4anime`).
 
-After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
+Sau khi đạt đủ tất cả các quy tắc, được đánh giá và kiểm tra đầy đủ, presence của bạn sẽ được đưa lên cửa hàng.
 
-# Suggestions
+# Đề xuất
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
+Nếu bạn có các đề xuất dành cho các quy định của chúng tôi, bạn có thể liên lạc chúng tôi @ [máy chủ Discord của PreMiD](https://discord.premid.app) và chúng tôi sẽ xem qua!
 
-# Contributions
+# Đóng góp
 
-`Revision 3` of the guidelines was written and was contributed to by the following individuals:
+`Bản sửa đổi 3` của bộ quy định được viết và đóng góp bởi các cá nhân sau:
 
 <div>
 <a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 2` of the guidelines was written and was contributed to by the following individuals:
+`Bản sửa đổi 2` của bộ quy định được viết và đóng góp bởi các cá nhân sau:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 1` was maintained by the following individuals:
+`Bản sửa đổi 1` được duy trì bởi các cá nhân sau:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
