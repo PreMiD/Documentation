@@ -104,9 +104,10 @@ dateCreated: 2020-06-11T18:04:52.965Z
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Presence - টিকে যেন সার্চ করতে পারো একটি বিকল্প নাম ব্যবহার করে।<br>
+      ব্যবহার করতে হবে সেসব Presences - এর জন্য যেগুলোর ভিন্ন নাম রয়েছে ভিন্ন ভাষায়
+(যেমন Pokémon এবং 포켓몬스터).<br>
+      তুমি এটাকে ব্যবহার করতে পারো সেসব Presence - এর জন্য যেগুলোর বিশেষ অক্ষর রয়েছে যাতে তোমাকে আর সেগুলো টাইপ না করতে হয় (যেমন Pokémon এবং Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
