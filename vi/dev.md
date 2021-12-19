@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Bạn cần phần mềm sửa source code. Chúng tôi khuyên dùng [Visual Studio Code](https://code.visualstudio.com/). 
+> Bạn cần phần mềm sửa mã nguồn. Chúng tôi khuyên dùng [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
@@ -17,20 +17,20 @@ dateCreated: 2021-09-07T01:17:22.577Z
 2. Cài [Node](https://nodejs.org/en/) (có sẵn với [npm](https://www.npmjs.com/)).
 3. Cài [TypeScript](https://www.typescriptlang.org/index.html#download-links) (mở terminal và nhập `npm install -g typescript`).
 
-# Clone project
+# Sao chép dự án
 1. Mở terminal và nhập `git clone URL`. **Thay URL bằng link repo mà bạn muốn đóng góp ** e.g. `git clone https://github.com/PreMiD/PreMiD`.
 2. Chọn thư mục bạn muốn.
-3. Mở nó với editor bạn chọn.
+3. Mở nó với trình soạn thảo của bạn.
 
-# Cài dependencies
-> Hãy chắc chắn bạn đã cài [npm](https://www.npmjs.com/) (Node Package Manager). Nó sẽ được cài tự động nếu bạn đã cài [Node](https://nodejs.org/en/). 
+# Cài đặt các phần phụ thuộc
+> Hãy chắc chắn bạn đã cài [npm](https://www.npmjs.com/) (Trình quản lý các gói Node). Nó sẽ được cài tự động nếu bạn đã cài [Node](https://nodejs.org/en/). 
 > 
 > {.is-warning}
 
-- Mở terminal trong repository và nhập `npm i`.
-- Hãy nhập `npm update` để cập nhật dependencies.
+- Mở một cửa sổ lệnh trong kho chứa của bạn và nhập `npm i`.
+- Hãy nhập `npm update` để cập nhật các phần phụ thuộc.
 
-> Lưu ý khi cập nhật dependencies có thể làm hỏng chương trình, cần phải kiểm tra lại! 
+> Lưu ý khi cập nhật các phần phụ thuộc có thể làm hỏng chương trình, việc kiểm tra lại là cần thiết! 
 > 
 > {.is-danger}
 
