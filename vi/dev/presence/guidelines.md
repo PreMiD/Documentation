@@ -156,7 +156,7 @@ Danh sách các mục và quy tắc cho nó như sau:
 
 - Tên của dịch vụ **phải** là tên của thư mục presence. Ví dụ, nếu presence nằm ở `/websites/Y/YouTube/`, tên của dịch vụ phải là `YouTube`.
 - Bạn **không** được sử dụng url làm tên dịch vụ trừ khi trang web sử dụng url làm tên chính thức. Nếu tên không mang tính mô tả hoặc mơ hồ, **bắt buộc** phải dùng url. (cho vd., `YouTube` được cho phép vì đó là tên chính thức và mang tính mô tả, trong khi đó `youtube.com` không được phép. `Top` là tên không mang tính mô tả, vì vậy **bắt buộc** phải sử dụng url `top.gg`.)
-- If service has some explicit branding rules of their name, you should follow them.
+- Nếu dịch vụ có tên mang nội dung mạnh, bạn nên tuân theo nó.
 
 ### **`*altnames`**
 
