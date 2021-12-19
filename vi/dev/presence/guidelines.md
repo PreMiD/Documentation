@@ -160,17 +160,17 @@ Danh sách các mục và quy tắc cho nó như sau:
 
 ### **`*altnames`**
 
-- **Only** use this in scenarios where a website goes under multiple official names (e.g. Pokémon and 포켓몬스터). _Shortened_ versions of service names go under `tags`.
+- **Chỉ** sử dụng trong trường hợp trang web có nhiều tên chính thức (cho vd. Pokémon và 포켓몬스터). Các tên được _rút ngắn_ của dịch vụ nằm trong `tags`.
 
 ### **`description`**
 
-- **All** presences are **required** to have an English description regardless of the website's prefered language.
-- Do **not** try and translate the description yourself unless you know that language, translators will modify your `metadata.json` and change the descriptions if necessary.
+- **Tất cả** presence đều **bắt buộc** phải có đoạn mô tả bằng Tiếng Anh bất kể ngôn ngữ của trang web.
+- **Không** được tự dịch đoạn mô tả trừ khi bạn thông thạo ngôn ngữ đó, các phiên dịch viên sẽ thay đổi tệp `metadata.json` của bạn và thay đổi đoạn mô tả nếu cần thiết.
 
 ### **`url`**
 
-- The url **must** be a string if the website only uses one domain. If the website uses multiple, make this an array and specify each one.
-- Do **not** include protocols in the url (for e.g., `http` or `https`), and do not include query parameters in the url (for e.g., `www.google.com/search?gws_rd=ssl` which should be `www.google.com`)
+- Url **bắt buộc** phải là một string nếu trang web chỉ sử dụng một tên miền. Nếu trang web có nhiều tên miền, hãy sử dụng array và ghi rõ cụ thể từng miền một.
+- **Không** được thêm giao thức vào url (cho vd., `http` hay `https`), và không được thêm tham số truy vấn (cho vd., `www.google.com/search?gws_rd=ssl` trong khi phải là `www.google.com`)
 
 ### **`version`**
 
