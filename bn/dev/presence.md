@@ -23,7 +23,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 # গঠন
 
-সব Presence কোড করা হয়েছে [TypeScript](https://www.typescriptlang.org/) - এ। [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+সব Presence কোড করা হয়েছে [TypeScript](https://www.typescriptlang.org/) - এ। [TypeScript](https://www.typescriptlang.org/) - এ কিছু ভালো টাইপ ডেফিনিশন আছে JavaScript এর উপরে, তাই বাগ শনাক্তকরণ এবং ঠিক করা আরো সহজ।
 
 ## ইন্সটলেশন
 
