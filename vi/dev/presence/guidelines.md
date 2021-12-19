@@ -200,31 +200,31 @@ Danh sách các mục và quy tắc cho nó như sau:
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
-- The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
+- Danh mục **phải** nằm trong danh sách được liệt kê trong [tài liệu](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Presence phải sử dụng danh mục phù hợp với nội dung của trang web. (cho vd., không được sử dụng `anime` khi trang web không liên quan tới anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Biểu thức chính quy **phải** hợp lệ. Hãy thử chuỗi biểu thức chính quy của bạn bằng các công cụ được liệt kê trong [tài liệu](https://docs.premid.app/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
-- Must be `boolean` value (e.g. `true` or `false`).
-- Enables logs for your presence.
+- Phải có giá trị `nhị phân` (cho vd., `true` hoặc `false`).
+- Cho phép ghi nhật ký cho presence của bạn.
 
 ### **`warning`**
 
-- Enables warning icon for prompting user that this presence needs more steps than only adding presence.
-- Example of presence using this metadata variable is `VLC`.
+- Cho phép sử dụng biểu tượng cảnh bảo để thông báo người dùng biết rằng presence cần nhiều bước hơn việc chỉ thêm vào.
+- `VLC` là một ví dụ cho việc presence sử dụng biến trong metadata.
 
 ### **`settings`**
 
-- If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
-- The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
-- If you are using the `multiLanguage` option it can have the following types:
-  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+- Nếu bạn quyết định sử dụng chuỗi định dạng (cho vd. `%song% bởi %artist%`), bạn phải để biến được bao quanh bởi dấu phần trăm ở hai đầu. Các biến như `%var`, `var%` hay `%%var%%` và tất cả mọi thứ tương tự đều **không** được chấp nhận vì lợi ích của việc tiêu chuẩn hoá.
+- Tên của cài đặt **không** được phép viết toàn bộ in hoa. Ví dụ, các tên như `HIỆN TRẠNG THÁI TRÌNH DUYỆT` là **không** được cho phép; trong khi đó các tên như `Hiện Trạng Thái Trình Duyệt` hay `Hiện trạng thái trình duyệt` được cho phép.
+- Nếu bạn đang sử dụng lựa chọn `multiLanguage` nó có thể có các kiểu sau:
+  - Loại **boolean** sẽ chỉ cho phép sử dụng các chuỗi từ [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) từ Kho lưu trữ Bản địa hoá hoặc từ tệp presence (cho vd. khi tên của presence là YouTube, phần mở rộng cũng sẽ sử dụng các chuỗi từ `youtube.json`.)
+  - Loại **string** (cho vd. `youtube`) sẽ xác định tên tệp bạn sẽ lấy chuỗi từ.
+  - Loại **array<String>** (cho vd. `["youtube","discord']`) sẽ xác định tên của tệp bạn lấy chuỗi từ.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
