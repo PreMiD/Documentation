@@ -95,19 +95,18 @@ Hệ điều hành Windows: Điền `%appdata%` vào trình duyệt thư mục v
 Nếu bạn đã tải Discord qua Snapcraft, RPC sẽ không hoạt động. Bạn sẽ phải gỡ cài đặt phiên bản discord Snapcraft bằng cách thực thi lệnh `sudo snap remove discord` trong một cửa sổ lệnh, rồi tải xuống phiên bản **[Discord cho Linux](https://discordapp.com/api/download?platform=linux)** (**[hoặc Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), sau đó mở thư mục mà bạn vừa tải Discord tới (thường là `$HOME/Downloads`), sau đó cài đặt gói bằng lệnh `sudo dpkg -i discord-*.deb`. Nếu AppImage không hoạt động, bạn nên xem xét kiểm tra các gói khác của chúng tôi bằng **[liên kết này](https://packagecloud.io/premid/linux)**.
 
 ### Hệ điều hành dựa trên Arch Linux
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+Các distro dựa trên Arch Linux nên sử dụng gói AUR (Kho lưu trữ người dùng Arch) có tên <code mark = "crwd-mark"> premid </code> hoặc <code> premid-git </code> ( <em x-id="3">CẢNH BÁO: Kho lưu trữ này được xây dựng từ mã nguồn của chúng tôi. </em>). Nếu bạn không muốn cài đặt trình quản lý AUR (yay, v.v.), bạn có thể xem AppImage có thể tải xuống từ <strong x-id = "1" mark = "crwd-mark"> <a href = "của chúng tôi https://github.com/premid/linux/releases">Kho lưu trữ Linux</a></strong>. <em x-id = "3" mark = "crwd-mark"> Cảnh báo: gói trong kho <strong x-id = "1">AUR</strong> không được chúng tôi duy trì (với tư cách là tổ chức PreMiD), nhưng bởi những người khác.</em>
 
-### Port binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+### Gắn cổng
+Bạn nên biết rằng <strong x-id = "1" mark = "crwd-mark"> PreMiD </strong> tự liên kết với cổng <strong x-id = "1" mark = "crwd-mark">3020</strong>. Điều này là cần thiết để Tiện ích mở rộng và Ứng dụng giao tiếp. Nếu <strong x-id = "1" mark = "crwd-mark">PreMiD</strong> hiển thị cho bạn lỗi về cổng này, bạn nên kiểm tra xem phần mềm khác được liên kết với cổng 3020 hay không bằng cách chạy <code mark = "crwd -mark "> sudo lsof -i: 3020 </code> hoặc <code mark =" crwd-mark "> sudo netstat -tnlp | grep: 3020 </code> trong terminal của bạn. Nếu vài chương trình đã được gán vào cổng đó thì bạn nên làm trống cổng và thử chạy lại <code>PreMiD</code> lần nữa.
 
-### PreMiD's AppImage doesn't launch at login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
-1. Make a file named <strong x-id="1">rc.local</strong> in the <code>/etc</code> directory.
-2. Open this file in your favourite editor and paste given code with changing some things:
+### PreMiD AppImage không tự khởi động khi đăng nhập
+Như chúng tôi đã nêu trong **kho lưu trữ Linux** của chúng tôi, AppImage không thể tự khởi động khi đăng nhập. Bạn có thể tự thêm nó vào phần tự khởi động qua các bước sau:
+1. Tạo một tệp tin tên là <strong x-id="1">rc.local</strong> ở trong thư mục <code>/etc</code>.
+2. Mở tệp tin này ở trong trình soạn thảo ưa thích của bạn và chép đoạn mã sau vào với một chút thay đổi:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# Cần thiết để chạy dưới thư mục /bin/bash (nếu bạn sử dụng zsh, vân vân. you can change it.)
 
 # Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
