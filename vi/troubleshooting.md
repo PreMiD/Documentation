@@ -106,27 +106,27 @@ Như chúng tôi đã nêu trong **kho lưu trữ Linux** của chúng tôi, App
 2. Mở tệp tin này ở trong trình soạn thảo ưa thích của bạn và chép đoạn mã sau vào với một chút thay đổi:
 ```bash
 #!/bin/bash
-# Cần thiết để chạy dưới thư mục /bin/bash (nếu bạn sử dụng zsh, vân vân. you can change it.)
+# Cần thiết để chạy dưới thư mục /bin/bash (nếu bạn sử dụng zsh, vân vân. bạn có thể thay đổi nó.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
-<directory to appimage>/PreMiD*.AppImage
+# Ví dụ: /home/PreMiD/PreMiD*.AppImage
+<đường dẫn tới tệp ứng dụng>/PreMiD*.AppImage
 
 exit 0
 ```
-3. Save file and chmod it as executable `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+3. Lưu tệp tin lại và chạy lệnh chmod cho nó dưới dạng có thể thực thi `sudo chmod a+x /etc/rc.local`.
+4. Khởi động lại máy tính của bạn và AppImage PreMiD sẽ khởi động khi đăng nhập.
 
 <a name="macos"></a>
 
 # Xử lý sự cố cho hệ điều hành MacOS
-### Error creating directory
+### Lỗi khi tạo thư mục
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
-2. Right-click on blank space and click **Create folder**.
-3. To this folder assign `PreMiD` name (remember about upper-cased letters).
-4. Open installer again.
+Nếu bạn gặp lỗi này, điều đó có nghĩa là tài khoản của bạn không có quyền Quản trị viên và bạn phải tự tạo thư mục bằng các bước sau:
+1. Mở trình tìm kiếm và mở thư mục **Ứng dụng**.
+2. Nhấp chuột phải vào khoảng trống và nhấn **Tạo thư mục**.
+3. Gán tên `PreMiD` và thư mục (hãy nhớ viết hoa đầy đủ).
+4. Chạy lại trình cài đặt.
 
 # Điều đó chưa giải quyết được vấn đề của tôi
-Please open a ticket in [#support](https://discord.premid.app/).
+Vui lòng mở một thẻ trong kênh [#support](https://discord.premid.app/).
