@@ -10,39 +10,39 @@ dateCreated: 2021-09-07T01:44:53.883Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Nguyên tắc Presence</h3>
-    <h4 style="margin-top: 0">Revision 3</h4>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Bộ quy tắc khi làm Presence</h3>
+    <h4 style="margin-top: 0">Sửa đổi lần thứ 3</h4>
     <br />
 </div>
 
-# Guidelines
+# Các nguyên tắc
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. To some, these strict rules may seem harsh. However, the implementation of these rulesets will keep us and the users from running into any issues.
+Khi công bố Presence vào [kho lưu trữ Presence](https://github.com/PreMiD/Presences/), chúng tôi yêu cầu bạn phải tuân theo một bộ quy tắc. Đối với một số người, những quy định này có thể hà khắc. Tuy nhiên, việc đưa vào thực hiện bộ quy tắc này sẽ giúp chúng tôi và các người dùng tránh khỏi các sự cố không mong muốn.
 
-# Creation
+# Khởi tạo
 
-The general rules of presence development are as follows:
+Những quy định chung về việc phát triển presence như sau:
 
-- Presences **must** be related to the website of choice.
-- Presences **cannot** be made for illegal websites. (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
-- You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
-- Presence that target internal browser pages (like Chrome Web Store, `chrome://`, `about:` pages, etc) are **not** allowed as they require an experimental flag to be enabled on the user's end and could potentially cause damage to their browsers.
-- Presences with support for only a single subdomain will **not** be permitted, as they may seem broken for other pages (like the homepage), exceptions can be made for the policy and contact pages (content that isn't used often) or sites where the other content is unrelated. (for e.g., wikia pages)
-- Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Presence **bắt buộc** phải liên quan tới trang web được lựa chọn.
+- Presence **không được phép** làm cho các trang web phi pháp. (cho vd: nội dung khó chịu, buôn bán thuốc, nội dung khiêu dâm trẻ em, v.v.)
+- Cấu trúc tệp phải gọn và ngăn nắp, không được thêm tệp không được chỉ định. (cho vd: thư mục vscode và git, tệp ảnh và văn bản, v.v.)
+- Bạn cần có một cấu trúc tệp thích hợp, **không** được phép thêm các bản nháp.
+- Presence cho các trang web như (Tên Miền Cấp Cao Nhất `.onion`) hay các trang web với tên miền/máy chủ miễn phí (cho vd., `.TK` [tất cả các tên miền Freenom], `.RF`, `GD`, v.v.) đểu **không** được phép, có thể có ngoại lệ nếu chứng minh được chủ sở hữu tên miền đó đã trả phí cho tên miền.
+- Tên miền của presence phải ít nhất 2 tháng tuổi.
+- Presence hướng tới các trang nội bộ của trình duyệt (như Cửa hàng Chrome, các trang `chrome://`, `about:`, v.v.) đều **không** được phép vì nó yêu cầu người dùng phải bật tính năng thử nghiệm trên trình duyệt của họ và có thể làm tổn hại đến trình duyệt.
+- Presence chỉ hỗ trợ một tên miền phụ sẽ **không** được cho phép, vì chúng có thể không hoạt động cho các trang khác (như trang chủ), có thể cho phép ngoại lệ cho các trang chính sách và liên lạc (những nội dung không được sử dụng thường xuyên) hoặc các trang có nội dung không liên quan. (cho vd., các trang wikia)
+- Presence cho các radio online chỉ được cho phép khi radio đó có ít nhất 100 người nghe hàng tuần và 15 người nghe hiện tại và phải có các chức năng khác ngoài chỉ hiện tên album/bài hát, v.v.
+- Presence không được phép chạy đoạn mã JS của riêng nó với chức năng của riêng nó để lấy biến. Nếu Firefox có vấn đề với các chức năng có sẵn trong lớp `Presence`, bạn được phép sử dụng chức năng của riêng mình và bạn cần phải nói với chúng tôi trong đoạn mô tả Pull Request.
+- Presence với chất lượng thấp (hoặc với ít nội dung) đều **không** được cho phép (cho vd., chỉ hiện logo và văn bản nhưng không thay đổi).
+- Presence cho các dịch vụ như Danh sách Discord Bot/Server phải tuân theo thêm các quy định sau:
+  - Tên miền phải có ít nhất **6 tháng** tuổi.
+  - Số người truy cập độc nhất mỗi ngày:
+    - Cho tên miền từ 6 đến 12 tháng tuổi: **20,000 người truy cập độc nhất/ngày**.
+    - Cho tên miền trên 12 tháng tuổi: **45,000 người truy cập độc nhất/ngày**.
+  - Trang web không được sử dụng tên miền chi phí thấp như `.xyz`, `.club` và tương tự.
+  - Trang web phải có chất lượng cao, thiết kế chất lượng, v.v.
+- Presence nên sử dụng [chi tiết chung](https://api.premid.app/v2/langFile/presence/en) (các chuỗi bắt đầu bằng "general."). Bạn có thể thực hiện điều này bằng cách sử dụng `multiLanguage` với các chuỗi đã cho sẵn. Nếu presence của bạn cần các chuỗi đặc biệt thì bạn không nên dùng `multiLanguage` cho đến khi presence có 1000 người dùng. Bạn có thể tìm một ví dụ tại [đây](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Bao gồm cả thư mục `dist`, tệp `presence.ts`, tệp `iframe.ts`, và tệp `metadate.json` bắt buộc phải có để kết quả được hiển thị như lược đồ sau:
 
 ```bash
 presence
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-or if you're using a `iframe.ts` file:
+hoặc nếu như bạn đang sử dụng tệp `iframe.ts`:
 
 ```bash
 presence
@@ -65,9 +65,9 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
-> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process.
+> Để thuận tiện cho các nhà phát triển presence, chúng tôi đã cung cấp lược đồ sau để bạn sử dụng để kiểm tra tính toàn vẹn của tệp `metadata` của bạn. Việc này là hoàn toàn không bắt buộc và sẽ không phải yêu cầu trong quá trình đánh giá.
 
-> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted.
+> Chúng tôi khuyến nghị bạn nên sắp xếp tệp `metadata` theo định dạng dưới đây, và bạn cần phải có tên dịch vụ, đoạn mô tả, các nhãn và phần cài đặt đúng ngữ pháp. Anything not organized to specifications will **not** be permitted.
 
 > Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
 
