@@ -31,11 +31,11 @@ Tất cả presence đều được lập trình bằng [TypeScript](https://www
 2. Cài [Node](https://nodejs.org/en/) (có sẵn với [npm](https://www.npmjs.com/)).
 3. Cài [TypeScript](https://www.typescriptlang.org/index.html#download-links) (mở terminal và nhập `npm install -g typescript`).
 
-## Clone project
+## Sao chép dự án
 
 1. Mở một terminal và gõ lệnh `git clone https://github.com/PreMiD/Presences`.
 2. Chọn thư mục bạn muốn.
-3. Mở nó với editor bạn chọn.
+3. Mở nó với trình soạn thảo của bạn.
 
 ## Tạo thư mục và tệp
 
@@ -246,7 +246,7 @@ Hãy chép đoạn mã trên và dán nó vào tệp `metadata.json`. Bạn cầ
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Xác định xem <code>iFrames</code> có được sử dụng không.</td>
+      <td style="text-align:left">Xác định xem <code>iFrame</code> có được sử dụng không.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Có</code></td>
     </tr>
@@ -335,7 +335,7 @@ Từ bản v2.2.0 đã xuất hiện Trình chiếu, cho phép bạn chiếu nhi
 
 <h2 spaces-before="0">Không thể lấy một số dữ liệu nhất định?!</h2>
 
-<p spaces-before="0">Rất nhiều website đang sử dụng <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">iframes</a> (<a href="https://en.wikipedia.org/wiki/HTML_element#Frames">Inlineframes</a>). Các thẻ html này có thể chứa được nhiều nguồn như các videos. Nhưng không phải lúc nào chúng cũng liên quan. Một số bị ẩn hoặc không được sử dụng thường xuyên. Hãy kiểm tra xem bạn có thể rút ra được thông tin bạn cần trước khi bạn thực hiện các công việc không cần thiết.</p>
+<p spaces-before="0">Rất nhiều website đang sử dụng <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">iframe</a> (<a href="https://en.wikipedia.org/wiki/HTML_element#Frames">Inlineframe</a>). Các thẻ html này có thể chứa được nhiều nguồn như các videos. Nhưng không phải lúc nào chúng cũng liên quan. Một số bị ẩn hoặc không được sử dụng thường xuyên. Hãy kiểm tra xem bạn có thể rút ra được thông tin bạn cần trước khi bạn thực hiện các công việc không cần thiết.</p>
 
 <ol start="1">
 <li>Kiểm tra chúng ở bảng điều khiển trong trình duyệt của bạn (hãy chắc chắn bạn ở trong tab <strong x-id="1">Elements</strong>).</li>
@@ -395,7 +395,7 @@ Trang web bạn đang phát triển trên sẽ tự động tải lại mỗi kh
 
 # Giải thích các tệp
 
-- [Lớp hiện diện](/dev/presence/class)
+- [Lớp Presence](/dev/presence/class)
 - [Lớp Slideshow](/dev/presence/slideshow)
 - [Lớp iFrame](/dev/presence/iframe)
 - [Tệp Metadata](/dev/presence/metadata)
