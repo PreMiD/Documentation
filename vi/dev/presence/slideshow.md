@@ -14,85 +14,85 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 Lớp `Slideshow` được dùng để đặt nhiều `PresenceData` và "trình chiếu" chúng mỗi x mili giây (tối thiểu: 5000).
 
-See the [`createSlideshow`](/dev/presence/class#createslideshow) method in the [`Presence`](/dev/presence/class) class on how to create a `Slideshow`.
+Xem thêm về phương thức [`createSlideshow`](/dev/presence/class#createslideshow) trong lớp [`Presence`](/dev/presence/class) để biết cách tạo một `Slideshow`.
 
 ## Thuộc tính
 
 ### `currentSlide`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of what the presence/current slide is displaying.
+Đưa trả đối tượng [`PresenceData`](/dev/presence/class#presencedata-interface) của những gì presence/slide hiện tại đang hiển thị.
 
 ```ts
 const currentSlide = slideshow.currentSlide
-console.log(currentSlide.details) // Will console log the details of the PresenceData
+console.log(currentSlide.details) // Sẽ ghi lại nhật ký các chi tiết của PresenceData
 ```
 
 ## Phương pháp
 
 ### `addSlide(String, PresenceData, Number)`
 
-Add a new slide to the `Slideshow` according to provided data.
+Thêm một slide mới vào `Slideshow` dựa trên thông tin được cung cấp.
 
-First parameter requires a `String` that will be used as a unique identifier for the slide.
+Tham số đầu tiên yêu cầu một `String` để làm chuỗi định danh độc nhất cho slide.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Tham số thứ hai yêu cầu một [giao diện `PresenceData`](/dev/presence/class#presencedata-interface) để lấy tất cả thông tin bạn cần để hiển thị trên slide.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Tham số thứ ba yêu cầu một `Số` dùng làm khoảng thời gian viết dưới dạng mili giây (tối thiểu: 5000) mà slide sẽ được chiếu.
 
 ### `getSlides()`
 
-Returns all slides saved in the `Slideshow` as an `Array` of [`SlideshowSlide`](#slideshowslide-class).
+Đưa trả tất cả các slide được lưu trong `Slideshow` dưới dạng một `Array` của [`SlideshowSlide`](#slideshowslide-class).
 
 ### `updateSlide(String, PresenceData, Number)`
 
-Updates the slide of the given `id` according to provided data.
+Cập nhật slide với `id` cho sẵn dựa trên dữ liệu được cung cấp.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to update.
+Tham số đầu tiên yêu cầu một `String` được dùng làm chuỗi định danh độc nhất của slide bạn muốn cập nhật.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Tham số thứ hai yêu cầu một [giao diện `PresenceData`](/dev/presence/class#presencedata-interface) để lấy tất cả thông tin bạn cần để hiển thị trên slide.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Tham số thứ ba yêu cầu một `Số` dùng làm khoảng thời gian viết dưới dạng mili giây (tối thiểu: 5000) mà slide sẽ được chiếu.
 
 ### `hasSlide(String)`
 
-Returns a `Boolean` stating whether the slide is added to the `Slideshow`.
+Đưa trả một `Boolean` xác định xem slide có được thêm vào `Slideshow` không.
 
 ### `deleteSlide(String)`
 
-Deletes the slide with the given `id` from the `Slideshow`.
+Xoá slide với `id` được cho sẵn khỏi `Slideshow`.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to delete.
+Tham số đầu tiên yêu cầu một `String` được dùng làm chuỗi định danh độc nhất của slide bạn muốn xoá.
 
 ### `deleteAllSlides()`
 
-Deletes all slides from the `Slideshow`.
+Xoá tất cả các slide khỏi `Slideshow`.
 
-# SlideshowSlide Class
+# Lớp SlideshowSlide
 
 ## Giới thiệu
 
-A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
+`SlideshowSlide` là cách biểu diễn nội bộ của mỗi slide trong một `Slideshow`.
 
 ## Thuộc tính
 
 ### `id`
 
-Returns a `String` of the id of the slide.
+Đưa trả một `String` của id của slide.
 
 ### `data`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
+Đưa trả đối tượng [`PresenceData`](/dev/presence/class#presencedata-interface) của `PresenceData` được lưu trong slide.
 
 ## Phương pháp
 
 ### `updateData(PresenceData)`
 
-Sets the slides data according to provided data.
+Đặt dữ liệu của slide dựa trên dữ liệu đã được cung cấp.
 
-You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
+Bạn phải cung cấp một giao diện `PresenceData` để lấy tất cả các thông tin bạn cần được hiển thị lên hồ sơ của bạn.
 
 ### `updateInterval(Number)`
 
-Sets the interval of the slide according to provided data.
+Đặt một khoảng thời gian cho slide hiển thị cách nhau dựa trên dữ liệu được cung cấp.
 
-You must provide a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Bạn phải cung cấp một `Số` để dùng làm khoảng thời gian dưới dạng mili giây (tối thiểu: 5000) mà slide sẽ chiếu.
