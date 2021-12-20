@@ -19,8 +19,8 @@ dateCreated: 2021-09-07T01:25:38.328Z
 6. 아까 다운로드한 파일을 선택하세요.
 7. **Add**를 클릭해 설치에 동의하세요.
 
-> [**이 앱을** 추가](/install)하는 것도 잊지 마세요.
->
+> [**이 앱을** 추가](/install)하는 것도 잊지 마세요. 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
