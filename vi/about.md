@@ -15,5 +15,5 @@ PreMiD là một tiện ích đơn giản, có thể cho phép bạn hiển th�
 - Một tính năng lớn, gọi là WatchParties, đang đến với PreMiD. Với lời mời trò chơi và xem và nghe đồng thời. Cung cấp bởi [Discord](https://discordapp.com/).
 
 # Tính năng chính
-- Hiển thị dịch vụ web hiện tại lên làm trạng thái trên Discord.
+- Hiển thị dịch vụ hoạt động web lên làm trạng thái trên Discord.
 - Cho toàn bộ kiểm soát về Presence.
