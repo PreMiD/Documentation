@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 軟體的安裝非常重要，因為擴充功能無法自行做任何的操作
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still.
->
+> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> 
 > {.is-warning}
 
 ## 內容目錄
