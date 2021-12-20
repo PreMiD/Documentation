@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Pemasangan aplikasi amat penting kerana sambungan tidak mampu membuat apa-apa dengan sendirinya.
 
-> Pengguna Aur yang menggunakan pakej DoomLerd sepatutnya selamat, katanya lah. Kami tidak menggalakkan anda untuk menggunakannya, tetapi anda boleh guna jika ingin guna. Terima kasih DoomLerd kerana masih menguruskan repo aur.
->
+> Pengguna Aur yang menggunakan pakej DoomLerd sepatutnya selamat, katanya lah. Kami tidak menggalakkan anda untuk menggunakannya, tetapi anda boleh guna jika ingin guna. Terima kasih DoomLerd kerana masih menguruskan repo aur. 
+> 
 > {.is-warning}
 
 ## Jadual Kandungan
