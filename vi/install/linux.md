@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể hoạt động một mình.
 
-> Người dùng Aur sử dụng gói của DoomLerd sẽ được an toàn như anh ấy nói. Chúng tôi không khuyến khích sử dụng nó, nhưng nếu bạn muốn, bạn vẫn có thể sử dụng nó. Cảm ơn DoomLerd vì vẫn đang quản lý kho lưu trữ aur.
->
+> Người dùng Aur sử dụng gói của DoomLerd sẽ được an toàn như anh ấy nói. Chúng tôi không khuyến khích sử dụng nó, nhưng nếu bạn muốn, bạn vẫn có thể sử dụng nó. Cảm ơn DoomLerd vì vẫn đang quản lý kho lưu trữ aur. 
+> 
 > {.is-warning}
 
 ## Mục lục
