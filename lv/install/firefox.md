@@ -19,8 +19,8 @@ Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma bez paplašināju
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Neaizmirstiet [pievienot **lietotni**](/install).
->
+> Neaizmirstiet [pievienot **lietotni**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
