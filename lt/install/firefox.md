@@ -19,8 +19,8 @@ Plėtinio įdiegimas yra labai svarbus, nes programa pati nieko negali padaryti.
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Nepamirškite [ pridėti ** aplikacijos **](/install).
->
+> Nepamirškite [ pridėti ** aplikacijos **](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
