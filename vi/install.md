@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Trước khi tiến hành, hãy đảm bảo rằng hệ thống của bạn phù hợp vói [yêu cầu hệ thống](/install/requirements).
->
+> Trước khi tiến hành, hãy đảm bảo rằng hệ thống của bạn phù hợp vói [yêu cầu hệ thống](/install/requirements). 
+> 
 > {.is-info}
 
-> Bạn **cần phải** tải **ứng dụng** và **tiện ích mở rộng**!
->
+> Bạn **cần phải** tải **ứng dụng** và **tiện ích mở rộng**! 
+> 
 > {.is-warning}
 
 **Chọn hệ điều hành:**
