@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> كل الpresences الان تخزن هنا: https://github.com/PreMiD/Presences
->
+> كل الpresences الان تخزن هنا: https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 الإصدار `2.x` يقدم [متجر الpresence](https://premid.app/store). الأن لدى المستخدمين القدرة لاضافة وحذف الpresences المفضلين لهم يدويا من خلال واجهة المستخدم في [الموقع](https://premid.app/).
 
-> قبل البدء، يوصى بشدة أن تنظروا إلى المبادئ التوجيهية للـ Presence الخاصة بنا.
->
+> قبل البدء، يوصى بشدة أن تنظروا إلى المبادئ التوجيهية للـ Presence الخاصة بنا. 
+> 
 > {.is-warning}
 
 - [الإرشادات](https://docs.premid.app/dev/presence/guidelines)

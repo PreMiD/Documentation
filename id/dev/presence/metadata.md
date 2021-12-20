@@ -238,7 +238,7 @@ Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
     "title": "TUNJUKKAN JUDUL",
     "icon": "IKON FONTAWESOME",
     "value": 0, //Nilai default selector
-    "values": ["1", "2", "etc."] //Akan membuat pengaturan menjadi selector saat kamu memilih yang mana yang kamu inginkan
+    "values": ["1", "2", "etc."] //Akan membuat pengaturan menjadi selector saat kamu memilih yang mana yang kamu inginkan 
   }
 ]
 ```

@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> 모든 Presence들은 이곳에 저장되어 있습니다. https://github.com/PreMiD/Presences
->
+> 모든 Presence들은 이곳에 저장되어 있습니다. https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines.
->
+> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> 
 > {.is-warning}
 
 - [지침](https://docs.premid.app/dev/presence/guidelines)
