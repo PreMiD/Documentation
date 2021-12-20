@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # بیش نیاز های سیستم
 
-> This data relate to the application only.
->
+> This data relate to the application only. 
+> 
 > {.is-info}
 
 PreMiD runs on virtually any system. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
