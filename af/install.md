@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Voordat u verder gaan, moet u seker maak dat u stelsel aan al die [ vereistes](/install/requirements).
->
+> Voordat u verder gaan, moet u seker maak dat u stelsel aan al die [ vereistes](/install/requirements). 
+> 
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**!
->
+> **It is necessary** to install **both** the **application** and the **extension**! 
+> 
 > {.is-warning}
 
 **Choose your operating system:**
