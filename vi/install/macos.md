@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Trước khi tiến hành, hãy đảm bảo rằng hệ thống của bạn phù hợp vói [yêu cầu hệ thống](/install/requirements).
->
+> Trước khi tiến hành, hãy đảm bảo rằng hệ thống của bạn phù hợp vói [yêu cầu hệ thống](/install/requirements). 
+> 
 > {.is-info}
 
 Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể hoạt động một mình.
@@ -26,8 +26,8 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 
 Ứng dụng sẽ được chạy tự động. Kiểm tra biểu tượng trên thanh menu.
 
-> Đừng quên [tải **tiện ích mở rộng**](/install).
->
+> Đừng quên [tải **tiện ích mở rộng**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
