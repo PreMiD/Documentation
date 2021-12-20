@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Installationen av tillägget är viktigt eftersom programmet inte kan göra något av sig själv.
 
-> Användare av Aur som använder DoomLerd's package bör vara okej som han säger. Vi rekommenderar inte att använda det, men om du vill så kan du ändå. Tack till DoomLerd för det fortsatta stödet av vår Aur repo.
->
+> Användare av Aur som använder DoomLerd's package bör vara okej som han säger. Vi rekommenderar inte att använda det, men om du vill så kan du ändå. Tack till DoomLerd för det fortsatta stödet av vår Aur repo. 
+> 
 > {.is-warning}
 
 ## Innehållsförteckning
