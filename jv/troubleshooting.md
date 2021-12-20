@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Priksa manawa sampeyan wis duwe ekstensi ** lan ** sing wis diinstal!
->
+> Priksa manawa sampeyan wis duwe ekstensi ** lan ** sing wis diinstal! 
+> 
 > {.is-warning}
 
 Halaman iki memuat:
@@ -20,8 +20,8 @@ Halaman iki memuat:
 <a name="general"></a>
 
 # Troubleshooting Umum
-> Sampeyan isa gunake alat [iki](https://qkeleq10.github.io/PreMiD-Troubleshooting/) supaya luwih penak ngidentifikasi masalahmu.
->
+> Sampeyan isa gunake alat [iki](https://qkeleq10.github.io/PreMiD-Troubleshooting/) supaya luwih penak ngidentifikasi masalahmu. 
+> 
 > {.is-info}
 ### Muat maneh halaman
 Sampeyan ugo bisa mijet <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) utawa <kbd>CMD+R</kbd> (MacOS) ing keyboard sak liyane tombol refresh.
@@ -70,8 +70,8 @@ Windows: Ketik `%appdata%` ing file explorer lan busek folder `PreMiD`. MacOS: `
 ### McAfee ndeteksi PreMiD sebagai virus (Windows)
 Iki minangka false positive palsu saka McAfee lan kita wis nglaporake masalah kasebut, saiki sampeyan bisa ngilangi PreMiD saka pindai kanthi nindakake perkara ing ngisor iki:
 
-> Yen sampeyan ora yakin ngetutake langkah-langkah kasebut, coba gawe tiket ing [ #support ](https://discord.premid.app/) lan salah sawijining Ejen Dhukungan bakal mbantu sampeyan!
->
+> Yen sampeyan ora yakin ngetutake langkah-langkah kasebut, coba gawe tiket ing [ #support ](https://discord.premid.app/) lan salah sawijining Ejen Dhukungan bakal mbantu sampeyan! 
+> 
 > {.is-warning}
 
 1. Bukak aplikasi McAfee lan klik lambang setelan ing sisih tengen ndhuwur. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
