@@ -1,6 +1,6 @@
 ---
 title: TypeScript কনফিগারেশন
-description: TypeScript - এর জন্য একটি ছোট সহায়ক
+description: TypeScript এর জন্য একটি ছোট সহায়ক
 published: true
 date: 2021-09-18T14:31:22.005Z
 tags:
