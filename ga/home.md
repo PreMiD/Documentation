@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Tá an cháipéisíocht fós á cur in eagar! D’fhéadfadh roinnt leathanaigh a bheith neamhiomlán nó ar iarraidh.
->
+> Tá an cháipéisíocht fós á cur in eagar! D’fhéadfadh roinnt leathanaigh a bheith neamhiomlán nó ar iarraidh. 
+> 
 > {.is-warning}
 
 # Maidir le PreMiD
