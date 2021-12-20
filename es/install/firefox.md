@@ -19,8 +19,8 @@ La instalación de la extensión es muy importante, ya que la aplicación no pue
 6. Selecciona el archivo descargado recientemente.
 7. Acepta la instalación pulsando sobre **Añadir**.
 
-> No olvides [añadir la **aplicación**](/install).
->
+> No olvides [añadir la **aplicación**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
