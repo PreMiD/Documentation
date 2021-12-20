@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Antes de ir mais longe, certifique-se de que seu sistema atenda a todos os [requisitos](/install/requirements).
->
+> Antes de ir mais longe, certifique-se de que seu sistema atenda a todos os [requisitos](/install/requirements). 
+> 
 > {.is-info}
 
-> **É necessário** instalar** tanto** o **aplicativo** quanto a **extensão**!
->
+> **É necessário** instalar** tanto** o **aplicativo** quanto a **extensão**! 
+> 
 > {.is-warning}
 
 **Escolha seu sistema operacional:**
