@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Systémové Požiadavky
 
-> Tieto údaje sa týkajú iba aplikácie.
->
+> Tieto údaje sa týkajú iba aplikácie. 
+> 
 > {.is-info}
 
 PreMiD beží na virtuálnom akomkoľvek systéme. Znamená to že beží na **Linuxe**, **macOSi**, **Windowse** a i na niektorých **Linux Modifikáciach**.
