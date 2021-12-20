@@ -19,8 +19,8 @@ The installation of the extension is very important as the application can not d
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Non dimenticare di [aggiungere l'**applicazione**](/install).
->
+> Non dimenticare di [aggiungere l'**applicazione**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
