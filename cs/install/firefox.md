@@ -19,8 +19,8 @@ Instalace rozšíření je velmi důležitá, protože aplikace nemůže dělat 
 6. Vyberte soubor, který jste nedávno stáhli.
 7. Přijměte instalaci kliknutím na tlačítko **Přidat**.
 
-> Nezapomeňte [přidat **aplikaci**](/install).
->
+> Nezapomeňte [přidat **aplikaci**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
