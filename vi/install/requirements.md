@@ -26,6 +26,6 @@ Các hệ thống Linux phải có **ít nhất 20 MB RAM** để chạy PreMiD.
 PreMiD chiếm khoảng **150MB** dung lượng lưu trữ vật lý. Tuy nhiên, ít nhất **200MB** dung lượng lưu trữ dành riêng cho PreMiD được khuyến nghị.
 
 ### Truy cập Internet
-Cần kết nối internet để chạy PreMiD. PreMiD sẽ tự động kiểm tra các bản cập nhật mới, ngôn ngữ, cập nhật Presence, v. v. theo thời gian.
+Cần kết nối internet để chạy PreMiD. PreMiD sẽ tự động kiểm tra các bản cập nhật mới, ngôn ngữ, bản cập nhật Presence, v.v. theo thời gian.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}
