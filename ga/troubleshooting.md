@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Déan cinnte go bhfuil an síneadh **agus** an feidhmchlár suiteáilte agat!
->
+> Déan cinnte go bhfuil an síneadh **agus** an feidhmchlár suiteáilte agat! 
+> 
 > {.is-warning}
 
 San áireamh ar an leathanach seo:
@@ -20,8 +20,8 @@ San áireamh ar an leathanach seo:
 <a name="general"></a>
 
 # Fabhtcheartú ginearálta
-> Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat!
->
+> Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat! 
+> 
 > {.is-info}
 ### Athlódáil an leathanach
 Is féidir leat <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nó <kbd>CMD+R</kbd> (MacOS) a bhrú ar do mhéarchlár freisin in ionad an cnaipe athnuachana a chuardach.
@@ -70,8 +70,8 @@ Windows: Scríobh `%appdata%` ar an taiscéalaí comhaid agus scrios an fillteá
 ### Bhraith McAfee PreMiD mar víreas (Windows)
 Is dearfach bréagach é seo ó McAfee agus chuireamar an cheist in iúl dóibh, go dtí seo is féidir leat PreMiD a eisiamh ón scanadh trí na céimeanna seo a leanas a dhéanamh:
 
-> Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat!
->
+> Mura mbraitheann tú muiníneach as na céimeanna seo a ghlacadh, bíodh leisce ort ticéad a dhéanamh i [#support](https://discord.premid.app/) agus beidh duine dár nGníomhairí Tacaíochta in ann cabhrú leat! 
+> 
 > {.is-warning}
 
 1. Oscail feidhmchlár McAfee agus cliceáil deilbhín na socruithe ar thaobh na láimhe deise. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
