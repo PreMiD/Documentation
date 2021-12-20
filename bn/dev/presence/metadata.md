@@ -1,6 +1,6 @@
 ---
 title: Metadata.json
-description: Presence - টি সম্বন্ধে প্রাথমিক ডাটা থাকে
+description: Presence টি সম্বন্ধে প্রাথমিক ডাটা থাকে
 published: true
 date: 2021-02-07T17:12:06.799Z
 tags:
@@ -68,7 +68,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 }
 ```
 
-## metadata.json - কে বোঝা
+## metadata.json কে বোঝা
 
 সেই উদাহরণটি দেখতে বেশ অদ্ভুত, তাই না? চিন্তা করবে না, এটা বোঝা এতো কঠিন নয় যে প্রত্যেক ভ্যারিয়েবল কীসের জন্য।
 
@@ -104,10 +104,10 @@ dateCreated: 2020-06-11T18:04:52.965Z
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Presence - টিকে যেন সার্চ করতে পারো একটি বিকল্প নাম ব্যবহার করে।<br>
-      ব্যবহার করতে হবে সেসব Presences - এর জন্য যেগুলোর ভিন্ন নাম রয়েছে ভিন্ন ভাষায়
+      <td style="text-align:left">Presence টিকে যেন সার্চ করতে পারো একটি বিকল্প নাম ব্যবহার করে।<br>
+      ব্যবহার করতে হবে সেসব Presences এর জন্য যেগুলোর ভিন্ন নাম রয়েছে ভিন্ন ভাষায়
 (যেমন Pokémon এবং 포켓몬스터).<br>
-      তুমি এটাকে ব্যবহার করতে পারো সেসব Presence - এর জন্য যেগুলোর বিশেষ অক্ষর রয়েছে যাতে তোমাকে আর সেগুলো টাইপ না করতে হয় (যেমন Pokémon এবং Pokemon).</td>
+      তুমি এটাকে ব্যবহার করতে পারো সেসব Presence এর জন্য যেগুলোর বিশেষ অক্ষর রয়েছে যাতে তোমাকে আর সেগুলো টাইপ না করতে হয় (যেমন Pokémon এবং Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>হ্যাঁ</code></td>
     </tr>
