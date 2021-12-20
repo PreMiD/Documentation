@@ -58,8 +58,8 @@ Tham số thứ hai quyết định xem presence có đang hoạt động hay kh
 
 ### `setTrayTitle(String)` - *Không được sử dụng từ 2.2.3*
 
-> Phương thức này chỉ hoạt động trên Mac OS.
->
+> Phương thức này chỉ hoạt động trên Mac OS. 
+> 
 > {.is-warning}
 
 Đặt tiêu đề thanh trên Menubar.
