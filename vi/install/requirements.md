@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Những yêu cầu hệ thống
 
-> Dữ liệu này chỉ liên quan đến ứng dụng.
->
+> Dữ liệu này chỉ liên quan đến ứng dụng. 
+> 
 > {.is-info}
 
 PreMiD chạy trên hầu hết mọi hệ thống. Điều này có nghĩa là nó chạy trên **Linux**, **macOS**, **Windows** cũng như một số phiên bản **Linux được chỉnh sửa**.
