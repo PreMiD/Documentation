@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Rendszerkövetelmények
 
-> Ezek az adatok csak az alkalmazásra vonatkoznak.
->
+> Ezek az adatok csak az alkalmazásra vonatkoznak. 
+> 
 > {.is-info}
 
 A PreMiD gyakorlatilag bármilyen rendszeren elfut. Ez azt jelenti, hogy elfut **Linux**, **macOS**, **Windows**, valamint néhány **Módosított Linux** rendszeren is.
