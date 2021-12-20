@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing.
->
+> The documentation is still being edited! Some pages may be incomplete or missing. 
+> 
 > {.is-warning}
 
 # Sobre o PreMiD
