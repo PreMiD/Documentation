@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Dokümantasyon hâlâ güncellenmektedir! Bazı sayfalar tamamlanmamış veya geçersiz olabilir.
->
+> Dokümantasyon hâlâ güncellenmektedir! Bazı sayfalar tamamlanmamış veya geçersiz olabilir. 
+> 
 > {.is-warning}
 
 # PreMiD Hakkında
