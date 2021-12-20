@@ -58,8 +58,8 @@ Löscht deine akutelle Aktivität und den Tray-Titel.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Diese Methode funktioniert nur unter Mac OS.
->
+> Diese Methode funktioniert nur unter Mac OS. 
+> 
 > {.is-warning}
 
 Legt den Tray-Titel in der Menüleiste fest.
