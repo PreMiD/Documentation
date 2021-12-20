@@ -58,8 +58,8 @@ Elimina la actividad actual y el titulo de la bandeja de trabajo.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Este método funciona sólo en Mac OS.
->
+> Este método funciona sólo en Mac OS. 
+> 
 > {.is-warning}
 
 Establece el título de la bandeja en la barra de menús.
