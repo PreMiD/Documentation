@@ -19,8 +19,8 @@ dateCreated: 2021-09-07T01:25:38.328Z
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> 不要忘记 [安装 **应用程序**](/install)。
->
+> 不要忘记 [安装 **应用程序**](/install)。 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
