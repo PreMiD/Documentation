@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Uzantıyı **ve** uygulamanın yüklü olduğundan emin olun!
->
+> Uzantıyı **ve** uygulamanın yüklü olduğundan emin olun! 
+> 
 > {.is-warning}
 
 Bu sayfanın içerikleri:
@@ -20,8 +20,8 @@ Bu sayfanın içerikleri:
 <a name="general"></a>
 
 # Genel sorun giderme
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue.
->
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
 > {.is-info}
 ### Sayfayı yenileyin
 Windows'daysanız <kbd>CTRL+R</kbd>/<kbd>F5</kbd>, Mac üzerindeyseniz ise <kbd>CMD+R</kbd> tuşlarını kullanarak sayfayı yenileyebilirsiniz.
@@ -70,8 +70,8 @@ Windows: Dosya Gezginine `%appdata%` adresini yazın ve `PreMiD` klasörünü si
 ### McAfee PreMiD'i virüs olarak tespit etti (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out!
->
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> 
 > {.is-warning}
 
 1. McAfee uygulamasını açın ve sağ üst taraftaki ayarlar simgesini tıklayın. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
