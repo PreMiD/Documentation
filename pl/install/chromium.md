@@ -20,8 +20,8 @@ Instalacja rozszerzenia jest bardzo ważna, ponieważ aplikacja nie może zrobi�
 1. Dodaj **[Zainstaluj rozszerzenia Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Dodaj [nasze rozszerzenie](https://premid.app/downloads).
 
-> Nie zapomnij [zainstalować **aplikacji**](/install).
->
+> Nie zapomnij [zainstalować **aplikacji**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}
