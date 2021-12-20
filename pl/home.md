@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Niektóre strony mogą być niekompletne lub brakujące.
->
+> The documentation is still being edited! Niektóre strony mogą być niekompletne lub brakujące. 
+> 
 > {.is-warning}
 
 # O PreMiD
