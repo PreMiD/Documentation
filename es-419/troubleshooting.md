@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> ¡Asegúrate de tener la extensión **y** aplicación instaladas!
->
+> ¡Asegúrate de tener la extensión **y** aplicación instaladas! 
+> 
 > {.is-warning}
 
 Incluido en esta página:
@@ -20,8 +20,8 @@ Incluido en esta página:
 <a name="general"></a>
 
 # Solución general de problemas
-> Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará!
->
+> Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
+> 
 > {.is-info}
 ### Recarga la página
 Puedes presionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) o <kbd>CMD+R</kbd> (MacOS) en tu teclado en vez de buscar el botón de recargar.
@@ -70,8 +70,8 @@ Windows: Escribe `%appdata%` y elimina la carpeta `PreMiD`. MacOS: `~/users/USUS
 ### McAfee detectó a PreMiD como un virus (Windows)
 Esto es un falso positivo de McAfee y les hemos informado del problema, por ahora puedes excluir a PreMiD del escaneo haciendo lo siguiente:
 
-> Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará!
->
+> Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
+> 
 > {.is-warning}
 
 1. Abre la aplicación McAfee y haz clic en el icono de configuración en la parte superior derecha. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
