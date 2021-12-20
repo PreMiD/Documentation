@@ -58,8 +58,8 @@ Mengosongkan aktiviti semasa dan tajuk talam.
 
 ### `setTrayTitle(String)` - *Diperkecamkan sejak 2.2.3*
 
-> Kaedah ini hanya berfungsi di Mac OS.
->
+> Kaedah ini hanya berfungsi di Mac OS. 
+> 
 > {.is-warning}
 
 Menetapkan tajuk talam di bar menu.
