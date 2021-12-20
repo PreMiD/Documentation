@@ -1,6 +1,6 @@
 ---
 title: API
-description: রিসোর্স অ্যাক্সেস করো এবং কাজ করো PreMiD - এর API ব্যবহার করে
+description: রিসোর্স অ্যাক্সেস করো এবং কাজ করো PreMiD এর API ব্যবহার করে
 published: true
 date: 2021-10-30T23:53:16.875Z
 tags:
