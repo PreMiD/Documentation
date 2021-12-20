@@ -10,7 +10,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 
 # API
 
-> Base URL: https://api.premid.app/ 
+> URL gốc: https://api.premid.app/ 
 > 
 > {.is-info}
 
