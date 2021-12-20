@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Een broncode editor is vereist. Wij raden [Visual Studio Code](https://code.visualstudio.com/) aan.
->
+> Een broncode editor is vereist. Wij raden [Visual Studio Code](https://code.visualstudio.com/) aan. 
+> 
 > {.is-info}
 
 # Installeren van de vereisten
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Open het in je codebewerker.
 
 # Dependencies installeren
-> Zorg ervoor dat je eerst [npm](https://www.npmjs.com/) (Node Package Manager) hebt geïnstalleerd. Het heeft automatisch zichzelf geïnstalleerd als je [Node](https://nodejs.org/en/) hebt geïnstalleerd.
->
+> Zorg ervoor dat je eerst [npm](https://www.npmjs.com/) (Node Package Manager) hebt geïnstalleerd. Het heeft automatisch zichzelf geïnstalleerd als je [Node](https://nodejs.org/en/) hebt geïnstalleerd. 
+> 
 > {.is-warning}
 
 - Open een terminal in je repository en typ `npm i`.
 - Om dependencies bij te werken, typ `npm update`.
 
-> Het bijwerken van dependencies heeft mogelijk schade tot gevolg - testen is nodig!
->
+> Het bijwerken van dependencies heeft mogelijk schade tot gevolg - testen is nodig! 
+> 
 > {.is-danger}
 
 # Programmeer je visie
