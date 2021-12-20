@@ -19,8 +19,8 @@ Inštalácia rozšírenia je veľmi dôležitá pretože samotná aplikácia nem
 6. Vyberte súbor ktorý ste nedávno stiahli.
 7. Prijmite inštaláciu kliknutím na **Pridať**.
 
-> Nezabudnite [pridať **aplikáciu**](/install).
->
+> Nezabudnite [pridať **aplikáciu**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

@@ -19,8 +19,8 @@ dateCreated: 2021-09-07T01:25:38.328Z
 6. 選擇你剛剛下載的檔案
 7. 點擊 **新增** 以確認載入
 
-> 別忘了[安裝**安裝我們的本地應用程式**](/install)
->
+> 別忘了[安裝**安裝我們的本地應用程式**](/install) 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

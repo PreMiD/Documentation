@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Se requiere un editor de código fuente. Recomendamos [Visual Studio Code](https://code.visualstudio.com/).
->
+> Se requiere un editor de código fuente. Recomendamos [Visual Studio Code](https://code.visualstudio.com/). 
+> 
 > {.is-info}
 
 # Instalando los requisitos
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Ábrela en tu editor de código.
 
 # Instalando dependencias
-> Asegúrate de haber instalado [npm](https://www.npmjs.com/) (Node Package Manager) primero. Se instaló automáticamente si tienes [Node](https://nodejs.org/en/) instalado.
->
+> Asegúrate de haber instalado [npm](https://www.npmjs.com/) (Node Package Manager) primero. Se instaló automáticamente si tienes [Node](https://nodejs.org/en/) instalado. 
+> 
 > {.is-warning}
 
 - Abre una terminal en el proyecto y escribe `npm i`.
 - Para actualizar las dependencias escribe `npm update`.
 
-> Ten en cuenta que la actualización de las dependencias podría dar problemas o no - ¡hay que hacer pruebas!
->
+> Ten en cuenta que la actualización de las dependencias podría dar problemas o no - ¡hay que hacer pruebas! 
+> 
 > {.is-danger}
 
 # Programando tu visión

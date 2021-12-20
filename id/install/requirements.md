@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Persyaratan Sistem
 
-> Data berikut hanya berhubung pada aplikasi.
->
+> Data berikut hanya berhubung pada aplikasi. 
+> 
 > {.is-info}
 
 PreMiD berjalan di hampir semua sistem. Ini berarti PreMiD dapat berjalan pada **Linux**, **macOS**, **Windows** serta **Linux Modifications**.

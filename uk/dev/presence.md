@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Усі присутності зберігаються тут: https://github.com/PreMiD/Presences
->
+> Усі присутності зберігаються тут: https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 Версія `2.x` представляє [Крамницю присутностей](https://premid.app/store). Тепер користувачі можуть вручну додавати та видаляти улюблені присутності через користувацький інтерфейс [сайту](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines.
->
+> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> 
 > {.is-warning}
 
 - [Керівні принципи](https://docs.premid.app/dev/presence/guidelines)

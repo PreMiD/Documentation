@@ -20,8 +20,8 @@ Tá suiteáil an síneadh an-tábhachtach mar ní féidir leis an bhfeidhmchlár
 1. Cuir **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Cuir [réad síneadh](https://premid.app/downloads).
 
-> Ná déan dearmad a [cuir an **iarratas**](/suiteáil).
->
+> Ná déan dearmad a [cuir an **iarratas**](/suiteáil). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

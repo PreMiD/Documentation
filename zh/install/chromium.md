@@ -20,8 +20,8 @@ dateCreated: 2021-09-07T01:25:35.049Z
 1. 添加 **[安装 Chrome 扩展](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. 添加 [我们的扩展](https://premid.app/downloads)。
 
-> 不要忘记 [安装 **应用程序**](/install)。
->
+> 不要忘记 [安装 **应用程序**](/install)。 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

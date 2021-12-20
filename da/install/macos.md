@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Før du går videre, skal du sørge for at dit system opfylder alle [kravene](/install/requirements)
->
+> Før du går videre, skal du sørge for at dit system opfylder alle [kravene](/install/requirements) 
+> 
 > {.is-info}
 
 Installationen af applikationen er meget vigtig, da udvidelsen ikke kan gøre noget af sig selv.
@@ -26,8 +26,8 @@ Installationen af applikationen er meget vigtig, da udvidelsen ikke kan gøre no
 
 Applikationen vil starte automatisk. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install).
->
+> Do not forget to [add the **extension**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

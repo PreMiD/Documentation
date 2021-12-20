@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Než budete pokračovat, ujistěte se, že váš systém splňuje všechny [požadavky](/install/requirements).
->
+> Než budete pokračovat, ujistěte se, že váš systém splňuje všechny [požadavky](/install/requirements). 
+> 
 > {.is-info}
 
-> **Je nezbytné** nainstalovat **obě** **aplikace** a **rozšíření prohlížeče**!
->
+> **Je nezbytné** nainstalovat **obě** **aplikace** a **rozšíření prohlížeče**! 
+> 
 > {.is-warning}
 
 **Vyberte operační systém:**

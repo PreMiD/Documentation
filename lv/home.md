@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Šis dokuments vēl tiek rediģēts! Dažas lapas var būt nepabeigtas vai var nebūt.
->
+> Šis dokuments vēl tiek rediģēts! Dažas lapas var būt nepabeigtas vai var nebūt. 
+> 
 > {.is-warning}
 
 # Par PreMiD

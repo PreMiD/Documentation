@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Antes de ir mais longe, certifique-se que o seu sistema cumpre todos os [requisitos](/install/requirements).
->
+> Antes de ir mais longe, certifique-se que o seu sistema cumpre todos os [requisitos](/install/requirements). 
+> 
 > {.is-info}
 
 A instalação da aplicação é muito importante, uma vez que a extensão não consegue fazer nada por si mesma.
@@ -26,8 +26,8 @@ A instalação da aplicação é muito importante, uma vez que a extensão não 
 
 A aplicação irá iniciar automaticamente. Procure o símbolo na sua barra de menu.
 
-> Não se esqueça de <a href=/install">adicionar a **extensão**</a>.
->
+> Não se esqueça de <a href=/install">adicionar a **extensão**</a>. 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

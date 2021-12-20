@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Requisitos do sistema
 
-> Estes dados estão relacionados apenas a esta aplicação.
->
+> Estes dados estão relacionados apenas a esta aplicação. 
+> 
 > {.is-info}
 
 O PreMiD functiona em praticamente qualquer sistema. Isto significa que funciona no **Linux**, **macOS**, **Windows** bem como em algumas **Modificações do Linux**.

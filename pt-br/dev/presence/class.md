@@ -58,8 +58,8 @@ Limpa sua atividade e o título atual.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Este método funciona apenas no Mac OS.
->
+> Este método funciona apenas no Mac OS. 
+> 
 > {.is-warning}
 
 Define o título da bandeja no Menubar.

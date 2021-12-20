@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Dokumentasi iki isih diowahi! Sawetara halaman bisa uga ora lengkap utawa ora ana.
->
+> Dokumentasi iki isih diowahi! Sawetara halaman bisa uga ora lengkap utawa ora ana. 
+> 
 > {.is-warning}
 
 # Tentang PreMiD

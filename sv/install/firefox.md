@@ -19,8 +19,8 @@ Installationen av tillägget är viktigt eftersom programmet inte kan göra någ
 6. Välj den fil du laddade ner.
 7. Acceptera installationen genom att klicka på **Lägg till**.
 
-> Glöm inte att [installera **programmet**](/install).
->
+> Glöm inte att [installera **programmet**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

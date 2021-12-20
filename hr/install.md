@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Prije nego što nastaviš, provjeri zadovoljava li vaš sustav sve [ zahtjeve](/install/requirements).
->
+> Prije nego što nastaviš, provjeri zadovoljava li vaš sustav sve [ zahtjeve](/install/requirements). 
+> 
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**!
->
+> **It is necessary** to install **both** the **application** and the **extension**! 
+> 
 > {.is-warning}
 
 **Choose your operating system:**

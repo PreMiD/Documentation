@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> En kildekoderedigering er trengt. We recommend [Visual Studio Code](https://code.visualstudio.com/).
->
+> En kildekoderedigering er trengt. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> 
 > {.is-info}
 
 # Installerer kravene
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Åpne i kodeeditoren din.
 
 # Installerer avhengigheter
-> Pass på at du først har installert [npm](https://www.npmjs.com/) (Node Pakebehandling) først. Det ble automatisk installert selv hvis du har [Node](https://nodejs.org/en/) installert.
->
+> Pass på at du først har installert [npm](https://www.npmjs.com/) (Node Pakebehandling) først. Det ble automatisk installert selv hvis du har [Node](https://nodejs.org/en/) installert. 
+> 
 > {.is-warning}
 
 - Åpne en terminal i ditt register og skriv `npm i`.
 - For å oppdatere avhengighetene skriv `npm oppdaterer`.
 
-> Vær oppmerksom på at å oppdatere av avhengigheter kan ødelegge mye, eller ikke, testing er nødvendig!
->
+> Vær oppmerksom på at å oppdatere av avhengigheter kan ødelegge mye, eller ikke, testing er nødvendig! 
+> 
 > {.is-danger}
 
 # Koder synet ditt

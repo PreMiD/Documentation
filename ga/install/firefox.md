@@ -19,8 +19,8 @@ Tá suiteáil an síneadh an-tábhachtach mar ní féidir leis an bhfeidhmchlár
 6. Roghnaigh an comhad a d'íoslódáil tú le déanaí.
 7. Glac leis an tsuiteáil trí chliceáil ar **Add**.
 
-> Ná déan dearmad a [cuir an **iarratas**](/suiteáil).
->
+> Ná déan dearmad a [cuir an **iarratas**](/suiteáil). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

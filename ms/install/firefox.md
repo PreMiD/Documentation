@@ -19,8 +19,8 @@ Pemasangan sambungan amat penting kerana aplikasi tidak mampu membuat apa-apa de
 6. Pilih fail yang anda telah muat turun sebentar tadi.
 7. Terima pemasangan dengan mengklik pada butang **Tambah**.
 
-> Jangan lupa untuk [tambahkan **aplikasi** kami](/install).
->
+> Jangan lupa untuk [tambahkan **aplikasi** kami](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

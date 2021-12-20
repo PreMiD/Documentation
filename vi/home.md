@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Tài liệu này vẫn đang được chỉnh sửa! Một vài trang có thể chưa hoàn tất hoặc thiếu.
->
+> Tài liệu này vẫn đang được chỉnh sửa! Một vài trang có thể chưa hoàn tất hoặc thiếu. 
+> 
 > {.is-warning}
 
 # Về PreMiD

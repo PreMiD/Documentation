@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Ujisti se, že máš nainstalováno rozšíření **a** aplikaci!
->
+> Ujisti se, že máš nainstalováno rozšíření **a** aplikaci! 
+> 
 > {.is-warning}
 
 Na této stránce nalezneš:
@@ -20,8 +20,8 @@ Na této stránce nalezneš:
 <a name="general"></a>
 
 # Obecné Řešení Problémů
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue.
->
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
 > {.is-info}
 ### Znovu načíst stránku
 Namísto hledání tlačítka obnovení můžeš stisknout <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nebo <kbd>CMD+R</kbd> (MacOS) na Tvé klávesnici.
@@ -70,8 +70,8 @@ Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. 
 ### McAfee detekoval PreMiD jako virus (na Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out!
->
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> 
 > {.is-warning}
 
 1. Otevřete aplikaci McAfee a klikněte na ikonu nastavení vpravo nahoře. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />

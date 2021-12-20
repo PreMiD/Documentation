@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Penyunting kod sumber diperlukan. Kami mengesyorkan [Visual Studio Code](https://code.visualstudio.com/).
->
+> Penyunting kod sumber diperlukan. Kami mengesyorkan [Visual Studio Code](https://code.visualstudio.com/). 
+> 
 > {.is-info}
 
 # Memasang keperluan
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Buka folder tersebut dalam penyunting kod anda.
 
 # Memasang kebergantungan
-> Sila pastikan anda telah pasang [npm](https://www.npmjs.com/) (Node Package Manager) terlebih dahulu. Ia akan dipasang sendiri secara automatiknya jika anda telah memasang [Node](https://nodejs.org/en/).
->
+> Sila pastikan anda telah pasang [npm](https://www.npmjs.com/) (Node Package Manager) terlebih dahulu. Ia akan dipasang sendiri secara automatiknya jika anda telah memasang [Node](https://nodejs.org/en/). 
+> 
 > {.is-warning}
 
 - Buka terminal dalam repositori anda dan taip `npm i`.
 - Untuk kemas kini kebergantungan taip `npm update`.
 
-> Ambil perhatian bahawa mengemaskini kebergantungan mampu merosakkan banyak benda, atau tidak - ujian diperlukan!
->
+> Ambil perhatian bahawa mengemaskini kebergantungan mampu merosakkan banyak benda, atau tidak - ujian diperlukan! 
+> 
 > {.is-danger}
 
 # Mengkodkan angan-anganmu

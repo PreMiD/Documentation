@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements).
->
+> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> 
 > {.is-info}
 
 تركيب الملحق شيء مهم جدا لأن لا يمكن للإضافة أن تفعل أي شيء بنفسها.
@@ -26,8 +26,8 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 The application will start automatically. تحقق من الرمز في شريط القوائم الخاص بك.
 
-> Do not forget to [add the **extension**](/install).
->
+> Do not forget to [add the **extension**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

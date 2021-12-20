@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # متطلبات النظام
 
-> تتعلق هذه البيانات بالتطبيق فقط.
->
+> تتعلق هذه البيانات بالتطبيق فقط. 
+> 
 > {.is-info}
 
 يعمل PreMiD على أي نظام تقريبًا. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.

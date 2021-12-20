@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Die Installation der Anwendung ist sehr wichtig, da die Erweiterung allein nicht funktionieren würde.
 
-> Aur-Benutzer, welche DoomLerd's Package benutzen, sollten sicher sein, wie er sagt. Wir empfehlen nicht, es zu benutzen, aber wenn du willst, kannst du es trotzdem benutzen. Danke an DoomLerd für den Umgang mit aur repo immer noch.
->
+> Aur-Benutzer, welche DoomLerd's Package benutzen, sollten sicher sein, wie er sagt. Wir empfehlen nicht, es zu benutzen, aber wenn du willst, kannst du es trotzdem benutzen. Danke an DoomLerd für den Umgang mit aur repo immer noch. 
+> 
 > {.is-warning}
 
 ## Inhaltsverzeichnis

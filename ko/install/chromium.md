@@ -20,8 +20,8 @@ dateCreated: 2021-09-07T01:25:35.049Z
 1. **[Chrome 확장 프로그램 설치](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**를 추가하세요.
 2. [저희의 확장 프로그램](https://premid.app/downloads)을 추가하세요.
 
-> [**이 앱을** 추가](/install)하는 것을 잊지 마세요.
->
+> [**이 앱을** 추가](/install)하는 것을 잊지 마세요. 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

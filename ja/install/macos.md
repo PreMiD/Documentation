@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> ダウンロードする前に、お使いのPCが[必要条件](/install/requirements)を満たしているか確認してください。
->
+> ダウンロードする前に、お使いのPCが[必要条件](/install/requirements)を満たしているか確認してください。 
+> 
 > {.is-info}
 
 拡張機能のみでは機能しないため、アプリのダウンロードは重要です。
@@ -26,8 +26,8 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 アプリケーションは自動的に開始されるはずです。 メニューバーからPreMiDのアイコンを確認してください。
 
-> [**拡張機能を追加する**](/install)のを忘れないでください！
->
+> [**拡張機能を追加する**](/install)のを忘れないでください！ 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

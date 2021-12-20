@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> 익스텐션과 앱 **모두** 설치하셨는지 확인해주세요!
->
+> 익스텐션과 앱 **모두** 설치하셨는지 확인해주세요! 
+> 
 > {.is-warning}
 
 이 페이지에 포함:
@@ -20,8 +20,8 @@ dateCreated: 2021-09-07T01:17:32.312Z
 <a name="general"></a>
 
 # 일반적인 문제 해결
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue.
->
+> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> 
 > {.is-info}
 ### 페이지 새로고침
 새로고침 버튼을 누르는 대신 <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) 나 <kbd>CMD+R</kbd> (macOS) 를 눌러보십시오.
@@ -70,8 +70,8 @@ Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. 
 ### McAfee 백신이 PreMiD를 바이러스로 오탐하는 경우 (윈도우)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out!
->
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> 
 > {.is-warning}
 
 1. McAfee 를 실행하고, 우측 상단에 있는 설정 아이콘을 클릭해주세요. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />

@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> قبل از بیشتر پیش رفتن، مطمئن شوید که سیستم شماحداقل [نیازها](/install/requirements) را دارد.
->
+> قبل از بیشتر پیش رفتن، مطمئن شوید که سیستم شماحداقل [نیازها](/install/requirements) را دارد. 
+> 
 > {.is-info}
 
 نصب برنامه خیلی مهم است زیرا افزونه نمی تواند به تنهایی کاری انجام دهد.
@@ -26,8 +26,8 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 برنامه به طور خودکار شروع می شود. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install).
->
+> Do not forget to [add the **extension**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

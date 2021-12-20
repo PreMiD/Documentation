@@ -20,8 +20,8 @@ Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma bez paplašināju
 1. Pievienojiet Opera paplašinājumu **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Pievienojiet mūsu [paplašinājumu](https://premid.app/downloads).
 
-> Neaizmirstiet [pievienot **lietotni**](/install).
->
+> Neaizmirstiet [pievienot **lietotni**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Než sa pustíme do toho, uistite sa že spĺňate všetky [požiadavky](/install/requirements).
->
+> Než sa pustíme do toho, uistite sa že spĺňate všetky [požiadavky](/install/requirements). 
+> 
 > {.is-info}
 
 Inštalácia aplikácie je veľmi dôležitá pretože rozšírenie nemôže robiť nič samé o sebe.
@@ -26,8 +26,8 @@ Inštalácia aplikácie je veľmi dôležitá pretože rozšírenie nemôže rob
 
 Aplikácia sa spustí samostatne. Skontrolujte či sa na menu bare nachádza symbol.
 
-> Nezabudnite [pridať **rozšírenie**](/install).
->
+> Nezabudnite [pridať **rozšírenie**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

@@ -20,8 +20,8 @@ dateCreated: 2021-09-07T01:25:35.049Z
 1. **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**を追加する
 2. [拡張機能を入れる](https://premid.app/downloads)
 
-> [**アプリケーションを追加する**](/install)のを忘れないでください！
->
+> [**アプリケーションを追加する**](/install)のを忘れないでください！ 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> A folytatás előtt, győződj meg arról, hogy az általad használt rendszer megfelel a [követelményeknek](/install/requirements).
->
+> A folytatás előtt, győződj meg arról, hogy az általad használt rendszer megfelel a [követelményeknek](/install/requirements). 
+> 
 > {.is-info}
 
 A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
@@ -26,8 +26,8 @@ A bővítmény telepítése rendkívül fontos az alkalmazás működéséhez.
 
 Az alkalmazás automatikus elindul. Check for the symbol in your menu bar.
 
-> Ne felejtsd el [hozzáadni a **bővítményt**](/install).
->
+> Ne felejtsd el [hozzáadni a **bővítményt**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

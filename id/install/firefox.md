@@ -19,8 +19,8 @@ Pemasangan ekstensi sangat penting agar aplikasi dapat bekerja.
 6. Pilih file yang baru saja diunduh.
 7. Setujui pemasangan dengan mengklik tombol **Add**.
 
-> Jangan lupa [memasang **aplikasi**](/install).
->
+> Jangan lupa [memasang **aplikasi**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

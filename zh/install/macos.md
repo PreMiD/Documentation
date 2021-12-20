@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> 在继续操作之前，请确保您的系统符合所有 [的要求](/install/requirements)。
->
+> 在继续操作之前，请确保您的系统符合所有 [的要求](/install/requirements)。 
+> 
 > {.is-info}
 
 安装应用程序非常重要，因为扩展本身无法做任何事情。
@@ -26,8 +26,8 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 应用程序将自动启动。 检查系统托盘中的符号。 Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install).
->
+> Do not forget to [add the **extension**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

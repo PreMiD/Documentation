@@ -20,8 +20,8 @@ Installationen av tillägget är synnerligen viktigt då programmet ej kan göra
 1. Installera **["Chrome Extensions"](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Installera [vårt tillägg](https://premid.app/downloads).
 
-> Glöm ej att [installera **programmet**](/install).
->
+> Glöm ej att [installera **programmet**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

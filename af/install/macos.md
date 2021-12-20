@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Voordat u verder gaan, moet u seker maak dat u stelsel aan al die [ vereistes](/install/requirements).
->
+> Voordat u verder gaan, moet u seker maak dat u stelsel aan al die [ vereistes](/install/requirements). 
+> 
 > {.is-info}
 
 The installation of the application is very important as the extension can not do anything by itself.
@@ -26,8 +26,8 @@ The installation of the application is very important as the extension can not d
 
 The application will start automatically. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install).
->
+> Do not forget to [add the **extension**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

@@ -19,8 +19,8 @@ Installasjonen av denne extensionen er veldig viktig på fordi applikasjonen ikk
 6. Velg filen du lastet ned nylig.
 7. Accept the installation by clicking on **Add**.
 
-> Ikke glem å [legge til** applikasjonen**](/install).
->
+> Ikke glem å [legge til** applikasjonen**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

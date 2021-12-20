@@ -19,8 +19,8 @@ Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olmas
 6. İndirdiğiniz dosyayı bulun ve seçin.
 7. **Ekle**'ye tıklayarak kurulumu kabul edin.
 
-> [Uygulamayı](/install) da yüklemeyi **unutmayın**.
->
+> [Uygulamayı](/install) da yüklemeyi **unutmayın**. 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

@@ -20,8 +20,8 @@ Installasjonen av denne utvidelsen er veldig viktig fordi applikasjonen ikke kan
 1. Legg til **[Installer Chrome Extensjoner](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Legg til [vår utvidelse](https://premid.app/downloads).
 
-> Ikke glem å [legge til** applikasjonen**](/install).
->
+> Ikke glem å [legge til** applikasjonen**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

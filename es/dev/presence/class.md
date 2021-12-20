@@ -58,8 +58,8 @@ Elimina la actividad actual y el titulo de la bandeja de trabajo.
 
 ### `setTrayTitle(String)` - *Obsoleto desde 2.2.3*
 
-> Este método funciona sólo en Mac OS.
->
+> Este método funciona sólo en Mac OS. 
+> 
 > {.is-warning}
 
 Establece el título de la bandeja en la barra de menús.
@@ -316,7 +316,7 @@ Esta interfaz tiene las siguientes variables, todas ellas son opcionales.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Define el texto que se mostrará al usuario al pasar el cursor sobre el icono
+      <td style="text-align:left">Define el texto que se mostrará al usuario al pasar el cursor sobre el icono 
         pequeño.</td>
       <td style="text-align:left"><code>String</code>
       </td>

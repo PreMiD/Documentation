@@ -19,8 +19,8 @@ Die Installation der Erweiterung ist sehr wichtig, da die Anwendung allein nicht
 6. Wähle die Datei aus, die Du kürzlich heruntergeladen hast.
 7. Akzeptiere die Installation, indem Du auf **Hinzufügen**klickst.
 
-> Vergiss nicht, [die **Anwendung**](/install) hinzuzufügen.
->
+> Vergiss nicht, [die **Anwendung**](/install) hinzuzufügen. 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

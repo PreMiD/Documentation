@@ -19,8 +19,8 @@ Instalacja rozszerzenia jest bardzo ważna, ponieważ aplikacja nie może zrobi�
 6. Wybierz plik, który pobrałeś.
 7. Zaakceptuj instalację klikając **Dodaj**.
 
-> Nie zapomnij [zainstalować **aplikacji**](/install).
->
+> Nie zapomnij [zainstalować **aplikacji**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

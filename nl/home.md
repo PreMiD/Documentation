@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> De documentatie wordt nog steeds bewerkt! Sommige pagina's kunnen onvolledig zijn of ontbreken.
->
+> De documentatie wordt nog steeds bewerkt! Sommige pagina's kunnen onvolledig zijn of ontbreken. 
+> 
 > {.is-warning}
 
 # Over PreMiD

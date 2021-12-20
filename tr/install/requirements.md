@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Sistem Gereksinimleri
 
-> Bu gereksinimler sadece uygulama için gereklidir.
->
+> Bu gereksinimler sadece uygulama için gereklidir. 
+> 
 > {.is-info}
 
 PreMiD neredeyse tüm sistemlerde çalışır. Bu, **Linux**, **macOS**, **Windows** ve bazı **Linux Modifikasyonlarında** çalıştığı anlamına gelir.

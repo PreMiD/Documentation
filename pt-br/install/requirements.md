@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Requisitos do sistema
 
-> Estes dados estão relacionados apenas ao aplicativo.
->
+> Estes dados estão relacionados apenas ao aplicativo. 
+> 
 > {.is-info}
 
 O PreMiD pode ser executado em praticamente qualquer sistema. Isso quer dizer que ele roda em **Linux**, **macOS**, **Windows** e em algumas **modificações do Linux**.

@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Tất cả presence hiện được chứa ở đây: https://github.com/PreMiD/Presences
->
+> Tất cả presence hiện được chứa ở đây: https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 Phiên bản `2.x` đã thêm tính năng [cửa hàng presence](https://premid.app/store). Người dùng đã có thể thêm hoặc gỡ presence yêu thích của họ thông qua [website](https://premid.app/).
 
-> Trước khi bắt đầu, chúng tôi khuyên bạn nên xem bộ quy tắc về presence của chúng tôi.
->
+> Trước khi bắt đầu, chúng tôi khuyên bạn nên xem bộ quy tắc về presence của chúng tôi. 
+> 
 > {.is-warning}
 
 - [Bộ quy tắc](https://docs.premid.app/dev/presence/guidelines)
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Cập nhật presence bằng tất cả các giá trị trong đối tượng presenceData
   if (presenceData.details) presence.setActivity(presenceData);
   //Cập nhật presence với không dữ liệu, từ đó dọn sạch và để ảnh lớn là biểu tượng Ứng dụng Discord, và nội dung là tên Ứng dụng Discord
-  else presence.setActivity();
+  else presence.setActivity(); 
 });
 ```
 

@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Wymagania systemowe
 
-> Dane te odnoszą się wyłącznie do aplikacji.
->
+> Dane te odnoszą się wyłącznie do aplikacji. 
+> 
 > {.is-info}
 
 PreMiD działa praktycznie na każdym systemie. Oznacza to, że działa on na **Linux**, **macOS**, **Windows** oraz na niektórych **Modyfikacjach Linuxa**.

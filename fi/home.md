@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Näitä ohjeita muokataan yhä! Jotkin sivut saattavat olla keskeneräisiä tai puutteellisia.
->
+> Näitä ohjeita muokataan yhä! Jotkin sivut saattavat olla keskeneräisiä tai puutteellisia. 
+> 
 > {.is-warning}
 
 # Tietoja PreMiDistä

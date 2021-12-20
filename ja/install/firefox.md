@@ -19,8 +19,8 @@ dateCreated: 2021-09-07T01:25:38.328Z
 6. PreMiDのファイルを選択する
 7. **追加する**を押して完了！
 
-> [**アプリケーションを追加する**](/install)のを忘れないでください！
->
+> [**アプリケーションを追加する**](/install)のを忘れないでください！ 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

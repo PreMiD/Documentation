@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Dokumentaci stále upravujeme! Některé stránky mohou být neúplné nebo mohou chybět.
->
+> Dokumentaci stále upravujeme! Některé stránky mohou být neúplné nebo mohou chybět. 
+> 
 > {.is-warning}
 
 # O PreMiDu

@@ -20,8 +20,8 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 1. Thêm **[Tải tiện ích mở rộng Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Thêm [tiện ích của chúng tôi](https://premid.app/downloads).
 
-> Đừng quên [tải **ứng dụng**](/install).
->
+> Đừng quên [tải **ứng dụng**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

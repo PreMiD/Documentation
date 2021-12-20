@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Avant d'aller plus loin, assurez-vous que votre système répond à tous les [prérequis](/install/requirements).
->
+> Avant d'aller plus loin, assurez-vous que votre système répond à tous les [prérequis](/install/requirements). 
+> 
 > {.is-info}
 
 L'installation de l'application est très importante car l'extension ne peut rien faire par elle-même.
@@ -26,8 +26,8 @@ L'installation de l'application est très importante car l'extension ne peut rie
 
 L'application démarre automatiquement. Vérifiez si l'icône est présente dans votre barre de menus.
 
-> N'oubliez pas d'[ajouter l'**extension**](/install).
->
+> N'oubliez pas d'[ajouter l'**extension**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

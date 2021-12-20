@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Pemasangan aplikasi sangat penting karena ekstensi tidak dapat bekerja dengan sendirinya.
 
-> Pengguna AUR (Arch User Repository) yang menggunakan paket milik DoomLerd seharusnya aman seperti yang sudah dia katakan. Kami tidak menyarankan untuk menggunakannya, tetapi kamu masih bisa menggunakannya jika kamu mau. Terima kasih kepada DoomLerd karena masih melanjutkan repo AUR-nya.
->
+> Pengguna AUR (Arch User Repository) yang menggunakan paket milik DoomLerd seharusnya aman seperti yang sudah dia katakan. Kami tidak menyarankan untuk menggunakannya, tetapi kamu masih bisa menggunakannya jika kamu mau. Terima kasih kepada DoomLerd karena masih melanjutkan repo AUR-nya. 
+> 
 > {.is-warning}
 
 ## Daftar Isi

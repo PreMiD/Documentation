@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Un éditeur de code est requis. Nous recommandons [Visual Studio Code](https://code.visualstudio.com/).
->
+> Un éditeur de code est requis. Nous recommandons [Visual Studio Code](https://code.visualstudio.com/). 
+> 
 > {.is-info}
 
 # Installation des pré-requis
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Ouvrez-le dans votre éditeur de code.
 
 # Installation des dépendances
-> D'abord, assurez-vous que vous avez installé [npm](https://www.npmjs.com/) (gestionnaire de Node Package). Il s'est automatiquement installé si vous avez [Node](https://nodejs.org/en/) installé.
->
+> D'abord, assurez-vous que vous avez installé [npm](https://www.npmjs.com/) (gestionnaire de Node Package). Il s'est automatiquement installé si vous avez [Node](https://nodejs.org/en/) installé. 
+> 
 > {.is-warning}
 
 - Ouvrez un terminal dans votre dépôt et tapez `npm i`.
 - Pour mettre à jour les dépendances, tapez `npm update`.
 
-> Sachez que la mise à jour des dépendances risque de bloquer ou non - des tests sont nécessaires!
->
+> Sachez que la mise à jour des dépendances risque de bloquer ou non - des tests sont nécessaires! 
+> 
 > {.is-danger}
 
 # Coder votre vision

@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> تأكد من أن لديك الملحق **و** التطبيق مثبتين!
->
+> تأكد من أن لديك الملحق **و** التطبيق مثبتين! 
+> 
 > {.is-warning}
 
 المدرج في هذه الصفحة:
@@ -20,8 +20,8 @@ dateCreated: 2021-09-07T01:17:32.312Z
 <a name="general"></a>
 
 # استكشاف الأخطاء وإصلاحها بشكل عام
-> يمكنك استعمال [ هذه](https://qkeleq10.github.io/PreMiD-Troubleshooting/) اداة قادرة على تحديد المشاكل الخاصة بك بسهولة اكبر.
->
+> يمكنك استعمال [ هذه](https://qkeleq10.github.io/PreMiD-Troubleshooting/) اداة قادرة على تحديد المشاكل الخاصة بك بسهولة اكبر. 
+> 
 > {.is-info}
 ### أعد تحميل الصفحة
 يمكنك الضغط على <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (ويندوز) أو <kbd>CMD+R</kbd> (MacOS) على لوحة المفاتيح أيضا بدلا من البحث على زر التحديث.
@@ -70,8 +70,8 @@ You have to restart PreMiD afterwards.
 ### تم تحديد PreMiD على إنه فيروس من قبل McAfee (ويندوز)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> وإذا لم تكن واثق من اتخاذ هذه الخطوات، لا تتردد في فتح تذكرة في [#support](https://discord.premid.app/) وسيكون أحد عملاء الدعم لدينا قادرا على مساعدتك!
->
+> وإذا لم تكن واثق من اتخاذ هذه الخطوات، لا تتردد في فتح تذكرة في [#support](https://discord.premid.app/) وسيكون أحد عملاء الدعم لدينا قادرا على مساعدتك! 
+> 
 > {.is-warning}
 
 1. افتح تطبيق acAfee وانقر على أيقونة الإعدادات في أعلى اليمين. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />

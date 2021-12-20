@@ -20,8 +20,8 @@ dateCreated: 2021-09-07T01:25:35.049Z
 1. Добавить **[Установить расширения Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Добавьте [наше расширение](https://premid.app/downloads).
 
-> Не забудьте [установить **приложение**](/install).
->
+> Не забудьте [установить **приложение**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

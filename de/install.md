@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Bevor Du fortfährst, stelle sicher, dass Dein System alle [Anforderungen](/install/requirements) erfüllt.
->
+> Bevor Du fortfährst, stelle sicher, dass Dein System alle [Anforderungen](/install/requirements) erfüllt. 
+> 
 > {.is-info}
 
-> **Es ist erforderlich**, sowohl **die Anwendung** als auch **die Erweiterung** zu installieren!
->
+> **Es ist erforderlich**, sowohl **die Anwendung** als auch **die Erweiterung** zu installieren! 
+> 
 > {.is-warning}
 
 **Wähle dein Betriebssystem:**

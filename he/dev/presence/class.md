@@ -30,7 +30,7 @@ There are three properties available for `Presence` class.
 
 This property is required to make your presence work, because it uses your application id to display its logo and assets. תוכל לקבל אותו בדף היישומים שלך
 
-.</p>
+.</p> 
 
 
 
@@ -76,8 +76,8 @@ Clears your current activity and the tray title.
 
 
 
-> This method works only on Mac OS.
->
+> This method works only on Mac OS. 
+> 
 > {.is-warning}
 
 מגדיר את כותרת המגש בסרגל התפריטים.

@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/).
->
+> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> 
 > {.is-info}
 
 # Installing the requirements
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Avage see oma koodiredaktoris.
 
 # Installing dependencies
-> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed.
->
+> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
+> 
 > {.is-warning}
 
 - Open a terminal in your repository and type `npm i`.
 - To update the dependencies type `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required!
->
+> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> 
 > {.is-danger}
 
 # Coding your vision

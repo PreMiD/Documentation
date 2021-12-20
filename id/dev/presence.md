@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Semua presence disimpan disini: https://github.com/PreMiD/Presences
->
+> Semua presence disimpan disini: https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 Versi `2.x` memperkenalkan [toko presence](https://premid.app/store). Pengguna sekarang bisa menambah dan menghapus presence favorit lewat tampilan pengguna [website](https://premid.app/).
 
-> Sebelum memulai, sangat dianjurkan untuk melihat aturan presence kami.
->
+> Sebelum memulai, sangat dianjurkan untuk melihat aturan presence kami. 
+> 
 > {.is-warning}
 
 - [Aturan](https://docs.premid.app/dev/presence/guidelines)
@@ -321,7 +321,7 @@ presence.on("UpdateData", async () => {
   //Perbarui presence dengan semua value dari objek presenceData
   if (presenceData.details) presence.setActivity(presenceData);
   //Perbarui presence tanpa data, oleh karena itu bersihkan dan jadikan gambar besar sebagai ikon Application Discord, dan teks nama Application Discord
-  else presence.setActivity();
+  else presence.setActivity(); 
 });
 ```
 
@@ -350,7 +350,7 @@ const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
   /*
   Dapatkan semua data yang kamu butuhkan dari iFrame, simpan mereka dalam variable
-  dan kirim mereka menggunakan iframe.send
+  dan kirim mereka menggunakan iframe.send 
   */
   iframe.send({
     //mengirim data

@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Sebelum teruskan, sila pastikan sistem anda mencapai kesemua [keperluan](/install/requirements).
->
+> Sebelum teruskan, sila pastikan sistem anda mencapai kesemua [keperluan](/install/requirements). 
+> 
 > {.is-info}
 
 Pemasangan aplikasi amat penting kerana sambungan tidak mampu membuat apa-apa dengan sendirinya.
@@ -26,8 +26,8 @@ Pemasangan aplikasi amat penting kerana sambungan tidak mampu membuat apa-apa de
 
 Aplikasi akan bermula secara automatiknya. Periksa simbol di bar menu anda.
 
-> Jangan lupa untuk [tambahkan **sambungan**](/install).
->
+> Jangan lupa untuk [tambahkan **sambungan**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

@@ -58,8 +58,8 @@ Clears your current activity and the tray title.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> This method works only on Mac OS.
->
+> This method works only on Mac OS. 
+> 
 > {.is-warning}
 
 Imposta il titolo del supporto nella barra del menu.

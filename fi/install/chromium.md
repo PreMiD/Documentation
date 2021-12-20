@@ -20,8 +20,8 @@ Laajennuksen asentaminen on erittäin tärkeää, sillä sovellus ei voi tehdä 
 1. Lisää **[Asenna Chrome Laajennukset](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Add [our extension](https://premid.app/downloads).
 
-> Älä unohda [lisätä ****sovellusta](/install).
->
+> Älä unohda [lisätä ****sovellusta](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

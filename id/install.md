@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements).
->
+> Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements). 
+> 
 > {.is-info}
 
-> **Diharuskan** untuk mengunduh **kedua** **aplikasi** dan juga **ekstensi**!
->
+> **Diharuskan** untuk mengunduh **kedua** **aplikasi** dan juga **ekstensi**! 
+> 
 > {.is-warning}
 
 **Pilih sistem operasimu:**

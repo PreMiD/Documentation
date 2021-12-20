@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> La documentation est toujours en cours de modification ! Certaines pages peuvent être incomplètes ou manquantes.
->
+> La documentation est toujours en cours de modification ! Certaines pages peuvent être incomplètes ou manquantes. 
+> 
 > {.is-warning}
 
 # À propos de PreMiD

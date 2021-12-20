@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Riachtanais an Chórais
 
-> Baineann na sonraí seo leis an iarratas amháin.
->
+> Baineann na sonraí seo leis an iarratas amháin. 
+> 
 > {.is-info}
 
 Ritheann PreMiD ar bheagnach aon chóras. Ciallaíonn sé seo go ritheann sé ar **Linux**, **macOS**, **Windows** chomh maith le roinnt **Modhnuithe Linux**.

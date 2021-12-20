@@ -20,8 +20,8 @@ Inštalácia rozšírenia je veľmi dôležitá pretože samotná aplikácia nem
 1. Pridajte **[Nainštalujte rozšírenia Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Pridajte [naše rozšírenie](https://premid.app/downloads).
 
-> Nezabudnite [pridať **aplikáciu**](/install).
->
+> Nezabudnite [pridať **aplikáciu**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

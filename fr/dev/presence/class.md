@@ -58,8 +58,8 @@ Enlève l'activité et le titre actuel.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Cette méthode ne fonctionne que sur Mac OS.
->
+> Cette méthode ne fonctionne que sur Mac OS. 
+> 
 > {.is-warning}
 
 Définit le titre de la barre de menus.

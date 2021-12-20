@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Keperluan Sistem
 
-> Tarikh ini berkait dengan aplikasi sahaja.
->
+> Tarikh ini berkait dengan aplikasi sahaja. 
+> 
 > {.is-info}
 
 PreMiD boleh dijalankan pada sebarang sistem. Ini bermaksud ia boleh dijalankan di **Linux**, **macOS**, **Windows** dan juga sesetengah **Linux Ubahsuai**.

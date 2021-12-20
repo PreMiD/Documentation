@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Bạn cần phần mềm sửa mã nguồn. Chúng tôi khuyên dùng [Visual Studio Code](https://code.visualstudio.com/).
->
+> Bạn cần phần mềm sửa mã nguồn. Chúng tôi khuyên dùng [Visual Studio Code](https://code.visualstudio.com/). 
+> 
 > {.is-info}
 
 # Cài đặt phần mềm yêu cầu
@@ -18,20 +18,20 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Cài [TypeScript](https://www.typescriptlang.org/index.html#download-links) (mở terminal và nhập `npm install -g typescript`).
 
 # Sao chép dự án
-1. Mở terminal và nhập `git clone URL`. **Thay URL bằng link repo mà bạn muốn đóng góp ** e.g. `git clone https://github.com/PreMiD/PreMiD`.
+1. Mở terminal và nhập `git clone URL`. **Thay URL bằng đường dẫn kho chứa mà bạn muốn đóng góp ** ví dụ: `git clone https://github.com/PreMiD/PreMiD`.
 2. Chọn thư mục bạn muốn.
 3. Mở nó với trình soạn thảo của bạn.
 
 # Cài đặt các phần phụ thuộc
-> Hãy chắc chắn bạn đã cài [npm](https://www.npmjs.com/) (Trình quản lý các gói Node). Nó sẽ được cài tự động nếu bạn đã cài [Node](https://nodejs.org/en/).
->
+> Hãy chắc chắn bạn đã cài [npm](https://www.npmjs.com/) (Trình quản lý các gói Node). Nó sẽ được cài tự động nếu bạn đã cài [Node](https://nodejs.org/en/). 
+> 
 > {.is-warning}
 
 - Mở một cửa sổ lệnh trong kho chứa của bạn và nhập `npm i`.
 - Hãy nhập `npm update` để cập nhật các phần phụ thuộc.
 
-> Lưu ý khi cập nhật các phần phụ thuộc có thể làm hỏng chương trình, việc kiểm tra lại là cần thiết!
->
+> Lưu ý khi cập nhật các phần phụ thuộc có thể làm hỏng chương trình, việc kiểm tra lại là cần thiết! 
+> 
 > {.is-danger}
 
 # Lập trình tầm nhìn của bạn
