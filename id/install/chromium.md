@@ -20,8 +20,8 @@ Pemasangan ekstensi sangat penting agar aplikasi dapat bekerja.
 1. Tambahkan**[Pasang Ekstensi Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Tambahkan [ekstensi kami](https://premid.app/downloads).
 
-> Jangan lupa untuk [ menambahkan **aplikasi**](/install).
->
+> Jangan lupa untuk [ menambahkan **aplikasi**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}
