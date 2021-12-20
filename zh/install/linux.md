@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 安装应用程序非常重要，因为扩展本身无法做任何事情。
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still.
->
+> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> 
 > {.is-warning}
 
 ## Table of Contents
