@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Eklenti, uygulaması olmadan bir işe yaramayacağı için uygulamanın da de yüklü olması gerekmektedir.
 
-> Aur kullanıcıları DoomLerd'in paketini kullanarak, söylediği gibi güvende kalabilirler. Kullanmanızı önermiyoruz fakat istiyorsanız yine de kullanabilirsiniz. DoomLerd'e depomuzu aur'a eklediği için teşekkürler.
->
+> Aur kullanıcıları DoomLerd'in paketini kullanarak, söylediği gibi güvende kalabilirler. Kullanmanızı önermiyoruz fakat istiyorsanız yine de kullanabilirsiniz. DoomLerd'e depomuzu aur'a eklediği için teşekkürler. 
+> 
 > {.is-warning}
 
 ## İçindekiler
