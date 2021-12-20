@@ -20,8 +20,8 @@ Pemasangan sambungan amat penting kerana aplikasi tidak mampu membuat apa-apa de
 1. Tambah sambungan **[Pasang Sambungan Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Tambah [sambungan kami](https://premid.app/downloads).
 
-> Jangan lupa untuk [tambahkan **aplikasi** kami](/install).
->
+> Jangan lupa untuk [tambahkan **aplikasi** kami](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}
