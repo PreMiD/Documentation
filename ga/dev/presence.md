@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Stóráiltear gach uachtarán anseo anois: https://github.com/PreMiD/Presences
->
+> Stóráiltear gach uachtarán anseo anois: https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 Leagan `2.x` tugtar isteach an [siopa láithreachta](https://premid.app/store). Anois tá sé de chumas ag úsáideoirí na láithreacha is fearr leo a chur leis agus a bhaint de láimh trí chomhéadan úsáideora an [láithreáin ghréasái](https://premid.app/).
 
-> Sula dtosaíonn tú, moltar go mór duit breathnú ar ár dtreoirlínte láithreachta.
->
+> Sula dtosaíonn tú, moltar go mór duit breathnú ar ár dtreoirlínte láithreachta. 
+> 
 > {.is-warning}
 
 - [Treoirlínte](https://docs.premid.app/dev/presence/guidelines)
