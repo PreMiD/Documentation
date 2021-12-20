@@ -58,8 +58,8 @@ Menghapus aktivitasmu saat ini dan judul tray.
 
 ### `setTrayTitle(String)` - *Sudah usang sejak versi 2.2.3*
 
-> Metode ini hanya bekerja di Mac OS.
->
+> Metode ini hanya bekerja di Mac OS. 
+> 
 > {.is-warning}
 
 Setel judul baki pada bilah Menu.
