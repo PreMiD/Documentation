@@ -58,8 +58,8 @@ Clears your current activity and the tray title.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Цей метод працює тільки на Mac OS.
->
+> Цей метод працює тільки на Mac OS. 
+> 
 > {.is-warning}
 
 Встановлює заголовок у рядку меню.
