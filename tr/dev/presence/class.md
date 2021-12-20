@@ -58,8 +58,8 @@ Gözüken verileri ve menü çubuğu yazısını temizler.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Bu yöntem sadece MacOS üzerinde çalışmaktadır.
->
+> Bu yöntem sadece MacOS üzerinde çalışmaktadır. 
+> 
 > {.is-warning}
 
 Menüdeki durum yazısını ayarlar.
