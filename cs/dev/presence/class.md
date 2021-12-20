@@ -58,8 +58,8 @@ Clears your current activity and the tray title.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Tato metoda funguje pouze na Mac OS.
->
+> Tato metoda funguje pouze na Mac OS. 
+> 
 > {.is-warning}
 
 Nastaví název lišty v Menubaru.
