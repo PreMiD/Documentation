@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Innan du går vidare, se till att ditt system uppfyller alla [krav](/install/requirements).
->
+> Innan du går vidare, se till att ditt system uppfyller alla [krav](/install/requirements). 
+> 
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**!
->
+> **It is necessary** to install **both** the **application** and the **extension**! 
+> 
 > {.is-warning}
 
 **Choose your operating system:**
