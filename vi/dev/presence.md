@@ -1,5 +1,5 @@
 ---
-title: Nhà phát triển Presence
+title: Phát triển Presence
 description:
 published: true
 date: 2021-07-08T19:12:34.449Z
@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Phiên bản `2.x` đã thêm tính năng [cửa hàng presence](https://premid.app/store). Người dùng đã có thể thêm hoặc gỡ presences yêu thích của họ thông qua [website](https://premid.app/).
+Phiên bản `2.x` đã thêm tính năng [cửa hàng presence](https://premid.app/store). Người dùng đã có thể thêm hoặc gỡ presence yêu thích của họ thông qua [website](https://premid.app/).
 
 > Trước khi bắt đầu, chúng tôi khuyên bạn nên xem bộ quy tắc về presence của chúng tôi. 
 > 
