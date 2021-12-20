@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> İlerlemeden önce sisteminizin tüm gereksinimleri karşıladığından emin olun.
->
+> İlerlemeden önce sisteminizin tüm gereksinimleri karşıladığından emin olun. 
+> 
 > {.is-info}
 
-> Bu uygulamanın çalışabilmesi için hem **uygulamayı** hem de **eklentiyi** düzgün bir şekilde kurmanız **gereklidir**!
->
+> Bu uygulamanın çalışabilmesi için hem **uygulamayı** hem de **eklentiyi** düzgün bir şekilde kurmanız **gereklidir**! 
+> 
 > {.is-warning}
 
 **Kullandığınız işletim sistemini seçin:**
