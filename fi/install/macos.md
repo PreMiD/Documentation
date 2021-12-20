@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Ennen kuin menet pidemmälle, varmista, että järjestelmä täyttää kaikki [vaatimukset](/install/requirements).
->
+> Ennen kuin menet pidemmälle, varmista, että järjestelmä täyttää kaikki [vaatimukset](/install/requirements). 
+> 
 > {.is-info}
 
 The installation of the application is very important as the extension can not do anything by itself.
@@ -26,8 +26,8 @@ The installation of the application is very important as the extension can not d
 
 The application will start automatically. Check for the symbol in your menu bar.
 
-> Älä unohda [lisätä **laajennusta**](/install).
->
+> Älä unohda [lisätä **laajennusta**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
