@@ -20,8 +20,8 @@ Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olmas
 1. **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)** eklentisini ekleyin.
 2. Chrome mağazasından [eklentimizi](https://premid.app/downloads) ekleyin.
 
-> [**Uygulamayı** eklemeyi](/install) unutmayın.
->
+> [**Uygulamayı** eklemeyi](/install) unutmayın. 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}
