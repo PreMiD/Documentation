@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Sula dtéann tú níos faide, déan cinnte go gcomhlíonann do chóras na [riachtanais](/install/requirements).
->
+> Sula dtéann tú níos faide, déan cinnte go gcomhlíonann do chóras na [riachtanais](/install/requirements). 
+> 
 > {.is-info}
 
-> **Is gá** an **feidhmchlár** agus an **síneadh** a shuiteáil!
->
+> **Is gá** an **feidhmchlár** agus an **síneadh** a shuiteáil! 
+> 
 > {.is-warning}
 
 **Roghnaigh do chóras oibriúcháin:**
