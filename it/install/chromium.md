@@ -20,8 +20,8 @@ The installation of the extension is very important as the application can not d
 1. Aggiungi **[Installa estensioni di Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Aggiungi [la nostra estensione](https://premid.app/downloads).
 
-> Non dimenticare di [aggiungere l'**applicazione**](/install).
->
+> Non dimenticare di [aggiungere l'**applicazione**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}
