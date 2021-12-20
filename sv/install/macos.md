@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Innan du går vidare, se till att ditt system uppfyller alla [krav](/install/requirements).
->
+> Innan du går vidare, se till att ditt system uppfyller alla [krav](/install/requirements). 
+> 
 > {.is-info}
 
 Installationen av programmet är mycket viktigt eftersom tillägget inte kan göra något av sig själv.
@@ -26,8 +26,8 @@ Installationen av programmet är mycket viktigt eftersom tillägget inte kan gö
 
 Applikationen startar automatiskt. Sök efter symbolen i menyraden.
 
-> Glöm inte att [lägga till tillägget****](/install).
->
+> Glöm inte att [lägga till tillägget****](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
