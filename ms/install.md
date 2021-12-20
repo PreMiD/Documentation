@@ -8,12 +8,12 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Sebelum teruskan, sila pastikan sistem anda mencapai kesemua [keperluan](/install/requirements).
->
+> Sebelum teruskan, sila pastikan sistem anda mencapai kesemua [keperluan](/install/requirements). 
+> 
 > {.is-info}
 
-> Anda **wajib** pasangkan **kedua-dua** bahagian iaitu **aplikasi** dan juga **sambungan**!
->
+> Anda **wajib** pasangkan **kedua-dua** bahagian iaitu **aplikasi** dan juga **sambungan**! 
+> 
 > {.is-warning}
 
 **Pilih sistem pengoperasian anda:**
