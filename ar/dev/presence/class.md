@@ -58,8 +58,8 @@ Clears your current activity and the tray title.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> تعمل هذه الطريقة فقط على نظام تشغيل Mac OS.
->
+> تعمل هذه الطريقة فقط على نظام تشغيل Mac OS. 
+> 
 > {.is-warning}
 
 يعين عنوان العلامة على المينوبار.
