@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> 在進一步的動作前，請確認您的系統都有達到[需求](/install/requirements)。
->
+> 在進一步的動作前，請確認您的系統都有達到[需求](/install/requirements)。 
+> 
 > {.is-info}
 
 安裝本地程式非常重要，因為單靠擴充功能是無法做任何事的。
@@ -26,8 +26,8 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 程式將會自動執行 Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install).
->
+> Do not forget to [add the **extension**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
