@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> È necessario un editor di codice sorgente. We recommend [Visual Studio Code](https://code.visualstudio.com/).
->
+> È necessario un editor di codice sorgente. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> 
 > {.is-info}
 
 # Installazione dei requisiti
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Open it in your code editor.
 
 # Installazione dipendenze
-> Assicurati di aver installato prima [npm](https://www.npmjs.com/) (Gestore Pacchetti Node). Si è installato automaticamente se hai installato [Node](https://nodejs.org/en/).
->
+> Assicurati di aver installato prima [npm](https://www.npmjs.com/) (Gestore Pacchetti Node). Si è installato automaticamente se hai installato [Node](https://nodejs.org/en/). 
+> 
 > {.is-warning}
 
 - Apri un terminale nel tuo repository e digita `npm i`.
 - Per aggiornare le dipendenze digita `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required!
->
+> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> 
 > {.is-danger}
 
 # Programma la tua visione
