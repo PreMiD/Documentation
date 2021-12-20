@@ -2,7 +2,7 @@
 title: Chromium
 description: Kommer i gang med en PreMID installasjon på Chromium-Baserete nettlesere
 published: true
-date: 2021-09-18T14:14:39.122Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:35.049Z
@@ -20,8 +20,8 @@ Installasjonen av denne utvidelsen er veldig viktig fordi applikasjonen ikke kan
 1. Legg til **[Installer Chrome Extensjoner](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Legg til [vår utvidelse](https://premid.app/downloads).
 
-> Ikke glem å [legge til** applikasjonen**](/install). 
-> 
+> Ikke glem å [legge til** applikasjonen**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

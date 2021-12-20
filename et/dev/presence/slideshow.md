@@ -2,7 +2,7 @@
 title: Slaidiseansi klass
 description:
 published: true
-date: 2020-12-25T00:47:38.111Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z

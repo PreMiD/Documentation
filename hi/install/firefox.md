@@ -2,7 +2,7 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2020-02-12T22:08:32.409Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 ---
 
@@ -17,8 +17,8 @@ The installation of the extension is very important as the application can not d
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Do not forget to [add the **application**](/install). 
-> 
+> Do not forget to [add the **application**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

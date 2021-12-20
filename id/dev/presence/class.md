@@ -2,7 +2,7 @@
 title: Kelas Presence
 description: Kelas utama untuk setiap presence PreMiD
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ Menghapus aktivitasmu saat ini dan judul tray.
 
 ### `setTrayTitle(String)` - *Sudah usang sejak versi 2.2.3*
 
-> Metode ini hanya bekerja di Mac OS. 
-> 
+> Metode ini hanya bekerja di Mac OS.
+>
 > {.is-warning}
 
 Setel judul baki pada bilah Menu.

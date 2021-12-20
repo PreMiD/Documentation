@@ -2,7 +2,7 @@
 title: Bộ quy tắc khi làm Presence
 description: Những luật lệ mà tất cả những nhà phát triển presence phải tuân thủ nếu muốn presence của mình được thêm vào.
 published: true
-date: 2021-10-18T16:26:36.089Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:53.883Z

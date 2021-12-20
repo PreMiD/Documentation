@@ -2,7 +2,7 @@
 title: Linux
 description: Ag tosú le suiteáil PreMiD ar Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Tá suiteáil an iarratais an-tábhachtach mar ní féidir leis an síneadh aon rud a dhéanamh leis féin.
 
-> Ba chóir go mbeadh úsáideoirí Aur a úsáideann pacáiste DoomLerd sábháilte mar a deir sé. Nílimid ag moladh é a úsáid, ach más mian leat gur féidir leat é a úsáid fós. Buíochas le DoomLerd as aur stór a láimhseáil fós. 
-> 
+> Ba chóir go mbeadh úsáideoirí Aur a úsáideann pacáiste DoomLerd sábháilte mar a deir sé. Nílimid ag moladh é a úsáid, ach más mian leat gur féidir leat é a úsáid fós. Buíochas le DoomLerd as aur stór a láimhseáil fós.
+>
 > {.is-warning}
 
 ## Tábla Ábhar

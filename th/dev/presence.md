@@ -2,20 +2,20 @@
 title: การพัฒนา Presence
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> ตอนนี้ Presence ทั้งหมดถูกเก็บไว้ที่นี่: https://github.com/PreMiD/Presences 
-> 
+> ตอนนี้ Presence ทั้งหมดถูกเก็บไว้ที่นี่: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 เวอร์ชัน `2.x` แนะนำให้ใช้ Presence จาก[ร้านค้า](https://premid.app/store) และตอนนี้ผู้ใช้สามารถเพิ่มและลบ Presence ที่ชื่นชอบได้ผ่านทางหน้า[เว็บไซต์](https://premid.app/)
 
-> ก่อนที่จะเริ่ม, ขอแนะนำอย่างสูงเลยว่าให้คุณไปดูแนวทางในการสร้าง Presence ของเราก่อน. 
-> 
+> ก่อนที่จะเริ่ม, ขอแนะนำอย่างสูงเลยว่าให้คุณไปดูแนวทางในการสร้าง Presence ของเราก่อน.
+>
 > {.is-warning}
 
 - [แนวทาง](https://docs.premid.app/dev/presence/guidelines)
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

@@ -2,14 +2,14 @@
 title: macOS
 description: Getting started with a PreMiD installation on macOS
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Înainte să mergi mai departe, verifică dacă sistemul tău îndeplinește toate [cerințele](/install/requirements). 
-> 
+> Înainte să mergi mai departe, verifică dacă sistemul tău îndeplinește toate [cerințele](/install/requirements).
+>
 > {.is-info}
 
 Instalarea aplicației este foarte importantă deoarece extensia nu poate face nimic de la sine.
@@ -26,8 +26,8 @@ Instalarea aplicației este foarte importantă deoarece extensia nu poate face n
 
 The application will start automatically. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install). 
-> 
+> Do not forget to [add the **extension**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

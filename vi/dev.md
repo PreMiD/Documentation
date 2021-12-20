@@ -2,14 +2,14 @@
 title: Bắt đầu
 description: Một lời khuyên nho nhỏ cho những ai mới học lập trình gần đây
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Bạn cần phần mềm sửa mã nguồn. Chúng tôi khuyên dùng [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> Bạn cần phần mềm sửa mã nguồn. Chúng tôi khuyên dùng [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # Cài đặt phần mềm yêu cầu
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Mở nó với trình soạn thảo của bạn.
 
 # Cài đặt các phần phụ thuộc
-> Hãy chắc chắn bạn đã cài [npm](https://www.npmjs.com/) (Trình quản lý các gói Node). Nó sẽ được cài tự động nếu bạn đã cài [Node](https://nodejs.org/en/). 
-> 
+> Hãy chắc chắn bạn đã cài [npm](https://www.npmjs.com/) (Trình quản lý các gói Node). Nó sẽ được cài tự động nếu bạn đã cài [Node](https://nodejs.org/en/).
+>
 > {.is-warning}
 
 - Mở một cửa sổ lệnh trong kho chứa của bạn và nhập `npm i`.
 - Hãy nhập `npm update` để cập nhật các phần phụ thuộc.
 
-> Lưu ý khi cập nhật các phần phụ thuộc có thể làm hỏng chương trình, việc kiểm tra lại là cần thiết! 
-> 
+> Lưu ý khi cập nhật các phần phụ thuộc có thể làm hỏng chương trình, việc kiểm tra lại là cần thiết!
+>
 > {.is-danger}
 
 # Lập trình tầm nhìn của bạn

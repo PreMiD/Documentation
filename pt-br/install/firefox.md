@@ -2,7 +2,7 @@
 title: Firefox
 description: Primeiros passos com a instalação do PreMiD no Firefox
 published: true
-date: 2021-09-18T14:14:41.886Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
@@ -19,8 +19,8 @@ A instalação da extensão é muito importante, pois o aplicativo não pode faz
 6. Selecione o arquivo **.xpi** que você baixou recentemente.
 7. Aceite a instalação clicando em **Adicionar**.
 
-> Não esqueça de [instalar o **aplicativo**](/install). 
-> 
+> Não esqueça de [instalar o **aplicativo**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

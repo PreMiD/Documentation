@@ -2,14 +2,14 @@
 title: Leysa vandamál
 description: Everything to solve your problem
 published: true
-date: 2021-02-08T21:30:58.603Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:54.865Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
-> 
+> Make sure you have the extension **and** the application installed!
+>
 > {.is-warning}
 
 Included on this page:
@@ -65,8 +65,8 @@ MacOS:`~/users/USER/~Library/Application Support/`and delete the folder`PreMiD``
 ### McAfee detected PreMiD as virus (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
-> 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out!
+>
 > {.is-warning}
 
 1. Open the McAfee application and click the settings icon in the top right. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />

@@ -2,7 +2,7 @@
 title: Metadata.json
 description: Enthält grundlegende Daten zur Presence
 published: true
-date: 2021-02-07T17:12:06.799Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:52.965Z
@@ -215,7 +215,7 @@ Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eing
     "multiLanguage": true //Siehe https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
-    "id": "ID" 
+    "id": "ID"
     "title": "DISPLAY TITLE",
     "icon": "FONTAWESOME ICON", //Beispiel: "fas fa-info"
     "value": true //Boolean Wert wird daraus eine On/Off Switch machen, mit dem Wert als Voreinstellung

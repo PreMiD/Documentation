@@ -2,7 +2,7 @@
 title: Classe Presence
 description: La classe principale pour chaque presence PreMiD
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ Enlève l'activité et le titre actuel.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Cette méthode ne fonctionne que sur Mac OS. 
-> 
+> Cette méthode ne fonctionne que sur Mac OS.
+>
 > {.is-warning}
 
 Définit le titre de la barre de menus.

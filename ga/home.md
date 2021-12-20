@@ -2,14 +2,14 @@
 title: Baile
 description: Doiciméadú Oifigiúil do v2
 published: true
-date: 2021-02-24T23:22:41.678Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Tá an cháipéisíocht fós á cur in eagar! D’fhéadfadh roinnt leathanaigh a bheith neamhiomlán nó ar iarraidh. 
-> 
+> Tá an cháipéisíocht fós á cur in eagar! D’fhéadfadh roinnt leathanaigh a bheith neamhiomlán nó ar iarraidh.
+>
 > {.is-warning}
 
 # Maidir le PreMiD

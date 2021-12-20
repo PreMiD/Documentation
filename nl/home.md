@@ -2,14 +2,14 @@
 title: Home
 description: Officiële documentatie voor v2
 published: true
-date: 2021-02-24T23:22:41.678Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> De documentatie wordt nog steeds bewerkt! Sommige pagina's kunnen onvolledig zijn of ontbreken. 
-> 
+> De documentatie wordt nog steeds bewerkt! Sommige pagina's kunnen onvolledig zijn of ontbreken.
+>
 > {.is-warning}
 
 # Over PreMiD

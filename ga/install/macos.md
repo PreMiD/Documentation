@@ -2,14 +2,14 @@
 title: macOS
 description: Ag tosú le suiteáil PreMiD ar macOS
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Sula dtéann tú níos faide, déan cinnte go gcomhlíonann do chóras na [riachtanais](/install/requirements). 
-> 
+> Sula dtéann tú níos faide, déan cinnte go gcomhlíonann do chóras na [riachtanais](/install/requirements).
+>
 > {.is-info}
 
 Tá suiteáil an iarratais an-tábhachtach mar ní féidir leis an síneadh aon rud a dhéanamh leis féin.
@@ -26,8 +26,8 @@ Tá suiteáil an iarratais an-tábhachtach mar ní féidir leis an síneadh aon 
 
 Cuirfear tús leis an iarratas go huathoibríoch. Seiceáil an tsiombail i do bharra roghchláir.
 
-> Ná déan dearmad a [cuir an **síneadh**](/suiteáil). 
-> 
+> Ná déan dearmad a [cuir an **síneadh**](/suiteáil).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

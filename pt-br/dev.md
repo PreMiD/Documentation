@@ -2,14 +2,14 @@
 title: Primeiros Passos
 description: Algumas dicas para aqueles que começaram a programar recentemente
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Um editor de código é necessário. Nós recomendamos o [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> Um editor de código é necessário. Nós recomendamos o [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # Instalando os requisitos
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Abra isso no seu editor de código.
 
 # Instalando dependências
-> Certifique-se de ter instalado o [npm](https://www.npmjs.com/) (Node Package Manager) primeiro. Ele se instalou automaticamente se você tiver o [Node](https://nodejs.org/en/) instalado. 
-> 
+> Certifique-se de ter instalado o [npm](https://www.npmjs.com/) (Node Package Manager) primeiro. Ele se instalou automaticamente se você tiver o [Node](https://nodejs.org/en/) instalado.
+>
 > {.is-warning}
 
 - Abra um terminal no repositório e digite `npm i`.
 - Para atualizar as dependências, digite `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
-> 
+> Be aware that updating the dependencies could break a lot, or not - testing is required!
+>
 > {.is-danger}
 
 # Programando sua visão

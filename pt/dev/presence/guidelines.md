@@ -2,7 +2,7 @@
 title: Diretrizes das presences
 description: Regras que todos os programadores de presences devem seguir para que a sua presence seja adicionada.
 published: true
-date: 2021-10-18T16:26:36.089Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:53.883Z

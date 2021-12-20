@@ -2,18 +2,18 @@
 title: Pemasangan
 description: Cara memasang PreMiD
 published: true
-date: 2020-11-10T17:54:28.896Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements). 
-> 
+> Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements).
+>
 > {.is-info}
 
-> **Diharuskan** untuk mengunduh **kedua** **aplikasi** dan juga **ekstensi**! 
-> 
+> **Diharuskan** untuk mengunduh **kedua** **aplikasi** dan juga **ekstensi**!
+>
 > {.is-warning}
 
 **Pilih sistem operasimu:**

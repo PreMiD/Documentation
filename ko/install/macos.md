@@ -2,14 +2,14 @@
 title: macOS
 description: macOS에서 PreMiD 설치 시작하기
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> 설치를 진행하기 전에, 시스템이 [요구사항](/install/requirements)을 충족하는지 확인해주세요. 
-> 
+> 설치를 진행하기 전에, 시스템이 [요구사항](/install/requirements)을 충족하는지 확인해주세요.
+>
 > {.is-info}
 
 애플리케이션만으로는 아무것도 할 수 없기에 확장 프로그램 설치가 매우 중요합니다.
@@ -26,8 +26,8 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 이 앱은 자동으로 시작됩니다. 메뉴 표시줄의 기호를 확인하십시오.
 
-> [**확장기능**을 추가하는 것을 잊지마세요!](/install) 
-> 
+> [**확장기능**을 추가하는 것을 잊지마세요!](/install)
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

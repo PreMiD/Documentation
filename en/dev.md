@@ -2,8 +2,8 @@
 title: Getting Started
 description: A little advice for those who got into coding recently
 published: true
-date: 2021-09-19T12:54:30.445Z
-tags: 
+date: 2021-12-20T14:27:18.034Z
+tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
@@ -17,7 +17,7 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type ``npm install -g typescript``).
 
 # Cloning the project
-1. Open a terminal and type ``git clone URL``. **Replace URL with repository link you want to contribute to** 
+1. Open a terminal and type ``git clone URL``. **Replace URL with repository link you want to contribute to**
 e.g. ``git clone https://github.com/PreMiD/PreMiD``.
 2. Choose a folder of your choice.
 3. Open it in your code editor.

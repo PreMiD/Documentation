@@ -2,7 +2,7 @@
 title: Über PreMiD
 description: Die Grundfunktionen von PreMiD
 published: true
-date: 2021-09-18T14:07:51.099Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:19.551Z

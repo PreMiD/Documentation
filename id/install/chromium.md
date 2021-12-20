@@ -2,7 +2,7 @@
 title: Chromium
 description: Memulai dengan instalasi PreMiD pada browser berbasis Chromium
 published: true
-date: 2021-09-18T14:14:39.122Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:35.049Z
@@ -20,8 +20,8 @@ Pemasangan ekstensi sangat penting agar aplikasi dapat bekerja.
 1. Tambahkan**[Pasang Ekstensi Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Tambahkan [ekstensi kami](https://premid.app/downloads).
 
-> Jangan lupa untuk [ menambahkan **aplikasi**](/install). 
-> 
+> Jangan lupa untuk [ menambahkan **aplikasi**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

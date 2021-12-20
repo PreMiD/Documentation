@@ -2,7 +2,7 @@
 title: Linux
 description: Linux'ta PreMiD kurulumuna başlarken
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Eklenti, uygulaması olmadan bir işe yaramayacağı için uygulamanın da de yüklü olması gerekmektedir.
 
-> Aur kullanıcıları DoomLerd'in paketini kullanarak, söylediği gibi güvende kalabilirler. Kullanmanızı önermiyoruz fakat istiyorsanız yine de kullanabilirsiniz. DoomLerd'e depomuzu aur'a eklediği için teşekkürler. 
-> 
+> Aur kullanıcıları DoomLerd'in paketini kullanarak, söylediği gibi güvende kalabilirler. Kullanmanızı önermiyoruz fakat istiyorsanız yine de kullanabilirsiniz. DoomLerd'e depomuzu aur'a eklediği için teşekkürler.
+>
 > {.is-warning}
 
 ## İçindekiler

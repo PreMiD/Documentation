@@ -2,14 +2,14 @@
 title: PreMiD開発入門
 description: 近いうちにコーディングを始めたひとのためのアドバイス
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> ソースコードエディターが必要です。 [Visual Studio Code](https://code.visualstudio.com/)をおすすめしています。 
-> 
+> ソースコードエディターが必要です。 [Visual Studio Code](https://code.visualstudio.com/)をおすすめしています。
+>
 > {.is-info}
 
 # 必要なコンポーネントをインストールする
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. ソースコードエディタで開く
 
 # 依存関係のインストール
-> はじめに、[npm](https://www.npmjs.com/) (Node Package Manager) がインストールされていることを確認してください。  [Node](https://nodejs.org/en/)がインストールされている場合、npmは自動でインストールされます。 
-> 
+> はじめに、[npm](https://www.npmjs.com/) (Node Package Manager) がインストールされていることを確認してください。  [Node](https://nodejs.org/en/)がインストールされている場合、npmは自動でインストールされます。
+>
 > {.is-warning}
 
 - リポジトリー内でターミナルを開き、 `npm i` と入力する
 - 依存関係のタイプを更新する際は `npm update` と入力する
 
-> 依存関係を更新すると、多数の機能が壊れる可能性があります。テストを必ず行ってください！ 
-> 
+> 依存関係を更新すると、多数の機能が壊れる可能性があります。テストを必ず行ってください！
+>
 > {.is-danger}
 
 # 空想をコーディングする

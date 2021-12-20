@@ -2,7 +2,7 @@
 title: Firefox
 description: Початок роботи із встановленням PreMiD в Firefox
 published: true
-date: 2021-09-18T14:14:41.886Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
@@ -19,8 +19,8 @@ dateCreated: 2021-09-07T01:25:38.328Z
 6. Виберіть нещодавно завантажений файл.
 7. Прийміть установлення, натиснувши на **Додати**.
 
-> Не забудьте [додати **програму**](/install). 
-> 
+> Не забудьте [додати **програму**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

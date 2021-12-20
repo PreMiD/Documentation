@@ -2,8 +2,8 @@
 title: TypeScript Configuration
 description: A little helper for TypeScript
 published: true
-date: 2021-09-18T14:31:22.005Z
-tags: 
+date: 2021-12-20T14:27:18.034Z
+tags:
 editor: markdown
 dateCreated: 2021-09-07T01:45:10.473Z
 ---
@@ -47,7 +47,7 @@ In the root configuration file you will see something like this.
 | noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement. |
 | noUnusedLocals | Report errors on unused locals. |
 | noUnusedParameters | Report errors on unused parameters. |
-| inlineSourceMap | Adds sourcemapping | 
+| inlineSourceMap | Adds sourcemapping |
 | typeRoots | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types). |
 | esModuleInterop | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility.|
 

@@ -2,7 +2,7 @@
 title: Požiadavky
 description: Predpoklady inštalácie PreMiDu
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Systémové Požiadavky
 
-> Tieto údaje sa týkajú iba aplikácie. 
-> 
+> Tieto údaje sa týkajú iba aplikácie.
+>
 > {.is-info}
 
 PreMiD beží na virtuálnom akomkoľvek systéme. Znamená to že beží na **Linuxe**, **macOSi**, **Windowse** a i na niektorých **Linux Modifikáciach**.

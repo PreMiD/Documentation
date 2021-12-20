@@ -2,7 +2,7 @@
 title: Linux
 description: เริ่มต้นการติดตั้ง PreMiD บน Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 การติดตั้งแอปพลิเคชันนั้นสำคัญมากเพราะส่วนขยายไม่สามารถทำอะไรเองได้
 
-> สำหรับผู้ใช้ลินุกซ์ Aur การใช้แพ็คเกจจาก DoomLerd น่าจะปลอดภัยที่สุด เราไม่แนะนำให้ใช้ แต่ถ้าต้องการ ยังสามารถใช้มันได้ Thanks to DoomLerd for handling aur repo still. 
-> 
+> สำหรับผู้ใช้ลินุกซ์ Aur การใช้แพ็คเกจจาก DoomLerd น่าจะปลอดภัยที่สุด เราไม่แนะนำให้ใช้ แต่ถ้าต้องการ ยังสามารถใช้มันได้ Thanks to DoomLerd for handling aur repo still.
+>
 > {.is-warning}
 
 ## สารบัญ

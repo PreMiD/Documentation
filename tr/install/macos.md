@@ -2,14 +2,14 @@
 title: macOS
 description: MacOS'ta PreMiD kurulumuna başlarken
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> İlerlemeden önce sisteminizin tüm gereksinimleri karşıladığından emin olun. 
-> 
+> İlerlemeden önce sisteminizin tüm gereksinimleri karşıladığından emin olun.
+>
 > {.is-info}
 
 Eklenti, uygulaması olmadan bir işe yaramayacağı için uygulamanın da de yüklü olması gerekmektedir.
@@ -26,8 +26,8 @@ Eklenti, uygulaması olmadan bir işe yaramayacağı için uygulamanın da de y�
 
 Uygulama otomatik olarak başlayacaktır. Menü çubuğunuzdaki simgeyi kontrol edin.
 
-> **[Eklentiyi](/install)** de eklemeyi unutmayın. 
-> 
+> **[Eklentiyi](/install)** de eklemeyi unutmayın.
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

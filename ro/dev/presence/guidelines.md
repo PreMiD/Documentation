@@ -2,7 +2,7 @@
 title: Guideline-urile prezențelor
 description: Rules that all presence developers must follow to have their presence added.
 published: true
-date: 2021-10-18T16:26:36.089Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:53.883Z

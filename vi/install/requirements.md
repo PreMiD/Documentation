@@ -2,7 +2,7 @@
 title: Yêu cầu hệ thống
 description: Điều kiện trước khi cài đặt PreMiD
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Những yêu cầu hệ thống
 
-> Dữ liệu này chỉ liên quan đến ứng dụng. 
-> 
+> Dữ liệu này chỉ liên quan đến ứng dụng.
+>
 > {.is-info}
 
 PreMiD chạy trên hầu hết mọi hệ thống. Điều này có nghĩa là nó chạy trên **Linux**, **macOS**, **Windows** cũng như một số phiên bản **Linux được chỉnh sửa**.

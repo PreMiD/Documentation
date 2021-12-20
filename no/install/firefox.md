@@ -2,7 +2,7 @@
 title: Firefox
 description: Kommer igang med en PreMiD installasjonen på Firefox
 published: true
-date: 2021-09-18T14:14:41.886Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
@@ -19,8 +19,8 @@ Installasjonen av denne extensionen er veldig viktig på fordi applikasjonen ikk
 6. Velg filen du lastet ned nylig.
 7. Accept the installation by clicking on **Add**.
 
-> Ikke glem å [legge til** applikasjonen**](/install). 
-> 
+> Ikke glem å [legge til** applikasjonen**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

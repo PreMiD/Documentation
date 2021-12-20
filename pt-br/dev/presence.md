@@ -2,20 +2,20 @@
 title: Desenvolvimento de Presences
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Todas as presences agora são armazenadas aqui: https://github.com/PreMiD/Presences 
-> 
+> Todas as presences agora são armazenadas aqui: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 A versão `2.x` introduz a [loja de presences](https://premid.app/store). Usuários agora têm a capacidade de adicionar e remover manualmente suas presences favoritas através da interface do [site](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
-> 
+> Before getting started, it is highly recommended that you look at our presence guidelines.
+>
 > {.is-warning}
 
 - [Diretrizes](https://docs.premid.app/dev/presence/guidelines)
@@ -320,7 +320,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

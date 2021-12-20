@@ -2,14 +2,14 @@
 title: Wprowadzenie
 description: Troche porad dla tych co chcą zacząć programować
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Edytor kodu źródłowego jest wymagany. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> Edytor kodu źródłowego jest wymagany. We recommend [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # Instalowanie wymagań
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Otwórz go w swoim edytorze kodu.
 
 # Instalowanie dodatkowych plików
-> Upewnij się że masz zainstalowane [npm](https://www.npmjs.com/) (Node Package Manager). Instaluje się to automatycznie jeżeli masz zainstalowane [node.js](https://nodejs.org/en/). 
-> 
+> Upewnij się że masz zainstalowane [npm](https://www.npmjs.com/) (Node Package Manager). Instaluje się to automatycznie jeżeli masz zainstalowane [node.js](https://nodejs.org/en/).
+>
 > {.is-warning}
 
 - Otwórz konsole w twoim folderze z repozytorium i wpisz `npm i`.
 - Aby zaktualizować dodatki wpisz `npm update`.
 
-> Uważaj z aktualizacjami zależności, ponieważ mogą się zepsuć, albo i nie - testowanie jest potrzebne! 
-> 
+> Uważaj z aktualizacjami zależności, ponieważ mogą się zepsuć, albo i nie - testowanie jest potrzebne!
+>
 > {.is-danger}
 
 # Kodowanie twojej wizji

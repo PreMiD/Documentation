@@ -2,14 +2,14 @@
 title: الإبتداء
 description: نصيحة صغيرة لأولئك الذين بدأوا بالبرمجة مؤخرًا
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> مطلوب محرر نص برمجي. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> مطلوب محرر نص برمجي. We recommend [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # تثبيت المتطلبات
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Open it in your code editor.
 
 # تثبيت الإعتمادات
-> تأكد من تثبيت [ npm ](https://www.npmjs.com/) (Node Package Manager) أولاً. يتم تثبيته تلقائيًا إذا كنت قد قمت بتثبيت [ Node ](https://nodejs.org/en/). 
-> 
+> تأكد من تثبيت [ npm ](https://www.npmjs.com/) (Node Package Manager) أولاً. يتم تثبيته تلقائيًا إذا كنت قد قمت بتثبيت [ Node ](https://nodejs.org/en/).
+>
 > {.is-warning}
 
 - افتح محطة في مستودعك واكتب `npm i`.
 - لتحديث التبعيات اكتب `update npm`.
 
-> كن على دراية بأن تحديث التبعيات يمكن أن يكسر كثيرًا أم لا - يجب إجراء اختبار! 
-> 
+> كن على دراية بأن تحديث التبعيات يمكن أن يكسر كثيرًا أم لا - يجب إجراء اختبار!
+>
 > {.is-danger}
 
 # برمجة رؤيتك

@@ -2,7 +2,7 @@
 title: 必要条件
 description: PreMiDをインストールするのに必要な条件
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # システム要件
 
-> アプリケーションの情報のみについて解説しています。 
-> 
+> アプリケーションの情報のみについて解説しています。
+>
 > {.is-info}
 
 PreMiDはほぼすべてのシステムで動きます。 これは**Linux**、**MacOS**、**Windows**、**LinuxベースのOS**で動くことを意味します。

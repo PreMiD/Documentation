@@ -2,7 +2,7 @@
 title: Metadata.json
 description: Berisi data dasar tentang Presence
 published: true
-date: 2021-02-07T17:12:06.799Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:52.965Z
@@ -238,7 +238,7 @@ Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
     "title": "TUNJUKKAN JUDUL",
     "icon": "IKON FONTAWESOME",
     "value": 0, //Nilai default selector
-    "values": ["1", "2", "etc."] //Akan membuat pengaturan menjadi selector saat kamu memilih yang mana yang kamu inginkan 
+    "values": ["1", "2", "etc."] //Akan membuat pengaturan menjadi selector saat kamu memilih yang mana yang kamu inginkan
   }
 ]
 ```

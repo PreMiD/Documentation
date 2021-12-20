@@ -2,18 +2,18 @@
 title: インストール
 description: PreMiDをインストールする方法
 published: true
-date: 2020-11-10T17:54:28.896Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> ダウンロードする前に、お使いのPCが[必要条件](/install/requirements)を満たしているか確認してください。 
-> 
+> ダウンロードする前に、お使いのPCが[必要条件](/install/requirements)を満たしているか確認してください。
+>
 > {.is-info}
 
-> PreMiDを動かすためには、**アプリケーション**と**拡張機能**を**同時に追加する必要が**あります！ 
-> 
+> PreMiDを動かすためには、**アプリケーション**と**拡張機能**を**同時に追加する必要が**あります！
+>
 > {.is-warning}
 
 **OSを選ぶ:**

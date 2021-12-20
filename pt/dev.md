@@ -2,14 +2,14 @@
 title: Primeiros passos
 description: Uma pequena ajuda para aqueles que começaram a programar recentemente
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Um editor de código fonte é necessário. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> Um editor de código fonte é necessário. We recommend [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # Instalando os requerimentos
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Open it in your code editor.
 
 # Instalando dependências
-> Certifica-te de ter instalado [npm](https://www.npmjs.com/) (Node Package Manager) primeiro. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
-> 
+> Certifica-te de ter instalado [npm](https://www.npmjs.com/) (Node Package Manager) primeiro. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed.
+>
 > {.is-warning}
 
 - Open a terminal in your repository and type `npm i`.
 - To update the dependencies type `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
-> 
+> Be aware that updating the dependencies could break a lot, or not - testing is required!
+>
 > {.is-danger}
 
 # Coding your vision

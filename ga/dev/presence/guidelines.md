@@ -2,7 +2,7 @@
 title: Treoirlínte Láithreachta
 description: Rialacha nach mór do gach forbróir láithreachta a leanúint chun a láithreacht a chur leis.
 published: true
-date: 2021-10-18T16:26:36.089Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:53.883Z
@@ -121,7 +121,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
       "title": "TEIDEAL TAISPEÁNA",
       "icon": "ÍOCÓN FONTAWESOME",
       "value": "\"%song%\" leis an %artist%",
-      "placeholder": "bain úsáid as %song% nó %artist%" 
+      "placeholder": "bain úsáid as %song% nó %artist%"
     },
     {
       "id": "ID",
@@ -134,52 +134,52 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 }
 ```
 
-> Má tá réimse liostaithe mar réimse roghnach ar andoiciméadacht<a> nó má tá <code>*</code> in aice leis an eochair, agus má úsáideann do láithreacht an luach réamhshocraithe dó, ná cuir san áireamh í sa chomhad <code>meiteashonraí</code>. (mar shampla, ní bheadh an réimse <code>iframe</code> de dhíth ar láithreacht gan tacaíocht iframe.)</p> </blockquote> 
-> 
+> Má tá réimse liostaithe mar réimse roghnach ar andoiciméadacht<a> nó má tá <code>*</code> in aice leis an eochair, agus má úsáideann do láithreacht an luach réamhshocraithe dó, ná cuir san áireamh í sa chomhad <code>meiteashonraí</code>. (mar shampla, ní bheadh an réimse <code>iframe</code> de dhíth ar láithreacht gan tacaíocht iframe.)</p> </blockquote>
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     Caithfear gach íomhá sa chomhad <code>meiteashonraí</code> a óstáil ar <code>i.imgur.com</code>. <strong x-id="1">Ní cheadaítea</strong> ábhar a óstáiltear ar an suíomh Gréasáin toisc gur féidir leo na cosáin agus na comhaid a athrú go toilteanach.
 >   </p>
 > </blockquote>
-> 
+>
 > <p spaces-before="0">
 >   Tá liosta de na réimsí agus a rialacha liostaithe thíos:
 > </p>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>$schema</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> go mbeadh comhartha dollar ag an scéimre <em x-id = "4">eochair</em> cuirfidh sé seo in iúl d’eagarthóir téacs go bhfuil tú ag iarraidh do chomhad JSON a bhailíochtú i gcoinne samhail. <em x-id = "4"> Mar a dúradh cheana, ní gá duit scéimre a áireamh, ach má chuireann tú san áireamh é caithfidh tú é sin a chur san áireamh. </em>
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>author</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> gurb é an ID <em x-id = "4"> luach </em> ID sciathán sneachta Discord. Is féidir leat é a fháil trí <a href = "https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID- " >modh forbróra</a>. <em x-id = "4">Ná déan<strong x-id = "1"> le do thoil </strong> déan é seo a mheascadh le d’aitheantas iarratais, nach bhfuil ann ach do láithreacht. </em>
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>*contributors</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ná cuir</strong> tú féin mar ranníocóir, agus ná cuir duine eile mar ranníocóir mura chuidigh siad leis an láithreacht.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>service</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> gurb é ainm na seirbhíse ainm an eolaire láithreachta. Mar shampla, má tá an láithreacht suite ag <code>/websites/Y/YouTube/</code>, ní mór ainm na seirbhíse a bheith <code>YouTube</code>.
@@ -191,21 +191,21 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Má tá roinnt rialacha brandála follasacha ag a n-ainm, ba cheart duit iad a leanúint.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>*altnames</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id = "1">Amháin</strong> úsáid é seo i gcásanna ina dtéann suíomh Gréasáin faoi iliomad ainmneacha oifigiúla (e.g. Pokémon agus 포켓 몬스터). <em x-id = "4">Téann leaganacha giorraithe</em> d’ainmneacha seirbhíse faoi <code>chlibeanna</code>.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>description</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Tá gá</strong> le <strong x-id="1">gach láithreachta</strong> tuairisc Bhéarla a bheith acu beag beann ar an rogha teanga ar an suíomh Gréasáin.
@@ -214,11 +214,11 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     <strong x-id="1">Ná déan</strong> iarracht an tuairisc a aistriú leat féin mura bhfuil an teanga sin ar eolas agat, athróidh aistritheoirí do <code>metadata.json</code> agus athróidh siad na tuairiscí más gá.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>url</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> sreangán a bheith san url mura n-úsáideann an suíomh Gréasáin ach fearann amháin. Má úsáideann an láithreán gréasáin iolrach, déan eagar air seo agus sonraigh gach ceann acu.
@@ -227,11 +227,11 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     <strong x-id="1">Ná cuir</strong> prótacail san url (mar shampla, <code>http</code> nó<code>https</code>), agus ná cuir paraiméadair fiosrúcháin san url (mar shampla, <code>www.google.com/search?gws_rd=ssl</code> ba chóir a bheith <code> www.google.com</code>)
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>version</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     Déan cinnte i gcónaí go leanann uimhir an leagain <a href="https://semver.org">caighdeáin leaganacha shéimeantach</a>, a aistríonn chuig an scéim seo a leanas: <code>&lt;NEW-FEATURE&gt;&lt;HUGE-BUGFIX&gt;&lt;SMALL-BUGFIX-OR-METADATA-CHANGES&gt;</code>. Rud ar bith eile cosúil le <code>1.0.0.1</code>, <code>1.0</code>, <code>1</code>, <code>1.0.0-BETA</code> nó ag athrú <code>1.0. 0</code> go <code>2.0.0</code> ar shocrú fabht/tá athrú beag <strong x-id="1">ní cheadaítear</strong>.
@@ -240,11 +240,11 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     <strong x-id="1">Ní mór</strong> tús a chur leis an leagan i gcónaí ag <code>1.0.0</code> mura n-insítear a mhalairt, <strong x-id="1">ní cheadófar</strong> leaganacha eile.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>logo</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> íomhá chearnach a bheith ar an lógó le cóimheas gné <code>1:1</code>.
@@ -253,21 +253,21 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Tá an íomhá <strong x-id = "1">riachtanach</strong> chun taifeach íosta de <code>512x512</code> picteilín a bheith aici. Is féidir leat é a mhéadú trí uirlis mar <a href="http://waifu2x.udp.jp/">waifu2x</a> a úsáid.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>thumbnail</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ba chóir</strong> go mbeadh an mionsamhail b'fhearr a bheith ina <a href="https://i.imgur.com/3QfIc5v.jpg">cárta poiblíochta leathan</a> nó <a href="https://i.imgur.com/OAcBmwW.png">pictiúr</a> <strong x-id="1">mura bhfuil</strong> an chéad cheann ar fáil.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>color</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> an dath a bheith ina luach heicsidheachúlach idir <code>#000000</code> agus <code>#FFFFFF</code>.
@@ -276,11 +276,11 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     <strong x-id="1">Ní mór</strong> an tsreang datha a chaitheamh le siombail hash.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>tags</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     Ceanglaítear ar <strong x-id="1">gach</strong> láithreachta clib <em x-id="4">amháin</em> ar a laghad a bheith acu.
@@ -295,11 +295,11 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Tá tú <strong x-id="1">cead</strong> chun clib <code>NSFW</code> a chur leis má tá tú i láthair ar shuíomh Gréasáin NSFW.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>category</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> an chatagóir a bheith ar cheann de na rudaí seo a leanas atá liostaithe ar an <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">doiciméadacht</a>.
@@ -308,21 +308,21 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Caithfidh an láithreacht catagóir a úsáid a oireann d’ábhar an láithreáin ghréasáin. (mar shampla, ná bain úsáid as <code>anime</code> nuair nach bhfuil baint ag an suíomh Gréasáin le hanam).
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>*regExp</code></strong> <br /> <strong x-id="1"><code>*iFrameRegExp</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> nathanna rialta a bheith bailí. Déan do chuid nathanna a thástáil leis na huirlisí atá liostaithe ar an <a href="https://docs.premid.app/dev/presence/metadata#testing">doiciméadacht</a>.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>readLogs</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     Ní mór luach <code>boolean</code> a bheith aige (e.g. <code>true</code> nó <code>false</code>).
@@ -331,11 +331,11 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Cumasaíonn sé logaí do do láithreacht.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>warning</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     Cumasaíonn sé deilbhín rabhaidh chun an t-úsáideoir a spreagadh go gcaithfidh an láithreacht seo níos mó céimeanna ná láithreacht a chur leis.
@@ -344,11 +344,11 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Sampla de láithreacht ag baint úsáide as an athróg meiteashonraí seo is ea <code>VLC</code>.
 >   </li>
 > </ul>
-> 
+>
 > <h3 spaces-before="0">
 >   <strong x-id="1"><code>settings</code></strong>
 > </h3>
-> 
+>
 > <ul>
 >   <li>
 >     Má shocraíonn tú sreang formáide a dhéanamh (mar shampla, <code>%song% leis an %artist%</code>), caithfidh na hathróga a bheith timpeallaithe ag comhartha faoin gcéad ar gach taobh. Tá athróga cosúil le <code>%var</code>, <code>var%</code>, nó <code>%%var%%</code> agus aon rud eatarthu <strong x-id = "1">ní cheadaítear</strong> ar mhaithe le caighdeánú.
@@ -370,27 +370,27 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     </ul>
 >   </li>
 > </ul>
-> 
+>
 > <h2 spaces-before="0">
 >   <a href="https://docs.premid.app/dev/presence/class"><strong x-id="1">presence.ts</strong></a>
 > </h2>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     <strong x-id="1">Ní mór</strong> an cód a scríobhann tú a bheith <em x-id = "4"> dea-scríofa </em> agus <strong x-id = "1"> ní mór </strong>a<em x-id = "4">inléite</em> agus caithfidh gach sreang a bheith ceart ó thaobh na gramadaí de (is féidir neamhaird a dhéanamh ar earráidí gramadaí ar láithreáin ghréasáin).
 >   </p>
 > </blockquote>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     Leanann gach láithreacht tacar rialacha dian linting a seiceálfar le linn an phróisis athbhreithnithe. Is féidir cúpla moladh a fheiceáil thíos. <a href="https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules">Moltaí Breiseán TypeScript maidir le Seiceáil Cineál Dian</a>. <a href="https://eslint.org/docs/rules">Moltaí ESlint</a>. <a href="https://prettier.io/">Prettier</a>.
 >   </p>
 > </blockquote>
-> 
+>
 > <p spaces-before="0">
 >   Seo liosta de na rialacha a chaithfidh tú a leanúint agus do chomhad <code>presence.ts</code> á scríobh:
 > </p>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id = "1"> I gcónaí </strong> dearbhaigh sampla nua den aicme <code>Presence</code> roimh aon athróg eile chun saincheisteanna neamhchoitianta a d’fhéadfadh tarlú a sheachaint; ní riachtanas de réir dearaidh é seo agus d’fhéadfaí é a bhaint amach anseo.
@@ -436,31 +436,31 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     </ul>
 >   </li>
 > </ul>
-> 
+>
 > <h2 spaces-before="0">
 >   <a href="https://docs.premid.app/dev/presence/tsconfig"><strong x-id="1">tsconfig.json</strong></a>
 > </h2>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     Ná <strong x-id="1">ní</strong> scríobh do chomhad <code>tsconfig.json</code> féin, bain úsáid as an méid atá curtha ar fáil ar <a href="https://docs.premid.app/dev/presence/tsconfig">doiciméadú</a>.
 >   </p>
 > </blockquote>
-> 
+>
 > <h2 spaces-before="0">
 >   Modhnú
 > </h2>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     <strong x-id="1">Ní mór</strong> duit an leagan sa <strong x-id="1">mheiteashonraí</strong> a athrú chun go mbeidh luach níos airde ón leagan roimhe seo agus athruithe á ndéanamh agat ar an <strong x-id="1"> presence.ts </strong>, <strong x-id="1">iframe.ts</strong> nó <strong x-id="1"> metadata.json</strong>.
 >   </p>
 > </blockquote>
-> 
+>
 > <p spaces-before="0">
 >   I roinnt cásanna, d’fhéadfadh láithreachta iad féin a iompar gan choinne nó d’fhéadfaidís roinnt mionathruithe a úsáid chun a bhfeidhmiúlacht a fheabhsú. Seo liosta de na rialacha <strong x-id="1">ní mór</strong> duit a leanúint agus tú ag athrú uachtaráin.
 > </p>
-> 
+>
 > <ul>
 >   <li>
 >     If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
@@ -472,35 +472,35 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Anyone may create PRs to fix bugs. Do <strong x-id="1">not</strong> change images if they are not outdated and are in specifications.
 >   </li>
 > </ul>
-> 
+>
 > <h1 spaces-before="0">
 >   Deimhniú
 > </h1>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     <strong x-id="1"> Beidh gach cód </strong> a chuirtear leis an siopa ceadúnaithe faoin <code> Ceadúnas Poiblí Mozilla 2.0 </code>.
 >   </p>
 > </blockquote>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     Más gá duit teagmháil a dhéanamh le duine, bain úsáid as ár bhfreastalaí Discord oifigiúil. Beidh ról <code>Reviewer</code> ag gach athbhreithneoir ar a bpróifíl.
 >   </p>
 > </blockquote>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     Coinnigh i gcuimhne, le do thoil, go n-oibríonn na hathbhreithneoirí go deonach agus go ndéanann siad stórtha eile a bhainistiú sa bhreis ar an gceann seo, b’fhéidir nach ndéanfar athbhreithniú ar d’iarratas tarraingthe go dtí uaireanta nó fiú laethanta tar éis a chruthaithe.
 >   </p>
 > </blockquote>
-> 
+>
 > <blockquote spaces-before="0">
 >   <p spaces-before="0">
 >     <strong x-id="1"> I gcónaí </strong> bíodh forc cothrom le dáta agat sula ndéanann tú d’iarratas tarraingthe a chruthú. Cabhróidh sé seo le rudaí dearfacha bréagacha a theorannú ó na seiceálacha.
 >   </p>
 > </blockquote>
-> 
+>
 > <p spaces-before="0">
 >   Is é an próiseas is tábhachtaí d’fhorbairt láithreachta ná do láithreacht a fháil ar an siopa. Déantar é seo trí iarraidh <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">pull request</a> a dhéanamh ar GitHub ar an stór <code> PreMiD/Presences </code>. Deimhneoidh ár n-athbhreithneoirí go bhfuil do láithreacht de réir na gcaighdeán agus brúfaidh siad ar an siopa é.
 > </p>
@@ -511,19 +511,19 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
   <br />
 </div>
 
-> 
+>
 > <h2 spaces-before="0">
 >   <code>Srianta</code>
 > </h2>
-> 
+>
 > <p spaces-before="0">
 >   Cuirfidh cionta athchleachtacha amhail treoirlínte a bhriseadh, iarrataí tarraingthe spamála, bagairtí nó iompar míchuí cosc ort uachtaráin a chruthú.
 > </p>
-> 
+>
 > <p spaces-before="0">
 >   Sa chás seo, tarlóidh na hathruithe seo a leanas:
 > </p>
-> 
+>
 > <ul>
 >   <li>
 >     Aistreofar láithreacha faoi do bhainistíocht chuig bot PreMiD nó chuig úsáideoir eile (cinneadh an athbhreithnitheora). Athchruthófar an id iarratais do gach láithreacht faoi ainm an úinéara nua.
@@ -535,15 +535,15 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Scriosfar ticéid a cruthaíodh faoi d’ainm maidir le forbairt láithreachta.
 >   </li>
 > </ul>
-> 
+>
 > <h2 spaces-before="0">
 >   <code>Athbhreithniú</code>
 > </h2>
-> 
+>
 > <p spaces-before="0">
 >   Cúpla rud ba chóir a bheith ar eolas agat tar éis duit iarratas tarraingthe a oscailt:
 > </p>
-> 
+>
 > <ul>
 >   <li>
 >     Tógann sé ar 2 athbhreithneoir iarratas tarraingthe a chumasc.
@@ -561,19 +561,19 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     ⚠️ Tá tú freisin <strong x-id = "1">ceach</strong> chun scáileáin scáileáin de na socruithe láithreachta a áireamh sa síneadh má sholáthraítear iad. Is féidir sampla a fheiceáil <a href="https://imgur.com/a/OD3sj5R"> anseo </a>.
 >   </li>
 > </ul>
-> 
+>
 > <h2 spaces-before="0">
 >   <code>Seiceálacha</code>
 > </h2>
-> 
+>
 > <p spaces-before="0">
 >   <img src="https://i.imgur.com/vF7QpBH.png" alt="Sampla de sheiceálacha" />
 > </p>
-> 
+>
 > <p spaces-before="0">
 >   Faoi láthair, téann láithreacht trí 3 chéim ar leithligh de sheiceálacha. Cuidíonn na seiceálacha seo go léir leis na hathbhreithneoirí a chinneadh an bhfuil do láithreacht oiriúnach le himscaradh.
 > </p>
-> 
+>
 > <ul>
 >   <li>
 >     <code>DeepScan</code> is a bot that checks for code quality. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú. <em x-id="3">Warning: DeepScan doesn't always give you errors. Féach rabhaidh CodeFactor ina ionad. </em>
@@ -585,33 +585,33 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     Déanfaidh <code> Schema Validation </code> do chomhad <code> metadata.json </code> a scanadh le haghaidh aon earráidí (mar shampla, réimsí atá in easnamh, cineálacha luacha neamhbhailí, srl.). Má fheiceann tú aon cheisteanna nua riamh, tá tú <strong x-id = "1"> ceacht </strong> chun iad sin a shocrú. Trí réimse scéimre a chur le do chomhad <code> metadata.json </code> ligfidh d’eagarthóir téacs (má thacaítear leis) na hearráidí seo a thaispeáint duit le linn na forbartha.
 >   </li>
 > </ul>
-> 
+>
 > <h2 spaces-before="0">
 >   <code>Rialacha Breise</code>
 > </h2>
-> 
+>
 > <ul>
 >   <li>
 >     <strong x-id = "1"> I gcónaí </strong> déan cinnte do láithreacht a thosú san fhillteán is oiriúnaí, má thosaíonn a ainm le <em x-id = "4"> aon </em> litir Laidineach ansin caithfidh sé a bheith faoina mheaitseáil aibítreach (mar shampla, <code> D/dア ニ メ ス ト ア </code> nó <code> G/Google </code>). <strong x-id="1">Ní mór</strong> aon charachtair Unicode/neamh-Laidine eile a bheith faoin bhfillteán <code>#</code> (mar shampla, <code> #/巴哈姆特 </code>) agus uimhreacha faoin <code>0-9 fillteán </code> (mar shampla, <code> 0-9/4anime</code>).
 >   </li>
 > </ul>
-> 
+>
 > <p spaces-before="0">
 >   Tar éis duit na treoirlínte go léir a chomhlíonadh leis na hathbhreithnithe agus na seiceálacha cearta, déanfar do láithreacht a chumasc leis an siopa.
 > </p>
-> 
+>
 > <h1 spaces-before="0">
 >   Moltaí
 > </h1>
-> 
+>
 > <p spaces-before="0">
 >   Tá roinnt moltaí agat maidir lenár dtreoirlínte, ba cheart duit teagmháil a dhéanamh linn @ <a href="https://discord.premid.app"> Freastalaí Discord PreMiD </a> agus déanfaimid iad a sheiceáil!
 > </p>
-> 
+>
 > <h1 spaces-before="0">
 >   Ranníocaíochtaí
 > </h1>
-> 
+>
 > <p spaces-before="0">
 >   Scríobhadh <code>Athbhreithniú 3</code> de na treoirlínte agus chuir na daoine seo a leanas leis:
 > </p>
@@ -620,7 +620,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 <a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-> 
+>
 > <p spaces-before="0">
 >   Scríobhadh <code>Athbhreithniú 2</code> de na treoirlínte agus chuir na daoine seo a leanas leis:
 > </p>
@@ -629,7 +629,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-> 
+>
 > <p spaces-before="0">
 >   Choinnigh na daoine seo a leanas <code>Athbhreithniú 1</code>:
 > </p>

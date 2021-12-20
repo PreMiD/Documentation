@@ -2,7 +2,7 @@
 title: Windows
 description: Getting started with a PreMiD installation on Windows
 published: true
-date: 2020-02-12T22:08:41.501Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 ---
 

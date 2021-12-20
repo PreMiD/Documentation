@@ -2,7 +2,7 @@
 title: Presence 가이드라인
 description: 모든 presence 개발자들이 자신의 presence를 추가하려면 따라야 하는 규칙입니다.
 published: true
-date: 2021-10-18T16:26:36.089Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:53.883Z

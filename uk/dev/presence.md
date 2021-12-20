@@ -2,20 +2,20 @@
 title: Розробка присутності
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Усі присутності зберігаються тут: https://github.com/PreMiD/Presences 
-> 
+> Усі присутності зберігаються тут: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 Версія `2.x` представляє [Крамницю присутностей](https://premid.app/store). Тепер користувачі можуть вручну додавати та видаляти улюблені присутності через користувацький інтерфейс [сайту](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
-> 
+> Before getting started, it is highly recommended that you look at our presence guidelines.
+>
 > {.is-warning}
 
 - [Керівні принципи](https://docs.premid.app/dev/presence/guidelines)
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

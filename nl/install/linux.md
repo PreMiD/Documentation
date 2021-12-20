@@ -2,7 +2,7 @@
 title: Linux
 description: Aan de slag met de PreMiD installatie op Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 De installatie van de applicatie is van groot belang, omdat de extensie op zichzelf niets kan doen.
 
-> Aur-gebruikers die DoomLerds pakket gebruiken moeten veilig zijn zoals hij zegt. We raden niet aan dit te gebruiken, maar het kan wel als je dat wilt. Dank aan DoomLerd voor het verwerken van aur-repo. 
-> 
+> Aur-gebruikers die DoomLerds pakket gebruiken moeten veilig zijn zoals hij zegt. We raden niet aan dit te gebruiken, maar het kan wel als je dat wilt. Dank aan DoomLerd voor het verwerken van aur-repo.
+>
 > {.is-warning}
 
 ## Inhoudsopgave

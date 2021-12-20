@@ -2,7 +2,7 @@
 title: Systemkrav
 description: Systemkrav för att installera PreMiD
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Systemkrav
 
-> Dessa krav gäller bara för programmet. 
-> 
+> Dessa krav gäller bara för programmet.
+>
 > {.is-info}
 
 PreMiD körs på stort sett alla system. Detta innebär att det körs på **Linux**, **macOS**, **Windows** samt några **modifieringar av Linux**.

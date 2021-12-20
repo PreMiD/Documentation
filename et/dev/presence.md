@@ -2,20 +2,20 @@
 title: Presence-i arendamine
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Kõik presence-id on nüüd salvestatud siin: https://github.com/PreMiD/Presences 
-> 
+> Kõik presence-id on nüüd salvestatud siin: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 Versioon `2.x` tutvustab [presence-i poodi](https://premid.app/store). Kasutajatel on nüüd võimalus oma lemmik presence käsitsi lisada ja eemaldada [veebsaidi](https://premid.app/) kasutajaliite kaudu.
 
-> Enne alustamist on tungivalt soovitatav tutvuda meie presence-i juhenditega. 
-> 
+> Enne alustamist on tungivalt soovitatav tutvuda meie presence-i juhenditega.
+>
 > {.is-warning}
 
 - [Juhised](https://docs.premid.app/dev/presence/guidelines)
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

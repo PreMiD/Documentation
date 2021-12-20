@@ -2,14 +2,14 @@
 title: Dépannage
 description: Tout pour résoudre votre problème
 published: true
-date: 2021-09-18T14:08:01.002Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Assurez-vous d'avoir l'extension **et** l'application installée! 
-> 
+> Assurez-vous d'avoir l'extension **et** l'application installée!
+>
 > {.is-warning}
 
 Inclus sur cette page :
@@ -20,8 +20,8 @@ Inclus sur cette page :
 <a name="general"></a>
 
 # Dépannage général
-> Vous pouvez utiliser [cet](https://qkeleq10.github.io/PreMiD-Troubleshooting/) outil pour vous aider à mieux cibler votre problème. 
-> 
+> Vous pouvez utiliser [cet](https://qkeleq10.github.io/PreMiD-Troubleshooting/) outil pour vous aider à mieux cibler votre problème.
+>
 > {.is-info}
 ### Recharger la page
 Vous pouvez aussi appuyer sur <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) sur votre clavier au lieu de rechercher le bouton de rafraîchissement.
@@ -70,8 +70,8 @@ Windows : Écrivez `%appdata%` dans la barre d'adresse de l'explorateur de fichi
 ### McAfee a détecté PreMiD comme un virus (Windows)
 C'est un faux positif de la part de McAfee et nous leur avons signalé le problème, pour l'instant, vous pouvez exclure PreMiD de l'analyse en effectuant les étapes suivantes :
 
-> Si vous ne vous sentez pas confiant de prendre ces mesures, n'hésitez pas à faire un ticket dans [#support](https://discord.premid.app/) et l'un de nos agents de support pourra vous aider ! 
-> 
+> Si vous ne vous sentez pas confiant de prendre ces mesures, n'hésitez pas à faire un ticket dans [#support](https://discord.premid.app/) et l'un de nos agents de support pourra vous aider !
+>
 > {.is-warning}
 
 1. Ouvrez l'application McAfee et cliquez sur l'icône Paramètres en haut à droite. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />

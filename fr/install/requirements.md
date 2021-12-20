@@ -2,7 +2,7 @@
 title: Prérequis
 description: Configuration minimal requise pour utiliser PreMiD
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Configuration requise
 
-> Ces données ne concernent que l'application. 
-> 
+> Ces données ne concernent que l'application.
+>
 > {.is-info}
 
 PreMiD fonctionne sur pratiquement tous les systèmes. Cela signifie qu'il fonctionne sur **Linux**, **macOS**, **Windows** ainsi que sur certains système avec un noyau**customisé**.

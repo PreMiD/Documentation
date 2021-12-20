@@ -2,7 +2,7 @@
 title: Vereisten
 description: Vereisten om PreMiD te installeren
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Systeemvereisten
 
-> Deze gegevens hebben alleen betrekking op de applicatie. 
-> 
+> Deze gegevens hebben alleen betrekking op de applicatie.
+>
 > {.is-info}
 
 PreMiD werkt op vrijwel elk systeem. Dit betekent dat het draait op **Linux**, **macOS**, **Windows** en sommige **Linux Modificaties**.

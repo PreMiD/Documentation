@@ -2,20 +2,20 @@
 title: Pembangunan Presence
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Kesemua Presence kini disimpan di sini: https://github.com/PreMiD/Presences 
-> 
+> Kesemua Presence kini disimpan di sini: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 Versi `2.x` memperkenalkan [kedai Presence](https://premid.app/store). Pengguna kini boleh menambah dan membuang Presence kegemaran mereka secara manual menerusi antara muka pengguna di [laman sesawang](https://premid.app/).
 
-> Sebelum anda mula, anda amat digalakkan untuk melihat garis panduan Presence kami. 
-> 
+> Sebelum anda mula, anda amat digalakkan untuk melihat garis panduan Presence kami.
+>
 > {.is-warning}
 
 - [Garis Panduan](https://docs.premid.app/dev/presence/guidelines)
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Kemas kini Presence dengan semua nilai daripada objek presenceData
   if (presenceData.details) presence.setActivity(presenceData);
   //Kemas kini Presence dengan tiada data, dengan itu mengosongkannya dan buatkan imej besar guna ikon Aplikasi Discord, dan buatkan tulisan guna nama Aplikasi Discord
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

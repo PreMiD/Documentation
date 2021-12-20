@@ -2,14 +2,14 @@
 title: Erste Schritte
 description: Ein kleiner Ratschlag für diejenigen, die sich in letzter Zeit mit Codierung beschäftigen
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Ein Quellcode-Editor ist erforderlich. Wir empfehlen [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> Ein Quellcode-Editor ist erforderlich. Wir empfehlen [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # Vorrausetzungen installieren
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Öffne es in deinem Code-Editor.
 
 # Notwendige Dateien installieren
-> Stelle zuerst sicher, dass Du [npm](https://www.npmjs.com/) (Node Package Manager) installiert hast. Er wurde automatisch installiert, wenn Du [Node](https://nodejs.org/en/) installiert hast. 
-> 
+> Stelle zuerst sicher, dass Du [npm](https://www.npmjs.com/) (Node Package Manager) installiert hast. Er wurde automatisch installiert, wenn Du [Node](https://nodejs.org/en/) installiert hast.
+>
 > {.is-warning}
 
 - Öffne ein Terminal in Deinem Repository und gib `npm i` ein.
 - Um die notwendigen Dateien zu aktualisieren, gib `npm update` ein.
 
-> Beachten Sie, dass das Aktualisieren der Abhängigkeiten viele Probleme verursachen kann oder nicht - Tests sind erforderlich! 
-> 
+> Beachten Sie, dass das Aktualisieren der Abhängigkeiten viele Probleme verursachen kann oder nicht - Tests sind erforderlich!
+>
 > {.is-danger}
 
 # Programmiere Deine Vision

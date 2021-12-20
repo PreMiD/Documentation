@@ -2,12 +2,12 @@
 title: macOS
 description: Getting started with a PreMiD installation on macOS
 published: true
-date: 2020-02-12T22:08:37.439Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
-> 
+> Before going any further, make sure your system meets all the [requirements](/install/requirements).
+>
 > {.is-info}
 
 The installation of the application is very important as the extension can not do anything by itself.
@@ -24,8 +24,8 @@ The installation of the application is very important as the extension can not d
 
 The application will start automatically. Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install). 
-> 
+> Do not forget to [add the **extension**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

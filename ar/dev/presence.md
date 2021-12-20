@@ -2,20 +2,20 @@
 title: Presence تطوير الـ
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> كل الpresences الان تخزن هنا: https://github.com/PreMiD/Presences 
-> 
+> كل الpresences الان تخزن هنا: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 الإصدار `2.x` يقدم [متجر الpresence](https://premid.app/store). الأن لدى المستخدمين القدرة لاضافة وحذف الpresences المفضلين لهم يدويا من خلال واجهة المستخدم في [الموقع](https://premid.app/).
 
-> قبل البدء، يوصى بشدة أن تنظروا إلى المبادئ التوجيهية للـ Presence الخاصة بنا. 
-> 
+> قبل البدء، يوصى بشدة أن تنظروا إلى المبادئ التوجيهية للـ Presence الخاصة بنا.
+>
 > {.is-warning}
 
 - [الإرشادات](https://docs.premid.app/dev/presence/guidelines)
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

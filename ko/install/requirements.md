@@ -2,7 +2,7 @@
 title: 요구사항
 description: Prerequisites to install PreMiD
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # 시스템 요구 사항
 
-> 해당 요구사항은 애플리케이션에만 해당합니다. 
-> 
+> 해당 요구사항은 애플리케이션에만 해당합니다.
+>
 > {.is-info}
 
 PreMiD는 사실상 모든 시스템에서 작동합니다. 이는 **Linux**, **macOS**, **Windows**에서 뿐만 아니라 일부 **수정된 Linux들**에서도 잘 구동된다는 것을 의미합니다.

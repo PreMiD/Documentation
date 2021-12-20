@@ -2,7 +2,7 @@
 title: Linux
 description: Kom igång med en PreMiD-installationen på Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Installationen av tillägget är viktigt eftersom programmet inte kan göra något av sig själv.
 
-> Användare av Aur som använder DoomLerd's package bör vara okej som han säger. Vi rekommenderar inte att använda det, men om du vill så kan du ändå. Tack till DoomLerd för det fortsatta stödet av vår Aur repo. 
-> 
+> Användare av Aur som använder DoomLerd's package bör vara okej som han säger. Vi rekommenderar inte att använda det, men om du vill så kan du ändå. Tack till DoomLerd för det fortsatta stödet av vår Aur repo.
+>
 > {.is-warning}
 
 ## Innehållsförteckning

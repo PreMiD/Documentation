@@ -2,7 +2,7 @@
 title: Класс присутствия
 description: Основной класс для каждого присутствия PreMiD
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ const presence = new Presence({
 
 ### `setTrayTitle(tring)` - *Устарел с 2.2.3*
 
-> Этот метод работает только на Mac OS. 
-> 
+> Этот метод работает только на Mac OS.
+>
 > {.is-warning}
 
 Устанавливает заголовок в идентификатор.

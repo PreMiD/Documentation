@@ -2,7 +2,7 @@
 title: Firefox
 description: শুরু করা যাক PreMiD ইন্সটলেশন ফায়ারফক্সে
 published: true
-date: 2021-09-18T14:14:41.886Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
@@ -19,8 +19,8 @@ dateCreated: 2021-09-07T01:25:38.328Z
 6. সিলেক্ট করো ফাইলটি যেটি ইতিমধ্যে ডাউনলোড করেছ।
 7. **Add** এ ক্লিক করে ইন্সটল করো।
 
-> ভুলে যেও না [ইন্সটল করতে **অ্যাপ্লিকেশনটি**](/install)। 
-> 
+> ভুলে যেও না [ইন্সটল করতে **অ্যাপ্লিকেশনটি**](/install)।
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

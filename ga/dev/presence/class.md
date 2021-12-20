@@ -2,7 +2,7 @@
 title: Rang Láithreachta
 description: An rang is mó do gach láithreacht PreMiD
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ Glanann do ghníomhaíocht reatha agus teideal an tráidire.
 
 ### `setTrayTitle(Teaghrán)` - * Dímheasta ó 2.2.3*
 
-> Ní oibríonn an modh seo ach ar Mac OS. 
-> 
+> Ní oibríonn an modh seo ach ar Mac OS.
+>
 > {.is-warning}
 
 Socraigh teideal an tráidire ar an Menubar.

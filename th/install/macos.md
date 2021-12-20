@@ -2,14 +2,14 @@
 title: macOS
 description: เริ่มต้นการติดตั้ง PreMiD บน macOS
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> ก่อนดำเนินการใด ๆ เพิ่มเติมตรวจสอบให้แน่ใจว่าระบบของคุณตรงตาม [เงื่อนไข](/install/requirements) ไหม 
-> 
+> ก่อนดำเนินการใด ๆ เพิ่มเติมตรวจสอบให้แน่ใจว่าระบบของคุณตรงตาม [เงื่อนไข](/install/requirements) ไหม
+>
 > {.is-info}
 
 การติดตั้งแอปพลิเคชันนั้นสำคัญมากเพราะส่วนขยายไม่สามารถทำอะไรเองได้
@@ -26,8 +26,8 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 แอปพลิเคชันจะเริ่มต้นโดยอัตโนมัติ Check for the symbol in your menu bar.
 
-> อย่าลืม [เพิ่ม**ส่วนขยาย**](/install) 
-> 
+> อย่าลืม [เพิ่ม**ส่วนขยาย**](/install)
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

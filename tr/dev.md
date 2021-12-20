@@ -2,14 +2,14 @@
 title: Başlarken
 description: Kodlamaya yeni başlayanlara ufak bir tavsiye
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Bu işlemler için bir kod editörü kullanmanız gerekecektir. Biz editör olarak [Visual Studio Code](https://code.visualstudio.com/)'u öneriyoruz. 
-> 
+> Bu işlemler için bir kod editörü kullanmanız gerekecektir. Biz editör olarak [Visual Studio Code](https://code.visualstudio.com/)'u öneriyoruz.
+>
 > {.is-info}
 
 # Gereksinimleri yükleme
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Klasörü kullandığınız editör ile açın.
 
 # Bağımlılıkları yükleme
-> Node'un içinde gelen [npm](https://www.npmjs.com/)'nin (Node Package Manager) yüklü olduğundan emin olun. Eğer [Node](https://nodejs.org/en/)'u daha önceden yüklediyseniz tekrar yüklemenize gerek yoktur. 
-> 
+> Node'un içinde gelen [npm](https://www.npmjs.com/)'nin (Node Package Manager) yüklü olduğundan emin olun. Eğer [Node](https://nodejs.org/en/)'u daha önceden yüklediyseniz tekrar yüklemenize gerek yoktur.
+>
 > {.is-warning}
 
 - Klonladığınız depo klasöründeyken konsolu açın ve `npm i` yazın.
 - Bağımlılıkları güncellemek için `npm update` yazın.
 
-> Bağımlılıkları güncellemenin bir çok şeyi bozabileceğini unutmayın - test etmeyi ihmal etmeyin! 
-> 
+> Bağımlılıkları güncellemenin bir çok şeyi bozabileceğini unutmayın - test etmeyi ihmal etmeyin!
+>
 > {.is-danger}
 
 # Kendiniz kodlayın

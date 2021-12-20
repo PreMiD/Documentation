@@ -2,7 +2,7 @@
 title: Presence Sınıfı
 description: Tüm PreMiD servisleri için geçerli ana sınıf
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ Gözüken verileri ve menü çubuğu yazısını temizler.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Bu yöntem sadece MacOS üzerinde çalışmaktadır. 
-> 
+> Bu yöntem sadece MacOS üzerinde çalışmaktadır.
+>
 > {.is-warning}
 
 Menüdeki durum yazısını ayarlar.

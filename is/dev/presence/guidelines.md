@@ -2,7 +2,7 @@
 title: Guidelines
 description: Rules all presence developers must follow to have their presence added.
 published: true
-date: 2020-12-29T02:18:29.846Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:45.733Z
@@ -52,16 +52,16 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/en/dev/presence/metadata)
 
-> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process. 
-> 
+> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process.
+>
 > {.is-info}
 
-> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted. 
-> 
+> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted.
+>
 > {.is-warning}
 
-> Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content. 
-> 
+> Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
+>
 > {.is-warning}
 
 Each presence has a descriptor file called `metadata.json`, the metadata has a strict standard and an example of this file can be seem below:
@@ -122,12 +122,12 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/en/dev/presence/metadata) and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.) 
-> 
+> If a field is listed as optional on the [documentation](https://docs.premid.app/en/dev/presence/metadata) and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.)
+>
 > {.is-warning}
 
-> All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly. 
-> 
+> All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
+>
 > {.is-warning}
 
 A list of fields and their rules are listed below:
@@ -206,12 +206,12 @@ A list of fields and their rules are listed below:
 
 ## [**presence.ts**](https://docs.premid.app/en/dev/presence/class)
 
-> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored). 
-> 
+> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
+>
 > {.is-warning}
 
-> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. - [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules) - [ESlint Recommendations](https://eslint.org/docs/rules) 
-> 
+> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. - [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules) - [ESlint Recommendations](https://eslint.org/docs/rules)
+>
 > {.is-info}
 
 Here is a list of rules you must follow when writing your `presence.ts` file:
@@ -228,14 +228,14 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 
 ## [**tsconfig.json**](https://docs.premid.app/en/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/en/dev/presence/tsconfig). 
-> 
+> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/en/dev/presence/tsconfig).
+>
 > {.is-warning}
 
 # Modification
 
-> You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**. 
-> 
+> You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
+>
 > {.is-warning}
 
 In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
@@ -246,20 +246,20 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 
 # Verification
 
-> **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`. 
-> 
+> **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`.
+>
 > {.is-info}
 
-> If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile. 
-> 
+> If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile.
+>
 > {.is-info}
 
-> Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created. 
-> 
+> Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created.
+>
 > {.is-warning}
 
-> **Always** have an up-to-date fork before creating your pull request. This will help limit false positives from the checks. 
-> 
+> **Always** have an up-to-date fork before creating your pull request. This will help limit false positives from the checks.
+>
 > {.is-warning}
 
 The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.

@@ -2,8 +2,8 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2021-09-18T14:14:41.886Z
-tags: 
+date: 2021-12-20T14:27:18.034Z
+tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
 ---

@@ -2,7 +2,7 @@
 title: Chromium
 description: Getting started with a PreMiD installation on Chromium-based browsers
 published: true
-date: 2021-09-18T14:14:39.122Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:35.049Z
@@ -20,8 +20,8 @@ Inštalácia rozšírenia je veľmi dôležitá pretože samotná aplikácia nem
 1. Pridajte **[Nainštalujte rozšírenia Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Pridajte [naše rozšírenie](https://premid.app/downloads).
 
-> Nezabudnite [pridať **aplikáciu**](/install). 
-> 
+> Nezabudnite [pridať **aplikáciu**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

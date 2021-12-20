@@ -2,14 +2,14 @@
 title: Memulai
 description: Sedikit masukan bagi mereka yang baru memulai coding
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Editor source code dibutuhkan. Kami merekomendasikan [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> Editor source code dibutuhkan. Kami merekomendasikan [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # Menginstal hal-hal yang diperlukan
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Buka di editor kodemu.
 
 # Memasang dependencies
-> Pastikan kamu sudah memasang [npm](https://www.npmjs.com/) (Node Package Manager) terlebih dahulu. Akan otomatis terpasang jika kamu sudah memasang [Node](https://nodejs.org/en/). 
-> 
+> Pastikan kamu sudah memasang [npm](https://www.npmjs.com/) (Node Package Manager) terlebih dahulu. Akan otomatis terpasang jika kamu sudah memasang [Node](https://nodejs.org/en/).
+>
 > {.is-warning}
 
 - Buka terminal di repositorymu dan ketik `npm i`.
 - Untuk memperbarui dependencies ketik `npm update`.
 
-> Harap diingat dependencies memiliki kemungkinan untuk rusak saat diperbarui - uji coba dibutuhkan! 
-> 
+> Harap diingat dependencies memiliki kemungkinan untuk rusak saat diperbarui - uji coba dibutuhkan!
+>
 > {.is-danger}
 
 # Mengkode pandanganmu

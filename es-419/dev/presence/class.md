@@ -2,7 +2,7 @@
 title: Clase de Presence
 description: La clase principal para cada presence de PreMiD
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ Elimina la actividad actual y el titulo de la bandeja de trabajo.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Este método funciona sólo en Mac OS. 
-> 
+> Este método funciona sólo en Mac OS.
+>
 > {.is-warning}
 
 Establece el título de la bandeja en la barra de menús.

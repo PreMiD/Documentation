@@ -2,8 +2,8 @@
 title: Requirements
 description: Prerequisites to install PreMiD
 published: true
-date: 2021-01-17T22:43:28.543Z
-tags: 
+date: 2021-12-20T14:27:18.034Z
+tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
 ---

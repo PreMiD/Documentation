@@ -2,14 +2,14 @@
 title: macOS
 description: Aan de slag met de PreMiD installatie op macOS
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Voordat je verder gaat, zorg ervoor dat je systeem voldoet aan alle [vereisten](/install/requirements). 
-> 
+> Voordat je verder gaat, zorg ervoor dat je systeem voldoet aan alle [vereisten](/install/requirements).
+>
 > {.is-info}
 
 De installatie van de applicatie is van groot belang, omdat de extensie op zichzelf niets kan doen.
@@ -26,8 +26,8 @@ De installatie van de applicatie is van groot belang, omdat de extensie op zichz
 
 De applicatie start automatisch. Controleer op het symbool in je menubalk.
 
-> Vergeet niet [de **extensie**](/install) toe te voegen. 
-> 
+> Vergeet niet [de **extensie**](/install) toe te voegen.
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

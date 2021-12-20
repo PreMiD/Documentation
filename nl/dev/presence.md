@@ -2,20 +2,20 @@
 title: Presenceontwikkeling
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Alle presences worden hier opgeslagen: https://github.com/PreMiD/Presences 
-> 
+> Alle presences worden hier opgeslagen: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 Versie `2.x` introduceert de [presencebibliotheek](https://premid.app/store). Gebruikers kunnen nu handmatig hun favoriete presences toevoegen en verwijderen via de gebruikersinterface op de [website](https://premid.app/).
 
-> Voordat je aan de slag gaat, is het zeer aan te raden om onze presence richtlijnen te bekijken. 
-> 
+> Voordat je aan de slag gaat, is het zeer aan te raden om onze presence richtlijnen te bekijken.
+>
 > {.is-warning}
 
 - [Richtlijnen](https://docs.premid.app/dev/presence/guidelines)
@@ -200,7 +200,7 @@ Kopieer de bovenstaande code en plaats deze in het `metadata.json` bestand. Je m
       regExp ook bekend als Regex, kan worden gebruikt als een website meerdere subdomeinen heeft.<br>
       Je kunt de volgende regExp daarvoor gebruiken:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD staat voor Top Level Domain bijvoorbeeld: .com .net (maar zonder de dot)<br> 
+      TLD staat voor Top Level Domain bijvoorbeeld: .com .net (maar zonder de dot)<br>
       <code>([a-z0-9]+)</code> betekent alles van a tot z en van 0 tot 9.<br>
       Je kunt een handleiding video kijken <a href="https://youtu.be/sXQxhojSdZM">hier</a><br>
       Je kunt je regExp testen bij <a href="https://regex101.com/">Regex101</a>.</td>
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

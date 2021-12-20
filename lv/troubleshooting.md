@@ -2,14 +2,14 @@
 title: Problēmu novēršana
 description: Viss, lai atrisinātu jūsu problēmu
 published: true
-date: 2021-09-18T14:08:01.002Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Pārliecinieties, vai esat uzstādījis paplašinājumu **un** aplikāciju! 
-> 
+> Pārliecinieties, vai esat uzstādījis paplašinājumu **un** aplikāciju!
+>
 > {.is-warning}
 
 Iekļauts šajā lapā:
@@ -20,8 +20,8 @@ Iekļauts šajā lapā:
 <a name="general"></a>
 
 # Vispārīgu problēmu novēršana
-> Jūs varat izmantot [šo](https://qkeleq10.github.io/PreMiD-Troubleshooting/) rīku, lai vieglāk identificētu jūsu problēmu. 
-> 
+> Jūs varat izmantot [šo](https://qkeleq10.github.io/PreMiD-Troubleshooting/) rīku, lai vieglāk identificētu jūsu problēmu.
+>
 > {.is-info}
 ### Pārlādējiet lapu
 Jūs varat nospiest <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) vai <kbd>CMD+R</kbd> (MacOS) uz tastatūras, nevis meklēt atsvaidzināšanas pogu.
@@ -70,8 +70,8 @@ Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. 
 ### McAfee atklāja PreMiD kā vīrusu (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> Ja nejūtaties pārliecināts veicot šīs darbības, droši izveidojiet biļeti [#support](https://discord.premid.app/) un viens no mūsu Atbalsta Aģentiem varēs tev palīdzēt! 
-> 
+> Ja nejūtaties pārliecināts veicot šīs darbības, droši izveidojiet biļeti [#support](https://discord.premid.app/) un viens no mūsu Atbalsta Aģentiem varēs tev palīdzēt!
+>
 > {.is-warning}
 
 1. Atveriet lietotni McAfee un augšējā labajā stūrī noklikšķiniet uz iestatījumu ikonas. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />

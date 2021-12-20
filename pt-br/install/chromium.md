@@ -2,7 +2,7 @@
 title: Chromium
 description: Getting started with a PreMiD installation on Chromium-based browsers
 published: true
-date: 2021-09-18T14:14:39.122Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:35.049Z
@@ -20,8 +20,8 @@ A instalação da extensão é muito importante, pois o aplicativo não pode faz
 1. Adicione a extensão **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Entre na nossa página da **[Chrome Web Store](https://chrome.google.com/webstore/detail/premid/agjnjboanicjcpenljmaaigopkgdnihi)** e adicione nossa extensão.
 
-> Não esqueça de [instalar o **aplicativo**](/install). 
-> 
+> Não esqueça de [instalar o **aplicativo**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

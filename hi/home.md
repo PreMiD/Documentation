@@ -2,13 +2,13 @@
 title: Home
 description: Official Documentation for v2
 published: true
-date: 2020-08-29T21:41:40.722Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
-> 
+> The documentation is still being edited! Some pages may be incomplete or missing.
+>
 > {.is-warning}
 
 # About PreMiD

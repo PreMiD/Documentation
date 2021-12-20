@@ -2,14 +2,14 @@
 title: Domov
 description: Oficiálna dokumentácia pre v2
 published: true
-date: 2021-02-24T23:22:41.678Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Niektoré stránky môžu byť neúplné alebo chýbajú. 
-> 
+> The documentation is still being edited! Niektoré stránky môžu byť neúplné alebo chýbajú.
+>
 > {.is-warning}
 
 # O PreMiDe
@@ -30,9 +30,9 @@ PreMiD je rýchly a ľahko sa inštaluje. Mali by ste byť v prevádzke hneď.
 
 - :computer:
 
-: Získajte prístup k zdrojom a vykonávajte akcie pomocou rozhrania API PreMiDu.</li> 
-  
-  - :wrench:[Vývoj Prítomnosti](/dev/presence): Naučte sa používať náš prezenčný systém.</ul> 
+: Získajte prístup k zdrojom a vykonávajte akcie pomocou rozhrania API PreMiDu.</li>
+
+  - :wrench:[Vývoj Prítomnosti](/dev/presence): Naučte sa používať náš prezenčný systém.</ul>
 
 
 

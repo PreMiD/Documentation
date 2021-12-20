@@ -2,7 +2,7 @@
 title: Linux
 description: Comenzando con la instalación de PreMiD en Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 La instalación de la aplicación es muy importante, ya que la extensión no puede hacer nada por sí misma.
 
-> Los usuarios de Aur que usan el paquete de DoomLerd deberían estar seguros, como el lo dijo. No recomendamos que lo utilices, pero si lo deseas, puedes usarlo. Gracias a DoomLerd por seguir manejando el repositorio de Aur. 
-> 
+> Los usuarios de Aur que usan el paquete de DoomLerd deberían estar seguros, como el lo dijo. No recomendamos que lo utilices, pero si lo deseas, puedes usarlo. Gracias a DoomLerd por seguir manejando el repositorio de Aur.
+>
 > {.is-warning}
 
 ## Lista de contenidos

@@ -2,14 +2,14 @@
 title: Trang chủ
 description: Tài liệu chính thức cho v2
 published: true
-date: 2021-02-24T23:22:41.678Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Tài liệu này vẫn đang được chỉnh sửa! Một vài trang có thể chưa hoàn tất hoặc thiếu. 
-> 
+> Tài liệu này vẫn đang được chỉnh sửa! Một vài trang có thể chưa hoàn tất hoặc thiếu.
+>
 > {.is-warning}
 
 # Về PreMiD

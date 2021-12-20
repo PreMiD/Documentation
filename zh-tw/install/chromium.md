@@ -2,7 +2,7 @@
 title: Chromium
 description: 開始在Chromium基礎的瀏覽器安裝PreMiD
 published: true
-date: 2021-09-18T14:14:39.122Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:35.049Z
@@ -20,8 +20,8 @@ dateCreated: 2021-09-07T01:25:35.049Z
 1. 在Opera安裝**[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**延伸套件
 2. 新增[我們的延伸套件](https://premid.app/downloads)
 
-> Do not forget to [add the **application**](/install). 
-> 
+> Do not forget to [add the **application**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

@@ -2,7 +2,7 @@
 title: Linux
 description: Mulakan pemasangan PreMiD di Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Pemasangan aplikasi amat penting kerana sambungan tidak mampu membuat apa-apa dengan sendirinya.
 
-> Pengguna Aur yang menggunakan pakej DoomLerd sepatutnya selamat, katanya lah. Kami tidak menggalakkan anda untuk menggunakannya, tetapi anda boleh guna jika ingin guna. Terima kasih DoomLerd kerana masih menguruskan repo aur. 
-> 
+> Pengguna Aur yang menggunakan pakej DoomLerd sepatutnya selamat, katanya lah. Kami tidak menggalakkan anda untuk menggunakannya, tetapi anda boleh guna jika ingin guna. Terima kasih DoomLerd kerana masih menguruskan repo aur.
+>
 > {.is-warning}
 
 ## Jadual Kandungan

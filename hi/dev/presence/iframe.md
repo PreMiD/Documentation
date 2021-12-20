@@ -2,13 +2,13 @@
 title: iFrame Class
 description:
 published: true
-date: 2020-05-03T20:17:51.982Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 ---
 
 # iFrame Class
-> The iframe system with PreMiD is problematic and can have unexpected behavior, use with caution. 
-> 
+> The iframe system with PreMiD is problematic and can have unexpected behavior, use with caution.
+>
 > {.is-danger}
 
 ## Introduction

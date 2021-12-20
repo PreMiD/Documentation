@@ -2,7 +2,7 @@
 title: Wymaganie
 description: Wymagania do instalacji PreMiD
 published: true
-date: 2021-01-17T22:43:28.543Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:21.843Z
 
 # Wymagania systemowe
 
-> Dane te odnoszą się wyłącznie do aplikacji. 
-> 
+> Dane te odnoszą się wyłącznie do aplikacji.
+>
 > {.is-info}
 
 PreMiD działa praktycznie na każdym systemie. Oznacza to, że działa on na **Linux**, **macOS**, **Windows** oraz na niektórych **Modyfikacjach Linuxa**.

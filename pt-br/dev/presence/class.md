@@ -2,7 +2,7 @@
 title: Classe Presence
 description: A classe principal para cada presence do PreMiD
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ Limpa sua atividade e o título atual.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> Este método funciona apenas no Mac OS. 
-> 
+> Este método funciona apenas no Mac OS.
+>
 > {.is-warning}
 
 Define o título da bandeja no Menubar.

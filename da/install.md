@@ -2,18 +2,18 @@
 title: Installation
 description: How to install PreMiD
 published: true
-date: 2020-11-10T17:54:28.896Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Før du går videre, skal du sørge for at dit system opfylder alle [kravene](/install/requirements) 
-> 
+> Før du går videre, skal du sørge for at dit system opfylder alle [kravene](/install/requirements)
+>
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**! 
-> 
+> **It is necessary** to install **both** the **application** and the **extension**!
+>
 > {.is-warning}
 
 **Choose your operating system:**

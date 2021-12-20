@@ -2,20 +2,20 @@
 title: Développement de la presence
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Toutes les presences sont maintenant stockées ici : https://github.com/PreMiD/Presences 
-> 
+> Toutes les presences sont maintenant stockées ici : https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 La version `2.x` introduit le [magasin de presence](https://premid.app/store). Les utilisateurs ont maintenant la possibilité d'ajouter et de supprimer manuellement leurs presences favorites via l'interface utilisateur du [site web](https://premid.app/).
 
-> Avant de commencer, il est fortement recommandé de consulter nos directives par rapport aux Presences. 
-> 
+> Avant de commencer, il est fortement recommandé de consulter nos directives par rapport aux Presences.
+>
 > {.is-warning}
 
 - [Instructions](https://docs.premid.app/dev/presence/guidelines)
@@ -184,7 +184,7 @@ Veuillez copier le code ci-dessus et le mettre dans votre fichier `metadata.json
     <tr>
       <td style="text-align:left"><b>url</b></td>
       <td style="text-align:left">URL du service.<br><b>Exemple :</b><code>vk.com</code><br>
-        <b>Cette URL doit correspondre à l'URL du site car elle détectera si oui ou non c'est le site Web auquel il faut injecter le script.</b><br> 
+        <b>Cette URL doit correspondre à l'URL du site car elle détectera si oui ou non c'est le site Web auquel il faut injecter le script.</b><br>
 <b>Ne pas</b> ajouter <code>https://</code> ou <code>http://</code> à l'intérieur de l'URL ni un slash à la fin :
 <code>https://premid.app/</code> -> <code>premid.app</code><br>
 <b>Note</b>: Certaines URLs peuvent avoir <code>www.</code> ou quelque chose d'autre devant leur domaine. N'oubliez <b>PAS</b> de l'ajouter !<br>
@@ -323,7 +323,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

@@ -2,7 +2,7 @@
 title: Lớp Presence
 description: Lớp chính cho mọi presence của PreMiD
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -58,8 +58,8 @@ Tham số thứ hai quyết định xem presence có đang hoạt động hay kh
 
 ### `setTrayTitle(String)` - *Không được sử dụng từ 2.2.3*
 
-> Phương thức này chỉ hoạt động trên Mac OS. 
-> 
+> Phương thức này chỉ hoạt động trên Mac OS.
+>
 > {.is-warning}
 
 Đặt tiêu đề thanh trên Menubar.

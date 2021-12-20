@@ -2,7 +2,7 @@
 title: Linux
 description: Tải PreMiD trên Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể hoạt động một mình.
 
-> Người dùng Aur sử dụng gói của DoomLerd sẽ được an toàn như anh ấy nói. Chúng tôi không khuyến khích sử dụng nó, nhưng nếu bạn muốn, bạn vẫn có thể sử dụng nó. Cảm ơn DoomLerd vì vẫn đang quản lý kho lưu trữ aur. 
-> 
+> Người dùng Aur sử dụng gói của DoomLerd sẽ được an toàn như anh ấy nói. Chúng tôi không khuyến khích sử dụng nó, nhưng nếu bạn muốn, bạn vẫn có thể sử dụng nó. Cảm ơn DoomLerd vì vẫn đang quản lý kho lưu trữ aur.
+>
 > {.is-warning}
 
 ## Mục lục

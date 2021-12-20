@@ -2,14 +2,14 @@
 title: Ag tosú
 description: Tá comhairle bheag ann dóibh siúd a chuaigh i mbun códaithe le déanaí
 published: true
-date: 2021-09-19T12:54:30.445Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Tá gá le heagarthóir cód foinse. Molaimid [Visual Studio Code](https://code.visualstudio.com/). 
-> 
+> Tá gá le heagarthóir cód foinse. Molaimid [Visual Studio Code](https://code.visualstudio.com/).
+>
 > {.is-info}
 
 # Na riachtanais a shuiteáil
@@ -23,15 +23,15 @@ dateCreated: 2021-09-07T01:17:22.577Z
 3. Oscail é i d’eagarthóir cód.
 
 # Spleáchais a shuiteáil
-> Bí cinnte go bhfuil tú suiteáilte [npm](https://www.npmjs.com/) (Node Package Manager) an chéad. Shuiteáil sé é féin go huathoibríoch má tá [Node](https://nodejs.org/en/) suiteáilte. 
-> 
+> Bí cinnte go bhfuil tú suiteáilte [npm](https://www.npmjs.com/) (Node Package Manager) an chéad. Shuiteáil sé é féin go huathoibríoch má tá [Node](https://nodejs.org/en/) suiteáilte.
+>
 > {.is-warning}
 
 - Oscail críochfort i do stór agus clóscríobh `npm i`.
 - Chun an cineál spleáchais a nuashonrú `npm update`.
 
-> Bí ar an eolas go bhféadfadh nuashonrú na spleáchais briseadh go leor, nó nach bhfuil - tá gá le tástáil! 
-> 
+> Bí ar an eolas go bhféadfadh nuashonrú na spleáchais briseadh go leor, nó nach bhfuil - tá gá le tástáil!
+>
 > {.is-danger}
 
 # Códú do fhís

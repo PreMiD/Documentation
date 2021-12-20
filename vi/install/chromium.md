@@ -2,7 +2,7 @@
 title: Chromium
 description: Bắt đầu với việc cài đặt PreMiD trên trình duyệt dựa trên Chromium
 published: true
-date: 2021-09-18T14:14:39.122Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:35.049Z
@@ -20,8 +20,8 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 1. Thêm **[Tải tiện ích mở rộng Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
 2. Thêm [tiện ích của chúng tôi](https://premid.app/downloads).
 
-> Đừng quên [tải **ứng dụng**](/install). 
-> 
+> Đừng quên [tải **ứng dụng**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/chrome.png) {.align-abstopright}

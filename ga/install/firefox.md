@@ -2,7 +2,7 @@
 title: Firefox
 description: Ag tosú le suiteáil PreMiD ar Firefox
 published: true
-date: 2021-09-18T14:14:41.886Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
@@ -19,8 +19,8 @@ Tá suiteáil an síneadh an-tábhachtach mar ní féidir leis an bhfeidhmchlár
 6. Roghnaigh an comhad a d'íoslódáil tú le déanaí.
 7. Glac leis an tsuiteáil trí chliceáil ar **Add**.
 
-> Ná déan dearmad a [cuir an **iarratas**](/suiteáil). 
-> 
+> Ná déan dearmad a [cuir an **iarratas**](/suiteáil).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

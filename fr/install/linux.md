@@ -2,7 +2,7 @@
 title: Linux
 description: Installation de l'application PreMiD sur Linux
 published: true
-date: 2020-11-10T18:06:56.520Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
@@ -10,8 +10,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 L'installation de l'application est très importante car l'extension ne peut rien faire par elle-même.
 
-> Les utilisateurs de L'AUR qui se servent du paquet de DoomLert devraient être en sécurité. Nous ne recommandons pas de l'utiliser, mais si vous le souhaitez, vous pouvez toujours l'utiliser. Merci à DoomLerd de toujours s'occuper du dépôt AUR. 
-> 
+> Les utilisateurs de L'AUR qui se servent du paquet de DoomLert devraient être en sécurité. Nous ne recommandons pas de l'utiliser, mais si vous le souhaitez, vous pouvez toujours l'utiliser. Merci à DoomLerd de toujours s'occuper du dépôt AUR.
+>
 > {.is-warning}
 
 ## Table des Matières

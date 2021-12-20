@@ -2,20 +2,20 @@
 title: Rozwój statusów
 description:
 published: true
-date: 2021-07-08T19:12:34.449Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Wszystkie statusy są trzymane tutaj: https://github.com/PreMiD/Presences 
-> 
+> Wszystkie statusy są trzymane tutaj: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 Wersja `2.x` wprowadza [sklep z statusami](https://premid.app/store). Użytkownicy mają teraz możliwość ręcznego dodawania lub usuwania ich ulubionych statusów za pośrednictwem interfejsu użytkownika z [strony](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
-> 
+> Before getting started, it is highly recommended that you look at our presence guidelines.
+>
 > {.is-warning}
 
 - [Wytyczne](https://docs.premid.app/dev/presence/guidelines)
@@ -322,7 +322,7 @@ presence.on("UpdateData", async () => {
   //Update the presence with all the values from the presenceData object
   if (presenceData.details) presence.setActivity(presenceData);
   //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity(); 
+  else presence.setActivity();
 });
 ```
 

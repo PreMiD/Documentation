@@ -2,7 +2,7 @@
 title: Presence Class
 description: The main class for every PreMiD presence
 published: true
-date: 2021-01-04T18:22:24.312Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:04:42.004Z
@@ -58,8 +58,8 @@ Clears your current activity and the tray title.
 
 ### `setTrayTitle(String)`
 
-> This method works only on Mac OS. 
-> 
+> This method works only on Mac OS.
+>
 > {.is-warning}
 
 Sets the tray title on the Menubar.

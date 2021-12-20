@@ -2,14 +2,14 @@
 title: Ana Sayfa
 description: Sürüm 2 için resmi dokümantasyon
 published: true
-date: 2021-02-24T23:22:41.678Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> Dokümantasyon hâlâ güncellenmektedir! Bazı sayfalar tamamlanmamış veya geçersiz olabilir. 
-> 
+> Dokümantasyon hâlâ güncellenmektedir! Bazı sayfalar tamamlanmamış veya geçersiz olabilir.
+>
 > {.is-warning}
 
 # PreMiD Hakkında

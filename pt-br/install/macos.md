@@ -2,14 +2,14 @@
 title: macOS
 description: Primeiros passos para a instalação do PreMiD no macOS
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Antes de ir mais longe, certifique-se de que seu sistema atenda a todos os [requisitos](/install/requirements). 
-> 
+> Antes de ir mais longe, certifique-se de que seu sistema atenda a todos os [requisitos](/install/requirements).
+>
 > {.is-info}
 
 A instalação do aplicativo é muito importante, uma vez que a extensão não pode fazer nada por si só.
@@ -26,8 +26,8 @@ A instalação do aplicativo é muito importante, uma vez que a extensão não p
 
 O aplicativo irá iniciar automaticamente. Cheque pelo símbolo na sua barra de menu.
 
-> Não se esqueça de <a href=/install">adicionar a **extensão**</a>. 
-> 
+> Não se esqueça de <a href=/install">adicionar a **extensão**</a>.
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

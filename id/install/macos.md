@@ -2,14 +2,14 @@
 title: macOS
 description: Memulai dengan instalasi PreMiD pada macOS
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements). 
-> 
+> Sebelum melanjutkan, pastikan sistem kamu memenuhi semua [persyaratan](/install/requirements).
+>
 > {.is-info}
 
 Pemasangan aplikasi sangat penting karena ekstensi tidak dapat bekerja dengan sendirinya.
@@ -26,8 +26,8 @@ Pemasangan aplikasi sangat penting karena ekstensi tidak dapat bekerja dengan se
 
 Aplikasi akan mulai otomatis. Periksa simbolnya pada menu bar.
 
-> Jangan lupa [menambahkan **ekstensi**](/install). 
-> 
+> Jangan lupa [menambahkan **ekstensi**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

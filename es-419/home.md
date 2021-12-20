@@ -2,14 +2,14 @@
 title: Inicio
 description: Documentación oficial para la v2
 published: true
-date: 2021-02-24T23:22:41.678Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> ¡La documentación está siendo editada! Algunas páginas pueden estar incompletas o no disponibles. 
-> 
+> ¡La documentación está siendo editada! Algunas páginas pueden estar incompletas o no disponibles.
+>
 > {.is-warning}
 
 # Acerca de PreMiD

@@ -2,7 +2,7 @@
 title: About PreMiD
 description: The core features of PreMiD
 published: true
-date: 2020-09-01T22:07:41.029Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 ---

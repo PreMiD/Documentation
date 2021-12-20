@@ -2,7 +2,7 @@
 title: Presence Class
 description: The main class for every PreMiD presence
 published: true
-date: 2021-10-30T22:47:57.209Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -30,7 +30,7 @@ There are three properties available for `Presence` class.
 
 This property is required to make your presence work, because it uses your application id to display its logo and assets. תוכל לקבל אותו בדף היישומים שלך
 
-.</p> 
+.</p>
 
 
 
@@ -76,8 +76,8 @@ Clears your current activity and the tray title.
 
 
 
-> This method works only on Mac OS. 
-> 
+> This method works only on Mac OS.
+>
 > {.is-warning}
 
 מגדיר את כותרת המגש בסרגל התפריטים.

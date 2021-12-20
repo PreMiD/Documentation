@@ -2,18 +2,18 @@
 title: Installatie
 description: Hoe installeer je PreMiD
 published: true
-date: 2020-11-10T17:54:28.896Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Voordat je verder gaat, zorg ervoor dat je systeem voldoet aan alle [vereisten](/install/requirements). 
-> 
+> Voordat je verder gaat, zorg ervoor dat je systeem voldoet aan alle [vereisten](/install/requirements).
+>
 > {.is-info}
 
-> De **applicatie** en de **extensie** moeten **allebei** geïnstalleerd zijn! 
-> 
+> De **applicatie** en de **extensie** moeten **allebei** geïnstalleerd zijn!
+>
 > {.is-warning}
 
 **Kies je besturingssysteem:**

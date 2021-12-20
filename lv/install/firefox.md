@@ -2,7 +2,7 @@
 title: Firefox
 description: Getting started with a PreMiD installation on Firefox
 published: true
-date: 2021-09-18T14:14:41.886Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
@@ -19,8 +19,8 @@ Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma bez paplašināju
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Neaizmirstiet [pievienot **lietotni**](/install). 
-> 
+> Neaizmirstiet [pievienot **lietotni**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}

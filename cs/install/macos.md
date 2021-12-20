@@ -2,14 +2,14 @@
 title: macOS
 description: Getting started with a PreMiD installation on macOS
 published: true
-date: 2021-09-18T14:14:48.363Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Než budete pokračovat, ujistěte se, že váš systém splňuje všechny [požadavky](/install/requirements). 
-> 
+> Než budete pokračovat, ujistěte se, že váš systém splňuje všechny [požadavky](/install/requirements).
+>
 > {.is-info}
 
 Instalace aplikace je velmi důležitá, protože rozšíření nemůže samo o sobě nic dělat.
@@ -26,8 +26,8 @@ Instalace aplikace je velmi důležitá, protože rozšíření nemůže samo o 
 
 Aplikace se spustí automaticky. Check for the symbol in your menu bar.
 
-> Nezapomeňte [přidat **rozšíření**](/install). 
-> 
+> Nezapomeňte [přidat **rozšíření**](/install).
+>
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}

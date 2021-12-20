@@ -2,12 +2,12 @@
 title: Getting Started
 description: A little advise for those who got into coding recently
 published: true
-date: 2020-04-09T14:21:58.246Z
+date: 2021-12-20T14:27:18.034Z
 tags:
 ---
 
-> A source code editor is required. We recommend Visual Studio Code. 
-> 
+> A source code editor is required. We recommend Visual Studio Code.
+>
 > {.is-info}
 
 # Installing the requirements
@@ -21,15 +21,15 @@ tags:
 3. Open it in your code editor.
 
 # Installing dependencies
-> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
-> 
+> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed.
+>
 > {.is-warning}
 
 - Open a terminal in your repository and type `npm i`.
 - To update the dependencies type `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
-> 
+> Be aware that updating the dependencies could break a lot, or not - testing is required!
+>
 > {.is-danger}
 
 # Coding your vision
