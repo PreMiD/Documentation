@@ -58,8 +58,8 @@ Glanann do ghníomhaíocht reatha agus teideal an tráidire.
 
 ### `setTrayTitle(Teaghrán)` - * Dímheasta ó 2.2.3*
 
-> Ní oibríonn an modh seo ach ar Mac OS.
->
+> Ní oibríonn an modh seo ach ar Mac OS. 
+> 
 > {.is-warning}
 
 Socraigh teideal an tráidire ar an Menubar.
