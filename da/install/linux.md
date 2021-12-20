@@ -23,7 +23,7 @@ Installationen af applikationen er meget vigtig, da udvidelsen ikke kan gøre no
   - FAQs (soon)
   - Building (soon)
   - [Support](#support)
-  - [Kredit](#credits)
+  - [Medvirkende](#credits)
   - [License](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_RECOMMENDED_)
@@ -80,7 +80,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="credits"></a>
 
-### Kredit
+### Medvirkende
 
 Thanks to :
 
