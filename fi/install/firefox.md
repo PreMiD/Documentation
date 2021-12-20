@@ -19,8 +19,8 @@ Laajennuksen asentaminen on erittäin tärkeää, sillä sovellus ei voi tehdä 
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Älä unohda [lisätä **sovellusta**](/install).
->
+> Älä unohda [lisätä **sovellusta**](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
