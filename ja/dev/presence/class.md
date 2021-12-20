@@ -58,8 +58,8 @@ Clears your current activity and the tray title.
 
 ### `setTrayTitle(String)` - *Deprecated since 2.2.3*
 
-> このメソッドはmacOSのみで動作します。
->
+> このメソッドはmacOSのみで動作します。 
+> 
 > {.is-warning}
 
 メニューバー上のトレーのタイトルを設定します。
