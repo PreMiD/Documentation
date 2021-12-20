@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> সব Presences এখন রাখা আছে এখানে: https://github.com/PreMiD/Presences
->
+> সব Presences এখন রাখা আছে এখানে: https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 ভার্সন `2.x` পরিচয় করিয়ে দেয় [Presence স্টোরকে](https://premid.app/store)। ইউজাররা এখন ম্যানুয়ালি অ্যাড ও রিমুভ করতে পারে তাদের প্রিয় Presences [ওয়েবসাইটের](https://premid.app/) ইউজার ইন্টারফেস দ্বারা।
 
-> শুরু করার আগে, এটা পরামর্শিত যে তুমি আমাদের Presence এর বিধি দেখো।
->
+> শুরু করার আগে, এটা পরামর্শিত যে তুমি আমাদের Presence এর বিধি দেখো। 
+> 
 > {.is-warning}
 
 - [বিধি](https://docs.premid.app/dev/presence/guidelines)
