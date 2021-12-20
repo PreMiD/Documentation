@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Alle presences worden hier opgeslagen: https://github.com/PreMiD/Presences
->
+> Alle presences worden hier opgeslagen: https://github.com/PreMiD/Presences 
+> 
 > {.is-info}
 
 Versie `2.x` introduceert de [presencebibliotheek](https://premid.app/store). Gebruikers kunnen nu handmatig hun favoriete presences toevoegen en verwijderen via de gebruikersinterface op de [website](https://premid.app/).
 
-> Voordat je aan de slag gaat, is het zeer aan te raden om onze presence richtlijnen te bekijken.
->
+> Voordat je aan de slag gaat, is het zeer aan te raden om onze presence richtlijnen te bekijken. 
+> 
 > {.is-warning}
 
 - [Richtlijnen](https://docs.premid.app/dev/presence/guidelines)
@@ -200,7 +200,7 @@ Kopieer de bovenstaande code en plaats deze in het `metadata.json` bestand. Je m
       regExp ook bekend als Regex, kan worden gebruikt als een website meerdere subdomeinen heeft.<br>
       Je kunt de volgende regExp daarvoor gebruiken:<br>
       <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD staat voor Top Level Domain bijvoorbeeld: .com .net (maar zonder de dot)<br>
+      TLD staat voor Top Level Domain bijvoorbeeld: .com .net (maar zonder de dot)<br> 
       <code>([a-z0-9]+)</code> betekent alles van a tot z en van 0 tot 9.<br>
       Je kunt een handleiding video kijken <a href="https://youtu.be/sXQxhojSdZM">hier</a><br>
       Je kunt je regExp testen bij <a href="https://regex101.com/">Regex101</a>.</td>
