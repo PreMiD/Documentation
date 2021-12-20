@@ -14,7 +14,7 @@ Servisinizi mağazaya eklemek ve test edebilmek için `dist` klasörünün için
 
 Bu dosyanın bir örneği aşağıda bulunabilir.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -207,7 +207,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 ## Servis ayarları
 İnteraktif ayarlar oluşturarak kullanıcıların servisinizi düzenlemesini sağlayın!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -281,7 +281,7 @@ stringName tek kelime olacak şekilde mesajı anlatan bir anahtardır.
 
 Dosyanın örnek bir görüntüsü:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Çevrilmesi gereken yazı.",

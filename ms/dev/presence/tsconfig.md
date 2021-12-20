@@ -20,7 +20,7 @@ Kami cuma ingin terangkan beberapa tetapan yang anda patut tahu.
 
 Dalam fail tatarajah akar anda akan nampak sesuatu seperti ini.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ Dalam fail tatarajah akar anda akan nampak sesuatu seperti ini.
 
 ## Tatarajah Presence
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

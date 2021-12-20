@@ -14,7 +14,7 @@ If you want to publish a presence to the store and load it via the extension, yo
 
 An example of that file can be found below.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -104,7 +104,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Służą do wyszukiwania presence używając alternatywnej nazwy.<br> 
+      <td style="text-align:left">Służą do wyszukiwania presence używając alternatywnej nazwy.<br>
       Ma być używany dla presence, które mają różne nazwy w różnych językach (np. Pokémon i 포켓몬스터).<br>
       Możesz tego użyć również dla presence posiadających znaki specjalne, więc nie musisz ich nawet wpisywać (np.: Pokémon i Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
@@ -212,7 +212,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 ## Presence settings
 Setup interactive settings so users can customize the presence!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -286,7 +286,7 @@ The `Object` has 2 properties; `message` and `description`. `message` is the tex
 
 Visualization of the file:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Text that needs to be translated.",

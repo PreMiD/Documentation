@@ -49,7 +49,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 Please put the following code inside of the `tsconfig.json` file.
 
-```typescript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

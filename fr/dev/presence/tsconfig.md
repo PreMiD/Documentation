@@ -20,7 +20,7 @@ Nous voulons juste décrire certains paramètres que vous devriez savoir.
 
 Dans le fichier de configuration racine, vous verrez quelque chose comme ça.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ Dans le fichier de configuration racine, vous verrez quelque chose comme ça.
 
 ## Configuration de Présence
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

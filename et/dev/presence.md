@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Kõik presence-id on nüüd salvestatud siin: https://github.com/PreMiD/Presences 
-> 
+> Kõik presence-id on nüüd salvestatud siin: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 Versioon `2.x` tutvustab [presence-i poodi](https://premid.app/store). Kasutajatel on nüüd võimalus oma lemmik presence käsitsi lisada ja eemaldada [veebsaidi](https://premid.app/) kasutajaliite kaudu.
 
-> Enne alustamist on tungivalt soovitatav tutvuda meie presence-i juhenditega. 
-> 
+> Enne alustamist on tungivalt soovitatav tutvuda meie presence-i juhenditega.
+>
 > {.is-warning}
 
 - [Juhised](https://docs.premid.app/dev/presence/guidelines)
@@ -49,7 +49,7 @@ Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/).
 
 Palun sisestage järgmine kood faili `tsconfig.json` sisse.
 
-```ts
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

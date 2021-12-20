@@ -14,7 +14,7 @@ If you want to publish a presence to the store and load it via the extension, yo
 
 An example of that file can be found below.
 
-```typescript
+```json
 {
   "author": {
     "name": "USER",
@@ -211,7 +211,7 @@ PreMiD is a polygot service, meaning there are a multitude of languages involved
 
 ## Presence settings
 Setup interactive settings so users can customize the presence!
-```typescript
+```json
 "settings": [
   {
     "id": "ID",
@@ -283,7 +283,7 @@ The `Object` has 2 properties; `message` and `description`. `message` is the tex
 
 Visualization of the the file:
 
-```typescript
+```json
 {
   "<service>.<stringName>": {
     "message": "Text that needs to be translated.",

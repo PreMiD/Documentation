@@ -14,7 +14,7 @@ Se você quer publicar uma presence na loja e carregá-la através da extensão,
 
 An example of that file can be found below.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -209,7 +209,7 @@ PreMiD é um serviço poliglota, o que significa que há uma infinidade de idiom
 
 ## Presence settings
 Setup interactive settings so users can customize the presence!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -283,7 +283,7 @@ O `Object` tem duas propriedades; `message` e `description`. `message` é o text
 
 Visualização do arquivo:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Texto que precisa ser traduzido.",

@@ -20,7 +20,7 @@ Níl uainn ach cur síos a dhéanamh ar roinnt socruithe ar chóir duit a bheith
 
 Sa chomhad cumraíochta fréimhe feicfidh tú rud mar seo.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ Sa chomhad cumraíochta fréimhe feicfidh tú rud mar seo.
 
 ## Cumraíocht Láithreachta
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

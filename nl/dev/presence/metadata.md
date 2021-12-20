@@ -14,7 +14,7 @@ Als je een presence naar de bibliotheek wilt publiceren en deze wilt kunnen lade
 
 Een voorbeeld van dat bestand kan hieronder worden gevonden.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -212,7 +212,7 @@ PreMiD is een meertalige service, wat betekent dat er een groot aantal talen bes
 
 ## Presence instellingen
 Interactieve instellingen instellen zodat gebruikers de presence kunnen aanpassen!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -286,7 +286,7 @@ Het `object` heeft 2 eigenschappen: `message` en `description`. `message` is de 
 
 Visualisatie van het bestand:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Tekst die moet worden vertaald. ,

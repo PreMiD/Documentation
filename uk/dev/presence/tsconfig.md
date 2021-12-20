@@ -20,7 +20,7 @@ dateCreated: 2021-09-07T01:45:10.473Z
 
 У кореневому файлі конфігурації ви побачите щось на зразок цього.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ dateCreated: 2021-09-07T01:45:10.473Z
 
 ## Конфігурація Presence
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

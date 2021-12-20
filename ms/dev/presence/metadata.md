@@ -14,7 +14,7 @@ Jika anda ingin menerbitkan Presence ke kedai dan muatkannya melalui sambungan, 
 
 Contoh fail tersebut boleh dilihat di bawah.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -212,7 +212,7 @@ PreMiD ialah perkhidmatan pelbagai bahasa, maksudnya terdapat banyak bahasa dise
 
 ## Tetapan Presence
 Tetapkan tetapan saling tindak supaya pengguna boleh mengubah suai Presence tersebut!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -286,7 +286,7 @@ Objek `Object` mempunyai 2 sifat; mesej `message` dan keterangan `description`. 
 
 Penggambaran fail:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Tulisan yang perlu diterjemahkan.",

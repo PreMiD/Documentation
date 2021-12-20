@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Tüm servisler artık [https://github.com/PreMiD/Presences](https://github.com/PreMiD/Presences) adresinde saklanmaktadır. 
-> 
+> Tüm servisler artık [https://github.com/PreMiD/Presences](https://github.com/PreMiD/Presences) adresinde saklanmaktadır.
+>
 > {.is-info}
 
 `2.x` sürümleri, [servis mağazası](https://premid.app/store) özelliği ile birlikte gelir. Kullanıcılar bundan sonra kendi oluşturdukları servisleri [mağazaya](https://premid.app/store) ekletebilecek ve diğer kullanıcıların kullanımına sunabilecek.
 
-> Başlamadan önce servis kılavuzlarına uymanız şiddetle tavsiye edilir. 
-> 
+> Başlamadan önce servis kılavuzlarına uymanız şiddetle tavsiye edilir.
+>
 > {.is-warning}
 
 - [Kurallar](https://docs.premid.app/dev/presence/guidelines)
@@ -49,7 +49,7 @@ Tüm servisler [TypeScript](https://www.typescriptlang.org/) ile kodlanır. [Typ
 
 Aşağıda gördüğünüz kodu `tsconfig.json` dosyasının içine yapıştırın.
 
-```ts
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

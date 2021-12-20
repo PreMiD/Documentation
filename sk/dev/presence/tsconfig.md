@@ -20,7 +20,7 @@ Chceme vám len popísať niektoré nastavenia ktoré by ste mali vedieť.
 
 V koreni konfiguračného súboru uvidíte niečo takéto podobné.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ V koreni konfiguračného súboru uvidíte niečo takéto podobné.
 
 ## Konfigurácia Prítomnosti
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

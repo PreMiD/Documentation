@@ -14,7 +14,7 @@ Si vous souhaitez publier une présence dans la boutique et la charger via l'ext
 
 Un exemple de ce fichier se situe ci-dessous.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -212,7 +212,7 @@ PreMiD est un service polyglotte. Cela signifie qu'il y a un grand nombre de lan
 
 ## Paramètres de présence
 Configurer les paramètres interactifs pour que les utilisateurs puissent personnaliser la présence!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -285,7 +285,7 @@ L'`Objet` a deux propriétés ; `message` et `description`. `message` est le tex
 
 Visualisation du fichier :
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Texte qui doit être traduit. ,

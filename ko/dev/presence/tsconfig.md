@@ -20,7 +20,7 @@ We just want to describe some settings that you should know.
 
 루트 파일 구성에서, 이런 구조를 확인하실 수 있습니다.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ We just want to describe some settings that you should know.
 
 ## Presence Configuration
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

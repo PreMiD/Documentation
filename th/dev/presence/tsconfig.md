@@ -20,7 +20,7 @@ dateCreated: 2021-09-07T01:45:10.473Z
 
 In the root configuration file you will see something like this.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ In the root configuration file you will see something like this.
 
 ## การตั้งค่า Presence
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

@@ -20,7 +20,7 @@ dateCreated: 2021-09-07T01:45:10.473Z
 
 রুট কনফিগারেশন ফাইলে তুমি এরকম কিছু দেখতে পাবে।
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ dateCreated: 2021-09-07T01:45:10.473Z
 
 ## Presence কনফিগারেশন
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

@@ -14,7 +14,7 @@ Más mian leat láithreacht a fhoilsiú sa siopa agus é a luchtú tríd an sín
 
 Is féidir sampla den chomhad sin a fháil thíos.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -209,7 +209,7 @@ Is seirbhís polagánach é PreMiD, rud a chiallaíonn go bhfuil an iliomad tean
 
 ## Socruithe láithreachta
 Socruithe idirghníomhacha a shocrú ionas gur féidir le húsáideoirí an láithreacht a shaincheapadh!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -283,7 +283,7 @@ An `Objec`t Tá 2 mhaoin; `message` agus `description`. `message` an téacs nach
 
 Amharcléiriú an chomhaid:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Téacs nach mór a aistriú.",

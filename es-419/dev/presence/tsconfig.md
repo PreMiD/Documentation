@@ -20,7 +20,7 @@ Solo queremos describir algunos ajustes que deberías conocer.
 
 En el archivo de configuración raíz verás algo como esto.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ En el archivo de configuración raíz verás algo como esto.
 
 ## Configuración de presence
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

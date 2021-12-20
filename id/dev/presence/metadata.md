@@ -14,7 +14,7 @@ Jika kamu ingin menerbitkan presence ke toko dan memuatnya lewat ekstensi, kamu 
 
 Contoh file tersebut dapat ditemukan di bawah.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -211,7 +211,7 @@ PreMiD merupakan layanan poliglot, artinya terdapat banyak bahasa yang terlibat 
 
 ## Pengaturan presence
 Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -238,7 +238,7 @@ Buat pengaturan interaktif agar pengguna dapat mengatur presencenya!
     "title": "TUNJUKKAN JUDUL",
     "icon": "IKON FONTAWESOME",
     "value": 0, //Nilai default selector
-    "values": ["1", "2", "etc."] //Akan membuat pengaturan menjadi selector saat kamu memilih yang mana yang kamu inginkan 
+    "values": ["1", "2", "etc."] //Akan membuat pengaturan menjadi selector saat kamu memilih yang mana yang kamu inginkan
   }
 ]
 ```
@@ -285,7 +285,7 @@ stringName adalah pengidentifikasi 1 kata dari pesan.
 
 Visualisasi dari file:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Teks yang perlu diterjemahkan.",

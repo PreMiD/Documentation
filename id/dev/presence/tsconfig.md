@@ -20,7 +20,7 @@ Kami hanya ingin menjelaskan beberapa pengaturan yang harus kamu ketahui.
 
 Pada file konfigurasi root kamu akan melihat hal seperti ini.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ Pada file konfigurasi root kamu akan melihat hal seperti ini.
 
 ## Konfigurasi Presence
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

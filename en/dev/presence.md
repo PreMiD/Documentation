@@ -48,7 +48,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/).
 
 Please put the following code inside of the `tsconfig.json` file.
 
-```ts
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

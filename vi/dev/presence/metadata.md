@@ -14,7 +14,7 @@ Nếu bạn muốn công bố một presence qua cửa hàng và tải nó qua p
 
 Một ví dụ cho tệp đó có thể tìm thấy dưới đây.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -212,7 +212,7 @@ PreMiD là một dịch vụ đa ngôn ngữ, nghĩa là có nhiều ngôn ngữ
 
 ## Cài đặt của presence
 Cài đặt các lựa chọn mang tính tương tác để người dùng có thể tuỳ chỉnh presence!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -286,7 +286,7 @@ stringName là phương thức nhận dạng 1 từ của tin nhắn.
 
 Trực quan về tệp:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Nội dung cần được dịch.",

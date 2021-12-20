@@ -14,7 +14,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 An example of that file can be found below.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -213,7 +213,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 ## การตั้งค่า Presence
 สร้างการตั้งค่าแบบโต้ตอบเพื่อให้ผู้ใช้สามารถปรับแต่ง Presence ได้!
-```ts
+```json
 "settings": [
   {
     "id": "ID",
@@ -287,7 +287,7 @@ The `Object` has 2 properties; `message` and `description`. `message` is the tex
 
 Visualization of the file:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Text that needs to be translated.",

@@ -20,7 +20,7 @@ Chúng tôi muốn mô tả một số cài đặt bạn nên biết.
 
 Ở tệp cấu hình gốc bạn sẽ thấy một thứ như này.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ Chúng tôi muốn mô tả một số cài đặt bạn nên biết.
 
 ## Cấu hình presence
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

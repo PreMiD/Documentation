@@ -20,7 +20,7 @@ Yine de, emin olmak için burada belirtilen anahtarları ve özellikleri açıkl
 
 Kök yapılandırma (`tsconfig.json`) dosyasında böyle bir şeyle karşılaşacaksınız.
 
-```javascript
+```json
 {
   "compilerOptions": {
     "module": "CommonJS",
@@ -53,7 +53,7 @@ Kök yapılandırma (`tsconfig.json`) dosyasında böyle bir şeyle karşılaşa
 
 ## Servis Yapılandırması
 
-```javascript
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

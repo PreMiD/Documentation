@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
-> 
+> All presences are now stored here: https://github.com/PreMiD/Presences
+>
 > {.is-info}
 
 Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
-> 
+> Before getting started, it is highly recommended that you look at our presence guidelines.
+>
 > {.is-warning}
 
 - [Pokyny](https://docs.premid.app/dev/presence/guidelines)
@@ -49,7 +49,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 Please put the following code inside of the `tsconfig.json` file.
 
-```ts
+```json
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {

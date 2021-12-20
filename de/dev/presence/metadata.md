@@ -14,7 +14,7 @@ Wenn du eine Presence im Shop veröffentlichen und über die Erweiterung laden m
 
 Ein Beispiel für diese Datei, kannst du unten finden.
 
-```ts
+```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
@@ -208,14 +208,14 @@ PreMiD ist ein mehrsprachiger Service, was bedeutet, dass es eine Reihe von Spra
 
 ## Presence-Einstellungen
 Richte interaktive Einstellungen ein, sodass die Presence benutzerdefiniert eingestellt werden kann.
-```ts
+```json
 "settings": [
   {
     "id": "ID",
     "multiLanguage": true //Siehe https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
-    "id": "ID" 
+    "id": "ID"
     "title": "DISPLAY TITLE",
     "icon": "FONTAWESOME ICON", //Beispiel: "fas fa-info"
     "value": true //Boolean Wert wird daraus eine On/Off Switch machen, mit dem Wert als Voreinstellung
@@ -282,7 +282,7 @@ Das `Object` hat 2 Eigenschaften; `message` und `description`. `message` ist der
 
 Visualisierung der Datei:
 
-```ts
+```json
 {
   "<service>.<stringName>": {
     "message": "Text, der übersetzt werden muss.",
