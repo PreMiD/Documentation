@@ -8,8 +8,8 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Pastikan kamu sudah memasang ekstensi **dan** aplikasinya!
->
+> Pastikan kamu sudah memasang ekstensi **dan** aplikasinya! 
+> 
 > {.is-warning}
 
 Halaman ini meliputi:
@@ -20,8 +20,8 @@ Halaman ini meliputi:
 <a name="general"></a>
 
 # Troubleshooting Umum
-> Kamu bisa menggunakan alat [ini](https://qkeleq10.github.io/PreMiD-Troubleshooting/) agar lebih mudah mengidentifikasi permasalahanmu.
->
+> Kamu bisa menggunakan alat [ini](https://qkeleq10.github.io/PreMiD-Troubleshooting/) agar lebih mudah mengidentifikasi permasalahanmu. 
+> 
 > {.is-info}
 ### Muat ulang halaman
 Kamu juga bisa menekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) pada keyboard selain menekan tombol refresh.
@@ -70,8 +70,8 @@ Windows: Ketik `%appdata%` di file explorer dan hapus folder `PreMiD`. MacOS: `~
 ### McAfee mendeteksi PreMiD sebagai virus (Windows)
 Ini adalah pendeteksian palsu dari McAfee dan kami telah melaporkan masalah ini kepada mereka, untuk saat ini kamu dapat menghapus PreMiD dari pengecekan dengan melakukan langkah-langkah berikut:
 
-> Jika kamu tidak merasa percaya diri mengikuti langkah-langkah ini, silakan buat tiket di [#support](https://discord.premid.app/) dan salah satu Agen Bantuan akan membantumu!
->
+> Jika kamu tidak merasa percaya diri mengikuti langkah-langkah ini, silakan buat tiket di [#support](https://discord.premid.app/) dan salah satu Agen Bantuan akan membantumu! 
+> 
 > {.is-warning}
 
 1. Buka aplikasi McAfee dan klik pada ikon pengaturan pada kanan atas. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
