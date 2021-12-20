@@ -19,8 +19,8 @@ dateCreated: 2021-09-07T01:25:38.328Z
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> فراموش نکنید [**برنامه** را هم نصب کنید](/install).
->
+> فراموش نکنید [**برنامه** را هم نصب کنید](/install). 
+> 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/firefox.png) {.align-abstopright}
