@@ -1,6 +1,6 @@
 ---
 title: macOS
-description: শুরু করা যাক PreMiD ইন্সটলেশন ম্যাক ওএস - এ
+description: শুরু করা যাক PreMiD ইন্সটলেশন ম্যাক ওএস এ
 published: true
 date: 2021-09-18T14:14:48.363Z
 tags:
@@ -42,4 +42,4 @@ dateCreated: 2021-09-07T01:25:45.465Z
 1. ওপেন করো "System Preferences".
 2. যাও "Security & Privacy" ট্যাবে।
 3. লক এ ক্লিক করো এবং তোমার পাসওয়ার্ড দাও অথবা তোমার ফিঙ্গারপ্রিন্ট স্ক্যান করো যাতে তুমি চেঞ্জ করতে পারো।
-4. সেটিং এ গিয়ে "Allow apps downloaded from" এর "App Store and identified developers" থেকে নাও শুধুমাত্র "App Store" - এ।
+4. সেটিং এ গিয়ে "Allow apps downloaded from" এর "App Store and identified developers" থেকে নাও শুধুমাত্র "App Store" এ।

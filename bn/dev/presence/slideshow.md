@@ -24,7 +24,7 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 ```ts
 const currentSlide = slideshow.currentSlide
-console.log(currentSlide.details) // কনসোল লগ করবে PresenceData - এর বিস্তারিত
+console.log(currentSlide.details) // কনসোল লগ করবে PresenceData এর বিস্তারিত
 ```
 
 ## মেথড

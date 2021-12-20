@@ -1,5 +1,5 @@
 ---
-title: Presence - এর বিধি
+title: Presence এর বিধি
 description: Rules that all presence developers must follow to have their presence added.
 published: true
 date: 2021-10-18T16:26:36.089Z
@@ -10,7 +10,7 @@ dateCreated: 2021-09-07T01:44:53.883Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Presence - এর বিধি</h3>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Presence এর বিধি</h3>
     <h4 style="margin-top: 0">Revision 3</h4>
     <br />
 </div>
