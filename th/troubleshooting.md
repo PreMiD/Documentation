@@ -20,7 +20,7 @@ dateCreated: 2021-09-07T01:17:32.312Z
 <a name="general"></a>
 
 # การแก้ปัญหาทั่วไป
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> คุณสามารถใช้[เครื่องมือนี้](https://qkeleq10.github.io/PreMiD-Troubleshooting/)เพื่อระบุปัญหาของคุณได้ง่ายขึ้น 
 > 
 > {.is-info}
 ### โหลดหน้านี้ใหม่
@@ -34,10 +34,10 @@ PreMiD จะ**ไม่**ทํางานสําหรับ Brower Discord
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### ต้องแน่ใจว่า Discord ไม่ได้เปิดแบบ Administrator
-สำคัญมากๆ Discord RPC will not work if you run Discord as an administrator.
+สำคัญมากๆ Discord RPC จะไม่ทำงานหากคุณเปิด Discord แบบ Administrator
 
 ### คุณได้ใช้การตั้งค่าของ Presence?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Presences หลายๆตัว (รวมถึง `Twitch` และ `SoundCloud`) ได้รับผลกระทบจากปัญหาการตั้งค่าของส่วนขยาย ปัญหานี้ทำให้ส่วนขยายไม่ได้รับค่าเริ่มต้นของการตั้งค่าอย่างถูกต้อง
 
 วิธีเเก้นั้นคือ เปิดปิดการตั้งค่าที่อยู่ด้านบนสุด:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
@@ -62,7 +62,7 @@ Many presences (including `Twitch` and `SoundCloud`) are affected by an extensio
 เราหวังว่าคุณจะรู้วิธีการรีสตาร์ทคอมพิวเตอร์นะ
 
 ### ติดตั้ง PreMiD อีกครั้ง
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+บางครั้งมีบางอย่างผิดปกติกับไฟล์ Tutorials for the installation can be found [here](/install).
 
 ### ลบข้อมูลด้วยตัวเอง
 Windows: เขียน `%appdata%` ลงในแถบที่อยู่ของ File Explorer จากนั้นลบโฟลเดอร์ `PreMiD` ออกไป MacOS: ไปที่ `~/users/USER/~Library/Application Support/` จากนั้นลบโฟลเดอร์ `PreMiD` ออกไป
