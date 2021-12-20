@@ -58,8 +58,8 @@ Wist je huidige activiteit en de tray titel.
 
 ### `setTrayTitle(String)` - *verouderd sinds 2.2.3*
 
-> Deze methode werkt alleen op Mac OS.
->
+> Deze methode werkt alleen op Mac OS. 
+> 
 > {.is-warning}
 
 Stelt de systeemtitel in op de menubalk.
