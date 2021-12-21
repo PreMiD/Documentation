@@ -20,6 +20,6 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 
 Ứng dụng sẽ được chạy tự động. Kiểm tra biểu tượng trong khay hệ thống của bạn.
 
-> Đừng quên [thêm**phần mở rộng**](/install).{.is-warning}
+> Đừng quên [thêm **phần mở rộng**](/install).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
