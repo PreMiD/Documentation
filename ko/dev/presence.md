@@ -68,27 +68,27 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 {
   "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "사용자",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "사용자",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "서비스",
+  "altnames": ["서비스"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "서술"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "버전",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "범주",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "디스플레이 제목",
+      "icon": "FONTAWESOME 아이콘",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "디스플레이 제목",
+      "icon": "FONTAWESOME 아이콘",
       "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "placeholder": "%song% 또는 %artist% 사용"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "디스플레이 제목",
+      "icon": "FONTAWESOME 아이콘",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
