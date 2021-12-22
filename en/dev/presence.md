@@ -9,15 +9,15 @@ dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
 > All presences are now stored here: https://github.com/PreMiD/Presences
-{.is-info}
+> {.is-info}
 
 Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
 
 > Before getting started, it is highly recommended that you look at our presence guidelines.
-{.is-warning}
+> {.is-warning}
 
 - [Guidelines](https://docs.premid.app/dev/presence/guidelines)
-{.links-list}
+  {.links-list}
 
 # Structure
 
@@ -275,13 +275,13 @@ Please copy the code above and put it in your `metadata.json` file. You now need
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
-  clientId: "000000000000000000"
+    //The client ID of the Application created at https://discordapp.com/developers/applications
+    clientId: "000000000000000000",
   }),
   //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
-    pause: "presence.playback.paused"
+    pause: "presence.playback.paused",
   });
 
 /*
@@ -309,14 +309,14 @@ presence.on("UpdateData", async () => {
     smallImageKey: "key",
     //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
-     //The upper section of the presence text
+    //The upper section of the presence text
     details: "Browsing Page Name",
     //The lower section of the presence text
     state: "Reading section A",
     //The unix epoch timestamp for when to start counting from
     startTimestamp: 3133657200000,
     //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-    endTimestamp: 3133700400000
+    endTimestamp: 3133700400000,
     //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
   };
   //Update the presence with all the values from the presenceData object
@@ -354,7 +354,7 @@ iframe.on("UpdateData", async () => {
   iframe.send({
     //sending data
     video: video,
-    time: video.duration
+    time: video.duration,
   });
 });
 ```

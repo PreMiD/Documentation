@@ -252,7 +252,6 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
   - They can't display information you couldn't fit in other fields.
   - Redirecting directly to audio/video stream is prohibited.
 
-
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
 > Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
@@ -311,7 +310,7 @@ A few things you should know after opening a pull request:
 
 Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
 
-- `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. *Warning: DeepScan doesn't always give you errors. Please look at CodeFactor warnings instead.*
+- `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. _Warning: DeepScan doesn't always give you errors. Please look at CodeFactor warnings instead._
 - `CodeFactor` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
 - `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
 
