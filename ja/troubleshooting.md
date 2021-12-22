@@ -44,9 +44,9 @@ dateCreated: 2021-09-07T01:17:32.312Z
 > 
 > ### 追加設定がついているプレゼンスの場合
 > 
-> Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+> 多くのプレゼンス（`Twitch`や`SoundCloud`など。横に歯車のマークがついているもの）は、拡張機能の問題の影響を受ける場合があります。 問題が発生すると、拡張機能が設定の既定値を取得できない状態になります。
 > 
-> To solve this, all you have to do is toggle the topmost setting:
+> これを解消するためには、一番上の設定を切り替えてください。
 > 
 > <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 > 
