@@ -75,7 +75,7 @@ presence
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
     "name": "USER",
     "id": "ID"
