@@ -65,7 +65,7 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
     "name": "USER",
     "id": "ID"
