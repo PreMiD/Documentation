@@ -75,29 +75,29 @@ Mỗi presence đều có một tệp mô tả gọi là `metadata.json`, metada
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "NGƯỜI DÙNG",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "NGƯỜI DÙNG",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "DỊCH VỤ",
-  "altnames": ["DỊCH VỤ"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "MÔ TẢ"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "PHIÊN BẢN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["NHÃN1", "NHÃN2"],
-  "category": "DANH MỤC",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Mỗi presence đều có một tệp mô tả gọi là `metadata.json`, metada
     }
     {
       "id": "ID",
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ Mỗi presence đều có một tệp mô tả gọi là `metadata.json`, metada
       "if": {
         "ID": true
       },
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG",
-      "value": "\"%song%\" bởi %artist%",
-      "placeholder": "sử dụng %song% hoặc %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "v.v."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
