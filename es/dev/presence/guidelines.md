@@ -75,30 +75,29 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USUARIO",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USUARIO",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "SERVICIO",
-  "altnames": ["SERVICIO"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPCIÓN",
-   "es": "DESCRIPCIÓN (opcional)"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSIÓN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["ETIQUETA1", "ETIQUETA2"],
-  "category": "CATEGORÍA",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -110,8 +109,8 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
     }
     {
       "id": "ID",
-      "title": "TÍTULO A MOSTRAR",
-      "icon": "ICONO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -119,15 +118,15 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
       "if": {
         "ID": true
       },
-      "title": "TÍTULO A MOSTRAR",
-      "icon": "ICONO FONTAWESOME",
-      "value": "\"%song%\" por %artist%",
-      "placeholder": "usa %song% o %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TÍTULO A MOSTRAR",
-      "icon": "ICONO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
