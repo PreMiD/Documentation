@@ -66,31 +66,31 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "PENGGUNA",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "PERKHIDMATAN",
-  "altnames": ["PERKHIDMATAN"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "KETERANGAN"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSI",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "KATEGORI",
-  "regExp": "UNGKAPAN NALAR",
-  "iFrameRegExp": "UNGKAPAN NALAR",
+  "category": "CATEGORY",
+  "regExp": "REGEXP",
+  "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
@@ -100,8 +100,8 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
     },
     {
       "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,17 +109,17 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
       "if": {
         "ID": true
       },
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "dll."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
@@ -301,24 +301,24 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData sentiasa dijalankan, oleh itu ia patut digunakan sebagai kitaran segar semula anda, atau `tick`. Ini dipanggil beberapa kali sesaat apabila boleh.
 
-    Anda digalakkan untuk menetapkan fungsi lain di luar fungsi peristiwa ini yang akan mengubah nilai pemboleh ubah dan membuat kerja yang lebih berat jika anda memanggil data daripada sesuatu API.*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    //Kekunci (nama fail) bagi Imej Besar atau Large Image pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence dalam aplikasi anda, dipanggil Aset Seni atau Art Assets
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     largeImageKey: "key",
-    //Kekunci (nama fail) bagi gambar kecil "Small Image" pada Presence. Ini semua dimuat naik dan dinamakan di bahagian Rich Presence aplikasi anda yang dipanggil Aset Seni atau Art Assets
-    smallImageKey: "key",
-    //Tulisan yang akan dipaparkan apabila tetikus dilalukan atas imej kecil
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
+    //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
-     //Bahagian atas tulisan Presence
+     //The upper section of the presence text
     details: "Browsing Page Name",
-    //Bahagian bawah tulisan Presence
+    //The lower section of the presence text
     state: "Reading section A",
-    //Cap masa epok unix untuk bila masa akan mula dikira
+    //The unix epoch timestamp for when to start counting from
     startTimestamp: 3133657200000,
-    //Jika anda ingin tunjukkan Baki Masa dan bukan Masa Berlalu, ini cap masa epok unix di mana pemasa akan berhenti
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
     endTimestamp: 3133700400000
-    //Anda juga boleh memilih untuk menetapkan nilai largeImageKey di sini dan ubah yang lain menjadi subsifat pemboleh ubah, contohnya presenceData.type = "blahblah"; contoh jenis: details, state, dll.
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
   };
   //Kemas kini Presence dengan semua nilai daripada objek presenceData
   if (presenceData.details) presence.setActivity(presenceData);

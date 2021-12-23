@@ -66,29 +66,29 @@ Kami telah membuat pembuat file `metadata.json` untuk para pemalas [disini](http
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "PENGGUNA",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "LAYANAN",
-  "altnames": ["LAYANAN"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESKRIPSI"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSI",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "KATEGORI",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Kami telah membuat pembuat file `metadata.json` untuk para pemalas [disini](http
     },
     {
       "id": "ID",
-      "title": "TAMPILKAN JUDUL",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ Kami telah membuat pembuat file `metadata.json` untuk para pemalas [disini](http
       "if": {
         "ID": true
       },
-      "title": "TUNJUKKAN JUDUL",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TUNJUKKAN JUDUL",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -300,23 +300,24 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData selalu dijalankan, oleh karena itu lebih baik digunakan sebagai refresh cycle , atau 'tick`. Ini dipanggil beberapa kali dalam sedetik jika memungkinkan.
 
-    Disarankan untuk mengatur fungsi lain diluar fungsi event ini yang akan mengubah value variabel dan mengurus proses berat jika kamu memanggil data dari sebuah API.*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    largeImageKey:
-      "key" /*Key (nama file) dari Large Image di presence. Ini di upload dan diberi nama di Rich Presence dari aplikasi anda, yang disebut Art Assets*/,
-    smallImageKey:
-      "key" /*Key (nama file) dari Small Image di presence. Berikut ini adalah unggahan dan dinamai pada bagian Rich Presence dari aplikasimu, yang bernama Art Assets*/
-    smallImageText: "teks hover", //Text ini akan memperlihatkan ketika mengarahkan ke gambar kecil
-    details: "Menjelajahi page", //Bagian atas dari teks presence
-    state: "Reading section A", //Bagian bawah dari teks presence
-    startTimestamp: 1577232000, //Timestamp pada unix epoch untuk menghitung waktu
-    endTimestamp: 1577151472000 //Jika kamu mau menampilkan waktu tersisa dari pada penghitungan mundur, menggunakan timestamp dari unix epoch ketika waktu selesai
-  }; /*Opsional kamu dapat mengatur largeImageKey dan bisa merubahnya dalam bentuk subproperti, contohnya presenceData.type = "diisi apa aja"; tipe contoh sebagai: detail, state, dan lain-nya.*/
-
-  if (!presenceData.details) presence.setActivity();/*Mengupdate presence tanpa data akan membersihkan dan membuat gambar besar sesuai dengan icon aplikasi pada Discord Application dan pada nama Discord Application mu.*/
-  else presence.setActivity(presenceData); //Mengupdate presence dengan value yang tersedia dari objek presenceData
-});
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    largeImageKey: "key",
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
   };
   //Perbarui presence dengan semua value dari objek presenceData
   if (presenceData.details) presence.setActivity(presenceData);

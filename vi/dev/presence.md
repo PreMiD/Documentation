@@ -66,42 +66,42 @@ Chúng tôi đã dựng một trình tạo tệp `metadata.json` cho những ng�
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "NGƯỜI DÙNG",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "NGƯỜI DÙNG",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "DỊCH VỤ",
-  "altnames": ["DỊCH VỤ"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "MÔ TẢ"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "PHIÊN BẢN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["NHÃN1", "NHÃN2"],
-  "category": "DANH MỤC",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
     {
-      "id": "multiLanguage",
+      "id": "ID",
       "multiLanguage": true
-    }
+    },
     {
       "id": "ID",
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ Chúng tôi đã dựng một trình tạo tệp `metadata.json` cho những ng�
       "if": {
         "ID": true
       },
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG",
-      "value": "\"%song%\" bởi %artist%",
-      "placeholder": "sử dụng %song% hoặc %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -301,24 +301,24 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData luôn hoạt động, vậy nên được sử dụng làm chu kỳ làm mới của bạn, hay `tick`. Nó được gọi vài lần mỗi một giây khi có thể.
 
-    Bạn nên đặt một chức năng độc lập với sự kiện chức năng này đẻ nó thay đổi giá trị của biến và gánh vác công việc nặng nếu bạn thu thập dữ liệu từ một API.*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    //Từ khoá (tên tệp) của Ảnh lớn trên presence. Những thứ này được tải lên và đặt tên trong mục Rich Presence của ứng dụng của bạn, được gọi là Art Assets
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     largeImageKey: "key",
-    // Từ khoá (tên) của Ảnh nhỏ trên presence. Những thứ này được tải lên và đặt tên trong mục Rich Presence của ứng dụng của bạn, được gọi là Art Assets
-    smallImageKey: "key",
-    // Nội dung sẽ được biểu thị khi di chuột qua ảnh nhỏ.
-    smallImageText: "Một văn bản nổi lên gì gì đó",
-     //Phần trên của nội dung presence
-    details: "Tên Trang Web Đang Truy Cập",
-    //Phần dưới của nội dung presence
-    state: "Đang đọc phần A",
-    //Mốc thời gian unix epoch mà sẽ được chọn để bắt đầu đếm
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
     startTimestamp: 3133657200000,
-    //Nếu bạn muốn sử dụng Thời gian còn lại thay vì Thời gian đã qua, đây là mốc thời gian unix epoch sẽ kết thúc
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
     endTimestamp: 3133700400000
-    //Bạn có thể tuỳ ý đặt largeImageKey tại đây vài đổi tất cả các thứ còn lại thành biến tính chất phụ, như presenceData.type = "blabla", các type ví dụ: details, state, v.v.
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
   };
   //Cập nhật presence bằng tất cả các giá trị trong đối tượng presenceData
   if (presenceData.details) presence.setActivity(presenceData);

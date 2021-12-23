@@ -66,29 +66,29 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "ПОЛЬЗОВАТЕЛЬ",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "ПОЛЬЗОВАТЕЛЬ",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "СЕРВИС",
-  "altnames": ["СЕРВИС"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "ОПИСАНИЕ"
+    "en": "DESCRIPTION"
   },
-  "url": "ССЫЛКА",
-  "version": "ВЕРСИЯ",
-  "logo": "ССЫЛКА",
-  "thumbnail": "ССЫЛКА",
+  "url": "URL",
+  "version": "VERSION",
+  "logo": "URL",
+  "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["ТЕГ1", "ТЕГ2"],
-  "category": "КАТЕГОРИЯ",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ dateCreated: 2020-06-11T18:04:02.843Z
     },
     {
       "id": "ID",
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "ЗНАЧОК FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,17 +109,17 @@ dateCreated: 2020-06-11T18:04:02.843Z
       "if": {
         "ID": true
       },
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "ЗНАЧОК FONTAWESOME",
-      "value": "«%song%» — %artist%",
-      "placeholder": "используйте %song% или %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "ЗНАЧОК FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "и т. д."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
@@ -301,22 +301,24 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData всегда срабатывает, и поэтому должен использоваться в качестве цикла обновления или «тика». Это вызывается несколько раз в секунду, когда это возможно.
 
-    Рекомендуется настроить другую функцию вне этой функции событий, которая будет изменять значения переменных и выполнять тяжелую работу, если вы вызываете данные из API.*/
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    //Ключ (имя файла) Большого изображения о наличии. Они загружаются и называются в разделе Rich Presence приложения, называемом Art Assets.
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     largeImageKey: "key",
-    //Ключ (имя файла) Маленького изображения о наличии. Изображения загружены и названы в разделе приложения «Rich Presence», подраздел «Art Assets»*/,
-    smallImageText: "Некоторый всплывающий текст", //Текст, который будет показан при наведении на маленькое изображение
-    details: "Название просматриваемой страницы", //Заголовок презенса
-    state: "Прочитываемый раздел А", //Описание презенса
-    startTimestamp: 1577232000, //Временная метка в формате unix, начиная с которой будет отчитываться время в презенсе
-    endTimestamp: 1577151472000 //Если вы хотите указать сколько времени осталось, вместо того, чтобы указывать сколько времени прошло, то укажите здесь временную метку в формате unix в которое время будет конец отчёта.
-  }; /*Если хотите, вы можете не устанавливать значение для largeImageKey и изменять остальные параметры как подсвойства, например, presenceData.type = "бла-бла-бла"; примеры типов: details, state и т. п.*/
-
-  if (!presenceData.details) presence.setActivity(); /*Обновляет презенс без данных, то есть очищает его и устанавливает больше изображение как иконка приложения и всплывающий текст как название приложения*/
-  else presence.setActivity(presenceData); //Обновляет презенс используя значения из объекта presenceData
-});
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
+    startTimestamp: 3133657200000,
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    endTimestamp: 3133700400000
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
   };
   //Обновите сведения о присутствии всеми значениями из объекта presenceData, если (presenceData.details) presence.setActivity(presenceData);
   //Обновите присутствие без данных, очислив его и сделав большое изображение значком приложения Discord, а текст — именем приложения Discord.

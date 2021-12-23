@@ -66,29 +66,29 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "사용자",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "사용자",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "서비스",
-  "altnames": ["서비스"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "서술"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "버전",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "범주",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
     },
     {
       "id": "ID",
-      "title": "디스플레이 제목",
-      "icon": "FONTAWESOME 아이콘",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
       "if": {
         "ID": true
       },
-      "title": "디스플레이 제목",
-      "icon": "FONTAWESOME 아이콘",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
-      "placeholder": "%song% 또는 %artist% 사용"
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "디스플레이 제목",
-      "icon": "FONTAWESOME 아이콘",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -303,10 +303,10 @@ presence.on("UpdateData", async () => {
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
-    smallImageKey: "key",
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
     //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
      //The upper section of the presence text

@@ -66,14 +66,14 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "UTILISATEUR",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "UTILISATEUR",
+      "name": "USER",
       "id": "ID"
     }
   ],
@@ -88,7 +88,7 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORIE",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
     },
     {
       "id": "ID",
-      "title": "TITRE AFFICHE",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,17 +109,17 @@ Nous avons fait un créateur de fichier `metadata.json` pour les paresseux [ici]
       "if": {
         "ID": true
       },
-      "title": "TITRE AFFICHE",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
-      "placeholder": "utiliser %song% ou %artist%"
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TITRE AFFICHE",
-      "icon": "ICONE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "ect."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
@@ -304,10 +304,10 @@ presence.on("UpdateData", async () => {
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
-    smallImageKey: "key",
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
     //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
      //The upper section of the presence text

@@ -66,30 +66,29 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USUARIO",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USUARIO",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "SERVICIO",
-  "altnames": ["SERVICIO"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPTION",
-    "es": "DESCRIPCIÓN (opcional)"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "VERSIÓN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["ETIQUETA1", "ETIQUETA2"],
-  "category": "CATEGORÍA",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -101,8 +100,8 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
     },
     {
       "id": "ID",
-      "title": "TÍTULO A MOSTRAR",
-      "icon": "ICONO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -110,15 +109,15 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
       "if": {
         "ID": true
       },
-      "title": "TÍTULO A MOSTRAR",
-      "icon": "ICONO FONTAWESOME",
-      "value": "\"%song%\" por %artist%",
-      "placeholder": "usa %song% o %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TÍTULO A MOSTRAR",
-      "icon": "ICONO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -299,24 +298,24 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData se está lanzando siempre y debería utilizarse como evento de refresco o `tick`. Esto se llama varias veces por segundo cuando es posible.
 
-    Se recomienda configurar otra función fuera de este evento que cambie los valores de las variables y haga el trabajo pesado, como hacer llamadas a una API. */
+    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    // La clave (nombre de fichero) de la Imagen Grande en la presence. Estos se suben y se nombran en la sección Rich Presence de tu aplicación, llamada Art Assets*/
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     largeImageKey: "key",
-    // La clave (nombre de fichero) de la Imagen Pequeña en la presence. Estos son cargados y nombrados en la sección Rich Presence de tu aplicación, llamada Art Assets
-    smallImageKey: "clave de la imagen",
-    //El texto que se muestra al pasar el cursor sobre la imagen pequeña
-    smallImageText: "Algún texto",
-     //La sección superior del texto de la presence
-    details: "Navegando Nombre de la Página",
-    //La sección inferior del texto de la presence
-    state: "Leyendo sección A",
-    //El timestamp unix desde el que empezar a contar
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
+    //The text which is displayed when hovering over the small image
+    smallImageText: "Some hover text",
+     //The upper section of the presence text
+    details: "Browsing Page Name",
+    //The lower section of the presence text
+    state: "Reading section A",
+    //The unix epoch timestamp for when to start counting from
     startTimestamp: 3133657200000,
-    //Si quieres mostrar el Tiempo Restante en vez de el transcurrido, este es el timestamp unix en el que finaliza el contador
+    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
     endTimestamp: 3133700400000
-    //Opcionalmente puedes establecer una clave en largeImageKey y cambiar el resto como subpropiedades de la variable, por ejemplo presenceData.type = "bla bla bla"; type también puede ser: details, state, etc.
+    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
   };
   //Actualiza la presence con todos los valores del objeto PresenceData
   if (presenceData.details) setActivity(presenceData);

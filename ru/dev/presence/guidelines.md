@@ -75,29 +75,29 @@ presence
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "ПОЛЬЗОВАТЕЛЬ",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "ПОЛЬЗОВАТЕЛЬ",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "УСЛУГА",
-  "altnames": ["УСЛУГА"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "ОПИСАНИЕ"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "ВЕРСИЯ",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["ЯРЛЫК1", "ЯРЛЫК2"],
-  "category": "КАТЕГОРИЯ",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ presence
     }
     {
       "id": "ID",
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "FONTAWESOME ЗНАЧОК",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ presence
       "if": {
         "ID": true
       },
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "FONTAWESOME ЗНАЧОК",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
-      "icon": "FONTAWESOME ЗНАЧОК",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "так далее."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }

@@ -66,29 +66,29 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "úsáideoir",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "úsáideoir",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "seirbhís",
-  "altnames": ["seirbhís"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "tuairisc"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "leagan",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "tuairisc",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
     },
     {
       "id": "ID",
-      "title": "teideal",
-      "icon": "deilbhín",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
       "if": {
         "ID": true
       },
-      "title": "teideal",
-      "icon": "deilbhín",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "teideal",
-      "icon": "deilbhín",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -301,10 +301,10 @@ presence.on("UpdateData", async () => {
     It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
 
   const presenceData: PresenceData = {
-    //The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
+    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     largeImageKey: "key",
-    //The key (file name) of the Small Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets
-    smallImageKey: "key",
+    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
     //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
      //The upper section of the presence text

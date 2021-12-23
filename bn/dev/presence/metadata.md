@@ -16,7 +16,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
     "name": "USER",
     "id": "ID"
