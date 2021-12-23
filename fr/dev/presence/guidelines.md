@@ -75,14 +75,14 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "UTILISATEUR",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "UTILISATEUR",
+      "name": "USER",
       "id": "ID"
     }
   ],
@@ -97,7 +97,7 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATÉGORIE",
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
     }
     {
       "id": "ID",
-      "title": "TITRE AFFICHÉ",
-      "icon": "ICÔNE GRATUITE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,23 +118,17 @@ Chaque presence a un fichier de description appelé `metadata.json`, les métado
       "if": {
         "ID": true
       },
-      "title": "TITRE AFFICHÉ",
-      "icon": "ICÔNE GRATUITE FONTAWESOME",
-      "value": "\"%song%\" par %artist%",
-      "placeholder": "utilisez %song% ou %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TITRE AFFICHÉ",
-      "icon": "ICÔNE GRATUITE FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
-    }
-  ]
-}
-    }
-  ]
-}
     }
   ]
 }
