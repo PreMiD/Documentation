@@ -75,7 +75,7 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
     "name": "USER",
     "id": "ID"
