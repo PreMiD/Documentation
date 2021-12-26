@@ -298,12 +298,12 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData se está lanzando siempre y debería utilizarse como evento de refresco o `tick`. Esto se llama varias veces por segundo cuando es posible.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Se recomienda configurar otra función fuera de este evento que cambie los valores de las variables y haga el trabajo pesado, como hacer llamadas a una API. */
 
   const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    // La clave (nombre de fichero) de la Imagen Grande en la presence. Esto puede ser la clave de una imagen cargada en el Portal de Desarrolladores de Discord - Rich Presence - Recursos de Arte, o una URL a una imagen
     largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //La imagen pequeña en la presencia. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     smallImageKey: "https://mycrazywebsite.com/coolImage.png",
     //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
