@@ -68,27 +68,28 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "USUARIO",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICIO",
+  "altnames": ["SERVICIO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRIPTION",
+    "es": "DESCRIPCIÓN (opcional)"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIÓN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ETIQUETA1", "ETIQUETA2"],
+  "category": "CATEGORÍA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +101,8 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": true
     },
     {
@@ -109,15 +110,15 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
+      "value": "\"%song%\" por %artist%",
+      "placeholder": "usa %song% o %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -303,19 +304,19 @@ presence.on("UpdateData", async () => {
   const presenceData: PresenceData = {
     // La clave (nombre de fichero) de la Imagen Grande en la presence. Esto puede ser la clave de una imagen cargada en el Portal de Desarrolladores de Discord - Rich Presence - Recursos de Arte, o una URL a una imagen
     largeImageKey: "key",
-    //La imagen pequeña en la presencia. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //La imagen pequeña en la presencia. Esto puede ser la clave de una imagen cargada en el Portal de Desarrolladores de Discord - Rich Presence - Recursos de Arte, o una URL a una imagen
     smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    //El texto que se muestra al pasar el cursor sobre la imagen pequeña
+    smallImageText: "Algún texto",
+     //La sección superior del texto de la presence
+    details: "Navegando Nombre de la Página",
+    //La sección inferior del texto de la presence
+    state: "Leyendo sección A",
+    //El timestamp unix desde el que empezar a contar
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Si quieres mostrar el Tiempo Restante en vez de el transcurrido, este es el timestamp unix en el que finaliza el contador
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Opcionalmente puedes establecer una clave en largeImageKey y cambiar el resto como subpropiedades de la variable, por ejemplo presenceData.type = "bla bla bla"; type también puede ser: details, state, etc.
   };
   //Actualiza la presence con todos los valores del objeto PresenceData
   if (presenceData.details) setActivity(presenceData);
