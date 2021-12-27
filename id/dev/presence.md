@@ -300,12 +300,12 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData selalu dijalankan, oleh karena itu lebih baik digunakan sebagai refresh cycle , atau 'tick`. Ini dipanggil beberapa kali dalam sedetik jika memungkinkan.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Disarankan untuk mengatur fungsi lain diluar fungsi event ini yang akan mengubah value variabel dan mengurus proses berat jika kamu memanggil data dari sebuah API.*/
 
   const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+      //Large Image pada presence. Ini dapat berupa key dari sebuah gambar yang telah di upload pada Discord Developer Portal - Rich Presence - Art Assets, atau URL ke sebuah gambar
     largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //Gambar kecil pada presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     smallImageKey: "https://mycrazywebsite.com/coolImage.png",
     //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
