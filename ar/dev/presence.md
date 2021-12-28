@@ -47,7 +47,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ## ملء ملف tsconfig.json
 
-الرجاء وضع الكود التالي داخل ملف `tsconfig.json`.
+الرجاء وضع الكود التالي داخل ملف `tsconfig.json`
 
 ```json
 {
