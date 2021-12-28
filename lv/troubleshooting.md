@@ -34,10 +34,10 @@ PreMiD **nedarbojas** uz Discord pārlūkprogrammas versijas, jums ir jāuzstād
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Pārliecinieties, ka Discord NEIET, kā administrators
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Ļoti svarīgi. Discord RPC will not work if you run Discord as an administrator.
 
-### Vai izmantojat presence ar iestatījumiem?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+### Vai jūs izmantojiet presence ar iestatījumiem?
+Daudzas presences (tostarp `Twitch` un `SoundCloud`) tiek ietekmēti dēļ paplašinājuma kļūdas. This issue causes the extension to not grab the default values of settings properly.
 
 To solve this, all you have to do is toggle the topmost setting:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
