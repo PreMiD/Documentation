@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Pārliecinieties, vai esat uzstādījis paplašinājumu **un** aplikāciju! 
+> Pārliecinieties, vai esat uzstādījis paplašinājumu **un** lietotni! 
 > 
 > {.is-warning}
 
