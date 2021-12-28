@@ -305,7 +305,7 @@ A few things you should know after opening a pull request:
 - ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
 - ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
 
-## `Checks`
+## `Έλεγχοι`
 
 ![Example of checks](https://i.imgur.com/vF7QpBH.png)
 
