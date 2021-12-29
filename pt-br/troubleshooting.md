@@ -13,28 +13,28 @@ dateCreated: 2021-09-07T01:17:32.312Z
 > {.is-warning}
 
 Incluído nesta página:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+1. [Solução de problemas gerais](https://docs.premid.app/troubleshooting#general)
+2. [Solução de problemas no Linux](https://docs.premid.app/troubleshooting#linux)
+3. [Solução de problemas no MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
+# Solução de problemas gerais
 > Você pode usar [esta](https://qkeleq10.github.io/PreMiD-Troubleshooting/) ferramenta para identificar seu problema com mais facilidade. 
 > 
 > {.is-info}
-### Atualize a página
-Você pode pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) no seu teclado também, em vez de procurar pelo botão de atualização.
+### Recarregue a página
+Você pode pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) no seu teclado também, em vez de procurar pelo botão de recarregar.
 
 ### Você está usando o aplicativo do Discord?
 O PreMiD **não** funciona na versão de navegador do Discord, você precisa baixar o aplicativo [aqui](https://discord.com/download).
 
 ### Certifique-se de que você ativou o Status de atividade do Discord nas configurações
-**Configurações de Usuário** > **Atividade de jogo**
+**Configurações de Atividade** > **Status de atividade**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Certifique-se de que o Discord NÃO está sendo executado como administrador
-Muito importante. Discord RPC will not work if you run Discord as an administrator.
+Muito importante. O RPC do Discord não irá funcionar se executar o Discord como administrador.
 
 ### Você está usando uma presence com configurações?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
@@ -90,7 +90,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 <a name="linux"></a>
 
-# Linux troubleshooting
+# Solução de problemas no Linux
 ### Ubuntu/Debian based distros
 If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
@@ -119,7 +119,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# Solução de problemas no MacOS
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
