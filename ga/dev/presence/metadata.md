@@ -18,33 +18,33 @@ Is féidir sampla den chomhad sin a fháil thíos.
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "ÚSÁIDEOIR",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "ÚSÁIDEOIR",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SEIRBHÍS",
+  "altnames": ["SEIRBHÍS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "CUR SÍOS"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "LEAGAN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
-  "tags": ["TAG1", "TAG2"],
+  "tags": ["CLIB1", "CLIB2"],
+  "category": "CHATAGÓIR",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ Is féidir sampla den chomhad sin a fháil thíos.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "OCÓN FONTAWESOME",
+      "value": "\"%song%\" leis an %artist%",
+      "placeholder": "bain úsáid as %song% nó %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -154,13 +154,13 @@ Breathnaíonn an sampla sin an-aisteach, huh? Ná bíodh imní ort, níl sé cho
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Teaghrán a úsáidtear chun an chatagóir ina bhfuil an láithreacht a léiriú.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Eagraigh le clibeanna, cuideoidh siad le húsáideoirí do láithreacht a chuardach ar an suíomh Gréasáin.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Níl</code></td>
     </tr>

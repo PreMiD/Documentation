@@ -68,27 +68,27 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "úsáideoir",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "úsáideoir",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "seirbhís",
+  "altnames": ["seirbhís"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "tuairisc"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "leagan",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "tuairisc",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "teideal",
+      "icon": "deilbhín",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ Tá cruthaitheoir comhad `metadata.json` déanta againn do na peeps leisciúla [
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "teideal",
+      "icon": "deilbhín",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "teideal",
+      "icon": "deilbhín",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -273,10 +273,10 @@ Cóipeáil an cód thuas le do thoil agus cuir é i do chomhad `metadata.json`. 
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
+  //Aitheantas cliant an Iarratais a cruthaíodh ag https://discordapp.com/developers/applications
   clientId: "000000000000000000"
   }),
-  //You can use this to get translated strings in their browser language
+  //Is féidir leat é seo a úsáid chun teaghráin aistrithe a fháil ina dteanga bhrabhsálaí
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
@@ -284,43 +284,43 @@ const presence = new Presence({
 
 /*
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Faigh agus a phróiseáil go léir do chuid sonraí anseo
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+    //eilimintí a fháil //
+    // glaonna api //
+    // tacair athraitheacha //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Rith an fheidhm ar leithligh ón imeacht UpdateData gach 10 soicind chun na hathróga a phiocann UpdateData a fháil agus a shocrú
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Tugtar é seo cúpla uair sa soicind nuair is féidir.
+  /*Tá UpdateData lámhaigh i gcónaí, agus dá bhrí sin ba chóir é a úsáid mar do thimthriall athnuachana, nó `tic`. Tugtar é seo cúpla uair sa soicind nuair is féidir.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Moltar feidhm eile a bhunú lasmuigh den fheidhm imeachta seo a athróidh luachanna athraitheacha agus a dhéanfaidh an t-ardú trom má ghlaonn tú sonraí ó API.*/
 
   const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    //Eochair (ainm comhaid) na hÍomhá Móire ar an láthair. Déantar iad seo a uaslódáil agus a ainmniú sa rannán Láithreacht Shaibhir de d'iarratas, ar a dtugtar Sócmhainní Ealaíne
+    largeImageKey: "eochair",
+    //Eochair (ainm comhaid) na hÍomhá Beaga ar an láthair. Déantar iad seo a uaslódáil agus a ainmniú sa rannán Láithreacht Shaibhir de d'iarratas, ar a dtugtar Sócmhainní Ealaíne
+    smallImageKey: "eochair",
+    //An téacs a thaispeántar agus é ag dul thar an íomhá bheag
+    smallImageText: "Roinnt téacs",
+     //An chuid uachtarach den téacs láithreachta
+    details: "Brabhsáil Ainm an Leathanaigh",
+    //An chuid íochtarach den téacs láithreachta
+    state: "Roinn A léitheoireachta",
+    //An t-amtamp unix epoch le haghaidh cathain a thosaíonn tú ag comhaireamh ó
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Más mian leat Am Fágtha a thaispeáint in ionad Caite, is é seo an t-amscála unix epoch ag a gcríochnaíonn an t-amadóir
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Roghnach is féidir leat a shocrú mórImageKey anseo agus athrú ar an chuid eile mar subproperties athraitheach, mar shampla presenceData.type = "blahblah"; samplaí de chineál: sonraí, luaigh, srl.
   };
-  //Update the presence with all the values from the presenceData object
+  //Nuashonraigh an láithreacht leis na luachanna go léir ón réad presenceData
   if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity();
+  //Nuashonraigh an láithreacht gan aon sonraí, mar sin é a ghlanadh agus an íomhá mhór a dhéanamh ar dheilbhín An Fheidhmchláir Discord, agus an téacs an t-ainm Iarratais Discord
+  else presence.setActivity(); 
 });
 ```
 
@@ -347,9 +347,9 @@ Má aimsíonn tú go bhfuil do chuid sonraí i iFrame ní mór duit na rudaí se
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  //Faigh na sonraí go léir a theastaíonn uait as an iFrame iad a shábháil in athróga agus ansin iad a sheoladh ag baint úsáide as iframe.send
   iframe.send({
-    //sending data
+    //sonraí a sheoladh
     video: video,
     time: video.duration
   });
