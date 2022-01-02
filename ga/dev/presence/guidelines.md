@@ -77,27 +77,27 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "ÚSÁIDEOIR",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "ÚSÁIDEOIR",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SEIRBHÍS",
+  "altnames": ["SEIRBHÍS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "CUR SÍOS"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "LEAGAN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["CLIB1", "CLIB1"],
+  "category": "CHATAGÓIR",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
+      "value": "\"%song%\" leis an %artist%",
+      "placeholder": "bain úsáid as %song% nó %artist%" 
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TEIDEAL TAISPEÁNA",
+      "icon": "ÍOCÓN FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "srl."]
     }
   ]
 }
@@ -463,13 +463,13 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 > 
 > <ul>
 >   <li>
->     If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
+>     Murar féidir teagmháil a dhéanamh le húdar na láithreachta le breis agus mí, féadfaidh tú teagmháil a dhéanamh le hathbhreithneoir le fáil amach an féidir leat an láithreacht a mhodhnú.
 >   </li>
 >   <li>
 >     Má dhéanann tú modhnuithe ar láithreacht agus má athraíonn tú <strong x-id = "1">ráithe</strong> ar a laghad de bhunchód an láithreachta, tá cead agat tú féin a chur mar ranníocóir. Téigh i dteagmháil le hathbhreithneoir chun tuilleadh faisnéise a fháil faoin ábhar seo.
 >   </li>
 >   <li>
->     Anyone may create PRs to fix bugs. Do <strong x-id="1">not</strong> change images if they are not outdated and are in specifications.
+>     Féadfaidh duine ar bith PR a chruthú chun fabhtanna a shocrú. <strong x-id="1">Ná</strong> athraigh íomhánna mura bhfuil siad as dáta agus má tá siad i sonraíochtaí.
 >   </li>
 > </ul>
 > 
@@ -576,7 +576,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 > 
 > <ul>
 >   <li>
->     <code>DeepScan</code> is a bot that checks for code quality. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú. <em x-id="3">Warning: DeepScan doesn't always give you errors. Féach rabhaidh CodeFactor ina ionad. </em>
+>     Is bot é <code>DeepScan</code> a dhéanann seiceáil ar cháilíocht an chóid. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú. <em x-id = "3"> Rabhadh: Ní thugann DeepScan earráidí duit i gcónaí. Féach rabhaidh CodeFactor ina ionad. </em>
 >   </li>
 >   <li>
 >     Is bot é <code> CodeFactor </code> a dhéanann seiceáil ar cháilíocht an chóid. Má fhaigheann tú earráidí riamh maidir le saincheisteanna nua, tá tú <strong x-id = "1"> ag teastáil </strong> chun iad a shocrú.
