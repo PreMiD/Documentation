@@ -123,11 +123,11 @@ exit 0
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
+หากคุณพบข้อผิดพลาดนี้ นั้นหมายถึงบัญชีผู้ใช้ของคุณไม่มีสิทธิ์ผู้ดูแลและคุณจะต้องสร้างโฟลเดอร์ด้วยตนเองตามขั้นตอนดังนี้:
 1. เปิด Finder จากนั้นเปิดโฟลเดอร์ **Applications**
 2. คลิกขวาบนพื้นที่ว่างจากนั้นคลิก **สร้างโฟลเดอร์**
-3. To this folder assign `PreMiD` name (remember about upper-cased letters).
+3. โฟลเดอร์นี้ให้ตั้งชื่อว่า `PreMiD` (ดูตัวพิมพ์เล็กตัวพิมพ์ใหญ่ด้วยนะ)
 4. เปิดตัวติดตั้งอีกครั้ง
 
 # นั่นไม่ได้แก้ปัญหาของฉัน
-Please open a ticket in [#support](https://discord.premid.app/).
+กรุณาเปิด ticket ในช่อง [#support](https://discord.premid.app/).
