@@ -266,7 +266,7 @@ The `multiLanguage` key can be set to the following:
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
 2. Избери папка по твой избор.
-3. Отвори го в твоя редактор на код.
+3. Отвори го в твоя редактор за кодиране.
 
 ##### Creating the file
 
@@ -353,18 +353,18 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
-      <td style="text-align:left"><b>музика
+      <td style="text-align:left"><b>Музика
 </b></td>
       <td style="text-align:left">These are websites that offer music related content, whether that be streaming or downloading.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
-        <td style="text-align:left"><b>вечеринка</b></td>
+        <td style="text-align:left"><b>Социални</b></td>
       <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Видеоклипове и потоци</b></td>
+        <td style="text-align:left"><b>Видеоклипове и Стриймове</b></td>
       <td style="text-align:left">Websites that serve the purpose of providing videos and streams.</td>
     </tr>
     <tr>
