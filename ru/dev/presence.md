@@ -301,12 +301,12 @@ setInterval(myOutsideHeavyLiftingFunction, 10000);
 presence.on("UpdateData", async () => {
   /*UpdateData всегда срабатывает, и поэтому должен использоваться в качестве цикла обновления или «тика». Это вызывается несколько раз в секунду, когда это возможно.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Рекомендуется настроить другую функцию вне этой функции событий, которая будет изменять значения переменных и выполнять тяжелую работу, если вы вызываете данные из API.*/
 
   const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //Большое изображение на присутствии. Это может быть ключ к изображению, загруженному на портал разработчика Discord — Rich Presence — Art Assets, или URL-адрес изображения.
     largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //Маленькое изображение на присутствии. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
     smallImageKey: "https://mycrazywebsite.com/coolImage.png",
     //The text which is displayed when hovering over the small image
     smallImageText: "Some hover text",
