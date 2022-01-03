@@ -76,7 +76,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   <thead>
     <tr>
       <th style="text-align:left">Variable</th>
-      <th style="text-align:left">описание</th>
+      <th style="text-align:left">Описание</th>
       <th style="text-align:left">Вид</th>
       <th style="text-align:left">Optional</th>
     </tr>
