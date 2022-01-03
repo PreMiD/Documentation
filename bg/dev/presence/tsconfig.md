@@ -62,8 +62,8 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property            | описание                                                                               |
-|:------------------- |:-------------------------------------------------------------------------------------- |
-| **extends**         | Used for extending the base `tsconfig` file for various tasks.                         |
-| **compilerOptions** | See [**Root Configuration**](/dev/presence/tsconfig#root-configuration) for more info. |
-| outDir              | Defines the output directory for compiled files.                                       |
+| Property            | Описание                                                                                       |
+|:------------------- |:---------------------------------------------------------------------------------------------- |
+| **extends**         | Използва се за разширяване на основния файл `tsconfig` за различни задачи.                     |
+| **compilerOptions** | Вижте [**Root конфигурация**](/dev/presence/tsconfig#root-configuration) за повече информация. |
+| outDir              | Defines the output directory for compiled files.                                               |
