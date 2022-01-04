@@ -77,27 +77,27 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "GEBRUIKER",
       "id": "ID"
     }
   ],
   "service": "SERVICE",
   "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "BESCHRIJVING"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIE",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
+  "category": "CATEGORIE",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -110,7 +110,7 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "icon": "FONTAWESOME FREE ICON",
       "value": true
     },
     {
@@ -118,17 +118,20 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": 0,
       "values": ["1", "2", "etc."]
+    }
+  ]
+}
     }
   ]
 }
@@ -260,9 +263,9 @@ Hier is een lijst met regels die je moet volgen bij het schrijven van je `presen
 
 In sommige situaties kunnen presences onverwacht gedrag vertonen of enkele kleine veranderingen gebruiken om de functionaliteit te verbeteren. Hier is een lijst met regels die je **moet** volgen tijdens het wijzigen van presences.
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
+- Als de auteur van de presence al een maand niet heeft gereageerd, kun je contact opnemen met een controleur om te vragen of je de presence kunt aanpassen.
 - Als je wijzigingen aanbrengt in de presence en ten minste een **kwart** van de presence-code wijzigt mag je jezelf toevoegen als bijdrager. Neem contact op met een controleur voor meer informatie hierover.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Iedereen kan PRs maken om bugs op te lossen. Verander **geen** afbeeldingen als ze niet verouderd zijn en voldoen aan vereisten.
 
 # Verificatie
 
@@ -308,7 +311,7 @@ Enkele dingen die je moet weten voordat je een pull request opent:
 
 Op dit moment wordt de presence in drie afzonderlijke fasen gecontroleerd. Al deze controles helpen de verificateurs te bepalen of je presence geschikt is voor implementatie.
 
-- `DeepScan` is a bot that checks for code quality. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. *Warning: DeepScan doesn't always give you errors. Kijk in plaats daarvan naar waarschuwingen van CodeFactor.*
+- `DeepScan` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen. *Let op: DeepScan geeft je niet altijd waarschuwingen. Kijk in plaats daarvan naar waarschuwingen van CodeFactor.*
 - `CodeFactor` is een bot die controleert op de kwaliteit van code. Als je ooit fouten ontvangt voor nieuwe problemen, **moet** je ze oplossen.
 - `Schema Validation` zal je `metadata.json` bestand scannen op fouten (bijvoorbeeld ontbrekende velden, ongeldige waarde types, etc.). Als je ooit nieuwe problemen ziet, ben je ook **verplicht** om die op te lossen. Het toevoegen van een schemaveld aan je `metadata.json` bestand zal je tekstverwerker (indien ondersteund) toestaan om deze fouten te tonen tijdens de ontwikkeling van je presence.
 
