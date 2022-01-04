@@ -81,13 +81,13 @@ A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`
 
 ### `data`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
+স্লাইডটিতে সংরক্ষিত `PresenceData` এর একটি [`PresenceData`](/dev/presence/class#presencedata-interface) অবজেক্ট রিটার্ন করে।
 
 ## মেথড
 
 ### `updateData(PresenceData)`
 
-Sets the slides data according to provided data.
+প্রদান করা ডাটা অনুযায়ী স্লাইড ডাটাকে সেট করে।
 
 You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
 
