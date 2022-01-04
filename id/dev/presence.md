@@ -305,19 +305,19 @@ presence.on("UpdateData", async () => {
   const presenceData: PresenceData = {
       //Large Image pada presence. Ini dapat berupa key dari sebuah gambar yang telah di upload pada Discord Developer Portal - Rich Presence - Art Assets, atau URL ke sebuah gambar
     largeImageKey: "key",
-    //Gambar kecil pada presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //Gambar kecil pada presence. Ini dapat berupa sebuah key dari gambar yang telah diupload ke Discord Developer Portal - Rich Presence - Art Assets, atau URL dari sebuah gambar
     smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    //Teks yang ditampilkan saat mengarahkan kursor ke gambar kecil
+    smallImageText: "Teks yang ditampilkan",
+     //Bagian atas dari teks presence
+    details: "Menelusuri Nama Halaman",
+    //Bagian bawah dari teks presenceData.type
+    state: "Membaca bagian A",
+    //Timestamp unix epoch untuk kapan mulai menghitung
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Jika kamu ingin menampilkan Waktu Tersisa dan bukan Waktu Berlalu, ini merupakan timestamp unix epoch dimana timer akan berhenti
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Kamu juga dapat menentukan largeImageKey disini dan merubah bgaian lainnya sebagai variabel subproperti, contohnya presenceData.type = "blahblah; type example: details, state, etc.
   };
   //Perbarui presence dengan semua value dari objek presenceData
   if (presenceData.details) presence.setActivity(presenceData);
