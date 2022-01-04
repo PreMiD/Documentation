@@ -89,10 +89,10 @@ A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`
 
 প্রদান করা ডাটা অনুযায়ী স্লাইড ডাটাকে সেট করে।
 
-You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
+তোমাকে একটি `PresenceData` ইন্টারফেস দিতে হবে সব তথ্য পেতে যা তুমি শেষ পর্যন্ত তোমার প্রোফাইলে দেখাতে চাও।
 
 ### `updateInterval(Number)`
 
-Sets the interval of the slide according to provided data.
+প্রদান করা ডাটা অনুযায়ী স্লাইডটির ইন্টারভাল সেট করে।
 
-You must provide a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+তোমাকে একটি `Number` দিতে হবে যা হবে সময়ের পরিমাণ মিলিসেকেন্ডে (কমপক্ষে: 5000) যেটি এই স্লাইডটি দেখাবে।
