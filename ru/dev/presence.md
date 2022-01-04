@@ -68,27 +68,28 @@ dateCreated: 2020-06-11T18:04:02.843Z
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "ПОЛЬЗОВАТЕЛЬ",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "СЕРВИС",
+  "altnames": ["СЕРВИС"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ",
+    "ru": "ОПИСАНИЕ",
   },
-  "url": "URL",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "url": "ССЫЛКА",
+  "version": "ВЕРСИЯ",
+  "logo": "ССЫЛКА",
+  "thumbnail": "ССЫЛКА",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ТЭГ1", "ТЭГ2"],
+  "category": "КАТЕГОРИЯ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +101,8 @@ dateCreated: 2020-06-11T18:04:02.843Z
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
+      "icon": "ИКОНКА FONTAWESOME",
       "value": true
     },
     {
@@ -109,17 +110,17 @@ dateCreated: 2020-06-11T18:04:02.843Z
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
+      "icon": "ИКОНКА FONTAWESOME",
+      "value": "%song% — %artist%",
+      "placeholder": "используйте %song% или %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
+      "icon": "ИКОНКА FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "и т. д."]
     }
   ]
 }
