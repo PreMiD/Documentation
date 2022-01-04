@@ -37,13 +37,13 @@ O PreMiD **não** funciona na versão de navegador do Discord, você precisa bai
 Muito importante. O RPC do Discord não irá funcionar se executar o Discord como administrador.
 
 ### Você está usando uma presence com configurações?
-Muitas presences (incluindo `Twitch` e `SoundCloud`) são afetadas por um problema na extensão. This issue causes the extension to not grab the default values of settings properly.
+Muitas presences (incluindo `Twitch` e `SoundCloud`) são afetadas por um problema na extensão. Esse problema faz com que a extensão não pegue corretamente os valores padrões das configurações.
 
-To solve this, all you have to do is toggle the topmost setting:
+Para resolver isso, tudo que você precisa fazer é desativar e reativar a configuração superior:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Reinicie o seu navegador
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+Usar <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) também serve. (Você tem que iniciar seu navegador em seguida, obviamente.)
 
 ### Reinicie o PreMiD (Aplicativo)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
