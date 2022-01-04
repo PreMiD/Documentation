@@ -66,29 +66,29 @@ We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](h
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "GEBRUIKER",
       "id": "ID"
     }
   ],
   "service": "SERVICE",
   "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "BESCHRIJVING"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIE",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "CATEGORIE",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](h
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](h
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -275,19 +275,19 @@ Kopieer de bovenstaande code en plaats deze in het `metadata.json` bestand. Je m
 ## Aan de slag
 
 ```ts
-const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
-  clientId: "000000000000000000"
+const presence = new presence({
+    clientId: "000000000000000000" //De client ID van de Applicatie gemaakt op https://discordapp.com/developers/applications
   }),
-  //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
-  });
+    //Je kan dit gebruiken om vertaalde teksten te krijgen
+});
 
 /*
+
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Pak en verwerk alle informatie hier
 
     // element grabs //
     // api calls //
@@ -295,34 +295,34 @@ function myOutsideHeavyLiftingFunction(){
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
-*/
+//Laat de functie elke 10 seconden apart lopen van de UpdateData-event om de variabelen te krijgen en te zetten die UpdateData verkrijgt. */
+
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Dit wordt waar mogelijk meerdere keren per seconden opgeroepen.
+    /*UpdateData is altijd aan het lopen, en moet daarom jouw refresh-cyclus zijn, of `tick`. Dit wordt waar mogelijk meerdere keren per seconden opgeroepen.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Het is aanbevolen om een andere functie buiten deze event-functie te maken, die de variabelen zal veranderen en al het zware werk zal doen als je informatie roept vanuit een API*/
 
-  const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+  const presenceData: presenceData = {
+    //De grote afbeelding op de presence. Dit kan de key van een afbeelding zijn die je hebt geüpload naar Discord Developer Portal - Rich Presence - Art Assets, of een koppeling naar een foto
     largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //De kleine afbeelding op de presence. Dit kan de key van een afbeelding zijn die je hebt geüpload naar Discord Developer Portal - Rich Presence - Art Assets, of een afbeeldings-URL
     smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
+    //De tekst die wordt weergegeven als tooltip voor de kleine afbeelding
     smallImageText: "Some hover text",
-     //The upper section of the presence text
+     //Het bovenste deel van de presencetekst
     details: "Browsing Page Name",
-    //The lower section of the presence text
+    //Het onderste deel van de presencetekst
     state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    //De tijdstempel (unix epoch) voor het moment waar vanaf geteld moet worden
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Als je wilt aftellen naar een moment in plaats van de verstreken tijd te tonen, kun je hier de eindtijdstempel (unix epoch) plaatsen
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Eventueel kun je hier een largeImageKey plaatsen en de rest wijzigen als subeigenschappen van een variabele, zoals presenceData.type = "blabla"; type voorbeelden: details, state, enzovoorts
   };
-  //Update the presence with all the values from the presenceData object
+  //Werk de presence bij met alle waarden van het object presenceData
   if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  //Werk de presence bij zonder gegevens. De presence wordt geleegd, de grote afbeelding wordt het Discord Application-icoon en de text wordt de Discord Application-naam
   else presence.setActivity();
 });
 ```
