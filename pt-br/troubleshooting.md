@@ -49,7 +49,7 @@ Usar <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>Q</kbd> (MacO
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
 You have to restart PreMiD afterwards.
 
-### Recarregar/Reiniciar o Discord
+### Recarregue/Reinicie o Discord
 Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
 
 ### Verifique se você tem antivírus ou firewall em execução no seu computador
