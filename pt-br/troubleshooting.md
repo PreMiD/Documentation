@@ -115,19 +115,19 @@ Como afirmamos em nosso **repositório Linux**, O AppImage não pode ser iniciad
 exit 0
 ```
 3. Salve o arquivo e execute um chmod nele como executável `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+4. Reinicie seu PC e o PreMiD AppImage deve iniciar no login.
 
 <a name="macos"></a>
 
 # Solução de problemas no MacOS
-### Error creating directory
+### Erro na criação de pasta
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
-2. Right-click on blank space and click **Create folder**.
+Se você receber esse erro, significa que sua conta não tem permissões de administrador e que é preciso criar a pasta manualmente seguindo estas etapas:
+1. Abra o Finder e abra a pasta **Aplicativos**.
+2. Clique com o botão direito em algum espaço em branco e clique em **Criar pasta**.
 3. Para esta pasta, dê o nome de `PreMiD` (lembre-se das letras maiúsculas).
-4. Open installer again.
+4. Abra o instalador novamente.
 
 # Isso não resolveu o meu problema
-Please open a ticket in [#support](https://discord.premid.app/).
+Por favor, abra um ticket em [#support](https://discord.premid.app/).
