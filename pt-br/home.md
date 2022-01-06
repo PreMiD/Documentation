@@ -18,7 +18,7 @@ dateCreated: 2020-06-11T18:03:47.172Z
 
 # Primeiros Passos
 
-PreMiD é rápido e fácil de instalar. Você deverá estar funcionando logo, logo.
+PreMiD é rápido e fácil de instalar. Você vai estar com ele pronto e funcionando logo, logo.
 
 - Certifique-se que você leu os [requisitos de sistema](/install/requirements).
 - Siga o rápido e simples [guia de instalação](/install).
@@ -28,13 +28,13 @@ PreMiD é rápido e fácil de instalar. Você deverá estar funcionando logo, lo
 
 [Primeiros passos](/dev) para o desenvolvimento no PreMiD é o seu primeiro passo antes de desenvolver algumas coisas.
 
-- :computer: [API](/dev/api): Acesse recursos e performe ações usando a API do PreMiD.
+- :computer: [API](/dev/api): Acesse recursos e execute ações usando a API do PreMiD.
 - :wrench: [Desenvolvimento de Presences](/dev/presence): Aprenda como usar nosso sistema de Presences.
 
 # Contribua
 - :bug: [Reportar um Bug](https://github.com/PreMiD). Ajude-nos a esmagar aqueles bugs irritantes.
-- :bulb: [Sugerir uma Nova Caraterística](https://discord.premid.app/): Precisamos de suas ideias!
+- :bulb: [Sugerir um Novo Recurso](https://discord.premid.app/): Precisamos de suas ideias!
 - :heart: [Doar](https://www.patreon.com/Timeraa): Faça uma pequena doação ou torne-se um patrocinador do nosso maravilhoso projeto!
-- :globe_with_meridians: [Localizações](https://translate.premid.app): Permite que outros usuários utilizem o PreMiD em seu idioma nativo.
+- :globe_with_meridians: [Localizações](https://translate.premid.app): Permita que outros usuários utilizem o PreMiD em seu idioma nativo.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
