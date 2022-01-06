@@ -62,31 +62,31 @@ Desative todas as suas extensões e addons e veja se funciona. Se sim, tente rea
 Espero que você saiba como reiniciar um computador.
 
 ### Reinstale o PreMiD
-Às vezes, há algo de errado com os arquivos... Tutorials for the installation can be found [here](/install).
+Às vezes, há algo de errado com os arquivos... Tutoriais de instalação podem ser encontrados [aqui](/install).
 
 ### Remoção manual
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Digite `%appdata%` no explorador de arquivos e delete a pasta do `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` e delete a pasta do `PreMiD`.
 
 ### McAfee detectou PreMiD como vírus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Este é um falso positivo da McAfee e relatamos o problema a eles, por enquanto, você pode excluir PreMiD da varredura, executando as seguintes etapas:
 
 > Se você não se sentir seguro para seguir essas etapas, sinta-se à vontade para fazer um ticket em [#support](https://discord.premid.app/) (em inglês) e um de nossos Agentes de Suporte poderá ajudá-lo! 
 > 
 > {.is-warning}
 
 1. Abra o aplicativo McAfee e clique no ícone de configurações no canto superior direito. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
-2. Clique em "Itens na quarentena" (segundo do topo).
-3. Expanda-a, e clique no ícone `>` antes de um item com o nome "settings.dat".
+2. Clique em "Itens em quarentena" (segundo do topo).
+3. Expanda, e clique no ícone `>` antes de um item com o nome "settings.dat".
 4. Tenha certeza de que o caminho inclui "AppData\Local\Temp\PreMiD", se for o caso selecione e pressione restaurar.<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
-5. Depois de restaurado, você pode fechar a janela de "Itens na quarentena", depois pressione novamente o ícone de configurações no canto superior direito.
+5. Depois de restaurado, você pode fechar a janela "Itens em quarentena", depois pressione novamente o ícone de configurações no canto superior direito.
 6. Clique em "Verificação em tempo real" (Terceira do topo).
 7. Expanda-o e clique em "Adicionar arquivo".
 8. Digite "%appdata%" na barra de endereço do gerenciador de arquivos e pressione Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Abra a pasta "PreMiD" e selecione o arquivo "PreMiD.exe" e clique em abrir. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee agora deve ignorar nosso arquivo, apenas inicie nosso aplicativo e você deve estar pronto para começar.
 
-### PreMiD status bugged on Discord
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+### Status do PreMiD com problema no Discord
+Não se preocupe. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 
