@@ -86,15 +86,15 @@ Este é um falso positivo da McAfee e relatamos o problema a eles, por enquanto,
 10. McAfee agora deve ignorar nosso arquivo, apenas inicie nosso aplicativo e você deve estar pronto para começar.
 
 ### Status do PreMiD com problema no Discord
-Não se preocupe. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+Não se preocupe. Pressione as teclas <kbd>CTRL+R</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) enquanto a janela do seu Discord estiver em primeiro plano para recarregá-lo.
 
 <a name="linux"></a>
 
 # Solução de problemas no Linux
-### Ubuntu/Debian based distros
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+### Para distros baseadas em Ubuntu/Debian
+Se você tiver baixado o Discord pelo Snapcraft, o RPC não funcionará. Você tem que desinstalar a versão do Snapcraft executando `sudo snap remove discord` no terminal, baixe a **[build pro Linux do Discord ](https://discordapp.com/api/download?platform=linux)** (**[ou o Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), então navegando para a pasta aonde baixou o Discord (usualmente em `$HOME/Downloads`), em seguida instale o pacote usando `sudo dpkg -i discord-*.deb`. Se o AppImage não funcionar, você deve considerar conferir nossos outros pacotes **[neste link](https://packagecloud.io/premid/linux)**.
 
-### Arch Linux based distros
+### Para distros baseadas em Arch Linux
 Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
 <em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
 
