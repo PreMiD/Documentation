@@ -53,16 +53,16 @@ You have to restart PreMiD afterwards.
 Pressione <kbd>CTRL+R</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) em seu teclado ou reinicie o Discord manualmente.
 
 ### Verifique se você tem antivírus ou firewall em execução no seu computador
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
+Às vezes, programas de antivírus e firewalls irão bloquear aplicativos que estão criando/hospedando servidores ou apenas se conectando à internet. Usamos um servidor local para receber e transferir dados entre nosso app e a extensão, então, se você for bloquear o app de transferir dados, provavelmente não irá conseguir usar o PreMiD.
 
 ### Desative os seus complementos
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Desative todas as suas extensões e addons e veja se funciona. Se sim, tente reativa-las uma a uma e nos informe qual é a que conflita com o PreMiD.
 
 ### Reinicie o seu computador
-I hope you know how to restart a computer.
+Espero que você saiba como reiniciar um computador.
 
 ### Reinstale o PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Às vezes, há algo de errado com os arquivos... Tutorials for the installation can be found [here](/install).
 
 ### Remoção manual
 Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
