@@ -80,7 +80,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="credits"></a>
 
-### Credits
+### Bidragsytere
 
 Thanks to :
 
