@@ -75,114 +75,114 @@ dateCreated: 2020-06-11T18:04:52.965Z
 }
 ```
 
-## Understanding the metadata.json
+## Разбиране на файла metadata.json
 
-That example looks really strange, huh? Don't worry, its not that hard to understand what each variable is for.
+Този пример изглежда наистина странен, нали? Не се притеснявайте, не е толкова трудно да разберете за какво служи всяка променлива.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Променлива</th>
       <th style="text-align:left">Описание</th>
       <th style="text-align:left">Вид</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">По избор</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Трябва да съдържа Object с <code>името</code> и <code>ид-то</code> на разработчика на присъствие. <code>име</code> е вашето потребителско име в Discord без идентификатора(#0000). Потребителският <code>id</code> може да бъде копиран от Discord, като активирате функцията за разработчици
+        и щракнете с десния бутон на мишката върху профила си.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Трябва да съдържа Object с <code>name</code> и <code>id</code> на сътрудника. <code>име</code> е вашето потребителско име в Discord без идентификатора(#0000). Потребителският <code>id</code> може да бъде копиран от Discord, като активирате функцията за разработчици
+        и щракнете с десния бутон на мишката върху профила си.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.</td>
+      <td style="text-align:left">Заглавието на услугата, която този presence поддържа.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
+      <td style="text-align:left">Да можете да търсите presence използвайките алтернативно име.<br>
+      Предназначено за presence, които имат различни имена на различни езици. (напр.Pokémon и 포켓몬스터).<br>
+      Можете да го използвате и за presence, които имат специални символи, за да не се налага да ги въвеждате (напр. Pokémon и Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. View the category for presence languages for a list. </td>
+      <td style="text-align:left">Описание на услугата <b>НЕ</b> на вашия presence. Описанието ви трябва да има стойности на двойката ключове, които посочват езика и описанието на конкретния език. Направете описания с езиците, <i>които знаете</i>, нашите преводачи ще направят промени във вашия файл с метаданни. Прегледайте категорията за езици на presence, за да видите списък. </td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br>
-      <b>Example:</b><code>vk.com</code><br>
-      <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. This may only be used as an array when there are more than one urls.</b></td>
+      <td style="text-align:left">URL адрес на услугата.<br>
+      <b>Пример:</b><code>vk.com</code><br>
+      <b>Този URL адрес трябва да съвпада с URL адреса на уебсайта, тъй като ще се използва за определяне на това дали това е уебсайтът, в който да се инжектира скриптът. Това може да се използва само като Array, когато има повече от един URL адрес.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.</td>
+      <td style="text-align:left">Regular expression String използвани за съвпадение на URL адреси.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Версия на вашето присъствие.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Връзка към логото на услугата.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">URL адрес към thumbnail-а на вашия presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left"><code>#HEX</code> стойност. Препоръчваме ви да използвате основния цвят на услугата
+        която вашето присъствие поддържа.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Редица, използвана за представяне на категорията, в която попада вашия presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array-ят с тагове ще помогне на потребителите да търсят вашия presence в уебсайта.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Не</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
+      <td style="text-align:left">Определя дали да се използват <code>iFrames</code></td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
+      <td style="text-align:left">Regular expression selector, който избира iframe, в който да се инжектира.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Да</code></td>
     </tr>
