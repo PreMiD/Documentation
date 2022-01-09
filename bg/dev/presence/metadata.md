@@ -1,6 +1,6 @@
 ---
 title: Metadata.json
-description: Contains basic data about the Presence
+description: Съдържа основни данни за Presence
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,59 +10,66 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
+Ако искате да публикувате presence в магазина и да го заредите чрез разширението, трябва да създадете `metadata.json` файл във вашата `dist` папка.
 
-An example of that file can be found below.
+Пример за този файл можете да намерите по-долу.
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
-    "id": "ID"
+    "name": "ЧОВЕК",
+    "id": "ИД"
   },
-  "contributors": [{
-    "name": "USER",
-    "id": "ID"
-  }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "contributors": [
+    {
+      "name": "ЧОВЕК",
+      "id": "ИД"
+    }
+  ],
+  "service": "УСЛУГА",
+  "altnames": ["УСЛУГА"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ"
   },
-  "url": "URL",
+  "url": "URL АДРЕС",
+  "version": "ВЕРСИЯ",
+  "logo": "URL АДРЕС",
+  "thumbnail": "URL АДРЕС",
+  "color": "#HEX000",
+  "tags": ["ТАГ1", "ТАГ2"],
+  "category": "КАТЕГОРИЯ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
-  "color": "#45A8FC",
-  "category": "CATEGORY",
-  "tags": ["TAG1", "TAG2"],
   "iframe": false,
+  "readLogs": false,
   "settings": [
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "ИД",
+      "multiLanguage": true
+    },
+    {
+      "id": "ИД",
+      "title": "ПОКАЗАНО ЗАГЛАВИЕ",
+      "icon": "FONTAWESOME ИКОНА",
       "value": true
     },
     {
-      "id": "ID",
+      "id": "ИД",
       "if": {
-        "ID": true
+        "ИД": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "ПОКАЗНО ЗАГЛАВИЕ",
+      "icon": "FONTAWESOME ИКОНА",
+      "value": "\"%song%\" от %artist%",
+      "placeholder": "използвай %song% или %artist%"
     },
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "ИД",
+      "title": "ПОКАЗАНО ЗАГЛАВИЕ",
+      "icon": "FONTAWESOME ИКОНА",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "подобни..."]
     }
   ]
 }
@@ -94,7 +101,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>name</code> is your Discord username without the identifier(#0000). User <code>id</code> can be copied from Discord by enabling developer
         mode and right-clicking on your profile.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
@@ -108,7 +115,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
       You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
       <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
@@ -128,7 +135,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left"><b>regExp</b></td>
       <td style="text-align:left">A regular expression string used to match urls.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
@@ -171,67 +178,67 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <td style="text-align:left"><b>iframe</b></td>
       <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
       <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Определя дали разширението трябва да чете записите.</td>
       <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Да</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change</td>
+      <td style="text-align:left">Array от настройки, които потребителят може да промени</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Да</code></td>
     </tr>
   </tbody>
 </table>
 
 ## Regular Expressions
 
-If you want to learn regular expressions, here are a few websites.
+Ако искате да научите regular expressions, ето няколко уебсайта.
 
-#### Learning
+#### Обучение
 
-• [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
+• [Бърз стартов видеоклип](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions информация](https://www.regular-expressions.info/tutorial.html)
 
-#### Testing
+#### Тестване
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
-## Presence languages
+## Presence езици
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD е полиглотска услуга, което означава, че са налични множество езици за свързване на потребители от цял свят. Пълният списък на езиците може да бъде намерен в тази [крайна точка на нашия API](https://api.premid.app/v2/langFile/list). За да персонализирате още повече вашия presence, можете да позволите на потребителите да избират езика на показване на присъствието си. Вижте [`multiLanguage`](#multilanguage) за още информация.
 
-## Presence settings
-Setup interactive settings so users can customize the presence!
+## Настройки на presence
+Задайте интерактивни настройки, така че потребителите да могат да персонализират вашия presence!
 ```json
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Вижте https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "ЗАГЛАВИЕ",
+    "icon": "FONTAWESOME ИКОНА", //Пример: "fas fa-info"
+    "value": true //Boolean стойност ще го превърне в превключвател за включване/изключване със стойността по подразбиране
   },
   {
-    "id": "ID",
+    "id": "ИД",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Ако друга настройка е равна на тази стойност (true/false/0/1/etc.), ще се покажете този бутон
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
+    "title": "ЗАГЛАВИЕ",
+    "icon": "FONTAWESOME ИКОНА",
+    "value": "\"%song%\" от %artist%", //Поставянето на string ще превърне настройката във input, където можете да използвате потребителски вход.
     "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
   },
   {
@@ -353,24 +360,23 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
-      <td style="text-align:left"><b>Музика
-</b></td>
+      <td style="text-align:left"><b>Музика</b></td>
       <td style="text-align:left">These are websites that offer music related content, whether that be streaming or downloading.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Социални</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
+      <td style="text-align:left">Уебсайтове, които се използват с цел създаване и споделяне на съдържание или за участие в други форми на социални мрежи.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
         <td style="text-align:left"><b>Видеоклипове и Стриймове</b></td>
-      <td style="text-align:left">Websites that serve the purpose of providing videos and streams.</td>
+      <td style="text-align:left">Уебсайтове, които служат за предоставяне на видеоклипове и стриймове.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
       <td style="text-align:left"><b>Други</b></td>
-      <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
+      <td style="text-align:left">Всичко, което не попада в конкретна категория, изброена по-горе.</td>
     </tr>
   </tbody>
 </table>
