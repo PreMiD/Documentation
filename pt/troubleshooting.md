@@ -30,22 +30,22 @@ Podes pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (
 O PreMiD **não** funciona na versão do Discord para navegador, precisas de descarregar a aplicação clicando [aqui](https://discord.com/download).
 
 ### Certifica-te de que o Status de atividade está ativo nas definições da aplicação do Discord
-**Definições de Utilizador** > **Atividade de jogo**
-<img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
+**Definições de Utilizador** > **Status de atividade**
+<img src="https://i.imgur.com/RUMoMQo.png" width="500px" style="max-width:100%;" />
 
 ### Certifica-te de que o Discord NÃO foi executado como administrador
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Really important. O RPC do Discord não vai funcionar se executares o Discord como administrador.
 
 ### Estás a usar uma presence com definições?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. Este problema faz com que a extensão não obtenha os valores pré-definidos das definições corretamente.
 
-To solve this, all you have to do is toggle the topmost setting:
+Para corrigir isto, tudo o que tens de fazer é alterar a definição de cima:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
-### Reiniciar o seu navegador
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+### Reinicia o teu navegador
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) também funciona. (Podes abrir o teu browser depois disto obviamente)
 
-### Reiniciar o PreMiD (Aplicação)
+### Reinicia o PreMiD (Aplicação)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
 You have to restart PreMiD afterwards.
 
