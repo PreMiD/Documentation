@@ -178,7 +178,7 @@ Por favor, copie o código acima e cole em seu arquivo de `metadata.json`. Agora
       <td style="text-align:left"><b>description</b></td>
       <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Sua descrição deve ter valores de key pair que indicam o idioma e a descrição nesse idioma específico. Faça descrições com os idiomas <i>que você conhece</i>, nossos tradutores farão alterações ao seu arquivo de metadados.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
@@ -190,7 +190,7 @@ Por favor, copie o código acima e cole em seu arquivo de `metadata.json`. Agora
       <code>["URL1", "URL2", "ETC."]</code><br>
       You could also use regExp also known as Regex for this task, explained further below.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
@@ -215,13 +215,13 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Link para o logotipo do serviço.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
       <td style="text-align:left">Link para sua miniatura da presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
@@ -233,13 +233,13 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
       <td style="text-align:left"><b>tags</b></td>
       <td style="text-align:left">Array com tags, eles ajudarão os usuários a pesquisar sua presence no site.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
       <td style="text-align:left">Uma string usada para representar a categoria na qual a presence cai. Veja as categorias válidas <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">aqui</a>.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
