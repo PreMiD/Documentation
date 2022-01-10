@@ -1,5 +1,5 @@
 ---
-title: Solução de Problemas
+title: Solução de problemas
 description: Tudo para resolver o teu problema
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -23,13 +23,13 @@ Esta página inclui:
 > Podes usar [esta](https://qkeleq10.github.io/PreMiD-Troubleshooting/) ferramenta para identificares o teu problema mais facilmente. 
 > 
 > {.is-info}
-### Atualizar a página
+### Atualiza a página
 Podes pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) no teu teclado em vez de procurar pelo botão de atualizar.
 
 ### Estás a usar a aplicação do Discord?
 O PreMiD **não** funciona na versão do Discord para navegador, precisas de descarregar a aplicação clicando [aqui](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
+### Certifica-te de que o Status de atividade está ativo nas definições da aplicação do Discord
 **Definições de Utilizador** > **Atividade de jogo**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
