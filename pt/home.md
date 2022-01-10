@@ -20,21 +20,21 @@ dateCreated: 2020-06-11T18:03:47.172Z
 
 O PreMiD é rapido e fácil de instalar. Deves estar pronto a andar num piscar de olhos.
 
-- Make sure you have read the [system requirements](/install/requirements).
-- Follow the quick and simple [installation guide](/install).
-- [Troubleshooting](/troubleshooting) guides you through solutions to common issues.
+- Certifica-te de que leste os [requisitos de sistema](/install/requirements).
+- Segue o [guia de instalação](/install) rápido e simples.
+- A [resolução de problemas](/troubleshooting) mostra-te soluções para problemas comuns.
 
 # Programadores
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+Os [primerios passos](/dev) para o desenvolvimento no PreMiD são onde deves começar antes de programar alguma coisa.
 
-- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
-- :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
+- :computer: [API](/dev/api): Acede a recursos e executa ações utilizando a API do PreMiD.
+- :wrench: [Desenvolvimento de Presences](/dev/presence): Aprende a utilizar o nosso sistema de Presences.
 
-# Contribua
-- :bug: [Report a Bug](https://github.com/PreMiD): Help us squash those pesky bugs.
-- :bulb: [Sugere uma Nova Caraterística](https://discord.premid.app/): Precisamos nas tuas ideas!
-- :heart: [Donate](https://www.patreon.com/Timeraa): Make a small donation or become a sponsor of this wonderful project!
-- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
+# Contribui
+- :bug: [Reportar um Bug](https://github.com/PreMiD): Ajuda-nos a acabar com aqueles bugs irritantes.
+- :bulb: [Sugerir uma nova funcionalidade](https://discord.premid.app/): Precisamos nas tuas ideas!
+- :heart: [Doar](https://www.patreon.com/Timeraa): Faz uma pequena doação ou torna-te um patrocinador do nosso maravilhoso projeto!
+- :globe_with_meridians: [Traduções](https://translate.premid.app): Permite que outros utilizadores usem o PreMiD na sua lingua nativa.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
