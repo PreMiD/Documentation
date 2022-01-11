@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: Getting started with a PreMiD installation on Linux
+description: Започване на работа с инсталация на PreMiD на Linux
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,51 +8,51 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
-The installation of the application is very important as the extension can not do anything by itself.
+Инсталирането на приложението е много важно, тъй като разширението не може да направи нищо само по себе си.
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> Потребителите на Aur, които използват пакета на DoomLerd, трябва да са в безопасност, както казва той. Не ви препоръчваме да го използвате, но ако искате, все пак можете да го използвате. Благодаря на DoomLerd за обработката на repo-то. 
 > 
 > {.is-warning}
 
-## Table of Contents
+## Съдържание
 
-- **[About](#about)**
-  - [Stats](#stats)
+- **[Относно](#about)**
+  - [Статистики](#stats)
   - [Изисквания](#requirements)
-  - Examples (soon)
-  - FAQs (soon)
-  - Building (soon)
-  - [Support](#support)
+  - Примери (скоро)
+  - Често задавани въпроси (скоро)
+  - Изграждане (скоро)
+  - [Поддръжка](#support)
   - [Кредити](#credits)
-  - [License](#license)
-- **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
-- **[Portable AppImage](#appimage)** (_RECOMMENDED_)
-  - [Installation instructions](#appimageinstall)
-  - [Additional notes](#appimagenotes)
-- [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
-- [**Debian and Ubuntu based distributions**](#packagecloud)
-- [**Arch Linux based distributions**](#arch)
+  - [Лиценз](#license)
+- **[Snapcraft](#snapcraft)** (TL;DR : _никога_ ™️)
+- **[Преносим AppImage](#appimage)** (_ПРЕПОРЪЧАНО_)
+  - [Инструкции за инсталиране](#appimageinstall)
+  - [Допълнителни бележки](#appimagenotes)
+- [**Red Hat Enterprise Linux (RHEL) на базата на разпределения**](#packagecloud)
+- [**Дистрибуции, базирани на Debian и Ubuntu**](#packagecloud)
+- [**Дистрибуции, базирани на Arch Linux**](#arch)
 
 <a name="about"></a>
 
-## About
+## Относно
 
-**PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
+**PreMiD** е проста, конфигурируема програма, която използва библиотеката RP ( Rich Presence ) на Discord, която ви позволява да показвате това, което правите в мрежата ( и няколко програми ), в профила си в Discord като **състояние на игра**.
 
 <a name="stats"></a>
 
-### Stats
+### Статистики
 
 <table>
   <tr>
-    <th>Deployment</th>
-    <th>Total downloads</th>
-    <th>Latest release</th>
+    <th>Внедряване</th>
+    <th>Общо изтегляния</th>
+    <th>Последна версия</th>
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Latest release"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Всички издания"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Последна версия"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Публикации в Github"></a></td>
   </tr>
 </table>
 
@@ -60,21 +60,21 @@ The installation of the application is very important as the extension can not d
 
 ### Изисквания
 
-Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;</br> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.</br> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
+Технически всяка дистрибуция, която може да стартира [официалното](https://discordapp.com/download) **приложение** на Discord (не уеб или snap версията) може да стартира и PreMiD;</br> Както може би сте забелязали през последните години, някои дистрибуции на Linux започнаха да се отказват от поддръжката на 32-битови (ia32/i686/i386/x86) архитектури и в резултат на това ние също го направихме. Можете обаче да се опитате да създадете приложението сами, ако отчаяно се нуждаете да го използвате в 32-битова дистрибуция.</br> Тъй като в момента използваме Electron като основа (Discord също го прави!), неговите изисквания се отнасят и за това приложение:
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
 - Debian ≥ 8
 
-It is unknown whether older versions of other distributions support it, so just keep your distribution updated and use **LTS (Long-Term Support)** releases if your distribution offers them, as they're more stable (avoid alpha releases).
+Не е известно дали по-старите версии на други дистрибуции я поддържат, затова просто поддържайте дистрибуцията си актуализирана и използвайте **LTS (Long-Term Support)** издания, ако дистрибуцията ви ги предлага, тъй като те са по-стабилни (избягвайте алфа версиите).
 
 <a name="support"></a>
 
-### Support
+### Поддръжка
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="Присъединете се към нашия Дискорд сървър!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Присъединете се към нашия Дискорд сървър!">
+  <a target="_blank" href="https://discord.premid.app/" title="Присъединете се към нашия Discord сървър!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Присъединете се към нашия Discord сървър!">
   </a>
 </div>
 
@@ -82,109 +82,109 @@ It is unknown whether older versions of other distributions support it, so just 
 
 ### Кредити
 
-Thanks to :
+Благодарим на:
 
-- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (and few other guys whom I forgot their names) for providing feedback on nightly releases.
-- @apriluwu for maintaining the Gentoo builds
-- @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
-- The Electron community for various packages
-- Anyone else who has ever contributed to the project in any way.
+- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (и няколко други момчета, на които забравих имената) за предоставяне на обратна връзка за нощните версии.
+- @apriluwu за поддържане на компилациите на Gentoo
+- @SlimShadyIAm и naka за предишното поддържане на пакетите на Arch User Repository
+- Общността на Electron за различни пакети
+- Всеки друг, който някога е допринесъл за проекта по някакъв начин.
 
 <a name="license"></a>
 
-### License
+### Лиценз
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
+[![Статус на FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
 <a name="snapcraft"></a>
 
 ## Portable AppImage
 
-The AppImage package is the recommended one if Discord works for you but other PreMiD packages (.deb, .rpm, etc) don't.
+Пакетът AppImage е препоръчителен, ако Discord работи за вас, но други пакети PreMiD (.deb, .rpm и т.н.) не работят.
 
 <a name="appimageinstall"></a>
 
-### Installation instructions
+### Инструкции за инсталиране
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
 ```
 
 ```bash
-# Just double-click it or run
+# Просто кликнете два пъти върху него или го стартирайте
 ./PreMiD*.AppImage
 ```
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### Допълнителни бележки
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
+Ако искате да изпробвате PreMiD или просто не искате да го инсталирате, този е най-добрият, той е винаги актуален, но _НЕ СТАРТИРА АВТОМАТИЧНО СЪС СИСТЕМАТА!_</br>Ако ви омръзне да го отваряте всеки път, използвайте другите пакети (според вашата дистрибуция).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
 <a name="packagecloud"></a>
 
 # PackageCloud
 
-We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
+Издадохме пакети deb/rpm в нашето хранилище packagecloud. Моля, прегледайте URL адреса https://packagecloud.io/PreMiD/Linux и изтеглете своя deb/rpm пакет или използвайте автоматичен скрипт.
 
-For **Ubuntu/Debian**:
+За **Ubuntu/Debian**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+За **Fedora/CentOS/RedHat**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+Ако командата не работи, изтеглете **deb/rpm** файл от нашето хранилище packagecloud или отменете настройките.
 
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux based distributions
+## Дистрибуции, базирани на Arch Linux
 
 Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Инструкции за инсталиране
 
 ```bash
-# Using yay (recommended)
+# Използване на yay (препоръчително)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# Използване на pakku
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# Използване на trizen
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# Използване на pacaur
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... разбирате смисъла
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+или ръчно от [Хранилището на потребителите на Arch](https://aur.archlinux.org/packages/premid), ако знаете какво правите.
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Допълнителни бележки
 
-If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
+Ако вашата дистрибуция използва pacman, първо трябва да инсталирате един от помощниците. Ако не разполагате с такива, Yay е препоръчително, стартирайте:
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -194,4 +194,4 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S premid
 ```
 
-Other AUR/Pacman helpers work as well, although each one's functionality is different so you may face issues while using them.
+Други помощници на AUR/Pacman също работят, въпреки че функционалността на всеки от тях е различна, така че може да срещнете проблеми при използването им.
