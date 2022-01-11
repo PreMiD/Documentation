@@ -1,6 +1,6 @@
 ---
 title: Windows
-description: Getting started with a PreMiD installation on Windows
+description: Първи стъпки с PreMiD инсталация на Windows
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,18 +8,18 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements).{.is-info}
+> Преди да продължите, уверете се, че системата ви отговаря на всички [ изисквания ](/install/requirements).{.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Инсталирането на приложението е много важно, тъй като разширението не може да направи нищо само по себе си.
 
 # Инсталирай
 1. Отиди на страницата ни с изтегляния като [цъкнеш тук](https://premid.app/downloads).
-2. Choose **Windows**.
-3. Open the installer.
-4. **Windows SmartScreen** will appear, if you install PreMiD for the first time. Click on **More Info** and then select **Run Anyway**. > This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
+2. Изберете ** Windows **.
+3. Отворете инсталатора.
+4. ** Windows SmartScreen ** ще се появи, ако инсталирате PreMiD за първи път. Кликнете върху ** Още информация ** и след това изберете ** Все пак стартирайте **. > Това е така, защото нямаме сертификат за подписване на код (CSC). [ Подкрепете ни ](https://www.patreon.com/Timeraa), за да го финансираме.{.is-info}
 
-The application will start automatically. Check for the symbol in your system tray.
+Приложението ще се стартира автоматично. Проверете за символа в системната област.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Не забравяйте да [ добавите ** разширение **](/install).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
