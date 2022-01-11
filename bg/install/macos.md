@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Преди да продължите, уверете се, че вашата система има всички [изисквания](/install/requirements). 
 > 
 > {.is-info}
 
