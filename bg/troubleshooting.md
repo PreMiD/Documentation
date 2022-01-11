@@ -1,6 +1,6 @@
 ---
 title: Отстраняване на неизправности
-description: Everything to solve your problem
+description: Всичко за решаване на проблема ви
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,126 +8,126 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> Уверете се, че имате разширението **и** приложението инсталирано! 
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+Включено на тази страница:
+1. [Общо отстраняване на неизправности](https://docs.premid.app/troubleshooting#general)
+2. [Отстраняване на неизправности в Linux](https://docs.premid.app/troubleshooting#linux)
+3. [Отстраняване на неизправности при MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+# Общо отстраняване на неизправности
+> Можете да използвате [този](https://qkeleq10.github.io/PreMiD-Troubleshooting/) инструмент, за да идентифицирате по-лесно проблема си. 
 > 
 > {.is-info}
-### Reload the page
-You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
+### Презаредете страницата
+Можете да натиснете <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS) на клавиатурата си, вместо да търсите бутона за презареждане.
 
-### Are you using the Discord app?
-PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
+### Използвате ли приложението Discord?
+PreMiD **не** работи във версията на Discord на браузъра, трябва да изтеглите приложението [тук](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status**
+### Уверете се, че сте активирали Discord Game Activity в настройките
+**Потребителски настройки** > **Активност в игра**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
-### Be sure Discord is running NOT as administrator
-Really important. Discord RPC will not work if you run Discord as an administrator.
+### Уверете се, че Discord НЕ работи като администратор
+Много важно. Discord RPC няма да работи, ако стартирате Discord като администратор.
 
-### Are you using a presence with settings?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+### Използвате ли presence с настройки?
+Много presences (включително `Twitch` и `SoundCloud`) са засегнати от проблем с разширението. Този проблем води до това, че разширението не взема правилно стойностите по подразбиране на настройките.
 
-To solve this, all you have to do is toggle the topmost setting:
+За да разрешите този проблем, трябва само да превключите най-горната настройка:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
-### Restart your browser
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+### Рестартирайте браузъра си
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) или <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) също върши добра работа. (Очевидно трябва да стартирате браузъра си отново.)
 
-### Restart PreMiD (Application)
+### Рестартирайте PreMiD (приложението)
 <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+След това трябва да рестартирате PreMiD.
 
-### Reload/restart Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+### Презаредете/рестартирайте Discord
+Натиснтете <kbd>CTRL+R</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS) на клавиатурата или рестартирайте Discord ръчно.
 
-### Check if you have antivirus or firewall running on your computer
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
+### Проверете дали на компютъра ви е стартирал антивирусна програма или защитна стена
+Понякога антивирусните програми и защитните стени блокират приложения, които създават/хостват сървъри или просто се свързват с интернет. Използваме локален сървър за получаване и предаване на данни между нашето приложение и разширението, така че ако блокирате възможността на приложението да предава данни, вероятно няма да можете да използвате PreMiD.
 
-### Disable your addons
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+### Деактивирайте добавките си
+Деактивирайте всички добавки и вижте дали работи. Ако да, опитайте се да разрешите добавките си стъпка по стъпка и ни кажете коя добавка е нарушила PreMiD.
 
-### Restarting your computer
-I hope you know how to restart a computer.
+### Рестартиране на компютъра
+Надявам се, че знаете как се рестартира компютър.
 
-### Reinstalling PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+### Преинсталиране на PreMiD
+Понякога има нещо нередно във файловете... Уроци за инсталиране можете да намерите [тук](/install).
 
-### Manual removal
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+### Ръчно премахване
+Windows: Напишете `%appdata%` в търсачката на файлове и изтрийте папката `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` и изтрийте папката `PreMiD`.
 
-### McAfee detected PreMiD as virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+### McAfee открива PreMiD като вирус (Windows)
+Това е фалшив положителен резултат от McAfee и ние сме докладвали проблема на компанията, засега можете да изключите PreMiD от сканирането, като направите следните стъпки:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Ако не се чувствате уверени да предприемете тези стъпки, не се колебайте да направите заявка в [#support](https://discord.premid.app/) и някой от нашите агенти по поддръжката ще може да Ви помогне! 
 > 
 > {.is-warning}
 
-1. Open the McAfee application and click the settings icon in the top right. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
-2. Click "Quarantined Items" (Second from the top).
-3. Expand it, and click the `>` icon before an item with the name "settings.dat".
-4. Make sure the path includes "AppData\Local\Temp\PreMiD", if so select it and press restore. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
-5. After it is restored you can close the "Quarantined Items" popup, then press the settings icon again in the top right.
-6. Click "Real-Time Scanning" (Third from the top).
-7. Expand it and click "Add file".
-8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
-9. Open the "PreMiD" folder and select the "PreMiD.exe" file and click open. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
-10. McAfee should now ignore our file, just launch our application and you should be good to go.
+1. Отворете приложението McAfee и щракнете върху иконата за настройки в горния десен ъгъл.<img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
+2. Щракнете върху "Карантинирани елементи" (втори отгоре).
+3. Разгънете го и щракнете върху иконата `>` пред елемента с име "settings.dat".
+4. Уверете се, че пътят включва "AppData\Local\Temp\PreMiD", ако е така, изберете го и натиснете restore.<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
+5. След като бъде възстановена, можете да затворите изскачащия прозорец "Карантинирани елементи", след което натиснете отново иконата за настройки в горния десен ъгъл.
+6. Щракнете върху "Сканиране в реално време" (трето отгоре).
+7. Разгънете го и щракнете върху "Добавяне на файл".
+8. Въведете "%appdata%" в адресната лента на File Explorer и натиснете Enter.<img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+9. Отворете папката "PreMiD", изберете файла "PreMiD.exe" и щракнете върху "Отвори".<img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
+10. Сега McAfee трябва да игнорира нашия файл, просто стартирайте нашето приложение и ще можете да работите.
 
-### PreMiD status bugged on Discord
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+### Статусът на PreMiD е повреден в Discord
+Не се притеснявайте. Натиснете клавишната комбинация <kbd>CTRL+R</kbd> (Windows) или <kbd>CMD+R</kbd> (MacOS), докато сте фокусирани върху прозореца на Discord, за да го презаредите.
 
 <a name="linux"></a>
 
-# Linux troubleshooting
-### Ubuntu/Debian based distros
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+# Отстраняване на неизправности в Linux
+### Дистрибуции, базирани на Ubuntu/Debian
+Ако сте изтеглили Discord чрез Snapcraft, RPC няма да работи. Трябва да деинсталирате версията на Snapcraft, като изпълните `sudo snap remove discord` на терминал, изтеглете **[Компилацията на Discord за Linux](https://discordapp.com/api/download?platform=linux)** (**[или Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), след това навигирайте до директорията, в която сте изтеглили Discord (обикновено `$HOME/Downloads`), След това инсталирайте пакета, като използвате `sudo dpkg -i discord-*.deb`. Ако AppImage не работи, трябва да помислите за проверка на другите ни пакети чрез **[тази връзка](https://packagecloud.io/premid/linux)**.
 
-### Arch Linux based distros
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+### Дистрибуции, базирани на Arch Linux
+Дистрибуциите, базирани на Arch Linux, трябва да използват пакета AUR (Arch User Repository), който се нарича <code>premid</code> или <code>premid-git</code> (<em x-id="3">ПРЕДУПРЕЖДЕНИЕ: Това хранилище изгражда premid от нашия изходен код.</em>). Ако не искате да инсталирате AUR мениджър (yay и т.н.), можете да разгледате нашия AppImage, който може да бъде изтеглен от нашето <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux хранилище</a></strong>.
+<em x-id="3">Предупреждение: пакетът в хранилището <strong x-id="1">AUR</strong> не се поддържа от нас (като организация PreMiD), а от други хора.</em>
 
-### Port binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+### Свързване на портове
+Трябва да знаете, че <strong x-id="1">PreMiD</strong> се свързва с порта <strong x-id="1">3020</strong>. Това е необходимо, за да могат разширението и приложението да комуникират. Ако <strong x-id="1">PreMiD</strong> ви показва грешка за този порт, трябва да проверите дали нещо е свързано с порт 3020, като стартирате <code>sudo lsof -i:3020</code> или <code>sudo netstat -tnlp | grep :3020</code> във вашия терминал. Ако някой процес е свързан с него, трябва да се уверите, че сте освободили порта и да опитате да стартирате <code>PreMiD</code> отново.
 
-### PreMiD's AppImage doesn't launch at login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
-1. Make a file named <strong x-id="1">rc.local</strong> in the <code>/etc</code> directory.
-2. Open this file in your favourite editor and paste given code with changing some things:
+### AppImage на PreMiD не се стартира при влизане
+Както посочихме в нашето **Linux хранилище**, AppImage не може да се стартира при влизане в системата. Можете да го добавите към автоматичното стартиране ръчно, като направите следните стъпки:
+1. Създайте файл с име <strong x-id="1">rc.local</strong> в директорията <code>/etc</code>.
+2. Отворете този файл в любимия си редактор и поставете дадения код, като промените някои неща:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# Изисква се да се стартира като /bin/bash (ако използвате zsh и др. можете да го промените.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
+# Пример: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
 
 exit 0
 ```
-3. Save file and chmod it as executable `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+3. Запазете файла и го кодирайте като изпълним `sudo chmod a+x /etc/rc.local`.
+4. Рестартирайте компютъра си и PreMiD AppImage трябва да се стартира при влизане в системата.
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
-### Error creating directory
+# Отстраняване на неизправности при MacOS
+### Грешка при създаването на директория
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
-2. Right-click on blank space and click **Create folder**.
-3. To this folder assign `PreMiD` name (remember about upper-cased letters).
-4. Open installer again.
+Ако получите тази грешка, това означава, че акаунтът ви няма права на администратор и трябва да създадете папка ръчно, като изпълните следните стъпки:
+1. Отворете търсачката и отворете папката **Приложения**.
+2. Щракнете с десния бутон на мишката върху празното пространство и щракнете върху **Създаване на папка**.
+3. На тази папка присвоете име `PreMiD` (не забравяйте за главни букви).
+4. Отворете отново инсталатора.
 
-# That has not solved my problem
-Please open a ticket in [#support](https://discord.premid.app/).
+# Това не е решило проблема ми
+Моля, отворете билет в [#support](https://discord.premid.app/).
