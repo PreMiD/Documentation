@@ -1,6 +1,6 @@
 ---
-title: TypeScript Configuration
-description: A little helper for TypeScript
+title: TypeScript Конфигурация
+description: Малък помощник за TypeScript
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,17 +8,17 @@ editor: markdown
 dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
-# TypeScript Configuration
+# TypeScript Конфигурация
 
-## Introduction
+## Въведение
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
+Когато сте изтеглили и разархивирали работното пространство, ще видите файл, наречен `tsconfig.json` в главната папка и папките на presences, този файл се използва за конфигуриране на **TypeScript** компилирането. Той вече е конфигуриран за вас, така че не се притеснявайте за това.
 
-We just want to describe some settings that you should know.
+Искаме само да опишем някои настройки, които трябва да знаете.
 
-## Root Configuration
+## Root конфигурация
 
-In the root configuration file you will see something like this.
+В главния конфигурационен файл ще видите нещо подобно.
 
 ```json
 {
@@ -37,21 +37,21 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property                   | описание                                                                                                                                                            |
-|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
-| module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
-| target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
-| removeComments             | Removing comments from compiled files.                                                                                                                              |
-| noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
-| noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement.                                                                                                            |
-| noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
-| noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
-| inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
-| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
-| esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
+| Property                   | Oписание                                                                                                                                                                                               |
+|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **compilerOptions**        | Използва се за конфигуриране на компилатора, като повечето от свойствата се намират тук.                                                                                                               |
+| module                     | Можете да прочетете повече за това [тук](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                                   |
+| target                     | Определя версията на JavaScript, която се компилира.                                                                                                                                                   |
+| removeComments             | Премахване на коментари от компилираните файлове.                                                                                                                                                      |
+| noEmitOnError              | Не излъчвайте изходна информация, ако са отчетени грешки.                                                                                                                                              |
+| noFallthroughCasesInSwitch | Съобщаване на грешки за пропуснати случаи в декларацията switch.                                                                                                                                       |
+| noUnusedLocals             | Съобщаване на грешки за неизползвани локали.                                                                                                                                                           |
+| noUnusedParameters         | Съобщаване на грешки за неизползвани параметри.                                                                                                                                                        |
+| inlineSourceMap            | Добавя sourcemapping                                                                                                                                                                                   |
+| typeRoots                  | Можете да прочетете повече за това [тук](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                                                   |
+| esModuleInterop            | Изпратете помощниците __importStar и __importDefault за съвместимост с екосистемата на Babel по време на изпълнение и разрешете --allowSyntheticDefaultImports за съвместимост с типовата система. |
 
-## Presence Configuration
+## Presence Конфигурация
 
 ```json
 {
@@ -66,4 +66,4 @@ In the root configuration file you will see something like this.
 |:------------------- |:---------------------------------------------------------------------------------------------- |
 | **extends**         | Използва се за разширяване на основния файл `tsconfig` за различни задачи.                     |
 | **compilerOptions** | Вижте [**Root конфигурация**](/dev/presence/tsconfig#root-configuration) за повече информация. |
-| outDir              | Defines the output directory for compiled files.                                               |
+| outDir              | Определя изходната директория за компилираните файлове.                                        |

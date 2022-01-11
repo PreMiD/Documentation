@@ -1,5 +1,5 @@
 ---
-title: Presence Class
+title: Presence клас
 description: The main class for every PreMiD presence
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
-# Presence Class
+# Presence клас
 
 ## Introduction
 
@@ -81,7 +81,7 @@ const presence = new Presence({
   slideshow = presence.createSlideshow();
 ```
 
-You can find the documentation for the `Slideshow` class [here](/dev/presence/slideshow).
+Можете да намерите документацията за `Slideshow` класа [тук](/dev/presence/slideshow).
 
 ### `getStrings(Object)`
 
@@ -254,7 +254,7 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Забележка:** Дадения `String` в querySelector е пример за това.
 
 ## `PresenceData` Interface
 
@@ -266,8 +266,8 @@ This interface has following variables, all of them are optional.
   <thead>
     <tr>
       <th style="text-align:left">Variable</th>
-      <th style="text-align:left">описание</th>
-      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Oписание</th>
+      <th style="text-align:left">Вид</th>
     </tr>
   </thead>
   <tbody>
