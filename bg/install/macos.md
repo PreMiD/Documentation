@@ -1,6 +1,6 @@
 ---
 title: macOS
-description: Getting started with a PreMiD installation on macOS
+description: Започване на работа с инсталация на PreMiD на macOS
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -12,34 +12,34 @@ dateCreated: 2021-09-07T01:25:45.465Z
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Инсталирането на приложението е много важно, тъй като разширението не може да направи нищо само по себе си.
 
 # Инсталирай
 1. Отиди на страницата ни с изтегляния като [цъкнеш тук](https://premid.app/downloads).
-2. Choose **OS X**.
-3. Extract the archive if necessary.
-4. Open the installer.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
-> This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
-6. Choose open when prompted.
-7. Grant access to connections through **Firewall** and control **System Events** when prompted.
+2. Избери **OS X**.
+3. Ако е необходимо, разархивирайте архива.
+4. Отворете инсталатора.
+5. Ако инсталирате PreMiD за първи път, може да се появи **предупреждение за сигурност**. Ако това е така, следвайте стъпките в раздела [Позволяване на приложения от неидентифицирани разработчици](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
+> Причината е, че не разполагаме със сертификат за подписване на код (CSC). [Подкрепете ни](https://www.patreon.com/Timeraa), за да го финансираме.{.is-info}
+6. Изберете Open, когато бъдете подканени.
+7. Предоставяйте достъп до връзки чрез **Firewall** и контролирайте **System Events** при поискване.
 
-The application will start automatically. Check for the symbol in your menu bar.
+Приложението ще се стартира автоматично. Потърсете символа в лентата с менюта.
 
-> Do not forget to [add the **extension**](/install). 
+> Не забравяйте да [добавите **разширението**](/install). 
 > 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## Разрешаване на приложения от неидентифицирани разработчици
+Стъпки за macOS Big Sur (11.0+):
+1. Кликнете с десния бутон на мишката върху нашия инсталатор.
+2. Щракнете върху Отвори в падащото меню.
+3. Щракнете върху Отвори в изскачащия прозорец.
 
-Steps for older macOS versions:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+Стъпки за по-стари версии на macOS:
+1. Отворете System Preferences.
+2. Отидете в раздела Security & Privacy.
+3. Щракнете върху ключалката и въведете паролата си или сканирайте пръстовия си отпечатък, за да можете да извършвате промени.
+4. Променете настройката за "Allow apps downloaded from" на "App Store and identified developers" от само "App Store".
