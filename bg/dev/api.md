@@ -1,6 +1,6 @@
 ---
 title: API
-description: Access resources and perform actions using the PreMiD API
+description: Достъп до ресурси и извършване на действия с използвайки PreMiD API
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,27 +10,27 @@ dateCreated: 2021-09-07T01:25:28.441Z
 
 # API
 
-> Базов Линк: https://api.premid.app 
+> Базов URL адрес: https://api.premid.app 
 > 
 > {.is-info}
 
-## API Versioning
-> API v2 has been deprecated and most of its endpoints have been removed. Please use v3 for any future request to prevent issues. 
+## API версиониране
+> API версия 2 е остарял и повечето от крайните му точки са премахнати. Моля използвайте v3 за всяка бъдеща заявка, за да предотвратите проблеми. 
 > 
 > {.is-danger}
 
-PreMiD exposes different versions of our API. You can specify version by including it in the request path like `https://api.premid.app/v{version_number}`. Omitting the version number from the route will route requests to the current default version (marked below accordingly).
+PreMiD показва различни версии на нашия API. Можете да посочите версия, като я включите в директорията на заявката като `https://api.premid.app/v{version_number}`. Пропускането на номера на версията от курса ще насочи заявките към текущата версия по подразбиране (маркирана съответно по-долу).
 
-## Encryption
+## Криптиране
 
-All HTTP-layer services and protocols (e.g. http) within the PreMiD API use TLS 1.2.
+Всички услуги и протоколи на ниво HTTP (напр. http) в рамките на PreMiD API използват TLS 1.2.
 
-# документация
-> Currently under construction! 
+# Документация
+> В момента е в процес на изграждане! 
 > 
 > {.is-danger}
 
-**Choose the API version:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+**Изберете версията на API:**
+- [v2 *частично изтрита | неодобрена*](/dev/api/v2)
+- [v3 *текуща*](/dev/api/v3)
 {.links-list}
