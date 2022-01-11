@@ -1,5 +1,5 @@
 ---
-title: iFrame Class
+title: iFrame клас
 description:
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,28 +8,28 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
-# iFrame Class
+# iFrame клас
 
-## Introduction
+## Въведение
 
-In some scenarios, your presence may need to access elements inside of `iframes`.
+В някои случаи може да се наложи вашия presence да получи достъп до елементи в `iframes`.
 
-The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
+Кодът, който сте написали във вашия файл `iframe.ts`, се инжектира във всеки iframe на страницата.
 
-Like presences, `iframes` have their own classes designed to automatically update data.
+Подобно на presence, `iframes` имат свои собствени класове, предназначени за автоматично актуализиране на данните.
 
 ```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Кодът идва тук...
 });
 ```
 
-## Methods
+## Методи
 
 ### `send(Object)`
-Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
+Изпраща данни до presence. Using this method will make the presence throw a `iFrameData` event.
 
 ### `getUrl()`
 Returns the URL of the `iframe`.
