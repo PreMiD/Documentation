@@ -29,22 +29,22 @@ iframe.on("UpdateData", async () => {
 ## Методи
 
 ### `send(Object)`
-Изпраща данни до presence. Using this method will make the presence throw a `iFrameData` event.
+Изпраща данни до presence. Използването на този метод ще накара вашия presence да излъчи `iFrameData` event.
 
 ### `getUrl()`
-Returns the URL of the `iframe`.
+Връща URL адреса на `iframe`.
 
-## Events
-In `iframes`, events work similarly to the way they work in the `presence` class.
+## Евенти
+В `iframes`, евентите работят подобно на начина, по който работят в `Presence` класа.
 
 ```ts
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Кодът идва тук...
 });
 ```
 
-Here is a list of all of the events:
+Ето списък на всички евенти:
 
 #### `UpdateData`
 
-This event is fired every time the iframe is being updated.
+Този евент се задейства всеки път, когато се актуализира iframe.
