@@ -307,19 +307,19 @@ presence.on("UpdateData", async () => {
   const presenceData: PresenceData = {
     //Большое изображение на присутствии. Это может быть ключ к изображению, загруженному на портал разработчика Discord — Rich Presence — Art Assets, или URL-адрес изображения.
     largeImageKey: "key",
-    //Маленькое изображение на присутствии. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
+    //Маленькое изображение на присутствии. Это может быть ключ изображения, опубликованной на Discord Developer Portal - Rich Presence - Art Assets, или URL-адрес на изображение
     smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
+    //Текст, который отображается при наведении на маленькое изображение
     smallImageText: "Some hover text",
-     //The upper section of the presence text
+     //Верхняя часть текста присутствия
     details: "Browsing Page Name",
-    //The lower section of the presence text
+    //Нижняя часть текста присутствия
     state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    //Временная метка unix, с которой начинать отсчет
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Если вы хотите показать оставшееся время вместо истекшего, это временная метка unix, в которой заканчивается таймер.
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //При желании вы можете установить здесь largeImageKey и изменить остальные, как переменные подсвойства, например presenceData.type = "blahblah"; примеры типов: details, state и т. д.
   };
   //Обновите сведения о присутствии всеми значениями из объекта presenceData, если (presenceData.details) presence.setActivity(presenceData);
   //Обновите присутствие без данных, очислив его и сделав большое изображение значком приложения Discord, а текст — именем приложения Discord.
