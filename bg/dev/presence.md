@@ -141,7 +141,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
   <thead>
     <tr>
       <th style="text-align:left">Променлива</th>
-      <th style="text-align:left">описание</th>
+      <th style="text-align:left">Описание</th>
       <th style="text-align:left">Вид</th>
       <th style="text-align:left">По избор</th>
     </tr>
