@@ -16,35 +16,35 @@ A continuación se muestra un ejemplo de este archivo.
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.5",
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICIO",
+  "altnames": ["SERVICIO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRIPCIÓN"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "VERSIÓN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
-  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORÍA",
+  "tags": ["ETIQUETA1", "ETIQUETA2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO QUE SE MOSTRARÁ",
+      "icon": "ICONO FONTAWESOME",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ A continuación se muestra un ejemplo de este archivo.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TÍTULO QUE SE MOSTRARÁ",
+      "icon": "ICONO FONTAWESOME",
+      "value": "\"%song%\" de %artist%",
+      "placeholder": "usa %song% o %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO QUE SE MOSTRARÁ",
+      "icon": "ICONO FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -100,7 +100,7 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
       <td style="text-align:left"><b>service</b></td>
       <td style="text-align:left">El título del servicio que soporta esta presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>NoNo</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
@@ -153,13 +153,13 @@ Ese ejemplo parece realmente extraño, ¿eh? No te preocupes, no es tan difícil
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Un string que representa la categoría a la que pertenece la presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Array con etiquetas, ayudará a los usuarios a buscar su presence en el sitio web.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>No</code></td>
     </tr>
@@ -204,7 +204,7 @@ Si quieres aprender expresiones regulares, aquí tienes algunos sitios web.
 
 ## Idioma de una presence
 
-PreMiD es un servicio polígloto, lo que significa que hay varios idiomas disponibles para conectar a los usuarios de todo el mundo. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Para personalizar aún más su presence, puede permitir que los usuarios seleccionen el idioma de visualización de su presence. Ve [`multiLanguage`](#multilanguage) para más información.
+PreMiD es un servicio polígloto, lo que significa que hay varios idiomas disponibles para conectar a los usuarios de todo el mundo. La lista de idiomas completa puede encontrarse en esta [entrada de la API](https://api.premid.app/v2/langFile/list). Para personalizar aún más su presence, puede permitir que los usuarios seleccionen el idioma de visualización de su presence. Ve [`multiLanguage`](#multilanguage) para más información.
 
 ## Configuraciones de una presence
 ¡Configura ajustes interactivos para que los usuarios puedan personalizar la presence!
