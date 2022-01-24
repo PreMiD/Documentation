@@ -11,7 +11,7 @@ dateCreated: 2021-09-07T01:25:35.049Z
 La instalación de la extensión es muy importante, ya que la aplicación no puede hacer nada por sí sola.
 
 # Instalar
-### Chrome, Edge, etc.
+### Chorme, Edge, etc.
 1. Ve a nuestra página de descargas [pulsando aquí](https://premid.app/downloads).
 2. Escoge **Chromium**.
 3. Haz clic en **Añadir a Chrome**.
