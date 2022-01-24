@@ -37,7 +37,7 @@ Las reglas generales del desarrollo de una presence son las siguientes:
 - Presences para servicios como listas de bots/servidores de Discord deben seguir estos requisitos adicionales:
   - El dominio debe tener al menos **6 meses** de antigüedad.
   - Visitantes únicos por día:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
+    - Para dominios de 6 a 12 meses de antigüedad: **20.000 visitas únicas por día**.
     - Para dominios de 12 o más meses de antigüedad: **45.000 visitas únicas por día**.
   - El sitio web no puede estar en un dominio barato como `.xyz` o `.club`.
   - El sitio web debe tener una muy buena calidad, diseño, etc.
@@ -77,27 +77,28 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
 {
   "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "USUARIO",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICIO",
+  "altnames": ["SERVICIO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRIPCIÓN",
+   "es": "DESCRIPCIÓN (opcional)"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIÓN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ETIQUETA1", "ETIQUETA2"],
+  "category": "CATEGORÍA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +110,8 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": true
     },
     {
@@ -118,15 +119,15 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
+      "value": "\"%song%\" por %artist%",
+      "placeholder": "usa %song% o %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -246,7 +247,7 @@ Aquí hay una lista de reglas que debes seguir al escribir tu archivo `presence.
 - Presences que utilizan botones deben seguir estos requisitos adicionales:
   - Los redireccionamientos a la página principal están prohibidos.
   - No está permitido promover sitios web por medio de ello.
-  - They can't display information you couldn't fit in other fields.
+  - No pueden mostrar información adicional cuando esta no puede ser mostrada otros campos.
   - Está prohibida la redirección directa a streams de audio o vídeo.
 
 
@@ -260,9 +261,9 @@ Aquí hay una lista de reglas que debes seguir al escribir tu archivo `presence.
 
 En algunas situaciones, las presences pueden comportarse inesperadamente o podrían realizar cambios menores para mejorar su funcionalidad. Aquí hay una lista de situaciones que **debes** tener en cuenta al modificar presences.
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
+- Si el autor de la presence no ha logrado ser contactado en más de un mes, puedes contactar a un verificador para ver si puedes modificar la presence.
 - Si haces modificaciones a una presence que afecte a al menos a un **un cuarto** del código base de la misma, tienes permitido añadirte como colaborador. Contacta a un verificador para más información sobre este tema.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Cualquiera puede crear PRs para corregir errores. **No** cambies imágenes si no están desactualizadas y cumplen con las especificaciones.
 
 # Verificación
 
@@ -308,7 +309,7 @@ Algunas cosas que deberías saber después de abrir una solicitud de pull reques
 
 Actualmente, una presence pasa por 2 etapas separadas de comprobaciones. Todas estas comprobaciones ayudan a que los verificadores determinen si su presence es adecuada para su implementación.
 
-- `DeepScan` is a bot that checks for code quality. Si alguna vez recibes errores **debes** corregirlos. *Warning: DeepScan doesn't always give you errors. Por favor, mire las advertencias del CodeFactor en su lugar.*
+- `DeepScan` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos. *Advertencia: DeepScan no siempre te da errores. Por favor, mire las advertencias del CodeFactor en su lugar.*
 - `CodeFactor` es un bot que comprueba la calidad del código. Si alguna vez recibes errores **debes** corregirlos.
 - `Schema Validation` escaneará su archivo `metadata.json` en busca de cualquier error (por ejemplo, campos faltantes, tipos de valores no válidos, etc.). Si alguna vez recibes errores de nuevos problemas, **debes** corregirlos. Añadir un campo schema al archivo `metadata.json` permitirá a tu editor de texto (si es compatible) mostrar estos errores durante el desarrollo.
 

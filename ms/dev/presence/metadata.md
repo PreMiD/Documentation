@@ -31,8 +31,8 @@ Contoh fail tersebut boleh dilihat di bawah.
     "en": "KETERANGAN"
   },
   "url": "URL",
-  "regExp": "UNGKAPAN NALAR",
-  "iFrameRegExp": "UNGKAPAN NALAR",
+  "regExp": "UNGKAPAN NALAR REGEXP",
+  "iFrameRegExp": "UNGKAPAN NALAR REGEXP",
   "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",

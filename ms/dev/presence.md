@@ -89,8 +89,8 @@ Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di 
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
   "category": "KATEGORI",
-  "regExp": "UNGKAPAN NALAR",
-  "iFrameRegExp": "UNGKAPAN NALAR",
+  "regExp": "UNGKAPAN NALAR REGEXP",
+  "iFrameRegExp": "UNGKAPAN NALAR REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [

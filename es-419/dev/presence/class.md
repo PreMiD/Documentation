@@ -56,7 +56,7 @@ El segundo parámetro indica si la presence está reproduciendo algo o no. El se
 
 Elimina la actividad actual y el titulo de la bandeja de trabajo.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *Obsoleto desde 2.2.3*
 
 > Este método funciona sólo en Mac OS. 
 > 
@@ -112,16 +112,16 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // El ID es el ID de la configuración multiLanguage.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
-let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+let strings: getStrings(),
+  // El ID es el ID del campo multiLanguage establecido en la configuración.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! ¡El siguiente código debe estar dentro del evento updateData!
 // The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
@@ -129,8 +129,8 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // resultado: Playing
+  pauseString = (await strings).pause; // resultado: Paused
 ```
 
 ### `getPageletiable(String)`
@@ -316,8 +316,8 @@ Esta interfaz tiene las siguientes variables, todas ellas son opcionales.
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
-        icon.</td>
+      <td style="text-align:left">Define el texto que se mostrará al usuario al pasar el cursor sobre el icono 
+        pequeño.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
