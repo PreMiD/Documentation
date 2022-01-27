@@ -41,4 +41,4 @@ dateCreated: 2021-09-07T01:17:22.577Z
 당신이 지원하는 [GitHub Repositories](https://github.com/PreMiD/)에서 저희에게 Pull Request를 보내세요. 저희가 직접 당신의 프로젝트를 보관하겠습니다. 만약 당신이 처음으로 Pull Request를 만드신다면,  [이곳](https://help.github.com/en/articles/creating-a-pull-request)을 방문해 보세요!
 
 # 인증받기
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+저희의 [검토자](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers)들의 당신의 Pull Request를 검토하는 동안 차분히 기다려 주세요.
