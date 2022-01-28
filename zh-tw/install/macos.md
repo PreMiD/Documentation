@@ -26,7 +26,7 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 程式將會自動執行 Check for the symbol in your menu bar.
 
-> Do not forget to [add the **extension**](/install). 
+> 別忘了[安裝**擴充功能**](/install) 
 > 
 > {.is-warning}
 
