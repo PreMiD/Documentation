@@ -141,8 +141,8 @@ Please copy the code above and put it in your `metadata.json` file. You now need
   <thead>
     <tr>
       <th style="text-align:left">Variable</th>
-      <th style="text-align:left">شرح</th>
-      <th style="text-align:left">نوع و</th>
+      <th style="text-align:left">توضیحات</th>
+      <th style="text-align:left">نوع</th>
       <th style="text-align:left">Optional</th>
     </tr>
   </thead>
@@ -395,7 +395,7 @@ The website you are developing on is automatically reloading every time you save
 # Files explained
 
 - [Presence Class](/dev/presence/class)
-- [نمایش Class](/dev/presence/slideshow)
+- [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
 - [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
