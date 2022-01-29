@@ -25,7 +25,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 
 All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## Installation
+## نصب کردن
 
 1. [Git](https://git-scm.com/) را نصب کنید.
 2. [Node](https://nodejs.org/en/) (که همراه با [npm](https://www.npmjs.com/) می آید) را نصب کنید.
