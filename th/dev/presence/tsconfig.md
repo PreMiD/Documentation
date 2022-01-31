@@ -42,12 +42,12 @@ In the root configuration file you will see something like this.
 | **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
 | module                     | คุณสามารถอ่านข้อมูลเพิ่มเติมได้ [ที่นี่](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                |
 | target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
-| removeComments             | Removing comments from compiled files.                                                                                                                              |
+| removeComments             | การลบคอมเม้นต์จากไฟล์ที่คอมไพล์                                                                                                                                     |
 | noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
 | noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement.                                                                                                            |
 | noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
-| noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
-| inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
+| noUnusedParameters         | รายงานข้อผิดพลาดเกี่ยวกับพารามิเตอร์ที่ไม่ได้ใช้                                                                                                                    |
+| inlineSourceMap            | เพิ่ม sourcemapping                                                                                                                                                 |
 | typeRoots                  | คุณสามารถอ่านข้อมูลเพิ่มเติมได้ [ที่นี่](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                |
 | esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
 
