@@ -1,6 +1,6 @@
 ---
-title: Risoluzione problemi
-description: Everything to solve your problem
+title: Risoluzione dei Problemi
+description: Tutto ciò che serve per risolvere il tuo problema
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -19,30 +19,30 @@ Included on this page:
 
 <a name="general"></a>
 
-# Risoluzione problemi generali
-> Per identificare con maggiore agevolezza il tuo problema puoi usare [questo](https://qkeleq10.github.io/PreMiD-Troubleshooting/) strumento. 
+# Risoluzione dei problemi generali
+> Puoi usare [questo](https://qkeleq10.github.io/PreMiD-Troubleshooting/) strumento per identificare più facilmente il tuo problema. 
 > 
 > {.is-info}
 ### Ricarica la pagina
-Puoi anche premere <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) o <kbd>CMD+R</kbd> (MacOS) sulla tua tastiera invece di cercare il pulsante di aggiornamento.
+Puoi anche premere <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) o <kbd>CMD+R</kbd> (MacOS) sulla tua tastiera invece di cercare il pulsante di ricaricamento.
 
 ### Stai usando l'app di Discord?
-PreMiD **non** è disponibile sulla versione del browser di Discord, è necessario scaricare l'app [qui](https://discord.com/download).
+PreMiD **non** funziona sulla versione browser di Discord, devi scaricare l'app [qui](https://discord.com/download).
 
-### Assicurati di aver abilitato l'attività di gioco Discord nelle impostazioni
-**Impostazioni utente** > **Attività di gioco**
+### Assicurati di aver abilitato lo Stato dell'Attività nelle impostazioni della tua app Discord
+**Impostazioni Utente** > **Stato dell'Attività**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
-### Assicurati che Discord NON sia in esecuzione come amministratore
-Really important. Discord RPC will not work if you run Discord as an administrator.
+### Assicurati che Discord NON sia eseguito come amministratore
+Molto importante. Discord RPC will not work if you run Discord as an administrator.
 
-### Stai usando una presenza con le impostazioni?
+### Stai usando una Presence con le impostazioni?
 Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
 
 To solve this, all you have to do is toggle the topmost setting:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
-### Riavvia il browser
+### Riavvia il tuo browser
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Riavvia PreMiD (Applicazione)
@@ -55,29 +55,29 @@ Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard o
 ### Controlla se hai antivirus o firewall in esecuzione sul tuo computer
 Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
 
-### Disabilita i tuoi addons
+### Disabilita i tuoi addon
 Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
 
-### Riavvio del computer
-I hope you know how to restart a computer.
+### Riavviare il tuo computer
+Spero tu sappia come riavviare un computer.
 
-### Reinstallazione PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+### Reinstallazione di PreMiD
+A volte c'è qualcosa di sbagliato con i file... Tutorials for the installation can be found [here](/install).
 
 ### Rimozione manuale
 Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
 
-### McAfee ha rilevato PreMiD come virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+### McAfee ha rilevato PreMiD come un virus (Windows)
+Questo è un falso positivo da McAfee e abbiamo riferito loro il problema, per ora puoi escludere PreMiD dalla scansione eseguendo i seguenti passaggi:
 
 > If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 
 1. Apri l'applicazione McAfee e clicca sull'icona delle impostazioni in alto a destra. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
-2. Fare clic su "Elementi in quarantena" (Secondo dall'alto).
-3. Espandilo, e clicca sull'icona `>` prima di un elemento con il nome "settings.dat".
-4. Assicurati che il percorso includa "AppData\Local\Temp\PreMiD", se così selezionalo e premi su ripristino. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
+2. Clicca "Elementi in Quarantena" (Secondo dall'alto).
+3. Espandilo e clicca l'icona `>` prima di un elemento con il nome "settings.dat".
+4. Assicurati che il percorso includa "AppData\Local\Temp\PreMiD", se sì, selezionalo e premi ripristina. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
 5. Dopo che è stato ripristinato è possibile chiudere il popup "Elementi in quarantena", quindi premere nuovamente l'icona delle impostazioni in alto a destra.
 6. Fare clic su "Scansione in tempo reale" (Terzo dall'alto).
 7. Espandilo e clicca su "Aggiungi file".
