@@ -46,7 +46,7 @@ Nhiều presence (bao gồm `Twitch` và `SoundCloud`) bị ảnh hưởng bởi
 <kbd>Alt</kbd> + <kbd>F4</kbd> (Windows) hoặc <kbd>CMD</kbd> + <kbd>Q</kbd> (MacOS) cũng hoạt động tốt. (Rõ ràng là bạn phải khởi động lại trình duyệt của mình.)
 
 ### Khởi động lại PreMiD (Ứng dụng)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Sau đó bạn phải khởi động lại PreMiD.
 
 ### Tải lại/khởi động lại Discord
