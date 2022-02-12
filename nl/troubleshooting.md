@@ -46,7 +46,7 @@ Om dit op te lossen hoef je alleen maar de bovenste instelling om te schakelen:
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) of <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) werkt ook goed. (Je moet dan natuurlijk wel je browser opnieuw openen.)
 
 ### PreMiD herstarten (Applicatie)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Hierna moet je PreMiD herstarten.
 
 ### Discord herladen/herstarten
