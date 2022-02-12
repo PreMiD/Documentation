@@ -46,7 +46,7 @@ To solve this, all you have to do is toggle the topmost setting:
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
 
 ### Reštartujte si PreMiD (Aplikáciu)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 You have to restart PreMiD afterwards.
 
 ### Obnovte/reštartujte Discord
