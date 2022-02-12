@@ -46,7 +46,7 @@ Selle lahendamiseks peate vaid vahetama ülemise sätte:
 Ka <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) või <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) teeb head tööd. (Peate oma brauseri ilmselgelt uuesti käivitama.)
 
 ### Taaskäivitage PreMiD (rakendus)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Pärast peate PreMiDi taaskäivitama.
 
 ### Laadige/taaskäivitage Discord

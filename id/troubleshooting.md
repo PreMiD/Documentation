@@ -46,7 +46,7 @@ Untuk memecahkan ini, kamu hanya butuh untuk menyalakan pilihan pengaturan palin
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) juga bisa bekerja. (Kamu harus membuka kembali browsermu.)
 
 ### Memulai ulang PreMiD (Aplikasi)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Kamu harus memulai ulang PreMiD setelah itu.
 
 ### Reload/mulai ulang Discord

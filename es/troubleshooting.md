@@ -46,7 +46,7 @@ Para resolverlo, desactiva y reactiva la configuración superior:
 También puedes usar <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) o <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS). (Obviamente tienes que volver a iniciar el navegador.)
 
 ### Reinicia PreMiD (Aplicación)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Luego debes reiniciar PreMiD.
 
 ### Recarga/Reinicia Discord

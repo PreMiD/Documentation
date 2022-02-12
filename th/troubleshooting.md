@@ -46,7 +46,7 @@ Presences หลายๆตัว (รวมถึง `Twitch` และ `Sound
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) หรือ <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) ได้ผลดีเหมือนกัน (คุณตัองสีสตาร์บราวเซอร์ใหม่อีกครั้ง)
 
 ### รีสตาร์ท PreMiD (แอพพลิเคชั่น)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 คุณต้องรีสตาร์ท PreMiD หลังจากนั้น
 
 ### รีโหลด/รีสตาร์ท ดิสคอร์ด

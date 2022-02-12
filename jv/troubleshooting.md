@@ -46,7 +46,7 @@ Kanggo ngatasi iki, sampeyan mung kudu ngaktifake pilihan setelan ndhuwur:
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (Sampeyan kudu mbukak browser maneh.)
 
 ### Restart PreMiD (Aplikasi)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Sampeyan kudu restart maneh PreMiD sawise iku.
 
 ### Reload/restart Discord

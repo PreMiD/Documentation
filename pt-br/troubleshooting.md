@@ -46,7 +46,7 @@ Para resolver isso, tudo que você precisa fazer é desativar e reativar a confi
 Usar <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) ou <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) também serve. (Você tem que iniciar seu navegador em seguida, obviamente.)
 
 ### Reinicie o PreMiD (Aplicativo)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 You have to restart PreMiD afterwards.
 
 ### Recarregue/Reinicie o Discord

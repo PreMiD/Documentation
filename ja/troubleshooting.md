@@ -56,7 +56,7 @@ dateCreated: 2021-09-07T01:17:32.312Z
 > 
 > ### PreMiDのデスクトップアプリを再起動する
 > 
-> <img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+> <img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 > 
 > 再度PreMiDを起動する必要があります。
 > 

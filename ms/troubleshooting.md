@@ -46,7 +46,7 @@ Untuk menyelesaikan isu ini, anda hanya perlu menogol tetapan teratas:
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) juga boleh lakukannya. (Sudah tentulah anda perlu mulakan semula pelayar anda.)
 
 ### Mulakan semula PreMiD (Aplikasi)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Anda perlu mulakan semula PreMiD selepas ini.
 
 ### Muat semula/mula semula Discord

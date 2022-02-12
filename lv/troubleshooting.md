@@ -46,7 +46,7 @@ To solve this, all you have to do is toggle the topmost setting:
 <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) vai <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) strādā arī labi. (Jums, protams, arī jāpalaiž pārlūkprogrammu pa jaunu.)
 
 ### Restartējiet PreMiD (Lietotni)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 You have to restart PreMiD afterwards.
 
 ### Pārlādējiet/restartējiet Discord
