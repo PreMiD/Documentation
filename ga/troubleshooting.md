@@ -46,7 +46,7 @@ Chun é seo a réiteach, níl le déanamh agat ach an suíomh is fearr a scorán
 Déanann <kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) nó <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) jab maith freisin. (Caithfidh tú do bhrabhsálaí a thosú arís ar ndóigh.)
 
 ### Atosaigh PreMiD (Feidhmchlár)
-<img src="https://i.imgur.com/wQA15xu.png" width="500px" style="max-width:100%;" />
+<img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
 Caithfidh tú PreMiD a atosú ina dhiaidh sin.
 
 ### Discord athlódáil/atosú
