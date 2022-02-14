@@ -82,7 +82,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 ### 제작진
 
-Thanks to :
+도움을 주신 분들:
 
 - @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (그리고 제가 이름을 까먹은 몇몇 친구들) nightly 릴리즈에 피드백을 준 사람들
 - Gentoo 빌드를 유지해주신 @apriluwu님
@@ -120,28 +120,28 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### 추가 사항
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
+PreMiD를 사용하고 싶거나 설치하고 싶지 않은 경우, 이것이 가장 좋습니다. 항상 최신 상태이지만 _시스템이 시작될 때 같이 실행되지 않습니다!_ </br> 매번 실행시키는 것에 지친다면 다른 패키지를 사용하십시오 (배포에 따라).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
 <a name="packagecloud"></a>
 
 # PackageCloud
 
-We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
+우리는 packagecloud repo에서 deb/rpm 패키지를 출시했습니다. https://packagecloud.io/PreMiD/Linux에 방문하여 deb/rpm 패키지를 다운로드하거나 자동 스크립트를 사용해보세요.
 
-For **Ubuntu/Debian**:
+**Ubuntu/Debian**의 경우:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+**Fedora/CentOS/RedHat</ strong>의 경우 :</p>
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+명령어가 작동하지 않으면 packagecloud repo에서 **deb/rpm** 파일을 다운로드하거나 설정을 재정의하세요.
 
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
@@ -155,27 +155,27 @@ If command doesn't work, download **deb/rpm** file from our packagecloud repo or
 ### 설치 방법
 
 ```bash
-# Using yay (recommended)
+# yay 사용(추천)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+#pakku 사용
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+#trizen 사용
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+#pacaur 사용
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... 뭘 해야하는지 알겠죠?
 ```
 
 또는 뭘 해야할 지 안다면 [Arch User Repository](https://aur.archlinux.org/packages/premid)에서 수동 설치하세요.
