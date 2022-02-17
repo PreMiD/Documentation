@@ -16,7 +16,7 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 [`createSlideshow`](/dev/presence/class#createslideshow) মেথডটি দেখো [`Presence`](/dev/presence/class) ক্লাসের কীভাবে একটি `স্লাইডশো` তৈরি করতে হয়।
 
-## প্রপার্টি
+## প্রপার্টিগুলো
 
 ### `currentSlide`
 
@@ -27,15 +27,15 @@ const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // কনসোল লগ করবে PresenceData এর বিস্তারিত
 ```
 
-## মেথড
+## মেথডগুলো
 
 ### `addSlide(String, PresenceData, Number)`
 
-Add a new slide to the `Slideshow` according to provided data.
+প্রদত্ত ডাটা অনুযায়ী একটি নতুন স্লাইড যোগ করে `Slideshow` টিতে।
 
-First parameter requires a `String` that will be used as a unique identifier for the slide.
+প্রথম প্যারামিটারে একটি `String` প্রয়োজন যা ব্যবহার করা হবে স্লাইডটির জন্য একটি ইউনিক আইডেন্টিফায়ার হিসেবে।
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+দ্বিতীয় প্যারামিটারে একটি [`PresenceData` ইন্টারফেস](/dev/presence/class#presencedata-interface) প্রয়োজন সকল তথ্য পেতে যা তুমি দেখাতে চাও স্লাইডটিতে।
 
 Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
 
@@ -49,7 +49,7 @@ Updates the slide of the given `id` according to provided data.
 
 First parameter requires a `String` that is the unique identifier of the slide you want to update.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+দ্বিতীয় প্যারামিটারে একটি [`PresenceData` ইন্টারফেস](/dev/presence/class#presencedata-interface) প্রয়োজন সকল তথ্য পেতে যা তুমি দেখাতে চাও স্লাইডটিতে।
 
 Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
 
@@ -73,7 +73,7 @@ Deletes all slides from the `Slideshow`.
 
 A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
 
-## প্রপার্টি
+## প্রপার্টিগুলো
 
 ### `id`
 
@@ -83,7 +83,7 @@ A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`
 
 স্লাইডটিতে সংরক্ষিত `PresenceData` এর একটি [`PresenceData`](/dev/presence/class#presencedata-interface) অবজেক্ট রিটার্ন করে।
 
-## মেথড
+## মেথডগুলো
 
 ### `updateData(PresenceData)`
 
