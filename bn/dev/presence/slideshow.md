@@ -37,11 +37,11 @@ console.log(currentSlide.details) // কনসোল লগ করবে Presenc
 
 দ্বিতীয় প্যারামিটারে একটি [`PresenceData` ইন্টারফেস](/dev/presence/class#presencedata-interface) প্রয়োজন সকল তথ্য পেতে যা তুমি দেখাতে চাও স্লাইডটিতে।
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+তৃতীয় প্যারামিটারে একটি `Number` প্রয়োজন যা হচ্ছে সময়ের পরিমাণ মিলিসেকেন্ডে (কমপক্ষে: 5000) যা এই স্লাইডটি দেখাবে।
 
 ### `getSlides()`
 
-Returns all slides saved in the `Slideshow` as an `Array` of [`SlideshowSlide`](#slideshowslide-class).
+`Slideshow` তে সংরক্ষিত স্লাইডগুলো রিটার্ন করে [`SlideshowSlide`](#slideshowslide-class) এর একটি `Array` হিসেবে।
 
 ### `updateSlide(String, PresenceData, Number)`
 
@@ -51,7 +51,7 @@ First parameter requires a `String` that is the unique identifier of the slide y
 
 দ্বিতীয় প্যারামিটারে একটি [`PresenceData` ইন্টারফেস](/dev/presence/class#presencedata-interface) প্রয়োজন সকল তথ্য পেতে যা তুমি দেখাতে চাও স্লাইডটিতে।
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+তৃতীয় প্যারামিটারে একটি `Number` প্রয়োজন যা হচ্ছে সময়ের পরিমাণ মিলিসেকেন্ডে (কমপক্ষে: 5000) যা এই স্লাইডটি দেখাবে।
 
 ### `hasSlide(String)`
 
