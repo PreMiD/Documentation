@@ -26,7 +26,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-## মেথড
+## মেথডগুলো
 
 ### `send(Object)`
 Presence এ ডাটা পাঠায়। এই মেথডটি ব্যবহার করলে Presence টি একটি `iFrameData` ইভেন্ট পাঠাবে।
