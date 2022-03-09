@@ -25,7 +25,7 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 
 All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## 下載
+## 安裝
 
 1. 下載 [Git](https://git-scm.com/)。
 2. 下載  <ahref="https://nodejs.org/en/">Node</a> (comes with [npm](https://www.npmjs.com/)).
@@ -35,7 +35,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
 2. 選擇你選取的資料夾
-3. 在你的編碼器開啟。
+3. 在你的代碼編輯器開啟。
 
 ## Creating folders and files
 
