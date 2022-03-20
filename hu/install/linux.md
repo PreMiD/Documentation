@@ -47,12 +47,12 @@ The installation of the application is very important as the extension can not d
   <tr>
     <th>Deployment</th>
     <th>Total downloads</th>
-    <th>Latest release</th>
+    <th>Legújabb kiadás</th>
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Latest release"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Github releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Összes kiadás"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Legújabb kiadás"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="GitHub kiadások"></a></td>
   </tr>
 </table>
 
@@ -146,7 +146,7 @@ If command doesn't work, download **deb/rpm** file from our packagecloud repo or
 <a name="arch"></a>
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
 
-## Arch Linux based distributions
+## Arch Linux alapú disztribúciók
 
 Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
@@ -155,22 +155,22 @@ Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Sup
 ### Telepítési útmutató
 
 ```bash
-# Using yay (recommended)
+# yay használata (ajánlott)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# pakku használata
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# trizen használata
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# pacaur használata
 pacaur -S premid
 ```
 
