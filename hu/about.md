@@ -14,6 +14,6 @@ PreMiD is a simple, configurable utility that allows you to show what you're doi
 - A teljes projekt nyílt forráskódú! Mi együtt akarunk dolgozni a felhasználókkal - nem pedig ellenük.
 - Hamarosan megérkezik egy hatalmas funkció, a NézdCsoportokban. With game invitations and simultaneous watching and listening. Fenntartva: [Discord](https://discordapp.com/).
 
-# Core features
+# Alapfunkciók
 - Displays your current web service in Discord as your status.
 - Grants full control over Presences.
