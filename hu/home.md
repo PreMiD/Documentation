@@ -1,6 +1,6 @@
 ---
 title: Kezdőlap
-description: Official Documentation for v2
+description: Hivatalos dokumentáció a v2-hez
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,17 +8,17 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> A dokumentáció szerkesztése még folyamatban van! Néhány oldal befejezetlen vagy hiányos lehet. 
 > 
 > {.is-warning}
 
 # PreMiD névjegye
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
+- :mag: [Mi az a PreMiD?](/about) A PreMiD mögött álló szándékok és miért érdemes használni.
 - :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
 
 # Első lépések
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+A PreMiD gyorsan és egyszerűen telepíthető. You should be up and running in no time.
 
 - Make sure you have read the [system requirements](/install/requirements).
 - Follow the quick and simple [installation guide](/install).
