@@ -26,9 +26,9 @@ PreMiD is quick and easy to install. You should be up and running in no time.
 
 # Fejlesztők
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+[Első lépések](/dev) a PreMiD fejlesztéséhez az első lépés, mielőtt néhány dolgot kódolnál.
 
-- :computer: [API](/dev/api): Access resources and perform actions using the PreMiD API.
+- :computer: [API](/dev/api): Hozzáférés erőforrásokhoz és műveletek végrehajtása a PreMiD API segítségével.
 - :wrench: [Presence Development](/dev/presence): Learn how to use our Presence system.
 
 # Hozzájárulás
