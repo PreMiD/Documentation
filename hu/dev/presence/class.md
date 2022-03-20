@@ -1,5 +1,5 @@
 ---
-title: Presence Class
+title: Presence osztály
 description: The main class for every PreMiD presence
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
-# Presence Class
+# Presence osztály
 
 ## Bevezetés
 
