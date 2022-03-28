@@ -42,51 +42,51 @@ PreMiD با نسخه های وب دیسکورد کار **نمی کند**، شم�
 برای حل این مشکل، تمام کاری که باید انجام دهید این است که دکمه تنظیمات را تغییر وضعیت دهید:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
-### Restart your browser
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+### مرورگر خود را دوباره باز کنید
+<kbd>Alt</kbd>+<kbd>F4</kbd> در (Windows) یا <kbd>CMD</kbd>+<kbd>Q</kbd> در (MacOS) هم خوب عمل می کنند. (مشخصاً باید مرورگر خودتان را دوباره باز کنید.)
 
-### Restart PreMiD (Application)
+### باز کردن مجدد PreMiD (برنامه)
 <img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+بعد از آن شما باید PreMiD را ریستارت کنید.
 
-### Reload/restart Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+### بارگزاری/اجرای مجدد دیسکورد
+<kbd>CTRL+R</kbd> (در Windows) یا <kbd>CMD+R</kbd> (در MacOS) را روی صفحه کلید خود فشار دهید یا به طور دستی دیسکورد خود را مجددا باز نمایید.
 
-### Check if you have antivirus or firewall running on your computer
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
+### چک کنید که آیا ضدویروس یا دیوارآتش کامپیوتر شما در حال اجرا می باشند
+بعضی مواقع برنامه های ضد ویروس یا دیوار آتش مانع اجرای برنامه هایی می شوند که درحال ساخت/میزبانی سرور هستند یا فقط درحال به اینترنت می باشند. ما از سرور محلی برای دریافت و انتقال اطلاعات بین برنامه و افزونه‌مان استفاده می کنیم، پس اگر شما دسترسی انتقال اطلاعات برنامه را مسدود کنید، احتمالا نمی توانید از PreMiD استفاده کنید.
 
-### Disable your addons
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+### افزونه های خود را غیرفعال کنید
+همه افزونه های خود را غیر فعال کنید و ببینید که این کار جواب می‌دهد یا نه. اگر بله، سعی کنید افزونه های خود را یکی یکی فعال کنید و امتحان کنید، و بعد به ما افزونه‌ای که باعث خرابی و اجرا نشدن PreMiD شده را به ما بگویید.
 
-### Restarting your computer
-I hope you know how to restart a computer.
+### کامپیوتر را دوباره راه‌اندازی کنید
+امیدوارم بدونید که چطور میشه کامپیوتر رو ریستارت کرد.
 
-### Reinstalling PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+### PreMiD را دوباره نصب کنید
+بعضی مواقع مشکل از فایل ها می‌باشد... آموزش برای نصب را می توانید از [اینجا](/install) بیابید.
 
-### Manual removal
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+### حذف دستی
+ویندوز: در نوار مرورگر فایل `%appdata%` را بنویسید و پوشه `PreMiD` را حذف کنید. MacOS: به آدرس `~/users/USER/~Library/Application Support/` رفته و بعد پوشه `PreMiD` را حذف کنید.
 
-### McAfee detected PreMiD as virus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+### McAfee برنامه PreMiD را به عنوان ویروس شناسایی کرده (Windows)
+این یک تائید اشتباه از سوی McAfee است و ما این مشکل را به آن ها گزارش داده‌ایم، درحال حاضر شما می توانید PreMiD را از اسکن شدن مستثناء کنید با انجام مراحل زیر:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> اگر مطمئن نیستید که این مراحل را چگونه انجام دهید، می توانید یک تیکت در [#support](https://discord.premid.app/) ایجاد کنید و یکی از پشتیبانان در دسترس ما برای کمک به شما خواهد آمد! 
 > 
 > {.is-warning}
 
-1. Open the McAfee application and click the settings icon in the top right. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
-2. Click "Quarantined Items" (Second from the top).
-3. Expand it, and click the `>` icon before an item with the name "settings.dat".
-4. Make sure the path includes "AppData\Local\Temp\PreMiD", if so select it and press restore. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
-5. After it is restored you can close the "Quarantined Items" popup, then press the settings icon again in the top right.
-6. Click "Real-Time Scanning" (Third from the top).
-7. Expand it and click "Add file".
-8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
-9. Open the "PreMiD" folder and select the "PreMiD.exe" file and click open. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
-10. McAfee should now ignore our file, just launch our application and you should be good to go.
+1. برنامه McAfee را باز کنید و روی آیکن تنظیمات در سمت راست بالا کلیک کنید. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
+2. روی "Quarantined Items" کلیک کنید (مورد دوم از بالا).
+3. به طور گسترده بازش کنید، روی آیکن `>` قبل از آیتمی که نام "settings.dat" را دارد کلیک کنید.
+4. مطمئن شوید که مسیر مشخص شده شامل "AppData\Local\Temp\PreMiD" می باشد، در این صورت روی آن کلیک کنید و restore را بزنید. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
+5. بعد از آنکه بازیابی انجام شد می توانید پنجره "Quarantined Items" را ببندید و دوباره روی آیکن تنظیمات بالا سمت راست صفحه کلیک کنید.
+6. روی "Real-Time Scanning" کلیک کنید (مورد سوم از بالا).
+7. به حالت گسترده بازش کنید و روی "Add file" بزنید.
+8. در نوار آدرس مدیریت فایل "%appdata%" را وارد کنید و Enter صفحه کلید را بزنید. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+9. پوشه "PreMiD" را باز کنید و فایل "PreMiD.exe" را انتخاب کنید و روی باز کردن بزنید. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
+10. از الان به بعد McAfee دیگر نباید کاری به فایل هایمان داشته باشد، برنامه را دوباره باز کنید و از این به بعد همه چیز باید خوب پیش برود.
 
-### PreMiD status bugged on Discord
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+### وضعیت PreMiD در دیسکورد باگ خورده!
+نگران نباشید. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
 
 <a name="linux"></a>
 
