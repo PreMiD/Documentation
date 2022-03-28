@@ -1,6 +1,6 @@
 ---
-title: TypeScript Configuration
-description: A little helper for TypeScript
+title: پیکربندی Typescript
+description: هر چیزی که درباره تایپ‌اسکریپت به شما کمک می کند
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,9 +8,9 @@ editor: markdown
 dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
-# TypeScript Configuration
+# پیکربندی TypeScript
 
-## Introduction
+## مقدمه
 
 When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
 
@@ -37,7 +37,7 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property                   | شرح                                                                                                                                                                 |
+| Property                   | توضیحات                                                                                                                                                             |
 |:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
 | module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
