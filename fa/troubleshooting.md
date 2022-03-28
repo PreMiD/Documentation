@@ -1,6 +1,6 @@
 ---
 title: اشکال‌زدایی
-description: Everything to solve your problem
+description: همه چیز برای برطرف کردن مشکل شما
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,38 +8,38 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> مطمئن شوید که هردو افزونه **و** برنامه را نصب کرده باشید! 
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+موارد شامل شده در این صفحه:
+1. [اشکال‌زدایی کلی](https://docs.premid.app/troubleshooting#general)
+2. [اشکال‌زدایی لینوکس](https://docs.premid.app/troubleshooting#linux)
+3. [اشکال‌زدایی MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+# اشکال‌زدایی کلی
+> شما می توانید از [این](https://qkeleq10.github.io/PreMiD-Troubleshooting/) ابزار برای راحت تر پیداکردن مشکلتان استفاده کنید. 
 > 
 > {.is-info}
-### Reload the page
-شما می توانید با فشردن <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) یا <kbd>CMD+R</kbd> (MacOS) در صفحه کلیدتان نیز بجای پیدا کردن دکمه بارگزاری مجدد، فشار دهید.
+### صفحه را مجددا بارگزاری کنید
+شما می توانید به‌جای پیدا کردن دکمه بارگزاری مجدد در مرورگرخود، با فشردن <kbd>CTRL+R</kbd>/<kbd>F5</kbd> در (Windows) یا <kbd>CMD+R</kbd> در (MacOS) در صفحه کلیدتان نیز صفحه را مجدداً بارگزاری کنید.
 
-### Are you using the Discord app?
-PreMiD با نسخه های وب دیسکورد کار **نمی کند**، شما باید برنامه‌اش را از [اینجا](https://discord.com/download) دانلود کنید.
+### آیا از نرم‌افزار دیسکورد استفاده می کنید؟
+PreMiD با نسخه های وب دیسکورد کار **نمی کند**، شما باید نرم‌افزار دیسکورد را از [اینجا](https://discord.com/download) دانلود کنید.
 
-### مطمعن شوید که Activity Status را در تنظیمات دیسکورد فعال کرده باشید
+### مطمئن شوید که Activity Status را در تنظیمات دیسکورد فعال کرده باشید
 **تنظیمات کاربر** > **Activity Status**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
-### Be sure Discord is running NOT as administrator
-Really important. Discord RPC will not work if you run Discord as an administrator.
+### مطمئن شوید که دیسکورد روی حالت administrator اجرا نمی شود
+بسیار بسیار مهم! RPC های دیسکورد روی حالت administrator اجرا نمی‌شوند.
 
 ### Are you using a presence with settings?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+خیلی از Presence ها (از جمله `Twitch` و `SoundCloud`) تحت تاثیر مشکلات افزونه‌ای قرار میگیرند. این مشکل باعث می شود که افزونه نتواند مقادیر پیشفرض را برای تنظیمات به درستی به‌دست بیاورند.
 
-To solve this, all you have to do is toggle the topmost setting:
+برای حل این مشکل، تمام کاری که باید انجام دهید این است که دکمه تنظیمات را تغییر وضعیت دهید:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Restart your browser
@@ -90,7 +90,7 @@ Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) k
 
 <a name="linux"></a>
 
-# Linux troubleshooting
+# اشکال‌زدایی لینوکس
 ### Ubuntu/Debian based distros
 If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
 
@@ -119,7 +119,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# اشکال‌زدایی MacOS
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
