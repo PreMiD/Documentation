@@ -66,60 +66,60 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "ЧОВЕК",
-    "id": "ИД"
+    "name": "USER",
+    "id": "ID"
   },
   "contributors": [
     {
-      "name": "ЧОВЕК",
-      "id": "ИД"
+      "name": "USER",
+      "id": "ID"
     }
   ],
-  "service": "УСЛУГА",
-  "altnames": ["УСЛУГА"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "ОПИСАНИЕ"
+    "en": "DESCRIPTION"
   },
-  "url": "URL АДРЕС",
-  "version": "ВЕРСИЯ",
-  "logo": "URL АДРЕС",
-  "thumbnail": "URL АДРЕС",
+  "url": "URL",
+  "version": "VERSION",
+  "logo": "URL",
+  "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["ТАГ1", "ТАГ2"],
-  "category": "КАТЕГОРИЯ",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
     {
-      "id": "ИД",
+      "id": "ID",
       "multiLanguage": true
     },
     {
-      "id": "ИД",
-      "title": "ПОКАЗАНО ЗАГЛАВИЕ",
-      "icon": "FONTAWESOME ИКОНА",
+      "id": "ID",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
-      "id": "ИД",
+      "id": "ID",
       "if": {
-        "ИД": true
+        "ID": true
       },
-      "title": "ПОКАЗНО ЗАГЛАВИЕ",
-      "icon": "FONTAWESOME ИКОНА",
-      "value": "\"%song%\" от %artist%",
-      "placeholder": "използвай %song% или %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
-      "id": "ИД",
-      "title": "ПОКАЗАНО ЗАГЛАВИЕ",
-      "icon": "FONTAWESOME ИКОНА",
+      "id": "ID",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "подобни..."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
