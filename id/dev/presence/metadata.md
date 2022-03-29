@@ -16,35 +16,35 @@ Contoh file tersebut dapat ditemukan di bawah.
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "PENGGUNA",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "LAYANAN",
-  "altnames": ["LAYANAN"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESKRIPSI"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSI",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
+  "category": "CATEGORY",
   "tags": ["TAG1", "TAG2"],
-  "category": "KATEGORI",
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "JUDUL TAMPILAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ Contoh file tersebut dapat ditemukan di bawah.
       "if": {
         "ID": true
       },
-      "title": "JUDUL TAMPILAN",
-      "icon": "IKON FONTAWESOME",
-      "value": "\"%song%\" oleh %artist%",
-      "placeholder": "pakai %song% atau %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "JUDUL TAMPILAN",
-      "icon": "IKON FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
