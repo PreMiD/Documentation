@@ -66,7 +66,7 @@ Nós fizemos um gerador de arquivo `metadata.json` para pessoas preguiçosas [aq
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
     "name": "USER",
     "id": "ID"
