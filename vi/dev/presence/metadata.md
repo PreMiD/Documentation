@@ -16,35 +16,35 @@ Một ví dụ cho tệp đó có thể tìm thấy dưới đây.
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "NGƯỜI DÙNG",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "NGƯỜI DÙNG",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "DỊCH VỤ",
-  "altnames": ["DỊCH VỤ"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "MÔ TẢ"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "PHIÊN BẢN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "THỂ LOẠI",
+  "category": "CATEGORY",
   "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -52,17 +52,17 @@ Một ví dụ cho tệp đó có thể tìm thấy dưới đây.
       "if": {
         "ID": true
       },
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG FONTAWESOME",
-      "value": "\"%song%\" bởi %artist%",
-      "placeholder": "sử dụng %song% hoặc %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TIÊU ĐỀ",
-      "icon": "BIỂU TƯỢNG FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "v.v."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
