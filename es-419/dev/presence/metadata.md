@@ -16,35 +16,35 @@ A continuación se muestra un ejemplo de este archivo.
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.5",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USUARIO",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USUARIO",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "SERVICIO",
-  "altnames": ["SERVICIO"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPCIÓN"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSIÓN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORÍA",
-  "tags": ["ETIQUETA1", "ETIQUETA2"],
+  "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TÍTULO QUE SE MOSTRARÁ",
-      "icon": "ICONO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ A continuación se muestra un ejemplo de este archivo.
       "if": {
         "ID": true
       },
-      "title": "TÍTULO QUE SE MOSTRARÁ",
-      "icon": "ICONO FONTAWESOME",
-      "value": "\"%song%\" de %artist%",
-      "placeholder": "usa %song% o %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TÍTULO QUE SE MOSTRARÁ",
-      "icon": "ICONO FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
