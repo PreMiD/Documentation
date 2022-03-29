@@ -75,29 +75,29 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "ÚSÁIDEOIR",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "ÚSÁIDEOIR",
+      "name": "USER",
       "id": "ID"
     }
   ],
-  "service": "SEIRBHÍS",
-  "altnames": ["SEIRBHÍS"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "CUR SÍOS"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
-  "version": "LEAGAN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["CLIB1", "CLIB1"],
-  "category": "CHATAGÓIR",
+  "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
     }
     {
       "id": "ID",
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "ÍOCÓN FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
       "if": {
         "ID": true
       },
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "ÍOCÓN FONTAWESOME",
-      "value": "\"%song%\" leis an %artist%",
-      "placeholder": "bain úsáid as %song% nó %artist%" 
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "ÍOCÓN FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
-      "values": ["1", "2", "srl."]
+      "values": ["1", "2", "etc."]
     }
   ]
 }
