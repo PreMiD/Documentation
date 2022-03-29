@@ -16,35 +16,35 @@ Is féidir sampla den chomhad sin a fháil thíos.
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "ÚSÁIDEOIR",
+    "name": "USER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "ÚSÁIDEOIR",
+    "name": "USER",
     "id": "ID"
   }],
-  "service": "SEIRBHÍS",
-  "altnames": ["SEIRBHÍS"],
+  "service": "SERVICE",
+  "altnames": ["SERVICE"],
   "description": {
-    "en": "CUR SÍOS"
+    "en": "DESCRIPTION"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "LEAGAN",
+  "version": "VERSION",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "tags": ["CLIB1", "CLIB2"],
-  "category": "CHATAGÓIR",
+  "category": "CATEGORY",
+  "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "ÍOCÓN FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ Is féidir sampla den chomhad sin a fháil thíos.
       "if": {
         "ID": true
       },
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "OCÓN FONTAWESOME",
-      "value": "\"%song%\" leis an %artist%",
-      "placeholder": "bain úsáid as %song% nó %artist%"
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
+      "value": "\"%song%\" by %artist%",
+      "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "TEIDEAL TAISPEÁNA",
-      "icon": "ÍOCÓN FONTAWESOME",
+      "title": "DISPLAY TITLE",
+      "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
