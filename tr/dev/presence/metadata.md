@@ -16,7 +16,7 @@ Bu dosyanın bir örneği aşağıda bulunabilir.
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.6",
+  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
     "name": "USER",
     "id": "ID"
