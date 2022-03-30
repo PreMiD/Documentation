@@ -332,16 +332,16 @@ Seit v2.2.0 gibt es Slideshows, die es dir erlauben mehrere `PresenceData`-Schni
 
 ## Du kannst bestimmte Daten nicht abrufen?!
 
-Viele Websites verwenden [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Diese HTML-Tags können mehrere Quellen enthalten, z.B. Videos. Aber sie sind nicht immer relevant. Manche sind versteckt oder einfach nicht aktiv genutzt. Prüfe, ob Du die benötigten Informationen extrahieren kannst, bevor Du Dir unnötige Arbeiten machst.
+Viele Webseiten verwenden [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Diese HTML-Tags können mehrere Quellen enthalten, wie zum Beispiel Videos. Aber sie sind nicht immer relevant. Einige sind versteckt oder werden einfach nicht aktiv genutzt. Prüfe, ob Du die benötigten Informationen extrahieren kannst, bevor Du Dir unnötige Arbeiten machst.
 
 1. Überprüfe sie über die Browserkonsole (stelle sicher, dass Du Dich auf dem **Elements** Tab) befindest.
 2. Suche (<kbd>Strg</kbd>+<kbd>F</kbd> (Windows) oder <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Führe `document.querySelectorAll("iframe")` aus.
 
-Wenn feststellst, dass sich Deine Daten in einem iFrame befinden, musst Du folgende Schritte ausführen:
+Wenn Du feststellst, dass sich Deine Daten in einem iFrame befinden, musst Du folgende Schritte ausführen:
 
 1. Erstelle eine `iframe.ts`-Datei.
-2. Setze iFrame in Ihrer Metadatendatei auf `true`.
+2. Setze iFrame in Deiner Metadatendatei auf `true`.
 3. Fülle Deine iFrame-Datei aus.
 
 ```ts
