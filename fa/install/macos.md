@@ -16,15 +16,15 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 # نصب
 1. از طریق [این لینک](https://premid.app/downloads) به صفحه دانلود بروید.
-2. Choose **OS X**.
-3. Extract the archive if necessary.
-4. Open the installer.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
-> This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
-6. Choose open when prompted.
-7. Grant access to connections through **Firewall** and control **System Events** when prompted.
+2. **OS X** موردنظر را انتخاب کنید.
+3. محتوای پوشه زیپ شده را درصورت نیاز استخراج کنید.
+4. نصب کننده را باز کنید.
+5. یک **هشدار امنیتی** ممکن است نمایش داده شود، اگر این اولین باریست که PreMiD را نصب می کنید. اگر این چنین است، مراحل را زیر [اجازه برنامه ها از توسعه دهندگان نامشخص](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers) کار را پیش ببرید
+> این بدین‌خاطر اتفاق می افتد که ما هنوز امضاء گواهی کد (CSC) نداریم. از اینجا [مارا پشتیبانی کنید](https://www.patreon.com/Timeraa) تا بتوانیم مخارجش را تهیه کنیم.{.is-info}
+6. درصورت مواجه شدن با پنجره، روی بازکردن بزنید.
+7. دسترسی را از طریق**دیوارآتش** و کنترل **رویداد های سیستم** را نیز بدهید.
 
-برنامه به طور خودکار شروع می شود. Check for the symbol in your menu bar.
+برنامه به طور خودکار شروع می شود. علامت کوچک را در نوار منوی خود می توانید چک کنید.
 
 > Do not forget to [add the **extension**](/install). 
 > 
@@ -32,7 +32,7 @@ dateCreated: 2021-09-07T01:25:45.465Z
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
+## اجازه برنامه ها از سوی توسعه‌دهندگان ناشناس
 Steps for macOS Big Sur (11.0+):
 1. Right click on our installer.
 2. Click open in the dropdown menu.
