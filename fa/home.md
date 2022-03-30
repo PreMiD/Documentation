@@ -35,6 +35,6 @@ PreMiD نصب ساده و سریعی دارد. شما در کمترین زمان
 - :bug: [گزارش باگ](https://github.com/PreMiD): به ما کمک کنید تا این باگ های موذی را له کنیم.
 - :bulb: [پیشنهاد ویژگی جدید](https://discord.premid.app/): ما به ایده های خلاقانه شما نیازمندیم!
 - :heart: [حمایت مالی](https://www.patreon.com/Timeraa): به حامی کوچک یا اسپانسر بزرگ این پروژه خارق العلاده، تبدیل شوید!
-- :globe_with_meridians: [Locales](https://translate.premid.app): Let other users use PreMiD in their native language.
+- :globe_with_meridians: [بومی سازی](https://translate.premid.app): بزارید که بقیه کاربران PreMiD از زبان محلی خودشان استفاده کنند.
 
 ![](https://beta.premid.app/img/logo.2b414dc2.gif) {.align-abstopright}
