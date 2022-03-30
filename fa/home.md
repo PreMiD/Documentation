@@ -1,6 +1,6 @@
 ---
-title: Home
-description: Official Documentation for v2
+title: خانه
+description: مستندات رسمی برای نسخه 2
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,17 +8,17 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:47.172Z
 ---
 
-> The documentation is still being edited! Some pages may be incomplete or missing. 
+> این مستندات همچنان در حال تغییر و ویرایش هستند! ممکن است بعضی صفحات وجود نداشته باشند یا کامل نشده باشند. 
 > 
 > {.is-warning}
 
-# About PreMiD
-- :mag: [What is PreMiD?](/about) Intentions behind PreMiD and why you should use it.
-- :link: [What is RPC?](https://discordapp.com/rich-presence) All about Rich Presence and its functions.
+# درباره PreMiD
+- :mag: [ PreMiD چیست؟](/about) اهداف مدنظر PreMiD چه می باشند و چرا باید از آن استفاده کنیم.
+- :link:[ RPC چیست؟](https://discordapp.com/rich-presence) همه چیز درباره Rich Presence و کارایی آن.
 
-# Getting Started
+# شروع استفاده
 
-PreMiD is quick and easy to install. You should be up and running in no time.
+PreMiD نصب ساده و سریعی دارد. شما در کمترین زمان ممکن میتوانید آن را راه‌اندازی و استفاده کنید.
 
 - Make sure you have read the [system requirements](/install/requirements).
 - Follow the quick and simple [installation guide](/install).
