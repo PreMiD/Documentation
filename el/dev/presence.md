@@ -66,29 +66,29 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.7",
+  "$schema": "https://schemas.premid.app/metadata/1.3",
   "author": {
-    "name": "USER",
+    "name": "ΧΡΗΣΤΗΣ",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "ΧΡΗΣΤΗΣ",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "ΥΠΗΡΕΣΙΑ",
+  "altnames": ["ΥΠΗΡΕΣΙΑ"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ΠΕΡΙΓΡΑΦΗ"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "ΕΚΔΟΧΗ",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ΕΤΙΚΕΤΑ1", "ΕΤΙΚΕΤΑ2"],
+  "category": "ΚΑΤΗΓΟΡΙΑ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ΤΙΤΛΟΣ ΟΘΟΝΗΣ",
+      "icon": "ΕΙΚΏΝ FONTAWESOME",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ We've made a `metadata.json` file creator for the lazy peeps [here](https://eggs
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "ΤΙΤΛΟΣ ΟΘΟΝΗΣ",
+      "icon": "ΕΙΚΏΝ FONTAWESOME",
+      "value": "\"%song%\" με %artist%",
+      "placeholder": "χρήση %song% η %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ΤΙΤΛΟΣ ΟΘΟΝΗΣ",
+      "icon": "ΕΙΚΏΝ FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
