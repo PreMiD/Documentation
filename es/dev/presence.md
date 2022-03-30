@@ -68,27 +68,28 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "USUARIO",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICIO",
+  "altnames": ["SERVICIO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRIPTION",
+    "es": "DESCRIPCIÓN (opcional)"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIÓN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ETIQUETA1", "ETIQUETA2"],
+  "category": "CATEGORÍA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +101,8 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": true
     },
     {
@@ -109,15 +110,15 @@ Hemos hecho un generador de archivos `metadata.json` [aquí](https://eggsy.xyz/p
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
+      "value": "\"%song%\" por %artist%",
+      "placeholder": "usa %song% o %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
