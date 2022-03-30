@@ -1,6 +1,6 @@
 ---
 title: macOS
-description: Getting started with a PreMiD installation on macOS
+description: شروع کار با نصب PreMiD بر روی macOS
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> قبل از بیشتر پیش رفتن، مطمئن شوید که سیستم شماحداقل [نیازها](/install/requirements) را دارد. 
+> قبل از بیشتر پیش رفتن، مطمئن شوید که سیستم شما حداقل [نیازمندی‌ها](/install/requirements) را دارد. 
 > 
 > {.is-info}
 
