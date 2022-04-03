@@ -77,27 +77,27 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "GEBRUIKER",
       "id": "ID"
     }
   ],
   "service": "SERVICE",
   "altnames": ["SERVICE"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "BESCHRIJVING"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIE",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
+  "category": "CATEGORIE",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -110,7 +110,7 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
     {
       "id": "ID",
       "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "icon": "FONTAWESOME FREE ICON",
       "value": true
     },
     {
@@ -118,17 +118,20 @@ Elke presence heeft een beschrijvingsbestand genaamd `metadata.json`, de metadat
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME ICOON",
       "value": 0,
       "values": ["1", "2", "etc."]
+    }
+  ]
+}
     }
   ]
 }
