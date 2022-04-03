@@ -1,5 +1,5 @@
 ---
-title: Bộ quy tắc khi làm Presence
+title: Bộ quy tắc làm Presence
 description: Những luật lệ mà tất cả những nhà phát triển presence phải tuân thủ nếu muốn presence của mình được thêm vào.
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -10,7 +10,7 @@ dateCreated: 2021-09-07T01:44:53.883Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Bộ quy tắc khi làm Presence</h3>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Bộ quy tắc làm Presence</h3>
     <h4 style="margin-top: 0">Sửa đổi lần thứ 3</h4>
     <br />
 </div>
@@ -77,27 +77,27 @@ Mỗi presence đều có một tệp mô tả gọi là `metadata.json`, metada
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "NGƯỜI DÙNG",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "NGƯỜI DÙNG",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "DỊCH VỤ",
+  "altnames": ["DỊCH VỤ"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "MÔ TẢ"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "PHIÊN BẢN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["NHÃN1", "NHÃN2"],
+  "category": "DANH MỤC",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Mỗi presence đều có một tệp mô tả gọi là `metadata.json`, metada
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG FONTAWESOME",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ Mỗi presence đều có một tệp mô tả gọi là `metadata.json`, metada
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG FONTAWESOME",
+      "value": "\"%song%\" bởi %artist%",
+      "placeholder": "sử dụng %song% hoặc %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TIÊU ĐỀ",
+      "icon": "BIỂU TƯỢNG FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "v.v."]
     }
   ]
 }
