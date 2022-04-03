@@ -18,33 +18,33 @@ Een voorbeeld van dat bestand kan hieronder worden gevonden.
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "GEBRUIKER",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "DIENSTNAAM",
+  "altnames": ["DIENSTNAAM"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "BESCHRIJVING"
   },
   "url": "URL",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "version": "VERSIE",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
+  "category": "CATEGORIE",
   "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME-ICOON",
       "value": true
     },
     {
@@ -52,15 +52,15 @@ Een voorbeeld van dat bestand kan hieronder worden gevonden.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME-ICOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TITEL",
+      "icon": "FONTAWESOME-ICOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
