@@ -18,33 +18,33 @@ Contoh fail tersebut boleh dilihat di bawah.
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "PENGGUNA",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "PERKHIDMATAN",
+  "altnames": ["PERKHIDMATAN"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "KETERANGAN"
   },
   "url": "URL",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
+  "regExp": "UNGKAPAN NALAR REGEXP",
+  "iFrameRegExp": "UNGKAPAN NALAR REGEXP",
+  "version": "VERSI",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
+  "category": "KATEGORI",
   "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": true
     },
     {
@@ -52,17 +52,17 @@ Contoh fail tersebut boleh dilihat di bawah.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TAJUK PAPARAN",
+      "icon": "IKON FONTAWESOME",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "dll."]
     }
   ]
 }
