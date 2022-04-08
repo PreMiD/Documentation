@@ -129,13 +129,13 @@ Either if you want to try PreMiD or just don't want to install it, this one's th
 
 We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
 
-For **Ubuntu/Debian**:
+สำหรับ **Ubuntu/Debian**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+สําหรับ **Fedora/CentOS/RedHat**:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
@@ -155,22 +155,22 @@ Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Sup
 ### วิธีการติดตั้ง
 
 ```bash
-# Using yay (recommended)
+# ใช้ yay (แนะนำ)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# ใช้ pakku
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# ใช้ trizen
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# ใช้ pacaur
 pacaur -S premid
 ```
 
