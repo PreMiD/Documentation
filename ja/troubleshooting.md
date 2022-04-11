@@ -13,13 +13,13 @@ dateCreated: 2021-09-07T01:17:32.312Z
 > {.is-warning}
 
 目次:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+1. [基本的なトラブルシューティング](https://docs.premid.app/troubleshooting#general)
+2. [Linuxユーザー向け](https://docs.premid.app/troubleshooting#linux)
+3. [MacOSユーザー向け](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
+# 基本的なトラブルシューティング
 > もし心配な場合は、[#support](https://discord.premid.app/)でチケットを作ることも可能です。サポートがお手伝いします。ツール</0>（英語）を使用して解決することもできます。 </p> 
 > 
 > {.is-info}</blockquote> 
@@ -40,7 +40,7 @@ dateCreated: 2021-09-07T01:17:32.312Z
 > 
 > ### Discordが管理者権限で起動していないかを確認する
 > 
-> Really important. Discord RPC will not work if you run Discord as an administrator.
+> これは重要です。 Discord リッチプレゼンスは管理者権限で起動していると動きません。
 > 
 > ### 追加設定がついているプレゼンスの場合
 > 
@@ -116,7 +116,7 @@ dateCreated: 2021-09-07T01:17:32.312Z
 <a name="linux"></a>
 
 > 
-> # Linux troubleshooting
+> # Linuxユーザー向け
 > 
 > ### Ubuntu/Debian based distros
 > 
@@ -156,7 +156,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# MacOSユーザー向け
 
 ### Error creating directory
 
