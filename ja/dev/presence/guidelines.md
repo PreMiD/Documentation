@@ -17,18 +17,18 @@ dateCreated: 2021-09-07T01:44:53.883Z
 
 # ガイドライン
 
-[Presences Repository](https://github.com/PreMiD/Presences)へプレゼンスを公開する際は、一連のガイドラインに従う必要があります。 To some, these strict rules may seem harsh. このガイドラインは問題を回避するために作られています。
+[Presences Repository](https://github.com/PreMiD/Presences)へプレゼンスを公開する際は、一連のガイドラインに従う必要があります。 厳しいように見えるかもしれませんが、 このガイドラインは問題を回避するために作られています。
 
 # 作成
 
-The general rules of presence development are as follows:
+プレゼンスのルールは以下のとおりです。
 
-- Presences **must** be related to the website of choice.
-- Presences **cannot** be made for illegal websites. (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
-- You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
+- プレゼンスは選択されたサイトに関連付けされている必要があります。
+- プレゼンスは不当なサイトに対して公開することはできません。 (ブラウザクラッシャーや、違法薬物の取引サイト、児童ポルノが公開されているサイトなど)
+- ファイル構造はきれいに管理されている必要があります。指定されていないファイルは含めないでください。 (vscodeやgit folder、画像・テキストなど)
+- 確実なファイル構造が必要です。下書きやテストは公開するには適していません。
+- .onionで終わるドメインや無料で取得できるドメイン/ホストを持つウェブサイトのためのプレゼンスは原則許可されていませんが、そのドメインのために料金を支払ったことが証明された場合は例外として認められます。
+- ドメインが取得されてから、2ヶ月以上立っていないwebサイトのプレゼンスは許可されていません。
 - ブラウザの内部を指定するプレゼンスは許可されていません。（Chrome Web Store、`chrome://`、`about:` など。） これらを実装するには、試験中の機能(chrome://frags)を有効にする必要があり、ブラウザやデータに大きなダメージを与える可能性があるからです。
 - 一つのサブドメインのみをサポートするプレゼンスは許可されていません。（ホームページなどで正常に表示されないことがあるため） 利用規約、連絡フォームなどのあまり使われないページや、他のコンテンツがメインのコンテンツに関連していないものは例外です。 (例えば、Wikiaなど)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
@@ -244,7 +244,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 - Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
 - You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
 - Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
+  - メインページへのリダイレクトをしない
   - Promoting websites by them is prohibited.
   - They can't display information you couldn't fit in other fields.
   - Redirecting directly to audio/video stream is prohibited.
