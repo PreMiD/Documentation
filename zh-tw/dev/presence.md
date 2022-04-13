@@ -35,7 +35,7 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
 2. 選擇你選取的資料夾
-3. 在你的代碼編輯器開啟。
+3. 在你的程式碼編輯器開啟。
 
 ## Creating folders and files
 
