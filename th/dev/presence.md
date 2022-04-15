@@ -341,7 +341,7 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 2. ค้นหา (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) หรือ <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Execute `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+หากคุณพบว่าข้อมูลของคุณอยู่ใน iFrame คุณต้องดำเนินการดังต่อไปนี้:
 
 1. สร้างไฟล์ `iframe.ts`
 2. Set iFrame to `true` in your metadata file.
