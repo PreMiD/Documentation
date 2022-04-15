@@ -18,7 +18,7 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 ```ts
 const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+  clientId: "514271496134389561" // ตัวอย่าง clientId
 });
 ```
 
