@@ -252,7 +252,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">นิพจน์ทั่วไปที่ใช้ตรวจหา iframe ที่จะแทรก See regExp for more info.</td>
+      <td style="text-align:left">นิพจน์ทั่วไปที่ใช้ตรวจหา iframe ที่จะแทรก ดู regExp สำหรับข้อมูลเพิ่มเติม</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>ใช่</code></td>
     </tr>
@@ -329,13 +329,13 @@ presence.on("UpdateData", async () => {
 
 You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
 
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+For examples we suggest to look at the code of presences like: 1337x or 9GAG. สำหรับข้อมูลเพิ่มเติมเกี่ยวกับคลาส `Presence` คลิก [ที่นี่](/dev/presence/class)
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
 ## รับข้อมูลบางอย่างไม่ได้?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+เว็บไซต์จำนวนมากใช้ [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
 
 1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
 2. ค้นหา (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) หรือ <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
@@ -343,7 +343,7 @@ A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/W
 
 If you find that your data is in a iFrame you need to do the following:
 
-1. Create a `iframe.ts` file.
+1. สร้างไฟล์ `iframe.ts`
 2. Set iFrame to `true` in your metadata file.
 3. Filling in your iFrame file.
 
