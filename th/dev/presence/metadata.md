@@ -318,7 +318,7 @@ console.log(setting); // This will log the value of the setting
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+ซ่อนการตั้งค่าที่กำหนด
 ```ts
 presence.hideSetting("pdexID"); //แทนที่ pdexID ด้วย id ของการตั้งค่า
 ```

@@ -30,7 +30,7 @@ There are three properties available for `Presence` class.
 
 This property is required to make your presence work, because it uses your application id to display its logo and assets. คุณสามารถเข้าไปดูได้ที่ [หน้าแอปพลิเคชัน](https://discordapp.com/developers/applications)
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *เลิกใช้งานตั้งแต่ 2.2.4*
 
 When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
 
@@ -56,7 +56,7 @@ First parameter requires a [`PresenceData`](#presencedata-interface) interface o
 
 Clears your current activity and the tray title.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *เลิกใช้ตั้งแต่ 2.2.3*
 
 > วิธีนี้ใช้ได้เฉพาะบน Mac OS เท่านั้น 
 > 
@@ -141,7 +141,7 @@ const playString = (await strings).play, // result: Playing
 
 ```ts
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // นี่จะปลื้นเนื้อหาของตัวแปร
 ```
 
 ### `getExtensionVersion(Boolean)`
@@ -152,9 +152,9 @@ Returns version of the extension the user is using.
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // คำสั่งนี้จะปริ้น 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // คำสั่งนี้จะปริ้น 2.1.0
 ```
 
 ### `getSetting(String)`
@@ -162,16 +162,16 @@ console.log(version); // Will log 2.1.0
 Returns value of setting.
 
 ```ts
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); // เปลี่ยน pdexID เป็น id ของการตั้งค่า
+console.log(setting); // นี่จะปลิ้นค่าของการตั้งค่า
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+ซ่อนการตั้งค่าที่กำหนด
 
 ```ts
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // เปลี่ยน pdexID เป็น id ของการตั้งค่าที่
 ```
 
 ### `showSetting(String)`
@@ -179,7 +179,7 @@ presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
 Shows given setting (Only works if the setting was already hidden).
 
 ```ts
-presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); // เปลี่ยน pdexID เป็น id ของการตั้งค่าที่
 ```
 
 ### `getLogs()`
