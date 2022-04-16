@@ -34,7 +34,7 @@ dateCreated: 2021-09-07T01:44:53.883Z
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
 - Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
+- Discord BotやDiscordのサーバーリストなどのサイト向けのプレゼンスは、以下の要件に追加で従う必要があります。
   - The domain should be at least **6 months** old.
   - Unique visitors per day:
     - For 6 to 12 month old domains: **20,000 unique visitors/day**.
