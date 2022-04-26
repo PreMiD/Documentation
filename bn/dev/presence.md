@@ -179,7 +179,7 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Presence টির ছোট বর্ণনা, তুমি সার্ভিসটির ডেসক্রিপশন ব্যবহার করতে পারো তোমার মাথায় যদি কিছু না আসে। Your description must have key pair values which indicate the language, and the description in that specific language. বর্ণনা তৈরি করো সেসব ভাষার <i>যেসব ভাষা তুমি জানো</i>, আমাদের অনুবাদকগণ তোমার মেটাডাটা ফাইলে পরিবর্তন করবে।</td>
+      <td style="text-align:left">Presence টির ছোট বর্ণনা, তুমি সার্ভিসটির ডেসক্রিপশন ব্যবহার করতে পারো তোমার মাথায় যদি কিছু না আসে। তোমার বর্ণনাতে অবশ্যই key pair value থাকতে হবে যা ভাষাটিকে নির্দেশ করবে, এবং সেই নির্দিষ্ট ভাষাতে বর্ণনাটি। বর্ণনা তৈরি করো সেসব ভাষার <i>যেসব ভাষা তুমি জানো</i>, আমাদের অনুবাদকগণ তোমার মেটাডাটা ফাইলে পরিবর্তন করবে।</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>না</code></td>
     </tr>
