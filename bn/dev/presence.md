@@ -185,10 +185,10 @@ TypeScript কনফিগারেশন সম্পর্কে আরো জ
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
-      <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
+      <td style="text-align:left">সার্ভিসটির URL।<br><b>উদাহরণ:</b><code>vk.com</code><br>
+      <b>এই URL কে অবশ্যই ওয়েবসাইটটির URL - টির সাথে মিলতে হবে যেহেতু এটা শনাক্ত করবে এটাই কি সেই ওয়েবসাইট নাকি যেখানে স্ক্রিপ্টটা ইনজেক্ট করতে হবে।</b><br>কখনোই <code>https://</code> বা <code>http://</code> যোগ করবে <b>না</b> URL - টির মধ্যে এমনকি একটা স্ল্যাশও নয়:
       <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
+      <b>বি: দ্র:</b> কিছু URL এ <code>www.</code> অথবা অন্য কিছু থাকতে পারে তাদের ডোমেইন এর শুরুতে। Do <b>NOT</b> forget to add it!<br>
       You can add multiple URLs by doing the following:<br>
       <code>["URL1", "URL2", "ETC."]</code><br>
       You could also use regExp also known as Regex for this task, explained further below.</td>
