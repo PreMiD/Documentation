@@ -33,7 +33,7 @@ PreMiD는 디스코드 브라우저 버전에선 작동하지 **않습니다**, 
 **사용자 설정** > **게임 활동**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
-### 디스코드를 관리자 권한으로 실행하지 !마세요!
+### 디스코드를 관리자 권한으로 실행하지 마세요
 Really important. Discord RPC will not work if you run Discord as an administrator.
 
 ### 프리센스 설정을 사용중이신가요?
