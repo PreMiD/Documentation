@@ -18,7 +18,7 @@ A instalação da extensão é muito importante, pois o aplicativo não pode faz
 
 ### Opera
 1. Adicione a extensão **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Entre na nossa página da **[Chrome Web Store](https://chrome.google.com/webstore/detail/premid/agjnjboanicjcpenljmaaigopkgdnihi)** e adicione nossa extensão.
+2. Adicione a [nossa extensão](https://premid.app/downloads).
 
 > Não esqueça de [instalar o **aplicativo**](/install). 
 > 
