@@ -354,7 +354,7 @@ const presenceData: PresenceData = {
 
 ## Eventos
 
-Os events permitem que você detecte e lide com algumas mudanças ou chamadas que foram feitas. Você pode registrar eventos usando o método `on`.
+Os eventos permitem que você detecte e lide com algumas mudanças ou chamadas que foram feitas. Você pode registrar eventos usando o método `on`.
 
 ```ts
 presence.on("UpdateData", async () => {
