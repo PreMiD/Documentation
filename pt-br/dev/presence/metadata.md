@@ -355,7 +355,7 @@ Ao fazer a sua presença, você deve especificar uma categoria na qual a presenc
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
-        <td style="text-align:left"><b>Redes Sociais</b></td>
+        <td style="text-align:left"><b>Redes sociais</b></td>
       <td style="text-align:left">Sites que são usados para criar e compartilhar conteúdo ou para participar de outras formas de rede social.</td>
     </tr>
     <tr>
