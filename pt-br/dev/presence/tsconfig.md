@@ -16,7 +16,7 @@ Quando você baixou e descompactou a workspace, você verá um arquivo chamado `
 
 Queremos apenas descrever algumas definições que você deveria conhecer.
 
-## Configuração da raíz
+## Configuração raiz
 
 No arquivo de configuração raiz você verá algo assim.
 
