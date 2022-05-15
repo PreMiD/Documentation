@@ -219,7 +219,7 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link para sua miniatura da presence.</td>
+      <td style="text-align:left">Link para a miniatura da sua presence.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Não</code></td>
     </tr>
@@ -243,7 +243,7 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used.</td>
+      <td style="text-align:left">Define se <code>iFrames</code> são usados.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
@@ -255,7 +255,7 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Define se a extensão deveria estar lendo logs.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Sim</code></td>
     </tr>
