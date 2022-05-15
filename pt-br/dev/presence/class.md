@@ -101,7 +101,7 @@ const playString = strings.play; // resultado: Reproduzindo
 const pauseString = strings.pause; // resultado: Pausado
 ```
 
-Desde a versão 2.2.0 da extensão você pode obter as strings de uma determinada língua. Isso funciona bem com a opção de configuração também recém-adicionada `multiLanguage`.
+Desde a versão 2.2.0 da extensão você pode obter as strings de um determinado idioma. Isso funciona bem com a opção de configuração também recém-adicionada `multiLanguage`.
 
 Sugerimos que você use o seguinte código para que ele atualize automaticamente o PresenceData se o usuário alterar o idioma selecionado;
 
