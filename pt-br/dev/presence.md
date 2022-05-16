@@ -209,7 +209,7 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
       <td style="text-align:left"><b>version</b></td>
       <td style="text-align:left">Versão da sua presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
@@ -227,7 +227,7 @@ TLD significa Top Level Domain (Domínio de Primeiro Nível) por exemplo: .com .
       <td style="text-align:left"><b>color</b></td>
       <td style="text-align:left">Valor <code>#HEX</code>. Recomendamos usar uma cor primária do serviço que a sua presence suporta.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Não</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
