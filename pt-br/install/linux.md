@@ -46,7 +46,7 @@ A instalação do aplicativo é muito importante, uma vez que a extensão não p
 <table>
   <tr>
     <th>Deployment</th>
-    <th>Total downloads</th>
+    <th>Downloads</th>
     <th>Latest release</th>
   </tr>
   <tr>
