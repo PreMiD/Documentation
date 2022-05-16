@@ -67,14 +67,14 @@ Espero que você saiba como reiniciar um computador.
 ### Remoção manual
 Windows: Digite `%appdata%` no explorador de arquivos e delete a pasta do `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` e delete a pasta do `PreMiD`.
 
-### McAfee detectou PreMiD como vírus (Windows)
+### McAfee detectou o PreMiD como um vírus (Windows)
 Este é um falso positivo da McAfee e relatamos o problema a eles, por enquanto, você pode excluir PreMiD da varredura, executando as seguintes etapas:
 
-> Se você não se sentir seguro para seguir essas etapas, sinta-se à vontade para fazer um ticket em [#support](https://discord.premid.app/) (em inglês) e um de nossos Agentes de Suporte poderá ajudá-lo! 
+> Se você não se sentir seguro para seguir essas etapas, sinta-se à vontade para criar um ticket no [#support](https://discord.premid.app/) (em inglês) e um de nossos agentes de suporte poderá ajudá-lo! 
 > 
 > {.is-warning}
 
-1. Abra o aplicativo McAfee e clique no ícone de configurações no canto superior direito. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
+1. Abra o McAfee e clique no ícone de configurações no canto superior direito. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
 2. Clique em "Itens em quarentena" (segundo do topo).
 3. Expanda, e clique no ícone `>` antes de um item com o nome "settings.dat".
 4. Tenha certeza de que o caminho inclui "AppData\Local\Temp\PreMiD", se for o caso selecione e pressione restaurar.<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
