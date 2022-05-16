@@ -1,6 +1,6 @@
 ---
 title: Firefox
-description: Primeiros passos com a instalação do PreMiD no Firefoxd
+description: Primeiros passos com a instalação do PreMiD no Firefox
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
