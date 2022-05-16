@@ -14,10 +14,10 @@ dateCreated: 2020-06-11T18:04:21.843Z
 > 
 > {.is-info}
 
-O PreMiD pode ser executado em praticamente qualquer sistema. Isso quer dizer que ele roda em **Linux**, **macOS**, **Windows** e em algumas **modificações do Linux**.
+O PreMiD funciona em praticamente qualquer sistema. Isso quer dizer que ele roda em **Linux**, **macOS**, **Windows** e em algumas **modificações do Linux**.
 
 ### Processador
-PreMiD é executado perfeitamente em um processador single-core.
+PreMiD funciona perfeitamente em um processador com apenas um núcleo.
 
 ### RAM
 Sistemas Linux devem ter **no mínimo 20MB de RAM** para executar o PreMiD. Sistemas Windows e macOS geralmente requerem um pouco mais de RAM.
