@@ -137,7 +137,7 @@ const playString = (await strings).play, // result: Playing
 
 Retorna uma variável a partir do site, se ela existir.
 
-**Atenção: Essa função pode causar alta utilização de CPU e travamentos no site quando tiver sido executada várias vezes.**
+**Atenção: esta função pode causar alta utilização do processador & e travamentos no site se for executada várias vezes.**
 
 ```ts
 const pageVar = getPageletiable(".pageVar");
