@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: Primeiros passos com a instalação do PreMiD no Linux
+description: Primeiros passos para a instalação do PreMiD no Linux
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
