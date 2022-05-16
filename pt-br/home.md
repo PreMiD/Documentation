@@ -22,7 +22,7 @@ PreMiD é rápido e fácil de instalar. Você vai estar com ele pronto e funcion
 
 - Certifique-se que você leu os [requisitos de sistema](/install/requirements).
 - Siga o rápido e simples [guia de instalação](/install).
-- A [Solução de Problemas](/troubleshooting) te mostra as soluções para os problemas comuns.
+- A [solução de problemas](/troubleshooting) te mostra as soluções para os problemas comuns.
 
 # Desenvolvedores
 
