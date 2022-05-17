@@ -79,7 +79,7 @@ Este é um falso positivo da McAfee e relatamos o problema a eles, por enquanto,
 3. Expanda, e clique no ícone `>` antes de um item com o nome "settings.dat".
 4. Tenha certeza de que o caminho inclui "AppData\Local\Temp\PreMiD", se for o caso selecione e pressione restaurar.<img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
 5. Depois de restaurado, você pode fechar a janela "Itens em quarentena", depois pressione novamente o ícone de configurações no canto superior direito.
-6. Clique em "Verificação em tempo real" (Terceira do topo).
+6. Clique em "Verificação em tempo real" (terceiro do topo).
 7. Expanda-o e clique em "Adicionar arquivo".
 8. Digite "%appdata%" na barra de endereço do gerenciador de arquivos e pressione Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Abra a pasta "PreMiD" e selecione o arquivo "PreMiD.exe" e clique em abrir. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
