@@ -118,7 +118,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### Notas adicionais
 
 Se você quer experimentar o PreMiD ou simplesmente não quer instalá-lo, este é o melhor, está sempre atualizado mas _NÃO AUTO-INICIE COM O SISTEMA!_</br>Se você ficar cansado de ter que abrir cada vez, use os outros pacotes (de acordo com sua distribuição).
 
@@ -182,7 +182,7 @@ ou manualmente do [Repositório de Usuários Arch](https://aur.archlinux.org/pac
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Notas adicionais
 
 Se sua distribuição usa pacman, você deve instalar um dos ajudantes primeiro. Se você não tiver nenhum, é recomendado o Yay, execute :
 

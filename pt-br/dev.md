@@ -1,5 +1,5 @@
 ---
-title: Primeiros Passos
+title: Primeiros passos
 description: Algumas dicas para aqueles que começaram a programar recentemente
 published: true
 date: 2021-12-20T14:27:18.034Z
