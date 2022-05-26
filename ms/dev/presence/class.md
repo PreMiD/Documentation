@@ -40,7 +40,7 @@ Apabila menetapkan nilai `appMode` ke `true` dan Presence menghantar `PresenceDa
 
 ## Kaedah
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *Diperkecamkan sejak 2.2.4*
 
 Mengembalikan objek `PresenceData` berkaitan apa yang Presence paparkan.
 
