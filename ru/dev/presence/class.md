@@ -2,7 +2,7 @@
 title: Класс присутствия
 description: Основной класс для каждого присутствия PreMiD
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ const presence = new Presence({
 
 ## Методы
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Возвращает объект `PresenceData` о том, что отображает присутствие.
 
