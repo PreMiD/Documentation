@@ -40,7 +40,7 @@ Al establecer `appMode` a `true` si la presence enviara un `PresenceData` vacío
 
 ## Métodos
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *Obsoleto desde 2.2.4*
 
 Devuelve un objeto `PresenceData` con los datos que se están mostrando en la presence.
 
