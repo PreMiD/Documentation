@@ -2,7 +2,7 @@
 title: Presence Sınıfı
 description: Tüm PreMiD servisleri için geçerli ana sınıf
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Bu özellik, oynuyor etkinliğinizin çalışmasını sağlamak için gereklidir
 
 ## Metodlar
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Geçerli durumun bilgisini içeren `PresenceData` verisi döner.
 

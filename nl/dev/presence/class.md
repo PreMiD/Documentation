@@ -2,7 +2,7 @@
 title: Presence Klasse
 description: De belangrijkste klasse voor elke PreMiD presence
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Wanneer je `appMode` op `true` zet en de presence zou een lege `PresenceData` ve
 
 ## Methodes
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Geeft als resultaat een `PresenceData` object van wat de presence die wordt weergegeven.
 

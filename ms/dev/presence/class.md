@@ -2,7 +2,7 @@
 title: Kelas Presence
 description: Kelas utama untuk setiap Presence di PreMiD
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Apabila menetapkan nilai `appMode` ke `true` dan Presence menghantar `PresenceDa
 
 ## Kaedah
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Mengembalikan objek `PresenceData` berkaitan apa yang Presence paparkan.
 

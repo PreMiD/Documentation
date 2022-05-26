@@ -2,7 +2,7 @@
 title: Lớp Presence
 description: Lớp chính cho mọi presence của PreMiD
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Khi đặt `appMode` sang `true` và presence gửi đi một `PresenceData` r�
 
 ## Phương pháp
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Đưa trả object `PresenceData` của presence đang được hiển thị.
 

@@ -2,7 +2,7 @@
 title: Classe Presence
 description: La classe principale pour chaque presence PreMiD
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Quand le paramètre `appMode` est défini sur `true` et que la presence était c
 
 ## Méthodes
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Retourne un objet `PresenceData` de ce que la présence affiche.
 

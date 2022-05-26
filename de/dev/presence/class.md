@@ -2,7 +2,7 @@
 title: Presence-Klasse
 description: Die Hauptklasse für jede PreMiD-Presence
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Beim setzen von `appMode` zu `true` und die Presence sollte leere `PresenceData`
 
 ## Methoden
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Wirft ein `PresendeData` Objekt zurück, was die Presence anzeigt.
 
