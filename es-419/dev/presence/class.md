@@ -2,7 +2,7 @@
 title: Clase de Presence
 description: La clase principal para cada presence de PreMiD
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Al establecer `appMode` a `true` si la presence enviara un `PresenceData` vacío
 
 ## Métodos
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Devuelve un objeto `PresenceData` con los datos que se están mostrando en la presence.
 
