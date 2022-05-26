@@ -2,7 +2,7 @@
 title: Rang Láithreachta
 description: An rang is mó do gach láithreacht PreMiD
 published: true
-date: 2021-12-20T14:27:18.034Z
+date: 2022-05-26T18:03:00.000Z
 tags:
 editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
@@ -40,7 +40,7 @@ Nuair a leagan síos `appMode` chun `true` a bhí agus an láithreacht a sheolad
 
 ## Modhanna
 
-### `getActivity()`
+### `getActivity()` - *Deprecated since 2.2.4*
 
 Filleann sé `PresenceData` réad ar a bhfuil an láithreacht ag taispeáint.
 
