@@ -40,7 +40,7 @@ const presence = new Presence({
 
 ## Методы
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` — *устарел с 2.2.4*
 
 Возвращает объект `PresenceData` о том, что отображает присутствие.
 
