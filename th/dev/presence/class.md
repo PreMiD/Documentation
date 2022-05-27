@@ -40,7 +40,7 @@ When setting `appMode` to `true` and the presence were to send an empty `Presenc
 
 ## ฟังก์ชัน
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *เลิกใช้งานตั้งแต่ 2.2.4*
 
 Returns a `PresenceData` object of what the presence is displaying.
 
