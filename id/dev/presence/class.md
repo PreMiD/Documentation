@@ -40,7 +40,7 @@ Ketika mengatur `appMode` menjadi `true` dan jika presence mengirim `PresenceDat
 
 ## Metode
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *Usang sejak 2.2.4*
 
 Mengembalikan objek `PresenceData` dari apa yang sedang ditampilkan presence.
 
