@@ -96,7 +96,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
-<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
+<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right" />
+
 <a name="snapcraft"></a>
 
 ## Portable AppImage
@@ -122,7 +123,8 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 Либо если вы хотите попробовать PreMiD или просто не хотите его установить, это самый лучший, он всегда в курсе, но DOESN'T AUTO-START С СИСТЕМНЫМИ!</br>Если вы устали открывать его каждый раз, используйте другие пакеты (в зависимости от вашего дистрибутива).
 
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
+
 <a name="packagecloud"></a>
 
 # PackageCloud
@@ -141,10 +143,11 @@ curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh 
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-Если команда не работает, скачайте **deb/rpm** из нашего репозитория packagecloud или переопределить настройки.
+Если команда не работает, скачайте **deb/rpm** из нашего репозитория packagecloud или переопределить настройки. 
 
 <a name="arch"></a>
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
+
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right" />
 
 ## Системные дистрибутивы на основе Linux
 
