@@ -60,7 +60,7 @@ Pemasangan aplikasi amat penting kerana sambungan tidak mampu membuat apa-apa de
 
 ### Keperluan
 
-Secara teknikalnya semua edaran yang mampu menjalankan **aplikasi** [rasmi](https://discordapp.com/download) Discord ( bukan versi sesawang atau snap ) juga boleh menjalankan PreMiD;</br> Seperti yang anda perasan dalam tahun kebelakangan ini, sesetengah edaran Linux mula menamatkan sokongan seni bina 32-bit (ia32/i686/i386/x86), dan oleh sebab itu, kami pun membuat perkara yang sama. Namun begitu, anda boleh cuba membina aplikasi ini sendiri jika anda amat perlu menggunakannya di edaran 32-bit.</br> Oleh kerana kami menggunakan Electron sebagai enjinnya ketika ini (Discord pun sama!), keperluannya juga terpakai untuk aplikasi ini:
+Secara teknikalnya setiap edaran yang boleh menjalankan **aplikasi** [rasmi](https://discordapp.com/download) Discord ( bukan versi sesawang atau snap ) juga boleh menjalankan PreMiD;<br/> Seperti yang anda perasan dalam tahun kebelakangan ini, sesetengah edaran Linux mula menamatkan sokongan seni bina 32-bit (ia32/i686/i386/x86), dan oleh sebab itu, kami pun membuat perkara yang sama. Namun begitu, anda boleh cuba membina aplikasi ini sendiri jika anda amat perlu menggunakannya di edaran 32-bit.<br/> Oleh kerana kami menggunakan Electron sebagai enjinnya ketika ini (Discord pun sama!), keperluannya juga terpakai untuk aplikasi ini :
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
@@ -121,7 +121,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### Nota tambahan
 
-Sama ada anda ingin cuba PreMiD sahaja atau cuma tidak ingin memasangnya, yang inilah yang terbaik, ia akan sentiasa dikemas kini tetapi _IA TIDAK DIMULAKAN SECARA AUTOMATIK BERSAMA SISTEM!_</br>Jika anda rasa penat untuk membukanya secara manual setiap kali, gunakan pakej yang lain (mengikut edaran anda).
+Sama ada anda ingin cuba PreMiD sahaja atau cuma tidak ingin memasangnya, yang inilah yang terbaik, ia akan sentiasa dikemas kini tetapi _IA TIDAK DIMULAKAN SECARA AUTOMATIK BERSAMA SISTEM!_<br/>Jika anda rasa penat untuk membukanya secara manual setiap kali, gunakan pakej yang lain (mengikut edaran anda).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
 
@@ -151,7 +151,7 @@ Jika perintah tidak berfungsi, muat turun fail **deb/rpm** dari repo PackageClou
 
 ## Edaran berasaskan Arch Linux
 
-Menggunakan [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Edaran yang disokong ialah _dirinya sendiri_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS dan [semua edaran yang menyokong pemasangan dari AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions_(Bahasa_Melayu)#Aktif).
+Menggunakan [Arch User Repository](https://aur.archlinux.org/packages/premid);<br/> Edaran yang disokong ialah _edarannya sendiri_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS dan [semua edaran yang menyokong pemasangan dari AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
