@@ -60,7 +60,7 @@ La instalación de la aplicación es muy importante, ya que la extensión no pue
 
 ### Requisitos
 
-Tecnicamente, toda distribución que pueda correr la **aplicación** [oficial](https://discordapp.com/download) de Discord (No la web o la versión de la Snap Store) puede también correr PreMiD; si has notado que en los últimos años algunas distribuciones de Linux dejan de tener soporte para las arquitecturas de 32-bits (ia32/i686/i386/x86), probablemente lo haremos también. Sin embargo, puedes intentar compilar la aplicación tu mismo, si necesitas usarla en una distribución de 32-bits desesperadamente.<br/> Puesto que actualmente utilizamos Electron como motor (¡Discord también lo hace!), sus requisitos también se aplican a esta aplicación:
+Tecnicamente, toda distribución que pueda correr la **aplicación** [oficial](https://discordapp.com/download) de Discord (No la web o la versión de la Snap Store) puede también ejecutar PreMiD.<br/> Como puedes haber notado en los últimos años, algunas distribuciones de Linux dejan de dar soporte para las arquitecturas de 32-bits (ia32/i686/i386/x86), probablemente lo haremos también. Sin embargo, puedes intentar compilar la aplicación tu mismo, si necesitas desesperadamente, usarla en una distribución de 32-bits.<br/> Puesto que actualmente utilizamos Electron como motor (¡Discord también lo hace!), sus requisitos también se aplican a esta aplicación:
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
@@ -121,7 +121,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### Notas adicionales
 
-Si quieres probar PreMiD o simplemente no quieres instalarlo, este es el mejor, está siempre actualizado pero _¡NO SE INICIA AUTOMÁTICAMENTE CON EL SISTEMA!_<br/> Si te cansas de tener que abrirlo cada vez, usa los otros paquetes (de acuerdo a tu distribución).
+Si quieres probar PreMiD o simplemente no quieres instalarlo, esto es lo mejor, está siempre actualizado pero _¡NO SE INICIA AUTOMÁTICAMENTE CON EL SISTEMA!_<br/> Si te cansas de tener que abrirlo cada vez, usa los otros paquetes (según tu distribución).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
 
