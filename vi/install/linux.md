@@ -60,7 +60,7 @@ Việc cài đặt tiện ích rất quan trọng vì ứng dụng không thể 
 
 ### Yêu cầu hệ thống
 
-Trên lý thuyết, các hệ điều hành có thể chạy **ứng dụng** Discord [chính thức](https://discordapp.com/download) ( không phải phiên bản web hay bản snap ) thì cũng có thể chạy PreMiD;</br> Trong vài năm trở lại đây, một số Distro của Linux đã dừng hỗ trợ cấu trúc 32-bit (ia32/i686/i386/x86) và như một hệ quả, chúng tôi cũng làm thế. Bạn có thể tự dựng lại phần mềm nếu bạn thực sự cần phải sử dụng trên distro 32-bit.</br> Vì chúng tôi sử dụng môi trường phát triển ứng dụng Electron (Discord cũng vậy!), các yêu cầu của nó cũng được áp dụng cho PreMiD :
+Trên lý thuyết, các hệ điều hành có thể chạy **ứng dụng** Discord [chính thức](https://discordapp.com/download) ( không phải phiên bản web hay bản snap ) thì cũng có thể chạy PreMiD;<br/> Trong vài năm trở lại đây, một số Distro của Linux đã dừng hỗ trợ cấu trúc 32-bit (ia32/i686/i386/x86) và như một hệ quả, chúng tôi cũng làm thế. Bạn có thể tự dựng lại phần mềm nếu bạn thực sự cần phải sử dụng trên distro 32-bit.<br/> Vì chúng tôi sử dụng môi trường phát triển ứng dụng Electron (Discord cũng vậy!), các yêu cầu của nó cũng được áp dụng cho PreMiD :
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
@@ -96,7 +96,8 @@ Xin cảm ơn :
 
 [![Tình trạng FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
-<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
+<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right" />
+
 <a name="snapcraft"></a>
 
 ## Portable AppImage
@@ -120,9 +121,10 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### Ghi chú bổ sung
 
-Hoặc nếu bạn muốn thử PreMiD hoặc không muốn cài đặt nó, thì đây là cách tốt nhất, nó luôn được cập nhật nhưng _KHÔNG KHỞI ĐỘNG CÙNG HỆ THỐNG!_ </br> Nếu bạn cảm thấy mệt mỏi vì phải mở nó nhiều lần, vui lòng sử dụng các phiên bản khác (theo distro của bạn).
+Hoặc nếu bạn muốn thử PreMiD hoặc không muốn cài đặt nó, thì đây là cách tốt nhất, nó luôn được cập nhật nhưng _KHÔNG KHỞI ĐỘNG CÙNG HỆ THỐNG!_ <br/> Nếu bạn cảm thấy mệt mỏi vì phải mở nó nhiều lần, vui lòng sử dụng các phiên bản khác (theo distro của bạn).
 
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
+
 <a name="packagecloud"></a>
 
 # PackageCloud
@@ -144,11 +146,12 @@ curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh 
 Nếu lệnh không hoạt động, hãy tải xuống tệp **deb/rpm** từ kho lưu trữ packagecloud của chúng tôi hoặc ghi đè các cài đặt.
 
 <a name="arch"></a>
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
+
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right" />
 
 ## Hệ điều hành dựa trên Arch Linux
 
-Sử dụng [Kho lưu trữ Người dùng Arch](https://aur.archlinux.org/packages/premid);</br> Các distro được hỗ trợ bao gồm _bản thân Arch_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS và [mọi distro hỗ trợ cài đặt từ AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+Sử dụng [Kho lưu trữ Người dùng Arch](https://aur.archlinux.org/packages/premid);<br/> Các distro được hỗ trợ bao gồm _bản thân Arch_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS và [mọi distro hỗ trợ cài đặt từ AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
