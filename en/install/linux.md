@@ -59,8 +59,8 @@ The installation of the application is very important as the extension can not d
 
 ### Requirements
 
-Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;</br>
-As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.</br>
+Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;<br/>
+As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.<br/>
 Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
 
 - Ubuntu ≥ 12.04
@@ -97,7 +97,7 @@ Thanks to :
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
-<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
+<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right">
 <a name="snapcraft"></a>
 
 ## Portable AppImage
@@ -121,9 +121,9 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### Additional notes
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_</br>If you get tired of having to open it each time, use the other packages (according to your distribution).
+Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_<br/>If you get tired of having to open it each time, use the other packages (according to your distribution).
 
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right">
 <a name="packagecloud"></a>
 
 # PackageCloud
@@ -145,11 +145,11 @@ curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh 
 If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
 
 <a name="arch"></a>
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right">
 
 ## Arch Linux based distributions
 
-Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br>
+Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);<br/>
 Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
