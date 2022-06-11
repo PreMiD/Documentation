@@ -18,17 +18,17 @@ Ein Beispiel für diese Datei, kannst du unten finden.
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "BENUTZER",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "BENUTZER",
     "id": "ID"
   }],
   "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "altnames": ["ALTERNATIVER SERVICE NAME"],
   "description": {
-    "en": "DESCRIPTION"
+    "de": "BESCHREIBUNG AUF DEUTSCH"
   },
   "url": "URL",
   "regExp": "REGEXP",
@@ -37,13 +37,13 @@ Ein Beispiel für diese Datei, kannst du unten finden.
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
+  "category": "KATEGORIE",
   "tags": ["TAG1", "TAG2"],
   "iframe": false,
   "settings": [
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
+      "title": "TITEL ANZEIGEN",
       "icon": "FONTAWESOME ICON",
       "value": true
     },
@@ -52,14 +52,14 @@ Ein Beispiel für diese Datei, kannst du unten finden.
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
+      "title": "TITEL ANZEIGEN",
       "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "value": "\"%song%\" von %artist%",
+      "placeholder": "Benutze %song% oder %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
+      "title": "TITEL ANZEIGEN",
       "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
@@ -153,13 +153,13 @@ Das Beispiel sieht wirklich seltsam aus, oder? Keine Sorge, es ist nicht so schw
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Eine Zeichenfolge, die die Kategorie darstellt, unter die die Presence fällt.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Ein Array mit Schlagwörtern. Diese unterstützen den Benutzer bei der Suche nach deiner Presence auf der Webseite.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nein</code></td>
     </tr>
