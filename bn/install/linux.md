@@ -96,7 +96,8 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 [![FOSSA স্ট্যাটাস](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
-<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
+<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right" />
+
 <a name="snapcraft"></a>
 
 ## Portable AppImage
@@ -122,7 +123,8 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 হয় তুমি যদি PreMiD পরীক্ষা করতে চাও অথবা শুধু তুমি এটাকে ইন্সটল করতে চাও না, এটাই হচ্ছে সেরাটা, এটা সবসময় আপ টু ডেট কিন্তু _কখনো অটো স্টার্ট হয় না সিস্টেমের সাথে!_</br>যদি তুমি ক্লান্ত হয়ে যাও প্রত্যেকবার এটাকে ওপেন করার জন্যে, ব্যবহার করো অন্যান্য প্যাকেজগুলো (তোমার ডিস্ট্রিবিউশন অনুযায়ী)।
 
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
+
 <a name="packagecloud"></a>
 
 # PackageCloud
@@ -144,7 +146,8 @@ curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh 
 যদি কমান্ড কাজ না করে, ডাউনলোড করো **deb/rpm** ফাইল আমাদের PackageCloud রিপোজিটরি থেকে অথবা সেটিংস ওভাররাইড করো।
 
 <a name="arch"></a>
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
+
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right" />
 
 ## Arch Linux ভিত্তিক ডিস্ট্রিবিউশনগুলো
 
