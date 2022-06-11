@@ -96,7 +96,8 @@ Teşekkürler:
 
 [![FOSSA Durumu](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
-<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
+<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right" />
+
 <a name="snapcraft"></a>
 
 ## Taşınabilir Uygulama Görüntüsü (AppImage)
@@ -122,7 +123,8 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 Sadece PreMiD'i denemek istiyorsanız veya kurmak istemiyorsanız, bu seçenek en iyisi, ayrıca her zaman güncel ama _SİSTEM AÇILINCA OTOMATİK BAŞLAMIYOR!_</br>Eğer her başlangıçta çalıştırmaktan yorulduysanız, (dağıtımınıza göre) diğer paketleri kullanın.
 
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
+
 <a name="packagecloud"></a>
 
 # PackageCloud
@@ -144,7 +146,8 @@ curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh 
 Eğer komut çalışmazsa **deb/rpm** paketini packagecloud depomuzdan indirebilirsin veya bazı ayarları geçersiz kılın.
 
 <a name="arch"></a>
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
+
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right" />
 
 ## Arch Linux Tabanlı Dağıtımlar
 
