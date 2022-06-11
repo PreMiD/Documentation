@@ -60,7 +60,7 @@ L'installation de l'application est très importante car l'extension ne peut rie
 
 ### Prérequis
 
-Techniquement, chaque distribution qui peut exécuter **l'application** Discord [officiel](https://discordapp.com/download) (pas la version web ou la version snap ) peut également exécuter PreMiD;</br> Comme vous l'avez peut-être remarqué ces dernières années, certaines distributions Linux ont commencé à abandonner la prise en charge des architectures 32 bits (ia32 / i686 / i386 / x86), et en conséquence, nous l'avons fait également. Vous pouvez cependant essayer de compiler l'application vous-même si vous avez désespérément besoin de l'utiliser sur une distribution 32 bits.</br> Puisque nous utilisons actuellement Electron comme moteur (Discord le fait aussi !), il est nécéssaire que vous utilisiez une des versions suivantes :
+Techniquement, chaque distribution qui peut exécuter **l'application** Discord [officiel](https://discordapp.com/download) (pas la version web ou la version snap ) peut également exécuter PreMiD;<br/> Comme vous l'avez peut-être remarqué ces dernières années, certaines distributions Linux ont commencé à abandonner la prise en charge des architectures 32 bits (ia32 / i686 / i386 / x86), et en conséquence, nous l'avons fait également. Vous pouvez cependant essayer de compiler l'application vous-même si vous avez désespérément besoin de l'utiliser sur une distribution 32 bits.<br/> Puisque nous utilisons actuellement Electron comme moteur (Discord le fait aussi !), il est nécéssaire que vous utilisiez une des versions suivantes :
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
@@ -121,7 +121,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 ### Notes additionnelles
 
-Si vous voulez essayer PreMiD ou simplement ne voulez pas l'installer, c'est la meilleur méthode, c'est toujours à jour mais <br>_CELA NE DÉMARRE PAS AUTOMATIQUEMENT AVEC LE SYSTÈME!</br>. Si vous en avez assez d'avoir à l'ouvrir à chaque fois, utilisez les autres paquets (selon votre distribution).
+Si vous voulez essayer PreMiD ou simplement ne voulez pas l'installer, c'est la meilleur méthode, c'est toujours à jour mais <br>_CELA NE DÉMARRE PAS AUTOMATIQUEMENT AVEC LE SYSTÈME!<br/>. Si vous en avez assez d'avoir à l'ouvrir à chaque fois, utilisez les autres paquets (selon votre distribution).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
 
@@ -151,7 +151,7 @@ Si la commande ne fonctionne pas, téléchargez le fichier **deb/rpm** depuis no
 
 ## Distributions basées sur Arch Linux
 
-Utilise les [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Les distributions supportées sont _elles-mêmes_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS et [toute les distros qui prennent en charge l'installation à partir de l'AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+Utilise les [Arch User Repository](https://aur.archlinux.org/packages/premid);<br/> Les distributions supportées sont _elles-mêmes_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS et [toute les distros qui prennent en charge l'installation à partir de l'AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
 
 <a name="archinstall"></a>
 
