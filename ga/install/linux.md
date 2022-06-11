@@ -96,7 +96,8 @@ Buíochas le:
 
 [![Stádas FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
-<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right"></img>
+<img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right" />
+
 <a name="snapcraft"></a>
 
 ## Portable AppImage
@@ -122,7 +123,8 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 Más mian leat triail a bhaint as PreMiD nó mura dteastaíonn uait é a shuiteáil, is é seo an ceann is fearr, tá sé cothrom le dáta i gcónaí ach _NÍ DHÉANANN TÚS-UATHOIBRÍOCH LEIS AN GCÓRAS!_</br>Má a bhíonn tú tuirseach de bheith agat é a oscailt gach uair, bain úsáid as na pacáistí eile (de réir do dháileadh).
 
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right"></img>
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
+
 <a name="packagecloud"></a>
 
 # PackageCloud
@@ -144,7 +146,8 @@ curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh 
 Mura n-oibríonn an t-ordú, íoslódáil **deb/rpm** comhad ónár socruithe athdhéanta nó sáraitheacha.
 
 <a name="arch"></a>
-<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right"></img>
+
+<img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right" />
 
 ## Dáiltí bunaithe ar Arch Linux
 
