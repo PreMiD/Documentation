@@ -77,19 +77,19 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "BENUTZER",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "BENUTZER",
       "id": "ID"
     }
   ],
   "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "altnames": ["ALTERNATIVER SERVICE NAME"],
   "description": {
-    "en": "DESCRIPTION"
+    "de": "BESCHREIBUNG"
   },
   "url": "URL",
   "version": "VERSION",
@@ -97,7 +97,7 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGORIE",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,7 +109,7 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
+      "title": "TITEL ANZEIGEN",
       "icon": "FONTAWESOME ICON",
       "value": true
     },
@@ -118,14 +118,14 @@ Jede Presence hat eine Deskriptor-Datei namens `metadata.json`, die Metadaten ha
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
+      "title": "TITEL ANZEIGEN",
       "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "value": "\"%song%\" von %artist%",
+      "placeholder": "Benutze %song% oder %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
+      "title": "TITEL ANZEIGEN",
       "icon": "FONTAWESOME ICON",
       "value": 0,
       "values": ["1", "2", "etc."]
@@ -260,7 +260,7 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 
 In einigen Situationen können sich Presences möglicherweise unerwartet verhalten oder geringfügige Änderungen vornehmen, um ihre Funktionalität zu verbessern. Hier ist eine Liste mit Regeln, die du beim Modifizieren von Presences befolgen **musst**.
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
+- Wenn der Autor der Presence seit mehr als einem Monat nicht mehr erreichbar war, kannst Du einen Prüfer kontaktieren, um zu sehen, ob Du selber die Presence ändern kannst.
 - Wenn du Änderungen an einer Presence vornimmst und mindestens ein ** Viertel** der Codebasis der Presence änderst, darfst du dich sich selbst als Mitwirkender hinzufügen. Kontaktiere einen Presence-Reviewer für weitere Informationen zu diesem Thema.
 - Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
 
