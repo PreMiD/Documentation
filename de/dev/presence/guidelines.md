@@ -174,7 +174,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`version`**
 
-- Stelle immer sicher, dass die Versionsnummer den [semantischen Versionsstandards](https://semver.org) entspricht, was auf das folgende Schema hinausläuft: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
+- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<MAJOR>.<MINOR>.<PATCH>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
 - Die Version **muss** immer bei `1.0.0` anfangen, sofern nicht anders angegeben. Andere Versionen werden **nicht** erlaubt.
 
 ### **`logo`**
