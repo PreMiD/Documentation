@@ -174,7 +174,7 @@ Danh sách các mục và quy tắc cho nó như sau:
 
 ### **`version`**
 
-- Luôn thêm số phiên bản tuân theo [tiêu chuẩn ngữ nghĩa của số phiên bản](https://semver.org), có khuân mẫu như sau: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Những thứ khác như `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` hoặc đổi từ `1.0.0` sang `2.0.0` sau một bản sửa lỗi/thay đổi nhỏ là **không** được cho phép.
+- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<MAJOR>.<MINOR>.<PATCH>`. Những thứ khác như `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` hoặc đổi từ `1.0.0` sang `2.0.0` sau một bản sửa lỗi/thay đổi nhỏ là **không** được cho phép.
 - Số hiệu phiên bản **phải** bắt đầu bằng `1.0.0` trừ khi được chỉ dẫn khác, các số phiên bản khác sẽ **không** được chấp nhận.
 
 ### **`logo`**
