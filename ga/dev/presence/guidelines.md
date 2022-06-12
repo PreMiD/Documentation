@@ -234,7 +234,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 > 
 > <ul>
 >   <li>
->     Déan cinnte i gcónaí go leanann uimhir an leagain <a href="https://semver.org">caighdeáin leaganacha shéimeantach</a>, a aistríonn chuig an scéim seo a leanas: <code>&lt;NEW-FEATURE&gt;&lt;HUGE-BUGFIX&gt;&lt;SMALL-BUGFIX-OR-METADATA-CHANGES&gt;</code>. Rud ar bith eile cosúil le <code>1.0.0.1</code>, <code>1.0</code>, <code>1</code>, <code>1.0.0-BETA</code> nó ag athrú <code>1.0. 0</code> go <code>2.0.0</code> ar shocrú fabht/tá athrú beag <strong x-id="1">ní cheadaítear</strong>.
+>     Always make sure the version number follows <a href="https://semver.org">semantic versioning standards</a>, which translates to the following scheme: <code>&lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt;</code>. Rud ar bith eile cosúil le <code>1.0.0.1</code>, <code>1.0</code>, <code>1</code>, <code>1.0.0-BETA</code> nó ag athrú <code>1.0. 0</code> go <code>2.0.0</code> ar shocrú fabht/tá athrú beag <strong x-id="1">ní cheadaítear</strong>.
 >   </li>
 >   <li>
 >     <strong x-id="1">Ní mór</strong> tús a chur leis an leagan i gcónaí ag <code>1.0.0</code> mura n-insítear a mhalairt, <strong x-id="1">ní cheadófar</strong> leaganacha eile.
