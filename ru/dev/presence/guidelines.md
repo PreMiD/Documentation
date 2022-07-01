@@ -75,29 +75,29 @@ presence
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.7",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
+    "name": "ПОЛЬЗОВАТЕЛЬ",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "ПОЛЬЗОВАТЕЛЬ",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "УСЛУГА",
+  "altnames": ["УСЛУГА"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "ВЕРСИЯ",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ЯРЛЫК1", "ЯРЛЫК2"],
+  "category": "КАТЕГОРИЯ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ presence
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
+      "icon": "FONTAWESOME ЗНАЧОК",
       "value": true
     },
     {
@@ -118,17 +118,17 @@ presence
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
+      "icon": "FONTAWESOME ЗНАЧОК",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "ОТОБРАЖАЕМЫЙ ЗАГОЛОВОК",
+      "icon": "FONTAWESOME ЗНАЧОК",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "и т. д."]
     }
   ]
 }
@@ -174,7 +174,7 @@ presence
 
 ### **`version`**
 
-- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<MAJOR>.<MINOR>.<PATCH>`. Что-нибудь ещё, например `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` или изменение `1.0.0` to `2.0.0` при исправление ошибки / небольшое изменение ** не ** разрешено.
+- Всегда следите за тем, чтобы номер версии [стандарты семантического управления версиями](https://semver.org), что переводится в следующую схему: `<MAJOR>.<MINOR>.<PATCH>`. Что-нибудь ещё, например `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` или изменение `1.0.0` to `2.0.0` при исправление ошибки / небольшое изменение ** не ** разрешено.
 - Версия ** должна ** всегда начинаться с ` 1.0.0 `, если не указано иное, другие версии ** не ** будут разрешены.
 
 ### **`logo`**
