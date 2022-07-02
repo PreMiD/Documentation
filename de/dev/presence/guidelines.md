@@ -174,7 +174,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 
 ### **`version`**
 
-- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<MAJOR>.<MINOR>.<PATCH>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
+- Stelle immer sicher, dass die Versionsnummer den [semantischen Versionsstandards](https://semver.org) entspricht, was auf das folgende Schema hinausläuft: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Alles andere wie `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` oder das Ändern von `1.0.0` auf `2.0.0` bei einer Fehlerbehebung/kleinen Änderung ist **nicht** erlaubt.
 - Die Version **muss** immer bei `1.0.0` anfangen, sofern nicht anders angegeben. Andere Versionen werden **nicht** erlaubt.
 
 ### **`logo`**
@@ -246,7 +246,7 @@ Hier ist eine Liste an Regeln, denen du folgen musst, wenn du deine `presence.ts
 - Presences, die Schaltflächen verwenden, sollten diesen zusätzlichen Anforderungen folgen:
   - Weiterleitungen zur Hauptseite sind verboten.
   - Das Werben von Webseiten durch diese ist verboten.
-  - They can't display information you couldn't fit in other fields.
+  - Sie können keine zusätzlichen Daten anzeigen, wenn diese nicht in anderen Feldern gezeigt werden können.
   - Eine direkte Weiterleitung zu Audio-/Videostreams ist verboten.
 
 
@@ -262,7 +262,7 @@ In einigen Situationen können sich Presences möglicherweise unerwartet verhalt
 
 - Wenn der Autor der Presence seit mehr als einem Monat nicht mehr erreichbar war, kannst Du einen Prüfer kontaktieren, um zu sehen, ob Du selber die Presence ändern kannst.
 - Wenn du Änderungen an einer Presence vornimmst und mindestens ein ** Viertel** der Codebasis der Presence änderst, darfst du dich sich selbst als Mitwirkender hinzufügen. Kontaktiere einen Presence-Reviewer für weitere Informationen zu diesem Thema.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Jeder darf Hotfixes zur Behebung von Bugs bereitstellen; Führe jedoch **keine** Änderungen aus, die **nicht** erforderlich sind. Gültige Änderungen beinhalten allgemeine Korrekturen (Code und Tippfehler), Ergänzungen (Beschreibungen und Tags), fehlende Dateien usw.
 
 # Verifizierung
 
@@ -308,7 +308,7 @@ Ein paar Dinge, die du nach dem Öffnen einer Pull-Request wissen solltest:
 
 Derzeit durchläuft eine Presence drei separate Phasen der Kontrolle. Alle diese Checks helfen den Prüfern zu ermitteln, ob deine Presence für den Einsatz geeignet ist.
 
-- `DeepScan` is a bot that checks for code quality. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. *Warning: DeepScan doesn't always give you errors. Schau dir stattdessen bitte CodeFactor-Warnungen an.*
+- `Codacy` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben. *Warnung: Codacy gibt dir nicht immer Fehler aus. Schau dir stattdessen bitte CodeFactor-Warnungen an.*
 - `CodeFactor` ist ein Bot, der die Qualität des Codes überprüft. Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese zu beheben.
 - `Schema Validation` scannt deine `metadata.json` Datei auf Fehler (z.B. fehlende Felder, ungültige Datentypen, etc.). Falls du jemals Fehlermeldungen für neue Issues bekommen solltest, bist du **aufgefordert ** diese auch zu beheben. Wenn du ein Schema Feld zu deiner `metadata.json` Datei hinzufügst, wird dein Texteditor (falls unterstützt) dir diese Fehler während der Entwicklung anzeigen können.
 
