@@ -31,7 +31,7 @@ Os [primerios passos](/dev) para o desenvolvimento no PreMiD são onde deves com
 - :computer: [API](/dev/api): Acede a recursos e executa ações utilizando a API do PreMiD.
 - :wrench: [Desenvolvimento de Presences](/dev/presence): Aprende a utilizar o nosso sistema de Presences.
 
-# Contribui
+# Contribuir
 - :bug: [Reportar um Bug](https://github.com/PreMiD): Ajuda-nos a acabar com aqueles bugs irritantes.
 - :bulb: [Sugerir uma nova funcionalidade](https://discord.premid.app/): Precisamos nas tuas ideas!
 - :heart: [Doar](https://www.patreon.com/Timeraa): Faz uma pequena doação ou torna-te um patrocinador do nosso maravilhoso projeto!
