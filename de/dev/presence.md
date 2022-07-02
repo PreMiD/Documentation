@@ -273,54 +273,58 @@ Deine regExp kannst du auf <a href="https://regex101.com/">Regex101</a> testen.<
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
-  clientId: "000000000000000000"
+    clientId: "000000000000000000" //Die Client-ID der Applikation, die auf https://discordapp.com/developers/applications erstellt wurde
   }),
-  //You can use this to get translated strings in their browser language
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
+    //Dies kannst du verwenden, um die übersetzen String in derer Browsersprache zu bekommen
   });
 
 /*
-function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
 
-    // element grabs //
-    // api calls //
-    // variable sets //
+function myOutsideHeavyLiftingFunction(){
+    //Nehme und verarbeite alle Daten hier
+
+    // Nehmen von Elementen //
+    // API-Calls //
+    // Variablen setzen //
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//Laufe die Funktion seperat von dem UpdateData Event jede 10 Sekunden um die Variabeln zu bekommen oder zu setzen, welche UpdateData aufnimmt
+
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Dies wird nach Möglichkeit mehrmals eine Sekunde aufgerufen.
+  /*UpdateData ist immer am laufen, deswegen sollte es auch als dein Erneuerungszykel verwendet werden oder als 'tick'. Dies wird nach Möglichkeit mehrmals eine Sekunde aufgerufen. Dies wird nach Möglichkeit mehrmals eine Sekunde aufgerufen.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Es wird empfohlen eine andere Funktion außerhalb dieser Event-Funktion zu verwenden, welche die Variablen-Werte und das "heavy Lifting" ausführen, wenn Sie Daten von der API aufrufen. const presenceData: PresenceData = {
+    largeImageKey:
+      "key" /*Der Schlüssel (Dateiname), des großen Bildes der Presence. Diese sind in der Rich-Presence-Sektion deiner Anwendung hochgeladen und unter dem Menüpunkt "Art Assets" zu finden*/,
+    smallImageKey:
+      "key" /* Der Schlüssel (Dateiname), des kleinen Bildes der Presence. Diese sind hochgeladen und in der Rich-Presence-Sektion deiner Anwendung namens Art Assets*/,
+    smallImageText: "Einige schwebende Text", //Der Text, der angezeigt wird, wenn Sie über dem kleinen Bild schweben
+    Details: "Browse Seitenname", //Der obere Abschnitt des Presencetextes
+    Status: "Lese-Abschnitt A", //Der untere Abschnitt des Presencetextes
+    startTimestamp: 1577232000, //Der Unix-Zeitstempel für den Beginn der Zählung ab
+    endTimestamp: 1577151472000 //Wenn die Zeitstempel statt verfallener angezeigt werden sollen, dies ist der Unixepoch-Zeitstempel, an dem der Timer endet
+  }; /*Optional können Sie hier einen largeImageKey setzen und den Rest als variable Untereigenschaften ändern, zum Beispiel presenceSata. ype = "blahblah"; Typbeispiele: details, state, etc.*/
 
-  const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
-    startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-    endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
-  };
-  //Update the presence with all the values from the presenceData object
-  if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity();
+  if (presenceData. etails == null) {
+    //Dies wird gestartet, wenn Sie keine Anwesenheitsdetails
+    angeben. presence.setTrayTitle(); //Löscht den Tray-Titel für Mac User
+    presence.setActivity(); /*Aktualisiere die Presence ohne Daten, lösche es und mache das große Bild zum Discord-Anwendungs-Symbol, und den Text den Discord Anwendungsname*/
+  } else {
+    //Dies wird gestartet, wenn du die Anwesenheitsdetails festlegst
+    presence.setActivity(presenceData); //Aktualisiere die Presence mit allen Werten des presenceData Objekts
+  }
+});
+  //Aktualisiere die Presence mit allen Werten von dem presenceData Objekt
+if (presenceData.details)
+presence.setActivity(presenceData);
+//Aktualisiere die Presence ohne Daten, lösche die Daten und setze das große Bild als Discord-App Icon und den Text den Discord-App Namen
+else presence.setActivity();
 });
 ```
 
