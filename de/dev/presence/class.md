@@ -40,7 +40,7 @@ Beim setzen von `appMode` zu `true` und die Presence sollte leere `PresenceData`
 
 ## Methoden
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *Veraltet seit 2.2.4*
 
 Wirft ein `PresendeData` Objekt zurück, was die Presence anzeigt.
 
@@ -56,7 +56,7 @@ Der zweite Parameter definiert, wann Presence etwas spielt oder nicht. Verwende 
 
 Löscht deine akutelle Aktivität und den Tray-Titel.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *Eingestellt seit 2.2.3*
 
 > Diese Methode funktioniert nur unter Mac OS. 
 > 
@@ -106,31 +106,28 @@ Seit v2.2.0 der Erweiterung können Sie nun die Zeichenketten einer bestimmten S
 Wir empfehlen Ihnen, den folgenden Code zu verwenden, damit die PresenceData automatisch aktualisiert, wenn der Benutzer die ausgewählte Sprache ändert;
 
 ```ts
-async function getStrings() {
+// Eine Schnittstelle der Zeichenketten, die Sie erhalten (gut für Code-Qualität und Autovervollständigung).
+    interface LangStrings {
+  play: string;
+  pause: string;
+}
+
+async function getStrings(): Promise<LangStrings> {
   return presence.getStrings(
     {
-      play: "general.playing",
-      pause: "general.paused"
-    },
-    // The ID is the ID of the multiLanguage setting.
-    await presence.getSetting("ID").catch(() => "en");
+      // Die Zeichenketten, die du erhältst, stellen sicher, dass diese zu Ihrer LangStrings Schnittstelle passen.
+  oldLang: string = await presence.getSetting("ID").catch(() => "en");
+
+//! await presence.getSetting("ID")
   );
 }
 
-let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
-  oldLang: string = await presence.getSetting("ID").catch(() => "en");
-
-//! The following code must be inside the updateData event!
+let strings: Promise<LangStrings> = getStrings(),
+  // Die ID ist die ID der multiLanguage Einstellung.
 // The ID is the ID of the multiLanguage setting.
-const newLang = await presence.getSetting("ID").catch(() => "en");
-if (oldLang !== newLang) {
-  oldLang = newLang;
-  strings = getStrings();
-}
+oldLang: string = await presence.getSetting("ID");
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+//!
 ```
 
 ### `getPageletiable(String)`
