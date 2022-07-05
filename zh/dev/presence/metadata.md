@@ -335,7 +335,7 @@ When making your presence, you must specify a category which the presence falls 
   <thead>
     <tr>
       <th style="text-align:left">Category</th>
-      <th style="text-align:left">Name</th>
+      <th style="text-align:left">名称</th>
       <th style="text-align:left">描述</th>
     </tr>
   </thead>
