@@ -40,7 +40,7 @@ Wanneer je `appMode` op `true` zet en de presence zou een lege `PresenceData` ve
 
 ## Methodes
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *verouderd sinds 2.2.4*
 
 Geeft als resultaat een `PresenceData` object van wat de presence die wordt weergegeven.
 
