@@ -1,5 +1,5 @@
 ---
-title: Servis Geliştirme
+title: Presence Geliştirme
 description:
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> Tüm servisler artık [https://github.com/PreMiD/Presences](https://github.com/PreMiD/Presences) adresinde saklanmaktadır. 
+> Tüm presenceler artık burada depolanıyor: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
@@ -68,27 +68,27 @@ Bu dosyayla fazla uğraşmak istemeyenler için bir `metadata.json` dosyası olu
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "KULLANICI",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "KULLANICI",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVİS",
+  "altnames": ["SERVİS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "AÇIKLAMA"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSİYON",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ETİKET1", "ETİKET2"],
+  "category": "KATEGORİ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -100,8 +100,8 @@ Bu dosyayla fazla uğraşmak istemeyenler için bir `metadata.json` dosyası olu
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "GÖSTERİLECEK BAŞLIK",
+      "icon": "FONTAWESOME İKONU",
       "value": true
     },
     {
@@ -109,15 +109,15 @@ Bu dosyayla fazla uğraşmak istemeyenler için bir `metadata.json` dosyası olu
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "GÖSTERİLECEK BAŞLIK",
+      "icon": "FONTAWESOME İKONU",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "GÖSTERİLECEK BAŞLIK",
+      "icon": "FONTAWESOME İKONU",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -324,11 +324,11 @@ Bunu `presence.ts` dosyanıza kopyalayıp değerleri düzenleyebilirsiniz. Değe
 
 Örnekler için 1337x veya 9GAG gibi servislerin kodlarını incelemenizi öneririz. `Presence` sınıfı hakkında daha fazla bilgi almak için [buradaki](/dev/presence/class) sayfayı ziyaret edebilirsiniz.
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+PreMiD 2.2.0 sürümünden beri Slideshow'lar var, bu ara süresince çoklu `PresenceData` arayüzü göstermenize izin veriyor, `Slideshow` sınıfı hakkında daha çok bilgi için [buraya](/dev/presence/slideshow) tıklayın.
 
 ## İstediğiniz veriyi alamıyor musunuz?!
 
-Bir çok site [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) kullanır. Bu HTML etiketleri videolar gibi bir çok kaynak bulundurabilir. Ancak her zaman aynı sonucu vermez. Bazıları gizlidir veya aktif olarak kullanılmaz. Check if you can extract the information you need without them before you do unnecessary work.
+Bir çok site [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) kullanır. Bu HTML etiketleri videolar gibi bir çok kaynak bulundurabilir. Ancak her zaman aynı sonucu vermez. Bazıları gizlidir veya aktif olarak kullanılmaz. Gereksiz iş yapmadan önce onlar olmadan ihtiyacınız olan bilgiyi çıkarabiliyor musunuz diye kontrol edin.
 
 1. Tarayıcınızın konsolundan kontrol edin (**Elements** sekmesinde olduğunuza emin olun).
 2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
@@ -361,11 +361,11 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Not:** Bu updateData eventinin dışına yerleştirilmeli.
 
 ## Derleme
 
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
+Klasörünüzün içindeyken bir komut istemi açın ve `presence.ts`'i `/dist` klasörüne derlemek için `tsc -w` yazın.
 
 # Servisi test etme
 
