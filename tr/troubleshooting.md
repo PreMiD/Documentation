@@ -34,35 +34,35 @@ PreMiD, Discord'un tarayıcı sürümünde **çalışamaz**, bu yüzden [buradan
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Discord'un yönetici olarak çalışmadığından emin olun
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Gerçekten önemli. Discord'u yönetici olarak çalıştırdığınız taktirde Discord RPC çalışmayacaktır.
 
 ### Bir servisi ayarlarla mı kullanıyorsunuz?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Çoğu presence (`Twitch` ve `SoundCloud` gibi) bir uzantı hatasından etkileniyor. Bu sorun uzantının varsayılan ayar değerlerini düzgün şekilde çekememesine sebep oluyor.
 
-To solve this, all you have to do is toggle the topmost setting:
+Bunu düzeltmek için, tüm yapmanız gereken şey en üstteki ayarı değiştirmek:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Tarayıcınızı yeniden başlatın
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) ya da <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) da iyi bir iş çıkarıyor. (Tarayıcınızı tekrardan başlatmanız gerekiyor elbette.)
 
 ### PreMiD Uygulamasını Yeniden Başlatın
 <img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Daha sonra PreMiD uygulamasını yeniden başlatmanız gerekli.
 
-### Discord'u yeniden başlatın
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+### Discord'u yeniden yükle/yeniden başlat
+Klavyenizden <kbd>CTRL+R</kbd> (Windows) ya da <kbd>CMD+R</kbd> (MacOS)'ye basın yada Discord'u manuel olarak yeniden başlatın.
 
 ### Bilgisayarınızda çalışan bir antivirüs programı veya güvenlik duvarı olup olmadığını kontrol edin
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
+Bazen antivirüs programları ve güvenlik duvarları, sunucu oluşturan/barındıran veya yalnızca Internet'e bağlanan uygulamaları engeller. Uygulamamız ve uzantımız arasında veri almak ve iletmek için yerel bir sunucu kullanıyoruz, bu nedenle uygulamanın veri aktarma özelliğini engellerseniz, muhtemelen PreMiD uygulamasını kullanamazsınız.
 
 ### Eklentilerinizi devre dışı bırakın
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Bütün eklentilerinizi devre dışı bırakın ve düzelmiş mi diye kontrol edin. Eğer düzelmişse, adım adım bütün eklentilerinizi etkinleştirmeyi deneyin ve bize hangisinin PreMiD'i bozduğunu söyleyin.
 
 ### Bilgisayarınızı yeniden başlatın
-I hope you know how to restart a computer.
+Bir bilgisayarın nasıl yeniden başlatılacağını bildiğinizi umuyorum.
 
 ### PreMiD'i yeniden yükleyin
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Bazen dosyalar ile ilgili bir sorun vardır... Tutorials for the installation can be found [here](/install).
 
 ### Manuel kaldırma
 Windows: Dosya Gezginine `%appdata%` adresini yazın ve `PreMiD` klasörünü silin. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
