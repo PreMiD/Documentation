@@ -269,10 +269,10 @@ Yukarıdaki kodu kopyalayın ve `metadata.json` dosyanıza yapıştırın. Bunda
 
 ```ts
 const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
+  //https://discordapp.com/developers/applications'ta yaratılan uygulamanın client ID'si
   clientId: "000000000000000000"
   }),
-  //You can use this to get translated strings in their browser language
+  //Bunu onların internet tarayıcılarının diline çevrilmiş dizileri almak için kullanablirsiniz
   strings = presence.getStrings({
     play: "presence.playback.playing",
     pause: "presence.playback.paused"
@@ -280,7 +280,7 @@ const presence = new Presence({
 
 /*
 function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
+    //Bütün verilerinizi burada alıp işleyin
 
     // element grabs //
     // api calls //
@@ -288,34 +288,34 @@ function myOutsideHeavyLiftingFunction(){
 }
 
 setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
+//UpdateData eventinden ayrı bir şekilde her 10 saniyede fonksiyonu çalıştırın ve UpdateData'nın aldığı değişkenleri belirleyin
 */
 
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. Bu olay, mümkün olduğunca bir saniye içerisinde birkaç kez çağrılacaktır.
+  /*UpdateData her zaman çalışıyor, ve bu yüzden yenilenme döngünüz ya da `tik`iniz olarak kullanılmalı. Bu olay, mümkün olduğunca bir saniye içerisinde birkaç kez çağrılacaktır.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+    Eğer bir API tarafından veri çağıracaksanız bu event fonksiyonunun dışına değişken değerlerini değiştirecek ve ağır yükü halledecek bir fonksiyon oluşturmanız tavsiye edilir.*/
 
   const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
+    //Presence'teki büyük imge. Bu Discord Geliştirici Portalına - Rich Presence'e - Art Assets'e yüklenmiş bir imgenin anahtarı, ya da bir imgeye giden bir URL olabilir
+    largeImageKey: "anahtar",
+    //Presence'teki küçük imge. Bu Discord Geliştirici Portalına - Rich Presence'e - Art Assets'e yüklenmiş bir imgenin anahtarı, ya da bir imgeye giden bir URL olabilir
+    smallImageKey: "https://benimcilginwebsitem.com/havaliImge.png",
+    //Fare küçük imgenin üzerine sürüklendiğinde gösterilecek olan metin
+    smallImageText: "Biraz havalı imge metni ",
+     //Presence metninin üst kısmı
+    details: "Sayfa Adı Görüntülüyor",
     //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
+    state: "Bölüm A okuyor",
+    //Ne zamandan itibaren sayılcağının unix epoch zaman etiketi
     startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
+    //Eğer Geçen Zaman yerine Kalanı göstermek istiyorsanız, burası biteceği yerin unix epoch zaman etiketini
     endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
+    //Opsiyonel olarak burada bir largeImageKey belirleyebilirsiniz ve gerisini değişken alt özellikleri olarak değiştirebilirsiniz, örneğin presenceData.type = "blabla"; tip örnekleri: detaylar, durum, vb.
   };
-  //Update the presence with all the values from the presenceData object
+  //Presence'i presenceData objesindeki tüm değerlerle güncelleyin
   if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
+  //Presence'i hiçbir veri olmadan güncelleyin, böylece temizlenecek ve büyük imgeyi Discord Uygulaması ikonu yapacak, ve metni de Discord Uygulaması adı
   else presence.setActivity();
 });
 ```
@@ -343,7 +343,7 @@ Bir çok site [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
+  //iFrame'den ihtiyacınız olan tüm veriyi alın, değişkenlere kaydedin ve sonra iframe.send'i kullanarak gönderin
   iframe.send({
     //sending data
     video: video,
