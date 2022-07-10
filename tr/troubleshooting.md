@@ -20,7 +20,7 @@ Bu sayfanın içerikleri:
 <a name="general"></a>
 
 # Genel sorun giderme
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
+> [Bunu](https://qkeleq10.github.io/PreMiD-Troubleshooting/) kullanarak sorununuzu daha kolay tespit edebilirsiniz. 
 > 
 > {.is-info}
 ### Sayfayı yenileyin
@@ -62,15 +62,15 @@ Bütün eklentilerinizi devre dışı bırakın ve düzelmiş mi diye kontrol ed
 Bir bilgisayarın nasıl yeniden başlatılacağını bildiğinizi umuyorum.
 
 ### PreMiD'i yeniden yükleyin
-Bazen dosyalar ile ilgili bir sorun vardır... Tutorials for the installation can be found [here](/install).
+Bazen dosyalar ile ilgili bir sorun vardır... Kurulum ile ilgili öğreticiye [buradan](/install) ulaşılabilir.
 
 ### Manuel kaldırma
-Windows: Dosya Gezginine `%appdata%` adresini yazın ve `PreMiD` klasörünü silin. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Dosya Gezginine `%appdata%` adresini yazın ve `PreMiD` klasörünü silin. MacOS: `~/users/USER/~Library/Application Support/` ve `PreMiD` klasörünü silin.
 
 ### McAfee PreMiD'i virüs olarak tespit etti (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Bu, McAfee'den bir yanlış alarmdır ve sorunu kendilerine bildirdik, şimdilik aşağıdaki adımları uygulayarak PreMiD'i taramanın dışında tutabilirsiniz:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Eğer bu adımlarda sorun yaşıyorsanız, Discord sunucumuzdaki [#suppport](https://discord.premid.app/) kanalında bir destek talebi açıp, bir destek temsilcimizden yardım alabilirsiniz! 
 > 
 > {.is-warning}
 
@@ -85,24 +85,24 @@ This is a false positive from McAfee and we have reported the issue to them, for
 9. "PreMiD" klasörünü açın ve "PreMiD.exe" dosyasını seçin ve aç'a tıklayın. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee şimdi dosyamızı göz ardı etmeli, uygulamayı çalıştırın ve kullanmaya başlayın.
 
-### PreMiD status bugged on Discord
-Endişelenmeyin. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+### PreMiD durumu Discord'da yanlış görünüyor
+Endişelenmeyin. Yeniden başlatmak için Discord pencerenizde iken <kbd>CTRL+R</kbd> (Windows) ya da <kbd>CMD+R</kbd> (MacOS)'ye kısayoluna basın.
 
 <a name="linux"></a>
 
 # Linux sorun giderme
 ### Ubuntu/Debian tabanlı dağıtımlar
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+Eğer Discord'u SnapCraft aracılığıyla indirdiyseniz RPC çalışmayacaktır. Terminalden `sudo snap remove discord` kodunu çalıştırarak Snapcraft versiyonunu silmeniz, **[Discord'un Linux versiyonunu](https://discordapp.com/api/download?platform=linux)** indirmeniz (**[ya da Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), sonrasında Discord'u indirdiğiniz dosya dizinine gitmeniz (genellikle `$HOME/Downloads`), sonra `sudo dpkg -i discord-*.deb` komudunu kullanarak paketi yüklemeniz gerekiyor. Eğer AppImage işe yaramazsa, **[bu bağlantı](https://packagecloud.io/premid/linux)** ile diğer paketlerimize bakmanızı öneririz.
 
-### Arch Linux Tabanlı Dağıtımlar
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+### Arch Linux tabanlı dağıtımlar
+Arch Linux tabanlı dağıtımlar, adı <code>premid</code> ya da <code>premid-git</code> adlı AUR (Arch User Repository) paketini kullanmalı (<em x-id="3">UYARI: Bu depo premidi bizim kaynak kodumuzdan derler.</em>). Eğer bir AUR yöneticisi (yay vb.) kurmak istemiyorsanız, <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux depomuzdan</a></strong> indirilebilir olan AppImage'ımıza bir göz gezdirebilirsiniz.
+<em x-id="3">Uyarı: <strong x-id="1">AUR</strong> deposundaki paket bizim tarafımızdan (PreMiD organizasyonu olarak) değil, başkaları tarafından yönetiliyor.</em>
 
 ### Port ilişkilendirme
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. Bu, Uzantı ve Uygulamanın iletişim kurması için gereklidir. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+Şunu bilmelisiniz ki<strong x-id="1">PreMiD</strong> kendisini <strong x-id="1">3020</strong> portuna ilişkilendirir. Bu, Uzantı ve Uygulamanın iletişim kurması için gereklidir. Eğer <strong x-id="1">PreMiD</strong> size bu port hakkında bir hata gösterirse, <code>sudo lsof -i:3020</code> ya da<code>sudo netstat -tnlp | grep :3020</code> komudunu terminalinizde yürüterek 3020 portu ile bir şey ilişkilendirilmiş mi diye kontrol etmelisiniz. Eğer bu portla ilişkilendirilmiş bir işlem varsa dolu olan portu serbest bıraktığınızdan emin olun ve <code>PreMiD</code>'i tekrar çalıştırmayı deneyin.
 
 ### PreMiD AppImage ile kurulduğunda oturum açarken başlamıyor
-As we stated in our **Linux repository**, AppImage can't be launched at login. Aşağıdaki adımları uygulayarak otomatik başlatmaya manuel olarak ekleyebilirsiniz:
+**Linux depomuza** belirttiğimiz gibi, AppImage girişte başlatılamaz. Aşağıdaki adımları uygulayarak otomatik başlatmaya manuel olarak ekleyebilirsiniz:
 1. <code>/etc</code> klasöründe <strong x-id="1">rc.local</strong> adında bir dosya oluşturun.
 2. Bu dosyayı istediğiniz düzenleyici ile açıp bazı değişiklikler yaparak aşağıdaki kodu yapıştırın:
 ```bash
