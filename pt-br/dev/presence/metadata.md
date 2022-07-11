@@ -361,8 +361,8 @@ Ao fazer a sua presença, você deve especificar uma categoria na qual a presenc
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
-        <td style="text-align:left"><b>Vídeos e Streams</b></td>
-      <td style="text-align:left">Sites que servem para fornecer vídeos e streams.</td>
+        <td style="text-align:left"><b>Vídeos e transmissões</b></td>
+      <td style="text-align:left">Sites que servem para fornecer vídeos e transmissões.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
