@@ -40,7 +40,7 @@ Khi đặt `appMode` sang `true` và presence gửi đi một `PresenceData` r�
 
 ## Phương pháp
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *Không được sử dụng từ 2.2.4*
 
 Đưa trả object `PresenceData` của presence đang được hiển thị.
 
