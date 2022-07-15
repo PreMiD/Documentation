@@ -1,6 +1,6 @@
 ---
-title: Requirements
-description: Prerequisites to install PreMiD
+title: Cerințe
+description: Cerințe preliminare pentru a instala PreMiD
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,24 +8,24 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:21.843Z
 ---
 
-# System Requirements
+# Cerinţe de sistem
 
-> This data relate to the application only. 
+> Aceste date se referă numai la aplicație. 
 > 
 > {.is-info}
 
-PreMiD runs on virtually any system. This means it runs on **Linux**, **macOS**, **Windows** as well as some **Linux Modifications**.
+PreMiD rulează pe aproape orice sistem. Asta înseamnă că rulează pe **Linux**, **macOS**, **Windows** precum și pe unele **Linux-uri modificate**.
 
 ### CPU
-PreMiD runs perfectly fine on a single CPU core.
+PreMiD rulează perfect pe un singur nucleu al CPU-ului.
 
 ### RAM
-Linux systems should have **at least 20MB of RAM** to run PreMiD. Windows and macOS systems usually require a bit more RAM.
+Sistemele Linux ar trebui să aibă **cel puțin 20MB de RAM** pentru a rula PreMiD. Sistemele Windows și macOS necesită de obicei puțin mai mult RAM.
 
-### Storage
-PreMiD takes about **150MB** of physical storage. However at least **200MB** of storage dedicated to PreMiD is recommended.
+### Spațiu de stocare
+PreMiD ocupă aproximativ **150MB** de spațiu de stocare. Oricum, recomandat ar fi să aveți cel puțin **200MB** de stocare dedicat PreMiD-ului.
 
-### Internet Access
-A internet connection is required to run PreMiD. PreMiD will automatically check for new updates, languages, Presence updates, etc. from time to time.
+### Acces la internet
+Este necesară o conexiune la internet pentru a rula PreMiD. PreMiD va verifica automat noi actualizări, limbi, actualizări de prezență etc. din când în când.
 
 ![](https://a.icons8.com/ViUXyjOj/f4tFww/svg.svg) {.align-abstopright}
