@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: Getting started with a PreMiD installation on Linux
+description: Procesul de instalare a PreMiD-ului pe Linux
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,7 +10,7 @@ dateCreated: 2020-06-11T18:04:14.124Z
 
 Instalarea aplicației este foarte importantă deoarece extensia nu poate face nimic de la sine.
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> Utilizatorii Aur care folosesc package-ul lui DoomLerd ar trebui să fie sigur, așa cum spune el. Nu vă recomandăm să îl folosiți, dar dacă doriți îl puteți folosi în continuare. Îi mulțumim lui DoomLerd pentru gestionarea repo-ului aur în continuare. 
 > 
 > {.is-warning}
 
@@ -21,14 +21,14 @@ Instalarea aplicației este foarte importantă deoarece extensia nu poate face n
   - [Cerințe](#requirements)
   - Exemple (în curând)
   - Întrebări frecvente (în curând)
-  - Building (soon)
+  - Construire (În curând!)
   - [Asistență](#support)
   - [Credite](#credits)
   - [Licență](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_RECOMMENDED_)
-  - [Installation instructions](#appimageinstall)
-  - [Additional notes](#appimagenotes)
+  - [Instrucțiunile de instalare](#appimageinstall)
+  - [Note suplimentare](#appimagenotes)
 - [**Distribuțiile Linux bazate pe RHEL (Red Hat Enterprise Linux)**](#packagecloud)
 - [**Distribuțiile Linux bazate pe Debian și Ubuntu**](#packagecloud)
 - [**Distribuțiile Linux bazate pe Arch**](#arch)
@@ -50,9 +50,9 @@ Instalarea aplicației este foarte importantă deoarece extensia nu poate face n
     <th>Ultima versiune</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Ultima versiune"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="GitHub releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="Cl"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Toate versiunile"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Ultima versiune"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Versiunile GitHub"></a></td>
   </tr>
 </table>
 
@@ -94,7 +94,7 @@ Thanks to :
 
 ### Licență
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
+[![Status FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right" />
 
@@ -106,7 +106,7 @@ The AppImage package is the recommended one if Discord works for you but other P
 
 <a name="appimageinstall"></a>
 
-### Installation instructions
+### Instrucțiunile de instalare
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
@@ -119,7 +119,7 @@ wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.Ap
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### Note suplimentare
 
 Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_<br/>If you get tired of having to open it each time, use the other packages (according to your distribution).
 
@@ -155,39 +155,39 @@ Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> Sup
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Instrucțiunile de instalare
 
 ```bash
-# Using yay (recommended)
+# Folosind yay (recomandat)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# Folosind pakku
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# Folosind trizen
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# Folosind pacaur
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... ați înțeles ideea
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+sau manual de la [Arch User Repository](https://aur.archlinux.org/packages/premid) dacă știi ce faci.
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Note suplimentare
 
-Dacă distribuția ta folosește pacman, atunci trebuie să instalezi unul dintre helperi mai întâi. If you don't have any, Yay is recommended, run :
+Dacă distribuția ta folosește pacman, atunci trebuie să instalezi unul dintre helperi mai întâi. Dacă nu aveți, vă recomandăm Yay, rulați :
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
