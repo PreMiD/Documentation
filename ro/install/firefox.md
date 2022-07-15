@@ -1,6 +1,6 @@
 ---
 title: Firefox
-description: Getting started with a PreMiD installation on Firefox
+description: Procesul de instalare a PreMiD-ului pe Firefox
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -12,14 +12,14 @@ Instalarea extensiei este foarte importantă, deoarece aplicația nu poate face 
 
 # Instalează
 1. Mergi pe pagina de descărcări [apăsând aici](https://premid.app/downloads).
-2. Choose **Firefox**.
-3. Search for `about:addons`.
-4. Click on the small gear icon in the upper right corner.
-5. Choose **Install add-on from file**.
-6. Select the file you downloaded recently.
-7. Accept the installation by clicking on **Add**.
+2. Alege **Firefox**.
+3. Caută `about:addons`.
+4. Apasă pe mica pictogramă cu o rotiță din colțul dreapta sus.
+5. Alege **Install add-on from file**.
+6. Selectează fișierul pe care l-ai descărcat recent.
+7. Acceptă instalarea apăsând pe **Add**.
 
-> Do not forget to [add the **application**](/install). 
+> Nu uita să [instalezi **aplicația**](/install). 
 > 
 > {.is-warning}
 
