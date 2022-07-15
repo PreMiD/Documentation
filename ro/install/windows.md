@@ -1,6 +1,6 @@
 ---
 title: Windows
-description: Getting started with a PreMiD installation on Windows
+description: Procesul de instalare a PreMiD-ului pe Windows
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,18 +8,18 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements).{.is-info}
+> Înainte de a merge mai departe, asigurați-vă că sistemul dvs. îndeplinește toate cerințele [cerințe](/install/requirements).{.is-info}
 
 Instalarea aplicației este foarte importantă deoarece extensia nu poate face nimic de la sine.
 
 # Instalează
 1. Mergi pe pagina de descărcări [apăsând aici](https://premid.app/downloads).
-2. Choose **Windows**.
-3. Open the installer.
-4. **Windows SmartScreen** will appear, if you install PreMiD for the first time. Click on **More Info** and then select **Run Anyway**. > This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
+2. Alege **Windows**.
+3. Deschideți programul de instalare.
+4. **Windows SmartScreen** va apărea dacă instalați PreMiD pentru prima dată. Apasă pe **Mai multe informații** și după selectează **Rulează oricum**. > Acest lucru se datorează faptului că nu avem un certificat de semnare a codului (CSC). [Sprijină-ne](https://www.patreon.com/Timeraa) pentru a-l finanța.{.is-info}
 
-The application will start automatically. Check for the symbol in your system tray.
+Aplicația va porni automat. Verificați simbolul în bara de sistem.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Nu uita să [adaugi **extensia**](/install).{.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
