@@ -49,9 +49,9 @@ Verilen `id`'ye sahip slide'ı günceller.
 
 İlk parametre, güncellemek istediğiniz slide'ı belirtecek benzersiz bir `String` olmalıdır.
 
-İkinci parametre, slide'da göstermek istediğiniz [`PresenceData` arayüzü](/dev/presence/class#presencedata-interface) bilgisini içermelidir.
+İkinci parametre, slide'da göstermek istediğiniz bütün bilgileri almak için bir [`PresenceData` arayüzü](/dev/presence/class#presencedata-interface) gerektirmektedir.
 
-Üçüncü parametre, slide'ın görüntüleneceği süreyi milisaniye (en az 5000) şeklindeki bir `Number`'dır.
+Üçüncü parametre slide'ın gösterileceği süre miktarını milisaniye olarak bir `Sayı` (minimum: 5000) gerektirmektedir.
 
 ### `hasSlide(String)`
 
