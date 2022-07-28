@@ -37,7 +37,7 @@ Kök yapılandırma (`tsconfig.json`) dosyasında böyle bir şeyle karşılaşa
 }
 ```
 
-| Property                   | Açıklama                                                                                                                                                                                       |
+| Özellik                    | Açıklama                                                                                                                                                                                       |
 |:-------------------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **compilerOptions**        | Derleyiciyi ayarlamak için kullanılan anahtar, çoğu ayar bunun altında belirlenir.                                                                                                             |
 | module                     | [Buradan](https://www.typescriptlang.org/docs/handbook/modules.html) bunun hakkında daha fazla bilgi edinebilirsiniz.                                                                          |
