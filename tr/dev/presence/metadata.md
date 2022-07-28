@@ -156,7 +156,7 @@ Bu örnekler biraz zor mu gözüküyor? Endişe etmeyin, değişkenlerin ne işe
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Servisinize ait etiketleri içeren bir Array, bu etiketler kullanıcıların presence'inizi websitesi üzerinde aramasına yardımcı olur.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Hayır</code></td>
     </tr>
@@ -201,7 +201,7 @@ Regex hakkında daha fazla bilgi almak istiyorsanız aşağıdaki sitelere göz 
 
 ## Servis Dilleri
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). Servisi daha da özelleştirmek için kullanıcıların servisin dilini seçmelerine izin verebilirsiniz. Daha fazlası için [`multiLanguage`](#multilanguage) ayarına bakın.
+PreMiD poliglot bir servistir, yani dünya çapındaki kullanıcıları birbirine bağlamak için birden fazla dil mevcuttur. Dillerin tam listesi bu [API endpoint](https://api.premid.app/v2/langFile/list) ile bulunabilir. Servisi daha da özelleştirmek için kullanıcıların servisin dilini seçmelerine izin verebilirsiniz. Daha fazlası için [`multiLanguage`](#multilanguage) ayarına bakın.
 
 ## Servis ayarları
 İnteraktif ayarlar oluşturarak kullanıcıların servisinizi düzenlemesini sağlayın!
@@ -209,22 +209,22 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Gör https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "title": "BAŞLIK",
+    "icon": "FONTAWESOME İKONU", //Örnek "fas fa-info"
+    "value": true //Boolean değeri varsayılan değer değeriyle bir aç/kapa düğmesi olur
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Eğer başka bir ayar bu değere eşitse (true/false/0/1/vb.) o zaman bu butonu göster
     },
-    "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
+    "title": "BAŞLIK",
+    "icon": "FONTAWESOME İKONU",
+    "value": "\"%song%\", %artist%", //Bir string koymak bir özel girdi kullanabileceğiniz yerde ayarı bir girdi bir olarak ayarlar.
     "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
   },
   {
@@ -241,7 +241,7 @@ PreMiD is a polyglot service, meaning that there are multiple languages availabl
 
 #### Tanıtım
 
-Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlayan ayar `multiLanguage` ayarıdır. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlayan ayar `multiLanguage` ayarıdır. Bu [API](https://api.premid.app/v2/langFile/presence/en)'ımızdan stringleri kullanmanızı gerektiriyor, stringlerin nasıl ekleneceğine dair bilgi için [buraya](https://docs.premid.app/dev/presence/metadata#adding-new-strings) tıklayınız.
 
 #### Kurulum
 
@@ -269,7 +269,7 @@ Kullanıcıların servisi istedikleri dilde göstermeyi seçebilmelerini sağlay
 
 ##### Çevirileri ekleme
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Her `string` bir `Object` türündedir ve aralarında nokta olacak şekilde önce servisin ismi, peşinden de stringName gelecek şekilde belirtilir.
 
 stringName tek kelime olacak şekilde mesajı anlatan bir anahtardır.
 
@@ -301,7 +301,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 ### Metodlar
 
-Use the following methods to get settings info in your presence files:
+Presence dosyalarınızın içinde ayarları almak için aşağıdaki metodları kullanın:
 #### `getSetting(String)`
 Ayarın değerini verir.
 ```ts
