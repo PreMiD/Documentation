@@ -18,53 +18,51 @@ Bu dosyanın bir örneği aşağıda bulunabilir.
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "KULLANICI",
     "id": "ID"
   },
   "contributors": [{
-    "name": "USER",
+    "name": "KULLANICI",
     "id": "ID"
   }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVİS",
+  "altnames": ["SERVİS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "AÇIKLAMA",
   },
-  "url": "URL",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "url": "LİNK",
+  "version": "SÜRÜM",
+  "logo": "LİNK",
+  "thumbnail": "LİNK",
   "color": "#45A8FC",
-  "category": "CATEGORY",
-  "tags": ["TAG1", "TAG2"],
+  "tags": ["ETİKET1", "ETİKET2"],
+  "category": "KATEGORİ",
   "iframe": false,
   "settings": [
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": true
-    },
-    {
-      "id": "ID",
-      "if": {
-        "ID": true
-      },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
-    },
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": 0,
-      "values": ["1", "2", "etc."]
-    }
-  ]
+        { 
+            "id": "ID",
+            "title": "BAŞLIK",
+            "icon": "FONTAWESOME İKONU",
+            "value": true
+        },
+        {
+            "id": "ID",
+            "if": {
+                "ID": true
+            },
+            "title": "BAŞLIK",
+            "icon": "FONTAWESOME İKONU",
+            "value": "\"%song%\", %artist%",
+            "placeholder": "%song% veya %artist% kullanın"
+        },
+        {
+            "id": "ID",
+            "title": "BAŞLIK",
+            "icon": "FONTAWESOME İKONU",
+            "value": 0,
+            "values": ["1", "2", "vb."]
+        }
+    ]
 }
 ```
 
@@ -84,7 +82,7 @@ Bu örnekler biraz zor mu gözüküyor? Endişe etmeyin, değişkenlerin ne işe
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Servis geliştiricisinin <code>isim</code> ve <code>id</code> bilgileri bulunan bir Obje içermelidir. <code>name</code> Discord kullanıcı adınızın etiketiniz (#0000) olmayan halidir. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
+      <td style="text-align:left">Presence geliştiricisinin <code>isim</code> ve <code>id</code> bilgileri bulunan bir Obje içermelidir. <code>name</code> Discord kullanıcı adınızın etiketiniz (#0000) olmayan halidir. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Hayır</code></td>
     </tr>
@@ -152,7 +150,7 @@ Bu örnekler biraz zor mu gözüküyor? Endişe etmeyin, değişkenlerin ne işe
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Presence'in içerisinde bulunduğu kategoriyi temsil eden bir string.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Hayır</code></td>
     </tr>
@@ -305,27 +303,27 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
-Returns value of setting.
+Ayarın değerini verir.
 ```ts
 const setting = await presence.getSetting("pdexID"); // pdexID'yi ayarın ID'si ile değiştirin
 console.log(setting); // Ayarın değerinin çıktısını verecektir
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Belirtilen ayarı gizler.
 ```ts
 presence.hideSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar ile değiştirin
 ```
 
 #### `showSetting(String)`
-İnternet sitesinin konsol kayıtlarının çıktısını döndürür.
+Belirtilen ayarı gösterir (Yalnızca ayar önceden gizlenmişse çalışacaktır).
 ```ts
 presence.showSetting("pdexID"); // pdexID'yi verisini almak istediğiniz ayar ile değiştirin
 ```
 
 ## Servis kategorileri
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Bir presence oluştururken, presemce'in bulunacağı geçerli bir kategori belirtmelisiniz. Bu kullanabileceğiniz kategorilerin derlenmiş bir listesidir.
 
 <table>
   <thead>
