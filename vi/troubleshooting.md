@@ -129,4 +129,4 @@ Nếu bạn gặp lỗi này, điều đó có nghĩa là tài khoản của b�
 4. Chạy lại trình cài đặt.
 
 # Điều đó chưa giải quyết được vấn đề của tôi
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
