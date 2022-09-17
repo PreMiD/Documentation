@@ -130,4 +130,4 @@ Eğer bu hatayı alıyorsanız, hesabınızın Yönetici izinlerine sahip olmad�
 4. Yükleyiciyi yeniden başlatın.
 
 # Bunların hiçbiri sorununuzu çözmediyse
-Lütfen [#support](https://discord.premid.app/) kanalından bir destek talebi açın.
+Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
