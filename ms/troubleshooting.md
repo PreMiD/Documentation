@@ -130,4 +130,4 @@ Jika anda mendapat ralat ini, ia bermakna akaun anda tidak mempunyai kebenaran P
 4. Buka pemasang lagi sekali.
 
 # Semua itu tidak selesaikan masalah saya
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Sila cipta hantaran baharu di saluran [#support](https://discord.com/channels/493130730549805057/1019726199494279248).

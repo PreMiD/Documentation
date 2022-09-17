@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [presence store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+Version `2.x` introduces the [Presence Store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
 
 > Before getting started, it is highly recommended that you look at our presence guidelines. 
 > 
@@ -23,13 +23,12 @@ Version `2.x` introduces the [presence store](https://premid.app/store). Users n
 
 # Structure
 
-All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
 
-## Inštalácia
+## Požiadavky
 
-1. Nainštalujte si [Git](https://git-scm.com/).
-2. Nainštalujte si [Node](https://nodejs.org/en/) (prichádza s [npm](https://www.npmjs.com/)).
-3. Nainštalujte si [TypeScript](https://www.typescriptlang.org/index.html#download-links) (otvorte terminál a `npm install -g typescript`).
+1. [Git](https://git-scm.com/)
+2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
 
 ## Cloning the project
 
@@ -37,300 +36,29 @@ All presence are coded in [TypeScript](https://www.typescriptlang.org/). [TypeSc
 2. Choose a folder of your choice.
 3. Open it in your code editor.
 
-## Creating folders and files
+## Getting started
 
-1. Go in the `websites` folder and then go into the folder with the first letter of the **name** (not an URL) of the service you want to support.
-2. Create a folder with the **name** (not an URL) of the service you want to support.
-3. Create a `presence.ts` and a `tsconfig.json` file inside.
-4. Create a folder named `dist` inside.
-5. Create a `metadata.json` file inside the `dist` folder.
+1. Open a new terminal in the `Presences` folder
+2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-## Filling in the tsconfig.json file
+### Creating a Presence
+1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
+2. Select the first option
+3. Fill in all prompted questions
 
-Please put the following code inside of the `tsconfig.json` file.
+### Compiling / Modifying a Presence
+1. Run `npx pmd`
+2. Select the second option
+3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+{.is-info}
 
-```json
-{
-  "extends": "../../../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./dist/"
-  }
-}
-```
+For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
 
-To learn more about TypeScript configuration click [here](/dev/presence/tsconfig).
-
-## Filling in the metadata.json file
-
-We've made a `metadata.json` file creator for the lazy peeps [here](https://eggsy.xyz/projects/premid/mdcreator). It's still suggested to read this through so you know how it works.
-
-```json
-{
-  "$schema": "https://schemas.premid.app/metadata/1.7",
-  "author": {
-    "name": "USER",
-    "id": "ID"
-  },
-  "contributors": [
-    {
-      "name": "USER",
-      "id": "ID"
-    }
-  ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
-  "description": {
-    "en": "DESCRIPTION"
-  },
-  "url": "URL",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
-  "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
-  "iframe": false,
-  "readLogs": false,
-  "settings": [
-    {
-      "id": "ID",
-      "multiLanguage": true
-    },
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": true
-    },
-    {
-      "id": "ID",
-      "if": {
-        "ID": true
-      },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
-    },
-    {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": 0,
-      "values": ["1", "2", "etc."]
-    }
-  ]
-}
-```
-
-Please copy the code above and put it in your `metadata.json` file. You now need to edit values of the properties. Please note that the following properties are optional to have in your `metadata.json` file, if you do not plan on using them you need to remove them.
-
-- `contributors`
-- `altnames`
-- `regExp`
-- `iframe`
-- `iFrameRegExp`
-- `readLogs`
-- `settings`
-
-**Clarifying some value presets:**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Premenná</th>
-      <th style="text-align:left">Popis</th>
-      <th style="text-align:left">Typ</th>
-      <th style="text-align:left">Nepovinné</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). Užívateľské <code>id</code> možno skopírovať z Discordu povolením mód vývojára         a kliknutím pravým tlačítkom na váš profil.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the presence developer. <code>name</code> is your Discord username without the identifier(#0000). Užívateľské <code>id</code> možno skopírovať z Discordu povolením mód vývojára         a kliknutím pravým tlačítkom na váš profil.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Áno</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.<br>
-      (Must be the same name as the folder where everything is in)</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Be able to search the presence using an alternative name.<br>
-      Meant to be used for presences that have different names in different languages (e.g. Pokémon and 포켓몬스터).<br>
-      You can also use it for presences that have special characters so you don't have to type those (e.g. Pokémon and Pokemon).</td>
-      <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Áno</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Small description of the presence, you can use description of the service if you are out of ideas. Váš popis musí mať hodnoty párov kľúčov ktoré označujú jazyk, a popis v tom konkrétnom jazyku. Urobte popisy s jazykmi <i>ktoré poznáte</i>, naši prekladatelia ich zmenia vo vašich metadata súborov.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br><b>Example:</b><code>vk.com</code><br>
-      <b>This URL must match the URL of the website as it will detect whether or not this is the website to inject the script to.</b><br> Do <b>NOT</b> add <code>https://</code> or <code>http://</code> inside of the URL nor a slash at the end:
-      <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Note</b>: Some URLs may have <code>www.</code> or something else in front of their domain. Do <b>NOT</b> forget to add it!<br>
-      You can add multiple URLs by doing the following:<br>
-      <code>["URL1", "URL2", "ETC."]</code><br>
-      You could also use regExp also known as Regex for this task, explained further below.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.<br>
-      regExp or also known as Regex, can be used if a website has multiple subdomains.<br>
-      You could use the following regExp for that:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD standing for Top Level Domain for example: .com .net (but do not enter the dot).<br>
-      <code>([a-z0-9]+)</code> means anything from a to z and from 0 to 9.<br>
-      You can get a quick starter by watching this <a href="https://youtu.be/sXQxhojSdZM">video</a>.<br>
-      You can test your regExp at <a href="https://regex101.com/">Regex101</a>.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Áno</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Verzia vašej prítomnosti.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Odkaz na službu&apos; s logotypom.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Odkaz na náhľad vašej prítomnosti.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> hodnota. Odporúčame vám používať primárnu farbu služby        ktorá vaša prítomnosť podporuje.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Pole so značkami, pomôže používateľom vyhľadávať vašu prítomnosť na webovej stránke.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Reťazec použitý na označenie kategórie do ktorej patrí. See the valid catergories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">here</a>.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nie</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Určuje či je použitý <code>iFrames</code>.</td>
-      <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Áno</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Selektor regulárneho výrazu ktorý vyberá prvky iframe do ktorých sa má vložiť. See regExp for more info.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Áno</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Áno</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change.<br>
-      Read more about presence settings <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">here</a>.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Áno</code></td>
-    </tr>
-  </tbody>
-</table>
-
-## Začíname
-
-```ts
-const presence = new Presence({
-  //The client ID of the Application created at https://discordapp.com/developers/applications
-  clientId: "000000000000000000"
-  }),
-  //You can use this to get translated strings in their browser language
-  strings = presence.getStrings({
-    play: "presence.playback.playing",
-    pause: "presence.playback.paused"
-  });
-
-/*
-function myOutsideHeavyLiftingFunction(){
-    //Grab and process all your data here
-
-    // element grabs //
-    // api calls //
-    // variable sets //
-}
-
-setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
-*/
-
-presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
-
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
-
-  const presenceData: PresenceData = {
-    //The large image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    largeImageKey: "key",
-    //The small image on the presence. This can be a key of an image uploaded on the Discord Developer Portal - Rich Presence - Art Assets, or a URL to an image
-    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //The text which is displayed when hovering over the small image
-    smallImageText: "Some hover text",
-     //The upper section of the presence text
-    details: "Browsing Page Name",
-    //The lower section of the presence text
-    state: "Reading section A",
-    //The unix epoch timestamp for when to start counting from
-    startTimestamp: 3133657200000,
-    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
-    endTimestamp: 3133700400000
-    //Optionally you can set a largeImageKey here and change the rest as variable subproperties, for example presenceData.type = "blahblah"; type examples: details, state, etc.
-  };
-  //Update the presence with all the values from the presenceData object
-  if (presenceData.details) presence.setActivity(presenceData);
-  //Update the presence with no data, therefore clearing it and making the large image the Discord Application icon, and the text the Discord Application name
-  else presence.setActivity();
-});
-```
-
-You can copy this into your `presence.ts` file and edit the values. Setting all the values is done inside of the updataData event.
-
-For examples we suggest to look at the code of presences like: 1337x or 9GAG. For more information about the `Presence` class click [here](/dev/presence/class).
+For more information about the `Presence` class click [here](/dev/presence/class).
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
-## Nemôžem získať určité údaje?!
+## Can't get certain data?!
 
 A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
 
@@ -367,11 +95,7 @@ presence.on("iFrameData", (data) => {
 
 **Note:** This needs to be placed outside of the updateData event.
 
-## Kompilovanie
-
-Open a console in your folder and type `tsc -w` to compile the `presence.ts` into the `/dist` folder.
-
-# Načítanie prítomnosti
+# Loading your Presence
 
 1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
 2. **Load Presence** will appear in the Presences section.
@@ -394,5 +118,5 @@ The website you are developing on is automatically reloading every time you save
 - [Trieda Prítomnosti](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Trieda](/dev/presence/iframe)
-- [Metadata Súbor](/dev/presence/metadata)
+- [Metadata File](/dev/presence/metadata)
 - [Konfigurácia TypeScriptu](/dev/presence/tsconfig ""){.links-list}

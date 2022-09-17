@@ -128,4 +128,4 @@ Wenn du diesen Fehler erhältst, bedeutet dies, dass dein Konto keine Administra
 4. Öffne den Installer erneut.
 
 # Das hat mein Problem nicht gelöst
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).

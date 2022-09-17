@@ -130,4 +130,4 @@ Se você receber esse erro, significa que sua conta não tem permissões de admi
 4. Abra o instalador novamente.
 
 # Isso não resolveu o meu problema
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).

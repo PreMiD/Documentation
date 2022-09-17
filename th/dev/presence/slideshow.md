@@ -1,5 +1,5 @@
 ---
-title: คลาส Slideshow
+title: Slideshow Class
 description:
 published: true
 date: 2021-12-20T14:27:18.034Z

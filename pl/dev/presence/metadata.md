@@ -181,7 +181,7 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Określa, czy rozszerzenie powinno odczytywać logi.</td>
+      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Tak</code></td>
     </tr>

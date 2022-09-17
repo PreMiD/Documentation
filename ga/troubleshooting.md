@@ -130,4 +130,4 @@ Má fhaigheann tú an earráid seo, ciallaíonn sé nach bhfuil ceadanna Riarth�
 4. Suiteálaí oscailte arís.
 
 # Níor réitigh sé sin mo fhadhb
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).

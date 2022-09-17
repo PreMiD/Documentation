@@ -130,4 +130,4 @@ exit 0
 4. نصب کننده را دوباره باز کنید.
 
 # این نتوانست مشکل من را حل کند
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
