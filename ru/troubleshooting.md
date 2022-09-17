@@ -130,4 +130,4 @@ Windows: Напишите в проводнике `%appdata%` и удалите 
 4. Открыть программу установки заново.
 
 # Это не решило мою проблему
-Пожалуйста, откройте тикет в [#support](https://discord.premid.app/).
+Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
