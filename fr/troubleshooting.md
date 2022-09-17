@@ -130,4 +130,4 @@ Si vous obtenez cette erreur, cela veux dire que votre compte n'a pas les permis
 4. Réouvrez l'installateur.
 
 # Cela n'a pas résolu mon problème
-Veuillez ouvrir un ticket dans [#support](https://discord.premid.app/).
+Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
