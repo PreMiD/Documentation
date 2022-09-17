@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Versi `2.x` memperkenalkan [kedai Presence](https://premid.app/store). Pengguna kini boleh menambah dan membuang Presence kegemaran mereka secara manual menerusi antara muka pengguna di [laman sesawang](https://premid.app/).
+Versi `2.x` memperkenalkan [Kedai Presence](https://premid.app/store). Pengguna kini boleh menambah dan membuang Presence kegemaran mereka secara manual menerusi antara muka pengguna di [laman sesawang](https://premid.app/).
 
 > Sebelum anda mula, anda amat digalakkan untuk melihat garis panduan Presence kami. 
 > 
@@ -23,13 +23,12 @@ Versi `2.x` memperkenalkan [kedai Presence](https://premid.app/store). Pengguna 
 
 # Struktur
 
-Kesemua Presence dikodkan dalam [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) mempunyai pentakrifan jenis yang lebih pedas berbanding JavaScript, jadi pembaikian dan pengenalpastian pepijat adalah lebih mudah.
+Kesemua Presence dicipta menggunakan [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) mempunyai pentakrifan jenis yang lebih pedas berbanding JavaScript, jadi pembaikian dan pengenalpastian pepijat adalah lebih mudah.
 
-## Pemasangan
+## Keperluan
 
-1. Pasang [Git](https://git-scm.com/).
-2. Pasang [Node](https://nodejs.org/en/) (didatangkan dengan [npm](https://www.npmjs.com/)).
-3. Pasang [TypeScript](https://www.typescriptlang.org/index.html#download-links) (buka terminal dan hantarkan `npm install -g typescript`).
+1. [Git](https://git-scm.com/)
+2. [Node](https://nodejs.org/en/) (didatangkan dengan [npm](https://www.npmjs.com/))
 
 ## Klon projek
 
@@ -37,311 +36,37 @@ Kesemua Presence dikodkan dalam [TypeScript](https://www.typescriptlang.org/). [
 2. Pilih folder yang anda suka.
 3. Buka ia dalam penyunting kod anda.
 
-## Cipta folder dan fail
-
-1. Masuk ke folder `websites` kemudian masuk ke folder dengan huruf pertama bagi **nama** (bukannya URL) perkhidmatan yang anda ingin sokong.
-2. Cipta folder dengan **nama** (bukannya URL) perkhidmatan yang anda ingin sokong.
-3. Cipta fail `presence.ts` dan `tsconfig.json` di dalamnya.
-4. Cipta folder bernama `dist` di dalamnya.
-5. Cipta fail `metadata.json` di dalam folder `dist` tersebut.
-
-## Isi fail tsconfig.json
-
-Sila letakkan kod di bawah ke dalam fail `tsconfig.json`.
-
-```json
-{
-  "extends": "../../../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./dist/"
-  }
-}
-```
-
-Untuk ketahui lebih lanjut mengenai tatarajah TypeScript sila klik [sini](/dev/presence/tsconfig).
-
-## Isi fail metadata.json
-
-Kami telah terbitkan pencipta fail `metadata.json` bagi mereka yang pemalas [di sini](https://eggsy.xyz/projects/premid/mdcreator). Namun, anda masih digalakkan untuk membaca bahagian ini supaya anda tahu cara ia berfungsi.
-
-```json
-{
-  "$schema": "https://schemas.premid.app/metadata/1.7",
-  "author": {
-    "name": "PENGGUNA",
-    "id": "ID"
-  },
-  "contributors": [
-    {
-      "name": "PENGGUNA",
-      "id": "ID"
-    }
-  ],
-  "service": "PERKHIDMATAN",
-  "altnames": ["PERKHIDMATAN"],
-  "description": {
-    "en": "KETERANGAN"
-  },
-  "url": "URL",
-  "version": "VERSI",
-  "logo": "URL",
-  "thumbnail": "URL",
-  "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "KATEGORI",
-  "regExp": "UNGKAPAN NALAR REGEXP",
-  "iFrameRegExp": "UNGKAPAN NALAR REGEXP",
-  "iframe": false,
-  "readLogs": false,
-  "settings": [
-    {
-      "id": "ID",
-      "multiLanguage": true
-    },
-    {
-      "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
-      "value": true
-    },
-    {
-      "id": "ID",
-      "if": {
-        "ID": true
-      },
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
-    },
-    {
-      "id": "ID",
-      "title": "TAJUK PAPARAN",
-      "icon": "IKON FONTAWESOME",
-      "value": 0,
-      "values": ["1", "2", "dll."]
-    }
-  ]
-}
-```
-
-Sila salin kod di atas dan letakkannya di dalam fail `metadata.json` anda. Kini anda perlu ubah nilai sifat. Ingat bahawa ia perlu dalam bahasa Inggeris kerana terjemahan akan ditambah kemudian. Ambil perhatian bahawa sifat berikut adalah pilihan dan tidak diwajibkan dalam fail `metadata.json` anda, jika anda tidak bercadang untuk menggunakannya maka anda perlu membuangnya.
-
-- `contributors`
-- `altnames`
-- `regExp`
-- `iframe`
-- `iFrameRegExp`
-- `readLogs`
-- `settings`
-
-**Menjelaskan beberapa nilai pratetap:**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Pemboleh ubah</th>
-      <th style="text-align:left">Keterangan</th>
-      <th style="text-align:left">Jenis</th>
-      <th style="text-align:left">Pilihan</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Harus mengandungi objek Object dengan nilai nama <code>name</code> dan ID <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). <code>Id</code> pengguna boleh disalin dari Discord dengan membolehkan
-        mod pembangun dan mengklik-kanan profil anda.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Harus mengandungi objek dengan nilai nama <code>name</code> dan nombor id <code>id</code> milik pembangun Presence. <code>name</code> merujuk kepada nama Discord anda tanpa pengenal pasti (#0000). <code>Id</code> pengguna boleh disalin dari Discord dengan membolehkan
-        mod pembangun dan mengklik-kanan profil anda.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Ya</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">Tajuk bagi perkhidmatan yang Presence ini sokong.<br>
-      (Mestilah nama yang sama dengan nama folder di mana semuanya berada)</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Membolehkan carian Presence menggunakan nama alternatif.<br>
-      Untuk digunakan dalam Presence yang mempunyai nama berlainan dalam bahasa yang berlainan (spt. Pokémon dan 포켓몬스터).<br>
-      Anda juga boleh gunakannya untuk Presence yang mempunyai aksara istimewa supaya anda tidak perlu menaip aksara tersebut (spt. Pokémon dan Pokemon).</td>
-      <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Ya</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Keterangan kecil mengenai Presence, anda boleh gunakan keterangan perkhidmatan sekiranya anda tidak tahu apa untuk ditulis. Keterangan anda mesti mempunyai nilai pasangan kekunci yang menyatakan bahasa terlibat, beserta keterangan dalam bahasa tersebut. Cipta keterangan dengan bahasa <i>yang anda tahu</i>, penterjemah kami akan buat perubahan ke fail metadata anda.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL perkhidmatan.<br><b>Contohnya:</b><code>vk.com</code><br>
-      <b>URL ini mesti padan URL laman sesawang kerana ia akan mengesan sama ada laman sesawang tertentu itu laman sesawang yang akan disuntik skrip.</b><br> <b>JANGAN</b> tambah <code>https://</code> atau <code>http://</code> di dalam URL dan jangan letak tanda garis condong di penghujung:
-      <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Nota</b>: Sesetengah URL mungkin ada <code>www.</code> atau benda lain di hadapan domain mereka. <b>JANGAN</b> lupa untuk menambahnya!<br>
-      Anda boleh menambah banyak URL dengan membuat seperti ini:<br>
-      <code>["URL1", "URL2", "DLL."]</code><br>
-      Anda juga boleh gunakan ungkapan nalar (regExp) juga dikenali sebagai Regex untuk tugasan ini, dijelaskan lebih lanjut di bawah.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Rentetan ungkapan nalar / regExp digunakan untuk memadankan URL yang banyak.<br>
-      regExp yang juga dikenali sebagai Regex, boleh digunakan jika sesuatu laman sesawang mempunyai banyak subdomain.<br>
-      Anda boleh gunakan regExp untuk perkara tersebut:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD singkatan Top Level Domain iaitu Domain Paras Tertinggi seperti: .com .net (tetapi jangan masukkan titik).<br>
-      <code>([a-z0-9]+)</code> maksudnya apa sahaja dari a ke z dan dari 0 ke 9.<br>
-      Anda boleh mulakan dengan menonton <a href="https://youtu.be/sXQxhojSdZM">video</a> ini.<br>
-      Anda boleh mencuba regExp anda di <a href="https://regex101.com/">Regex101</a>.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Ya</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Versi Presence anda.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Pautan ke jenis logo perkhidmatan.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Pautan ke lakaran kecil Presence anda.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left">Nilai <code>#HEX</code>. Kami menggalakkan anda menggunakan warna utama
-        dari perkhidmatan yang Presence anda sokong.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Tatasusunan dengan tag, ia akan bantu pengguna mencari Presence anda di laman sesawang.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Rentetan digunakan untuk mewakili kategori yang mana Presence berada. Lihat kategori yang sah <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">di sini</a>.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Tidak</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Menentukan sama ada <code>iFrames</code> akan digunakan.</td>
-      <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Ya</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Pemilih berungkapan nalar yang memilih iFrame untuk disuntikkan. Lihat regExp untuk maklumat lanjut.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Ya</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Menentukan sama ada sambungan patut baca log.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Ya</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">Tatasusunan tetapan yang pengguna boleh ubah.<br>
-      Baca lanjut mengenai tetapan Presence <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">di sini</a>.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Ya</code></td>
-    </tr>
-  </tbody>
-</table>
-
 ## Mulakan
 
-```ts
-const presence = new Presence({
-  //ID klien bagi Aplikasi yang dicipta di https://discordapp.com/developers/applications
-  clientId: "000000000000000000"
-  }),
-  //Anda boleh gunakan ini untuk dapatkan rentetan diterjemah dalam bahasa pelayar mereka
-  strings = presence.getStrings({
-    play: "presence.playback.playing",
-    pause: "presence.playback.paused"
-  });
+1. Buka terminal baharu dalam folder `Presences`
+2. Pasang kebergantungan repositori menggunakan `npm i` (Atau pengurus pakej pilihan anda)
 
-/*
-function myOutsideHeavyLiftingFunction(){
-    //Ambil dan proses kesemua data anda di sini
+### Mencipta Presence
+1. Jalankan `npx pmd` (atau jalankan `pmd` menggunakan pengurus pakej pilihan anda)
+2. Pilih pilihan yang pertama
+3. Isikan kesemua soalan yang dipaparkan
 
-    // ambil unsur-unsur //
-    // buat panggilan API //
-    // tetapkan pemboleh ubah //
-}
+### Mengkompil / Mengubah Suai Presence
+1. Jalankan `npx pmd`
+2. Pilih pilihan yang kedua
+3. Masukkan nama Presence yang anda ingin sunting > Ini akan mulakan pengkompil TypeScript dalam folder Presence tersebut, apabila anda menyunting fail `presence.ts` sekarang ia akan kompil presence tersebut untuk anda secara automatik.
+{.is-info}
 
-setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Jalankan fungsi secara berasingan daripada peristiwa UpdateData setiap 10 saat untuk mendapatkan dan menetapkan pemboleh ubah yang diambil oleh UpdateData
-*/
+Untuk inspirasi atau contoh cara untuk menstrukturkan kod Presence anda, sila lihat pada Presence sedia ada seperti 1337x atau 9GAG
 
-presence.on("UpdateData", async () => {
-  /*UpdateData sentiasa dijalankan, oleh itu ia patut digunakan sebagai kitaran segar semula anda, atau `tick`. Ini dipanggil beberapa kali sesaat apabila boleh.
+Untuk maklumat lanjut mengenai kelas `Presence` sila klik [sini](/dev/presence/class).
 
-    Anda digalakkan untuk menetapkan fungsi lain di luar fungsi peristiwa ini yang akan mengubah nilai pemboleh ubah dan membuat kerja yang lebih berat jika anda memanggil data daripada sesuatu API.*/
-
-  const presenceData: PresenceData = {
-    //Imej besar pada Presence. Ini boleh jadi kekunci bagi imej yang dimuat naik di bahagian aset seni Rich Presence pada portal pembangun Discord menerusi Discord Developer Portal - Rich Presence - Art Assets, atau suatu URL kepada suatu imej
-    largeImageKey: "key",
-    //Imej kecil pada Presence. Ini boleh jadi kekunci bagi imej yang dimuat naik di bahagian aset seni Rich Presence pada portal pembangun Discord menerusi Discord Developer Portal - Rich Presence - Art Assets, atau suatu URL kepada suatu imej
-    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //Tulisan yang akan dipaparkan apabila tetikus dilalukan atas imej kecil
-    smallImageText: "Some hover text",
-     //Bahagian atas tulisan Presence
-    details: "Browsing Page Name",
-    //Bahagian bawah tulisan Presence
-    state: "Reading section A",
-    //Cap masa epok unix untuk bila masa akan mula dikira
-    startTimestamp: 3133657200000,
-    //Jika anda ingin tunjukkan Baki Masa dan bukan Masa Berlalu, ini cap masa epok unix di mana pemasa akan berhenti
-    endTimestamp: 3133700400000
-    //Anda boleh juga memilih untuk menetapkan nilai largeImageKey di sini dan ubah yang lain menjadi subsifat pemboleh ubah, contohnya presenceData.type = "blahblah"; contoh jenis: details, state, dll.
-  };
-  //Kemas kini Presence dengan semua nilai daripada objek presenceData
-  if (presenceData.details) presence.setActivity(presenceData);
-  //Kemas kini Presence dengan tiada data, dengan itu mengosongkannya dan buatkan imej besar guna ikon Aplikasi Discord, dan buatkan tulisan guna nama Aplikasi Discord
-  else presence.setActivity(); 
-});
-```
-
-Anda boleh salin ini ke dalam fail `presence.ts` anda dan sunting nilainya. Penetapan kesemua nilai dilakukan di dalam peristiwa updateData.
-
-Contohnya kami cadangkan anda lihat kod Presence seperti: 1337x atau 9GAG. Untuk maklumat lanjut mengenai kelas `Presence` sila klik [di sini](/dev/presence/class).
-
-Sejak v2.2.0 adanya Slideshow, ini membolehkan anda menunjukkan beberapa antara muka `PresenceData` pada selang masa sesuatu, untuk maklumat lanjut mengenai kelas `Slideshow` boleh klik [sini](/dev/presence/slideshow).
+Kelas Slideshow wujud sejak v2.2.0, ini membolehkan anda menunjukkan beberapa antara muka `PresenceData` pada selang masa tertentu, untuk maklumat lanjut mengenai kelas `Slideshow` sila klik [sini](/dev/presence/slideshow).
 
 ## Tidak mampu dapatkan sesetengah data?!
 
-Banyak laman sesawang menggunakan [iFrame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Tag HTML ini boleh mengandungi beberapa sumber seperti video. Tetapi bukan semuanya mempunyai kaitan pada setiap masa. Sesetengahnya disembunyikan atau cuma tidak digunakan dengan aktif. Periksa jika anda boleh sarikan maklumat yang anda perlukan tanpanya sebelum anda membuat apa-apa kerja yang tidak diperlukan.
+Banyak laman sesawang menggunakan [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Tag HTML ini boleh mengandungi beberapa sumber seperti video. Tetapi bukan semuanya mempunyai kaitan pada setiap masa. Sesetengahnya disembunyikan atau cuma tidak digunakan secara aktif. Periksa jika anda boleh sarikan maklumat yang anda perlukan tanpanya sebelum anda membuat apa-apa kerja yang tidak diperlukan.
 
 1. Periksanya di konsol pelayar anda (pastikan anda berada di tab **Elements** atau Unsur).
 2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Lakukan `document.querySelectorAll("iframe")`.
 
-Jika anda jumpa data anda dalam iFrame anda perlu lakukan berikut:
+Jika anda nampak yang data anda berada dalam iFrame anda perlu lakukan berikut:
 
 1. Cipta fail `iframe.ts`.
 2. Tetapkan iFrame menjadi `true` dalam fail metadata anda.
@@ -350,9 +75,9 @@ Jika anda jumpa data anda dalam iFrame anda perlu lakukan berikut:
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Dapatkan semua data anda perlukan daripada iFrame dan simpan dalam pemboleh ubah lalu hantarkannya menggunakan iframe.send
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
-    //menghantar data
+    //sending data
     video: video,
     time: video.duration
   });
@@ -370,32 +95,28 @@ presence.on("iFrameData", (data) => {
 
 **Nota:** Ini perlu diletakkan di luar peristiwa updateData.
 
-## Kompil
-
-Buka konsol dalam folder anda dan taip `tsc -w` untuk mengkompil fail `presence.ts` ke dalam folder `/dist`.
-
-# Memuatkan Presence
+# Memuatkan Presence anda
 
 1. Buka tetingkap sambungan dalam pelayar dan terus memegang butang <kbd>Shift</kbd> di papan kekunci anda.
-2. **Muatkan Presence**akan muncul di bahagian Presence.
-3. Klik padanya ketika anda masih memegang butang <kbd>Shift</kbd>.
-4. Pilih folder /dist bagi Presence anda.
+2. **Muatkan Presence** akan muncul di bahagian Presence.
+3. Click on it while you are still holding the <kbd>Shift</kbd> button.
+4. Select the /dist folder of your presence.
 
 # Beberapa perkara yang berguna
 
 ## Muat semula panas
 
-Laman sesawang yang anda bangunkan Presence-nya dimuat semula secara automatiknya setiap kali anda simpan fail di dalam folder anda.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
 ## Nyahpepijat
 
-- Anda boleh letakkan `console.log("Test");` di antara kod anda dan tengok jika konsol pelayar anda berikan output tersebut. Jika ya maka teruskan dan cuba lagi selepas fungsi seterusnya. Jika tidak maka adanya ralat di atas.
-- Jika itu tidak membantu anda juga maka cuba minta bantuan pembangun Presence di [pelayan Discord kami](https://discord.premid.app/).
+- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
+- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
 
 # Fail dijelaskan
 
 - [Kelas Presence](/dev/presence/class)
 - [Kelas Slideshow](/dev/presence/slideshow)
 - [Kelas iFrame](/dev/presence/iframe)
-- [Fail Metadata](/dev/presence/metadata)
+- [Metadata File](/dev/presence/metadata)
 - [Tatarajah TypeScript](/dev/presence/tsconfig ""){.links-list}
