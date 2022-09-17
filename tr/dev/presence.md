@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-`2.x` sürümleri, [servis mağazası](https://premid.app/store) özelliği ile birlikte gelir. Kullanıcılar bundan sonra kendi oluşturdukları servisleri [mağazaya](https://premid.app/store) ekletebilecek ve diğer kullanıcıların kullanımına sunabilecek.
+Version `2.x` introduces the [Presence Store](https://premid.app/store). Kullanıcılar bundan sonra kendi oluşturdukları servisleri [mağazaya](https://premid.app/store) ekletebilecek ve diğer kullanıcıların kullanımına sunabilecek.
 
 > Başlamadan önce servis kılavuzlarına uymanız şiddetle tavsiye edilir. 
 > 
@@ -23,13 +23,12 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 # Yapı
 
-Tüm servisler [TypeScript](https://www.typescriptlang.org/) ile kodlanır. [TypeScript](https://www.typescriptlang.org/)'in içerisinde bulundurduğu bir çok tanımlamalar ile kodunuzdaki hataları bulmak çok daha kolay olacaktır.
+All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/)'in içerisinde bulundurduğu bir çok tanımlamalar ile kodunuzdaki hataları bulmak çok daha kolay olacaktır.
 
-## Yükleme
+## Gereksinimler
 
-1. [Git](https://git-scm.com/)'i yükleyin.
-2. [Node](https://nodejs.org/en/)'u yükleyin.
-3. Konsolunuzu açın ve [TypeScript](https://www.typescriptlang.org/index.html#download-links)'i yüklemek için `npm install -g typescript` yazın.
+1. [Git](https://git-scm.com/)
+2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
 
 ## Projeyi klonlama
 
@@ -37,313 +36,46 @@ Tüm servisler [TypeScript](https://www.typescriptlang.org/) ile kodlanır. [Typ
 2. Bir klasör seçin.
 3. Klasörü kullandığınız editör ile açın.
 
-## Klasörleri ve dosyaları oluşturma
+## Getting started
 
-1. Servisinizin **name** (URL adresinin değil) kısmında belirtilen isminin ilk harfinin bulunduğu `websites` klasörünün içerisindeki klasöre girin.
-2. Servisin **adı** (URL'si değil) ile bir klasör oluşturun.
-3. Bir `presence.ts` ve bir `tsconfig.json` dosyası oluşturun.
-4. Ana klasörün içine `dist` adında bir klasör oluşturun.
-5. `dist` klasörünün içine de bir `metadata.json` dosyası oluşturun.
+1. Open a new terminal in the `Presences` folder
+2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-## tsconfig.json dosyasını doldurma
+### Creating a Presence
+1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
+2. Select the first option
+3. Fill in all prompted questions
 
-Aşağıda gördüğünüz kodu `tsconfig.json` dosyasının içine yapıştırın.
+### Compiling / Modifying a Presence
+1. Run `npx pmd`
+2. Select the second option
+3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+{.is-info}
 
-```json
-{
-  "extends": "../../../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./dist/"
-  }
-}
-```
+For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
 
-TypeScript konfigürasyonu hakkında daha fazla bilgi almak için [buraya](/dev/presence/tsconfig) tıklayın.
+For more information about the `Presence` class click [here](/dev/presence/class).
 
-## metadata.json dosyasını doldurma
+Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
-Bu dosyayla fazla uğraşmak istemeyenler için bir `metadata.json` dosyası oluşturucu formu yaptık, görmek için [buraya](https://eggsy.xyz/projects/premid/mdcreator) tıklayabilirsiniz. Eğer isterseniz bu kısmı okuyarak bu dosyanın nasıl çalıştığını anlayabilirsiniz.
+## Can't get certain data?!
 
-```json
-{
-  "$schema": "https://schemas.premid.app/metadata/1.7",
-  "author": {
-    "name": "KULLANICI",
-    "id": "ID"
-  },
-  "contributors": [
-    {
-      "name": "KULLANICI",
-      "id": "ID"
-    }
-  ],
-  "service": "SERVİS",
-  "altnames": ["SERVİS"],
-  "description": {
-    "en": "AÇIKLAMA"
-  },
-  "url": "URL",
-  "version": "VERSİYON",
-  "logo": "URL",
-  "thumbnail": "URL",
-  "color": "#HEX000",
-  "tags": ["ETİKET1", "ETİKET2"],
-  "category": "KATEGORİ",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
-  "iframe": false,
-  "readLogs": false,
-  "settings": [
-    {
-      "id": "ID",
-      "multiLanguage": true
-    },
-    {
-      "id": "ID",
-      "title": "GÖSTERİLECEK BAŞLIK",
-      "icon": "FONTAWESOME İKONU",
-      "value": true
-    },
-    {
-      "id": "ID",
-      "if": {
-        "ID": true
-      },
-      "title": "GÖSTERİLECEK BAŞLIK",
-      "icon": "FONTAWESOME İKONU",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
-    },
-    {
-      "id": "ID",
-      "title": "GÖSTERİLECEK BAŞLIK",
-      "icon": "FONTAWESOME İKONU",
-      "value": 0,
-      "values": ["1", "2", "etc."]
-    }
-  ]
-}
-```
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
 
-Yukarıdaki kodu kopyalayın ve `metadata.json` dosyanıza yapıştırın. Bundan sonra belirtilen verileri düzenlemeniz gerekecektir. Eğer aşağıda "opsiyonel" olarak belirtilen kısımları kullanmayacaksanız lütfen bu alanları `metadata.json` dosyanızdan kaldırın.
-
-- `contributors`
-- `altnames`
-- `regExp`
-- `iframe`
-- `iFrameRegExp`
-- `readLogs`
-- `settings`
-
-**Bu veriler hakkında daha fazla bilgi istiyorsanız:**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Değişken</th>
-      <th style="text-align:left">Açıklama</th>
-      <th style="text-align:left">Tür</th>
-      <th style="text-align:left">Opsiyonel</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Servis geliştiricisinin <code>isim</code> ve <code>id</code> bilgileri bulunan bir Obje içermelidir. <code>name</code> etiketinizin (#0000) olmadığı Discord kullanıcı adınızdır. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Servis geliştiricisinin <code>name</code> ve <code>id</code> bilgileri bulunan bir Object içermelidir. <code>name</code> etiketinizin (#0000) olmadığı Discord kullanıcı adınızdır. Kullanıcı <code>id</code>'leri Discord'da geliştirici modunu aktifleştirerek alınabilir.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Evet</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">Servisin başlığı. Başlık servisin tüm dosyalarının içinde bulunduğu klasör ile aynı isimde olmalıdır.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Servisi ararken alternatif isimlerle aranabilmesi için kullanabileceğiniz alan. Farklı dillerde veya farklı şekilde yazılan (örneğin Pokémon ve 포켓몬스터) servisler ve isminde özel karakter içeren servisler için kullanılabilir.</td>
-      <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Evet</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Servis hakkında kısa bir açıklama, eğer aklınıza bir fikir gelmiyorsa servisin kendi açıklamasını kullanabilirsiniz. Açıklamalarınız dilin kodu ve bu dille yazılmış açıklamanın kendisini içermelidir. Sadece <i>bildiğiniz</i> dillerin çevirisini yapın, geri kalanları ilerleyen zamanlarda çevirmen ekibimiz halledecektir.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">Servisin adresi.<br><b>Example:</b><code>youtube.com.tr</code><br>
-      <b>Buraya girdiğiniz adres servisin adres ile uyuşmalıdır, bu sayede yazdığınız kod sayfaya enjete edilecek ve çalıştırılacaktır..</b><br> <b>Hiçbir</b> durumda adreslerin başına <code>https://</code> veya <code>http://</code>, sonuna ise <code>/</code> eklemeyin:
-      <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Not</b>: Bazı servisler resmi olarak adreslerinin başında <code>www.</code> kullanabilir. Onu eklemeyi de unutmamalısınız!<br>
-      Şu yöntemi kullanarak servisinizin birden fazla adreste çalışmasını sağlayabilirsiniz:<br>
-      <code>["URL1", "URL2", "VS."]</code><br>
-      Gerekirse regExp (Regex) yöntemini de kullanabilirsiniz. Bunun hakkında daha fazla bilgiye aşağıdan erişebilirsiniz.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Adresleri tanımlamak için kullanılacak olan regex biçimindeki sözcük dizimi.<br>
-      regExp veya Regex, birden çok alt alanadı bulunduran servisler için kullanılabilir.<br>
-      Bu durumda şu regex dizimini kullanabilirsiniz:<br>
-      <code>([a-z0-9]+)[.]alanadı[.]TLD"</code><br>
-      TLD burada Top Level Domain kısaltması olarak kullanılamkta ve şunları ifade etmektedir: .com .net<br>
-      <code>([a-z0-9]+)</code> a'dan z'ye ve 0'dan 9'a olan tüm karakterlerin bu dizime yakalanacağı anlamına gelmektedir.<br>
-      Kullanımını daha iyi anlamak için <a href="https://youtu.be/sXQxhojSdZM">bu videoyu</a> izleyebilirsiniz.<br>
-      Kullanacağınız regExp'i <a href="https://regex101.com/">Regex101</a> sitesinde test edebilirsiniz.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Evet</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Servisinizin sürümü.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Servisin logosunu içeren resim bağlantısı.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Mağazada gözükecek arka plan resminin bağlantısı.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> değeri. Servisin kullandığı renkleri kullanmanızı tavsiye ediyoruz.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Servisinize ait etiketleri içeren bir Array, bu etiketler servisinizin aramalarda çıkmasını kolaylaştırır.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Servisinizin ait olduğu kategori. Geçerli kategorileri görmek için <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">buraya</a> tıklayabilirsiniz.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Hayır</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left"><code>iframe</code>'lerin kullanılıp kullanılmayacağını belirler.</td>
-      <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Evet</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Iframe verisinin alınacağı kaynakları yakalayacak regex verisi. Daha fazla bilgi için regExp kısmına bakın.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Evet</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Servisinizin konsol kayıtlarını okuyup okumayacağını belirler.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Evet</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">Kullanıcıların değiştirebileceği ayarlar array'ı. Daha fazla bilgi için <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">buraya</a> gözatın.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Evet</code></td>
-    </tr>
-  </tbody>
-</table>
-
-## Başlarken
-
-```ts
-const presence = new Presence({
-  //https://discordapp.com/developers/applications'ta yaratılan uygulamanın client ID'si
-  clientId: "000000000000000000"
-  }),
-  //Bunu onların internet tarayıcılarının diline çevrilmiş dizileri almak için kullanablirsiniz
-  strings = presence.getStrings({
-    play: "presence.playback.playing",
-    pause: "presence.playback.paused"
-  });
-
-/*
-function myOutsideHeavyLiftingFunction(){
-    //Bütün verilerinizi burada alıp işleyin
-
-    // element grabs //
-    // api calls //
-    // variable sets //
-}
-
-setInterval(myOutsideHeavyLiftingFunction, 10000);
-//UpdateData eventinden ayrı bir şekilde her 10 saniyede fonksiyonu çalıştırın ve UpdateData'nın aldığı değişkenleri belirleyin
-*/
-
-presence.on("UpdateData", async () => {
-  /*UpdateData her zaman çalışıyor, ve bu yüzden yenilenme döngünüz ya da `tik`iniz olarak kullanılmalı. Bu olay, mümkün olduğunca bir saniye içerisinde birkaç kez çağrılacaktır.
-
-    Eğer bir API tarafından veri çağıracaksanız bu event fonksiyonunun dışına değişken değerlerini değiştirecek ve ağır yükü halledecek bir fonksiyon oluşturmanız tavsiye edilir.*/
-
-  const presenceData: PresenceData = {
-    //Presence'teki büyük imge. Bu Discord Geliştirici Portalına - Rich Presence'e - Art Assets'e yüklenmiş bir imgenin anahtarı, ya da bir imgeye giden bir URL olabilir
-    largeImageKey: "anahtar",
-    //Presence'teki küçük imge. Bu Discord Geliştirici Portalına - Rich Presence'e - Art Assets'e yüklenmiş bir imgenin anahtarı, ya da bir imgeye giden bir URL olabilir
-    smallImageKey: "https://benimcilginwebsitem.com/havaliImge.png",
-    //Fare küçük imgenin üzerine sürüklendiğinde gösterilecek olan metin
-    smallImageText: "Biraz havalı imge metni ",
-     //Presence metninin üst kısmı
-    details: "Sayfa Adı Görüntülüyor",
-    //The lower section of the presence text
-    state: "Bölüm A okuyor",
-    //Ne zamandan itibaren sayılcağının unix epoch zaman etiketi
-    startTimestamp: 3133657200000,
-    //Eğer Geçen Zaman yerine Kalanı göstermek istiyorsanız, burası biteceği yerin unix epoch zaman etiketini
-    endTimestamp: 3133700400000
-    //Opsiyonel olarak burada bir largeImageKey belirleyebilirsiniz ve gerisini değişken alt özellikleri olarak değiştirebilirsiniz, örneğin presenceData.type = "blabla"; tip örnekleri: detaylar, durum, vb.
-  };
-  //Presence'i presenceData objesindeki tüm değerlerle güncelleyin
-  if (presenceData.details) presence.setActivity(presenceData);
-  //Presence'i hiçbir veri olmadan güncelleyin, böylece temizlenecek ve büyük imgeyi Discord Uygulaması ikonu yapacak, ve metni de Discord Uygulaması adı
-  else presence.setActivity();
-});
-```
-
-Bunu `presence.ts` dosyanıza kopyalayıp değerleri düzenleyebilirsiniz. Değerleri ayarlama işlemi updateData eventi içinde gerçekleşir.
-
-Örnekler için 1337x veya 9GAG gibi servislerin kodlarını incelemenizi öneririz. `Presence` sınıfı hakkında daha fazla bilgi almak için [buradaki](/dev/presence/class) sayfayı ziyaret edebilirsiniz.
-
-PreMiD 2.2.0 sürümünden beri Slideshow'lar var, bu ara süresince çoklu `PresenceData` arayüzü göstermenize izin veriyor, `Slideshow` sınıfı hakkında daha çok bilgi için [buraya](/dev/presence/slideshow) tıklayın.
-
-## İstediğiniz veriyi alamıyor musunuz?!
-
-Bir çok site [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)) kullanır. Bu HTML etiketleri videolar gibi bir çok kaynak bulundurabilir. Ancak her zaman aynı sonucu vermez. Bazıları gizlidir veya aktif olarak kullanılmaz. Gereksiz iş yapmadan önce onlar olmadan ihtiyacınız olan bilgiyi çıkarabiliyor musunuz diye kontrol edin.
-
-1. Tarayıcınızın konsolundan kontrol edin (**Elements** sekmesinde olduğunuza emin olun).
+1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
 2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Konsoldan devam etmek için konsola `document.querySelectorAll("iframe")` yazabilir ve sayfadaki iframe kaynaklarını görebilirsiniz.
+3. Execute `document.querySelectorAll("iframe")`.
 
-İstediğiniz verilerin bir iFrame'de olduğunu bulursanız aşağıdakileri yapmanız gerekir:
+If you find that your data is in a iFrame you need to do the following:
 
-1. Bir `iframe.ts` dosyası oluşturun.
-2. "metadata" dosyasında `iFrame` kısmını `true` olarak ayarlayın.
-3. iFrame dosyanızı şu şekilde dolurun:
+1. Create a `iframe.ts` file.
+2. Set iFrame to `true` in your metadata file.
+3. Filling in your iFrame file.
 
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //iFrame'den ihtiyacınız olan tüm veriyi alın, değişkenlere kaydedin ve sonra iframe.send'i kullanarak gönderin
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
     //sending data
     video: video,
@@ -352,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Yukarıdaki gibi gönderilen bir veriyi servis kodunun içinde alabilmek için aşağıdaki yöntemi kullanın.
+4. Making your presence file receive data from the iFrame file.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -361,34 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Not:** Bu updateData eventinin dışına yerleştirilmeli.
+**Note:** This needs to be placed outside of the updateData event.
 
-## Derleme
+# Loading your Presence
 
-Klasörünüzün içindeyken bir komut istemi açın ve `presence.ts`'i `/dist` klasörüne derlemek için `tsc -w` yazın.
-
-# Servisi test etme
-
-1. Eklenti penceresini açın ve klavyenizdeki <kbd>Shift</kbd> tuşuna basılı tutun.
-2. Servisler kısmının hemen sağında **Servis Yükle** yazısı çıkacaktır.
-3. <kbd>Shift</kbd>'e basılı tutarken bu yazıya tıklayın.
-4. Servisinizin dist klasörünü bulun ve seçin.
+1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
+2. **Load Presence** will appear in the Presences section.
+3. Click on it while you are still holding the <kbd>Shift</kbd> button.
+4. Select the /dist folder of your presence.
 
 # Bazı yararlı şeyler
 
-## Anında yenileme
+## Hot-reloading
 
-Servisinizin çalıştığı sayfalar, yerel dosyalarınızda yaptığınız herhangi bir değişiklikte otomatik olarak yenilenecektir.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
-## Hata ayıklama
+## Debugging
 
-- Kodunuzun çalışıp çalışmadığınızı test edebilmek için kodunuzun bir yerine basitçe `console.log("Test");` koyabilir ve konsola çıktı verip vermediğini kontrol edebilirsiniz. Eğer çıktı veriyorsa, devam edin. Eğer vermiyorsa, kod bu satırdan önce hataya geçmiş veya hiç bu satıra ulaşamamış demektir.
-- Eğer bunların hiçbiri işe yaramadıysa, [Discord sunucumuzdan](https://discord.premid.app/) bir servis geliştiricisiyle iletişime geçebilirsiniz.
+- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
+- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
 
 # Dosyaların açıklamaları
 
 - [Presence Sınıfı](/dev/presence/class)
 - [Slideshow Sınıfı](/dev/presence/slideshow)
 - [iFrame Sınıfı](/dev/presence/iframe)
-- [Metadata Dosyası](/dev/presence/metadata)
+- [Metadata File](/dev/presence/metadata)
 - [TypeScript Konfigürasyonu](/dev/presence/tsconfig ""){.links-list}
