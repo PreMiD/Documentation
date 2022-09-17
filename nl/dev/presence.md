@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Versie `2.x` introduceert de [presencebibliotheek](https://premid.app/store). Gebruikers kunnen nu handmatig hun favoriete presences toevoegen en verwijderen via de gebruikersinterface op de [website](https://premid.app/).
+Version `2.x` introduces the [Presence Store](https://premid.app/store). Gebruikers kunnen nu handmatig hun favoriete presences toevoegen en verwijderen via de gebruikersinterface op de [website](https://premid.app/).
 
 > Voordat je aan de slag gaat, is het zeer aan te raden om onze presence richtlijnen te bekijken. 
 > 
@@ -23,13 +23,12 @@ Versie `2.x` introduceert de [presencebibliotheek](https://premid.app/store). Ge
 
 # Structuur
 
-Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) heeft een paar extra type definities, dus het oplossen en vinden van bugs is veel eenvoudiger.
+All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) heeft een paar extra type definities, dus het oplossen en vinden van bugs is veel eenvoudiger.
 
-## Installatie
+## Vereisten
 
-1. Installeer [Git](https://git-scm.com/).
-2. Installeer [Node](https://nodejs.org/en/) (komt met [npm](https://www.npmjs.com/)).
-3. Installeer [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open een terminal en `npm install -g typescript`).
+1. [Git](https://git-scm.com/)
+2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
 
 ## Het project klonen
 
@@ -37,329 +36,55 @@ Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). 
 2. Kies een map van je keuze.
 3. Open het in je code editor.
 
-## Mappen en bestanden maken
+## Getting started
 
-1. Ga in de map `websites` en ga vervolgens in de map met de eerste letter van de **naam** (niet de URL) van de service die u wilt ondersteunen.
-2. Maak een map met de **naam** (niet een URL) van de service die je wilt ondersteunen.
-3. Maak een `presence.ts` en een `tsconfig.json` bestand in de map.
-4. Maak een map met de naam `dist` in de map.
-5. Maak een `metadata.json` bestand in de `dist` map.
+1. Open a new terminal in the `Presences` folder
+2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-## Het tsconfig.json bestand invullen
+### Creating a Presence
+1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
+2. Select the first option
+3. Fill in all prompted questions
 
-Plaats de volgende code in het `tsconfig.json` bestand.
+### Compiling / Modifying a Presence
+1. Run `npx pmd`
+2. Select the second option
+3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+{.is-info}
 
-```json
-{
-  "extends": "../../../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./dist/"
-  }
-}
-```
+For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
 
-Om meer te leren over TypeScript configuratie, klik [hier](/dev/presence/tsconfig).
+For more information about the `Presence` class click [here](/dev/presence/class).
 
-## Het metadata.json bestand invullen
+Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
-We hebben een `metadata.json` bestandsmaker gemaakt voor de luie mensen [hier](https://eggsy.xyz/projects/premid/mdcreator). Het wordt nog steeds aangeraden dit door te lezen, zodat je weet hoe het werkt.
+## Can't get certain data?!
 
-```json
-{
-  "$schema": "https://schemas.premid.app/metadata/1.7",
-  "author": {
-    "name": "GEBRUIKER",
-    "id": "ID"
-  },
-  "contributors": [
-    {
-      "name": "GEBRUIKER",
-      "id": "ID"
-    }
-  ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
-  "description": {
-    "en": "BESCHRIJVING"
-  },
-  "url": "URL",
-  "version": "VERSIE",
-  "logo": "URL",
-  "thumbnail": "URL",
-  "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORIE",
-  "regExp": "REGEXP",
-  "iFrameRegExp": "REGEXP",
-  "iframe": false,
-  "readLogs": false,
-  "settings": [
-    {
-      "id": "ID",
-      "multiLanguage": true
-    },
-    {
-      "id": "ID",
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
-      "value": true
-    },
-    {
-      "id": "ID",
-      "if": {
-        "ID": true
-      },
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
-    },
-    {
-      "id": "ID",
-      "title": "TITEL",
-      "icon": "FONTAWESOME ICOON",
-      "value": 0,
-      "values": ["1", "2", "etc."]
-    }
-  ]
-}
-```
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
 
-Kopieer de bovenstaande code en plaats deze in het `metadata.json` bestand. Je moet nu de waarden van de eigenschappen bewerken. Houd er rekening mee dat de volgende eigenschappen optioneel in je `metadata.json` bestand staan, als u niet van plan bent om ze te gebruiken, dan moet je ze verwijderen.
+1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
+2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Execute `document.querySelectorAll("iframe")`.
 
-- `contributors`
-- `altnames`
-- `regExp`
-- `iframe`
-- `iFrameRegExp`
-- `readLogs`
-- `settings`
+If you find that your data is in a iFrame you need to do the following:
 
-**Bepaalde voorinstellingen van waarden verduidelijken:**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Variabele</th>
-      <th style="text-align:left">Beschrijving</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Optioneel</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Moet een object bevatten met de <code>naam</code> en <code>id</code> van de presence-ontwikkelaar. <code>naam</code> is je Discord gebruikersnaam zonder identificatie(#0000). Gebruiker <code>id</code> kan worden gekopieerd van Discord door de ontwikkelaar
-        modus in te schakelen en de rechtermuisknop op je profiel te klikken.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Moet een object bevatten met de <code>naam</code> en <code>id</code> van de presence-ontwikkelaar. <code>naam</code> is je Discord gebruikersnaam zonder identificatie(#0000). Gebruiker <code>id</code> kan worden gekopieerd van Discord door de ontwikkelaar
-        modus in te schakelen en de rechtermuisknop op je profiel te klikken.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">De titel van de dienst die door deze presence wordt ondersteund.<br>
-      (Moet dezelfde naam hebben als de map waar alles in staat)</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>altnames</b></td>
-      <td style="text-align:left">Wees in staat om de presence te zoeken met een alternatieve naam.<br>
-      Bedoelt om gebruikt te worden voor presences met verschillende namen in verschillende talen (bijv. Pokémon and 포켓몬스터).<br>
-      Je kunt het ook gebruiken voor presences die speciale tekens hebben zodat je deze niet hoeft te typen (bijv. Pokémon and Pokemon).</td>
-      <td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Kleine beschrijving van de presence, je kunt een beschrijving van de service gebruiken als je geen ideeën hebt. Je beschrijving moet key waarden bevatten die de taal en de beschrijving in die specifieke taal aangeven. Maak beschrijvingen met de talen <i>die u kent</i>, onze vertalers zullen wijzigingen aanbrengen in je metadata bestand.</td>
-      <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL van de service.<br><b>Bijvoorbeeld:</b><code>vk.com</code><br>
-        <b>Deze URL moet de URL van de website zijn, aangezien dit er voor zorgt of de script word ingeladen of niet.</b><br> Voeg <b>NIET</b> <code>https://</code> of <code>http://</code> toe in de URL, ook niet een slash aan het einde:
-      <code>https://premid.app/</code> -> <code>premid.app</code><br>
-      <b>Opmerking</b>: Sommige URLs hebben <code>www.</code> of iets anders voor hun domain naam. Vergeet <b>NIET</b> dat toe te voegen!<br>
-      Je kunt meerdere URL's toevoegen door het volgende te doen:<br>
-      <code>["URL1", "URL2", "ETC.]</code><br>
-      Je kunt ook regExp ook bekend als Regex voor deze taak gebruiken. verder hieronder uitgelegd.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">Een reguliere expressie die word gebruikt om URLs te vergelijken.<br>
-      regExp ook bekend als Regex, kan worden gebruikt als een website meerdere subdomeinen heeft.<br>
-      Je kunt de volgende regExp daarvoor gebruiken:<br>
-      <code>([a-z0-9]+)[.]domain[.]TLD"</code><br>
-      TLD staat voor Top Level Domain bijvoorbeeld: .com .net (maar zonder de dot)<br> 
-      <code>([a-z0-9]+)</code> betekent alles van a tot z en van 0 tot 9.<br>
-      Je kunt een handleiding video kijken <a href="https://youtu.be/sXQxhojSdZM">hier</a><br>
-      Je kunt je regExp testen bij <a href="https://regex101.com/">Regex101</a>.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Versie van je presence.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link naar service&apos;s logo.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link naar de thumbnail van de presence.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> waarde. We raden u aan een primaire kleur van de service
-        te gebruiken die je presence ondersteunt.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array met tags, ze helpen gebruikers je presence op de website te vinden.</td>
-      <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">Een tekst die wordt gebruikt om de categorie aan te geven waar de presence onder valt. Zie de geldige categories <a href="https://docs.premid.app/dev/presence/metadata#presence-categories">hier</a>.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Nee</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Definieert of <code>iFrames</code> worden gebruikt.</td>
-      <td style="text-align:left"><code>Boolean</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">Een reguliere expressie string gebruiken om iFrames te vergelijken. Zie regExp voor meer informatie.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Definieert of de extensie logs moet lezen.</td>
-      <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">Een reeks instellingen die de gebruiker kan wijzigen.<br>
-      Lees meer over de presence instellingen <a href="https://docs.premid.app/dev/presence/metadata#presence-settings">hier</a>.</td>
-      <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Ja</code></td>
-    </tr>
-  </tbody>
-</table>
-
-## Aan de slag
-
-```ts
-const presence = new presence({
-    clientId: "000000000000000000" //De client ID van de Applicatie gemaakt op https://discordapp.com/developers/applications
-  }),
-  strings = presence.getStrings({
-    play: "presence.playback.playing",
-    pause: "presence.playback.paused"
-    //Je kan dit gebruiken om vertaalde teksten te krijgen
-});
-
-/*
-
-function myOutsideHeavyLiftingFunction(){
-    //Pak en verwerk alle informatie hier
-
-    // element grabs //
-    // api calls //
-    // variable sets //
-}
-
-setInterval(myOutsideHeavyLiftingFunction, 10000);
-//Laat de functie elke 10 seconden apart lopen van de UpdateData-event om de variabelen te krijgen en te zetten die UpdateData verkrijgt. */
-
-
-presence.on("UpdateData", async () => {
-    /*UpdateData is altijd aan het lopen, en moet daarom jouw refresh-cyclus zijn, of `tick`. Dit wordt waar mogelijk meerdere keren per seconden opgeroepen.
-
-    Het is aanbevolen om een andere functie buiten deze event-functie te maken, die de variabelen zal veranderen en al het zware werk zal doen als je informatie roept vanuit een API*/
-
-  const presenceData: presenceData = {
-    //De grote afbeelding op de presence. Dit kan de key van een afbeelding zijn die je hebt geüpload naar Discord Developer Portal - Rich Presence - Art Assets, of een koppeling naar een foto
-    largeImageKey: "key",
-    //De kleine afbeelding op de presence. Dit kan de key van een afbeelding zijn die je hebt geüpload naar Discord Developer Portal - Rich Presence - Art Assets, of een afbeeldings-URL
-    smallImageKey: "https://mycrazywebsite.com/coolImage.png",
-    //De tekst die wordt weergegeven als tooltip voor de kleine afbeelding
-    smallImageText: "Some hover text",
-     //Het bovenste deel van de presencetekst
-    details: "Browsing Page Name",
-    //Het onderste deel van de presencetekst
-    state: "Reading section A",
-    //De tijdstempel (unix epoch) voor het moment waar vanaf geteld moet worden
-    startTimestamp: 3133657200000,
-    //Als je wilt aftellen naar een moment in plaats van de verstreken tijd te tonen, kun je hier de eindtijdstempel (unix epoch) plaatsen
-    endTimestamp: 3133700400000
-    //Eventueel kun je hier een largeImageKey plaatsen en de rest wijzigen als subeigenschappen van een variabele, zoals presenceData.type = "blabla"; type voorbeelden: details, state, enzovoorts
-  };
-  //Werk de presence bij met alle waarden van het object presenceData
-  if (presenceData.details) presence.setActivity(presenceData);
-  //Werk de presence bij zonder gegevens. De presence wordt geleegd, de grote afbeelding wordt het Discord Application-icoon en de text wordt de Discord Application-naam
-  else presence.setActivity();
-});
-```
-
-Je kan dit kopiëren naar je `presence.ts`-bestand en de waardes bewerken. Het instellen van alle waardes wordt gedaan binnen het updateData-event.
-
-Voor voorbeelden raden we aan om naar de code van de presences van bijvoorbeeld 1337x of 9GAG te kijken. Voor meer informatie over de `Presence-klas` klik [hier](/dev/presence/class).
-
-Sinds v2.2.0 zijn er nu Slideshows, dit stelt je in staat om meerdere `PresenceData` interfaces op een interval weer te geven, voor meer informatie over de `Slideshow` klasse klik [hier](/dev/presence/slideshow).
-
-## Kan bepaalde data niet krijgen?!
-
-Veel websites gebruiken [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Deze html-tags kunnen meerdere bronnen bevatten, zoals video's. Maar ze zijn niet altijd relevant. Sommige zijn verborgen of worden niet vaak gebruikt. Controleer of je de informatie die je nodig hebt, kan verkrijgen zonder dat je onnodig werk doet.
-
-1. Controleer ze met de console van je browser (zorg dat je op de **Elements**-tab zit).
-2. Zoeken (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) of <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Voer `document.querySelectorAll("iframe")` uit.
-
-Als je vindt dat je gegevens zich in iFrame bevinden, moet je het volgende doen:
-
-1. Maak een `iframe.ts` bestand aan.
-2. Stel iFrame in op `true` in je metadata bestand.
-3. Vul je iFrame bestand in.
+1. Create a `iframe.ts` file.
+2. Set iFrame to `true` in your metadata file.
+3. Filling in your iFrame file.
 
 ```ts
 const iframe = new iFrame();
 iframe.on("UpdateData", async () => {
-  //Verkrijg alle gegevens die je uit de iFrame wilt halen en sla ze op in variabelen. Verstuur ze daarna middels iframe.send
+  //Get all the data you need out of the iFrame save them in variables and then send them using iframe.send
   iframe.send({
-    //gegevens versturen
+    //sending data
     video: video,
     time: video.duration
   });
 });
 ```
 
-4. Zorgen dat je presence-bestand data ontvangt vanuit het iFrame bestand.
+4. Making your presence file receive data from the iFrame file.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -368,34 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Opmerking:** Dit moet buiten de updateData event worden geplaatst.
+**Note:** This needs to be placed outside of the updateData event.
 
-## Compileren
+# Loading your Presence
 
-Open een console in je map en typ `tsc -w` om de `presence.ts` te compileren in de `/dist` map.
-
-# Laden van de presence
-
-1. Open de extensie popup in de browser en houd de <kbd>Shift</kbd> knop op je toetsenbord ingedrukt.
-2. **Laad presence** verschijnt in de presences sectie.
-3. Klik erop terwijl je nog steeds de <kbd>Shift</kbd> knop ingedrukt houdt.
-4. Selecteer de map /dist van je presence.
+1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
+2. **Load Presence** will appear in the Presences section.
+3. Click on it while you are still holding the <kbd>Shift</kbd> button.
+4. Select the /dist folder of your presence.
 
 # Enkele nuttige dingen
 
-## Hot-herladen
+## Hot-reloading
 
-De website waar je mee bezig bent wordt automatisch herladen wanneer je een bestand in je map opslaat.
+The website you are developing on is automatically reloading every time you save a file in your folder.
 
-## Foutopsporing
+## Debugging
 
-- Je kunt `console.log("Test");` tussen je code zetten en kijken of je browserconsole je die uitvoer geeft. Zo ja, ga dan verder en probeer het opnieuw na de volgende functie. Zo niet, dan is er een fout hierboven.
-- Als dat je ook niet helpt, vraag dan een presence-ontwikkelaar op onze [Discord-server](https://discord.premid.app/) voor hulp.
+- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
+- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
 
 # Uitleg van bestanden
 
 - [Presence Klasse](/dev/presence/class)
 - [Slideshow Klasse](/dev/presence/slideshow)
 - [iFrame Klasse](/dev/presence/iframe)
-- [Metadata bestand](/dev/presence/metadata)
-- [TypeScript Configuratie](/dev/presence/tsconfig ""){.links-list}
+- [Metadata File](/dev/presence/metadata)
+- [TypeScript configuratie](/dev/presence/tsconfig ""){.links-list}
