@@ -130,4 +130,4 @@ If you get this error, it means that your account doesn't have Administrator per
 4. Open installer again.
 
 # Tai nesutaisė mano problemos
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
