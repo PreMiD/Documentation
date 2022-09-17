@@ -130,4 +130,4 @@ If you get this error, it means that your account doesn't have Administrator per
 4. Nyisd meg a telepítőt újra.
 
 # Ez nem oldotta meg a problémát
-Kérlek nyiss egy hibajegyet a [#support](https://discord.premid.app/)-ban.
+Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
