@@ -130,4 +130,4 @@ Yen sampeyan entuk kesalahan iki, tegese akun sampeyan ora duwe akses Administra
 4. Bukak installer maneh.
 
 # Masalahku durung mantun
-Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
+Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
