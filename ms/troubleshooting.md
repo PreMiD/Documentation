@@ -130,4 +130,4 @@ Jika anda mendapat ralat ini, ia bermakna akaun anda tidak mempunyai kebenaran P
 4. Buka pemasang lagi sekali.
 
 # Semua itu tidak selesaikan masalah saya
-Sila buka tiket dalam bahasa Inggeris di saluran [#support](https://discord.premid.app/) dalam Discord kami.
+Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).

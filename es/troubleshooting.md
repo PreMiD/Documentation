@@ -130,4 +130,4 @@ Si recibes este error, significa que tu cuenta no tiene permisos de administrado
 4. Vuelve a abrir el instalador.
 
 # Esto no ha resuelto mi problema
-Por favor abre un ticket en [#support](https://discord.premid.app/).
+Please create a new post in \[#support\](https://discord.premid.app/](https://discord.com/channels/493130730549805057/1019726199494279248).
