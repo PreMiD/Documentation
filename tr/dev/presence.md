@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [Presence Store](https://premid.app/store). Kullanıcılar bundan sonra kendi oluşturdukları servisleri [mağazaya](https://premid.app/store) ekletebilecek ve diğer kullanıcıların kullanımına sunabilecek.
+Versiyon `2.x` [Presence Mağazası](https://premid.app/store)'nı sunar. Kullanıcılar bundan sonra kendi oluşturdukları servisleri [mağazaya](https://premid.app/store) ekletebilecek ve diğer kullanıcıların kullanımına sunabilecek.
 
 > Başlamadan önce servis kılavuzlarına uymanız şiddetle tavsiye edilir. 
 > 
@@ -23,12 +23,12 @@ Version `2.x` introduces the [Presence Store](https://premid.app/store). Kullan�
 
 # Yapı
 
-All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/)'in içerisinde bulundurduğu bir çok tanımlamalar ile kodunuzdaki hataları bulmak çok daha kolay olacaktır.
+Tüm Presence'ler [TypeScript](https://www.typescriptlang.org/) kullanılarak yapılmıştır. [TypeScript](https://www.typescriptlang.org/)'in içerisinde bulundurduğu bir çok tanımlamalar ile kodunuzdaki hataları bulmak çok daha kolay olacaktır.
 
 ## Gereksinimler
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. [Node](https://nodejs.org/en/) ([npm](https://www.npmjs.com/) ile birlikte gelir)
 
 ## Projeyi klonlama
 
@@ -36,41 +36,41 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 2. Bir klasör seçin.
 3. Klasörü kullandığınız editör ile açın.
 
-## Getting started
+## Başlarken
 
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-### Bir Presence Yaratmak
-1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
-2. Select the first option
-3. Fill in all prompted questions
+### Bir Presence yaratmak
+1. `npx pmd` yürütün (ya da tercih ettiğiniz paket yöneticisiyle `pmd` yürütün)
+2. Birinci opsiyonu seçin
+3. Verilen bütün soruları doldurun
 
 ### Bir Presence Derlemek / Üzerinde Değişiklik Yapmak
 1. `npx pmd` yürütün
 2. İkinci opsiyonu seçin
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+3. Düzenlemek istedğiniz Presence adını giriniz > Bu Presence'in klasöründe bir TypeScript derleyicisi başlatacak, artık `presence.ts`'i düzenlediğinizde kendisi sizin için presence'i otomatik bir şekilde derleyecek.
 {.is-info}
 
 For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
 
 For more information about the `Presence` class click [here](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+v2.0.0'dan beri artık Slayt Gösterileri var, bu sizin bir arada birden fazla `PresenceData` arayüzü göstermenize olanak sağlar, daha fazla bilgi için `Slayt Gösterisi` hakkındaya [buradan](/dev/presence/slideshow) tıklayın.
 
-## Can't get certain data?!
+## Belirli veriyi alamıyor musunuz?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Bazıları gizli ya da yalnızca aktif olarak kullanılmıyor. Gereksiz iş yapmadan önce onlar olmadan ihtiyacınız olan bilgiyi çıkarıp çıkaramadığınızı kontol edin.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Onları tarayıcınızın konsolundan kontrol ediniz (**Öğeler** sekmesinde olduğunuzdan emin olun).
+2. Arayın (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) ya da <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. `document.querySelectorAll("iframe")` yürütün.
 
-If you find that your data is in a iFrame you need to do the following:
+Eğere verinizin bir iFrame içerisinde olduğunu öğrenirseniz yapmanız gerekenler:
 
 1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+2. metadata dosyanızda iFrame'i `true` olarak ayarlayın.
+3. iFrame dosyanızın içini doldurmak.
 
 ```ts
 const iframe = new iFrame();
@@ -84,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Presence dosyanızın iFrame dosyanızdan veri almasını sağlamak.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -93,12 +93,12 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Not:** Bu updateEvent etkinliğinin dışına yerleştirilmeli.
 
-# Loading your Presence
+# Servisi test etme
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
+1. Tarayıcınızdan uzantı açılır penceresini açın ve klavyenizden <kbd>Shift</kbd> butonuna basılı tutun.
+2. **Presence Yükle** Presence'ler bölümünde belirecektir.
 3. Click on it while you are still holding the <kbd>Shift</kbd> button.
 4. Select the /dist folder of your presence.
 
@@ -108,7 +108,7 @@ presence.on("iFrameData", (data) => {
 
 The website you are developing on is automatically reloading every time you save a file in your folder.
 
-## Debugging
+## Hata ayıklamak
 
 - You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
 - If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
