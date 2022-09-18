@@ -95,14 +95,14 @@ presence.on("iFrameData", (data) => {
 
 **Note:** This needs to be placed outside of the updateData event.
 
-# Loading your Presence
+# นำเข้า Presence ของคุณ
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. เปิดป๊อปอัพส่วนขยายในเบราว์เซอร์แล้วกด <kbd>Shift</kbd> ค้างไว้.
+2. **นำเข้า Presence** หรือ **Load Presence** จะปรากฏขึ้นมา.
+3. คลิกไปที่มันระหว่างที่คุณยังคงกดปุ่ม <kbd>Shift</kbd> อยู่.
+4. เลือกโฟลเดอร์ /dist ของ Presence ของคุณ.
 
-# Some helpful things
+# สิ่งที่เป็นประโยชน์
 
 ## Hot-reloading
 
@@ -116,7 +116,7 @@ The website you are developing on is automatically reloading every time you save
 # Files explained
 
 - [คลาส Presence](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
+- [คลาส Slideshow](/dev/presence/slideshow)
 - [คลาส iFrame](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [ไฟล์ Metadata](/dev/presence/metadata)
 - [การกำหนดค่าไฟล์ Typescript](/dev/presence/tsconfig ""){.links-list}
