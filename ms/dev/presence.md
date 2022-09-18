@@ -99,24 +99,24 @@ presence.on("iFrameData", (data) => {
 
 1. Buka tetingkap sambungan dalam pelayar dan terus memegang butang <kbd>Shift</kbd> di papan kekunci anda.
 2. **Muatkan Presence** akan muncul di bahagian Presence.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+3. Klik padanya ketika anda masih memegang butang <kbd>Shift</kbd>.
+4. Pilih folder /dist bagi Presence anda.
 
 # Beberapa perkara yang berguna
 
 ## Muat semula panas
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Laman sesawang yang anda gunakan untuk pembangunan ini dimuat semula secara automatiknya setiap kali anda simpan fail dalam folder anda.
 
 ## Nyahpepijat
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Anda boleh letak `console.log("Test");` di antara kod anda dan tengok jika konsol pelayar anda berikan output tersebut. Jika ya maka teruskan dan cuba lagi selepas fungsi seterusnya. Jika tidak maka terdapat ralat di sebelah atas.
+- Jika itu tidak membantu anda juga maka cuba minta bantuan dari salah seorang pembangun Presence di [pelayan Discord](https://discord.premid.app/) kami.
 
 # Fail dijelaskan
 
 - [Kelas Presence](/dev/presence/class)
 - [Kelas Slideshow](/dev/presence/slideshow)
 - [Kelas iFrame](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [Fail Metadata](/dev/presence/metadata)
 - [Tatarajah TypeScript](/dev/presence/tsconfig ""){.links-list}
