@@ -38,11 +38,11 @@ Semua presence ditulis menggunakan [TypeScript](https://www.typescriptlang.org/)
 
 ## Memulai
 
-1. Open a new terminal in the `Presences` folder
-2. Install repository dependencies using `npm i` (Or your package manager of choice)
+1. Buka terminal pada folder `Presence`
+2. Pasang dependensi repositori menggunakan `npm i` (Atau menggunakan package manager pilihanmu)
 
 ### Membuat sebuah Presence
-1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
+1. Jalankan `npx pmd` (atau menjalankan `pmd` pada package manager pilihanmu)
 2. Pilih opsi pertama
 3. Isi semua pertanyaan yang ditampilkan
 
