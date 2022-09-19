@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [Presence Store](https://premid.app/store). Pengguna sekarang bisa menambah dan menghapus presence favorit lewat tampilan pengguna [website](https://premid.app/).
+Versi `2.x` memperkenalkan [Toko Presence](https://premid.app/store). Pengguna sekarang bisa menambah dan menghapus presence favorit lewat tampilan pengguna [website](https://premid.app/).
 
 > Sebelum memulai, sangat dianjurkan untuk melihat aturan presence kami. 
 > 
@@ -23,12 +23,12 @@ Version `2.x` introduces the [Presence Store](https://premid.app/store). Penggun
 
 # Struktur
 
-All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) memiliki tipe definisi tambahan dari JavaScript, jadi identifikasi dan perbaikan bug menjadi lebih mudah.
+Semua presence ditulis menggunakan [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) memiliki tipe definisi tambahan dari JavaScript, jadi identifikasi dan perbaikan bug menjadi lebih mudah.
 
 ## Persyaratan
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. Pasang [Node](https://nodejs.org/en/) (sudah disertai [npm](https://www.npmjs.com/)).
 
 ## Mengkloning project
 
@@ -36,20 +36,20 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 2. Pilih folder pilihanmu.
 3. Buka di editor kodemu.
 
-## Getting started
+## Memulai
 
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-### Creating a Presence
+### Membuat sebuah Presence
 1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
-2. Select the first option
-3. Fill in all prompted questions
+2. Pilih opsi pertama
+3. Isi semua pertanyaan yang ditampilkan
 
-### Compiling / Modifying a Presence
-1. Run `npx pmd`
-2. Select the second option
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+### Compile / Merubah Presence
+1. Jalankan `npx pmd`
+2. Pilih opsi kedua
+3. Masukkan nama Presence yang ingin kamu edit > Ini akan memulai compiler TypeScript pada folder Presence tersebut, sekarang jika kamu mengedit `presence.ts` TypeScript akan otomatis compile presencemu.
 {.is-info}
 
 For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
