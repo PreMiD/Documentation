@@ -36,7 +36,7 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). O [T
 2. Escolha uma pasta que preferir.
 3. Abra isso no seu editor de código.
 
-## Getting started
+## Primeiros passos
 
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
