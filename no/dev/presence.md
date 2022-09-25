@@ -41,7 +41,7 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-### Creating a Presence
+### Opprett en presence
 1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
 2. Select the first option
 3. Fill in all prompted questions
