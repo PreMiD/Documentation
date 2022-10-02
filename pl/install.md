@@ -17,14 +17,14 @@ dateCreated: 2020-06-11T18:03:51.119Z
 > {.is-warning}
 
 **Wybierz swój system operacyjny:**
-- [Windows *7 lub lepszy*](/install/windows)
-- [macOS *10.11 lub lepszy*](/install/macos)
-- [Linux *kernel with v2.x or above*](/install/linux)
+- [Windows *7 lub nowszy*](/install/windows)
+- [macOS *10.11 lub nowszy*](/install/macos)
+- [Linux *kernel z v2.x lub nowszy*](/install/linux)
 {.links-list}
 
 **Wybierz przeglądarkę:**
-- [Chromium *v76 lub lepszy*](/install/chromium)
-- [Firefox *69 lub lepszy*](/install/firefox)
+- [Chromium *v76 lub nowsza*](/install/chromium)
+- [Firefox *69 lub nowsza*](/install/firefox)
 {.links-list}
 
 ![](https://a.icons8.com/ajlQdsfa/FZhYWV/svg.svg) {.align-abstopright}
