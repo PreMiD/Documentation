@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie
+title: Pierwsze kroki
 description: Troche porad dla tych co chcą zacząć programować
 published: true
 date: 2021-12-20T14:27:18.034Z
