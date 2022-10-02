@@ -1,6 +1,6 @@
 ---
 title: Pierwsze kroki
-description: Troche porad dla tych co chcą zacząć programować
+description: Mała rada dla tych, którzy zajęli się kodowaniem niedawno
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,14 +8,14 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> Edytor kodu źródłowego jest wymagany. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Wymagany jest edytor kodu źródłowego. Zalecamy [Visual Studio Code](https://code.visualstudio.com/). 
 > 
 > {.is-info}
 
 # Instalowanie wymagań
 1. Zainstaluj program [Git](https://git-scm.com/).
 2. Zainstaluj program [node.js](https://nodejs.org/en/) (przybywa z [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
+3. Zainstaluj [TypeScript](https://www.typescriptlang.org/index.html#download-links) (otwórz terminal i wpisz `npm install -g typescript`).
 
 # Klonowanie projektu
 1. Otwórz konsole i wpisz `git clone LINK`. **Zamień LINK na link repozytorium które chcesz wspomoć** np. `git clone https://github.com/PreMiD/PreMiD`.
@@ -41,4 +41,4 @@ Prosimy o zachowanie struktury. Nie chcemy dezorganizowywać naszego projektu. P
 Po prostu otwórz Pull Request jednym z naszych [GitHubowych repozytoriach](https://github.com/PreMiD/) które chcesz wspomóc. Zajmiemy się wszystkim, nie matrw się. Jeżeli to twój pierwszy raz kiedy tworzysz pull request, sprawdź [ten tutorial](https://help.github.com/en/articles/creating-a-pull-request) (po angielsku).
 
 # Zatwierdzanie
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+Prosimy cierpliwie czekać na naszych [recenzentów](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers), aby prejrzeli twój Pull Request.

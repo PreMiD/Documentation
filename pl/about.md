@@ -1,6 +1,6 @@
 ---
-title: O PreMiDzie
-description: The core features of PreMiD
+title: O PreMiD
+description: Główne cechy PreMiD
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:19.551Z
 ---
 
-PreMiD is a simple, configurable utility that allows you to show what you're doing on the web in your Discord now playing status. Wspiera wiele rożnorodnych platform oraz będzie wspierał oglądanie różnych osób tego samego kontentu w przyszłym updat'cie.
+PreMiD jest prostym, konfigurowalnym narzędziem, które pozwala pokazać to, co robisz w sieci, w statusie na Discord. Wspiera wiele rożnorodnych platform oraz będzie wspierał oglądanie różnych osób tego samego kontentu w przyszłym updat'cie.
 
 # Dlaczego powinieneś pobrać PreMiD
 - Nasz cały projekt jest open-source! Chcemy współpracować z naszymi użytkownikami - nie przeciwko nim.
