@@ -1,5 +1,5 @@
 ---
-title: iFrame Class
+title: Klasa iFrame
 description:
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,9 +8,9 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
-# iFrame Class
+# Klasa iFrame
 
-## Introduction
+## Wprowadzenie
 
 In some scenarios, your presence may need to access elements inside of `iframes`.
 
@@ -26,7 +26,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-## Methods
+## Metody
 
 ### `send(Object)`
 Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
