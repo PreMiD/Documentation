@@ -1,6 +1,6 @@
 ---
 title: Firefox
-description: Rozpoczęcie instalacji PreMiD w przeglądarce Firefox
+description: Instalacja PreMiD w przeglądarce Firefox
 published: tak
 date: 2021-12-20T14:27:18.034Z
 tags:
