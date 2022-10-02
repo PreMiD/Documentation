@@ -1,6 +1,6 @@
 ---
 title: Windows
-description: Getting started with a PreMiD installation on Windows
+description: Instalacja PreMiD w systemie Windows
 published: tak
 date: 2021-12-20T14:27:18.034Z
 tags:
