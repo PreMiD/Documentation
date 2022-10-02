@@ -18,7 +18,7 @@ Instalacja aplikacji jest bardzo ważna, ponieważ rozszerzenie nie może zrobi�
 
 - **[About](#about)**
   - [Stats](#stats)
-  - [Wymaganie](#requirements)
+  - [Wymagania](#requirements)
   - Examples (soon)
   - FAQs (soon)
   - Building (soon)
@@ -51,14 +51,14 @@ Instalacja aplikacji jest bardzo ważna, ponieważ rozszerzenie nie może zrobi�
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Latest release"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="GitHub releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Wszystkie wydania"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Najnowsze wydanie"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="Wydania Github"></a></td>
   </tr>
 </table>
 
 <a name="requirements"></a>
 
-### Wymaganie
+### Wymagania
 
 Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;<br/> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.<br/> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
 
@@ -73,8 +73,8 @@ It is unknown whether older versions of other distributions support it, so just 
 ### Support
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="Join our Discord!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Join our Discord!">
+  <a target="_blank" href="https://discord.premid.app/" title="Dołącz do naszego Discorda!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Dołącz do naszego Discorda!">
   </a>
 </div>
 
@@ -155,7 +155,7 @@ Użycie [Arch User Repository](https://aur.archlinux.org/packages/premid);</br> 
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Instrukcje instalacji
 
 ```bash
 # Użycie yay (zalecane)
@@ -185,7 +185,7 @@ lub ręcznie z [Arch User Repository](https://aur.archlinux.org/packages/premid)
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Dodatkowe uwagi
 
 Jeśli twoja dystrybucja używa Pacmana, musisz najpierw zainstalować jednego z pomocników. Jeśli nie masz, Yay jest zalecane, uruchom:
 
