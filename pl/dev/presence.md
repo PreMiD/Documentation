@@ -25,7 +25,7 @@ Version `2.x` introduces the [Presence Store](https://premid.app/store). Użytko
 
 All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) ma kilka dodatkowych definicji nad JavaScriptem, więc naprawianie i identyfikowanie błędów jest o wiele prostsze.
 
-## Wymaganie
+## Wymagania
 
 1. [Git](https://git-scm.com/)
 2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
@@ -117,6 +117,6 @@ The website you are developing on is automatically reloading every time you save
 
 - [Presence Class](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
+- [Klasa iFrame](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
 - [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
