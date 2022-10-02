@@ -20,11 +20,11 @@ Instalacja aplikacji jest bardzo ważna, ponieważ rozszerzenie nie może zrobi�
   - [Stats](#stats)
   - [Wymagania](#requirements)
   - Examples (soon)
-  - FAQs (soon)
+  - FAQ (wkrótce)
   - Building (soon)
-  - [Support](#support)
-  - [Twórcy](#credits)
-  - [License](#license)
+  - [Wsparcie](#support)
+  - [Podziękowania](#credits)
+  - [Licencja](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
 - **[Portable AppImage](#appimage)** (_ZALECANE_)
   - [Installation instructions](#appimageinstall)
@@ -70,7 +70,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="support"></a>
 
-### Support
+### Wsparcie
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="Dołącz do naszego Discorda!">
@@ -82,7 +82,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 ### Twórcy
 
-Thanks to :
+Podziękowania dla:
 
 - @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (and few other guys whom I forgot their names) for providing feedback on nightly releases.
 - @apriluwu for maintaining the Gentoo builds
@@ -92,7 +92,7 @@ Thanks to :
 
 <a name="license"></a>
 
-### License
+### Licencja
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
