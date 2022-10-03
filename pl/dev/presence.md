@@ -47,7 +47,7 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 3. Fill in all prompted questions
 
 ### Compiling / Modifying a Presence
-1. Run `npx pmd`
+1. Uruchom `npx pmd`
 2. Select the second option
 3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
 {.is-info}
