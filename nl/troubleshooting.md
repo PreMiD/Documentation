@@ -130,4 +130,4 @@ Als je deze fout krijgt, betekent dit dat je account geen beheerdersrechten heef
 4. Open het installatieprogramma opnieuw.
 
 # Dat heeft mijn probleem niet opgelost
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+Open een ticket in [#support](https://discord.premid.app/).
