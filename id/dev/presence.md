@@ -52,25 +52,25 @@ Semua presence ditulis menggunakan [TypeScript](https://www.typescriptlang.org/)
 3. Masukkan nama Presence yang ingin kamu edit > Ini akan memulai compiler TypeScript pada folder Presence tersebut, sekarang jika kamu mengedit `presence.ts` TypeScript akan otomatis compile presencemu.
 {.is-info}
 
-For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
+Untuk inspirasi atau contoh bagaimana untuk menstruktur kode presencemu, lihat presence yang sudah ada seperti 1337x atau 9GAG
 
-For more information about the `Presence` class click [here](/dev/presence/class).
+Untuk informasi lebih lanjut terkait class `Presence` klik [disini](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Slideshow tersedia sejak v2.2.0, ini memungkinkan kamu manampilkan beberapa interface`PresenceData` pada suatu interval, untuk informasi lebih lanjut terkait class `Slideshow`klik [disini](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Tidak bisa mendapatkan data tertentu?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Banyak situs web menggunakan [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Tag html tersebut dapat berisi beberapa sumber seperti video. Tapi mereka kadang tidak relevan. Beberapa tersembunyi atau jarang dipakai. Periksa jika kamu dapat mengambil informasi yang dibutuhkan tanpa tag tersebut sebelum melakukan pekerjaan sia-sia.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Periksa pada konsol browser (pastikan kamu berada pada tab **Elements**).
+2. Cari (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) atau <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Jalankan `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Jika data yang diinginkan ditemukan pada iFrame, kamu harus melakukan hal berikut:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Buatlah file `iframe.ts`.
+2. Set iFrame menjadi `true` pada file metadata.
+3. Mengisi file iFramemu.
 
 ```ts
 const iframe = new iFrame();
@@ -84,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Membuat file presencemu menerima data dari file iFrame.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -93,30 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Catatan:** Ini harus diletakkan diluar dari event updateData.
 
-# Loading your Presence
+# Memuat presencemu
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Buka popup ekstensi di browser dan tahan tombol <kbd>Shift</kbd> pada keyboardmu.
+2. **Muat Presence** akan muncul pada bagian Presence.
+3. Klik sambil menahan tombol <kbd>Shift</kbd>.
+4. Pilih folder /dist presencemu.
 
 # Beberapa hal berguna
 
 ## Hot-reloading
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Situs web yang sedang kamu kembangkan akan memuat ulang otomatis setiap kali kamu menyimpan file di folder.
 
 ## Debugging
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Kamu dapat memberi `console.log("Test");` diantara kode dan melihat apakah konsol browser memberi output tersebut. Jika iya lanjutkan dan ulangi pada fungsi selanjutnya. Jika tidak berarti terdapat eror.
+- Jika itu tidak membantumu, tanyakan pada pengembang presence di [server Discord](https://discord.premid.app/) kami untuk bantuan.
 
 # File dijelaskan
 
 - [Kelas Presence](/dev/presence/class)
 - [Kelas Slideshow](/dev/presence/slideshow)
 - [Kelas iFrame](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [File Metadata](/dev/presence/metadata)
 - [Konfigurasi TypeScript](/dev/presence/tsconfig ""){.links-list}
