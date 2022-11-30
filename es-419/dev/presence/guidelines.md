@@ -77,27 +77,28 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "USUARIO",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "USUARIO",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "SERVICIO",
+  "altnames": ["SERVICIO"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "DESCRIPCIÓN",
+   "es": "DESCRIPCIÓN (opcional)"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIÓN",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
-  "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "tags": ["ETIQUETA1", "ETIQUETA2"],
+  "category": "CATEGORÍA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +110,8 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": true
     },
     {
@@ -118,15 +119,15 @@ Cada presence tiene un archivo para describirla llamado `metadata.json`, el meta
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
+      "value": "\"%song%\" por %artist%",
+      "placeholder": "usa %song% o %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "TÍTULO A MOSTRAR",
+      "icon": "ICONO FONTAWESOME",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -174,7 +175,7 @@ Una lista de los campos y sus reglas están listadas abajo:
 
 ### **`version`**
 
-- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<MAJOR>.<MINOR>.<PATCH>`. Cualquier cosa como `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` o cambiando `1.0.0` a `2.0.0` en una corrección de errores/cambio pequeño **no** está permitido.
+- Asegúrate que el número de versión sigue los [estándares semánticos de versionado](https://semver.org/lang/es/), que se traducen al siguiente esquema: `<MAYOR>.<MENOR>.<PARCHE>`. Cualquier cosa como `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` o cambiando `1.0.0` a `2.0.0` en una corrección de errores/cambio pequeño **no** está permitido.
 - La versión **debe** empezar siempre con `1.0.0` a menos que se diga lo contrario, otras versiones **no** serán permitidas.
 
 ### **`logo`**
