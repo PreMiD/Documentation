@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [Presence Store](https://premid.app/store). Los usuarios ahora tienen la capacidad de añadir y eliminar manualmente sus presences favoritas a través de la interfaz de usuario del [sitio web](https://premid.app/).
+La versión `2.x` introduce la [Tienda de Presences](https://premid.app/store). Los usuarios ahora tienen la capacidad de añadir y eliminar manualmente sus presences favoritas a través de la interfaz de usuario del [sitio web](https://premid.app/).
 
 > Antes de empezar es muy recomendable que mires nuestras reglas para presences. 
 > 
@@ -23,12 +23,12 @@ Version `2.x` introduces the [Presence Store](https://premid.app/store). Los usu
 
 # Estructura
 
-All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) tiene algunos tipos definiciones más que JavaScript, así que corregir e identificar errores es mucho más fácil.
+Todas las presences están programadas en [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) tiene algunos tipos definiciones más que JavaScript, así que corregir e identificar errores es mucho más fácil.
 
 ## Requisitos
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. Instala [Node](https://nodejs.org/en/) (viene con [npm](https://www.npmjs.com/))
 
 ## Clonando el proyecto
 
@@ -36,41 +36,41 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 2. Escoge una carpeta a tu gusto.
 3. Ábrelo en tu editor de código.
 
-## Getting started
+## Para empezar
 
-1. Open a new terminal in the `Presences` folder
-2. Install repository dependencies using `npm i` (Or your package manager of choice)
+1. Abre una nueva terminal en la carpeta `Presences`
+2. Instala las dependencias del repositorio usando `npm i` (o el administrador de paquetes de tu elección)
 
-### Creating a Presence
-1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
-2. Select the first option
-3. Fill in all prompted questions
+### Creando una Presence
+1. Ejecuta `npx pmd` (o ejecuta`pmd` con el administrador de paquetes de tu elección)
+2. Selecciona la primera opción
+3. Completa todas las preguntas solicitadas
 
-### Compiling / Modifying a Presence
-1. Run `npx pmd`
-2. Select the second option
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+### Compilar / Modificar una Presence
+1. Ejecuta `npx pmd`
+2. Selecciona la segunda opción
+3. Introduce el nombre de la Presence que quieres editar > Comenzará un compilador TypeScript en el directorio de la Presence, recargando automáticamente cuando edites el código del archivo `presence.ts`.
 {.is-info}
 
-For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
+Para obtener inspiración o ejemplos sobre cómo estructurar el código de tu presence, echa un vistazo a las presences que ya existen como lo son 1337x o 9GAG.
 
-For more information about the `Presence` class click [here](/dev/presence/class).
+Para más información sobre la clase ` Presence `, haz clic [ aquí ](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Desde v2.2.0 puedes usar "Slideshows", esto te permite mostrar múltiples interfaces `PresenceData` en un intérvalo, para más información sobre la clase `Slideshow` haz clic [aquí](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## ¿¡No puedes obtener cierta información!?
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Muchos sitios web están utilizando [ iframes ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Estas etiquetas html pueden contener múltiples fuentes, como videos. Pero no son revelantes siempre. Algunos están ocultos o simplemente no se usan. Comprueba si puedes extraer la información que necesitas sin ellos antes de hacer trabajo innecesario.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Verifícalos en la consola de tu navegador (asegúrate de estar en la pestaña **Elementos**).
+2. Buscar (<kbd>CTRL</kbd> + <kbd>F</kbd> (Windows) o <kbd>CMD</kbd> + <kbd>F</kbd> (MacOS)).
+3. Ejecuta `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Si los datos que necesitas están en un iFrame, debes hacer lo siguiente:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Crea un archivo `iframe.ts`.
+2. Establece iFrame en `true` en tu archivo metadata.
+3. Llenando tu archivo iFrame.
 
 ```ts
 const iframe = new iFrame();
@@ -84,39 +84,39 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Configurando la presence para recibir datos del archivo iFrame.
 
 ```ts
-presence.on("iFrameData", (data) => {
+presence.on("iFrameData", data => {
   iFrameVideo = data.video;
   currentTime = data.time;
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Nota:** Esto debe ubicarse fuera del evento updateData.
 
-# Loading your Presence
+# Cargando tu Presence
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Abre la extensión en tu navegador y mantén presionado el botón <kbd>Shift</kbd> en tu teclado.
+2. Aparecerá **Cargar Presence** en la sección Presences.
+3. Haz clic mientras mantienes pulsado el botón <kbd>Shift</kbd>.
+4. Selecciona la carpeta /dist de tu presence.
 
 # Algunos consejos útiles
 
-## Hot-reloading
+## Recarga rápida
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+El sitio web sobre el que estás desarrollando se recarga de forma automática cada vez que actualizas un archivo de la carpeta.
 
-## Debugging
+## Depurando
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Puedes poner `console.log("Prueba");` en tu código y ver si se muestra en la consola de tu navegador. Si es así, entonces sigue y vuelve a intentarlo después de la siguiente función. Si no es así, hay un error arriba.
+- Si eso no te ayuda, pide ayuda a un desarrollador de presences en nuestro [servidor de Discord](https://discord.premid.app/).
 
 # Explicación de archivos
 
 - [Clase de Presence](/dev/presence/class)
 - [Clase Slideshow](/dev/presence/slideshow)
 - [Clase de iFrame](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [Archivo de Metadata](/dev/presence/metadata)
 - [Configuración de TypeScript](/dev/presence/tsconfig ""){.links-list}
