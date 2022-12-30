@@ -14,7 +14,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 
 Version `2.x` introduces the [Presence Store](https://premid.app/store). Użytkownicy mają teraz możliwość ręcznego dodawania lub usuwania ich ulubionych statusów za pośrednictwem interfejsu użytkownika z [strony](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> Zanim zaczniesz, należy przyjrzeć się naszym wytycznym dotyczącym tworzenia Presence. 
 > 
 > {.is-warning}
 
@@ -28,42 +28,42 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 ## Wymagania
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. Zainstaluj program [Node.js](https://nodejs.org/en/) (instaluje się z [npm](https://www.npmjs.com/)).
 
 ## Klonowanie projektu
 
 1. Otwórz terminal i wpisz `git clone https://github.com/PreMiD/Presences`.
-2. Wybierz folder.
+2. Wybierz wybrany przez siebie folder.
 3. Otwórz go w twoim edytorze kodu.
 
 ## Getting started
 
-1. Open a new terminal in the `Presences` folder
-2. Install repository dependencies using `npm i` (Or your package manager of choice)
+1. Otwórz nowy terminal w folderze `Presences`
+2. Zainstaluj zależności repozytorium używając `npm i` (Lub wybrany menedżer pakietów)
 
 ### Creating a Presence
-1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
-2. Select the first option
-3. Fill in all prompted questions
+1. Uruchom `npx pmd` (lub uruchamiając `pmd` w wybranym menedżerze pakietów)
+2. Wybierz pierwszą opcję
+3. Wypełnij wszystkie pytania
 
-### Compiling / Modifying a Presence
+### Kompilacja / Modyfikacja obecności
 1. Uruchom `npx pmd`
-2. Select the second option
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+2. Wybierz drugą opcję
+3. Wpisz nazwę Presence, którą chcesz edytować > Uruchomi wtedy kompilator TypeScript w folderze Presence, od teraz gdy zaczniesz edytować `presence.ts` będzie to automatycznie kompilowane.
 {.is-info}
 
-For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
+Dla inspiracji lub przykładów na temat struktury kodu Presence zajrzyj do istniejących Presences takich jak 1337x lub 9GAG
 
-For more information about the `Presence` class click [here](/dev/presence/class).
+Aby uzyskać więcej informacji o klasie `Presence`, kliknij [tutaj](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Od v2.2.0 istnieją Slideshows, pozwala Ci to na wyświetlanie wielu interfejsów `PresenceData` w odstępach czasowych, więcej informacji znajdziesz klikając w klasę `Slideshow` [tutaj](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Nie można uzyskać pewnych danych?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Wiele stron używa [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Te tagi html mogą zawierać wiele źródeł, takich jak filmy. Lecz nie są one istotne za każdym razem. Niektóre z nich są ukryte lub po prostu nie są aktywnie wykorzystywane. Sprawdź, czy możesz uzyskać informacje, których potrzebujesz, zanim wykonasz zbędna pracę.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+1. Sprawdź je w konsoli przeglądarki (upewnij się, że jesteś na karcie **Elementy**).
+2. Szukaj (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) albo <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Execute `document.querySelectorAll("iframe")`.
 
 If you find that your data is in a iFrame you need to do the following:
