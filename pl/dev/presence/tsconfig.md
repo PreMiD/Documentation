@@ -1,5 +1,5 @@
 ---
-title: TypeScript Configuration
+title: Konfiguracja TypeScript
 description: A little helper for TypeScript
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
-# TypeScript Configuration
+# Konfiguracja TypeScript
 
 ## Wprowadzenie
 
