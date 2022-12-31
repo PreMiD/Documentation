@@ -1,5 +1,5 @@
 ---
-title: Presence Class
+title: Klasa Presence
 description: The main class for every PreMiD presence
 published: true
 date: 2022-05-26T18:03:00.000Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
-# Presence Class
+# Klasa Presence
 
 ## Introduction
 
