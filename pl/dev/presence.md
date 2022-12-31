@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [Presence Store](https://premid.app/store). Użytkownicy mają teraz możliwość ręcznego dodawania lub usuwania ich ulubionych statusów za pośrednictwem interfejsu użytkownika z [strony](https://premid.app/).
+Wersja `2.x` wprowadza [sklep z aktywnościami Presence](https://premid.app/store). Użytkownicy mają teraz możliwość ręcznego dodawania lub usuwania ich ulubionych statusów za pośrednictwem interfejsu użytkownika z [strony](https://premid.app/).
 
 > Zanim zaczniesz, należy przyjrzeć się naszym wytycznym dotyczącym tworzenia Presence. 
 > 
@@ -23,7 +23,7 @@ Version `2.x` introduces the [Presence Store](https://premid.app/store). Użytko
 
 # Struktura
 
-All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) ma kilka dodatkowych definicji nad JavaScriptem, więc naprawianie i identyfikowanie błędów jest o wiele prostsze.
+Wszystkie statusy są wykonywane za pomocą [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) ma kilka dodatkowych definicji nad JavaScriptem, więc naprawianie i identyfikowanie błędów jest o wiele prostsze.
 
 ## Wymagania
 
@@ -36,12 +36,12 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 2. Wybierz wybrany przez siebie folder.
 3. Otwórz go w twoim edytorze kodu.
 
-## Getting started
+## Pierwsze kroki
 
 1. Otwórz nowy terminal w folderze `Presences`
 2. Zainstaluj zależności repozytorium używając `npm i` (Lub wybrany menedżer pakietów)
 
-### Creating a Presence
+### Tworzenie Presence
 1. Uruchom `npx pmd` (lub uruchamiając `pmd` w wybranym menedżerze pakietów)
 2. Wybierz pierwszą opcję
 3. Wypełnij wszystkie pytania
@@ -64,13 +64,13 @@ Wiele stron używa [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/E
 
 1. Sprawdź je w konsoli przeglądarki (upewnij się, że jesteś na karcie **Elementy**).
 2. Szukaj (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) albo <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+3. Wykonaj `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Jeśli okaże się, że Twoje dane znajdują się w ramce iFrame, wykonaj następujące czynności:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Stwórz plik `iframe.ts`.
+2. Ustaw iFrame na `true` w twoim pliku metadanych.
+3. Wypełnianie w twoim pliku iFrame.
 
 ```ts
 const iframe = new iFrame();
@@ -84,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Zrobienie, by plik Statusu odbierał dane z pliku iFrame.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -93,30 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Uwaga:** To musi być umieszczone poza zdarzeniem updateData.
 
-# Loading your Presence
+# Ładowanie Presence
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Otwórz okno rozszerzenia i przytrzymaj klawisz <kbd>Shift</kbd> na twojej klawiaturze.
+2. **Load Presence** pojawi się w sekcji Presences.
+3. Kliknij to, cały czas przytrzymując klawisz <kbd>Shift</kbd>.
+4. Wybierz folder /dist z swojego presence.
 
 # Kilka pomocnych rzeczy
 
-## Hot-reloading
+## Szybkie odświeżanie
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Strona, którą tworzysz, jest automatycznie odświeżana za każdym razem, gdy zapiszesz plik w folderze.
 
-## Debugging
+## Debugowanie
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Możesz umieścić `console.log("Test");` między swoim kodem i zobaczyć czy w konsoli w przeglądarce zwraca Ci taki wynik. Jeżeli tak, kontynuuj i spróbuj ponownie po następnej funkcji. Jeśli nie, oznacza to błąd powyżej.
+- Jeżeli to nie pomoże, poproś o pomoc jednego z programistów na [serwerze discord](https://discord.premid.app/).
 
 # Wyjaśnienie plików
 
-- [Presence Class](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
+- [Klasa Presence](/dev/presence/class)
+- [Klasa Slideshow](/dev/presence/slideshow)
 - [Klasa iFrame](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Metadane Pliku](/dev/presence/metadata)
+- [Konfiguracja TypeScript](/dev/presence/tsconfig ""){.links-list}
