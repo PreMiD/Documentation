@@ -68,7 +68,7 @@ A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/W
 
 Eğere verinizin bir iFrame içerisinde olduğunu öğrenirseniz yapmanız gerekenler:
 
-1. Create a `iframe.ts` file.
+1. Bir `iframe.ts` dosyası oluşturun.
 2. metadata dosyanızda iFrame'i `true` olarak ayarlayın.
 3. iFrame dosyanızın içini doldurmak.
 
