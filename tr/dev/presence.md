@@ -42,7 +42,7 @@ Tüm Presence'ler [TypeScript](https://www.typescriptlang.org/) kullanılarak ya
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
 ### Bir Presence yaratmak
-1. `npx pmd` yürütün (ya da tercih ettiğiniz paket yöneticisiyle `pmd` yürütün)
+1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
 2. Birinci opsiyonu seçin
 3. Verilen bütün soruları doldurun
 
