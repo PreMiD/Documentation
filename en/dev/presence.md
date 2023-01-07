@@ -41,7 +41,7 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/).
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
 ### Creating a Presence
-1. Run `npx pmd` (or by running `pmd` with the package manager of your choice)
+1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
 2. Select the first option
 3. Fill in all prompted questions
 
