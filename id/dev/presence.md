@@ -42,7 +42,7 @@ Semua presence ditulis menggunakan [TypeScript](https://www.typescriptlang.org/)
 2. Pasang dependensi repositori menggunakan `npm i` (Atau menggunakan package manager pilihanmu)
 
 ### Membuat sebuah Presence
-1. Jalankan `npx pmd` (atau menjalankan `pmd` pada package manager pilihanmu)
+1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
 2. Pilih opsi pertama
 3. Isi semua pertanyaan yang ditampilkan
 
