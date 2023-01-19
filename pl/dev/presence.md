@@ -42,7 +42,7 @@ Wszystkie statusy są wykonywane za pomocą [TypeScript](https://www.typescriptl
 2. Zainstaluj zależności repozytorium używając `npm i` (Lub wybrany menedżer pakietów)
 
 ### Tworzenie Presence
-1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
+1. Uruchom `npx pmd` (lub uruchamiając `pmd` w wybranym menedżerze pakietów)
 2. Wybierz pierwszą opcję
 3. Wypełnij wszystkie pytania
 
