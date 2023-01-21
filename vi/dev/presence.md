@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [Presence Store](https://premid.app/store). Người dùng đã có thể thêm hoặc gỡ presence yêu thích của họ thông qua [website](https://premid.app/).
+Phiên bản `2.x` đã thêm tính năng [cửa hàng presence](https://premid.app/store). Người dùng đã có thể thêm hoặc gỡ presence yêu thích của họ thông qua [website](https://premid.app/).
 
 > Trước khi bắt đầu, chúng tôi khuyên bạn nên xem bộ quy tắc về presence của chúng tôi. 
 > 
@@ -23,9 +23,9 @@ Version `2.x` introduces the [Presence Store](https://premid.app/store). Ngườ
 
 # Cấu trúc
 
-All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) có các định nghĩa thú vị hơn so với JavaScript, nên việc tìm và sửa lỗi trở nên dễ dàng hơn nhiều.
+Tất cả presence đều được lập trình bằng [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) có các định nghĩa thú vị hơn so với JavaScript, nên việc tìm và sửa lỗi trở nên dễ dàng hơn nhiều.
 
-## Yêu cầu hệ thống
+## Yêu cầu
 
 1. [Git](https://git-scm.com/)
 2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
