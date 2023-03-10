@@ -28,7 +28,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 ## Изисквания
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. Изтегли [Node](https://nodejs.org/en/) (идва със [npm](https://www.npmjs.com/)).
 
 ## Клониране на проекта
 
@@ -95,7 +95,7 @@ presence.on("iFrameData", (data) => {
 
 **Note:** This needs to be placed outside of the updateData event.
 
-# Loading your Presence
+# Зареждане на Presence
 
 1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
 2. **Load Presence** will appear in the Presences section.
@@ -104,11 +104,11 @@ presence.on("iFrameData", (data) => {
 
 # Някои полезни неща
 
-## Hot-reloading
+## Горещо презареждане
 
 The website you are developing on is automatically reloading every time you save a file in your folder.
 
-## Debugging
+## Отстраняване на грешки
 
 - You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
 - If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
