@@ -10,7 +10,7 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 # Presence клас
 
-## Introduction
+## Въвеждане
 
 The `Presence` class is very useful as it has basic methods that we need for creating a presence.
 

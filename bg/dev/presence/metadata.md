@@ -16,53 +16,60 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.7",
+  "$schema": "https://schemas.premid.app/metadata/1.6",
   "author": {
-    "name": "USER",
-    "id": "ID"
+    "name": "ЧОВЕК",
+    "id": "ИД"
   },
-  "contributors": [{
-    "name": "USER",
-    "id": "ID"
-  }],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "contributors": [
+    {
+      "name": "ЧОВЕК",
+      "id": "ИД"
+    }
+  ],
+  "service": "УСЛУГА",
+  "altnames": ["УСЛУГА"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "ОПИСАНИЕ"
   },
-  "url": "URL",
+  "url": "URL АДРЕС",
+  "version": "ВЕРСИЯ",
+  "logo": "URL АДРЕС",
+  "thumbnail": "URL АДРЕС",
+  "color": "#HEX000",
+  "tags": ["ТАГ1", "ТАГ2"],
+  "category": "КАТЕГОРИЯ",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
-  "color": "#45A8FC",
-  "category": "CATEGORY",
-  "tags": ["TAG1", "TAG2"],
   "iframe": false,
+  "readLogs": false,
   "settings": [
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "ИД",
+      "multiLanguage": true
+    },
+    {
+      "id": "ИД",
+      "title": "ПОКАЗАНО ЗАГЛАВИЕ",
+      "icon": "FONTAWESOME ИКОНА",
       "value": true
     },
     {
-      "id": "ID",
+      "id": "ИД",
       "if": {
-        "ID": true
+        "ИД": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "ПОКАЗНО ЗАГЛАВИЕ",
+      "icon": "FONTAWESOME ИКОНА",
+      "value": "\"%song%\" от %artist%",
+      "placeholder": "използвай %song% или %artist%"
     },
     {
-      "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "id": "ИД",
+      "title": "ПОКАЗАНО ЗАГЛАВИЕ",
+      "icon": "FONTAWESOME ИКОНА",
       "value": 0,
-      "values": ["1", "2", "etc."]
+      "values": ["1", "2", "подобни..."]
     }
   ]
 }
@@ -246,7 +253,7 @@ PreMiD е полиглотска услуга, което означава, че
 
 ### `multiLanguage`
 
-#### Introduction
+#### Въвеждане
 
 The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
@@ -266,7 +273,7 @@ The `multiLanguage` key can be set to the following:
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
 2. Избери папка по твой избор.
-3. Отвори го в твоя редактор на код.
+3. Отвори го в твоя редактор за кодиране.
 
 ##### Creating the file
 
@@ -353,7 +360,7 @@ When making your presence, you must specify a category which the presence falls 
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
-      <td style="text-align:left"><b>Mузика</b></td>
+      <td style="text-align:left"><b>Музика</b></td>
       <td style="text-align:left">These are websites that offer music related content, whether that be streaming or downloading.</td>
     </tr>
     <tr>
