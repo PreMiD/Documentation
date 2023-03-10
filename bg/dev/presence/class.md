@@ -1,6 +1,6 @@
 ---
 title: Presence клас
-description: The main class for every PreMiD presence
+description: Основният клас за всяко приложение на PreMiD
 published: true
 date: 2022-05-26T18:03:00.000Z
 tags:
@@ -14,7 +14,7 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 The `Presence` class is very useful as it has basic methods that we need for creating a presence.
 
-When you create a class you must specify `clientId` property.
+Когато създаваш клас, ти трябва да предоставиш `clientId` правилно.
 
 ```ts
 const presence = new Presence({
@@ -22,7 +22,7 @@ const presence = new Presence({
 });
 ```
 
-### Properties
+### Свойства
 
 There are three properties available for `Presence` class.
 
