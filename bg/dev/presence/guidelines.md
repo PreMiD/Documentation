@@ -1,6 +1,6 @@
 ---
-title: Насоки за presence
-description: Rules that all presence developers must follow to have their presence added.
+title: Правила за Presence
+description: Правила, които разработчиците на presence трябва да спазват, за да се добави техния presence.
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,27 +10,27 @@ dateCreated: 2021-09-07T01:44:53.883Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Насоки за presence</h3>
-    <h4 style="margin-top: 0">Revision 3</h4>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Правила за Presence</h3>
+    <h4 style="margin-top: 0">Преразглеждане 3</h4>
     <br />
 </div>
 
-# Guidelines
+# Правила
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. To some, these strict rules may seem harsh. However, the implementation of these rulesets will keep us and the users from running into any issues.
+Когато публикувате Presences в [Presences хранилището](https://github.com/PreMiD/Presences/), ви молим да спазвате някои правила. На някои тези правила може да им се струват строги. Истината обаче е, че налагането им ще предотврати проблемите, с които потребителите могат да се сблъскат.
 
-# Creation
+# Създаване
 
-The general rules of presence development are as follows:
+Основните правила за presence разработка са следните:
 
-- Presences **must** be related to the website of choice.
-- Presences **cannot** be made for illegal websites. (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
-- You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
-- Presence that target internal browser pages (like Chrome Web Store, `chrome://`, `about:` pages, etc) are **not** allowed as they require an experimental flag to be enabled on the user's end and could potentially cause damage to their browsers.
-- Presences with support for only a single subdomain will **not** be permitted, as they may seem broken for other pages (like the homepage), exceptions can be made for the policy and contact pages (content that isn't used often) or sites where the other content is unrelated. (for e.g., wikia pages)
+- Presences-ите **трябва** да са свързани с избрания уебсайт.
+- Presences **не могат** да бъдат създавани за нелегални уебсайтове. (напр. stressors, търговия на наркотици, детска порнография и др.)
+- Файловата структура трябва да бъде изчистена и поддържана, не включвайте файлове, които не са уточнени. (напр. vscode и git папки, изображения и текстови файлове и др.)
+- Трябва да имате подходяща файлова структура, чернови **не са** позволени.
+- Presences за уебсайтове с (`.onion` домейн от първо ниво) или уебсайтове с безплатни домейни/хостинг (напр. `.TK` [всички безплатни Freenom домейни], `.RF`, `GD` и др.) **не са** позволени, изключения могат да бъдат направени, ако е представено доказателство за купуване на домейна.
+- Домейнът на presence-а трябва да бъде на най-малко 2 месеца.
+- Presence, чиято цел е вътрешни браузърни страници (като Chrome Уеб Магазин, `chrome://`, `about:` страници и др.), **не са** позволени, тъй като те изискват експерименталната функционалност да бъде включена от страна на потребителя и може потенциално да навреди на техните браузъри.
+- Presences, които поддържат само един поддомейн, **няма** да бъдат позволени, тъй като могат да изглеждат неправилно за други страници (като началната страница), изключения могат да бъдат направени само за страниците за политика и контакти (съдържание, което не се използва често) или сайтове, където другото съдържание не е свързано. (напр. wikia страници)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
 - Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-or if you're using a `iframe.ts` file:
+или ако използвате `iframe.ts` файл:
 
 ```bash
 presence
