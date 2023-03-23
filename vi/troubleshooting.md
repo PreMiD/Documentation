@@ -20,9 +20,6 @@ dateCreated: 2021-09-07T01:17:32.312Z
 <a name="general"></a>
 
 # Xử lý sự cố chung
-> Bạn có thể sử dụng [công cụ này](https://qkeleq10.github.io/PreMiD-Troubleshooting/) để có thể xác định vấn đề dễ dàng hơn. 
-> 
-> {.is-info}
 ### Tải lại trang
 Bạn có thể nhấn <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) hoặc <kbd>CMD+R</kbd> (MacOS) trên bàn phím của bạn thay vì tìm kiếm nút tải lại.
 
@@ -70,7 +67,7 @@ Hệ điều hành Windows: Điền `%appdata%` vào trình duyệt thư mục v
 ### McAfee phát hiện PreMiD là vi-rút (Windows)
 Đây là một kết quả sai từ McAfee và chúng tôi đã báo cáo vấn đề với họ, bây giờ bạn có thể loại trừ PreMiD khỏi quá trình quét bằng cách thực hiện các bước sau:
 
-> Nếu bạn không cảm thấy đủ tự tin để thực hiện những bước này, đừng ngần ngại tạo một phiếu hỗ trợ tại [#support](https://discord.premid.app/) và một người trong Đội ngũ Hỗ trợ của chúng tôi sẽ giúp bạn! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 
