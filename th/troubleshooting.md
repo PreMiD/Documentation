@@ -20,9 +20,6 @@ dateCreated: 2021-09-07T01:17:32.312Z
 <a name="general"></a>
 
 # การแก้ปัญหาทั่วไป
-> คุณสามารถใช้[เครื่องมือนี้](https://qkeleq10.github.io/PreMiD-Troubleshooting/)เพื่อระบุปัญหาของคุณได้ง่ายขึ้น 
-> 
-> {.is-info}
 ### โหลดหน้านี้ใหม่
 คุณสามารถกด <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) หรือ <kbd>CMD+R</kbd> (MacOS) บนแป้นพิมพ์ของคุณเพื่อรีโหลดหน้าเว็บ
 
@@ -70,7 +67,7 @@ Windows: เขียน `%appdata%` ลงในแถบที่อยู่�
 ### McAfee ตรวจจับ PreMiD เป็นไวรัส (Windows)
 This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
 
-> ถ้าคุณไม่มั่นใจในการทําขั้นตอนต่อไปนี้ คุณสามารถส่งข้อความมาให้เราได้ใน [#support](https://discord.premid.app/)เเละทีมงานของเราจะช่วยคุณ! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 
