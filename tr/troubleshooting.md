@@ -20,9 +20,6 @@ Bu sayfanın içerikleri:
 <a name="general"></a>
 
 # Genel sorun giderme
-> [Bunu](https://qkeleq10.github.io/PreMiD-Troubleshooting/) kullanarak sorununuzu daha kolay tespit edebilirsiniz. 
-> 
-> {.is-info}
 ### Sayfayı yenileyin
 Windows'daysanız <kbd>CTRL+R</kbd>/<kbd>F5</kbd>, Mac üzerindeyseniz ise <kbd>CMD+R</kbd> tuşlarını kullanarak sayfayı yenileyebilirsiniz.
 
@@ -70,7 +67,7 @@ Windows: Dosya Gezginine `%appdata%` adresini yazın ve `PreMiD` klasörünü si
 ### McAfee PreMiD'i virüs olarak tespit etti (Windows)
 Bu, McAfee'den bir yanlış alarmdır ve sorunu kendilerine bildirdik, şimdilik aşağıdaki adımları uygulayarak PreMiD'i taramanın dışında tutabilirsiniz:
 
-> Eğer bu adımlarda sorun yaşıyorsanız, Discord sunucumuzdaki [#suppport](https://discord.premid.app/) kanalında bir destek talebi açıp, bir destek temsilcimizden yardım alabilirsiniz! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 
