@@ -67,7 +67,7 @@ Windows: Escribe `%appdata%` y elimina la carpeta `PreMiD`. MacOS: `~/users/USUS
 ### McAfee detectó preMiD como virus (Windows)
 Esto es un falso positivo de McAfee y les hemos informado del problema, por ahora puedes excluir PreMiD del escaneo haciendo lo siguiente:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Si no estás seguro de cómo seguir estos pasos, ¡Abre un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
 > 
 > {.is-warning}
 
@@ -127,4 +127,4 @@ Si recibes este error, significa que tu cuenta no tiene permisos de administrado
 4. Vuelve a abrir el instalador.
 
 # Esto no ha resuelto mi problema
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+Por favor crea un post en [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
