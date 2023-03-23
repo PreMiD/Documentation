@@ -20,9 +20,6 @@ Disertakan di halaman ini:
 <a name="general"></a>
 
 # Penyelesaian masalah umum
-> Anda boleh gunakan alatan [ini](https://qkeleq10.github.io/PreMiD-Troubleshooting/) untuk mengenal pasti isu anda dengan lebih mudah. 
-> 
-> {.is-info}
 ### Muat semula halaman
 Anda boleh tekan <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) atau <kbd>CMD+R</kbd> (MacOS) di papan kekunci anda juga di samping mencari butang muat semula.
 

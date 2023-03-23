@@ -20,9 +20,6 @@ dateCreated: 2021-09-07T01:17:32.312Z
 <a name="general"></a>
 
 # 일반적인 문제 해결
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
-> 
-> {.is-info}
 ### 페이지 새로고침
 새로고침 버튼을 누르는 대신 <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) 나 <kbd>CMD+R</kbd> (macOS) 를 눌러보십시오.
 

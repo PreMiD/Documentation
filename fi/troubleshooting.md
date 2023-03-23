@@ -20,9 +20,6 @@ Mitä tältä sivulta löytyy:
 <a name="general"></a>
 
 # Yleinen vianmääritys
-> Voit käyttää [tätä](https://qkeleq10.github.io/PreMiD-Troubleshooting/) työkalua tunnistaaksesi vian helpommin. 
-> 
-> {.is-info}
 ### Lataa sivu uudelleen
 Voit myös painaa <kbd>CRTL+R</kbd>/<kbd>F5</kbd> (Windows) tai <kbd>CMD+R</kbd> (MacOS) näppäimistöltäsi uudelleenlatausnapin etsimisen sijaan.
 

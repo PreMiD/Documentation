@@ -20,9 +20,6 @@ Incluído nesta página:
 <a name="general"></a>
 
 # Solução de problemas gerais
-> Você pode usar [esta](https://qkeleq10.github.io/PreMiD-Troubleshooting/) ferramenta para identificar seu problema com mais facilidade. 
-> 
-> {.is-info}
 ### Recarregue a página
 Você pode pressionar <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) ou <kbd>CMD+R</kbd> (MacOS) no seu teclado também, em vez de procurar pelo botão de recarregar.
 
@@ -70,7 +67,7 @@ Windows: Digite `%appdata%` no explorador de arquivos e delete a pasta do `PreMi
 ### McAfee detectou o PreMiD como um vírus (Windows)
 Este é um falso positivo da McAfee e relatamos o problema a eles, por enquanto, você pode excluir PreMiD da varredura, executando as seguintes etapas:
 
-> Se você não se sentir seguro para seguir essas etapas, sinta-se à vontade para criar um ticket no [#support](https://discord.premid.app/) (em inglês) e um de nossos agentes de suporte poderá ajudá-lo! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 

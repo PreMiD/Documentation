@@ -20,9 +20,6 @@ Included on this page:
 <a name="general"></a>
 
 # Risoluzione dei problemi generali
-> Puoi usare [questo](https://qkeleq10.github.io/PreMiD-Troubleshooting/) strumento per identificare più facilmente il tuo problema. 
-> 
-> {.is-info}
 ### Ricarica la pagina
 Puoi anche premere <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) o <kbd>CMD+R</kbd> (MacOS) sulla tua tastiera invece di cercare il pulsante di ricaricamento.
 

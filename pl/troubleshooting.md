@@ -20,9 +20,6 @@ Included on this page:
 <a name="general"></a>
 
 # General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
-> 
-> {.is-info}
 ### Odśwież stronę
 Możesz również nacisnąć <kbd>CTRL + R</kbd>/<kbd>F5</kbd> (Windows) lub <kbd>CMD + R</kbd> (MacOS) na klawiaturze zamiast szukać przycisku odświeżania.
 

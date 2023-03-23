@@ -20,9 +20,6 @@ Sellel leheküljel kaasatud:
 <a name="general"></a>
 
 # Üldine tõrkeotsing
-> Probleemi hõlpsamaks tuvastamiseks võite kasutada [seda](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tööriista. 
-> 
-> {.is-info}
 ### Värskenda lehekülge
 Värskendusnupu otsimise asemel võite klaviatuuril vajutada ka <kbd>CTRL + R</kbd>/<kbd>F5</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS).
 
@@ -70,7 +67,7 @@ Windows: Kirjutage failikeskkonda `%appdata%` ja kustutage kaust `PreMiD`. MacOS
 ### McAfee tuvastas PreMiD-i viirusena (Windows)
 See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate PreMiDi skannimisest välja jätta, tehes järgmist:
 
-> Kui te pole nende sammude tegemisel kindel, tehke pilet lehel [#support](https://discord.premid.app/) ja üks meie tugiagentidest saab teid aidata! 
+> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
 > 
 > {.is-warning}
 

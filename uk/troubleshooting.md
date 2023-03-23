@@ -20,9 +20,6 @@ Included on this page:
 <a name="general"></a>
 
 # General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
-> 
-> {.is-info}
 ### Перезавантажте сторінку
 Ви можете натиснути <kbd>Strg+R</kbd>/<kbd>F5</kbd> (Windows) або <kbd>CMD+R</kbd> (MacOS) на вашій клавіатурі теж замість пошуку кнопки оновлення.
 
