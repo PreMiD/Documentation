@@ -20,9 +20,6 @@ Na této stránce nalezneš:
 <a name="general"></a>
 
 # Obecné Řešení Problémů
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
-> 
-> {.is-info}
 ### Znovu načíst stránku
 Namísto hledání tlačítka obnovení můžeš stisknout <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) nebo <kbd>CMD+R</kbd> (MacOS) na Tvé klávesnici.
 
