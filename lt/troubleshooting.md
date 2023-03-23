@@ -20,9 +20,6 @@ Included on this page:
 <a name="general"></a>
 
 # General troubleshooting
-> You can use [this](https://qkeleq10.github.io/PreMiD-Troubleshooting/) tool to more easily identify your issue. 
-> 
-> {.is-info}
 ### Perkraukite tinklalapį
 Jūs galite paspausti <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) arba <kbd>CMD+R</kbd> (MacOS) naudojantis savo klaviatūra, vietoj to, jog ieškoti atnaujinimo mygtuko.
 
