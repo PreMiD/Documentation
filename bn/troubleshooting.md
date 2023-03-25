@@ -127,4 +127,4 @@ exit 0
 4. ইন্সটলারটি আবার ওপেন করো।
 
 # আমার সমস্যা সমাধান হয়নি
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+একটি টিকেট খোলো [#support](https://discord.premid.app/) এ।

@@ -41,12 +41,12 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-### Creating a Presence
+### একটি Presence তৈরি করা
 1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
 2. Select the first option
 3. Fill in all prompted questions
 
-### Compiling / Modifying a Presence
+### একটি Presence কে কম্পাইল / মডিফাই করা
 1. Run `npx pmd`
 2. Select the second option
 3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
@@ -118,5 +118,5 @@ The website you are developing on is automatically reloading every time you save
 - [Presence Class](/dev/presence/class)
 - [স্লাইডশো ক্লাস](/dev/presence/slideshow)
 - [iFrame ক্লাস](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [মেটাডাটা ফাইল](/dev/presence/metadata)
 - [TypeScript কনফিগারেশন](/dev/presence/tsconfig ""){.links-list}
