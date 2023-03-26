@@ -67,7 +67,7 @@ Windows: Tippe `%appdata%` in den Datei-Explorer und lösche den `PreMiD` Ordner
 ### McAfee erkennt PreMiD als Virus (Windows)
 Es handelt sich um ein False-Positives von McAfee, was wir denen bereits gemeldet haben. Fürs Erste kannst du PreMiD vom Scan ausschliessen, indem du folgende Schritte ausführst:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Wenn du dich nicht wohl fühlst mit diesen Schritten, fühl dich frei ein Ticket im [#support](https://discord.premid.app/) zu erstellen und einer der Support-Agenten wird dir helfen können! 
 > 
 > {.is-warning}
 
@@ -125,4 +125,4 @@ Wenn du diesen Fehler erhältst, bedeutet dies, dass dein Konto keine Administra
 4. Öffne den Installer erneut.
 
 # Das hat mein Problem nicht gelöst
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+Bitte eröffne ein Ticket unter [#support](https://discord.premid.app/).
