@@ -12,7 +12,7 @@ dateCreated: 2020-06-11T18:04:02.843Z
 > 
 > {.is-info}
 
-Version `2.x` introduces the [Presence Store](https://premid.app/store). Kasutajatel on nüüd võimalus oma lemmik presence käsitsi lisada ja eemaldada [veebsaidi](https://premid.app/) kasutajaliite kaudu.
+Versioon `2.x` tutvustab [presence-i poodi](https://premid.app/store). Kasutajatel on nüüd võimalus oma lemmik presence käsitsi lisada ja eemaldada [veebsaidi](https://premid.app/) kasutajaliite kaudu.
 
 > Enne alustamist on tungivalt soovitatav tutvuda meie presence-i juhenditega. 
 > 
@@ -23,12 +23,12 @@ Version `2.x` introduces the [Presence Store](https://premid.app/store). Kasutaj
 
 # Struktuur
 
-All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/)-il on JavaScripti kohal mõned eriti vürtsikad definitsioonid, nii et vigade parandamine ja tuvastamine on palju lihtsam.
+Kõik presence-id on kodeeritud [TypeScriptis](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/)-il on JavaScripti kohal mõned eriti vürtsikad definitsioonid, nii et vigade parandamine ja tuvastamine on palju lihtsam.
 
-## Requirements
+## Nõuded
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. Paigaldage [Node](https://nodejs.org/en/) (kaasneb [npm](https://www.npmjs.com/))
 
 ## Projekti kloonimine
 
@@ -36,25 +36,25 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 2. Valige teie valikul kaust.
 3. Avage see oma koodiredaktoris.
 
-## Getting started
+## Alustamine
 
-1. Open a new terminal in the `Presences` folder
-2. Install repository dependencies using `npm i` (Or your package manager of choice)
+1. Avage uus terminal kaustas `Presences`
+2. Paigalda repositooriumi sõltuvused, kasutades `npm i` (või oma valitud paketihaldurit)
 
-### Creating a Presence
-1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
-2. Select the first option
-3. Fill in all prompted questions
+### Presence-i loomine
+1. Käivitage `npx pmd` (või käivitage `pmd` oma valitud paketihalduriga)
+2. Valige esimene valik
+3. Täitke kõik küsitud küsimused
 
-### Compiling / Modifying a Presence
-1. Run `npx pmd`
-2. Select the second option
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+### Presence-i koostamine/muutmine
+1. Käivita `npx pmd`
+2. Valige teine valik
+3. Sisestage Presence-i nimi, mida soovite muuta > See käivitab TypeScripti kompilaatori selles Presence'i kaustas, nüüd, kui te redigeerite `presence.ts`, kompileerib see automaatselt presence'i teie eest.
 {.is-info}
 
-For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
+Inspiratsiooni või näiteid selle kohta, kuidas oma Presence-i koodi struktureerida, leiate olemasolevatest Presence-itest, nagu 1337x või 9GAG
 
-For more information about the `Presence` class click [here](/dev/presence/class).
+Lisateavet klassi `Presence` kohta leiate [siit](/dev/presence/class).
 
 Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
 
