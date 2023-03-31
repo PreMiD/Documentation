@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: A little advice for those who got into coding recently
+title: Alustuseks
+description: Väike nõuanne neile, kes hiljuti kodeerimisega alustasid
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,37 +8,37 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> Vaja on lähtekoodiredaktorit. Meie soovitame [ Visual Studio Code](https://code.visualstudio.com/)-i. 
 > 
 > {.is-info}
 
-# Installing the requirements
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
-3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
+# Nõuete paigaldamine
+1. Paigaldage [Git](https://git-scm.com/).
+2. Paigaldage [Node](https://nodejs.org/en/) (kaasneb [npm](https://www.npmjs.com/)).
+3. Paigaldage [TypeScript](https://www.typescriptlang.org/index.html#download-links) (avage terminal ja kirjutage `npm install -g typcript`).
 
 # Projekti kloonimine
-1. Open a terminal and type `git clone URL`. **Replace URL with repository link you want to contribute to** e.g. `git clone https://github.com/PreMiD/PreMiD`.
-2. Choose a folder of your choice.
+1. Avage terminal ja tippige `git clone URL`. **Asenda URL hoidla lingiga, kuhu soovite panustada** nt. `git kloon https://github.com/PreMiD/PreMiD`.
+2. Valige enda valikul kaust.
 3. Avage see oma koodiredaktoris.
 
-# Installing dependencies
-> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
+# Sõltuvuste paigaldamine
+> Veenduge, et olete kõigepealt installinud [npm](https://www.npmjs.com/) (Node paketi haldur). See paigaldub automaatselt ise, kui teil on [Node](https://nodejs.org/en/) paigaldatud. 
 > 
 > {.is-warning}
 
-- Open a terminal in your repository and type `npm i`.
-- To update the dependencies type `npm update`.
+- Avage oma repositooriumis terminal ja tippige `npm i`.
+- Sõltuvuste värskendamiseks sisestage `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> Pange tähele, et sõltuvuste värskendamine võib palju katki minna, või mitte - testimine on vajalik! 
 > 
 > {.is-danger}
 
-# Coding your vision
-Please keep the structure. We do not want to disorganize our project. Chaotic files may not be accepted.
+# Sinu nägemuse kodeerimine
+Palun säilitage struktuur. Me ei taha oma projekti deorganiseerida. Kaootilisi faile ei pruugita aktsepteerida.
 
-# Submitting your dream
-Just open a Pull Request on one of our [GitHub repositories](https://github.com/PreMiD/) you want to contribute to. We will take care of your baby, don't worry. If this is your first time making a pull request, take a look at this [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
+# Oma unistuse esitamine
+Lihtsalt avage tõmbetaotlus ühes meie [GitHubi hoidlatest](https://github.com/PreMiD/), kuhu soovite oma panuse anda. Me hoolitseme teie lapse eest, ärge muretsege. Kui teete esimest korda tõmbenõude, vaadake seda [õpetust](https://help.github.com/en/articles/creating-a-pull-request).
 
-# Getting approved
-Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
+# Heakskiitmise saamine
+Palun oodake kannatlikult, kuni meie [Ülevaatajaid](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) vaatavad teie Pull Request'i läbi.
