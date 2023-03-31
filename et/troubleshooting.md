@@ -67,7 +67,7 @@ Windows: Kirjutage failikeskkonda `%appdata%` ja kustutage kaust `PreMiD`. MacOS
 ### McAfee tuvastas PreMiD-i viirusena (Windows)
 See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate PreMiDi skannimisest välja jätta, tehes järgmist:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Kui te pole nende sammude tegemisel kindel, tehke pilet lehel [#support](https://discord.premid.app/) ja üks meie tugiagentidest saab teid aidata! 
 > 
 > {.is-warning}
 
@@ -82,7 +82,7 @@ See on McAfee valepositiiv ja me oleme neile probleemist teatanud. Praegu saate 
 9. Avage kaust "PreMiD", valige fail "PreMiD.exe" ja klõpsake nuppu Ava. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee peaks nüüd meie faili ignoreerima, lihtsalt käivitage meie rakendus ja teil peaks olema korras.
 
-### PreMiD status bugged on Discord
+### PreMiD-i olek on katki Discordis
 Ära muretse. Vajutage klahvikombinatsiooni <kbd>CTRL + R</kbd> (Windows) või <kbd>CMD + R</kbd> (MacOS), olles keskendunud Discordi aknale, selle uuesti laadimiseks.
 
 <a name="linux"></a>
@@ -127,4 +127,4 @@ Selle tõrke ilmnemisel tähendab see, et teie kontol pole administraatori õigu
 4. Avage installer uuesti.
 
 # See pole minu probleemi lahendanud
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+Palun looge uus postitus [#support](https://discord.com/channels/493130730549805057/1019726199494279248)-is.
