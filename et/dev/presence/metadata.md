@@ -265,7 +265,7 @@ The `multiLanguage` key can be set to the following:
 ##### Projekti kloonimine
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
-2. Choose a folder of your choice.
+2. Valige enda valikul kaust.
 3. Avage see oma koodiredaktoris.
 
 ##### Creating the file
