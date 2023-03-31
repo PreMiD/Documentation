@@ -1,6 +1,6 @@
 ---
-title: Presence Guidelines
-description: Rules that all presence developers must follow to have their presence added.
+title: Presence-i Juhised
+description: Reeglid, mida kõik presence-i arendajad peavad järgima, et nende presence lisataks.
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,39 +10,39 @@ dateCreated: 2021-09-07T01:44:53.883Z
 
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
-    <h3 style="font-size: 2rem; margin-bottom: 0">Presence Guidelines</h3>
-    <h4 style="margin-top: 0">Revision 3</h4>
+    <h3 style="font-size: 2rem; margin-bottom: 0">Presence-i Juhised</h3>
+    <h4 style="margin-top: 0">3. redaktsioon</h4>
     <br />
 </div>
 
-# Guidelines
+# Juhised
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. To some, these strict rules may seem harsh. However, the implementation of these rulesets will keep us and the users from running into any issues.
+Presence-i avaldamisel [Presence-ite repositooriumis](https://github.com/PreMiD/Presences/) nõuame, et järgiksite teatavaid suuniseid. Mõne jaoks võivad need ranged reeglid tunduda karmid. Nende reeglistike rakendamine hoiab meid ja kasutajaid probleemide tekkimisest.
 
-# Creation
+# Loomine
 
-The general rules of presence development are as follows:
+Presence-i arendamise üldreeglid on järgmised:
 
-- Presences **must** be related to the website of choice.
-- Presences **cannot** be made for illegal websites. (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
-- You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
-- Presence that target internal browser pages (like Chrome Web Store, `chrome://`, `about:` pages, etc) are **not** allowed as they require an experimental flag to be enabled on the user's end and could potentially cause damage to their browsers.
-- Presences with support for only a single subdomain will **not** be permitted, as they may seem broken for other pages (like the homepage), exceptions can be made for the policy and contact pages (content that isn't used often) or sites where the other content is unrelated. (for e.g., wikia pages)
-- Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Presence-id **peavad** olema seotud valitud veebisaidiga.
+- Ebaseaduslikele veebisaitidele **ei tohi ** teha Presence. (nt stressorid, uimastiturundus, lapsporno jne)
+- Failistruktuur peab olema puhas ja haldatud, mitte sisaldama faile, mida pole täpsustatud. (nt vscode ja git kaustade, pildi- ja tekstifailide jms jaoks)
+- Teil peab olema korralik failistruktuur, mustandid **pole **lubatud.
+- Veebilehed Presence-itele, millel on (`.onion` tippdomeenid) või tasuta domeenid/hostid (nt `.TK` [kõik tasuta Freenomi domeenid], `.RF`, `GD` jne) **ei** ole lubatud, erandeid võib teha, kui esitatakse tõend, et domeeni eest on makstud.
+- Presence-i domeen peab olema vähemalt 2 kuud vana.
+- Presence-id, mis on suunatud brauseri siselehekülgedele (nagu Chrome Web Store, `chrome://`, `about:` leheküljed jne), **ei** ole lubatud, kuna need nõuavad kasutaja poolt eksperimentaalse lipu lubamist ja võivad potentsiaalselt põhjustada nende brauserite kahjustamist.
+- Presence-id, mis toetavad ainult ühte alamdomeeni, **ei** ole lubatud, kuna need võivad tunduda teiste lehekülgede (näiteks kodulehe) jaoks katkised, erandeid võib teha poliitika- ja kontaktlehtede puhul (sisu, mida ei kasutata sageli) või saitide puhul, kus muu sisu ei ole seotud. (nt vikilehed)
+- Veebiraadio Presence-id on lubatud ainult siis, kui raadiol on vähemalt 100 kuulajat nädalas ja 15 samaaegset kuulajat ning tal peavad olema muud funktsioonid kui lihtsalt albumi/laulu pealkirja näitamine jne.
+- Presence-id ei tohi käivitada JS-koodi oma funktsiooniga, et saada muutujaid. Kui Firefoxil on probleeme sisseehitatud funktsiooniga `Presence` klassis, siis on teil lubatud teha oma funktsioon ja te peate sellest meile Pull Requesti kirjelduses rääkima.
+- Madala kvaliteediga (või vähese kontekstiga) Presence-id **ei** ole lubatud (nt ainult logo ja teksti näitamine, kuid mitte selle muutmine).
+- Selliste teenuste nagu Discord Bot/Server Lists Presence-id peavad järgima neid lisanõudeid:
+  - Domeen peaks olema vähemalt **6 kuud** vana.
+  - Unikaalsed külastajad päevas:
+    - 6 kuud vanade domeenide puhul: **20 000 unikaalset külastajat päevas**.
+    - Üle 12 kuu vanuste domeenide puhul: **45 000 unikaalset külastajat päevas**.
+  - Veebisait ei tohi olla odavas domeenis, näiteks `.xyz`, `.club` ja nii edasi.
+  - Veebileht ise peab olema väga hea kvaliteediga, kujundusega, jne.
+- Presence-id peaksid kasutama [Üldised andmeid](https://api.premid.app/v2/langFile/presence/en) (stringid, mis algavad sõnaga "general."). Selle saate saavutada, kasutades `multiLanguage`-it koos antud stringidega. Kui teie Presences nõuab kohandatud stringi, siis ei tohiks te kasutada `multiLanguage` enne, kui Presence saab 1000 kasutajat. Näidise [leiate siit](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Kausta `dist`, faili `presence.ts`,faili `iframe.ts` ja `metadata.json` kaasamine on kohustuslik, nii et tulemus oleks järgmine skeem:
 
 ```bash
 presence
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-or if you're using a `iframe.ts` file:
+või kui kasutate faili `iframe.ts`:
 
 ```bash
 presence
@@ -65,9 +65,9 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
-> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process.
+> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. See on täiesti vabatahtlik ja ei ole läbivaatamise käigus nõutav.
 
-> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted.
+> Väga soovitatav on korraldada oma `metaandmed`-faili allpool näidatud kujul ning teil peavad olema grammatiliselt korrektsed teenuste nimed, kirjeldused, sildid ja seadistusväljad. Kõik, mis ei ole korraldatud vastavalt spetsifikatsioonile, **ei** ole lubatud.
 
 > Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
 
@@ -77,40 +77,40 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
+    "name": "KASUTAJA",
     "id": "ID"
   },
   "contributors": [
     {
-      "name": "USER",
+      "name": "KASUTAJA",
       "id": "ID"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "TEENUS",
+  "altnames": ["TEENUS"],
   "description": {
-    "en": "DESCRIPTION"
+    "en": "KIRJELDUS"
   },
   "url": "URL",
-  "version": "VERSION",
+  "version": "VERSIOON",
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGOORIA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
   "readLogs": false,
   "settings": [
-    {
+   {
       "id": "multiLanguage",
       "multiLanguage": true
-    }
+    },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": true
     },
     {
@@ -118,15 +118,15 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": "\"%song%\" by %artist%",
       "placeholder": "use %song% or %artist%"
     },
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "KUVA PEALKIRI",
+      "icon": "FONTAWESOME IKOON",
       "value": 0,
       "values": ["1", "2", "etc."]
     }
@@ -136,71 +136,71 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 
 > If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.)
 
-> All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
+> Kõik `metaandmed` failis olevad pildid peavad olema majutatud aadressil `i.imgur.com`. Veebisaidil majutatud sisu kasutamine **ei** ole lubatud, kuna nad võivad tahtmatult muuta teekondi ja faile.
 
-A list of fields and their rules are listed below:
+Allpool on loetletud väljad ja nende reeglid:
 
 ### **`$schema`**
 
-- The schema _key_ **must** include a dollar sign at the beginning of it, this will signal your text editor that you want to validate your JSON file against a model. _As stated earlier, you do not need to include a schema, but if you include it you must take this into account._
+- Skeemi _key_ alguses **peab** olema dollarimärk, see annab teie tekstiredaktorile märku, et soovite oma JSON-faili valideerida mudeli suhtes. _ Nagu varem öeldud, ei pea te skeemi lisama, kuid kui te seda lisate, peate sellega arvestama._
 
 ### **`author`**
 
-- The ID _value_ **must** be your Discord snowflake ID. You can get it by enabling [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Please do **not** confuse this with your application ID, which is only for your presence._
+- ID _väärtus_ **peab** olema teie Discord snowflake ID. Selle saate, kui lülitate sisse [arendajarežiimi](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Palun **ei** segi ajada seda teie appi ID-ga, mis on ainult teie Presence-i jaoks._
 
 ### **`*contributors`**
 
-- Do **not** add yourself as a contributor, and do not add someone else as a contributor unless they have helped with the presence.
+- **Ärge** lisage ennast kaastöötajaks ja ärge lisage kedagi teist kaastöötajaks, kui ta just ei ole aidanud Presence-it.
 
 ### **`service`**
 
 - The service name **must** be the name of the presence directory. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
-- You **cannot** use the url as the service name unless the website uses the url as its official name. If the name is not descriptive and can be considered vague, using the url is **required**. (for e.g., `YouTube` is permitted because that is the official name and is descriptive, while `youtube.com` is not. `Top` is a non-descriptive name, so using the url `top.gg` is **required**.)
-- If service has some explicit branding rules of their name, you should follow them.
+- Sa **ei saa** kasutada url-i teenuse nimena, välja arvatud juhul, kui veebisait kasutab url-i oma ametliku nimena. Kui nimi ei ole kirjeldav ja seda võib pidada ebamääraseks, on url kasutamine **nõutud**. (nt `YouTube` on lubatud, sest see on ametlik nimi ja kirjeldav, samas kui `youtube.com` ei ole. `Top` on mittekirjeldav nimi, nii et url `top.gg` kasutamine on **nõutud**)
+- Kui teenusel on oma nime kohta mõned selgesõnalised brändireeglid, siis peaksite neid järgima.
 
 ### **`*altnames`**
 
-- **Only** use this in scenarios where a website goes under multiple official names (e.g. Pokémon and 포켓몬스터). _Shortened_ versions of service names go under `tags`.
+- **Kasutage seda ainult** stsenaariumides, kus veebisait kannab mitut ametlikku nime (nt Pokémon ja 포켓몬스터). _Lühendatud_ versioonid teenuste nimedest lähevad `siltide` alla.
 
 ### **`description`**
 
 - **All** presences are **required** to have an English description regardless of the website's prefered language.
-- Do **not** try and translate the description yourself unless you know that language, translators will modify your `metadata.json` and change the descriptions if necessary.
+- **Ärge** proovige kirjeldust ise tõlkida, kui te seda keelt ei oska, tõlkijad muudavad teie `metadata.json` ja muudavad vajaduse korral kirjeldusi.
 
 ### **`url`**
 
-- The url **must** be a string if the website only uses one domain. If the website uses multiple, make this an array and specify each one.
-- Do **not** include protocols in the url (for e.g., `http` or `https`), and do not include query parameters in the url (for e.g., `www.google.com/search?gws_rd=ssl` which should be `www.google.com`)
+- Url ** peab** olema string, kui veebisait kasutab ainult ühte domeeni. Kui veebisait kasutab mitut, tehke sellest array ja täpsustage igaühele neist.
+- **Ära** sisalda url-is protokolle (nt `http` või `https`) ja ära sisalda url-is päringuparameetreid (nt `www.google.com/search?gws_rd=ssl`, mis peaks olema `www.google.com`)
 
 ### **`version`**
 
-- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<MAJOR>.<MINOR>.<PATCH>`. Anything else like `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` or changing `1.0.0` to `2.0.0` on a bug fix/small change is **not** permitted.
-- The version **must** always start at `1.0.0` unless told otherwise, other versions will **not** be permitted.
+- Veenduge alati, et versiooninumber järgib [semantilise versioonimise standardeid](https://semver.org), mis tähendab järgmist skeemi: `<MAJOR>.<MINOR>.<PATCH>`. Kõik muu nagu `1.0.0.0.1`, `1.0.0`, `1`, `1.0.0-BETA` või `1.0.0` muutmine `2.0.0` veaparanduse/väikese muudatuse puhul **ei** ole lubatud.
+- Versioon **peab** alati algama `1.0.0`, kui ei ole öeldud teisiti, muud versioonid **ei** ole lubatud.
 
 ### **`logo`**
 
-- The logo **must** be a square image with a `1:1` aspect ratio.
-- The image is **required** to have a minimum resolution of `512x512` pixels. You can upsize it using a tool like [waifu2x](http://waifu2x.udp.jp/).
+- Logo **peab** olema ruudukujuline, mille kuvasuhe on `1:1`.
+- Pildi **vajalik** minimaalne resolutsioon `512x512` pikslit. Saate seda suurendada, kasutades sellist tööriista nagu [waifu2x](http://waifu2x.udp.jp/).
 
 ### **`thumbnail`**
 
-- The thumbnail **should** preferably be a [wide promotional card](https://i.imgur.com/3QfIc5v.jpg) or a [screenshot](https://i.imgur.com/OAcBmwW.png) if the first is **not** available.
+- Thumbnail **peaks** eelistatavalt olema [laiaulatuslik reklaamkaart](https://i.imgur.com/3QfIc5v.jpg) või [ekraanipilt](https://i.imgur.com/OAcBmwW.png), kui esimene ei ole **saadaval**.
 
 ### **`color`**
 
-- The color **must** be a hexadecimal value between `#000000` and `#FFFFFF`.
-- The color string **must** be prepended with a hash symbol.
+- Värv **peab** olema heksadekaalväärtus vahemikus `#000000` ja `#FFFFFFFF`.
+- Värvi string **peab** olema eelistatud hash-sümboliga.
 
 ### **`tags`**
 
 - **All** presences are required to have at least _one_ tag.
-- Tags must **not** include any spaces, slashes, single/double quotation marks, Unicode characters, and should always be lowercase.
-- Tags **should** preferably include alternate service names to make searching easier (for e.g., if an Amazon presence had included AWS support, it would have its tags like `amazon-web-services` and `aws`)
-- You are **required** to add an `NSFW` tag if the presence is for an NSFW website.
+- Sildid **ei** tohi sisaldada tühikuid, kaldkriipsu, ühe- või kahekohalisi jutumärke, Unicode-märke ja need peavad alati olema väikse tähega.
+- Sildid **selleks** peaksid eelistatavalt sisaldama alternatiivseid teenuste nimesid, et hõlbustada otsingut (nt kui Amazoni kohalolek oleks hõlmanud AWS-i tuge, oleks selle sildid nagu `amazon-web-services` ja `aws`)
+- Te olete **kohustatud** lisama `NSFW` sildi, kui tegemist on NSFW veebilehega.
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Kategooria **peab** olema üks järgmistest, mis on loetletud [dokumentatsioonis](https://docs.premid.app/dev/presence/metadata#presence-categories).
 - The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
@@ -254,7 +254,7 @@ Here is a list of rules you must follow when writing your `presence.ts` file:
 
 > Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
 
-## Modification
+## Muudatused
 
 > You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
 
@@ -264,7 +264,7 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 - If you make modifications to a presence and change at least a **quarter** of the presence's codebase, you are allowed to add yourself as a contributor. Contact a reviewer for more information about this subject.
 - Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
 
-# Verification
+# Kontrollimine
 
 > **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`.
 
@@ -277,12 +277,12 @@ In some situations, presences may behave unexpectedly or could use some minor ch
 The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
 
 <div>
-  <h2 style="font-size: 2rem; margin-bottom: 0;">Presence Reviewers</h2>
+  <h2 style="font-size: 2rem; margin-bottom: 0;">Presence-i ülevaatajad</h2>
   <a href="https://github.com/Bas950"><img src="https://github.com/Bas950.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
   <a href="https://github.com/EncryptedDev"><img src="https://github.com/EncryptedDev.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-## `Restrictions`
+## `Piirangud`
 
 Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
 
@@ -292,7 +292,7 @@ In this scenario, the following changes will occur:
 - All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
 - Tickets created under your name regarding presence development will be deleted.
 
-## `Reviewing`
+## `Ülevaatamine`
 
 A few things you should know after opening a pull request:
 
@@ -302,9 +302,9 @@ A few things you should know after opening a pull request:
 - ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
 - ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
 
-## `Checks`
+## `Kontrollid`
 
-![Example of checks](https://i.imgur.com/vF7QpBH.png)
+![Näide kontrollide kohta](https://i.imgur.com/vF7QpBH.png)
 
 Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
 
@@ -312,31 +312,31 @@ Currently, a presence goes through 3 separate stages of checks. All of these che
 - `CodeFactor` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
 - `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
 
-## `Additional Rules`
+## `Lisareeglid`
 
-- **Always** make sure to start your presence in the most appropriate folder, if its name starts with _any_ Latin letter then it must be under its alphabetical match (for e.g., `D/dアニメストア` or `G/Google`). Any other Unicode/non-Latin characters **must** be under the `#` folder (for e.g., `#/巴哈姆特`) and numbers under the `0-9` folder (for e.g., `0-9/4anime`).
+- **Alati** veenduge, et alustate oma presence-i kõige sobivamas kaustas, kui selle nimi algab _mis tahes_ ladina tähega, siis see peab olema tähestikulise vaste all (nt `D/d ア ニ メ ス ト ア ` või `G/Google `). Kõik muud Unicode'i/ladina tähemärgid **peavad** asuma kausta `#` all (nt `#/巴哈姆特 `) ja numbrid `0-9` numbri kausta (nt `0-9/4anime`).
 
 After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
 
-# Suggestions
+# Soovitused
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
+Kui teil on meie juhiste kohta soovitusi, võtke meiega ühendust @ [PreMiD-i discordi serveris](https://discord.premid.app) ja me vaatame need üle!
 
-# Contributions
+# Kaasaaitamised
 
-`Revision 3` of the guidelines was written and was contributed to by the following individuals:
+Juhiste `3. redaktsiooni` on kirjutatud ja sellele aitasid kaasa järgmised isikud:
 
 <div>
 <a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 2` of the guidelines was written and was contributed to by the following individuals:
+Juhiste `2. redaktsiooni` on kirjutatud ja sellele aitasid kaasa järgmised isikud:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 1` was maintained by the following individuals:
+Juhiste `1. redaktsiooni` hooldasid järgmised isikud:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>

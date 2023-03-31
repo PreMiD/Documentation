@@ -56,21 +56,21 @@ Inspiratsiooni või näiteid selle kohta, kuidas oma Presence-i koodi strukturee
 
 Lisateavet klassi `Presence` kohta leiate [siit](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Alates v2.2.0 on nüüd olemas Slideshow'd, see võimaldab teil näidata mitu `PresenceData` liidest intervalliga, lisateabe saamiseks klõpsake klassi `Slideshow` kohta [siit](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Teatud andmeid ei saa?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Paljud veebisaidid kasutavad [ifraame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframe](https://en.wikipedia.org/wiki/HTML_element#Frames)). Need html-tähed võivad sisaldada mitmeid allikaid, näiteks videoid. Kuid need ei ole iga kord asjakohased. Mõned neist on peidetud või neid lihtsalt ei kasutata aktiivselt. Kontrollige, kas saate vajaliku teabe kätte ilma nendeta, enne kui teete asjatut tööd.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Kontrollige neid oma brauseri konsoolist (veenduge, et olete **Elemendid** vahekaardil).
+2. Otsi (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) või <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Käivita `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+Kui leiate, et teie andmed on iFrame'is, peate tegema järgmist:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Loo fail `iframe.ts`.
+2. Määra iFrame'ile oma metaandmefailis väärtuseks `true`.
+3. Täitke oma iFrame-i fail.
 
 ```ts
 const iframe = new iFrame();
@@ -84,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Presence-i faili andmete vastuvõtmine iFrame failist.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -93,30 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Märkus:** See tuleb asetada väljaspool sündmust updateData.
 
-# Loading your Presence
+# Presence-i laadimine
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Avage brauseris laienduse hüpikaken ja hoidke klaviatuuri nuppu <kbd>Shift</kbd>.
+2. **Load Presence** kuvatakse jaotises Presences.
+3. Klõpsake seda, kui hoiate endiselt nuppu <kbd>Shift</kbd>.
+4. Valige oma presence-i kausta /dist.
 
 # Mõned kasulikud asjad
 
-## Hot-reloading
+## Kuum laadimine
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Veebisait, millel arendate, laaditakse automaatselt uuesti iga kord, kui fail kausta salvestatakse.
 
-## Debugging
+## Veakõrvaldus
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Võite koodi `console.log("Test");` panna oma koodi vahele ja vaadata, kas teie brauserikonsool annab teile selle väljundi. Kui jah, siis jätkake ja proovige pärast järgmist funktsiooni uuesti. Kui ei, siis on üleval viga.
+- Kui see teid ka ei aita, küsige abi meie [Discord serverist](https://discord.premid.app/) Presence-i arendajalt.
 
 # Toimikud selgitatud
 
-- [Presence Class](/dev/presence/class)
-- [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Presence-i klass](/dev/presence/class)
+- [Slaidiseansi klass](/dev/presence/slideshow)
+- [iFrame'i klass](/dev/presence/iframe)
+- [Metaandmete fail](/dev/presence/metadata)
+- [TypeScripti seadistamine](/dev/presence/tsconfig ""){.links-list}

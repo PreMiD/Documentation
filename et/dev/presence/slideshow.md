@@ -1,5 +1,5 @@
 ---
-title: Slideshow Class
+title: Slaidiseansi klass
 description:
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2020-12-25T00:44:42.803Z
 ---
 
-# Slideshow Class
+# Slaidiseansi klass
 
 ## Introduction
 
