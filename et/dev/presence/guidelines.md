@@ -65,13 +65,13 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
-> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. See on täiesti vabatahtlik ja ei ole läbivaatamise käigus nõutav.
+> Meie presence-i arendajate mugavuse huvides oleme esitanud skeemi, mida saate kasutada oma `metaandmete` faili terviklikkuse kontrollimiseks. See on täiesti vabatahtlik ja ei ole läbivaatamise käigus nõutav.
 
 > Väga soovitatav on korraldada oma `metaandmed`-faili allpool näidatud kujul ning teil peavad olema grammatiliselt korrektsed teenuste nimed, kirjeldused, sildid ja seadistusväljad. Kõik, mis ei ole korraldatud vastavalt spetsifikatsioonile, **ei** ole lubatud.
 
-> Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
+> Presence-i veebisaitidel, millel on Nsfw sisu **peab** olema `nsfw` silt ja logo/mõõdupilt **ei** tohi sisaldada sellist sisu.
 
-Each presence has a descriptor file called `metadata.json`, the metadata has a strict standard and an example of this file can be seem below:
+Igal presence-il on kirjeldusfail nimega `metadata.json`, metaandmed on rangelt standarditud ja selle faili näide on allpool:
 
 ```json
 {
@@ -134,7 +134,7 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.)
+> Kui väli on [dokumentatsioonis](https://docs.premid.app/dev/presence/metadata) loetletud valikulisena või kui võtme kõrval on `*` ja teie presence kasutab selle jaoks vaikeväärtust, ärge lisage seda `metaandmed` faili. (näiteks presence ilma iframe'i toeta ei vaja `iframe` välja)
 
 > Kõik `metaandmed` failis olevad pildid peavad olema majutatud aadressil `i.imgur.com`. Veebisaidil majutatud sisu kasutamine **ei** ole lubatud, kuna nad võivad tahtmatult muuta teekondi ja faile.
 
@@ -154,7 +154,7 @@ Allpool on loetletud väljad ja nende reeglid:
 
 ### **`service`**
 
-- The service name **must** be the name of the presence directory. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
+- Teenuse nimi **peab** olema presence-i kataloogi nimi. Näiteks kui presence asub aadressil `/websites/Y/YouTube/`, peab teenuse nimi olema `YouTube`.
 - Sa **ei saa** kasutada url-i teenuse nimena, välja arvatud juhul, kui veebisait kasutab url-i oma ametliku nimena. Kui nimi ei ole kirjeldav ja seda võib pidada ebamääraseks, on url kasutamine **nõutud**. (nt `YouTube` on lubatud, sest see on ametlik nimi ja kirjeldav, samas kui `youtube.com` ei ole. `Top` on mittekirjeldav nimi, nii et url `top.gg` kasutamine on **nõutud**)
 - Kui teenusel on oma nime kohta mõned selgesõnalised brändireeglid, siis peaksite neid järgima.
 
@@ -164,7 +164,7 @@ Allpool on loetletud väljad ja nende reeglid:
 
 ### **`description`**
 
-- **All** presences are **required** to have an English description regardless of the website's prefered language.
+- **Kõikidel** presence-itel **peab** olema ingliskeelne kirjeldus, sõltumata veebilehe eelistatud keelest.
 - **Ärge** proovige kirjeldust ise tõlkida, kui te seda keelt ei oska, tõlkijad muudavad teie `metadata.json` ja muudavad vajaduse korral kirjeldusi.
 
 ### **`url`**
@@ -193,7 +193,7 @@ Allpool on loetletud väljad ja nende reeglid:
 
 ### **`tags`**
 
-- **All** presences are required to have at least _one_ tag.
+- **Kõikidel** presence-itel peab olema vähemalt _üks_ silt.
 - Sildid **ei** tohi sisaldada tühikuid, kaldkriipsu, ühe- või kahekohalisi jutumärke, Unicode-märke ja need peavad alati olema väikse tähega.
 - Sildid **selleks** peaksid eelistatavalt sisaldama alternatiivseid teenuste nimesid, et hõlbustada otsingut (nt kui Amazoni kohalolek oleks hõlmanud AWS-i tuge, oleks selle sildid nagu `amazon-web-services` ja `aws`)
 - Te olete **kohustatud** lisama `NSFW` sildi, kui tegemist on NSFW veebilehega.
@@ -201,80 +201,80 @@ Allpool on loetletud väljad ja nende reeglid:
 ### **`category`**
 
 - Kategooria **peab** olema üks järgmistest, mis on loetletud [dokumentatsioonis](https://docs.premid.app/dev/presence/metadata#presence-categories).
-- The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
+- Presence peab kasutama veebisaidi sisule vastavat kategooriat. (näiteks ärge kasutage `anime`, kui veebisait ei ole seotud anime'ga).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Regulaaravaldised **peavad** olema kehtivad. Palun testige oma väljendeid [dokumentatsioonis](https://docs.premid.app/dev/presence/metadata#testing) loetletud vahenditega.
 
 ### **`readLogs`**
 
-- Must be `boolean` value (e.g. `true` or `false`).
-- Enables logs for your presence.
+- Peab olema `boolean` väärtus (nt `true` või `false`).
+- Võimaldab teie Presence-i logid.
 
 ### **`warning`**
 
-- Enables warning icon for prompting user that this presence needs more steps than only adding presence.
-- Example of presence using this metadata variable is `VLC`.
+- Võimaldab hoiatussümboli, mis hoiatab kasutajat, et see presence vajab rohkem samme kui ainult presence-i lisamine.
+- Näide selle metaandmete muutuja kasutamise kohta on `VLC`.
 
 ### **`settings`**
 
-- If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
-- The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
-- If you are using the `multiLanguage` option it can have the following types:
-  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+- Kui te otsustate teha vormingustringi (näiteks `%song% by %artist%`), siis peavad muutujad olema mõlemal pool protsentimärgiga ümbritsetud. Muutujad nagu `%var`, `var%` või `%%var%%%` ja kõik, mis jääb nende vahele, **ei** ole standardiseerimise huvides lubatud.
+- Seadete nimi **ei** tohi olla suurtähtedega. Näiteks **ei** ole lubatud sellised nimed nagu `SHOW BROWSING STATUS`; aga sellised nimed nagu `Show Browsing Status` või `Show browsing status` on lubatud.
+- Kui kasutate `multiLanguage` valikut, võib see olla järgmist tüüpi:
+  - **Boolean** tüüpi, mis võimaldab ainult stringid [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) lokaliseerimisrepostist või presence-i failist (nt kui presence-i nimi on YouTube, saab laiendus stringid ka `youtube.json`-st)
+  - **String** tüüpi (nt `youtube`), mis määrab failide nimed, millest soovite saada stringid.
+  - **Array<String>** tüüpi (nt `["youtube", "discord"]`), mis määrab failide nimed, millest soovite saada stringid.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
-> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
+> Kirjutatud kood **peab** olema _hästi kirjutatud_ ja **peab** olema _loetav_ ning kõik stringid peavad olema grammatiliselt korrektsed (grammatilisi vigu veebilehtedel võib ignoreerida).
 
-> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+> Iga presence järgib ranget lintingu reeglistikku, mida kontrollitakse läbivaatamise käigus. Allpool on esitatud mõned soovitused. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
 
-Here is a list of rules you must follow when writing your `presence.ts` file:
+Siin on nimekiri reeglitest, mida peate oma `presence.ts` faili kirjutamisel järgima:
 
-- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
-- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
-- It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
-- The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
-- You are **not** allowed to access `localStorage`.
-- When accessing cookies for stored data, please prefix the key with `PMD_`.
-- You may only make HTTP/HTTPS requests to `premid.app` or the presence website API. If you are using external domains, you will be required to explain why it is necessary. Only allowed API to make request is [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
-- Do **not** set fields in the presenceData object to undefined after it has been declared, use the `delete` keyword instead. (for e.g., use `delete data.startTimestamp` instead of `data.startTimestamp = undefined`)
-- You are **not** allowed to write presences that change the functionality of a given website. This includes the addition, deletion, or modification of DOM elements.
-- Presences that use buttons should follow extra requirements:
-  - Redirects to main page are prohibited.
-  - Promoting websites by them is prohibited.
-  - They can't display information you couldn't fit in other fields.
-  - Redirecting directly to audio/video stream is prohibited.
+- **Alguses** deklareerige alati klassi `Presence` uus eksemplar enne mis tahes muud muutujat, et vältida harva esinevaid probleeme; see ei ole kavandatud nõue, seega võib selle tulevikus eemaldada.
+- **Mitte kunagi** kasuta kohandatud funktsioone, kui [natiivsed variandid on saadaval](https://docs.premid.app/dev/presence#files-explained); see tagab, et parandused laiendustasandil kehtivad ka sinu presence-itele. Te võite vabalt kasutada mida iganes te vajate, kui te ei leia neid dokumentides loetletud.
+- On **keelatud** kodeerida veebilehe presence-i, lisamata toetust selle põhikeelele (nt YouTube'i presence, mis on kodeeritud ainult portugali ja jaapani keele toetusega, kuid mitte inglise keele toetusega)
+- Väljad `smallImageKey` ja `smallImageText` on mõeldud täiendava/sekundaarse konteksti pakkumiseks (näiteks `playing/paused` videosaitide puhul, `browsing` tavaliste saitide puhul ja muudel juhtudel), mitte Discord-profiilide või muu PreMiDiga mitteseotud asja reklaamimiseks.
+- Teil **ei** ole lubatud juurdepääs `localStorage-ile`.
+- Salvestatud andmete küpsistele juurdepääsul, palun kirjutage võtme ette `PMD_`.
+- Saate teha HTTP/HTTPS päringuid ainult `premid.app` või presence-i veebisaidi API-le. Kui kasutate väliseid domeene, peate selgitama, miks see on vajalik. Ainus lubatud API, mille kaudu saab esitada päringu, on [`Fetch API`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+- **Ärge** määrake presenceData objekti väljasid pärast selle deklareerimist määratlemata olekusse, kasutage selle asemel võtmesõna `delete`. (nt kasuta `delete data.startTimestamp` asemel `data.startTimestamp = undefined`)
+- Sul on **ei** lubatud kirjutada presence, mis muudavad antud veebilehe funktsionaalsust. See hõlmab DOM-elementide lisamist, kustutamist või muutmist.
+- Nuppe kasutavate presence-ite puhul tuleks järgida lisanõudeid:
+  - Ümbersuunamised pealehele on keelatud.
+  - Veebisaitide reklaamimine nende poolt on keelatud.
+  - Nad ei saa kuvada teavet, mida te ei saanud mahutada teistesse väljadesse.
+  - Otsene suunamine audio/video voogedastusele on keelatud.
 
 
 ## [**tsconfig.json**](https://docs.premid.app/dev/presence/tsconfig)
 
-> Do **not** write your own `tsconfig.json` file, use what has been provided on [documentation](https://docs.premid.app/dev/presence/tsconfig).
+> **Ärge** kirjutage oma `tsconfig.json` faili, kasutage seda, mis on esitatud [dokumentatsioonis](https://docs.premid.app/dev/presence/tsconfig).
 
 ## Muudatused
 
-> You **must** change the version in the **metadata** to be a higher value from the previous version when making changes to either the **presence.ts**, **iframe.ts** or **metadata.json**.
+> Sa **peab** muutma versiooni **metadata** eelmisest versioonist suuremaks, kui teed muudatusi kas **presence.ts**, **iframe.ts** või **metadata.json**.
 
-In some situations, presences may behave unexpectedly or could use some minor changes to improve their functionality. Here is a list of rules that you **must** follow while modifiying presences.
+Mõnes olukorras võivad presence-id käituda ootamatult või vajaksid mõningaid väiksemaid muudatusi, et parandada nende funktsionaalsust. Siin on nimekiri reeglitest, mida **peate</strong x> presence-i muutmisel järgima.</p>
 
-- If the presence author hasn't been contactable in over a month, you may contact a reviewer to see if you can modify the presence.
-- If you make modifications to a presence and change at least a **quarter** of the presence's codebase, you are allowed to add yourself as a contributor. Contact a reviewer for more information about this subject.
-- Anyone may create PRs to fix bugs. Do **not** change images if they are not outdated and are in specifications.
+- Kui presence-i autoriga ei ole üle kuu aja ühendust võetud, võite võtta ühendust ülevaatajaga, et vaadata, kas saate presence-it muuta.
+- Kui te muudate presence-it ja muudate vähemalt **veerandi** presence-i koodibaasi, on teil lubatud lisada end kaastöötajaks. Lisateabe saamiseks võtke ühendust ülevaatajaga.
+- Igaüks võib luua PR-e vigade parandamiseks. **Ära** muuda pilte, kui need ei ole vananenud ja on spetsifikatsioonides.
 
 # Kontrollimine
 
-> **All** code contributed to the store will be licensed under the `Mozilla Public License 2.0`.
+> **Kõik** kauplusesse lisatud kood on litsentsitud `Mozilla Public License 2.0` alusel.
 
-> If you need to contact someone, please use our official Discord server. All reviewers will have the `Reviewer` role on their profile.
+> Kui sul on vaja kellegagi ühendust võtta, kasuta palun meie ametlikku Discord-serverit. Kõigi retsensentide profiilil on roll `Reviewer`.
 
-> Please keep in mind that the reviewers work voluntarily and manage other repositories in addition to this one, your pull request may not get reviewed until hours or even days after it has been created.
+> Pidage meeles, et retsensendid töötavad vabatahtlikult ja haldavad lisaks sellele ka teisi repositooriume, mistõttu teie pull-päring võib saada läbi vaadatud alles tundide või isegi päevade pärast selle loomist.
 
-> **Always** have an up-to-date fork before creating your pull request. This will help limit false positives from the checks.
+> **Alati** enne oma tõmbetaotluse loomist veenduge, et on olemas ajakohane fork. See aitab piirata kontrollide valepositiivseid tulemusi.
 
-The most important process of presence development is getting your presence on the store. This is done by making a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) on GitHub on the `PreMiD/Presences` repository. Our reviewers will confirm that your presence is up to standards and will push it onto the store.
+Kõige tähtsam protsess presence-i arendamisel on teie presence-i poes avaldamine. Selleks tuleb teha [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) GitHubis `PreMiD/Presences` repositooriumis. Meie ülevaatajad kinnitavad, et teie presence vastab standarditele, ja toovad selle poodi.
 
 <div>
   <h2 style="font-size: 2rem; margin-bottom: 0;">Presence-i ülevaatajad</h2>
@@ -284,39 +284,39 @@ The most important process of presence development is getting your presence on t
 
 ## `Piirangud`
 
-Repetitive offenses such as breaking guidelines, spamming pull requests, threats, or innapropriate behavior will get you banned from creating presences.
+Korduvad rikkumised, nagu suuniste rikkumine, tõmbepäringute spämmimine, ähvardused või ebasobiv käitumine keelavad teil presence-ite loomise.
 
-In this scenario, the following changes will occur:
+Selle stsenaariumi puhul toimuvad järgmised muudatused:
 
-- Presences under your management will be transferred to the PreMiD bot or another user (reviewer decision). The application id for each presence will be recreated under the new owner's name.
-- All of your issues and pull requests (presence creation, presence contribution, etc) created following the ban will be prompty closed.
-- Tickets created under your name regarding presence development will be deleted.
+- Teie hallatavad presence-id kantakse üle PreMiDi boti või mõne teise kasutaja kätte (retsensendi otsus). Taotluse id iga presence-i jaoks luuakse uuesti uue omaniku nime all.
+- Kõik teie probleemid ja tõmbepäringud (presence-i loomine, presence-isse panustamine jne), mis on loodud pärast keelustamist, suletakse kohe.
+- Teie nime all loodud piletid, mis on seotud presence-i arendamisega, kustutatakse.
 
 ## `Ülevaatamine`
 
-A few things you should know after opening a pull request:
+Mõned asjad, mida peaksite teadma pärast tõmbetaotluse avamist:
 
-- It takes 2 reviewers to merge a pull request.
-- If a pull request is inactive for a period of 7 days, it will be promptly closed.
-- All checks **must** be passed in order to merge.
-- ⚠️ You **must** provide new, unaltered screenshots (taken by you) showing a side-by-side comparison of your profile and the website to prove that your presence works. _You are allowed to stitch screenshots together for viewing pleasure_ This applies for both creation and modification.
-- ⚠️ You are also **required** to include screenshots of the presence settings in the extension if supplied. An example can be seen [here](https://imgur.com/a/OD3sj5R).
+- Pull-päringu ühendamiseks on vaja 2 ülevaatajat.
+- Kui tõmbetaotlus on 7 päeva mitteaktiivne, suletakse see kohe.
+- Kõik kontrollid **peavad** olema läbitud, et ühendada.
+- ⚠️ Sa **pead** esitama uued, muutmata ekraanipildid (sinu poolt tehtud), mis näitavad kõrvuti oma profiili ja veebilehe võrdlust, et tõestada, et sinu presence toimib. _Sulle on lubatud ekraanipilte vaatamisrõõmuks kokku kleepida_ See kehtib nii loomise kui ka muutmise kohta.
+- ⚠️ Samuti on **vajalik** lisada ekraanipilte presence-i seadetest laienduses, kui need on esitatud. Üks näide on näha [siin](https://imgur.com/a/OD3sj5R).
 
 ## `Kontrollid`
 
 ![Näide kontrollide kohta](https://i.imgur.com/vF7QpBH.png)
 
-Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
+Praegu läbib presence 3 eraldi kontrollietappi. Kõik need kontrollid aitavad hindajatel kindlaks teha, kas teie presence on kasutuselevõtuks sobiv.
 
-- `DeepScan` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them. *Warning: DeepScan doesn't always give you errors. Please look at CodeFactor warnings instead.*
-- `CodeFactor` is a bot that checks for code quality. If you ever receive errors for new issues, you are **required** to fix them.
-- `Schema Validation` will scan your `metadata.json` file for any errors (for e.g., missing fields, invalid value types, etc.). If you ever see any new issues, you are also **required** to fix those. Adding a schema field to your `metadata.json` file will allow your text editor (if supported) to show you these errors during development.
+- `DeepScan` on robot, mis kontrollib koodi kvaliteeti. Kui te saate kunagi vigu uute küsimuste kohta, olete **kohustatud** neid parandama. *Hoiatus: DeepScan ei anna alati vigu. Palun vaadake hoopis CodeFactori hoiatusi.*
+- `CodeFactor` on robot, mis kontrollib koodi kvaliteeti. Kui te saate kunagi vigu uute küsimuste kohta, olete **kohustatud** neid parandama.
+- `Schema Validation` skaneerib teie `metadata.json` faili vigade (nt puuduvad väljad, vigased väärtustüübid jne) suhtes. Kui te näete kunagi uusi probleeme, siis olete ka **kohustatud** neid parandada. Skeemivälja lisamine faili `metadata.json` võimaldab teie tekstiredaktoril (kui see on toetatud) näidata teile neid vigu arenduse ajal.
 
 ## `Lisareeglid`
 
 - **Alati** veenduge, et alustate oma presence-i kõige sobivamas kaustas, kui selle nimi algab _mis tahes_ ladina tähega, siis see peab olema tähestikulise vaste all (nt `D/d ア ニ メ ス ト ア ` või `G/Google `). Kõik muud Unicode'i/ladina tähemärgid **peavad** asuma kausta `#` all (nt `#/巴哈姆特 `) ja numbrid `0-9` numbri kausta (nt `0-9/4anime`).
 
-After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
+Pärast kõigi juhiste nõuetekohaste ülevaatuste ja kontrollide täitmist liidetakse teie presence kauplusega.
 
 # Soovitused
 
