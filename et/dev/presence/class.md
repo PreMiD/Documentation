@@ -10,7 +10,7 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 # Presence-i klass
 
-## Introduction
+## Sissejuhatus
 
 The `Presence` class is very useful as it has basic methods that we need for creating a presence.
 
@@ -38,7 +38,7 @@ When setting `injectOnComplete` to `true` the first `UpdateData` event for both 
 
 When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
 
-## Methods
+## Meetodid
 
 ### `getActivity()` - *Deprecated since 2.2.4*
 
