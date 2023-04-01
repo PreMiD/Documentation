@@ -84,15 +84,15 @@ See näide näeb tõesti imelik välja? Ärge muretsege, ei ole nii raske aru sa
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
-      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Peaks sisaldama objekti, millel on presence-i arendaja <code>nimi</code> ja <code>id</code>. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab kopeerida Discordist, lubades arendaja
+        režiimi ja tehes oma profiilil parempoolse hiireklõpsu.</td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+      <td style="text-align:left">Peab sisaldama objekti, mis sisaldab panustaja <code>nime</code> ja <code>id-ed</code>. <code>nimi</code> on teie Discordi kasutajanimi ilma identifikaatorita (#0000). Kasutaja <code>id</code> saab kopeerida Discordist, lubades arendaja
+        režiimi ja tehes oma profiilil parempoolse hiireklõpsu.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
@@ -112,70 +112,69 @@ See näide näeb tõesti imelik välja? Ärge muretsege, ei ole nii raske aru sa
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Your description must have key pair values which indicate the language, and the description in that specific language. Make descriptions with the languages <i>that you know</i>, our translators will make changes to your metadata file. View the category for presence languages for a list. </td>
+      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Teie kirjeldusel peavad olema võtmepaari väärtused, mis näitavad keelt ja kirjeldust selles konkreetses keeles. Tehke kirjeldused keeltega, <i>mis te oskate</i>, meie tõlkijad teevad muudatused teie metaandmefaili. View the category for presence languages for a list. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br>
-      <b>Example:</b><code>vk.com</code><br>
-      <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. This may only be used as an array when there are more than one urls.</b></td>
+      <td style="text-align:left">Teenuse URL.<br>
+      <b>Näide:</b><code>vk.com</code><br>
+      <b>See url peab vastama veebilehe url-ile, sest selle järgi tuvastatakse, kuhu see veebileht kuhu skripti süstida või mitte. Seda võib kasutada ainult array-na, kui on rohkem kui üks url.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.</td>
+      <td style="text-align:left">Regulaaravaldise string, mida kasutatakse urlide sobitamiseks.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
-      <td style="text-align:left">Version of your presence.</td>
+      <td style="text-align:left">Teie presence-i versioon.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
-      <td style="text-align:left">Link to service&apos;s logotype.</td>
+      <td style="text-align:left">Link teenuse logotüübile.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
-      <td style="text-align:left">Link to your presence thumbnail.</td>
+      <td style="text-align:left">Link oma presence-i thumbnailile.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>color</b></td>
-      <td style="text-align:left"><code>#HEX</code> value. We recommend to use a primary color of the service
-        that your presence supports.</td>
+      <td style="text-align:left">Väärtus <code>#HEX</code>. Soovitame kasutada teenuse põhivärvi, mida teie presence toetab.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Kirjuta silte, need aitavad kasutajatel otsida teie presence-it veebisaidil.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">String, mida kasutatakse presence-i kategooria tähistamiseks.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
+      <td style="text-align:left">Määrab, kas <code>iFrames</code> kasutatakse</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
+      <td style="text-align:left">Regulaaravaldise selektor, mis valib iframe'id, kuhu süstida.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
@@ -187,30 +186,30 @@ See näide näeb tõesti imelik välja? Ärge muretsege, ei ole nii raske aru sa
     </tr>
     <tr>
       <td style="text-align:left"><b>settings</b></td>
-      <td style="text-align:left">An array of settings the user can change</td>
+      <td style="text-align:left">Seadete array, mida kasutaja saab muuta</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
       <td style="text-align:left"><code>Jah</code></td>
     </tr>
   </tbody>
 </table>
 
-## Regular Expressions
+## Regulaaravaldised
 
-If you want to learn regular expressions, here are a few websites.
+Kui soovite õppida regulaaravaldisi, siis siin on mõned veebisaidid.
 
-#### Learning
+#### Õppimine
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
-#### Testing
+#### Testimine
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
-## Presence languages
+## Presence-i keeled
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD on polüglottne teenus, mis tähendab, et kasutajate ühendamiseks üle maailma on saadaval mitu keelt. Täielik keelte nimekiri on leitav selle [API lõpp-punkti](https://api.premid.app/v2/langFile/list) kaudu. To customize your presence even more, you can allow users to select their presence display language. Vaata [`multiLanguage`](#multilanguage), et saada rohkem teavet.
 
-## Presence settings
+## Presence-i seaded
 Setup interactive settings so users can customize the presence!
 ```json
 "settings": [
@@ -246,11 +245,11 @@ Setup interactive settings so users can customize the presence!
 
 ### `multiLanguage`
 
-#### Introduction
+#### Sissejuhatus
 
 The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
-#### Setup
+#### Seadistamine
 
 The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
 
@@ -306,7 +305,7 @@ The keys you didn't have to set are automatically set to the following: `title`:
 
 **Note:** These are in no way changeable.
 
-### Methods
+### Meetodid
 
 Use the following methods to get settings info in your presence files:
 #### `getSetting(String)`
@@ -335,8 +334,8 @@ When making your presence, you must specify a category which the presence falls 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
-      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Kategooria</th>
+      <th style="text-align:left">Nimi</th>
       <th style="text-align:left">Kirjeldus</th>
     </tr>
   </thead>
