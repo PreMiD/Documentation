@@ -1,6 +1,6 @@
 ---
 title: Linux
-description: Getting started with a PreMiD installation on Linux
+description: PreMiD installimisega Linuxis alustamine
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,93 +8,93 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:14.124Z
 ---
 
-The installation of the application is very important as the extension can not do anything by itself.
+Rakenduse installimine on väga oluline, kuna laiendus ei saa ise midagi teha.
 
-> Aur users that use DoomLerd's package should be safe as he says. We are not recommending to use it, but if you want you can still use it. Thanks to DoomLerd for handling aur repo still. 
+> Aur kasutajad, kes kasutavad DoomLerdi paketti, peaksid olema turvalised, nagu ta ütleb. Me ei soovita seda kasutada, kuid kui soovite, saate seda siiski kasutada. Aitäh DoomLerdile aur repo käsitsemise eest. 
 > 
 > {.is-warning}
 
-## Table of Contents
+## Sisukord
 
-- **[About](#about)**
-  - [Stats](#stats)
-  - [Requirements](#requirements)
-  - Examples (soon)
-  - FAQs (soon)
-  - Building (soon)
+- **[Info](#about)**
+  - [Statistika](#stats)
+  - [Nõuded](#requirements)
+  - Näited (varsti)
+  - KKK (varsti)
+  - Ehitus (varsti)
   - [Klienditugi](#support)
-  - [Inimesed](#credits)
-  - [License](#license)
-- **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
-- **[Portable AppImage](#appimage)** (_RECOMMENDED_)
-  - [Installation instructions](#appimageinstall)
-  - [Additional notes](#appimagenotes)
-- [**Red Hat Enterprise Linux (RHEL) based distributions**](#packagecloud)
-- [**Debian and Ubuntu based distributions**](#packagecloud)
-- [**Arch Linux based distributions**](#arch)
+  - [Tunnustus](#credits)
+  - [Litsents](#license)
+- **[Snapcraft](#snapcraft)** (TL;DR : _mitte kunagi_ ™️)
+- ** [Kaasaskantav AppImage](#appimage)** (_SOOVITATAV_)
+  - [Installeerimise juhised](#appimageinstall)
+  - [Lisamärkused](#appimagenotes)
+- [**Red Hat Enterprise Linuxi (RHEL) põhised jaotused**](#packagecloud)
+- [**Debiani ja Ubuntu põhised jaotused**](#packagecloud)
+- [**Arch Linuxi põhised jaotused**](#arch)
 
 <a name="about"></a>
 
 ## Info
 
-**PreMiD** is a simple, configurable utility that uses Discord's RP ( Rich Presence ) library which allows you to show what you're doing on the web ( and a few programs ) in your Discord profile as **playing status**.
+** PreMiD ** on lihtne, konfigureeritav utiliit, mis kasutab Discordi RP (Rich Presence) teeki, mis võimaldab teil veebis (ja mõnedes programmides) näidata, mida teete teie Discordi profiil ** olekuna **.
 
 <a name="stats"></a>
 
-### Stats
+### Statistika
 
 <table>
   <tr>
-    <th>Deployment</th>
-    <th>Total downloads</th>
-    <th>Latest release</th>
+    <th>Paigaldamine</th>
+    <th>Allalaadimisi kokku</th>
+    <th>Viimane väljaanne</th>
   </tr>
   <tr>
     <td><a href="https://github.com/PreMiD/Linux/actions"><img src="https://github.com/PreMiD/Linux/workflows/CI/badge.svg?branch=master&event=push" alt="CI"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="All releases"></a></td>
-    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Latest release"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="GitHub releases"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases"><img src="https://img.shields.io/github/downloads/PreMiD/Linux/total.svg?maxAge=86400" alt="Kõik väljaanded"></a></td>
+    <td><a href="https://github.com/PreMiD/Linux/releases/latest"><img src="https://img.shields.io/github/v/release/PreMiD/Linux.svg?maxAge=86400" alt="Viimane väljaanne"><br><img src="https://img.shields.io/github/downloads/PreMiD/Linux/latest/total.svg?maxAge=86400" alt="GitHubi väljaanded"></a></td>
   </tr>
 </table>
 
 <a name="requirements"></a>
 
-### Requirements
+### Nõuded
 
-Technically every distribution that can run Discord's [official](https://discordapp.com/download) **app** ( not the web or the snap version ) can run PreMiD too;<br/> As you may have noticed in the recent years, some Linux distributions started dropping support for the 32-bit (ia32/i686/i386/x86) architectures, and as a result, we did too. You can, however, try to build the app yourself if you desperately need to use it on a 32-bit distribution.<br/> Since we currently use Electron as an engine (Discord does too!), its requirements also apply to this app :
+Tehniliselt iga jaotus, mis suudab joosta Discordi [ ametlikku ](https://discordapp.com/download) ** rakendust ** (mitte veebi ega snapi versioon) saab joosta ka PreMiD-i; </br> Nagu olete viimastel aastatel märganud, hakkasid mõned Linuxi distributsioonid 32-bitiste (ia32 / i686 / i386 / x86) arhitektuuride tuge kaotama ja selle tulemusena tegime seda ka meie. Võite siiski proovida rakendust ise ehitada, kui peate seda hädasti 32-bitises jaotises kasutama. </br> Kuna praegu kasutame mootorit Electron (ka Discord kasutab!), Kehtivad selle nõuded ka selle rakenduse kohta:
 
 - Ubuntu ≥ 12.04
 - Fedora ≥ 21
 - Debian ≥ 8
 
-It is unknown whether older versions of other distributions support it, so just keep your distribution updated and use **LTS (Long-Term Support)** releases if your distribution offers them, as they're more stable (avoid alpha releases).
+Pole teada, kas teiste jaotuste vanemad versioonid seda toetavad, nii et hoidke oma jaotus värskena ja kasutage väljaandeid ** LTS (Long-Term Support) **, kui teie jaotus neid pakub, nad on stabiilsemad (vältige alpha väljaandeid).
 
 <a name="support"></a>
 
 ### Klienditugi
 
 <div>
-  <a target="_blank" href="https://discord.premid.app/" title="Join our Discord!">
-    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Join our Discord!">
+  <a target="_blank" href="https://discord.premid.app/" title="Liitu meie Discordiga!">
+    <img height="75px" draggable="false" src="https://discordapp.com/api/guilds/493130730549805057/widget.png?style=banner2" alt="Liitu meie Discordiga!">
   </a>
 </div>
 
 <a name="credits"></a>
 
-### Inimesed
+### Tunnustus
 
-Thanks to :
+Tänu :
 
-- @nattadasu, @Rubensei, @Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (and few other guys whom I forgot their names) for providing feedback on nightly releases.
-- @apriluwu for maintaining the Gentoo builds
-- @SlimShadyIAm and naka for formerly maintaining the Arch User Repository packages
-- The Electron community for various packages
-- Anyone else who has ever contributed to the project in any way.
+- @nattadasu, @Rubensei, @ Cairo2k18, zany130, Immanuel D, Friskytrash, Alexandre (ja vähesed teised, kelle nime unustasin) beetaversioonide kohta tagasiside andmise eest.
+- @apriluwu Gentoo järkude hooldamise eest
+- @SlimShadyIAm ja naka varem Archi kasutajahoidla pakettide hooldamise eest
+- Electroni kogukond mitmesuguste pakettide eest
+- Kõik teised, kes on projekti kuidagi kaasa aidanud.
 
 <a name="license"></a>
 
-### License
+### Litsents
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
+[![FOSSA staatus](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPreMiD%2FLinux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPreMiD%2FLinux?ref=badge_large)
 
 <img src="https://i.imgur.com/ACAxtmA.png" width="100" height="100" align="right" />
 
@@ -102,26 +102,26 @@ Thanks to :
 
 ## Portable AppImage
 
-The AppImage package is the recommended one if Discord works for you but other PreMiD packages (.deb, .rpm, etc) don't.
+AppImage pakett on soovitatav, kui Discord töötab teie jaoks, kuid teised PreMiD paketid (.deb, .rpm jne) mitte.
 
 <a name="appimageinstall"></a>
 
-### Installation instructions
+### Installeerimise juhised
 
 ```bash
 wget https://github.com/PreMiD/Linux/releases/latest/download/PreMiD-Portable.AppImage && chmod a+x PreMiD*.AppImage
 ```
 
 ```bash
-# Just double-click it or run
+# Lihtsalt topeltklõpsake seda või käivitage
 ./PreMiD*.AppImage
 ```
 
 <a name="appimagenotes"></a>
 
-### Additional notes
+### Lisamärkused
 
-Either if you want to try PreMiD or just don't want to install it, this one's the best, it's always up to date but _DOESN'T AUTO-START WITH THE SYSTEM!_<br/>If you get tired of having to open it each time, use the other packages (according to your distribution).
+Kui soovite proovida PreMiD-i või lihtsalt ei soovi seda installida, on see parim, see on alati ajakohane, kuid _EI AUTO-KÄIVITA SÜSTEEMIGA! _</br> Kui te olete väsinud sellest, et peate selle iga kord avama, kasutage teisi pakette (vastavalt teie jaotusele).
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/master/.github/packagecloud.png" width="100" height="100" align="right" />
 
@@ -129,65 +129,65 @@ Either if you want to try PreMiD or just don't want to install it, this one's th
 
 # PackageCloud
 
-We released deb/rpm packages at our packagecloud repo. Please visit it at https://packagecloud.io/PreMiD/Linux and download your deb/rpm package or use automatic script.
+Avaldasime debag / rpm paketid meie packagecloudi repos. Külastage seda aadressil https://packagecloud.io/PreMiD/Linux ja laadige alla deb / rpm pakett või kasutage automaatset skripti.
 
-For **Ubuntu/Debian**:
+** Ubuntu / Debiani ** jaoks:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.deb.sh | sudo bash
 ```
 
-For **Fedora/CentOS/RedHat**:
+** Fedora / CentOS / RedHat ** jaoks:
 
 ```bash
 curl -s https://packagecloud.io/install/repositories/PreMiD/Linux/script.rpm.sh | sudo bash
 ```
 
-If command doesn't work, download **deb/rpm** file from our packagecloud repo or override settings.
+Kui käsk ei tööta, laadige ** deb / rpm ** fail alla meie packagecloudi repost või alistage seaded.
 
 <a name="arch"></a>
 
 <img src="https://raw.githubusercontent.com/PreMiD/Linux/86ae2fbd49499785281f388a5305b06e0d3ecfea/.github/iusearchbtw.svg" width="100" height="100" align="right" />
 
-## Arch Linux based distributions
+## Arch Linuxi põhised jaotused
 
-Uses [Arch User Repository](https://aur.archlinux.org/packages/premid);<br/> Supported distributions are _itself_, Manjaro, Anarchy, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS and [every one that supports installing from AUR](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).
+Kasutab [ Archi kasutajahoidlat ](https://aur.archlinux.org/packages/premid); </br> Toetatud jaotused on _ itself</ em >, Manjaro, Anarhia, Artix, Arco, ArchLabs, Endeavour, Archman, BlackArch, Liri OS ja [ kõik teised, mis toetavad installimist AUR-ist ](https://wiki.archlinux.org/index.php/Arch-based_distributions#Active).</p>
 
 <a name="archinstall"></a>
 
-### Installation instructions
+### Installeerimise juhised
 
 ```bash
-# Using yay (recommended)
+# Yay kasutamine (soovitatav)
 yay -S premid
 ```
 
 ```bash
-# Using pakku
+# Pakku kasutamine
 pakku -S premid
 ```
 
 ```bash
-# Using trizen
+# Trizeni kasutamine
 trizen -S premid
 ```
 
 ```bash
-# Using pacaur
+# Pacauri kasutamine
 pacaur -S premid
 ```
 
 ```bash
-# ... you get the point
+# ... saate aru
 ```
 
-or manually from the [Arch User Repository](https://aur.archlinux.org/packages/premid) if you know what you're doing.
+või käsitsi [Archi kasutajahoidlast](https://aur.archlinux.org/packages/premid), kui teate, mida teete.
 
 <a name="archnotes"></a>
 
-### Additional notes
+### Lisamärkused
 
-If your distro uses pacman, then you have to install one of the helpers first. If you don't have any, Yay is recommended, run :
+Kui teie distro kasutab pacmani, peate kõigepealt installima ühe abistaja. Kui teil pole ühtegi, Yay on soovitatav, käivitage:
 
 ```bash
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -197,4 +197,4 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 yay -S premid
 ```
 
-Other AUR/Pacman helpers work as well, although each one's functionality is different so you may face issues while using them.
+Töötavad ka teised AUR / Pacmani abistajad, ehkki igaühe funktsionaalsus on erinev, nii et nende kasutamisel võib tekkida probleeme.

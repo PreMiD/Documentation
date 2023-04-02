@@ -1,6 +1,6 @@
 ---
 title: Windows
-description: Getting started with a PreMiD installation on Windows
+description: PreMiDi installimine Windowsis
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,18 +8,18 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:51.707Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements).{.is-info}
+> Enne kui jätkate, veenduge, et teie süsteem vastab kõigile [nõuetele](/install/requirements).{.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Rakenduse installimine on väga oluline, kuna laiendus ei saa ise midagi teha.
 
 # Lae alla
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
-2. Choose **Windows**.
-3. Open the installer.
-4. **Windows SmartScreen** will appear, if you install PreMiD for the first time. Click on **More Info** and then select **Run Anyway**. > This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
+1. Minge meie allalaadimiste lehele, [klõpsates siia](https://premid.app/downloads).
+2. Valige **Windows**.
+3. Avage installer.
+4. Kui installite PreMiD esimest korda, kuvatakse **Windowsi NutiEkraan**. Klõpsake valikul **Lisateave** ja valige seejärel **Käivita ikkagi**. > Seda seetõttu, et meil pole koodi allkirjastamise sertifikaati (CSC). Selle rahastamiseks [toetage meid](https://www.patreon.com/Timeraa). {.is-info}
 
-The application will start automatically. Check for the symbol in your system tray.
+Rakendus käivitub automaatselt. Kontrollige oma süsteemses salves sümbolit.
 
-> Do not forget to [add the **extension**](/install).{.is-warning}
+> Ärge unustage [lisada **laiendit**](/install). {.is-warning}
 
 ![](https://a.icons8.com/djxbtnYm/GBjHDS/svg.svg) {.align-abstopright}
