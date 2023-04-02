@@ -35,16 +35,16 @@ Saadab andmeid presence-ile. Selle meetodi kasutamine paneb presence'i viskama s
 Tagastab `iframe` URL-i.
 
 ## Sündmused
-In `iframes`, events work similarly to the way they work in the `presence` class.
+`iframe`-i sündmused toimivad sarnaselt klassi `presence` toimimisega.
 
 ```ts
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Kood läheb siia...
 });
 ```
 
-Here is a list of all of the events:
+Siin on kõigi sündmuste loend:
 
 #### `UpdateData`
 
-This event is fired every time the iframe is being updated.
+See sündmus käivitatakse iga kord, kui iframe'i värskendatakse.
