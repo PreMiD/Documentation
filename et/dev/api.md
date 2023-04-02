@@ -1,6 +1,6 @@
 ---
 title: API
-description: Access resources and perform actions using the PreMiD API
+description: Juurdepääs ressurssidele ja toimingute tegemine PreMiD-i API abil
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,27 +10,27 @@ dateCreated: 2021-09-07T01:25:28.441Z
 
 # API
 
-> Base URL: https://api.premid.app 
+> Baas URL: https://api.premid.app 
 > 
 > {.is-info}
 
-## API Versioning
-> API v2 has been deprecated and most of its endpoints have been removed. Please use v3 for any future request to prevent issues. 
+## API versiooni haldamine
+> API v2 on kaotanud kehtivuse ja enamik selle lõpp-punkte on eemaldatud. Probleemide vältimiseks kasutage tulevikus v3. 
 > 
 > {.is-danger}
 
-PreMiD exposes different versions of our API. You can specify version by including it in the request path like `https://api.premid.app/v{version_number}`. Omitting the version number from the route will route requests to the current default version (marked below accordingly).
+PreMiD paljastab meie API erinevad versioonid. Saate versiooni täpsustada, lisades selle taotluse teekonda, näiteks `https://api.premid.app/v{version_number}`. Versiooninumbri väljajätmine marsruudist suunab päringud praegusele vaikimisi versioonile (vastavalt märgitud allpool).
 
-## Encryption
+## Krüpteerimine
 
-All HTTP-layer services and protocols (e.g. http) within the PreMiD API use TLS 1.2.
+Kõik HTTP-kihi teenused ja protokollid (nt http) PreMiD APIs kasutavad TLS 1.2-e.
 
 # Dokumendid
-> Currently under construction! 
+> Praegu ehitamisel! 
 > 
 > {.is-danger}
 
-**Choose the API version:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+**Valige API versioon:**
+- [v2 *osalt kustutatud | aegunud*](/dev/api/v2)
+- [v3 *toimiv*](/dev/api/v3)
 {.links-list}

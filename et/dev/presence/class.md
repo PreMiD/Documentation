@@ -1,6 +1,6 @@
 ---
 title: Presence-i klass
-description: The main class for every PreMiD presence
+description: Iga PreMiD-i presence-i põhiklass
 published: true
 date: 2022-05-26T18:03:00.000Z
 tags:
@@ -12,98 +12,98 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 ## Sissejuhatus
 
-The `Presence` class is very useful as it has basic methods that we need for creating a presence.
+Klass `Presence` on väga kasulik, sest sellel on põhilised meetodid, mida me vajame presence-i loomiseks.
 
-When you create a class you must specify `clientId` property.
+Klassi loomisel tuleb määrata `clientId` omadus.
 
 ```ts
 const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+  clientId: "514271496134389561" // Näide clientId
 });
 ```
 
-### Properties
+### Omadused
 
-There are three properties available for `Presence` class.
+Klassil `Presence` on kolm omadust.
 
 #### `clientId`
 
-This property is required to make your presence work, because it uses your application id to display its logo and assets. You can get it on your [applications page](https://discordapp.com/developers/applications).
+See omadus on vajalik, et teie presence toimiks, sest see kasutab teie rakenduse id-d oma logo ja varade kuvamiseks. Selle saate oma [rakenduste lehel](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Vähendatud alates 2.2.4*
 
-When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
+Kui määrata `injectOnComplete` väärtuseks `true`, käivitub esimene `UpdateData` sündmus nii `presence.ts` kui ka `iframe.ts` failide puhul alles siis, kui leht on täielikult laetud.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Välistatud alates 2.2.4*
 
-When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
+Kui seadistada `appMode` väärtuseks `true` ja kui presence peaks saatma tühja `PresenceData`, näitab rakendus rakenduse (pilt ja nimi) kasutaja profiilil, mitte midagi asemel.
 
 ## Meetodid
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *Välistatud alates 2.2.4*
 
-Returns a `PresenceData` object of what the presence is displaying.
+Tagastab `PresenceData` objekti selle kohta, mida presence kuvab.
 
 ### `setActivity(PresenceData | Slideshow, Boolean)`
 
-Sets your profile activity according to provided data.
+Seadistab teie profiili aktiivsuse vastavalt esitatud andmetele.
 
-First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
+Esimene parameeter nõuab [`PresenceData`](#presencedata-interface) liidest või [`Slideshow`](/dev/presence/slideshow) klassi, et saada kogu teave, mida soovite oma profiilis kuvada.
 
-Second parameter defines when presence is playing something or not. Always use `true` if you provide timestamps in `PresenceData`.
+Teine parameeter määrab, kas presence mängib midagi või mitte. Kasutage alati `true`, kui esitate ajatempleid `PresenceData`-s.
 
 ### `clearActivity()`
 
-Clears your current activity and the tray title.
+Tühjendab teie praeguse tegevuse ja salve pealkirja.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *Välistatud alates 2.2.3*
 
-> This method works only on Mac OS. 
+> See meetod töötab ainult Mac OS-is. 
 > 
 > {.is-warning}
 
-Sets the tray title on the Menubar.
+Määrab Menubar salve pealkirja.
 
 ### `createSlideshow()`
 
-Creates a new `Slideshow` class.
+Loob uue `Slideshow` klassi.
 
 ```ts
 const slideshow = presence.createSlideshow();
 ```
 
-It is suggested to do this right after creating the `Presence` class:
+Seda soovitatakse teha kohe pärast klassi `Presence` loomist:
 
 ```ts
 const presence = new Presence({
-    clientId: "514271496134389561" // Example clientId
+    clientId: "514271496134389561" // Näide clientId
   }),
   slideshow = presence.createSlideshow();
 ```
 
-You can find the documentation for the `Slideshow` class [here](/dev/presence/slideshow).
+Klassi `Slideshow` dokumentatsiooni leiate [siit](/dev/presence/slideshow).
 
 ### `getStrings(Object)`
 
-An asyncronous method that allows you to get translated strings from extension.
+Asünkroonne meetod, mis võimaldab saada tõlgitud stringid laiendusest.
 
-You must provide `Object` with keys being the key for string, `keyValue` is the string value. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+Sa pead esitama `Object`, kusjuures võtmed on stringi võti, `keyValue` on stringi väärtus. Tõlgitud stringide nimekiri on leitav sellest lõpp-punktist: `https://api.premid.app/v2/langFile/presence/en/`
 
 ```ts
-// Returns `Playing` and `Paused` strings
-// from extension.
+// Tagastab stringid `Playing` ja `Paused`
+// laiendusest.
 const strings = await presence.getStrings({
   play: "general.playing",
   pause: "general.paused"
 });
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.play; // tulemus: Playing
+const pauseString = strings.pause; // tulemus: Paused
 ```
 
-Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
+Alates laienduse v2.2.0 versioonist saate nüüd teatud keele stringid kätte. See töötab hästi koos samuti äsja lisatud `multiLanguage` seadistusvõimalusega.
 
-We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
+Soovitame kasutada järgmist koodi, et see uuendaks automaatselt PresenceData, kui kasutaja muudab valitud keelt;
 
 ```ts
 async function getStrings() {
@@ -112,16 +112,16 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // ID on multiLanguage-i seadistuse ID.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // ID on multiLanguage-i seadistuse ID.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! Järgmine kood peab olema updateData sündmuse sees!
 // The ID is the ID of the multiLanguage setting.
 const newLang = await presence.getSetting("ID").catch(() => "en");
 if (oldLang !== newLang) {
@@ -129,97 +129,97 @@ if (oldLang !== newLang) {
   strings = getStrings();
 }
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+const playString = (await strings).play, // tulemus: Playing
+  pauseString = (await strings).pause; // tulemus: Paused
 ```
 
 ### `getPageletiable(String)`
 
-Returns a variable from the website if it exists.
+Tagastab veebilehe muutuja, kui see on olemas.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Hoiatus: See funktsioon võib põhjustada suurt protsessorikasutust & saidi mahajäämus, kui seda on teostatud liiga palju kordi.**
 
 ```ts
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // See logib "Muutuva sisu"
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Tagastab kasutaja kasutatava laienduse versiooni.
 
 ```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // Logib 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // Logib 2.1.0
 ```
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Tagastab sätte väärtuse.
 
 ```ts
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Asenda pdexID seadistuse id-ga.
+console.log(setting); // See logib seadistuse väärtuse
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Peidab antud sätte.
 
 ```ts
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // Asendab pdexID seadistuse id-ga
 ```
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Näitab antud seadistust (Töötab ainult siis, kui seade oli juba peidetud).
 
 ```ts
-presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); // Asendab pdexID seadistuse id-ga
 ```
 
 ### `getLogs()`
 
-Returns the logs of the websites console.
+Tagastab veebisaitide konsooli logid.
 
 ```ts
 const logs = await presence.getLogs();
-console.log(logs); // This will log the latest 100 logs (in an array).
+console.log(logs); // See logib viimased 100 logi (reas).
 ```
 
-**Note:** Requires `readLogs` to be `true` in the `metadata.json` file.
+**Märkus:** Nõuab, et `readLogs` oleks `true` failis `metadata.json`.
 
 ### `info(String)`
 
-Prints the given message in the console in a format based of the presence in the `info` style.
+Trükib antud teate konsoolis presence-i formaadis, mis põhineb `info` stiilil.
 
 ```ts
-presence.info("Test") // This will log "test" in the correct styling.
+presence.info("Test") // See logib "test" õiges stiilis.
 ```
 
 ### `success(String)`
 
-Prints the given message in the console in a format based of the presence in the `success` style.
+Trükib antud teate konsoolis presence-i formaadis, mis põhineb `success` stiilil.
 
 ```ts
-presence.success("Test") // This will log "test" in the correct styling.
+presence.success("Test") // See logib "test" õiges stiilis.
 ```
 
 ### `error(String)`
 
-Prints the given message in the console in a format based of the presence in the `error` style.
+Trükib antud teate konsoolis presence-i formaadis, mis põhineb `error` stiilil.
 
 ```ts
-presence.error("Test") // This will log "test" in the correct styling.
+presence.error("Test") // See logib "test" õiges stiilis.
 ```
 
 ### `getTimestampsfromMedia(HTMLMediaElement)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Tagastab 2 `snowflake` ajatemplit `Array`-na, mida saab kasutada `startTimestamp` ja `endTimestamp` jaoks.
 
 ```ts
 const timestamps = presence.getTimestampsfromMedia(document.querySelector(".video"));
@@ -227,11 +227,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Märkus:** Antud `String` querySelector-is on näide.
 
 ### `getTimestamps(Number, Number)`
 
-Returns 2 `snowflake` timestamps in an `Array` that can be used for `startTimestamp` and `endTimestamp`.
+Tagastab 2 `snowflake` ajatemplit `Array`-na, mida saab kasutada `startTimestamp` ja `endTimestamp` jaoks.
 
 ```ts
 const video = document.querySelector(".video"),
@@ -240,11 +240,11 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Märkus:** Antud `String` querySelector-is on näide.
 
 ### `timestampFromFormat(String)`
 
-Converts a string with format `HH:MM:SS` or `MM:SS` or `SS` into an integer (Does not return snowflake timestamp).
+Teisendab stringi formaadiga `HH:MM:SS` või `MM:SS` või `SS` täisarvuks (ei tagasta snowflake ajatemplit).
 
 ```ts
 const currentTime = presence.timestampFromFormat(document.querySelector(".video-now").textContent),
@@ -254,18 +254,18 @@ presenceData.startTimestamp = timestamps[0];
 presenceData.endTimestamp = timestamps[1];
 ```
 
-**Note:** The given `String` in querySelector is an example.
+**Märkus:** Antud `String` querySelector-is on näide.
 
-## `PresenceData` Interface
+## `PresenceData` Liides
 
-The `PresenceData` interface is recommended to use when you are using the `setActivity()` method.
+`PresenceData` liideset on soovitatav kasutada, kui kasutate `setActivity()` meetodit.
 
-This interface has following variables, all of them are optional.
+Sellel liidesel on järgmised muutujad, mis kõik on valikulised.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Muutuja</th>
       <th style="text-align:left">Kirjeldus</th>
       <th style="text-align:left">Tüüp</th>
     </tr>
@@ -273,58 +273,58 @@ This interface has following variables, all of them are optional.
   <tbody>
     <tr>
       <td style="text-align:left">details</td>
-      <td style="text-align:left">The first line in your presence, usually used as header.</td>
+      <td style="text-align:left">Esimene rida teie presence-is, mida tavaliselt kasutatakse pealkirjana.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">state</td>
-      <td style="text-align:left">Second line in your presence.</td>
+      <td style="text-align:left">Teine rida teie presence-is.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">startTimestamp</td>
-      <td style="text-align:left">Defines the current time.<br>
-        Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+      <td style="text-align:left">Määratleb praeguse aja.<br>
+        Kasutatakse, kui soovite kuvada, mitu <code>tundi:minutit:sekundit</code> on jäänud.
+          <br>Sa pead oma aja teisendama <code>timestamp</code>-iks või sa saad vale
+          tagasiarvestuse.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">endTimestamp</td>
-      <td style="text-align:left">Defines the full duration.
-        <br>Used if you want to display how much <code>hours:minutes:seconds</code> left.
-          <br>You must convert your time to <code>timestamp</code> or you will get a wrong
-          countdown.
+      <td style="text-align:left">Määrab kogu kestuse.
+        <br>Kasutatakse, kui soovite kuvada, mitu <code>tundi:minutit:sekundit</code> on jäänud.
+          <br>Sa pead oma aja teisendama <code>timestamp</code>-iks või sa saad vale
+          tagasiarvestuse.
       </td>
       <td style="text-align:left"><code>Number</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">largeImageKey</td>
-      <td style="text-align:left">Defines the logo for the presence.</td>
+      <td style="text-align:left">Määrab presence-i logo.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">smallImageKey</td>
-      <td style="text-align:left">Defines the small icon next to presence&apos;s logo.</td>
+      <td style="text-align:left">Määratleb väikese ikooni presence-i logo kõrval.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">smallImageText</td>
-      <td style="text-align:left">Defines the text that will be shown to user when they hover over the small
-        icon.</td>
+      <td style="text-align:left">Määrab teksti, mida näidatakse kasutajale, kui ta viib hiire üle väikse
+        ikooni.</td>
       <td style="text-align:left"><code>String</code>
       </td>
     </tr>
         <tr>
       <td style="text-align:left">buttons</td>
-      <td style="text-align:left">Array of buttons, max 2, label is the button text, and url is the link.</td>
+      <td style="text-align:left">Nuppude array, maksimaalselt 2, label on nupu tekst ja url on link.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code>
       </td>
     </tr>
@@ -333,42 +333,42 @@ This interface has following variables, all of them are optional.
 
 ```ts
 const presenceData: PresenceData = {
-  details: "My title",
-  state: "My description",
+  details: "Minu pealkiri",
+  state: "My kirjeldus",
   largeImageKey: "service_logo",
   smallImageKey: "small_service_icon",
-  smallImageText: "You hovered me, and what now?",
+  smallImageText: "Sa vaatasid mind, ja mis nüüd?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Test button1",
+            label: "Test nupp1",
             url: "https://premid.app/"
         },
         {
-            label: "Test button2",
+            label: "Test nupp2",
             url: "https://premid.app/contributors"
         }
     ]
 };
 ```
 
-## Events
+## Sündmused
 
-Events allow you to detect and handle some changes or calls that were made. You can subscribe to events using the `on` method.
+Sündmused võimaldavad tuvastada ja käsitleda mõningaid muudatusi või tehtud kõnesid. Sündmusi saab tellida meetodi `on` abil.
 
 ```ts
 presence.on("UpdateData", async () => {
-  // Do something when data gets updated.
+  // Teeb midagi, kui andmeid uuendatakse.
 });
 ```
 
-There are few events available:
+Saadaval on vähe sündmusi:
 
 #### `UpdateData`
 
-This event is fired every time the presence is being updated.
+See sündmus käivitub iga kord, kui presence-it uuendatakse.
 
 #### `iFrameData`
 
-Fired when data is received from iFrame script.
+Käivitub, kui iFrame'i skriptist saadakse andmeid.

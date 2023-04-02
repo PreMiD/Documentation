@@ -1,6 +1,6 @@
 ---
 title: Firefox
-description: Getting started with a PreMiD installation on Firefox
+description: PreMiD installimisega Firefoxis alustamine
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,10 +8,10 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:38.328Z
 ---
 
-The installation of the extension is very important as the application can not do anything by itself.
+Laienduse installimine on väga oluline, kuna rakendus ei saa ise midagi teha.
 
 # Lae alla
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
+1. Minge meie allalaadimiste lehele, [klõpsates siia](https://premid.app/downloads).
 2. Choose **Firefox**.
 3. Search for `about:addons`.
 4. Click on the small gear icon in the upper right corner.
@@ -19,7 +19,7 @@ The installation of the extension is very important as the application can not d
 6. Select the file you downloaded recently.
 7. Accept the installation by clicking on **Add**.
 
-> Do not forget to [add the **application**](/install). 
+> Ärge unustage [lisada **rakendust**](/install). 
 > 
 > {.is-warning}
 

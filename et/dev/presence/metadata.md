@@ -10,7 +10,7 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
+Kui soovid avaldata presence-it poes ja laadida seda laienduse kaudu, tuleb luua `metadata.json` fail oma `dist` kausta.
 
 Selle faili näite leiate allpool.
 
@@ -75,7 +75,7 @@ See näide näeb tõesti imelik välja? Ärge muretsege, ei ole nii raske aru sa
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Variable</th>
+      <th style="text-align:left">Muutuja</th>
       <th style="text-align:left">Kirjeldus</th>
       <th style="text-align:left">Tüüp</th>
       <th style="text-align:left">Valikuline</th>
@@ -98,7 +98,7 @@ See näide näeb tõesti imelik välja? Ärge muretsege, ei ole nii raske aru sa
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.</td>
+      <td style="text-align:left">Selle teenuse pealkiri, mida see presence toetab.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
@@ -112,7 +112,7 @@ See näide näeb tõesti imelik välja? Ärge muretsege, ei ole nii raske aru sa
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Teie kirjeldusel peavad olema võtmepaari väärtused, mis näitavad keelt ja kirjeldust selles konkreetses keeles. Tehke kirjeldused keeltega, <i>mis te oskate</i>, meie tõlkijad teevad muudatused teie metaandmefaili. View the category for presence languages for a list. </td>
+      <td style="text-align:left">Teenuse kirjeldus <b>MITTE</b> presence-i. Teie kirjeldusel peavad olema võtmepaari väärtused, mis näitavad keelt ja kirjeldust selles konkreetses keeles. Tehke kirjeldused keeltega, <i>mis te oskate</i>, meie tõlkijad teevad muudatused teie metaandmefaili. Vaadake presence-i keelte kategooriat, et saada nimekiri. </td>
       <td style="text-align:left"><code>Object</code></td>
       <td style="text-align:left"><code>Ei</code></td>
     </tr>
@@ -207,10 +207,10 @@ Kui soovite õppida regulaaravaldisi, siis siin on mõned veebisaidid.
 
 ## Presence-i keeled
 
-PreMiD on polüglottne teenus, mis tähendab, et kasutajate ühendamiseks üle maailma on saadaval mitu keelt. Täielik keelte nimekiri on leitav selle [API lõpp-punkti](https://api.premid.app/v2/langFile/list) kaudu. To customize your presence even more, you can allow users to select their presence display language. Vaata [`multiLanguage`](#multilanguage), et saada rohkem teavet.
+PreMiD on polüglottne teenus, mis tähendab, et kasutajate ühendamiseks üle maailma on saadaval mitu keelt. Täielik keelte nimekiri on leitav selle [API lõpp-punkti](https://api.premid.app/v2/langFile/list) kaudu. Kui soovite oma presence-it veelgi rohkem kohandada, saate lubada kasutajatel valida oma presence-i kuvamise keele. Vaata [`multiLanguage`](#multilanguage), et saada rohkem teavet.
 
 ## Presence-i seaded
-Setup interactive settings so users can customize the presence!
+Seadistage interaktiivsed seaded, et kasutajad saaksid presence-it kohandada!
 ```json
 "settings": [
   {
@@ -247,7 +247,7 @@ Setup interactive settings so users can customize the presence!
 
 #### Sissejuhatus
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. Selleks on vaja kasutada meie stringe [API](https://api.premid.app/v2/langFile/presence/en)-st, teabe saamiseks stringide lisamise kohta klõpsake [siia](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Seade `multiLanguage` võimaldab kasutajatel käsitsi valida keele, milles nad soovivad, et presence näidataks. Selleks on vaja kasutada meie stringe [API](https://api.premid.app/v2/langFile/presence/en)-st, teabe saamiseks stringide lisamise kohta klõpsake [siia](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Seadistamine
 
@@ -259,7 +259,7 @@ Võtme `multiLanguage` saab määrata järgmiselt:
 
 #### Uute stringide lisamine
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+**Märkus:** Kohandatud stringide lisamine on lubatud ainult siis, kui presence-il on rohkem kui 1000 kasutajat.
 
 ##### Projekti kloonimine
 
@@ -307,29 +307,29 @@ Klahvid, mida te ei pidanud seadistama, on automaatselt seadistatud järgmiselt:
 
 ### Meetodid
 
-Use the following methods to get settings info in your presence files:
+Kasutage järgmisi meetodeid, et saada seadete teavet oma presence-i failide kohta:
 #### `getSetting(String)`
-Returns value of setting.
+Tagastab seadistuse väärtuse.
 ```ts
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); //Asenda pdexID seadistuse id-ga.
+console.log(setting); // See logib seadistuse väärtuse
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Peidab antud seadistuse.
 ```ts
-presence.hideSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); //Asenda pdexID seadistuse id-ga
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Näitab antud seadistust (töötab ainult siis, kui seade oli juba peidetud).
 ```ts
-presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); //Asenda pdexID seadistuse id-ga
 ```
 
-## Presence categories
+## Presence-i kategooriad
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Presence-i tegemisel peate määrama kategooria, mille alla presence kuulub. See on koostatud loetelu kategooriatest, mida saate kasutada.
 
 <table>
   <thead>
@@ -343,32 +343,32 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>anime</b></td>
       <td style="text-align:left"><b>Anime</b></td>
-      <td style="text-align:left">Anything related to anime, from forums to video streaming platforms.</td>
+      <td style="text-align:left">Kõik, mis on seotud animega, alates foorumitest kuni video voogedastusplatvormideni.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
       <td style="text-align:left"><b>Mängud</b></td>
-      <td style="text-align:left">Any website that has game related content, such as <code>Kahoot</code> or <code>Skribbl.io</code></td>
+      <td style="text-align:left">Mis tahes veebisait, millel on mänguga seotud sisu, näiteks <code>Kahoot</code> või <code>Skribbl.io</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
       <td style="text-align:left"><b>Muusika</b></td>
-      <td style="text-align:left">These are websites that offer music related content, whether that be streaming or downloading.</td>
+      <td style="text-align:left">Need on veebisaidid, mis pakuvad muusikaga seotud sisu, olgu see siis voogedastus või allalaadimine.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Sotsiaalmeedia</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
+      <td style="text-align:left">Veebilehed, mida kasutatakse sisu loomiseks ja jagamiseks või muudes suhtlusvõrgustikes osalemiseks.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
         <td style="text-align:left"><b>Videod & Otseülekanded</b></td>
-      <td style="text-align:left">Websites that serve the purpose of providing videos and streams.</td>
+      <td style="text-align:left">Veebilehed, mille eesmärk on pakkuda videoid ja voogedastusi.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
       <td style="text-align:left"><b>Muud</b></td>
-      <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
+      <td style="text-align:left">Kõik, mis ei kuulu eespool loetletud konkreetsesse kategooriasse.</td>
     </tr>
   </tbody>
 </table>
