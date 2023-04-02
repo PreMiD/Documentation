@@ -10,31 +10,31 @@ dateCreated: 2021-09-07T01:44:57.665Z
 
 # iFrame'i klass
 
-## Introduction
+## Sissejuhatus
 
-In some scenarios, your presence may need to access elements inside of `iframes`.
+Mõne stsenaariumi korral võib teie presence-il olla vaja juurdepääsu `iframes`-i elementidele.
 
-The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
+Kood, mille kirjutate faili `iframe.ts`, sisestatakse lehe igasse iframe'i.
 
-Like presences, `iframes` have their own classes designed to automatically update data.
+Sarnaselt presence-itega on `iframe`-il oma klassid, mis on mõeldud andmete automaatseks värskendamiseks.
 
 ```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    //Kood läheb siia...
 });
 ```
 
-## Methods
+## Meetodid
 
 ### `send(Object)`
-Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
+Saadab andmeid presence-ile. Selle meetodi kasutamine paneb presence'i viskama sündmuse `iFrameData`.
 
 ### `getUrl()`
-Returns the URL of the `iframe`.
+Tagastab `iframe` URL-i.
 
-## Events
+## Sündmused
 In `iframes`, events work similarly to the way they work in the `presence` class.
 
 ```ts
