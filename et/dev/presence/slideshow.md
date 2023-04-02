@@ -10,89 +10,89 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 # Slaidiseansi klass
 
-## Introduction
+## Sissejuhatus
 
-The `Slideshow` class is used to set multiple `PresenceData` and "slide" through them every x milliseconds (minimum: 5000).
+Klassiga `Slideshow` kasutatakse mitmete `PresenceData` seadistamist ja nende libistamist iga x millisekundi järel (vähemalt: 5000).
 
-See the [`createSlideshow`](/dev/presence/class#createslideshow) method in the [`Presence`](/dev/presence/class) class on how to create a `Slideshow`.
+Vaadake [`createSlideshow`](/dev/presence/class#createslideshow) meetodit jaotises [`Presence`](/dev/presence/class) klass `Slideshow` loomise kohta.
 
-## Properties
+## Atribuudid
 
 ### `currentSlide`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of what the presence/current slide is displaying.
+Tagastab objekti [`PresenceData` ](/dev/presence/class#presencedata-interface) oleku/praeguse slaidi kuvamise.
 
 ```ts
 const currentSlide = slideshow.currentSlide
-console.log(currentSlide.details) // Will console log the details of the PresenceData
+console.log(currentSlide.details) // Logib konsoolil PresenceData üksikasjad
 ```
 
-## Methods
+## Meetodid
 
 ### `addSlide(String, PresenceData, Number)`
 
-Add a new slide to the `Slideshow` according to provided data.
+Lisage vastavalt esitatud andmetele `Slideshow`-i uus slaid.
 
-First parameter requires a `String` that will be used as a unique identifier for the slide.
+Esimene parameeter nõuab `String`-i, mida kasutatakse slaidi kordumatu identifikaatorina.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Teine parameeter nõuab kogu slaidis kuvatava teabe saamiseks [`PresenceData` liidet](/dev/presence/class#presencedata-interface).
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Kolmas parameeter nõuab `Number`-it, mis on selle slaidi kuvamise aeg millisekundites (vähemalt: 5000).
 
 ### `getSlides()`
 
-Returns all slides saved in the `Slideshow` as an `Array` of [`SlideshowSlide`](#slideshowslide-class).
+Tagastab kõik `Slideshow` salvestatud slaidid `Array`-na kujul [`SlideshowSlide`](#slideshowslide-class).
 
 ### `updateSlide(String, PresenceData, Number)`
 
-Updates the slide of the given `id` according to provided data.
+Värskendab antud `id` slaidis vastavalt esitatud andmetele.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to update.
+Esimene parameeter nõuab `String`-i, mis on värskendatava slaidi kordumatu tunnus.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Teine parameeter nõuab kogu slaidis kuvatava teabe saamiseks [`PresenceData` liidet](/dev/presence/class#presencedata-interface).
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Kolmas parameeter nõuab `Number`-it, mis on selle slaidi kuvamise aeg millisekundites (vähemalt: 5000).
 
 ### `hasSlide(String)`
 
-Returns a `Boolean` stating whether the slide is added to the `Slideshow`.
+Tagastab `Boolean`-i, mis näitab, kas slaid on lisatud `Slideshow`-i.
 
 ### `deleteSlide(String)`
 
-Deletes the slide with the given `id` from the `Slideshow`.
+Kustutab slaidi etteantud `id`` Slideshow`-st.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to delete.
+Esimene parameeter nõuab `String`-i, mis on kustutatava slaidi kordumatu tunnus.
 
 ### `deleteAllSlides()`
 
-Deletes all slides from the `Slideshow`.
+Kustutab kõik slaidid `Slideshow`-st.
 
-# SlideshowSlide Class
+# SlideshowSlide-i klass
 
-## Introduction
+## Sissejuhatus
 
-A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
+`SlideshowSlide` on `Slideshow` iga slaidi sisemine esitus.
 
-## Properties
+## Atribuudid
 
 ### `id`
 
-Returns a `String` of the id of the slide.
+Tagastab slaidi Id `String`-ina.
 
 ### `data`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
+Tagastab slaidile salvestatud `PresenceData` objekti [`PresenceData`](/dev/presence/class#presencedata-interface).
 
-## Methods
+## Meetodid
 
 ### `updateData(PresenceData)`
 
-Sets the slides data according to provided data.
+Määrab slaidide andmed vastavalt esitatud andmetele.
 
-You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
+Kogu teabe saamiseks, mida soovite lõpuks oma profiilil kuvada, peate lisama liidese `PresenceData`.
 
 ### `updateInterval(Number)`
 
-Sets the interval of the slide according to provided data.
+Määrab slaidi intervalli vastavalt esitatud andmetele.
 
-You must provide a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Peate esitama `Number`-i, mis on millisekundites (vähemalt: 5000) antud slaidi kuvamise aeg.
