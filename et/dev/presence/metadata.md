@@ -215,30 +215,30 @@ Setup interactive settings so users can customize the presence!
 "settings": [
   {
     "id": "ID",
-    "multiLanguage": true //See https://docs.premid.app/dev/presence/metadata#multilanguage
+    "multiLanguage": true //Vaata https://docs.premid.app/dev/presence/metadata#multilanguage
   },
   {
     "id": "ID",
     "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "icon": "FONTAWESOME IKOON", //Näide "fas fa-info"
+    "value": true //Boolean väärtus teeb sellest sisse/välja lüliti, mille väärtus on vaikimisi väärtus.
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Kui mõni muu seadistus on võrdne selle väärtusega (true/false/0/1/etc.), siis näita seda nuppu.
     },
     "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "icon": "FONTAWESOME IKOON",
+    "value": "\"%song%\" by %artist%", //Sõnumi sisestamine muudab seadistuse sisendiks, kus saab kasutada kohandatud sisendit.
+    "placeholder": "use %song% or %artist%" //Kui sisend on tühi, siis kuvatakse see hallis.
   },
   {
     "id": "ID",
     "title": "DISPLAY TITLE",
-    "icon": "FONTAWESOME ICON",
-    "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "icon": "FONTAWESOME IKOON",
+    "value": 0, //Valikuri vaikeväärtus
+    "values": ["1", "2", "etc."] //See teeb seadistuse selektoriks, kus saab valida, millist soovite
   }
 ]
 ```
@@ -247,63 +247,63 @@ Setup interactive settings so users can customize the presence!
 
 #### Sissejuhatus
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. Selleks on vaja kasutada meie stringe [API](https://api.premid.app/v2/langFile/presence/en)-st, teabe saamiseks stringide lisamise kohta klõpsake [siia](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
 #### Seadistamine
 
-The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
+Seade `multiLanguage` on erijuhtum, see ei nõua `title` ega `icon` ega `value` ega `values` nagu teised seaded, aga see nõuab, et sa seadistasid mõningaid asju lisaks!
 
-The `multiLanguage` key can be set to the following:
+Võtme `multiLanguage` saab määrata järgmiselt:
 
-`true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true`: kasutage seda, kui kavatsete kasutada ainult `general.json` faili ja `<service>.json` faili [Lokaliseerimise hoidla](https://github.com/PreMiD/Localization/tree/master/src/Presence) stringidest. `string`: [Lokaliseerimise hoidla](https://github.com/PreMiD/Localization/tree/master/src/Presence) sees oleva faili nimi ilma laiendita (.json) (välja arvatud `üldine` fail, kuna see laaditakse alati). Loetletakse ainult nii `general` kui ka sisestatud faili ühised keeled. `Array<String>`: kui kasutate rohkem kui ühte faili [Lokaliseerimise hoidla](https://github.com/PreMiD/Localization/tree/master/src/Presence) sees, saate määrata kõik väärtused ritta (välja arvatud `üldine` fail, kuna see laaditakse alati). Loetletakse ainult kõigi failide ühised keeled.
 
-#### Adding new strings
+#### Uute stringide lisamine
 
 **Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
 ##### Projekti kloonimine
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
+1. Avage terminal ja kirjutage `git clone https://github.com/PreMiD/Localization`.
 2. Valige enda valikul kaust.
 3. Avage see oma koodiredaktoris.
 
-##### Creating the file
+##### Faili loomine
 
-1. Go into the `src` folder.
-2. Go into the `Presence` folder.
-3. Make a file named `<service>.json`. (Service is the **name** (not an URL) in lowercase of the service you want to support.)
+1. Mine kausta `src`.
+2. Mine kausta `Presence`.
+3. Tee fail nimega `<service>.json`. (Service on **nimi** (mitte URL), mis on kirjutatud väikse tähtedega ja mida soovite toetada.)
 
-##### Adding the strings
+##### Stringide lisamine
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Iga `string` on `Objekt`, mille nimest algab teenuse nimi ja seejärel nn stringName, mille vahel on punkt.
 
-The stringName is a 1 word identifier of the message.
+StringName on sõnumi 1-sõnaline identifikaator.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+`Objektil` on 2 omadust; `sõnum` ja `kirjeldus`. `message` on tekst, mis tuleb tõlkida. `description` on sõnumi kirjeldus, mis aitab meie tõlkijatel mõista, mida nad tõlkivad.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Märkus:** Ärge lisage duplikaatseid stringisid. (See hõlmab stringid failist `general.json`, kuid mitte muud failid.)
 
-Visualization of the file:
+Faili visualiseerimine:
 
 ```json
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Tõlkimist vajav tekst.",
+    "description": "See selgitab, mis on ülaltoodud sõnum."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Tekst, mis tuleb tõlkida.",
+    "description": "See selgitab, mis on ülaltoodud sõnum."
   }
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Pärast seda, kui olete faili täielikult stringidega teinud, saate luua Pull Request'i [Lokaliseerimise hoidlas](https://github.com/PreMiD/Localization), kirjelduses **peate** lisama lingi oma Pull Request'ile presence-ile, mida on uuendatud nende uute stringide abil [Presence Repository](https://github.com/PreMiD/Presences)-is.
 
-#### Default keys
-The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
+#### Vaikimisi võtmed
+Klahvid, mida te ei pidanud seadistama, on automaatselt seadistatud järgmiselt: `title`: "Language" **Märkus:** See tõlgitakse nende vaikimisi keelde (brauseri keel). `ikoon`: "fa-language" ([Eelvaade](https://fontawesome.com/icons/language)) `väärtus`: **Määrata oma brauseri keel, kui see on olemas (100% tõlgitud), muidu inglise keel.** `väärtused`: **Määrata olemasolevad keeled (keeled, mis on 100% tõlgitud).**
 
-**Note:** These are in no way changeable.
+**Märkus:** Need ei ole kuidagi muudetavad.
 
 ### Meetodid
 
