@@ -1,6 +1,6 @@
 ---
 title: macOS
-description: Getting started with a PreMiD installation on macOS
+description: PreMiD-i installimise alustamine macOS-is
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,38 +8,38 @@ editor: markdown
 dateCreated: 2021-09-07T01:25:45.465Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Enne kui jätkate, veenduge, et teie süsteem vastab kõigile [nõuetele](/install/requirements). 
 > 
 > {.is-info}
 
-The installation of the application is very important as the extension can not do anything by itself.
+Rakenduse installimine on väga oluline, kuna laiendus ei saa ise midagi teha.
 
 # Lae alla
-1. Go to our downloads page by [clicking here](https://premid.app/downloads).
-2. Choose **OS X**.
-3. Extract the archive if necessary.
-4. Open the installer.
-5. A **security alert** may appear if you're installing PreMiD for the first time. If it does, follow the steps under [Allow apps from unidentified developers](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers)
-> This is because we do not have a Code Signing Certificate (CSC). [Support us](https://www.patreon.com/Timeraa) to fund it.{.is-info}
-6. Choose open when prompted.
-7. Grant access to connections through **Firewall** and control **System Events** when prompted.
+1. Minge meie allalaadimiste lehele, [klõpsates siia](https://premid.app/downloads).
+2. Valige **OS X**.
+3. Vajadusel eralda arhiiv.
+4. Avage installer.
+5. **Turvahoiatus** võib ilmuda, kui installite PreMiD esimest korda. Kui see nii on, järgige jaotises [Tuvastamata arendajate rakenduste lubamine](https://docs.premid.app/install/macos#allow-apps-from-unidentified-developers) toodud juhiseid
+> Seda seetõttu, et meil pole koodi allkirjastamise sertifikaati (CSC). Selle rahastamiseks [toetage meid](https://www.patreon.com/Timeraa). {.is-info}
+6. Valige küsimisel avatud.
+7. Andke juurdepääs ühendustele **tulemüüri** kaudu ja kontrollige viipamise korral **süsteemisündmusi**.
 
-The application will start automatically. Check for the symbol in your menu bar.
+Rakendus käivitub automaatselt. Kontrollige oma süsteemses salves sümbolit.
 
-> Do not forget to [add the **extension**](/install). 
+> Ärge unustage [lisada **laiendit**](/install). 
 > 
 > {.is-warning}
 
 ![](https://img.icons8.com/color/2x/mac-logo.png) {.align-abstopright}
 
-## Allow apps from unidentified developers
-Steps for macOS Big Sur (11.0+):
-1. Right click on our installer.
-2. Click open in the dropdown menu.
-3. Click open in popup.
+## Luba tundmatute arendajate rakendusi
+MacOS Big Sur-i (11.0+) toimingud:
+1. Paremklõpsake meie installijal.
+2. Klõpsake rippmenüüs valikut Ava.
+3. Klõpsake hüpikaknas ava.
 
-Steps for older macOS versions:
-1. Open System Preferences.
-2. Go to the Security & Privacy tab.
-3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
-4. Change the setting for 'Allow apps downloaded from' to 'App Store and identified developers' from just 'App Store'.
+Vanemate macOS-i versioonide toimingud:
+1. Ava süsteemi eelistused.
+2. Minge lehele Turvalisus & Privaatsus.
+3. Klõpsake lukul ja sisestage parool või skannige sõrmejälg, et saaksite muudatusi teha.
+4. Muutke seade „Luba rakendustest alla laaditud rakendused” seadeks „App Store ja tuvastatud arendajad” lihtsalt rakendusest „App Store”.
