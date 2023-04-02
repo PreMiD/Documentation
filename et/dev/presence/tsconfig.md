@@ -1,6 +1,6 @@
 ---
 title: TypeScripti seadistamine
-description: A little helper for TypeScript
+description: Väike abimees TypeScripti jaoks
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,15 +10,15 @@ dateCreated: 2021-09-07T01:45:10.473Z
 
 # TypeScripti seadistamine
 
-## Introduction
+## Sissejuhatus
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
+Tööruumi alla laadides ja lahti pakkides näete juur- ja olekukaustades faili nimega `tsconfig.json`, seda faili kasutatakse **TypeScripti ** koostamisel. See on teie jaoks juba konfigureeritud, nii et ärge muretsege selle pärast.
 
-We just want to describe some settings that you should know.
+Tahame lihtsalt kirjeldada mõnda seadet, mida peaksite teadma.
 
-## Root Configuration
+## Juure seadistamine
 
-In the root configuration file you will see something like this.
+Juurkonfiguratsiooni failis näete midagi sellist.
 
 ```json
 {
@@ -37,21 +37,21 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property                   | Kirjeldus                                                                                                                                                           |
-|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
-| module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
-| target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
-| removeComments             | Removing comments from compiled files.                                                                                                                              |
-| noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
-| noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement.                                                                                                            |
-| noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
-| noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
-| inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
-| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
-| esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
+| Vara                       | Kirjeldus                                                                                                                                                                       |
+|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **compilerOptions**        | Kasutatakse kompilaatori seadistamiseks, enamik atribuute asub siin.                                                                                                            |
+| module                     | Selle kohta saate lisateavet [siit](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                 |
+| target                     | Määrab teie koostatava JavaScripti versiooni.                                                                                                                                   |
+| removeComments             | Kommentaaride eemaldamine kompileeritud failidest.                                                                                                                              |
+| noEmitOnError              | Ärge väljastage väljundeid, kui teatati vigadest.                                                                                                                               |
+| noFallthroughCasesInSwitch | Teatage vigadest juhtumite korral ülemineku avalduses.                                                                                                                          |
+| noUnusedLocals             | Kasutamata kohalike vigadest teatamine.                                                                                                                                         |
+| noUnusedParameters         | Kasutamata parameetrite vigadest teatamine.                                                                                                                                     |
+| inlineSourceMap            | Lisab lähikaardi                                                                                                                                                                |
+| typeRoots                  | Selle kohta saate lisateavet [siit](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                                 |
+| esModuleInterop            | Emitendi __importStar ja __importDefault abistajad käitamisaja Babeli ökosüsteemi ühilduvuse jaoks ja lubage tüübisüsteemi ühilduvuse jaoks --allowSyntheticDefaultImports. |
 
-## Presence Configuration
+## Presence-i seadistamine
 
 ```json
 {
@@ -62,8 +62,8 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property            | Kirjeldus                                                                              |
-|:------------------- |:-------------------------------------------------------------------------------------- |
-| **extends**         | Used for extending the base `tsconfig` file for various tasks.                         |
-| **compilerOptions** | See [**Root Configuration**](/dev/presence/tsconfig#root-configuration) for more info. |
-| outDir              | Defines the output directory for compiled files.                                       |
+| Vara                | Kirjeldus                                                                                           |
+|:------------------- |:--------------------------------------------------------------------------------------------------- |
+| **extends**         | Kasutatakse erinevate ülesannete jaoks `tsconfig` -faili laiendamiseks.                             |
+| **compilerOptions** | Lisateavet leiate jaotisest [**Juurekonfiguratsioon** ](/dev/presence/tsconfig#root-configuration). |
+| outDir              | Määrab kompileeritud failide väljundkataloogi.                                                      |
