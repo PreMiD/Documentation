@@ -1,6 +1,6 @@
 ---
-title: Installation
-description: How to install PreMiD
+title: Paigaldamine
+description: Kuidas installida PreMiDi
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,23 +8,23 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Enne kui jätkate, veenduge, et teie süsteem vastab kõigile [nõuetele](/install/requirements). 
 > 
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**! 
+> ** On vaja** installida **mõlemad**** rakendused **ja laiendus****! 
 > 
 > {.is-warning}
 
-**Choose your operating system:**
-- [Windows *7 or above*](/install/windows)
-- [macOS *10.11 or above*](/install/macos)
-- [Linux *kernel with v2.x or above*](/install/linux)
+**Valige oma operatsioonisüsteem:**
+- [Windows *7 või uuem*](/install/windows)
+- [macOS *10.11 või uuem*](/install/macos)
+- [Linuxi *kernel versiooniga v2.x või uuem*](/install/linux)
 {.links-list}
 
-**Choose your browser:**
-- [Chromium *v76 or above*](/install/chromium)
-- [Firefox *v69 or above*](/install/firefox)
+**Valige oma brauser:**
+- [Chromium *v76 või uuem*](/install/chromium)
+- [Firefox *v69 või uuem*](/install/firefox)
 {.links-list}
 
 ![](https://a.icons8.com/ajlQdsfa/FZhYWV/svg.svg) {.align-abstopright}
