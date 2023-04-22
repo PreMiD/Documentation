@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów
-description: Everything to solve your problem
+description: Wszystko, by rozwiązać twój problem
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,18 +8,18 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> Upewnij się, że masz zainstalowane rozszerzenie **i** aplikacji! 
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+Zawarte na tej stronie:
+1. [Ogólne rozwiązywanie problemów](https://docs.premid.app/troubleshooting#general)
+2. [Rozwiązywanie problemów na Linux](https://docs.premid.app/troubleshooting#linux)
+3. [Rozwiązywanie problemów na MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
+# Ogólne rozwiązywanie problemów
 ### Odśwież stronę
 Możesz również nacisnąć <kbd>CTRL + R</kbd>/<kbd>F5</kbd> (Windows) lub <kbd>CMD + R</kbd> (MacOS) na klawiaturze zamiast szukać przycisku odświeżania.
 
@@ -31,43 +31,43 @@ PreMiD **nie** działa w wersji przeglądarkowej Discorda, musisz pobrać aplika
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### Upewnij się, że Discord NIE działa jako administrator
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Naprawdę ważne. RPC Discorda nie zadziała, jeśli uruchomisz Discorda jako administrator.
 
 ### Czy używasz aktywności z ustawieniami?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+Wiele aktywności (w tym `Twitch` i `SoundCloud`) jest dotkniętych przez problem rozszerzenia. Powoduje on, że rozszerzenie nie przechwytuje domyślnych wartości ustawień.
 
-To solve this, all you have to do is toggle the topmost setting:
+Aby rozwiązać ten problem, wystarczy przełączyć najwyższe ustawienie:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
 ### Uruchom ponownie przeglądarkę
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) lub <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) również dobrze się spisuje. (Oczywiście musisz uruchomić ponownie swoją przeglądarkę.)
 
 ### Uruchom ponownie PreMiD (aplikacja)
 <img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+Następnie uruchom ponownie PreMiD.
 
 ### Odśwież/uruchom ponownie Discorda
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+Naciśnij klawisze <kbd>CTRL + R</kbd> (Windows) lub <kbd>CMD + R</kbd> (MacOS) na klawiaturze albo ręcznie uruchom ponownie Discorda.
 
-### Sprawdź, czy na komputerze działa antywirus lub zapora
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
+### Sprawdź czy masz uruchomiony program antywirusowy lub zaporę sieciową na swoim komputerze
+Czasami programy antywirusowe i zapory blokują aplikacje, które tworzą lub hostują serwery lub po prostu łączą się z Internetem. Używamy lokalnego serwera do odbierania i przekazywania danych między naszą aplikacją i rozszerzeniem, więc jeśli zablokujesz zdolność aplikacji do przekazywania danych, prawdopodobnie nie będziesz mógł użyć PreMiD.
 
 ### Wyłącz dodatki
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+Wyłącz wszystkie dodatki i sprawdź, czy działa. Jeśli tak, spróbuj włączyć swoje dodatki krok po kroku i powiedz nam, który dodatek zepsuł PreMiD.
 
 ### Uruchom ponownie komputer
-I hope you know how to restart a computer.
+Mam nadzieję, że wiesz jak uruchomić ponownie komputer.
 
 ### Ponowna instalacja PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+Czasami jest coś nie tak z plikami... Poradniki dotyczące instalacji można znaleźć [tutaj](/install).
 
 ### Ręczne usuwanie
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+Windows: Napisz `%appdata%` w eksploratorze plików i usunć folder `PreMiD`. MacOS:`~/users/USER/~Library/Application Support/`i usuń katalog `PreMiD``.
 
 ### McAfee wykrył PreMiD jako wirus (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+Jest to fałszywy alarm ze strony McAfee i zgłosiliśmy im ten problem, na razie możesz wykluczyć PreMiD ze skanowania, wykonując następujące kroki:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Jeżeli nie czujesz się dzielny podczas podejmowania podanych kroków, utwórz bilet na [#support](https://discord.premid.app/) i jeden z naszych Agentów Pomocy będzie Ci w stanie pomóc! 
 > 
 > {.is-warning}
 
@@ -78,33 +78,33 @@ This is a false positive from McAfee and we have reported the issue to them, for
 5. Po przywróceniu możesz zamknąć wyskakujące okno "Elementy w kwarantannie", a następnie ponownie naciśnij ikonę ustawień w prawym górnym rogu.
 6. Kliknij "Skanowanie w czasie rzeczywistym" (Trzecie od góry).
 7. Rozwiń i kliknij "Dodaj plik".
-8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+8. Wpisz "%appdata%" w pasku adresu URL menedżera plików i naciśnij Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. Otwórz folder "PreMiD", wybierz plik "PreMiD.exe" i kliknij przycisk Otwórz. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
 10. McAfee powinno teraz ignorować nasz plik. Po prostu uruchom aplikację i wszystko powinno być gotowe.
 
-### PreMiD status bugged on Discord
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+### Status PreMiD buguje się na Discord
+Nie martw się. Naciśnij skrót klawiszowy <kbd>CTRL+R</kbd> (Windows) lub <kbd>CMD+R</kbd> (MacOS) skupiając się na oknie Discord by go odświeżyć.
 
 <a name="linux"></a>
 
-# Linux troubleshooting
-### Ubuntu/Debian based distros
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+# Rozwiązywanie problemów na Linux
+### Dystrybucje oparte na Ubuntu/Debian
+Jeśli pobrałeś Discorda przez Snapcraft, RPC nie będzie działać. Musisz odinstalować wersję Snapcraft wykonując polecenie `sudo snap remove discord` w terminalu, pobierz **[Discord w wersji na Linux](https://discordapp.com/api/download?platform=linux)** (**[lub Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), następnie przejdź do katalogu do którego pobrałeś Discord (często `$HOME/Pobrane`), następnie zainstaluj pakiet używając `sudo dpkg -i discord*.deb`. Jeżeli AppImage nie działa, należy rozważyć sprawdzenie naszych innych pakietów przez **[ten link](https://packagecloud.io/premid/linux)**.
 
-### Arch Linux based distros
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+### Dystrybucje oparte na Arch Linux
+Dystrybucje oparte na Arch Linux powinny używać pakietu AUR (Arch User Repository) o nazwie <code>premid</code> lub <code>premid-git</code> (<em x-id="3">OSTRZEŻENIE: To repozytorium buduje PreMiDa z kodu źródłowego</em>). Jeśli nie chcesz instalować menadżera AUR (yay itd.), możesz sprawdzić AppImage który pobierany jest z naszego <strong x-id="1"><a href="https://github.com/premid/linux/releases">Repozytorium Linux</a></strong>.
+<em x-id="3">Ostrzeżenie: pakiet w repozytorium <strong x-id="1">AUR</strong> nie jest utrzymywany przez nas (jako organizację PreMiD), ale przez innych ludzi.</em>
 
-### Port binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+### Przydzielanie portów
+Powinieneś wiedzieć, że <strong x-id="1">PreMiD</strong> łączy się z portem <strong x-id="1">3020</strong>. Jest to konieczne do komunikacji między Rozszerzeniem a Aplikacją. Jeżeli <strong x-id="1">PreMiD</strong> wyświetla błąd na temat tego portu, powinieneś sprawdzić czy coś innego nie jest powiązane z portem 3020 uruchamiając <code>sudo lsof -i:3020</code> lub <code>sudo netstat -tnlp | grep :3020</code> w terminalu. Jeśli jakiż proces jest do niego powiązany, powinieneś upewnić się by zwolnić ten port i spróbować uruchomić ponownie <code>PreMiD</code>.
 
-### PreMiD's AppImage doesn't launch at login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
-1. Make a file named <strong x-id="1">rc.local</strong> in the <code>/etc</code> directory.
-2. Open this file in your favourite editor and paste given code with changing some things:
+### PreMiD AppImage nie uruchamia się przy logowaniu
+Jak stwierdziliśmy w naszym **repozytorium Linux**, AppImage nie może być uruchamiane przy logowaniu. Możesz dodać go ręcznie do autostartu wykonując te kroki:
+1. Utwórz plik o nazwie <strong x-id="1">rc.local</strong> w katalogu <code>/etc</code>.
+2. Otwórz plik w twoim ulubionym edytorze i wklej podany kod zmieniając kilka rzeczy:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# Wymagane aby było uruchomione za pomocą /bin/bash (jeśli używasz zsh itp. you can change it.)
 
 # Example: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
@@ -116,7 +116,7 @@ exit 0
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
+# Rozwiązywanie problemów na MacOS
 ### Error creating directory
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
