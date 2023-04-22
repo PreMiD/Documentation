@@ -26,7 +26,7 @@ PreMiD jest szybki i łatwy w instalacji. Powinieneś być gotowy i działać be
 
 # Deweloperzy
 
-[Getting Started](/dev) for PreMiD development is your first step before coding some things.
+[Pierwsze kroki](/dev) dla rozwoju PreMiD to twój pierwszy krok przed programowaniem rzeczy.
 
 - :computer: [API](/dev/api): Uzyskuj dostęp do zasobów i wykonuj działania za pomocą PreMiD API.
 - :wrench: [Rozwój Presence](/dev/presence): Dowiedz się, jak korzystać z naszego systemu Presence
