@@ -12,39 +12,39 @@ dateCreated: 2021-09-07T01:44:57.665Z
 
 ## Wprowadzenie
 
-In some scenarios, your presence may need to access elements inside of `iframes`.
+W niektórych scenariuszach Twój presence może wymagać dostępu do elementów wewnątrz `iframes`.
 
-The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
+Kod, który zapisujesz wewnątrz pliku `iframe.ts` jest wybierany do każdego iframe na stronie.
 
-Like presences, `iframes` have their own classes designed to automatically update data.
+Podobnie jak presence, `iframes` mają własne klasy zaprojektowane do automatycznej aktualizacji danych.
 
 ```ts
 let iframe = new iFrame();
 
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Kod idzie tutaj...
 });
 ```
 
 ## Metody
 
 ### `send(Object)`
-Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
+Wysyła dane do presence. Użycie tej metody sprawi, że presence będzie wydarzeniem `iFrameData`.
 
 ### `getUrl()`
-Returns the URL of the `iframe`.
+Zwraca adres URL `iframe`.
 
 ## Wydarzenia
-In `iframes`, events work similarly to the way they work in the `presence` class.
+W `iframe` zdarzenia działają podobnie jak w klasie `presence`.
 
 ```ts
 iframe.on("UpdateData", async () => {
-    // Code goes here...
+    // Kod idzie tutaj...
 });
 ```
 
-Here is a list of all of the events:
+Oto lista wszystkich wydarzeń:
 
 #### `UpdateData`
 
-This event is fired every time the iframe is being updated.
+To zdarzenie jest uruchamiane za każdym razem, gdy element iframe jest aktualizowany.
