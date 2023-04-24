@@ -11,17 +11,17 @@ dateCreated: 2021-09-07T01:44:53.883Z
 <div align="center">
     <img src="https://github.com/PreMiD.png?size=2048" width="128px" style="max-width:100%;">
     <h3 style="font-size: 2rem; margin-bottom: 0">Wytyczne dotyczące presence</h3>
-    <h4 style="margin-top: 0">Revision 3</h4>
+    <h4 style="margin-top: 0">Wersja 3</h4>
     <br />
 </div>
 
 # Wytyczne
 
-When publishing Presences to the [Presences repository](https://github.com/PreMiD/Presences/), we require you to follow a set of guidelines. Dla niektórych te ścisłe zasady mogą wydawać się surowe. However, the implementation of these rulesets will keep us and the users from running into any issues.
+Podczas publikowania Presences do [naszego repozytorium GitHub](https://github.com/PreMiD/Presences), wymagamy od Ciebie przestrzegania zbioru wytycznych. Dla niektórych te ścisłe zasady mogą wydawać się surowe. Jednak wdrożenie tych zestawów reguł powstrzyma nas i użytkowników od problemów.
 
 # Tworzenie
 
-The general rules of presence development are as follows:
+Ogólne zasady rozwijania statusów są następujące:
 
 - Statusy **muszą** być powiązane z wybraną witryną.
 - Statusy **nie mogą** być tworzone dla nielegalnych stron internetowych. (np. stresory, handel narkotykami, dziecięca pornografia, itp.)
