@@ -10,13 +10,13 @@ dateCreated: 2020-12-25T00:44:42.803Z
 
 # Klasa Slideshow
 
-## Introduction
+## Wprowadzenie
 
-The `Slideshow` class is used to set multiple `PresenceData` and "slide" through them every x milliseconds (minimum: 5000).
+Klasa `Slideshow` jest używana do ustawiania wielu `PresenceData` i "przesuwania" przez nie co x milisekund (minimum: 5000).
 
-See the [`createSlideshow`](/dev/presence/class#createslideshow) method in the [`Presence`](/dev/presence/class) class on how to create a `Slideshow`.
+Zobacz metodę [`createSlideshow`](/dev/presence/class#createslideshow) w klasie [`Presence`](/dev/presence/class) o tym, jak utworzyć klasę.
 
-## Properties
+## Właściwości
 
 ### `currentSlide`
 
@@ -27,7 +27,7 @@ const currentSlide = slideshow.currentSlide
 console.log(currentSlide.details) // Will console log the details of the PresenceData
 ```
 
-## Methods
+## Metody
 
 ### `addSlide(String, PresenceData, Number)`
 
@@ -67,32 +67,32 @@ First parameter requires a `String` that is the unique identifier of the slide y
 
 Deletes all slides from the `Slideshow`.
 
-# SlideshowSlide Class
+# Klasa SlideshowSlide
 
-## Introduction
+## Wprowadzenie
 
-A `SlideshowSlide` is the internal representation of each slide in a `Slideshow`.
+`SlideshowSlide` jest wewnętrzną reprezentacją każdego slajdu w `Slideshow`.
 
-## Properties
+## Właściwości
 
 ### `id`
 
-Returns a `String` of the id of the slide.
+Zwraca `String` identyfikatora slajdu.
 
 ### `data`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of the `PresenceData` saved in the slide.
+Zwraca obiekt [`PresenceData`](/dev/presence/class#presencedata-interface) o tym, co jest wyświetlane.
 
-## Methods
+## Metody
 
 ### `updateData(PresenceData)`
 
-Sets the slides data according to provided data.
+Ustawia dane slajdów zgodnie z podanymi danymi.
 
-You must provide a `PresenceData` interface to get all information that you ultimately want to display in your profile.
+Musisz podać interfejs `PresenceData`, aby uzyskać wszystkie informacje, które chcesz wyświetlić w profilu.
 
 ### `updateInterval(Number)`
 
-Sets the interval of the slide according to provided data.
+Ustawia interwał slajdu zgodnie z podanymi danymi.
 
-You must provide a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Musisz podać `Number`, który jest ilością czasu w milisekundach (minimalnie: 5000), który ten slajd wyświetli.
