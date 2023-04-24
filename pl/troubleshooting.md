@@ -104,27 +104,27 @@ Jak stwierdziliśmy w naszym **repozytorium Linux**, AppImage nie może być uru
 2. Otwórz plik w twoim ulubionym edytorze i wklej podany kod zmieniając kilka rzeczy:
 ```bash
 #!/bin/bash
-# Wymagane aby było uruchomione za pomocą /bin/bash (jeśli używasz zsh itp. you can change it.)
+# Wymagane aby było uruchomione za pomocą /bin/bash (jeśli używasz zsh itp. możesz to zmienić.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
-<directory to appimage>/PreMiD*.AppImage
+# Na przykład: /home/PreMiD/PreMiD*.AppImage
+<ścieżka do appimage>/PreMiD*.AppImage
 
 exit 0
 ```
-3. Save file and chmod it as executable `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+3. Zapisz plik i zaznacz go jako plik wykonywalny za pomocą `sudo chmod a+x /etc/rc.local`.
+4. Uruchom ponownie komputer i PreMiD AppImage powinien zostać uruchomiony po zalogowaniu.
 
 <a name="macos"></a>
 
 # Rozwiązywanie problemów na MacOS
-### Error creating directory
+### Błąd podczas tworzenia katalogu
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
-2. Right-click on blank space and click **Create folder**.
-3. To this folder assign `PreMiD` name (remember about upper-cased letters).
-4. Open installer again.
+Jeżeli widzisz ten błąd, znaczy to, że twoje konto nie posiada uprawnień Administratora, i musisz utworzyć folder manualnie poprzez wykonanie nastepujących kroków:
+1. Otwórz wyszukiwanie folderów i otwórz **Aplikacje**.
+2. Kliknij prawym przyciskiem myszy na puste miejsce i kliknij **Stwórz folder**.
+3. Przypisz nazwę `PreMiD` do tego folderu (nie zapomnij o dużych literach).
+4. Uruchom instalator ponownie.
 
 # To nie rozwiązało mojego problemu
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+Prosimy otworzyć zgłoszenie w [#support](https://discord.premid.app/).
