@@ -1,6 +1,6 @@
 ---
 title: Wytyczne dotyczące presence
-description: Rules that all presence developers must follow to have their presence added.
+description: Reguły, których muszą przestrzegać wszyscy twórcy Presence, aby ich Presence zostały zaakceptowane.
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -25,10 +25,10 @@ Ogólne zasady rozwijania statusów są następujące:
 
 - Statusy **muszą** być powiązane z wybraną witryną.
 - Statusy **nie mogą** być tworzone dla nielegalnych stron internetowych. (np. stresory, handel narkotykami, dziecięca pornografia, itp.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
-- You need to have a proper file structure, drafts are **not** allowed.
-- Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
+- Struktura plików musi być czysta i uporządkowana, nie powinna zawierać plików, które nie są wymagane. (np. foldery vscode i git, pliki graficzne i tekstowe itp.)
+- Musisz mieć odpowiednią strukturę plików, wersje robocze **są niedozwolone**.
+- Statusy dla stron z ((`.onion` TLD)) lub stron z darmowymi domenami/hostami (np. `.TK` [wszystkie bezpłatne domeny Freenom], `.RF`, `.GD`, itp.) są **niedozwolone**, można zrobić wyjątek, jeśli zostanie przedstawiony dowód, że zapłacono za domenę.
+- Domena musi mieć conajmniej 2 miesiące.
 - Status kierowane na wewnętrzne strony przeglądarki (takie jak Chrome Web Store, `chrome://`, strony `about:`, itp.) **są niedozwolone**, ponieważ wymagają włączenia eksperymentalnej flagi po stronie użytkowników i mogą potencjalnie spowodować uszkodzenie ich przeglądarki.
 - Statusy wspierające tylko jedną sub-domenę **są niedozwolone** ponieważ mogą nie działać na innych stronach (takich jak strona główna), wyjątek mogą stanowić strony kontaktowe lub z polityką prywatności (czyli takie które nie są często używae) lub strony gdzie inna zawartość jest niezwiązana z sub-domeną. (np. strony wiki)
 - Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
