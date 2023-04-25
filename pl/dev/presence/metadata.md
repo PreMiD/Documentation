@@ -1,6 +1,6 @@
 ---
 title: Metadata.json
-description: Contains basic data about the Presence
+description: Zawiera podstawowe dane o Presence
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,13 +10,12 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
+Jeśli chcesz opublikować swój status Presence w sklepie i załadować go przez rozszerzenie, powinieneś utworzyć plik `metadata.json` w folderze `dist`.
 
-An example of that file can be found below.
+Przykład podanego profilu może być znaleziony poniżej.
 
 ```json
 {
-  "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
     "name": "USER",
     "id": "ID"
@@ -37,8 +36,8 @@ An example of that file can be found below.
   "logo": "URL",
   "thumbnail": "URL",
   "color": "#45A8FC",
-  "category": "CATEGORY",
   "tags": ["TAG1", "TAG2"],
+  "category": "CATEGORY",
   "iframe": false,
   "settings": [
     {
@@ -68,9 +67,9 @@ An example of that file can be found below.
 }
 ```
 
-## Understanding the metadata.json
+## Zrozumienie metadata.json
 
-That example looks really strange, huh? Don't worry, its not that hard to understand what each variable is for.
+Ten przykład wygląda naprawdę dziwnie, prawda? Nie martw się, nie jest trudno zrozumieć, do czego służy każda zmienna.
 
 <table>
   <thead>
@@ -78,29 +77,28 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
       <th style="text-align:left">Zmienna</th>
       <th style="text-align:left">Opis</th>
       <th style="text-align:left">Typ</th>
-      <th style="text-align:left">Optional</th>
+      <th style="text-align:left">Opcjonalny</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"><b>author</b></td>
       <td style="text-align:left">Powinien zawierać obiekt o <code>nazwie</code> i <code>id</code> współautora. User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile. User <code>id</code> can be copied from Discord by enabling developer
-        mode and right-clicking on your profile.</td>
+        mode and right-clicking on your profile. <code>Id</code> użytkownika można skopiować z Discorda włączając tryb programisty i klikając prawym przyciskiem myszy na swój profil.</td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>contributors</b></td>
-      <td style="text-align:left">Should contain an Object with the <code>name</code> and <code>id</code> of the contributor. <code>Id</code> użytkownika można skopiować z Discorda włączając tryb programisty i klikając prawym przyciskiem myszy na swój profil. <code>Id</code> użytkownika można skopiować z Discorda włączając tryb programisty i klikając prawym przyciskiem myszy na swój profil.</td>
+      <td style="text-align:left">Powinien zawierać obiekt o <code>nazwie</code> i <code>id</code> współautora. <code>Id</code> użytkownika można skopiować z Discorda włączając tryb programisty i klikając prawym przyciskiem myszy na swój profil. <code>Id</code> użytkownika można skopiować z Discorda włączając tryb programisty i klikając prawym przyciskiem myszy na swój profil.</td>
       <td style="text-align:left"><code>Array&lt;Object&gt;</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Tak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>service</b></td>
-      <td style="text-align:left">The title of the service that this presence supports.</td>
+      <td style="text-align:left">Tytuł usługi wspieranej przez ten presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>altnames</b></td>
@@ -112,35 +110,35 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b></td>
-      <td style="text-align:left">Description of the service <b>NOT</b> the presence. Twój opis musi zawierać kluczowe wartości wskazujące język oraz opis w tym konkretnym języku. Twórz opisy z językami <i>, które znasz</i>, nasi tłumacze wprowadzą zmiany do twojego pliku metadanych. Wyświetl kategorię języków Presence dla listy. </td>
+      <td style="text-align:left">Opis usługi <b>NOT</b> obecności. Twój opis musi zawierać kluczowe wartości wskazujące język oraz opis w tym konkretnym języku. Twórz opisy z językami <i>, które znasz</i>, nasi tłumacze wprowadzą zmiany do twojego pliku metadanych. Wyświetl kategorię języków Presence dla listy. </td>
       <td style="text-align:left"><code>Object</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>url</b></td>
-      <td style="text-align:left">URL of the service.<br>
-      <b>Example:</b><code>vk.com</code><br>
-      <b>This url must match the url of the website as it will be used to detect wherever or not this is the website to inject the script to. Może to być użyte jako tablica tylko wtedy, gdy istnieje więcej niż jeden adres URL.</b></td>
+      <td style="text-align:left">URL usługi<br>
+      <b>Przykład:</b><code>vk.com</code><br>
+      <b>Podany URL musi być zgodny z adresem URL strony, bo będzie używany by wykryć czy to jest ta strona do której należy zainicjować skrypt. Może to być użyte jako tablica tylko wtedy, gdy istnieje więcej niż jeden adres URL.</b></td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>regExp</b></td>
-      <td style="text-align:left">A regular expression string used to match urls.</td>
+      <td style="text-align:left">Ciąg wyrażenia regularnego używany do dopasowywania adresów URL.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>Yes</code></td>
+      <td style="text-align:left"><code>Tak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>version</b></td>
       <td style="text-align:left">Wersja twojego presence.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>logo</b></td>
       <td style="text-align:left">Link do loga serwisu.</td>
       <td style="text-align:left"><code>String</code></td>
-      <td style="text-align:left"><code>No</code></td>
+      <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>thumbnail</b></td>
@@ -157,31 +155,31 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
     </tr>
     <tr>
       <td style="text-align:left"><b>category</b></td>
-      <td style="text-align:left">A string used to represent the category the presence falls under.</td>
+      <td style="text-align:left">Tablica z tagami, pomoże użytkownikom wyszukać Twoje presence na stronie.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tags</b></td>
-      <td style="text-align:left">Array with tags, they will help users to search your presence on the website.</td>
+      <td style="text-align:left">Ciąg używany do reprezentowania kategorii, pod którą znajduje się presence.</td>
       <td style="text-align:left"><code>String, Array&lt;String&gt;</code></td>
       <td style="text-align:left"><code>Nie</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iframe</b></td>
-      <td style="text-align:left">Defines whether <code>iFrames</code> are used</td>
+      <td style="text-align:left">Określa, czy użyto <code>iFrames</code></td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Tak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>iFrameRegExp</b></td>
-      <td style="text-align:left">A regular expression selector that selects iframes to inject into.</td>
+      <td style="text-align:left">Selektor wyrażenia regularnego, który wybiera iframes do wybrania.</td>
       <td style="text-align:left"><code>String</code></td>
       <td style="text-align:left"><code>Tak</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>readLogs</b></td>
-      <td style="text-align:left">Defines whether the extension should be reading logs.</td>
+      <td style="text-align:left">Określa, czy rozszerzenie powinno odczytywać logi.</td>
       <td style="text-align:left"><code>Boolean</code></td>
       <td style="text-align:left"><code>Tak</code></td>
     </tr>
@@ -194,24 +192,24 @@ That example looks really strange, huh? Don't worry, its not that hard to unders
   </tbody>
 </table>
 
-## Regular Expressions
+## Wyrażenia regularne
 
-If you want to learn regular expressions, here are a few websites.
+Jeśli chcesz nauczyć się regularnych wyrażeń, oto kilka stron internetowych.
 
-#### Learning
+#### Nauka
 
 • [Quick Starter Video](https://youtu.be/sXQxhojSdZM) • [RegexOne](https://regexone.com/) • [Regular Expressions Info](https://www.regular-expressions.info/tutorial.html)
 
-#### Testing
+#### Testowanie
 
 • [Regexr](https://regexr.com/) • [Regex101](https://regex101.com/)
 
-## Presence languages
+## Języki - Presence
 
-PreMiD is a polyglot service, meaning that there are multiple languages available to connect users around the globe. A full list of languages can be found with this [API endpoint](https://api.premid.app/v2/langFile/list). To customize your presence even more, you can allow users to select their presence display language. See [`multiLanguage`](#multilanguage) for more.
+PreMiD to usługa wielojęzyczna, co oznacza, że istnieje wiele języków, które łączą użytkowników na całym świecie. Pełna lista języków znajduje się w tym [punkcie końcowym API](https://api.premid.app/v2/langFile/list). By dostosować swój presence jeszcze bardziej możesz pozwolić użytkownikom na wybranie wyświetlanego języka. Przejdź do [`multiLanguage`](#multilanguage) po więcej. Zobacz [`multiLanguage`](#multilanguage), aby dowiedzieć się więcej.
 
-## Presence settings
-Setup interactive settings so users can customize the presence!
+## Ustawienia - Presence
+Skonfiguruj ustawienia interaktywne, aby użytkownicy mogli dostosować swój status Presence!
 ```json
 "settings": [
   {
@@ -222,45 +220,45 @@ Setup interactive settings so users can customize the presence!
     "id": "ID",
     "title": "DISPLAY TITLE",
     "icon": "FONTAWESOME ICON", //Example "fas fa-info"
-    "value": true //Boolean value will make it an on/off switch with the value as the default value
+    "value": true // Wartość boolean stworzy to jako przełącznik włącz/wyłącz z obecną wartością z wartością dowolną
   },
   {
     "id": "ID",
     "if": {
-      "ID": true //If another setting equals this value (true/false/0/1/etc.) then show this button
+      "ID": true //Jeżeli kolejne ustawienie równa się wartości (true/false/0/1/etc.) wtedy pokaż ten przycisk
     },
     "title": "DISPLAY TITLE",
     "icon": "FONTAWESOME ICON",
-    "value": "\"%song%\" by %artist%", //Putting in a string will make the setting an input one, where you can use a custom input.
-    "placeholder": "use %song% or %artist%" //When input is empty it will show this grayed out
+    "value": "\"%song%\" by %artist%", // Wkładanie wartości  spowoduje, że ustawienie zmieni się w wejściowe, gdzie będziesz mógł użyć dowolne wejście.
+    "placeholder": "use %song% or %artist%" // Jeżeli wejściówka będzie pusta, będzie to  wyszarzone 
   },
   {
     "id": "ID",
     "title": "DISPLAY TITLE",
     "icon": "FONTAWESOME ICON",
     "value": 0, //Default value of the selector
-    "values": ["1", "2", "etc."] //Will make the setting a selector where you select which one you want
+    "values": ["1", "2", "etc."] // Zrobi ustawienie selektorem, gdzie ty wybierasz który chcesz
   }
 ]
 ```
 
 ### `multiLanguage`
 
-#### Introduction
+#### Wprowadzenie
 
-The `multiLanguage` setting is used to allow users to manually select the language they want to presence to be shown in. This requires you to use strings from our [API](https://api.premid.app/v2/langFile/presence/en), for information on how to add strings click [here](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
+Ustawienie `multiLanguage` jest używane by pozwolić użytkownikom na manualny wybór języka w którym presence ma być wyświetlane. To wymaga użycie ciągów z naszego [API](https://api.premid.app/v2/langFile/presence/en),po informacje jak dodać więcej ciągów kliknij [tutaj](https://docs.premid.app/dev/presence/metadata#adding-new-strings).
 
-#### Setup
+#### Ustawienie
 
-The `multiLanguage` setting is a special case, it doesn't require a `title` nor `icon` nor `value` or `values` like other settings but it does require you some more things to setup!
+Ustawienie `multiLanguage` jest wyjątkowym przypadkiem, nie wymaga `tytułu` ani `ikonki` ani `wartości` lub `wartości` podobnie jak inne ustawienia, ale wymaga, żebyś ustawił wiele innych rzeczy!
 
-The `multiLanguage` key can be set to the following:
+Klucz `multiLanguage` może być ustawiony następująco:
 
-`true`: use this if you are only going to use strings of the `general.json` file and the `<service>.json` file of the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: name of the file excluding the extension (.json) inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) (excluding the `general` file, since it's always loaded). Only common languages of both the `general` and inputted file will be listed. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) you can specify all the values in an array (excluding the `general` file, since it's always loaded). Only common languages of all the files will be listed.
+`true` użyj tego, jeżeli tylko będziesz używać wartościpliku `general.json` i plik `<service>.json` [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence). `string`: nazwa pliku nie wliczając rozszerzenia (.json) w <a>href="https://github.com/PreMiD/Localization/tree/master/src/Presence">Localization Repository</a> (nie wliczając pliku ` general `, od kiedy jest zawsze załadowany). Tylko języki, zarówno ` general ` i wprowadzonego pliku będą wyświetlane. `Array<String>`: if you are using more than one file inside the [Localization Repository](https://github.com/PreMiD/Localization/tree/master/src/Presence) Możesz specifykować wszystkie wartości w szyko (nie wliczając pliku ` general ` od kiedy jest zawsze załadowane). Tylko dowolne języki wszystkich plików będą wyświetlane.
 
-#### Adding new strings
+#### Dodawanie nowych ciągów
 
-**Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
+Każdy `string` jest ` obiektem ` gdzie od nazwy zaczyna się nazwą usługi i wtedy tak nazwany stringName z kropką pomiędzy nimi.
 
 ##### Klonowanie projektu
 
@@ -268,75 +266,75 @@ The `multiLanguage` key can be set to the following:
 2. Wybierz folder.
 3. Otwórz go w swoim edytorze kodu.
 
-##### Creating the file
+##### Tworzenie pliku
 
-1. Go into the `src` folder.
-2. Go into the `Presence` folder.
-3. Make a file named `<service>.json`. (Service is the **name** (not an URL) in lowercase of the service you want to support.)
+1. Przejdź do folderu `src`.
+2. Idź do folderu `Presence`.
+3. Utwórz plik o nazwie `<service>.json`. (Serwis jest **name** (to nie URL) w małych literkach serwisu którego chcesz wspierać.)
 
-##### Adding the strings
+##### Dodawanie ciągów
 
-Each `string` is an `Object` where from the name starts with the service name and then the so called stringName with a dot in between them.
+Każdy `string` jest ` obiektem ` gdzie od nazwy zaczyna się nazwą usługi i wtedy tak nazwany stringName z kropką pomiędzy nimi.
 
-The stringName is a 1 word identifier of the message.
+StringName jest jednosłownym identyfikatorem wiadomości.
 
-The `Object` has 2 properties; `message` and `description`. `message` is the text that needs to be translated. `description` is a description of the message to help our translators understand what they are translating.
+`Objekt` ma dwie właściwości; `wiadomość` i `opis`. `wiadomość` jest tekstem, który musi być przetłumaczony. `opis` jest opisem wiadomości który pomaga naszym tłumaczom zrozumieć co tłumaczą.
 
-**Note:** Do not add any duplicate strings. (This includes strings out of the `general.json` file but not the other files.)
+**Informacja:** Nie dodawaj żadnych duplikatów ciągów. (Wlicza to ciągi z pliku `general.json` ale nie z innych plików)
 
-Visualization of the file:
+Wizualizacja pliku:
 
 ```json
 {
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Text który musi zostać przetłumaczony.",
+    "description": "To tłumaczy, czym jest wiadomość powyżej."
   },
   "<service>.<stringName>": {
-    "message": "Text that needs to be translated.",
-    "description": "This explains what the message above is."
+    "message": "Text który musi zostać przetłumaczony."",
+    "description": "To tłumaczy, czym jest wiadomość powyżej."
   }
 }
 ```
 
-After you have fully made the file with strings you can create a Pull Request on the [Localization Repository](https://github.com/PreMiD/Localization), in the description you **must** include a link to your Pull Request of the presence updated using these new strings from the [Presence Repository](https://github.com/PreMiD/Presences).
+Po pełnym utworzeniu pliku z ciągami, możesz utworzyć Pull Request w [Repozytorium Lokalizacji](https://github.com/PreMiD/Localization) w opisie ** musisz ** załączyć link do swojego Pull Request o zaktualizowanego Presenc po użyciu nowych ciągów z [Repozytorium Presence](https://github.com/PreMiD/Presences).
 
-#### Default keys
+#### Domyślne przyciski
 The keys you didn't have to set are automatically set to the following: `title`: "Language" **Note:** This is translated into their default language (browser language). `icon`: "fas fa-language" ([Preview](https://fontawesome.com/icons/language)) `value`: **Set to their browser language if it is available (100% translated), otherwise English.** `values`: **Set to the available languages (languages that have it 100% translated).**
 
-**Note:** These are in no way changeable.
+**Informacja:** Nie można w żaden sposób takowych zmienić.
 
 ### Metody
 
-Use the following methods to get settings info in your presence files:
+Zwraca wartość ustawienia.
 #### `getSetting(String)`
-Returns value of setting.
+Ukrywa podane ustawienie.
 ```ts
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); // Zamień pdexID z Id ustawienia
+console.log(setting); // To zapisze log wartości ustawienia
 ```
 
 #### `hideSetting(String)`
-Hides given setting.
+Pokazuje podane ustawienie (działa tylko, jeśli ustawienie było już ukryte).
 ```ts
-presence.hideSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); //Zamień pdexID na id ustawienia
 ```
 
 #### `showSetting(String)`
-Shows given setting (Only works if the setting was already hidden).
+Pokazuje podane ustawienie (działa tylko, jeśli ustawienie było już ukryte).
 ```ts
-presence.showSetting("pdexID"); //Replace pdexID with the id of the setting
+presence.showSetting("pdexID"); //Zamień pdexID na id ustawienia
 ```
 
-## Presence categories
+## Kategorie - Presence
 
-When making your presence, you must specify a category which the presence falls under. This is a compiled list of the categories that you can use.
+Tworząc swój Presence, musisz określić kategorię, do której należy. To jest skompilowana lista kategorii, których możesz użyć.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Category</th>
-      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Kategoria</th>
+      <th style="text-align:left">Nazwa</th>
       <th style="text-align:left">Opis</th>
     </tr>
   </thead>
@@ -344,32 +342,32 @@ When making your presence, you must specify a category which the presence falls 
     <tr>
       <td style="text-align:left"><b>anime</b></td>
       <td style="text-align:left"><b>Anime</b></td>
-      <td style="text-align:left">Anything related to anime, from forums to video streaming platforms.</td>
+      <td style="text-align:left">Wszystko związane z anime, od forów po platformy streamingu wideo.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>games</b></td>
       <td style="text-align:left"><b>Gry</b></td>
-      <td style="text-align:left">Any website that has game related content, such as <code>Kahoot</code> or <code>Skribbl.io</code></td>
+      <td style="text-align:left">Każda strona internetowa, która ma treści związane z grami, takie jak <code>Kahoot</code> lub <code>Skribbl.io</code></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>music</b></td>
       <td style="text-align:left"><b>Muzyka</b></td>
-      <td style="text-align:left">These are websites that offer music related content, whether that be streaming or downloading.</td>
+      <td style="text-align:left">Są to strony internetowe oferujące treści związane z muzyką, czy to strumieniowe, czy pobierane.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>socials</b></td>
         <td style="text-align:left"><b>Media Społecznościowe</b></td>
-      <td style="text-align:left">Websites that are used for the purpose of creating and sharing content or for participating in other forms of social networking.</td>
+      <td style="text-align:left">Strony internetowe wykorzystywane do tworzenia i udostępniania treści lub do udziału w innych formach sieci społecznościowych.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>videos</b></td>
         <td style="text-align:left"><b>Filmy i transmisje</b></td>
-      <td style="text-align:left">Websites that serve the purpose of providing videos and streams.</td>
+      <td style="text-align:left">Strony internetowe służące do dostarczania filmów i strumieni.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>other</b></td>
       <td style="text-align:left"><b>Inne</b></td>
-      <td style="text-align:left">Anything that does not fall under a specific category listed above.</td>
+      <td style="text-align:left">Każda z tych kategorii, które nie wchodzą w zakres określonych wyżej kategorii.</td>
     </tr>
   </tbody>
 </table>

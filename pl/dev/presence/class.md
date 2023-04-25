@@ -1,6 +1,6 @@
 ---
 title: Klasa Presence
-description: The main class for every PreMiD presence
+description: Główna klasa dla każdego PreMiD presence
 published: true
 date: 2022-05-26T18:03:00.000Z
 tags:
@@ -10,55 +10,55 @@ dateCreated: 2021-09-07T01:44:50.164Z
 
 # Klasa Presence
 
-## Introduction
+## Wprowadzenie
 
-The `Presence` class is very useful as it has basic methods that we need for creating a presence.
+Klasa `Presence` jest bardzo przydatna, ponieważ posiada podstawowe metody, które są nam potrzebne do tworzenia presence.
 
-When you create a class you must specify `clientId` property.
+Podczas tworzenia klasy musisz określić właściwość `ID klienta`.
 
 ```ts
 const presence = new Presence({
-  clientId: "514271496134389561" // Example clientId
+  clientId: "514271496134389561" // Przykładowy id klienta
 });
 ```
 
-### Properties
+### Właściwości
 
-There are three properties available for `Presence` class.
+Istnieją trzy właściwości dla klasy `Presence`.
 
 #### `clientId`
 
-This property is required to make your presence work, because it uses your application id to display its logo and assets. You can get it on your [applications page](https://discordapp.com/developers/applications).
+Ta właściwość jest wymagana, aby twój status presence zadziałał, ponieważ używa identyfikatora aplikacji do wyświetlania logo i zasobów. Możesz ją zdobyć na [stronie aplikacji](https://discordapp.com/developers/applications).
 
-#### `injectOnComplete` - *Deprecated since 2.2.4*
+#### `injectOnComplete` - *Przestarzały od wersji 2.2.4*
 
-When setting `injectOnComplete` to `true` the first `UpdateData` event for both the `presence.ts` and `iframe.ts` files will only be fired when the page has fully loaded.
+Gdy `injectOnComplete` ustawione na `true` pierwsze wydarzenie `UpdateData` dla `presence.ts` i `iframe.ts` obydwa pliki zostaną uruchomione dopiero po pełnym załadowaniu strony.
 
-#### `appMode` - *Deprecated since 2.2.4*
+#### `appMode` - *Przestarzały od wersji 2.2.4*
 
-When setting `appMode` to `true` and the presence were to send an empty `PresenceData`, the app will show the application (image and name) on the user's profile instead of nothing.
+Gdy `appMode` ustawione na `true` i pustym statusie `PresenceData`, program będzie wyświetlał aplikację (zdjęcie i nazwę) na profilu użytkownika zamiast niczego.
 
-## Methods
+## Metody
 
-### `getActivity()` - *Deprecated since 2.2.4*
+### `getActivity()` - *Przestarzały od 2.2.4*
 
-Returns a `PresenceData` object of what the presence is displaying.
+Zwraca obiekt `PresenceData` o tym, co jest wyświetlane.
 
 ### `setActivity(PresenceData | Slideshow, Boolean)`
 
 Ustawia aktywność profilu zgodnie z podanymi danymi.
 
-First parameter requires a [`PresenceData`](#presencedata-interface) interface or a [`Slideshow`](/dev/presence/slideshow) class to get all information that you want to display in your profile.
+Pierwszy parametr wymaga interfejsu [`PresenceData`](#presencedata-interface) lub klasy [`Slideshow`](/dev/presence/slideshow) w celu uzyskania wszystkich informacji, które chcesz umieścić w twoim profilu.
 
-Drugi parametr określa, kiedy status jest aktywny lub nie. Always use `true` if you provide timestamps in `PresenceData`.
+Drugi parametr określa, kiedy status jest aktywny lub nie. Zawsze używaj `true` jeśli podasz znaczniki czasu w `presenceData`.
 
 ### `clearActivity()`
 
-Clears your current activity and the tray title.
+Czyści obecną aktywność i tytuł zasobnika.
 
-### `setTrayTitle(String)` - *Deprecated since 2.2.3*
+### `setTrayTitle(String)` - *Przestarzały od 2.2.3*
 
-> This method works only on Mac OS. 
+> Ta metoda działa tylko na Mac OS. 
 > 
 > {.is-warning}
 
@@ -66,17 +66,17 @@ Ustawia tytuł zasobnika na pasku menu.
 
 ### `createSlideshow()`
 
-Creates a new `Slideshow` class.
+Tworzy nową klasę `Slideshow`.
 
 ```ts
 const slideshow = presence.createSlideshow();
 ```
 
-It is suggested to do this right after creating the `Presence` class:
+Zalecane jest zrobienie tego po utworzeniu klasy `Presence`:
 
 ```ts
 const presence = new Presence({
-    clientId: "514271496134389561" // Example clientId
+    clientId: "514271496134389561" // Przykładowy ID klienta
   }),
   slideshow = presence.createSlideshow();
 ```
@@ -87,7 +87,7 @@ You can find the documentation for the `Slideshow` class [here](/dev/presence/sl
 
 Metoda asynchroniczna, która pozwala na otrzymywanie przetłumaczonych ciągów z rozszerzenia.
 
-Musisz podać `Obiekt` z kluczami dla ciągu znaków, `keyValue` jest wartością ciągu znaków. A list of translated strings can be found at this endpoint: `https://api.premid.app/v2/langFile/presence/en/`
+Musisz podać `Obiekt` z kluczami dla ciągu znaków, `keyValue` jest wartością ciągu znaków. Kompilację przetłumaczonych ciągów można znaleźć za pomocą tego punktu końcowego: `https://api.premid.app/v2/langFile/presence/pl`
 
 ```ts
 // Zwraca ciągi znaków `Playing` i `Paused`
@@ -97,13 +97,13 @@ const strings = await presence.getStrings({
   pause: "general.paused"
 });
 
-const playString = strings.play; // result: Playing
-const pauseString = strings.pause; // result: Paused
+const playString = strings.play; // result: Gra
+const pauseString = strings.pause; // result: Wstrzymane
 ```
 
-Since v2.2.0 of the extension you can now get the strings of a certain language. This works well with the also newly added `multiLanguage` setting option.
+Od v2.2.0 rozszerzenia możesz teraz pobierać ciągi w określonym języku. Działa to dobrze z nowo dodaną opcją ustawienia `multiLanguage`.
 
-We suggest you use the following code so it automatically updates the PresenceData if the user changes the selected language;
+Sugerujemy użycie następującego kodu, aby automatycznie aktualizował PresenceData, jeśli użytkownik zmieni wybrany język;
 
 ```ts
 async function getStrings() {
@@ -112,71 +112,66 @@ async function getStrings() {
       play: "general.playing",
       pause: "general.paused"
     },
-    // The ID is the ID of the multiLanguage setting.
+    // Identyfikator to identyfikator ustawienia wielojęzykowego.
     await presence.getSetting("ID").catch(() => "en");
   );
 }
 
 let strings = getStrings(),
-  // The ID is the ID of the multiLanguage setting.
+  // Identyfikator to identyfikator ustawienia wielojęzykowego.
   oldLang: string = await presence.getSetting("ID").catch(() => "en");
 
-//! The following code must be inside the updateData event!
+//! Poniższy kod musi znajdować się w wydarzeniu updateData!
 // The ID is the ID of the multiLanguage setting.
-const newLang = await presence.getSetting("ID").catch(() => "en");
-if (oldLang !== newLang) {
-  oldLang = newLang;
-  strings = getStrings();
-}
+oldLang: string = await presence.getSetting("ID");
 
-const playString = (await strings).play, // result: Playing
-  pauseString = (await strings).pause; // result: Paused
+//!
 ```
 
 ### `getPageletiable(String)`
 
 Zwraca zmienną ze strony internetowej, jeśli istnieje.
 
-**Warning: This function can cause high CPU usage & site lagging when it has been executed too many times.**
+**Ostrzeżenie: Ta funkcja może spowodować wysokie zużycie procesora & opóźnienie strony, gdy została wykonana zbyt wiele razy.**
 
 ```ts
 const pageVar = presence.getPageletiable("pageVar");
-console.log(pageVar); // This will log the "Variable content"
+console.log(pageVar); // To zarejesttuje „Zmienną treść”
 ```
 
 ### `getExtensionVersion(Boolean)`
 
-Returns version of the extension the user is using.
+Zwraca wartość ustawienia.
 
 ```ts
 getExtensionVersion(onlyNumeric?: boolean): string | number;
 
 const numeric = presence.getExtensionVersion();
-console.log(numeric); // Will log 210
+console.log(numeric); // Zarejestruje 210
 const version = presence.getExtensionVersion(false);
-console.log(version); // Will log 2.1.0
+console.log(version); // Zarejestruje 2.1.0
 ```
 
 ### `getSetting(String)`
 
-Returns value of setting.
+Ukrywa podane ustawienie.
 
 ```ts
-const setting = await presence.getSetting("pdexID"); //Replace pdexID with the id of the setting
-console.log(setting); // This will log the value of the setting
+const setting = await presence.getSetting("pdexID"); // Zamień pdexID z Id ustawienia
+console.log(setting); // To zapisze log wartości ustawienia
 ```
 
 ### `hideSetting(String)`
 
-Hides given setting.
+Pokazuje podane ustawienie (działa tylko, jeśli ustawienie było już ukryte).
 
 ```ts
-presence.hideSetting("pdexID"); // Replace pdexID with the id of the setting
+presence.hideSetting("pdexID"); // Zamień pdexID na id, które jest w ustawieniach
 ```
 
 ### `showSetting(String)`
 
-Shows given setting (Only works if the setting was already hidden).
+Zwraca logi konsoli witryny.
 
 ```ts
 presence.showSetting("pdexID"); // Replace pdexID with the id of the setting
