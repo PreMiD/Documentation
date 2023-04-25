@@ -31,18 +31,18 @@ Ogólne zasady rozwijania statusów są następujące:
 - Domena musi mieć conajmniej 2 miesiące.
 - Status kierowane na wewnętrzne strony przeglądarki (takie jak Chrome Web Store, `chrome://`, strony `about:`, itp.) **są niedozwolone**, ponieważ wymagają włączenia eksperymentalnej flagi po stronie użytkowników i mogą potencjalnie spowodować uszkodzenie ich przeglądarki.
 - Statusy wspierające tylko jedną sub-domenę **są niedozwolone** ponieważ mogą nie działać na innych stronach (takich jak strona główna), wyjątek mogą stanowić strony kontaktowe lub z polityką prywatności (czyli takie które nie są często używae) lub strony gdzie inna zawartość jest niezwiązana z sub-domeną. (np. strony wiki)
-- Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
-- Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
-- Presences for services like Discord Bot/Server Lists must follow these extra requirements:
-  - The domain should be at least **6 months** old.
-  - Unique visitors per day:
-    - For 6 to 12 month old domains: **20,000 unique visitors/day**.
-    - For 12+ month old domains: **45,000 unique visitors/day**.
-  - The website can't be on a cheap domain like `.xyz`, `.club` and so on.
-  - The website itself must have a very good quality, design, etc.
-- Presences should use [common details](https://api.premid.app/v2/langFile/presence/en) (strings starting with "general."). You can achieve this using `multiLanguage` with the provided strings. If your presence requires custom strings, then you shouldn't use `multiLanguage` until the presence gets 1000 users. You can find an example [here](https://docs.premid.app/dev/presence/class#getstringsobject).
-- Including the `dist` folder, `presence.ts` file, `iframe.ts` file, and `metadata.json` file is mandatory so the result would be what is represented in the following schema:
+- Obecności dla radia internetowego są dozwolone tylko wtedy, gdy radio ma co najmniej 100 słuchaczy tygodniowych i 15 na raz i musi mieć jakieś funkcje inne niż tylko pokazywanie albumu/tytułu piosenki, etc.
+- Statusy nie mają prawa by uruchamiać kod JS z ich własną funkcją by uzyskiwać zmienne. Jeżeli Firefox ma problemy z wbudowaną funkcją wewnątrz klasy `Presence`, możesz napisać swoją własną funckję i musisz poinformawać nam o tym w opisie w Pull Request.
+- Presence słabej jakości (albo z małą ilością danych) **nie** są dozwolone. (np. pokazywanie logo i nazwy strony i nigdy nie zmienianie danych).
+- Presence dla serwisów typu Lista botów/serwerów muszą spełniać kilka dodatkowych wymagań:
+  - Domena musi mieć conajmniej **6** miesięcy.
+  - Unikalni użytkownicy dziennie:
+    - Dla 6+ miesięcznych domen: **20,000 unikalnych użytkowników dziennie**.
+    - Dla 12+ miesięcznych domen: **45,000 unikalnych użytkowników dziennie**.
+  - Strona nie może być na taniej domenie takiej jak `.xyz`, `.club`, i tak dalej.
+  - Strona musi mieć bardzo dobra jakość, wygląd, itp.
+- Prezentacje powinny używać [wspólnych szczegółów](https://api.premid.app/v2/langFile/presence/en) (ciągi zaczynające się od "general."). Możesz to osiągnąć używając `multiLanguage` z podantymi tekstami. Jeżeli Twój presence wymaga niestandardowych ciągów, nie powinieneń używać `multiLanguage`, dopóki presence nie będzie używane przez 1000 użytkowników. Zobacz przykład [tutaj](https://docs.premid.app/dev/presence/class#getstringsobject).
+- Załączenie folderu `dist`, pliku `presence.ts`, pliku `iframe.ts` i pliku `metadata.json` jest obowiązkowe w taki sposób aby struktura plików naśladowała poniższy schemat:
 
 ```bash
 presence
@@ -52,7 +52,7 @@ presence
 └── tsconfig.json
 ```
 
-or if you're using a `iframe.ts` file:
+lub jeżeli używasz pliku `iframe.ts`:
 
 ```bash
 presence
@@ -65,39 +65,39 @@ presence
 
 ## [**metadata.json**](https://docs.premid.app/dev/presence/metadata)
 
-> For the convenience of our presence developers, we have provided a schema which you can use to validate the integrity of your `metadata` file. This is entirely optional and is not required during the review process.
+> Dla wygody naszych twórców presence dostarczyliśmy schemat, którego możesz użyć do weryfikacji integralności pliku `metadata`. Jest to całkowicie opcjonalne i nie jest wymagane w procesie weryfikacji.
 
-> It is highly recommended that you organize your `metadata` file in the format shown below, and you must have grammatically correct service names, descriptions, tags, and setting fields. Anything not organized to specifications will **not** be permitted.
+> Zalecane jest zorganizowanie pliku `metadata` w formacie przedstawionym poniżej, musi on także zawierać gramatycnie poprawne nazwy serwisów, opisy, tagi i pola ustawień. Wszystkie pliki które nie śledzą schematu **nie** są dozwolone.
 
-> Presences of websites that have explicit content **must** have the `nsfw` tag, and the logo/thumbnail must **not** contain any of this content.
+> Presences stron internetowych z treściami nieodpowiednimi dla dzieci **muszą** mieć tag `nsfw`, a logo/miniaturka **nie** może zawierać żadnej z tych treści.
 
-Each presence has a descriptor file called `metadata.json`, the metadata has a strict standard and an example of this file can be seem below:
+Każdy presence posiada plik metadanych nazwany `metadata.json`, ten plik ma ścisły schemat. Jego przykład można znaleźć poniżej:
 
 ```json
 {
   "$schema": "https://schemas.premid.app/metadata/1.7",
   "author": {
-    "name": "USER",
-    "id": "ID"
+    "name": "NAZWA UŻYTKOWNIKA",
+    "id": "DISCORD ID UŻYTKOWNIKA"
   },
   "contributors": [
     {
-      "name": "USER",
-      "id": "ID"
+      "name": "NAZWA UŻYTKOWNIKA",
+      "id": "DISCORD ID UŻYTKOWNIKA"
     }
   ],
-  "service": "SERVICE",
-  "altnames": ["SERVICE"],
+  "service": "NAZWA USŁUGI",
+  "altnames": ["INNA NAZWA USŁUGI"],
   "description": {
-    "en": "DESCRIPTION"
+    "pl": "OPIS"
   },
   "url": "URL",
-  "version": "VERSION",
-  "logo": "URL",
-  "thumbnail": "URL",
+  "version": "WERSJA",
+  "logo": "LINK DO LOGO",
+  "thumbnail": "LINK DO MINIATURKI",
   "color": "#HEX000",
   "tags": ["TAG1", "TAG2"],
-  "category": "CATEGORY",
+  "category": "KATEGORIA",
   "regExp": "REGEXP",
   "iFrameRegExp": "REGEXP",
   "iframe": false,
@@ -109,8 +109,8 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
     }
     {
       "id": "ID",
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
+      "title": "WYŚWIETL TYTUŁ",
+      "icon": "NIESAMOWITA IKONA",
       "value": true
     },
     {
@@ -118,10 +118,10 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
       "if": {
         "ID": true
       },
-      "title": "DISPLAY TITLE",
-      "icon": "FONTAWESOME ICON",
-      "value": "\"%song%\" by %artist%",
-      "placeholder": "use %song% or %artist%"
+      "title": "WYŚWIETL TYTUŁ",
+      "icon": "NIESAMOWITA IKONA",
+      "value": "\"%song%\" stworzona przez %artist%",
+      "placeholder": "użyj %song% lub %artist%"
     },
     {
       "id": "ID",
@@ -134,97 +134,97 @@ Each presence has a descriptor file called `metadata.json`, the metadata has a s
 }
 ```
 
-> If a field is listed as optional on the [documentation](https://docs.premid.app/dev/presence/metadata) or there is a `*` next to the key, and your presence uses the default value for it, do not include it in the `metadata` file. (for e.g., a presence without iframe support would not need the `iframe` field.)
+> Jeśli pole jest wymienione jako opcjonalne w [dokumentacji](https://docs.premid.app/dev/presence/metadata) lub jest `*` obok klucza, a Twoja obecność używa dla niej wartości domyślnej, nie włączaj jej do pliku `. metadanych`. (np. statusy bez wsparcia dla iframe nie potrzebują pola `iframe`)
 
-> All images in the `metadata` file must be hosted on `i.imgur.com`. Using content hosted on the website is **not** permitted as they can change the paths and files unwillingly.
+> Wszystkie obrazy w pliku `metadata`, muszą być hostowane na `i.imgur.com`. Używanie treści hostowanych na stronie **nie** jest dozwolone, ponieważ ścieżki i pliki mogą ulec zmianie.
 
-A list of fields and their rules are listed below:
+Lista pól i ich zasad znajduje się poniżej:
 
 ### **`$schema`**
 
-- The schema _key_ **must** include a dollar sign at the beginning of it, this will signal your text editor that you want to validate your JSON file against a model. _As stated earlier, you do not need to include a schema, but if you include it you must take this into account._
+- Schemat _key_ **musi** zawierać znak dolara na jego początku, to zasygnalizuje twój edytor tekstowy, że chcesz zweryfikować plik JSON przeciwko modelowi. _Jak stwierdzono wcześniej, nie musisz zawierać schematu, ale jeśli go włączysz, musisz to uwzględnić._
 
 ### **`author`**
 
-- The ID _value_ **must** be your Discord snowflake ID. You can get it by enabling [developer mode](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Please do **not** confuse this with your application ID, which is only for your presence._
+- _Wartość_ ID **musi** być twoim Discord ID. Możesz go uzyskać poprzez włączenie [trybu dewelopera](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-). _Proszę **nie** mylić tego z ID aplikacji, która jest tylko dla Twojego presence._
 
 ### **`*contributors`**
 
-- Do **not** add yourself as a contributor, and do not add someone else as a contributor unless they have helped with the presence.
+- **Nie** dodawaj siebie jako współtwórcy, ani nie dodawaj kogoś innego, dopóki nie pomógł w presence.
 
 ### **`service`**
 
-- The service name **must** be the name of the presence directory. For example, if the presence is located at `/websites/Y/YouTube/`, the service name must be `YouTube`.
-- You **cannot** use the url as the service name unless the website uses the url as its official name. If the name is not descriptive and can be considered vague, using the url is **required**. (for e.g., `YouTube` is permitted because that is the official name and is descriptive, while `youtube.com` is not. `Top` is a non-descriptive name, so using the url `top.gg` is **required**.)
-- If service has some explicit branding rules of their name, you should follow them.
+- Nazwa usługi **musi** być nazwą katalogu presence. Dla przykładu, jeśli presence jest w folderze `/websites/Y/YouTube`, w service musisz napisać `YouTube`.
+- **Nie możesz** używać adresu serwisu jako nazwy, chyba że serwis używa URL jako nazwę. Jeśli nazwa nie jest opisowa i może zostać uznana za niejasną, **należy** użyć adresu URL. (np. `YouTube` jest dozwolony, ponieważ jest to oficjalna nazwa i opis, a `youtube.com` już nie jest. `Top` nie jest opisową nazwą, więc użycie URL strony `top.gg` jest **wymagane**.)
+- Jeśli usługa ma zasady używania ich nazwy, powinieneś ich przestrzegać.
 
 ### **`*altnames`**
 
-- **Only** use this in scenarios where a website goes under multiple official names (e.g. Pokémon and 포켓몬스터). _Shortened_ versions of service names go under `tags`.
+- Użyj tego **tylko wtedy**, gdy strona ma kilka oficjalnych nazw (np. Pokémon i 포켓몬스터). *Skrócono* wersje nazw naszych usług pod `tagami`.
 
 ### **`description`**
 
-- **All** presences are **required** to have an English description regardless of the website's prefered language.
-- Do **not** try and translate the description yourself unless you know that language, translators will modify your `metadata.json` and change the descriptions if necessary.
+- **Wszystkie** presence **muszą** mieć angielski opis bez względu na preferowany język na stronie.
+- **Nie próbuj** samodzielnie tłumaczyć opisu, chyba że znasz dany język, tłumacze zmodyfikują twój plik `metadata.json` i zmienią opisy jeśli będzie to potrzebne.
 
 ### **`url`**
 
-- The url **must** be a string if the website only uses one domain. If the website uses multiple, make this an array and specify each one.
-- Do **not** include protocols in the url (for e.g., `http` or `https`), and do not include query parameters in the url (for e.g., `www.google.com/search?gws_rd=ssl` which should be `www.google.com`)
+- URL **musi** być stringiem jeśli strona używa tylko jednej domeny. Jeśli strona używa kilku domen, stwórz array z każdą domeną.
+- **Nie** dodawaj protokołów do URL (np. `http` lub `https`) oraz nie dodawaj żadnych parametrów zapytania (np. `www.google.com/search?gws_rd=ssl`, gdzie powinno być `www.google.com`)
 
 ### **`version`**
 
-- Always make sure the version number follows [semantic versioning standards](https://semver.org), which translates to the following scheme: `<MAJOR>.<MINOR>.<PATCH>`. Anything else like `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` or changing `1.0.0` to `2.0.0` on a bug fix/small change is **not** permitted.
-- The version **must** always start at `1.0.0` unless told otherwise, other versions will **not** be permitted.
+- Zawsze upewnij się, że numer wersji spełnia [semantyczne standardy wersjonowania](https://semver.org), co przekłada się na następujący schemat: `<NEW-FEATURE>.<HUGE-BUGFIX>.<SMALL-BUGFIX-OR-METADATA-CHANGES>`. Wersje takie jak `1.0.0.1`, `1.0`, `1`, `1.0.0-BETA` lub zmiana `1.0.0` na `2.0.0` przy naprawieniu buga/małej zmianie jest **niedozwolone**.
+- Wersja **musi** zawsze zaczynać się od `1.0.0`, inne wersje **nie** będą dozwolone.
 
 ### **`logo`**
 
-- The logo **must** be a square image with a `1:1` aspect ratio.
-- The image is **required** to have a minimum resolution of `512x512` pixels. You can upsize it using a tool like [waifu2x](http://waifu2x.udp.jp/).
+- Logo **musi** być kwadratowym obrazem o proporcjach `1: 1`.
+- Obraz **musi** mieć minimalną rozdzielczość `512x512` pikseli. Możesz zmienić rozmiar obrazu za pomocą narzędzia takiego jak [waifu2x](http://waifu2x.udp.jp/).
 
 ### **`thumbnail`**
 
-- The thumbnail **should** preferably be a [wide promotional card](https://i.imgur.com/3QfIc5v.jpg) or a [screenshot](https://i.imgur.com/OAcBmwW.png) if the first is **not** available.
+- Miniaturka **powinna** być najlepiej [szeroką kartą promocyjną](https://i.imgur.com/3QfIc5v.jpg) lub [zrzutem ekranu](https://i.imgur.com/OAcBmwW.png), jeśli ta pierwsza **nie jest** dostępna.
 
 ### **`color`**
 
-- The color **must** be a hexadecimal value between `#000000` and `#FFFFFF`.
-- The color string **must** be prepended with a hash symbol.
+- Kolor **musi** być wartością szesnastkową pomiędzy `#000000` i `#FFFFFF`.
+- Ciąg z kolorem **musi** być poprzedzony symbolem kratki.
 
 ### **`tags`**
 
-- **All** presences are required to have at least _one_ tag.
-- Tags must **not** include any spaces, slashes, single/double quotation marks, Unicode characters, and should always be lowercase.
-- Tags **should** preferably include alternate service names to make searching easier (for e.g., if an Amazon presence had included AWS support, it would have its tags like `amazon-web-services` and `aws`)
-- You are **required** to add an `NSFW` tag if the presence is for an NSFW website.
+- **Wszystkie** statusy muszą mieć przynajmniej _jeden_ tag.
+- Tagi **Nie** mogą zawierać spacji, ukośników, pojedynczych/podwójnych cudzysłowów, znaków Unicode i powinny zawsze być pisane z małej litery.
+- Tagi **powinny** zawierać alternatywne nazwy usług, aby ułatwić wyszukiwanie (np. jeśli obecność Amazon obejmowała obsługę AWS, miałaby swoje tagi, takie jak `amazon-web-services` i `aws`)
+- Jesteś **zobowiązany** do dodania tagu `NSFW`, jeżeli presence jest dla strony NSFW</strong>.
 
 ### **`category`**
 
-- The category **must** be one of the following listed on the [documentation](https://docs.premid.app/dev/presence/metadata#presence-categories).
-- The presence must use a category that matches the content of the website. (for e.g., don't use `anime` when the website isn't related to anime).
+- Kategoria **musi** być jedną z następujących kategorii wymienionych w [dokumentacji](https://docs.premid.app/dev/presence/metadata#presence-categories).
+- Presence musi używać kategorii, która pasuje do zawartości witryny. (np. nie używaj `anime`, gdy strona nie jest powiązana z anime).
 
 ### **`*regExp`** <br /> **`*iFrameRegExp`**
 
-- Regular expressions **must** be valid. Please test your expressions with the tools listed on the [documentation](https://docs.premid.app/dev/presence/metadata#testing).
+- Wyrażenia regularne **muszą** być prawidłowe. Proszę przetestować swoje wyrażenia za pomocą narzędzi wymienionych w [dokumentacji](https://docs.premid.app/en/dev/presence/metadata#testing).
 
 ### **`readLogs`**
 
-- Must be `boolean` value (e.g. `true` or `false`).
-- Enables logs for your presence.
+- Musi być `wartości logicznej` (np. `true` lub `false`).
+- Włącza logi twojego presence.
 
 ### **`warning`**
 
-- Enables warning icon for prompting user that this presence needs more steps than only adding presence.
-- Example of presence using this metadata variable is `VLC`.
+- Włącza ikonę ostrzeżenia, aby zapytać użytkownika, że ta obecność wymaga więcej kroków niż tylko dodawanie obecności.
+- Przykładem obecności tej zmiennej metadanych jest `VLC`.
 
 ### **`settings`**
 
-- If you decide to make a format string (for e.g., `%song% by %artist%`), you must have the variables surrounded by a percent sign on either side. Variables like `%var`, `var%`, or `%%var%%` and anything in between are **not** permitted for the sake of standardization.
-- The name of the settings must **not** be in all capital letters. For example, names such as `SHOW BROWSING STATUS` will **not** be permitted; however, names such as `Show Browsing Status` or `Show browsing status` are permitted.
-- If you are using the `multiLanguage` option it can have the following types:
-  - **Boolean** type which will only enable strings from [`general.json`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) from the Localization repo or from the presence file (e.g. when the name of the presence is YouTube, the extension will get strings from `youtube.json` too.)
-  - **String** type (e.g. `youtube`) which will specify the name of the files that you want to get strings from.
-  - **Array<String>** type (e.g. `["youtube", "discord"]`) which will specify the name of the files that you want to get strings from.
+- Jeśli zdecydujesz się utworzyć ciąg formatu (np. `%song% by %artist%`), musisz mieć zmienne otoczone znakiem procentowym po obu stronach. Takie zmienne, jak `%var`, `var%`, lub `%%var%%` i wszystko pomiędzy **nie** są dozwolone ze względu na standaryzację.
+- Nazwa ustawień nie może **** zawierać wszystkich wielkich liter. Na przykład nazwy takie jak `POKAŻ STATUS BROWSING` **nie** będą dozwolone; jednakże nazwy takie jak `Pokaż status przeglądania` lub `Pokaż status przeglądania` są dozwolone.
+- Jeśli używasz opcji `wielojęzyczna`, może mieć następujące typy:
+  - **typ logiczny**, który włączy tylko ciągi od [`ogólnie. syn`](https://github.com/PreMiD/Localization/blob/master/src/Presence/general.json) z repozytorium lokalizacji lub z pliku obecności (e.. kiedy nazwą obecności jest YouTube, rozszerzenie otrzyma również ciągi od `youtube.json`)
+  - **String** type (np. `youtube`), który określi nazwę plików, z których chcesz pobrać ciągi.
+  - **Array<String>** typ (np. `["youtube", "discord"]`) określający nazwę plików, z których chcesz pobrać ciągi.
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
@@ -304,7 +304,7 @@ Kilka rzeczy, które powinieneś wiedzieć po otwarciu pull request:
 
 ## `Checks`
 
-![Example of checks](https://i.imgur.com/vF7QpBH.png)
+![Testy](https://i.imgur.com/vF7QpBH.png)
 
 Currently, a presence goes through 3 separate stages of checks. All of these checks help the reviewers determine whether your presence is suitable for deployment.
 
@@ -318,25 +318,25 @@ Currently, a presence goes through 3 separate stages of checks. All of these che
 
 After meeting all of the guidelines with the proper reviews and checks, your presence will be merged with the store.
 
-# Suggestions
+# Weryfikacja
 
-If you have some suggestions about our guidelines, you should contact us @ [PreMiD's Discord server](https://discord.premid.app) and we will check them!
+Jeśli masz jakieś sugestie dotyczące naszych wytycznych, powinieneś skontaktować się z nami @ [Serwer Discorda PreMiD](https://discord.premid.app) a my je sprawdzimy!
 
-# Contributions
+# Wkład
 
-`Revision 3` of the guidelines was written and was contributed to by the following individuals:
+`3 Rewizja` wytycznych została stworzona przez następujące osoby:
 
 <div>
 <a href="https://github.com/PreMiD"><img src="https://github.com/PreMiD.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 2` of the guidelines was written and was contributed to by the following individuals:
+`2 Rewizja` wytycznych została stworzona przez następujące osoby:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
 </div>
 
-`Revision 1` was maintained by the following individuals:
+`1 Rewizja` była stworzona przez następujące osoby:
 
 <div>
 <a href="https://github.com/CobyPowers"><img src="https://github.com/CobyPowers.png?size=2048" width="48px" style="max-width:100%; border-radius: 50%;"/></a>
