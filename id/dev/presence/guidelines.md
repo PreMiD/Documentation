@@ -180,7 +180,7 @@ Daftar bidang dan peraturannya tertulis dibawah:
 ### **`logo`**
 
 - Logo **harus** berupa persegi dengan aspect ratio `1:1`.
-- Gambar **diharuskan** memiliki resolusi minimal `512x512` pixel. Gambar dapat di upscale menggunakan alat seperti [waifu2x](http://waifu2x.udp.jp/).
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
