@@ -180,7 +180,7 @@ Lista pól i ich zasad znajduje się poniżej:
 ### **`logo`**
 
 - Logo **musi** być kwadratowym obrazem o proporcjach `1: 1`.
-- Obraz **musi** mieć minimalną rozdzielczość `512x512` pikseli. Możesz zmienić rozmiar obrazu za pomocą narzędzia takiego jak [waifu2x](http://waifu2x.udp.jp/).
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
