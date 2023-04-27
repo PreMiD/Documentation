@@ -180,7 +180,7 @@ Eine Liste von Feldern und deren Regeln sind unten aufgelistet:
 ### **`logo`**
 
 - Das Logo **muss** ein quadratisches Bild mit einem `1:1` Seitenverhältnis sein.
-- Das Bild **erfordert** eine Mindestauflösung von `512x512` Pixeln. Du kannst Bilder mit Tools wie zum Beispiel [waifu2x](http://waifu2x.udp.jp/) vergrößern.
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
