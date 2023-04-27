@@ -180,7 +180,7 @@ Danh sách các mục và quy tắc cho nó như sau:
 ### **`logo`**
 
 - Biểu tượng **phải** là một ảnh vuông với tỉ lệ `1:1`.
-- Ảnh **phải** có độ phân giải tối thiểu là `512x512` điểm ảnh. Bạn có thể phóng to nó bằng công cụ như [waifu2x](http://waifu2x.udp.jp/).
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
