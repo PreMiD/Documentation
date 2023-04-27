@@ -36,7 +36,7 @@ Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). 
 2. Kies een map van je keuze.
 3. Open het in je code editor.
 
-## Getting started
+## Aan de slag
 
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
@@ -46,7 +46,7 @@ Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). 
 2. Select the first option
 3. Fill in all prompted questions
 
-### Compiling / Modifying a Presence
+### Compileren / Wijzigen ven een Presence
 1. Run `npx pmd`
 2. Select the second option
 3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
@@ -54,23 +54,23 @@ Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). 
 
 For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
 
-For more information about the `Presence` class click [here](/dev/presence/class).
+Voor meer informatie over de `Presence-klas` klik [hier](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Sinds v2.2.0 zijn er nu Slideshows, dit stelt je in staat om meerdere `PresenceData` interfaces op een interval weer te geven, voor meer informatie over de `Slideshow` klasse klik [hier](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Kan bepaalde data niet krijgen?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+Veel websites gebruiken [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). Deze html-tags kunnen meerdere bronnen bevatten, zoals video's. Maar ze zijn niet altijd relevant. Sommige zijn verborgen of worden niet vaak gebruikt. Controleer of je de informatie die je nodig hebt, kan verkrijgen zonder dat je onnodig werk doet.
 
-1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+1. Controleer ze met de console van je browser (zorg dat je op de **Elements**-tab zit).
+2. Zoeken (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) of <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Voer `document.querySelectorAll("iframe")` uit.
 
-If you find that your data is in a iFrame you need to do the following:
+Als je vindt dat je gegevens zich in iFrame bevinden, moet je het volgende doen:
 
-1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+1. Maak een `iframe.ts` bestand aan.
+2. Stel iFrame in op `true` in je metadata bestand.
+3. Vul je iFrame bestand in.
 
 ```ts
 const iframe = new iFrame();
@@ -84,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Je presence-bestand gegevens laten ontvangen van het iFrame-bestand.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -93,30 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Opmerking:** Dit moet buiten de updateData event worden geplaatst.
 
-# Loading your Presence
+# Laden van de presence
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Open de extensie pop-up in de browser en houd <kbd>Shift</kbd> knop op je toetsenbord ingedrukt.
+2. **Laad Presence** verschijnt in de Presence's sectie.
+3. Klik erop terwijl je nog steeds de <kbd>Shift</kbd> knop ingedrukt houdt.
+4. Selecteer de map /dist van je presence.
 
 # Enkele nuttige dingen
 
-## Hot-reloading
+## Hot-herladen
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+De website waar je mee bezig bent wordt automatisch herladen wanneer je een bestand in je map opslaat.
 
-## Debugging
+## Foutopsporing
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Je kunt `console.log("Test");` tussen je code zetten en kijken of je browserconsole je die uitvoer geeft. Zo ja, ga dan verder en probeer het opnieuw na de volgende functie. Zo niet, dan is er een fout hierboven.
+- Als dat je ook niet helpt, vraag dan een presence-ontwikkelaar op onze [Discord-server](https://discord.premid.app/) voor hulp.
 
 # Uitleg van bestanden
 
 - [Presence Klasse](/dev/presence/class)
 - [Slideshow Klasse](/dev/presence/slideshow)
 - [iFrame Klasse](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [Metadata Bestand](/dev/presence/metadata)
 - [TypeScript configuratie](/dev/presence/tsconfig ""){.links-list}
