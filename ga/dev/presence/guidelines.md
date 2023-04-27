@@ -250,7 +250,7 @@ Tá comhad tuairiscithe ag gach láithreacht ar a dtugtar `metadata.json`, tá c
 >     <strong x-id="1">Ní mór</strong> íomhá chearnach a bheith ar an lógó le cóimheas gné <code>1:1</code>.
 >   </li>
 >   <li>
->     Tá an íomhá <strong x-id = "1">riachtanach</strong> chun taifeach íosta de <code>512x512</code> picteilín a bheith aici. Is féidir leat é a mhéadú trí uirlis mar <a href="http://waifu2x.udp.jp/">waifu2x</a> a úsáid.
+>     The image is <strong x-id="1">required</strong> to have a resolution of <code>512x512</code> pixels. You can resize it using a tool like <a href="https://imageresizer.com/">imageresizer</a>.
 >   </li>
 > </ul>
 > 

@@ -180,7 +180,7 @@ Bazı alanlar ve alanların kuralları aşağıda belirtilmiştir.
 ### **`logo`**
 
 - Logo, `1:1` en boy oranına sahip kare bir resim **olmalıdır**.
-- Resim en az `512x512` piksel çözünürlüğünde olmalıdır. [waifu2x](http://waifu2x.udp.jp/) gibi araçlar kullanarak resminizi boyutlandırabilirsiniz.
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 

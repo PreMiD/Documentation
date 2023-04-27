@@ -28,7 +28,7 @@ Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). 
 ## Vereisten
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. [Node](https://nodejs.org/en/) (komt met [npm](https://www.npmjs.com/))
 
 ## Het project klonen
 
