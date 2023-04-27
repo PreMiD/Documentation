@@ -180,7 +180,7 @@ Allpool on loetletud väljad ja nende reeglid:
 ### **`logo`**
 
 - Logo **peab** olema ruudukujuline, mille kuvasuhe on `1:1`.
-- Pildi **vajalik** minimaalne resolutsioon `512x512` pikslit. Saate seda suurendada, kasutades sellist tööriista nagu [waifu2x](http://waifu2x.udp.jp/).
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
