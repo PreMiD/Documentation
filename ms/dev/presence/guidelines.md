@@ -180,7 +180,7 @@ Senarai medan dan peraturan berkaitan disenaraikan di bawah:
 ### **`logo`**
 
 - Logo **mestilah** imej segi empat sama dengan nisbah bidang `1:1`.
-- Imej **mestilah** mempunyai resolusi sekurang-kurangnya `512x512` piksel. Anda boleh membesarkan saiznya menggunakan alatan seperti [waifu2x](http://waifu2x.udp.jp/).
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
