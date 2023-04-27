@@ -180,7 +180,7 @@ presence
 ### **`logo`**
 
 - Логотип ** должен ** быть квадратным изображением с соотношением сторон ` 1:1`.
-- Для изображения ** требуется ** минимальное разрешение ` 512x512 ` пикселей. Вы можете увеличить изображение, используя такой инструмент, как [ waifu2x ](http://waifu2x.udp.jp/).
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
