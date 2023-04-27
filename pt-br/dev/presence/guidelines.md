@@ -180,7 +180,7 @@ A list of fields and their rules are listed below:
 ### **`logo`**
 
 - A logo **deve** ser uma imagem quadrada com uma relação de aspecto `1:1`.
-- É **necessário** que a imagem tenha uma resolução mínima de `512x512` pixels. Você pode aumentá-la usando uma ferramenta como [waifu2x](http://waifu2x.udp.jp/).
+- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
