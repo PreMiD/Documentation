@@ -183,7 +183,7 @@ Hieronder vindt u een lijst met velden en hun regels:
 ### **`logo`**
 
 - Het logo **moet** vierkante afbeelding zijn met een `1:1` beeldverhouding.
-- De afbeelding is **vereist** om een resolutie van `512x512` pixels te hebben. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
+- De afbeelding is **vereist** om een resolutie van `512x512` pixels te hebben. Je kunt het formaat wijzigen met een tool zoals [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
