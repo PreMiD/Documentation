@@ -39,20 +39,20 @@ Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). 
 ## Aan de slag
 
 1. Open een nieuwe terminal in de map `Presences`
-2. Install repository dependencies using `npm i` (Or your package manager of choice)
+2. Installeer repository dependencies met behulp van `npm i` (Of een pakketbeheerder naar eigen keuze)
 
-### Creating a Presence
-1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
-2. Select the first option
-3. Fill in all prompted questions
+### Een Presence aanmaken
+1. Voer `npx pmd` uit (of voer `pmd` uit met de pakketbeheerder van eigen keuze)
+2. Selecteer de eerste optie
+3. Vul alle gestelde vragen in
 
 ### Compileren / Wijzigen ven een Presence
-1. Run `npx pmd`
-2. Select the second option
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+1. Voer `npx pmd` uit
+2. Selecteer de tweede optie
+3. Voer de naam in van de Presence die je wilt bewerken > Dit zal de TypeScript-compiler in de map van de Presence starten. Wanneer je `presence.ts` nu bewerkt, zal de presence automatisch worden gecompileerd.
 {.is-info}
 
-For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
+Voor inspiratie of voorbeelden over hoe je de code van je Presence moet structureren, kijk naar de bestaande Presences zoals 1337x of 9GAG
 
 Voor meer informatie over de `Presence-klas` klik [hier](/dev/presence/class).
 
