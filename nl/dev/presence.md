@@ -38,7 +38,7 @@ Alle presences zijn gecodeerd in [TypeScript](https://www.typescriptlang.org/). 
 
 ## Aan de slag
 
-1. Open a new terminal in the `Presences` folder
+1. Open een nieuwe terminal in de map `Presences`
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
 ### Creating a Presence
