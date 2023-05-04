@@ -67,7 +67,7 @@ Windows: Ketik `%appdata%` di file explorer dan hapus folder `PreMiD`. MacOS: `~
 ### McAfee mendeteksi PreMiD sebagai virus (Windows)
 Ini adalah pendeteksian palsu dari McAfee dan kami telah melaporkan masalah ini kepada mereka, untuk saat ini kamu dapat menghapus PreMiD dari pengecekan dengan melakukan langkah-langkah berikut:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Jika kamu tidak yakin untuk mengikuti langkah-langkah berikut, kamu bisa membuat tiket di [#support](https://discord.premid.app/) dan salah satu Agen Pendukung kami akan membantumu! 
 > 
 > {.is-warning}
 
