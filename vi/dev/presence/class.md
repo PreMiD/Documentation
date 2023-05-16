@@ -332,21 +332,25 @@ Giao diện này có những biến sau, tất cả đều không bắt buộc.
 </table>
 
 ```ts
+const enum Assets {
+  Logo = ""
+}
+
 const presenceData: PresenceData = {
-  details: "Tiêu đề của tôi",
-  state: "Đoạn mô tả của tôi",
-  largeImageKey: "biểu_tượng_dịch_vụ",
-  smallImageKey: "ảnh_nhỏ_dịch_vụ",
-  smallImageText: "Bạn vừa di chuột lên tôi",
+  details: "My title",
+  state: "My description",
+  largeImageKey: Assets.Logo,
+  smallImageKey: Assets.Reading, //Other Assets can be found in index.d.ts
+  smallImageText: "You hovered me, and what now?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Nút thử 1",
+            label: "Test button1",
             url: "https://premid.app/"
         },
         {
-            label: "Nút thử 2",
+            label: "Test button2",
             url: "https://premid.app/contributors"
         }
     ]
