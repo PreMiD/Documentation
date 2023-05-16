@@ -337,20 +337,20 @@ const enum Assets {
 }
 
 const presenceData: PresenceData = {
-  details: "My title",
-  state: "My description",
+  details: "Tajuk saya",
+  state: "Keterangan saya",
   largeImageKey: Assets.Logo,
-  smallImageKey: Assets.Reading, //Other Assets can be found in index.d.ts
-  smallImageText: "You hovered me, and what now?",
+  smallImageKey: Assets.Reading, //Aset-aset yang lain boleh didapati di index.d.ts
+  smallImageText: "Anda lalukan tetikus atas saya, jadi nak buat apa sekarang?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Test button1",
+            label: "Butang cubaan 1",
             url: "https://premid.app/"
         },
         {
-            label: "Test button2",
+            label: "Butang cubaan 2",
             url: "https://premid.app/contributors"
         }
     ]
