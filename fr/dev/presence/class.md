@@ -330,25 +330,28 @@ Cette interface contient les variables suivantes, toutes sont facultatives.
 </table>
 
 ```ts
+const enum Assets {
+  Logo = ""
+}
+
 const presenceData: PresenceData = {
-  details: "Mon titre",
-  state: "Ma description",
-  largeImageKey: "logo_service,
-  smallImageKey: "petit_logo_service",
-  smallImageText: "Vous m'avez survoler, et maintenant ?",
+  details: "My title",
+  state: "My description",
+  largeImageKey: Assets.Logo,
+  smallImageKey: Assets.Reading, //Other Assets can be found in index.d.ts
+  smallImageText: "You hovered me, and what now?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Bouton de test 1",
+            label: "Test button1",
             url: "https://premid.app/"
         },
         {
-            label: "Bouton de test 2",
+            label: "Test button2",
             url: "https://premid.app/contributors"
         }
     ]
-};
 };
 ```
 

@@ -327,11 +327,15 @@ This interface has following variables, all of them are optional.
 </table>
 
 ```ts
+const enum Assets {
+  Logo = ""
+}
+
 const presenceData: PresenceData = {
   details: "My title",
   state: "My description",
-  largeImageKey: "service_logo",
-  smallImageKey: "small_service_icon",
+  largeImageKey: Assets.Logo,
+  smallImageKey: Assets.Reading, //Other Assets can be found in index.d.ts
   smallImageText: "You hovered me, and what now?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,

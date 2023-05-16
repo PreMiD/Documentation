@@ -331,14 +331,28 @@ Interface ini memiliki variabel berikut, semuanya merupakan opsional.
 </table>
 
 ```ts
+const enum Assets {
+  Logo = ""
+}
+
 const presenceData: PresenceData = {
-  details: "Judul saya",
-  state: "Deskripsi saya",
-  largeImageKey: "service_logo",
-  smallImageKey: "small_service_icon",
+  details: "My title",
+  state: "My description",
+  largeImageKey: Assets.Logo,
+  smallImageKey: Assets.Reading, //Other Assets can be found in index.d.ts
   smallImageText: "You hovered me, and what now?",
   startTimestamp: 1564444631188,
-  endTimestamp: 1564444634734
+  endTimestamp: 1564444634734,
+  buttons: [
+    {
+            label: "Test button1",
+            url: "https://premid.app/"
+        },
+        {
+            label: "Test button2",
+            url: "https://premid.app/contributors"
+        }
+    ]
 };
 ```
 

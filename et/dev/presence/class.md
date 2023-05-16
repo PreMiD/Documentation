@@ -332,21 +332,25 @@ Sellel liidesel on järgmised muutujad, mis kõik on valikulised.
 </table>
 
 ```ts
+const enum Assets {
+  Logo = ""
+}
+
 const presenceData: PresenceData = {
-  details: "Minu pealkiri",
-  state: "My kirjeldus",
-  largeImageKey: "service_logo",
-  smallImageKey: "small_service_icon",
-  smallImageText: "Sa vaatasid mind, ja mis nüüd?",
+  details: "My title",
+  state: "My description",
+  largeImageKey: Assets.Logo,
+  smallImageKey: Assets.Reading, //Other Assets can be found in index.d.ts
+  smallImageText: "You hovered me, and what now?",
   startTimestamp: 1564444631188,
   endTimestamp: 1564444634734,
   buttons: [
     {
-            label: "Test nupp1",
+            label: "Test button1",
             url: "https://premid.app/"
         },
         {
-            label: "Test nupp2",
+            label: "Test button2",
             url: "https://premid.app/contributors"
         }
     ]
