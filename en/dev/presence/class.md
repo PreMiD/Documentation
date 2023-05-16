@@ -334,8 +334,8 @@ This interface has following variables, all of them are optional.
 </table>
 
 ```ts
-enum Assets {
-Logo = ""
+const enum Assets {
+  Logo = ""
 }
 
 const presenceData: PresenceData = {
