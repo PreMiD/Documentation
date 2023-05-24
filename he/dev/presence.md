@@ -41,15 +41,15 @@ All Presences are made using [TypeScript](https://www.typescriptlang.org/). [Typ
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
 
-### Creating a Presence
+### יצירת נוכחות
 1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
-2. Select the first option
+2. בחר באפשרות הראשונה
 3. Fill in all prompted questions
 
 ### Compiling / Modifying a Presence
 1. Run `npx pmd`
-2. Select the second option
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+2. בחר באפשרות השנייה
+3. הזן את שם הנוכחות שברצונך לערוך > זה יתחיל מהדר TypeScript בתיקיה של אותה נוכחות, כעת כאשר אתה עורך את ה-`presence.ts` הוא יקמפל את הנוכחות עבורך באופן אוטומטי.
 {.is-info}
 
 For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
@@ -60,7 +60,7 @@ Since v2.2.0 there are now Slideshows, this allows you to show multiple `Presenc
 
 ## Can't get certain data?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. חלקם מוסתרים או פשוט לא בשימוש פעיל. Check if you can extract the information you need without them before you do unnecessary work.
 
 1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
 2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
