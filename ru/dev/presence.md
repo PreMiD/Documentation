@@ -110,8 +110,8 @@ The website you are developing on is automatically reloading every time you save
 
 ## Debugging
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- You can put `console.log("Test");` between your code and see if your browser console gives you that output. Если да, то продолжайте и повторите попытку после следующей функции. Если нет, то ошибка выше.
+- Если и это вам не поможет, обратитесь к разработчику присутствия на нашем сайте [Сервер Discord](https://discord.premid.app/) для помощи.
 
 # Файлы разъяснены
 
