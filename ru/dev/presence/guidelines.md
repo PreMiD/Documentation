@@ -180,7 +180,7 @@ presence
 ### **`logo`**
 
 - Логотип ** должен ** быть квадратным изображением с соотношением сторон ` 1:1`.
-- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
+- Изображение **обязательно** должно иметь разрешение `512x512` пикселей. Вы можете изменить его размер с помощью такого инструмента, как [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 

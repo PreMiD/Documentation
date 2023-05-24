@@ -67,7 +67,7 @@ Windows: Напишите в проводнике `%appdata%` и удалите 
 ### McAfee обнаружил PreMiD как вирус (Windows)
 Это ложное положительное впечатление от компании McAfee и мы сообщили им об этой проблеме. теперь вы можете исключить PreMiD из сканирования, выполнив следующие действия:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Если вы не чувствуете себя уверенно, выполняя эти шаги, не стесняйтесь создать тикет в [#support](https://discord.premid.app/), и один из наших агентов поддержки сможет помочь вам! 
 > 
 > {.is-warning}
 
@@ -127,4 +127,4 @@ Windows: Напишите в проводнике `%appdata%` и удалите 
 4. Открыть программу установки заново.
 
 # Это не решило мою проблему
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+Создайте новый пост в [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
