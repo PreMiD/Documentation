@@ -180,7 +180,7 @@ Daftar bidang dan peraturannya tertulis dibawah:
 ### **`logo`**
 
 - Logo **harus** berupa persegi dengan aspect ratio `1:1`.
-- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
+- Gambar **diharuskan** memiliki resolusi `512x512` pixel. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
