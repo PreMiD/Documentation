@@ -1,6 +1,6 @@
 ---
-title: TypeScript Configuration
-description: A little helper for TypeScript
+title: Configurare TypeScript
+description: Un mic ajutor pentru TypeScript
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:45:10.473Z
 ---
 
-# TypeScript Configuration
+# Configurare TypeScript
 
 ## Introducere
 

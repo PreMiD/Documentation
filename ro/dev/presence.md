@@ -119,4 +119,4 @@ The website you are developing on is automatically reloading every time you save
 - [Slideshow Class](/dev/presence/slideshow)
 - [iFrame Class](/dev/presence/iframe)
 - [Metadata File](/dev/presence/metadata)
-- [TypeScript Configuration](/dev/presence/tsconfig ""){.links-list}
+- [Configurare TypeScript](/dev/presence/tsconfig ""){.links-list}
