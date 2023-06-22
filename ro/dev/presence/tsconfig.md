@@ -12,13 +12,13 @@ dateCreated: 2021-09-07T01:45:10.473Z
 
 ## Introducere
 
-When you downloaded and unpacked the workspace, you will see a file called `tsconfig.json` in root and presence folders, this file is used for configuring the **TypeScript** compiler. It is already configured for you, so don't worry about that.
+Când ați descărcat și despachetat spațiul de lucru, veți vedea un fișier numit `tsconfig.json` în folderele rădăcină și prezență, acest fișier este utilizat pentru configurarea **TypeScript** compilator. Este deja configurat pentru tine, așa că nu-ți face griji pentru asta.
 
-We just want to describe some settings that you should know.
+Vrem doar să descriem câteva setări pe care ar trebui să le cunoașteți.
 
-## Root Configuration
+## Configurare rădăcină
 
-In the root configuration file you will see something like this.
+În fișierul de configurare rădăcină veți vedea ceva de genul acesta.
 
 ```json
 {
@@ -37,21 +37,21 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property                   | Descriere                                                                                                                                                           |
-|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **compilerOptions**        | Used for configuring the compiler, most of the properties are located here.                                                                                         |
-| module                     | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                     |
-| target                     | Defines the JavaScript version you are compiling.                                                                                                                   |
-| removeComments             | Removing comments from compiled files.                                                                                                                              |
-| noEmitOnError              | Do not emit outputs if any errors were reported.                                                                                                                    |
-| noFallthroughCasesInSwitch | Report errors for fallthrough cases in switch statement.                                                                                                            |
-| noUnusedLocals             | Report errors on unused locals.                                                                                                                                     |
-| noUnusedParameters         | Report errors on unused parameters.                                                                                                                                 |
-| inlineSourceMap            | Adds sourcemapping                                                                                                                                                  |
-| typeRoots                  | You can read more about that [here](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                     |
-| esModuleInterop            | Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility. |
+| Proprietate                | Descriere                                                                                                                                                                                                     |
+|:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **compilerOptions**        | Folosit pentru configurarea compilatorului, majoritatea proprietăților se află aici.                                                                                                                          |
+| module                     | Puteți citi mai multe despre asta [aici](https://www.typescriptlang.org/docs/handbook/modules.html).                                                                                                          |
+| target                     | Definește versiunea JavaScript pe care o compilați.                                                                                                                                                           |
+| removeComments             | Eliminarea comentariilor din fișierele compilate.                                                                                                                                                             |
+| noEmitOnError              | Nu emite ieșiri dacă au fost raportate erori.                                                                                                                                                                 |
+| noFallthroughCasesInSwitch | Raportați erorile pentru cazurile de pierdere în declarația switch.                                                                                                                                           |
+| noUnusedLocals             | Raportați erori privind localurile nefolosite.                                                                                                                                                                |
+| noUnusedParameters         | Raportați erorile privind parametrii neutilizați.                                                                                                                                                             |
+| inlineSourceMap            | Adăugări de mapare sursă                                                                                                                                                                                      |
+| typeRoots                  | Puteți citi mai multe despre asta [aici](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types).                                                                          |
+| esModuleInterop            | Emit __importStar și __importDefault ajutoare pentru compatibilitatea cu ecosistemul Babel în timpul de execuție și activarea --allowSyntheticDefaultImports pentru compatibilitatea cu sistemele de tip. |
 
-## Presence Configuration
+## Configurarea prezenței
 
 ```json
 {
@@ -62,8 +62,8 @@ In the root configuration file you will see something like this.
 }
 ```
 
-| Property            | Descriere                                                                              |
-|:------------------- |:-------------------------------------------------------------------------------------- |
-| **extends**         | Used for extending the base `tsconfig` file for various tasks.                         |
-| **compilerOptions** | See [**Root Configuration**](/dev/presence/tsconfig#root-configuration) for more info. |
-| outDir              | Defines the output directory for compiled files.                                       |
+| Proprietate         | Descriere                                                                                               |
+|:------------------- |:------------------------------------------------------------------------------------------------------- |
+| **extends**         | Folosit pentru extinderea bazei `tsconfig` dosar pentru diverse sarcini.                                |
+| **compilerOptions** | Vezi [**Configurare rădăcină**](/dev/presence/tsconfig#root-configuration) pentru mai multe informații. |
+| outDir              | Definește directorul de ieșire pentru fișierele compilate.                                              |
