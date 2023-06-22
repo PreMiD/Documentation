@@ -1,6 +1,6 @@
 ---
 title: API
-description: Access resources and perform actions using the PreMiD API
+description: Accesați resurse și efectuați acțiuni folosind API-ul PreMiD
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -14,7 +14,7 @@ dateCreated: 2021-09-07T01:25:28.441Z
 > 
 > {.is-info}
 
-## API Versioning
+## Versiune API
 > API v2 has been deprecated and most of its endpoints have been removed. Please use v3 for any future request to prevent issues. 
 > 
 > {.is-danger}
@@ -26,11 +26,11 @@ PreMiD exposes different versions of our API. You can specify version by includi
 All HTTP-layer services and protocols (e.g. http) within the PreMiD API use TLS 1.2.
 
 # Documentație
-> Currently under construction! 
+> Momentan în construcție! 
 > 
 > {.is-danger}
 
-**Choose the API version:**
-- [v2 *partially deleted | deprecated*](/dev/api/v2)
-- [v3 *current*](/dev/api/v3)
+**Alegeți versiunea API:**
+- [v2 *parțial șters | depreciat*](/dev/api/v2)
+- [v3 *actual*](/dev/api/v3)
 {.links-list}
