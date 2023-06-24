@@ -1,6 +1,6 @@
 ---
 title: Instalare
-description: How to install PreMiD
+description: Cum să instalezi PreMiD
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,11 +8,11 @@ editor: markdown
 dateCreated: 2020-06-11T18:03:51.119Z
 ---
 
-> Before going any further, make sure your system meets all the [requirements](/install/requirements). 
+> Înainte să mergi mai departe, verifică dacă sistemul tău îndeplinește toate [cerințele](/install/requirements). 
 > 
 > {.is-info}
 
-> **It is necessary** to install **both** the **application** and the **extension**! 
+> **Este necesar** să instalezi **aplicația**, dar și **extensia**! 
 > 
 > {.is-warning}
 
