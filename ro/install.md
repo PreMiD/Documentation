@@ -16,15 +16,15 @@ dateCreated: 2020-06-11T18:03:51.119Z
 > 
 > {.is-warning}
 
-**Choose your operating system:**
-- [Windows *7 or above*](/install/windows)
-- [macOS *10.11 or above*](/install/macos)
-- [Linux *kernel with v2.x or above*](/install/linux)
+**Alege sistemul tău de operare:**
+- [Windows *7 sau mai nou*](/install/windows)
+- [macOS *10.11 sau mai nou*](/install/macos)
+- [Linux *kernel cu v2.x sau deasupra*](/install/linux)
 {.links-list}
 
-**Choose your browser:**
-- [Chromium *v76 or above*](/install/chromium)
-- [Firefox *v69 or above*](/install/firefox)
+**Alege browser-ul tău:**
+- [Chromium *v76 sau mai nou*](/install/chromium)
+- [Firefox *v69 sau mai nou*](/install/firefox)
 {.links-list}
 
 ![](https://a.icons8.com/ajlQdsfa/FZhYWV/svg.svg) {.align-abstopright}
