@@ -1,6 +1,6 @@
 ---
 title: Metadata.json
-description: Contains basic data about the Presence
+description: Conţine date de bază despre prezenţă
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -10,9 +10,9 @@ dateCreated: 2020-06-11T18:04:52.965Z
 
 # Metadata.json
 
-If you want to publish a presence to the store and load it via the extension, you should create the `metadata.json` file in your `dist` folder.
+Dacă doriți să publicați o prezentă în magazin, și să o încărcați prin extensie, recomandăm să creați un fișier `metadata.json` în dosarul `dist`.
 
-An example of that file can be found below.
+Un exemplu al acelui fișier poate fi găsit mai jos.
 
 ```json
 {
