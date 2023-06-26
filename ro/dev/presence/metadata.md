@@ -262,11 +262,11 @@ The `multiLanguage` key can be set to the following:
 
 **Note:** Adding custom strings for a presence is only allowed if it has more than 1000 users.
 
-##### Cloning the project
+##### Clonarea proiectului
 
 1. Open a terminal and type `git clone https://github.com/PreMiD/Localization`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+2. Alegeți un folder la alegere.
+3. Deschideți-l în editorul de cod.
 
 ##### Creating the file
 
