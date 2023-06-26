@@ -1,5 +1,5 @@
 ---
-title: Presence Development
+title: Dezvoltator Prezență
 description:
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,35 +8,35 @@ editor: markdown
 dateCreated: 2020-06-11T18:04:02.843Z
 ---
 
-> All presences are now stored here: https://github.com/PreMiD/Presences 
+> Toate prezențele sunt acum stocate aici: https://github.com/PreMiD/Presences 
 > 
 > {.is-info}
 
-Version `2.x` introduces the [Presence Store](https://premid.app/store). Users now have the ability to manually add and remove their favourite presences through the user interface of the [website](https://premid.app/).
+Versiunea `2.x` introduce [magazin de prezență](https://premid.app/store). Utilizatorii au acum capacitatea de a adăuga și elimina manual prezența lor preferată prin interfața de utilizator a [site-ului web](https://premid.app/).
 
-> Before getting started, it is highly recommended that you look at our presence guidelines. 
+> Înainte de a începe, este foarte recomandat să vă uitați la regulile noastre de prezență. 
 > 
 > {.is-warning}
 
-- [Guidelines](https://docs.premid.app/dev/presence/guidelines)
+- [Instrucțiuni](https://docs.premid.app/dev/presence/guidelines)
 {.links-list}
 
-# Structure
+# Structură
 
-All Presences are made using [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) has some extra spicy type definitions over JavaScript, so fixing and identifying bugs is way easier.
+Toate prezența sunt codificate în [TypeScript](https://www.typescriptlang.org/). [TypeScript](https://www.typescriptlang.org/) are câteva definiții de tip extra picante față de JavaScript, așa că repararea și identificarea erorilor este mult mai ușoară.
 
 ## Cerințe
 
 1. [Git](https://git-scm.com/)
-2. [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/))
+2. [Node](https://nodejs.org/en/) (vine cu [npm](https://www.npmjs.com/))
 
-## Cloning the project
+## Clonarea proiectului
 
-1. Open a terminal and type `git clone https://github.com/PreMiD/Presences`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+1. Deschideți un terminal și tastați `git clone https://github.com/PreMiD/Presences`.
+2. Alegeți un folder la alegere.
+3. Deschideți-l în editorul de cod.
 
-## Getting started
+## Pentru a începe
 
 1. Open a new terminal in the `Presences` folder
 2. Install repository dependencies using `npm i` (Or your package manager of choice)
@@ -93,30 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Notă:** Acesta trebuie să fie plasat în afara evenimentului updateData.
 
-# Loading your Presence
+# Încărcarea prezenței
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Deschideți extensia popup în motorul de căutare și țineți apăsat butonul <kbd>Shift</kbd> butonul de pe tastatură.
+2. **Încărcarea prezenței** va apărea în secțiunea Prezențe.
+3. Faceți click pe el în timp ce încă țineți mâna pe butonul <kbd>Shift</kbd>.
+4. Selectați folderul /dist al prezenței dumneavoastră.
 
-# Some helpful things
+# Câteva sfaturi ajutătoare
 
 ## Hot-reloading
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Site-ul web pe care vă dezvoltați se reîncarcă automat de fiecare dată când salvați un fișier în folderul dumneavoastră.
 
-## Debugging
+## Depanare
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Poți să pui `console.log("Test");` între codul dumneavoastră și vedeți dacă consola motorului de căutare vă oferă acea ieșire. Dacă da, continuați și încercați din nou după următoarea funcție. Dacă nu, atunci există o eroare mai sus.
+- Dacă acest lucru nu te ajută fie să întrebi un dezvoltator de prezență pe serverul nostru [Discord server](https://discord.premid.app/) pentru ajutor.
 
-# Files explained
+# Explicația Fișierelor
 
-- [Presence Class](/dev/presence/class)
+- [Clasă prezență](/dev/presence/class)
 - [Slideshow Class](/dev/presence/slideshow)
-- [iFrame Class](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [Clasă iFrame](/dev/presence/iframe)
+- [Fișier Metadata](/dev/presence/metadata)
 - [Configurare TypeScript](/dev/presence/tsconfig ""){.links-list}
