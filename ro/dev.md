@@ -17,10 +17,10 @@ dateCreated: 2021-09-07T01:17:22.577Z
 2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
 3. Install [TypeScript](https://www.typescriptlang.org/index.html#download-links) (open a terminal and type `npm install -g typescript`).
 
-# Cloning the project
+# Clonarea proiectului
 1. Open a terminal and type `git clone URL`. **Replace URL with repository link you want to contribute to** e.g. `git clone https://github.com/PreMiD/PreMiD`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+2. Alegeți un folder la alegere.
+3. Deschideți-l în editorul de cod.
 
 # Installing dependencies
 > Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
