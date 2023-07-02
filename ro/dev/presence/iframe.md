@@ -1,5 +1,5 @@
 ---
-title: iFrame Class
+title: Clasă iFrame
 description:
 published: true
 date: 2021-12-20T14:27:18.034Z
@@ -8,31 +8,31 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:57.665Z
 ---
 
-# iFrame Class
+# Clasă iFrame
 
-## Introduction
+## Introducere
 
-In some scenarios, your presence may need to access elements inside of `iframes`.
+În unele scenarii, prezența ta ar putea avea nevoie să acceseze elemente din `iframes`.
 
-The code that you write inside of your `iframe.ts` file gets injected into every iframe on the page.
+Codul pe care îl scrieți în fișierul `iFrame.ts` este injectat în fiecare iframe de pe pagină.
 
-Like presences, `iframes` have their own classes designed to automatically update data.
+Ca prezențele, `iframes` au propriile clase proiectate pentru a actualiza automat datele.
 
 ```ts
 let iframe = new iFrame();
 
-iframe.on("UpdateData", async () => {
-    // Code goes here...
+iFrame.on("UpdateData", async () => {
+    // Cod merge aici...
 });
 ```
 
-## Methods
+## Metode
 
 ### `send(Object)`
-Sends data to the presence. Using this method will make the presence throw a `iFrameData` event.
+Trimite date către prezență. Folosind această metodă va face ca prezența să arunce un eveniment `iFrameData`.
 
 ### `getUrl()`
-Returns the URL of the `iframe`.
+Returnează adresa URL a `iframe`.
 
 ## Events
 In `iframes`, events work similarly to the way they work in the `presence` class.
