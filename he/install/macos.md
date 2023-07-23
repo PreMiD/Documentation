@@ -38,7 +38,7 @@ Steps for macOS Big Sur (11.0+):
 2. Click open in the dropdown menu.
 3. Click open in popup.
 
-Steps for older macOS versions:
+שלבים עבור גרסאות macOS ישנות יותר:
 1. Open System Preferences.
 2. Go to the Security & Privacy tab.
 3. Click on the lock and enter your password or scan your fingerprint so you can make changes.
