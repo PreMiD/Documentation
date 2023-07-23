@@ -42,7 +42,7 @@ Todas las presences están programadas en [TypeScript](https://www.typescriptlan
 2. Instala las dependencias del repositorio usando `npm i` (o el administrador de paquetes de tu elección)
 
 ### Creando una Presence
-1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
+1. Ejecuta `npx pmd` (o ejecuta`pmd` con el administrador de paquetes de tu elección)
 2. Selecciona la primera opción
 3. Completa todas las preguntas solicitadas
 

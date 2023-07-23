@@ -181,7 +181,7 @@ Una lista de los campos y sus reglas están listadas abajo:
 ### **`logo`**
 
 - El logo **debe** ser una imagen cuadrada con una relación de aspecto `1:1`.
-- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
+- La imagen **requiere** una resolución de `512x512` píxeles. Puedes redimensionarla con una herramienta como [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
