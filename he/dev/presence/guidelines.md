@@ -25,14 +25,14 @@ The general rules of presence development are as follows:
 
 - Presences **must** be related to the website of choice.
 - Presences **cannot** be made for illegal websites. (for e.g., stressors, drug marketing, child pornography, etc.)
-- The file structure must be clean and managed, do not include files which are not specified. (for e.g., vscode and git folders, image and text files, etc.)
+- The file structure must be clean and managed, do not include files which are not specified. (לדוגמה, תיקיות vscode ו-git, קבצי תמונות וטקסט וכו')
 - You need to have a proper file structure, drafts are **not** allowed.
 - Presences for websites with (`.onion` TLDs) or websites with free domains/hosts (for e.g., `.TK` [all free Freenom domains], `.RF`, `GD`, etc) are **not** permitted, exceptions can be made if a proof is presented showing that they paid for the domain.
-- The domain of the presence must be at least 2 months old.
+- תחום הנוכחות חייב להיות לפחות 2 חודשים.
 - Presence that target internal browser pages (like Chrome Web Store, `chrome://`, `about:` pages, etc) are **not** allowed as they require an experimental flag to be enabled on the user's end and could potentially cause damage to their browsers.
 - Presences with support for only a single subdomain will **not** be permitted, as they may seem broken for other pages (like the homepage), exceptions can be made for the policy and contact pages (content that isn't used often) or sites where the other content is unrelated. (for e.g., wikia pages)
-- Presences for online radios are only allowed if the radio has at least 100 weekly listeners and 15 concurrent and must have some features other than just showing album/song title, etc.
-- Presences are not allowed to run JS code with their own function to get variables. If Firefox has issues with built-in function inside `Presence` class, you are allowed to do your own function and you need to tell us about it in Pull Request description.
+- נוכחות עבור מכשירי רדיו מקוונים מותרת רק אם לרדיו יש לפחות 100 מאזינים שבועיים ו-15 בו-זמנית וחייבים לכלול תכונות מסוימות מלבד הצגת שם אלבום/שיר וכו'.
+- Presences are not allowed to run JS code with their own function to get variables. אם ל-Firefox יש בעיות עם פונקציה מובנית בתוך מחלקת `Presence`, אתה רשאי לבצע את הפונקציה שלך ואתה צריך לספר לנו עליה בתיאור Pull Request.
 - Low quality presences (or ones with little context) are **not** allowed (for e.g., only showing a logo and text but never changing it again).
 - Presences for services like Discord Bot/Server Lists must follow these extra requirements:
   - The domain should be at least **6 months** old.
