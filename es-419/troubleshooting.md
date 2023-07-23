@@ -67,7 +67,7 @@ Windows: Escribe `%appdata%` y elimina la carpeta `PreMiD`. MacOS: `~/users/USUS
 ### McAfee detectó a PreMiD como un virus (Windows)
 Esto es un falso positivo de McAfee y les hemos informado del problema, por ahora puedes excluir a PreMiD del escaneo haciendo lo siguiente:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> Si no estás seguro de cómo seguir estos pasos, ¡Siéntete libre de abrir un ticket en [#support](https://discord.premid.app/) y uno de nuestros agentes de soporte te ayudará! 
 > 
 > {.is-warning}
 
