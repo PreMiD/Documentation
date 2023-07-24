@@ -66,10 +66,10 @@ A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/W
 2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
 3. Execute `document.querySelectorAll("iframe")`.
 
-If you find that your data is in a iFrame you need to do the following:
+אם אתה מגלה שהנתונים שלך נמצאים ב-iFrame, עליך לבצע את הפעולות הבאות:
 
 1. Create a `iframe.ts` file.
-2. Set iFrame to `true` in your metadata file.
+2. הגדר את iFrame ל-`true` בקובץ המטא נתונים שלך.
 3. Filling in your iFrame file.
 
 ```ts
@@ -84,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. גורם לקובץ הנוכחות שלך לקבל נתונים מקובץ iFrame.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -97,9 +97,9 @@ presence.on("iFrameData", (data) => {
 
 # Loading your Presence
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
+1. פתח את התוסף הקופץ בדפדפן והחזק את כפתור <kbd>Shift</kbd> במקלדת שלך.
 2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
+3. לחץ עליו בזמן שאתה עדיין מחזיק את הלחצן <kbd>Shift</kbd>.
 4. Select the /dist folder of your presence.
 
 # Some helpful things
