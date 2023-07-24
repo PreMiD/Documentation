@@ -215,7 +215,7 @@ A list of fields and their rules are listed below:
 ### **`warning`**
 
 - Enables warning icon for prompting user that this presence needs more steps than only adding presence.
-- Example of presence using this metadata variable is `VLC`.
+- דוגמה לנוכחות באמצעות משתנה מטא נתונים זה היא `VLC`.
 
 ### **`settings`**
 

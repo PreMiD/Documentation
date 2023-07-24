@@ -37,7 +37,7 @@ First parameter requires a `String` that will be used as a unique identifier for
 
 Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+פרמטר שלישי דורש `Number` שהוא משך הזמן באלפיות שניות (מינימום: 5000) שהשקופית הזו תציג.
 
 ### `getSlides()`
 
@@ -51,7 +51,7 @@ First parameter requires a `String` that is the unique identifier of the slide y
 
 Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+פרמטר שלישי דורש `Number` שהוא משך הזמן באלפיות שניות (מינימום: 5000) שהשקופית הזו תציג.
 
 ### `hasSlide(String)`
 
