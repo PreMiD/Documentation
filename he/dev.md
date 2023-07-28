@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: A little advice for those who got into coding recently
+title: הכנה להתחיל
+description: עצה קטנה למי שנכנס לקידוד לאחרונה
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,37 +8,37 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:22.577Z
 ---
 
-> A source code editor is required. We recommend [Visual Studio Code](https://code.visualstudio.com/). 
+> נדרש עורך קוד מקור. .[Visual Studio Code](https://code.visualstudio.com/) אנחנו ממליצים. 
 > 
 > {.is-info}
 
-# Installing the requirements
-1. Install [Git](https://git-scm.com/).
-2. Install [Node](https://nodejs.org/en/) (comes with [npm](https://www.npmjs.com/)).
+# התקנת הדרישות
+1. התקן את [Git](https://git-scm.com/).
+2. התקן את [Node](https://nodejs.org/en/) (מגיע עם [npm](https://www.npmjs.com/)).
 3. התקן [TypeScript](https://www.typescriptlang.org/index.html#download-links) (פתח מסוף והקלד `npm install -g typescript`).
 
-# Cloning the project
-1. Open a terminal and type `git clone URL`. **Replace URL with repository link you want to contribute to** e.g. `git clone https://github.com/PreMiD/PreMiD`.
-2. Choose a folder of your choice.
-3. Open it in your code editor.
+# שיבוט הפרויקט
+1. פתח מסוף והקלד `כתובת אתר שיבוט של git`. **החלף את כתובת האתר בקישור למאגר שאתה רוצה לתרום לו** לְמָשָׁל `שיבוט git https://github.com/PreMiD/PreMiD`.
+2. בחר תיקיה לפי בחירתך.
+3. פתח אותו בעורך הקוד שלך.
 
-# Installing dependencies
-> Be sure you have installed [npm](https://www.npmjs.com/) (Node Package Manager) first. It automatically installed itself if you have [Node](https://nodejs.org/en/) installed. 
+# התקנת תלות
+> ודא שהתקנת תחילה את [npm](https://www.npmjs.com/) (מנהל חבילות צומת). זה התקין את עצמו באופן אוטומטי אם התקנת את [Node](https://nodejs.org/en/). 
 > 
 > {.is-warning}
 
-- Open a terminal in your repository and type `npm i`.
-- To update the dependencies type `npm update`.
+- פתח מסוף במאגר שלך והקלד `npm i`.
+- כדי לעדכן את התלות הקלד `npm update`.
 
-> Be aware that updating the dependencies could break a lot, or not - testing is required! 
+> שים לב כי עדכון יחסי התלות יכול לשבור הרבה, או לא - בדיקה נדרשת! 
 > 
 > {.is-danger}
 
-# Coding your vision
-Please keep the structure. We do not want to disorganize our project. Chaotic files may not be accepted.
+# קידוד החזון שלך
+אנא שמור על המבנה. אנחנו לא רוצים לא לארגן את הפרויקט שלנו. ייתכן שקבצים כאוטיים לא יתקבלו.
 
-# Submitting your dream
-Just open a Pull Request on one of our [GitHub repositories](https://github.com/PreMiD/) you want to contribute to. We will take care of your baby, don't worry. If this is your first time making a pull request, take a look at this [tutorial](https://help.github.com/en/articles/creating-a-pull-request).
+# הגשת החלום שלך
+פשוט פתחו Pull Request באחד מ[מאגרי GitHub](https://github.com/PreMiD/) שלנו שאתם רוצים לתרום להם. אנחנו נדאג לתינוק שלך, אל תדאגי. אם זו הפעם הראשונה שלך שאתה מבצע בקשת משיכה, עיין ב[מדריך](https://help.github.com/en/articles/creating-a-pull-request) זה.
 
-# Getting approved
+# קבלת אישור
 Please patiently wait for our [Reviewers](https://docs.premid.app/en/dev/presence/guidelines#presence-reviewers) to review your Pull Request.
