@@ -22,7 +22,7 @@ The installation of the application is very important as the extension can not d
   - Examples (soon)
   - FAQs (soon)
   - Building (soon)
-  - [Support](#support)
+  - [תמיכה](#support)
   - [תודות](#credits)
   - [License](#license)
 - **[Snapcraft](#snapcraft)** (TL;DR : _never_ ™️)
@@ -70,7 +70,7 @@ It is unknown whether older versions of other distributions support it, so just 
 
 <a name="support"></a>
 
-### Support
+### תמיכה
 
 <div>
   <a target="_blank" href="https://discord.premid.app/" title="הצטרף לדיסקורד שלנו!">
