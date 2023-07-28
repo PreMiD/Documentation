@@ -1,6 +1,6 @@
 ---
 title: פתרון תקלות
-description: Everything to solve your problem
+description: הכל כדי לפתור את הבעיה שלך
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
@@ -8,123 +8,122 @@ editor: markdown
 dateCreated: 2021-09-07T01:17:32.312Z
 ---
 
-> Make sure you have the extension **and** the application installed! 
+> וודא שיש לך את התוסף ** ו ** את היישום מותקנים! 
 > 
 > {.is-warning}
 
-Included on this page:
-1. [General troubleshooting](https://docs.premid.app/troubleshooting#general)
-2. [Linux troubleshooting](https://docs.premid.app/troubleshooting#linux)
-3. [MacOS troubleshooting](https://docs.premid.app/troubleshooting#macos)
+כלול בדף זה:
+1. [פתרון בעיות כללי](https://docs.premid.app/troubleshooting#general)
+2. [פתרון בעיות לינוקס](https://docs.premid.app/troubleshooting#linux)
+3. [פתרון בעיות ב-MacOS](https://docs.premid.app/troubleshooting#macos)
 
 <a name="general"></a>
 
-# General troubleshooting
+# פתרון בעיות כללי
 ### טען מחדש את הדף
-You can press <kbd>CTRL+R</kbd>/<kbd>F5</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard too instead of searching for the refresh button.
+אתה יכול ללחוץ <kbd>CTRL+R</kbd> / <kbd>f5</kbd> (Windows) או <kbd>CMD+R</kbd> (פקודות מאקרו) על המקלדת שלך מדי במקום לחפש את כפתור הרענון.
 
 ### האם אתה משתמש באפליקציית Discord?
-PreMiD does **not** work on the browser version of Discord, you must download the app [here](https://discord.com/download).
+PreMiD **לא** עובד על גרסת הדפדפן של Discord, עליך להוריד את האפליקציה [כאן](https://discord.com/download).
 
-### Make sure that you have enabled Activity Status in your Discord app settings
-**User Settings** > **Activity Status**
+### ודא שיש לך סטטוס פעילות מופעל בהגדרות האפליקציה של Discord
+**הגדרות משתמש** > **מצב פעילות**
 <img src="https://i.imgur.com/9SfrrWm.png" width="500px" style="max-width:100%;" />
 
 ### ודא כי דיסקורד לא פועל כמנהל מערכת
-Really important. Discord RPC will not work if you run Discord as an administrator.
+Really important. Discord RPC לא יעבוד אם אתה מפעיל מחלוקת כמנהל.
 
-### Are you using a presence with settings?
-Many presences (including `Twitch` and `SoundCloud`) are affected by an extension issue. This issue causes the extension to not grab the default values of settings properly.
+### האם אתה משתמש בנוכחות עם הגדרות?
+נוכחות רבות (כולל `Twitch` ו-`SoundCloud`) מושפעות מבעיית הרחבה. בעיה זו גורמת לתוסף לא לתפוס כראוי את ערכי ברירת המחדל של ההגדרות.
 
-To solve this, all you have to do is toggle the topmost setting:
+כדי לפתור זאת, כל מה שאתה צריך לעשות הוא להחליף את ההגדרה העליונה:
 <img src="https://i.imgur.com/JtXxTzg.gif" width="500px" style="max-width:100%;" />
 
-### הפעל מחדש את הדפדפן שלך
-<kbd>Alt</kbd>+<kbd>F4</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>Q</kbd> (MacOS) does a good job too. (You have to start your browser again obviously.)
+### Restart your browser
+<kbd>Alt</kbd> + <kbd>F4</kbd> (Windows) או <kbd>CMD</kbd>+<kbd>Q</kbd> (MAC OS) עושה עבודה טובה מדי. (אתה צריך להפעיל את הדפדפן שלך שוב כמובן.)
 
 ### הפעל מחדש את PreMiD (יישום)
 <img src="https://i.imgur.com/g3ShdnU.png" width="500px" style="max-width:100%;" />
-You have to restart PreMiD afterwards.
+עליך להפעיל מחדש את PreMiD לאחר מכן.
 
 ### טען/הפעל מחדש את Discord
-Press <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) on your keyboard or restart Discord manually.
+לחץ על<kbd>CTRL+R </kbd> (Windows) או <kbd>CMD+R</kbd> (MacOS) על המקלדת שלך או הפעל מחדש את הדיסקורד באופן ידני.
 
-### Check if you have antivirus or firewall running on your computer
-Sometimes antivirus programs and firewalls are blocking applications which are creating/hosting servers or just connecting to the internet. We are using a local server to receive and pass data between our app and extension, so if you block app's ability to pass data, you probably will not be able to use PreMiD.
+### בדוק אם במחשב שלך פועל אנטי-וירוס או חומת אש
+לפעמים תוכנות אנטי-וירוס וחומות אש חוסמות יישומים שיוצרים/מאחסנים שרתים או פשוט מתחברים לאינטרנט. אנו משתמשים בשרת מקומי כדי לקבל ולהעביר נתונים בין האפליקציה וההרחבה שלנו, כך שאם תחסום את היכולת של האפליקציה להעביר נתונים סביר להניח שלא תוכל להשתמש ב- PreMiD.
 
-### Disable your addons
-Disable all your addons and see if it works. If yes, try to enable your addons step-by-step and tell us which addon broke PreMiD.
+### השבת את התוספות שלך
+השבת את כל התוספים שלך ובדוק אם זה עובד. אם כן, נסה להפעיל את התוספים שלך שלב אחר שלב וספר לנו איזה תוסף שבר את PreMiD.
 
-### Restarting your computer
-I hope you know how to restart a computer.
+### הפעלה מחדש של המחשב
+אני מקווה שאתה יודע איך להפעיל מחדש מחשב.
 
-### Reinstalling PreMiD
-Sometimes there is something wrong with the files... Tutorials for the installation can be found [here](/install).
+### התקנה מחדש של PreMiD
+לפעמים יש משהו לא בסדר עם הקבצים... ניתן למצוא מדריכים להתקנה [כאן](/install).
 
-### Manual removal
-Windows: Write `%appdata%` on the file explorer and delete the `PreMiD` folder. MacOS: `~/users/USER/~Library/Application Support/` and delete the `PreMiD` folder.
+### הסרה ידנית
+Windows: כתוב `%appdata%` בסייר הקבצים ומחק את התיקיה `PreMiD`. MacOS: `~/users/USER/~Library/Application Support/` ומחק את התיקיה `PreMiD`.
 
 ### McAfee זיהה את PreMiD כוירוס (Windows)
-This is a false positive from McAfee and we have reported the issue to them, for now you can exclude PreMiD from the scan by doing the following steps:
+זהו חיובי כוזב מ- McAfee ודיווחנו להם על הבעיה, לעת עתה באפשרותך לא לכלול את PreMiD בסריקה על-ידי ביצוע השלבים הבאים:
 
-> If you do not feel confident taking these steps, feel free to make a ticket in [#support](https://discord.premid.app/) and one of our Support Agents will be able to help you out! 
+> ניתן להשתמש בכלי [זה](https://qkeleq10.github.io/PreMiD-Troubleshooting/) כדי לזהות בקלות רבה יותר את הבעיה שלך. 
 > 
 > {.is-warning}
 
-1. Open the McAfee application and click the settings icon in the top right. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
+1. פתח את יישום McAfee ולחץ על סמל ההגדרות בצד השמאלי העליון. <img src="https://i.imgur.com/rPLZn6c.png" width="500px" style="max-width:100%;" />
 2. לחץ על "פריטים בהסגר" (שני מלמעלה).
 3. Expand it, and click the `>` icon before an item with the name "settings.dat".
 4. Make sure the path includes "AppData\Local\Temp\PreMiD", if so select it and press restore. <img src="https://i.imgur.com/9nvHmiI.png" width="500px" style="max-width:100%;" />
-5. After it is restored you can close the "Quarantined Items" popup, then press the settings icon again in the top right.
-6. Click "Real-Time Scanning" (Third from the top).
-7. Expand it and click "Add file".
-8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
-9. Open the "PreMiD" folder and select the "PreMiD.exe" file and click open. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
-10. McAfee should now ignore our file, just launch our application and you should be good to go.
+5. לאחר שחזורו באפשרותך לסגור את הפריטים המוקפצים "פריטים בהסגר", ולאחר מכן להקיש שוב על סמל ההגדרות בצד למעלה.
+6. לחץ על "סריקה בזמן אמת" (שלישי מלמעלה).
+7. הרחב אותו ולחץ על "הוסף קובץ".
+8. הקלד "%appdata%" בשורת הכתובת של סייר הקבצים והקש Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
+9. פתח את התיקיה "PreMiD" ובחר את הקובץ "PreMiD.exe" ולחץ על פתח. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
+10. McAfee צריך עכשיו להתעלם הקובץ שלך, רק להפעיל את היישום שלנו ואתה צריך להיות טוב ללכת.
 
-### PreMiD status bugged on Discord
-Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
+### מצב PreMiD מצותת ל-Discord
+אל תדאג. לחץ על מקש <kbd>CTRL+R</kbd> (Windows) או <kbd>CMD+R</kbd> (פקודות מאקרו) keybind תוך התמקדות בחלון הדיסק כדי לטעון אותו מחדש.
 
 <a name="linux"></a>
 
-# Linux troubleshooting
-### Ubuntu/Debian based distros
-If you have downloaded Discord through Snapcraft, RPC will not work. You have to uninstall the Snapcraft version by executing `sudo snap remove discord` on a terminal, download **[Discord's Linux build](https://discordapp.com/api/download?platform=linux)** (**[or Discord Canary](https://discordapp.com/api/canary/download?platform=linux)**), then navigating to the directory you downloaded Discord to (usually `$HOME/Downloads`), then installing the package using `sudo dpkg -i discord-*.deb`. If AppImage doesn't work, you should consider checking our other packages by **[this link](https://packagecloud.io/premid/linux)**.
+# פתרון בעיות לינוקס
+### הפצה מבוססת Ubuntu/Debian
+אם הורדת את Discord באמצעות Snapcraft, RPC לא יפעל. עליך להסיר את ההתקנה של גרסת Snapcraft על ידי ביצוע `sudo snap remove discord` בטרמינל, הורד את **[מבנה הלינוקס של דיסקורד](https://discordapp.com/api/ download?platform=linux)** (**[או Discord Canary](https://discordapp.com/api/canary/download?platform= linux)**), לאחר מכן נווט אל הספרייה שאליה הורדת את Discord (בדרך כלל `$HOME/Downloads`), ולאחר מכן התקנת החבילה באמצעות `sudo dpkg -i discord-*.deb`. אם AppImage לא עובד, אתה צריך לשקול לבדוק את החבילות האחרות שלנו על ידי **[קישור זה](https://packagecloud.io/premid/linux)**.
 
-### Arch Linux based distros
-Arch Linux based distros should use AUR (Arch User Repository) package that is named <code>premid</code> or <code>premid-git</code> (<em x-id="3">WARNING: This repository builds premid from our source code.</em>). If you don't want to install an AUR manager (yay etc.), you can check out our AppImage that is downloadable from our <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux repository</a></strong>.
-<em x-id="3">Warning: the package in the <strong x-id="1">AUR</strong> repository is not maintained by us (as PreMiD organization), but by other people.</em>
+### הפצה מבוססת Arch Linux
+הפצה מבוססת Arch Linux צריכה להשתמש בחבילת AUR (מאגר משתמש קשת) בשם <code>premid</code> or <code>premid-git</code> (<em x-id="3">אַזהָרָה: מאגר זה בונה קדם מקוד המקור שלנו.</em>). אם אתה לא רוצה להתקין מנהל AUR (yay וכו '), אתה יכול לבדוק AppImage שלנו כי הוא להורדה שלנו <strong x-id="1"><a href="https://github.com/premid/linux/releases">Linux מאגר</a></strong>.
+<em x-id="3">אזהרה: החבילה ב <strong x-id="1">AUR</strong> המאגר אינו מתוחזק על ידינו (כמו PreMiD ארגון), אלא על ידי אנשים אחרים.</em>
 
-### Port binding
-You should know that <strong x-id="1">PreMiD</strong> binds itself to the port <strong x-id="1">3020</strong>. This is necessary for the Extension and the Application communicate. If <strong x-id="1">PreMiD</strong> shows you an error about this port, you should check if something is binded to the 3020 port by running <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> in your terminal. If some process is binded to it you should make sure to free the port and try running <code>PreMiD</code> again.
+### כריכת נמל
+אתה צריך לדעת את זה. <strong x-id="1">PreMiD</strong> קושר את עצמו ליציאה <strong x-id="1">3020</strong>. זה הכרחי עבור ההרחבה ואת היישום לתקשר. אם <strong x-id="1">PreMiD</strong> shows אתה שגיאה ביציאה זו, עליך לבדוק אם משהו מאוגד ליציאה 3020 על-ידי הפעלה <code>sudo lsof -i:3020</code> or <code>sudo netstat -tnlp | grep :3020</code> במסוף שלך. אם תהליך מסוים מאוגד אליו אתה צריך לוודא כדי לשחרר את היציאה ולנסות לרוץ <code>PreMiD</code> שוב.
 
-### PreMiD's AppImage doesn't launch at login
-As we stated in our **Linux repository**, AppImage can't be launched at login. You can add it to autostart manually by doing these steps:
-1. Make a file named <strong x-id="1">rc.local</strong> in the <code>/etc</code> directory.
-2. Open this file in your favourite editor and paste given code with changing some things:
+### AppImage של PreMiD אינו מופעל בכניסה
+כפי שהצהרנו ב **Linux מאגר**, AppImage לא ניתן להפעיל בעת הכניסה. באפשרותך להוסיף אותו להפעלה אוטומטית באופן ידני על-ידי ביצוע השלבים הבאים:
+1. יצירת קובץ בשם <strong x-id="1" mark="crwd- mark">rc.local</strong> בתוך ה
+ <code>/etc</code> מַדרִיך.
+2. פתח קובץ זה בעורך המועדף עליך והדבק קוד נתון עם שינוי כמה דברים:
 ```bash
 #!/bin/bash
-# Required to run as /bin/bash (if you use zsh etc. you can change it.)
+# נדרש לרוץ כמו /bin/bash (אם אתם משתמשים ב-zsh וכו'. אתה יכול לשנות את זה.)
 
-# Example: /home/PreMiD/PreMiD*.AppImage
+# דוגמה: /home/PreMiD/PreMiD*.AppImage
 <directory to appimage>/PreMiD*.AppImage
-
-exit 0
 ```
-3. Save file and chmod it as executable `sudo chmod a+x /etc/rc.local`.
-4. Restart your PC and PreMiD AppImage should launch at login.
+3. שמור קובץ ו-chmod אותו כקובץ הרצה `sudo chmod a+x /etc/rc.local`.
+4. הפעל מחדש את המחשב ואת AppImage PreMiD צריך להפעיל בעת הכניסה.
 
 <a name="macos"></a>
 
-# MacOS troubleshooting
-### Error creating directory
+# פתרון בעיות ב-MacOS
+### שגיאה ביצירת ספריה
 <img src="https://i.imgur.com/td92lf6.png" width="300px" style="max-width:100%;" />
 
-If you get this error, it means that your account doesn't have Administrator permissions and you need to create folder manually by doing these steps:
-1. Open finder and open **Applications** folder.
-2. Right-click on blank space and click **Create folder**.
-3. To this folder assign `PreMiD` name (remember about upper-cased letters).
-4. Open installer again.
+אם אתה מקבל שגיאה זו, פירוש הדבר שלחשבון שלך אין הרשאות מנהל מערכת ועליך ליצור תיקיה באופן ידני על-ידי ביצוע השלבים הבאים:
+1. פתח את הממצא ופתח **Applications** תיקייה.
+2. לחץ באמצעות לחצן העכבר הימני על שטח ריק ולחץ על **צור תיקיה**.
+3. להקצאת תיקיה זו `PreMiD` שם (זכור אודות אותיות-גדולות אותיות).
+4. פתח התקנה שוב.
 
 # זה לא פתר את הבעיה שלי
-Please create a new post in [#support](https://discord.com/channels/493130730549805057/1019726199494279248).
+אנא צור פוסט חדש ב-[support#](https://discord.com/channels/493130730549805057/1019726199494279248).
