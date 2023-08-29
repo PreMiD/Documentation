@@ -80,7 +80,7 @@ This is a false positive from McAfee and we have reported the issue to them, for
 7. 확장하고 " 파일 추가 " 버튼을 눌러주세요.
 8. Type "%appdata%" in the address bar of the File Explorer and press Enter. <img src="https://i.imgur.com/2bchwLe.png" width="500px" style="max-width:100%;" />
 9. "PreMiD" 폴더를 열고, "PreMiD.exe" 파일을 더블클릭해서 열어주세요. <img src="https://i.imgur.com/aHOyv3V.png" width="500px" style="max-width:100%;" />
-10. McAfee가 이제 저희 파일을 무시하게 될거에요. 저희의 앱을 다시 실행하면, 정상적으로 작동할거에요.
+10. McAfee가 이제 저희 파일을 무시하게 될 거예요. 그러고 나서 앱을 다시 실행하기만 하면 돼요.
 
 ### PreMiD status bugged on Discord
 Don't worry. Press the <kbd>CTRL+R</kbd> (Windows) or <kbd>CMD+R</kbd> (MacOS) keybind while focused on your Discord window to reload it.
