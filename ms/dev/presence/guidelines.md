@@ -180,7 +180,7 @@ Senarai medan dan peraturan berkaitan disenaraikan di bawah:
 ### **`logo`**
 
 - Logo **mestilah** imej segi empat sama dengan nisbah bidang `1:1`.
-- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
+- Imej **mestilah** mempunyai resolusi `512x512` piksel. Anda boleh menukarkan saiznya menggunakan alatan seperti [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
