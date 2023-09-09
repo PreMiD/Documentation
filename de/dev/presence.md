@@ -36,41 +36,41 @@ Alle Presences sind in [TypeScript](https://www.typescriptlang.org/) geschrieben
 2. Wähle einen Ordner Deiner Wahl.
 3. Öffne es in Deinem Code-Editor.
 
-## Getting started
+## Ordner und Dateien erstellen
 
-1. Open a new terminal in the `Presences` folder
-2. Install repository dependencies using `npm i` (Or your package manager of choice)
+1. Gehe in den `Webseiten` Ordner und dann in den Ordner mit dem ersten Buchstaben des **name** (keine URL) des Dienstes, den du unterstützen willst.
+2. Erstelle einen Ordner mit dem **Namen** (keine URL) des Dienstes, den Du unterstützen möchtest.
 
-### Creating a Presence
-1. Run `npx pmd` (or run `pmd` with the package manager of your choice)
-2. Select the first option
-3. Fill in all prompted questions
+### Eine Presence erstellen
+1. Führe `npx pmd` aus (oder führe `pmd` über den Package Manager deiner Wahl aus)
+2. Wähle die erste Option
+3. Fülle alle Fragen aus
 
-### Compiling / Modifying a Presence
-1. Run `npx pmd`
-2. Select the second option
-3. Enter the Presence name you want to edit > This will start a TypeScript compiler in that Presence's folder, now when you edit the `presence.ts` it will automatically compile the presence for you.
+### Kompilieren / Ändern eines Presence
+1. Führe `npx pmd` aus
+2. Wähle die zweite Option aus
+3. Gebe den Presence Namen ein, den du bearbeiten möchtest > Dadurch wird ein TypeScript-Compiler im Ordner dieser Präsenz gestartet, wenn du nun die `presence.ts` datei bearbeitests wird das presence automatisch für dich kompiliert.
 {.is-info}
 
 For inspiration or examples on how to structure your Presence's code, take a look at existing Presences like 1337x or 9GAG
 
 For more information about the `Presence` class click [here](/dev/presence/class).
 
-Since v2.2.0 there are now Slideshows, this allows you to show multiple `PresenceData` interfaces on an interval, for more information click about the `Slideshow` class [here](/dev/presence/slideshow).
+Seit v2.2.0 gibt es Slideshows, die es dir erlauben mehrere `PresenceData`-Schnittstellen in einem Intervall anzuzeigen, für mehr Information über die `Slideshow`-Klasse, klicke [hier](/dev/presence/slideshow).
 
-## Can't get certain data?!
+## Du kannst bestimmte Daten nicht abrufen?!
 
-A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Some are hidden or just not actively used. Check if you can extract the information you need without them before you do unnecessary work.
+A lot of websites are using [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) ([Inlineframes](https://en.wikipedia.org/wiki/HTML_element#Frames)). These html tags can contain multiple sources such as videos. But they're not relevant every time. Einige sind versteckt oder werden nicht aktiv genutzt. Prüfe, ob du die Informationen die du wirklich brauchst extrahieren kannst, bevor du dir unnötige Arbeit machst.
 
 1. Check for them in your browsers console (be sure that you are on the **Elements** tab).
-2. Search (<kbd>CTRL</kbd>+<kbd>F</kbd> (Windows) or <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
-3. Execute `document.querySelectorAll("iframe")`.
+2. Suche (<kbd>Strg</kbd>+<kbd>F</kbd> (Windows) oder <kbd>CMD</kbd>+<kbd>F</kbd> (MacOS)).
+3. Führe `document.querySelectorAll("iframe")` aus.
 
-If you find that your data is in a iFrame you need to do the following:
+Wenn du feststellst, dass deine Daten in einem iFrame sind, musst du folgende Schritte ausführen:
 
-1. Create a `iframe.ts` file.
+1. Erstelle eine `iframe.ts`-Datei.
 2. Set iFrame to `true` in your metadata file.
-3. Filling in your iFrame file.
+3. Fülle deine iFrame-Datei aus.
 
 ```ts
 const iframe = new iFrame();
@@ -84,7 +84,7 @@ iframe.on("UpdateData", async () => {
 });
 ```
 
-4. Making your presence file receive data from the iFrame file.
+4. Ermögliche deiner Presence-Datei, Daten aus deiner iFrame-Datei zu empfangen.
 
 ```ts
 presence.on("iFrameData", (data) => {
@@ -93,30 +93,30 @@ presence.on("iFrameData", (data) => {
 });
 ```
 
-**Note:** This needs to be placed outside of the updateData event.
+**Hinweis:** Dies muss außerhalb des updateData-Events platziert werden.
 
-# Loading your Presence
+# Presence laden
 
-1. Open the extension popup in the browser and hold the <kbd>Shift</kbd> button on your keyboard.
-2. **Load Presence** will appear in the Presences section.
-3. Click on it while you are still holding the <kbd>Shift</kbd> button.
-4. Select the /dist folder of your presence.
+1. Öffne das Erweiterungs-Popup im Browser und halte die <kbd>Umschalt</kbd>-Taste auf deiner Tastatur gedrückt.
+2. **Presence laden** wird im Presence Bereich erscheinen.
+3. Klicke darauf, während du die Taste <kbd>Shift</kbd> weiterhin gedrückt hälst.
+4. Wähle den /dist Ordner deines Presence.
 
 # Einige hilfreiche Dinge
 
-## Hot-reloading
+## Neuladen
 
-The website you are developing on is automatically reloading every time you save a file in your folder.
+Die Website, auf der Sie entwickeln, wird jedes Mal automatisch neu geladen, wenn Sie eine Datei in Ihrem Ordner speichern.
 
 ## Debugging
 
-- You can put `console.log("Test");` between your code and see if your browser console gives you that output. If yes then go on and try again after the next function. If not then there is an error above.
-- If that doesn't help you either then ask a presence developer on our [Discord server](https://discord.premid.app/) for help.
+- Du kannst `console.log("Test");` zwischen deinen Code setzten und prüfen, ob deine Konsole den Output liefert. Wenn ja, fahre fort und versuche es in der nächsten Funktion erneut. Wenn nicht, liegt oben ein Fehler vor.
+- Sollte das nicht helfen, kannst du einen Presence-Entwickler auf unserem [Discord Server](https://discord.premid.app/) um Hilfe fragen.
 
 # Dateien erklärt
 
 - [Presence-Klasse](/dev/presence/class)
 - [Slideshow Klasse](/dev/presence/slideshow)
 - [iFrame-Klasse](/dev/presence/iframe)
-- [Metadata File](/dev/presence/metadata)
+- [Metadatein](/dev/presence/metadata)
 - [TypeScript-Konfiguration](/dev/presence/tsconfig ""){.links-list}
