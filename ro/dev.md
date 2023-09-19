@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: A little advice for those who got into coding recently
+title: Noțiuni de bază
+description: Un mic sfat pentru cei care s-au apucat recent de programare
 published: true
 date: 2021-12-20T14:27:18.034Z
 tags:
