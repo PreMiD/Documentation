@@ -26,7 +26,6 @@ De algemene regels voor de ontwikkeling van een presence zijn:
 - Presences **moeten** gerelateerd zijn aan de website van de keuze.
 - Presences **mogen niet** worden gemaakt voor illegale websites. (bijvoorbeeld, stressors, drugshandel, kinderpornografie, enz.)
 - De bestandsstructuur moet "clean" en beheerd zijn, bevat geen bestanden die niet gespecificeerd zijn. (bijvoorbeeld vscode en git folders, afbeeldingen en tekstbestanden, etc.)
-- Je moet een juiste bestandsstructuur hebben, concepten zijn **niet** toegestaan.
 - Presences voor websites met (`.onion` TLD's) of websites met gratis domeinen/hosts (zoals `.TK` [alle gratis Freenom domeinen], `.RF`, `GD`, etc.) zijn **niet** toegestaan, uitzonderingen kunnen gemaakt worden als er bewijs is laten zien dat er betaald is voor een domein.
 - Het domein van de presence moet minimaal 2 maanden oud zijn.
 - Presences die gericht zijn op interne browserpagina's (zoals de Chrome Web Store, `chrome://`- en `about:`-pagina's, etc.) zijn **niet** toegestaan, omdat zij een experimentele flag ingeschakeld moeten hebben, en omdat het mogelijk schade kan toebrengen aan browsers.
