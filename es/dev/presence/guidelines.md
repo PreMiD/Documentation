@@ -26,7 +26,6 @@ Las reglas generales del desarrollo de una Presence son las siguientes:
 - Las Presencias **deben** estar relacionadas con el sitio web que has elegido.
 - Las Presencias **no pueden** ser para sitios ilegales. (Por ejemplo: Stressors, marketing de drogas, pornografía infantil, etc.)
 - La estructura de los archivos debe ser limpia y gestionada, no incluyas archivos que no estén especificados. (Por ejemplo: Vscode y capetas git, imágenes y archivos de texto, etc.)
-- Necesitas tener una estructura de archivo adecuada, los borradores **no** están permitidos.
 - Presences para sitios web con TLDs (dominios de nivel superior) `.onion` o sitios web con dominios/hosts gratuitos (por ejemplo, `.TK` [todos los dominios Freenom gratuitos], `.RF`, `GD`, etc.) ** no ** están permitidos, se pueden hacer excepciones si se presentan pruebas de que se ha pagado por el dominio.
 - El dominio de la presence debe tener al menos una antigüedad de 2 meses.
 - Presences que tienen como destino páginas internas del navegador (como Chrome Web Store, `chrome://`, páginas `about:`, etc.) **no** están permitidas ya que requieren que se habilite una configuración experimental en el lado del usuario y podría causar daños al navegador.
