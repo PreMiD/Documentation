@@ -26,7 +26,6 @@ Peraturan umum pembuatan presence adalah sebagai berikut:
 - Presence **harus** berhubungan dengan website yang dipilih.
 - Presence **harus tidak** dibuat untuk website ilegal. (misal stresor, penjualan obat, pornografi dibawah umur, dll)
 - Struktur file harus bersih dan teratur, jangan memasukkan file yang tidak ditentukan. ( misal, vscode dan folder git, file gambar dan teks, dll.)
-- Kamu harus memilki struktur file yang baik, draf **tidak** diperbolehkan.
 - Presence untuk website dengan (`.onion` TLD) atau website dengan domain/host gratis (misal, `.TK` [semua domain gratis dari Freenom], `.RF`, `GD`, dll.) **tidak** diizinkan, pengecualian dapat dibuat jika bukti pembayaran domain dapat ditunjukkan.
 - Domain dari presence harus berumur minimal 2 bulan.
 - Presence yang mengarah pada halaman internal browser (seperti Chrome Web Store `chrome://`, `about:` pages, etc) **tidak** diperbolehkan sebab membutuhkan flag experimental diaktifkan oleh pengguna dan bisa menyebabkan kerusakan pada browser.

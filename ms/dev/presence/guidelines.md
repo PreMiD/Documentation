@@ -26,7 +26,6 @@ Peraturan am pembangunan Presence adalah seperti berikut:
 - Presence **mestilah** berkait dengan laman sesawang dipilih.
 - Presence **tidak boleh** dibuat untuk laman sesawang haram. (sbg.cth., ubat penegas, pemasaran dadah, pornografi kanak-kanak, dsb.)
 - Struktur fail mestilah bersih dan teratur, jangan sertakan fail yang tidak dinyatakan. (sbg. cth., folder vscode dan git, fail imej dan teks, dsb.)
-- Anda perlu mempunyai struktur fail yang wajar, draf **tidak** dibenarkan.
 - Presence untuk laman sesawang dengan (TLD `.onion`) atau laman sesawang dengan domain/hos percuma (sbg. cth., `.TK` [semua domain percuma Freenom], `.RF`, `GD`, dll) adalah **tidak** dibenarkan, pengecualian boleh dibuat sekiranya terdapat bukti bahawa mereka bayar untuk domain tersebut.
 - Domain bagi Presence mestilah berusia sekurang-kurangnya 2 bulan.
 - Presence yang mensasarkan halaman pelayar dalaman (seperti Kedai Web Chrome, `chrome://`, halaman `about:`, dll) **tidak** dibenarkan kerana mereka perlukan bendera uji kaji untuk dibolehkan di pihak pengguna dan mampu menyebabkan kerosakan pada pelayar mereka.

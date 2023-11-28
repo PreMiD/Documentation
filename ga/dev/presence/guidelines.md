@@ -26,7 +26,6 @@ Is iad seo a leanas rialacha ginearálta fhorbairt láithreachta:
 - Caithfidh Láithreachtaí a bheith bainteach leis an suíomh Gréasáin is rogha leat.
 - Ní féidir láithreacha a dhéanamh do láithreáin ghréasáin neamhdhleathacha. (mar shampla, strusóirí, margaíocht drugaí, pornagrafaíocht leanaí, srl.)
 - Caithfidh struchtúr na gcomhad a bheith glan agus bainistithe, ná cuir comhaid nach bhfuil sonraithe san áireamh. (le haghaidh e.g. fillteáin vscode agus git, comhaid íomhá agus téacs, srl.)
-- Ní mór duit struchtúr ceart comhad a bheith agat, ní cheadaítear **dréachtaí**.
 - **Ní cheadaítear** láithreacha do shuíomhanna Gréasáin le (`.onion` TLDs) nó láithreáin ghréasáin le fearainn/óstach saor in aisce (mar shampla `.TK` [gach fearann Freenom saor in aisce], `.RF`, `GD`, srl), is féidir eisceachtaí a dhéanamh má chuirtear cruthúnas i láthair a thaispeánann go bhfuil d’íoc siad as an bhfearann.
 - Caithfidh fearann an láithreachta a bheith 2 mhí d'aois ar a laghad.
 - Láithreacht a dhíríonn ar leathanaigh inmheánacha brabhsálaí (cosúil le Chrome Web Store, `chrome://`, `faoi:` leathanaigh, srl) ná ** ní **ceadaítear/láidir de réir mar a éilíonn siad bratach turgnamhach a chumasú ag deireadh an úsáideora agus d’fhéadfadh sé damáiste a dhéanamh dá mbrabhsálaithe.

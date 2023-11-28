@@ -26,7 +26,6 @@ Presence-i arendamise üldreeglid on järgmised:
 - Presence-id **peavad** olema seotud valitud veebisaidiga.
 - Ebaseaduslikele veebisaitidele **ei tohi ** teha Presence. (nt stressorid, uimastiturundus, lapsporno jne)
 - Failistruktuur peab olema puhas ja haldatud, mitte sisaldama faile, mida pole täpsustatud. (nt vscode ja git kaustade, pildi- ja tekstifailide jms jaoks)
-- Teil peab olema korralik failistruktuur, mustandid **pole **lubatud.
 - Veebilehed Presence-itele, millel on (`.onion` tippdomeenid) või tasuta domeenid/hostid (nt `.TK` [kõik tasuta Freenomi domeenid], `.RF`, `GD` jne) **ei** ole lubatud, erandeid võib teha, kui esitatakse tõend, et domeeni eest on makstud.
 - Presence-i domeen peab olema vähemalt 2 kuud vana.
 - Presence-id, mis on suunatud brauseri siselehekülgedele (nagu Chrome Web Store, `chrome://`, `about:` leheküljed jne), **ei** ole lubatud, kuna need nõuavad kasutaja poolt eksperimentaalse lipu lubamist ja võivad potentsiaalselt põhjustada nende brauserite kahjustamist.
