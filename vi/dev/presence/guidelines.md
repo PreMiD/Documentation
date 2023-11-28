@@ -26,7 +26,6 @@ Những quy định chung về việc phát triển presence như sau:
 - Presence **bắt buộc** phải liên quan tới trang web được lựa chọn.
 - Presence **không được phép** làm cho các trang web phi pháp. (cho vd: nội dung khó chịu, buôn bán thuốc, nội dung khiêu dâm trẻ em, v.v.)
 - Cấu trúc tệp phải gọn và ngăn nắp, không được thêm tệp không được chỉ định. (cho vd: thư mục vscode và git, tệp ảnh và văn bản, v.v.)
-- Bạn cần có một cấu trúc tệp thích hợp, **không** được phép thêm các bản nháp.
 - Presence cho các trang web như (Tên Miền Cấp Cao Nhất `.onion`) hay các trang web với tên miền/máy chủ miễn phí (cho vd., `.TK` [tất cả các tên miền Freenom], `.RF`, `GD`, v.v.) đểu **không** được phép, có thể có ngoại lệ nếu chứng minh được chủ sở hữu tên miền đó đã trả phí cho tên miền.
 - Tên miền của presence phải ít nhất 2 tháng tuổi.
 - Presence hướng tới các trang nội bộ của trình duyệt (như Cửa hàng Chrome, các trang `chrome://`, `about:`, v.v.) đều **không** được phép vì nó yêu cầu người dùng phải bật tính năng thử nghiệm trên trình duyệt của họ và có thể làm tổn hại đến trình duyệt.
