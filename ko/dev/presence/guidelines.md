@@ -26,7 +26,6 @@ Presence 개발자들이 지켜야할 기본적인 규칙은 다음과 같습니
 - Presences는 **무조건** 당신이 선택한 웹 사이트와 관련이 있어야만 합니다.
 - Presence는 불법 웹사이트용으로 만들어져서는 **안됩니다.** (예: 스트레스 요인, 마약, 아동 포르노 등)
 - The file structure must be clean and managed, do not include files which are not specified. (예: vscode 및 git 폴더, 사진과 텍스트 파일등)
-- You need to have a proper file structure, drafts are **not** allowed.
 - (`.onion` TLD)가 있는 웹사이트 또는 무료 도메인/호스트가 있는 웹사이트(예: `.TK` [모든 무료 Freenom 도메인], `.RF`, `GD` 등)은 허용되지 **않습니다**. 도메인 비용을 지불했다는 증거가 제시되면 예외가 발생할 수 있습니다.
 - Presence의 도메인이 생성된 지 적어도 2달이 지나야 합니다.
 - Presence that target internal browser pages (like Chrome Web Store, `chrome://`, `about:` pages, etc) are **not** allowed as they require an experimental flag to be enabled on the user's end and could potentially cause damage to their browsers.
