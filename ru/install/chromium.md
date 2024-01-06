@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Установка расширения очень важна, так как приложение не может делать ничего самостоятельно.
 
 # Установить
-### Chrome, Edge и т. д.
+### Chrome, Opera (GX), Edge, etc.
 1. Перейдите на нашу страницу загрузок, нажав [здесь](https://premid.app/downloads).
-2. Выберите **Chromium**.
-3. Нажмите **Добавить в Chrome**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Опера
-1. Добавить **[Установить расширения Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Добавьте [наше расширение](https://premid.app/downloads).
-
-> Не забудьте [установить **приложение**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 
