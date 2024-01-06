@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Installasjonen av denne utvidelsen er veldig viktig fordi applikasjonen ikke kan gjøre noe helt selv.
 
 # Installer
-### Chrome, Edge, osv.
+### Chrome, Opera (GX), Edge, etc.
 1. Gå til vår nedlastnings side ved å [klikke her](https://premid.app/downloads).
-2. Velg **Chromium**.
-3. Klikk på **Legg til i Chrome**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Legg til **[Installer Chrome Extensjoner](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Legg til [vår utvidelse](https://premid.app/downloads).
-
-> Ikke glem å [legge til** applikasjonen**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 
