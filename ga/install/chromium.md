@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Tá suiteáil an síneadh an-tábhachtach mar ní féidir leis an bhfeidhmchlár aon rud a dhéanamh leis féin.
 
 # Suiteáil
-### Chrome, Edge, srl.
+### Chrome, Opera (GX), Edge, etc.
 1. Téigh go dtí ár leathanach íoslódálacha ag [cliceáil anseo](https://premid.app/downloads).
-2. Roghnaigh **Cróimiam**.
-3. Cliceáil ar **Cuir leis Chrome**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Cuir **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Cuir [réad síneadh](https://premid.app/downloads).
-
-> Ná déan dearmad a [cuir an **iarratas**](/suiteáil). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 
