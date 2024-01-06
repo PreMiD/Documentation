@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Instalace rozšíření je velmi důležitá, protože aplikace nemůže dělat nic sama.
 
 # Instalace
-### Chrome, Edge atd.
+### Chrome, Opera (GX), Edge, etc.
 1. Jděte na naši stránku ke stažení [kliknutím zde](https://premid.app/downloads).
-2. Vyberte **Chromium**.
-3. Klikněte na **Přidat do Chrome**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Přidejte **[Nainstalovat rozšíření Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Přidejte [naše rozšíření](https://premid.app/downloads).
-
-> Nezapomeňte [přidat **aplikaci**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 アプリのみでは機能しないため、拡張機能のダウンロードは重要です。
 
 # インストール
-### Chrome, Edge など
+### Chrome, Opera (GX), Edge, etc.
 1. [ここをクリック](https://premid.app/downloads)してダウンロードページに行く
-2. **Chrome(Chromium)**を選ぶ
-3. **Chromeに追加** を押す
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**を追加する
-2. [拡張機能を入れる](https://premid.app/downloads)
-
-> [**アプリケーションを追加する**](/install)のを忘れないでください！ 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

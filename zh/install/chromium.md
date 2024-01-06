@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 安装扩展程序非常重要，因为应用程序本身无法做任何事情。
 
 # 安装
-### Chrome、Edge等
+### Chrome, Opera (GX), Edge, etc.
 1. [点击这里](https://premid.app/downloads) 来转到我们的下载页面。
-2. 选择 **Chromium**。
-3. 点击 **添加到 Chrome**。
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. 添加 **[安装 Chrome 扩展](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. 添加 [我们的扩展](https://premid.app/downloads)。
-
-> 不要忘记 [安装 **应用程序**](/install)。 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

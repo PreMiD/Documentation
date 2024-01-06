@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 La instalación de la extensión es muy importante, ya que la aplicación no puede hacer nada por sí misma.
 
 # Instalar
-### Chrome, Edge, etc.
+### Chrome, Opera (GX), Edge, etc.
 1. Ve a nuestra página de descargar [pulsando aquí](https://premid.app/downloads).
-2. Elige **Chromium**.
-3. Haz clic en **Añadir a Chrome**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Añade **[Instalar extensiones de Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Añade [nuestra extensión](https://premid.app/downloads).
-
-> No te olvides de [añadir la **aplicación**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Instalarea extensiei este foarte importantă, deoarece aplicația nu poate face nimic de una singură.
 
 # Instalează
-### Chrome, Edge etc.
+### Chrome, Opera (GX), Edge, etc.
 1. Mergi pe pagina de descărcări [apăsând aici](https://premid.app/downloads).
-2. Alege **Chromium**.
-3. Click pe **Adaugă la Chrome**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Adaugă extensia **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Adaugă [extensia noastră](https://premid.app/downloads).
-
-> Nu uita să [instalezi **aplicația**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

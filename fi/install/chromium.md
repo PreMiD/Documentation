@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Laajennuksen asentaminen on erittäin tärkeää, sillä sovellus ei voi tehdä mitään yksinään.
 
 # Asenna
-### Chrome, Edge, jne.
+### Chrome, Opera (GX), Edge, etc.
 1. Go to our downloads page by [clicking here](https://premid.app/downloads).
-2. Valitse **Chromium**.
-3. Klikkaa **Lisää Chromeen**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Lisää **[Asenna Chrome Laajennukset](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Add [our extension](https://premid.app/downloads).
-
-> Älä unohda [lisätä ****sovellusta](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

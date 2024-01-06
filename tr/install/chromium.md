@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Uygulama, eklentisi olmadan çalışmayacağı için eklentinin de yüklü olması gerekmektedir.
 
 # Yükleme
-### Chrome, Edge, vs.
+### Chrome, Opera (GX), Edge, etc.
 1. [Buraya](https://premid.app/downloads) tıklayarak "İndir" sayfamıza gidin.
-2. **Chromium**'u seçin.
-3. **Chrome'a Ekleyin** tuşuna basın.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)** eklentisini ekleyin.
-2. Chrome mağazasından [eklentimizi](https://premid.app/downloads) ekleyin.
-
-> [**Uygulamayı** eklemeyi](/install) unutmayın. 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

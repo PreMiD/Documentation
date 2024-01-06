@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 การติดตั้งส่วนขยายนั้นสำคัญมากเนื่องจากแอปพลิเคชันไม่สามารถทำงานเองได้ด้วยตัวเอง
 
 # ติดตั้ง
-### Chrome, Edge, และ อื่นๆ.
+### Chrome, Opera (GX), Edge, etc.
 1. ไปที่หน้าดาวน์โหลดของเรา [คลิกที่นี่](https://premid.app/downloads).
-2. เลือก **โครเมียม**
-3. คลิกเพื่อ **เพิ่มในโครม**
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. **[ติดตั้งส่วนขยายของ Chrome](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. ติดตั้ง[ส่วนขยายของเรา](https://premid.app/downloads)
-
-> อย่าลืมที่จะ[ติดตั้ง**แอปพลิเคชัน**](/install) 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 

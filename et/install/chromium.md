@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Laienduse installimine on väga oluline, kuna rakendus ei saa ise midagi teha.
 
 # Lae alla
-### Chrome, Edge jne.
+### Chrome, Opera (GX), Edge, etc.
 1. Minge meie allalaadimiste lehele, [klõpsates siia](https://premid.app/downloads).
-2. Valige ** Chromium**.
-3. Klõpsake nuppu **Lisa Chrome'i**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Lisage **[Chrome'i laienduste installimine](https://addons.opera.com/en/extensions/details/install-chrome-extensions/) **.
-2. Lisage [meie laiendus](https://premid.app/downloads).
-
-> Ärge unustage [lisada **rakendust**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 
