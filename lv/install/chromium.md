@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Paplašinājuma uzstādīšana ir ļoti svarīga, jo programma bez paplašinājuma neko nevar izdarīt.
 
 # Uzstādīšana
-### Chrome, Edge, u.c.
+### Chrome, Opera (GX), Edge, etc.
 1. Dodieties uz mūsu lejupielāžu lapu [uzspiežot šeit](https://premid.app/downloads).
-2. Izvēlieties **Chromium**.
-3. Uzklikšķiniet uz **Add to Chrome**.
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. Pievienojiet Opera paplašinājumu **[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**.
-2. Pievienojiet mūsu [paplašinājumu](https://premid.app/downloads).
-
-> Neaizmirstiet [pievienot **lietotni**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 
