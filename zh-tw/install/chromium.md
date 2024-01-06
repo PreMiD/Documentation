@@ -11,16 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 安裝擴充功能非常重要，因為單靠本地程式是無法做任何事的。
 
 # 安裝
-### Chrome, Edge 等以Chromium為基礎的瀏覽器
+### Chrome, Opera (GX), Edge, etc.
 1. [點此](https://premid.app/downloads) 前往我們的下載頁面
-2. 選擇 **Chromium**
-3. 點擊 **新增到Chrome**
+2. Choose **Chrome**.
+3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
 
-### Opera
-1. 在Opera安裝**[Install Chrome Extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/)**延伸套件
-2. 新增[我們的延伸套件](https://premid.app/downloads)
-
-> Do not forget to [add the **application**](/install). 
+> Do not forget to [install the **application**](/install). 
 > 
 > {.is-warning}
 
