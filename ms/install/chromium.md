@@ -11,12 +11,12 @@ dateCreated: 2021-09-07T01:25:35.049Z
 Pemasangan sambungan amat penting kerana aplikasi tidak mampu membuat apa-apa dengan sendirinya.
 
 # Pasang
-### Chrome, Opera (GX), Edge, etc.
+### Chrome, Opera (GX), Edge, dll.
 1. Pergi ke halaman muat turun kami dengan [mengklik di sini](https://premid.app/downloads).
-2. Choose **Chrome**.
-3. Click on **Add to Chrome**. (The text may differ. Look for a button that indicates installation of the extension.)
+2. Pilih **Chrome**.
+3. Klik pada **Tambah pd Chrome**. (Tulisan boleh berubah. Cari butang yang menandakan pemasangan sambungan.)
 
-> Do not forget to [install the **application**](/install). 
+> Jangan lupa untuk [pasangkan **aplikasi** kami](/install). 
 > 
 > {.is-warning}
 
