@@ -299,7 +299,7 @@ Penggambaran fail:
 }
 ```
 
-Setelah anda mencipta sepenuhnya fail dengan rentetan tersebut, anda boleh cipta Permintaan Tarikan di [Repositori Penyetempatan](https://github.com/PreMiD/Localization), dalam keterangan tersebut anda **mesti** sertakan pautan ke Permintaan Tarikan anda bagi Presence yang dikemaskini menggunakan rentetan-rentetan baharu daripada [Repositori Presence](https://github.com/PreMiD/Presences) ini.
+Setelah anda mencipta sepenuhnya fail dengan rentetan tersebut, anda boleh cipta Permintaan Tarikan di [Repositori Penyetempatan](https://github.com/PreMiD/Localization), dalam keterangan tersebut anda **mesti** sertakan pautan ke Permintaan Tarikan anda bagi Presence yang dikemas kini menggunakan rentetan-rentetan baharu daripada [Repositori Presence](https://github.com/PreMiD/Presences) ini.
 
 #### Kekunci lalai
 Kekunci yang anda tidak perlu tetapkan akan ditetapkan secara automatik seperti berikut: `title`: "Language" **Nota:** Ini diterjemah ke bahasa lalai pengguna (bahasa yang ditetapkan di pelayar). `icon`: "fas fa-language" ([Pralihat](https://fontawesome.com/icons/language)) `value`: **Tetapkan ke bahasa pelayar pengguna jika ia tersedia (100% diterjemah), jika tidak ianya ditetapkan ke bahasa Inggeris.** `values`: **Tetapkan ke bahasa-bahasa yang tersedia (bahasa-bahasa yang telah pun 100% diterjemah).**
