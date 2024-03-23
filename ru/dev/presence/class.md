@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-09-07T01:44:50.164Z
 ---
 
-# Класс Состояния
+# Класс Presence
 
 ## Введение
 
