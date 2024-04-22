@@ -20,52 +20,52 @@ Zobacz metodę [`createSlideshow`](/dev/presence/class#createslideshow) w klasie
 
 ### `currentSlide`
 
-Returns a [`PresenceData`](/dev/presence/class#presencedata-interface) object of what the presence/current slide is displaying.
+Zwraca obiekt [`PresenceData`](/dev/presence/class#presencedata-interface) z tym, co jest wyświetlane.
 
 ```ts
 const currentSlide = slideshow.currentSlide
-console.log(currentSlide.details) // Will console log the details of the PresenceData
+console.log(currentSlide.details) // Konsola rejestruje szczegóły PresenceData
 ```
 
 ## Metody
 
 ### `addSlide(String, PresenceData, Number)`
 
-Add a new slide to the `Slideshow` according to provided data.
+Dodaje nowy slajd do `Slideshow` zgodnie z podanymi danymi.
 
-First parameter requires a `String` that will be used as a unique identifier for the slide.
+Pierwszy parametr wymaga `String`, który będzie używany jako unikatowy identyfikator dla slajdu.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Drugi parametr wymaga interfejsu [`PresenceData`](/dev/presence/class#presencedata-interface), aby uzyskać wszystkie informacje, które chcesz wyświetlać w slajdzie.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Trzeci parametr wymaga `Number`, który jest ilością czasu w milisekundach (minimalnie: 5000), przez którą ten slajd będzie wyświetlany.
 
 ### `getSlides()`
 
-Returns all slides saved in the `Slideshow` as an `Array` of [`SlideshowSlide`](#slideshowslide-class).
+Zwraca wszystkie slajdy zapisane w `Slideshow` jako `Array` klasy [`SlideshowSlide`](#slideshowslide-class).
 
 ### `updateSlide(String, PresenceData, Number)`
 
-Updates the slide of the given `id` according to provided data.
+Aktualizuje slajd podanego `id` zgodnie z podanymi danymi.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to update.
+Pierwszy parametr wymaga `String`, który jest unikatowym identyfikatorem slajdu, którego chcesz zaktualizować.
 
-Second parameter requires a [`PresenceData` interface](/dev/presence/class#presencedata-interface) to get all information that you want to display in the slide.
+Drugi parametr wymaga interfejsu [`PresenceData`](/dev/presence/class#presencedata-interface), aby uzyskać wszystkie informacje, które chcesz wyświetlać w slajdzie.
 
-Third parameter requires a `Number` which is the amount of time in milliseconds (minimum: 5000) that this slide will show.
+Trzeci parametr wymaga `Number`, który jest ilością czasu w milisekundach (minimalnie: 5000), przez którą ten slajd będzie wyświetlany.
 
 ### `hasSlide(String)`
 
-Returns a `Boolean` stating whether the slide is added to the `Slideshow`.
+Zwraca `Boolean` określający, czy slajd został dodany do `Slideshow`.
 
 ### `deleteSlide(String)`
 
-Deletes the slide with the given `id` from the `Slideshow`.
+Usuwa slajd z podanym `id` z `Slideshow`.
 
-First parameter requires a `String` that is the unique identifier of the slide you want to delete.
+Pierwszy parametr wymaga `String`, który jest unikatowym identyfikatorem slajdu, którego chcesz zaktualizować.
 
 ### `deleteAllSlides()`
 
-Deletes all slides from the `Slideshow`.
+Usuwa wszystkie slajdy z `Slideshow`.
 
 # Klasa SlideshowSlide
 
