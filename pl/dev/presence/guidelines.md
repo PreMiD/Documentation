@@ -179,7 +179,7 @@ Lista pól i ich zasad znajduje się poniżej:
 ### **`logo`**
 
 - Logo **musi** być kwadratowym obrazem o proporcjach `1: 1`.
-- The image is **required** to have a resolution of `512x512` pixels. You can resize it using a tool like [imageresizer](https://imageresizer.com/).
+- Obraz **musi** mieć minimalną rozdzielczość `512x512` pikseli. Możesz zmienić rozmiar obrazu za pomocą narzędzia takiego jak [imageresizer](https://imageresizer.com/).
 
 ### **`thumbnail`**
 
@@ -227,14 +227,14 @@ Lista pól i ich zasad znajduje się poniżej:
 
 ## [**presence.ts**](https://docs.premid.app/dev/presence/class)
 
-> The code you write **must** be _well-written_ and **must** be _readable_ and all strings must be grammatically correct (grammar errors on websites can be ignored).
+> Napisany przez ciebie kod **musi** być _czytelny i dobrze napisany_, a każdy string musi być gramatycznie poprawny (błędy gramatyczne na stronie mogą wyć zignorowane).
 
-> Each presence follows a strict linting ruleset which will be checked during the review process. A couple of recommendations can be seen below. [TypeScript Plugin Recommendations for Strict Type Checking](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [ESlint Recommendations](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
+> Każdy status ma ścisły zestaw zasad lintowania, który będzie sprawdzany podczas procesu przeglądu. Poniżej przedstawiono kilka zaleceń. [.Wtyczki TypeScript do ścisłego sprawdzania typu](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules). [Rekomendacje ESlint](https://eslint.org/docs/rules). [Prettier](https://prettier.io/).
 
-Here is a list of rules you must follow when writing your `presence.ts` file:
+Oto lista zasad, których musisz przestrzegać podczas pisania pliku `presence.ts`:
 
-- **Always** declare a new instance of the `Presence` class before any other variable to avoid rare issues that may occur; this is not a requirement by design so it could be removed in the future.
-- **Never** use custom functions when [native variants are available](https://docs.premid.app/dev/presence#files-explained); this makes sure fixes on the extension level also apply to your presences. You're free to use whatever you need if you do not find them listed in the docs.
+- **Zawsze** deklaruj nową instancję klasy `Presence` przed jakąkolwiek inną zmienną, aby uniknąć problemów, które mogą wystąpić; nie jest to wymóg konstrukcyjny, więc w przyszłości można go usunąć.
+- **Nigdy** nie używaj niestandardowych funkcji gdy [natywne warianty są dostępne](https://docs.premid.app/dev/presence#files-explained); Dzięki temu poprawki na poziomie rozszerzenia są również stosowane do twoich presences. You're free to use whatever you need if you do not find them listed in the docs.
 - It is **forbidden** to code presences for a site without adding support to its primary language (for e.g., a YouTube presence coded with support only for Portueguese and Japanese, but not English itself.)
 - The `smallImageKey` and `smallImageText` fields are intended to provide additional/secondary context (such as `playing/paused` for video sites, `browsing` for regular sites, and other cases) not to promote Discord profiles or anything unrelated to PreMiD.
 - You are **not** allowed to access `localStorage`.
