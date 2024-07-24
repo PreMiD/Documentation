@@ -96,7 +96,7 @@ Edaran berasaskan Arch Linux patut gunakan pakej AUR (Arch User Repository / Rep
 <em x-id="3">Amaran: pakej di repositori <strong x-id="1">AUR</strong> tidak disenggara oleh kami (sebagai organisasi PreMiD), tetapi oleh orang lain.</em>
 
 ### Ikatan port
-Anda patut tahu <strong x-id="1">PreMiD</strong> mengikatkan dirinya di port nombor <strong x-id="1">3020</strong>. Perkara ini diperlukan untuk perhubungan di antara Sambungan dan Aplikasi. Jika <strong x-id="1">PreMiD</strong> menunjukkan ralat kepada anda mengenai port ini, anda patut periksa sama ada wujudnya benda lain yang diikatkan ke port 3020 dengan menjalankan <code>sudo lsof -i:3020</code> atau <code>sudo netstat -tnlp | grep :3020</code> dalam terminal anda. Jika ada proses yang diikatkan ke port tersebut, anda perlu bebaskan port tersebut dan jalankan <code>PreMiD</code> sekali lagi.
+Anda patut tahu <strong x-id="1">PreMiD</strong> mengikatkan dirinya di port nombor <strong x-id="1">3020</strong>. Perkara ini diperlukan untuk perhubungan di antara Sambungan dan Aplikasi. Jika <strong x-id="1">PreMiD</strong> menunjukkan ralat kepada anda mengenai port ini, anda patut periksa sama ada wujudnya benda lain yang diikatkan ke port 3020 dengan menjalankan <code>sudo lsof -i:3020</code> atau <code>sudo netstat -tnlp | grep :3020</code> dalam terminal anda. Jika ada proses yang diikatkan ke port tersebut, anda perlu bebaskan port tersebut dan cuba jalankan <code>PreMiD</code> sekali lagi.
 
 ### AppImage PreMiD tidak dilancarkan ketika log masuk
 Seperti yang kami nyatakan di **repositori Linux** kami, AppImage tidak boleh dilancarkan ketika log masuk. Anda boleh menambahnya ke automula secara manual dengan melakukan langkah ini:
